@@ -1,0 +1,145 @@
+{
+  "id": "3f21e",
+  "host": {},
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-06-13T21:37:41"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-06-13T21:37:53"
+    }
+  ],
+  "script": {
+    "id": "cvscart1",
+    "what": "CVS cart page",
+    "strict": true,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "webkit",
+        "what": "Webkit"
+      },
+      {
+        "type": "url",
+        "which": "https://www.cvs.com/shop/",
+        "what": "CVS Pharmacy shopping page"
+      },
+      {
+        "type": "link",
+        "which": "Vitamins",
+        "what": "Click the Vitamins link"
+      },
+      {
+        "type": "wait",
+        "what": "body",
+        "which": "What Are Vitamins"
+      },
+      {
+        "type": "link",
+        "which": "Multivitamins",
+        "what": "Click the Multivitamins link"
+      },
+      {
+        "type": "wait",
+        "what": "body",
+        "which": "Do Multivitamins Work"
+      },
+      {
+        "type": "button",
+        "which": "Spectravite",
+        "what": "Add default type and quantity to cart"
+      },
+      {
+        "type": "link",
+        "which": "Checkout",
+        "what": "Click the Checkout link, which pretends to be a button"
+      },
+      {
+        "type": "wait",
+        "what": "title",
+        "which": "CVS Cart"
+      },
+      {
+        "type": "test",
+        "which": "bulk",
+        "what": "count of visible elements"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "webkit",
+      "what": "Webkit"
+    },
+    {
+      "type": "url",
+      "which": "https://www.cvs.com/shop/",
+      "what": "CVS Pharmacy shopping page",
+      "result": "https://www.cvs.com/shop"
+    },
+    {
+      "type": "link",
+      "which": "Vitamins",
+      "what": "Click the Vitamins link",
+      "url": "https://www.cvs.com/shop",
+      "result": {
+        "href": "/shop/vitamins?icid=shop-home-catnav-link8-vitamins",
+        "target": "NONE",
+        "move": "clicked"
+      }
+    },
+    {
+      "type": "wait",
+      "what": "body",
+      "which": "What Are Vitamins",
+      "result": {
+        "error": "ERROR awaiting condition"
+      }
+    },
+    {
+      "type": "link",
+      "which": "Multivitamins",
+      "what": "Click the Multivitamins link"
+    },
+    {
+      "type": "wait",
+      "what": "body",
+      "which": "Do Multivitamins Work"
+    },
+    {
+      "type": "button",
+      "which": "Spectravite",
+      "what": "Add default type and quantity to cart"
+    },
+    {
+      "type": "link",
+      "which": "Checkout",
+      "what": "Click the Checkout link, which pretends to be a button"
+    },
+    {
+      "type": "wait",
+      "what": "title",
+      "which": "CVS Cart"
+    },
+    {
+      "type": "test",
+      "which": "bulk",
+      "what": "count of visible elements"
+    }
+  ],
+  "timeStamp": "3f21e",
+  "startTime": "2022-06-13T21:37:41",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [],
+  "logCount": 57,
+  "logSize": 8779,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-06-13T21:37:53",
+  "elapsedSeconds": 11
+}

@@ -1,0 +1,11 @@
+# Dependency directories
+node_modules/
+
+# Secrets
+.env
+
+# System files
+.DS_Store
+
+# Development configurations
+.vscode/

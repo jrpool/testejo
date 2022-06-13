@@ -1,0 +1,354 @@
+{
+  "id": "3f1xh",
+  "host": {},
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-06-13T21:32:58"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-06-13T21:33:20"
+    }
+  ],
+  "script": {
+    "id": "cvscart1",
+    "what": "CVS cart page",
+    "strict": true,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "webkit",
+        "what": "Webkit"
+      },
+      {
+        "type": "url",
+        "which": "https://www.cvs.com/shop/",
+        "what": "CVS Pharmacy shopping page"
+      },
+      {
+        "type": "link",
+        "which": "Vitamins",
+        "what": "Click the Vitamins link"
+      },
+      {
+        "type": "wait",
+        "what": "body",
+        "which": "What Are Vitamins"
+      },
+      {
+        "type": "link",
+        "which": "Multivitamins",
+        "what": "Click the Multivitamins link"
+      },
+      {
+        "type": "wait",
+        "what": "body",
+        "which": "Do Multivitamins Work"
+      },
+      {
+        "type": "button",
+        "which": "Spectravite",
+        "what": "Add default type and quantity to cart"
+      },
+      {
+        "type": "link",
+        "which": "Checkout",
+        "what": "Click the Checkout link, which pretends to be a button"
+      },
+      {
+        "type": "wait",
+        "what": "title",
+        "which": "CVS Cart"
+      },
+      {
+        "type": "test",
+        "which": "bulk",
+        "what": "count of visible elements"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "webkit",
+      "what": "Webkit"
+    },
+    {
+      "type": "url",
+      "which": "https://www.cvs.com/shop/",
+      "what": "CVS Pharmacy shopping page",
+      "result": "https://www.cvs.com/shop"
+    },
+    {
+      "type": "link",
+      "which": "Vitamins",
+      "what": "Click the Vitamins link",
+      "url": "https://www.cvs.com/shop",
+      "result": {
+        "href": "/shop/vitamins?icid=shop-home-catnav-link8-vitamins",
+        "target": "NONE",
+        "move": "clicked"
+      }
+    },
+    {
+      "type": "wait",
+      "what": "body",
+      "which": "What Are Vitamins",
+      "result": {
+        "error": "ERROR awaiting condition"
+      }
+    },
+    {
+      "type": "link",
+      "which": "Multivitamins",
+      "what": "Click the Multivitamins link",
+      "url": "https://www.cvs.com/shop/vitamins?icid=shop-home-catnav-link8-vitamins",
+      "result": {
+        "href": "/shop/vitamins/multivitamins?icid=shop-vitamins-category-lhn-multivitamins",
+        "target": "NONE",
+        "move": "clicked"
+      }
+    },
+    {
+      "type": "wait",
+      "what": "body",
+      "which": "Do Multivitamins Work",
+      "result": {
+        "error": "ERROR: Awaited condition did not occur"
+      }
+    },
+    {
+      "type": "button",
+      "which": "Spectravite",
+      "what": "Add default type and quantity to cart",
+      "url": "https://www.cvs.com/shop/vitamins?icid=shop-home-catnav-link8-vitamins",
+      "result": "ERROR: body did not contain text to match"
+    },
+    {
+      "type": "link",
+      "which": "Checkout",
+      "what": "Click the Checkout link, which pretends to be a button",
+      "url": "https://www.cvs.com/shop/vitamins?icid=shop-home-catnav-link8-vitamins",
+      "result": {
+        "candidateCount": 179,
+        "error": "ERROR: no element with matching text found",
+        "candidateTexts": [
+          "sign in",
+          "create an account",
+          "pharmacy",
+          "minuteclinic®",
+          "shop",
+          "extracare®",
+          "photo",
+          "store locator",
+          "myweekly ad",
+          "easy reorder",
+          "express pharmacy orders",
+          "online shop orders",
+          "photo orders",
+          "skip to main content",
+          "myweekly ad",
+          "sign in",
+          "create an account",
+          "store locator",
+          "español",
+          "",
+          "pharmacy",
+          "minuteclinic ⓡ",
+          "shop",
+          "extracare ⓡ",
+          "contact lenses",
+          "photo",
+          "my orders",
+          "easy reorder",
+          "0basket",
+          "baby & child",
+          "beauty",
+          "diet & nutrition",
+          "grocery",
+          "health & medicine",
+          "home health care",
+          "household",
+          "personal care",
+          "sexual health",
+          "vitamins",
+          "fsa",
+          "brands",
+          "home",
+          "shop",
+          "vitamins and supplements",
+          "shop all vitamins",
+          "multivitamins",
+          "a-z vitamins",
+          "supplements",
+          "herbals",
+          "minerals",
+          "aromatherapy & essential oils",
+          "immunity support",
+          "memory health",
+          "energy support",
+          "heart health",
+          "bone & joint health",
+          "sleep aids",
+          "digestive aids",
+          "hair, skin & nails",
+          "new vitamins",
+          "vitamin deals",
+          "hsa/fsa",
+          "minuteclinic",
+          "bogo vitamins",
+          "multivitamins",
+          "a-z vitamins",
+          "supplements",
+          "herbals",
+          "minerals",
+          "new vitamins",
+          "shop all vitamins",
+          "a healthier summer begins at cvs®get $10 extrabucks rewards® when you spend $30 and $15 extrabucks rewards when you spend $45 on select summer essentials.*shop summer essentials",
+          "prioritize your well-beingwith savings on select vitamins, supplements, personal care products and more.shop women’s well-being support",
+          "",
+          "shop at-home covid-19 tests",
+          "",
+          "shop face coverings & masks",
+          "supplement support.buy one, get one free vitamin dealsstock up on essential vitamins and minerals with these can’t-miss deals.shop bogo vitamins",
+          "nature's bounty optimal solutions hair, skin & nails gummies2$6.49",
+          "one a day women's prenatal 1 multivitamin softgels445$21.49",
+          "vitafusion women's bone and metabolism daily multivitamin gummy formula, 150ct815$16.79",
+          "centrum silver multivitamin for women 50 plus, multivitamin/multimineral supplement with vitamin d3, b vitamins, calcium and antioxidants25$21.49",
+          "osteo bi-flex triple strength tablets16$21.99",
+          "neuriva original brain support supplement supports focus, memory, learning, accuracy & concentration, 30 ct113$44.79",
+          "citracal petites calcium citrate with vitamin d3, caplets, 200 count31$16.49",
+          "cvs health vitamin d softgels 2000iu89$9.99",
+          "nature made vitamin d3 adult gummies value size51$19.49",
+          "preservision eye vitamin & mineral supplement areds 2 formula32$26.99",
+          "nature made vitamin c adult gummies value size92$17.49",
+          "nature's bounty elderberry gummies30$28.49",
+          "cvs health black elderberry gummies, 60 ct49$18.99",
+          "neuriva plus brain support supplement supports focus, memory, learning, accuracy, concentration & reasoning, 30 ct77$60.99",
+          "qunol extra strength turmeric curcumin complex softgels 1000mg9294$26.79",
+          "qunol ultra coq10 softgels 100mg30171$29.79",
+          "sundown naturals super alpha lipoic acid capsules 600mg, 60ct25$22.49",
+          "cvs health probiotic capsules maximum strength, 30ct72$21.49",
+          "cvs health extra strength omega-3 krill oil softgels 500mg27$27.99",
+          "cvs health glucosamine chondroitin triple strength caplets10$32.49",
+          "cvs health adult 50+ probiotic vegetable capsules 4 billion, 90ct14$43.49",
+          "nature's bounty co q-10 softgels 200mg10$44.99",
+          "prevagen extra strength chewables mixed berry flavor 20mg, 30ct61$60.49",
+          "prevagen brain health regular strength capsules, 60 ct8$74.99",
+          "prevagen improves memory extra strength 20mg, 30ct149$60.49",
+          "nature made cholestoff complete softgels, 120ct19$47.79",
+          "cvs health pharmaceutical grade fish oil softgels 1000mg, 60ct101$18.99",
+          "cvs health coenzyme q10 softgels 200mg28$54.99",
+          "only at cvstry our brands, love our brands. discover quality vitamins and supplements you’ll only find here.shop cvs brands",
+          "",
+          "shop all live better",
+          "shop herbals",
+          "shop multivitamins",
+          "shop vitamins a–z",
+          "shop supplements",
+          "shop probiotics",
+          "shop everyday care",
+          "no hidden ingredientswe require third-party testing of all vitamins and supplements to confirm you get just what’s on the label. tested to be trusted™ is our commitment to you and your family.shop all supplements",
+          "uniquely formulated vitamins that aid in women’s health.women’s multivitamins",
+          "specialized vitamins that help support men’s health.men’s multivitamins",
+          "vitamins that meet your child’s growing needs.children’s multivitamins",
+          "vitamins that help support you as you age.ages 65+ multivitamins",
+          "prevagen",
+          "cvs health",
+          "nature’s bounty",
+          "nature made",
+          "centrum",
+          "vitafusion",
+          "multivitamins",
+          "a-z vitamins",
+          "supplements",
+          "herbals",
+          "minerals",
+          "aromatherapy",
+          "immunity support",
+          "memory health",
+          "energy support",
+          "heart health",
+          "bone & joint health",
+          "sleep aids",
+          "digestive aids",
+          "hair, skin & nails",
+          "new vitamins",
+          "vitamins deals",
+          "shop all vitamins",
+          "shop our best values across the store, all in one place.let’s get shopping",
+          "the membership that makes healthier easier.sign up for carepass",
+          "get 2% back and member-only sale prices every time you shop.sign up now for extracare",
+          "save even more in store with our circular deals!view our weekly ad",
+          "carepass terms & conditions",
+          "centrum multivitamins",
+          "nature’s bounty",
+          "vegetarian vitamins",
+          "vegan vitamins",
+          "gluten free vitamins",
+          "iron",
+          "sugar free vitamin b supplement",
+          "calcium gummies",
+          "fish oil",
+          "ginko biloba",
+          "vitamin b",
+          "vitamins for hair",
+          "magnesium",
+          "coq10",
+          "saw palmetto",
+          "chromium picolinate",
+          "pure vitamin e oil",
+          "fsa eligible vitamins",
+          "1-800-679-9691",
+          "1-800-679-9691",
+          "contact us",
+          "contact us",
+          "terms of use",
+          "terms of use",
+          "accessibility",
+          "accessibility",
+          "privacy policy",
+          "privacy policy",
+          "sitemap",
+          "sitemap",
+          "feedbacklaunches comment card in new window"
+        ]
+      }
+    },
+    {
+      "type": "wait",
+      "what": "title",
+      "which": "CVS Cart",
+      "result": {
+        "error": "ERROR: Awaited condition did not occur"
+      }
+    },
+    {
+      "type": "test",
+      "which": "bulk",
+      "what": "count of visible elements",
+      "url": "https://www.cvs.com/shop/vitamins?icid=shop-home-catnav-link8-vitamins",
+      "result": {
+        "visibleElements": 1696
+      }
+    }
+  ],
+  "timeStamp": "3f1xh",
+  "startTime": "2022-06-13T21:32:58",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "bulk",
+      1
+    ]
+  ],
+  "logCount": 120,
+  "logSize": 18181,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-06-13T21:33:20",
+  "elapsedSeconds": 22
+}

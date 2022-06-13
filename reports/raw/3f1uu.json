@@ -1,0 +1,227 @@
+{
+  "id": "3f1uu",
+  "host": {},
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-06-13T21:29:49"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-06-13T21:30:17"
+    }
+  ],
+  "script": {
+    "id": "cvscart1",
+    "what": "CVS cart page",
+    "strict": true,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "webkit",
+        "what": "Webkit"
+      },
+      {
+        "type": "url",
+        "which": "https://www.cvs.com/shop/",
+        "what": "CVS Pharmacy shopping page"
+      },
+      {
+        "type": "link",
+        "which": "Vitamins",
+        "what": "Click the Vitamins link"
+      },
+      {
+        "type": "wait",
+        "what": "body",
+        "which": "What Are Vitamins"
+      },
+      {
+        "type": "link",
+        "which": "Multivitamins",
+        "what": "Click the Multivitamins link"
+      },
+      {
+        "type": "wait",
+        "what": "body",
+        "which": "Do Multivitamins Work"
+      },
+      {
+        "type": "button",
+        "which": "Spectravite",
+        "what": "Add default type and quantity to cart"
+      },
+      {
+        "type": "link",
+        "which": "Checkout",
+        "what": "Click the Checkout link, which pretends to be a button"
+      },
+      {
+        "type": "wait",
+        "what": "title",
+        "which": "CVS Cart"
+      },
+      {
+        "type": "test",
+        "which": "bulk",
+        "what": "count of visible elements"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "webkit",
+      "what": "Webkit"
+    },
+    {
+      "type": "url",
+      "which": "https://www.cvs.com/shop/",
+      "what": "CVS Pharmacy shopping page",
+      "result": "https://www.cvs.com/shop"
+    },
+    {
+      "type": "link",
+      "which": "Vitamins",
+      "what": "Click the Vitamins link",
+      "url": "https://www.cvs.com/shop",
+      "result": {
+        "href": "/shop/vitamins?icid=shop-home-catnav-link8-vitamins",
+        "target": "NONE",
+        "move": "clicked"
+      }
+    },
+    {
+      "type": "wait",
+      "what": "body",
+      "which": "What Are Vitamins",
+      "result": {
+        "error": "ERROR awaiting condition"
+      }
+    },
+    {
+      "type": "link",
+      "which": "Multivitamins",
+      "what": "Click the Multivitamins link",
+      "url": "https://www.cvs.com/shop/vitamins?icid=shop-home-catnav-link8-vitamins",
+      "result": {
+        "href": "/shop/vitamins/multivitamins?icid=shop-vitamins-category-lhn-multivitamins",
+        "target": "NONE",
+        "move": "clicked"
+      }
+    },
+    {
+      "type": "wait",
+      "what": "body",
+      "which": "Do Multivitamins Work",
+      "result": {
+        "error": "ERROR awaiting condition"
+      }
+    },
+    {
+      "type": "button",
+      "which": "Spectravite",
+      "what": "Add default type and quantity to cart",
+      "url": "https://www.cvs.com/shop/vitamins/multivitamins?icid=shop-vitamins-category-lhn-multivitamins",
+      "result": {
+        "candidateCount": 52,
+        "error": "ERROR: no element with matching text found",
+        "candidateTexts": [
+          "choose a store",
+          "",
+          "shop all categories",
+          "ships free withcarepasstmoff",
+          "off",
+          "start shopping",
+          "category",
+          "on sale",
+          "see more",
+          "brand",
+          "see more",
+          "reviews",
+          "see more",
+          "price",
+          "new arrivaloff",
+          "off",
+          "key ingredient",
+          "see more",
+          "concern",
+          "see more",
+          "quantity",
+          "hsa/fsa eligibleoff",
+          "off",
+          "beauty cluboff",
+          "off",
+          "product type",
+          "lifestage",
+          "form",
+          "ships free withcarepasstmoff",
+          "off",
+          "vitamins",
+          "multivitamins",
+          "clear all",
+          "add to basket",
+          "choose options",
+          "add to basket",
+          "add to basket",
+          "add to basket",
+          "choose options",
+          "add to basket",
+          "add to basket",
+          "add to basket",
+          "add to basket",
+          "add to basket",
+          "add to basket",
+          "add to basket",
+          "add to basket",
+          "add to basket",
+          "add to basket",
+          "choose options",
+          "add to basket",
+          "load more"
+        ]
+      }
+    },
+    {
+      "type": "link",
+      "which": "Checkout",
+      "what": "Click the Checkout link, which pretends to be a button",
+      "url": "https://www.cvs.com/shop/vitamins/multivitamins?icid=shop-vitamins-category-lhn-multivitamins",
+      "result": "ERROR: body did not contain text to match"
+    },
+    {
+      "type": "wait",
+      "what": "title",
+      "which": "CVS Cart",
+      "result": {
+        "error": "ERROR: Awaited condition did not occur"
+      }
+    },
+    {
+      "type": "test",
+      "which": "bulk",
+      "what": "count of visible elements",
+      "url": "https://www.cvs.com/shop/vitamins/multivitamins?icid=shop-vitamins-category-lhn-multivitamins",
+      "result": {
+        "visibleElements": 2642
+      }
+    }
+  ],
+  "timeStamp": "3f1uu",
+  "startTime": "2022-06-13T21:29:49",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "bulk",
+      1
+    ]
+  ],
+  "logCount": 177,
+  "logSize": 28879,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-06-13T21:30:17",
+  "elapsedSeconds": 27
+}
