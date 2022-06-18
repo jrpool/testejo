@@ -1,37 +1,17 @@
 {
-  "id": "cvscart",
+  "id": "tp10",
   "what": "AATT, Alfa, Axe, IBM, Tenon, WAVE, and 16 custom tests",
   "strict": true,
   "commands": [
     {
       "type": "launch",
-      "which": "chromium",
-      "what": "Chrome"
+      "which": "webkit",
+      "what": "used for tests on which chromium fails on some URLs"
     },
     {
       "type": "url",
-      "which": "https://www.target.com/p/multivitamin-gummies-orange-peach-berry-up-up/-/A-86868032?preselect=11710585#lnk=sametab",
-      "what": "Target product page"
-    },
-    {
-      "type": "button",
-      "which": "Show",
-      "what": "Show in-stock stores"
-    },
-    {
-      "type": "button",
-      "which": "Pick",
-      "what": "Pick up here"
-    },
-    {
-      "type": "link",
-      "which": "View cart",
-      "what": "Click the View cart & check out link, which pretends to be a button"
-    },
-    {
-      "type": "wait",
-      "what": "title",
-      "which": "Cart"
+      "which": "https://*",
+      "what": "any page"
     },
     {
       "type": "tenonRequest",
@@ -53,6 +33,16 @@
       "withItems": true,
       "rules": [],
       "what": "Axe core, all rules"
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "used for most tests"
+    },
+    {
+      "type": "url",
+      "which": "https://*",
+      "what": "any page"
     },
     {
       "type": "test",

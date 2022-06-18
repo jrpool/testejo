@@ -1,0 +1,23 @@
+{
+  "id": "htmlcs",
+  "what": "hover test",
+  "strict": true,
+  "commands": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.deque.com/",
+      "what": "Deque home page"
+    },
+    {
+      "type": "test",
+      "which": "hover",
+      "withItems": true,
+      "what": "hover"
+    }
+  ]
+}

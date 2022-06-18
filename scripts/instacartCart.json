@@ -1,32 +1,43 @@
 {
-  "id": "cvscart",
-  "what": "CVS cart",
+  "id": "instacartcart",
+  "what": "Instacart cart",
   "strict": true,
   "commands": [
     {
       "type": "launch",
       "which": "webkit",
-      "what": "WebKit browser (chromium fails on this URL)"
+      "what": "Webkit browser"
     },
     {
       "type": "url",
-      "which": "https://www.cvs.com/shop/cvs-health-spectravite-ultra-men-s-health-senior-multivitamin-tablets-prodid-892776",
-      "what": "CVS cart"
+      "which": "https://www.instacart.com/store/cvs/storefront",
+      "what": "Instacart cart"
     },
     {
       "type": "button",
-      "which": "Basket",
-      "what": "Add default type and quantity to cart"
+      "which": "Add 1 item CVS Pharmacy Rigid Tip",
+      "index": 0,
+      "what": "product"
+    },
+    {
+      "type": "button",
+      "which": "Close modal",
+      "what": "Close login dialog"
+    },
+    {
+      "type": "button",
+      "which": "View Cart",
+      "what": "View-cart button"
     },
     {
       "type": "link",
-      "which": "Checkout",
-      "what": "Click the Checkout link, which pretends to be a button"
+      "which": "Go to Checkout",
+      "what": "Checkout link pretending to be a button"
     },
     {
       "type": "wait",
       "what": "body",
-      "which": "bisphenol"
+      "which": "temporarily authorized"
     },
     {
       "type": "test",

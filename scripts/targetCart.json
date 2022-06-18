@@ -1,6 +1,6 @@
 {
-  "id": "cvscart",
-  "what": "AATT, Alfa, Axe, IBM, Tenon, WAVE, and 16 custom tests",
+  "id": "targetcart2",
+  "what": "Target cart",
   "strict": true,
   "commands": [
     {
@@ -10,13 +10,13 @@
     },
     {
       "type": "url",
-      "which": "https://www.target.com/p/multivitamin-gummies-orange-peach-berry-up-up/-/A-86868032?preselect=11710585#lnk=sametab",
-      "what": "Target product page"
+      "which": "https://www.target.com/p/bentgo-prep-1-compartment-container-10pk/-/A-86177655?preselect=86109800#lnk=sametab",
+      "what": "Target product"
     },
     {
       "type": "button",
       "which": "Add to cart",
-      "what": "Add to cart"
+      "what": "Pick up here"
     },
     {
       "type": "link",
@@ -25,14 +25,8 @@
     },
     {
       "type": "wait",
-      "what": "title",
-      "which": "Cart"
-    },
-    {
-      "type": "tenonRequest",
-      "id": "a",
-      "withNewContent": true,
-      "what": "Tenon API version 2 test request"
+      "what": "body",
+      "which": "Cart #"
     },
     {
       "type": "test",
@@ -134,30 +128,20 @@
     {
       "type": "test",
       "which": "ibm",
+      "withNewContent": false,
       "withItems": true,
       "what": "IBM Accessibility Checker"
     },
     {
       "type": "test",
       "which": "aatt",
+      "waitLong": true,
       "what": "AATT with HTML CodeSniffer"
     },
     {
       "type": "test",
       "which": "alfa",
       "what": "Siteimprove alfa"
-    },
-    {
-      "type": "test",
-      "which": "wave",
-      "reportType": 4,
-      "what": "WAVE, report-type 4"
-    },
-    {
-      "type": "test",
-      "which": "tenon",
-      "id": "a",
-      "what": "Tenon API version 2 result retrieval"
     }
   ]
 }

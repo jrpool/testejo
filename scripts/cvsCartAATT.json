@@ -1,0 +1,38 @@
+{
+  "id": "cvscart",
+  "what": "CVS cart",
+  "strict": true,
+  "commands": [
+    {
+      "type": "launch",
+      "which": "webkit",
+      "what": "WebKit browser (chromium fails on this URL)"
+    },
+    {
+      "type": "url",
+      "which": "https://www.cvs.com/shop/cvs-health-aspirin-325-mg-coated-tablets-regular-strength-prodid-152314",
+      "what": "CVS product"
+    },
+    {
+      "type": "button",
+      "which": "Basket",
+      "what": "Add default type and quantity to cart"
+    },
+    {
+      "type": "link",
+      "which": "Checkout",
+      "what": "Click the Checkout link, which pretends to be a button"
+    },
+    {
+      "type": "wait",
+      "what": "body",
+      "which": "bisphenol"
+    },
+    {
+      "type": "test",
+      "which": "aatt",
+      "waitLong": true,
+      "what": "AATT with HTML CodeSniffer"
+    }
+  ]
+}
