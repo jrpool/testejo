@@ -1,6 +1,6 @@
 {
-  "id": "htmlcs",
-  "what": "hover test",
+  "id": "stylediff",
+  "what": "styleDiff test",
   "strict": true,
   "commands": [
     {
@@ -10,14 +10,14 @@
     },
     {
       "type": "url",
-      "which": "https://www.deque.com/",
-      "what": "Deque home page"
+      "which": "https://webaim.org/",
+      "what": "WebAIM home page"
     },
     {
       "type": "test",
-      "which": "hover",
+      "which": "styleDiff",
       "withItems": true,
-      "what": "hover"
+      "what": "styleDiff"
     }
   ]
 }
