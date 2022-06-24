@@ -1,6 +1,6 @@
 {
-  "id": "axe",
-  "what": "axe test",
+  "id": "tabNav",
+  "what": "tabNav test",
   "strict": true,
   "commands": [
     {
@@ -10,15 +10,14 @@
     },
     {
       "type": "url",
-      "which": "https://www.bartelldrugs.com/",
+      "which": "https://www.hrw.org/",
       "what": "Page"
     },
     {
       "type": "test",
-      "which": "axe",
-      "detailLevel": 0,
-      "rules": [],
-      "what": "axe"
+      "which": "tabNav",
+      "withItems": true,
+      "what": "tabNav"
     }
   ]
 }

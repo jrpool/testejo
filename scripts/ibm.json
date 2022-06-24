@@ -1,0 +1,24 @@
+{
+  "id": "ibm",
+  "what": "IBM",
+  "strict": true,
+  "commands": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.example.com",
+      "what": "any page"
+    },
+    {
+      "type": "test",
+      "which": "ibm",
+      "withItems": true,
+      "withNewContent": true,
+      "what": "IBM Accessibility Checker, with page content and again with URL"
+    }
+  ]
+}

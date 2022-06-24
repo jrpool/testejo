@@ -24,7 +24,7 @@
       "which": "motion",
       "what": "spontaneous change of content; requires webkit",
       "delay": 2500,
-      "interval": 2000,
+      "interval": 2500,
       "count": 5
     },
     {

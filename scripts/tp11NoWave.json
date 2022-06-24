@@ -10,7 +10,7 @@
     },
     {
       "type": "url",
-      "which": "https://www.example.com",
+      "which": "https://www.hrw.org",
       "what": "any page"
     },
     {
@@ -24,7 +24,7 @@
       "which": "motion",
       "what": "spontaneous change of content; requires webkit",
       "delay": 2500,
-      "interval": 2000,
+      "interval": 2500,
       "count": 5
     },
     {
@@ -34,7 +34,7 @@
     },
     {
       "type": "url",
-      "which": "https://www.example.com",
+      "which": "https://www.hrw.org",
       "what": "any page"
     },
     {
