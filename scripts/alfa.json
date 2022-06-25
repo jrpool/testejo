@@ -1,12 +1,12 @@
 {
-  "id": "ibm",
-  "what": "IBM",
+  "id": "alfa",
+  "what": "alfa",
   "strict": true,
   "commands": [
     {
       "type": "launch",
       "which": "chromium",
-      "what": "Webkit browser"
+      "what": "Chromium browser"
     },
     {
       "type": "url",
@@ -15,10 +15,8 @@
     },
     {
       "type": "test",
-      "which": "ibm",
-      "withItems": true,
-      "withNewContent": true,
-      "what": "IBM Accessibility Checker, with page content"
+      "which": "alfa",
+      "what": "alfa"
     }
   ]
 }
