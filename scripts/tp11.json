@@ -56,7 +56,7 @@
     {
       "type": "test",
       "which": "focInd",
-      "revealAll": true,
+      "revealAll": false,
       "allowedDelay": 250,
       "withItems": true,
       "what": "focus indicators"
@@ -70,9 +70,11 @@
     {
       "type": "test",
       "which": "hover",
-      "sampleSize": 30,
+      "headSize": 20,
+      "headSampleSize": 20,
+      "tailSampleSize": 15,
       "withItems": true,
-      "what": "hover-triggered content changes"
+      "what": "hover impacts"
     },
     {
       "type": "test",

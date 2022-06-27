@@ -70,7 +70,7 @@
     {
       "type": "test",
       "which": "hover",
-      "sampleSize": 30,
+      "sampleSize": 60,
       "withItems": true,
       "what": "hover-triggered content changes"
     },
