@@ -12790,7 +12790,7 @@
       "groups": {
         "visibleBulk": {
           "testaro": {
-            "bulk": 0
+            "bulk": 1
           }
         },
         "activeEmbedding": {
@@ -12841,7 +12841,41 @@
             "zIndex": 14
           }
         },
-        "contrastRisk": {
+        "contrastRiskAAA": {
+          "aatt": {
+            "w:G17": 2
+          }
+        },
+        "scrollRisk": {
+          "aatt": {
+            "w:C31+C32+C33+C38+G206+SCR34": 1
+          }
+        },
+        "newWindowSurpriseRisk": {
+          "aatt": {
+            "w:H83": 3
+          }
+        },
+        "decorativeImageRisk": {
+          "aatt": {
+            "w:H67": 1
+          }
+        },
+        "h1Missing": {
+          "aatt": {
+            "e:G141": 4
+          },
+          "alfa": {
+            "r61": 2
+          },
+          "axe": {
+            "page-has-heading-one": 1
+          },
+          "wave": {
+            "a:h1_missing": 1
+          }
+        },
+        "contrastRiskAA": {
           "aatt": {
             "w:F24": 1
           }
@@ -12873,7 +12907,7 @@
         },
         "pseudoListRisk": {
           "aatt": {
-            "w:H48": 0
+            "w:H48": 1
           }
         },
         "nameValue": {
@@ -12892,6 +12926,9 @@
         "focusableHidden": {
           "alfa": {
             "r17": 24
+          },
+          "axe": {
+            "aria-hidden-focus": 6
           }
         },
         "duplicateID": {
@@ -12902,9 +12939,19 @@
             "duplicate-id": 1
           }
         },
+        "imageTextBad": {
+          "alfa": {
+            "r39": 1
+          }
+        },
         "noLeading": {
           "alfa": {
             "r73": 6
+          }
+        },
+        "fontSizeAbsolute": {
+          "alfa": {
+            "r74": 6
           }
         },
         "leadingAbsolute": {
@@ -12912,17 +12959,87 @@
             "r80": 12
           }
         },
-        "h1Missing": {
+        "overflowHidden": {
+          "alfa": {
+            "r83": 4
+          }
+        },
+        "notScrollable": {
+          "alfa": {
+            "r84": 4
+          }
+        },
+        "skipRepeatedContent": {
+          "alfa": {
+            "r87": 1
+          }
+        },
+        "ariaBadAttribute": {
           "axe": {
-            "page-has-heading-one": 1
-          },
-          "wave": {
-            "a:h1_missing": 0
+            "aria-allowed-attr": 6
+          }
+        },
+        "ariaRoleDescriptionBad": {
+          "axe": {
+            "aria-roledescription": 1
+          }
+        },
+        "frameContentRisk": {
+          "axe": {
+            "frame-tested": 1
+          }
+        },
+        "hiddenContentRisk": {
+          "axe": {
+            "hidden-content": 1
+          }
+        },
+        "linkConfusionRisk": {
+          "axe": {
+            "identical-links-same-purpose": 1
+          }
+        },
+        "videoCaptionMissing": {
+          "axe": {
+            "video-caption": 1
+          }
+        },
+        "focusableRole": {
+          "axe": {
+            "focus-order-semantics": 2
+          }
+        },
+        "iframeTitleBad": {
+          "axe": {
+            "frame-title-unique": 6
+          }
+        },
+        "mainTopLandmark": {
+          "axe": {
+            "landmark-main-is-top-level": 1
+          }
+        },
+        "multipleMain": {
+          "axe": {
+            "landmark-no-duplicate-main": 1
+          }
+        },
+        "horizontalScrolling": {
+          "tenon": {
+            "28": 3
           }
         },
         "linkTextsSame": {
           "tenon": {
             "98": 4
+          }
+        },
+        "fontSmall": {
+          "tenon": {
+            "134": 2
+          },
+          "wave": {
+            "a:text_small": 1
           }
         },
         "leadingClipsText": {
@@ -12950,61 +13067,45 @@
             "218": 33
           }
         },
+        "imageTextRisk": {
+          "wave": {
+            "a:alt_suspicious": 1
+          }
+        },
+        "pseudoHeadingRisk": {
+          "wave": {
+            "a:heading_possible": 1
+          }
+        },
         "linkPair": {
           "wave": {
             "a:link_redundant": 2
           }
+        },
+        "noScriptRisk": {
+          "wave": {
+            "a:noscript": 1
+          }
+        },
+        "titleRedundant": {
+          "wave": {
+            "a:title_redundant": 5
+          }
+        },
+        "videoCaptionRisk": {
+          "wave": {
+            "a:youtube_video": 1
+          }
         }
       },
-      "solos": {
-        "aatt": {
-          "w:G17": 17,
-          "w:C31+C32+C33+C38+G206+SCR34": 3,
-          "w:H83": 11,
-          "w:H67": 1,
-          "e:G141": 8
-        },
-        "alfa": {
-          "r39": 1,
-          "r61": 4,
-          "r74": 12,
-          "r83": 4,
-          "r84": 4,
-          "r87": 1
-        },
-        "axe": {
-          "aria-allowed-attr": 6,
-          "aria-hidden-focus": 6,
-          "aria-roledescription": 1,
-          "frame-tested": 3,
-          "hidden-content": 0,
-          "identical-links-same-purpose": 0,
-          "video-caption": 1,
-          "focus-order-semantics": 2,
-          "frame-title-unique": 6,
-          "landmark-main-is-top-level": 2,
-          "landmark-no-duplicate-main": 2
-        },
-        "tenon": {
-          "28": 4,
-          "134": 3
-        },
-        "wave": {
-          "a:alt_suspicious": 2,
-          "a:heading_possible": 2,
-          "a:noscript": 1,
-          "a:text_small": 1,
-          "a:title_redundant": 19,
-          "a:youtube_video": 1
-        }
-      }
+      "solos": {}
     },
     "preventionScores": {},
     "summary": {
-      "total": 1300,
+      "total": 1163,
       "log": 410,
       "preventions": 0,
-      "solos": 256,
+      "solos": 0,
       "groups": [
         {
           "groupName": "focusableOperable",
@@ -13044,7 +13145,7 @@
         },
         {
           "groupName": "focusableHidden",
-          "score": 26
+          "score": 28
         },
         {
           "groupName": "contrastAAA",
@@ -13071,7 +13172,23 @@
           "score": 14
         },
         {
+          "groupName": "h1Missing",
+          "score": 8
+        },
+        {
           "groupName": "noLeading",
+          "score": 8
+        },
+        {
+          "groupName": "fontSizeAbsolute",
+          "score": 8
+        },
+        {
+          "groupName": "ariaBadAttribute",
+          "score": 8
+        },
+        {
+          "groupName": "iframeTitleBad",
           "score": 8
         },
         {
@@ -13087,8 +13204,40 @@
           "score": 7
         },
         {
+          "groupName": "titleRedundant",
+          "score": 7
+        },
+        {
+          "groupName": "overflowHidden",
+          "score": 6
+        },
+        {
+          "groupName": "notScrollable",
+          "score": 6
+        },
+        {
           "groupName": "linkTextsSame",
           "score": 6
+        },
+        {
+          "groupName": "newWindowSurpriseRisk",
+          "score": 5
+        },
+        {
+          "groupName": "horizontalScrolling",
+          "score": 5
+        },
+        {
+          "groupName": "contrastRiskAAA",
+          "score": 4
+        },
+        {
+          "groupName": "focusableRole",
+          "score": 4
+        },
+        {
+          "groupName": "fontSmall",
+          "score": 4
         },
         {
           "groupName": "allCaps",
@@ -13099,11 +13248,59 @@
           "score": 4
         },
         {
-          "groupName": "contrastRisk",
+          "groupName": "visibleBulk",
           "score": 3
         },
         {
-          "groupName": "h1Missing",
+          "groupName": "scrollRisk",
+          "score": 3
+        },
+        {
+          "groupName": "decorativeImageRisk",
+          "score": 3
+        },
+        {
+          "groupName": "contrastRiskAA",
+          "score": 3
+        },
+        {
+          "groupName": "pseudoListRisk",
+          "score": 3
+        },
+        {
+          "groupName": "imageTextBad",
+          "score": 3
+        },
+        {
+          "groupName": "skipRepeatedContent",
+          "score": 3
+        },
+        {
+          "groupName": "ariaRoleDescriptionBad",
+          "score": 3
+        },
+        {
+          "groupName": "frameContentRisk",
+          "score": 3
+        },
+        {
+          "groupName": "hiddenContentRisk",
+          "score": 3
+        },
+        {
+          "groupName": "linkConfusionRisk",
+          "score": 3
+        },
+        {
+          "groupName": "videoCaptionMissing",
+          "score": 3
+        },
+        {
+          "groupName": "mainTopLandmark",
+          "score": 3
+        },
+        {
+          "groupName": "multipleMain",
           "score": 3
         },
         {
@@ -13111,12 +13308,20 @@
           "score": 3
         },
         {
-          "groupName": "visibleBulk",
-          "score": 2
+          "groupName": "imageTextRisk",
+          "score": 3
         },
         {
-          "groupName": "pseudoListRisk",
-          "score": 2
+          "groupName": "pseudoHeadingRisk",
+          "score": 3
+        },
+        {
+          "groupName": "noScriptRisk",
+          "score": 3
+        },
+        {
+          "groupName": "videoCaptionRisk",
+          "score": 3
         }
       ]
     }

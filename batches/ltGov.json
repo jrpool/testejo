@@ -1,0 +1,26 @@
+{
+  "id": "ltgov",
+  "what": "Candidates for Lieutenant Governor of New York, June 2022",
+  "hosts": [
+    {
+      "id": "archila",
+      "which": "https://www.anamariaforny.com/",
+      "what": "Ana Maria Archila"
+    },
+    {
+      "id": "esposito",
+      "which": "https://zeldinfornewyork.com/meetalison/",
+      "what": "Alison Esposito"
+    },
+    {
+      "id": "reyna",
+      "which": "https://suozziforny.com/meet-diana-reyna/",
+      "what": "Diana Reyna"
+    },
+    {
+      "id": "delgado",
+      "which": "https://www.delgadoforny.com/",
+      "what": "Antonio Delgado"
+    }
+  ]
+}
