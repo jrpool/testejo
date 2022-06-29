@@ -1,0 +1,11 @@
+{
+  "id": "aattbug",
+  "what": "URLs preventing aatt",
+  "hosts": [
+    {
+      "id": "riteaid",
+      "which": "https://www.riteaid.com/",
+      "what": "Rite Aid"
+    }
+  ]
+}

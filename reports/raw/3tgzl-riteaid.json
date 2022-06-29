@@ -1,0 +1,86 @@
+{
+  "id": "3tgzl-riteaid",
+  "host": {
+    "id": "riteaid",
+    "which": "https://www.riteaid.com/",
+    "what": "Rite Aid"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-06-29T11:16:40"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-06-29T11:17:02"
+    }
+  ],
+  "script": {
+    "id": "alfa",
+    "what": "Alfa test package",
+    "strict": true,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "used for most tests"
+      },
+      {
+        "type": "url",
+        "which": "https://www.riteaid.com/",
+        "what": "Rite Aid"
+      },
+      {
+        "type": "test",
+        "which": "aatt",
+        "waitlong": true,
+        "tryLimit": 2,
+        "what": "AATT"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "used for most tests"
+    },
+    {
+      "type": "url",
+      "which": "https://www.riteaid.com/",
+      "what": "Rite Aid",
+      "result": "https://www.riteaid.com/"
+    },
+    {
+      "type": "test",
+      "which": "aatt",
+      "waitlong": true,
+      "tryLimit": 2,
+      "what": "AATT with HTML CodeSniffer WCAG 2.1 AA ruleset",
+      "url": "https://www.riteaid.com/",
+      "result": {
+        "prevented": true,
+        "error": "ERROR: Getting AATT report took too long"
+      }
+    }
+  ],
+  "timeStamp": "3tgzl",
+  "startTime": "2022-06-29T11:16:40",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "aatt",
+      12
+    ]
+  ],
+  "logCount": 5,
+  "logSize": 598,
+  "errorLogCount": 4,
+  "errorLogSize": 455,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-06-29T11:17:02",
+  "elapsedSeconds": 21
+}

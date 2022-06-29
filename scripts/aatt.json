@@ -16,7 +16,7 @@
     {
       "type": "test",
       "which": "aatt",
-      "waitlong": true,
+      "waitLong": true,
       "tryLimit": 2,
       "what": "AATT"
     }
