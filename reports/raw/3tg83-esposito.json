@@ -1,0 +1,844 @@
+{
+  "id": "3tg83-esposito",
+  "host": {
+    "id": "esposito",
+    "which": "https://zeldinfornewyork.com/meetalison/",
+    "what": "Alison Esposito"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-06-29T10:43:27"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-06-29T10:43:32"
+    }
+  ],
+  "script": {
+    "id": "alfa",
+    "what": "Alfa test package",
+    "strict": true,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "used for most tests"
+      },
+      {
+        "type": "url",
+        "which": "https://zeldinfornewyork.com/meetalison/",
+        "what": "Alison Esposito"
+      },
+      {
+        "type": "test",
+        "which": "aatt",
+        "waitlong": true,
+        "tryLimit": 2,
+        "what": "AATT"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "used for most tests"
+    },
+    {
+      "type": "url",
+      "which": "https://zeldinfornewyork.com/meetalison/",
+      "what": "Alison Esposito",
+      "result": "https://zeldinfornewyork.com/meetalison/"
+    },
+    {
+      "type": "test",
+      "which": "aatt",
+      "waitlong": true,
+      "tryLimit": 2,
+      "what": "AATT with HTML CodeSniffer WCAG 2.1 AA ruleset",
+      "url": "https://zeldinfornewyork.com/meetalison/",
+      "result": {
+        "totals": {
+          "errors": 44,
+          "warnings": 30
+        },
+        "report": [
+          {
+            "type": "error",
+            "msg": "Iframe element requires a non-empty title attribute that identifies the frame.",
+            "code": "&lt;iframe height=\"0\"\nwidth=\"0\" style=\"display:\nnone; visibility: hidden;\"\nsrc=\"//8866039.fls.doubleclick\nnet/activityi;src=8866039;type\n01;cat=zeldi0;ord=479166524644\ngtm=2wg6r0;auiddc=1940330468.1\n56499409;~oref=https%3A%2F%2Fz\nldinfornewyork.com%2Fmeetaliso\n%2F?\"&gt;&lt;/iframe&gt;",
+            "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+            "techniques": [
+              "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H64\" target=\"_blank\">H64</a>"
+            ],
+            "id": "H64"
+          },
+          {
+            "type": "warning",
+            "msg": "Check that this link's link text contains information indicating that the link will open in a new window.",
+            "code": "&lt;a class=\"btn btn-primary\"\nhref=\"https://secure.winred.co\n/zeldin-for-new-york/donate?ut\n_source=website\"\ntarget=\"_blank\"&gt;DONATE&lt;/\n&gt;",
+            "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#understandable\" target=\"_blank\">Understandable</a>",
+            "techniques": [
+              "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H83\" target=\"_blank\">H83</a>"
+            ],
+            "id": "H83"
+          },
+          {
+            "type": "error",
+            "msg": "This button element does not have a name available to an accessibility API. Valid names are: title , element content, aria-label , aria-labelledby .",
+            "code": "&lt;button type=\"button\"\nclass=\"navbar-toggle\"\ndata-toggle=\"collapse\"\ndata-target=\"#mobile-toggle\"&g\n;\n                &lt;span\nclass=\"icon-bar\"&gt;&lt;/span&\nt;\n  ...&lt;/button&gt;",
+            "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+            "techniques": [
+              "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+            ],
+            "id": "H91"
+          },
+          {
+            "type": "warning",
+            "msg": "Check that this link's link text contains information indicating that the link will open in a new window.",
+            "code": "&lt;a\nhref=\"https://secure.winred.co\n/zeldin-for-new-york/donate?ut\n_source=website\"\ntarget=\"_blank\"&gt;DONATE&lt;/\n&gt;",
+            "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#understandable\" target=\"_blank\">Understandable</a>",
+            "techniques": [
+              "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H83\" target=\"_blank\">H83</a>"
+            ],
+            "id": "H83"
+          },
+          {
+            "type": "warning",
+            "msg": "Check that this link's link text contains information indicating that the link will open in a new window.",
+            "code": "&lt;a title=\"SHOP\"\ntarget=\"_blank\"\nhref=\"https://secure.winred.co\n/zeldin-for-new-york/storefron\n/\"&gt;SHOP&lt;/a&gt;",
+            "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#understandable\" target=\"_blank\">Understandable</a>",
+            "techniques": [
+              "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H83\" target=\"_blank\">H83</a>"
+            ],
+            "id": "H83"
+          },
+          {
+            "type": "warning",
+            "msg": "Anchor element found with link content, but no href, ID or name attribute has been supplied.",
+            "code": "&lt;a\ntitle=\"ISSUES\"&gt;ISSUES\n&lt;span class=\"fa\nfa-angle-down\"&gt;&lt;/span&gt\n&lt;/a&gt;",
+            "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+            "techniques": [
+              "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+            ],
+            "id": "H91"
+          },
+          {
+            "type": "error",
+            "msg": "This button element does not have a name available to an accessibility API. Valid names are: title , element content, aria-label , aria-labelledby .",
+            "code": "&lt;button\nclass=\"dropdown-menu-trigger\"\ntype=\"button\"\ndata-toggle=\"collapse\"\ndata-target=\".dropdown-menu-53\n1\" aria-expanded=\"false\"&gt;\n                &lt;i\nclass=\"fa\nfa-angle-right\"&gt;&lt;/i&gt;.\n.&lt;/button&gt;",
+            "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+            "techniques": [
+              "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+            ],
+            "id": "H91"
+          },
+          {
+            "type": "warning",
+            "msg": "Check that this link's link text contains information indicating that the link will open in a new window.",
+            "code": "&lt;a title=\"SHOP\"\ntarget=\"_blank\"\nhref=\"https://secure.winred.co\n/zeldin-for-new-york/storefron\n/\"&gt;SHOP&lt;/a&gt;",
+            "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#understandable\" target=\"_blank\">Understandable</a>",
+            "techniques": [
+              "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H83\" target=\"_blank\">H83</a>"
+            ],
+            "id": "H83"
+          },
+          {
+            "type": "warning",
+            "msg": "Anchor element found with link content, but no href, ID or name attribute has been supplied.",
+            "code": "&lt;a\ntitle=\"ISSUES\"&gt;ISSUES&lt;/a\ngt;",
+            "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+            "techniques": [
+              "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+            ],
+            "id": "H91"
+          },
+          {
+            "type": "error",
+            "msg": "This button element does not have a name available to an accessibility API. Valid names are: title , element content, aria-label , aria-labelledby .",
+            "code": "&lt;button\nclass=\"dropdown-menu-trigger\"\ntype=\"button\"\ndata-toggle=\"collapse\"\ndata-target=\".dropdown-menu-66\n9\" aria-expanded=\"false\"&gt;\n                &lt;i\nclass=\"fa\nfa-angle-right\"&gt;&lt;/i&gt;.\n.&lt;/button&gt;",
+            "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+            "techniques": [
+              "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+            ],
+            "id": "H91"
+          },
+          {
+            "type": "warning",
+            "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+            "code": "&lt;div\nclass=\"page-header-section\"\nstyle=\"background-image:url(ht\nps://zeldinfornewyork.com/wp-c\nntent/uploads/2022/03/Image-fr\nm-iOS-2-scaled-e1648508762883.\npg);background-color:#1e73be;\"\nrole=\"banner\"&gt;\n    \n    &lt;div\nclass=\"container\"&gt;\n        &lt;div\ncla...&lt;/div&gt;",
+            "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+            "techniques": [
+              "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+            ],
+            "id": "F24"
+          },
+          {
+            "type": "warning",
+            "msg": "Check that this element has an inherited background colour or image to complement the corresponding inline foreground colour.",
+            "code": "&lt;h1 style=\"color: #ea2839;\ntext-align: center;\"&gt;MEET\nALISON&lt;/h1&gt;",
+            "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+            "techniques": [
+              "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+            ],
+            "id": "F24"
+          },
+          {
+            "type": "error",
+            "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 4.32:1. Recommendation:  change text colour to #282828.",
+            "code": "&lt;h1 style=\"color: #ea2839;\ntext-align: center;\"&gt;MEET\nALISON&lt;/h1&gt;",
+            "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+            "techniques": [
+              "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+            ],
+            "id": "G18"
+          },
+          {
+            "type": "warning",
+            "msg": "Check that this element has an inherited background colour or image to complement the corresponding inline foreground colour.",
+            "code": "&lt;h2 style=\"color: #000000;\ntext-align:\ncenter;\"&gt;&lt;em&gt;for\nLieutenant\nGovernor&lt;/em&gt;&lt;/h2&gt;",
+            "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+            "techniques": [
+              "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+            ],
+            "id": "F24"
+          },
+          {
+            "type": "error",
+            "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 7:1, but text in this element has a contrast ratio of 4.32:1. Recommendation:  change text colour to #282828.",
+            "code": "&lt;a\nhref=\"https://www.facebook.com\nEspositoforNY/\" target=\"_\"\nrel=\"noopener\"&gt;&lt;i\nclass=\"fa\nfa-facebook-square\"&gt;&lt;/i&\nt; facebook.com...&lt;/a&gt;",
+            "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+            "techniques": [
+              "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G17\" target=\"_blank\">G17</a>"
+            ],
+            "id": "G17"
+          },
+          {
+            "type": "error",
+            "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 7:1, but text in this element has a contrast ratio of 4.32:1. Recommendation:  change text colour to #282828.",
+            "code": "&lt;a\nhref=\"https://twitter.com/Espo\nitoforNY/\" target=\"_\"\nrel=\"noopener\"&gt;&lt;i\nclass=\"fa\nfa-twitter\"&gt;&lt;/i&gt;\ntwitter.com/Esposito...&lt;/a&\nt;",
+            "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+            "techniques": [
+              "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G17\" target=\"_blank\">G17</a>"
+            ],
+            "id": "G17"
+          },
+          {
+            "type": "warning",
+            "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+            "code": "&lt;img width=\"1024\"\nheight=\"768\"\nsrc=\"https://zeldinfornewyork.\nom/wp-content/uploads/2022/04/\nMG_7548-1024x768.jpg\"\nclass=\"attachment-large\"\nalt=\"\" loading=\"lazy\"\nsrcset=\"https://zeldinfornewyo\nk.com/wp-content/uploads/2022/\n4/IMG_7548-1024x768.jpg\n1024w,\nhttps://zeldinfornewyork.com/w\n-content/uploads/2022/04/IMG_7\n48-300x225.jpg 300w,\nhttps://zeldinfornewyork.com/w\n-content/uploads/2022/04/IMG_7\n48-768x576.jpg 768w,\nhttps://zeldinfornewyork.com/w\n-content/uploads/2022/04/IMG_7\n48-1536x1152.jpg 1536w,\nhttps://zeldinfornewyork.com/w\n-content/uploads/2022/04/IMG_7\n48-2048x1536.jpg 2048w,\nhttps://zeldinfornewyork.com/w\n-content/uploads/2022/04/IMG_7\n48-1140x855.jpg 1140w,\nhttps://zeldinfornewyork.com/w\n-content/uploads/2022/04/IMG_7\n48-127x95.jpg 127w,\nhttps://zeldinfornewyork.com/w\n-content/uploads/2022/04/IMG_7\n48-200x150.jpg 200w\"\nsizes=\"(max-width: 1024px)\n100vw, 1024px\"\ndraggable=\"false\"&gt;",
+            "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+            "techniques": [
+              "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+            ],
+            "id": "H67"
+          },
+          {
+            "type": "warning",
+            "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+            "code": "&lt;img width=\"768\"\nheight=\"1024\"\nsrc=\"https://zeldinfornewyork.\nom/wp-content/uploads/2022/04/\nMG_4749-768x1024.jpg\"\nclass=\"attachment-large\"\nalt=\"\" loading=\"lazy\"\nsrcset=\"https://zeldinfornewyo\nk.com/wp-content/uploads/2022/\n4/IMG_4749-768x1024.jpg 768w,\nhttps://zeldinfornewyork.com/w\n-content/uploads/2022/04/IMG_4\n49-225x300.jpg 225w,\nhttps://zeldinfornewyork.com/w\n-content/uploads/2022/04/IMG_4\n49-1152x1536.jpg 1152w,\nhttps://zeldinfornewyork.com/w\n-content/uploads/2022/04/IMG_4\n49-1536x2048.jpg 1536w,\nhttps://zeldinfornewyork.com/w\n-content/uploads/2022/04/IMG_4\n49-1140x1520.jpg 1140w,\nhttps://zeldinfornewyork.com/w\n-content/uploads/2022/04/IMG_4\n49-71x95.jpg 71w,\nhttps://zeldinfornewyork.com/w\n-content/uploads/2022/04/IMG_4\n49-scaled.jpg 1920w\"\nsizes=\"(max-width: 768px)\n100vw, 768px\"\ndraggable=\"false\"&gt;",
+            "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+            "techniques": [
+              "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+            ],
+            "id": "H67"
+          },
+          {
+            "type": "warning",
+            "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+            "code": "&lt;img width=\"768\"\nheight=\"1024\"\nsrc=\"https://zeldinfornewyork.\nom/wp-content/uploads/2022/04/\nMG_5470-768x1024.jpg\"\nclass=\"attachment-large\"\nalt=\"\" loading=\"lazy\"\nsrcset=\"https://zeldinfornewyo\nk.com/wp-content/uploads/2022/\n4/IMG_5470-768x1024.jpg 768w,\nhttps://zeldinfornewyork.com/w\n-content/uploads/2022/04/IMG_5\n70-225x300.jpg 225w,\nhttps://zeldinfornewyork.com/w\n-content/uploads/2022/04/IMG_5\n70-1152x1536.jpg 1152w,\nhttps://zeldinfornewyork.com/w\n-content/uploads/2022/04/IMG_5\n70-1536x2048.jpg 1536w,\nhttps://zeldinfornewyork.com/w\n-content/uploads/2022/04/IMG_5\n70-1140x1520.jpg 1140w,\nhttps://zeldinfornewyork.com/w\n-content/uploads/2022/04/IMG_5\n70-71x95.jpg 71w,\nhttps://zeldinfornewyork.com/w\n-content/uploads/2022/04/IMG_5\n70-scaled.jpg 1920w\"\nsizes=\"(max-width: 768px)\n100vw, 768px\"\ndraggable=\"false\"&gt;",
+            "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+            "techniques": [
+              "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+            ],
+            "id": "H67"
+          },
+          {
+            "type": "warning",
+            "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+            "code": "&lt;img width=\"960\"\nheight=\"640\"\nsrc=\"https://zeldinfornewyork.\nom/wp-content/uploads/2022/04/\nMG_4711.jpeg\"\nclass=\"attachment-large\"\nalt=\"\" loading=\"lazy\"\nsrcset=\"https://zeldinfornewyo\nk.com/wp-content/uploads/2022/\n4/IMG_4711.jpeg 960w,\nhttps://zeldinfornewyork.com/w\n-content/uploads/2022/04/IMG_4\n11-300x200.jpeg 300w,\nhttps://zeldinfornewyork.com/w\n-content/uploads/2022/04/IMG_4\n11-768x512.jpeg 768w,\nhttps://zeldinfornewyork.com/w\n-content/uploads/2022/04/IMG_4\n11-143x95.jpeg 143w,\nhttps://zeldinfornewyork.com/w\n-content/uploads/2022/04/IMG_4\n11-98x65.jpeg 98w\"\nsizes=\"(max-width: 960px)\n100vw, 960px\"\ndraggable=\"false\"&gt;",
+            "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+            "techniques": [
+              "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+            ],
+            "id": "H67"
+          },
+          {
+            "type": "warning",
+            "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+            "code": "&lt;img width=\"1024\"\nheight=\"768\"\nsrc=\"https://zeldinfornewyork.\nom/wp-content/uploads/2022/04/\nMG_0287-1024x768.jpg\"\nclass=\"attachment-large\"\nalt=\"\" loading=\"lazy\"\nsrcset=\"https://zeldinfornewyo\nk.com/wp-content/uploads/2022/\n4/IMG_0287-1024x768.jpg\n1024w,\nhttps://zeldinfornewyork.com/w\n-content/uploads/2022/04/IMG_0\n87-300x225.jpg 300w,\nhttps://zeldinfornewyork.com/w\n-content/uploads/2022/04/IMG_0\n87-768x576.jpg 768w,\nhttps://zeldinfornewyork.com/w\n-content/uploads/2022/04/IMG_0\n87-1536x1152.jpg 1536w,\nhttps://zeldinfornewyork.com/w\n-content/uploads/2022/04/IMG_0\n87-1140x855.jpg 1140w,\nhttps://zeldinfornewyork.com/w\n-content/uploads/2022/04/IMG_0\n87-127x95.jpg 127w,\nhttps://zeldinfornewyork.com/w\n-content/uploads/2022/04/IMG_0\n87-200x150.jpg 200w,\nhttps://zeldinfornewyork.com/w\n-content/uploads/2022/04/IMG_0\n87.jpg 2048w\"\nsizes=\"(max-width: 1024px)\n100vw, 1024px\"\ndraggable=\"false\"&gt;",
+            "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+            "techniques": [
+              "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+            ],
+            "id": "H67"
+          },
+          {
+            "type": "warning",
+            "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+            "code": "&lt;img width=\"1024\"\nheight=\"1024\"\nsrc=\"https://zeldinfornewyork.\nom/wp-content/uploads/2022/04/\nMG_2028-1024x1024.jpg\"\nclass=\"attachment-large\"\nalt=\"\" loading=\"lazy\"\nsrcset=\"https://zeldinfornewyo\nk.com/wp-content/uploads/2022/\n4/IMG_2028-1024x1024.jpg\n1024w,\nhttps://zeldinfornewyork.com/w\n-content/uploads/2022/04/IMG_2\n28-300x300.jpg 300w,\nhttps://zeldinfornewyork.com/w\n-content/uploads/2022/04/IMG_2\n28-150x150.jpg 150w,\nhttps://zeldinfornewyork.com/w\n-content/uploads/2022/04/IMG_2\n28-768x768.jpg 768w,\nhttps://zeldinfornewyork.com/w\n-content/uploads/2022/04/IMG_2\n28-1536x1536.jpg 1536w,\nhttps://zeldinfornewyork.com/w\n-content/uploads/2022/04/IMG_2\n28-1140x1140.jpg 1140w,\nhttps://zeldinfornewyork.com/w\n-content/uploads/2022/04/IMG_2\n28-80x80.jpg 80w,\nhttps://zeldinfornewyork.com/w\n-content/uploads/2022/04/IMG_2\n28-95x95.jpg 95w,\nhttps://zeldinfornewyork.com/w\n-content/uploads/2022/04/IMG_2\n28-50x50.jpg 50w,\nhttps://zeldinfornewyork.com/w\n-content/uploads/2022/04/IMG_2\n28.jpg 1970w\"\nsizes=\"(max-width: 1024px)\n100vw, 1024px\"\ndraggable=\"false\"&gt;",
+            "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+            "techniques": [
+              "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+            ],
+            "id": "H67"
+          },
+          {
+            "type": "error",
+            "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 7:1, but text in this element has a contrast ratio of NaN:1.",
+            "code": "&lt;a\nclass=\"flex-active\"&gt;1&lt;/a\ngt;",
+            "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+            "techniques": [
+              "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G17\" target=\"_blank\">G17</a>"
+            ],
+            "id": "G17"
+          },
+          {
+            "type": "warning",
+            "msg": "Anchor element found with link content, but no href, ID or name attribute has been supplied.",
+            "code": "&lt;a\nclass=\"flex-active\"&gt;1&lt;/a\ngt;",
+            "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+            "techniques": [
+              "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+            ],
+            "id": "H91"
+          },
+          {
+            "type": "error",
+            "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 7:1, but text in this element has a contrast ratio of NaN:1.",
+            "code": "&lt;a&gt;2&lt;/a&gt;",
+            "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+            "techniques": [
+              "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G17\" target=\"_blank\">G17</a>"
+            ],
+            "id": "G17"
+          },
+          {
+            "type": "warning",
+            "msg": "Anchor element found with link content, but no href, ID or name attribute has been supplied.",
+            "code": "&lt;a&gt;2&lt;/a&gt;",
+            "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+            "techniques": [
+              "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+            ],
+            "id": "H91"
+          },
+          {
+            "type": "error",
+            "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 7:1, but text in this element has a contrast ratio of NaN:1.",
+            "code": "&lt;a&gt;3&lt;/a&gt;",
+            "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+            "techniques": [
+              "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G17\" target=\"_blank\">G17</a>"
+            ],
+            "id": "G17"
+          },
+          {
+            "type": "warning",
+            "msg": "Anchor element found with link content, but no href, ID or name attribute has been supplied.",
+            "code": "&lt;a&gt;3&lt;/a&gt;",
+            "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+            "techniques": [
+              "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+            ],
+            "id": "H91"
+          },
+          {
+            "type": "error",
+            "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 7:1, but text in this element has a contrast ratio of NaN:1.",
+            "code": "&lt;a&gt;4&lt;/a&gt;",
+            "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+            "techniques": [
+              "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G17\" target=\"_blank\">G17</a>"
+            ],
+            "id": "G17"
+          },
+          {
+            "type": "warning",
+            "msg": "Anchor element found with link content, but no href, ID or name attribute has been supplied.",
+            "code": "&lt;a&gt;4&lt;/a&gt;",
+            "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+            "techniques": [
+              "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+            ],
+            "id": "H91"
+          },
+          {
+            "type": "error",
+            "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 7:1, but text in this element has a contrast ratio of NaN:1.",
+            "code": "&lt;a&gt;5&lt;/a&gt;",
+            "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+            "techniques": [
+              "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G17\" target=\"_blank\">G17</a>"
+            ],
+            "id": "G17"
+          },
+          {
+            "type": "warning",
+            "msg": "Anchor element found with link content, but no href, ID or name attribute has been supplied.",
+            "code": "&lt;a&gt;5&lt;/a&gt;",
+            "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+            "techniques": [
+              "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+            ],
+            "id": "H91"
+          },
+          {
+            "type": "error",
+            "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 7:1, but text in this element has a contrast ratio of NaN:1.",
+            "code": "&lt;a&gt;6&lt;/a&gt;",
+            "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+            "techniques": [
+              "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G17\" target=\"_blank\">G17</a>"
+            ],
+            "id": "G17"
+          },
+          {
+            "type": "warning",
+            "msg": "Anchor element found with link content, but no href, ID or name attribute has been supplied.",
+            "code": "&lt;a&gt;6&lt;/a&gt;",
+            "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+            "techniques": [
+              "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+            ],
+            "id": "H91"
+          },
+          {
+            "type": "error",
+            "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 7:1, but text in this element has a contrast ratio of NaN:1.",
+            "code": "&lt;a class=\"flex-prev\"\nhref=\"#\"&gt;Previous&lt;/a&gt;",
+            "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+            "techniques": [
+              "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G17\" target=\"_blank\">G17</a>"
+            ],
+            "id": "G17"
+          },
+          {
+            "type": "error",
+            "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 7:1, but text in this element has a contrast ratio of NaN:1.",
+            "code": "&lt;a class=\"flex-next\"\nhref=\"#\"&gt;Next&lt;/a&gt;",
+            "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+            "techniques": [
+              "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G17\" target=\"_blank\">G17</a>"
+            ],
+            "id": "G17"
+          },
+          {
+            "type": "error",
+            "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 7:1, but text in this element has a contrast ratio of 3.64:1. Recommendation:  change text colour to #fff.",
+            "code": "&lt;h3\nclass=\"widget-title\"&gt;SIGN\nUP FOR ALERTS&lt;/h3&gt;",
+            "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+            "techniques": [
+              "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G17\" target=\"_blank\">G17</a>"
+            ],
+            "id": "G17"
+          },
+          {
+            "type": "warning",
+            "msg": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 7:1.",
+            "code": "&lt;label\nclass=\"gfield_label\"\nfor=\"input_99_1\"&gt;Phone&lt;/\nabel&gt;",
+            "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+            "techniques": [
+              "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G17\" target=\"_blank\">G17</a>"
+            ],
+            "id": "G17"
+          },
+          {
+            "type": "error",
+            "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 7:1, but text in this element has a contrast ratio of 3.64:1. Recommendation:  change text colour to #fff.",
+            "code": "&lt;h3\nclass=\"widget-title\"&gt;LATEST\nPOSTS&lt;/h3&gt;",
+            "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+            "techniques": [
+              "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G17\" target=\"_blank\">G17</a>"
+            ],
+            "id": "G17"
+          },
+          {
+            "type": "error",
+            "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 7:1, but text in this element has a contrast ratio of 3.64:1. Recommendation:  change text colour to #fff.",
+            "code": "&lt;h3\nclass=\"widget-title\"&gt;MENU&l\n;/h3&gt;",
+            "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+            "techniques": [
+              "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G17\" target=\"_blank\">G17</a>"
+            ],
+            "id": "G17"
+          },
+          {
+            "type": "warning",
+            "msg": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+            "code": "&lt;div class=\"copyright\"&gt;\n                             \n                  \n...&lt;/div&gt;",
+            "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+            "techniques": [
+              "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H48\" target=\"_blank\">H48</a>"
+            ],
+            "id": "H48"
+          },
+          {
+            "type": "error",
+            "msg": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+            "code": "&lt;a href=\"#\"\ntarget=\"_blank\"&gt;&lt;i\nclass=\"fa\nfa-facebook\"&gt;&lt;/i&gt;&lt;\na&gt;",
+            "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+            "techniques": [
+              "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+            ],
+            "id": "H91"
+          },
+          {
+            "type": "warning",
+            "msg": "Check that this link's link text contains information indicating that the link will open in a new window.",
+            "code": "&lt;a href=\"#\"\ntarget=\"_blank\"&gt;&lt;i\nclass=\"fa\nfa-facebook\"&gt;&lt;/i&gt;&lt;\na&gt;",
+            "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#understandable\" target=\"_blank\">Understandable</a>",
+            "techniques": [
+              "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H83\" target=\"_blank\">H83</a>"
+            ],
+            "id": "H83"
+          },
+          {
+            "type": "error",
+            "msg": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+            "code": "&lt;a href=\"#\"\ntarget=\"_blank\"&gt;&lt;i\nclass=\"fa\nfa-twitter\"&gt;&lt;/i&gt;&lt;/\n&gt;",
+            "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+            "techniques": [
+              "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+            ],
+            "id": "H91"
+          },
+          {
+            "type": "warning",
+            "msg": "Check that this link's link text contains information indicating that the link will open in a new window.",
+            "code": "&lt;a href=\"#\"\ntarget=\"_blank\"&gt;&lt;i\nclass=\"fa\nfa-twitter\"&gt;&lt;/i&gt;&lt;/\n&gt;",
+            "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#understandable\" target=\"_blank\">Understandable</a>",
+            "techniques": [
+              "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H83\" target=\"_blank\">H83</a>"
+            ],
+            "id": "H83"
+          },
+          {
+            "type": "error",
+            "msg": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+            "code": "&lt;a href=\"#\"\ntarget=\"_blank\"&gt;&lt;i\nclass=\"fa\nfa-google-plus\"&gt;&lt;/i&gt;&\nt;/a&gt;",
+            "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+            "techniques": [
+              "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+            ],
+            "id": "H91"
+          },
+          {
+            "type": "warning",
+            "msg": "Check that this link's link text contains information indicating that the link will open in a new window.",
+            "code": "&lt;a href=\"#\"\ntarget=\"_blank\"&gt;&lt;i\nclass=\"fa\nfa-google-plus\"&gt;&lt;/i&gt;&\nt;/a&gt;",
+            "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#understandable\" target=\"_blank\">Understandable</a>",
+            "techniques": [
+              "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H83\" target=\"_blank\">H83</a>"
+            ],
+            "id": "H83"
+          },
+          {
+            "type": "error",
+            "msg": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+            "code": "&lt;a href=\"#\"\ntarget=\"_blank\"&gt;&lt;i\nclass=\"fa\nfa-pinterest\"&gt;&lt;/i&gt;&lt\n/a&gt;",
+            "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+            "techniques": [
+              "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+            ],
+            "id": "H91"
+          },
+          {
+            "type": "warning",
+            "msg": "Check that this link's link text contains information indicating that the link will open in a new window.",
+            "code": "&lt;a href=\"#\"\ntarget=\"_blank\"&gt;&lt;i\nclass=\"fa\nfa-pinterest\"&gt;&lt;/i&gt;&lt\n/a&gt;",
+            "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#understandable\" target=\"_blank\">Understandable</a>",
+            "techniques": [
+              "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H83\" target=\"_blank\">H83</a>"
+            ],
+            "id": "H83"
+          },
+          {
+            "type": "error",
+            "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 7:1, but text in this element has a contrast ratio of 4.32:1. Recommendation:  change text colour to #282828.",
+            "code": "&lt;a\nhref=\"https://zeldinfornewyork\ncom/privacy-policy/\"&gt;Privac\n Policy&lt;/a&gt;",
+            "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+            "techniques": [
+              "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G17\" target=\"_blank\">G17</a>"
+            ],
+            "id": "G17"
+          },
+          {
+            "type": "error",
+            "msg": "Link elements can only be located in the head section of the document.",
+            "code": "&lt;link rel=\"stylesheet\"\nid=\"flexslider-css\"\nhref=\"https://zeldinfornewyork\ncom/wp-content/plugins/js_comp\nser/assets/lib/bower/flexslide\n/flexslider.min.css\"\ntype=\"text/css\"\nmedia=\"all\"&gt;",
+            "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+            "techniques": [
+              "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H59\" target=\"_blank\">H59</a>"
+            ],
+            "id": "H59"
+          },
+          {
+            "type": "error",
+            "msg": "Link elements can only be located in the head section of the document.",
+            "code": "&lt;link rel=\"stylesheet\"\nid=\"gforms_reset_css-css\"\nhref=\"https://zeldinfornewyork\ncom/wp-content/plugins/gravity\norms/css/formreset.min.css\"\ntype=\"text/css\"\nmedia=\"all\"&gt;",
+            "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+            "techniques": [
+              "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H59\" target=\"_blank\">H59</a>"
+            ],
+            "id": "H59"
+          },
+          {
+            "type": "error",
+            "msg": "Link elements can only be located in the head section of the document.",
+            "code": "&lt;link rel=\"stylesheet\"\nid=\"gforms_formsmain_css-css\"\nhref=\"https://zeldinfornewyork\ncom/wp-content/plugins/gravity\norms/css/formsmain.min.css\"\ntype=\"text/css\"\nmedia=\"all\"&gt;",
+            "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+            "techniques": [
+              "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H59\" target=\"_blank\">H59</a>"
+            ],
+            "id": "H59"
+          },
+          {
+            "type": "error",
+            "msg": "Link elements can only be located in the head section of the document.",
+            "code": "&lt;link rel=\"stylesheet\"\nid=\"gforms_ready_class_css-css\n\nhref=\"https://zeldinfornewyork\ncom/wp-content/plugins/gravity\norms/css/readyclass.min.css\"\ntype=\"text/css\"\nmedia=\"all\"&gt;",
+            "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+            "techniques": [
+              "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H59\" target=\"_blank\">H59</a>"
+            ],
+            "id": "H59"
+          },
+          {
+            "type": "error",
+            "msg": "Link elements can only be located in the head section of the document.",
+            "code": "&lt;link rel=\"stylesheet\"\nid=\"gforms_browsers_css-css\"\nhref=\"https://zeldinfornewyork\ncom/wp-content/plugins/gravity\norms/css/browsers.min.css\"\ntype=\"text/css\"\nmedia=\"all\"&gt;",
+            "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+            "techniques": [
+              "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H59\" target=\"_blank\">H59</a>"
+            ],
+            "id": "H59"
+          },
+          {
+            "type": "warning",
+            "msg": "This element has \"position: fixed\". This may require scrolling in two dimensions, which is considered a failure of this Success Criterion.",
+            "code": "&lt;div class=\"modal fade\"\nid=\"paypal-donate\"&gt;\n  \t&lt;div\nclass=\"modal-dialog\"\nrole=\"document\"&gt;\n\t  ...&lt;/div&gt;",
+            "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+            "techniques": [
+              "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C32\" target=\"_blank\">C32</a>",
+              "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C31\" target=\"_blank\">C31</a>",
+              "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C33\" target=\"_blank\">C33</a>",
+              "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C38\" target=\"_blank\">C38</a>",
+              "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/SCR34\" target=\"_blank\">SCR34</a>",
+              "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G206\" target=\"_blank\">G206</a>"
+            ],
+            "id": "C31+C32+C33+C38+G206+SCR34"
+          },
+          {
+            "type": "error",
+            "msg": "This textinput element does not have a name available to an accessibility API. Valid names are: label element, title , aria-label , aria-labelledby .",
+            "code": "&lt;input\nclass=\"form-control\"\ntype=\"text\" name=\"first_name\"\nplaceholder=\"First Name\"\nrequired=\"\"&gt;",
+            "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+            "techniques": [
+              "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+            ],
+            "id": "H91"
+          },
+          {
+            "type": "error",
+            "msg": "This form field should be labelled in some way. Use the label element (either with a \"for\" attribute or wrapped around the form field), or \"title\", \"aria-label\" or \"aria-labelledby\" attributes as appropriate.",
+            "code": "&lt;input\nclass=\"form-control\"\ntype=\"text\" name=\"first_name\"\nplaceholder=\"First Name\"\nrequired=\"\"&gt;",
+            "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+            "techniques": [
+              "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F68\" target=\"_blank\">F68</a>"
+            ],
+            "id": "F68"
+          },
+          {
+            "type": "error",
+            "msg": "This textinput element does not have a name available to an accessibility API. Valid names are: label element, title , aria-label , aria-labelledby .",
+            "code": "&lt;input\nclass=\"form-control\"\ntype=\"text\" name=\"last_name\"\nplaceholder=\"Last Name\"&gt;",
+            "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+            "techniques": [
+              "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+            ],
+            "id": "H91"
+          },
+          {
+            "type": "error",
+            "msg": "This form field should be labelled in some way. Use the label element (either with a \"for\" attribute or wrapped around the form field), or \"title\", \"aria-label\" or \"aria-labelledby\" attributes as appropriate.",
+            "code": "&lt;input\nclass=\"form-control\"\ntype=\"text\" name=\"last_name\"\nplaceholder=\"Last Name\"&gt;",
+            "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+            "techniques": [
+              "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F68\" target=\"_blank\">F68</a>"
+            ],
+            "id": "F68"
+          },
+          {
+            "type": "error",
+            "msg": "This textinput element does not have a name available to an accessibility API. Valid names are: label element, title , aria-label , aria-labelledby .",
+            "code": "&lt;input\nclass=\"form-control\"\ntype=\"text\" name=\"address1\"\nplaceholder=\"Address line\n1\"&gt;",
+            "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+            "techniques": [
+              "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+            ],
+            "id": "H91"
+          },
+          {
+            "type": "error",
+            "msg": "This form field should be labelled in some way. Use the label element (either with a \"for\" attribute or wrapped around the form field), or \"title\", \"aria-label\" or \"aria-labelledby\" attributes as appropriate.",
+            "code": "&lt;input\nclass=\"form-control\"\ntype=\"text\" name=\"address1\"\nplaceholder=\"Address line\n1\"&gt;",
+            "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+            "techniques": [
+              "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F68\" target=\"_blank\">F68</a>"
+            ],
+            "id": "F68"
+          },
+          {
+            "type": "error",
+            "msg": "This textinput element does not have a name available to an accessibility API. Valid names are: label element, title , aria-label , aria-labelledby .",
+            "code": "&lt;input\nclass=\"form-control\"\ntype=\"text\" name=\"address2\"\nplaceholder=\"Address line\n2\"&gt;",
+            "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+            "techniques": [
+              "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+            ],
+            "id": "H91"
+          },
+          {
+            "type": "error",
+            "msg": "This form field should be labelled in some way. Use the label element (either with a \"for\" attribute or wrapped around the form field), or \"title\", \"aria-label\" or \"aria-labelledby\" attributes as appropriate.",
+            "code": "&lt;input\nclass=\"form-control\"\ntype=\"text\" name=\"address2\"\nplaceholder=\"Address line\n2\"&gt;",
+            "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+            "techniques": [
+              "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F68\" target=\"_blank\">F68</a>"
+            ],
+            "id": "F68"
+          },
+          {
+            "type": "error",
+            "msg": "This emailinput element does not have a name available to an accessibility API. Valid names are: label element, title , aria-label , aria-labelledby .",
+            "code": "&lt;input\nclass=\"form-control\"\ntype=\"email\" name=\"email\"\nplaceholder=\"Email\"\nrequired=\"\"&gt;",
+            "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+            "techniques": [
+              "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+            ],
+            "id": "H91"
+          },
+          {
+            "type": "error",
+            "msg": "This textinput element does not have a name available to an accessibility API. Valid names are: label element, title , aria-label , aria-labelledby .",
+            "code": "&lt;input\nclass=\"form-control\"\ntype=\"text\" name=\"city\"\nplaceholder=\"City\"&gt;",
+            "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+            "techniques": [
+              "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+            ],
+            "id": "H91"
+          },
+          {
+            "type": "error",
+            "msg": "This form field should be labelled in some way. Use the label element (either with a \"for\" attribute or wrapped around the form field), or \"title\", \"aria-label\" or \"aria-labelledby\" attributes as appropriate.",
+            "code": "&lt;input\nclass=\"form-control\"\ntype=\"text\" name=\"city\"\nplaceholder=\"City\"&gt;",
+            "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+            "techniques": [
+              "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F68\" target=\"_blank\">F68</a>"
+            ],
+            "id": "F68"
+          },
+          {
+            "type": "error",
+            "msg": "This textinput element does not have a name available to an accessibility API. Valid names are: label element, title , aria-label , aria-labelledby .",
+            "code": "&lt;input\nclass=\"form-control\"\ntype=\"text\" name=\"state\"\nplaceholder=\"State\"&gt;",
+            "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+            "techniques": [
+              "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+            ],
+            "id": "H91"
+          },
+          {
+            "type": "error",
+            "msg": "This form field should be labelled in some way. Use the label element (either with a \"for\" attribute or wrapped around the form field), or \"title\", \"aria-label\" or \"aria-labelledby\" attributes as appropriate.",
+            "code": "&lt;input\nclass=\"form-control\"\ntype=\"text\" name=\"state\"\nplaceholder=\"State\"&gt;",
+            "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+            "techniques": [
+              "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F68\" target=\"_blank\">F68</a>"
+            ],
+            "id": "F68"
+          },
+          {
+            "type": "error",
+            "msg": "This textinput element does not have a name available to an accessibility API. Valid names are: label element, title , aria-label , aria-labelledby .",
+            "code": "&lt;input\nclass=\"form-control\"\ntype=\"text\" name=\"zip\"\nplaceholder=\"Zip\"&gt;",
+            "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+            "techniques": [
+              "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+            ],
+            "id": "H91"
+          },
+          {
+            "type": "error",
+            "msg": "This form field should be labelled in some way. Use the label element (either with a \"for\" attribute or wrapped around the form field), or \"title\", \"aria-label\" or \"aria-labelledby\" attributes as appropriate.",
+            "code": "&lt;input\nclass=\"form-control\"\ntype=\"text\" name=\"zip\"\nplaceholder=\"Zip\"&gt;",
+            "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+            "techniques": [
+              "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F68\" target=\"_blank\">F68</a>"
+            ],
+            "id": "F68"
+          },
+          {
+            "type": "error",
+            "msg": "This numberinput element does not have a name available to an accessibility API. Valid names are: label element, title , aria-label , aria-labelledby .",
+            "code": "&lt;input\nclass=\"form-control\"\ntype=\"number\" value=\"\"\nname=\"amount\"\nplaceholder=\"Amount\"\nrequired=\"\"&gt;",
+            "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+            "techniques": [
+              "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+            ],
+            "id": "H91"
+          },
+          {
+            "type": "warning",
+            "msg": "This element has \"position: fixed\". This may require scrolling in two dimensions, which is considered a failure of this Success Criterion.",
+            "code": "&lt;div id=\"toTop\"&gt;&lt;i\nclass=\"fa\nfa-angle-up\"&gt;&lt;/i&gt;&lt;\ndiv&gt;",
+            "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+            "techniques": [
+              "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C32\" target=\"_blank\">C32</a>",
+              "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C31\" target=\"_blank\">C31</a>",
+              "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C33\" target=\"_blank\">C33</a>",
+              "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C38\" target=\"_blank\">C38</a>",
+              "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/SCR34\" target=\"_blank\">SCR34</a>",
+              "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G206\" target=\"_blank\">G206</a>"
+            ],
+            "id": "C31+C32+C33+C38+G206+SCR34"
+          },
+          {
+            "type": "warning",
+            "msg": "Heading markup should be used if this content is intended as a heading.",
+            "code": "&lt;div id=\"toTop\"&gt;&lt;i\nclass=\"fa\nfa-angle-up\"&gt;&lt;/i&gt;&lt;\ndiv&gt;",
+            "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+            "techniques": [
+              "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H42\" target=\"_blank\">H42</a>"
+            ],
+            "id": "H42"
+          },
+          {
+            "errorcount": 44
+          }
+        ],
+        "preventionCount": 0
+      }
+    }
+  ],
+  "timeStamp": "3tg83",
+  "startTime": "2022-06-29T10:43:27",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "aatt",
+      2
+    ]
+  ],
+  "logCount": 2,
+  "logSize": 115,
+  "errorLogCount": 1,
+  "errorLogSize": 69,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-06-29T10:43:32",
+  "elapsedSeconds": 5
+}
