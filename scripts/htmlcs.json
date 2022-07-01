@@ -1,6 +1,6 @@
 {
-  "id": "alfa",
-  "what": "Alfa test package",
+  "id": "htmlcs",
+  "what": "htmlcs test package",
   "strict": true,
   "commands": [
     {
@@ -15,10 +15,8 @@
     },
     {
       "type": "test",
-      "which": "aatt",
-      "waitLong": true,
-      "tryLimit": 2,
-      "what": "AATT"
+      "which": "htmlcs",
+      "what": "HTML CodeSniffer"
     }
   ]
 }
