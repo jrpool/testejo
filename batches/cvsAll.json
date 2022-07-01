@@ -1,0 +1,21 @@
+{
+  "id": "aattbug",
+  "what": "URLs preventing aatt",
+  "hosts": [
+    {
+      "id": "cvs",
+      "which": "https://www.cvs.com/",
+      "what": "CVS"
+    },
+    {
+      "id": "achievers",
+      "which": "https://cvs.achievers.com/",
+      "what": "Achievers"
+    },
+    {
+      "id": "target",
+      "which": "https://www.target.com/",
+      "what": "Target"
+    }
+  ]
+}
