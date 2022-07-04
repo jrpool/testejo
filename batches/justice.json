@@ -1,0 +1,11 @@
+{
+  "id": "justice",
+  "what": "U.S. Department of Justice",
+  "hosts": [
+    {
+      "id": "justice",
+      "which": "https://www.justice.gov/",
+      "what": "U.S. Department of Justice"
+    }
+  ]
+}

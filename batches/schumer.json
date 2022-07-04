@@ -1,0 +1,11 @@
+{
+  "id": "schumer",
+  "what": "Chuck Schumer",
+  "hosts": [
+    {
+      "id": "schumer",
+      "which": "https://www.schumer.senate.gov/",
+      "what": "Chuck Schumer"
+    }
+  ]
+}
