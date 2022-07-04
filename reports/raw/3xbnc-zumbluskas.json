@@ -2105,19 +2105,19 @@
       "headSampleSize": 20,
       "tailSampleSize": 15,
       "withItems": true,
-      "what": "hover-caused content additions",
+      "what": "hover-caused content changes",
       "url": "https://www.electmikez.us/",
       "result": {
         "totals": {
           "triggers": 108,
           "headTriggers": 20,
           "tailTriggers": 88,
-          "impactTriggers": 94,
-          "additions": 115,
-          "removals": 115,
-          "opacityChanges": 122,
-          "opacityImpact": 337,
-          "unhoverables": 11
+          "impactTriggers": 90,
+          "additions": 0,
+          "removals": 0,
+          "opacityChanges": 110,
+          "opacityImpact": 344,
+          "unhoverables": 0
         },
         "items": {
           "head": {
@@ -2192,60 +2192,36 @@
           "tail": {
             "impactTriggers": [
               {
+                "tagName": "A",
+                "text": "ReadMore",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "A",
+                "text": "",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 0
+              },
+              {
                 "tagName": "LI",
-                "text": "917-689-7889-ElectMikeZForCongress",
+                "text": "<divclass=\"thumbnailbox-primary\"><divclass=\"galler",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "A",
+                "text": "Donate",
                 "additions": 0,
                 "removals": 0,
                 "opacityChanges": 1,
                 "opacityImpact": 3
-              },
-              {
-                "tagName": "LI",
-                "text": "<divclass=\"thumbnailbox-primary\"><divclass=\"galler",
-                "additions": 0,
-                "removals": 0,
-                "opacityChanges": 1,
-                "opacityImpact": 0
-              },
-              {
-                "tagName": "A",
-                "text": "RebuildOurGreatCity",
-                "additions": 0,
-                "removals": 0,
-                "opacityChanges": 1,
-                "opacityImpact": 1
-              },
-              {
-                "tagName": "A",
-                "text": "ReadMore",
-                "additions": 0,
-                "removals": 0,
-                "opacityChanges": 1,
-                "opacityImpact": 0
-              },
-              {
-                "tagName": "A",
-                "text": "IBDESIGNSTUDIONYCLLC",
-                "additions": 0,
-                "removals": 0,
-                "opacityChanges": 1,
-                "opacityImpact": 0
-              },
-              {
-                "tagName": "LI",
-                "text": "<divclass=\"thumbnailbox-primary\"><divclass=\"galler",
-                "additions": 0,
-                "removals": 0,
-                "opacityChanges": 1,
-                "opacityImpact": 0
-              },
-              {
-                "tagName": "A",
-                "text": "ReadMore",
-                "additions": 0,
-                "removals": 0,
-                "opacityChanges": 1,
-                "opacityImpact": 0
               },
               {
                 "tagName": "A",
@@ -2265,15 +2241,7 @@
               },
               {
                 "tagName": "A",
-                "text": "Schools:ReturnTrueEducation",
-                "additions": 0,
-                "removals": 0,
-                "opacityChanges": 1,
-                "opacityImpact": 0
-              },
-              {
-                "tagName": "LI",
-                "text": "<divclass=\"thumbnailbox-primary\"><divclass=\"galler",
+                "text": "",
                 "additions": 0,
                 "removals": 0,
                 "opacityChanges": 1,
@@ -2281,11 +2249,59 @@
               },
               {
                 "tagName": "BUTTON",
-                "text": "ContactUs",
+                "text": "Subscribe",
                 "additions": 0,
                 "removals": 0,
                 "opacityChanges": 1,
                 "opacityImpact": 0
+              },
+              {
+                "tagName": "A",
+                "text": "<iclass=\"svg-ms123-icon-converter\"data-icon-name=\"",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 1
+              },
+              {
+                "tagName": "LI",
+                "text": "Donate",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 1
+              },
+              {
+                "tagName": "LI",
+                "text": "info@michaelzumbluskas.org",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 1
+              },
+              {
+                "tagName": "A",
+                "text": "<idata-icon-name=\"envelope\"class=\"svg-ms123-icon-c",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 3,
+                "opacityImpact": 11
+              },
+              {
+                "tagName": "A",
+                "text": "RebuildOurGreatCity",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 1
+              },
+              {
+                "tagName": "A",
+                "text": "917-689-7889-ElectMikeZForCongress",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 3
               }
             ],
             "unhoverables": []

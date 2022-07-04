@@ -1617,26 +1617,26 @@
       "headSampleSize": 20,
       "tailSampleSize": 15,
       "withItems": true,
-      "what": "hover-caused content additions",
+      "what": "hover-caused content changes",
       "url": "https://ashmiforcongress.com/",
       "result": {
         "totals": {
           "triggers": 66,
           "headTriggers": 20,
           "tailTriggers": 46,
-          "impactTriggers": 16,
-          "additions": 115,
-          "removals": 115,
+          "impactTriggers": 13,
+          "additions": 0,
+          "removals": 0,
           "opacityChanges": 36,
-          "opacityImpact": 93,
-          "unhoverables": 11
+          "opacityImpact": 89,
+          "unhoverables": 1
         },
         "items": {
           "head": {
             "impactTriggers": [
               {
                 "tagName": "A",
-                "text": "<divdata-uw-styling-context=\"true\"><svgclass=\"sqs-",
+                "text": "<div><svgclass=\"sqs-svg-icon--social\"viewBox=\"0064",
                 "additions": 0,
                 "removals": 0,
                 "opacityChanges": 1,
@@ -1644,7 +1644,7 @@
               },
               {
                 "tagName": "A",
-                "text": "<divdata-uw-styling-context=\"true\"><svgclass=\"sqs-",
+                "text": "<div><svgclass=\"sqs-svg-icon--social\"viewBox=\"0064",
                 "additions": 0,
                 "removals": 0,
                 "opacityChanges": 1,
@@ -1652,7 +1652,7 @@
               },
               {
                 "tagName": "A",
-                "text": "<divdata-uw-styling-context=\"true\"><svgclass=\"sqs-",
+                "text": "<div><svgclass=\"sqs-svg-icon--social\"viewBox=\"0064",
                 "additions": 0,
                 "removals": 0,
                 "opacityChanges": 1,
@@ -1679,7 +1679,7 @@
             "impactTriggers": [
               {
                 "tagName": "A",
-                "text": "CONTRIBUTE",
+                "text": "JOINUS",
                 "additions": 0,
                 "removals": 0,
                 "opacityChanges": 3,
@@ -1687,11 +1687,19 @@
               },
               {
                 "tagName": "A",
-                "text": "<divdata-uw-styling-context=\"true\"><svgclass=\"sqs-",
+                "text": "<imgsrc=\"https://images.squarespace-cdn.com/conten",
                 "additions": 0,
                 "removals": 0,
                 "opacityChanges": 1,
-                "opacityImpact": 4
+                "opacityImpact": 3
+              },
+              {
+                "tagName": "A",
+                "text": "READMORE",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 1
               }
             ],
             "unhoverables": []

@@ -1559,53 +1559,65 @@
       "headSampleSize": 20,
       "tailSampleSize": 15,
       "withItems": true,
-      "what": "hover-caused content additions",
+      "what": "hover-caused content changes",
       "url": "https://www.carolynmaloney.com/",
       "result": {
         "totals": {
           "triggers": 61,
           "headTriggers": 20,
           "tailTriggers": 41,
-          "impactTriggers": 4,
-          "additions": 115,
-          "removals": 115,
-          "opacityChanges": 1,
-          "opacityImpact": 1,
-          "unhoverables": 0
+          "impactTriggers": 0,
+          "additions": 0,
+          "removals": 0,
+          "opacityChanges": 0,
+          "opacityImpact": 0,
+          "unhoverables": 7
         },
         "items": {
           "head": {
-            "impactTriggers": [
+            "impactTriggers": [],
+            "unhoverables": [
               {
-                "tagName": "LI",
-                "text": "IssuesAffordableHousingCannabisDisabilityRights&Ac",
-                "additions": 95,
-                "removals": 0,
-                "opacityChanges": 0,
-                "opacityImpact": 0
+                "tagName": "A",
+                "id": "",
+                "text": "<wix-imageid=\"img_2_comp-kbczydab2\"class=\"_1-6YJuW"
               },
               {
                 "tagName": "LI",
-                "text": "Press/MediaUpdatesPhotosVideosPressContact",
-                "additions": 20,
-                "removals": 95,
-                "opacityChanges": 0,
-                "opacityImpact": 0
+                "id": "comp-kbczydae0",
+                "text": "MeetCarolyn"
               },
               {
-                "tagName": "LI",
-                "text": "Shop",
-                "additions": 0,
-                "removals": 20,
-                "opacityChanges": 0,
-                "opacityImpact": 0
+                "tagName": "A",
+                "id": "",
+                "text": "MeetCarolyn"
               }
-            ],
-            "unhoverables": []
+            ]
           },
           "tail": {
             "impactTriggers": [],
-            "unhoverables": []
+            "unhoverables": [
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "Apr22"
+              },
+              {
+                "tagName": "LI",
+                "id": "comp-kbczydae6",
+                "text": "GETINVOLVED"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "Mar20"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "CarolynMaloney"
+              }
+            ]
           }
         }
       }

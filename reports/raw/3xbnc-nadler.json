@@ -1030,18 +1030,18 @@
       "headSampleSize": 20,
       "tailSampleSize": 15,
       "withItems": true,
-      "what": "hover-caused content additions",
+      "what": "hover-caused content changes",
       "url": "https://jerrynadler.com/",
       "result": {
         "totals": {
           "triggers": 30,
           "headTriggers": 20,
           "tailTriggers": 10,
-          "impactTriggers": 4,
-          "additions": 115,
-          "removals": 115,
-          "opacityChanges": 1,
-          "opacityImpact": 1,
+          "impactTriggers": 0,
+          "additions": 0,
+          "removals": 0,
+          "opacityChanges": 0,
+          "opacityImpact": 0,
           "unhoverables": 10
         },
         "items": {

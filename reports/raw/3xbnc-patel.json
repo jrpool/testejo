@@ -805,41 +805,110 @@
       "headSampleSize": 20,
       "tailSampleSize": 15,
       "withItems": true,
-      "what": "hover-caused content additions",
+      "what": "hover-caused content changes",
       "url": "https://www.surajpatel.nyc/",
       "result": {
         "totals": {
           "triggers": 19,
           "headTriggers": 19,
           "tailTriggers": 0,
-          "impactTriggers": 6,
-          "additions": 115,
-          "removals": 115,
-          "opacityChanges": 3,
-          "opacityImpact": 4,
-          "unhoverables": 10
+          "impactTriggers": 0,
+          "additions": 0,
+          "removals": 0,
+          "opacityChanges": 0,
+          "opacityImpact": 0,
+          "unhoverables": 17
         },
         "items": {
           "head": {
-            "impactTriggers": [
+            "impactTriggers": [],
+            "unhoverables": [
               {
                 "tagName": "A",
-                "text": "RequestAbsenteeBallot",
-                "additions": 0,
-                "removals": 0,
-                "opacityChanges": 1,
-                "opacityImpact": 0
+                "id": "",
+                "text": "Press"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Platform"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Volunteer"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Merch"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "RequestBallot"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Donate"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "RequestAbsenteeBallot"
               },
               {
                 "tagName": "BUTTON",
-                "text": "SignUp",
-                "additions": 0,
-                "removals": 0,
-                "opacityChanges": 1,
-                "opacityImpact": 3
+                "id": "",
+                "text": "SignUp"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "LearnmoreaboutSuraj."
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Home"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "MeetSuraj"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Volunteer"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "VOTEBYMAIL"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Donate"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "<div><svgclass=\"sqs-svg-icon--social\"viewBox=\"0064"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "<div><svgclass=\"sqs-svg-icon--social\"viewBox=\"0064"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "<div><svgclass=\"sqs-svg-icon--social\"viewBox=\"0064"
               }
-            ],
-            "unhoverables": []
+            ]
           },
           "tail": {
             "impactTriggers": [],
