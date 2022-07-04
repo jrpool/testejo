@@ -148,15 +148,15 @@
     },
     {
       "type": "test",
-      "which": "tenon",
-      "id": "a",
-      "what": "Tenon API version 2 result retrieval"
-    },
-    {
-      "type": "test",
       "which": "wave",
       "reportType": 4,
       "what": "WAVE, report-type 4"
+    },
+    {
+      "type": "test",
+      "which": "tenon",
+      "id": "a",
+      "what": "Tenon API version 2 result retrieval"
     }
   ]
 }

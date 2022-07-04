@@ -1,6 +1,6 @@
 {
-  "id": "tp11",
-  "what": "AATT, Alfa, Axe, IBM, Tenon, WAVE, and 16 custom tests",
+  "id": "tp12",
+  "what": "Alfa, Axe, HTML CodeSniffer, IBM, Tenon, WAVE, and 16 custom tests",
   "strict": true,
   "commands": [
     {
@@ -10,7 +10,7 @@
     },
     {
       "type": "url",
-      "which": "https://www.hrw.org",
+      "which": "https://*",
       "what": "any page"
     },
     {
@@ -34,7 +34,7 @@
     },
     {
       "type": "url",
-      "which": "https://www.hrw.org",
+      "which": "https://*",
       "what": "any page"
     },
     {
@@ -56,7 +56,7 @@
     {
       "type": "test",
       "which": "focInd",
-      "revealAll": true,
+      "revealAll": false,
       "allowedDelay": 250,
       "withItems": true,
       "what": "focus indicators"
@@ -70,9 +70,11 @@
     {
       "type": "test",
       "which": "hover",
-      "sampleSize": 60,
+      "headSize": 20,
+      "headSampleSize": 20,
+      "tailSampleSize": 15,
       "withItems": true,
-      "what": "hover-triggered content changes"
+      "what": "hover impacts"
     },
     {
       "type": "test",
@@ -123,13 +125,6 @@
     },
     {
       "type": "test",
-      "which": "aatt",
-      "waitLong": true,
-      "tryLimit": 2,
-      "what": "AATT with HTML CodeSniffer"
-    },
-    {
-      "type": "test",
       "which": "alfa",
       "what": "Siteimprove alfa"
     },
@@ -139,6 +134,11 @@
       "detailLevel": 2,
       "rules": [],
       "what": "Axe core, all rules"
+    },
+    {
+      "type": "test",
+      "which": "htmlcs",
+      "what": "HTML CodeSniffer"
     },
     {
       "type": "test",

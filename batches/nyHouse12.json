@@ -1,0 +1,36 @@
+{
+  "id": "nyhouse12primary",
+  "what": "Candidates in August 2022 primary election for U.S. representative from N.Y. 12th C.D.",
+  "hosts": [
+    {
+      "id": "joseph",
+      "which": "https://www.vladimyjosephforcongress.com/",
+      "what": "Vladimy Joseph for Congress"
+    },
+    {
+      "id": "maloney",
+      "which": "https://www.carolynmaloney.com/",
+      "what": "Carolyn Maloney for Congress"
+    },
+    {
+      "id": "nadler",
+      "which": "https://jerrynadler.com/",
+      "what": "Jerry Nadler for Congress"
+    },
+    {
+      "id": "patel",
+      "which": "https://www.surajpatel.nyc/",
+      "what": "Suraj Patel for Congress"
+    },
+    {
+      "id": "sheth",
+      "which": "https://ashmiforcongress.com/",
+      "what": "Ashmi for Congress 2022"
+    },
+    {
+      "id": "zumbluskas",
+      "which": "https://www.electmikez.us/",
+      "what": "Michael Zumbluskas for Congress"
+    }
+  ]
+}
