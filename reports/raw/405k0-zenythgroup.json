@@ -1,0 +1,416 @@
+{
+  "id": "405k0-zenythgroup",
+  "host": {
+    "id": "zenythgroup",
+    "which": "https://zenythgroup.com/index",
+    "what": "Zenyth Group"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-06T16:28:48"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-06T16:28:54"
+    }
+  ],
+  "script": {
+    "id": "htmlcs",
+    "what": "htmlcs test package",
+    "strict": true,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "used for most tests"
+      },
+      {
+        "type": "url",
+        "which": "https://zenythgroup.com/index",
+        "what": "Zenyth Group"
+      },
+      {
+        "type": "test",
+        "which": "htmlcs",
+        "what": "HTML CodeSniffer"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "used for most tests"
+    },
+    {
+      "type": "url",
+      "which": "https://zenythgroup.com/index",
+      "what": "Zenyth Group",
+      "result": "https://zenythgroup.com/index"
+    },
+    {
+      "type": "test",
+      "which": "htmlcs",
+      "what": "HTML CodeSniffer WCAG 2.1 AA ruleset",
+      "url": "https://zenythgroup.com/index",
+      "result": {
+        "Error": {
+          "AA.1_3_1.H49.Center": {
+            "Presentational markup used that has become obsolete in HTML5.": [
+              {
+                "tagName": "center",
+                "id": "",
+                "code": "<center>...</center>"
+              }
+            ]
+          }
+        },
+        "Warning": {
+          "AA.1_1_1.H67.2": {
+            "Img element is marked so that it is ignored by Assistive Technology.": [
+              {
+                "tagName": "img",
+                "id": "",
+                "code": "<img src=\"./images/services1.png\" style=\"height: 130px; width: 130px\" alt=\"\">"
+              },
+              {
+                "tagName": "img",
+                "id": "",
+                "code": "<img src=\"./images/services3.png\" style=\"height: 130px; width: 130px\" alt=\"\">"
+              },
+              {
+                "tagName": "img",
+                "id": "",
+                "code": "<img src=\"./images/services4.png\" style=\"height: 130px; width: 130px\" alt=\"\">"
+              },
+              {
+                "tagName": "img",
+                "id": "",
+                "code": "<img src=\"./images/services5.png\" style=\"height: 130px; width: 130px\" alt=\"\">"
+              },
+              {
+                "tagName": "img",
+                "id": "",
+                "code": "<img src=\"./images/services6.png\" style=\"height: 130px; width: 130px\" alt=\"\">"
+              },
+              {
+                "tagName": "img",
+                "id": "",
+                "code": "<img src=\"./images/solutions1.png\" style=\"height: 330px; width: 330px\" alt=\"\">"
+              },
+              {
+                "tagName": "img",
+                "id": "",
+                "code": "<img src=\"./images/solutions2.png\" style=\"height: 330px; width: 330px\" alt=\"\">"
+              },
+              {
+                "tagName": "img",
+                "id": "",
+                "code": "<img src=\"./images/solutions3.png\" style=\"height: 330px; width: 330px\" alt=\"\">"
+              },
+              {
+                "tagName": "img",
+                "id": "",
+                "code": "<img src=\"./images/solutions4.png\" style=\"height: 330px; width: 330px\" alt=\"\">"
+              },
+              {
+                "tagName": "img",
+                "id": "",
+                "code": "<img src=\"./images/solutions5.png\" style=\"height: 330px; width: 330px\" alt=\"\">"
+              },
+              {
+                "tagName": "img",
+                "id": "",
+                "code": "<img src=\"./images/solutions6.png\" style=\"height: 330px; width: 330px\" alt=\"\">"
+              },
+              {
+                "tagName": "img",
+                "id": "",
+                "code": "<img src=\"./images/solutions7.png\" style=\"height: 330px; width: 330px\" alt=\"\">"
+              },
+              {
+                "tagName": "img",
+                "id": "",
+                "code": "<img src=\"https://zenythgroup.com/images/Close.svg\" alt=\"\" width=\"20\" height=\"20\">"
+              },
+              {
+                "tagName": "img",
+                "id": "",
+                "code": "<img src=\"https://zenythgroup.com/images/Menu.svg\" alt=\"\" width=\"30\" height=\"30\">"
+              }
+            ]
+          },
+          "AA.1_3_1.H48": {
+            "If this element contains a navigation section, it is recommended that it be marked up as a list.": [
+              {
+                "tagName": "div",
+                "id": "",
+                "code": "<div class=\"buttons\">...</div>"
+              },
+              {
+                "tagName": "div",
+                "id": "",
+                "code": "<div class=\"hamburgerMenuButtons d-lg-none\">...</div>"
+              },
+              {
+                "tagName": "div",
+                "id": "",
+                "code": "<div class=\"siteMapContainer d-lg-none\">...</div>"
+              }
+            ]
+          },
+          "AA.1_4_10.C32,C31,C33,C38,SCR34,G206": {
+            "This element has \"position: fixed\". This may require scrolling in two dimensions, which is considered a failure of this Success Criterion.": [
+              {
+                "tagName": "header",
+                "id": "",
+                "code": "<header class=\"row\" style=\"border-bottom: 1px solid #eaeaea;\">...</header>"
+              }
+            ]
+          },
+          "AA.1_4_3.G145.BgImage": {
+            "This element's text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 3:1.": [
+              {
+                "tagName": "a",
+                "id": "",
+                "code": "<a href=\"/assessment\" class=\"transparentBtnBorder whiteAll\" role=\"button\">...</a>"
+              },
+              {
+                "tagName": "div",
+                "id": "",
+                "code": "<div class=\"heading\" role=\"heading\" aria-level=\"1\">...</div>"
+              },
+              {
+                "tagName": "div",
+                "id": "",
+                "code": "<div class=\"heading\" role=\"heading\" aria-level=\"2\">...</div>"
+              },
+              {
+                "tagName": "div",
+                "id": "",
+                "code": "<div class=\"subHeading\" role=\"heading\" aria-level=\"2\">...</div>"
+              },
+              {
+                "tagName": "div",
+                "id": "",
+                "code": "<div class=\"subHeading\" role=\"heading\" aria-level=\"3\">...</div>"
+              },
+              {
+                "tagName": "p",
+                "id": "",
+                "code": "<p class=\"partnerText\">...</p>"
+              }
+            ]
+          },
+          "AA.1_4_3.G18.Abs": {
+            "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 4.5:1.": [
+              {
+                "tagName": "a",
+                "id": "",
+                "code": "<a class=\"visually-hidden-focusable skipToContentLink d-lg-inline\" href=\"#content\">...</a>"
+              },
+              {
+                "tagName": "span",
+                "id": "",
+                "code": "<span class=\"able-clipped\">...</span>"
+              },
+              {
+                "tagName": "span",
+                "id": "",
+                "code": "<span class=\"slick-sr-only\">...</span>"
+              }
+            ]
+          },
+          "AA.1_4_3.G18.BgImage": {
+            "This element's text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 4.5:1.": [
+              {
+                "tagName": "a",
+                "id": "",
+                "code": "<a href=\"/accessibility\">...</a>"
+              },
+              {
+                "tagName": "a",
+                "id": "",
+                "code": "<a href=\"/blog\">...</a>"
+              },
+              {
+                "tagName": "a",
+                "id": "",
+                "code": "<a href=\"/casestudies\">...</a>"
+              },
+              {
+                "tagName": "a",
+                "id": "",
+                "code": "<a href=\"/company\">...</a>"
+              },
+              {
+                "tagName": "a",
+                "id": "",
+                "code": "<a href=\"/company#leadership\">...</a>"
+              },
+              {
+                "tagName": "a",
+                "id": "",
+                "code": "<a href=\"/contact\">...</a>"
+              },
+              {
+                "tagName": "a",
+                "id": "",
+                "code": "<a href=\"/services#accessibility\">...</a>"
+              },
+              {
+                "tagName": "a",
+                "id": "",
+                "code": "<a href=\"/services#audits\">...</a>"
+              },
+              {
+                "tagName": "a",
+                "id": "",
+                "code": "<a href=\"/services#legal\">...</a>"
+              },
+              {
+                "tagName": "a",
+                "id": "",
+                "code": "<a href=\"/services#letter\">...</a>"
+              },
+              {
+                "tagName": "a",
+                "id": "",
+                "code": "<a href=\"/services#remediation\">...</a>"
+              },
+              {
+                "tagName": "a",
+                "id": "",
+                "code": "<a href=\"/services#scripting\">...</a>"
+              },
+              {
+                "tagName": "a",
+                "id": "",
+                "code": "<a href=\"/sitemap\">...</a>"
+              },
+              {
+                "tagName": "a",
+                "id": "",
+                "code": "<a href=\"/solutions#ecommerce\">...</a>"
+              },
+              {
+                "tagName": "a",
+                "id": "",
+                "code": "<a href=\"/solutions#education\">...</a>"
+              },
+              {
+                "tagName": "a",
+                "id": "",
+                "code": "<a href=\"/solutions#financial\">...</a>"
+              },
+              {
+                "tagName": "a",
+                "id": "",
+                "code": "<a href=\"/solutions#healthcare\">...</a>"
+              },
+              {
+                "tagName": "a",
+                "id": "",
+                "code": "<a href=\"/solutions#hospitality\">...</a>"
+              },
+              {
+                "tagName": "a",
+                "id": "",
+                "code": "<a href=\"/solutions#public\">...</a>"
+              },
+              {
+                "tagName": "a",
+                "id": "",
+                "code": "<a href=\"/solutions#technology\">...</a>"
+              },
+              {
+                "tagName": "a",
+                "id": "",
+                "code": "<a href=\"solutions\" class=\"transparentBtnBorder\" role=\"button\" aria-label=\"Learn more about eCommerce / Retail\">...</a>"
+              },
+              {
+                "tagName": "a",
+                "id": "",
+                "code": "<a href=\"solutions#education\" class=\"transparentBtnBorder\" role=\"button\" aria-label=\"Learn more about Education\">...</a>"
+              },
+              {
+                "tagName": "a",
+                "id": "",
+                "code": "<a href=\"solutions#financial\" class=\"transparentBtnBorder\" role=\"button\" aria-label=\"Learn more about Financial Services\">...</a>"
+              },
+              {
+                "tagName": "a",
+                "id": "",
+                "code": "<a href=\"solutions#healthcare\" class=\"transparentBtnBorder\" role=\"button\" aria-label=\"Learn more about Healthcare\">...</a>"
+              },
+              {
+                "tagName": "a",
+                "id": "",
+                "code": "<a href=\"solutions#hospitality\" class=\"transparentBtnBorder\" role=\"button\" aria-label=\"Learn more about Hospitality / Travel\">...</a>"
+              },
+              {
+                "tagName": "a",
+                "id": "",
+                "code": "<a href=\"solutions#public\" class=\"transparentBtnBorder\" role=\"button\" aria-label=\"Learn more about Public Sector\">...</a>"
+              },
+              {
+                "tagName": "a",
+                "id": "",
+                "code": "<a href=\"solutions#technology\" class=\"transparentBtnBorder\" role=\"button\" aria-label=\"Learn more about Technology\">...</a>"
+              },
+              {
+                "tagName": "p",
+                "id": "",
+                "code": "<p class=\"description\">...</p>"
+              },
+              {
+                "tagName": "p",
+                "id": "",
+                "code": "<p style=\"text-align:justify\">...</p>"
+              },
+              {
+                "tagName": "p",
+                "id": "",
+                "code": "<p>...</p>"
+              },
+              {
+                "tagName": "span",
+                "id": "",
+                "code": "<span class=\"copyright\">...</span>"
+              }
+            ]
+          },
+          "AA.1_4_3_F24.F24.FGColour": {
+            "Check that this element has an inherited background colour or image to complement the corresponding inline foreground colour.": [
+              {
+                "tagName": "div",
+                "id": "",
+                "code": "<div class=\"able-descriptions\" aria-live=\"assertive\" aria-atomic=\"true\" style=\"display: none; font-family: sans-serif; color: white; background-color: black; opacity: 1;\">...</div>"
+              }
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "timeStamp": "405k0",
+  "startTime": "2022-07-06T16:28:48",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "htmlcs",
+      0
+    ]
+  ],
+  "logCount": 2,
+  "logSize": 29,
+  "errorLogCount": 0,
+  "errorLogSize": 0,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-06T16:28:54",
+  "elapsedSeconds": 5
+}

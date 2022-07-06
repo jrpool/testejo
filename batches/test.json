@@ -1,0 +1,11 @@
+{
+  "id": "a11yorgs",
+  "what": "Home pages of accessibility organizations",
+  "hosts": [
+    {
+      "id": "zenythgroup",
+      "which": "https://zenythgroup.com/index",
+      "what": "Zenyth Group"
+    }
+  ]
+}

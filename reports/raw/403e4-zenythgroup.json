@@ -1,0 +1,75 @@
+{
+  "id": "403e4-zenythgroup",
+  "host": {
+    "id": "zenythgroup",
+    "which": "https://zenythgroup.com/index",
+    "what": "Zenyth Group"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-06T14:55:21"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-06T14:56:18"
+    }
+  ],
+  "script": {
+    "id": "ibm",
+    "what": "IBM",
+    "strict": true,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://zenythgroup.com/index",
+        "what": "Zenyth Group"
+      },
+      {
+        "type": "test",
+        "which": "ibm",
+        "withItems": true,
+        "what": "IBM Accessibility Checker, with page content"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://zenythgroup.com/index",
+      "what": "Zenyth Group",
+      "result": "ERROR: Attempts to visit https://zenythgroup.com/index failed"
+    },
+    {
+      "type": "test",
+      "which": "ibm",
+      "withItems": true,
+      "what": "IBM Accessibility Checker, with page content",
+      "result": "ERROR: No page identified"
+    }
+  ],
+  "timeStamp": "403e4",
+  "startTime": "2022-07-06T14:55:21",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [],
+  "logCount": 0,
+  "logSize": 0,
+  "errorLogCount": 0,
+  "errorLogSize": 0,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 5,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-06T14:56:18",
+  "elapsedSeconds": 56
+}
