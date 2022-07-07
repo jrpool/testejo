@@ -1,0 +1,11 @@
+{
+  "id": "cvs",
+  "what": "CVS",
+  "hosts": [
+    {
+      "id": "cvs",
+      "which": "https://www.cvs.com/",
+      "what": "CVS"
+    }
+  ]
+}
