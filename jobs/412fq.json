@@ -1,0 +1,38 @@
+{
+  "script": {
+    "id": "ibmz",
+    "what": "IBM test on Zenyth Group",
+    "strict": true,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://*",
+        "what": "any page"
+      },
+      {
+        "type": "test",
+        "which": "ibm",
+        "withItems": true,
+        "what": "IBM Accessibility Checker, with page content"
+      }
+    ]
+  },
+  "batch": {
+    "id": "zenythgroup",
+    "what": "Zenyth Group",
+    "hosts": [
+      {
+        "id": "zenythgroup",
+        "which": "https://jpdev.pro/",
+        "what": "Zenyth Group"
+      }
+    ]
+  },
+  "jobID": "ibmz",
+  "timeStamp": "412fq"
+}
