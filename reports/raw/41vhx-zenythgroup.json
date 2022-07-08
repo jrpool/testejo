@@ -1,0 +1,142 @@
+{
+  "id": "41vhx-zenythgroup",
+  "host": {
+    "id": "zenythgroup",
+    "which": "https://zenythgroup.com/index",
+    "what": "Zenyth Group"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-08T13:04:42"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-08T13:04:47"
+    }
+  ],
+  "script": {
+    "id": "tabNav",
+    "what": "tabNav test",
+    "strict": true,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Browser"
+      },
+      {
+        "type": "url",
+        "which": "https://zenythgroup.com/index",
+        "what": "Zenyth Group"
+      },
+      {
+        "type": "test",
+        "which": "tabNav",
+        "withItems": true,
+        "what": "tabNav"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Browser"
+    },
+    {
+      "type": "url",
+      "which": "https://zenythgroup.com/index",
+      "what": "Zenyth Group",
+      "result": "https://zenythgroup.com/index"
+    },
+    {
+      "type": "test",
+      "which": "tabNav",
+      "withItems": true,
+      "what": "keyboard navigation between tab elements",
+      "url": "https://zenythgroup.com/index",
+      "result": {
+        "totals": {
+          "navigations": {
+            "all": {
+              "total": 0,
+              "correct": 0,
+              "incorrect": 0
+            },
+            "specific": {
+              "tab": {
+                "total": 0,
+                "correct": 0,
+                "incorrect": 0
+              },
+              "left": {
+                "total": 0,
+                "correct": 0,
+                "incorrect": 0
+              },
+              "right": {
+                "total": 0,
+                "correct": 0,
+                "incorrect": 0
+              },
+              "up": {
+                "total": 0,
+                "correct": 0,
+                "incorrect": 0
+              },
+              "down": {
+                "total": 0,
+                "correct": 0,
+                "incorrect": 0
+              },
+              "home": {
+                "total": 0,
+                "correct": 0,
+                "incorrect": 0
+              },
+              "end": {
+                "total": 0,
+                "correct": 0,
+                "incorrect": 0
+              }
+            }
+          },
+          "tabElements": {
+            "total": 0,
+            "correct": 0,
+            "incorrect": 0
+          },
+          "tabLists": {
+            "total": 0,
+            "correct": 0,
+            "incorrect": 0
+          }
+        },
+        "tabElements": {
+          "incorrect": [],
+          "correct": []
+        }
+      }
+    }
+  ],
+  "timeStamp": "41vhx",
+  "startTime": "2022-07-08T13:04:42",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "tabNav",
+      0
+    ]
+  ],
+  "logCount": 2,
+  "logSize": 29,
+  "errorLogCount": 0,
+  "errorLogSize": 0,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-08T13:04:47",
+  "elapsedSeconds": 5
+}

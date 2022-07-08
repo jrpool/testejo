@@ -2,6 +2,7 @@
   "id": "tabNav",
   "what": "tabNav test",
   "strict": true,
+  "timeLimit": 4,
   "commands": [
     {
       "type": "launch",

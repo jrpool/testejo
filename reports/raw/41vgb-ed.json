@@ -1,0 +1,142 @@
+{
+  "id": "41vgb-ed",
+  "host": {
+    "id": "ed",
+    "which": "https://www.ed.gov/",
+    "what": "U.S. Department of Education"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-08T13:02:46"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-08T13:02:51"
+    }
+  ],
+  "script": {
+    "id": "tabNav",
+    "what": "tabNav test",
+    "strict": true,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.ed.gov/",
+        "what": "U.S. Department of Education"
+      },
+      {
+        "type": "test",
+        "which": "tabNav",
+        "withItems": true,
+        "what": "tabNav"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.ed.gov/",
+      "what": "U.S. Department of Education",
+      "result": "https://www.ed.gov/"
+    },
+    {
+      "type": "test",
+      "which": "tabNav",
+      "withItems": true,
+      "what": "keyboard navigation between tab elements",
+      "url": "https://www.ed.gov/",
+      "result": {
+        "totals": {
+          "navigations": {
+            "all": {
+              "total": 0,
+              "correct": 0,
+              "incorrect": 0
+            },
+            "specific": {
+              "tab": {
+                "total": 0,
+                "correct": 0,
+                "incorrect": 0
+              },
+              "left": {
+                "total": 0,
+                "correct": 0,
+                "incorrect": 0
+              },
+              "right": {
+                "total": 0,
+                "correct": 0,
+                "incorrect": 0
+              },
+              "up": {
+                "total": 0,
+                "correct": 0,
+                "incorrect": 0
+              },
+              "down": {
+                "total": 0,
+                "correct": 0,
+                "incorrect": 0
+              },
+              "home": {
+                "total": 0,
+                "correct": 0,
+                "incorrect": 0
+              },
+              "end": {
+                "total": 0,
+                "correct": 0,
+                "incorrect": 0
+              }
+            }
+          },
+          "tabElements": {
+            "total": 0,
+            "correct": 0,
+            "incorrect": 0
+          },
+          "tabLists": {
+            "total": 0,
+            "correct": 0,
+            "incorrect": 0
+          }
+        },
+        "tabElements": {
+          "incorrect": [],
+          "correct": []
+        }
+      }
+    }
+  ],
+  "timeStamp": "41vgb",
+  "startTime": "2022-07-08T13:02:46",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "tabNav",
+      0
+    ]
+  ],
+  "logCount": 1,
+  "logSize": 101,
+  "errorLogCount": 1,
+  "errorLogSize": 101,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-08T13:02:51",
+  "elapsedSeconds": 4
+}

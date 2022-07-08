@@ -1,11 +1,21 @@
 {
-  "id": "a11yorgs",
-  "what": "Home pages of accessibility organizations",
+  "id": "test",
+  "what": "Test batch",
   "hosts": [
+    {
+      "id": "neh",
+      "which": "https://www.neh.gov/",
+      "what": "National Endowment for the Humanities"
+    },
     {
       "id": "zenythgroup",
       "which": "https://zenythgroup.com/index",
       "what": "Zenyth Group"
+    },
+    {
+      "id": "hr",
+      "which": "https://www.house.gov/",
+      "what": "U.S. House of Representatives"
     }
   ]
 }
