@@ -8,6 +8,11 @@
       "what": "3Play Media"
     },
     {
+      "id": "accessfirst",
+      "which": "https://www.access-first.fr/",
+      "what": "Access First"
+    },
+    {
       "id": "accessible360",
       "which": "https://accessible360.com/",
       "what": "Accessible360"
@@ -36,6 +41,11 @@
       "id": "aeldata",
       "which": "https://aeldata.com/",
       "what": "AEL Data"
+    },
+    {
+      "id": "amberscript",
+      "which": "https://www.amberscript.com/nl/",
+      "what": "Amberscript"
     },
     {
       "id": "anais",
@@ -68,6 +78,11 @@
       "what": "Benetech"
     },
     {
+      "id": "bestwa",
+      "which": "https://bestwebsiteaccessibility.com/",
+      "what": "Best Website Accessibility"
+    },
+    {
       "id": "boia",
       "which": "https://www.boia.org/",
       "what": "Bureau of Internet Accessibility"
@@ -93,9 +108,24 @@
       "what": "Eleven Ways"
     },
     {
+      "id": "aveugles",
+      "which": "https://aveuglesdefrance.org/",
+      "what": "Fédération des Aveugles et Amblyopes de France"
+    },
+    {
+      "id": "sidar",
+      "which": "http://www.sidar.org/#goto_a11yhoy",
+      "what": "Fundación Sidar"
+    },
+    {
       "id": "hassell",
       "which": "https://www.hassellinclusion.com/",
       "what": "Hassell Inclusion"
+    },
+    {
+      "id": "ideance",
+      "which": "https://ideance.net/fr/",
+      "what": "Ideance"
     },
     {
       "id": "cake",
@@ -181,6 +211,11 @@
       "id": "ultranauts",
       "which": "https://ultranauts.co/",
       "what": "Ultranauts"
+    },
+    {
+      "id": "uauad",
+      "which": "https://web.ua.es/va/accesibilidad/",
+      "what": "Unitat d’Accessibilitat Digital de la Universitat d’Alacant"
     },
     {
       "id": "unityweb",

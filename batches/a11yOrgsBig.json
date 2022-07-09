@@ -23,6 +23,11 @@
       "what": "AbilityNet"
     },
     {
+      "id": "accessfirst",
+      "which": "https://www.access-first.fr/",
+      "what": "Access First"
+    },
+    {
       "id": "accessibe",
       "which": "https://accessibe.com/",
       "what": "AccessiBe"
@@ -83,6 +88,11 @@
       "what": "AEL Data"
     },
     {
+      "id": "amberscript",
+      "which": "https://www.amberscript.com/nl/",
+      "what": "Amberscript"
+    },
+    {
       "id": "aph",
       "which": "https://www.aph.org/accessibility-solutions/",
       "what": "American Printing House"
@@ -136,6 +146,11 @@
       "id": "benetech",
       "which": "https://benetech.org/",
       "what": "Benetech"
+    },
+    {
+      "id": "bestwa",
+      "which": "https://bestwebsiteaccessibility.com/",
+      "what": "Best Website Accessibility"
     },
     {
       "id": "boia",
@@ -218,9 +233,19 @@
       "what": "FACIL’iti"
     },
     {
+      "id": "aveugles",
+      "which": "https://aveuglesdefrance.org/",
+      "what": "Fédération des Aveugles et Amblyopes de France"
+    },
+    {
       "id": "hearcolors",
       "which": "https://www.hearcolors.com.mx/",
       "what": "Fundación Hearcolors"
+    },
+    {
+      "id": "sidar",
+      "which": "http://www.sidar.org/#goto_a11yhoy",
+      "what": "Fundación Sidar"
     },
     {
       "id": "funka",
@@ -246,6 +271,11 @@
       "id": "iaap",
       "which": "https://www.accessibilityassociation.org/s/",
       "what": "IAAP"
+    },
+    {
+      "id": "ideance",
+      "which": "https://ideance.net/fr/",
+      "what": "Ideance"
     },
     {
       "id": "cake",
@@ -406,6 +436,11 @@
       "id": "ultranauts",
       "which": "https://ultranauts.co/",
       "what": "Ultranauts"
+    },
+    {
+      "id": "uauad",
+      "which": "https://web.ua.es/va/accesibilidad/",
+      "what": "Unitat d’Accessibilitat Digital de la Universitat d’Alacant"
     },
     {
       "id": "unityweb",
