@@ -1,0 +1,16 @@
+{
+  "id": "test",
+  "what": "Test",
+  "hosts": [
+    {
+      "id": "greinerhome",
+      "which": "http://greinersclothing.com/",
+      "what": "Greiner’s Fine Men’s Clothing: Home"
+    },
+    {
+      "id": "nist",
+      "which": "https://www.nist.gov/",
+      "what": "National Institute of Standards and Technology"
+    }
+  ]
+}

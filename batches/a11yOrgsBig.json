@@ -68,11 +68,6 @@
       "what": "ADA Expertise Consulting"
     },
     {
-      "id": "adawebguard",
-      "which": "https://adawebguard.com/",
-      "what": "ADA Web Guard"
-    },
-    {
       "id": "adagovbeta",
       "which": "https://beta.ada.gov/",
       "what": "ADA.gov beta site"
@@ -188,11 +183,6 @@
       "what": "Deque"
     },
     {
-      "id": "dac",
-      "which": "https://www.digitalaccessibilitycentre.org/",
-      "what": "Digital Accessibility Centre"
-    },
-    {
       "id": "diginclusion",
       "which": "https://diginclusion.com/",
       "what": "Dig Inclusion"
@@ -306,11 +296,6 @@
       "id": "makesense",
       "which": "https://mk-sense.com/",
       "what": "Make-Sense"
-    },
-    {
-      "id": "mesmer",
-      "which": "https://www.mesmerhq.com/",
-      "what": "Mesmer"
     },
     {
       "id": "microassist",

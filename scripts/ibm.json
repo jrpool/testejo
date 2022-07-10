@@ -2,6 +2,7 @@
   "id": "ibm",
   "what": "IBM",
   "strict": true,
+  "timeLimit": 55,
   "commands": [
     {
       "type": "launch",
