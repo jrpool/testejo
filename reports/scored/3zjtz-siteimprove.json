@@ -8251,7 +8251,7 @@
           "axe": {
             "color-contrast-enhanced": {
               "score": 12,
-              "what": "Elements must have sufficient color contrast (Level AAA)"
+              "what": "Element has insufficient color contrast (Level AAA)"
             }
           },
           "tenon": {
@@ -8265,7 +8265,7 @@
           "axe": {
             "color-contrast": {
               "score": 34,
-              "what": "Elements must have sufficient color contrast"
+              "what": "Element has insufficient color contrast"
             }
           }
         },
@@ -8313,7 +8313,7 @@
           "htmlcs": {
             "w:AA.1_3_1.H85.2": {
               "score": 1,
-              "what": "If selection list contains groups of related options, they should be grouped with optgroup"
+              "what": "Selection list may contain groups of related options that are not grouped with optgroup"
             }
           }
         },
@@ -8327,7 +8327,7 @@
           "tenon": {
             "155": {
               "score": 1,
-              "what": "These headings are not structured in a hierarchical manner"
+              "what": "Headings are not structured in a hierarchical manner"
             }
           }
         },

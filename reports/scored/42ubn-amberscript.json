@@ -32186,7 +32186,7 @@
           "axe": {
             "link-name": {
               "score": 27,
-              "what": "Links must have discernible text"
+              "what": "Link has no discernible text"
             }
           },
           "htmlcs": {
@@ -32213,6 +32213,14 @@
             "57": {
               "score": 80,
               "what": "Link has no text inside it"
+            }
+          }
+        },
+        "ariaBadAttribute": {
+          "alfa": {
+            "r18": {
+              "score": 4,
+              "what": "ARIA state or property is not allowed for the element on which it is specified"
             }
           }
         },
@@ -32276,7 +32284,7 @@
           "axe": {
             "aria-required-parent": {
               "score": 12,
-              "what": "Certain ARIA roles must be contained by particular parents"
+              "what": "ARIA role is not contained by a required parent"
             }
           }
         },
@@ -32290,7 +32298,7 @@
           "axe": {
             "heading-order": {
               "score": 8,
-              "what": "Heading levels should only increase by one"
+              "what": "Heading levels do not increase by only one"
             }
           },
           "htmlcs": {
@@ -32308,7 +32316,7 @@
           "tenon": {
             "155": {
               "score": 1,
-              "what": "These headings are not structured in a hierarchical manner"
+              "what": "Headings are not structured in a hierarchical manner"
             }
           }
         },
@@ -32336,7 +32344,7 @@
           "axe": {
             "color-contrast-enhanced": {
               "score": 40,
-              "what": "Elements must have sufficient color contrast (Level AAA)"
+              "what": "Element has insufficient color contrast (Level AAA)"
             }
           },
           "tenon": {
@@ -32350,13 +32358,13 @@
           "alfa": {
             "r68": {
               "score": 4,
-              "what": "Element owns no elements as required by its semantic role"
+              "what": "Element does not own an element required by its semantic role"
             }
           },
           "axe": {
             "aria-required-children": {
               "score": 4,
-              "what": "Certain ARIA roles must contain particular children"
+              "what": "ARIA role does not contain a required child"
             }
           }
         },
@@ -32370,7 +32378,7 @@
           "axe": {
             "color-contrast": {
               "score": 118,
-              "what": "Elements must have sufficient color contrast"
+              "what": "Element has insufficient color contrast"
             }
           },
           "htmlcs": {
@@ -32394,7 +32402,7 @@
           "alfa": {
             "r73": {
               "score": 18,
-              "what": "Paragraphs of text have insufficient line height"
+              "what": "Paragraph of text has insufficient line height"
             }
           }
         },
@@ -32482,15 +32490,13 @@
             }
           }
         },
-        "mainLandmark": {
-          "axe": {
-            "landmark-one-main": {
-              "score": 1,
-              "what": "page has no main landmark"
-            }
-          }
-        },
         "controlLabel": {
+          "axe": {
+            "label": {
+              "score": 4,
+              "what": "Form element has no label"
+            }
+          },
           "htmlcs": {
             "e:AA.1_3_1.F68": {
               "score": 4,
@@ -32504,11 +32510,41 @@
             }
           }
         },
+        "mainLandmark": {
+          "axe": {
+            "landmark-one-main": {
+              "score": 1,
+              "what": "page has no main landmark"
+            }
+          }
+        },
+        "decorativeTitle": {
+          "htmlcs": {
+            "e:AA.1_1_1.H67.1": {
+              "score": 1,
+              "what": "img element has an empty alt attribute but has a nonempty title attribute"
+            }
+          },
+          "wave": {
+            "a:image_title": {
+              "score": 1,
+              "what": "Image has a title attribute value but no alt value"
+            }
+          }
+        },
         "iframeTitleBad": {
           "htmlcs": {
             "e:AA.2_4_1.H64.1": {
               "score": 4,
-              "what": "iframe element requires a non-empty title attribute"
+              "what": "iframe element has no non-empty title attribute"
+            }
+          }
+        },
+        "inputNoText": {
+          "htmlcs": {
+            "e:AA.4_1_2.H91.InputCheckbox.Name": {
+              "score": 4,
+              "what": "Checkbox input has no accessible name"
             }
           }
         },
@@ -32524,7 +32560,7 @@
           "htmlcs": {
             "w:AA.1_3_1.H48": {
               "score": 2,
-              "what": "Navigation links should best be coded as a list"
+              "what": "Navigation links are not coded as a list"
             }
           }
         },
@@ -32637,28 +32673,14 @@
           }
         }
       },
-      "solos": {
-        "alfa": {
-          "r18": 4
-        },
-        "axe": {
-          "label": 4
-        },
-        "htmlcs": {
-          "e:AA.1_1_1.H67.1": 4,
-          "e:AA.4_1_2.H91.InputCheckbox.Name": 4
-        },
-        "wave": {
-          "a:image_title": 1
-        }
-      }
+      "solos": {}
     },
     "preventionScores": {},
     "summary": {
-      "total": 1793,
+      "total": 1775,
       "log": 117,
       "preventions": 0,
-      "solos": 34,
+      "solos": 0,
       "groups": [
         {
           "groupName": "contentBeyondLandmarks",
@@ -32765,11 +32787,11 @@
           "score": 11
         },
         {
-          "groupName": "childMissing",
-          "score": 8
+          "groupName": "controlLabel",
+          "score": 9
         },
         {
-          "groupName": "controlLabel",
+          "groupName": "childMissing",
           "score": 8
         },
         {
@@ -32781,11 +32803,19 @@
           "score": 6
         },
         {
+          "groupName": "ariaBadAttribute",
+          "score": 6
+        },
+        {
           "groupName": "formFieldNoText",
           "score": 6
         },
         {
           "groupName": "iframeTitleBad",
+          "score": 6
+        },
+        {
+          "groupName": "inputNoText",
           "score": 6
         },
         {
@@ -32838,6 +32868,10 @@
         },
         {
           "groupName": "mainLandmark",
+          "score": 3
+        },
+        {
+          "groupName": "decorativeTitle",
           "score": 3
         },
         {

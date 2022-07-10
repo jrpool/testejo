@@ -12212,7 +12212,7 @@
           "axe": {
             "aria-required-parent": {
               "score": 40,
-              "what": "Certain ARIA roles must be contained by particular parents"
+              "what": "ARIA role is not contained by a required parent"
             }
           }
         },
@@ -12248,7 +12248,7 @@
           "axe": {
             "color-contrast-enhanced": {
               "score": 10,
-              "what": "Elements must have sufficient color contrast (Level AAA)"
+              "what": "Element has insufficient color contrast (Level AAA)"
             }
           },
           "tenon": {
@@ -12268,7 +12268,7 @@
           "axe": {
             "color-contrast": {
               "score": 20,
-              "what": "Elements must have sufficient color contrast"
+              "what": "Element has insufficient color contrast"
             }
           }
         },
@@ -12276,7 +12276,7 @@
           "alfa": {
             "r73": {
               "score": 12,
-              "what": "Paragraphs of text have insufficient line height"
+              "what": "Paragraph of text has insufficient line height"
             }
           }
         },
@@ -12316,7 +12316,7 @@
           "axe": {
             "image-redundant-alt": {
               "score": 1,
-              "what": "Text of buttons and links should not be repeated in the image alternative"
+              "what": "Text of a button or link is repeated in the image alternative"
             }
           },
           "wave": {
@@ -12352,7 +12352,7 @@
           "htmlcs": {
             "w:AA.1_3_1.H48": {
               "score": 1,
-              "what": "Navigation links should best be coded as a list"
+              "what": "Navigation links are not coded as a list"
             }
           }
         },
@@ -12366,7 +12366,7 @@
           "tenon": {
             "155": {
               "score": 1,
-              "what": "These headings are not structured in a hierarchical manner"
+              "what": "Headings are not structured in a hierarchical manner"
             }
           }
         },

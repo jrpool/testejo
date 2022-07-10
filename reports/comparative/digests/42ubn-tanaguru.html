@@ -86,7 +86,7 @@
       <p><span class="componentID">contrastAA</span>: Score 20. Issues reported by tests in this category:</p>
       <ul>
       <li>Package <code>alfa</code>, test <code>r69</code>, score 11 (Text outside widget has subminimum contrast)</li>
-  <li>Package <code>axe</code>, test <code>color-contrast</code>, score 13 (Elements must have sufficient color contrast)</li>
+  <li>Package <code>axe</code>, test <code>color-contrast</code>, score 13 (Element has insufficient color contrast)</li>
   <li>Package <code>wave</code>, test <code>c:contrast</code>, score 2 (Very low contrast)</li>
       </ul>
       <p><span class="componentID">linkIndication</span>: Score 15. Issues reported by tests in this category:</p>
@@ -101,7 +101,7 @@
       <p><span class="componentID">contrastAAA</span>: Score 11. Issues reported by tests in this category:</p>
       <ul>
       <li>Package <code>alfa</code>, test <code>r66</code>, score 4 (Text contrast less than AAA requires)</li>
-  <li>Package <code>axe</code>, test <code>color-contrast-enhanced</code>, score 7 (Elements must have sufficient color contrast (Level AAA))</li>
+  <li>Package <code>axe</code>, test <code>color-contrast-enhanced</code>, score 7 (Element has insufficient color contrast (Level AAA))</li>
   <li>Package <code>tenon</code>, test <code>95</code>, score 2 (Element has insufficient color contrast (Level AAA))</li>
       </ul>
       <p><span class="componentID">fontSmall</span>: Score 11. Issues reported by tests in this category:</p>
@@ -153,12 +153,12 @@
       </ul>
       <p><span class="componentID">selectFlatRisk</span>: Score 3. Issues reported by tests in this category:</p>
       <ul>
-      <li>Package <code>htmlcs</code>, test <code>w:AA.1_3_1.H85.2</code>, score 1 (If selection list contains groups of related options, they should be grouped with optgroup)</li>
+      <li>Package <code>htmlcs</code>, test <code>w:AA.1_3_1.H85.2</code>, score 1 (Selection list may contain groups of related options that are not grouped with optgroup)</li>
       </ul>
       <p><span class="componentID">headingStructure</span>: Score 3. Issues reported by tests in this category:</p>
       <ul>
       <li>Package <code>htmlcs</code>, test <code>w:AA.1_3_1_A.G141</code>, score 1 (Heading level is incorrect)</li>
-  <li>Package <code>tenon</code>, test <code>155</code>, score 1 (These headings are not structured in a hierarchical manner)</li>
+  <li>Package <code>tenon</code>, test <code>155</code>, score 1 (Headings are not structured in a hierarchical manner)</li>
       </ul>
       <p><span class="componentID">scrollRisk</span>: Score 3. Issues reported by tests in this category:</p>
       <ul>
@@ -7156,7 +7156,7 @@
           "axe": {
             "color-contrast-enhanced": {
               "score": 7,
-              "what": "Elements must have sufficient color contrast (Level AAA)"
+              "what": "Element has insufficient color contrast (Level AAA)"
             }
           },
           "tenon": {
@@ -7176,7 +7176,7 @@
           "axe": {
             "color-contrast": {
               "score": 13,
-              "what": "Elements must have sufficient color contrast"
+              "what": "Element has insufficient color contrast"
             }
           },
           "wave": {
@@ -7214,7 +7214,7 @@
           "htmlcs": {
             "w:AA.1_3_1.H85.2": {
               "score": 1,
-              "what": "If selection list contains groups of related options, they should be grouped with optgroup"
+              "what": "Selection list may contain groups of related options that are not grouped with optgroup"
             }
           }
         },
@@ -7228,7 +7228,7 @@
           "tenon": {
             "155": {
               "score": 1,
-              "what": "These headings are not structured in a hierarchical manner"
+              "what": "Headings are not structured in a hierarchical manner"
             }
           }
         },

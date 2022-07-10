@@ -20,7 +20,7 @@
         <div id="synopsis">
           <p><strong>Page</strong>: Unity Web Agency</p>
           <p><strong>URL</strong>: https://unitywebagency.com/</p>
-          <p><strong>Score</strong>: 1042</p>
+          <p><strong>Score</strong>: 1043</p>
           <p><strong>Tested by</strong>: Testaro, procedure <code>tp12</code></p>
           <p><strong>Scored by</strong>: Testilo, procedure <code>sp12a</code></p>
           <p><strong>Digested by</strong>: Testilo, procedure <code>dp12a</code></p>
@@ -39,16 +39,15 @@
         <li><a href="https://wave.webaim.org/api/">WAVE</a> by WebAIM</li>
       </ul>
       <p>Testaro produced a report enumerating the test results.</p>
-      <p><a href="https://www.npmjs.com/package/testilo">Testilo</a> processed the report and used the <code>sp12a</code> scoring procedure to compute partial and total scores for the page. The total score is 1042 (where 0 is the best possible score). The scored report is appended below.</p>
+      <p><a href="https://www.npmjs.com/package/testilo">Testilo</a> processed the report and used the <code>sp12a</code> scoring procedure to compute partial and total scores for the page. The total score is 1043 (where 0 is the best possible score). The scored report is appended below.</p>
       <p>Finally, Testilo used procedure <code>dp12a</code> to produce this digest, briefly explaining how <code>sp12a</code> computed the scores.</p>
       <h2>Score summary</h2>
       <table class="allBorder secondCellRight">
         <caption>Score components</caption>
         <tbody class="headersLeft">
-        <tr><th>total</th><td>1042</td></tr>
+        <tr><th>total</th><td>1043</td></tr>
         <tr><th>log</th><td>699</td></tr>
         <tr><th>preventions</th><td>50</td></tr>
-        <tr><th>solos</th><td>2</td></tr>
         <tr><th>tabFocusability</th><td>43</td></tr>
         <tr><th>contentBeyondLandmarks</th><td>39</td></tr>
         <tr><th>focusIndication</th><td>35</td></tr>
@@ -69,6 +68,7 @@
         <tr><th>visibleBulk</th><td>3</td></tr>
         <tr><th>skipRepeatedContent</th><td>3</td></tr>
         <tr><th>hiddenContentRisk</th><td>3</td></tr>
+        <tr><th>fieldSetRisk</th><td>3</td></tr>
         <tr><th>selectFlatRisk</th><td>3</td></tr>
         <tr><th>headingStructure</th><td>3</td></tr>
         <tr><th>scrollRisk</th><td>3</td></tr>
@@ -81,7 +81,6 @@
       <h3>Special issues</h3>
       <p><span class="componentID">log</span>: Score 699. This is based on the amount of browser error logging and miscellaneous logging during the tests.
       <p><span class="componentID">preventions</span>: Score 50. This is based on tests that the page did not allow to be run. That impedes accessibility progress and risks interfering with tools that users with disabilities need.
-      <p><span class="componentID">solos</span>: Score 2. This is based on issues reported by unclassified tests. Details are in the report.
       <h3>Classified issues</h3>
       <p><span class="componentID">tabFocusability</span>: Score 43. Issues reported by tests in this category:</p>
       <ul>
@@ -103,7 +102,7 @@
       </ul>
       <p><span class="componentID">contrastAA</span>: Score 23. Issues reported by tests in this category:</p>
       <ul>
-      <li>Package <code>axe</code>, test <code>color-contrast</code>, score 21 (Elements must have sufficient color contrast)</li>
+      <li>Package <code>axe</code>, test <code>color-contrast</code>, score 21 (Element has insufficient color contrast)</li>
       </ul>
       <p><span class="componentID">focusableOperable</span>: Score 17. Issues reported by tests in this category:</p>
       <ul>
@@ -119,7 +118,7 @@
       </ul>
       <p><span class="componentID">contrastAAA</span>: Score 11. Issues reported by tests in this category:</p>
       <ul>
-      <li>Package <code>axe</code>, test <code>color-contrast-enhanced</code>, score 9 (Elements must have sufficient color contrast (Level AAA))</li>
+      <li>Package <code>axe</code>, test <code>color-contrast-enhanced</code>, score 9 (Element has insufficient color contrast (Level AAA))</li>
       </ul>
       <p><span class="componentID">contrastRisk</span>: Score 8. Issues reported by tests in this category:</p>
       <ul>
@@ -138,7 +137,7 @@
       </ul>
       <p><span class="componentID">iframeTitleBad</span>: Score 6. Issues reported by tests in this category:</p>
       <ul>
-      <li>Package <code>htmlcs</code>, test <code>e:AA.2_4_1.H64.1</code>, score 4 (iframe element requires a non-empty title attribute)</li>
+      <li>Package <code>htmlcs</code>, test <code>e:AA.2_4_1.H64.1</code>, score 4 (iframe element has no non-empty title attribute)</li>
       </ul>
       <p><span class="componentID">fieldSetMissing</span>: Score 4. Issues reported by tests in this category:</p>
       <ul>
@@ -169,9 +168,13 @@
       <ul>
       <li>Package <code>axe</code>, test <code>hidden-content</code>, score 1 (Some content is hidden and therefore may not be testable for accessibility)</li>
       </ul>
+      <p><span class="componentID">fieldSetRisk</span>: Score 3. Issues reported by tests in this category:</p>
+      <ul>
+      <li>Package <code>htmlcs</code>, test <code>w:AA.1_3_1.H71.SameName</code>, score 1 (Radio buttons or check boxes may require a group description via a fieldset element)</li>
+      </ul>
       <p><span class="componentID">selectFlatRisk</span>: Score 3. Issues reported by tests in this category:</p>
       <ul>
-      <li>Package <code>htmlcs</code>, test <code>w:AA.1_3_1.H85.2</code>, score 1 (If selection list contains groups of related options, they should be grouped with optgroup)</li>
+      <li>Package <code>htmlcs</code>, test <code>w:AA.1_3_1.H85.2</code>, score 1 (Selection list may contain groups of related options that are not grouped with optgroup)</li>
       </ul>
       <p><span class="componentID">headingStructure</span>: Score 3. Issues reported by tests in this category:</p>
       <ul>
@@ -6611,7 +6614,7 @@
           "axe": {
             "color-contrast-enhanced": {
               "score": 9,
-              "what": "Elements must have sufficient color contrast (Level AAA)"
+              "what": "Element has insufficient color contrast (Level AAA)"
             }
           }
         },
@@ -6619,7 +6622,7 @@
           "axe": {
             "color-contrast": {
               "score": 21,
-              "what": "Elements must have sufficient color contrast"
+              "what": "Element has insufficient color contrast"
             }
           }
         },
@@ -6643,7 +6646,7 @@
           "htmlcs": {
             "e:AA.2_4_1.H64.1": {
               "score": 4,
-              "what": "iframe element requires a non-empty title attribute"
+              "what": "iframe element has no non-empty title attribute"
             }
           }
         },
@@ -6655,11 +6658,19 @@
             }
           }
         },
+        "fieldSetRisk": {
+          "htmlcs": {
+            "w:AA.1_3_1.H71.SameName": {
+              "score": 1,
+              "what": "Radio buttons or check boxes may require a group description via a fieldset element"
+            }
+          }
+        },
         "selectFlatRisk": {
           "htmlcs": {
             "w:AA.1_3_1.H85.2": {
               "score": 1,
-              "what": "If selection list contains groups of related options, they should be grouped with optgroup"
+              "what": "Selection list may contain groups of related options that are not grouped with optgroup"
             }
           }
         },
@@ -6738,20 +6749,16 @@
           }
         }
       },
-      "solos": {
-        "htmlcs": {
-          "w:AA.1_3_1.H71.SameName": 1
-        }
-      }
+      "solos": {}
     },
     "preventionScores": {
       "testaro-hover": 50
     },
     "summary": {
-      "total": 1042,
+      "total": 1043,
       "log": 699,
       "preventions": 50,
-      "solos": 2,
+      "solos": 0,
       "groups": [
         {
           "groupName": "tabFocusability",
@@ -6831,6 +6838,10 @@
         },
         {
           "groupName": "hiddenContentRisk",
+          "score": 3
+        },
+        {
+          "groupName": "fieldSetRisk",
           "score": 3
         },
         {

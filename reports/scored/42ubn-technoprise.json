@@ -5477,7 +5477,7 @@
           "axe": {
             "color-contrast-enhanced": {
               "score": 6,
-              "what": "Elements must have sufficient color contrast (Level AAA)"
+              "what": "Element has insufficient color contrast (Level AAA)"
             }
           }
         },
@@ -5485,7 +5485,7 @@
           "alfa": {
             "r73": {
               "score": 3,
-              "what": "Paragraphs of text have insufficient line height"
+              "what": "Paragraph of text has insufficient line height"
             }
           }
         },
@@ -5501,7 +5501,7 @@
           "axe": {
             "color-contrast": {
               "score": 12,
-              "what": "Elements must have sufficient color contrast"
+              "what": "Element has insufficient color contrast"
             }
           }
         },
@@ -5541,7 +5541,7 @@
           "htmlcs": {
             "w:AA.1_3_1.H48": {
               "score": 1,
-              "what": "Navigation links should best be coded as a list"
+              "what": "Navigation links are not coded as a list"
             }
           }
         },
@@ -5588,6 +5588,14 @@
             "w:AA.4_1_2.H91.A.Placeholder": {
               "score": 1,
               "what": "Link has text but no href, id, or name attribute"
+            }
+          }
+        },
+        "menuItemless": {
+          "wave": {
+            "e:aria_menu_broken": {
+              "score": 4,
+              "what": "ARIA menu does not contain required menu items"
             }
           }
         },
@@ -5686,18 +5694,14 @@
           }
         }
       },
-      "solos": {
-        "wave": {
-          "e:aria_menu_broken": 4
-        }
-      }
+      "solos": {}
     },
     "preventionScores": {},
     "summary": {
-      "total": 430,
+      "total": 428,
       "log": 209,
       "preventions": 0,
-      "solos": 8,
+      "solos": 0,
       "groups": [
         {
           "groupName": "linkIndication",
@@ -5745,6 +5749,10 @@
         },
         {
           "groupName": "contrastRisk",
+          "score": 6
+        },
+        {
+          "groupName": "menuItemless",
           "score": 6
         },
         {

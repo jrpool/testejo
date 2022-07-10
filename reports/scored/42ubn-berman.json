@@ -10167,7 +10167,7 @@
           "axe": {
             "link-name": {
               "score": 3,
-              "what": "Links must have discernible text"
+              "what": "Link has no discernible text"
             }
           },
           "htmlcs": {
@@ -10223,6 +10223,14 @@
             }
           }
         },
+        "ariaBadAttribute": {
+          "alfa": {
+            "r18": {
+              "score": 8,
+              "what": "ARIA state or property is not allowed for the element on which it is specified"
+            }
+          }
+        },
         "duplicateID": {
           "alfa": {
             "r3": {
@@ -10261,7 +10269,7 @@
           "axe": {
             "color-contrast-enhanced": {
               "score": 4,
-              "what": "Elements must have sufficient color contrast (Level AAA)"
+              "what": "Element has insufficient color contrast (Level AAA)"
             }
           }
         },
@@ -10275,7 +10283,7 @@
           "axe": {
             "color-contrast": {
               "score": 8,
-              "what": "Elements must have sufficient color contrast"
+              "what": "Element has insufficient color contrast"
             }
           }
         },
@@ -10291,7 +10299,7 @@
           "alfa": {
             "r73": {
               "score": 3,
-              "what": "Paragraphs of text have insufficient line height"
+              "what": "Paragraph of text has insufficient line height"
             }
           }
         },
@@ -10367,7 +10375,7 @@
           "htmlcs": {
             "w:AA.1_3_1.H48": {
               "score": 1,
-              "what": "Navigation links should best be coded as a list"
+              "what": "Navigation links are not coded as a list"
             }
           }
         },
@@ -10496,18 +10504,14 @@
           }
         }
       },
-      "solos": {
-        "alfa": {
-          "r18": 8
-        }
-      }
+      "solos": {}
     },
     "preventionScores": {},
     "summary": {
-      "total": 633,
+      "total": 627,
       "log": 167,
       "preventions": 0,
-      "solos": 16,
+      "solos": 0,
       "groups": [
         {
           "groupName": "leadingClipsText",
@@ -10560,6 +10564,10 @@
         {
           "groupName": "fontSmall",
           "score": 11
+        },
+        {
+          "groupName": "ariaBadAttribute",
+          "score": 10
         },
         {
           "groupName": "roleBad",

@@ -14246,7 +14246,7 @@
           "axe": {
             "link-name": {
               "score": 6,
-              "what": "Links must have discernible text"
+              "what": "Link has no discernible text"
             }
           },
           "htmlcs": {
@@ -14270,7 +14270,7 @@
           "htmlcs": {
             "e:AA.2_4_1.H64.1": {
               "score": 12,
-              "what": "iframe element requires a non-empty title attribute"
+              "what": "iframe element has no non-empty title attribute"
             }
           }
         },
@@ -14285,6 +14285,20 @@
             "aria-hidden-focus": {
               "score": 30,
               "what": "ARIA hidden element is focusable or contains a focusable element"
+            }
+          }
+        },
+        "ariaBadAttribute": {
+          "alfa": {
+            "r18": {
+              "score": 28,
+              "what": "ARIA state or property is not allowed for the element on which it is specified"
+            }
+          },
+          "axe": {
+            "aria-allowed-attr": {
+              "score": 1,
+              "what": "ARIA attribute is invalid for the role of its element"
             }
           }
         },
@@ -14306,7 +14320,7 @@
           "axe": {
             "color-contrast-enhanced": {
               "score": 5,
-              "what": "Elements must have sufficient color contrast (Level AAA)"
+              "what": "Element has insufficient color contrast (Level AAA)"
             }
           },
           "tenon": {
@@ -14326,7 +14340,7 @@
           "axe": {
             "color-contrast": {
               "score": 13,
-              "what": "Elements must have sufficient color contrast"
+              "what": "Element has insufficient color contrast"
             }
           },
           "htmlcs": {
@@ -14364,7 +14378,7 @@
           "alfa": {
             "r73": {
               "score": 9,
-              "what": "Paragraphs of text have insufficient line height"
+              "what": "Paragraph of text has insufficient line height"
             }
           }
         },
@@ -14390,13 +14404,19 @@
               "score": 1,
               "what": "First focusable element is not a link to the main content"
             }
+          },
+          "wave": {
+            "e:link_skip_broken": {
+              "score": 3,
+              "what": "Skip-navigation link has no target or is not keyboard accessible"
+            }
           }
         },
-        "ariaBadAttribute": {
-          "axe": {
-            "aria-allowed-attr": {
-              "score": 1,
-              "what": "ARIA attribute is invalid for the role of its element"
+        "focusableDescendants": {
+          "alfa": {
+            "r90": {
+              "score": 8,
+              "what": "Element has a role making its children presentational but contains a focusable element"
             }
           }
         },
@@ -14460,7 +14480,7 @@
           "htmlcs": {
             "w:AA.1_3_1.H48": {
               "score": 1,
-              "what": "Navigation links should best be coded as a list"
+              "what": "Navigation links are not coded as a list"
             }
           }
         },
@@ -14601,22 +14621,14 @@
           }
         }
       },
-      "solos": {
-        "alfa": {
-          "r18": 28,
-          "r90": 8
-        },
-        "wave": {
-          "e:link_skip_broken": 4
-        }
-      }
+      "solos": {}
     },
     "preventionScores": {},
     "summary": {
-      "total": 796,
+      "total": 755,
       "log": 31,
       "preventions": 0,
-      "solos": 80,
+      "solos": 0,
       "groups": [
         {
           "groupName": "linkIndication",
@@ -14645,6 +14657,10 @@
         {
           "groupName": "spontaneousMotion",
           "score": 32
+        },
+        {
+          "groupName": "ariaBadAttribute",
+          "score": 30
         },
         {
           "groupName": "hoverSurprise",
@@ -14691,6 +14707,10 @@
           "score": 10
         },
         {
+          "groupName": "focusableDescendants",
+          "score": 10
+        },
+        {
           "groupName": "tabIndexMissing",
           "score": 10
         },
@@ -14731,6 +14751,10 @@
           "score": 5
         },
         {
+          "groupName": "skipRepeatedContent",
+          "score": 5
+        },
+        {
           "groupName": "contrastRisk",
           "score": 5
         },
@@ -14760,14 +14784,6 @@
         },
         {
           "groupName": "visibleBulk",
-          "score": 3
-        },
-        {
-          "groupName": "skipRepeatedContent",
-          "score": 3
-        },
-        {
-          "groupName": "ariaBadAttribute",
           "score": 3
         },
         {

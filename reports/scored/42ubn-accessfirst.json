@@ -9242,7 +9242,7 @@
           "axe": {
             "link-name": {
               "score": 9,
-              "what": "Links must have discernible text"
+              "what": "Link has no discernible text"
             }
           },
           "htmlcs": {
@@ -9300,7 +9300,7 @@
           "axe": {
             "color-contrast-enhanced": {
               "score": 12,
-              "what": "Elements must have sufficient color contrast (Level AAA)"
+              "what": "Element has insufficient color contrast (Level AAA)"
             }
           },
           "tenon": {
@@ -9314,7 +9314,7 @@
           "alfa": {
             "r73": {
               "score": 9,
-              "what": "Paragraphs of text have insufficient line height"
+              "what": "Paragraph of text has insufficient line height"
             }
           }
         },
@@ -9330,7 +9330,7 @@
           "axe": {
             "color-contrast": {
               "score": 28,
-              "what": "Elements must have sufficient color contrast"
+              "what": "Element has insufficient color contrast"
             }
           },
           "htmlcs": {
@@ -9398,7 +9398,7 @@
           "htmlcs": {
             "w:AA.1_3_1.H48": {
               "score": 1,
-              "what": "Navigation links should best be coded as a list"
+              "what": "Navigation links are not coded as a list"
             }
           }
         },

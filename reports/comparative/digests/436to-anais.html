@@ -20,7 +20,7 @@
         <div id="synopsis">
           <p><strong>Page</strong>: Anais Digital</p>
           <p><strong>URL</strong>: https://www.anais.digital/fr/</p>
-          <p><strong>Score</strong>: 469</p>
+          <p><strong>Score</strong>: 465</p>
           <p><strong>Tested by</strong>: Testaro, procedure <code>tp12</code></p>
           <p><strong>Scored by</strong>: Testilo, procedure <code>sp12a</code></p>
           <p><strong>Digested by</strong>: Testilo, procedure <code>dp12a</code></p>
@@ -39,15 +39,14 @@
         <li><a href="https://wave.webaim.org/api/">WAVE</a> by WebAIM</li>
       </ul>
       <p>Testaro produced a report enumerating the test results.</p>
-      <p><a href="https://www.npmjs.com/package/testilo">Testilo</a> processed the report and used the <code>sp12a</code> scoring procedure to compute partial and total scores for the page. The total score is 469 (where 0 is the best possible score). The scored report is appended below.</p>
+      <p><a href="https://www.npmjs.com/package/testilo">Testilo</a> processed the report and used the <code>sp12a</code> scoring procedure to compute partial and total scores for the page. The total score is 465 (where 0 is the best possible score). The scored report is appended below.</p>
       <p>Finally, Testilo used procedure <code>dp12a</code> to produce this digest, briefly explaining how <code>sp12a</code> computed the scores.</p>
       <h2>Score summary</h2>
       <table class="allBorder secondCellRight">
         <caption>Score components</caption>
         <tbody class="headersLeft">
-        <tr><th>total</th><td>469</td></tr>
+        <tr><th>total</th><td>465</td></tr>
         <tr><th>preventions</th><td>50</td></tr>
-        <tr><th>solos</th><td>8</td></tr>
         <tr><th>noLeading</th><td>56</td></tr>
         <tr><th>linkNoText</th><td>41</td></tr>
         <tr><th>contrastAA</th><td>38</td></tr>
@@ -70,6 +69,7 @@
         <tr><th>decorativeImageRisk</th><td>7</td></tr>
         <tr><th>tabFocusability</th><td>4</td></tr>
         <tr><th>focusableOperable</th><td>4</td></tr>
+        <tr><th>fragmentaryNoticeRisk</th><td>4</td></tr>
         <tr><th>pseudoNavListRisk</th><td>4</td></tr>
         <tr><th>pseudoLinkRisk</th><td>4</td></tr>
         <tr><th>focusIndication</th><td>3</td></tr>
@@ -84,11 +84,10 @@
       <h2>Issue summary</h2>
       <h3>Special issues</h3>
       <p><span class="componentID">preventions</span>: Score 50. This is based on tests that the page did not allow to be run. That impedes accessibility progress and risks interfering with tools that users with disabilities need.
-      <p><span class="componentID">solos</span>: Score 8. This is based on issues reported by unclassified tests. Details are in the report.
       <h3>Classified issues</h3>
       <p><span class="componentID">noLeading</span>: Score 56. Issues reported by tests in this category:</p>
       <ul>
-      <li>Package <code>alfa</code>, test <code>r73</code>, score 54 (Paragraphs of text have insufficient line height)</li>
+      <li>Package <code>alfa</code>, test <code>r73</code>, score 54 (Paragraph of text has insufficient line height)</li>
       </ul>
       <p><span class="componentID">linkNoText</span>: Score 41. Issues reported by tests in this category:</p>
       <ul>
@@ -98,7 +97,7 @@
       <p><span class="componentID">contrastAA</span>: Score 38. Issues reported by tests in this category:</p>
       <ul>
       <li>Package <code>alfa</code>, test <code>r69</code>, score 33 (Text outside widget has subminimum contrast)</li>
-  <li>Package <code>axe</code>, test <code>color-contrast</code>, score 5 (Elements must have sufficient color contrast)</li>
+  <li>Package <code>axe</code>, test <code>color-contrast</code>, score 5 (Element has insufficient color contrast)</li>
   <li>Package <code>wave</code>, test <code>c:contrast</code>, score 2 (Very low contrast)</li>
       </ul>
       <p><span class="componentID">linkForcesNewWindow</span>: Score 29. Issues reported by tests in this category:</p>
@@ -134,7 +133,7 @@
       <p><span class="componentID">contrastAAA</span>: Score 14. Issues reported by tests in this category:</p>
       <ul>
       <li>Package <code>alfa</code>, test <code>r66</code>, score 11 (Text contrast less than AAA requires)</li>
-  <li>Package <code>axe</code>, test <code>color-contrast-enhanced</code>, score 2 (Elements must have sufficient color contrast (Level AAA))</li>
+  <li>Package <code>axe</code>, test <code>color-contrast-enhanced</code>, score 2 (Element has insufficient color contrast (Level AAA))</li>
       </ul>
       <p><span class="componentID">hoverSurprise</span>: Score 11. Issues reported by tests in this category:</p>
       <ul>
@@ -143,7 +142,7 @@
       <p><span class="componentID">roleBad</span>: Score 11. Issues reported by tests in this category:</p>
       <ul>
       <li>Package <code>testaro</code>, test <code>role</code>, score 7 (Nonexistent or implicit-overriding role)</li>
-  <li>Package <code>axe</code>, test <code>aria-allowed-role</code>, score 5 (ARIA role should be appropriate for the element)</li>
+  <li>Package <code>axe</code>, test <code>aria-allowed-role</code>, score 5 (ARIA role is not appropriate for the element)</li>
       </ul>
       <p><span class="componentID">overflowHidden</span>: Score 10. Issues reported by tests in this category:</p>
       <ul>
@@ -185,9 +184,13 @@
       <ul>
       <li>Package <code>testaro</code>, test <code>focOp</code>, score 2 (Operable elements that cannot be Tab-focused and vice versa)</li>
       </ul>
+      <p><span class="componentID">fragmentaryNoticeRisk</span>: Score 4. Issues reported by tests in this category:</p>
+      <ul>
+      <li>Package <code>alfa</code>, test <code>r54</code>, score 2 (Assertive region is not atomic)</li>
+      </ul>
       <p><span class="componentID">pseudoNavListRisk</span>: Score 4. Issues reported by tests in this category:</p>
       <ul>
-      <li>Package <code>htmlcs</code>, test <code>w:AA.1_3_1.H48</code>, score 2 (Navigation links should best be coded as a list)</li>
+      <li>Package <code>htmlcs</code>, test <code>w:AA.1_3_1.H48</code>, score 2 (Navigation links are not coded as a list)</li>
       </ul>
       <p><span class="componentID">pseudoLinkRisk</span>: Score 4. Issues reported by tests in this category:</p>
       <ul>
@@ -9841,7 +9844,7 @@
           "axe": {
             "aria-allowed-role": {
               "score": 5,
-              "what": "ARIA role should be appropriate for the element"
+              "what": "ARIA role is not appropriate for the element"
             }
           }
         },
@@ -9895,6 +9898,14 @@
             }
           }
         },
+        "fragmentaryNoticeRisk": {
+          "alfa": {
+            "r54": {
+              "score": 2,
+              "what": "Assertive region is not atomic"
+            }
+          }
+        },
         "contentBeyondLandmarks": {
           "alfa": {
             "r57": {
@@ -9919,7 +9930,7 @@
           "axe": {
             "color-contrast-enhanced": {
               "score": 2,
-              "what": "Elements must have sufficient color contrast (Level AAA)"
+              "what": "Element has insufficient color contrast (Level AAA)"
             }
           }
         },
@@ -9933,7 +9944,7 @@
           "axe": {
             "color-contrast": {
               "score": 5,
-              "what": "Elements must have sufficient color contrast"
+              "what": "Element has insufficient color contrast"
             }
           },
           "wave": {
@@ -9947,7 +9958,7 @@
           "alfa": {
             "r73": {
               "score": 54,
-              "what": "Paragraphs of text have insufficient line height"
+              "what": "Paragraph of text has insufficient line height"
             }
           }
         },
@@ -10017,7 +10028,7 @@
           "htmlcs": {
             "w:AA.1_3_1.H48": {
               "score": 2,
-              "what": "Navigation links should best be coded as a list"
+              "what": "Navigation links are not coded as a list"
             }
           }
         },
@@ -10108,20 +10119,16 @@
           }
         }
       },
-      "solos": {
-        "alfa": {
-          "r54": 4
-        }
-      }
+      "solos": {}
     },
     "preventionScores": {
       "testaro-bulk": 50
     },
     "summary": {
-      "total": 469,
+      "total": 465,
       "log": 0,
       "preventions": 50,
-      "solos": 8,
+      "solos": 0,
       "groups": [
         {
           "groupName": "noLeading",
@@ -10209,6 +10216,10 @@
         },
         {
           "groupName": "focusableOperable",
+          "score": 4
+        },
+        {
+          "groupName": "fragmentaryNoticeRisk",
           "score": 4
         },
         {

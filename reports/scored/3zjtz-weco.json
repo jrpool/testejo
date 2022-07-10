@@ -7836,7 +7836,7 @@
           "axe": {
             "page-has-heading-one": {
               "score": 1,
-              "what": "Page should contain a level-one heading"
+              "what": "Page contains no level-one heading"
             }
           },
           "wave": {
@@ -7856,7 +7856,7 @@
           "axe": {
             "color-contrast-enhanced": {
               "score": 7,
-              "what": "Elements must have sufficient color contrast (Level AAA)"
+              "what": "Element has insufficient color contrast (Level AAA)"
             }
           },
           "tenon": {
@@ -7870,7 +7870,7 @@
           "alfa": {
             "r68": {
               "score": 4,
-              "what": "Element owns no elements as required by its semantic role"
+              "what": "Element does not own an element required by its semantic role"
             }
           }
         },
@@ -7892,7 +7892,15 @@
           "alfa": {
             "r73": {
               "score": 3,
-              "what": "Paragraphs of text have insufficient line height"
+              "what": "Paragraph of text has insufficient line height"
+            }
+          }
+        },
+        "fontSmall": {
+          "alfa": {
+            "r75": {
+              "score": 12,
+              "what": "Font size is smaller than 9 pixels"
             }
           }
         },
@@ -7932,7 +7940,7 @@
           "axe": {
             "color-contrast": {
               "score": 2,
-              "what": "Elements must have sufficient color contrast"
+              "what": "Element has insufficient color contrast"
             }
           },
           "wave": {
@@ -7967,6 +7975,12 @@
           }
         },
         "controlLabel": {
+          "axe": {
+            "label": {
+              "score": 4,
+              "what": "Form element has no label"
+            }
+          },
           "htmlcs": {
             "e:AA.1_3_1.F68": {
               "score": 12,
@@ -7984,7 +7998,15 @@
           "htmlcs": {
             "e:AA.2_4_1.H64.1": {
               "score": 4,
-              "what": "iframe element requires a non-empty title attribute"
+              "what": "iframe element has no non-empty title attribute"
+            }
+          }
+        },
+        "inputNoText": {
+          "htmlcs": {
+            "e:AA.4_1_2.H91.InputCheckbox.Name": {
+              "score": 4,
+              "what": "Checkbox input has no accessible name"
             }
           }
         },
@@ -8010,7 +8032,7 @@
             }
           }
         },
-        "labelForBadID": {
+        "labelBadID": {
           "htmlcs": {
             "w:AA.1_3_1.H44.NonExistentFragment": {
               "score": 1,
@@ -8036,7 +8058,7 @@
           "htmlcs": {
             "w:AA.1_3_1.H48": {
               "score": 1,
-              "what": "Navigation links should best be coded as a list"
+              "what": "Navigation links are not coded as a list"
             }
           }
         },
@@ -8050,7 +8072,7 @@
           "tenon": {
             "155": {
               "score": 1,
-              "what": "These headings are not structured in a hierarchical manner"
+              "what": "Headings are not structured in a hierarchical manner"
             }
           }
         },
@@ -8102,6 +8124,14 @@
             }
           }
         },
+        "obsoleteAttribute": {
+          "wave": {
+            "a:longdesc": {
+              "score": 2,
+              "what": "The longdesc attribute is obsolete"
+            }
+          }
+        },
         "linkTextsSame": {
           "tenon": {
             "98": {
@@ -8127,27 +8157,14 @@
           }
         }
       },
-      "solos": {
-        "alfa": {
-          "r75": 16
-        },
-        "axe": {
-          "label": 4
-        },
-        "htmlcs": {
-          "e:AA.4_1_2.H91.InputCheckbox.Name": 4
-        },
-        "wave": {
-          "a:longdesc": 2
-        }
-      }
+      "solos": {}
     },
     "preventionScores": {},
     "summary": {
-      "total": 354,
+      "total": 327,
       "log": 17,
       "preventions": 0,
-      "solos": 52,
+      "solos": 0,
       "groups": [
         {
           "groupName": "tabFocusability",
@@ -8159,11 +8176,15 @@
         },
         {
           "groupName": "controlLabel",
-          "score": 19
+          "score": 20
         },
         {
           "groupName": "hoverSurprise",
           "score": 16
+        },
+        {
+          "groupName": "fontSmall",
+          "score": 14
         },
         {
           "groupName": "focusIndication",
@@ -8218,6 +8239,10 @@
           "score": 6
         },
         {
+          "groupName": "inputNoText",
+          "score": 6
+        },
+        {
           "groupName": "targetSize",
           "score": 6
         },
@@ -8239,6 +8264,10 @@
         },
         {
           "groupName": "imageTextLong",
+          "score": 4
+        },
+        {
+          "groupName": "obsoleteAttribute",
           "score": 4
         },
         {
@@ -8274,7 +8303,7 @@
           "score": 3
         },
         {
-          "groupName": "labelForBadID",
+          "groupName": "labelBadID",
           "score": 3
         },
         {

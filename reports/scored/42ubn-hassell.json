@@ -10268,10 +10268,16 @@
               "what": "Nonexistent or implicit-overriding role"
             }
           },
+          "alfa": {
+            "r21": {
+              "score": 12,
+              "what": "Element does not have a valid role"
+            }
+          },
           "axe": {
             "aria-allowed-role": {
               "score": 3,
-              "what": "ARIA role should be appropriate for the element"
+              "what": "ARIA role is not appropriate for the element"
             }
           }
         },
@@ -10301,7 +10307,7 @@
           "axe": {
             "link-name": {
               "score": 6,
-              "what": "Links must have discernible text"
+              "what": "Link has no discernible text"
             }
           },
           "htmlcs": {
@@ -10353,7 +10359,7 @@
           "axe": {
             "color-contrast-enhanced": {
               "score": 8,
-              "what": "Elements must have sufficient color contrast (Level AAA)"
+              "what": "Element has insufficient color contrast (Level AAA)"
             }
           }
         },
@@ -10361,7 +10367,7 @@
           "alfa": {
             "r68": {
               "score": 4,
-              "what": "Element owns no elements as required by its semantic role"
+              "what": "Element does not own an element required by its semantic role"
             }
           }
         },
@@ -10375,7 +10381,7 @@
           "axe": {
             "color-contrast": {
               "score": 9,
-              "what": "Elements must have sufficient color contrast"
+              "what": "Element has insufficient color contrast"
             }
           },
           "wave": {
@@ -10510,18 +10516,14 @@
           }
         }
       },
-      "solos": {
-        "alfa": {
-          "r21": 16
-        }
-      }
+      "solos": {}
     },
     "preventionScores": {},
     "summary": {
-      "total": 395,
+      "total": 373,
       "log": 40,
       "preventions": 0,
-      "solos": 32,
+      "solos": 0,
       "groups": [
         {
           "groupName": "focusIndication",
@@ -10548,6 +10550,10 @@
           "score": 18
         },
         {
+          "groupName": "roleBad",
+          "score": 17
+        },
+        {
           "groupName": "contrastAAA",
           "score": 15
         },
@@ -10562,10 +10568,6 @@
         {
           "groupName": "overflowHidden",
           "score": 10
-        },
-        {
-          "groupName": "roleBad",
-          "score": 7
         },
         {
           "groupName": "inconsistentStyles",

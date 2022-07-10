@@ -5264,7 +5264,7 @@
           "axe": {
             "color-contrast-enhanced": {
               "score": 8,
-              "what": "Elements must have sufficient color contrast (Level AAA)"
+              "what": "Element has insufficient color contrast (Level AAA)"
             }
           }
         },
@@ -5278,7 +5278,15 @@
           "axe": {
             "color-contrast": {
               "score": 23,
-              "what": "Elements must have sufficient color contrast"
+              "what": "Element has insufficient color contrast"
+            }
+          }
+        },
+        "allItalics": {
+          "alfa": {
+            "r85": {
+              "score": 2,
+              "what": "Text of the paragraph is all italic"
             }
           }
         },
@@ -5310,7 +5318,7 @@
           "htmlcs": {
             "w:AA.1_3_1.H48": {
               "score": 1,
-              "what": "Navigation links should best be coded as a list"
+              "what": "Navigation links are not coded as a list"
             }
           }
         },
@@ -5324,7 +5332,7 @@
           "tenon": {
             "155": {
               "score": 1,
-              "what": "These headings are not structured in a hierarchical manner"
+              "what": "Headings are not structured in a hierarchical manner"
             }
           }
         },
@@ -5357,18 +5365,14 @@
           }
         }
       },
-      "solos": {
-        "alfa": {
-          "r85": 8
-        }
-      }
+      "solos": {}
     },
     "preventionScores": {},
     "summary": {
-      "total": 179,
+      "total": 167,
       "log": 59,
       "preventions": 0,
-      "solos": 16,
+      "solos": 0,
       "groups": [
         {
           "groupName": "contrastAA",
@@ -5385,6 +5389,10 @@
         {
           "groupName": "contrastRisk",
           "score": 8
+        },
+        {
+          "groupName": "allItalics",
+          "score": 4
         },
         {
           "groupName": "textRotated",

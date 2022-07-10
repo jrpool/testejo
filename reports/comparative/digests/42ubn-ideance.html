@@ -20,7 +20,7 @@
         <div id="synopsis">
           <p><strong>Page</strong>: Ideance</p>
           <p><strong>URL</strong>: https://ideance.net/fr/</p>
-          <p><strong>Score</strong>: 244</p>
+          <p><strong>Score</strong>: 237</p>
           <p><strong>Tested by</strong>: Testaro, procedure <code>tp12</code></p>
           <p><strong>Scored by</strong>: Testilo, procedure <code>sp12a</code></p>
           <p><strong>Digested by</strong>: Testilo, procedure <code>dp12a</code></p>
@@ -39,14 +39,13 @@
         <li><a href="https://wave.webaim.org/api/">WAVE</a> by WebAIM</li>
       </ul>
       <p>Testaro produced a report enumerating the test results.</p>
-      <p><a href="https://www.npmjs.com/package/testilo">Testilo</a> processed the report and used the <code>sp12a</code> scoring procedure to compute partial and total scores for the page. The total score is 244 (where 0 is the best possible score). The scored report is appended below.</p>
+      <p><a href="https://www.npmjs.com/package/testilo">Testilo</a> processed the report and used the <code>sp12a</code> scoring procedure to compute partial and total scores for the page. The total score is 237 (where 0 is the best possible score). The scored report is appended below.</p>
       <p>Finally, Testilo used procedure <code>dp12a</code> to produce this digest, briefly explaining how <code>sp12a</code> computed the scores.</p>
       <h2>Score summary</h2>
       <table class="allBorder secondCellRight">
         <caption>Score components</caption>
         <tbody class="headersLeft">
-        <tr><th>total</th><td>244</td></tr>
-        <tr><th>solos</th><td>8</td></tr>
+        <tr><th>total</th><td>237</td></tr>
         <tr><th>contrastAA</th><td>79</td></tr>
         <tr><th>focusIndication</th><td>34</td></tr>
         <tr><th>contrastAAA</th><td>25</td></tr>
@@ -55,7 +54,7 @@
         <tr><th>allCaps</th><td>10</td></tr>
         <tr><th>contrastRisk</th><td>8</td></tr>
         <tr><th>targetSize</th><td>8</td></tr>
-        <tr><th>roleBad</th><td>6</td></tr>
+        <tr><th>roleBad</th><td>7</td></tr>
         <tr><th>invisibleLabel</th><td>6</td></tr>
         <tr><th>inconsistentStyles</th><td>5</td></tr>
         <tr><th>noLeading</th><td>5</td></tr>
@@ -70,12 +69,12 @@
       </table>
       <h2>Issue summary</h2>
       <h3>Special issues</h3>
-      <p><span class="componentID">solos</span>: Score 8. This is based on issues reported by unclassified tests. Details are in the report.
+      <p>No special issues contributed to the score.</p>
       <h3>Classified issues</h3>
       <p><span class="componentID">contrastAA</span>: Score 79. Issues reported by tests in this category:</p>
       <ul>
       <li>Package <code>alfa</code>, test <code>r69</code>, score 23 (Text outside widget has subminimum contrast)</li>
-  <li>Package <code>axe</code>, test <code>color-contrast</code>, score 39 (Elements must have sufficient color contrast)</li>
+  <li>Package <code>axe</code>, test <code>color-contrast</code>, score 39 (Element has insufficient color contrast)</li>
   <li>Package <code>htmlcs</code>, test <code>e:AA.1_4_3.G18.Fail</code>, score 24 (Contrast between the text and its background is less than 4.5:1)</li>
   <li>Package <code>wave</code>, test <code>c:contrast</code>, score 43 (Very low contrast)</li>
       </ul>
@@ -86,7 +85,7 @@
       <p><span class="componentID">contrastAAA</span>: Score 25. Issues reported by tests in this category:</p>
       <ul>
       <li>Package <code>alfa</code>, test <code>r66</code>, score 8 (Text contrast less than AAA requires)</li>
-  <li>Package <code>axe</code>, test <code>color-contrast-enhanced</code>, score 13 (Elements must have sufficient color contrast (Level AAA))</li>
+  <li>Package <code>axe</code>, test <code>color-contrast-enhanced</code>, score 13 (Element has insufficient color contrast (Level AAA))</li>
   <li>Package <code>tenon</code>, test <code>95</code>, score 15 (Element has insufficient color contrast (Level AAA))</li>
       </ul>
       <p><span class="componentID">linkIndication</span>: Score 14. Issues reported by tests in this category:</p>
@@ -112,9 +111,10 @@
       <ul>
       <li>Package <code>tenon</code>, test <code>152</code>, score 6 (Actionable element is smaller than the minimum required size)</li>
       </ul>
-      <p><span class="componentID">roleBad</span>: Score 6. Issues reported by tests in this category:</p>
+      <p><span class="componentID">roleBad</span>: Score 7. Issues reported by tests in this category:</p>
       <ul>
       <li>Package <code>testaro</code>, test <code>role</code>, score 4 (Nonexistent or implicit-overriding role)</li>
+  <li>Package <code>alfa</code>, test <code>r21</code>, score 3 (Element does not have a valid role)</li>
       </ul>
       <p><span class="componentID">invisibleLabel</span>: Score 6. Issues reported by tests in this category:</p>
       <ul>
@@ -128,7 +128,7 @@
       </ul>
       <p><span class="componentID">noLeading</span>: Score 5. Issues reported by tests in this category:</p>
       <ul>
-      <li>Package <code>alfa</code>, test <code>r73</code>, score 3 (Paragraphs of text have insufficient line height)</li>
+      <li>Package <code>alfa</code>, test <code>r73</code>, score 3 (Paragraph of text has insufficient line height)</li>
       </ul>
       <p><span class="componentID">decorativeImageRisk</span>: Score 5. Issues reported by tests in this category:</p>
       <ul>
@@ -8962,6 +8962,12 @@
               "score": 4,
               "what": "Nonexistent or implicit-overriding role"
             }
+          },
+          "alfa": {
+            "r21": {
+              "score": 3,
+              "what": "Element does not have a valid role"
+            }
           }
         },
         "inconsistentStyles": {
@@ -9024,7 +9030,7 @@
           "axe": {
             "color-contrast-enhanced": {
               "score": 13,
-              "what": "Elements must have sufficient color contrast (Level AAA)"
+              "what": "Element has insufficient color contrast (Level AAA)"
             }
           },
           "tenon": {
@@ -9044,7 +9050,7 @@
           "axe": {
             "color-contrast": {
               "score": 39,
-              "what": "Elements must have sufficient color contrast"
+              "what": "Element has insufficient color contrast"
             }
           },
           "htmlcs": {
@@ -9064,7 +9070,7 @@
           "alfa": {
             "r73": {
               "score": 3,
-              "what": "Paragraphs of text have insufficient line height"
+              "what": "Paragraph of text has insufficient line height"
             }
           }
         },
@@ -9153,18 +9159,14 @@
           }
         }
       },
-      "solos": {
-        "alfa": {
-          "r21": 4
-        }
-      }
+      "solos": {}
     },
     "preventionScores": {},
     "summary": {
-      "total": 244,
+      "total": 237,
       "log": 0,
       "preventions": 0,
-      "solos": 8,
+      "solos": 0,
       "groups": [
         {
           "groupName": "contrastAA",
@@ -9200,7 +9202,7 @@
         },
         {
           "groupName": "roleBad",
-          "score": 6
+          "score": 7
         },
         {
           "groupName": "invisibleLabel",

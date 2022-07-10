@@ -7297,6 +7297,14 @@
             }
           }
         },
+        "noHeading": {
+          "alfa": {
+            "r59": {
+              "score": 3,
+              "what": "Document has no headings"
+            }
+          }
+        },
         "skipRepeatedContent": {
           "alfa": {
             "r87": {
@@ -7309,7 +7317,7 @@
           "axe": {
             "color-contrast-enhanced": {
               "score": 11,
-              "what": "Elements must have sufficient color contrast (Level AAA)"
+              "what": "Element has insufficient color contrast (Level AAA)"
             }
           }
         },
@@ -7317,7 +7325,7 @@
           "axe": {
             "color-contrast": {
               "score": 33,
-              "what": "Elements must have sufficient color contrast"
+              "what": "Element has insufficient color contrast"
             }
           }
         },
@@ -7334,6 +7342,20 @@
             "identical-links-same-purpose": {
               "score": 1,
               "what": "Links with the same accessible name may serve dissimilar purposes"
+            }
+          }
+        },
+        "duplicateID": {
+          "axe": {
+            "duplicate-id-aria": {
+              "score": 3,
+              "what": "id attribute used in ARIA or in a label has a value that is not unique"
+            }
+          },
+          "htmlcs": {
+            "e:AA.4_1_1.F77": {
+              "score": 3,
+              "what": "Duplicate id attribute value"
             }
           }
         },
@@ -7356,14 +7378,6 @@
             "e:AA.3_2_2.H32.2": {
               "score": 3,
               "what": "Form has no submit button"
-            }
-          }
-        },
-        "duplicateID": {
-          "htmlcs": {
-            "e:AA.4_1_1.F77": {
-              "score": 3,
-              "what": "Duplicate id attribute value"
             }
           }
         },
@@ -7415,7 +7429,7 @@
           "htmlcs": {
             "w:AA.4_1_2.H91.A.NoHref": {
               "score": 1,
-              "what": "Link misused as link destination"
+              "what": "Link is misused as a link destination"
             }
           }
         },
@@ -7500,23 +7514,16 @@
           }
         }
       },
-      "solos": {
-        "alfa": {
-          "r59": 4
-        },
-        "axe": {
-          "duplicate-id-aria": 4
-        }
-      }
+      "solos": {}
     },
     "preventionScores": {
       "ibm": 100
     },
     "summary": {
-      "total": 939,
+      "total": 929,
       "log": 538,
       "preventions": 100,
-      "solos": 16,
+      "solos": 0,
       "groups": [
         {
           "groupName": "linkForcesNewWindow",
@@ -7559,15 +7566,19 @@
           "score": 8
         },
         {
+          "groupName": "duplicateID",
+          "score": 6
+        },
+        {
           "groupName": "contrastRisk",
           "score": 6
         },
         {
-          "groupName": "submitButton",
+          "groupName": "noHeading",
           "score": 5
         },
         {
-          "groupName": "duplicateID",
+          "groupName": "submitButton",
           "score": 5
         },
         {

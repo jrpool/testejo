@@ -11775,7 +11775,7 @@
           "axe": {
             "color-contrast-enhanced": {
               "score": 16,
-              "what": "Elements must have sufficient color contrast (Level AAA)"
+              "what": "Element has insufficient color contrast (Level AAA)"
             }
           },
           "tenon": {
@@ -11795,7 +11795,7 @@
           "axe": {
             "color-contrast": {
               "score": 33,
-              "what": "Elements must have sufficient color contrast"
+              "what": "Element has insufficient color contrast"
             }
           }
         },
@@ -11803,7 +11803,7 @@
           "alfa": {
             "r73": {
               "score": 57,
-              "what": "Paragraphs of text have insufficient line height"
+              "what": "Paragraph of text has insufficient line height"
             }
           }
         },
@@ -11847,6 +11847,14 @@
             }
           }
         },
+        "TableHeaderScopeRisk": {
+          "htmlcs": {
+            "e:AA.1_3_1.H63.1": {
+              "score": 1,
+              "what": "Not all th elements in the table have a scope attribute, so an inferred scope may be incorrect"
+            }
+          }
+        },
         "decorativeImageRisk": {
           "htmlcs": {
             "w:AA.1_1_1.H67.2": {
@@ -11859,7 +11867,7 @@
           "htmlcs": {
             "w:AA.1_3_1.H48": {
               "score": 1,
-              "what": "Navigation links should best be coded as a list"
+              "what": "Navigation links are not coded as a list"
             }
           }
         },
@@ -12016,18 +12024,14 @@
           }
         }
       },
-      "solos": {
-        "htmlcs": {
-          "e:AA.1_3_1.H63.1": 4
-        }
-      }
+      "solos": {}
     },
     "preventionScores": {},
     "summary": {
-      "total": 684,
+      "total": 679,
       "log": 101,
       "preventions": 0,
-      "solos": 8,
+      "solos": 0,
       "groups": [
         {
           "groupName": "menuNavigation",
@@ -12143,6 +12147,10 @@
         },
         {
           "groupName": "linkConfusionRisk",
+          "score": 3
+        },
+        {
+          "groupName": "TableHeaderScopeRisk",
           "score": 3
         },
         {

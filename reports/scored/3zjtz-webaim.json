@@ -5214,7 +5214,7 @@
           "axe": {
             "color-contrast-enhanced": {
               "score": 7,
-              "what": "Elements must have sufficient color contrast (Level AAA)"
+              "what": "Element has insufficient color contrast (Level AAA)"
             }
           }
         },
@@ -5228,7 +5228,7 @@
           "axe": {
             "color-contrast": {
               "score": 17,
-              "what": "Elements must have sufficient color contrast"
+              "what": "Element has insufficient color contrast"
             }
           }
         },
@@ -5236,7 +5236,7 @@
           "alfa": {
             "r73": {
               "score": 48,
-              "what": "Paragraphs of text have insufficient line height"
+              "what": "Paragraph of text has insufficient line height"
             }
           }
         },
@@ -5245,6 +5245,14 @@
             "r78": {
               "score": 2,
               "what": "No content between two headings of the same level"
+            }
+          }
+        },
+        "allItalics": {
+          "alfa": {
+            "r85": {
+              "score": 1,
+              "what": "Text of the paragraph is all italic"
             }
           }
         },
@@ -5266,7 +5274,7 @@
           "tenon": {
             "155": {
               "score": 1,
-              "what": "These headings are not structured in a hierarchical manner"
+              "what": "Headings are not structured in a hierarchical manner"
             }
           }
         },
@@ -5303,18 +5311,14 @@
           }
         }
       },
-      "solos": {
-        "alfa": {
-          "r85": 4
-        }
-      }
+      "solos": {}
     },
     "preventionScores": {},
     "summary": {
-      "total": 164,
+      "total": 159,
       "log": 18,
       "preventions": 0,
-      "solos": 8,
+      "solos": 0,
       "groups": [
         {
           "groupName": "noLeading",
@@ -5370,6 +5374,10 @@
         },
         {
           "groupName": "zIndexNotZero",
+          "score": 3
+        },
+        {
+          "groupName": "allItalics",
           "score": 3
         },
         {

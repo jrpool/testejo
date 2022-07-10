@@ -9601,7 +9601,7 @@
           "axe": {
             "aria-allowed-role": {
               "score": 5,
-              "what": "ARIA role should be appropriate for the element"
+              "what": "ARIA role is not appropriate for the element"
             }
           }
         },
@@ -9655,6 +9655,14 @@
             }
           }
         },
+        "fragmentaryNoticeRisk": {
+          "alfa": {
+            "r54": {
+              "score": 2,
+              "what": "Assertive region is not atomic"
+            }
+          }
+        },
         "contentBeyondLandmarks": {
           "alfa": {
             "r57": {
@@ -9679,7 +9687,7 @@
           "axe": {
             "color-contrast-enhanced": {
               "score": 2,
-              "what": "Elements must have sufficient color contrast (Level AAA)"
+              "what": "Element has insufficient color contrast (Level AAA)"
             }
           }
         },
@@ -9693,7 +9701,7 @@
           "axe": {
             "color-contrast": {
               "score": 5,
-              "what": "Elements must have sufficient color contrast"
+              "what": "Element has insufficient color contrast"
             }
           },
           "wave": {
@@ -9707,7 +9715,7 @@
           "alfa": {
             "r73": {
               "score": 54,
-              "what": "Paragraphs of text have insufficient line height"
+              "what": "Paragraph of text has insufficient line height"
             }
           }
         },
@@ -9777,7 +9785,7 @@
           "htmlcs": {
             "w:AA.1_3_1.H48": {
               "score": 2,
-              "what": "Navigation links should best be coded as a list"
+              "what": "Navigation links are not coded as a list"
             }
           }
         },
@@ -9868,20 +9876,16 @@
           }
         }
       },
-      "solos": {
-        "alfa": {
-          "r54": 4
-        }
-      }
+      "solos": {}
     },
     "preventionScores": {
       "testaro-bulk": 50
     },
     "summary": {
-      "total": 469,
+      "total": 465,
       "log": 0,
       "preventions": 50,
-      "solos": 8,
+      "solos": 0,
       "groups": [
         {
           "groupName": "noLeading",
@@ -9969,6 +9973,10 @@
         },
         {
           "groupName": "focusableOperable",
+          "score": 4
+        },
+        {
+          "groupName": "fragmentaryNoticeRisk",
           "score": 4
         },
         {

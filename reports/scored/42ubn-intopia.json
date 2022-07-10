@@ -5088,6 +5088,12 @@
               "score": 6,
               "what": "Nonexistent or implicit-overriding role"
             }
+          },
+          "alfa": {
+            "r21": {
+              "score": 9,
+              "what": "Element does not have a valid role"
+            }
           }
         },
         "inconsistentStyles": {
@@ -5136,7 +5142,7 @@
           "axe": {
             "page-has-heading-one": {
               "score": 1,
-              "what": "Page should contain a level-one heading"
+              "what": "Page contains no level-one heading"
             }
           },
           "wave": {
@@ -5156,7 +5162,7 @@
           "axe": {
             "color-contrast-enhanced": {
               "score": 17,
-              "what": "Elements must have sufficient color contrast (Level AAA)"
+              "what": "Element has insufficient color contrast (Level AAA)"
             }
           }
         },
@@ -5170,7 +5176,7 @@
           "axe": {
             "color-contrast": {
               "score": 8,
-              "what": "Elements must have sufficient color contrast"
+              "what": "Element has insufficient color contrast"
             }
           }
         },
@@ -5194,7 +5200,7 @@
           "htmlcs": {
             "w:AA.1_3_1.H48": {
               "score": 1,
-              "what": "Navigation links should best be coded as a list"
+              "what": "Navigation links are not coded as a list"
             }
           }
         },
@@ -5208,7 +5214,7 @@
           "tenon": {
             "155": {
               "score": 1,
-              "what": "These headings are not structured in a hierarchical manner"
+              "what": "Headings are not structured in a hierarchical manner"
             }
           }
         },
@@ -5285,18 +5291,14 @@
           }
         }
       },
-      "solos": {
-        "alfa": {
-          "r21": 12
-        }
-      }
+      "solos": {}
     },
     "preventionScores": {},
     "summary": {
-      "total": 305,
+      "total": 286,
       "log": 107,
       "preventions": 0,
-      "solos": 24,
+      "solos": 0,
       "groups": [
         {
           "groupName": "focusIndication",
@@ -5319,12 +5321,12 @@
           "score": 15
         },
         {
-          "groupName": "targetSize",
-          "score": 10
+          "groupName": "roleBad",
+          "score": 13
         },
         {
-          "groupName": "roleBad",
-          "score": 8
+          "groupName": "targetSize",
+          "score": 10
         },
         {
           "groupName": "contrastRisk",

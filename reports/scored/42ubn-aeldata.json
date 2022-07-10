@@ -14581,6 +14581,14 @@
             }
           }
         },
+        "ariaBadAttribute": {
+          "alfa": {
+            "r18": {
+              "score": 12,
+              "what": "ARIA state or property is not allowed for the element on which it is specified"
+            }
+          }
+        },
         "duplicateID": {
           "alfa": {
             "r3": {
@@ -14611,7 +14619,7 @@
           "axe": {
             "color-contrast-enhanced": {
               "score": 8,
-              "what": "Elements must have sufficient color contrast (Level AAA)"
+              "what": "Element has insufficient color contrast (Level AAA)"
             }
           }
         },
@@ -14625,7 +14633,21 @@
           "axe": {
             "color-contrast": {
               "score": 23,
-              "what": "Elements must have sufficient color contrast"
+              "what": "Element has insufficient color contrast"
+            }
+          }
+        },
+        "justification": {
+          "alfa": {
+            "r71": {
+              "score": 1,
+              "what": "Paragraph text is fully justified"
+            }
+          },
+          "wave": {
+            "a:text_justified": {
+              "score": 1,
+              "what": "Text is justified"
             }
           }
         },
@@ -14633,7 +14655,7 @@
           "alfa": {
             "r73": {
               "score": 3,
-              "what": "Paragraphs of text have insufficient line height"
+              "what": "Paragraph of text has insufficient line height"
             }
           }
         },
@@ -14642,6 +14664,20 @@
             "r83": {
               "score": 8,
               "what": "Overflow is hidden or clipped if the text is enlarged"
+            }
+          }
+        },
+        "allItalics": {
+          "alfa": {
+            "r85": {
+              "score": 1,
+              "what": "Text of the paragraph is all italic"
+            }
+          },
+          "tenon": {
+            "154": {
+              "score": 7,
+              "what": "Long string of text is italic"
             }
           }
         },
@@ -14723,7 +14759,7 @@
           "tenon": {
             "155": {
               "score": 1,
-              "what": "These headings are not structured in a hierarchical manner"
+              "what": "Headings are not structured in a hierarchical manner"
             }
           }
         },
@@ -14764,14 +14800,6 @@
             "w:AA.4_1_2.H91.A.EmptyWithName": {
               "score": 1,
               "what": "Link has a name attribute but no href attribute or text"
-            }
-          }
-        },
-        "justification": {
-          "wave": {
-            "a:text_justified": {
-              "score": 1,
-              "what": "Text is justified"
             }
           }
         },
@@ -14845,14 +14873,6 @@
             }
           }
         },
-        "allItalics": {
-          "tenon": {
-            "154": {
-              "score": 7,
-              "what": "Long string of text is italic"
-            }
-          }
-        },
         "linkForcesNewWindow": {
           "tenon": {
             "218": {
@@ -14862,20 +14882,14 @@
           }
         }
       },
-      "solos": {
-        "alfa": {
-          "r18": 12,
-          "r71": 4,
-          "r85": 4
-        }
-      }
+      "solos": {}
     },
     "preventionScores": {},
     "summary": {
-      "total": 932,
+      "total": 906,
       "log": 398,
       "preventions": 0,
-      "solos": 40,
+      "solos": 0,
       "groups": [
         {
           "groupName": "linkIndication",
@@ -14904,6 +14918,10 @@
         {
           "groupName": "contrastAAA",
           "score": 23
+        },
+        {
+          "groupName": "ariaBadAttribute",
+          "score": 14
         },
         {
           "groupName": "linkPair",
@@ -14982,6 +15000,10 @@
           "score": 3
         },
         {
+          "groupName": "justification",
+          "score": 3
+        },
+        {
           "groupName": "skipRepeatedContent",
           "score": 3
         },
@@ -15007,10 +15029,6 @@
         },
         {
           "groupName": "linkNoText",
-          "score": 3
-        },
-        {
-          "groupName": "justification",
           "score": 3
         },
         {

@@ -20,7 +20,7 @@
         <div id="synopsis">
           <p><strong>Page</strong>: AbilityNet</p>
           <p><strong>URL</strong>: https://www.abilitynet.org.uk/</p>
-          <p><strong>Score</strong>: 1060</p>
+          <p><strong>Score</strong>: 1056</p>
           <p><strong>Tested by</strong>: Testaro, procedure <code>tp12</code></p>
           <p><strong>Scored by</strong>: Testilo, procedure <code>sp12a</code></p>
           <p><strong>Digested by</strong>: Testilo, procedure <code>dp12a</code></p>
@@ -39,15 +39,14 @@
         <li><a href="https://wave.webaim.org/api/">WAVE</a> by WebAIM</li>
       </ul>
       <p>Testaro produced a report enumerating the test results.</p>
-      <p><a href="https://www.npmjs.com/package/testilo">Testilo</a> processed the report and used the <code>sp12a</code> scoring procedure to compute partial and total scores for the page. The total score is 1060 (where 0 is the best possible score). The scored report is appended below.</p>
+      <p><a href="https://www.npmjs.com/package/testilo">Testilo</a> processed the report and used the <code>sp12a</code> scoring procedure to compute partial and total scores for the page. The total score is 1056 (where 0 is the best possible score). The scored report is appended below.</p>
       <p>Finally, Testilo used procedure <code>dp12a</code> to produce this digest, briefly explaining how <code>sp12a</code> computed the scores.</p>
       <h2>Score summary</h2>
       <table class="allBorder secondCellRight">
         <caption>Score components</caption>
         <tbody class="headersLeft">
-        <tr><th>total</th><td>1060</td></tr>
+        <tr><th>total</th><td>1056</td></tr>
         <tr><th>log</th><td>671</td></tr>
-        <tr><th>solos</th><td>10</td></tr>
         <tr><th>focusIndication</th><td>70</td></tr>
         <tr><th>linkIndication</th><td>62</td></tr>
         <tr><th>linkNoText</th><td>24</td></tr>
@@ -63,6 +62,7 @@
         <tr><th>imageNoText</th><td>8</td></tr>
         <tr><th>linkTextsSame</th><td>8</td></tr>
         <tr><th>contrastRisk</th><td>7</td></tr>
+        <tr><th>nonSemanticText</th><td>6</td></tr>
         <tr><th>h1Missing</th><td>5</td></tr>
         <tr><th>submitButton</th><td>5</td></tr>
         <tr><th>linkPair</th><td>5</td></tr>
@@ -96,7 +96,6 @@
       <h2>Issue summary</h2>
       <h3>Special issues</h3>
       <p><span class="componentID">log</span>: Score 671. This is based on the amount of browser error logging and miscellaneous logging during the tests.
-      <p><span class="componentID">solos</span>: Score 10. This is based on issues reported by unclassified tests. Details are in the report.
       <h3>Classified issues</h3>
       <p><span class="componentID">focusIndication</span>: Score 70. Issues reported by tests in this category:</p>
       <ul>
@@ -138,12 +137,12 @@
       <ul>
       <li>Package <code>alfa</code>, test <code>r13</code>, score 4 (iframe has no accessible name)</li>
   <li>Package <code>axe</code>, test <code>frame-title</code>, score 3 (Frame has no accessible name)</li>
-  <li>Package <code>htmlcs</code>, test <code>e:AA.2_4_1.H64.1</code>, score 4 (iframe element requires a non-empty title attribute)</li>
+  <li>Package <code>htmlcs</code>, test <code>e:AA.2_4_1.H64.1</code>, score 4 (iframe element has no non-empty title attribute)</li>
       </ul>
       <p><span class="componentID">pageLanguage</span>: Score 9. Issues reported by tests in this category:</p>
       <ul>
       <li>Package <code>alfa</code>, test <code>r4</code>, score 4 (Lang attribute missing, empty, or only whitespace)</li>
-  <li>Package <code>axe</code>, test <code>html-has-lang</code>, score 3 (html element must have a lang attribute)</li>
+  <li>Package <code>axe</code>, test <code>html-has-lang</code>, score 3 (html element has no lang attribute)</li>
   <li>Package <code>wave</code>, test <code>e:language_missing</code>, score 4 (Language missing or invalid)</li>
       </ul>
       <p><span class="componentID">roleBad</span>: Score 8. Issues reported by tests in this category:</p>
@@ -168,10 +167,17 @@
       <li>Package <code>htmlcs</code>, test <code>w:AA.1_4_3_F24.F24.BGColour</code>, score 1 (Inline background color may lack a complementary foreground color)</li>
   <li>Package <code>htmlcs</code>, test <code>w:AA.1_4_3_F24.F24.FGColour</code>, score 4 (Inline foreground color may lack a complementary background color)</li>
       </ul>
+      <p><span class="componentID">nonSemanticText</span>: Score 6. Issues reported by tests in this category:</p>
+      <ul>
+      <li>Package <code>htmlcs</code>, test <code>w:AA.1_3_1.H49.AlignAttr</code>, score 1 (Special text is aligned nonsemantically)</li>
+  <li>Package <code>htmlcs</code>, test <code>w:AA.1_3_1.H49.Big</code>, score 1 (Special text is enlarged nonsemantically)</li>
+  <li>Package <code>htmlcs</code>, test <code>w:AA.1_3_1.H49.I</code>, score 1 (Special text is italicized nonsemantically)</li>
+  <li>Package <code>htmlcs</code>, test <code>w:AA.1_3_1.H49.U</code>, score 1 (Special text is underlined nonsemantically)</li>
+      </ul>
       <p><span class="componentID">h1Missing</span>: Score 5. Issues reported by tests in this category:</p>
       <ul>
       <li>Package <code>alfa</code>, test <code>r61</code>, score 2 (First heading is not h1)</li>
-  <li>Package <code>axe</code>, test <code>page-has-heading-one</code>, score 1 (Page should contain a level-one heading)</li>
+  <li>Package <code>axe</code>, test <code>page-has-heading-one</code>, score 1 (Page contains no level-one heading)</li>
   <li>Package <code>wave</code>, test <code>a:h1_missing</code>, score 1 (Missing first level heading)</li>
       </ul>
       <p><span class="componentID">submitButton</span>: Score 5. Issues reported by tests in this category:</p>
@@ -247,16 +253,16 @@
       </ul>
       <p><span class="componentID">pseudoNavListRisk</span>: Score 3. Issues reported by tests in this category:</p>
       <ul>
-      <li>Package <code>htmlcs</code>, test <code>w:AA.1_3_1.H48</code>, score 1 (Navigation links should best be coded as a list)</li>
+      <li>Package <code>htmlcs</code>, test <code>w:AA.1_3_1.H48</code>, score 1 (Navigation links are not coded as a list)</li>
       </ul>
       <p><span class="componentID">selectFlatRisk</span>: Score 3. Issues reported by tests in this category:</p>
       <ul>
-      <li>Package <code>htmlcs</code>, test <code>w:AA.1_3_1.H85.2</code>, score 1 (If selection list contains groups of related options, they should be grouped with optgroup)</li>
+      <li>Package <code>htmlcs</code>, test <code>w:AA.1_3_1.H85.2</code>, score 1 (Selection list may contain groups of related options that are not grouped with optgroup)</li>
       </ul>
       <p><span class="componentID">headingStructure</span>: Score 3. Issues reported by tests in this category:</p>
       <ul>
       <li>Package <code>htmlcs</code>, test <code>w:AA.1_3_1_A.G141</code>, score 1 (Heading level is incorrect)</li>
-  <li>Package <code>tenon</code>, test <code>155</code>, score 1 (These headings are not structured in a hierarchical manner)</li>
+  <li>Package <code>tenon</code>, test <code>155</code>, score 1 (Headings are not structured in a hierarchical manner)</li>
       </ul>
       <p><span class="componentID">scrollRisk</span>: Score 3. Issues reported by tests in this category:</p>
       <ul>
@@ -7696,7 +7702,7 @@
           "htmlcs": {
             "e:AA.2_4_1.H64.1": {
               "score": 4,
-              "what": "iframe element requires a non-empty title attribute"
+              "what": "iframe element has no non-empty title attribute"
             }
           }
         },
@@ -7724,7 +7730,7 @@
           "axe": {
             "html-has-lang": {
               "score": 3,
-              "what": "html element must have a lang attribute"
+              "what": "html element has no lang attribute"
             }
           },
           "wave": {
@@ -7744,7 +7750,7 @@
           "axe": {
             "page-has-heading-one": {
               "score": 1,
-              "what": "Page should contain a level-one heading"
+              "what": "Page contains no level-one heading"
             }
           },
           "wave": {
@@ -7872,7 +7878,27 @@
           "htmlcs": {
             "w:AA.1_3_1.H48": {
               "score": 1,
-              "what": "Navigation links should best be coded as a list"
+              "what": "Navigation links are not coded as a list"
+            }
+          }
+        },
+        "nonSemanticText": {
+          "htmlcs": {
+            "w:AA.1_3_1.H49.AlignAttr": {
+              "score": 1,
+              "what": "Special text is aligned nonsemantically"
+            },
+            "w:AA.1_3_1.H49.Big": {
+              "score": 1,
+              "what": "Special text is enlarged nonsemantically"
+            },
+            "w:AA.1_3_1.H49.I": {
+              "score": 1,
+              "what": "Special text is italicized nonsemantically"
+            },
+            "w:AA.1_3_1.H49.U": {
+              "score": 1,
+              "what": "Special text is underlined nonsemantically"
             }
           }
         },
@@ -7880,7 +7906,7 @@
           "htmlcs": {
             "w:AA.1_3_1.H85.2": {
               "score": 1,
-              "what": "If selection list contains groups of related options, they should be grouped with optgroup"
+              "what": "Selection list may contain groups of related options that are not grouped with optgroup"
             }
           }
         },
@@ -7894,7 +7920,7 @@
           "tenon": {
             "155": {
               "score": 1,
-              "what": "These headings are not structured in a hierarchical manner"
+              "what": "Headings are not structured in a hierarchical manner"
             }
           }
         },
@@ -8035,21 +8061,14 @@
           }
         }
       },
-      "solos": {
-        "htmlcs": {
-          "w:AA.1_3_1.H49.AlignAttr": 2,
-          "w:AA.1_3_1.H49.Big": 1,
-          "w:AA.1_3_1.H49.I": 1,
-          "w:AA.1_3_1.H49.U": 1
-        }
-      }
+      "solos": {}
     },
     "preventionScores": {},
     "summary": {
-      "total": 1060,
+      "total": 1056,
       "log": 671,
       "preventions": 0,
-      "solos": 10,
+      "solos": 0,
       "groups": [
         {
           "groupName": "focusIndication",
@@ -8110,6 +8129,10 @@
         {
           "groupName": "contrastRisk",
           "score": 7
+        },
+        {
+          "groupName": "nonSemanticText",
+          "score": 6
         },
         {
           "groupName": "h1Missing",

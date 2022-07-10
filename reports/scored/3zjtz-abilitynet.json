@@ -7391,7 +7391,7 @@
           "htmlcs": {
             "e:AA.2_4_1.H64.1": {
               "score": 4,
-              "what": "iframe element requires a non-empty title attribute"
+              "what": "iframe element has no non-empty title attribute"
             }
           }
         },
@@ -7419,7 +7419,7 @@
           "axe": {
             "html-has-lang": {
               "score": 3,
-              "what": "html element must have a lang attribute"
+              "what": "html element has no lang attribute"
             }
           },
           "wave": {
@@ -7439,7 +7439,7 @@
           "axe": {
             "page-has-heading-one": {
               "score": 1,
-              "what": "Page should contain a level-one heading"
+              "what": "Page contains no level-one heading"
             }
           },
           "wave": {
@@ -7567,7 +7567,27 @@
           "htmlcs": {
             "w:AA.1_3_1.H48": {
               "score": 1,
-              "what": "Navigation links should best be coded as a list"
+              "what": "Navigation links are not coded as a list"
+            }
+          }
+        },
+        "nonSemanticText": {
+          "htmlcs": {
+            "w:AA.1_3_1.H49.AlignAttr": {
+              "score": 1,
+              "what": "Special text is aligned nonsemantically"
+            },
+            "w:AA.1_3_1.H49.Big": {
+              "score": 1,
+              "what": "Special text is enlarged nonsemantically"
+            },
+            "w:AA.1_3_1.H49.I": {
+              "score": 1,
+              "what": "Special text is italicized nonsemantically"
+            },
+            "w:AA.1_3_1.H49.U": {
+              "score": 1,
+              "what": "Special text is underlined nonsemantically"
             }
           }
         },
@@ -7575,7 +7595,7 @@
           "htmlcs": {
             "w:AA.1_3_1.H85.2": {
               "score": 1,
-              "what": "If selection list contains groups of related options, they should be grouped with optgroup"
+              "what": "Selection list may contain groups of related options that are not grouped with optgroup"
             }
           }
         },
@@ -7589,7 +7609,7 @@
           "tenon": {
             "155": {
               "score": 1,
-              "what": "These headings are not structured in a hierarchical manner"
+              "what": "Headings are not structured in a hierarchical manner"
             }
           }
         },
@@ -7730,21 +7750,14 @@
           }
         }
       },
-      "solos": {
-        "htmlcs": {
-          "w:AA.1_3_1.H49.AlignAttr": 2,
-          "w:AA.1_3_1.H49.Big": 1,
-          "w:AA.1_3_1.H49.I": 1,
-          "w:AA.1_3_1.H49.U": 1
-        }
-      }
+      "solos": {}
     },
     "preventionScores": {},
     "summary": {
-      "total": 1060,
+      "total": 1056,
       "log": 671,
       "preventions": 0,
-      "solos": 10,
+      "solos": 0,
       "groups": [
         {
           "groupName": "focusIndication",
@@ -7805,6 +7818,10 @@
         {
           "groupName": "contrastRisk",
           "score": 7
+        },
+        {
+          "groupName": "nonSemanticText",
+          "score": 6
         },
         {
           "groupName": "h1Missing",

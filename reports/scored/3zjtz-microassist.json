@@ -10980,7 +10980,7 @@
           "axe": {
             "aria-required-parent": {
               "score": 16,
-              "what": "Certain ARIA roles must be contained by particular parents"
+              "what": "ARIA role is not contained by a required parent"
             }
           }
         },
@@ -11016,7 +11016,7 @@
           "axe": {
             "color-contrast-enhanced": {
               "score": 2,
-              "what": "Elements must have sufficient color contrast (Level AAA)"
+              "what": "Element has insufficient color contrast (Level AAA)"
             }
           },
           "tenon": {
@@ -11036,7 +11036,7 @@
           "axe": {
             "color-contrast": {
               "score": 2,
-              "what": "Elements must have sufficient color contrast"
+              "what": "Element has insufficient color contrast"
             }
           }
         },
@@ -11044,7 +11044,7 @@
           "alfa": {
             "r73": {
               "score": 3,
-              "what": "Paragraphs of text have insufficient line height"
+              "what": "Paragraph of text has insufficient line height"
             }
           }
         },
@@ -11074,7 +11074,7 @@
           "axe": {
             "avoid-inline-spacing": {
               "score": 258,
-              "what": "Inline text spacing must be adjustable with custom stylesheets"
+              "what": "Inline text spacing is not adjustable with a custom stylesheet"
             }
           }
         },
@@ -11124,6 +11124,12 @@
               "score": 8,
               "what": "img element has no alt attribute"
             }
+          },
+          "wave": {
+            "e:alt_spacer_missing": {
+              "score": 8,
+              "what": "Spacer image has no text alternative"
+            }
           }
         },
         "buttonNoText": {
@@ -11148,7 +11154,7 @@
             }
           }
         },
-        "labelForBadID": {
+        "labelBadID": {
           "htmlcs": {
             "w:AA.1_3_1.H44.NonExistentFragment": {
               "score": 1,
@@ -11168,7 +11174,7 @@
           "htmlcs": {
             "w:AA.1_3_1.H48": {
               "score": 1,
-              "what": "Navigation links should best be coded as a list"
+              "what": "Navigation links are not coded as a list"
             }
           }
         },
@@ -11182,7 +11188,7 @@
           "tenon": {
             "155": {
               "score": 1,
-              "what": "These headings are not structured in a hierarchical manner"
+              "what": "Headings are not structured in a hierarchical manner"
             }
           }
         },
@@ -11238,7 +11244,15 @@
           "htmlcs": {
             "w:AA.4_1_2.H91.A.NoHref": {
               "score": 1,
-              "what": "Link misused as link destination"
+              "what": "Link is misused as a link destination"
+            }
+          }
+        },
+        "labelEmpty": {
+          "wave": {
+            "e:label_empty": {
+              "score": 3,
+              "what": "Empty form label"
             }
           }
         },
@@ -11371,19 +11385,14 @@
           }
         }
       },
-      "solos": {
-        "wave": {
-          "e:alt_spacer_missing": 8,
-          "e:label_empty": 4
-        }
-      }
+      "solos": {}
     },
     "preventionScores": {},
     "summary": {
-      "total": 782,
+      "total": 766,
       "log": 39,
       "preventions": 0,
-      "solos": 24,
+      "solos": 0,
       "groups": [
         {
           "groupName": "leadingFrozen",
@@ -11438,16 +11447,16 @@
           "score": 13
         },
         {
+          "groupName": "imageNoText",
+          "score": 13
+        },
+        {
           "groupName": "linkTextsSame",
           "score": 12
         },
         {
           "groupName": "contrastRisk",
           "score": 11
-        },
-        {
-          "groupName": "imageNoText",
-          "score": 10
         },
         {
           "groupName": "focusIndication",
@@ -11483,6 +11492,10 @@
         },
         {
           "groupName": "noLeading",
+          "score": 5
+        },
+        {
+          "groupName": "labelEmpty",
           "score": 5
         },
         {
@@ -11530,7 +11543,7 @@
           "score": 3
         },
         {
-          "groupName": "labelForBadID",
+          "groupName": "labelBadID",
           "score": 3
         },
         {

@@ -7782,7 +7782,7 @@
           "axe": {
             "color-contrast-enhanced": {
               "score": 11,
-              "what": "Elements must have sufficient color contrast (Level AAA)"
+              "what": "Element has insufficient color contrast (Level AAA)"
             }
           },
           "tenon": {
@@ -7802,7 +7802,7 @@
           "axe": {
             "color-contrast": {
               "score": 12,
-              "what": "Elements must have sufficient color contrast"
+              "what": "Element has insufficient color contrast"
             }
           }
         },
@@ -7848,7 +7848,7 @@
           "htmlcs": {
             "w:AA.1_3_1.H48": {
               "score": 1,
-              "what": "Navigation links should best be coded as a list"
+              "what": "Navigation links are not coded as a list"
             }
           }
         },
@@ -7856,7 +7856,15 @@
           "htmlcs": {
             "w:AA.1_3_1.H85.2": {
               "score": 1,
-              "what": "If selection list contains groups of related options, they should be grouped with optgroup"
+              "what": "Selection list may contain groups of related options that are not grouped with optgroup"
+            }
+          }
+        },
+        "autocompleteRisk": {
+          "htmlcs": {
+            "w:AA.1_3_5.H98": {
+              "score": 1,
+              "what": "Element contains a potentially faulty value in its autocomplete attribute"
             }
           }
         },
@@ -7953,18 +7961,14 @@
           }
         }
       },
-      "solos": {
-        "htmlcs": {
-          "w:AA.1_3_5.H98": 1
-        }
-      }
+      "solos": {}
     },
     "preventionScores": {},
     "summary": {
-      "total": 345,
+      "total": 346,
       "log": 11,
       "preventions": 0,
-      "solos": 2,
+      "solos": 0,
       "groups": [
         {
           "groupName": "contrastAA",
@@ -8060,6 +8064,10 @@
         },
         {
           "groupName": "selectFlatRisk",
+          "score": 3
+        },
+        {
+          "groupName": "autocompleteRisk",
           "score": 3
         },
         {

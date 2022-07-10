@@ -20,7 +20,7 @@
         <div id="synopsis">
           <p><strong>Page</strong>: W3C WAI-ARIA</p>
           <p><strong>URL</strong>: https://www.w3.org/WAI/standards-guidelines/aria/</p>
-          <p><strong>Score</strong>: 250</p>
+          <p><strong>Score</strong>: 248</p>
           <p><strong>Tested by</strong>: Testaro, procedure <code>tp12</code></p>
           <p><strong>Scored by</strong>: Testilo, procedure <code>sp12a</code></p>
           <p><strong>Digested by</strong>: Testilo, procedure <code>dp12a</code></p>
@@ -39,20 +39,20 @@
         <li><a href="https://wave.webaim.org/api/">WAVE</a> by WebAIM</li>
       </ul>
       <p>Testaro produced a report enumerating the test results.</p>
-      <p><a href="https://www.npmjs.com/package/testilo">Testilo</a> processed the report and used the <code>sp12a</code> scoring procedure to compute partial and total scores for the page. The total score is 250 (where 0 is the best possible score). The scored report is appended below.</p>
+      <p><a href="https://www.npmjs.com/package/testilo">Testilo</a> processed the report and used the <code>sp12a</code> scoring procedure to compute partial and total scores for the page. The total score is 248 (where 0 is the best possible score). The scored report is appended below.</p>
       <p>Finally, Testilo used procedure <code>dp12a</code> to produce this digest, briefly explaining how <code>sp12a</code> computed the scores.</p>
       <h2>Score summary</h2>
       <table class="allBorder secondCellRight">
         <caption>Score components</caption>
         <tbody class="headersLeft">
-        <tr><th>total</th><td>250</td></tr>
+        <tr><th>total</th><td>248</td></tr>
         <tr><th>log</th><td>45</td></tr>
-        <tr><th>solos</th><td>8</td></tr>
         <tr><th>focusIndication</th><td>87</td></tr>
         <tr><th>linkIndication</th><td>26</td></tr>
         <tr><th>inconsistentStyles</th><td>9</td></tr>
         <tr><th>linkTextsSame</th><td>8</td></tr>
         <tr><th>hoverSurprise</th><td>7</td></tr>
+        <tr><th>elementLanguageBad</th><td>6</td></tr>
         <tr><th>linkNoText</th><td>6</td></tr>
         <tr><th>buttonNoText</th><td>6</td></tr>
         <tr><th>pageLanguage</th><td>6</td></tr>
@@ -74,7 +74,6 @@
       <h2>Issue summary</h2>
       <h3>Special issues</h3>
       <p><span class="componentID">log</span>: Score 45. This is based on the amount of browser error logging and miscellaneous logging during the tests.
-      <p><span class="componentID">solos</span>: Score 8. This is based on issues reported by unclassified tests. Details are in the report.
       <h3>Classified issues</h3>
       <p><span class="componentID">focusIndication</span>: Score 87. Issues reported by tests in this category:</p>
       <ul>
@@ -96,6 +95,10 @@
       <ul>
       <li>Package <code>testaro</code>, test <code>hover</code>, score 5 (Content changes caused by hovering)</li>
       </ul>
+      <p><span class="componentID">elementLanguageBad</span>: Score 6. Issues reported by tests in this category:</p>
+      <ul>
+      <li>Package <code>htmlcs</code>, test <code>e:AA.3_1_2.H58.1.Lang</code>, score 4 (Language specified in the lang attribute of the element does not appear to be well-formed)</li>
+      </ul>
       <p><span class="componentID">linkNoText</span>: Score 6. Issues reported by tests in this category:</p>
       <ul>
       <li>Package <code>htmlcs</code>, test <code>e:AA.4_1_2.H91.A.NoContent</code>, score 4 (Link has an href attribute but no text)</li>
@@ -110,7 +113,7 @@
       </ul>
       <p><span class="componentID">contrastAA</span>: Score 4. Issues reported by tests in this category:</p>
       <ul>
-      <li>Package <code>axe</code>, test <code>color-contrast</code>, score 2 (Elements must have sufficient color contrast)</li>
+      <li>Package <code>axe</code>, test <code>color-contrast</code>, score 2 (Element has insufficient color contrast)</li>
       </ul>
       <p><span class="componentID">fontSmall</span>: Score 4. Issues reported by tests in this category:</p>
       <ul>
@@ -126,7 +129,7 @@
       </ul>
       <p><span class="componentID">contrastAAA</span>: Score 3. Issues reported by tests in this category:</p>
       <ul>
-      <li>Package <code>axe</code>, test <code>color-contrast-enhanced</code>, score 1 (Elements must have sufficient color contrast (Level AAA))</li>
+      <li>Package <code>axe</code>, test <code>color-contrast-enhanced</code>, score 1 (Element has insufficient color contrast (Level AAA))</li>
       </ul>
       <p><span class="componentID">hiddenContentRisk</span>: Score 3. Issues reported by tests in this category:</p>
       <ul>
@@ -142,7 +145,7 @@
       </ul>
       <p><span class="componentID">pseudoNavListRisk</span>: Score 3. Issues reported by tests in this category:</p>
       <ul>
-      <li>Package <code>htmlcs</code>, test <code>w:AA.1_3_1.H48</code>, score 1 (Navigation links should best be coded as a list)</li>
+      <li>Package <code>htmlcs</code>, test <code>w:AA.1_3_1.H48</code>, score 1 (Navigation links are not coded as a list)</li>
       </ul>
       <p><span class="componentID">scrollRisk</span>: Score 3. Issues reported by tests in this category:</p>
       <ul>
@@ -3985,7 +3988,7 @@
           "axe": {
             "color-contrast-enhanced": {
               "score": 1,
-              "what": "Elements must have sufficient color contrast (Level AAA)"
+              "what": "Element has insufficient color contrast (Level AAA)"
             }
           }
         },
@@ -3993,7 +3996,7 @@
           "axe": {
             "color-contrast": {
               "score": 2,
-              "what": "Elements must have sufficient color contrast"
+              "what": "Element has insufficient color contrast"
             }
           }
         },
@@ -4021,6 +4024,14 @@
             }
           }
         },
+        "elementLanguageBad": {
+          "htmlcs": {
+            "e:AA.3_1_2.H58.1.Lang": {
+              "score": 4,
+              "what": "Language specified in the lang attribute of the element does not appear to be well-formed"
+            }
+          }
+        },
         "linkNoText": {
           "htmlcs": {
             "e:AA.4_1_2.H91.A.NoContent": {
@@ -4041,7 +4052,7 @@
           "htmlcs": {
             "w:AA.1_3_1.H48": {
               "score": 1,
-              "what": "Navigation links should best be coded as a list"
+              "what": "Navigation links are not coded as a list"
             }
           }
         },
@@ -4110,18 +4121,14 @@
           }
         }
       },
-      "solos": {
-        "htmlcs": {
-          "e:AA.3_1_2.H58.1.Lang": 4
-        }
-      }
+      "solos": {}
     },
     "preventionScores": {},
     "summary": {
-      "total": 250,
+      "total": 248,
       "log": 45,
       "preventions": 0,
-      "solos": 8,
+      "solos": 0,
       "groups": [
         {
           "groupName": "focusIndication",
@@ -4142,6 +4149,10 @@
         {
           "groupName": "hoverSurprise",
           "score": 7
+        },
+        {
+          "groupName": "elementLanguageBad",
+          "score": 6
         },
         {
           "groupName": "linkNoText",

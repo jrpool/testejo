@@ -20,7 +20,7 @@
         <div id="synopsis">
           <p><strong>Page</strong>: UsableNet</p>
           <p><strong>URL</strong>: https://usablenet.com/</p>
-          <p><strong>Score</strong>: 602</p>
+          <p><strong>Score</strong>: 606</p>
           <p><strong>Tested by</strong>: Testaro, procedure <code>tp12</code></p>
           <p><strong>Scored by</strong>: Testilo, procedure <code>sp12a</code></p>
           <p><strong>Digested by</strong>: Testilo, procedure <code>dp12a</code></p>
@@ -39,13 +39,13 @@
         <li><a href="https://wave.webaim.org/api/">WAVE</a> by WebAIM</li>
       </ul>
       <p>Testaro produced a report enumerating the test results.</p>
-      <p><a href="https://www.npmjs.com/package/testilo">Testilo</a> processed the report and used the <code>sp12a</code> scoring procedure to compute partial and total scores for the page. The total score is 602 (where 0 is the best possible score). The scored report is appended below.</p>
+      <p><a href="https://www.npmjs.com/package/testilo">Testilo</a> processed the report and used the <code>sp12a</code> scoring procedure to compute partial and total scores for the page. The total score is 606 (where 0 is the best possible score). The scored report is appended below.</p>
       <p>Finally, Testilo used procedure <code>dp12a</code> to produce this digest, briefly explaining how <code>sp12a</code> computed the scores.</p>
       <h2>Score summary</h2>
       <table class="allBorder secondCellRight">
         <caption>Score components</caption>
         <tbody class="headersLeft">
-        <tr><th>total</th><td>602</td></tr>
+        <tr><th>total</th><td>606</td></tr>
         <tr><th>log</th><td>211</td></tr>
         <tr><th>preventions</th><td>100</td></tr>
         <tr><th>linkIndication</th><td>50</td></tr>
@@ -57,6 +57,7 @@
         <tr><th>focusableOperable</th><td>10</td></tr>
         <tr><th>duplicateID</th><td>10</td></tr>
         <tr><th>contrastAA</th><td>8</td></tr>
+        <tr><th>obsoleteAttribute</th><td>8</td></tr>
         <tr><th>inconsistentStyles</th><td>7</td></tr>
         <tr><th>zIndexNotZero</th><td>6</td></tr>
         <tr><th>contrastAAA</th><td>6</td></tr>
@@ -68,7 +69,6 @@
         <tr><th>fontSizeAbsolute</th><td>4</td></tr>
         <tr><th>leadingAbsolute</th><td>4</td></tr>
         <tr><th>skipRepeatedContent</th><td>4</td></tr>
-        <tr><th>obsoleteAttribute</th><td>4</td></tr>
         <tr><th>decorativeImageRisk</th><td>4</td></tr>
         <tr><th>scrollRisk</th><td>4</td></tr>
         <tr><th>fontSmall</th><td>4</td></tr>
@@ -106,7 +106,7 @@
       </ul>
       <p><span class="componentID">noLeading</span>: Score 17. Issues reported by tests in this category:</p>
       <ul>
-      <li>Package <code>alfa</code>, test <code>r73</code>, score 15 (Paragraphs of text have insufficient line height)</li>
+      <li>Package <code>alfa</code>, test <code>r73</code>, score 15 (Paragraph of text has insufficient line height)</li>
       </ul>
       <p><span class="componentID">contentBeyondLandmarks</span>: Score 12. Issues reported by tests in this category:</p>
       <ul>
@@ -126,7 +126,11 @@
       <p><span class="componentID">contrastAA</span>: Score 8. Issues reported by tests in this category:</p>
       <ul>
       <li>Package <code>alfa</code>, test <code>r69</code>, score 3 (Text outside widget has subminimum contrast)</li>
-  <li>Package <code>axe</code>, test <code>color-contrast</code>, score 5 (Elements must have sufficient color contrast)</li>
+  <li>Package <code>axe</code>, test <code>color-contrast</code>, score 5 (Element has insufficient color contrast)</li>
+      </ul>
+      <p><span class="componentID">obsoleteAttribute</span>: Score 8. Issues reported by tests in this category:</p>
+      <ul>
+      <li>Package <code>htmlcs</code>, test <code>e:AA.1_3_1.H49.AlignAttr</code>, score 6 (The align attribute is obsolete)</li>
       </ul>
       <p><span class="componentID">inconsistentStyles</span>: Score 7. Issues reported by tests in this category:</p>
       <ul>
@@ -139,7 +143,7 @@
       <p><span class="componentID">contrastAAA</span>: Score 6. Issues reported by tests in this category:</p>
       <ul>
       <li>Package <code>alfa</code>, test <code>r66</code>, score 3 (Text contrast less than AAA requires)</li>
-  <li>Package <code>axe</code>, test <code>color-contrast-enhanced</code>, score 3 (Elements must have sufficient color contrast (Level AAA))</li>
+  <li>Package <code>axe</code>, test <code>color-contrast-enhanced</code>, score 3 (Element has insufficient color contrast (Level AAA))</li>
       </ul>
       <p><span class="componentID">contrastRisk</span>: Score 6. Issues reported by tests in this category:</p>
       <ul>
@@ -175,10 +179,6 @@
       <ul>
       <li>Package <code>alfa</code>, test <code>r87</code>, score 2 (First focusable element is not a link to the main content)</li>
       </ul>
-      <p><span class="componentID">obsoleteAttribute</span>: Score 4. Issues reported by tests in this category:</p>
-      <ul>
-      <li>Package <code>htmlcs</code>, test <code>e:AA.1_3_1.H49.AlignAttr</code>, score 2 (The align attribute is obsolete)</li>
-      </ul>
       <p><span class="componentID">decorativeImageRisk</span>: Score 4. Issues reported by tests in this category:</p>
       <ul>
       <li>Package <code>htmlcs</code>, test <code>w:AA.1_1_1.H67.2</code>, score 2 (Image marked as decorative may be informative)</li>
@@ -206,7 +206,7 @@
       </ul>
       <p><span class="componentID">pseudoNavListRisk</span>: Score 3. Issues reported by tests in this category:</p>
       <ul>
-      <li>Package <code>htmlcs</code>, test <code>w:AA.1_3_1.H48</code>, score 1 (Navigation links should best be coded as a list)</li>
+      <li>Package <code>htmlcs</code>, test <code>w:AA.1_3_1.H48</code>, score 1 (Navigation links are not coded as a list)</li>
       </ul>
       <p><span class="componentID">eventKeyboardRisk</span>: Score 3. Issues reported by tests in this category:</p>
       <ul>
@@ -6482,7 +6482,7 @@
           "axe": {
             "color-contrast-enhanced": {
               "score": 3,
-              "what": "Elements must have sufficient color contrast (Level AAA)"
+              "what": "Element has insufficient color contrast (Level AAA)"
             }
           }
         },
@@ -6496,7 +6496,7 @@
           "axe": {
             "color-contrast": {
               "score": 5,
-              "what": "Elements must have sufficient color contrast"
+              "what": "Element has insufficient color contrast"
             }
           }
         },
@@ -6504,7 +6504,7 @@
           "alfa": {
             "r73": {
               "score": 15,
-              "what": "Paragraphs of text have insufficient line height"
+              "what": "Paragraph of text has insufficient line height"
             }
           }
         },
@@ -6551,7 +6551,7 @@
         "obsoleteAttribute": {
           "htmlcs": {
             "e:AA.1_3_1.H49.AlignAttr": {
-              "score": 2,
+              "score": 6,
               "what": "The align attribute is obsolete"
             }
           }
@@ -6576,7 +6576,7 @@
           "htmlcs": {
             "w:AA.1_3_1.H48": {
               "score": 1,
-              "what": "Navigation links should best be coded as a list"
+              "what": "Navigation links are not coded as a list"
             }
           }
         },
@@ -6711,7 +6711,7 @@
       "ibm": 100
     },
     "summary": {
-      "total": 602,
+      "total": 606,
       "log": 211,
       "preventions": 100,
       "solos": 0,
@@ -6750,6 +6750,10 @@
         },
         {
           "groupName": "contrastAA",
+          "score": 8
+        },
+        {
+          "groupName": "obsoleteAttribute",
           "score": 8
         },
         {
@@ -6794,10 +6798,6 @@
         },
         {
           "groupName": "skipRepeatedContent",
-          "score": 4
-        },
-        {
-          "groupName": "obsoleteAttribute",
           "score": 4
         },
         {

@@ -12756,7 +12756,7 @@
           "axe": {
             "aria-allowed-role": {
               "score": 1,
-              "what": "ARIA role should be appropriate for the element"
+              "what": "ARIA role is not appropriate for the element"
             }
           }
         },
@@ -12786,7 +12786,7 @@
           "axe": {
             "link-name": {
               "score": 15,
-              "what": "Links must have discernible text"
+              "what": "Link has no discernible text"
             }
           },
           "htmlcs": {
@@ -12878,7 +12878,7 @@
           "axe": {
             "page-has-heading-one": {
               "score": 1,
-              "what": "Page should contain a level-one heading"
+              "what": "Page contains no level-one heading"
             }
           },
           "wave": {
@@ -12924,7 +12924,7 @@
           "axe": {
             "color-contrast-enhanced": {
               "score": 17,
-              "what": "Elements must have sufficient color contrast (Level AAA)"
+              "what": "Element has insufficient color contrast (Level AAA)"
             }
           },
           "tenon": {
@@ -12950,13 +12950,13 @@
           "alfa": {
             "r68": {
               "score": 4,
-              "what": "Element owns no elements as required by its semantic role"
+              "what": "Element does not own an element required by its semantic role"
             }
           },
           "axe": {
             "aria-required-children": {
               "score": 4,
-              "what": "Certain ARIA roles must contain particular children"
+              "what": "ARIA role does not contain a required child"
             }
           }
         },
@@ -12970,7 +12970,7 @@
           "axe": {
             "color-contrast": {
               "score": 17,
-              "what": "Elements must have sufficient color contrast"
+              "what": "Element has insufficient color contrast"
             }
           }
         },
@@ -12978,7 +12978,7 @@
           "alfa": {
             "r73": {
               "score": 9,
-              "what": "Paragraphs of text have insufficient line height"
+              "what": "Paragraph of text has insufficient line height"
             }
           }
         },
@@ -13092,7 +13092,7 @@
           "htmlcs": {
             "w:AA.1_3_1.H48": {
               "score": 1,
-              "what": "Navigation links should best be coded as a list"
+              "what": "Navigation links are not coded as a list"
             }
           }
         },
@@ -13106,7 +13106,7 @@
           "tenon": {
             "155": {
               "score": 1,
-              "what": "These headings are not structured in a hierarchical manner"
+              "what": "Headings are not structured in a hierarchical manner"
             }
           }
         },
@@ -13147,6 +13147,14 @@
             "e:aria_reference_broken": {
               "score": 44,
               "what": "Broken ARIA reference"
+            }
+          }
+        },
+        "menuItemless": {
+          "wave": {
+            "e:aria_menu_broken": {
+              "score": 28,
+              "what": "ARIA menu does not contain required menu items"
             }
           }
         },
@@ -13229,18 +13237,14 @@
           }
         }
       },
-      "solos": {
-        "wave": {
-          "e:aria_menu_broken": 28
-        }
-      }
+      "solos": {}
     },
     "preventionScores": {},
     "summary": {
-      "total": 699,
+      "total": 673,
       "log": 45,
       "preventions": 0,
-      "solos": 56,
+      "solos": 0,
       "groups": [
         {
           "groupName": "focusIndication",
@@ -13265,6 +13269,10 @@
         {
           "groupName": "leadingClipsText",
           "score": 34
+        },
+        {
+          "groupName": "menuItemless",
+          "score": 30
         },
         {
           "groupName": "tabIndexMissing",

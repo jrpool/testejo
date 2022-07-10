@@ -20,7 +20,7 @@
         <div id="synopsis">
           <p><strong>Page</strong>: Fundación Sidar</p>
           <p><strong>URL</strong>: http://www.sidar.org/#goto_a11yhoy</p>
-          <p><strong>Score</strong>: 1185</p>
+          <p><strong>Score</strong>: 1178</p>
           <p><strong>Tested by</strong>: Testaro, procedure <code>tp12</code></p>
           <p><strong>Scored by</strong>: Testilo, procedure <code>sp12a</code></p>
           <p><strong>Digested by</strong>: Testilo, procedure <code>dp12a</code></p>
@@ -39,16 +39,15 @@
         <li><a href="https://wave.webaim.org/api/">WAVE</a> by WebAIM</li>
       </ul>
       <p>Testaro produced a report enumerating the test results.</p>
-      <p><a href="https://www.npmjs.com/package/testilo">Testilo</a> processed the report and used the <code>sp12a</code> scoring procedure to compute partial and total scores for the page. The total score is 1185 (where 0 is the best possible score). The scored report is appended below.</p>
+      <p><a href="https://www.npmjs.com/package/testilo">Testilo</a> processed the report and used the <code>sp12a</code> scoring procedure to compute partial and total scores for the page. The total score is 1178 (where 0 is the best possible score). The scored report is appended below.</p>
       <p>Finally, Testilo used procedure <code>dp12a</code> to produce this digest, briefly explaining how <code>sp12a</code> computed the scores.</p>
       <h2>Score summary</h2>
       <table class="allBorder secondCellRight">
         <caption>Score components</caption>
         <tbody class="headersLeft">
-        <tr><th>total</th><td>1185</td></tr>
+        <tr><th>total</th><td>1178</td></tr>
         <tr><th>log</th><td>301</td></tr>
         <tr><th>preventions</th><td>100</td></tr>
-        <tr><th>solos</th><td>18</td></tr>
         <tr><th>contentBeyondLandmarks</th><td>364</td></tr>
         <tr><th>noLeading</th><td>101</td></tr>
         <tr><th>linkIndication</th><td>44</td></tr>
@@ -59,6 +58,7 @@
         <tr><th>fontSmall</th><td>16</td></tr>
         <tr><th>overflowHidden</th><td>14</td></tr>
         <tr><th>pseudoLinkRisk</th><td>13</td></tr>
+        <tr><th>listChild</th><td>11</td></tr>
         <tr><th>contrastRisk</th><td>10</td></tr>
         <tr><th>tabNavigation</th><td>8</td></tr>
         <tr><th>focusIndication</th><td>7</td></tr>
@@ -89,7 +89,6 @@
       <h3>Special issues</h3>
       <p><span class="componentID">log</span>: Score 301. This is based on the amount of browser error logging and miscellaneous logging during the tests.
       <p><span class="componentID">preventions</span>: Score 100. This is based on tests that the page did not allow to be run. That impedes accessibility progress and risks interfering with tools that users with disabilities need.
-      <p><span class="componentID">solos</span>: Score 18. This is based on issues reported by unclassified tests. Details are in the report.
       <h3>Classified issues</h3>
       <p><span class="componentID">contentBeyondLandmarks</span>: Score 364. Issues reported by tests in this category:</p>
       <ul>
@@ -98,7 +97,7 @@
       </ul>
       <p><span class="componentID">noLeading</span>: Score 101. Issues reported by tests in this category:</p>
       <ul>
-      <li>Package <code>alfa</code>, test <code>r73</code>, score 99 (Paragraphs of text have insufficient line height)</li>
+      <li>Package <code>alfa</code>, test <code>r73</code>, score 99 (Paragraph of text has insufficient line height)</li>
       </ul>
       <p><span class="componentID">linkIndication</span>: Score 44. Issues reported by tests in this category:</p>
       <ul>
@@ -113,19 +112,19 @@
       <p><span class="componentID">contrastAA</span>: Score 31. Issues reported by tests in this category:</p>
       <ul>
       <li>Package <code>alfa</code>, test <code>r69</code>, score 21 (Text outside widget has subminimum contrast)</li>
-  <li>Package <code>axe</code>, test <code>color-contrast</code>, score 15 (Elements must have sufficient color contrast)</li>
+  <li>Package <code>axe</code>, test <code>color-contrast</code>, score 15 (Element has insufficient color contrast)</li>
   <li>Package <code>htmlcs</code>, test <code>e:AA.1_4_3.G18.Fail</code>, score 6 (Contrast between the text and its background is less than 4.5:1)</li>
       </ul>
       <p><span class="componentID">iframeTitleBad</span>: Score 16. Issues reported by tests in this category:</p>
       <ul>
       <li>Package <code>alfa</code>, test <code>r13</code>, score 8 (iframe has no accessible name)</li>
   <li>Package <code>axe</code>, test <code>frame-title</code>, score 6 (Frame has no accessible name)</li>
-  <li>Package <code>htmlcs</code>, test <code>e:AA.2_4_1.H64.1</code>, score 8 (iframe element requires a non-empty title attribute)</li>
+  <li>Package <code>htmlcs</code>, test <code>e:AA.2_4_1.H64.1</code>, score 8 (iframe element has no non-empty title attribute)</li>
       </ul>
       <p><span class="componentID">contrastAAA</span>: Score 16. Issues reported by tests in this category:</p>
       <ul>
       <li>Package <code>alfa</code>, test <code>r66</code>, score 11 (Text contrast less than AAA requires)</li>
-  <li>Package <code>axe</code>, test <code>color-contrast-enhanced</code>, score 5 (Elements must have sufficient color contrast (Level AAA))</li>
+  <li>Package <code>axe</code>, test <code>color-contrast-enhanced</code>, score 5 (Element has insufficient color contrast (Level AAA))</li>
   <li>Package <code>tenon</code>, test <code>95</code>, score 2 (Element has insufficient color contrast (Level AAA))</li>
       </ul>
       <p><span class="componentID">fontSmall</span>: Score 16. Issues reported by tests in this category:</p>
@@ -139,6 +138,10 @@
       <p><span class="componentID">pseudoLinkRisk</span>: Score 13. Issues reported by tests in this category:</p>
       <ul>
       <li>Package <code>tenon</code>, test <code>129</code>, score 11 (CSS underline on text that is not a link)</li>
+      </ul>
+      <p><span class="componentID">listChild</span>: Score 11. Issues reported by tests in this category:</p>
+      <ul>
+      <li>Package <code>axe</code>, test <code>definition-list</code>, score 9 (List element dl has a child element other than properly ordered dt and dt group, script, template, and div)</li>
       </ul>
       <p><span class="componentID">contrastRisk</span>: Score 10. Issues reported by tests in this category:</p>
       <ul>
@@ -163,7 +166,7 @@
       </ul>
       <p><span class="componentID">childMissing</span>: Score 6. Issues reported by tests in this category:</p>
       <ul>
-      <li>Package <code>alfa</code>, test <code>r68</code>, score 4 (Element owns no elements as required by its semantic role)</li>
+      <li>Package <code>alfa</code>, test <code>r68</code>, score 4 (Element does not own an element required by its semantic role)</li>
       </ul>
       <p><span class="componentID">leadingClipsText</span>: Score 6. Issues reported by tests in this category:</p>
       <ul>
@@ -216,7 +219,7 @@
       </ul>
       <p><span class="componentID">imageTextRedundant</span>: Score 3. Issues reported by tests in this category:</p>
       <ul>
-      <li>Package <code>axe</code>, test <code>image-redundant-alt</code>, score 1 (Text of buttons and links should not be repeated in the image alternative)</li>
+      <li>Package <code>axe</code>, test <code>image-redundant-alt</code>, score 1 (Text of a button or link is repeated in the image alternative)</li>
   <li>Package <code>tenon</code>, test <code>138</code>, score 1 (Image link alternative text repeats text in the link)</li>
       </ul>
       <p><span class="componentID">mainLandmark</span>: Score 3. Issues reported by tests in this category:</p>
@@ -225,15 +228,15 @@
       </ul>
       <p><span class="componentID">pseudoNavListRisk</span>: Score 3. Issues reported by tests in this category:</p>
       <ul>
-      <li>Package <code>htmlcs</code>, test <code>w:AA.1_3_1.H48</code>, score 1 (Navigation links should best be coded as a list)</li>
+      <li>Package <code>htmlcs</code>, test <code>w:AA.1_3_1.H48</code>, score 1 (Navigation links are not coded as a list)</li>
       </ul>
       <p><span class="componentID">selectFlatRisk</span>: Score 3. Issues reported by tests in this category:</p>
       <ul>
-      <li>Package <code>htmlcs</code>, test <code>w:AA.1_3_1.H85.2</code>, score 1 (If selection list contains groups of related options, they should be grouped with optgroup)</li>
+      <li>Package <code>htmlcs</code>, test <code>w:AA.1_3_1.H85.2</code>, score 1 (Selection list may contain groups of related options that are not grouped with optgroup)</li>
       </ul>
       <p><span class="componentID">destinationLink</span>: Score 3. Issues reported by tests in this category:</p>
       <ul>
-      <li>Package <code>htmlcs</code>, test <code>w:AA.4_1_2.H91.A.NoHref</code>, score 1 (Link misused as link destination)</li>
+      <li>Package <code>htmlcs</code>, test <code>w:AA.4_1_2.H91.A.NoHref</code>, score 1 (Link is misused as a link destination)</li>
       </ul>
       <p><span class="componentID">titleRedundant</span>: Score 3. Issues reported by tests in this category:</p>
       <ul>
@@ -15692,7 +15695,7 @@
           "htmlcs": {
             "e:AA.2_4_1.H64.1": {
               "score": 8,
-              "what": "iframe element requires a non-empty title attribute"
+              "what": "iframe element has no non-empty title attribute"
             }
           }
         },
@@ -15728,7 +15731,7 @@
           "axe": {
             "color-contrast-enhanced": {
               "score": 5,
-              "what": "Elements must have sufficient color contrast (Level AAA)"
+              "what": "Element has insufficient color contrast (Level AAA)"
             }
           },
           "tenon": {
@@ -15754,7 +15757,7 @@
           "alfa": {
             "r68": {
               "score": 4,
-              "what": "Element owns no elements as required by its semantic role"
+              "what": "Element does not own an element required by its semantic role"
             }
           }
         },
@@ -15768,7 +15771,7 @@
           "axe": {
             "color-contrast": {
               "score": 15,
-              "what": "Elements must have sufficient color contrast"
+              "what": "Element has insufficient color contrast"
             }
           },
           "htmlcs": {
@@ -15790,7 +15793,7 @@
           "alfa": {
             "r73": {
               "score": 99,
-              "what": "Paragraphs of text have insufficient line height"
+              "what": "Paragraph of text has insufficient line height"
             }
           }
         },
@@ -15842,11 +15845,19 @@
             }
           }
         },
+        "listChild": {
+          "axe": {
+            "definition-list": {
+              "score": 9,
+              "what": "List element dl has a child element other than properly ordered dt and dt group, script, template, and div"
+            }
+          }
+        },
         "imageTextRedundant": {
           "axe": {
             "image-redundant-alt": {
               "score": 1,
-              "what": "Text of buttons and links should not be repeated in the image alternative"
+              "what": "Text of a button or link is repeated in the image alternative"
             }
           },
           "tenon": {
@@ -15868,7 +15879,7 @@
           "htmlcs": {
             "w:AA.1_3_1.H48": {
               "score": 1,
-              "what": "Navigation links should best be coded as a list"
+              "what": "Navigation links are not coded as a list"
             }
           }
         },
@@ -15876,7 +15887,7 @@
           "htmlcs": {
             "w:AA.1_3_1.H85.2": {
               "score": 1,
-              "what": "If selection list contains groups of related options, they should be grouped with optgroup"
+              "what": "Selection list may contain groups of related options that are not grouped with optgroup"
             }
           }
         },
@@ -15896,7 +15907,7 @@
           "htmlcs": {
             "w:AA.4_1_2.H91.A.NoHref": {
               "score": 1,
-              "what": "Link misused as link destination"
+              "what": "Link is misused as a link destination"
             }
           }
         },
@@ -15949,20 +15960,16 @@
           }
         }
       },
-      "solos": {
-        "axe": {
-          "definition-list": 9
-        }
-      }
+      "solos": {}
     },
     "preventionScores": {
       "wave": 100
     },
     "summary": {
-      "total": 1185,
+      "total": 1178,
       "log": 301,
       "preventions": 100,
-      "solos": 18,
+      "solos": 0,
       "groups": [
         {
           "groupName": "contentBeyondLandmarks",
@@ -16003,6 +16010,10 @@
         {
           "groupName": "pseudoLinkRisk",
           "score": 13
+        },
+        {
+          "groupName": "listChild",
+          "score": 11
         },
         {
           "groupName": "contrastRisk",

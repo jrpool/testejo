@@ -16135,7 +16135,7 @@
           "axe": {
             "aria-allowed-role": {
               "score": 1,
-              "what": "ARIA role should be appropriate for the element"
+              "what": "ARIA role is not appropriate for the element"
             }
           }
         },
@@ -16221,7 +16221,7 @@
           "axe": {
             "color-contrast-enhanced": {
               "score": 14,
-              "what": "Elements must have sufficient color contrast (Level AAA)"
+              "what": "Element has insufficient color contrast (Level AAA)"
             }
           }
         },
@@ -16229,13 +16229,13 @@
           "alfa": {
             "r68": {
               "score": 8,
-              "what": "Element owns no elements as required by its semantic role"
+              "what": "Element does not own an element required by its semantic role"
             }
           },
           "axe": {
             "aria-required-children": {
               "score": 12,
-              "what": "Certain ARIA roles must contain particular children"
+              "what": "ARIA role does not contain a required child"
             }
           }
         },
@@ -16249,7 +16249,27 @@
           "axe": {
             "color-contrast": {
               "score": 16,
-              "what": "Elements must have sufficient color contrast"
+              "what": "Element has insufficient color contrast"
+            }
+          }
+        },
+        "justification": {
+          "alfa": {
+            "r71": {
+              "score": 4,
+              "what": "Paragraph text is fully justified"
+            }
+          },
+          "wave": {
+            "a:text_justified": {
+              "score": 1,
+              "what": "Text is justified"
+            }
+          },
+          "tenon": {
+            "36": {
+              "score": 4,
+              "what": "Text is fully justified"
             }
           }
         },
@@ -16257,7 +16277,7 @@
           "alfa": {
             "r73": {
               "score": 24,
-              "what": "Paragraphs of text have insufficient line height"
+              "what": "Paragraph of text has insufficient line height"
             }
           }
         },
@@ -16297,7 +16317,7 @@
           "axe": {
             "aria-required-parent": {
               "score": 24,
-              "what": "Certain ARIA roles must be contained by particular parents"
+              "what": "ARIA role is not contained by a required parent"
             }
           }
         },
@@ -16337,7 +16357,7 @@
           "htmlcs": {
             "e:AA.2_4_1.H64.1": {
               "score": 12,
-              "what": "iframe element requires a non-empty title attribute"
+              "what": "iframe element has no non-empty title attribute"
             }
           }
         },
@@ -16349,7 +16369,7 @@
             }
           }
         },
-        "labelForBadID": {
+        "labelBadID": {
           "htmlcs": {
             "w:AA.1_3_1.H44.NonExistentFragment": {
               "score": 2,
@@ -16399,11 +16419,11 @@
             }
           }
         },
-        "justification": {
+        "menuItemless": {
           "wave": {
-            "a:text_justified": {
-              "score": 1,
-              "what": "Text is justified"
+            "e:aria_menu_broken": {
+              "score": 4,
+              "what": "ARIA menu does not contain required menu items"
             }
           }
         },
@@ -16496,24 +16516,14 @@
           }
         }
       },
-      "solos": {
-        "alfa": {
-          "r71": 16
-        },
-        "wave": {
-          "e:aria_menu_broken": 4
-        },
-        "tenon": {
-          "36": 16
-        }
-      }
+      "solos": {}
     },
     "preventionScores": {},
     "summary": {
-      "total": 825,
+      "total": 764,
       "log": 63,
       "preventions": 0,
-      "solos": 72,
+      "solos": 0,
       "groups": [
         {
           "groupName": "contentBeyondLandmarks",
@@ -16600,6 +16610,10 @@
           "score": 8
         },
         {
+          "groupName": "justification",
+          "score": 8
+        },
+        {
           "groupName": "focusableHidden",
           "score": 8
         },
@@ -16616,11 +16630,15 @@
           "score": 6
         },
         {
+          "groupName": "menuItemless",
+          "score": 6
+        },
+        {
           "groupName": "zIndexNotZero",
           "score": 5
         },
         {
-          "groupName": "labelForBadID",
+          "groupName": "labelBadID",
           "score": 5
         },
         {
@@ -16677,10 +16695,6 @@
         },
         {
           "groupName": "linkNoText",
-          "score": 3
-        },
-        {
-          "groupName": "justification",
           "score": 3
         },
         {

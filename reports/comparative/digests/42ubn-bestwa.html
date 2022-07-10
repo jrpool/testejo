@@ -20,7 +20,7 @@
         <div id="synopsis">
           <p><strong>Page</strong>: Best Website Accessibility</p>
           <p><strong>URL</strong>: https://bestwebsiteaccessibility.com/</p>
-          <p><strong>Score</strong>: 1649</p>
+          <p><strong>Score</strong>: 1641</p>
           <p><strong>Tested by</strong>: Testaro, procedure <code>tp12</code></p>
           <p><strong>Scored by</strong>: Testilo, procedure <code>sp12a</code></p>
           <p><strong>Digested by</strong>: Testilo, procedure <code>dp12a</code></p>
@@ -39,15 +39,14 @@
         <li><a href="https://wave.webaim.org/api/">WAVE</a> by WebAIM</li>
       </ul>
       <p>Testaro produced a report enumerating the test results.</p>
-      <p><a href="https://www.npmjs.com/package/testilo">Testilo</a> processed the report and used the <code>sp12a</code> scoring procedure to compute partial and total scores for the page. The total score is 1649 (where 0 is the best possible score). The scored report is appended below.</p>
+      <p><a href="https://www.npmjs.com/package/testilo">Testilo</a> processed the report and used the <code>sp12a</code> scoring procedure to compute partial and total scores for the page. The total score is 1641 (where 0 is the best possible score). The scored report is appended below.</p>
       <p>Finally, Testilo used procedure <code>dp12a</code> to produce this digest, briefly explaining how <code>sp12a</code> computed the scores.</p>
       <h2>Score summary</h2>
       <table class="allBorder secondCellRight">
         <caption>Score components</caption>
         <tbody class="headersLeft">
-        <tr><th>total</th><td>1649</td></tr>
+        <tr><th>total</th><td>1641</td></tr>
         <tr><th>log</th><td>194</td></tr>
-        <tr><th>solos</th><td>16</td></tr>
         <tr><th>contentBeyondLandmarks</th><td>282</td></tr>
         <tr><th>linkForcesNewWindow</th><td>254</td></tr>
         <tr><th>focusIndication</th><td>198</td></tr>
@@ -58,9 +57,9 @@
         <tr><th>linkVague</th><td>50</td></tr>
         <tr><th>linkTextsSame</th><td>48</td></tr>
         <tr><th>controlLabel</th><td>40</td></tr>
+        <tr><th>inputNoText</th><td>34</td></tr>
         <tr><th>linkNoText</th><td>32</td></tr>
         <tr><th>targetSize</th><td>30</td></tr>
-        <tr><th>inputNoText</th><td>26</td></tr>
         <tr><th>fontSmall</th><td>25</td></tr>
         <tr><th>contrastAAA</th><td>23</td></tr>
         <tr><th>linkDestinationsSame</th><td>22</td></tr>
@@ -94,7 +93,6 @@
       <h2>Issue summary</h2>
       <h3>Special issues</h3>
       <p><span class="componentID">log</span>: Score 194. This is based on the amount of browser error logging and miscellaneous logging during the tests.
-      <p><span class="componentID">solos</span>: Score 16. This is based on issues reported by unclassified tests. Details are in the report.
       <h3>Classified issues</h3>
       <p><span class="componentID">contentBeyondLandmarks</span>: Score 282. Issues reported by tests in this category:</p>
       <ul>
@@ -113,7 +111,7 @@
       <p><span class="componentID">contrastAA</span>: Score 90. Issues reported by tests in this category:</p>
       <ul>
       <li>Package <code>alfa</code>, test <code>r69</code>, score 44 (Text outside widget has subminimum contrast)</li>
-  <li>Package <code>axe</code>, test <code>color-contrast</code>, score 44 (Elements must have sufficient color contrast)</li>
+  <li>Package <code>axe</code>, test <code>color-contrast</code>, score 44 (Element has insufficient color contrast)</li>
   <li>Package <code>htmlcs</code>, test <code>e:AA.1_4_3.G18.Fail</code>, score 24 (Contrast between the text and its background is less than 4.5:1)</li>
   <li>Package <code>wave</code>, test <code>c:contrast</code>, score 41 (Very low contrast)</li>
       </ul>
@@ -145,10 +143,16 @@
       <li>Package <code>htmlcs</code>, test <code>e:AA.1_3_1.F68</code>, score 16 (Form control has no label)</li>
   <li>Package <code>wave</code>, test <code>e:label_missing</code>, score 32 (Missing form label)</li>
       </ul>
+      <p><span class="componentID">inputNoText</span>: Score 34. Issues reported by tests in this category:</p>
+      <ul>
+      <li>Package <code>htmlcs</code>, test <code>e:AA.4_1_2.H91.InputEmail.Name</code>, score 8 (Email input has no accessible name)</li>
+  <li>Package <code>htmlcs</code>, test <code>e:AA.4_1_2.H91.InputTel.Name</code>, score 8 (Telephone input has no accessible name)</li>
+  <li>Package <code>htmlcs</code>, test <code>e:AA.4_1_2.H91.InputText.Name</code>, score 16 (Text input has no accessible name)</li>
+      </ul>
       <p><span class="componentID">linkNoText</span>: Score 32. Issues reported by tests in this category:</p>
       <ul>
       <li>Package <code>alfa</code>, test <code>r11</code>, score 12 (Link has no accessible name)</li>
-  <li>Package <code>axe</code>, test <code>link-name</code>, score 9 (Links must have discernible text)</li>
+  <li>Package <code>axe</code>, test <code>link-name</code>, score 9 (Link has no discernible text)</li>
   <li>Package <code>htmlcs</code>, test <code>e:AA.4_1_2.H91.A.NoContent</code>, score 12 (Link has an href attribute but no text)</li>
   <li>Package <code>wave</code>, test <code>e:link_empty</code>, score 12 (Link contains no text)</li>
   <li>Package <code>tenon</code>, test <code>57</code>, score 12 (Link has no text inside it)</li>
@@ -157,11 +161,6 @@
       <ul>
       <li>Package <code>tenon</code>, test <code>152</code>, score 28 (Actionable element is smaller than the minimum required size)</li>
       </ul>
-      <p><span class="componentID">inputNoText</span>: Score 26. Issues reported by tests in this category:</p>
-      <ul>
-      <li>Package <code>htmlcs</code>, test <code>e:AA.4_1_2.H91.InputEmail.Name</code>, score 8 (Email input has no accessible name)</li>
-  <li>Package <code>htmlcs</code>, test <code>e:AA.4_1_2.H91.InputText.Name</code>, score 16 (Text input has no accessible name)</li>
-      </ul>
       <p><span class="componentID">fontSmall</span>: Score 25. Issues reported by tests in this category:</p>
       <ul>
       <li>Package <code>tenon</code>, test <code>134</code>, score 23 (Text is very small)</li>
@@ -169,7 +168,7 @@
       <p><span class="componentID">contrastAAA</span>: Score 23. Issues reported by tests in this category:</p>
       <ul>
       <li>Package <code>alfa</code>, test <code>r66</code>, score 15 (Text contrast less than AAA requires)</li>
-  <li>Package <code>axe</code>, test <code>color-contrast-enhanced</code>, score 15 (Elements must have sufficient color contrast (Level AAA))</li>
+  <li>Package <code>axe</code>, test <code>color-contrast-enhanced</code>, score 15 (Element has insufficient color contrast (Level AAA))</li>
   <li>Package <code>tenon</code>, test <code>95</code>, score 1 (Element has insufficient color contrast (Level AAA))</li>
       </ul>
       <p><span class="componentID">linkDestinationsSame</span>: Score 22. Issues reported by tests in this category:</p>
@@ -239,7 +238,7 @@
       </ul>
       <p><span class="componentID">pseudoNavListRisk</span>: Score 4. Issues reported by tests in this category:</p>
       <ul>
-      <li>Package <code>htmlcs</code>, test <code>w:AA.1_3_1.H48</code>, score 2 (Navigation links should best be coded as a list)</li>
+      <li>Package <code>htmlcs</code>, test <code>w:AA.1_3_1.H48</code>, score 2 (Navigation links are not coded as a list)</li>
       </ul>
       <p><span class="componentID">scrollRisk</span>: Score 4. Issues reported by tests in this category:</p>
       <ul>
@@ -26563,7 +26562,7 @@
           "axe": {
             "link-name": {
               "score": 9,
-              "what": "Links must have discernible text"
+              "what": "Link has no discernible text"
             }
           },
           "htmlcs": {
@@ -26647,7 +26646,7 @@
           "axe": {
             "color-contrast-enhanced": {
               "score": 15,
-              "what": "Elements must have sufficient color contrast (Level AAA)"
+              "what": "Element has insufficient color contrast (Level AAA)"
             }
           },
           "tenon": {
@@ -26667,7 +26666,7 @@
           "axe": {
             "color-contrast": {
               "score": 44,
-              "what": "Elements must have sufficient color contrast"
+              "what": "Element has insufficient color contrast"
             }
           },
           "htmlcs": {
@@ -26757,6 +26756,10 @@
               "score": 8,
               "what": "Email input has no accessible name"
             },
+            "e:AA.4_1_2.H91.InputTel.Name": {
+              "score": 8,
+              "what": "Telephone input has no accessible name"
+            },
             "e:AA.4_1_2.H91.InputText.Name": {
               "score": 16,
               "what": "Text input has no accessible name"
@@ -26783,7 +26786,7 @@
           "htmlcs": {
             "w:AA.1_3_1.H48": {
               "score": 2,
-              "what": "Navigation links should best be coded as a list"
+              "what": "Navigation links are not coded as a list"
             }
           }
         },
@@ -26912,18 +26915,14 @@
           }
         }
       },
-      "solos": {
-        "htmlcs": {
-          "e:AA.4_1_2.H91.InputTel.Name": 8
-        }
-      }
+      "solos": {}
     },
     "preventionScores": {},
     "summary": {
-      "total": 1649,
+      "total": 1641,
       "log": 194,
       "preventions": 0,
-      "solos": 16,
+      "solos": 0,
       "groups": [
         {
           "groupName": "contentBeyondLandmarks",
@@ -26966,16 +26965,16 @@
           "score": 40
         },
         {
+          "groupName": "inputNoText",
+          "score": 34
+        },
+        {
           "groupName": "linkNoText",
           "score": 32
         },
         {
           "groupName": "targetSize",
           "score": 30
-        },
-        {
-          "groupName": "inputNoText",
-          "score": 26
         },
         {
           "groupName": "fontSmall",

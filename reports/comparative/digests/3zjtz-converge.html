@@ -20,7 +20,7 @@
         <div id="synopsis">
           <p><strong>Page</strong>: Converge Accessibility</p>
           <p><strong>URL</strong>: https://convergeaccessibility.com/</p>
-          <p><strong>Score</strong>: 258</p>
+          <p><strong>Score</strong>: 248</p>
           <p><strong>Tested by</strong>: Testaro, procedure <code>tp12</code></p>
           <p><strong>Scored by</strong>: Testilo, procedure <code>sp12a</code></p>
           <p><strong>Digested by</strong>: Testilo, procedure <code>dp12a</code></p>
@@ -39,19 +39,19 @@
         <li><a href="https://wave.webaim.org/api/">WAVE</a> by WebAIM</li>
       </ul>
       <p>Testaro produced a report enumerating the test results.</p>
-      <p><a href="https://www.npmjs.com/package/testilo">Testilo</a> processed the report and used the <code>sp12a</code> scoring procedure to compute partial and total scores for the page. The total score is 258 (where 0 is the best possible score). The scored report is appended below.</p>
+      <p><a href="https://www.npmjs.com/package/testilo">Testilo</a> processed the report and used the <code>sp12a</code> scoring procedure to compute partial and total scores for the page. The total score is 248 (where 0 is the best possible score). The scored report is appended below.</p>
       <p>Finally, Testilo used procedure <code>dp12a</code> to produce this digest, briefly explaining how <code>sp12a</code> computed the scores.</p>
       <h2>Score summary</h2>
       <table class="allBorder secondCellRight">
         <caption>Score components</caption>
         <tbody class="headersLeft">
-        <tr><th>total</th><td>258</td></tr>
+        <tr><th>total</th><td>248</td></tr>
         <tr><th>log</th><td>12</td></tr>
-        <tr><th>solos</th><td>16</td></tr>
         <tr><th>targetSize</th><td>22</td></tr>
         <tr><th>linkIndication</th><td>18</td></tr>
         <tr><th>contrastAAA</th><td>17</td></tr>
         <tr><th>contentBeyondLandmarks</th><td>14</td></tr>
+        <tr><th>ariaBadAttribute</th><td>11</td></tr>
         <tr><th>duplicateID</th><td>10</td></tr>
         <tr><th>contrastAA</th><td>10</td></tr>
         <tr><th>contrastRisk</th><td>9</td></tr>
@@ -65,7 +65,6 @@
         <tr><th>internalLinkBroken</th><td>6</td></tr>
         <tr><th>inputNoText</th><td>6</td></tr>
         <tr><th>noLeading</th><td>5</td></tr>
-        <tr><th>ariaBadAttribute</th><td>5</td></tr>
         <tr><th>horizontalScrolling</th><td>5</td></tr>
         <tr><th>focusableOperable</th><td>4</td></tr>
         <tr><th>hoverSurprise</th><td>4</td></tr>
@@ -87,7 +86,6 @@
       <h2>Issue summary</h2>
       <h3>Special issues</h3>
       <p><span class="componentID">log</span>: Score 12. This is based on the amount of browser error logging and miscellaneous logging during the tests.
-      <p><span class="componentID">solos</span>: Score 16. This is based on issues reported by unclassified tests. Details are in the report.
       <h3>Classified issues</h3>
       <p><span class="componentID">targetSize</span>: Score 22. Issues reported by tests in this category:</p>
       <ul>
@@ -100,12 +98,17 @@
       <p><span class="componentID">contrastAAA</span>: Score 17. Issues reported by tests in this category:</p>
       <ul>
       <li>Package <code>alfa</code>, test <code>r66</code>, score 9 (Text contrast less than AAA requires)</li>
-  <li>Package <code>axe</code>, test <code>color-contrast-enhanced</code>, score 11 (Elements must have sufficient color contrast (Level AAA))</li>
+  <li>Package <code>axe</code>, test <code>color-contrast-enhanced</code>, score 11 (Element has insufficient color contrast (Level AAA))</li>
   <li>Package <code>tenon</code>, test <code>95</code>, score 1 (Element has insufficient color contrast (Level AAA))</li>
       </ul>
       <p><span class="componentID">contentBeyondLandmarks</span>: Score 14. Issues reported by tests in this category:</p>
       <ul>
       <li>Package <code>alfa</code>, test <code>r57</code>, score 12 (Perceivable text content is not included in any landmark)</li>
+      </ul>
+      <p><span class="componentID">ariaBadAttribute</span>: Score 11. Issues reported by tests in this category:</p>
+      <ul>
+      <li>Package <code>alfa</code>, test <code>r18</code>, score 8 (ARIA state or property is not allowed for the element on which it is specified)</li>
+  <li>Package <code>axe</code>, test <code>aria-allowed-attr</code>, score 3 (ARIA attribute is invalid for the role of its element)</li>
       </ul>
       <p><span class="componentID">duplicateID</span>: Score 10. Issues reported by tests in this category:</p>
       <ul>
@@ -116,7 +119,7 @@
       <p><span class="componentID">contrastAA</span>: Score 10. Issues reported by tests in this category:</p>
       <ul>
       <li>Package <code>alfa</code>, test <code>r69</code>, score 3 (Text outside widget has subminimum contrast)</li>
-  <li>Package <code>axe</code>, test <code>color-contrast</code>, score 7 (Elements must have sufficient color contrast)</li>
+  <li>Package <code>axe</code>, test <code>color-contrast</code>, score 7 (Element has insufficient color contrast)</li>
       </ul>
       <p><span class="componentID">contrastRisk</span>: Score 9. Issues reported by tests in this category:</p>
       <ul>
@@ -168,11 +171,7 @@
       </ul>
       <p><span class="componentID">noLeading</span>: Score 5. Issues reported by tests in this category:</p>
       <ul>
-      <li>Package <code>alfa</code>, test <code>r73</code>, score 3 (Paragraphs of text have insufficient line height)</li>
-      </ul>
-      <p><span class="componentID">ariaBadAttribute</span>: Score 5. Issues reported by tests in this category:</p>
-      <ul>
-      <li>Package <code>axe</code>, test <code>aria-allowed-attr</code>, score 3 (ARIA attribute is invalid for the role of its element)</li>
+      <li>Package <code>alfa</code>, test <code>r73</code>, score 3 (Paragraph of text has insufficient line height)</li>
       </ul>
       <p><span class="componentID">horizontalScrolling</span>: Score 5. Issues reported by tests in this category:</p>
       <ul>
@@ -225,7 +224,7 @@
       </ul>
       <p><span class="componentID">pseudoNavListRisk</span>: Score 3. Issues reported by tests in this category:</p>
       <ul>
-      <li>Package <code>htmlcs</code>, test <code>w:AA.1_3_1.H48</code>, score 1 (Navigation links should best be coded as a list)</li>
+      <li>Package <code>htmlcs</code>, test <code>w:AA.1_3_1.H48</code>, score 1 (Navigation links are not coded as a list)</li>
       </ul>
       <p><span class="componentID">scrollRisk</span>: Score 3. Issues reported by tests in this category:</p>
       <ul>
@@ -6131,6 +6130,20 @@
             }
           }
         },
+        "ariaBadAttribute": {
+          "alfa": {
+            "r18": {
+              "score": 8,
+              "what": "ARIA state or property is not allowed for the element on which it is specified"
+            }
+          },
+          "axe": {
+            "aria-allowed-attr": {
+              "score": 3,
+              "what": "ARIA attribute is invalid for the role of its element"
+            }
+          }
+        },
         "duplicateID": {
           "alfa": {
             "r3": {
@@ -6169,7 +6182,7 @@
           "axe": {
             "color-contrast-enhanced": {
               "score": 11,
-              "what": "Elements must have sufficient color contrast (Level AAA)"
+              "what": "Element has insufficient color contrast (Level AAA)"
             }
           },
           "tenon": {
@@ -6189,7 +6202,7 @@
           "axe": {
             "color-contrast": {
               "score": 7,
-              "what": "Elements must have sufficient color contrast"
+              "what": "Element has insufficient color contrast"
             }
           }
         },
@@ -6211,7 +6224,7 @@
           "alfa": {
             "r73": {
               "score": 3,
-              "what": "Paragraphs of text have insufficient line height"
+              "what": "Paragraph of text has insufficient line height"
             }
           }
         },
@@ -6228,14 +6241,6 @@
             "hidden-content": {
               "score": 1,
               "what": "Some content is hidden and therefore may not be testable for accessibility"
-            }
-          }
-        },
-        "ariaBadAttribute": {
-          "axe": {
-            "aria-allowed-attr": {
-              "score": 3,
-              "what": "ARIA attribute is invalid for the role of its element"
             }
           }
         },
@@ -6303,7 +6308,7 @@
           "htmlcs": {
             "w:AA.1_3_1.H48": {
               "score": 1,
-              "what": "Navigation links should best be coded as a list"
+              "what": "Navigation links are not coded as a list"
             }
           }
         },
@@ -6392,18 +6397,14 @@
           }
         }
       },
-      "solos": {
-        "alfa": {
-          "r18": 8
-        }
-      }
+      "solos": {}
     },
     "preventionScores": {},
     "summary": {
-      "total": 258,
+      "total": 248,
       "log": 12,
       "preventions": 0,
-      "solos": 16,
+      "solos": 0,
       "groups": [
         {
           "groupName": "targetSize",
@@ -6420,6 +6421,10 @@
         {
           "groupName": "contentBeyondLandmarks",
           "score": 14
+        },
+        {
+          "groupName": "ariaBadAttribute",
+          "score": 11
         },
         {
           "groupName": "duplicateID",
@@ -6471,10 +6476,6 @@
         },
         {
           "groupName": "noLeading",
-          "score": 5
-        },
-        {
-          "groupName": "ariaBadAttribute",
           "score": 5
         },
         {

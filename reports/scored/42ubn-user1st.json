@@ -11553,7 +11553,7 @@
           "axe": {
             "aria-allowed-role": {
               "score": 1,
-              "what": "ARIA role should be appropriate for the element"
+              "what": "ARIA role is not appropriate for the element"
             }
           }
         },
@@ -11625,7 +11625,7 @@
           "axe": {
             "color-contrast-enhanced": {
               "score": 14,
-              "what": "Elements must have sufficient color contrast (Level AAA)"
+              "what": "Element has insufficient color contrast (Level AAA)"
             }
           },
           "tenon": {
@@ -11645,7 +11645,7 @@
           "axe": {
             "color-contrast": {
               "score": 11,
-              "what": "Elements must have sufficient color contrast"
+              "what": "Element has insufficient color contrast"
             }
           },
           "htmlcs": {
@@ -11697,7 +11697,7 @@
           "htmlcs": {
             "e:AA.2_4_1.H64.1": {
               "score": 8,
-              "what": "iframe element requires a non-empty title attribute"
+              "what": "iframe element has no non-empty title attribute"
             }
           }
         },
@@ -11751,7 +11751,7 @@
           "tenon": {
             "155": {
               "score": 1,
-              "what": "These headings are not structured in a hierarchical manner"
+              "what": "Headings are not structured in a hierarchical manner"
             }
           }
         },

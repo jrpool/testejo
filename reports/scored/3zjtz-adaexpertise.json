@@ -8128,7 +8128,7 @@
           "axe": {
             "color-contrast-enhanced": {
               "score": 41,
-              "what": "Elements must have sufficient color contrast (Level AAA)"
+              "what": "Element has insufficient color contrast (Level AAA)"
             }
           }
         },
@@ -8142,7 +8142,7 @@
           "axe": {
             "color-contrast": {
               "score": 17,
-              "what": "Elements must have sufficient color contrast"
+              "what": "Element has insufficient color contrast"
             }
           }
         },

@@ -2580,7 +2580,7 @@
           "axe": {
             "html-has-lang": {
               "score": 3,
-              "what": "html element must have a lang attribute"
+              "what": "html element has no lang attribute"
             }
           },
           "wave": {
@@ -2614,7 +2614,7 @@
           "axe": {
             "page-has-heading-one": {
               "score": 1,
-              "what": "Page should contain a level-one heading"
+              "what": "Page contains no level-one heading"
             }
           },
           "wave": {
@@ -2634,7 +2634,7 @@
           "axe": {
             "color-contrast-enhanced": {
               "score": 1,
-              "what": "Elements must have sufficient color contrast (Level AAA)"
+              "what": "Element has insufficient color contrast (Level AAA)"
             }
           }
         },
@@ -2648,7 +2648,7 @@
           "axe": {
             "color-contrast": {
               "score": 2,
-              "what": "Elements must have sufficient color contrast"
+              "what": "Element has insufficient color contrast"
             }
           }
         },
@@ -2656,7 +2656,7 @@
           "alfa": {
             "r73": {
               "score": 9,
-              "what": "Paragraphs of text have insufficient line height"
+              "what": "Paragraph of text has insufficient line height"
             }
           }
         },
@@ -2676,11 +2676,19 @@
             }
           }
         },
+        "pageLanguageBad": {
+          "htmlcs": {
+            "e:AA.3_1_1.H57.3.Lang": {
+              "score": 4,
+              "what": "Language specified in the lang attribute of the document does not appear to be well-formed"
+            }
+          }
+        },
         "pseudoNavListRisk": {
           "htmlcs": {
             "w:AA.1_3_1.H48": {
               "score": 1,
-              "what": "Navigation links should best be coded as a list"
+              "what": "Navigation links are not coded as a list"
             }
           }
         },
@@ -2694,7 +2702,7 @@
           "tenon": {
             "155": {
               "score": 1,
-              "what": "These headings are not structured in a hierarchical manner"
+              "what": "Headings are not structured in a hierarchical manner"
             }
           }
         },
@@ -2723,18 +2731,14 @@
           }
         }
       },
-      "solos": {
-        "htmlcs": {
-          "e:AA.3_1_1.H57.3.Lang": 4
-        }
-      }
+      "solos": {}
     },
     "preventionScores": {},
     "summary": {
-      "total": 284,
+      "total": 282,
       "log": 186,
       "preventions": 0,
-      "solos": 8,
+      "solos": 0,
       "groups": [
         {
           "groupName": "contentBeyondLandmarks",
@@ -2747,6 +2751,10 @@
         {
           "groupName": "pageLanguage",
           "score": 9
+        },
+        {
+          "groupName": "pageLanguageBad",
+          "score": 6
         },
         {
           "groupName": "leadingClipsText",

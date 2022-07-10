@@ -7521,7 +7521,7 @@
           "axe": {
             "color-contrast-enhanced": {
               "score": 33,
-              "what": "Elements must have sufficient color contrast (Level AAA)"
+              "what": "Element has insufficient color contrast (Level AAA)"
             }
           },
           "tenon": {
@@ -7551,7 +7551,7 @@
           "axe": {
             "color-contrast": {
               "score": 3,
-              "what": "Elements must have sufficient color contrast"
+              "what": "Element has insufficient color contrast"
             }
           }
         },
@@ -7575,7 +7575,15 @@
           "axe": {
             "autocomplete-valid": {
               "score": 2,
-              "what": "Autocomplete attribute must be used correctly"
+              "what": "Autocomplete attribute is used incorrectly"
+            }
+          }
+        },
+        "controlLabel": {
+          "axe": {
+            "label": {
+              "score": 4,
+              "what": "Form element has no label"
             }
           }
         },
@@ -7595,7 +7603,7 @@
             }
           }
         },
-        "labelForBadID": {
+        "labelBadID": {
           "htmlcs": {
             "w:AA.1_3_1.H44.NonExistentFragment": {
               "score": 1,
@@ -7607,7 +7615,15 @@
           "htmlcs": {
             "w:AA.1_3_1.H48": {
               "score": 1,
-              "what": "Navigation links should best be coded as a list"
+              "what": "Navigation links are not coded as a list"
+            }
+          }
+        },
+        "autocompleteRisk": {
+          "htmlcs": {
+            "w:AA.1_3_5.H98": {
+              "score": 1,
+              "what": "Element contains a potentially faulty value in its autocomplete attribute"
             }
           }
         },
@@ -7638,6 +7654,14 @@
             "57": {
               "score": 12,
               "what": "Link has no text inside it"
+            }
+          }
+        },
+        "labelEmpty": {
+          "wave": {
+            "e:label_empty": {
+              "score": 6,
+              "what": "Empty form label"
             }
           }
         },
@@ -7698,24 +7722,14 @@
           }
         }
       },
-      "solos": {
-        "axe": {
-          "label": 4
-        },
-        "htmlcs": {
-          "w:AA.1_3_5.H98": 1
-        },
-        "wave": {
-          "e:label_empty": 8
-        }
-      }
+      "solos": {}
     },
     "preventionScores": {},
     "summary": {
-      "total": 389,
+      "total": 380,
       "log": 81,
       "preventions": 0,
-      "solos": 26,
+      "solos": 0,
       "groups": [
         {
           "groupName": "contrastAAA",
@@ -7750,11 +7764,19 @@
           "score": 16
         },
         {
+          "groupName": "labelEmpty",
+          "score": 8
+        },
+        {
           "groupName": "roleBad",
           "score": 6
         },
         {
           "groupName": "formFieldNoText",
+          "score": 6
+        },
+        {
+          "groupName": "controlLabel",
           "score": 6
         },
         {
@@ -7822,11 +7844,15 @@
           "score": 3
         },
         {
-          "groupName": "labelForBadID",
+          "groupName": "labelBadID",
           "score": 3
         },
         {
           "groupName": "pseudoNavListRisk",
+          "score": 3
+        },
+        {
+          "groupName": "autocompleteRisk",
           "score": 3
         },
         {

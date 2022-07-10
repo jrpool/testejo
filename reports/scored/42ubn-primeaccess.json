@@ -4967,6 +4967,20 @@
             }
           }
         },
+        "ariaBadAttribute": {
+          "alfa": {
+            "r18": {
+              "score": 4,
+              "what": "ARIA state or property is not allowed for the element on which it is specified"
+            }
+          },
+          "axe": {
+            "aria-allowed-attr": {
+              "score": 4,
+              "what": "ARIA attribute is invalid for the role of its element"
+            }
+          }
+        },
         "h1Missing": {
           "alfa": {
             "r61": {
@@ -4985,7 +4999,7 @@
           "axe": {
             "color-contrast-enhanced": {
               "score": 1,
-              "what": "Elements must have sufficient color contrast (Level AAA)"
+              "what": "Element has insufficient color contrast (Level AAA)"
             }
           },
           "tenon": {
@@ -5005,7 +5019,7 @@
           "axe": {
             "color-contrast": {
               "score": 2,
-              "what": "Elements must have sufficient color contrast"
+              "what": "Element has insufficient color contrast"
             }
           },
           "wave": {
@@ -5019,7 +5033,7 @@
           "alfa": {
             "r73": {
               "score": 24,
-              "what": "Paragraphs of text have insufficient line height"
+              "what": "Paragraph of text has insufficient line height"
             }
           }
         },
@@ -5039,19 +5053,23 @@
             }
           }
         },
-        "ariaBadAttribute": {
-          "axe": {
-            "aria-allowed-attr": {
-              "score": 4,
-              "what": "ARIA attribute is invalid for the role of its element"
-            }
-          }
-        },
         "decorativeImageRisk": {
           "htmlcs": {
             "w:AA.1_1_1.H67.2": {
               "score": 1,
               "what": "Image marked as decorative may be informative"
+            }
+          }
+        },
+        "labelBadID": {
+          "htmlcs": {
+            "w:AA.1_3_1.ARIA16,ARIA9": {
+              "score": 1,
+              "what": "aria-labelledby attribute references a nonexistent element"
+            },
+            "w:AA.4_1_2.ARIA16,ARIA9": {
+              "score": 1,
+              "what": "aria-labelledby attribute references a nonexistent element"
             }
           }
         },
@@ -5065,7 +5083,7 @@
           "tenon": {
             "155": {
               "score": 1,
-              "what": "These headings are not structured in a hierarchical manner"
+              "what": "Headings are not structured in a hierarchical manner"
             }
           }
         },
@@ -5150,22 +5168,14 @@
           }
         }
       },
-      "solos": {
-        "alfa": {
-          "r18": 4
-        },
-        "htmlcs": {
-          "w:AA.1_3_1.ARIA16,ARIA9": 1,
-          "w:AA.4_1_2.ARIA16,ARIA9": 1
-        }
-      }
+      "solos": {}
     },
     "preventionScores": {},
     "summary": {
-      "total": 265,
+      "total": 259,
       "log": 0,
       "preventions": 0,
-      "solos": 12,
+      "solos": 0,
       "groups": [
         {
           "groupName": "leadingClipsText",
@@ -5188,6 +5198,10 @@
           "score": 11
         },
         {
+          "groupName": "ariaBadAttribute",
+          "score": 8
+        },
+        {
           "groupName": "linkForcesNewWindow",
           "score": 8
         },
@@ -5201,10 +5215,6 @@
         },
         {
           "groupName": "zIndexNotZero",
-          "score": 6
-        },
-        {
-          "groupName": "ariaBadAttribute",
           "score": 6
         },
         {
@@ -5241,6 +5251,10 @@
         },
         {
           "groupName": "headingOfNothing",
+          "score": 4
+        },
+        {
+          "groupName": "labelBadID",
           "score": 4
         },
         {

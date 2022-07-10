@@ -20,7 +20,7 @@
         <div id="synopsis">
           <p><strong>Page</strong>: Zenyth Group</p>
           <p><strong>URL</strong>: https://zenythgroup.com/index</p>
-          <p><strong>Score</strong>: 983</p>
+          <p><strong>Score</strong>: 718</p>
           <p><strong>Tested by</strong>: Testaro, procedure <code>tp12</code></p>
           <p><strong>Scored by</strong>: Testilo, procedure <code>sp12a</code></p>
           <p><strong>Digested by</strong>: Testilo, procedure <code>dp12a</code></p>
@@ -39,16 +39,15 @@
         <li><a href="https://wave.webaim.org/api/">WAVE</a> by WebAIM</li>
       </ul>
       <p>Testaro produced a report enumerating the test results.</p>
-      <p><a href="https://www.npmjs.com/package/testilo">Testilo</a> processed the report and used the <code>sp12a</code> scoring procedure to compute partial and total scores for the page. The total score is 983 (where 0 is the best possible score). The scored report is appended below.</p>
+      <p><a href="https://www.npmjs.com/package/testilo">Testilo</a> processed the report and used the <code>sp12a</code> scoring procedure to compute partial and total scores for the page. The total score is 718 (where 0 is the best possible score). The scored report is appended below.</p>
       <p>Finally, Testilo used procedure <code>dp12a</code> to produce this digest, briefly explaining how <code>sp12a</code> computed the scores.</p>
       <h2>Score summary</h2>
       <table class="allBorder secondCellRight">
         <caption>Score components</caption>
         <tbody class="headersLeft">
-        <tr><th>total</th><td>983</td></tr>
+        <tr><th>total</th><td>718</td></tr>
         <tr><th>log</th><td>29</td></tr>
         <tr><th>preventions</th><td>100</td></tr>
-        <tr><th>solos</th><td>288</td></tr>
         <tr><th>contrastAA</th><td>63</td></tr>
         <tr><th>roleBad</th><td>58</td></tr>
         <tr><th>fontSizeAbsolute</th><td>58</td></tr>
@@ -56,6 +55,7 @@
         <tr><th>linkIndication</th><td>49</td></tr>
         <tr><th>contrastAAA</th><td>33</td></tr>
         <tr><th>focusableOperable</th><td>31</td></tr>
+        <tr><th>justification</th><td>30</td></tr>
         <tr><th>menuNavigation</th><td>19</td></tr>
         <tr><th>fontSmall</th><td>17</td></tr>
         <tr><th>linkForcesNewWindow</th><td>17</td></tr>
@@ -68,7 +68,6 @@
         <tr><th>tabIndexMissing</th><td>10</td></tr>
         <tr><th>noLeading</th><td>8</td></tr>
         <tr><th>inconsistentStyles</th><td>7</td></tr>
-        <tr><th>justification</th><td>7</td></tr>
         <tr><th>contentBeyondLandmarks</th><td>6</td></tr>
         <tr><th>decorativeImageRisk</th><td>6</td></tr>
         <tr><th>buttonNoText</th><td>6</td></tr>
@@ -93,12 +92,11 @@
       <h3>Special issues</h3>
       <p><span class="componentID">log</span>: Score 29. This is based on the amount of browser error logging and miscellaneous logging during the tests.
       <p><span class="componentID">preventions</span>: Score 100. This is based on tests that the page did not allow to be run. That impedes accessibility progress and risks interfering with tools that users with disabilities need.
-      <p><span class="componentID">solos</span>: Score 288. This is based on issues reported by unclassified tests. Details are in the report.
       <h3>Classified issues</h3>
       <p><span class="componentID">contrastAA</span>: Score 63. Issues reported by tests in this category:</p>
       <ul>
       <li>Package <code>alfa</code>, test <code>r69</code>, score 28 (Text outside widget has subminimum contrast)</li>
-  <li>Package <code>axe</code>, test <code>color-contrast</code>, score 50 (Elements must have sufficient color contrast)</li>
+  <li>Package <code>axe</code>, test <code>color-contrast</code>, score 50 (Element has insufficient color contrast)</li>
       </ul>
       <p><span class="componentID">roleBad</span>: Score 58. Issues reported by tests in this category:</p>
       <ul>
@@ -119,12 +117,18 @@
       <p><span class="componentID">contrastAAA</span>: Score 33. Issues reported by tests in this category:</p>
       <ul>
       <li>Package <code>alfa</code>, test <code>r66</code>, score 9 (Text contrast less than AAA requires)</li>
-  <li>Package <code>axe</code>, test <code>color-contrast-enhanced</code>, score 27 (Elements must have sufficient color contrast (Level AAA))</li>
+  <li>Package <code>axe</code>, test <code>color-contrast-enhanced</code>, score 27 (Element has insufficient color contrast (Level AAA))</li>
   <li>Package <code>tenon</code>, test <code>95</code>, score 2 (Element has insufficient color contrast (Level AAA))</li>
       </ul>
       <p><span class="componentID">focusableOperable</span>: Score 31. Issues reported by tests in this category:</p>
       <ul>
       <li>Package <code>testaro</code>, test <code>focOp</code>, score 29 (Operable elements that cannot be Tab-focused and vice versa)</li>
+      </ul>
+      <p><span class="componentID">justification</span>: Score 30. Issues reported by tests in this category:</p>
+      <ul>
+      <li>Package <code>alfa</code>, test <code>r71</code>, score 19 (Paragraph text is fully justified)</li>
+  <li>Package <code>wave</code>, test <code>a:text_justified</code>, score 5 (Text is justified)</li>
+  <li>Package <code>tenon</code>, test <code>36</code>, score 17 (Text is fully justified)</li>
       </ul>
       <p><span class="componentID">menuNavigation</span>: Score 19. Issues reported by tests in this category:</p>
       <ul>
@@ -172,15 +176,11 @@
       </ul>
       <p><span class="componentID">noLeading</span>: Score 8. Issues reported by tests in this category:</p>
       <ul>
-      <li>Package <code>alfa</code>, test <code>r73</code>, score 6 (Paragraphs of text have insufficient line height)</li>
+      <li>Package <code>alfa</code>, test <code>r73</code>, score 6 (Paragraph of text has insufficient line height)</li>
       </ul>
       <p><span class="componentID">inconsistentStyles</span>: Score 7. Issues reported by tests in this category:</p>
       <ul>
       <li>Package <code>testaro</code>, test <code>styleDiff</code>, score 5 (Heading, link, and button style inconsistencies)</li>
-      </ul>
-      <p><span class="componentID">justification</span>: Score 7. Issues reported by tests in this category:</p>
-      <ul>
-      <li>Package <code>wave</code>, test <code>a:text_justified</code>, score 5 (Text is justified)</li>
       </ul>
       <p><span class="componentID">contentBeyondLandmarks</span>: Score 6. Issues reported by tests in this category:</p>
       <ul>
@@ -213,7 +213,7 @@
       <p><span class="componentID">obsoleteElement</span>: Score 3. Issues reported by tests in this category:</p>
       <ul>
       <li>Package <code>alfa</code>, test <code>r70</code>, score 1 (Element is obsolete or deprecated)</li>
-  <li>Package <code>htmlcs</code>, test <code>e:AA.1_3_1.H49.Center</code>, score 1 (Element is obsolete)</li>
+  <li>Package <code>htmlcs</code>, test <code>e:AA.1_3_1.H49.Center</code>, score 1 (center element is obsolete)</li>
       </ul>
       <p><span class="componentID">frameContentRisk</span>: Score 3. Issues reported by tests in this category:</p>
       <ul>
@@ -233,7 +233,7 @@
       </ul>
       <p><span class="componentID">pseudoNavListRisk</span>: Score 3. Issues reported by tests in this category:</p>
       <ul>
-      <li>Package <code>htmlcs</code>, test <code>w:AA.1_3_1.H48</code>, score 1 (Navigation links should best be coded as a list)</li>
+      <li>Package <code>htmlcs</code>, test <code>w:AA.1_3_1.H48</code>, score 1 (Navigation links are not coded as a list)</li>
       </ul>
       <p><span class="componentID">scrollRisk</span>: Score 3. Issues reported by tests in this category:</p>
       <ul>
@@ -15690,7 +15690,7 @@
           "axe": {
             "color-contrast-enhanced": {
               "score": 27,
-              "what": "Elements must have sufficient color contrast (Level AAA)"
+              "what": "Element has insufficient color contrast (Level AAA)"
             }
           },
           "tenon": {
@@ -15710,7 +15710,7 @@
           "axe": {
             "color-contrast": {
               "score": 50,
-              "what": "Elements must have sufficient color contrast"
+              "what": "Element has insufficient color contrast"
             }
           }
         },
@@ -15724,7 +15724,27 @@
           "htmlcs": {
             "e:AA.1_3_1.H49.Center": {
               "score": 1,
-              "what": "Element is obsolete"
+              "what": "center element is obsolete"
+            }
+          }
+        },
+        "justification": {
+          "alfa": {
+            "r71": {
+              "score": 19,
+              "what": "Paragraph text is fully justified"
+            }
+          },
+          "wave": {
+            "a:text_justified": {
+              "score": 5,
+              "what": "Text is justified"
+            }
+          },
+          "tenon": {
+            "36": {
+              "score": 17,
+              "what": "Text is fully justified"
             }
           }
         },
@@ -15732,7 +15752,7 @@
           "alfa": {
             "r73": {
               "score": 6,
-              "what": "Paragraphs of text have insufficient line height"
+              "what": "Paragraph of text has insufficient line height"
             }
           }
         },
@@ -15796,7 +15816,7 @@
           "htmlcs": {
             "w:AA.1_3_1.H48": {
               "score": 1,
-              "what": "Navigation links should best be coded as a list"
+              "what": "Navigation links are not coded as a list"
             }
           }
         },
@@ -15833,14 +15853,6 @@
             "e:button_empty": {
               "score": 4,
               "what": "Button is empty or has no value text"
-            }
-          }
-        },
-        "justification": {
-          "wave": {
-            "a:text_justified": {
-              "score": 5,
-              "what": "Text is justified"
             }
           }
         },
@@ -15947,23 +15959,16 @@
           }
         }
       },
-      "solos": {
-        "alfa": {
-          "r71": 76
-        },
-        "tenon": {
-          "36": 68
-        }
-      }
+      "solos": {}
     },
     "preventionScores": {
       "ibm": 100
     },
     "summary": {
-      "total": 983,
+      "total": 718,
       "log": 29,
       "preventions": 100,
-      "solos": 288,
+      "solos": 0,
       "groups": [
         {
           "groupName": "contrastAA",
@@ -15992,6 +15997,10 @@
         {
           "groupName": "focusableOperable",
           "score": 31
+        },
+        {
+          "groupName": "justification",
+          "score": 30
         },
         {
           "groupName": "menuNavigation",
@@ -16039,10 +16048,6 @@
         },
         {
           "groupName": "inconsistentStyles",
-          "score": 7
-        },
-        {
-          "groupName": "justification",
           "score": 7
         },
         {

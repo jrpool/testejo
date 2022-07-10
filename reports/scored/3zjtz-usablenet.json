@@ -6235,7 +6235,7 @@
           "axe": {
             "color-contrast-enhanced": {
               "score": 3,
-              "what": "Elements must have sufficient color contrast (Level AAA)"
+              "what": "Element has insufficient color contrast (Level AAA)"
             }
           }
         },
@@ -6249,7 +6249,7 @@
           "axe": {
             "color-contrast": {
               "score": 5,
-              "what": "Elements must have sufficient color contrast"
+              "what": "Element has insufficient color contrast"
             }
           }
         },
@@ -6257,7 +6257,7 @@
           "alfa": {
             "r73": {
               "score": 15,
-              "what": "Paragraphs of text have insufficient line height"
+              "what": "Paragraph of text has insufficient line height"
             }
           }
         },
@@ -6304,7 +6304,7 @@
         "obsoleteAttribute": {
           "htmlcs": {
             "e:AA.1_3_1.H49.AlignAttr": {
-              "score": 2,
+              "score": 6,
               "what": "The align attribute is obsolete"
             }
           }
@@ -6329,7 +6329,7 @@
           "htmlcs": {
             "w:AA.1_3_1.H48": {
               "score": 1,
-              "what": "Navigation links should best be coded as a list"
+              "what": "Navigation links are not coded as a list"
             }
           }
         },
@@ -6464,7 +6464,7 @@
       "ibm": 100
     },
     "summary": {
-      "total": 602,
+      "total": 606,
       "log": 211,
       "preventions": 100,
       "solos": 0,
@@ -6503,6 +6503,10 @@
         },
         {
           "groupName": "contrastAA",
+          "score": 8
+        },
+        {
+          "groupName": "obsoleteAttribute",
           "score": 8
         },
         {
@@ -6547,10 +6551,6 @@
         },
         {
           "groupName": "skipRepeatedContent",
-          "score": 4
-        },
-        {
-          "groupName": "obsoleteAttribute",
           "score": 4
         },
         {

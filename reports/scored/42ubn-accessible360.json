@@ -9055,7 +9055,7 @@
           "axe": {
             "color-contrast-enhanced": {
               "score": 17,
-              "what": "Elements must have sufficient color contrast (Level AAA)"
+              "what": "Element has insufficient color contrast (Level AAA)"
             }
           },
           "tenon": {
@@ -9075,7 +9075,7 @@
           "axe": {
             "color-contrast": {
               "score": 20,
-              "what": "Elements must have sufficient color contrast"
+              "what": "Element has insufficient color contrast"
             }
           },
           "wave": {
@@ -9089,7 +9089,7 @@
           "alfa": {
             "r73": {
               "score": 12,
-              "what": "Paragraphs of text have insufficient line height"
+              "what": "Paragraph of text has insufficient line height"
             }
           }
         },
@@ -9098,6 +9098,14 @@
             "r83": {
               "score": 4,
               "what": "Overflow is hidden or clipped if the text is enlarged"
+            }
+          }
+        },
+        "allItalics": {
+          "alfa": {
+            "r85": {
+              "score": 3,
+              "what": "Text of the paragraph is all italic"
             }
           }
         },
@@ -9131,6 +9139,12 @@
               "score": 2,
               "what": "Skip-link target is not focusable or does not exist"
             }
+          },
+          "wave": {
+            "e:link_skip_broken": {
+              "score": 3,
+              "what": "Skip-navigation link has no target or is not keyboard accessible"
+            }
           }
         },
         "internalLinkBroken": {
@@ -9161,7 +9175,7 @@
           "htmlcs": {
             "w:AA.1_3_1.H48": {
               "score": 1,
-              "what": "Navigation links should best be coded as a list"
+              "what": "Navigation links are not coded as a list"
             }
           }
         },
@@ -9278,21 +9292,14 @@
           }
         }
       },
-      "solos": {
-        "alfa": {
-          "r85": 12
-        },
-        "wave": {
-          "e:link_skip_broken": 4
-        }
-      }
+      "solos": {}
     },
     "preventionScores": {},
     "summary": {
-      "total": 400,
+      "total": 375,
       "log": 35,
       "preventions": 0,
-      "solos": 32,
+      "solos": 0,
       "groups": [
         {
           "groupName": "linkForcesNewWindow",
@@ -9355,12 +9362,20 @@
           "score": 6
         },
         {
+          "groupName": "skipRepeatedContent",
+          "score": 6
+        },
+        {
           "groupName": "internalLinkBroken",
           "score": 6
         },
         {
           "groupName": "tabIndexMissing",
           "score": 6
+        },
+        {
+          "groupName": "allItalics",
+          "score": 5
         },
         {
           "groupName": "linkVague",
@@ -9372,10 +9387,6 @@
         },
         {
           "groupName": "zIndexNotZero",
-          "score": 4
-        },
-        {
-          "groupName": "skipRepeatedContent",
           "score": 4
         },
         {

@@ -8785,6 +8785,12 @@
               "score": 4,
               "what": "Nonexistent or implicit-overriding role"
             }
+          },
+          "alfa": {
+            "r21": {
+              "score": 3,
+              "what": "Element does not have a valid role"
+            }
           }
         },
         "inconsistentStyles": {
@@ -8847,7 +8853,7 @@
           "axe": {
             "color-contrast-enhanced": {
               "score": 13,
-              "what": "Elements must have sufficient color contrast (Level AAA)"
+              "what": "Element has insufficient color contrast (Level AAA)"
             }
           },
           "tenon": {
@@ -8867,7 +8873,7 @@
           "axe": {
             "color-contrast": {
               "score": 39,
-              "what": "Elements must have sufficient color contrast"
+              "what": "Element has insufficient color contrast"
             }
           },
           "htmlcs": {
@@ -8887,7 +8893,7 @@
           "alfa": {
             "r73": {
               "score": 3,
-              "what": "Paragraphs of text have insufficient line height"
+              "what": "Paragraph of text has insufficient line height"
             }
           }
         },
@@ -8976,18 +8982,14 @@
           }
         }
       },
-      "solos": {
-        "alfa": {
-          "r21": 4
-        }
-      }
+      "solos": {}
     },
     "preventionScores": {},
     "summary": {
-      "total": 244,
+      "total": 237,
       "log": 0,
       "preventions": 0,
-      "solos": 8,
+      "solos": 0,
       "groups": [
         {
           "groupName": "contrastAA",
@@ -9023,7 +9025,7 @@
         },
         {
           "groupName": "roleBad",
-          "score": 6
+          "score": 7
         },
         {
           "groupName": "invisibleLabel",

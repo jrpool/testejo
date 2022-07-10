@@ -14774,6 +14774,12 @@
               "score": 8,
               "what": "Image has no accessible name"
             }
+          },
+          "wave": {
+            "e:alt_spacer_missing": {
+              "score": 16,
+              "what": "Spacer image has no text alternative"
+            }
           }
         },
         "contentBeyondLandmarks": {
@@ -14794,7 +14800,7 @@
           "alfa": {
             "r73": {
               "score": 21,
-              "what": "Paragraphs of text have insufficient line height"
+              "what": "Paragraph of text has insufficient line height"
             }
           }
         },
@@ -14818,7 +14824,7 @@
           "axe": {
             "color-contrast-enhanced": {
               "score": 24,
-              "what": "Elements must have sufficient color contrast (Level AAA)"
+              "what": "Element has insufficient color contrast (Level AAA)"
             }
           }
         },
@@ -14826,7 +14832,7 @@
           "axe": {
             "color-contrast": {
               "score": 45,
-              "what": "Elements must have sufficient color contrast"
+              "what": "Element has insufficient color contrast"
             }
           }
         },
@@ -14874,7 +14880,7 @@
           "axe": {
             "image-redundant-alt": {
               "score": 1,
-              "what": "Text of buttons and links should not be repeated in the image alternative"
+              "what": "Text of a button or link is repeated in the image alternative"
             }
           },
           "tenon": {
@@ -15019,21 +15025,17 @@
           }
         }
       },
-      "solos": {
-        "wave": {
-          "e:alt_spacer_missing": 16
-        }
-      }
+      "solos": {}
     },
     "preventionScores": {
       "htmlcs": 100,
       "ibm": 100
     },
     "summary": {
-      "total": 880,
+      "total": 859,
       "log": 46,
       "preventions": 200,
-      "solos": 32,
+      "solos": 0,
       "groups": [
         {
           "groupName": "contentBeyondLandmarks",
@@ -15068,6 +15070,10 @@
           "score": 22
         },
         {
+          "groupName": "imageNoText",
+          "score": 21
+        },
+        {
           "groupName": "linkTextsSame",
           "score": 20
         },
@@ -15078,10 +15084,6 @@
         {
           "groupName": "inconsistentStyles",
           "score": 13
-        },
-        {
-          "groupName": "imageNoText",
-          "score": 10
         },
         {
           "groupName": "invisibleLabel",

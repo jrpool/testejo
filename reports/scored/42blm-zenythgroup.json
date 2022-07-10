@@ -15417,7 +15417,7 @@
           "axe": {
             "color-contrast-enhanced": {
               "score": 27,
-              "what": "Elements must have sufficient color contrast (Level AAA)"
+              "what": "Element has insufficient color contrast (Level AAA)"
             }
           },
           "tenon": {
@@ -15437,7 +15437,7 @@
           "axe": {
             "color-contrast": {
               "score": 50,
-              "what": "Elements must have sufficient color contrast"
+              "what": "Element has insufficient color contrast"
             }
           }
         },
@@ -15451,7 +15451,27 @@
           "htmlcs": {
             "e:AA.1_3_1.H49.Center": {
               "score": 1,
-              "what": "Element is obsolete"
+              "what": "center element is obsolete"
+            }
+          }
+        },
+        "justification": {
+          "alfa": {
+            "r71": {
+              "score": 19,
+              "what": "Paragraph text is fully justified"
+            }
+          },
+          "wave": {
+            "a:text_justified": {
+              "score": 5,
+              "what": "Text is justified"
+            }
+          },
+          "tenon": {
+            "36": {
+              "score": 17,
+              "what": "Text is fully justified"
             }
           }
         },
@@ -15459,7 +15479,7 @@
           "alfa": {
             "r73": {
               "score": 6,
-              "what": "Paragraphs of text have insufficient line height"
+              "what": "Paragraph of text has insufficient line height"
             }
           }
         },
@@ -15523,7 +15543,7 @@
           "htmlcs": {
             "w:AA.1_3_1.H48": {
               "score": 1,
-              "what": "Navigation links should best be coded as a list"
+              "what": "Navigation links are not coded as a list"
             }
           }
         },
@@ -15560,14 +15580,6 @@
             "e:button_empty": {
               "score": 4,
               "what": "Button is empty or has no value text"
-            }
-          }
-        },
-        "justification": {
-          "wave": {
-            "a:text_justified": {
-              "score": 5,
-              "what": "Text is justified"
             }
           }
         },
@@ -15674,23 +15686,16 @@
           }
         }
       },
-      "solos": {
-        "alfa": {
-          "r71": 76
-        },
-        "tenon": {
-          "36": 68
-        }
-      }
+      "solos": {}
     },
     "preventionScores": {
       "ibm": 100
     },
     "summary": {
-      "total": 983,
+      "total": 718,
       "log": 29,
       "preventions": 100,
-      "solos": 288,
+      "solos": 0,
       "groups": [
         {
           "groupName": "contrastAA",
@@ -15719,6 +15724,10 @@
         {
           "groupName": "focusableOperable",
           "score": 31
+        },
+        {
+          "groupName": "justification",
+          "score": 30
         },
         {
           "groupName": "menuNavigation",
@@ -15766,10 +15775,6 @@
         },
         {
           "groupName": "inconsistentStyles",
-          "score": 7
-        },
-        {
-          "groupName": "justification",
           "score": 7
         },
         {

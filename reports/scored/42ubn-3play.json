@@ -9310,7 +9310,7 @@
           "axe": {
             "color-contrast-enhanced": {
               "score": 9,
-              "what": "Elements must have sufficient color contrast (Level AAA)"
+              "what": "Element has insufficient color contrast (Level AAA)"
             }
           }
         },
@@ -9324,7 +9324,7 @@
           "axe": {
             "color-contrast": {
               "score": 1,
-              "what": "Elements must have sufficient color contrast"
+              "what": "Element has insufficient color contrast"
             }
           },
           "htmlcs": {
@@ -9350,7 +9350,7 @@
           "htmlcs": {
             "e:AA.1_3_1.H49.Center": {
               "score": 1,
-              "what": "Element is obsolete"
+              "what": "center element is obsolete"
             }
           }
         },
@@ -9358,7 +9358,7 @@
           "alfa": {
             "r73": {
               "score": 3,
-              "what": "Paragraphs of text have insufficient line height"
+              "what": "Paragraph of text has insufficient line height"
             }
           }
         },
@@ -9427,7 +9427,7 @@
         "obsoleteAttribute": {
           "htmlcs": {
             "e:AA.1_3_1.H49.AlignAttr": {
-              "score": 26,
+              "score": 78,
               "what": "The align attribute is obsolete"
             }
           }
@@ -9452,7 +9452,7 @@
           "htmlcs": {
             "w:AA.1_3_1.H48": {
               "score": 1,
-              "what": "Navigation links should best be coded as a list"
+              "what": "Navigation links are not coded as a list"
             }
           }
         },
@@ -9466,7 +9466,7 @@
           "tenon": {
             "155": {
               "score": 1,
-              "what": "These headings are not structured in a hierarchical manner"
+              "what": "Headings are not structured in a hierarchical manner"
             }
           }
         },
@@ -9569,11 +9569,15 @@
       "testaro-bulk": 50
     },
     "summary": {
-      "total": 624,
+      "total": 676,
       "log": 202,
       "preventions": 50,
       "solos": 0,
       "groups": [
+        {
+          "groupName": "obsoleteAttribute",
+          "score": 80
+        },
         {
           "groupName": "contrastAA",
           "score": 42
@@ -9585,10 +9589,6 @@
         {
           "groupName": "focusIndication",
           "score": 29
-        },
-        {
-          "groupName": "obsoleteAttribute",
-          "score": 28
         },
         {
           "groupName": "linkTextsSame",

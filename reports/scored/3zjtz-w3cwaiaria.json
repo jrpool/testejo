@@ -3807,7 +3807,7 @@
           "axe": {
             "color-contrast-enhanced": {
               "score": 1,
-              "what": "Elements must have sufficient color contrast (Level AAA)"
+              "what": "Element has insufficient color contrast (Level AAA)"
             }
           }
         },
@@ -3815,7 +3815,7 @@
           "axe": {
             "color-contrast": {
               "score": 2,
-              "what": "Elements must have sufficient color contrast"
+              "what": "Element has insufficient color contrast"
             }
           }
         },
@@ -3843,6 +3843,14 @@
             }
           }
         },
+        "elementLanguageBad": {
+          "htmlcs": {
+            "e:AA.3_1_2.H58.1.Lang": {
+              "score": 4,
+              "what": "Language specified in the lang attribute of the element does not appear to be well-formed"
+            }
+          }
+        },
         "linkNoText": {
           "htmlcs": {
             "e:AA.4_1_2.H91.A.NoContent": {
@@ -3863,7 +3871,7 @@
           "htmlcs": {
             "w:AA.1_3_1.H48": {
               "score": 1,
-              "what": "Navigation links should best be coded as a list"
+              "what": "Navigation links are not coded as a list"
             }
           }
         },
@@ -3932,18 +3940,14 @@
           }
         }
       },
-      "solos": {
-        "htmlcs": {
-          "e:AA.3_1_2.H58.1.Lang": 4
-        }
-      }
+      "solos": {}
     },
     "preventionScores": {},
     "summary": {
-      "total": 250,
+      "total": 248,
       "log": 45,
       "preventions": 0,
-      "solos": 8,
+      "solos": 0,
       "groups": [
         {
           "groupName": "focusIndication",
@@ -3964,6 +3968,10 @@
         {
           "groupName": "hoverSurprise",
           "score": 7
+        },
+        {
+          "groupName": "elementLanguageBad",
+          "score": 6
         },
         {
           "groupName": "linkNoText",

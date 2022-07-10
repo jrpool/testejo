@@ -19227,7 +19227,7 @@
           "axe": {
             "aria-allowed-role": {
               "score": 1,
-              "what": "ARIA role should be appropriate for the element"
+              "what": "ARIA role is not appropriate for the element"
             }
           }
         },
@@ -19281,7 +19281,7 @@
           "htmlcs": {
             "e:AA.2_4_1.H64.1": {
               "score": 12,
-              "what": "iframe element requires a non-empty title attribute"
+              "what": "iframe element has no non-empty title attribute"
             }
           }
         },
@@ -19296,6 +19296,14 @@
             "aria-hidden-focus": {
               "score": 3,
               "what": "ARIA hidden element is focusable or contains a focusable element"
+            }
+          }
+        },
+        "ariaBadAttribute": {
+          "alfa": {
+            "r18": {
+              "score": 4,
+              "what": "ARIA state or property is not allowed for the element on which it is specified"
             }
           }
         },
@@ -19323,7 +19331,7 @@
           "axe": {
             "heading-order": {
               "score": 3,
-              "what": "Heading levels should only increase by one"
+              "what": "Heading levels do not increase by only one"
             }
           },
           "htmlcs": {
@@ -19341,7 +19349,7 @@
           "tenon": {
             "155": {
               "score": 1,
-              "what": "These headings are not structured in a hierarchical manner"
+              "what": "Headings are not structured in a hierarchical manner"
             }
           }
         },
@@ -19369,7 +19377,7 @@
           "axe": {
             "color-contrast-enhanced": {
               "score": 7,
-              "what": "Elements must have sufficient color contrast (Level AAA)"
+              "what": "Element has insufficient color contrast (Level AAA)"
             }
           },
           "tenon": {
@@ -19389,7 +19397,7 @@
           "axe": {
             "color-contrast": {
               "score": 8,
-              "what": "Elements must have sufficient color contrast"
+              "what": "Element has insufficient color contrast"
             }
           },
           "htmlcs": {
@@ -19415,7 +19423,7 @@
           "htmlcs": {
             "e:AA.1_3_1.H49.Center": {
               "score": 1,
-              "what": "Element is obsolete"
+              "what": "center element is obsolete"
             }
           }
         },
@@ -19423,7 +19431,7 @@
           "alfa": {
             "r73": {
               "score": 81,
-              "what": "Paragraphs of text have insufficient line height"
+              "what": "Paragraph of text has insufficient line height"
             }
           }
         },
@@ -19527,6 +19535,20 @@
             }
           }
         },
+        "decorativeTitle": {
+          "htmlcs": {
+            "e:AA.1_1_1.H67.1": {
+              "score": 1,
+              "what": "img element has an empty alt attribute but has a nonempty title attribute"
+            }
+          },
+          "wave": {
+            "a:image_title": {
+              "score": 1,
+              "what": "Image has a title attribute value but no alt value"
+            }
+          }
+        },
         "decorativeImageRisk": {
           "htmlcs": {
             "w:AA.1_1_1.H67.2": {
@@ -19539,7 +19561,7 @@
           "htmlcs": {
             "w:AA.1_3_1.H85.2": {
               "score": 1,
-              "what": "If selection list contains groups of related options, they should be grouped with optgroup"
+              "what": "Selection list may contain groups of related options that are not grouped with optgroup"
             }
           }
         },
@@ -19728,26 +19750,16 @@
           }
         }
       },
-      "solos": {
-        "alfa": {
-          "r18": 4
-        },
-        "htmlcs": {
-          "e:AA.1_1_1.H67.1": 4
-        },
-        "wave": {
-          "a:image_title": 1
-        }
-      }
+      "solos": {}
     },
     "preventionScores": {
       "ibm": 100
     },
     "summary": {
-      "total": 1447,
+      "total": 1438,
       "log": 386,
       "preventions": 100,
-      "solos": 18,
+      "solos": 0,
       "groups": [
         {
           "groupName": "linkIndication",
@@ -19866,6 +19878,10 @@
           "score": 7
         },
         {
+          "groupName": "ariaBadAttribute",
+          "score": 6
+        },
+        {
           "groupName": "pseudoHeadingRisk",
           "score": 6
         },
@@ -19923,6 +19939,10 @@
         },
         {
           "groupName": "linkConfusionRisk",
+          "score": 3
+        },
+        {
+          "groupName": "decorativeTitle",
           "score": 3
         },
         {

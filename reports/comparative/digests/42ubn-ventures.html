@@ -20,7 +20,7 @@
         <div id="synopsis">
           <p><strong>Page</strong>: Accessibility Ventures</p>
           <p><strong>URL</strong>: https://accessibilityventures.com/</p>
-          <p><strong>Score</strong>: 447</p>
+          <p><strong>Score</strong>: 445</p>
           <p><strong>Tested by</strong>: Testaro, procedure <code>tp12</code></p>
           <p><strong>Scored by</strong>: Testilo, procedure <code>sp12a</code></p>
           <p><strong>Digested by</strong>: Testilo, procedure <code>dp12a</code></p>
@@ -39,15 +39,14 @@
         <li><a href="https://wave.webaim.org/api/">WAVE</a> by WebAIM</li>
       </ul>
       <p>Testaro produced a report enumerating the test results.</p>
-      <p><a href="https://www.npmjs.com/package/testilo">Testilo</a> processed the report and used the <code>sp12a</code> scoring procedure to compute partial and total scores for the page. The total score is 447 (where 0 is the best possible score). The scored report is appended below.</p>
+      <p><a href="https://www.npmjs.com/package/testilo">Testilo</a> processed the report and used the <code>sp12a</code> scoring procedure to compute partial and total scores for the page. The total score is 445 (where 0 is the best possible score). The scored report is appended below.</p>
       <p>Finally, Testilo used procedure <code>dp12a</code> to produce this digest, briefly explaining how <code>sp12a</code> computed the scores.</p>
       <h2>Score summary</h2>
       <table class="allBorder secondCellRight">
         <caption>Score components</caption>
         <tbody class="headersLeft">
-        <tr><th>total</th><td>447</td></tr>
+        <tr><th>total</th><td>445</td></tr>
         <tr><th>log</th><td>80</td></tr>
-        <tr><th>solos</th><td>8</td></tr>
         <tr><th>contrastAA</th><td>55</td></tr>
         <tr><th>focusIndication</th><td>43</td></tr>
         <tr><th>contentBeyondLandmarks</th><td>34</td></tr>
@@ -66,6 +65,7 @@
         <tr><th>fontSmall</th><td>7</td></tr>
         <tr><th>inconsistentStyles</th><td>6</td></tr>
         <tr><th>zIndexNotZero</th><td>6</td></tr>
+        <tr><th>inputNoText</th><td>6</td></tr>
         <tr><th>titleRedundant</th><td>6</td></tr>
         <tr><th>focusableHidden</th><td>6</td></tr>
         <tr><th>hoverSurprise</th><td>5</td></tr>
@@ -85,12 +85,11 @@
       <h2>Issue summary</h2>
       <h3>Special issues</h3>
       <p><span class="componentID">log</span>: Score 80. This is based on the amount of browser error logging and miscellaneous logging during the tests.
-      <p><span class="componentID">solos</span>: Score 8. This is based on issues reported by unclassified tests. Details are in the report.
       <h3>Classified issues</h3>
       <p><span class="componentID">contrastAA</span>: Score 55. Issues reported by tests in this category:</p>
       <ul>
       <li>Package <code>alfa</code>, test <code>r69</code>, score 11 (Text outside widget has subminimum contrast)</li>
-  <li>Package <code>axe</code>, test <code>color-contrast</code>, score 29 (Elements must have sufficient color contrast)</li>
+  <li>Package <code>axe</code>, test <code>color-contrast</code>, score 29 (Element has insufficient color contrast)</li>
   <li>Package <code>htmlcs</code>, test <code>e:AA.1_4_3.G145.Fail</code>, score 9 (Contrast between the text and its background is less than 3:1.)</li>
   <li>Package <code>htmlcs</code>, test <code>e:AA.1_4_3.G18.Fail</code>, score 12 (Contrast between the text and its background is less than 4.5:1)</li>
   <li>Package <code>wave</code>, test <code>c:contrast</code>, score 29 (Very low contrast)</li>
@@ -127,7 +126,7 @@
       <p><span class="componentID">contrastAAA</span>: Score 14. Issues reported by tests in this category:</p>
       <ul>
       <li>Package <code>alfa</code>, test <code>r66</code>, score 4 (Text contrast less than AAA requires)</li>
-  <li>Package <code>axe</code>, test <code>color-contrast-enhanced</code>, score 10 (Elements must have sufficient color contrast (Level AAA))</li>
+  <li>Package <code>axe</code>, test <code>color-contrast-enhanced</code>, score 10 (Element has insufficient color contrast (Level AAA))</li>
   <li>Package <code>tenon</code>, test <code>95</code>, score 2 (Element has insufficient color contrast (Level AAA))</li>
       </ul>
       <p><span class="componentID">targetSize</span>: Score 12. Issues reported by tests in this category:</p>
@@ -155,10 +154,10 @@
       <p><span class="componentID">headingStructure</span>: Score 8. Issues reported by tests in this category:</p>
       <ul>
       <li>Package <code>alfa</code>, test <code>r53</code>, score 4 (Heading skips one or more levels)</li>
-  <li>Package <code>axe</code>, test <code>heading-order</code>, score 2 (Heading levels should only increase by one)</li>
+  <li>Package <code>axe</code>, test <code>heading-order</code>, score 2 (Heading levels do not increase by only one)</li>
   <li>Package <code>htmlcs</code>, test <code>w:AA.1_3_1_A.G141</code>, score 1 (Heading level is incorrect)</li>
   <li>Package <code>wave</code>, test <code>a:heading_skipped</code>, score 1 (Skipped heading level)</li>
-  <li>Package <code>tenon</code>, test <code>155</code>, score 1 (These headings are not structured in a hierarchical manner)</li>
+  <li>Package <code>tenon</code>, test <code>155</code>, score 1 (Headings are not structured in a hierarchical manner)</li>
       </ul>
       <p><span class="componentID">linkForcesNewWindow</span>: Score 8. Issues reported by tests in this category:</p>
       <ul>
@@ -175,6 +174,10 @@
       <p><span class="componentID">zIndexNotZero</span>: Score 6. Issues reported by tests in this category:</p>
       <ul>
       <li>Package <code>testaro</code>, test <code>zIndex</code>, score 4 (Layering with nondefault z-index values)</li>
+      </ul>
+      <p><span class="componentID">inputNoText</span>: Score 6. Issues reported by tests in this category:</p>
+      <ul>
+      <li>Package <code>htmlcs</code>, test <code>e:AA.4_1_2.H91.InputSearch.Name</code>, score 4 (Search input has no accessible name)</li>
       </ul>
       <p><span class="componentID">titleRedundant</span>: Score 6. Issues reported by tests in this category:</p>
       <ul>
@@ -7841,7 +7844,7 @@
           "axe": {
             "heading-order": {
               "score": 2,
-              "what": "Heading levels should only increase by one"
+              "what": "Heading levels do not increase by only one"
             }
           },
           "htmlcs": {
@@ -7859,7 +7862,7 @@
           "tenon": {
             "155": {
               "score": 1,
-              "what": "These headings are not structured in a hierarchical manner"
+              "what": "Headings are not structured in a hierarchical manner"
             }
           }
         },
@@ -7887,7 +7890,7 @@
           "axe": {
             "color-contrast-enhanced": {
               "score": 10,
-              "what": "Elements must have sufficient color contrast (Level AAA)"
+              "what": "Element has insufficient color contrast (Level AAA)"
             }
           },
           "tenon": {
@@ -7907,7 +7910,7 @@
           "axe": {
             "color-contrast": {
               "score": 29,
-              "what": "Elements must have sufficient color contrast"
+              "what": "Element has insufficient color contrast"
             }
           },
           "htmlcs": {
@@ -7948,6 +7951,14 @@
             "hidden-content": {
               "score": 1,
               "what": "Some content is hidden and therefore may not be testable for accessibility"
+            }
+          }
+        },
+        "inputNoText": {
+          "htmlcs": {
+            "e:AA.4_1_2.H91.InputSearch.Name": {
+              "score": 4,
+              "what": "Search input has no accessible name"
             }
           }
         },
@@ -8094,18 +8105,14 @@
           }
         }
       },
-      "solos": {
-        "htmlcs": {
-          "e:AA.4_1_2.H91.InputSearch.Name": 4
-        }
-      }
+      "solos": {}
     },
     "preventionScores": {},
     "summary": {
-      "total": 447,
+      "total": 445,
       "log": 80,
       "preventions": 0,
-      "solos": 8,
+      "solos": 0,
       "groups": [
         {
           "groupName": "contrastAA",
@@ -8177,6 +8184,10 @@
         },
         {
           "groupName": "zIndexNotZero",
+          "score": 6
+        },
+        {
+          "groupName": "inputNoText",
           "score": 6
         },
         {

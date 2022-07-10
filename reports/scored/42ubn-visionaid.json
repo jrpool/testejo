@@ -10865,7 +10865,7 @@
           "axe": {
             "link-name": {
               "score": 12,
-              "what": "Links must have discernible text"
+              "what": "Link has no discernible text"
             }
           },
           "htmlcs": {
@@ -10887,6 +10887,14 @@
             }
           }
         },
+        "ariaBadAttribute": {
+          "alfa": {
+            "r18": {
+              "score": 4,
+              "what": "ARIA state or property is not allowed for the element on which it is specified"
+            }
+          }
+        },
         "headingStructure": {
           "alfa": {
             "r53": {
@@ -10897,7 +10905,7 @@
           "axe": {
             "heading-order": {
               "score": 1,
-              "what": "Heading levels should only increase by one"
+              "what": "Heading levels do not increase by only one"
             }
           },
           "htmlcs": {
@@ -10915,7 +10923,7 @@
           "tenon": {
             "155": {
               "score": 1,
-              "what": "These headings are not structured in a hierarchical manner"
+              "what": "Headings are not structured in a hierarchical manner"
             }
           }
         },
@@ -10929,7 +10937,7 @@
           "axe": {
             "color-contrast-enhanced": {
               "score": 15,
-              "what": "Elements must have sufficient color contrast (Level AAA)"
+              "what": "Element has insufficient color contrast (Level AAA)"
             }
           },
           "tenon": {
@@ -10949,7 +10957,7 @@
           "axe": {
             "color-contrast": {
               "score": 3,
-              "what": "Elements must have sufficient color contrast"
+              "what": "Element has insufficient color contrast"
             }
           },
           "wave": {
@@ -10969,7 +10977,27 @@
           "htmlcs": {
             "e:AA.1_3_1.H49.Center": {
               "score": 1,
-              "what": "Element is obsolete"
+              "what": "center element is obsolete"
+            }
+          }
+        },
+        "justification": {
+          "alfa": {
+            "r71": {
+              "score": 11,
+              "what": "Paragraph text is fully justified"
+            }
+          },
+          "wave": {
+            "a:text_justified": {
+              "score": 22,
+              "what": "Text is justified"
+            }
+          },
+          "tenon": {
+            "36": {
+              "score": 83,
+              "what": "Text is fully justified"
             }
           }
         },
@@ -10977,7 +11005,7 @@
           "alfa": {
             "r73": {
               "score": 30,
-              "what": "Paragraphs of text have insufficient line height"
+              "what": "Paragraph of text has insufficient line height"
             }
           }
         },
@@ -11030,14 +11058,6 @@
             "w:AA.1_4_3.G18.Alpha": {
               "score": 1,
               "what": "Contrast between the text and its background may be less than 4.5:1, given the transparency"
-            }
-          }
-        },
-        "justification": {
-          "wave": {
-            "a:text_justified": {
-              "score": 22,
-              "what": "Text is justified"
             }
           }
         },
@@ -11136,23 +11156,19 @@
           }
         }
       },
-      "solos": {
-        "alfa": {
-          "r18": 4,
-          "r71": 44
-        },
-        "tenon": {
-          "36": 332
-        }
-      }
+      "solos": {}
     },
     "preventionScores": {},
     "summary": {
-      "total": 1108,
+      "total": 428,
       "log": 11,
       "preventions": 0,
-      "solos": 760,
+      "solos": 0,
       "groups": [
+        {
+          "groupName": "justification",
+          "score": 98
+        },
         {
           "groupName": "linkNoText",
           "score": 42
@@ -11167,10 +11183,6 @@
         },
         {
           "groupName": "spontaneousMotion",
-          "score": 24
-        },
-        {
-          "groupName": "justification",
           "score": 24
         },
         {
@@ -11212,6 +11224,10 @@
         {
           "groupName": "inconsistentStyles",
           "score": 8
+        },
+        {
+          "groupName": "ariaBadAttribute",
+          "score": 6
         },
         {
           "groupName": "headingStructure",

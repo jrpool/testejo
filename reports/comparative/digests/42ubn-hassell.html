@@ -20,7 +20,7 @@
         <div id="synopsis">
           <p><strong>Page</strong>: Hassell Inclusion</p>
           <p><strong>URL</strong>: https://www.hassellinclusion.com/</p>
-          <p><strong>Score</strong>: 395</p>
+          <p><strong>Score</strong>: 373</p>
           <p><strong>Tested by</strong>: Testaro, procedure <code>tp12</code></p>
           <p><strong>Scored by</strong>: Testilo, procedure <code>sp12a</code></p>
           <p><strong>Digested by</strong>: Testilo, procedure <code>dp12a</code></p>
@@ -39,26 +39,25 @@
         <li><a href="https://wave.webaim.org/api/">WAVE</a> by WebAIM</li>
       </ul>
       <p>Testaro produced a report enumerating the test results.</p>
-      <p><a href="https://www.npmjs.com/package/testilo">Testilo</a> processed the report and used the <code>sp12a</code> scoring procedure to compute partial and total scores for the page. The total score is 395 (where 0 is the best possible score). The scored report is appended below.</p>
+      <p><a href="https://www.npmjs.com/package/testilo">Testilo</a> processed the report and used the <code>sp12a</code> scoring procedure to compute partial and total scores for the page. The total score is 373 (where 0 is the best possible score). The scored report is appended below.</p>
       <p>Finally, Testilo used procedure <code>dp12a</code> to produce this digest, briefly explaining how <code>sp12a</code> computed the scores.</p>
       <h2>Score summary</h2>
       <table class="allBorder secondCellRight">
         <caption>Score components</caption>
         <tbody class="headersLeft">
-        <tr><th>total</th><td>395</td></tr>
+        <tr><th>total</th><td>373</td></tr>
         <tr><th>log</th><td>40</td></tr>
-        <tr><th>solos</th><td>32</td></tr>
         <tr><th>focusIndication</th><td>56</td></tr>
         <tr><th>contrastAA</th><td>41</td></tr>
         <tr><th>tabFocusability</th><td>26</td></tr>
         <tr><th>linkNoText</th><td>25</td></tr>
         <tr><th>linkIndication</th><td>18</td></tr>
         <tr><th>imageNoText</th><td>18</td></tr>
+        <tr><th>roleBad</th><td>17</td></tr>
         <tr><th>contrastAAA</th><td>15</td></tr>
         <tr><th>leadingClipsText</th><td>14</td></tr>
         <tr><th>linkForcesNewWindow</th><td>11</td></tr>
         <tr><th>overflowHidden</th><td>10</td></tr>
-        <tr><th>roleBad</th><td>7</td></tr>
         <tr><th>inconsistentStyles</th><td>7</td></tr>
         <tr><th>zIndexNotZero</th><td>6</td></tr>
         <tr><th>childMissing</th><td>6</td></tr>
@@ -84,7 +83,6 @@
       <h2>Issue summary</h2>
       <h3>Special issues</h3>
       <p><span class="componentID">log</span>: Score 40. This is based on the amount of browser error logging and miscellaneous logging during the tests.
-      <p><span class="componentID">solos</span>: Score 32. This is based on issues reported by unclassified tests. Details are in the report.
       <h3>Classified issues</h3>
       <p><span class="componentID">focusIndication</span>: Score 56. Issues reported by tests in this category:</p>
       <ul>
@@ -94,7 +92,7 @@
       <p><span class="componentID">contrastAA</span>: Score 41. Issues reported by tests in this category:</p>
       <ul>
       <li>Package <code>alfa</code>, test <code>r69</code>, score 30 (Text outside widget has subminimum contrast)</li>
-  <li>Package <code>axe</code>, test <code>color-contrast</code>, score 9 (Elements must have sufficient color contrast)</li>
+  <li>Package <code>axe</code>, test <code>color-contrast</code>, score 9 (Element has insufficient color contrast)</li>
   <li>Package <code>wave</code>, test <code>c:contrast</code>, score 14 (Very low contrast)</li>
       </ul>
       <p><span class="componentID">tabFocusability</span>: Score 26. Issues reported by tests in this category:</p>
@@ -104,7 +102,7 @@
       <p><span class="componentID">linkNoText</span>: Score 25. Issues reported by tests in this category:</p>
       <ul>
       <li>Package <code>alfa</code>, test <code>r11</code>, score 12 (Link has no accessible name)</li>
-  <li>Package <code>axe</code>, test <code>link-name</code>, score 6 (Links must have discernible text)</li>
+  <li>Package <code>axe</code>, test <code>link-name</code>, score 6 (Link has no discernible text)</li>
   <li>Package <code>htmlcs</code>, test <code>e:AA.4_1_2.H91.A.EmptyNoId</code>, score 4 (Link has no name or id attribute or value)</li>
   <li>Package <code>htmlcs</code>, test <code>w:AA.4_1_2.H91.A.Empty</code>, score 1 (Link element has an id attribute but no href attribute or text)</li>
   <li>Package <code>wave</code>, test <code>e:link_empty</code>, score 8 (Link contains no text)</li>
@@ -118,10 +116,16 @@
       <ul>
       <li>Package <code>alfa</code>, test <code>r2</code>, score 16 (Image has no accessible name)</li>
       </ul>
+      <p><span class="componentID">roleBad</span>: Score 17. Issues reported by tests in this category:</p>
+      <ul>
+      <li>Package <code>testaro</code>, test <code>role</code>, score 4 (Nonexistent or implicit-overriding role)</li>
+  <li>Package <code>alfa</code>, test <code>r21</code>, score 12 (Element does not have a valid role)</li>
+  <li>Package <code>axe</code>, test <code>aria-allowed-role</code>, score 3 (ARIA role is not appropriate for the element)</li>
+      </ul>
       <p><span class="componentID">contrastAAA</span>: Score 15. Issues reported by tests in this category:</p>
       <ul>
       <li>Package <code>alfa</code>, test <code>r66</code>, score 10 (Text contrast less than AAA requires)</li>
-  <li>Package <code>axe</code>, test <code>color-contrast-enhanced</code>, score 8 (Elements must have sufficient color contrast (Level AAA))</li>
+  <li>Package <code>axe</code>, test <code>color-contrast-enhanced</code>, score 8 (Element has insufficient color contrast (Level AAA))</li>
       </ul>
       <p><span class="componentID">leadingClipsText</span>: Score 14. Issues reported by tests in this category:</p>
       <ul>
@@ -135,11 +139,6 @@
       <ul>
       <li>Package <code>alfa</code>, test <code>r83</code>, score 8 (Overflow is hidden or clipped if the text is enlarged)</li>
       </ul>
-      <p><span class="componentID">roleBad</span>: Score 7. Issues reported by tests in this category:</p>
-      <ul>
-      <li>Package <code>testaro</code>, test <code>role</code>, score 4 (Nonexistent or implicit-overriding role)</li>
-  <li>Package <code>axe</code>, test <code>aria-allowed-role</code>, score 3 (ARIA role should be appropriate for the element)</li>
-      </ul>
       <p><span class="componentID">inconsistentStyles</span>: Score 7. Issues reported by tests in this category:</p>
       <ul>
       <li>Package <code>testaro</code>, test <code>styleDiff</code>, score 5 (Heading, link, and button style inconsistencies)</li>
@@ -150,7 +149,7 @@
       </ul>
       <p><span class="componentID">childMissing</span>: Score 6. Issues reported by tests in this category:</p>
       <ul>
-      <li>Package <code>alfa</code>, test <code>r68</code>, score 4 (Element owns no elements as required by its semantic role)</li>
+      <li>Package <code>alfa</code>, test <code>r68</code>, score 4 (Element does not own an element required by its semantic role)</li>
       </ul>
       <p><span class="componentID">listChild</span>: Score 5. Issues reported by tests in this category:</p>
       <ul>
@@ -10507,10 +10506,16 @@
               "what": "Nonexistent or implicit-overriding role"
             }
           },
+          "alfa": {
+            "r21": {
+              "score": 12,
+              "what": "Element does not have a valid role"
+            }
+          },
           "axe": {
             "aria-allowed-role": {
               "score": 3,
-              "what": "ARIA role should be appropriate for the element"
+              "what": "ARIA role is not appropriate for the element"
             }
           }
         },
@@ -10540,7 +10545,7 @@
           "axe": {
             "link-name": {
               "score": 6,
-              "what": "Links must have discernible text"
+              "what": "Link has no discernible text"
             }
           },
           "htmlcs": {
@@ -10592,7 +10597,7 @@
           "axe": {
             "color-contrast-enhanced": {
               "score": 8,
-              "what": "Elements must have sufficient color contrast (Level AAA)"
+              "what": "Element has insufficient color contrast (Level AAA)"
             }
           }
         },
@@ -10600,7 +10605,7 @@
           "alfa": {
             "r68": {
               "score": 4,
-              "what": "Element owns no elements as required by its semantic role"
+              "what": "Element does not own an element required by its semantic role"
             }
           }
         },
@@ -10614,7 +10619,7 @@
           "axe": {
             "color-contrast": {
               "score": 9,
-              "what": "Elements must have sufficient color contrast"
+              "what": "Element has insufficient color contrast"
             }
           },
           "wave": {
@@ -10749,18 +10754,14 @@
           }
         }
       },
-      "solos": {
-        "alfa": {
-          "r21": 16
-        }
-      }
+      "solos": {}
     },
     "preventionScores": {},
     "summary": {
-      "total": 395,
+      "total": 373,
       "log": 40,
       "preventions": 0,
-      "solos": 32,
+      "solos": 0,
       "groups": [
         {
           "groupName": "focusIndication",
@@ -10787,6 +10788,10 @@
           "score": 18
         },
         {
+          "groupName": "roleBad",
+          "score": 17
+        },
+        {
           "groupName": "contrastAAA",
           "score": 15
         },
@@ -10801,10 +10806,6 @@
         {
           "groupName": "overflowHidden",
           "score": 10
-        },
-        {
-          "groupName": "roleBad",
-          "score": 7
         },
         {
           "groupName": "inconsistentStyles",

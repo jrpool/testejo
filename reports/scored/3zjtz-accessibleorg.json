@@ -6132,7 +6132,7 @@
           "axe": {
             "color-contrast-enhanced": {
               "score": 10,
-              "what": "Elements must have sufficient color contrast (Level AAA)"
+              "what": "Element has insufficient color contrast (Level AAA)"
             }
           }
         },
@@ -6148,7 +6148,7 @@
           "axe": {
             "color-contrast": {
               "score": 28,
-              "what": "Elements must have sufficient color contrast"
+              "what": "Element has insufficient color contrast"
             }
           }
         },
@@ -6163,7 +6163,7 @@
         "obsoleteAttribute": {
           "htmlcs": {
             "e:AA.1_3_1.H49.AlignAttr": {
-              "score": 1,
+              "score": 3,
               "what": "The align attribute is obsolete"
             }
           }
@@ -6196,7 +6196,7 @@
           "htmlcs": {
             "w:AA.1_3_1.H48": {
               "score": 1,
-              "what": "Navigation links should best be coded as a list"
+              "what": "Navigation links are not coded as a list"
             }
           }
         },
@@ -6283,7 +6283,7 @@
     },
     "preventionScores": {},
     "summary": {
-      "total": 173,
+      "total": 175,
       "log": 11,
       "preventions": 0,
       "solos": 0,
@@ -6329,6 +6329,10 @@
           "score": 6
         },
         {
+          "groupName": "obsoleteAttribute",
+          "score": 5
+        },
+        {
           "groupName": "submitButton",
           "score": 5
         },
@@ -6346,10 +6350,6 @@
         },
         {
           "groupName": "hiddenContentRisk",
-          "score": 3
-        },
-        {
-          "groupName": "obsoleteAttribute",
           "score": 3
         },
         {

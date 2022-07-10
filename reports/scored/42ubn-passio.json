@@ -2620,6 +2620,32 @@
             }
           }
         },
+        "pageTitle": {
+          "alfa": {
+            "r1": {
+              "score": 3,
+              "what": "Document has no valid title element"
+            }
+          },
+          "axe": {
+            "document-title": {
+              "score": 2,
+              "what": "Document contains no title element"
+            }
+          },
+          "htmlcs": {
+            "e:AA.2_4_2.H25.1.NoTitleEl": {
+              "score": 3,
+              "what": "Document head element contains no non-empty title element"
+            }
+          },
+          "wave": {
+            "e:title_invalid": {
+              "score": 3,
+              "what": "Missing or uninformative page title"
+            }
+          }
+        },
         "pageLanguage": {
           "alfa": {
             "r4": {
@@ -2630,7 +2656,7 @@
           "axe": {
             "html-has-lang": {
               "score": 3,
-              "what": "html element must have a lang attribute"
+              "what": "html element has no lang attribute"
             }
           },
           "htmlcs": {
@@ -2656,7 +2682,7 @@
           "axe": {
             "page-has-heading-one": {
               "score": 1,
-              "what": "Page should contain a level-one heading"
+              "what": "Page contains no level-one heading"
             }
           },
           "wave": {
@@ -2686,7 +2712,7 @@
           "axe": {
             "color-contrast-enhanced": {
               "score": 3,
-              "what": "Elements must have sufficient color contrast (Level AAA)"
+              "what": "Element has insufficient color contrast (Level AAA)"
             }
           }
         },
@@ -2694,7 +2720,7 @@
           "axe": {
             "color-contrast": {
               "score": 1,
-              "what": "Elements must have sufficient color contrast"
+              "what": "Element has insufficient color contrast"
             }
           }
         },
@@ -2703,20 +2729,6 @@
             "hidden-content": {
               "score": 1,
               "what": "Some content is hidden and therefore may not be testable for accessibility"
-            }
-          }
-        },
-        "pageTitle": {
-          "axe": {
-            "document-title": {
-              "score": 2,
-              "what": "Documents must contain a title element"
-            }
-          },
-          "wave": {
-            "e:title_invalid": {
-              "score": 3,
-              "what": "Missing or uninformative page title"
             }
           }
         },
@@ -2730,7 +2742,7 @@
           "tenon": {
             "155": {
               "score": 1,
-              "what": "These headings are not structured in a hierarchical manner"
+              "what": "Headings are not structured in a hierarchical manner"
             }
           }
         },
@@ -2783,21 +2795,14 @@
           }
         }
       },
-      "solos": {
-        "alfa": {
-          "r1": 4
-        },
-        "htmlcs": {
-          "e:AA.2_4_2.H25.1.NoTitleEl": 4
-        }
-      }
+      "solos": {}
     },
     "preventionScores": {},
     "summary": {
-      "total": 211,
+      "total": 197,
       "log": 95,
       "preventions": 0,
-      "solos": 16,
+      "solos": 0,
       "groups": [
         {
           "groupName": "linkIndication",
@@ -2812,16 +2817,16 @@
           "score": 10
         },
         {
+          "groupName": "pageTitle",
+          "score": 8
+        },
+        {
           "groupName": "noScriptRisk",
           "score": 8
         },
         {
           "groupName": "imageTextRedundant",
           "score": 7
-        },
-        {
-          "groupName": "pageTitle",
-          "score": 6
         },
         {
           "groupName": "contrastRisk",

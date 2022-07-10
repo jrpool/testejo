@@ -10091,7 +10091,7 @@
           "axe": {
             "page-has-heading-one": {
               "score": 1,
-              "what": "Page should contain a level-one heading"
+              "what": "Page contains no level-one heading"
             }
           }
         },
@@ -10105,7 +10105,7 @@
           "axe": {
             "color-contrast-enhanced": {
               "score": 17,
-              "what": "Elements must have sufficient color contrast (Level AAA)"
+              "what": "Element has insufficient color contrast (Level AAA)"
             }
           }
         },
@@ -10119,7 +10119,7 @@
           "axe": {
             "color-contrast": {
               "score": 40,
-              "what": "Elements must have sufficient color contrast"
+              "what": "Element has insufficient color contrast"
             }
           },
           "htmlcs": {
@@ -10143,7 +10143,7 @@
           "alfa": {
             "r73": {
               "score": 15,
-              "what": "Paragraphs of text have insufficient line height"
+              "what": "Paragraph of text has insufficient line height"
             }
           }
         },
@@ -10215,11 +10215,25 @@
             }
           }
         },
+        "decorativeTitle": {
+          "htmlcs": {
+            "e:AA.1_1_1.H67.1": {
+              "score": 1,
+              "what": "img element has an empty alt attribute but has a nonempty title attribute"
+            }
+          },
+          "wave": {
+            "a:image_title": {
+              "score": 1,
+              "what": "Image has a title attribute value but no alt value"
+            }
+          }
+        },
         "iframeTitleBad": {
           "htmlcs": {
             "e:AA.2_4_1.H64.1": {
               "score": 4,
-              "what": "iframe element requires a non-empty title attribute"
+              "what": "iframe element has no non-empty title attribute"
             }
           }
         },
@@ -10243,7 +10257,7 @@
           "htmlcs": {
             "w:AA.1_3_1.H48": {
               "score": 1,
-              "what": "Navigation links should best be coded as a list"
+              "what": "Navigation links are not coded as a list"
             }
           }
         },
@@ -10280,6 +10294,14 @@
             "w:AA.1_4_3_F24.F24.FGColour": {
               "score": 4,
               "what": "Inline foreground color may lack a complementary background color"
+            }
+          }
+        },
+        "menuItemless": {
+          "wave": {
+            "e:aria_menu_broken": {
+              "score": 16,
+              "what": "ARIA menu does not contain required menu items"
             }
           }
         },
@@ -10394,22 +10416,14 @@
           }
         }
       },
-      "solos": {
-        "htmlcs": {
-          "e:AA.1_1_1.H67.1": 4
-        },
-        "wave": {
-          "e:aria_menu_broken": 16,
-          "a:image_title": 1
-        }
-      }
+      "solos": {}
     },
     "preventionScores": {},
     "summary": {
-      "total": 605,
+      "total": 584,
       "log": 47,
       "preventions": 0,
-      "solos": 42,
+      "solos": 0,
       "groups": [
         {
           "groupName": "contrastAA",
@@ -10446,6 +10460,10 @@
         {
           "groupName": "contrastAAA",
           "score": 22
+        },
+        {
+          "groupName": "menuItemless",
+          "score": 18
         },
         {
           "groupName": "tabFocusability",
@@ -10541,6 +10559,10 @@
         },
         {
           "groupName": "videoCaptionMissing",
+          "score": 3
+        },
+        {
+          "groupName": "decorativeTitle",
           "score": 3
         },
         {

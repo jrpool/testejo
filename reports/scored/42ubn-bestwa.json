@@ -26264,7 +26264,7 @@
           "axe": {
             "link-name": {
               "score": 9,
-              "what": "Links must have discernible text"
+              "what": "Link has no discernible text"
             }
           },
           "htmlcs": {
@@ -26348,7 +26348,7 @@
           "axe": {
             "color-contrast-enhanced": {
               "score": 15,
-              "what": "Elements must have sufficient color contrast (Level AAA)"
+              "what": "Element has insufficient color contrast (Level AAA)"
             }
           },
           "tenon": {
@@ -26368,7 +26368,7 @@
           "axe": {
             "color-contrast": {
               "score": 44,
-              "what": "Elements must have sufficient color contrast"
+              "what": "Element has insufficient color contrast"
             }
           },
           "htmlcs": {
@@ -26458,6 +26458,10 @@
               "score": 8,
               "what": "Email input has no accessible name"
             },
+            "e:AA.4_1_2.H91.InputTel.Name": {
+              "score": 8,
+              "what": "Telephone input has no accessible name"
+            },
             "e:AA.4_1_2.H91.InputText.Name": {
               "score": 16,
               "what": "Text input has no accessible name"
@@ -26484,7 +26488,7 @@
           "htmlcs": {
             "w:AA.1_3_1.H48": {
               "score": 2,
-              "what": "Navigation links should best be coded as a list"
+              "what": "Navigation links are not coded as a list"
             }
           }
         },
@@ -26613,18 +26617,14 @@
           }
         }
       },
-      "solos": {
-        "htmlcs": {
-          "e:AA.4_1_2.H91.InputTel.Name": 8
-        }
-      }
+      "solos": {}
     },
     "preventionScores": {},
     "summary": {
-      "total": 1649,
+      "total": 1641,
       "log": 194,
       "preventions": 0,
-      "solos": 16,
+      "solos": 0,
       "groups": [
         {
           "groupName": "contentBeyondLandmarks",
@@ -26667,16 +26667,16 @@
           "score": 40
         },
         {
+          "groupName": "inputNoText",
+          "score": 34
+        },
+        {
           "groupName": "linkNoText",
           "score": 32
         },
         {
           "groupName": "targetSize",
           "score": 30
-        },
-        {
-          "groupName": "inputNoText",
-          "score": 26
         },
         {
           "groupName": "fontSmall",

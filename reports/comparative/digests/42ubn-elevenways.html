@@ -20,7 +20,7 @@
         <div id="synopsis">
           <p><strong>Page</strong>: Eleven Ways</p>
           <p><strong>URL</strong>: https://www.elevenways.be/</p>
-          <p><strong>Score</strong>: 194</p>
+          <p><strong>Score</strong>: 186</p>
           <p><strong>Tested by</strong>: Testaro, procedure <code>tp12</code></p>
           <p><strong>Scored by</strong>: Testilo, procedure <code>sp12a</code></p>
           <p><strong>Digested by</strong>: Testilo, procedure <code>dp12a</code></p>
@@ -39,14 +39,13 @@
         <li><a href="https://wave.webaim.org/api/">WAVE</a> by WebAIM</li>
       </ul>
       <p>Testaro produced a report enumerating the test results.</p>
-      <p><a href="https://www.npmjs.com/package/testilo">Testilo</a> processed the report and used the <code>sp12a</code> scoring procedure to compute partial and total scores for the page. The total score is 194 (where 0 is the best possible score). The scored report is appended below.</p>
+      <p><a href="https://www.npmjs.com/package/testilo">Testilo</a> processed the report and used the <code>sp12a</code> scoring procedure to compute partial and total scores for the page. The total score is 186 (where 0 is the best possible score). The scored report is appended below.</p>
       <p>Finally, Testilo used procedure <code>dp12a</code> to produce this digest, briefly explaining how <code>sp12a</code> computed the scores.</p>
       <h2>Score summary</h2>
       <table class="allBorder secondCellRight">
         <caption>Score components</caption>
         <tbody class="headersLeft">
-        <tr><th>total</th><td>194</td></tr>
-        <tr><th>solos</th><td>8</td></tr>
+        <tr><th>total</th><td>186</td></tr>
         <tr><th>focusIndication</th><td>32</td></tr>
         <tr><th>contrastAA</th><td>27</td></tr>
         <tr><th>linkIndication</th><td>20</td></tr>
@@ -66,17 +65,17 @@
         <tr><th>spontaneousMotion</th><td>3</td></tr>
         <tr><th>hoverSurprise</th><td>3</td></tr>
         <tr><th>zIndexNotZero</th><td>3</td></tr>
+        <tr><th>allItalics</th><td>3</td></tr>
         <tr><th>pseudoNavListRisk</th><td>3</td></tr>
         <tr><th>scrollRisk</th><td>3</td></tr>
         <tr><th>contrastRisk</th><td>3</td></tr>
         <tr><th>linkBrokenRisk</th><td>3</td></tr>
         <tr><th>imagesSameAlt</th><td>3</td></tr>
-        <tr><th>allItalics</th><td>3</td></tr>
         </tbody>
       </table>
       <h2>Issue summary</h2>
       <h3>Special issues</h3>
-      <p><span class="componentID">solos</span>: Score 8. This is based on issues reported by unclassified tests. Details are in the report.
+      <p>No special issues contributed to the score.</p>
       <h3>Classified issues</h3>
       <p><span class="componentID">focusIndication</span>: Score 32. Issues reported by tests in this category:</p>
       <ul>
@@ -86,7 +85,7 @@
       <p><span class="componentID">contrastAA</span>: Score 27. Issues reported by tests in this category:</p>
       <ul>
       <li>Package <code>alfa</code>, test <code>r69</code>, score 10 (Text outside widget has subminimum contrast)</li>
-  <li>Package <code>axe</code>, test <code>color-contrast</code>, score 11 (Elements must have sufficient color contrast)</li>
+  <li>Package <code>axe</code>, test <code>color-contrast</code>, score 11 (Element has insufficient color contrast)</li>
   <li>Package <code>htmlcs</code>, test <code>e:AA.1_4_3.G18.Fail</code>, score 6 (Contrast between the text and its background is less than 4.5:1)</li>
   <li>Package <code>wave</code>, test <code>c:contrast</code>, score 14 (Very low contrast)</li>
       </ul>
@@ -97,7 +96,7 @@
       <p><span class="componentID">contrastAAA</span>: Score 20. Issues reported by tests in this category:</p>
       <ul>
       <li>Package <code>alfa</code>, test <code>r66</code>, score 10 (Text contrast less than AAA requires)</li>
-  <li>Package <code>axe</code>, test <code>color-contrast-enhanced</code>, score 14 (Elements must have sufficient color contrast (Level AAA))</li>
+  <li>Package <code>axe</code>, test <code>color-contrast-enhanced</code>, score 14 (Element has insufficient color contrast (Level AAA))</li>
   <li>Package <code>tenon</code>, test <code>95</code>, score 1 (Element has insufficient color contrast (Level AAA))</li>
       </ul>
       <p><span class="componentID">inconsistentStyles</span>: Score 6. Issues reported by tests in this category:</p>
@@ -123,7 +122,7 @@
       </ul>
       <p><span class="componentID">noLeading</span>: Score 5. Issues reported by tests in this category:</p>
       <ul>
-      <li>Package <code>alfa</code>, test <code>r73</code>, score 3 (Paragraphs of text have insufficient line height)</li>
+      <li>Package <code>alfa</code>, test <code>r73</code>, score 3 (Paragraph of text has insufficient line height)</li>
       </ul>
       <p><span class="componentID">listChild</span>: Score 5. Issues reported by tests in this category:</p>
       <ul>
@@ -161,9 +160,14 @@
       <ul>
       <li>Package <code>testaro</code>, test <code>zIndex</code>, score 1 (Layering with nondefault z-index values)</li>
       </ul>
+      <p><span class="componentID">allItalics</span>: Score 3. Issues reported by tests in this category:</p>
+      <ul>
+      <li>Package <code>alfa</code>, test <code>r85</code>, score 1 (Text of the paragraph is all italic)</li>
+  <li>Package <code>tenon</code>, test <code>154</code>, score 1 (Long string of text is italic)</li>
+      </ul>
       <p><span class="componentID">pseudoNavListRisk</span>: Score 3. Issues reported by tests in this category:</p>
       <ul>
-      <li>Package <code>htmlcs</code>, test <code>w:AA.1_3_1.H48</code>, score 1 (Navigation links should best be coded as a list)</li>
+      <li>Package <code>htmlcs</code>, test <code>w:AA.1_3_1.H48</code>, score 1 (Navigation links are not coded as a list)</li>
       </ul>
       <p><span class="componentID">scrollRisk</span>: Score 3. Issues reported by tests in this category:</p>
       <ul>
@@ -180,10 +184,6 @@
       <p><span class="componentID">imagesSameAlt</span>: Score 3. Issues reported by tests in this category:</p>
       <ul>
       <li>Package <code>wave</code>, test <code>a:alt_duplicate</code>, score 1 (Two images near each other have the same text alternative)</li>
-      </ul>
-      <p><span class="componentID">allItalics</span>: Score 3. Issues reported by tests in this category:</p>
-      <ul>
-      <li>Package <code>tenon</code>, test <code>154</code>, score 1 (Long string of text is italic)</li>
       </ul>
       <h2>Discussion</h2>
       <p>Although there are widely accepted <a href="https://www.w3.org/WAI/standards-guidelines/">accessibility standards</a>, there is no unanimity about how to define, test, and quantify accessibility. The failures reported in this digest merit investigation as potential opportunities for improved accessibility. Investigation may lead you to conclude that some of the reported failures do not actually harm accessibility. Conversely, some substantial accessibility faults can escape detection by any of these tests. You may question the attempt to assign an accessibility score to a web page, or you may prefer weightings and formulas different from those used by <code>sp12a</code>. You can modify and extend Testaro and Testilo to fit other theories and priorities.</p>
@@ -5068,7 +5068,7 @@
           "axe": {
             "color-contrast-enhanced": {
               "score": 14,
-              "what": "Elements must have sufficient color contrast (Level AAA)"
+              "what": "Element has insufficient color contrast (Level AAA)"
             }
           },
           "tenon": {
@@ -5088,7 +5088,7 @@
           "axe": {
             "color-contrast": {
               "score": 11,
-              "what": "Elements must have sufficient color contrast"
+              "what": "Element has insufficient color contrast"
             }
           },
           "htmlcs": {
@@ -5108,7 +5108,21 @@
           "alfa": {
             "r73": {
               "score": 3,
-              "what": "Paragraphs of text have insufficient line height"
+              "what": "Paragraph of text has insufficient line height"
+            }
+          }
+        },
+        "allItalics": {
+          "alfa": {
+            "r85": {
+              "score": 1,
+              "what": "Text of the paragraph is all italic"
+            }
+          },
+          "tenon": {
+            "154": {
+              "score": 1,
+              "what": "Long string of text is italic"
             }
           }
         },
@@ -5148,7 +5162,7 @@
           "htmlcs": {
             "w:AA.1_3_1.H48": {
               "score": 1,
-              "what": "Navigation links should best be coded as a list"
+              "what": "Navigation links are not coded as a list"
             }
           }
         },
@@ -5192,14 +5206,6 @@
             }
           }
         },
-        "allItalics": {
-          "tenon": {
-            "154": {
-              "score": 1,
-              "what": "Long string of text is italic"
-            }
-          }
-        },
         "formNewWindow": {
           "tenon": {
             "214": {
@@ -5217,18 +5223,14 @@
           }
         }
       },
-      "solos": {
-        "alfa": {
-          "r85": 4
-        }
-      }
+      "solos": {}
     },
     "preventionScores": {},
     "summary": {
-      "total": 194,
+      "total": 186,
       "log": 0,
       "preventions": 0,
-      "solos": 8,
+      "solos": 0,
       "groups": [
         {
           "groupName": "focusIndication",
@@ -5307,6 +5309,10 @@
           "score": 3
         },
         {
+          "groupName": "allItalics",
+          "score": 3
+        },
+        {
           "groupName": "pseudoNavListRisk",
           "score": 3
         },
@@ -5324,10 +5330,6 @@
         },
         {
           "groupName": "imagesSameAlt",
-          "score": 3
-        },
-        {
-          "groupName": "allItalics",
           "score": 3
         }
       ]

@@ -20,7 +20,7 @@
         <div id="synopsis">
           <p><strong>Page</strong>: AccessiBe</p>
           <p><strong>URL</strong>: https://accessibe.com/</p>
-          <p><strong>Score</strong>: 2442</p>
+          <p><strong>Score</strong>: 2429</p>
           <p><strong>Tested by</strong>: Testaro, procedure <code>tp12</code></p>
           <p><strong>Scored by</strong>: Testilo, procedure <code>sp12a</code></p>
           <p><strong>Digested by</strong>: Testilo, procedure <code>dp12a</code></p>
@@ -39,15 +39,14 @@
         <li><a href="https://wave.webaim.org/api/">WAVE</a> by WebAIM</li>
       </ul>
       <p>Testaro produced a report enumerating the test results.</p>
-      <p><a href="https://www.npmjs.com/package/testilo">Testilo</a> processed the report and used the <code>sp12a</code> scoring procedure to compute partial and total scores for the page. The total score is 2442 (where 0 is the best possible score). The scored report is appended below.</p>
+      <p><a href="https://www.npmjs.com/package/testilo">Testilo</a> processed the report and used the <code>sp12a</code> scoring procedure to compute partial and total scores for the page. The total score is 2429 (where 0 is the best possible score). The scored report is appended below.</p>
       <p>Finally, Testilo used procedure <code>dp12a</code> to produce this digest, briefly explaining how <code>sp12a</code> computed the scores.</p>
       <h2>Score summary</h2>
       <table class="allBorder secondCellRight">
         <caption>Score components</caption>
         <tbody class="headersLeft">
-        <tr><th>total</th><td>2442</td></tr>
+        <tr><th>total</th><td>2429</td></tr>
         <tr><th>log</th><td>31</td></tr>
-        <tr><th>solos</th><td>16</td></tr>
         <tr><th>tabIndexMissing</th><td>410</td></tr>
         <tr><th>focusableOperable</th><td>394</td></tr>
         <tr><th>linkForcesNewWindow</th><td>311</td></tr>
@@ -69,9 +68,9 @@
         <tr><th>tabFocusability</th><td>14</td></tr>
         <tr><th>inconsistentStyles</th><td>14</td></tr>
         <tr><th>fontSizeAbsolute</th><td>14</td></tr>
+        <tr><th>imageNoText</th><td>13</td></tr>
         <tr><th>scrollRisk</th><td>13</td></tr>
         <tr><th>targetSize</th><td>12</td></tr>
-        <tr><th>imageNoText</th><td>10</td></tr>
         <tr><th>pseudoParagraphRisk</th><td>10</td></tr>
         <tr><th>contrastRisk</th><td>8</td></tr>
         <tr><th>linkPair</th><td>8</td></tr>
@@ -97,7 +96,6 @@
       <h2>Issue summary</h2>
       <h3>Special issues</h3>
       <p><span class="componentID">log</span>: Score 31. This is based on the amount of browser error logging and miscellaneous logging during the tests.
-      <p><span class="componentID">solos</span>: Score 16. This is based on issues reported by unclassified tests. Details are in the report.
       <h3>Classified issues</h3>
       <p><span class="componentID">tabIndexMissing</span>: Score 410. Issues reported by tests in this category:</p>
       <ul>
@@ -114,7 +112,7 @@
       <p><span class="componentID">contrastAA</span>: Score 269. Issues reported by tests in this category:</p>
       <ul>
       <li>Package <code>alfa</code>, test <code>r69</code>, score 28 (Text outside widget has subminimum contrast)</li>
-  <li>Package <code>axe</code>, test <code>color-contrast</code>, score 114 (Elements must have sufficient color contrast)</li>
+  <li>Package <code>axe</code>, test <code>color-contrast</code>, score 114 (Element has insufficient color contrast)</li>
   <li>Package <code>htmlcs</code>, test <code>e:AA.1_4_3.G18.Fail</code>, score 3 (Contrast between the text and its background is less than 4.5:1)</li>
   <li>Package <code>wave</code>, test <code>c:contrast</code>, score 209 (Very low contrast)</li>
       </ul>
@@ -138,7 +136,7 @@
       <p><span class="componentID">contrastAAA</span>: Score 66. Issues reported by tests in this category:</p>
       <ul>
       <li>Package <code>alfa</code>, test <code>r66</code>, score 15 (Text contrast less than AAA requires)</li>
-  <li>Package <code>axe</code>, test <code>color-contrast-enhanced</code>, score 43 (Elements must have sufficient color contrast (Level AAA))</li>
+  <li>Package <code>axe</code>, test <code>color-contrast-enhanced</code>, score 43 (Element has insufficient color contrast (Level AAA))</li>
   <li>Package <code>tenon</code>, test <code>95</code>, score 37 (Element has insufficient color contrast (Level AAA))</li>
       </ul>
       <p><span class="componentID">zIndexNotZero</span>: Score 57. Issues reported by tests in this category:</p>
@@ -157,7 +155,7 @@
       <p><span class="componentID">roleBad</span>: Score 31. Issues reported by tests in this category:</p>
       <ul>
       <li>Package <code>testaro</code>, test <code>role</code>, score 28 (Nonexistent or implicit-overriding role)</li>
-  <li>Package <code>axe</code>, test <code>aria-allowed-role</code>, score 2 (ARIA role should be appropriate for the element)</li>
+  <li>Package <code>axe</code>, test <code>aria-allowed-role</code>, score 2 (ARIA role is not appropriate for the element)</li>
       </ul>
       <p><span class="componentID">overflowHidden</span>: Score 22. Issues reported by tests in this category:</p>
       <ul>
@@ -193,6 +191,11 @@
       <ul>
       <li>Package <code>alfa</code>, test <code>r74</code>, score 12 (Paragraph text has absolute font size)</li>
       </ul>
+      <p><span class="componentID">imageNoText</span>: Score 13. Issues reported by tests in this category:</p>
+      <ul>
+      <li>Package <code>htmlcs</code>, test <code>e:AA.1_1_1.H37</code>, score 8 (img element has no alt attribute)</li>
+  <li>Package <code>wave</code>, test <code>e:alt_spacer_missing</code>, score 8 (Spacer image has no text alternative)</li>
+      </ul>
       <p><span class="componentID">scrollRisk</span>: Score 13. Issues reported by tests in this category:</p>
       <ul>
       <li>Package <code>htmlcs</code>, test <code>w:AA.1_4_10.C32,C31,C33,C38,SCR34,G206</code>, score 11 (Fixed-position element may force bidirectional scrolling)</li>
@@ -200,10 +203,6 @@
       <p><span class="componentID">targetSize</span>: Score 12. Issues reported by tests in this category:</p>
       <ul>
       <li>Package <code>tenon</code>, test <code>152</code>, score 10 (Actionable element is smaller than the minimum required size)</li>
-      </ul>
-      <p><span class="componentID">imageNoText</span>: Score 10. Issues reported by tests in this category:</p>
-      <ul>
-      <li>Package <code>htmlcs</code>, test <code>e:AA.1_1_1.H37</code>, score 8 (img element has no alt attribute)</li>
       </ul>
       <p><span class="componentID">pseudoParagraphRisk</span>: Score 10. Issues reported by tests in this category:</p>
       <ul>
@@ -252,7 +251,7 @@
       <p><span class="componentID">headingStructure</span>: Score 4. Issues reported by tests in this category:</p>
       <ul>
       <li>Package <code>alfa</code>, test <code>r53</code>, score 2 (Heading skips one or more levels)</li>
-  <li>Package <code>axe</code>, test <code>heading-order</code>, score 1 (Heading levels should only increase by one)</li>
+  <li>Package <code>axe</code>, test <code>heading-order</code>, score 1 (Heading levels do not increase by only one)</li>
       </ul>
       <p><span class="componentID">landmarkConfusion</span>: Score 4. Issues reported by tests in this category:</p>
       <ul>
@@ -260,7 +259,7 @@
       </ul>
       <p><span class="componentID">pseudoNavListRisk</span>: Score 4. Issues reported by tests in this category:</p>
       <ul>
-      <li>Package <code>htmlcs</code>, test <code>w:AA.1_3_1.H48</code>, score 2 (Navigation links should best be coded as a list)</li>
+      <li>Package <code>htmlcs</code>, test <code>w:AA.1_3_1.H48</code>, score 2 (Navigation links are not coded as a list)</li>
       </ul>
       <p><span class="componentID">frameContentRisk</span>: Score 3. Issues reported by tests in this category:</p>
       <ul>
@@ -54263,7 +54262,7 @@
           "axe": {
             "aria-allowed-role": {
               "score": 2,
-              "what": "ARIA role should be appropriate for the element"
+              "what": "ARIA role is not appropriate for the element"
             }
           }
         },
@@ -54307,7 +54306,7 @@
           "axe": {
             "heading-order": {
               "score": 1,
-              "what": "Heading levels should only increase by one"
+              "what": "Heading levels do not increase by only one"
             }
           }
         },
@@ -54335,7 +54334,7 @@
           "axe": {
             "color-contrast-enhanced": {
               "score": 43,
-              "what": "Elements must have sufficient color contrast (Level AAA)"
+              "what": "Element has insufficient color contrast (Level AAA)"
             }
           },
           "tenon": {
@@ -54355,7 +54354,7 @@
           "axe": {
             "color-contrast": {
               "score": 114,
-              "what": "Elements must have sufficient color contrast"
+              "what": "Element has insufficient color contrast"
             }
           },
           "htmlcs": {
@@ -54425,6 +54424,12 @@
               "score": 8,
               "what": "img element has no alt attribute"
             }
+          },
+          "wave": {
+            "e:alt_spacer_missing": {
+              "score": 8,
+              "what": "Spacer image has no text alternative"
+            }
           }
         },
         "internalLinkBroken": {
@@ -54453,7 +54458,7 @@
           "htmlcs": {
             "w:AA.1_3_1.H48": {
               "score": 2,
-              "what": "Navigation links should best be coded as a list"
+              "what": "Navigation links are not coded as a list"
             }
           }
         },
@@ -54626,18 +54631,14 @@
           }
         }
       },
-      "solos": {
-        "wave": {
-          "e:alt_spacer_missing": 8
-        }
-      }
+      "solos": {}
     },
     "preventionScores": {},
     "summary": {
-      "total": 2442,
+      "total": 2429,
       "log": 31,
       "preventions": 0,
-      "solos": 16,
+      "solos": 0,
       "groups": [
         {
           "groupName": "tabIndexMissing",
@@ -54724,16 +54725,16 @@
           "score": 14
         },
         {
+          "groupName": "imageNoText",
+          "score": 13
+        },
+        {
           "groupName": "scrollRisk",
           "score": 13
         },
         {
           "groupName": "targetSize",
           "score": 12
-        },
-        {
-          "groupName": "imageNoText",
-          "score": 10
         },
         {
           "groupName": "pseudoParagraphRisk",

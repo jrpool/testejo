@@ -6810,7 +6810,7 @@
           "axe": {
             "color-contrast-enhanced": {
               "score": 1,
-              "what": "Elements must have sufficient color contrast (Level AAA)"
+              "what": "Element has insufficient color contrast (Level AAA)"
             }
           }
         },
@@ -6839,6 +6839,14 @@
             "153": {
               "score": 1,
               "what": "Long string of text is in all caps"
+            }
+          }
+        },
+        "fontSmall": {
+          "alfa": {
+            "r75": {
+              "score": 3,
+              "what": "Font size is smaller than 9 pixels"
             }
           }
         },
@@ -6892,7 +6900,7 @@
           "htmlcs": {
             "e:AA.2_4_1.H64.1": {
               "score": 4,
-              "what": "iframe element requires a non-empty title attribute"
+              "what": "iframe element has no non-empty title attribute"
             }
           }
         },
@@ -6904,11 +6912,19 @@
             }
           }
         },
+        "labelForWrongRisk": {
+          "htmlcs": {
+            "w:AA.1_3_1.H44.NotFormControl": {
+              "score": 1,
+              "what": "Label for attribute may reference the wrong element, because it is not a form control"
+            }
+          }
+        },
         "pseudoNavListRisk": {
           "htmlcs": {
             "w:AA.1_3_1.H48": {
               "score": 1,
-              "what": "Navigation links should best be coded as a list"
+              "what": "Navigation links are not coded as a list"
             }
           }
         },
@@ -6937,6 +6953,14 @@
             "w:AA.2_5_3.F96": {
               "score": 1,
               "what": "Visible label is not in the accessible name"
+            }
+          }
+        },
+        "labelEmpty": {
+          "wave": {
+            "e:label_empty": {
+              "score": 3,
+              "what": "Empty form label"
             }
           }
         },
@@ -6997,24 +7021,14 @@
           }
         }
       },
-      "solos": {
-        "alfa": {
-          "r75": 4
-        },
-        "htmlcs": {
-          "w:AA.1_3_1.H44.NotFormControl": 1
-        },
-        "wave": {
-          "e:label_empty": 4
-        }
-      }
+      "solos": {}
     },
     "preventionScores": {},
     "summary": {
-      "total": 374,
+      "total": 369,
       "log": 139,
       "preventions": 0,
-      "solos": 18,
+      "solos": 0,
       "groups": [
         {
           "groupName": "linkForcesNewWindow",
@@ -7065,6 +7079,14 @@
           "score": 6
         },
         {
+          "groupName": "fontSmall",
+          "score": 5
+        },
+        {
+          "groupName": "labelEmpty",
+          "score": 5
+        },
+        {
           "groupName": "horizontalScrolling",
           "score": 5
         },
@@ -7106,6 +7128,10 @@
         },
         {
           "groupName": "hiddenContentRisk",
+          "score": 3
+        },
+        {
+          "groupName": "labelForWrongRisk",
           "score": 3
         },
         {

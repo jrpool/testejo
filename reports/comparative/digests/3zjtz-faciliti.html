@@ -20,7 +20,7 @@
         <div id="synopsis">
           <p><strong>Page</strong>: FACIL’iti</p>
           <p><strong>URL</strong>: https://www.facil-iti.fr/</p>
-          <p><strong>Score</strong>: 489</p>
+          <p><strong>Score</strong>: 468</p>
           <p><strong>Tested by</strong>: Testaro, procedure <code>tp12</code></p>
           <p><strong>Scored by</strong>: Testilo, procedure <code>sp12a</code></p>
           <p><strong>Digested by</strong>: Testilo, procedure <code>dp12a</code></p>
@@ -39,15 +39,14 @@
         <li><a href="https://wave.webaim.org/api/">WAVE</a> by WebAIM</li>
       </ul>
       <p>Testaro produced a report enumerating the test results.</p>
-      <p><a href="https://www.npmjs.com/package/testilo">Testilo</a> processed the report and used the <code>sp12a</code> scoring procedure to compute partial and total scores for the page. The total score is 489 (where 0 is the best possible score). The scored report is appended below.</p>
+      <p><a href="https://www.npmjs.com/package/testilo">Testilo</a> processed the report and used the <code>sp12a</code> scoring procedure to compute partial and total scores for the page. The total score is 468 (where 0 is the best possible score). The scored report is appended below.</p>
       <p>Finally, Testilo used procedure <code>dp12a</code> to produce this digest, briefly explaining how <code>sp12a</code> computed the scores.</p>
       <h2>Score summary</h2>
       <table class="allBorder secondCellRight">
         <caption>Score components</caption>
         <tbody class="headersLeft">
-        <tr><th>total</th><td>489</td></tr>
+        <tr><th>total</th><td>468</td></tr>
         <tr><th>log</th><td>10</td></tr>
-        <tr><th>solos</th><td>24</td></tr>
         <tr><th>linkForcesNewWindow</th><td>62</td></tr>
         <tr><th>linkIndication</th><td>50</td></tr>
         <tr><th>invisibleLabel</th><td>37</td></tr>
@@ -59,6 +58,7 @@
         <tr><th>presentationChild</th><td>14</td></tr>
         <tr><th>inconsistentStyles</th><td>12</td></tr>
         <tr><th>titleRedundant</th><td>12</td></tr>
+        <tr><th>fontSmall</th><td>11</td></tr>
         <tr><th>tabNavigation</th><td>10</td></tr>
         <tr><th>zIndexNotZero</th><td>10</td></tr>
         <tr><th>duplicateID</th><td>10</td></tr>
@@ -66,7 +66,6 @@
         <tr><th>tabIndexMissing</th><td>10</td></tr>
         <tr><th>pseudoParagraphRisk</th><td>9</td></tr>
         <tr><th>controlLabel</th><td>8</td></tr>
-        <tr><th>fontSmall</th><td>8</td></tr>
         <tr><th>focusIndication</th><td>7</td></tr>
         <tr><th>roleBad</th><td>7</td></tr>
         <tr><th>linkNoText</th><td>6</td></tr>
@@ -74,8 +73,8 @@
         <tr><th>iframeTitleBad</th><td>6</td></tr>
         <tr><th>textAreaNoText</th><td>6</td></tr>
         <tr><th>linkTextsSame</th><td>6</td></tr>
-        <tr><th>horizontalScrolling</th><td>5</td></tr>
         <tr><th>allItalics</th><td>5</td></tr>
+        <tr><th>horizontalScrolling</th><td>5</td></tr>
         <tr><th>hoverSurprise</th><td>4</td></tr>
         <tr><th>fontSizeAbsolute</th><td>4</td></tr>
         <tr><th>skipRepeatedContent</th><td>4</td></tr>
@@ -98,7 +97,6 @@
       <h2>Issue summary</h2>
       <h3>Special issues</h3>
       <p><span class="componentID">log</span>: Score 10. This is based on the amount of browser error logging and miscellaneous logging during the tests.
-      <p><span class="componentID">solos</span>: Score 24. This is based on issues reported by unclassified tests. Details are in the report.
       <h3>Classified issues</h3>
       <p><span class="componentID">linkForcesNewWindow</span>: Score 62. Issues reported by tests in this category:</p>
       <ul>
@@ -117,7 +115,7 @@
       <p><span class="componentID">contrastAA</span>: Score 19. Issues reported by tests in this category:</p>
       <ul>
       <li>Package <code>alfa</code>, test <code>r69</code>, score 7 (Text outside widget has subminimum contrast)</li>
-  <li>Package <code>axe</code>, test <code>color-contrast</code>, score 11 (Elements must have sufficient color contrast)</li>
+  <li>Package <code>axe</code>, test <code>color-contrast</code>, score 11 (Element has insufficient color contrast)</li>
   <li>Package <code>wave</code>, test <code>c:contrast</code>, score 7 (Very low contrast)</li>
       </ul>
       <p><span class="componentID">contentBeyondLandmarks</span>: Score 18. Issues reported by tests in this category:</p>
@@ -127,7 +125,7 @@
       <p><span class="componentID">contrastAAA</span>: Score 18. Issues reported by tests in this category:</p>
       <ul>
       <li>Package <code>alfa</code>, test <code>r66</code>, score 11 (Text contrast less than AAA requires)</li>
-  <li>Package <code>axe</code>, test <code>color-contrast-enhanced</code>, score 12 (Elements must have sufficient color contrast (Level AAA))</li>
+  <li>Package <code>axe</code>, test <code>color-contrast-enhanced</code>, score 12 (Element has insufficient color contrast (Level AAA))</li>
       </ul>
       <p><span class="componentID">allCaps</span>: Score 15. Issues reported by tests in this category:</p>
       <ul>
@@ -148,6 +146,12 @@
       <p><span class="componentID">titleRedundant</span>: Score 12. Issues reported by tests in this category:</p>
       <ul>
       <li>Package <code>tenon</code>, test <code>79</code>, score 10 (Link has a title attribute that is the same as the text inside the link)</li>
+      </ul>
+      <p><span class="componentID">fontSmall</span>: Score 11. Issues reported by tests in this category:</p>
+      <ul>
+      <li>Package <code>alfa</code>, test <code>r75</code>, score 6 (Font size is smaller than 9 pixels)</li>
+  <li>Package <code>wave</code>, test <code>a:text_small</code>, score 2 (Text is very small)</li>
+  <li>Package <code>tenon</code>, test <code>134</code>, score 5 (Text is very small)</li>
       </ul>
       <p><span class="componentID">tabNavigation</span>: Score 10. Issues reported by tests in this category:</p>
       <ul>
@@ -180,11 +184,6 @@
       <li>Package <code>htmlcs</code>, test <code>e:AA.1_3_1.F68</code>, score 4 (Form control has no label)</li>
   <li>Package <code>wave</code>, test <code>e:label_missing</code>, score 4 (Missing form label)</li>
       </ul>
-      <p><span class="componentID">fontSmall</span>: Score 8. Issues reported by tests in this category:</p>
-      <ul>
-      <li>Package <code>wave</code>, test <code>a:text_small</code>, score 2 (Text is very small)</li>
-  <li>Package <code>tenon</code>, test <code>134</code>, score 5 (Text is very small)</li>
-      </ul>
       <p><span class="componentID">focusIndication</span>: Score 7. Issues reported by tests in this category:</p>
       <ul>
       <li>Package <code>testaro</code>, test <code>focInd</code>, score 1 (Focused element displaying no or nostandard focus indicator)</li>
@@ -204,7 +203,7 @@
       </ul>
       <p><span class="componentID">iframeTitleBad</span>: Score 6. Issues reported by tests in this category:</p>
       <ul>
-      <li>Package <code>htmlcs</code>, test <code>e:AA.2_4_1.H64.1</code>, score 4 (iframe element requires a non-empty title attribute)</li>
+      <li>Package <code>htmlcs</code>, test <code>e:AA.2_4_1.H64.1</code>, score 4 (iframe element has no non-empty title attribute)</li>
       </ul>
       <p><span class="componentID">textAreaNoText</span>: Score 6. Issues reported by tests in this category:</p>
       <ul>
@@ -214,13 +213,14 @@
       <ul>
       <li>Package <code>tenon</code>, test <code>98</code>, score 4 (Links have the same text but different destinations)</li>
       </ul>
+      <p><span class="componentID">allItalics</span>: Score 5. Issues reported by tests in this category:</p>
+      <ul>
+      <li>Package <code>alfa</code>, test <code>r85</code>, score 1 (Text of the paragraph is all italic)</li>
+  <li>Package <code>tenon</code>, test <code>154</code>, score 3 (Long string of text is italic)</li>
+      </ul>
       <p><span class="componentID">horizontalScrolling</span>: Score 5. Issues reported by tests in this category:</p>
       <ul>
       <li>Package <code>tenon</code>, test <code>28</code>, score 3 (Layout or sizing of the page causes horizontal scrolling)</li>
-      </ul>
-      <p><span class="componentID">allItalics</span>: Score 5. Issues reported by tests in this category:</p>
-      <ul>
-      <li>Package <code>tenon</code>, test <code>154</code>, score 3 (Long string of text is italic)</li>
       </ul>
       <p><span class="componentID">hoverSurprise</span>: Score 4. Issues reported by tests in this category:</p>
       <ul>
@@ -261,7 +261,7 @@
       </ul>
       <p><span class="componentID">imageTextRedundant</span>: Score 3. Issues reported by tests in this category:</p>
       <ul>
-      <li>Package <code>axe</code>, test <code>image-redundant-alt</code>, score 1 (Text of buttons and links should not be repeated in the image alternative)</li>
+      <li>Package <code>axe</code>, test <code>image-redundant-alt</code>, score 1 (Text of a button or link is repeated in the image alternative)</li>
       </ul>
       <p><span class="componentID">decorativeImageRisk</span>: Score 3. Issues reported by tests in this category:</p>
       <ul>
@@ -269,7 +269,7 @@
       </ul>
       <p><span class="componentID">pseudoNavListRisk</span>: Score 3. Issues reported by tests in this category:</p>
       <ul>
-      <li>Package <code>htmlcs</code>, test <code>w:AA.1_3_1.H48</code>, score 1 (Navigation links should best be coded as a list)</li>
+      <li>Package <code>htmlcs</code>, test <code>w:AA.1_3_1.H48</code>, score 1 (Navigation links are not coded as a list)</li>
       </ul>
       <p><span class="componentID">scrollRisk</span>: Score 3. Issues reported by tests in this category:</p>
       <ul>
@@ -12585,7 +12585,7 @@
           "axe": {
             "color-contrast-enhanced": {
               "score": 12,
-              "what": "Elements must have sufficient color contrast (Level AAA)"
+              "what": "Element has insufficient color contrast (Level AAA)"
             }
           }
         },
@@ -12599,7 +12599,7 @@
           "axe": {
             "color-contrast": {
               "score": 11,
-              "what": "Elements must have sufficient color contrast"
+              "what": "Element has insufficient color contrast"
             }
           },
           "wave": {
@@ -12617,11 +12617,45 @@
             }
           }
         },
+        "fontSmall": {
+          "alfa": {
+            "r75": {
+              "score": 6,
+              "what": "Font size is smaller than 9 pixels"
+            }
+          },
+          "wave": {
+            "a:text_small": {
+              "score": 2,
+              "what": "Text is very small"
+            }
+          },
+          "tenon": {
+            "134": {
+              "score": 5,
+              "what": "Text is very small"
+            }
+          }
+        },
         "overflowHidden": {
           "alfa": {
             "r83": {
               "score": 4,
               "what": "Overflow is hidden or clipped if the text is enlarged"
+            }
+          }
+        },
+        "allItalics": {
+          "alfa": {
+            "r85": {
+              "score": 1,
+              "what": "Text of the paragraph is all italic"
+            }
+          },
+          "tenon": {
+            "154": {
+              "score": 3,
+              "what": "Long string of text is italic"
             }
           }
         },
@@ -12661,7 +12695,7 @@
           "axe": {
             "image-redundant-alt": {
               "score": 1,
-              "what": "Text of buttons and links should not be repeated in the image alternative"
+              "what": "Text of a button or link is repeated in the image alternative"
             }
           }
         },
@@ -12691,7 +12725,7 @@
           "htmlcs": {
             "e:AA.2_4_1.H64.1": {
               "score": 4,
-              "what": "iframe element requires a non-empty title attribute"
+              "what": "iframe element has no non-empty title attribute"
             }
           }
         },
@@ -12715,7 +12749,7 @@
           "htmlcs": {
             "w:AA.1_3_1.H48": {
               "score": 1,
-              "what": "Navigation links should best be coded as a list"
+              "what": "Navigation links are not coded as a list"
             }
           }
         },
@@ -12760,20 +12794,6 @@
             "a:link_redundant": {
               "score": 1,
               "what": "Adjacent links go to the same URL"
-            }
-          }
-        },
-        "fontSmall": {
-          "wave": {
-            "a:text_small": {
-              "score": 2,
-              "what": "Text is very small"
-            }
-          },
-          "tenon": {
-            "134": {
-              "score": 5,
-              "what": "Text is very small"
             }
           }
         },
@@ -12825,14 +12845,6 @@
             }
           }
         },
-        "allItalics": {
-          "tenon": {
-            "154": {
-              "score": 3,
-              "what": "Long string of text is italic"
-            }
-          }
-        },
         "tabIndexMissing": {
           "tenon": {
             "190": {
@@ -12858,19 +12870,14 @@
           }
         }
       },
-      "solos": {
-        "alfa": {
-          "r75": 8,
-          "r85": 4
-        }
-      }
+      "solos": {}
     },
     "preventionScores": {},
     "summary": {
-      "total": 489,
+      "total": 468,
       "log": 10,
       "preventions": 0,
-      "solos": 24,
+      "solos": 0,
       "groups": [
         {
           "groupName": "linkForcesNewWindow",
@@ -12917,6 +12924,10 @@
           "score": 12
         },
         {
+          "groupName": "fontSmall",
+          "score": 11
+        },
+        {
           "groupName": "tabNavigation",
           "score": 10
         },
@@ -12942,10 +12953,6 @@
         },
         {
           "groupName": "controlLabel",
-          "score": 8
-        },
-        {
-          "groupName": "fontSmall",
           "score": 8
         },
         {
@@ -12977,11 +12984,11 @@
           "score": 6
         },
         {
-          "groupName": "horizontalScrolling",
+          "groupName": "allItalics",
           "score": 5
         },
         {
-          "groupName": "allItalics",
+          "groupName": "horizontalScrolling",
           "score": 5
         },
         {

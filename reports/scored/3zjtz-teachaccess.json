@@ -11365,7 +11365,7 @@
           "axe": {
             "link-name": {
               "score": 12,
-              "what": "Links must have discernible text"
+              "what": "Link has no discernible text"
             }
           },
           "htmlcs": {
@@ -11429,7 +11429,7 @@
           "axe": {
             "page-has-heading-one": {
               "score": 1,
-              "what": "Page should contain a level-one heading"
+              "what": "Page contains no level-one heading"
             }
           },
           "wave": {
@@ -11449,7 +11449,7 @@
           "axe": {
             "color-contrast-enhanced": {
               "score": 5,
-              "what": "Elements must have sufficient color contrast (Level AAA)"
+              "what": "Element has insufficient color contrast (Level AAA)"
             }
           }
         },
@@ -11457,7 +11457,7 @@
           "alfa": {
             "r68": {
               "score": 8,
-              "what": "Element owns no elements as required by its semantic role"
+              "what": "Element does not own an element required by its semantic role"
             }
           }
         },
@@ -11471,7 +11471,7 @@
           "axe": {
             "color-contrast": {
               "score": 14,
-              "what": "Elements must have sufficient color contrast"
+              "what": "Element has insufficient color contrast"
             }
           }
         },
@@ -11479,7 +11479,7 @@
           "alfa": {
             "r73": {
               "score": 33,
-              "what": "Paragraphs of text have insufficient line height"
+              "what": "Paragraph of text has insufficient line height"
             }
           }
         },
@@ -11567,7 +11567,7 @@
             }
           }
         },
-        "labelForBadID": {
+        "labelBadID": {
           "htmlcs": {
             "w:AA.1_3_1.H44.NonExistentFragment": {
               "score": 3,
@@ -11591,7 +11591,7 @@
           "tenon": {
             "155": {
               "score": 1,
-              "what": "These headings are not structured in a hierarchical manner"
+              "what": "Headings are not structured in a hierarchical manner"
             }
           }
         },
@@ -11774,7 +11774,7 @@
           "score": 6
         },
         {
-          "groupName": "labelForBadID",
+          "groupName": "labelBadID",
           "score": 6
         },
         {

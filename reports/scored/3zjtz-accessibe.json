@@ -53955,7 +53955,7 @@
           "axe": {
             "aria-allowed-role": {
               "score": 2,
-              "what": "ARIA role should be appropriate for the element"
+              "what": "ARIA role is not appropriate for the element"
             }
           }
         },
@@ -53999,7 +53999,7 @@
           "axe": {
             "heading-order": {
               "score": 1,
-              "what": "Heading levels should only increase by one"
+              "what": "Heading levels do not increase by only one"
             }
           }
         },
@@ -54027,7 +54027,7 @@
           "axe": {
             "color-contrast-enhanced": {
               "score": 43,
-              "what": "Elements must have sufficient color contrast (Level AAA)"
+              "what": "Element has insufficient color contrast (Level AAA)"
             }
           },
           "tenon": {
@@ -54047,7 +54047,7 @@
           "axe": {
             "color-contrast": {
               "score": 114,
-              "what": "Elements must have sufficient color contrast"
+              "what": "Element has insufficient color contrast"
             }
           },
           "htmlcs": {
@@ -54117,6 +54117,12 @@
               "score": 8,
               "what": "img element has no alt attribute"
             }
+          },
+          "wave": {
+            "e:alt_spacer_missing": {
+              "score": 8,
+              "what": "Spacer image has no text alternative"
+            }
           }
         },
         "internalLinkBroken": {
@@ -54145,7 +54151,7 @@
           "htmlcs": {
             "w:AA.1_3_1.H48": {
               "score": 2,
-              "what": "Navigation links should best be coded as a list"
+              "what": "Navigation links are not coded as a list"
             }
           }
         },
@@ -54318,18 +54324,14 @@
           }
         }
       },
-      "solos": {
-        "wave": {
-          "e:alt_spacer_missing": 8
-        }
-      }
+      "solos": {}
     },
     "preventionScores": {},
     "summary": {
-      "total": 2442,
+      "total": 2429,
       "log": 31,
       "preventions": 0,
-      "solos": 16,
+      "solos": 0,
       "groups": [
         {
           "groupName": "tabIndexMissing",
@@ -54416,16 +54418,16 @@
           "score": 14
         },
         {
+          "groupName": "imageNoText",
+          "score": 13
+        },
+        {
           "groupName": "scrollRisk",
           "score": 13
         },
         {
           "groupName": "targetSize",
           "score": 12
-        },
-        {
-          "groupName": "imageNoText",
-          "score": 10
         },
         {
           "groupName": "pseudoParagraphRisk",

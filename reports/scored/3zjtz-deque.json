@@ -11079,7 +11079,7 @@
           "axe": {
             "color-contrast-enhanced": {
               "score": 18,
-              "what": "Elements must have sufficient color contrast (Level AAA)"
+              "what": "Element has insufficient color contrast (Level AAA)"
             }
           }
         },
@@ -11087,7 +11087,7 @@
           "alfa": {
             "r68": {
               "score": 20,
-              "what": "Element owns no elements as required by its semantic role"
+              "what": "Element does not own an element required by its semantic role"
             }
           }
         },
@@ -11095,7 +11095,7 @@
           "alfa": {
             "r73": {
               "score": 6,
-              "what": "Paragraphs of text have insufficient line height"
+              "what": "Paragraph of text has insufficient line height"
             }
           }
         },
@@ -11127,7 +11127,7 @@
           "axe": {
             "color-contrast": {
               "score": 14,
-              "what": "Elements must have sufficient color contrast"
+              "what": "Element has insufficient color contrast"
             }
           },
           "htmlcs": {
@@ -11167,6 +11167,12 @@
               "score": 8,
               "what": "img element has no alt attribute"
             }
+          },
+          "wave": {
+            "e:alt_spacer_missing": {
+              "score": 8,
+              "what": "Spacer image has no text alternative"
+            }
           }
         },
         "presentationChild": {
@@ -11193,7 +11199,7 @@
             }
           }
         },
-        "labelForBadID": {
+        "labelBadID": {
           "htmlcs": {
             "w:AA.1_3_1.H44.NonExistentFragment": {
               "score": 1,
@@ -11211,7 +11217,7 @@
           "htmlcs": {
             "w:AA.1_3_1.H48": {
               "score": 1,
-              "what": "Navigation links should best be coded as a list"
+              "what": "Navigation links are not coded as a list"
             }
           }
         },
@@ -11225,7 +11231,7 @@
           "tenon": {
             "155": {
               "score": 1,
-              "what": "These headings are not structured in a hierarchical manner"
+              "what": "Headings are not structured in a hierarchical manner"
             }
           }
         },
@@ -11262,6 +11268,14 @@
             "w:AA.4_1_2.H91.A.Empty": {
               "score": 2,
               "what": "Link element has an id attribute but no href attribute or text"
+            }
+          }
+        },
+        "labelEmpty": {
+          "wave": {
+            "e:label_empty": {
+              "score": 24,
+              "what": "Empty form label"
             }
           }
         },
@@ -11406,19 +11420,14 @@
           }
         }
       },
-      "solos": {
-        "wave": {
-          "e:alt_spacer_missing": 8,
-          "e:label_empty": 32
-        }
-      }
+      "solos": {}
     },
     "preventionScores": {},
     "summary": {
-      "total": 958,
+      "total": 907,
       "log": 224,
       "preventions": 0,
-      "solos": 80,
+      "solos": 0,
       "groups": [
         {
           "groupName": "menuNavigation",
@@ -11435,6 +11444,10 @@
         {
           "groupName": "leadingClipsText",
           "score": 46
+        },
+        {
+          "groupName": "labelEmpty",
+          "score": 26
         },
         {
           "groupName": "contrastAAA",
@@ -11465,6 +11478,10 @@
           "score": 15
         },
         {
+          "groupName": "imageNoText",
+          "score": 13
+        },
+        {
           "groupName": "inconsistentStyles",
           "score": 12
         },
@@ -11474,10 +11491,6 @@
         },
         {
           "groupName": "overflowHidden",
-          "score": 10
-        },
-        {
-          "groupName": "imageNoText",
           "score": 10
         },
         {
@@ -11589,7 +11602,7 @@
           "score": 3
         },
         {
-          "groupName": "labelForBadID",
+          "groupName": "labelBadID",
           "score": 3
         },
         {

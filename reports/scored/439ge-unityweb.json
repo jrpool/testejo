@@ -6399,7 +6399,7 @@
           "axe": {
             "color-contrast-enhanced": {
               "score": 9,
-              "what": "Elements must have sufficient color contrast (Level AAA)"
+              "what": "Element has insufficient color contrast (Level AAA)"
             }
           }
         },
@@ -6407,7 +6407,7 @@
           "axe": {
             "color-contrast": {
               "score": 21,
-              "what": "Elements must have sufficient color contrast"
+              "what": "Element has insufficient color contrast"
             }
           }
         },
@@ -6431,7 +6431,7 @@
           "htmlcs": {
             "e:AA.2_4_1.H64.1": {
               "score": 4,
-              "what": "iframe element requires a non-empty title attribute"
+              "what": "iframe element has no non-empty title attribute"
             }
           }
         },
@@ -6443,11 +6443,19 @@
             }
           }
         },
+        "fieldSetRisk": {
+          "htmlcs": {
+            "w:AA.1_3_1.H71.SameName": {
+              "score": 1,
+              "what": "Radio buttons or check boxes may require a group description via a fieldset element"
+            }
+          }
+        },
         "selectFlatRisk": {
           "htmlcs": {
             "w:AA.1_3_1.H85.2": {
               "score": 1,
-              "what": "If selection list contains groups of related options, they should be grouped with optgroup"
+              "what": "Selection list may contain groups of related options that are not grouped with optgroup"
             }
           }
         },
@@ -6526,20 +6534,16 @@
           }
         }
       },
-      "solos": {
-        "htmlcs": {
-          "w:AA.1_3_1.H71.SameName": 1
-        }
-      }
+      "solos": {}
     },
     "preventionScores": {
       "testaro-hover": 50
     },
     "summary": {
-      "total": 1042,
+      "total": 1043,
       "log": 699,
       "preventions": 50,
-      "solos": 2,
+      "solos": 0,
       "groups": [
         {
           "groupName": "tabFocusability",
@@ -6619,6 +6623,10 @@
         },
         {
           "groupName": "hiddenContentRisk",
+          "score": 3
+        },
+        {
+          "groupName": "fieldSetRisk",
           "score": 3
         },
         {

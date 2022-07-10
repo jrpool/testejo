@@ -16135,7 +16135,7 @@
           "axe": {
             "heading-order": {
               "score": 1,
-              "what": "Heading levels should only increase by one"
+              "what": "Heading levels do not increase by only one"
             }
           },
           "htmlcs": {
@@ -16153,7 +16153,7 @@
           "tenon": {
             "155": {
               "score": 1,
-              "what": "These headings are not structured in a hierarchical manner"
+              "what": "Headings are not structured in a hierarchical manner"
             }
           }
         },
@@ -16175,7 +16175,7 @@
           "axe": {
             "color-contrast-enhanced": {
               "score": 45,
-              "what": "Elements must have sufficient color contrast (Level AAA)"
+              "what": "Element has insufficient color contrast (Level AAA)"
             }
           },
           "tenon": {
@@ -16195,7 +16195,7 @@
           "axe": {
             "color-contrast": {
               "score": 38,
-              "what": "Elements must have sufficient color contrast"
+              "what": "Element has insufficient color contrast"
             }
           },
           "htmlcs": {
@@ -16229,7 +16229,7 @@
           "alfa": {
             "r73": {
               "score": 48,
-              "what": "Paragraphs of text have insufficient line height"
+              "what": "Paragraph of text has insufficient line height"
             }
           }
         },
@@ -16321,11 +16321,19 @@
             }
           }
         },
+        "inputNoText": {
+          "htmlcs": {
+            "e:AA.4_1_2.H91.InputSearch.Name": {
+              "score": 4,
+              "what": "Search input has no accessible name"
+            }
+          }
+        },
         "pseudoNavListRisk": {
           "htmlcs": {
             "w:AA.1_3_1.H48": {
               "score": 1,
-              "what": "Navigation links should best be coded as a list"
+              "what": "Navigation links are not coded as a list"
             }
           }
         },
@@ -16333,7 +16341,7 @@
           "htmlcs": {
             "w:AA.1_3_1.H85.2": {
               "score": 1,
-              "what": "If selection list contains groups of related options, they should be grouped with optgroup"
+              "what": "Selection list may contain groups of related options that are not grouped with optgroup"
             }
           }
         },
@@ -16502,18 +16510,14 @@
           }
         }
       },
-      "solos": {
-        "htmlcs": {
-          "e:AA.4_1_2.H91.InputSearch.Name": 4
-        }
-      }
+      "solos": {}
     },
     "preventionScores": {},
     "summary": {
-      "total": 784,
+      "total": 782,
       "log": 53,
       "preventions": 0,
-      "solos": 8,
+      "solos": 0,
       "groups": [
         {
           "groupName": "roleBad",
@@ -16605,6 +16609,10 @@
         },
         {
           "groupName": "headingStructure",
+          "score": 6
+        },
+        {
+          "groupName": "inputNoText",
           "score": 6
         },
         {

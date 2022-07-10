@@ -20,7 +20,7 @@
         <div id="synopsis">
           <p><strong>Page</strong>: Verbit</p>
           <p><strong>URL</strong>: https://verbit.ai/</p>
-          <p><strong>Score</strong>: 955</p>
+          <p><strong>Score</strong>: 942</p>
           <p><strong>Tested by</strong>: Testaro, procedure <code>tp12</code></p>
           <p><strong>Scored by</strong>: Testilo, procedure <code>sp12a</code></p>
           <p><strong>Digested by</strong>: Testilo, procedure <code>dp12a</code></p>
@@ -39,15 +39,14 @@
         <li><a href="https://wave.webaim.org/api/">WAVE</a> by WebAIM</li>
       </ul>
       <p>Testaro produced a report enumerating the test results.</p>
-      <p><a href="https://www.npmjs.com/package/testilo">Testilo</a> processed the report and used the <code>sp12a</code> scoring procedure to compute partial and total scores for the page. The total score is 955 (where 0 is the best possible score). The scored report is appended below.</p>
+      <p><a href="https://www.npmjs.com/package/testilo">Testilo</a> processed the report and used the <code>sp12a</code> scoring procedure to compute partial and total scores for the page. The total score is 942 (where 0 is the best possible score). The scored report is appended below.</p>
       <p>Finally, Testilo used procedure <code>dp12a</code> to produce this digest, briefly explaining how <code>sp12a</code> computed the scores.</p>
       <h2>Score summary</h2>
       <table class="allBorder secondCellRight">
         <caption>Score components</caption>
         <tbody class="headersLeft">
-        <tr><th>total</th><td>955</td></tr>
+        <tr><th>total</th><td>942</td></tr>
         <tr><th>log</th><td>129</td></tr>
-        <tr><th>solos</th><td>16</td></tr>
         <tr><th>duplicateID</th><td>220</td></tr>
         <tr><th>contrastAAA</th><td>70</td></tr>
         <tr><th>linkNoText</th><td>68</td></tr>
@@ -62,10 +61,10 @@
         <tr><th>linkForcesNewWindow</th><td>17</td></tr>
         <tr><th>tabFocusability</th><td>16</td></tr>
         <tr><th>contrastRisk</th><td>15</td></tr>
+        <tr><th>imageNoText</th><td>13</td></tr>
         <tr><th>hoverSurprise</th><td>12</td></tr>
         <tr><th>inconsistentStyles</th><td>11</td></tr>
         <tr><th>focusIndication</th><td>10</td></tr>
-        <tr><th>imageNoText</th><td>10</td></tr>
         <tr><th>noScriptRisk</th><td>9</td></tr>
         <tr><th>linkPair</th><td>7</td></tr>
         <tr><th>zIndexNotZero</th><td>6</td></tr>
@@ -94,7 +93,6 @@
       <h2>Issue summary</h2>
       <h3>Special issues</h3>
       <p><span class="componentID">log</span>: Score 129. This is based on the amount of browser error logging and miscellaneous logging during the tests.
-      <p><span class="componentID">solos</span>: Score 16. This is based on issues reported by unclassified tests. Details are in the report.
       <h3>Classified issues</h3>
       <p><span class="componentID">duplicateID</span>: Score 220. Issues reported by tests in this category:</p>
       <ul>
@@ -105,12 +103,12 @@
       <p><span class="componentID">contrastAAA</span>: Score 70. Issues reported by tests in this category:</p>
       <ul>
       <li>Package <code>alfa</code>, test <code>r66</code>, score 19 (Text contrast less than AAA requires)</li>
-  <li>Package <code>axe</code>, test <code>color-contrast-enhanced</code>, score 60 (Elements must have sufficient color contrast (Level AAA))</li>
+  <li>Package <code>axe</code>, test <code>color-contrast-enhanced</code>, score 60 (Element has insufficient color contrast (Level AAA))</li>
       </ul>
       <p><span class="componentID">linkNoText</span>: Score 68. Issues reported by tests in this category:</p>
       <ul>
       <li>Package <code>alfa</code>, test <code>r11</code>, score 32 (Link has no accessible name)</li>
-  <li>Package <code>axe</code>, test <code>link-name</code>, score 24 (Links must have discernible text)</li>
+  <li>Package <code>axe</code>, test <code>link-name</code>, score 24 (Link has no discernible text)</li>
   <li>Package <code>htmlcs</code>, test <code>e:AA.4_1_2.H91.A.NoContent</code>, score 20 (Link has an href attribute but no text)</li>
   <li>Package <code>wave</code>, test <code>e:link_empty</code>, score 20 (Link contains no text)</li>
   <li>Package <code>tenon</code>, test <code>57</code>, score 20 (Link has no text inside it)</li>
@@ -123,7 +121,7 @@
       </ul>
       <p><span class="componentID">noLeading</span>: Score 44. Issues reported by tests in this category:</p>
       <ul>
-      <li>Package <code>alfa</code>, test <code>r73</code>, score 42 (Paragraphs of text have insufficient line height)</li>
+      <li>Package <code>alfa</code>, test <code>r73</code>, score 42 (Paragraph of text has insufficient line height)</li>
       </ul>
       <p><span class="componentID">fontSizeAbsolute</span>: Score 42. Issues reported by tests in this category:</p>
       <ul>
@@ -132,7 +130,7 @@
       <p><span class="componentID">contrastAA</span>: Score 39. Issues reported by tests in this category:</p>
       <ul>
       <li>Package <code>alfa</code>, test <code>r69</code>, score 29 (Text outside widget has subminimum contrast)</li>
-  <li>Package <code>axe</code>, test <code>color-contrast</code>, score 18 (Elements must have sufficient color contrast)</li>
+  <li>Package <code>axe</code>, test <code>color-contrast</code>, score 18 (Element has insufficient color contrast)</li>
   <li>Package <code>htmlcs</code>, test <code>e:AA.1_4_3.G18.Fail</code>, score 3 (Contrast between the text and its background is less than 4.5:1)</li>
       </ul>
       <p><span class="componentID">linkTextsSame</span>: Score 26. Issues reported by tests in this category:</p>
@@ -167,6 +165,11 @@
   <li>Package <code>htmlcs</code>, test <code>w:AA.1_4_3.G18.BgImage</code>, score 1 (Contrast between the text and its background image may be less than 4.5:1)</li>
   <li>Package <code>htmlcs</code>, test <code>w:AA.1_4_3_F24.F24.FGColour</code>, score 1 (Inline foreground color may lack a complementary background color)</li>
       </ul>
+      <p><span class="componentID">imageNoText</span>: Score 13. Issues reported by tests in this category:</p>
+      <ul>
+      <li>Package <code>htmlcs</code>, test <code>e:AA.1_1_1.H37</code>, score 8 (img element has no alt attribute)</li>
+  <li>Package <code>wave</code>, test <code>e:alt_spacer_missing</code>, score 8 (Spacer image has no text alternative)</li>
+      </ul>
       <p><span class="componentID">hoverSurprise</span>: Score 12. Issues reported by tests in this category:</p>
       <ul>
       <li>Package <code>testaro</code>, test <code>hover</code>, score 10 (Content changes caused by hovering)</li>
@@ -179,10 +182,6 @@
       <ul>
       <li>Package <code>testaro</code>, test <code>focInd</code>, score 6 (Focused element displaying no or nostandard focus indicator)</li>
   <li>Package <code>alfa</code>, test <code>r65</code>, score 6 (Element in sequential focus order has no visible focus)</li>
-      </ul>
-      <p><span class="componentID">imageNoText</span>: Score 10. Issues reported by tests in this category:</p>
-      <ul>
-      <li>Package <code>htmlcs</code>, test <code>e:AA.1_1_1.H37</code>, score 8 (img element has no alt attribute)</li>
       </ul>
       <p><span class="componentID">noScriptRisk</span>: Score 9. Issues reported by tests in this category:</p>
       <ul>
@@ -198,7 +197,7 @@
       </ul>
       <p><span class="componentID">childMissing</span>: Score 6. Issues reported by tests in this category:</p>
       <ul>
-      <li>Package <code>alfa</code>, test <code>r68</code>, score 4 (Element owns no elements as required by its semantic role)</li>
+      <li>Package <code>alfa</code>, test <code>r68</code>, score 4 (Element does not own an element required by its semantic role)</li>
       </ul>
       <p><span class="componentID">leadingClipsText</span>: Score 6. Issues reported by tests in this category:</p>
       <ul>
@@ -262,7 +261,7 @@
       </ul>
       <p><span class="componentID">pseudoNavListRisk</span>: Score 3. Issues reported by tests in this category:</p>
       <ul>
-      <li>Package <code>htmlcs</code>, test <code>w:AA.1_3_1.H48</code>, score 1 (Navigation links should best be coded as a list)</li>
+      <li>Package <code>htmlcs</code>, test <code>w:AA.1_3_1.H48</code>, score 1 (Navigation links are not coded as a list)</li>
       </ul>
       <p><span class="componentID">scrollRisk</span>: Score 3. Issues reported by tests in this category:</p>
       <ul>
@@ -18378,7 +18377,7 @@
           "axe": {
             "link-name": {
               "score": 24,
-              "what": "Links must have discernible text"
+              "what": "Link has no discernible text"
             }
           },
           "htmlcs": {
@@ -18430,7 +18429,7 @@
           "axe": {
             "color-contrast-enhanced": {
               "score": 60,
-              "what": "Elements must have sufficient color contrast (Level AAA)"
+              "what": "Element has insufficient color contrast (Level AAA)"
             }
           }
         },
@@ -18438,7 +18437,7 @@
           "alfa": {
             "r68": {
               "score": 4,
-              "what": "Element owns no elements as required by its semantic role"
+              "what": "Element does not own an element required by its semantic role"
             }
           }
         },
@@ -18452,7 +18451,7 @@
           "axe": {
             "color-contrast": {
               "score": 18,
-              "what": "Elements must have sufficient color contrast"
+              "what": "Element has insufficient color contrast"
             }
           },
           "htmlcs": {
@@ -18466,7 +18465,7 @@
           "alfa": {
             "r73": {
               "score": 42,
-              "what": "Paragraphs of text have insufficient line height"
+              "what": "Paragraph of text has insufficient line height"
             }
           }
         },
@@ -18532,6 +18531,12 @@
               "score": 8,
               "what": "img element has no alt attribute"
             }
+          },
+          "wave": {
+            "e:alt_spacer_missing": {
+              "score": 8,
+              "what": "Spacer image has no text alternative"
+            }
           }
         },
         "decorativeImageRisk": {
@@ -18554,7 +18559,7 @@
           "htmlcs": {
             "w:AA.1_3_1.H48": {
               "score": 1,
-              "what": "Navigation links should best be coded as a list"
+              "what": "Navigation links are not coded as a list"
             }
           }
         },
@@ -18695,18 +18700,14 @@
           }
         }
       },
-      "solos": {
-        "wave": {
-          "e:alt_spacer_missing": 8
-        }
-      }
+      "solos": {}
     },
     "preventionScores": {},
     "summary": {
-      "total": 955,
+      "total": 942,
       "log": 129,
       "preventions": 0,
-      "solos": 16,
+      "solos": 0,
       "groups": [
         {
           "groupName": "duplicateID",
@@ -18765,6 +18766,10 @@
           "score": 15
         },
         {
+          "groupName": "imageNoText",
+          "score": 13
+        },
+        {
           "groupName": "hoverSurprise",
           "score": 12
         },
@@ -18774,10 +18779,6 @@
         },
         {
           "groupName": "focusIndication",
-          "score": 10
-        },
-        {
-          "groupName": "imageNoText",
           "score": 10
         },
         {

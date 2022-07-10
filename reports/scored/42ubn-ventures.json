@@ -7590,7 +7590,7 @@
           "axe": {
             "heading-order": {
               "score": 2,
-              "what": "Heading levels should only increase by one"
+              "what": "Heading levels do not increase by only one"
             }
           },
           "htmlcs": {
@@ -7608,7 +7608,7 @@
           "tenon": {
             "155": {
               "score": 1,
-              "what": "These headings are not structured in a hierarchical manner"
+              "what": "Headings are not structured in a hierarchical manner"
             }
           }
         },
@@ -7636,7 +7636,7 @@
           "axe": {
             "color-contrast-enhanced": {
               "score": 10,
-              "what": "Elements must have sufficient color contrast (Level AAA)"
+              "what": "Element has insufficient color contrast (Level AAA)"
             }
           },
           "tenon": {
@@ -7656,7 +7656,7 @@
           "axe": {
             "color-contrast": {
               "score": 29,
-              "what": "Elements must have sufficient color contrast"
+              "what": "Element has insufficient color contrast"
             }
           },
           "htmlcs": {
@@ -7697,6 +7697,14 @@
             "hidden-content": {
               "score": 1,
               "what": "Some content is hidden and therefore may not be testable for accessibility"
+            }
+          }
+        },
+        "inputNoText": {
+          "htmlcs": {
+            "e:AA.4_1_2.H91.InputSearch.Name": {
+              "score": 4,
+              "what": "Search input has no accessible name"
             }
           }
         },
@@ -7843,18 +7851,14 @@
           }
         }
       },
-      "solos": {
-        "htmlcs": {
-          "e:AA.4_1_2.H91.InputSearch.Name": 4
-        }
-      }
+      "solos": {}
     },
     "preventionScores": {},
     "summary": {
-      "total": 447,
+      "total": 445,
       "log": 80,
       "preventions": 0,
-      "solos": 8,
+      "solos": 0,
       "groups": [
         {
           "groupName": "contrastAA",
@@ -7926,6 +7930,10 @@
         },
         {
           "groupName": "zIndexNotZero",
+          "score": 6
+        },
+        {
+          "groupName": "inputNoText",
           "score": 6
         },
         {

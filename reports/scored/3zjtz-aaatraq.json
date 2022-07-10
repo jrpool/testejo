@@ -18708,7 +18708,7 @@
           "htmlcs": {
             "e:AA.2_4_1.H64.1": {
               "score": 8,
-              "what": "iframe element requires a non-empty title attribute"
+              "what": "iframe element has no non-empty title attribute"
             }
           }
         },
@@ -18730,7 +18730,7 @@
           "axe": {
             "color-contrast-enhanced": {
               "score": 39,
-              "what": "Elements must have sufficient color contrast (Level AAA)"
+              "what": "Element has insufficient color contrast (Level AAA)"
             }
           },
           "tenon": {
@@ -18750,7 +18750,7 @@
           "axe": {
             "color-contrast": {
               "score": 10,
-              "what": "Elements must have sufficient color contrast"
+              "what": "Element has insufficient color contrast"
             }
           },
           "htmlcs": {
@@ -18774,7 +18774,7 @@
           "alfa": {
             "r73": {
               "score": 114,
-              "what": "Paragraphs of text have insufficient line height"
+              "what": "Paragraph of text has insufficient line height"
             }
           }
         },
@@ -18894,7 +18894,7 @@
           "htmlcs": {
             "w:AA.1_3_1.H48": {
               "score": 1,
-              "what": "Navigation links should best be coded as a list"
+              "what": "Navigation links are not coded as a list"
             }
           }
         },
@@ -18930,11 +18930,25 @@
             }
           }
         },
+        "tableHeaderEmpty": {
+          "wave": {
+            "e:th_empty": {
+              "score": 6,
+              "what": "th (table header) contains no text"
+            }
+          }
+        },
         "justification": {
           "wave": {
             "a:text_justified": {
               "score": 1,
               "what": "Text is justified"
+            }
+          },
+          "tenon": {
+            "36": {
+              "score": 1,
+              "what": "Text is fully justified"
             }
           }
         },
@@ -19017,21 +19031,14 @@
           }
         }
       },
-      "solos": {
-        "wave": {
-          "e:th_empty": 12
-        },
-        "tenon": {
-          "36": 4
-        }
-      }
+      "solos": {}
     },
     "preventionScores": {},
     "summary": {
-      "total": 1225,
+      "total": 1201,
       "log": 93,
       "preventions": 0,
-      "solos": 32,
+      "solos": 0,
       "groups": [
         {
           "groupName": "overflowHidden",
@@ -19107,6 +19114,10 @@
         },
         {
           "groupName": "controlLabel",
+          "score": 8
+        },
+        {
+          "groupName": "tableHeaderEmpty",
           "score": 8
         },
         {

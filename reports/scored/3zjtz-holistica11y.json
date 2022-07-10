@@ -7407,6 +7407,14 @@
             }
           }
         },
+        "ariaBadAttribute": {
+          "alfa": {
+            "r18": {
+              "score": 12,
+              "what": "ARIA state or property is not allowed for the element on which it is specified"
+            }
+          }
+        },
         "headingStructure": {
           "alfa": {
             "r53": {
@@ -7417,7 +7425,7 @@
           "axe": {
             "heading-order": {
               "score": 1,
-              "what": "Heading levels should only increase by one"
+              "what": "Heading levels do not increase by only one"
             }
           },
           "htmlcs": {
@@ -7435,7 +7443,7 @@
           "tenon": {
             "155": {
               "score": 1,
-              "what": "These headings are not structured in a hierarchical manner"
+              "what": "Headings are not structured in a hierarchical manner"
             }
           }
         },
@@ -7449,7 +7457,7 @@
           "axe": {
             "color-contrast-enhanced": {
               "score": 7,
-              "what": "Elements must have sufficient color contrast (Level AAA)"
+              "what": "Element has insufficient color contrast (Level AAA)"
             }
           },
           "tenon": {
@@ -7469,7 +7477,7 @@
           "axe": {
             "color-contrast": {
               "score": 2,
-              "what": "Elements must have sufficient color contrast"
+              "what": "Element has insufficient color contrast"
             }
           },
           "htmlcs": {
@@ -7537,7 +7545,7 @@
           "htmlcs": {
             "w:AA.1_3_1.H48": {
               "score": 1,
-              "what": "Navigation links should best be coded as a list"
+              "what": "Navigation links are not coded as a list"
             }
           }
         },
@@ -7626,18 +7634,14 @@
           }
         }
       },
-      "solos": {
-        "alfa": {
-          "r18": 12
-        }
-      }
+      "solos": {}
     },
     "preventionScores": {},
     "summary": {
-      "total": 292,
+      "total": 282,
       "log": 36,
       "preventions": 0,
-      "solos": 24,
+      "solos": 0,
       "groups": [
         {
           "groupName": "linkIndication",
@@ -7646,6 +7650,10 @@
         {
           "groupName": "leadingClipsText",
           "score": 26
+        },
+        {
+          "groupName": "ariaBadAttribute",
+          "score": 14
         },
         {
           "groupName": "linkForcesNewWindow",

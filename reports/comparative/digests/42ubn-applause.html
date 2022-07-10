@@ -20,7 +20,7 @@
         <div id="synopsis">
           <p><strong>Page</strong>: Applause</p>
           <p><strong>URL</strong>: https://www.applause.com/</p>
-          <p><strong>Score</strong>: 729</p>
+          <p><strong>Score</strong>: 714</p>
           <p><strong>Tested by</strong>: Testaro, procedure <code>tp12</code></p>
           <p><strong>Scored by</strong>: Testilo, procedure <code>sp12a</code></p>
           <p><strong>Digested by</strong>: Testilo, procedure <code>dp12a</code></p>
@@ -39,15 +39,14 @@
         <li><a href="https://wave.webaim.org/api/">WAVE</a> by WebAIM</li>
       </ul>
       <p>Testaro produced a report enumerating the test results.</p>
-      <p><a href="https://www.npmjs.com/package/testilo">Testilo</a> processed the report and used the <code>sp12a</code> scoring procedure to compute partial and total scores for the page. The total score is 729 (where 0 is the best possible score). The scored report is appended below.</p>
+      <p><a href="https://www.npmjs.com/package/testilo">Testilo</a> processed the report and used the <code>sp12a</code> scoring procedure to compute partial and total scores for the page. The total score is 714 (where 0 is the best possible score). The scored report is appended below.</p>
       <p>Finally, Testilo used procedure <code>dp12a</code> to produce this digest, briefly explaining how <code>sp12a</code> computed the scores.</p>
       <h2>Score summary</h2>
       <table class="allBorder secondCellRight">
         <caption>Score components</caption>
         <tbody class="headersLeft">
-        <tr><th>total</th><td>729</td></tr>
+        <tr><th>total</th><td>714</td></tr>
         <tr><th>log</th><td>312</td></tr>
-        <tr><th>solos</th><td>20</td></tr>
         <tr><th>leadingClipsText</th><td>54</td></tr>
         <tr><th>linkIndication</th><td>32</td></tr>
         <tr><th>contrastAA</th><td>25</td></tr>
@@ -64,11 +63,11 @@
         <tr><th>inconsistentStyles</th><td>10</td></tr>
         <tr><th>overflowHidden</th><td>10</td></tr>
         <tr><th>iframeTitleBad</th><td>10</td></tr>
+        <tr><th>ariaBadAttribute</th><td>8</td></tr>
         <tr><th>contrastRisk</th><td>8</td></tr>
         <tr><th>focusableOperable</th><td>7</td></tr>
         <tr><th>invisibleLabel</th><td>7</td></tr>
         <tr><th>hoverSurprise</th><td>6</td></tr>
-        <tr><th>ariaBadAttribute</th><td>6</td></tr>
         <tr><th>internalLinkBroken</th><td>6</td></tr>
         <tr><th>duplicateID</th><td>5</td></tr>
         <tr><th>horizontalScrolling</th><td>5</td></tr>
@@ -82,6 +81,7 @@
         <tr><th>pseudoNavListRisk</th><td>3</td></tr>
         <tr><th>scrollRisk</th><td>3</td></tr>
         <tr><th>imageTextRedundant</th><td>3</td></tr>
+        <tr><th>decorativeTitle</th><td>3</td></tr>
         <tr><th>linkPair</th><td>3</td></tr>
         <tr><th>pdfLink</th><td>3</td></tr>
         <tr><th>noScriptRisk</th><td>3</td></tr>
@@ -92,7 +92,6 @@
       <h2>Issue summary</h2>
       <h3>Special issues</h3>
       <p><span class="componentID">log</span>: Score 312. This is based on the amount of browser error logging and miscellaneous logging during the tests.
-      <p><span class="componentID">solos</span>: Score 20. This is based on issues reported by unclassified tests. Details are in the report.
       <h3>Classified issues</h3>
       <p><span class="componentID">leadingClipsText</span>: Score 54. Issues reported by tests in this category:</p>
       <ul>
@@ -105,7 +104,7 @@
       <p><span class="componentID">contrastAA</span>: Score 25. Issues reported by tests in this category:</p>
       <ul>
       <li>Package <code>alfa</code>, test <code>r69</code>, score 11 (Text outside widget has subminimum contrast)</li>
-  <li>Package <code>axe</code>, test <code>color-contrast</code>, score 11 (Elements must have sufficient color contrast)</li>
+  <li>Package <code>axe</code>, test <code>color-contrast</code>, score 11 (Element has insufficient color contrast)</li>
   <li>Package <code>wave</code>, test <code>c:contrast</code>, score 14 (Very low contrast)</li>
       </ul>
       <p><span class="componentID">menuNavigation</span>: Score 20. Issues reported by tests in this category:</p>
@@ -131,7 +130,7 @@
       <p><span class="componentID">contrastAAA</span>: Score 15. Issues reported by tests in this category:</p>
       <ul>
       <li>Package <code>alfa</code>, test <code>r66</code>, score 6 (Text contrast less than AAA requires)</li>
-  <li>Package <code>axe</code>, test <code>color-contrast-enhanced</code>, score 11 (Elements must have sufficient color contrast (Level AAA))</li>
+  <li>Package <code>axe</code>, test <code>color-contrast-enhanced</code>, score 11 (Element has insufficient color contrast (Level AAA))</li>
       </ul>
       <p><span class="componentID">linkNoText</span>: Score 14. Issues reported by tests in this category:</p>
       <ul>
@@ -163,7 +162,12 @@
       </ul>
       <p><span class="componentID">iframeTitleBad</span>: Score 10. Issues reported by tests in this category:</p>
       <ul>
-      <li>Package <code>htmlcs</code>, test <code>e:AA.2_4_1.H64.1</code>, score 8 (iframe element requires a non-empty title attribute)</li>
+      <li>Package <code>htmlcs</code>, test <code>e:AA.2_4_1.H64.1</code>, score 8 (iframe element has no non-empty title attribute)</li>
+      </ul>
+      <p><span class="componentID">ariaBadAttribute</span>: Score 8. Issues reported by tests in this category:</p>
+      <ul>
+      <li>Package <code>alfa</code>, test <code>r18</code>, score 4 (ARIA state or property is not allowed for the element on which it is specified)</li>
+  <li>Package <code>axe</code>, test <code>aria-allowed-attr</code>, score 4 (ARIA attribute is invalid for the role of its element)</li>
       </ul>
       <p><span class="componentID">contrastRisk</span>: Score 8. Issues reported by tests in this category:</p>
       <ul>
@@ -185,10 +189,6 @@
       <p><span class="componentID">hoverSurprise</span>: Score 6. Issues reported by tests in this category:</p>
       <ul>
       <li>Package <code>testaro</code>, test <code>hover</code>, score 4 (Content changes caused by hovering)</li>
-      </ul>
-      <p><span class="componentID">ariaBadAttribute</span>: Score 6. Issues reported by tests in this category:</p>
-      <ul>
-      <li>Package <code>axe</code>, test <code>aria-allowed-attr</code>, score 4 (ARIA attribute is invalid for the role of its element)</li>
       </ul>
       <p><span class="componentID">internalLinkBroken</span>: Score 6. Issues reported by tests in this category:</p>
       <ul>
@@ -220,6 +220,7 @@
       <p><span class="componentID">obsoleteElement</span>: Score 3. Issues reported by tests in this category:</p>
       <ul>
       <li>Package <code>alfa</code>, test <code>r70</code>, score 1 (Element is obsolete or deprecated)</li>
+  <li>Package <code>htmlcs</code>, test <code>e:AA.1_3_1.H49.Font</code>, score 1 (font element is obsolete)</li>
       </ul>
       <p><span class="componentID">skipRepeatedContent</span>: Score 3. Issues reported by tests in this category:</p>
       <ul>
@@ -235,7 +236,7 @@
       </ul>
       <p><span class="componentID">pseudoNavListRisk</span>: Score 3. Issues reported by tests in this category:</p>
       <ul>
-      <li>Package <code>htmlcs</code>, test <code>w:AA.1_3_1.H48</code>, score 1 (Navigation links should best be coded as a list)</li>
+      <li>Package <code>htmlcs</code>, test <code>w:AA.1_3_1.H48</code>, score 1 (Navigation links are not coded as a list)</li>
       </ul>
       <p><span class="componentID">scrollRisk</span>: Score 3. Issues reported by tests in this category:</p>
       <ul>
@@ -244,6 +245,10 @@
       <p><span class="componentID">imageTextRedundant</span>: Score 3. Issues reported by tests in this category:</p>
       <ul>
       <li>Package <code>wave</code>, test <code>a:alt_redundant</code>, score 1 (Redundant text alternative)</li>
+      </ul>
+      <p><span class="componentID">decorativeTitle</span>: Score 3. Issues reported by tests in this category:</p>
+      <ul>
+      <li>Package <code>wave</code>, test <code>a:image_title</code>, score 1 (Image has a title attribute value but no alt value)</li>
       </ul>
       <p><span class="componentID">linkPair</span>: Score 3. Issues reported by tests in this category:</p>
       <ul>
@@ -9873,6 +9878,20 @@
             }
           }
         },
+        "ariaBadAttribute": {
+          "alfa": {
+            "r18": {
+              "score": 4,
+              "what": "ARIA state or property is not allowed for the element on which it is specified"
+            }
+          },
+          "axe": {
+            "aria-allowed-attr": {
+              "score": 4,
+              "what": "ARIA attribute is invalid for the role of its element"
+            }
+          }
+        },
         "contrastAAA": {
           "alfa": {
             "r66": {
@@ -9883,7 +9902,7 @@
           "axe": {
             "color-contrast-enhanced": {
               "score": 11,
-              "what": "Elements must have sufficient color contrast (Level AAA)"
+              "what": "Element has insufficient color contrast (Level AAA)"
             }
           }
         },
@@ -9897,7 +9916,7 @@
           "axe": {
             "color-contrast": {
               "score": 11,
-              "what": "Elements must have sufficient color contrast"
+              "what": "Element has insufficient color contrast"
             }
           },
           "wave": {
@@ -9912,6 +9931,12 @@
             "r70": {
               "score": 1,
               "what": "Element is obsolete or deprecated"
+            }
+          },
+          "htmlcs": {
+            "e:AA.1_3_1.H49.Font": {
+              "score": 1,
+              "what": "font element is obsolete"
             }
           }
         },
@@ -9944,14 +9969,6 @@
             "css-orientation-lock": {
               "score": 1,
               "what": "CSS media query locks display orientation"
-            }
-          }
-        },
-        "ariaBadAttribute": {
-          "axe": {
-            "aria-allowed-attr": {
-              "score": 4,
-              "what": "ARIA attribute is invalid for the role of its element"
             }
           }
         },
@@ -10009,7 +10026,7 @@
           "htmlcs": {
             "e:AA.2_4_1.H64.1": {
               "score": 8,
-              "what": "iframe element requires a non-empty title attribute"
+              "what": "iframe element has no non-empty title attribute"
             }
           }
         },
@@ -10017,7 +10034,7 @@
           "htmlcs": {
             "w:AA.1_3_1.H48": {
               "score": 1,
-              "what": "Navigation links should best be coded as a list"
+              "what": "Navigation links are not coded as a list"
             }
           }
         },
@@ -10062,6 +10079,14 @@
             "a:alt_redundant": {
               "score": 1,
               "what": "Redundant text alternative"
+            }
+          }
+        },
+        "decorativeTitle": {
+          "wave": {
+            "a:image_title": {
+              "score": 1,
+              "what": "Image has a title attribute value but no alt value"
             }
           }
         },
@@ -10168,24 +10193,14 @@
           }
         }
       },
-      "solos": {
-        "alfa": {
-          "r18": 4
-        },
-        "htmlcs": {
-          "e:AA.1_3_1.H49.Font": 4
-        },
-        "wave": {
-          "a:image_title": 2
-        }
-      }
+      "solos": {}
     },
     "preventionScores": {},
     "summary": {
-      "total": 729,
+      "total": 714,
       "log": 312,
       "preventions": 0,
-      "solos": 20,
+      "solos": 0,
       "groups": [
         {
           "groupName": "leadingClipsText",
@@ -10252,6 +10267,10 @@
           "score": 10
         },
         {
+          "groupName": "ariaBadAttribute",
+          "score": 8
+        },
+        {
           "groupName": "contrastRisk",
           "score": 8
         },
@@ -10265,10 +10284,6 @@
         },
         {
           "groupName": "hoverSurprise",
-          "score": 6
-        },
-        {
-          "groupName": "ariaBadAttribute",
           "score": 6
         },
         {
@@ -10321,6 +10336,10 @@
         },
         {
           "groupName": "imageTextRedundant",
+          "score": 3
+        },
+        {
+          "groupName": "decorativeTitle",
           "score": 3
         },
         {

@@ -20,7 +20,7 @@
         <div id="synopsis">
           <p><strong>Page</strong>: CommonLook</p>
           <p><strong>URL</strong>: https://commonlook.com/</p>
-          <p><strong>Score</strong>: 796</p>
+          <p><strong>Score</strong>: 755</p>
           <p><strong>Tested by</strong>: Testaro, procedure <code>tp12</code></p>
           <p><strong>Scored by</strong>: Testilo, procedure <code>sp12a</code></p>
           <p><strong>Digested by</strong>: Testilo, procedure <code>dp12a</code></p>
@@ -39,15 +39,14 @@
         <li><a href="https://wave.webaim.org/api/">WAVE</a> by WebAIM</li>
       </ul>
       <p>Testaro produced a report enumerating the test results.</p>
-      <p><a href="https://www.npmjs.com/package/testilo">Testilo</a> processed the report and used the <code>sp12a</code> scoring procedure to compute partial and total scores for the page. The total score is 796 (where 0 is the best possible score). The scored report is appended below.</p>
+      <p><a href="https://www.npmjs.com/package/testilo">Testilo</a> processed the report and used the <code>sp12a</code> scoring procedure to compute partial and total scores for the page. The total score is 755 (where 0 is the best possible score). The scored report is appended below.</p>
       <p>Finally, Testilo used procedure <code>dp12a</code> to produce this digest, briefly explaining how <code>sp12a</code> computed the scores.</p>
       <h2>Score summary</h2>
       <table class="allBorder secondCellRight">
         <caption>Score components</caption>
         <tbody class="headersLeft">
-        <tr><th>total</th><td>796</td></tr>
+        <tr><th>total</th><td>755</td></tr>
         <tr><th>log</th><td>31</td></tr>
-        <tr><th>solos</th><td>80</td></tr>
         <tr><th>linkIndication</th><td>102</td></tr>
         <tr><th>contrastAA</th><td>73</td></tr>
         <tr><th>focusableHidden</th><td>54</td></tr>
@@ -55,6 +54,7 @@
         <tr><th>targetSize</th><td>40</td></tr>
         <tr><th>linkForcesNewWindow</th><td>35</td></tr>
         <tr><th>spontaneousMotion</th><td>32</td></tr>
+        <tr><th>ariaBadAttribute</th><td>30</td></tr>
         <tr><th>hoverSurprise</th><td>21</td></tr>
         <tr><th>linkNoText</th><td>20</td></tr>
         <tr><th>iframeTitleBad</th><td>16</td></tr>
@@ -66,6 +66,7 @@
         <tr><th>noLeading</th><td>11</td></tr>
         <tr><th>fontSmall</th><td>11</td></tr>
         <tr><th>inconsistentStyles</th><td>10</td></tr>
+        <tr><th>focusableDescendants</th><td>10</td></tr>
         <tr><th>tabIndexMissing</th><td>10</td></tr>
         <tr><th>allCaps</th><td>9</td></tr>
         <tr><th>linkPair</th><td>9</td></tr>
@@ -76,6 +77,7 @@
         <tr><th>overflowHidden</th><td>6</td></tr>
         <tr><th>internalLinkBroken</th><td>6</td></tr>
         <tr><th>focusableOperable</th><td>5</td></tr>
+        <tr><th>skipRepeatedContent</th><td>5</td></tr>
         <tr><th>contrastRisk</th><td>5</td></tr>
         <tr><th>linkBrokenRisk</th><td>5</td></tr>
         <tr><th>horizontalScrolling</th><td>5</td></tr>
@@ -84,8 +86,6 @@
         <tr><th>contentBeyondLandmarks</th><td>4</td></tr>
         <tr><th>asideTopLandmark</th><td>4</td></tr>
         <tr><th>visibleBulk</th><td>3</td></tr>
-        <tr><th>skipRepeatedContent</th><td>3</td></tr>
-        <tr><th>ariaBadAttribute</th><td>3</td></tr>
         <tr><th>hiddenContentRisk</th><td>3</td></tr>
         <tr><th>cssBansRotate</th><td>3</td></tr>
         <tr><th>decorativeImageRisk</th><td>3</td></tr>
@@ -99,7 +99,6 @@
       <h2>Issue summary</h2>
       <h3>Special issues</h3>
       <p><span class="componentID">log</span>: Score 31. This is based on the amount of browser error logging and miscellaneous logging during the tests.
-      <p><span class="componentID">solos</span>: Score 80. This is based on issues reported by unclassified tests. Details are in the report.
       <h3>Classified issues</h3>
       <p><span class="componentID">linkIndication</span>: Score 102. Issues reported by tests in this category:</p>
       <ul>
@@ -108,7 +107,7 @@
       <p><span class="componentID">contrastAA</span>: Score 73. Issues reported by tests in this category:</p>
       <ul>
       <li>Package <code>alfa</code>, test <code>r69</code>, score 8 (Text outside widget has subminimum contrast)</li>
-  <li>Package <code>axe</code>, test <code>color-contrast</code>, score 13 (Elements must have sufficient color contrast)</li>
+  <li>Package <code>axe</code>, test <code>color-contrast</code>, score 13 (Element has insufficient color contrast)</li>
   <li>Package <code>htmlcs</code>, test <code>e:AA.1_4_3.G145.Fail</code>, score 6 (Contrast between the text and its background is less than 3:1.)</li>
   <li>Package <code>htmlcs</code>, test <code>e:AA.1_4_3.G18.Fail</code>, score 21 (Contrast between the text and its background is less than 4.5:1)</li>
   <li>Package <code>wave</code>, test <code>c:contrast</code>, score 52 (Very low contrast)</li>
@@ -134,6 +133,11 @@
       <ul>
       <li>Package <code>testaro</code>, test <code>motion</code>, score 30 (Change of visible content not requested by user)</li>
       </ul>
+      <p><span class="componentID">ariaBadAttribute</span>: Score 30. Issues reported by tests in this category:</p>
+      <ul>
+      <li>Package <code>alfa</code>, test <code>r18</code>, score 28 (ARIA state or property is not allowed for the element on which it is specified)</li>
+  <li>Package <code>axe</code>, test <code>aria-allowed-attr</code>, score 1 (ARIA attribute is invalid for the role of its element)</li>
+      </ul>
       <p><span class="componentID">hoverSurprise</span>: Score 21. Issues reported by tests in this category:</p>
       <ul>
       <li>Package <code>testaro</code>, test <code>hover</code>, score 19 (Content changes caused by hovering)</li>
@@ -141,19 +145,19 @@
       <p><span class="componentID">linkNoText</span>: Score 20. Issues reported by tests in this category:</p>
       <ul>
       <li>Package <code>alfa</code>, test <code>r11</code>, score 12 (Link has no accessible name)</li>
-  <li>Package <code>axe</code>, test <code>link-name</code>, score 6 (Links must have discernible text)</li>
+  <li>Package <code>axe</code>, test <code>link-name</code>, score 6 (Link has no discernible text)</li>
   <li>Package <code>htmlcs</code>, test <code>e:AA.4_1_2.H91.A.EmptyNoId</code>, score 8 (Link has no name or id attribute or value)</li>
   <li>Package <code>htmlcs</code>, test <code>w:AA.4_1_2.H91.A.EmptyWithName</code>, score 1 (Link has a name attribute but no href attribute or text)</li>
       </ul>
       <p><span class="componentID">iframeTitleBad</span>: Score 16. Issues reported by tests in this category:</p>
       <ul>
       <li>Package <code>alfa</code>, test <code>r13</code>, score 4 (iframe has no accessible name)</li>
-  <li>Package <code>htmlcs</code>, test <code>e:AA.2_4_1.H64.1</code>, score 12 (iframe element requires a non-empty title attribute)</li>
+  <li>Package <code>htmlcs</code>, test <code>e:AA.2_4_1.H64.1</code>, score 12 (iframe element has no non-empty title attribute)</li>
       </ul>
       <p><span class="componentID">contrastAAA</span>: Score 15. Issues reported by tests in this category:</p>
       <ul>
       <li>Package <code>alfa</code>, test <code>r66</code>, score 3 (Text contrast less than AAA requires)</li>
-  <li>Package <code>axe</code>, test <code>color-contrast-enhanced</code>, score 5 (Elements must have sufficient color contrast (Level AAA))</li>
+  <li>Package <code>axe</code>, test <code>color-contrast-enhanced</code>, score 5 (Element has insufficient color contrast (Level AAA))</li>
   <li>Package <code>tenon</code>, test <code>95</code>, score 10 (Element has insufficient color contrast (Level AAA))</li>
       </ul>
       <p><span class="componentID">roleBad</span>: Score 14. Issues reported by tests in this category:</p>
@@ -175,7 +179,7 @@
       </ul>
       <p><span class="componentID">noLeading</span>: Score 11. Issues reported by tests in this category:</p>
       <ul>
-      <li>Package <code>alfa</code>, test <code>r73</code>, score 9 (Paragraphs of text have insufficient line height)</li>
+      <li>Package <code>alfa</code>, test <code>r73</code>, score 9 (Paragraph of text has insufficient line height)</li>
       </ul>
       <p><span class="componentID">fontSmall</span>: Score 11. Issues reported by tests in this category:</p>
       <ul>
@@ -184,6 +188,10 @@
       <p><span class="componentID">inconsistentStyles</span>: Score 10. Issues reported by tests in this category:</p>
       <ul>
       <li>Package <code>testaro</code>, test <code>styleDiff</code>, score 8 (Heading, link, and button style inconsistencies)</li>
+      </ul>
+      <p><span class="componentID">focusableDescendants</span>: Score 10. Issues reported by tests in this category:</p>
+      <ul>
+      <li>Package <code>alfa</code>, test <code>r90</code>, score 8 (Element has a role making its children presentational but contains a focusable element)</li>
       </ul>
       <p><span class="componentID">tabIndexMissing</span>: Score 10. Issues reported by tests in this category:</p>
       <ul>
@@ -226,6 +234,11 @@
       <ul>
       <li>Package <code>testaro</code>, test <code>focOp</code>, score 3 (Operable elements that cannot be Tab-focused and vice versa)</li>
       </ul>
+      <p><span class="componentID">skipRepeatedContent</span>: Score 5. Issues reported by tests in this category:</p>
+      <ul>
+      <li>Package <code>alfa</code>, test <code>r87</code>, score 1 (First focusable element is not a link to the main content)</li>
+  <li>Package <code>wave</code>, test <code>e:link_skip_broken</code>, score 3 (Skip-navigation link has no target or is not keyboard accessible)</li>
+      </ul>
       <p><span class="componentID">contrastRisk</span>: Score 5. Issues reported by tests in this category:</p>
       <ul>
       <li>Package <code>htmlcs</code>, test <code>w:AA.1_4_3.G145.Abs</code>, score 1 (Contrast between the absolutely positioned large text and its background may be less than 3:1)</li>
@@ -260,14 +273,6 @@
       <ul>
       <li>Package <code>testaro</code>, test <code>bulk</code>, score 1 (Page contains many visible elements)</li>
       </ul>
-      <p><span class="componentID">skipRepeatedContent</span>: Score 3. Issues reported by tests in this category:</p>
-      <ul>
-      <li>Package <code>alfa</code>, test <code>r87</code>, score 1 (First focusable element is not a link to the main content)</li>
-      </ul>
-      <p><span class="componentID">ariaBadAttribute</span>: Score 3. Issues reported by tests in this category:</p>
-      <ul>
-      <li>Package <code>axe</code>, test <code>aria-allowed-attr</code>, score 1 (ARIA attribute is invalid for the role of its element)</li>
-      </ul>
       <p><span class="componentID">hiddenContentRisk</span>: Score 3. Issues reported by tests in this category:</p>
       <ul>
       <li>Package <code>axe</code>, test <code>hidden-content</code>, score 1 (Some content is hidden and therefore may not be testable for accessibility)</li>
@@ -286,7 +291,7 @@
       </ul>
       <p><span class="componentID">pseudoNavListRisk</span>: Score 3. Issues reported by tests in this category:</p>
       <ul>
-      <li>Package <code>htmlcs</code>, test <code>w:AA.1_3_1.H48</code>, score 1 (Navigation links should best be coded as a list)</li>
+      <li>Package <code>htmlcs</code>, test <code>w:AA.1_3_1.H48</code>, score 1 (Navigation links are not coded as a list)</li>
       </ul>
       <p><span class="componentID">pseudoHeadingRisk</span>: Score 3. Issues reported by tests in this category:</p>
       <ul>
@@ -14564,7 +14569,7 @@
           "axe": {
             "link-name": {
               "score": 6,
-              "what": "Links must have discernible text"
+              "what": "Link has no discernible text"
             }
           },
           "htmlcs": {
@@ -14588,7 +14593,7 @@
           "htmlcs": {
             "e:AA.2_4_1.H64.1": {
               "score": 12,
-              "what": "iframe element requires a non-empty title attribute"
+              "what": "iframe element has no non-empty title attribute"
             }
           }
         },
@@ -14603,6 +14608,20 @@
             "aria-hidden-focus": {
               "score": 30,
               "what": "ARIA hidden element is focusable or contains a focusable element"
+            }
+          }
+        },
+        "ariaBadAttribute": {
+          "alfa": {
+            "r18": {
+              "score": 28,
+              "what": "ARIA state or property is not allowed for the element on which it is specified"
+            }
+          },
+          "axe": {
+            "aria-allowed-attr": {
+              "score": 1,
+              "what": "ARIA attribute is invalid for the role of its element"
             }
           }
         },
@@ -14624,7 +14643,7 @@
           "axe": {
             "color-contrast-enhanced": {
               "score": 5,
-              "what": "Elements must have sufficient color contrast (Level AAA)"
+              "what": "Element has insufficient color contrast (Level AAA)"
             }
           },
           "tenon": {
@@ -14644,7 +14663,7 @@
           "axe": {
             "color-contrast": {
               "score": 13,
-              "what": "Elements must have sufficient color contrast"
+              "what": "Element has insufficient color contrast"
             }
           },
           "htmlcs": {
@@ -14682,7 +14701,7 @@
           "alfa": {
             "r73": {
               "score": 9,
-              "what": "Paragraphs of text have insufficient line height"
+              "what": "Paragraph of text has insufficient line height"
             }
           }
         },
@@ -14708,13 +14727,19 @@
               "score": 1,
               "what": "First focusable element is not a link to the main content"
             }
+          },
+          "wave": {
+            "e:link_skip_broken": {
+              "score": 3,
+              "what": "Skip-navigation link has no target or is not keyboard accessible"
+            }
           }
         },
-        "ariaBadAttribute": {
-          "axe": {
-            "aria-allowed-attr": {
-              "score": 1,
-              "what": "ARIA attribute is invalid for the role of its element"
+        "focusableDescendants": {
+          "alfa": {
+            "r90": {
+              "score": 8,
+              "what": "Element has a role making its children presentational but contains a focusable element"
             }
           }
         },
@@ -14778,7 +14803,7 @@
           "htmlcs": {
             "w:AA.1_3_1.H48": {
               "score": 1,
-              "what": "Navigation links should best be coded as a list"
+              "what": "Navigation links are not coded as a list"
             }
           }
         },
@@ -14919,22 +14944,14 @@
           }
         }
       },
-      "solos": {
-        "alfa": {
-          "r18": 28,
-          "r90": 8
-        },
-        "wave": {
-          "e:link_skip_broken": 4
-        }
-      }
+      "solos": {}
     },
     "preventionScores": {},
     "summary": {
-      "total": 796,
+      "total": 755,
       "log": 31,
       "preventions": 0,
-      "solos": 80,
+      "solos": 0,
       "groups": [
         {
           "groupName": "linkIndication",
@@ -14963,6 +14980,10 @@
         {
           "groupName": "spontaneousMotion",
           "score": 32
+        },
+        {
+          "groupName": "ariaBadAttribute",
+          "score": 30
         },
         {
           "groupName": "hoverSurprise",
@@ -15009,6 +15030,10 @@
           "score": 10
         },
         {
+          "groupName": "focusableDescendants",
+          "score": 10
+        },
+        {
           "groupName": "tabIndexMissing",
           "score": 10
         },
@@ -15049,6 +15074,10 @@
           "score": 5
         },
         {
+          "groupName": "skipRepeatedContent",
+          "score": 5
+        },
+        {
           "groupName": "contrastRisk",
           "score": 5
         },
@@ -15078,14 +15107,6 @@
         },
         {
           "groupName": "visibleBulk",
-          "score": 3
-        },
-        {
-          "groupName": "skipRepeatedContent",
-          "score": 3
-        },
-        {
-          "groupName": "ariaBadAttribute",
           "score": 3
         },
         {

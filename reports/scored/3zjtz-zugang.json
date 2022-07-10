@@ -7218,7 +7218,7 @@
           "axe": {
             "color-contrast-enhanced": {
               "score": 5,
-              "what": "Elements must have sufficient color contrast (Level AAA)"
+              "what": "Element has insufficient color contrast (Level AAA)"
             }
           }
         },
@@ -7232,7 +7232,7 @@
           "axe": {
             "color-contrast": {
               "score": 14,
-              "what": "Elements must have sufficient color contrast"
+              "what": "Element has insufficient color contrast"
             }
           },
           "wave": {
@@ -7246,7 +7246,7 @@
           "alfa": {
             "r73": {
               "score": 123,
-              "what": "Paragraphs of text have insufficient line height"
+              "what": "Paragraph of text has insufficient line height"
             }
           }
         },

@@ -3323,7 +3323,15 @@
           "htmlcs": {
             "e:AA.2_4_1.H64.1": {
               "score": 8,
-              "what": "iframe element requires a non-empty title attribute"
+              "what": "iframe element has no non-empty title attribute"
+            }
+          }
+        },
+        "regionNoText": {
+          "alfa": {
+            "r40": {
+              "score": 8,
+              "what": "Region has no accessible name"
             }
           }
         },
@@ -3365,7 +3373,7 @@
           "axe": {
             "color-contrast-enhanced": {
               "score": 4,
-              "what": "Elements must have sufficient color contrast (Level AAA)"
+              "what": "Element has insufficient color contrast (Level AAA)"
             }
           },
           "tenon": {
@@ -3385,7 +3393,7 @@
           "axe": {
             "color-contrast": {
               "score": 7,
-              "what": "Elements must have sufficient color contrast"
+              "what": "Element has insufficient color contrast"
             }
           },
           "htmlcs": {
@@ -3405,7 +3413,7 @@
           "alfa": {
             "r73": {
               "score": 3,
-              "what": "Paragraphs of text have insufficient line height"
+              "what": "Paragraph of text has insufficient line height"
             }
           }
         },
@@ -3449,6 +3457,14 @@
             }
           }
         },
+        "noLandmarks": {
+          "wave": {
+            "a:region_missing": {
+              "score": 1,
+              "what": "Page has no regions or ARIA landmarks"
+            }
+          }
+        },
         "fontSmall": {
           "wave": {
             "a:text_small": {
@@ -3488,21 +3504,14 @@
           }
         }
       },
-      "solos": {
-        "alfa": {
-          "r40": 8
-        },
-        "wave": {
-          "a:region_missing": 1
-        }
-      }
+      "solos": {}
     },
     "preventionScores": {},
     "summary": {
-      "total": 164,
+      "total": 159,
       "log": 30,
       "preventions": 0,
-      "solos": 18,
+      "solos": 0,
       "groups": [
         {
           "groupName": "contrastAA",
@@ -3515,6 +3524,10 @@
         {
           "groupName": "contentBeyondLandmarks",
           "score": 13
+        },
+        {
+          "groupName": "regionNoText",
+          "score": 10
         },
         {
           "groupName": "leadingClipsText",
@@ -3566,6 +3579,10 @@
         },
         {
           "groupName": "scrollRisk",
+          "score": 3
+        },
+        {
+          "groupName": "noLandmarks",
           "score": 3
         }
       ]
