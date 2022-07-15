@@ -4,10 +4,8 @@
 // Module to read and write files.
 const fs = require('fs');
 
-const smallJSON = fs.readFileSync('batches/a11yOrgsSmall.json', 'utf8');
-const bigJSON = fs.readFileSync('batches/a11yOrgsBig.json', 'utf8');
-const small = JSON.parse(smallJSON);
-const big = JSON.parse(bigJSON);
-const smallWhats = small.hosts.map(smallHost => smallHost.what);
-big.hosts = big.hosts.filter(bigHost => ! smallWhats.includes(bigHost.what));
-fs.writeFileSync('batches/a11yOrgsRest.json', JSON.stringify(big, null, 2));
+const batchJSON = fs.readFileSync('batches/usFedExec.json', 'utf8');
+const batch = JSON.parse(batchJSON);
+const {hosts} = batch;
+hosts.sort((a, b) => a.what < b.what ? -1 : 1);
+fs.writeFileSync('batches/usFedExecSorted.json', JSON.stringify(batch, null, 2));
