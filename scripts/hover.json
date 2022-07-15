@@ -2,6 +2,7 @@
   "id": "tp12Part",
   "what": "tp12 through hover",
   "strict": true,
+  "timeLimit": 200,
   "commands": [
     {
       "type": "launch",

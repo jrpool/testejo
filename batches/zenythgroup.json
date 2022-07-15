@@ -1,0 +1,11 @@
+{
+  "id": "zenythgroup",
+  "what": "Zenyth Group",
+  "hosts": [
+    {
+      "id": "zenythgroup",
+      "which": "https://zenythgroup.com/index",
+      "what": "Zenyth Group"
+    }
+  ]
+}

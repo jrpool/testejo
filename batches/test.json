@@ -1,21 +1,16 @@
 {
   "id": "test",
-  "what": "Test batch",
+  "what": "Test",
   "hosts": [
     {
-      "id": "neh",
-      "which": "https://www.neh.gov/",
-      "what": "National Endowment for the Humanities"
+      "id": "greinerhome",
+      "which": "http://greinersclothing.com/",
+      "what": "Greiner’s Fine Men’s Clothing: Home"
     },
     {
-      "id": "zenythgroup",
-      "which": "https://zenythgroup.com/index",
-      "what": "Zenyth Group"
-    },
-    {
-      "id": "hr",
-      "which": "https://www.house.gov/",
-      "what": "U.S. House of Representatives"
+      "id": "nist",
+      "which": "https://www.nist.gov/",
+      "what": "National Institute of Standards and Technology"
     }
   ]
 }

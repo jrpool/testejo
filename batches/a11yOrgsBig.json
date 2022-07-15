@@ -23,6 +23,11 @@
       "what": "AbilityNet"
     },
     {
+      "id": "accessfirst",
+      "which": "https://www.access-first.fr/",
+      "what": "Access First"
+    },
+    {
       "id": "accessibe",
       "which": "https://accessibe.com/",
       "what": "AccessiBe"
@@ -63,11 +68,6 @@
       "what": "ADA Expertise Consulting"
     },
     {
-      "id": "adawebguard",
-      "which": "https://adawebguard.com/",
-      "what": "ADA Web Guard"
-    },
-    {
       "id": "adagovbeta",
       "which": "https://beta.ada.gov/",
       "what": "ADA.gov beta site"
@@ -81,6 +81,11 @@
       "id": "aeldata",
       "which": "https://aeldata.com/",
       "what": "AEL Data"
+    },
+    {
+      "id": "amberscript",
+      "which": "https://www.amberscript.com/nl/",
+      "what": "Amberscript"
     },
     {
       "id": "aph",
@@ -138,6 +143,11 @@
       "what": "Benetech"
     },
     {
+      "id": "bestwa",
+      "which": "https://bestwebsiteaccessibility.com/",
+      "what": "Best Website Accessibility"
+    },
+    {
       "id": "boia",
       "which": "https://www.boia.org/",
       "what": "Bureau of Internet Accessibility"
@@ -171,11 +181,6 @@
       "id": "deque",
       "which": "https://deque.com/",
       "what": "Deque"
-    },
-    {
-      "id": "dac",
-      "which": "https://www.digitalaccessibilitycentre.org/",
-      "what": "Digital Accessibility Centre"
     },
     {
       "id": "diginclusion",
@@ -218,9 +223,19 @@
       "what": "FACIL’iti"
     },
     {
+      "id": "aveugles",
+      "which": "https://aveuglesdefrance.org/",
+      "what": "Fédération des Aveugles et Amblyopes de France"
+    },
+    {
       "id": "hearcolors",
       "which": "https://www.hearcolors.com.mx/",
       "what": "Fundación Hearcolors"
+    },
+    {
+      "id": "sidar",
+      "which": "http://www.sidar.org/#goto_a11yhoy",
+      "what": "Fundación Sidar"
     },
     {
       "id": "funka",
@@ -246,6 +261,11 @@
       "id": "iaap",
       "which": "https://www.accessibilityassociation.org/s/",
       "what": "IAAP"
+    },
+    {
+      "id": "ideance",
+      "which": "https://ideance.net/fr/",
+      "what": "Ideance"
     },
     {
       "id": "cake",
@@ -276,11 +296,6 @@
       "id": "makesense",
       "which": "https://mk-sense.com/",
       "what": "Make-Sense"
-    },
-    {
-      "id": "mesmer",
-      "which": "https://www.mesmerhq.com/",
-      "what": "Mesmer"
     },
     {
       "id": "microassist",
@@ -406,6 +421,11 @@
       "id": "ultranauts",
       "which": "https://ultranauts.co/",
       "what": "Ultranauts"
+    },
+    {
+      "id": "uauad",
+      "which": "https://web.ua.es/va/accesibilidad/",
+      "what": "Unitat d’Accessibilitat Digital de la Universitat d’Alacant"
     },
     {
       "id": "unityweb",
