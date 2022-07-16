@@ -1,0 +1,23 @@
+{
+  "id": "role",
+  "what": "Roles",
+  "strict": true,
+  "timeLimit": 15,
+  "commands": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.example.com",
+      "what": "any page"
+    },
+    {
+      "type": "test",
+      "which": "role",
+      "what": "Invalid and deprecated roles"
+    }
+  ]
+}

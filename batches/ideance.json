@@ -1,0 +1,11 @@
+{
+  "id": "a11yorgs",
+  "what": "Home pages of accessibility organizations",
+  "hosts": [
+    {
+      "id": "ideance",
+      "which": "https://ideance.net/fr/",
+      "what": "Ideance"
+    }
+  ]
+}
