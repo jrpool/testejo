@@ -304,13 +304,14 @@
           "total": 57,
           "types": {
             "indicatorMissing": {
-              "total": 0,
-              "tagNames": {}
+              "total": 4,
+              "tagNames": {
+                "BUTTON": 4
+              }
             },
             "nonOutlinePresent": {
-              "total": 8,
+              "total": 4,
               "tagNames": {
-                "BUTTON": 4,
                 "INPUT": 3,
                 "TEXTAREA": 1
               }
@@ -327,8 +328,7 @@
           }
         },
         "items": {
-          "indicatorMissing": [],
-          "nonOutlinePresent": [
+          "indicatorMissing": [
             {
               "tagName": "BUTTON",
               "text": "Previous"
@@ -337,6 +337,16 @@
               "tagName": "BUTTON",
               "text": "Next"
             },
+            {
+              "tagName": "BUTTON",
+              "text": "Previous"
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Next"
+            }
+          ],
+          "nonOutlinePresent": [
             {
               "tagName": "INPUT",
               "text": ""
@@ -352,14 +362,6 @@
             {
               "tagName": "TEXTAREA",
               "text": ""
-            },
-            {
-              "tagName": "BUTTON",
-              "text": "Previous"
-            },
-            {
-              "tagName": "BUTTON",
-              "text": "Next"
             }
           ],
           "outlinePresent": [
@@ -456,7 +458,7 @@
             {
               "tagName": "A",
               "text": "Send Enquiry",
-              "delay": 104
+              "delay": 101
             },
             {
               "tagName": "A",
@@ -466,12 +468,12 @@
             {
               "tagName": "A",
               "text": "Learn more about Accessibility",
-              "delay": 102
+              "delay": 103
             },
             {
               "tagName": "A",
               "text": "Learn more about Educational",
-              "delay": 102
+              "delay": 101
             },
             {
               "tagName": "A",
@@ -481,17 +483,17 @@
             {
               "tagName": "A",
               "text": "Learn more about Ebook Conversion",
-              "delay": 100
+              "delay": 101
             },
             {
               "tagName": "A",
               "text": "Learn more about Responsive Design",
-              "delay": 103
+              "delay": 101
             },
             {
               "tagName": "A",
               "text": "Learn more about Digital Solutions",
-              "delay": 101
+              "delay": 102
             },
             {
               "tagName": "A",
@@ -505,8 +507,8 @@
             },
             {
               "tagName": "A",
-              "text": "Understanding Success Criterion 2.5.5: Target Size",
-              "delay": 101
+              "text": "Understanding Success Criterion 3.1.2: Language of Parts",
+              "delay": 103
             },
             {
               "tagName": "A",
@@ -515,8 +517,8 @@
             },
             {
               "tagName": "A",
-              "text": "Understanding Success Criterion 2.5.3: Label in Name",
-              "delay": 101
+              "text": "Understanding Success Criterion 1.3.6 Identify Purpose",
+              "delay": 106
             },
             {
               "tagName": "A",
@@ -525,8 +527,8 @@
             },
             {
               "tagName": "A",
-              "text": "Understanding Success Criterion 2.5.4: Motion Actuation",
-              "delay": 100
+              "text": "Understanding Success Criterion 1.3.5: Identify Input Purpose",
+              "delay": 103
             },
             {
               "tagName": "A",
@@ -1825,8 +1827,8 @@
           "triggers": 115,
           "headTriggers": 20,
           "tailTriggers": 95,
-          "impactTriggers": 0,
-          "additions": 0,
+          "impactTriggers": 7,
+          "additions": 79,
           "removals": 0,
           "opacityChanges": 0,
           "opacityImpact": 0,
@@ -1834,7 +1836,64 @@
         },
         "items": {
           "head": {
-            "impactTriggers": [],
+            "impactTriggers": [
+              {
+                "tagName": "LI",
+                "text": "ServicesServices-ChildmenuEbookEbook-ChildmenuInte",
+                "additions": 17,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "A",
+                "text": "Services",
+                "additions": 17,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "BUTTON",
+                "text": "Services-Childmenu",
+                "additions": 17,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "LI",
+                "text": "WebAccessibilityWebAccessibility-ChildmenuAccessib",
+                "additions": 7,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "A",
+                "text": "WebAccessibility",
+                "additions": 7,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "BUTTON",
+                "text": "WebAccessibility-Childmenu",
+                "additions": 7,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "LI",
+                "text": "ResourcesResources-ChildmenuBlogWebComplianceWebCo",
+                "additions": 7,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              }
+            ],
             "unhoverables": [
               {
                 "tagName": "A",
@@ -1859,7 +1918,7 @@
               {
                 "tagName": "A",
                 "id": "",
-                "text": "UnderstandingSuccessCriterion2.4.7:FocusVisible"
+                "text": "UnderstandingSuccessCriterion2.5.6:ConcurrentInput"
               }
             ]
           }
@@ -2319,12 +2378,19 @@
       "result": {
         "roleElements": 29,
         "badRoleElements": 11,
+        "redundantRoleElements": 0,
         "tagNames": {
           "A": {
-            "button": 10
+            "button": {
+              "bad": 10,
+              "redundant": 0
+            }
           },
           "DIV": {
-            "button": 1
+            "button": {
+              "bad": 1,
+              "redundant": 0
+            }
           }
         }
       }

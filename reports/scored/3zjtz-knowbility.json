@@ -1523,6 +1523,7 @@
       "result": {
         "roleElements": 9,
         "badRoleElements": 0,
+        "redundantRoleElements": 0,
         "tagNames": {}
       }
     },
@@ -3452,7 +3453,7 @@
   "endTime": "2022-07-06T01:52:57",
   "elapsedSeconds": 105,
   "score": {
-    "scoreProcID": "sp12a",
+    "scoreProcID": "sp12b",
     "logWeights": {
       "logCount": 0.5,
       "logSize": 0.01,

@@ -303,10 +303,6 @@
           "total": 67,
           "types": {
             "indicatorMissing": {
-              "total": 0,
-              "tagNames": {}
-            },
-            "nonOutlinePresent": {
               "total": 11,
               "tagNames": {
                 "A": 5,
@@ -315,6 +311,10 @@
                 "BUTTON": 3,
                 "IFRAME": 1
               }
+            },
+            "nonOutlinePresent": {
+              "total": 0,
+              "tagNames": {}
             },
             "outlinePresent": {
               "total": 56,
@@ -327,8 +327,7 @@
           }
         },
         "items": {
-          "indicatorMissing": [],
-          "nonOutlinePresent": [
+          "indicatorMissing": [
             {
               "tagName": "A",
               "text": ""
@@ -374,6 +373,7 @@
               "text": ""
             }
           ],
+          "nonOutlinePresent": [],
           "outlinePresent": [
             {
               "tagName": "A",
@@ -1400,7 +1400,7 @@
           "removals": 0,
           "opacityChanges": 0,
           "opacityImpact": 0,
-          "unhoverables": 18
+          "unhoverables": 19
         },
         "items": {
           "head": {
@@ -1500,7 +1500,13 @@
           },
           "tail": {
             "impactTriggers": [],
-            "unhoverables": []
+            "unhoverables": [
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Getafreeaccessibilityconsultation"
+              }
+            ]
           }
         }
       }
@@ -1759,13 +1765,23 @@
       "result": {
         "roleElements": 18,
         "badRoleElements": 5,
+        "redundantRoleElements": 0,
         "tagNames": {
           "A": {
-            "button": 2
+            "button": {
+              "bad": 2,
+              "redundant": 0
+            }
           },
           "DIV": {
-            "group": 1,
-            "status": 2
+            "group": {
+              "bad": 1,
+              "redundant": 0
+            },
+            "status": {
+              "bad": 2,
+              "redundant": 0
+            }
           }
         }
       }
@@ -8669,7 +8685,7 @@
   "endTime": "2022-07-06T01:40:14",
   "elapsedSeconds": 102,
   "score": {
-    "scoreProcID": "sp12a",
+    "scoreProcID": "sp12b",
     "logWeights": {
       "logCount": 0.5,
       "logSize": 0.01,
@@ -8692,11 +8708,11 @@
     "packageDetails": {
       "testaro": {
         "bulk": 0,
-        "focInd": 11,
+        "focInd": 33,
         "focOp": 6,
-        "hover": 18,
+        "hover": 19,
         "linkUl": 14,
-        "role": 5,
+        "role": 10,
         "styleDiff": 35,
         "tabNav": 8,
         "zIndex": 12
@@ -8759,7 +8775,7 @@
         "focusIndication": {
           "testaro": {
             "focInd": {
-              "score": 11,
+              "score": 33,
               "what": "Focused element displaying no or nostandard focus indicator"
             }
           },
@@ -8797,7 +8813,7 @@
         "roleBad": {
           "testaro": {
             "role": {
-              "score": 4,
+              "score": 8,
               "what": "Nonexistent or implicit-overriding role"
             }
           }
@@ -9071,7 +9087,7 @@
     },
     "preventionScores": {},
     "summary": {
-      "total": 320,
+      "total": 346,
       "log": 34,
       "preventions": 0,
       "solos": 0,
@@ -9085,12 +9101,12 @@
           "score": 43
         },
         {
-          "groupName": "contrastAAA",
-          "score": 26
+          "groupName": "focusIndication",
+          "score": 36
         },
         {
-          "groupName": "focusIndication",
-          "score": 14
+          "groupName": "contrastAAA",
+          "score": 26
         },
         {
           "groupName": "inconsistentStyles",
@@ -9099,6 +9115,10 @@
         {
           "groupName": "contentBeyondLandmarks",
           "score": 11
+        },
+        {
+          "groupName": "roleBad",
+          "score": 10
         },
         {
           "groupName": "linkIndication",
@@ -9119,10 +9139,6 @@
         {
           "groupName": "hoverSurprise",
           "score": 7
-        },
-        {
-          "groupName": "roleBad",
-          "score": 6
         },
         {
           "groupName": "tabNavigation",

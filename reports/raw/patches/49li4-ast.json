@@ -1,0 +1,687 @@
+{
+  "id": "49li4-ast",
+  "host": {
+    "id": "ast",
+    "which": "https://www.automaticsync.com/captionsync/",
+    "what": "Automatic Sync Technologies"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-16T21:36:49"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-16T21:38:04"
+    }
+  ],
+  "script": {
+    "id": "tp12",
+    "what": "Alfa, Axe, HTML CodeSniffer, IBM, Tenon, WAVE, and 16 custom tests",
+    "strict": true,
+    "timeLimit": 150,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.automaticsync.com/captionsync/",
+        "what": "Automatic Sync Technologies"
+      },
+      {
+        "type": "test",
+        "which": "focInd",
+        "revealAll": false,
+        "allowedDelay": 250,
+        "withItems": true,
+        "what": "focus indicators"
+      },
+      {
+        "type": "test",
+        "which": "hover",
+        "headSize": 20,
+        "headSampleSize": 20,
+        "tailSampleSize": 15,
+        "withItems": true,
+        "what": "hover impacts"
+      },
+      {
+        "type": "test",
+        "which": "role",
+        "what": "validity and necessity of role assignments"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.automaticsync.com/captionsync/",
+      "what": "Automatic Sync Technologies",
+      "result": "https://www.automaticsync.com/captionsync/"
+    },
+    {
+      "type": "test",
+      "which": "focInd",
+      "revealAll": false,
+      "allowedDelay": 250,
+      "withItems": true,
+      "what": "focus indicators",
+      "url": "https://www.automaticsync.com/captionsync/",
+      "result": {
+        "totals": {
+          "total": 63,
+          "types": {
+            "indicatorMissing": {
+              "total": 3,
+              "tagNames": {
+                "IFRAME": 1,
+                "INPUT": 1,
+                "A": 1
+              }
+            },
+            "nonOutlinePresent": {
+              "total": 0,
+              "tagNames": {}
+            },
+            "outlinePresent": {
+              "total": 60,
+              "meanDelay": 94,
+              "tagNames": {
+                "A": 54,
+                "INPUT": 3,
+                "BUTTON": 3
+              }
+            }
+          }
+        },
+        "items": {
+          "indicatorMissing": [
+            {
+              "tagName": "IFRAME",
+              "text": ""
+            },
+            {
+              "tagName": "INPUT",
+              "text": ""
+            },
+            {
+              "tagName": "A",
+              "text": "Our Approach"
+            }
+          ],
+          "nonOutlinePresent": [],
+          "outlinePresent": [
+            {
+              "tagName": "A",
+              "text": "Powered by Cookiebot",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Consent",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Details",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "About",
+              "delay": 101
+            },
+            {
+              "tagName": "INPUT",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "INPUT",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "INPUT",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Deny",
+              "delay": 104
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Allow selection",
+              "delay": 100
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Allow all",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Skip To...",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Customers",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "About",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "Services",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Resources",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Contact",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "Login",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 104
+            },
+            {
+              "tagName": "A",
+              "text": "Discover key tips and strategies",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "Feature Tour",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Post & Live Video Captioning",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Post production or real time captioning for virtually all types of applications and media sources.",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Audio Description",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Innovative extended audio description for accessible video that meets WCAG 2.0 standards.",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Video Encoding",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Provide subtitles and captions on an even wider range of devices and players.",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Caption Translations",
+              "delay": 107
+            },
+            {
+              "tagName": "A",
+              "text": "Reach international audiences and ensure accessibility compliance in additional languages.",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Transcription",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "Word-for-word transcripts for meetings, classroom sessions and video in as little as eight hours.",
+              "delay": 104
+            },
+            {
+              "tagName": "A",
+              "text": "Other Services",
+              "delay": 104
+            },
+            {
+              "tagName": "A",
+              "text": "Result review, DVD/MP4 Transfer, Copy Edit, video SEO, integration assistance, and more.",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "About AST",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "Our Approach:",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Benefits:",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "The Process",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Why Caption?",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Join Us",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Our Blog",
+              "delay": 114
+            },
+            {
+              "tagName": "A",
+              "text": "View Case Studies",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Get Started",
+              "delay": 123
+            },
+            {
+              "tagName": "A",
+              "text": "get started",
+              "delay": 110
+            },
+            {
+              "tagName": "A",
+              "text": "Get Pricing",
+              "delay": 129
+            },
+            {
+              "tagName": "A",
+              "text": "Home",
+              "delay": 116
+            },
+            {
+              "tagName": "A",
+              "text": "Login",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Support",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Get Pricing",
+              "delay": 104
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility Statement",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "FAQ",
+              "delay": 104
+            },
+            {
+              "tagName": "A",
+              "text": "Sitemap",
+              "delay": 104
+            },
+            {
+              "tagName": "A",
+              "text": "Privacy Policy",
+              "delay": 104
+            },
+            {
+              "tagName": "A",
+              "text": "Contact Us",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Get Started",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Hosting Online Events? 8 Best Practices for Museums & Libraries",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "5 Online Learning Tips for Boosting Student Engagement",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Assistive Technologies For Students with Low Vision",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 109
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 103
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.automaticsync.com/captionsync/",
+      "what": "URL",
+      "result": "https://www.automaticsync.com/captionsync/"
+    },
+    {
+      "type": "test",
+      "which": "hover",
+      "headSize": 20,
+      "headSampleSize": 20,
+      "tailSampleSize": 15,
+      "withItems": true,
+      "what": "hover-caused content changes",
+      "url": "https://www.automaticsync.com/captionsync/",
+      "result": {
+        "totals": {
+          "triggers": 79,
+          "headTriggers": 20,
+          "tailTriggers": 59,
+          "impactTriggers": 16,
+          "additions": 125,
+          "removals": 0,
+          "opacityChanges": 3,
+          "opacityImpact": 0,
+          "unhoverables": 3
+        },
+        "items": {
+          "head": {
+            "impactTriggers": [
+              {
+                "tagName": "BUTTON",
+                "text": "Deny",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "BUTTON",
+                "text": "Allowselection",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "BUTTON",
+                "text": "Allowall",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "LI",
+                "text": "CustomersCaseStudiesEducationSolutionsCorporateSol",
+                "additions": 9,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "A",
+                "text": "Customers",
+                "additions": 9,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "LI",
+                "text": "AboutOurCompanyASTValuesCareersPartners",
+                "additions": 9,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "A",
+                "text": "About",
+                "additions": 9,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "LI",
+                "text": "ServicesFeatureTourHowitWorksCaptioningIntegration",
+                "additions": 11,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "A",
+                "text": "Services",
+                "additions": 11,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "LI",
+                "text": "ResourcesSupportBenefitsofCaptioningandDescription",
+                "additions": 13,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "A",
+                "text": "Resources",
+                "additions": 13,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "LI",
+                "text": "ContactGetPricingScheduleaDemoorConsultationSuppor",
+                "additions": 13,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              }
+            ],
+            "unhoverables": [
+              {
+                "tagName": "A",
+                "id": "drop4",
+                "text": "SkipTo..."
+              }
+            ]
+          },
+          "tail": {
+            "impactTriggers": [
+              {
+                "tagName": "A",
+                "text": "Login",
+                "additions": 7,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              }
+            ],
+            "unhoverables": [
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Postproductionorrealtimecaptioningforvirtuallyallt"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Resultreview,DVD/MP4Transfer,CopyEdit,videoSEO,int"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.automaticsync.com/captionsync/",
+      "what": "URL",
+      "result": "https://www.automaticsync.com/captionsync/"
+    },
+    {
+      "type": "test",
+      "which": "role",
+      "what": "roles",
+      "url": "https://www.automaticsync.com/captionsync/",
+      "result": {
+        "roleElements": 61,
+        "badRoleElements": 6,
+        "redundantRoleElements": 2,
+        "tagNames": {
+          "DIV": {
+            "complementary": {
+              "bad": 1,
+              "redundant": 0
+            }
+          },
+          "A": {
+            "button": {
+              "bad": 1,
+              "redundant": 0
+            }
+          },
+          "LI": {
+            "separator": {
+              "bad": 2,
+              "redundant": 0
+            }
+          },
+          "HEADER": {
+            "banner": {
+              "bad": 1,
+              "redundant": 0
+            }
+          },
+          "NAV": {
+            "navigation": {
+              "bad": 0,
+              "redundant": 1
+            }
+          },
+          "MAIN": {
+            "main": {
+              "bad": 0,
+              "redundant": 1
+            }
+          },
+          "FOOTER": {
+            "contentinfo": {
+              "bad": 1,
+              "redundant": 0
+            }
+          }
+        }
+      }
+    }
+  ],
+  "timeStamp": "49li4",
+  "startTime": "2022-07-16T21:36:49",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "hover",
+      44
+    ],
+    [
+      "focInd",
+      7
+    ],
+    [
+      "role",
+      0
+    ]
+  ],
+  "logCount": 9,
+  "logSize": 443,
+  "errorLogCount": 3,
+  "errorLogSize": 234,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-16T21:38:04",
+  "elapsedSeconds": 75
+}

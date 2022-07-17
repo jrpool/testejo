@@ -1,0 +1,546 @@
+{
+  "id": "49li4-holistica11y",
+  "host": {
+    "id": "holistica11y",
+    "which": "https://holistica11y.com/",
+    "what": "HolisticA11Y"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-16T21:52:55"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-16T21:54:00"
+    }
+  ],
+  "script": {
+    "id": "tp12",
+    "what": "Alfa, Axe, HTML CodeSniffer, IBM, Tenon, WAVE, and 16 custom tests",
+    "strict": true,
+    "timeLimit": 150,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://holistica11y.com/",
+        "what": "HolisticA11Y"
+      },
+      {
+        "type": "test",
+        "which": "focInd",
+        "revealAll": false,
+        "allowedDelay": 250,
+        "withItems": true,
+        "what": "focus indicators"
+      },
+      {
+        "type": "test",
+        "which": "hover",
+        "headSize": 20,
+        "headSampleSize": 20,
+        "tailSampleSize": 15,
+        "withItems": true,
+        "what": "hover impacts"
+      },
+      {
+        "type": "test",
+        "which": "role",
+        "what": "validity and necessity of role assignments"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://holistica11y.com/",
+      "what": "HolisticA11Y",
+      "result": "https://holistica11y.com/"
+    },
+    {
+      "type": "test",
+      "which": "focInd",
+      "revealAll": false,
+      "allowedDelay": 250,
+      "withItems": true,
+      "what": "focus indicators",
+      "url": "https://holistica11y.com/",
+      "result": {
+        "totals": {
+          "total": 57,
+          "types": {
+            "indicatorMissing": {
+              "total": 2,
+              "tagNames": {
+                "INPUT": 1,
+                "BUTTON": 1
+              }
+            },
+            "nonOutlinePresent": {
+              "total": 0,
+              "tagNames": {}
+            },
+            "outlinePresent": {
+              "total": 55,
+              "meanDelay": 98,
+              "tagNames": {
+                "A": 50,
+                "INPUT": 3,
+                "TEXTAREA": 1,
+                "BUTTON": 1
+              }
+            }
+          }
+        },
+        "items": {
+          "indicatorMissing": [
+            {
+              "tagName": "INPUT",
+              "text": ""
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Subscribe"
+            }
+          ],
+          "nonOutlinePresent": [],
+          "outlinePresent": [
+            {
+              "tagName": "A",
+              "text": "Skip to content",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "HolisticA11Y",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Home",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "About",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Services",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Trainings",
+              "delay": 104
+            },
+            {
+              "tagName": "A",
+              "text": "Blog",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Contact",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Search",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility Audits",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility Consulting",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility Trainings",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "PERCEIVABLE",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "OPERABLE",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "UNDERSTANDABLE",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "ROBUST",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Color Contrast Checker",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Web Accessibility Checklist",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Website Accessibility Checker",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility Cost Calculator",
+              "delay": 101
+            },
+            {
+              "tagName": "INPUT",
+              "text": "",
+              "delay": 104
+            },
+            {
+              "tagName": "INPUT",
+              "text": "",
+              "delay": 101
+            },
+            {
+              "tagName": "INPUT",
+              "text": "",
+              "delay": 103
+            },
+            {
+              "tagName": "TEXTAREA",
+              "text": "",
+              "delay": 101
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Contact us",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Lets Start Your Project!",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility Audits",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility Consulting",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Accessible Website Design & Development",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility Remediation",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "VPATs and Accessibility Statements",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Web Accessibility Testing",
+              "delay": 104
+            },
+            {
+              "tagName": "A",
+              "text": "Web Accessibility For Designers",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "Web Accessibility For Developers",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Web Accessibility for Content Authors",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility Testing with Screen Readers",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "Free Color Contrast Checker",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Digital Accessibility Checklists and Cheat Sheets",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "Free Web Accessibility Checker",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility Cost Calculator",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "WCAG",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "ADA",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Section 508",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "AODA",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "EN 301 549",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Terms and Conditions",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Privacy Policy",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Careers",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Sitemap",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility Statement",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Facebook",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Twitter",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Instagram",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Linkedin",
+              "delay": 103
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://holistica11y.com/",
+      "what": "URL",
+      "result": "https://holistica11y.com/"
+    },
+    {
+      "type": "test",
+      "which": "hover",
+      "headSize": 20,
+      "headSampleSize": 20,
+      "tailSampleSize": 15,
+      "withItems": true,
+      "what": "hover-caused content changes",
+      "url": "https://holistica11y.com/",
+      "result": {
+        "totals": {
+          "triggers": 86,
+          "headTriggers": 20,
+          "tailTriggers": 66,
+          "impactTriggers": 5,
+          "additions": 46,
+          "removals": 22,
+          "opacityChanges": 0,
+          "opacityImpact": 0,
+          "unhoverables": 1
+        },
+        "items": {
+          "head": {
+            "impactTriggers": [
+              {
+                "tagName": "LI",
+                "text": "ServicesMenuToggleAccessibilityAuditsMenuToggleWeb",
+                "additions": 18,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "A",
+                "text": "Services",
+                "additions": 6,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "LI",
+                "text": "TrainingsMenuToggleWebAccessibilityTestingAccessib",
+                "additions": 16,
+                "removals": 12,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "A",
+                "text": "Trainings",
+                "additions": 6,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "LI",
+                "text": "Blog",
+                "additions": 0,
+                "removals": 10,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              }
+            ],
+            "unhoverables": [
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Skiptocontent"
+              }
+            ]
+          },
+          "tail": {
+            "impactTriggers": [],
+            "unhoverables": []
+          }
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://holistica11y.com/",
+      "what": "URL",
+      "result": "https://holistica11y.com/"
+    },
+    {
+      "type": "test",
+      "which": "role",
+      "what": "roles",
+      "url": "https://holistica11y.com/",
+      "result": {
+        "roleElements": 20,
+        "badRoleElements": 0,
+        "redundantRoleElements": 1,
+        "tagNames": {
+          "A": {
+            "link": {
+              "bad": 0,
+              "redundant": 1
+            }
+          }
+        }
+      }
+    }
+  ],
+  "timeStamp": "49li4",
+  "startTime": "2022-07-16T21:52:55",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "hover",
+      45
+    ],
+    [
+      "focInd",
+      7
+    ],
+    [
+      "role",
+      0
+    ]
+  ],
+  "logCount": 5,
+  "logSize": 748,
+  "errorLogCount": 2,
+  "errorLogSize": 610,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-16T21:54:00",
+  "elapsedSeconds": 64
+}

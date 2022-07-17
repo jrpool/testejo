@@ -1,0 +1,460 @@
+{
+  "id": "49ouy-webaim",
+  "host": {
+    "id": "webaim",
+    "which": "https://webaim.org/",
+    "what": "WebAIM"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-16T23:50:42"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-16T23:51:35"
+    }
+  ],
+  "script": {
+    "id": "tp12",
+    "what": "Alfa, Axe, HTML CodeSniffer, IBM, Tenon, WAVE, and 16 custom tests",
+    "strict": true,
+    "timeLimit": 150,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://webaim.org/",
+        "what": "WebAIM"
+      },
+      {
+        "type": "test",
+        "which": "focInd",
+        "revealAll": false,
+        "allowedDelay": 250,
+        "withItems": true,
+        "what": "focus indicators"
+      },
+      {
+        "type": "test",
+        "which": "hover",
+        "headSize": 20,
+        "headSampleSize": 20,
+        "tailSampleSize": 15,
+        "withItems": true,
+        "what": "hover impacts"
+      },
+      {
+        "type": "test",
+        "which": "role",
+        "what": "validity and necessity of role assignments"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://webaim.org/",
+      "what": "WebAIM",
+      "result": "https://webaim.org/"
+    },
+    {
+      "type": "test",
+      "which": "focInd",
+      "revealAll": false,
+      "allowedDelay": 250,
+      "withItems": true,
+      "what": "focus indicators",
+      "url": "https://webaim.org/",
+      "result": {
+        "totals": {
+          "total": 48,
+          "types": {
+            "indicatorMissing": {
+              "total": 1,
+              "tagNames": {
+                "A": 1
+              }
+            },
+            "nonOutlinePresent": {
+              "total": 0,
+              "tagNames": {}
+            },
+            "outlinePresent": {
+              "total": 47,
+              "meanDelay": 10,
+              "tagNames": {
+                "A": 43,
+                "INPUT": 4
+              }
+            }
+          }
+        },
+        "items": {
+          "indicatorMissing": [
+            {
+              "tagName": "A",
+              "text": "skip to main content"
+            }
+          ],
+          "nonOutlinePresent": [],
+          "outlinePresent": [
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Services",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Articles",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Resources",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Projects",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Community",
+              "delay": 0
+            },
+            {
+              "tagName": "INPUT",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "INPUT",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Introduction to Web Accessibility",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "WebAIM Training",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility Training",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Technical Assistance",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Accessible Site Certification",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Evaluation and Reporting",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "WebAIM Blog",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Newsletter",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "E-mail Discussion List",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Twitter",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Read the WebAIM Million report",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Web Accessibility Evaluation Guide",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Read the survey results",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Archive of featured items…",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Document Accessibility Online Course",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "July cohort",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Web Accessibility Virtual Training",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Zoom Accessibility Workshop",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "AHEAD Equity and Excellence Conference",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Web Accessibility in Mind Conference",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Accessing Higher Ground",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "435.797.7024",
+              "delay": 0
+            },
+            {
+              "tagName": "INPUT",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "INPUT",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Flexbox and the Screen Reader Experience",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Tips for Accessible Screen Sharing",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "The WebAIM Million - 2022 Update",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Introducing the Accessibility IMpact (AIM) Score and Other WAVE Updates",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "WebAIM Training",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "WCAG 2 Checklist",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "WebAIM Monthly Newsletter",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Color Contrast Checker",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Web Accessibility for Designers",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "WAVE Web Accessibility Evaluation Tool",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Contact",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "About",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "RSS Feeds",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Twitter",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Copyright & Terms of Use",
+              "delay": 0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://webaim.org/",
+      "what": "URL",
+      "result": "https://webaim.org/"
+    },
+    {
+      "type": "test",
+      "which": "hover",
+      "headSize": 20,
+      "headSampleSize": 20,
+      "tailSampleSize": 15,
+      "withItems": true,
+      "what": "hover-caused content changes",
+      "url": "https://webaim.org/",
+      "result": {
+        "totals": {
+          "triggers": 74,
+          "headTriggers": 20,
+          "tailTriggers": 54,
+          "impactTriggers": 1,
+          "additions": 0,
+          "removals": 0,
+          "opacityChanges": 1,
+          "opacityImpact": 0,
+          "unhoverables": 1
+        },
+        "items": {
+          "head": {
+            "impactTriggers": [
+              {
+                "tagName": "A",
+                "text": "<imgsrc=\"/media/logo.png\"width=\"315\"height=\"83\"alt",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 0
+              }
+            ],
+            "unhoverables": [
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "skiptomaincontent"
+              }
+            ]
+          },
+          "tail": {
+            "impactTriggers": [],
+            "unhoverables": []
+          }
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://webaim.org/",
+      "what": "URL",
+      "result": "https://webaim.org/"
+    },
+    {
+      "type": "test",
+      "which": "role",
+      "what": "roles",
+      "url": "https://webaim.org/",
+      "result": {
+        "roleElements": 1,
+        "badRoleElements": 0,
+        "redundantRoleElements": 0,
+        "tagNames": {}
+      }
+    }
+  ],
+  "timeStamp": "49ouy",
+  "startTime": "2022-07-16T23:50:42",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "hover",
+      47
+    ],
+    [
+      "focInd",
+      1
+    ],
+    [
+      "role",
+      0
+    ]
+  ],
+  "logCount": 0,
+  "logSize": 0,
+  "errorLogCount": 0,
+  "errorLogSize": 0,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-16T23:51:35",
+  "elapsedSeconds": 52
+}

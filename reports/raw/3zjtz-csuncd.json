@@ -1317,8 +1317,8 @@
           "triggers": 63,
           "headTriggers": 20,
           "tailTriggers": 43,
-          "impactTriggers": 0,
-          "additions": 0,
+          "impactTriggers": 3,
+          "additions": 38,
           "removals": 0,
           "opacityChanges": 0,
           "opacityImpact": 0,
@@ -1326,7 +1326,32 @@
         },
         "items": {
           "head": {
-            "impactTriggers": [],
+            "impactTriggers": [
+              {
+                "tagName": "LI",
+                "text": "ConferenceConferenceMainGeneralCallforPresentation",
+                "additions": 14,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "A",
+                "text": "Conference",
+                "additions": 14,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "LI",
+                "text": "JournalJournalMainJournalCallforPapersAwardsPrevio",
+                "additions": 10,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              }
+            ],
             "unhoverables": []
           },
           "tail": {
@@ -1627,9 +1652,13 @@
       "result": {
         "roleElements": 29,
         "badRoleElements": 1,
+        "redundantRoleElements": 0,
         "tagNames": {
           "HEADER": {
-            "banner": 1
+            "banner": {
+              "bad": 1,
+              "redundant": 0
+            }
           }
         }
       }

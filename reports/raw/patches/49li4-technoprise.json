@@ -1,0 +1,377 @@
+{
+  "id": "49li4-technoprise",
+  "host": {
+    "id": "technoprise",
+    "which": "https://technopriseglobal.com/",
+    "what": "Technoprise"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-16T22:06:26"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-16T22:07:27"
+    }
+  ],
+  "script": {
+    "id": "tp12",
+    "what": "Alfa, Axe, HTML CodeSniffer, IBM, Tenon, WAVE, and 16 custom tests",
+    "strict": true,
+    "timeLimit": 150,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://technopriseglobal.com/",
+        "what": "Technoprise"
+      },
+      {
+        "type": "test",
+        "which": "focInd",
+        "revealAll": false,
+        "allowedDelay": 250,
+        "withItems": true,
+        "what": "focus indicators"
+      },
+      {
+        "type": "test",
+        "which": "hover",
+        "headSize": 20,
+        "headSampleSize": 20,
+        "tailSampleSize": 15,
+        "withItems": true,
+        "what": "hover impacts"
+      },
+      {
+        "type": "test",
+        "which": "role",
+        "what": "validity and necessity of role assignments"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://technopriseglobal.com/",
+      "what": "Technoprise",
+      "result": "https://technopriseglobal.com/"
+    },
+    {
+      "type": "test",
+      "which": "focInd",
+      "revealAll": false,
+      "allowedDelay": 250,
+      "withItems": true,
+      "what": "focus indicators",
+      "url": "https://technopriseglobal.com/",
+      "result": {
+        "totals": {
+          "total": 29,
+          "types": {
+            "indicatorMissing": {
+              "total": 0,
+              "tagNames": {}
+            },
+            "nonOutlinePresent": {
+              "total": 4,
+              "tagNames": {
+                "A": 2,
+                "INPUT": 1,
+                "BUTTON": 1
+              }
+            },
+            "outlinePresent": {
+              "total": 25,
+              "meanDelay": 25,
+              "tagNames": {
+                "A": 24,
+                "DIV": 1
+              }
+            }
+          }
+        },
+        "items": {
+          "indicatorMissing": [],
+          "nonOutlinePresent": [
+            {
+              "tagName": "A",
+              "text": "FREE RISK ASSESSMENT"
+            },
+            {
+              "tagName": "A",
+              "text": "REQUEST CONSULTATION"
+            },
+            {
+              "tagName": "INPUT",
+              "text": ""
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Subscribe"
+            }
+          ],
+          "outlinePresent": [
+            {
+              "tagName": "A",
+              "text": "Skip to content",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Home",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Services",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Compliance",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "About",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Career",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Contact Us",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Learn More",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Learn More",
+              "delay": 105
+            },
+            {
+              "tagName": "A",
+              "text": "Learn More",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "Learn More",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Learn More",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Learn More",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "About Us",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Services",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Contact Us",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Careers",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "DIV",
+              "text": "Copyright All rights reserved",
+              "delay": 0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://technopriseglobal.com/",
+      "what": "URL",
+      "result": "https://technopriseglobal.com/"
+    },
+    {
+      "type": "test",
+      "which": "hover",
+      "headSize": 20,
+      "headSampleSize": 20,
+      "tailSampleSize": 15,
+      "withItems": true,
+      "what": "hover-caused content changes",
+      "url": "https://technopriseglobal.com/",
+      "result": {
+        "totals": {
+          "triggers": 42,
+          "headTriggers": 20,
+          "tailTriggers": 22,
+          "impactTriggers": 1,
+          "additions": 0,
+          "removals": 0,
+          "opacityChanges": 1,
+          "opacityImpact": 13,
+          "unhoverables": 0
+        },
+        "items": {
+          "head": {
+            "impactTriggers": [
+              {
+                "tagName": "A",
+                "text": "Skiptocontent",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 13
+              }
+            ],
+            "unhoverables": []
+          },
+          "tail": {
+            "impactTriggers": [],
+            "unhoverables": []
+          }
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://technopriseglobal.com/",
+      "what": "URL",
+      "result": "https://technopriseglobal.com/"
+    },
+    {
+      "type": "test",
+      "which": "role",
+      "what": "roles",
+      "url": "https://technopriseglobal.com/",
+      "result": {
+        "roleElements": 6,
+        "badRoleElements": 2,
+        "redundantRoleElements": 1,
+        "tagNames": {
+          "MAIN": {
+            "main": {
+              "bad": 0,
+              "redundant": 1
+            }
+          },
+          "DIV": {
+            "complementary": {
+              "bad": 1,
+              "redundant": 0
+            }
+          },
+          "FOOTER": {
+            "contentinfo": {
+              "bad": 1,
+              "redundant": 0
+            }
+          }
+        }
+      }
+    }
+  ],
+  "timeStamp": "49li4",
+  "startTime": "2022-07-16T22:06:26",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "hover",
+      50
+    ],
+    [
+      "focInd",
+      2
+    ],
+    [
+      "role",
+      0
+    ]
+  ],
+  "logCount": 7,
+  "logSize": 1170,
+  "errorLogCount": 4,
+  "errorLogSize": 1032,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-16T22:07:27",
+  "elapsedSeconds": 61
+}

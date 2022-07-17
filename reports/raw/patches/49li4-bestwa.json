@@ -1,0 +1,827 @@
+{
+  "id": "49li4-bestwa",
+  "host": {
+    "id": "bestwa",
+    "which": "https://bestwebsiteaccessibility.com/",
+    "what": "Best Website Accessibility"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-16T21:41:04"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-16T21:42:51"
+    }
+  ],
+  "script": {
+    "id": "tp12",
+    "what": "Alfa, Axe, HTML CodeSniffer, IBM, Tenon, WAVE, and 16 custom tests",
+    "strict": true,
+    "timeLimit": 150,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://bestwebsiteaccessibility.com/",
+        "what": "Best Website Accessibility"
+      },
+      {
+        "type": "test",
+        "which": "focInd",
+        "revealAll": false,
+        "allowedDelay": 250,
+        "withItems": true,
+        "what": "focus indicators"
+      },
+      {
+        "type": "test",
+        "which": "hover",
+        "headSize": 20,
+        "headSampleSize": 20,
+        "tailSampleSize": 15,
+        "withItems": true,
+        "what": "hover impacts"
+      },
+      {
+        "type": "test",
+        "which": "role",
+        "what": "validity and necessity of role assignments"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://bestwebsiteaccessibility.com/",
+      "what": "Best Website Accessibility",
+      "result": "https://bestwebsiteaccessibility.com/"
+    },
+    {
+      "type": "test",
+      "which": "focInd",
+      "revealAll": false,
+      "allowedDelay": 250,
+      "withItems": true,
+      "what": "focus indicators",
+      "url": "https://bestwebsiteaccessibility.com/",
+      "result": {
+        "totals": {
+          "total": 141,
+          "types": {
+            "indicatorMissing": {
+              "total": 141,
+              "tagNames": {
+                "A": 141
+              }
+            },
+            "nonOutlinePresent": {
+              "total": 0,
+              "tagNames": {}
+            },
+            "outlinePresent": {
+              "total": 0,
+              "meanDelay": 0,
+              "tagNames": {}
+            }
+          }
+        },
+        "items": {
+          "indicatorMissing": [
+            {
+              "tagName": "A",
+              "text": ""
+            },
+            {
+              "tagName": "A",
+              "text": "News"
+            },
+            {
+              "tagName": "A",
+              "text": "Best Solution"
+            },
+            {
+              "tagName": "A",
+              "text": "Popular"
+            },
+            {
+              "tagName": "A",
+              "text": "Best Web Accessibility Solutions in 2022 (Updated)"
+            },
+            {
+              "tagName": "A",
+              "text": "Best Free Solutions"
+            },
+            {
+              "tagName": "A",
+              "text": "Best Solution Mobile Device"
+            },
+            {
+              "tagName": "A",
+              "text": "Best Web Solutions for Web Agencies"
+            },
+            {
+              "tagName": "A",
+              "text": "Best Web Solutions With Artificial Intelligence"
+            },
+            {
+              "tagName": "A",
+              "text": "Location"
+            },
+            {
+              "tagName": "A",
+              "text": "Australia"
+            },
+            {
+              "tagName": "A",
+              "text": "Canada"
+            },
+            {
+              "tagName": "A",
+              "text": "Europe"
+            },
+            {
+              "tagName": "A",
+              "text": "The United Kingdom"
+            },
+            {
+              "tagName": "A",
+              "text": "The United States"
+            },
+            {
+              "tagName": "A",
+              "text": "Platform"
+            },
+            {
+              "tagName": "A",
+              "text": "Shopify"
+            },
+            {
+              "tagName": "A",
+              "text": "Squarespace"
+            },
+            {
+              "tagName": "A",
+              "text": "WIX"
+            },
+            {
+              "tagName": "A",
+              "text": "WordPress"
+            },
+            {
+              "tagName": "A",
+              "text": "PrestaShop"
+            },
+            {
+              "tagName": "A",
+              "text": "HubSpot"
+            },
+            {
+              "tagName": "A",
+              "text": "Checkers"
+            },
+            {
+              "tagName": "A",
+              "text": "ATAG 2.0 Report Testing Tool"
+            },
+            {
+              "tagName": "A",
+              "text": "AudioEye Conformance Evaluation & Report"
+            },
+            {
+              "tagName": "A",
+              "text": "EqualWeb Accessibility Checker Tool"
+            },
+            {
+              "tagName": "A",
+              "text": "UserWay Initial Scanner Tool"
+            },
+            {
+              "tagName": "A",
+              "text": "Compliance"
+            },
+            {
+              "tagName": "A",
+              "text": "US • ADA Compliance"
+            },
+            {
+              "tagName": "A",
+              "text": "Canada • AODA Compliance"
+            },
+            {
+              "tagName": "A",
+              "text": "EU • EN301549 Compliance"
+            },
+            {
+              "tagName": "A",
+              "text": "EU • GDPR Compliance"
+            },
+            {
+              "tagName": "A",
+              "text": "US • Section 508 Compliance"
+            },
+            {
+              "tagName": "A",
+              "text": "Globally • WCAG Compliance"
+            },
+            {
+              "tagName": "A",
+              "text": "Industry"
+            },
+            {
+              "tagName": "A",
+              "text": "Banking and Financial Insurance"
+            },
+            {
+              "tagName": "A",
+              "text": "Consumer and Retail Sector"
+            },
+            {
+              "tagName": "A",
+              "text": "Healthcare and Medical Sector"
+            },
+            {
+              "tagName": "A",
+              "text": "Hospitality Sector"
+            },
+            {
+              "tagName": "A",
+              "text": "Digital Sector"
+            },
+            {
+              "tagName": "A",
+              "text": "See all categories"
+            },
+            {
+              "tagName": "A",
+              "text": "Reviews"
+            },
+            {
+              "tagName": "A",
+              "text": "Popular"
+            },
+            {
+              "tagName": "A",
+              "text": "AccessiBe"
+            },
+            {
+              "tagName": "A",
+              "text": "Equally AI"
+            },
+            {
+              "tagName": "A",
+              "text": "EqualWeb"
+            },
+            {
+              "tagName": "A",
+              "text": "UserWay"
+            },
+            {
+              "tagName": "A",
+              "text": "Max Access"
+            },
+            {
+              "tagName": "A",
+              "text": "Hybrid"
+            },
+            {
+              "tagName": "A",
+              "text": "AudioEye Review"
+            },
+            {
+              "tagName": "A",
+              "text": "Compliance Sheriff Review"
+            },
+            {
+              "tagName": "A",
+              "text": "Deque"
+            },
+            {
+              "tagName": "A",
+              "text": "Essential Accessibility Review"
+            },
+            {
+              "tagName": "A",
+              "text": "Interactive Accessibility Review"
+            },
+            {
+              "tagName": "A",
+              "text": "OnlineADA Review"
+            },
+            {
+              "tagName": "A",
+              "text": "UsableNet Review"
+            },
+            {
+              "tagName": "A",
+              "text": "User1st Review"
+            },
+            {
+              "tagName": "A",
+              "text": "Comparison"
+            },
+            {
+              "tagName": "A",
+              "text": "Comparison Articles"
+            },
+            {
+              "tagName": "A",
+              "text": "Equally vs Adally Comparison"
+            },
+            {
+              "tagName": "A",
+              "text": "EqualWeb, AudioEye & AccessiBe"
+            },
+            {
+              "tagName": "A",
+              "text": "UserWay, User1st & UsableNet"
+            },
+            {
+              "tagName": "A",
+              "text": "EqualWeb vs Adally"
+            },
+            {
+              "tagName": "A",
+              "text": "UserWay vs AccessiBe"
+            },
+            {
+              "tagName": "A",
+              "text": "See all reviews"
+            },
+            {
+              "tagName": "A",
+              "text": "Guides"
+            },
+            {
+              "tagName": "A",
+              "text": "Disabilities"
+            },
+            {
+              "tagName": "A",
+              "text": "English"
+            },
+            {
+              "tagName": "A",
+              "text": "Compare now"
+            },
+            {
+              "tagName": "A",
+              "text": "100% website compliance due to Machine Learning 9.7 Learn More"
+            },
+            {
+              "tagName": "A",
+              "text": "Quick, Efficient and Affordable Solution to Full Accessibility 9.6 Learn More"
+            },
+            {
+              "tagName": "A",
+              "text": "Trusted free AI-powered accessibility widget 9.5 Learn More"
+            },
+            {
+              "tagName": "A",
+              "text": ""
+            },
+            {
+              "tagName": "A",
+              "text": "Read more"
+            },
+            {
+              "tagName": "A",
+              "text": "Visit accessiBe"
+            },
+            {
+              "tagName": "A",
+              "text": ""
+            },
+            {
+              "tagName": "A",
+              "text": ""
+            },
+            {
+              "tagName": "A",
+              "text": ""
+            },
+            {
+              "tagName": "A",
+              "text": ""
+            },
+            {
+              "tagName": "A",
+              "text": ""
+            },
+            {
+              "tagName": "A",
+              "text": ""
+            },
+            {
+              "tagName": "A",
+              "text": "Read more"
+            },
+            {
+              "tagName": "A",
+              "text": "Visit Equally AI"
+            },
+            {
+              "tagName": "A",
+              "text": ""
+            },
+            {
+              "tagName": "A",
+              "text": ""
+            },
+            {
+              "tagName": "A",
+              "text": ""
+            },
+            {
+              "tagName": "A",
+              "text": ""
+            },
+            {
+              "tagName": "A",
+              "text": ""
+            },
+            {
+              "tagName": "A",
+              "text": "Read more"
+            },
+            {
+              "tagName": "A",
+              "text": "Visit UserWay"
+            },
+            {
+              "tagName": "A",
+              "text": ""
+            },
+            {
+              "tagName": "A",
+              "text": ""
+            },
+            {
+              "tagName": "A",
+              "text": ""
+            },
+            {
+              "tagName": "A",
+              "text": ""
+            },
+            {
+              "tagName": "A",
+              "text": ""
+            },
+            {
+              "tagName": "A",
+              "text": ""
+            },
+            {
+              "tagName": "A",
+              "text": ""
+            },
+            {
+              "tagName": "A",
+              "text": "Read more"
+            },
+            {
+              "tagName": "A",
+              "text": "Visit EqualWeb"
+            },
+            {
+              "tagName": "A",
+              "text": ""
+            },
+            {
+              "tagName": "A",
+              "text": "Read more"
+            },
+            {
+              "tagName": "A",
+              "text": "Visit Max Access"
+            },
+            {
+              "tagName": "A",
+              "text": ""
+            },
+            {
+              "tagName": "A",
+              "text": "Read more"
+            },
+            {
+              "tagName": "A",
+              "text": ""
+            },
+            {
+              "tagName": "A",
+              "text": "Read more"
+            },
+            {
+              "tagName": "A",
+              "text": ""
+            },
+            {
+              "tagName": "A",
+              "text": "Read more"
+            },
+            {
+              "tagName": "A",
+              "text": ""
+            },
+            {
+              "tagName": "A",
+              "text": "Read more"
+            },
+            {
+              "tagName": "A",
+              "text": ""
+            },
+            {
+              "tagName": "A",
+              "text": "Read more"
+            },
+            {
+              "tagName": "A",
+              "text": "Compare now"
+            },
+            {
+              "tagName": "A",
+              "text": "Equally vs UserWay: Digital Accessibility Solutions Comparison Review 2022"
+            },
+            {
+              "tagName": "A",
+              "text": ""
+            },
+            {
+              "tagName": "A",
+              "text": "Read More"
+            },
+            {
+              "tagName": "A",
+              "text": "What is Section 504 and How Does it Relate to Web Accessibility?"
+            },
+            {
+              "tagName": "A",
+              "text": ""
+            },
+            {
+              "tagName": "A",
+              "text": "Read More"
+            },
+            {
+              "tagName": "A",
+              "text": "Web Accessibility Barriers and How to Overcome Them"
+            },
+            {
+              "tagName": "A",
+              "text": ""
+            },
+            {
+              "tagName": "A",
+              "text": "Read More"
+            },
+            {
+              "tagName": "A",
+              "text": "What is Web Accessibility Compliance and What Regulations Should I Follow?"
+            },
+            {
+              "tagName": "A",
+              "text": ""
+            },
+            {
+              "tagName": "A",
+              "text": "Read More"
+            },
+            {
+              "tagName": "A",
+              "text": "Web Accessibility: What Does it Mean?"
+            },
+            {
+              "tagName": "A",
+              "text": ""
+            },
+            {
+              "tagName": "A",
+              "text": "Read More"
+            },
+            {
+              "tagName": "A",
+              "text": ""
+            },
+            {
+              "tagName": "A",
+              "text": "About Us"
+            },
+            {
+              "tagName": "A",
+              "text": "Partner with us"
+            },
+            {
+              "tagName": "A",
+              "text": "Contact"
+            },
+            {
+              "tagName": "A",
+              "text": "Our Review Process"
+            },
+            {
+              "tagName": "A",
+              "text": ""
+            },
+            {
+              "tagName": "A",
+              "text": ""
+            },
+            {
+              "tagName": "A",
+              "text": ""
+            },
+            {
+              "tagName": "A",
+              "text": "Advertising Disclosure"
+            },
+            {
+              "tagName": "A",
+              "text": "Cookie Policy"
+            },
+            {
+              "tagName": "A",
+              "text": "Privacy Policy"
+            },
+            {
+              "tagName": "A",
+              "text": "Terms of Use"
+            },
+            {
+              "tagName": "A",
+              "text": "42studio.io"
+            }
+          ],
+          "nonOutlinePresent": [],
+          "outlinePresent": []
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://bestwebsiteaccessibility.com/",
+      "what": "URL",
+      "result": "https://bestwebsiteaccessibility.com/"
+    },
+    {
+      "type": "test",
+      "which": "hover",
+      "headSize": 20,
+      "headSampleSize": 20,
+      "tailSampleSize": 15,
+      "withItems": true,
+      "what": "hover-caused content changes",
+      "url": "https://bestwebsiteaccessibility.com/",
+      "result": {
+        "totals": {
+          "triggers": 216,
+          "headTriggers": 20,
+          "tailTriggers": 196,
+          "impactTriggers": 14,
+          "additions": 0,
+          "removals": 0,
+          "opacityChanges": 28,
+          "opacityImpact": 28,
+          "unhoverables": 7
+        },
+        "items": {
+          "head": {
+            "impactTriggers": [
+              {
+                "tagName": "A",
+                "text": "<imgwidth=\"1\"height=\"1\"src=\"/wp-content/uploads/20",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 2,
+                "opacityImpact": 2
+              }
+            ],
+            "unhoverables": []
+          },
+          "tail": {
+            "impactTriggers": [
+              {
+                "tagName": "A",
+                "text": "Comparenow",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 2,
+                "opacityImpact": 2
+              }
+            ],
+            "unhoverables": [
+              {
+                "tagName": "LI",
+                "id": "menu-item-8010",
+                "text": "ComplianceSheriffReview"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Hybrid"
+              },
+              {
+                "tagName": "LI",
+                "id": "menu-item-765",
+                "text": "TheUnitedKingdom"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "UserWay"
+              },
+              {
+                "tagName": "LI",
+                "id": "menu-item-4156",
+                "text": "EqualWebvsAdally"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Seeallcategories"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "PrestaShop"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://bestwebsiteaccessibility.com/",
+      "what": "URL",
+      "result": "https://bestwebsiteaccessibility.com/"
+    },
+    {
+      "type": "test",
+      "which": "role",
+      "what": "roles",
+      "url": "https://bestwebsiteaccessibility.com/",
+      "result": {
+        "roleElements": 11,
+        "badRoleElements": 2,
+        "redundantRoleElements": 0,
+        "tagNames": {
+          "P": {
+            "status": {
+              "bad": 2,
+              "redundant": 0
+            }
+          }
+        }
+      }
+    }
+  ],
+  "timeStamp": "49li4",
+  "startTime": "2022-07-16T21:41:04",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "hover",
+      53
+    ],
+    [
+      "focInd",
+      43
+    ],
+    [
+      "role",
+      0
+    ]
+  ],
+  "logCount": 12,
+  "logSize": 1521,
+  "errorLogCount": 3,
+  "errorLogSize": 915,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-16T21:42:51",
+  "elapsedSeconds": 106
+}

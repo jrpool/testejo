@@ -303,15 +303,15 @@
           "total": 78,
           "types": {
             "indicatorMissing": {
-              "total": 0,
-              "tagNames": {}
-            },
-            "nonOutlinePresent": {
               "total": 11,
               "tagNames": {
                 "A": 9,
                 "IFRAME": 2
               }
+            },
+            "nonOutlinePresent": {
+              "total": 0,
+              "tagNames": {}
             },
             "outlinePresent": {
               "total": 67,
@@ -323,8 +323,7 @@
           }
         },
         "items": {
-          "indicatorMissing": [],
-          "nonOutlinePresent": [
+          "indicatorMissing": [
             {
               "tagName": "A",
               "text": "About MBS"
@@ -370,6 +369,7 @@
               "text": ""
             }
           ],
+          "nonOutlinePresent": [],
           "outlinePresent": [
             {
               "tagName": "A",
@@ -2126,10 +2126,10 @@
           "headTriggers": 20,
           "tailTriggers": 76,
           "impactTriggers": 8,
-          "additions": 0,
+          "additions": 86,
           "removals": 0,
-          "opacityChanges": 8,
-          "opacityImpact": 78,
+          "opacityChanges": 0,
+          "opacityImpact": 0,
           "unhoverables": 1
         },
         "items": {
@@ -2138,66 +2138,66 @@
               {
                 "tagName": "LI",
                 "text": "AboutMBSAboutUsStaffStrategicPartnersDonors",
-                "additions": 0,
+                "additions": 13,
                 "removals": 0,
-                "opacityChanges": 1,
-                "opacityImpact": 12
+                "opacityChanges": 0,
+                "opacityImpact": 0
               },
               {
                 "tagName": "A",
                 "text": "AboutMBS",
-                "additions": 0,
+                "additions": 13,
                 "removals": 0,
-                "opacityChanges": 1,
-                "opacityImpact": 12
+                "opacityChanges": 0,
+                "opacityImpact": 0
               },
               {
                 "tagName": "LI",
                 "text": "ServicesMarketingBrochure",
-                "additions": 0,
+                "additions": 4,
                 "removals": 0,
-                "opacityChanges": 1,
-                "opacityImpact": 3
+                "opacityChanges": 0,
+                "opacityImpact": 0
               },
               {
                 "tagName": "A",
                 "text": "Services",
-                "additions": 0,
+                "additions": 4,
                 "removals": 0,
-                "opacityChanges": 1,
-                "opacityImpact": 3
+                "opacityChanges": 0,
+                "opacityImpact": 0
               },
               {
                 "tagName": "LI",
                 "text": "ResourcesAdvocacy&RightsStateAgenciesfortheDisable",
-                "additions": 0,
+                "additions": 22,
                 "removals": 0,
-                "opacityChanges": 1,
-                "opacityImpact": 21
+                "opacityChanges": 0,
+                "opacityImpact": 0
               },
               {
                 "tagName": "A",
                 "text": "Resources",
-                "additions": 0,
+                "additions": 22,
                 "removals": 0,
-                "opacityChanges": 1,
-                "opacityImpact": 21
+                "opacityChanges": 0,
+                "opacityImpact": 0
               },
               {
                 "tagName": "LI",
                 "text": "OurStoreQuickBooksFAQs",
-                "additions": 0,
+                "additions": 4,
                 "removals": 0,
-                "opacityChanges": 1,
-                "opacityImpact": 3
+                "opacityChanges": 0,
+                "opacityImpact": 0
               },
               {
                 "tagName": "A",
                 "text": "OurStore",
-                "additions": 0,
+                "additions": 4,
                 "removals": 0,
-                "opacityChanges": 1,
-                "opacityImpact": 3
+                "opacityChanges": 0,
+                "opacityImpact": 0
               }
             ],
             "unhoverables": [
@@ -2551,9 +2551,13 @@
       "result": {
         "roleElements": 11,
         "badRoleElements": 1,
+        "redundantRoleElements": 0,
         "tagNames": {
           "A": {
-            "button": 1
+            "button": {
+              "bad": 1,
+              "redundant": 0
+            }
           }
         }
       }

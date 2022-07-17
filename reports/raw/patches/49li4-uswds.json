@@ -1,0 +1,659 @@
+{
+  "id": "49li4-uswds",
+  "host": {
+    "id": "uswds",
+    "which": "https://designsystem.digital.gov/documentation/accessibility/",
+    "what": "U.S. Web Design System"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-16T22:10:26"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-16T22:11:29"
+    }
+  ],
+  "script": {
+    "id": "tp12",
+    "what": "Alfa, Axe, HTML CodeSniffer, IBM, Tenon, WAVE, and 16 custom tests",
+    "strict": true,
+    "timeLimit": 150,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://designsystem.digital.gov/documentation/accessibility/",
+        "what": "U.S. Web Design System"
+      },
+      {
+        "type": "test",
+        "which": "focInd",
+        "revealAll": false,
+        "allowedDelay": 250,
+        "withItems": true,
+        "what": "focus indicators"
+      },
+      {
+        "type": "test",
+        "which": "hover",
+        "headSize": 20,
+        "headSampleSize": 20,
+        "tailSampleSize": 15,
+        "withItems": true,
+        "what": "hover impacts"
+      },
+      {
+        "type": "test",
+        "which": "role",
+        "what": "validity and necessity of role assignments"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://designsystem.digital.gov/documentation/accessibility/",
+      "what": "U.S. Web Design System",
+      "result": "https://designsystem.digital.gov/documentation/accessibility/"
+    },
+    {
+      "type": "test",
+      "which": "focInd",
+      "revealAll": false,
+      "allowedDelay": 250,
+      "withItems": true,
+      "what": "focus indicators",
+      "url": "https://designsystem.digital.gov/documentation/accessibility/",
+      "result": {
+        "totals": {
+          "total": 86,
+          "types": {
+            "indicatorMissing": {
+              "total": 0,
+              "tagNames": {}
+            },
+            "nonOutlinePresent": {
+              "total": 0,
+              "tagNames": {}
+            },
+            "outlinePresent": {
+              "total": 86,
+              "meanDelay": 7,
+              "tagNames": {
+                "A": 83,
+                "BUTTON": 2,
+                "INPUT": 1
+              }
+            }
+          }
+        },
+        "items": {
+          "indicatorMissing": [],
+          "nonOutlinePresent": [],
+          "outlinePresent": [
+            {
+              "tagName": "A",
+              "text": "Skip to main content",
+              "delay": 105
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Here’s how you know",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "USWDS U.S. Web Design System (USWDS)",
+              "delay": 0
+            },
+            {
+              "tagName": "INPUT",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Read website standards",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Download v3.0.2",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Github logo View on GitHub",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "How to use USWDS",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Design principles",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Components",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Design tokens",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Utilities",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Templates",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "About",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "How to use USWDS",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Getting started for developers",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Getting started for designers",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Documentation",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Settings",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "USWDS maturity model",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Common patterns USWDS addresses",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "What the design system does",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "What project teams should do",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility resources",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Performance guidelines",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Code guidelines",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Migrating to USWDS 3.0",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Migrating to USWDS 2.0",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Video tutorials",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Implementations",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Showcase",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Sample contract language for 21st Century IDEA",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Website standards",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "contribute to the community",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Usability testing on Digital.gov",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Getting started with usability testing",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Testing for plain-language usability",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "18F’s collection of human-centered design tools",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "The Section 508 accessibility program",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility for Teams guide",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Find your Section 508 Coordinator",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Section 508 ICT Testing Baseline",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Learn about writing in plain language",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Plain language resources",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "18F’s accessibility guide",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility Requirements Tool (ART) for contracting",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Understanding universal design",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Web Accessibility Perspectives Videos",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Inclusive design principles",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility fundamentals with Rob Dodson",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Microsoft’s inclusive design manual",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Inclusive components by Heydon Pickering",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Humane by design",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "your agency’s accessibility team",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "how people with disabilities use the web",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Revised 508 Standards",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "WCAG 2.0",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Section508.gov",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility for Teams",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "18F Accessibility Guide",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "inclusive design",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "plain language",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "headings",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "images",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "links",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Trusted Tester and ICT Testing Baseline",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility Requirements Tool",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "languages other than English",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Was this page helpful?",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Reach out in GitHub",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Find a channel that works for you",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Sign up for USWDS updates",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Email the USWDS team",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Visit v1.designsystem.digital.gov",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "General Services Administration",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "About GSA",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility support",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "FOIA requests",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "No FEAR Act data",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Office of the Inspector General",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Performance reports",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Privacy policy",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Visit USA.gov",
+              "delay": 0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://designsystem.digital.gov/documentation/accessibility/",
+      "what": "URL",
+      "result": "https://designsystem.digital.gov/documentation/accessibility/"
+    },
+    {
+      "type": "test",
+      "which": "hover",
+      "headSize": 20,
+      "headSampleSize": 20,
+      "tailSampleSize": 15,
+      "withItems": true,
+      "what": "hover-caused content changes",
+      "url": "https://designsystem.digital.gov/documentation/accessibility/",
+      "result": {
+        "totals": {
+          "triggers": 207,
+          "headTriggers": 20,
+          "tailTriggers": 187,
+          "impactTriggers": 0,
+          "additions": 0,
+          "removals": 0,
+          "opacityChanges": 0,
+          "opacityImpact": 0,
+          "unhoverables": 1
+        },
+        "items": {
+          "head": {
+            "impactTriggers": [],
+            "unhoverables": [
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Skiptomaincontent"
+              }
+            ]
+          },
+          "tail": {
+            "impactTriggers": [],
+            "unhoverables": []
+          }
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://designsystem.digital.gov/documentation/accessibility/",
+      "what": "URL",
+      "result": "https://designsystem.digital.gov/documentation/accessibility/"
+    },
+    {
+      "type": "test",
+      "which": "role",
+      "what": "roles",
+      "url": "https://designsystem.digital.gov/documentation/accessibility/",
+      "result": {
+        "roleElements": 14,
+        "badRoleElements": 2,
+        "redundantRoleElements": 1,
+        "tagNames": {
+          "HEADER": {
+            "banner": {
+              "bad": 1,
+              "redundant": 0
+            }
+          },
+          "NAV": {
+            "navigation": {
+              "bad": 0,
+              "redundant": 1
+            }
+          },
+          "SECTION": {
+            "complementary": {
+              "bad": 1,
+              "redundant": 0
+            }
+          }
+        }
+      }
+    }
+  ],
+  "timeStamp": "49li4",
+  "startTime": "2022-07-16T22:10:26",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "hover",
+      56
+    ],
+    [
+      "focInd",
+      1
+    ],
+    [
+      "role",
+      0
+    ]
+  ],
+  "logCount": 0,
+  "logSize": 0,
+  "errorLogCount": 0,
+  "errorLogSize": 0,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-16T22:11:29",
+  "elapsedSeconds": 63
+}

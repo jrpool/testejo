@@ -303,19 +303,20 @@
           "total": 83,
           "types": {
             "indicatorMissing": {
-              "total": 0,
-              "tagNames": {}
+              "total": 1,
+              "tagNames": {
+                "DIV": 1
+              }
             },
             "nonOutlinePresent": {
-              "total": 17,
+              "total": 16,
               "tagNames": {
-                "A": 16,
-                "DIV": 1
+                "A": 16
               }
             },
             "outlinePresent": {
               "total": 66,
-              "meanDelay": 81,
+              "meanDelay": 83,
               "tagNames": {
                 "A": 64,
                 "UL": 1,
@@ -325,7 +326,12 @@
           }
         },
         "items": {
-          "indicatorMissing": [],
+          "indicatorMissing": [
+            {
+              "tagName": "DIV",
+              "text": ""
+            }
+          ],
           "nonOutlinePresent": [
             {
               "tagName": "A",
@@ -390,17 +396,13 @@
             {
               "tagName": "A",
               "text": "Learn More about support form UX to code"
-            },
-            {
-              "tagName": "DIV",
-              "text": ""
             }
           ],
           "outlinePresent": [
             {
               "tagName": "A",
               "text": "eSSENTIAL Accessibility Company Logo to go to home page .cls-1-ea { fill: #0e3c60; } .cls-2-ea { fil",
-              "delay": 104
+              "delay": 103
             },
             {
               "tagName": "UL",
@@ -450,12 +452,12 @@
             {
               "tagName": "A",
               "text": "Login",
-              "delay": 101
+              "delay": 102
             },
             {
               "tagName": "A",
               "text": "Read the press release.",
-              "delay": 101
+              "delay": 102
             },
             {
               "tagName": "A",
@@ -465,27 +467,27 @@
             {
               "tagName": "A",
               "text": "ADA compliance",
-              "delay": 101
+              "delay": 102
             },
             {
               "tagName": "A",
               "text": "Watch the Video",
-              "delay": 101
+              "delay": 100
             },
             {
               "tagName": "A",
               "text": "WCAG, check",
-              "delay": 101
+              "delay": 102
             },
             {
               "tagName": "A",
               "text": "ADA, check",
-              "delay": 104
+              "delay": 101
             },
             {
               "tagName": "A",
               "text": "Section 508, check",
-              "delay": 101
+              "delay": 102
             },
             {
               "tagName": "A",
@@ -500,7 +502,7 @@
             {
               "tagName": "A",
               "text": "Overlays",
-              "delay": 104
+              "delay": 102
             },
             {
               "tagName": "A",
@@ -510,27 +512,27 @@
             {
               "tagName": "A",
               "text": "Learn about the challenges with other solutions",
-              "delay": 102
-            },
-            {
-              "tagName": "A",
-              "text": "Ready to get started? Request a Demo",
               "delay": 103
             },
             {
               "tagName": "A",
-              "text": "Solution Overview",
+              "text": "Ready to get started? Request a Demo",
               "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Solution Overview",
+              "delay": 102
             },
             {
               "tagName": "A",
               "text": "Accessibility Auditing & Testing",
-              "delay": 101
+              "delay": 103
             },
             {
               "tagName": "A",
               "text": "Governance & Reporting",
-              "delay": 102
+              "delay": 103
             },
             {
               "tagName": "A",
@@ -540,47 +542,47 @@
             {
               "tagName": "A",
               "text": "Developer Suite",
-              "delay": 102
+              "delay": 103
             },
             {
               "tagName": "A",
               "text": "Legal Expertise",
-              "delay": 100
+              "delay": 102
             },
             {
               "tagName": "A",
               "text": "Program Management",
-              "delay": 102
-            },
-            {
-              "tagName": "A",
-              "text": "VPATs, Certifications & Statements",
-              "delay": 102
-            },
-            {
-              "tagName": "A",
-              "text": "eA Academy",
-              "delay": 104
-            },
-            {
-              "tagName": "A",
-              "text": "(866) 333-3909",
-              "delay": 100
-            },
-            {
-              "tagName": "A",
-              "text": "ADA – Americans with Disabilities Compliance",
-              "delay": 102
-            },
-            {
-              "tagName": "A",
-              "text": "WCAG – Web Content Accessibility Guidelines",
               "delay": 101
             },
             {
               "tagName": "A",
-              "text": "AODA – Accessibility for Ontarians with Disabilities",
+              "text": "VPATs, Certifications & Statements",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "eA Academy",
               "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "(866) 333-3909",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "ADA – Americans with Disabilities Compliance",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "WCAG – Web Content Accessibility Guidelines",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "AODA – Accessibility for Ontarians with Disabilities",
+              "delay": 101
             },
             {
               "tagName": "A",
@@ -600,7 +602,7 @@
             {
               "tagName": "A",
               "text": "New York Human Rights Laws",
-              "delay": 102
+              "delay": 104
             },
             {
               "tagName": "A",
@@ -610,12 +612,12 @@
             {
               "tagName": "A",
               "text": "ADA Demand Letter Playbook",
-              "delay": 102
+              "delay": 104
             },
             {
               "tagName": "A",
               "text": "AODA Compliance Checklist",
-              "delay": 100
+              "delay": 102
             },
             {
               "tagName": "A",
@@ -630,17 +632,17 @@
             {
               "tagName": "A",
               "text": "Web Accessibility Lawsuits",
-              "delay": 103
-            },
-            {
-              "tagName": "A",
-              "text": "Digital Accessibility Buyer’s Guide",
               "delay": 102
             },
             {
               "tagName": "A",
-              "text": "How-To: Digital Accessibility for Software",
+              "text": "Digital Accessibility Buyer’s Guide",
               "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "How-To: Digital Accessibility for Software",
+              "delay": 105
             },
             {
               "tagName": "A",
@@ -650,7 +652,7 @@
             {
               "tagName": "A",
               "text": "Leadership",
-              "delay": 104
+              "delay": 100
             },
             {
               "tagName": "A",
@@ -660,7 +662,7 @@
             {
               "tagName": "A",
               "text": "Locations",
-              "delay": 101
+              "delay": 102
             },
             {
               "tagName": "A",
@@ -670,17 +672,17 @@
             {
               "tagName": "A",
               "text": "Contact",
-              "delay": 101
-            },
-            {
-              "tagName": "A",
-              "text": "FAQ",
               "delay": 102
             },
             {
               "tagName": "A",
+              "text": "FAQ",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
               "text": "eSSENTIAL Accessibility Company Logo at footerto visit the home page .cls-1{fill:#ffffff}.cls-3{fill",
-              "delay": 103
+              "delay": 102
             },
             {
               "tagName": "A",
@@ -690,22 +692,22 @@
             {
               "tagName": "A",
               "text": "Privacy Policy",
-              "delay": 104
+              "delay": 103
             },
             {
               "tagName": "A",
               "text": "Accessibility Statement",
-              "delay": 100
+              "delay": 101
             },
             {
               "tagName": "A",
               "text": "Multi-Year Accessibility Plan",
-              "delay": 105
+              "delay": 101
             },
             {
               "tagName": "A",
               "text": "Sitemap",
-              "delay": 102
+              "delay": 100
             },
             {
               "tagName": "A",
@@ -715,17 +717,17 @@
             {
               "tagName": "A",
               "text": "Go to essential accessibility Facebook PageFacebook LogoSocial Networking website Facebook Logo",
-              "delay": 103
+              "delay": 100
             },
             {
               "tagName": "A",
               "text": "Go to essential accessibility Linkedin PageLinkedin LogoSocial Networking website Linkedin Logo",
-              "delay": 101
+              "delay": 105
             },
             {
               "tagName": "A",
               "text": "",
-              "delay": 105
+              "delay": 100
             }
           ]
         }
@@ -2454,14 +2456,24 @@
       "url": "https://www.essentialaccessibility.com/",
       "result": {
         "roleElements": 87,
-        "badRoleElements": 3,
+        "badRoleElements": 2,
+        "redundantRoleElements": 1,
         "tagNames": {
           "DIV": {
-            "complementary": 1,
-            "button": 1
+            "complementary": {
+              "bad": 1,
+              "redundant": 0
+            },
+            "button": {
+              "bad": 1,
+              "redundant": 0
+            }
           },
           "BUTTON": {
-            "button": 1
+            "button": {
+              "bad": 0,
+              "redundant": 1
+            }
           }
         }
       }

@@ -304,14 +304,16 @@
           "total": 33,
           "types": {
             "indicatorMissing": {
-              "total": 0,
-              "tagNames": {}
+              "total": 3,
+              "tagNames": {
+                "A": 3
+              }
             },
             "nonOutlinePresent": {
-              "total": 30,
+              "total": 27,
               "tagNames": {
                 "BUTTON": 1,
-                "A": 27,
+                "A": 24,
                 "INPUT": 2
               }
             },
@@ -325,12 +327,7 @@
           }
         },
         "items": {
-          "indicatorMissing": [],
-          "nonOutlinePresent": [
-            {
-              "tagName": "BUTTON",
-              "text": "Ik snap het (verberg cookie-waarschuwing)"
-            },
+          "indicatorMissing": [
             {
               "tagName": "A",
               "text": "Sla de navigatie over"
@@ -342,6 +339,12 @@
             {
               "tagName": "A",
               "text": ""
+            }
+          ],
+          "nonOutlinePresent": [
+            {
+              "tagName": "BUTTON",
+              "text": "Ik snap het (verberg cookie-waarschuwing)"
             },
             {
               "tagName": "A",
@@ -1120,6 +1123,7 @@
       "result": {
         "roleElements": 0,
         "badRoleElements": 0,
+        "redundantRoleElements": 0,
         "tagNames": {}
       }
     },
@@ -4702,7 +4706,7 @@
   "endTime": "2022-07-09T14:52:52",
   "elapsedSeconds": 115,
   "score": {
-    "scoreProcID": "sp12a",
+    "scoreProcID": "sp12b",
     "logWeights": {
       "logCount": 0.5,
       "logSize": 0.01,
@@ -4726,7 +4730,7 @@
       "testaro": {
         "motion": 1,
         "focAll": 4,
-        "focInd": 30,
+        "focInd": 36,
         "focOp": 2,
         "hover": 1,
         "linkUl": 36,
@@ -4790,7 +4794,7 @@
         "focusIndication": {
           "testaro": {
             "focInd": {
-              "score": 30,
+              "score": 36,
               "what": "Focused element displaying no or nostandard focus indicator"
             }
           },
@@ -5024,14 +5028,14 @@
     },
     "preventionScores": {},
     "summary": {
-      "total": 186,
+      "total": 192,
       "log": 0,
       "preventions": 0,
       "solos": 0,
       "groups": [
         {
           "groupName": "focusIndication",
-          "score": 32
+          "score": 38
         },
         {
           "groupName": "contrastAA",

@@ -303,10 +303,6 @@
           "total": 46,
           "types": {
             "indicatorMissing": {
-              "total": 0,
-              "tagNames": {}
-            },
-            "nonOutlinePresent": {
               "total": 46,
               "tagNames": {
                 "A": 42,
@@ -314,6 +310,10 @@
                 "INPUT": 1,
                 "IFRAME": 1
               }
+            },
+            "nonOutlinePresent": {
+              "total": 0,
+              "tagNames": {}
             },
             "outlinePresent": {
               "total": 0,
@@ -323,8 +323,7 @@
           }
         },
         "items": {
-          "indicatorMissing": [],
-          "nonOutlinePresent": [
+          "indicatorMissing": [
             {
               "tagName": "A",
               "text": "Skip to content"
@@ -510,6 +509,7 @@
               "text": ""
             }
           ],
+          "nonOutlinePresent": [],
           "outlinePresent": []
         }
       }
@@ -2189,7 +2189,7 @@
           "removals": 0,
           "opacityChanges": 0,
           "opacityImpact": 0,
-          "unhoverables": 33
+          "unhoverables": 34
         },
         "items": {
           "head": {
@@ -2301,39 +2301,59 @@
             "impactTriggers": [],
             "unhoverables": [
               {
+                "tagName": "LI",
+                "id": "",
+                "text": "DeployinginDrupal"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "ExecutivesCEOCIO(information)CMO(marketing)CRO(ris"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "ContentProduction"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "Supported"
+              },
+              {
                 "tagName": "A",
                 "id": "",
-                "text": "Digital"
+                "text": "BecomeaSalesAgent"
               },
               {
                 "tagName": "LI",
                 "id": "",
-                "text": "Legal"
+                "text": "TheAAAtraqshield"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "InsurancePools"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "Somethingfunny"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "Tea-trolleyoperative"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "SiteImprove"
               },
               {
                 "tagName": "A",
                 "id": "",
-                "text": "CIO(information)"
-              },
-              {
-                "tagName": "LI",
-                "id": "",
-                "text": "accessiBe"
-              },
-              {
-                "tagName": "LI",
-                "id": "",
-                "text": "Monsido"
-              },
-              {
-                "tagName": "LI",
-                "id": "",
-                "text": "AddingtoShopify"
-              },
-              {
-                "tagName": "LI",
-                "id": "",
-                "text": "Don'tclickthislink"
+                "text": "CRO(risk)"
               },
               {
                 "tagName": "LI",
@@ -2343,27 +2363,12 @@
               {
                 "tagName": "A",
                 "id": "",
-                "text": "Cookies"
+                "text": "YouTube"
               },
               {
                 "tagName": "LI",
                 "id": "",
-                "text": "LawFirms"
-              },
-              {
-                "tagName": "LI",
-                "id": "",
-                "text": "SiteImprove"
-              },
-              {
-                "tagName": "LI",
-                "id": "",
-                "text": "InsurancePools"
-              },
-              {
-                "tagName": "A",
-                "id": "",
-                "text": "Subscribe"
+                "text": "CMO(marketing)"
               }
             ]
           }
@@ -3171,6 +3176,7 @@
       "result": {
         "roleElements": 36,
         "badRoleElements": 0,
+        "redundantRoleElements": 0,
         "tagNames": {}
       }
     },

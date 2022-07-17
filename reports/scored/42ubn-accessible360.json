@@ -304,16 +304,17 @@
           "total": 65,
           "types": {
             "indicatorMissing": {
-              "total": 0,
-              "tagNames": {}
-            },
-            "nonOutlinePresent": {
-              "total": 11,
+              "total": 8,
               "tagNames": {
-                "A": 2,
                 "IFRAME": 1,
                 "INPUT": 6,
-                "TEXTAREA": 1,
+                "TEXTAREA": 1
+              }
+            },
+            "nonOutlinePresent": {
+              "total": 3,
+              "tagNames": {
+                "A": 2,
                 "BUTTON": 1
               }
             },
@@ -328,16 +329,7 @@
           }
         },
         "items": {
-          "indicatorMissing": [],
-          "nonOutlinePresent": [
-            {
-              "tagName": "A",
-              "text": "What We Do"
-            },
-            {
-              "tagName": "A",
-              "text": "Markets"
-            },
+          "indicatorMissing": [
             {
               "tagName": "IFRAME",
               "text": ""
@@ -369,6 +361,16 @@
             {
               "tagName": "TEXTAREA",
               "text": ""
+            }
+          ],
+          "nonOutlinePresent": [
+            {
+              "tagName": "A",
+              "text": "What We Do"
+            },
+            {
+              "tagName": "A",
+              "text": "Markets"
             },
             {
               "tagName": "BUTTON",
@@ -1868,9 +1870,13 @@
       "result": {
         "roleElements": 9,
         "badRoleElements": 3,
+        "redundantRoleElements": 0,
         "tagNames": {
           "A": {
-            "button": 3
+            "button": {
+              "bad": 3,
+              "redundant": 0
+            }
           }
         }
       }
@@ -8871,7 +8877,7 @@
   "endTime": "2022-07-09T14:15:23",
   "elapsedSeconds": 127,
   "score": {
-    "scoreProcID": "sp12a",
+    "scoreProcID": "sp12b",
     "logWeights": {
       "logCount": 0.5,
       "logSize": 0.01,
@@ -8894,11 +8900,11 @@
     "packageDetails": {
       "testaro": {
         "bulk": 0,
-        "focInd": 11,
+        "focInd": 27,
         "focOp": 28,
         "hover": 2,
         "linkUl": 38,
-        "role": 3,
+        "role": 6,
         "styleDiff": 26,
         "zIndex": 7
       },
@@ -8964,7 +8970,7 @@
         "focusIndication": {
           "testaro": {
             "focInd": {
-              "score": 11,
+              "score": 27,
               "what": "Focused element displaying no or nostandard focus indicator"
             }
           },
@@ -9002,7 +9008,7 @@
         "roleBad": {
           "testaro": {
             "role": {
-              "score": 2,
+              "score": 5,
               "what": "Nonexistent or implicit-overriding role"
             }
           }
@@ -9296,7 +9302,7 @@
     },
     "preventionScores": {},
     "summary": {
-      "total": 375,
+      "total": 394,
       "log": 35,
       "preventions": 0,
       "solos": 0,
@@ -9308,6 +9314,10 @@
         {
           "groupName": "contrastAAA",
           "score": 33
+        },
+        {
+          "groupName": "focusIndication",
+          "score": 31
         },
         {
           "groupName": "contrastAA",
@@ -9330,10 +9340,6 @@
           "score": 18
         },
         {
-          "groupName": "focusIndication",
-          "score": 15
-        },
-        {
           "groupName": "noLeading",
           "score": 14
         },
@@ -9352,6 +9358,10 @@
         {
           "groupName": "targetSize",
           "score": 8
+        },
+        {
+          "groupName": "roleBad",
+          "score": 7
         },
         {
           "groupName": "linkNoText",
@@ -9380,10 +9390,6 @@
         {
           "groupName": "linkVague",
           "score": 5
-        },
-        {
-          "groupName": "roleBad",
-          "score": 4
         },
         {
           "groupName": "zIndexNotZero",

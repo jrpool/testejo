@@ -1,0 +1,475 @@
+{
+  "id": "49li4-beaccessible",
+  "host": {
+    "id": "beaccessible",
+    "which": "https://beaccessible.com/",
+    "what": "Be Accessible"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-16T21:39:49"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-16T21:41:00"
+    }
+  ],
+  "script": {
+    "id": "tp12",
+    "what": "Alfa, Axe, HTML CodeSniffer, IBM, Tenon, WAVE, and 16 custom tests",
+    "strict": true,
+    "timeLimit": 150,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://beaccessible.com/",
+        "what": "Be Accessible"
+      },
+      {
+        "type": "test",
+        "which": "focInd",
+        "revealAll": false,
+        "allowedDelay": 250,
+        "withItems": true,
+        "what": "focus indicators"
+      },
+      {
+        "type": "test",
+        "which": "hover",
+        "headSize": 20,
+        "headSampleSize": 20,
+        "tailSampleSize": 15,
+        "withItems": true,
+        "what": "hover impacts"
+      },
+      {
+        "type": "test",
+        "which": "role",
+        "what": "validity and necessity of role assignments"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://beaccessible.com/",
+      "what": "Be Accessible",
+      "result": "https://beaccessible.com/"
+    },
+    {
+      "type": "test",
+      "which": "focInd",
+      "revealAll": false,
+      "allowedDelay": 250,
+      "withItems": true,
+      "what": "focus indicators",
+      "url": "https://beaccessible.com/",
+      "result": {
+        "totals": {
+          "total": 47,
+          "types": {
+            "indicatorMissing": {
+              "total": 1,
+              "tagNames": {
+                "IFRAME": 1
+              }
+            },
+            "nonOutlinePresent": {
+              "total": 9,
+              "tagNames": {
+                "INPUT": 9
+              }
+            },
+            "outlinePresent": {
+              "total": 37,
+              "meanDelay": 27,
+              "tagNames": {
+                "A": 32,
+                "SELECT": 2,
+                "TEXTAREA": 1,
+                "INPUT": 1,
+                "BUTTON": 1
+              }
+            }
+          }
+        },
+        "items": {
+          "indicatorMissing": [
+            {
+              "tagName": "IFRAME",
+              "text": ""
+            }
+          ],
+          "nonOutlinePresent": [
+            {
+              "tagName": "INPUT",
+              "text": ""
+            },
+            {
+              "tagName": "INPUT",
+              "text": ""
+            },
+            {
+              "tagName": "INPUT",
+              "text": ""
+            },
+            {
+              "tagName": "INPUT",
+              "text": ""
+            },
+            {
+              "tagName": "INPUT",
+              "text": ""
+            },
+            {
+              "tagName": "INPUT",
+              "text": ""
+            },
+            {
+              "tagName": "INPUT",
+              "text": ""
+            },
+            {
+              "tagName": "INPUT",
+              "text": ""
+            },
+            {
+              "tagName": "INPUT",
+              "text": ""
+            }
+          ],
+          "outlinePresent": [
+            {
+              "tagName": "A",
+              "text": "Skip to content",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Download IRS Form 8826",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Services",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "ADA Compliance",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Free Resources",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Blog",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "About",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Contact Us",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Free Evaluation",
+              "delay": 105
+            },
+            {
+              "tagName": "A",
+              "text": "Free Website Evaluation",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Website AccessibilityAudit We give you the full picture of accessibility for your website or app. Ou",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "Website Accessibility Repair We implement the recommendations we provide in our website accessibilit",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Website Accessibility Training We teach web accessibility to decision makers and developers empoweri",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "View all services",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Read more testimonials",
+              "delay": 0
+            },
+            {
+              "tagName": "SELECT",
+              "text": "Select Service...AuditAudit + RepairPDF RepairSEOTrainingWeb DevelopmentPartner With UsWork With Us",
+              "delay": 0
+            },
+            {
+              "tagName": "SELECT",
+              "text": "Select an option...Google searchGoogle adWord of mouthFacebookLinkedInYouTubeInstagramTikTokOther (p",
+              "delay": 0
+            },
+            {
+              "tagName": "TEXTAREA",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "INPUT",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Let's Talk",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Facebook",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Instagram",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Twitter",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "LinkedIn",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "YouTube",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility Statement",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Free Resources",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "PDF Remediation Services",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Privacy Policy",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Terms and Conditions",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Contact Us",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "(800) 735-0565",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "811 Wilshire BoulevardSuite 1700-245Los Angeles, CA 90017",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Ok",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Privacy policy",
+              "delay": 0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://beaccessible.com/",
+      "what": "URL",
+      "result": "https://beaccessible.com/"
+    },
+    {
+      "type": "test",
+      "which": "hover",
+      "headSize": 20,
+      "headSampleSize": 20,
+      "tailSampleSize": 15,
+      "withItems": true,
+      "what": "hover-caused content changes",
+      "url": "https://beaccessible.com/",
+      "result": {
+        "totals": {
+          "triggers": 64,
+          "headTriggers": 20,
+          "tailTriggers": 44,
+          "impactTriggers": 3,
+          "additions": 36,
+          "removals": 18,
+          "opacityChanges": 0,
+          "opacityImpact": 0,
+          "unhoverables": 1
+        },
+        "items": {
+          "head": {
+            "impactTriggers": [
+              {
+                "tagName": "LI",
+                "text": "ServicesAuditAutomatedTestingTool:Rocket®PDFRemedi",
+                "additions": 18,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "A",
+                "text": "Services",
+                "additions": 18,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "LI",
+                "text": "ADACompliance",
+                "additions": 0,
+                "removals": 18,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              }
+            ],
+            "unhoverables": [
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Skiptocontent"
+              }
+            ]
+          },
+          "tail": {
+            "impactTriggers": [],
+            "unhoverables": []
+          }
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://beaccessible.com/",
+      "what": "URL",
+      "result": "https://beaccessible.com/"
+    },
+    {
+      "type": "test",
+      "which": "role",
+      "what": "roles",
+      "url": "https://beaccessible.com/",
+      "result": {
+        "roleElements": 13,
+        "badRoleElements": 1,
+        "redundantRoleElements": 0,
+        "tagNames": {
+          "DIV": {
+            "button": {
+              "bad": 1,
+              "redundant": 0
+            }
+          }
+        }
+      }
+    }
+  ],
+  "timeStamp": "49li4",
+  "startTime": "2022-07-16T21:39:49",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "hover",
+      48
+    ],
+    [
+      "focInd",
+      4
+    ],
+    [
+      "role",
+      0
+    ]
+  ],
+  "logCount": 9,
+  "logSize": 1212,
+  "errorLogCount": 6,
+  "errorLogSize": 1074,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-16T21:41:00",
+  "elapsedSeconds": 70
+}

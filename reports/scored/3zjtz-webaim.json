@@ -300,36 +300,36 @@
       "url": "https://webaim.org/",
       "result": {
         "totals": {
-          "total": 49,
+          "total": 48,
           "types": {
             "indicatorMissing": {
-              "total": 0,
-              "tagNames": {}
-            },
-            "nonOutlinePresent": {
               "total": 1,
               "tagNames": {
                 "A": 1
               }
             },
+            "nonOutlinePresent": {
+              "total": 0,
+              "tagNames": {}
+            },
             "outlinePresent": {
-              "total": 48,
+              "total": 47,
               "meanDelay": 10,
               "tagNames": {
-                "A": 44,
+                "A": 43,
                 "INPUT": 4
               }
             }
           }
         },
         "items": {
-          "indicatorMissing": [],
-          "nonOutlinePresent": [
+          "indicatorMissing": [
             {
               "tagName": "A",
               "text": "skip to main content"
             }
           ],
+          "nonOutlinePresent": [],
           "outlinePresent": [
             {
               "tagName": "A",
@@ -379,7 +379,7 @@
             {
               "tagName": "A",
               "text": "WebAIM Training",
-              "delay": 102
+              "delay": 101
             },
             {
               "tagName": "A",
@@ -463,22 +463,17 @@
             },
             {
               "tagName": "A",
-              "text": "John Slatin AccessU",
-              "delay": 0
-            },
-            {
-              "tagName": "A",
-              "text": "ICT Accessibility Testing Symposium",
-              "delay": 0
-            },
-            {
-              "tagName": "A",
-              "text": "University of Guelph Accessibility Conference",
+              "text": "AHEAD Equity and Excellence Conference",
               "delay": 0
             },
             {
               "tagName": "A",
               "text": "Web Accessibility in Mind Conference",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Accessing Higher Ground",
               "delay": 0
             },
             {
@@ -1035,9 +1030,9 @@
       "url": "https://webaim.org/",
       "result": {
         "totals": {
-          "triggers": 76,
+          "triggers": 74,
           "headTriggers": 20,
-          "tailTriggers": 56,
+          "tailTriggers": 54,
           "impactTriggers": 1,
           "additions": 0,
           "removals": 0,
@@ -1291,6 +1286,7 @@
       "result": {
         "roleElements": 1,
         "badRoleElements": 0,
+        "redundantRoleElements": 0,
         "tagNames": {}
       }
     },
@@ -5095,7 +5091,7 @@
   "endTime": "2022-07-06T02:34:32",
   "elapsedSeconds": 86,
   "score": {
-    "scoreProcID": "sp12a",
+    "scoreProcID": "sp12b",
     "logWeights": {
       "logCount": 0.5,
       "logSize": 0.01,
@@ -5117,7 +5113,7 @@
     },
     "packageDetails": {
       "testaro": {
-        "focInd": 1,
+        "focInd": 3,
         "hover": 3,
         "linkUl": 6,
         "styleDiff": 16,
@@ -5153,7 +5149,7 @@
         "focusIndication": {
           "testaro": {
             "focInd": {
-              "score": 1,
+              "score": 3,
               "what": "Focused element displaying no or nostandard focus indicator"
             }
           },
@@ -5315,7 +5311,7 @@
     },
     "preventionScores": {},
     "summary": {
-      "total": 159,
+      "total": 161,
       "log": 18,
       "preventions": 0,
       "solos": 0,
@@ -5349,6 +5345,10 @@
           "score": 6
         },
         {
+          "groupName": "focusIndication",
+          "score": 5
+        },
+        {
           "groupName": "linkIndication",
           "score": 5
         },
@@ -5363,10 +5363,6 @@
         {
           "groupName": "linkTextsSame",
           "score": 4
-        },
-        {
-          "groupName": "focusIndication",
-          "score": 3
         },
         {
           "groupName": "hoverSurprise",

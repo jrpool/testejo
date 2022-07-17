@@ -303,15 +303,17 @@
           "total": 91,
           "types": {
             "indicatorMissing": {
-              "total": 0,
-              "tagNames": {}
+              "total": 67,
+              "tagNames": {
+                "A": 66,
+                "DIV": 1
+              }
             },
             "nonOutlinePresent": {
-              "total": 83,
+              "total": 16,
               "tagNames": {
-                "A": 79,
-                "INPUT": 3,
-                "DIV": 1
+                "A": 13,
+                "INPUT": 3
               }
             },
             "outlinePresent": {
@@ -325,8 +327,7 @@
           }
         },
         "items": {
-          "indicatorMissing": [],
-          "nonOutlinePresent": [
+          "indicatorMissing": [
             {
               "tagName": "A",
               "text": "Decline"
@@ -337,47 +338,7 @@
             },
             {
               "tagName": "A",
-              "text": "Skip to content"
-            },
-            {
-              "tagName": "A",
               "text": "Deque Deque Logo"
-            },
-            {
-              "tagName": "INPUT",
-              "text": ""
-            },
-            {
-              "tagName": "A",
-              "text": "axe Tools"
-            },
-            {
-              "tagName": "A",
-              "text": "Services & Training"
-            },
-            {
-              "tagName": "A",
-              "text": "News & Resources"
-            },
-            {
-              "tagName": "A",
-              "text": "Compliance"
-            },
-            {
-              "tagName": "A",
-              "text": "Company"
-            },
-            {
-              "tagName": "A",
-              "text": "Contact Us"
-            },
-            {
-              "tagName": "A",
-              "text": "Request a Demo"
-            },
-            {
-              "tagName": "A",
-              "text": "Free Consultation"
             },
             {
               "tagName": "A",
@@ -397,10 +358,6 @@
             },
             {
               "tagName": "A",
-              "text": "Learn More About Deque"
-            },
-            {
-              "tagName": "A",
               "text": "Install free Chrome extension"
             },
             {
@@ -414,10 +371,6 @@
             {
               "tagName": "A",
               "text": "Learn More"
-            },
-            {
-              "tagName": "A",
-              "text": "Contact Us to schedule a consultation"
             },
             {
               "tagName": "A",
@@ -454,22 +407,6 @@
             {
               "tagName": "A",
               "text": "support helpdesk"
-            },
-            {
-              "tagName": "A",
-              "text": "Skip to Sub Footer"
-            },
-            {
-              "tagName": "A",
-              "text": "Skip to Top"
-            },
-            {
-              "tagName": "INPUT",
-              "text": ""
-            },
-            {
-              "tagName": "INPUT",
-              "text": ""
             },
             {
               "tagName": "A",
@@ -657,6 +594,72 @@
             },
             {
               "tagName": "DIV",
+              "text": ""
+            }
+          ],
+          "nonOutlinePresent": [
+            {
+              "tagName": "A",
+              "text": "Skip to content"
+            },
+            {
+              "tagName": "INPUT",
+              "text": ""
+            },
+            {
+              "tagName": "A",
+              "text": "axe Tools"
+            },
+            {
+              "tagName": "A",
+              "text": "Services & Training"
+            },
+            {
+              "tagName": "A",
+              "text": "News & Resources"
+            },
+            {
+              "tagName": "A",
+              "text": "Compliance"
+            },
+            {
+              "tagName": "A",
+              "text": "Company"
+            },
+            {
+              "tagName": "A",
+              "text": "Contact Us"
+            },
+            {
+              "tagName": "A",
+              "text": "Request a Demo"
+            },
+            {
+              "tagName": "A",
+              "text": "Free Consultation"
+            },
+            {
+              "tagName": "A",
+              "text": "Learn More About Deque"
+            },
+            {
+              "tagName": "A",
+              "text": "Contact Us to schedule a consultation"
+            },
+            {
+              "tagName": "A",
+              "text": "Skip to Sub Footer"
+            },
+            {
+              "tagName": "A",
+              "text": "Skip to Top"
+            },
+            {
+              "tagName": "INPUT",
+              "text": ""
+            },
+            {
+              "tagName": "INPUT",
               "text": ""
             }
           ],
@@ -2071,8 +2074,8 @@
           "triggers": 165,
           "headTriggers": 20,
           "tailTriggers": 145,
-          "impactTriggers": 0,
-          "additions": 0,
+          "impactTriggers": 10,
+          "additions": 130,
           "removals": 0,
           "opacityChanges": 0,
           "opacityImpact": 0,
@@ -2080,7 +2083,88 @@
         },
         "items": {
           "head": {
-            "impactTriggers": [],
+            "impactTriggers": [
+              {
+                "tagName": "LI",
+                "text": "axeToolsaxeToolsOverviewaxeDevToolsaxeAuditoraxeMo",
+                "additions": 13,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "A",
+                "text": "axeTools",
+                "additions": 13,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "LI",
+                "text": "Services&TrainingServicesOverviewTrainingAccessibi",
+                "additions": 13,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "A",
+                "text": "Services&Training",
+                "additions": 13,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "LI",
+                "text": "News&ResourcesNews&ResourcesOverviewBlogAccessibil",
+                "additions": 11,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "A",
+                "text": "News&Resources",
+                "additions": 11,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "LI",
+                "text": "ComplianceComplianceOverviewADAWCAGSection508AODAC",
+                "additions": 15,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "A",
+                "text": "Compliance",
+                "additions": 15,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "LI",
+                "text": "CompanyCompanyOverviewOurCustomersOurTeamCareersCo",
+                "additions": 13,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "A",
+                "text": "Company",
+                "additions": 13,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              }
+            ],
             "unhoverables": [
               {
                 "tagName": "A",
@@ -2100,12 +2184,12 @@
               {
                 "tagName": "A",
                 "id": "",
-                "text": "SkiptoSubFooter"
+                "text": "Sitemap"
               },
               {
-                "tagName": "A",
-                "id": "",
-                "text": "1-703-225-0380"
+                "tagName": "LI",
+                "id": "menu-item-332",
+                "text": "TermsofUse"
               }
             ]
           }
@@ -2802,17 +2886,30 @@
       "url": "https://deque.com/",
       "result": {
         "roleElements": 88,
-        "badRoleElements": 4,
+        "badRoleElements": 3,
+        "redundantRoleElements": 1,
         "tagNames": {
           "DIV": {
-            "banner": 1,
-            "button": 1
+            "banner": {
+              "bad": 1,
+              "redundant": 0
+            },
+            "button": {
+              "bad": 1,
+              "redundant": 0
+            }
           },
           "MAIN": {
-            "main": 1
+            "main": {
+              "bad": 0,
+              "redundant": 1
+            }
           },
           "FOOTER": {
-            "contentinfo": 1
+            "contentinfo": {
+              "bad": 1,
+              "redundant": 0
+            }
           }
         }
       }

@@ -303,15 +303,15 @@
           "total": 60,
           "types": {
             "indicatorMissing": {
-              "total": 0,
-              "tagNames": {}
-            },
-            "nonOutlinePresent": {
               "total": 10,
               "tagNames": {
                 "INPUT": 6,
                 "A": 4
               }
+            },
+            "nonOutlinePresent": {
+              "total": 0,
+              "tagNames": {}
             },
             "outlinePresent": {
               "total": 50,
@@ -323,8 +323,7 @@
           }
         },
         "items": {
-          "indicatorMissing": [],
-          "nonOutlinePresent": [
+          "indicatorMissing": [
             {
               "tagName": "INPUT",
               "text": ""
@@ -366,6 +365,7 @@
               "text": ""
             }
           ],
+          "nonOutlinePresent": [],
           "outlinePresent": [
             {
               "tagName": "A",
@@ -414,7 +414,7 @@
             },
             {
               "tagName": "A",
-              "text": "Collaboration & Action",
+              "text": "Resources for Your Job",
               "delay": 0
             },
             {
@@ -1909,10 +1909,10 @@
           "headTriggers": 20,
           "tailTriggers": 52,
           "impactTriggers": 13,
-          "additions": 0,
+          "additions": 146,
           "removals": 0,
-          "opacityChanges": 13,
-          "opacityImpact": 143,
+          "opacityChanges": 5,
+          "opacityImpact": 11,
           "unhoverables": 1
         },
         "items": {
@@ -1937,66 +1937,66 @@
               {
                 "tagName": "LI",
                 "text": "AboutPEATWhatWeDoPEATThinkTankPEATNewsletterBlog",
-                "additions": 0,
+                "additions": 13,
                 "removals": 0,
-                "opacityChanges": 1,
-                "opacityImpact": 12
+                "opacityChanges": 0,
+                "opacityImpact": 0
               },
               {
                 "tagName": "A",
                 "text": "AboutPEAT",
-                "additions": 0,
+                "additions": 13,
                 "removals": 0,
-                "opacityChanges": 1,
-                "opacityImpact": 12
+                "opacityChanges": 0,
+                "opacityImpact": 0
               },
               {
                 "tagName": "LI",
                 "text": "TheFutureofWorkArtificialIntelligence(AI)Autonomou",
-                "additions": 0,
+                "additions": 22,
                 "removals": 0,
-                "opacityChanges": 1,
-                "opacityImpact": 21
+                "opacityChanges": 0,
+                "opacityImpact": 0
               },
               {
                 "tagName": "A",
                 "text": "TheFutureofWork",
-                "additions": 0,
+                "additions": 22,
                 "removals": 0,
-                "opacityChanges": 1,
-                "opacityImpact": 21
+                "opacityChanges": 0,
+                "opacityImpact": 0
               },
               {
                 "tagName": "LI",
-                "text": "EmployerToolkitsInclusiveXR&HybridWorkToolkitAI&Di",
-                "additions": 0,
+                "text": "EmployerToolkitsTheAccessibilityPlaybookforEmergin",
+                "additions": 28,
                 "removals": 0,
-                "opacityChanges": 1,
-                "opacityImpact": 24
+                "opacityChanges": 0,
+                "opacityImpact": 0
               },
               {
                 "tagName": "A",
                 "text": "EmployerToolkits",
-                "additions": 0,
+                "additions": 28,
                 "removals": 0,
-                "opacityChanges": 1,
-                "opacityImpact": 24
+                "opacityChanges": 0,
+                "opacityImpact": 0
               },
               {
                 "tagName": "LI",
-                "text": "Collaboration&ActionTeachAccess:ACaseStudyInclusiv",
-                "additions": 0,
+                "text": "ResourcesforYourJobHR,HiringManagers&RecruitersOrg",
+                "additions": 10,
                 "removals": 0,
-                "opacityChanges": 1,
-                "opacityImpact": 9
+                "opacityChanges": 0,
+                "opacityImpact": 0
               },
               {
                 "tagName": "A",
-                "text": "Collaboration&Action",
-                "additions": 0,
+                "text": "ResourcesforYourJob",
+                "additions": 10,
                 "removals": 0,
-                "opacityChanges": 1,
-                "opacityImpact": 9
+                "opacityChanges": 0,
+                "opacityImpact": 0
               }
             ],
             "unhoverables": [
@@ -2011,7 +2011,7 @@
             "impactTriggers": [
               {
                 "tagName": "A",
-                "text": "linkedin",
+                "text": "twitter",
                 "additions": 0,
                 "removals": 0,
                 "opacityChanges": 1,
@@ -2386,10 +2386,14 @@
       "url": "https://www.peatworks.org/",
       "result": {
         "roleElements": 4,
-        "badRoleElements": 1,
+        "badRoleElements": 0,
+        "redundantRoleElements": 1,
         "tagNames": {
           "NAV": {
-            "navigation": 1
+            "navigation": {
+              "bad": 0,
+              "redundant": 1
+            }
           }
         }
       }

@@ -1,0 +1,403 @@
+{
+  "id": "49ouy-usablenet",
+  "host": {
+    "id": "usablenet",
+    "which": "https://usablenet.com/",
+    "what": "UsableNet"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-16T23:40:27"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-16T23:41:25"
+    }
+  ],
+  "script": {
+    "id": "tp12",
+    "what": "Alfa, Axe, HTML CodeSniffer, IBM, Tenon, WAVE, and 16 custom tests",
+    "strict": true,
+    "timeLimit": 150,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://usablenet.com/",
+        "what": "UsableNet"
+      },
+      {
+        "type": "test",
+        "which": "focInd",
+        "revealAll": false,
+        "allowedDelay": 250,
+        "withItems": true,
+        "what": "focus indicators"
+      },
+      {
+        "type": "test",
+        "which": "hover",
+        "headSize": 20,
+        "headSampleSize": 20,
+        "tailSampleSize": 15,
+        "withItems": true,
+        "what": "hover impacts"
+      },
+      {
+        "type": "test",
+        "which": "role",
+        "what": "validity and necessity of role assignments"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://usablenet.com/",
+      "what": "UsableNet",
+      "result": "https://usablenet.com/"
+    },
+    {
+      "type": "test",
+      "which": "focInd",
+      "revealAll": false,
+      "allowedDelay": 250,
+      "withItems": true,
+      "what": "focus indicators",
+      "url": "https://usablenet.com/",
+      "result": {
+        "totals": {
+          "total": 33,
+          "types": {
+            "indicatorMissing": {
+              "total": 0,
+              "tagNames": {}
+            },
+            "nonOutlinePresent": {
+              "total": 0,
+              "tagNames": {}
+            },
+            "outlinePresent": {
+              "total": 33,
+              "meanDelay": 0,
+              "tagNames": {
+                "A": 29,
+                "BUTTON": 2,
+                "INPUT": 2
+              }
+            }
+          }
+        },
+        "items": {
+          "indicatorMissing": [],
+          "nonOutlinePresent": [],
+          "outlinePresent": [
+            {
+              "tagName": "A",
+              "text": "skip to menu",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "skip to content",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "skip to footer",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Test now",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Solutions",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Resources",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Clients",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Blog",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "About Us",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Contact",
+              "delay": 0
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Watch the video",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Learn About UsableNet Assistive",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Learn About UsableNet AQA",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Get in Touch",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Get Your Copy Now!",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "ADA Digital Accessibility Lawsuit Tracker",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Checklist: How to Achieve and Maintain Digital Accessibility",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "More News",
+              "delay": 0
+            },
+            {
+              "tagName": "INPUT",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "INPUT",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility Support",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Privacy Policy",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility Statement",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Diversity and Inclusion Statement",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility Status",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Technology Patents",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "About Accessibility Status",
+              "delay": 0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://usablenet.com/",
+      "what": "URL",
+      "result": "https://usablenet.com/"
+    },
+    {
+      "type": "test",
+      "which": "hover",
+      "headSize": 20,
+      "headSampleSize": 20,
+      "tailSampleSize": 15,
+      "withItems": true,
+      "what": "hover-caused content changes",
+      "url": "https://usablenet.com/",
+      "result": {
+        "totals": {
+          "triggers": 31,
+          "headTriggers": 20,
+          "tailTriggers": 11,
+          "impactTriggers": 0,
+          "additions": 0,
+          "removals": 0,
+          "opacityChanges": 0,
+          "opacityImpact": 0,
+          "unhoverables": 4
+        },
+        "items": {
+          "head": {
+            "impactTriggers": [],
+            "unhoverables": [
+              {
+                "tagName": "BUTTON",
+                "id": "un-s-open",
+                "text": "AboutAccessibilityStatus"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "skiptomenu"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "skiptocontent"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "skiptofooter"
+              }
+            ]
+          },
+          "tail": {
+            "impactTriggers": [],
+            "unhoverables": []
+          }
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://usablenet.com/",
+      "what": "URL",
+      "result": "https://usablenet.com/"
+    },
+    {
+      "type": "test",
+      "which": "role",
+      "what": "roles",
+      "url": "https://usablenet.com/",
+      "result": {
+        "roleElements": 5,
+        "badRoleElements": 2,
+        "redundantRoleElements": 1,
+        "tagNames": {
+          "SUMMARY": {
+            "button": {
+              "bad": 0,
+              "redundant": 1
+            }
+          },
+          "A": {
+            "button": {
+              "bad": 2,
+              "redundant": 0
+            }
+          }
+        }
+      }
+    }
+  ],
+  "timeStamp": "49ouy",
+  "startTime": "2022-07-16T23:40:27",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "hover",
+      42
+    ],
+    [
+      "focInd",
+      0
+    ],
+    [
+      "role",
+      0
+    ]
+  ],
+  "logCount": 3,
+  "logSize": 915,
+  "errorLogCount": 3,
+  "errorLogSize": 915,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-16T23:41:25",
+  "elapsedSeconds": 57
+}

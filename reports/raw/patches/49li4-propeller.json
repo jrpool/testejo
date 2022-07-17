@@ -1,0 +1,510 @@
+{
+  "id": "49li4-propeller",
+  "host": {
+    "id": "propeller",
+    "which": "https://www.accessibility.works/",
+    "what": "Propeller Media Works"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-16T22:02:46"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-16T22:03:55"
+    }
+  ],
+  "script": {
+    "id": "tp12",
+    "what": "Alfa, Axe, HTML CodeSniffer, IBM, Tenon, WAVE, and 16 custom tests",
+    "strict": true,
+    "timeLimit": 150,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.accessibility.works/",
+        "what": "Propeller Media Works"
+      },
+      {
+        "type": "test",
+        "which": "focInd",
+        "revealAll": false,
+        "allowedDelay": 250,
+        "withItems": true,
+        "what": "focus indicators"
+      },
+      {
+        "type": "test",
+        "which": "hover",
+        "headSize": 20,
+        "headSampleSize": 20,
+        "tailSampleSize": 15,
+        "withItems": true,
+        "what": "hover impacts"
+      },
+      {
+        "type": "test",
+        "which": "role",
+        "what": "validity and necessity of role assignments"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.accessibility.works/",
+      "what": "Propeller Media Works",
+      "result": "https://www.accessibility.works/"
+    },
+    {
+      "type": "test",
+      "which": "focInd",
+      "revealAll": false,
+      "allowedDelay": 250,
+      "withItems": true,
+      "what": "focus indicators",
+      "url": "https://www.accessibility.works/",
+      "result": {
+        "totals": {
+          "total": 50,
+          "types": {
+            "indicatorMissing": {
+              "total": 1,
+              "tagNames": {
+                "BUTTON": 1
+              }
+            },
+            "nonOutlinePresent": {
+              "total": 0,
+              "tagNames": {}
+            },
+            "outlinePresent": {
+              "total": 49,
+              "meanDelay": 0,
+              "tagNames": {
+                "A": 38,
+                "BUTTON": 5,
+                "INPUT": 5,
+                "TEXTAREA": 1
+              }
+            }
+          }
+        },
+        "items": {
+          "indicatorMissing": [
+            {
+              "tagName": "BUTTON",
+              "text": ""
+            }
+          ],
+          "nonOutlinePresent": [],
+          "outlinePresent": [
+            {
+              "tagName": "A",
+              "text": "Skip to Main Content",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "About",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Services",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Blog",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Resources",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Contact",
+              "delay": 0
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Toggle Newsletter Signup Form",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "web accessibility consultants",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "WCAG / ADA website compliance test auditors",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "WCAG / ADA web remediation experts",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "WCAG / ADA compliance trainers",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Learn more",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Learn more",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Learn more",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Learn more",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "View Post",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "View Post",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "View Post",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "View Post",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "View Post",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "View Post",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "View all",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "PausePlay",
+              "delay": 0
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Previous",
+              "delay": 0
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Next",
+              "delay": 0
+            },
+            {
+              "tagName": "INPUT",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "INPUT",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "INPUT",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "INPUT",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "TEXTAREA",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "INPUT",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Submit",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "info@propellermediaworks.com",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "802-864-8251",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Newsletter Signup",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Privacy Policy",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility Statement",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Facebook",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Instagram",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Twitter",
+              "delay": 0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.accessibility.works/",
+      "what": "URL",
+      "result": "https://www.accessibility.works/"
+    },
+    {
+      "type": "test",
+      "which": "hover",
+      "headSize": 20,
+      "headSampleSize": 20,
+      "tailSampleSize": 15,
+      "withItems": true,
+      "what": "hover-caused content changes",
+      "url": "https://www.accessibility.works/",
+      "result": {
+        "totals": {
+          "triggers": 58,
+          "headTriggers": 20,
+          "tailTriggers": 38,
+          "impactTriggers": 4,
+          "additions": 0,
+          "removals": 0,
+          "opacityChanges": 7,
+          "opacityImpact": 57,
+          "unhoverables": 1
+        },
+        "items": {
+          "head": {
+            "impactTriggers": [
+              {
+                "tagName": "A",
+                "text": "<imgsrc=\"/assets/theme/pmw-access/img/aw-wordmark.",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 2,
+                "opacityImpact": 16
+              }
+            ],
+            "unhoverables": [
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "SkiptoMainContent"
+              }
+            ]
+          },
+          "tail": {
+            "impactTriggers": [
+              {
+                "tagName": "A",
+                "text": "<imgsrc=\"/upload/photos/partners_gardeners-logo-wh",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 2,
+                "opacityImpact": 16
+              }
+            ],
+            "unhoverables": []
+          }
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.accessibility.works/",
+      "what": "URL",
+      "result": "https://www.accessibility.works/"
+    },
+    {
+      "type": "test",
+      "which": "role",
+      "what": "roles",
+      "url": "https://www.accessibility.works/",
+      "result": {
+        "roleElements": 16,
+        "badRoleElements": 6,
+        "redundantRoleElements": 1,
+        "tagNames": {
+          "HEADER": {
+            "banner": {
+              "bad": 1,
+              "redundant": 0
+            }
+          },
+          "NAV": {
+            "navigation": {
+              "bad": 0,
+              "redundant": 1
+            }
+          },
+          "DIV": {
+            "main": {
+              "bad": 1,
+              "redundant": 0
+            },
+            "group": {
+              "bad": 3,
+              "redundant": 0
+            }
+          },
+          "A": {
+            "button": {
+              "bad": 1,
+              "redundant": 0
+            }
+          }
+        }
+      }
+    }
+  ],
+  "timeStamp": "49li4",
+  "startTime": "2022-07-16T22:02:46",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "hover",
+      58
+    ],
+    [
+      "focInd",
+      1
+    ],
+    [
+      "role",
+      0
+    ]
+  ],
+  "logCount": 9,
+  "logSize": 1200,
+  "errorLogCount": 9,
+  "errorLogSize": 1200,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-16T22:03:55",
+  "elapsedSeconds": 69
+}

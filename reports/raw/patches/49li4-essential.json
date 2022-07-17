@@ -1,0 +1,636 @@
+{
+  "id": "49li4-essential",
+  "host": {
+    "id": "essential",
+    "which": "https://www.essentialaccessibility.com/",
+    "what": "eSSENTIAL Accessibility"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-16T21:48:10"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-16T21:49:19"
+    }
+  ],
+  "script": {
+    "id": "tp12",
+    "what": "Alfa, Axe, HTML CodeSniffer, IBM, Tenon, WAVE, and 16 custom tests",
+    "strict": true,
+    "timeLimit": 150,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.essentialaccessibility.com/",
+        "what": "eSSENTIAL Accessibility"
+      },
+      {
+        "type": "test",
+        "which": "focInd",
+        "revealAll": false,
+        "allowedDelay": 250,
+        "withItems": true,
+        "what": "focus indicators"
+      },
+      {
+        "type": "test",
+        "which": "hover",
+        "headSize": 20,
+        "headSampleSize": 20,
+        "tailSampleSize": 15,
+        "withItems": true,
+        "what": "hover impacts"
+      },
+      {
+        "type": "test",
+        "which": "role",
+        "what": "validity and necessity of role assignments"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.essentialaccessibility.com/",
+      "what": "eSSENTIAL Accessibility",
+      "result": "https://www.essentialaccessibility.com/"
+    },
+    {
+      "type": "test",
+      "which": "focInd",
+      "revealAll": false,
+      "allowedDelay": 250,
+      "withItems": true,
+      "what": "focus indicators",
+      "url": "https://www.essentialaccessibility.com/",
+      "result": {
+        "totals": {
+          "total": 83,
+          "types": {
+            "indicatorMissing": {
+              "total": 1,
+              "tagNames": {
+                "DIV": 1
+              }
+            },
+            "nonOutlinePresent": {
+              "total": 16,
+              "tagNames": {
+                "A": 16
+              }
+            },
+            "outlinePresent": {
+              "total": 66,
+              "meanDelay": 83,
+              "tagNames": {
+                "A": 64,
+                "UL": 1,
+                "BUTTON": 1
+              }
+            }
+          }
+        },
+        "items": {
+          "indicatorMissing": [
+            {
+              "tagName": "DIV",
+              "text": ""
+            }
+          ],
+          "nonOutlinePresent": [
+            {
+              "tagName": "A",
+              "text": "Skip To main content"
+            },
+            {
+              "tagName": "A",
+              "text": "Request a Demo (Link opens in new tab)"
+            },
+            {
+              "tagName": "A",
+              "text": "ADA Demand Letter Response"
+            },
+            {
+              "tagName": "A",
+              "text": "Product Compliance & VPAT"
+            },
+            {
+              "tagName": "A",
+              "text": "WCAG / ADA Compliance"
+            },
+            {
+              "tagName": "A",
+              "text": "Partnership Program"
+            },
+            {
+              "tagName": "A",
+              "text": "Learn More about Automated & Manual Testing"
+            },
+            {
+              "tagName": "A",
+              "text": "Learn More about UX & Development Process Integration"
+            },
+            {
+              "tagName": "A",
+              "text": "Learn More about Legal & Risk Management"
+            },
+            {
+              "tagName": "A",
+              "text": "Learn More about Certification and Training"
+            },
+            {
+              "tagName": "A",
+              "text": "Get and Stay Accessible Request a Demo"
+            },
+            {
+              "tagName": "A",
+              "text": "Access the Report"
+            },
+            {
+              "tagName": "A",
+              "text": "Access the Report"
+            },
+            {
+              "tagName": "A",
+              "text": "Learn More About Minimize legal risk"
+            },
+            {
+              "tagName": "A",
+              "text": "Learn More About Conformance Certification"
+            },
+            {
+              "tagName": "A",
+              "text": "Learn More about support form UX to code"
+            }
+          ],
+          "outlinePresent": [
+            {
+              "tagName": "A",
+              "text": "eSSENTIAL Accessibility Company Logo to go to home page .cls-1-ea { fill: #0e3c60; } .cls-2-ea { fil",
+              "delay": 103
+            },
+            {
+              "tagName": "UL",
+              "text": "Solution Do not delete thisOur SolutionA unified software + people platform to achieve and maintain ",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Solution",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Compliance",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Resources",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Partners",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "About",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Contact",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Request a Demo",
+              "delay": 0
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Login",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Read the press release.",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "WCAG",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "ADA compliance",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Watch the Video",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "WCAG, check",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "ADA, check",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Section 508, check",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "AODA, check",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "VPAT, check",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Overlays",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Learn about the limitations and objections of overlays",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Learn about the challenges with other solutions",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "Ready to get started? Request a Demo",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Solution Overview",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility Auditing & Testing",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "Governance & Reporting",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "Project Management",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Developer Suite",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "Legal Expertise",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Program Management",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "VPATs, Certifications & Statements",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "eA Academy",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "(866) 333-3909",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "ADA – Americans with Disabilities Compliance",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "WCAG – Web Content Accessibility Guidelines",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "AODA – Accessibility for Ontarians with Disabilities",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Section 508 Compliance",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Section 504 Compliance",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "EN 301 549 Compliance",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "New York Human Rights Laws",
+              "delay": 104
+            },
+            {
+              "tagName": "A",
+              "text": "The Must Have WCAG 2.1 Checklist",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "ADA Demand Letter Playbook",
+              "delay": 104
+            },
+            {
+              "tagName": "A",
+              "text": "AODA Compliance Checklist",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "WCAG Conformance Levels",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "How to Ensure Accessibility Compliance & Standards",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Web Accessibility Lawsuits",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Digital Accessibility Buyer’s Guide",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "How-To: Digital Accessibility for Software",
+              "delay": 105
+            },
+            {
+              "tagName": "A",
+              "text": "About Us",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Leadership",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Careers",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Locations",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Become a Partner",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Contact",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "FAQ",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "eSSENTIAL Accessibility Company Logo at footerto visit the home page .cls-1{fill:#ffffff}.cls-3{fill",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Terms of Service",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Privacy Policy",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility Statement",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Multi-Year Accessibility Plan",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Sitemap",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Go to essential accessibility Twitter PageTwitter logoSocial networking website Twitter logo",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Go to essential accessibility Facebook PageFacebook LogoSocial Networking website Facebook Logo",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Go to essential accessibility Linkedin PageLinkedin LogoSocial Networking website Linkedin Logo",
+              "delay": 105
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 100
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.essentialaccessibility.com/",
+      "what": "URL",
+      "result": "https://www.essentialaccessibility.com/"
+    },
+    {
+      "type": "test",
+      "which": "hover",
+      "headSize": 20,
+      "headSampleSize": 20,
+      "tailSampleSize": 15,
+      "withItems": true,
+      "what": "hover-caused content changes",
+      "url": "https://www.essentialaccessibility.com/",
+      "result": {
+        "totals": {
+          "triggers": 172,
+          "headTriggers": 20,
+          "tailTriggers": 152,
+          "impactTriggers": 0,
+          "additions": 0,
+          "removals": 0,
+          "opacityChanges": 0,
+          "opacityImpact": 0,
+          "unhoverables": 2
+        },
+        "items": {
+          "head": {
+            "impactTriggers": [],
+            "unhoverables": [
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "SkipTomaincontent"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "eSSENTIALAccessibilityCompanyLogotogotohomepage.cl"
+              }
+            ]
+          },
+          "tail": {
+            "impactTriggers": [],
+            "unhoverables": []
+          }
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.essentialaccessibility.com/",
+      "what": "URL",
+      "result": "https://www.essentialaccessibility.com/"
+    },
+    {
+      "type": "test",
+      "which": "role",
+      "what": "roles",
+      "url": "https://www.essentialaccessibility.com/",
+      "result": {
+        "roleElements": 87,
+        "badRoleElements": 2,
+        "redundantRoleElements": 1,
+        "tagNames": {
+          "DIV": {
+            "complementary": {
+              "bad": 1,
+              "redundant": 0
+            },
+            "button": {
+              "bad": 1,
+              "redundant": 0
+            }
+          },
+          "BUTTON": {
+            "button": {
+              "bad": 0,
+              "redundant": 1
+            }
+          }
+        }
+      }
+    }
+  ],
+  "timeStamp": "49li4",
+  "startTime": "2022-07-16T21:48:10",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "hover",
+      53
+    ],
+    [
+      "focInd",
+      10
+    ],
+    [
+      "role",
+      0
+    ]
+  ],
+  "logCount": 6,
+  "logSize": 614,
+  "errorLogCount": 4,
+  "errorLogSize": 496,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-16T21:49:19",
+  "elapsedSeconds": 69
+}

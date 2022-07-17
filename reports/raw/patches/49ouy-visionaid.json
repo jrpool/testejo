@@ -1,0 +1,488 @@
+{
+  "id": "49ouy-visionaid",
+  "host": {
+    "id": "visionaid",
+    "which": "https://webaccessibility.visionaid.org/",
+    "what": "Vision-Aid DATTC"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-16T23:48:37"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-16T23:49:41"
+    }
+  ],
+  "script": {
+    "id": "tp12",
+    "what": "Alfa, Axe, HTML CodeSniffer, IBM, Tenon, WAVE, and 16 custom tests",
+    "strict": true,
+    "timeLimit": 150,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://webaccessibility.visionaid.org/",
+        "what": "Vision-Aid DATTC"
+      },
+      {
+        "type": "test",
+        "which": "focInd",
+        "revealAll": false,
+        "allowedDelay": 250,
+        "withItems": true,
+        "what": "focus indicators"
+      },
+      {
+        "type": "test",
+        "which": "hover",
+        "headSize": 20,
+        "headSampleSize": 20,
+        "tailSampleSize": 15,
+        "withItems": true,
+        "what": "hover impacts"
+      },
+      {
+        "type": "test",
+        "which": "role",
+        "what": "validity and necessity of role assignments"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://webaccessibility.visionaid.org/",
+      "what": "Vision-Aid DATTC",
+      "result": "https://webaccessibility.visionaid.org/"
+    },
+    {
+      "type": "test",
+      "which": "focInd",
+      "revealAll": false,
+      "allowedDelay": 250,
+      "withItems": true,
+      "what": "focus indicators",
+      "url": "https://webaccessibility.visionaid.org/",
+      "result": {
+        "totals": {
+          "total": 56,
+          "types": {
+            "indicatorMissing": {
+              "total": 0,
+              "tagNames": {}
+            },
+            "nonOutlinePresent": {
+              "total": 0,
+              "tagNames": {}
+            },
+            "outlinePresent": {
+              "total": 56,
+              "meanDelay": 103,
+              "tagNames": {
+                "A": 56
+              }
+            }
+          }
+        },
+        "items": {
+          "indicatorMissing": [],
+          "nonOutlinePresent": [],
+          "outlinePresent": [
+            {
+              "tagName": "A",
+              "text": "Skip to content",
+              "delay": 104
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "Home",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "About Us",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Vision & Mission",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "What We Do",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Digital Accessibility",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Guidelines and Laws",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Resources",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "Contact Us",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Vision-Aid",
+              "delay": 104
+            },
+            {
+              "tagName": "A",
+              "text": "supported by the generosity of donors .",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "click here to view a short video about the DATTC and to meet some of our students and team members",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Click Here to learn more about our DAT offering",
+              "delay": 104
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "Meet the Students & Team of the DAT program",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Launch of the DAT Program",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "click here",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Learn More About Disability Demographics",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Learn More About Disability Types",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Learn More About Assistive Technologies",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "Learn More About Web Accessibility Perspectives",
+              "delay": 104
+            },
+            {
+              "tagName": "A",
+              "text": "Learn More About WCAG 2.0",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Learn More About Mobile Accessibility Guidelines",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Learn More About Universal Design for physical world",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Learn More About Universal Design for Learning",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "Learn More About ARIA Authoring practices",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "Learn More About Accessibility Laws",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Learn More About Training",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Learn More About Events",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Learn More About Simulation",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "Learn More About Assistive Technology",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Home",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "About Us",
+              "delay": 105
+            },
+            {
+              "tagName": "A",
+              "text": "Vision & Mission",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "What We Do",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "Digital Accessibility",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Guidelines and Laws",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Resources",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "Contact Us",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "Vision-Aid .org",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "Vision-Aid india.org",
+              "delay": 104
+            },
+            {
+              "tagName": "A",
+              "text": "Vision-Aid Online Academy",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility Laws",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "ARIA Authoring practices",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Universal Design for Learning",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Universal Design for the Physical World",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Mobile Accessibility Guidelines",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "WCAG 2.0",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Assistive Technology",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Simulation",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "Events",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "Training",
+              "delay": 103
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://webaccessibility.visionaid.org/",
+      "what": "URL",
+      "result": "https://webaccessibility.visionaid.org/"
+    },
+    {
+      "type": "test",
+      "which": "hover",
+      "headSize": 20,
+      "headSampleSize": 20,
+      "tailSampleSize": 15,
+      "withItems": true,
+      "what": "hover-caused content changes",
+      "url": "https://webaccessibility.visionaid.org/",
+      "result": {
+        "totals": {
+          "triggers": 85,
+          "headTriggers": 20,
+          "tailTriggers": 65,
+          "impactTriggers": 0,
+          "additions": 0,
+          "removals": 0,
+          "opacityChanges": 0,
+          "opacityImpact": 0,
+          "unhoverables": 1
+        },
+        "items": {
+          "head": {
+            "impactTriggers": [],
+            "unhoverables": [
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Skiptocontent"
+              }
+            ]
+          },
+          "tail": {
+            "impactTriggers": [],
+            "unhoverables": []
+          }
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://webaccessibility.visionaid.org/",
+      "what": "URL",
+      "result": "https://webaccessibility.visionaid.org/"
+    },
+    {
+      "type": "test",
+      "which": "role",
+      "what": "roles",
+      "url": "https://webaccessibility.visionaid.org/",
+      "result": {
+        "roleElements": 8,
+        "badRoleElements": 0,
+        "redundantRoleElements": 0,
+        "tagNames": {}
+      }
+    }
+  ],
+  "timeStamp": "49ouy",
+  "startTime": "2022-07-16T23:48:37",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "hover",
+      50
+    ],
+    [
+      "focInd",
+      6
+    ],
+    [
+      "role",
+      0
+    ]
+  ],
+  "logCount": 3,
+  "logSize": 138,
+  "errorLogCount": 0,
+  "errorLogSize": 0,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-16T23:49:41",
+  "elapsedSeconds": 63
+}

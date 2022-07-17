@@ -1,0 +1,581 @@
+{
+  "id": "49li4-benetech",
+  "host": {
+    "id": "benetech",
+    "which": "https://benetech.org/",
+    "what": "Benetech"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-16T21:40:49"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-16T21:41:43"
+    }
+  ],
+  "script": {
+    "id": "tp12",
+    "what": "Alfa, Axe, HTML CodeSniffer, IBM, Tenon, WAVE, and 16 custom tests",
+    "strict": true,
+    "timeLimit": 150,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://benetech.org/",
+        "what": "Benetech"
+      },
+      {
+        "type": "test",
+        "which": "focInd",
+        "revealAll": false,
+        "allowedDelay": 250,
+        "withItems": true,
+        "what": "focus indicators"
+      },
+      {
+        "type": "test",
+        "which": "hover",
+        "headSize": 20,
+        "headSampleSize": 20,
+        "tailSampleSize": 15,
+        "withItems": true,
+        "what": "hover impacts"
+      },
+      {
+        "type": "test",
+        "which": "role",
+        "what": "validity and necessity of role assignments"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://benetech.org/",
+      "what": "Benetech",
+      "result": "https://benetech.org/"
+    },
+    {
+      "type": "test",
+      "which": "focInd",
+      "revealAll": false,
+      "allowedDelay": 250,
+      "withItems": true,
+      "what": "focus indicators",
+      "url": "https://benetech.org/",
+      "result": {
+        "totals": {
+          "total": 56,
+          "types": {
+            "indicatorMissing": {
+              "total": 4,
+              "tagNames": {
+                "BLOCKQUOTE": 1,
+                "IFRAME": 1,
+                "A": 2
+              }
+            },
+            "nonOutlinePresent": {
+              "total": 0,
+              "tagNames": {}
+            },
+            "outlinePresent": {
+              "total": 52,
+              "meanDelay": 20,
+              "tagNames": {
+                "A": 39,
+                "SPAN": 3,
+                "DIV": 10
+              }
+            }
+          }
+        },
+        "items": {
+          "indicatorMissing": [
+            {
+              "tagName": "BLOCKQUOTE",
+              "text": "<img src=\"https://benetech.org/wp-content/uploads/2017/08/skoll-logo-trans-1-2-e1503515071224-300x20"
+            },
+            {
+              "tagName": "IFRAME",
+              "text": ""
+            },
+            {
+              "tagName": "A",
+              "text": "Benetech"
+            },
+            {
+              "tagName": "A",
+              "text": "Get Involved"
+            }
+          ],
+          "nonOutlinePresent": [],
+          "outlinePresent": [
+            {
+              "tagName": "A",
+              "text": "Skip to Content",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "<img src=\"https://benetech.org/wp-content/uploads/2017/05/logo-sm-200x63.png\">",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "WHAT IF",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Work",
+              "delay": 0
+            },
+            {
+              "tagName": "SPAN",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Impact",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Approach",
+              "delay": 0
+            },
+            {
+              "tagName": "SPAN",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "About",
+              "delay": 0
+            },
+            {
+              "tagName": "SPAN",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "News",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Blog",
+              "delay": 0
+            },
+            {
+              "tagName": "DIV",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Give",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Get Involved",
+              "delay": 0
+            },
+            {
+              "tagName": "DIV",
+              "text": "We're hiring See open positions on our careers page See Openings",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "See Openings",
+              "delay": 100
+            },
+            {
+              "tagName": "DIV",
+              "text": "<img src=\"https://benetech.org/wp-content/uploads/2018/07/Hiring_Slider_Banner_Icon-80-60x60.jpg\">",
+              "delay": 102
+            },
+            {
+              "tagName": "DIV",
+              "text": "<img src=\"https://benetech.org/wp-content/uploads/2021/10/thumbnail-2018-12-17-09h04m55s253-e1560541",
+              "delay": 103
+            },
+            {
+              "tagName": "DIV",
+              "text": "<img src=\"https://benetech.org/wp-content/uploads/2017/05/Hero-slider-Bridging-thumb-60x60.jpg\">",
+              "delay": 101
+            },
+            {
+              "tagName": "DIV",
+              "text": "<img src=\"https://benetech.org/wp-content/uploads/2021/09/2boys-scaled-60x60.jpg\">",
+              "delay": 102
+            },
+            {
+              "tagName": "DIV",
+              "text": "<img src=\"https://benetech.org/wp-content/uploads/2021/09/iStock-587551464-1-scaled-60x60.jpg\">",
+              "delay": 100
+            },
+            {
+              "tagName": "DIV",
+              "text": "<img src=\"https://benetech.org/wp-content/uploads/2019/06/Emery-thumbnail-80-60x60.jpg\">",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Benetech Names Ayan Kishore Chief Executive Officer",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "See Education Work",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "See Employment Work",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "See Social Inclusion Work",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "See Prior Work",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "See More Impact",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Learn More About Our Approach",
+              "delay": 0
+            },
+            {
+              "tagName": "DIV",
+              "text": "",
+              "delay": 101
+            },
+            {
+              "tagName": "DIV",
+              "text": "",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "GIVE",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "BECOME A PARTNER",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Contact Us",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "<img src=\"https://benetech.org/wp-content/uploads/2017/05/logo-350x144.png\">",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "About",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Work",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Impact",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Approach",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Give",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Partner",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Volunteer",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Careers",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Privacy Policy",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Site Map",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Contact",
+              "delay": 0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://benetech.org/",
+      "what": "URL",
+      "result": "https://benetech.org/"
+    },
+    {
+      "type": "test",
+      "which": "hover",
+      "headSize": 20,
+      "headSampleSize": 20,
+      "tailSampleSize": 15,
+      "withItems": true,
+      "what": "hover-caused content changes",
+      "url": "https://benetech.org/",
+      "result": {
+        "totals": {
+          "triggers": 82,
+          "headTriggers": 20,
+          "tailTriggers": 62,
+          "impactTriggers": 6,
+          "additions": 60,
+          "removals": 0,
+          "opacityChanges": 0,
+          "opacityImpact": 0,
+          "unhoverables": 2
+        },
+        "items": {
+          "head": {
+            "impactTriggers": [
+              {
+                "tagName": "LI",
+                "text": "WorkWorkOverviewEducationInternationalEducationUSE",
+                "additions": 10,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "A",
+                "text": "Work",
+                "additions": 10,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "LI",
+                "text": "ApproachApproachOverviewInnovationCommunitiesSoftw",
+                "additions": 7,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "A",
+                "text": "Approach",
+                "additions": 7,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "LI",
+                "text": "AboutOurStoryLeadershipResourcesEventsCareersFinan",
+                "additions": 13,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "A",
+                "text": "About",
+                "additions": 13,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              }
+            ],
+            "unhoverables": [
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "SkiptoContent"
+              }
+            ]
+          },
+          "tail": {
+            "impactTriggers": [],
+            "unhoverables": [
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "LearnMore"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://benetech.org/",
+      "what": "URL",
+      "result": "https://benetech.org/"
+    },
+    {
+      "type": "test",
+      "which": "role",
+      "what": "roles",
+      "url": "https://benetech.org/",
+      "result": {
+        "roleElements": 19,
+        "badRoleElements": 15,
+        "redundantRoleElements": 3,
+        "tagNames": {
+          "HEADER": {
+            "banner": {
+              "bad": 1,
+              "redundant": 0
+            }
+          },
+          "BUTTON": {
+            "button": {
+              "bad": 0,
+              "redundant": 1
+            }
+          },
+          "NAV": {
+            "navigation": {
+              "bad": 0,
+              "redundant": 2
+            }
+          },
+          "SPAN": {
+            "button": {
+              "bad": 4,
+              "redundant": 0
+            }
+          },
+          "DIV": {
+            "button": {
+              "bad": 9,
+              "redundant": 0
+            },
+            "main": {
+              "bad": 1,
+              "redundant": 0
+            }
+          }
+        }
+      }
+    }
+  ],
+  "timeStamp": "49li4",
+  "startTime": "2022-07-16T21:40:49",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "hover",
+      42
+    ],
+    [
+      "focInd",
+      3
+    ],
+    [
+      "role",
+      0
+    ]
+  ],
+  "logCount": 153,
+  "logSize": 11421,
+  "errorLogCount": 6,
+  "errorLogSize": 1308,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-16T21:41:43",
+  "elapsedSeconds": 54
+}

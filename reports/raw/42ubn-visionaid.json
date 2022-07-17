@@ -313,7 +313,7 @@
             },
             "outlinePresent": {
               "total": 56,
-              "meanDelay": 102,
+              "meanDelay": 103,
               "tagNames": {
                 "A": 56
               }
@@ -327,12 +327,12 @@
             {
               "tagName": "A",
               "text": "Skip to content",
-              "delay": 101
+              "delay": 104
             },
             {
               "tagName": "A",
               "text": "",
-              "delay": 102
+              "delay": 103
             },
             {
               "tagName": "A",
@@ -352,7 +352,7 @@
             {
               "tagName": "A",
               "text": "What We Do",
-              "delay": 101
+              "delay": 102
             },
             {
               "tagName": "A",
@@ -362,12 +362,12 @@
             {
               "tagName": "A",
               "text": "Guidelines and Laws",
-              "delay": 100
+              "delay": 102
             },
             {
               "tagName": "A",
               "text": "Resources",
-              "delay": 100
+              "delay": 103
             },
             {
               "tagName": "A",
@@ -377,7 +377,7 @@
             {
               "tagName": "A",
               "text": "Vision-Aid",
-              "delay": 103
+              "delay": 104
             },
             {
               "tagName": "A",
@@ -387,22 +387,22 @@
             {
               "tagName": "A",
               "text": "click here to view a short video about the DATTC and to meet some of our students and team members",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "",
               "delay": 102
             },
             {
               "tagName": "A",
-              "text": "",
-              "delay": 101
-            },
-            {
-              "tagName": "A",
               "text": "Click Here to learn more about our DAT offering",
-              "delay": 101
+              "delay": 104
             },
             {
               "tagName": "A",
               "text": "",
-              "delay": 100
+              "delay": 103
             },
             {
               "tagName": "A",
@@ -412,12 +412,12 @@
             {
               "tagName": "A",
               "text": "",
-              "delay": 102
+              "delay": 101
             },
             {
               "tagName": "A",
               "text": "Launch of the DAT Program",
-              "delay": 101
+              "delay": 103
             },
             {
               "tagName": "A",
@@ -437,22 +437,22 @@
             {
               "tagName": "A",
               "text": "Learn More About Disability Types",
-              "delay": 101
-            },
-            {
-              "tagName": "A",
-              "text": "Learn More About Assistive Technologies",
-              "delay": 101
-            },
-            {
-              "tagName": "A",
-              "text": "Learn More About Web Accessibility Perspectives",
               "delay": 102
             },
             {
               "tagName": "A",
+              "text": "Learn More About Assistive Technologies",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "Learn More About Web Accessibility Perspectives",
+              "delay": 104
+            },
+            {
+              "tagName": "A",
               "text": "Learn More About WCAG 2.0",
-              "delay": 101
+              "delay": 102
             },
             {
               "tagName": "A",
@@ -462,22 +462,22 @@
             {
               "tagName": "A",
               "text": "Learn More About Universal Design for physical world",
-              "delay": 100
-            },
-            {
-              "tagName": "A",
-              "text": "Learn More About Universal Design for Learning",
-              "delay": 100
-            },
-            {
-              "tagName": "A",
-              "text": "Learn More About ARIA Authoring practices",
               "delay": 101
             },
             {
               "tagName": "A",
+              "text": "Learn More About Universal Design for Learning",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "Learn More About ARIA Authoring practices",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
               "text": "Learn More About Accessibility Laws",
-              "delay": 102
+              "delay": 101
             },
             {
               "tagName": "A",
@@ -487,12 +487,12 @@
             {
               "tagName": "A",
               "text": "Learn More About Events",
-              "delay": 101
+              "delay": 102
             },
             {
               "tagName": "A",
               "text": "Learn More About Simulation",
-              "delay": 101
+              "delay": 103
             },
             {
               "tagName": "A",
@@ -502,22 +502,22 @@
             {
               "tagName": "A",
               "text": "Home",
-              "delay": 101
+              "delay": 100
             },
             {
               "tagName": "A",
               "text": "About Us",
-              "delay": 101
+              "delay": 105
             },
             {
               "tagName": "A",
               "text": "Vision & Mission",
-              "delay": 102
+              "delay": 103
             },
             {
               "tagName": "A",
               "text": "What We Do",
-              "delay": 102
+              "delay": 103
             },
             {
               "tagName": "A",
@@ -527,27 +527,27 @@
             {
               "tagName": "A",
               "text": "Guidelines and Laws",
-              "delay": 102
+              "delay": 101
             },
             {
               "tagName": "A",
               "text": "Resources",
-              "delay": 101
+              "delay": 103
             },
             {
               "tagName": "A",
               "text": "Contact Us",
-              "delay": 101
+              "delay": 103
             },
             {
               "tagName": "A",
               "text": "Vision-Aid .org",
-              "delay": 101
+              "delay": 103
             },
             {
               "tagName": "A",
               "text": "Vision-Aid india.org",
-              "delay": 101
+              "delay": 104
             },
             {
               "tagName": "A",
@@ -557,32 +557,32 @@
             {
               "tagName": "A",
               "text": "Accessibility Laws",
-              "delay": 102
+              "delay": 101
             },
             {
               "tagName": "A",
               "text": "ARIA Authoring practices",
-              "delay": 101
+              "delay": 100
             },
             {
               "tagName": "A",
               "text": "Universal Design for Learning",
-              "delay": 101
-            },
-            {
-              "tagName": "A",
-              "text": "Universal Design for the Physical World",
-              "delay": 101
-            },
-            {
-              "tagName": "A",
-              "text": "Mobile Accessibility Guidelines",
               "delay": 102
             },
             {
               "tagName": "A",
+              "text": "Universal Design for the Physical World",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Mobile Accessibility Guidelines",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
               "text": "WCAG 2.0",
-              "delay": 101
+              "delay": 102
             },
             {
               "tagName": "A",
@@ -592,17 +592,17 @@
             {
               "tagName": "A",
               "text": "Simulation",
-              "delay": 101
+              "delay": 103
             },
             {
               "tagName": "A",
               "text": "Events",
-              "delay": 101
+              "delay": 103
             },
             {
               "tagName": "A",
               "text": "Training",
-              "delay": 101
+              "delay": 103
             }
           ]
         }
@@ -1354,6 +1354,7 @@
       "result": {
         "roleElements": 8,
         "badRoleElements": 0,
+        "redundantRoleElements": 0,
         "tagNames": {}
       }
     },

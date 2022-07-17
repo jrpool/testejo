@@ -1,0 +1,487 @@
+{
+  "id": "49li4-advancedbytez",
+  "host": {
+    "id": "advancedbytez",
+    "which": "https://advancedbytez.com/",
+    "what": "AdvancedBytez"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-16T21:27:48"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-16T21:28:42"
+    }
+  ],
+  "script": {
+    "id": "tp12",
+    "what": "Alfa, Axe, HTML CodeSniffer, IBM, Tenon, WAVE, and 16 custom tests",
+    "strict": true,
+    "timeLimit": 150,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://advancedbytez.com/",
+        "what": "AdvancedBytez"
+      },
+      {
+        "type": "test",
+        "which": "focInd",
+        "revealAll": false,
+        "allowedDelay": 250,
+        "withItems": true,
+        "what": "focus indicators"
+      },
+      {
+        "type": "test",
+        "which": "hover",
+        "headSize": 20,
+        "headSampleSize": 20,
+        "tailSampleSize": 15,
+        "withItems": true,
+        "what": "hover impacts"
+      },
+      {
+        "type": "test",
+        "which": "role",
+        "what": "validity and necessity of role assignments"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://advancedbytez.com/",
+      "what": "AdvancedBytez",
+      "result": "https://advancedbytez.com/"
+    },
+    {
+      "type": "test",
+      "which": "focInd",
+      "revealAll": false,
+      "allowedDelay": 250,
+      "withItems": true,
+      "what": "focus indicators",
+      "url": "https://advancedbytez.com/",
+      "result": {
+        "totals": {
+          "total": 38,
+          "types": {
+            "indicatorMissing": {
+              "total": 0,
+              "tagNames": {}
+            },
+            "nonOutlinePresent": {
+              "total": 0,
+              "tagNames": {}
+            },
+            "outlinePresent": {
+              "total": 38,
+              "meanDelay": 0,
+              "tagNames": {
+                "A": 38
+              }
+            }
+          }
+        },
+        "items": {
+          "indicatorMissing": [],
+          "nonOutlinePresent": [],
+          "outlinePresent": [
+            {
+              "tagName": "A",
+              "text": "Skip to main navigation",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Skip to main content",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Skip to footer",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Home",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "About",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Products",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Services & Consulting",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Blog",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Contact us",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Free",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Download Now",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Request a Demo",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Read More",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Learn more",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Learn more",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Learn more",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Learn more",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Talk to an expert",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Talk to Us",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Learn more",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Book your free consultation",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Skip back to main navigation",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "info@advancedbytez.com",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility Statement",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Privacy Policy",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "California Notice",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Terms & Conditions",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Sitemap",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Digital Accessibility",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility Audit",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility Consulting",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility Remediation",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Facebook",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Twitter",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Instagram",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Pinterest",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "LinkedIn",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "YouTube Channel",
+              "delay": 0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://advancedbytez.com/",
+      "what": "URL",
+      "result": "https://advancedbytez.com/"
+    },
+    {
+      "type": "test",
+      "which": "hover",
+      "headSize": 20,
+      "headSampleSize": 20,
+      "tailSampleSize": 15,
+      "withItems": true,
+      "what": "hover-caused content changes",
+      "url": "https://advancedbytez.com/",
+      "result": {
+        "totals": {
+          "triggers": 53,
+          "headTriggers": 20,
+          "tailTriggers": 33,
+          "impactTriggers": 13,
+          "additions": 36,
+          "removals": 0,
+          "opacityChanges": 18,
+          "opacityImpact": 24,
+          "unhoverables": 4
+        },
+        "items": {
+          "head": {
+            "impactTriggers": [
+              {
+                "tagName": "LI",
+                "text": "ProductsLERALERAHelpLERAFAQs",
+                "additions": 7,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "A",
+                "text": "Products",
+                "additions": 7,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "LI",
+                "text": "Services&ConsultingDigitalAccessibilityAccessibili",
+                "additions": 11,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "A",
+                "text": "Services&Consulting",
+                "additions": 11,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              }
+            ],
+            "unhoverables": [
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Skiptomainnavigation"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Skiptomaincontent"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Skiptofooter"
+              }
+            ]
+          },
+          "tail": {
+            "impactTriggers": [
+              {
+                "tagName": "A",
+                "text": "Instagram",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 2,
+                "opacityImpact": 5
+              },
+              {
+                "tagName": "A",
+                "text": "YouTubeChannel",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 2,
+                "opacityImpact": 2
+              },
+              {
+                "tagName": "A",
+                "text": "Facebook",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 2,
+                "opacityImpact": 2
+              },
+              {
+                "tagName": "A",
+                "text": "Twitter",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 2,
+                "opacityImpact": 2
+              }
+            ],
+            "unhoverables": [
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Skipbacktomainnavigation"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://advancedbytez.com/",
+      "what": "URL",
+      "result": "https://advancedbytez.com/"
+    },
+    {
+      "type": "test",
+      "which": "role",
+      "what": "roles",
+      "url": "https://advancedbytez.com/",
+      "result": {
+        "roleElements": 21,
+        "badRoleElements": 9,
+        "redundantRoleElements": 0,
+        "tagNames": {
+          "A": {
+            "button": {
+              "bad": 9,
+              "redundant": 0
+            }
+          }
+        }
+      }
+    }
+  ],
+  "timeStamp": "49li4",
+  "startTime": "2022-07-16T21:27:48",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "hover",
+      39
+    ],
+    [
+      "focInd",
+      0
+    ],
+    [
+      "role",
+      0
+    ]
+  ],
+  "logCount": 12,
+  "logSize": 729,
+  "errorLogCount": 3,
+  "errorLogSize": 537,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-16T21:28:42",
+  "elapsedSeconds": 53
+}

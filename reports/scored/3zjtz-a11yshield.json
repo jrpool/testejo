@@ -297,272 +297,30 @@
       "allowedDelay": 250,
       "withItems": true,
       "what": "focus indicators",
-      "url": "https://www.accessibilityshield.com/",
+      "url": "http://p3nlhclust404.shr.prod.phx3.secureserver.net/SharedContent/redirect_0.html",
       "result": {
         "totals": {
-          "total": 51,
+          "total": 0,
           "types": {
             "indicatorMissing": {
               "total": 0,
               "tagNames": {}
             },
             "nonOutlinePresent": {
-              "total": 22,
-              "tagNames": {
-                "INPUT": 7,
-                "BUTTON": 1,
-                "A": 14
-              }
+              "total": 0,
+              "tagNames": {}
             },
             "outlinePresent": {
-              "total": 29,
+              "total": 0,
               "meanDelay": 0,
-              "tagNames": {
-                "A": 27,
-                "INPUT": 2
-              }
+              "tagNames": {}
             }
           }
         },
         "items": {
           "indicatorMissing": [],
-          "nonOutlinePresent": [
-            {
-              "tagName": "INPUT",
-              "text": ""
-            },
-            {
-              "tagName": "BUTTON",
-              "text": ""
-            },
-            {
-              "tagName": "A",
-              "text": "Request a demo"
-            },
-            {
-              "tagName": "A",
-              "text": "Get a free report"
-            },
-            {
-              "tagName": "A",
-              "text": "Request a demo"
-            },
-            {
-              "tagName": "A",
-              "text": "Read more"
-            },
-            {
-              "tagName": "A",
-              "text": "Read more"
-            },
-            {
-              "tagName": "A",
-              "text": "Read more"
-            },
-            {
-              "tagName": "INPUT",
-              "text": ""
-            },
-            {
-              "tagName": "INPUT",
-              "text": ""
-            },
-            {
-              "tagName": "INPUT",
-              "text": ""
-            },
-            {
-              "tagName": "INPUT",
-              "text": ""
-            },
-            {
-              "tagName": "INPUT",
-              "text": ""
-            },
-            {
-              "tagName": "INPUT",
-              "text": ""
-            },
-            {
-              "tagName": "A",
-              "text": "Learn More"
-            },
-            {
-              "tagName": "A",
-              "text": "Learn More"
-            },
-            {
-              "tagName": "A",
-              "text": "Learn More"
-            },
-            {
-              "tagName": "A",
-              "text": "Learn More"
-            },
-            {
-              "tagName": "A",
-              "text": "Read More"
-            },
-            {
-              "tagName": "A",
-              "text": "Read More"
-            },
-            {
-              "tagName": "A",
-              "text": "Read More"
-            },
-            {
-              "tagName": "A",
-              "text": "Free Scan"
-            }
-          ],
-          "outlinePresent": [
-            {
-              "tagName": "A",
-              "text": "Skip to content",
-              "delay": 0
-            },
-            {
-              "tagName": "A",
-              "text": "",
-              "delay": 0
-            },
-            {
-              "tagName": "A",
-              "text": "Home",
-              "delay": 0
-            },
-            {
-              "tagName": "A",
-              "text": "How It Works",
-              "delay": 0
-            },
-            {
-              "tagName": "A",
-              "text": "Manual Testing",
-              "delay": 0
-            },
-            {
-              "tagName": "A",
-              "text": "Remediation",
-              "delay": 0
-            },
-            {
-              "tagName": "A",
-              "text": "Schedule Demo",
-              "delay": 0
-            },
-            {
-              "tagName": "A",
-              "text": "Our Mission",
-              "delay": 0
-            },
-            {
-              "tagName": "A",
-              "text": "News/Blog",
-              "delay": 0
-            },
-            {
-              "tagName": "A",
-              "text": "Contact Us",
-              "delay": 0
-            },
-            {
-              "tagName": "A",
-              "text": "WCAG compliance",
-              "delay": 0
-            },
-            {
-              "tagName": "A",
-              "text": "",
-              "delay": 0
-            },
-            {
-              "tagName": "A",
-              "text": "",
-              "delay": 0
-            },
-            {
-              "tagName": "A",
-              "text": "Home",
-              "delay": 0
-            },
-            {
-              "tagName": "A",
-              "text": "How it Works",
-              "delay": 0
-            },
-            {
-              "tagName": "A",
-              "text": "Manual Testing",
-              "delay": 0
-            },
-            {
-              "tagName": "A",
-              "text": "Remediation",
-              "delay": 0
-            },
-            {
-              "tagName": "A",
-              "text": "Schedule Demo",
-              "delay": 0
-            },
-            {
-              "tagName": "A",
-              "text": "Our Mission",
-              "delay": 0
-            },
-            {
-              "tagName": "A",
-              "text": "News/Blog",
-              "delay": 0
-            },
-            {
-              "tagName": "A",
-              "text": "Contact Us",
-              "delay": 0
-            },
-            {
-              "tagName": "A",
-              "text": "Terms",
-              "delay": 0
-            },
-            {
-              "tagName": "A",
-              "text": "Privacy",
-              "delay": 0
-            },
-            {
-              "tagName": "A",
-              "text": "Accessibility Statement",
-              "delay": 0
-            },
-            {
-              "tagName": "INPUT",
-              "text": "",
-              "delay": 0
-            },
-            {
-              "tagName": "INPUT",
-              "text": "",
-              "delay": 0
-            },
-            {
-              "tagName": "A",
-              "text": "",
-              "delay": 0
-            },
-            {
-              "tagName": "A",
-              "text": "",
-              "delay": 0
-            },
-            {
-              "tagName": "A",
-              "text": "",
-              "delay": 0
-            }
-          ]
+          "nonOutlinePresent": [],
+          "outlinePresent": []
         }
       }
     },
@@ -1124,29 +882,23 @@
       "tailSampleSize": 15,
       "withItems": true,
       "what": "hover-caused content changes",
-      "url": "https://www.accessibilityshield.com/",
+      "url": "http://p3nlhclust404.shr.prod.phx3.secureserver.net/SharedContent/redirect_0.html",
       "result": {
         "totals": {
-          "triggers": 65,
-          "headTriggers": 20,
-          "tailTriggers": 45,
+          "triggers": 0,
+          "headTriggers": 0,
+          "tailTriggers": 0,
           "impactTriggers": 0,
           "additions": 0,
           "removals": 0,
           "opacityChanges": 0,
           "opacityImpact": 0,
-          "unhoverables": 1
+          "unhoverables": 0
         },
         "items": {
           "head": {
             "impactTriggers": [],
-            "unhoverables": [
-              {
-                "tagName": "A",
-                "id": "",
-                "text": "Skiptocontent"
-              }
-            ]
+            "unhoverables": []
           },
           "tail": {
             "impactTriggers": [],
@@ -1450,22 +1202,12 @@
       "type": "test",
       "which": "role",
       "what": "roles",
-      "url": "https://www.accessibilityshield.com/",
+      "url": "http://p3nlhclust404.shr.prod.phx3.secureserver.net/SharedContent/redirect_0.html",
       "result": {
-        "roleElements": 12,
-        "badRoleElements": 5,
-        "tagNames": {
-          "NAV": {
-            "navigation": 1
-          },
-          "DIV": {
-            "main": 1,
-            "navigation": 1
-          },
-          "A": {
-            "button": 2
-          }
-        }
+        "roleElements": 0,
+        "badRoleElements": 0,
+        "redundantRoleElements": 0,
+        "tagNames": {}
       }
     },
     {
@@ -7332,7 +7074,7 @@
   "endTime": "2022-07-06T01:20:00",
   "elapsedSeconds": 116,
   "score": {
-    "scoreProcID": "sp12a",
+    "scoreProcID": "sp12b",
     "logWeights": {
       "logCount": 0.5,
       "logSize": 0.01,
@@ -7354,11 +7096,8 @@
     },
     "packageDetails": {
       "testaro": {
-        "focInd": 22,
         "focOp": 4,
-        "hover": 1,
         "linkUl": 48,
-        "role": 5,
         "styleDiff": 13,
         "zIndex": 3
       },
@@ -7409,27 +7148,11 @@
     },
     "groupDetails": {
       "groups": {
-        "focusIndication": {
-          "testaro": {
-            "focInd": {
-              "score": 22,
-              "what": "Focused element displaying no or nostandard focus indicator"
-            }
-          }
-        },
         "focusableOperable": {
           "testaro": {
             "focOp": {
               "score": 3,
               "what": "Operable elements that cannot be Tab-focused and vice versa"
-            }
-          }
-        },
-        "hoverSurprise": {
-          "testaro": {
-            "hover": {
-              "score": 1,
-              "what": "Content changes caused by hovering"
             }
           }
         },
@@ -7450,14 +7173,6 @@
             "link-in-text-block": {
               "score": 2,
               "what": "Link is not distinct from surrounding text without reliance on color"
-            }
-          }
-        },
-        "roleBad": {
-          "testaro": {
-            "role": {
-              "score": 4,
-              "what": "Nonexistent or implicit-overriding role"
             }
           }
         },
@@ -7726,7 +7441,7 @@
     },
     "preventionScores": {},
     "summary": {
-      "total": 380,
+      "total": 347,
       "log": 81,
       "preventions": 0,
       "solos": 0,
@@ -7738,10 +7453,6 @@
         {
           "groupName": "linkIndication",
           "score": 28
-        },
-        {
-          "groupName": "focusIndication",
-          "score": 24
         },
         {
           "groupName": "contentBeyondLandmarks",
@@ -7766,10 +7477,6 @@
         {
           "groupName": "labelEmpty",
           "score": 8
-        },
-        {
-          "groupName": "roleBad",
-          "score": 6
         },
         {
           "groupName": "formFieldNoText",
@@ -7822,10 +7529,6 @@
         {
           "groupName": "linkTextsSame",
           "score": 4
-        },
-        {
-          "groupName": "hoverSurprise",
-          "score": 3
         },
         {
           "groupName": "zIndexNotZero",

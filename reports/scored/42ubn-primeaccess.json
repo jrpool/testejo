@@ -304,16 +304,16 @@
           "total": 34,
           "types": {
             "indicatorMissing": {
-              "total": 0,
-              "tagNames": {}
-            },
-            "nonOutlinePresent": {
               "total": 3,
               "tagNames": {
                 "A": 1,
                 "BUTTON": 1,
                 "INPUT": 1
               }
+            },
+            "nonOutlinePresent": {
+              "total": 0,
+              "tagNames": {}
             },
             "outlinePresent": {
               "total": 31,
@@ -327,11 +327,10 @@
           }
         },
         "items": {
-          "indicatorMissing": [],
-          "nonOutlinePresent": [
+          "indicatorMissing": [
             {
               "tagName": "A",
-              "text": "The Coyote Project\nThe Coyote Project was built in collaboration with MCA Chicago to create a system"
+              "text": "Brand Guidelines Evaluation for the Field Museum\nA review of visual brand identity to develop improv"
             },
             {
               "tagName": "BUTTON",
@@ -342,6 +341,7 @@
               "text": ""
             }
           ],
+          "nonOutlinePresent": [],
           "outlinePresent": [
             {
               "tagName": "A",
@@ -351,7 +351,7 @@
             {
               "tagName": "A",
               "text": "PAC",
-              "delay": 101
+              "delay": 104
             },
             {
               "tagName": "A",
@@ -361,7 +361,7 @@
             {
               "tagName": "A",
               "text": "Services",
-              "delay": 100
+              "delay": 101
             },
             {
               "tagName": "A",
@@ -371,32 +371,32 @@
             {
               "tagName": "A",
               "text": "Resources",
-              "delay": 101
+              "delay": 100
             },
             {
               "tagName": "A",
               "text": "News",
-              "delay": 102
+              "delay": 105
             },
             {
               "tagName": "A",
               "text": "Blog",
-              "delay": 101
+              "delay": 100
             },
             {
               "tagName": "A",
               "text": "Contact",
-              "delay": 102
+              "delay": 101
             },
             {
               "tagName": "BUTTON",
               "text": "SearchClose",
-              "delay": 101
+              "delay": 105
             },
             {
               "tagName": "BUTTON",
               "text": "",
-              "delay": 101
+              "delay": 100
             },
             {
               "tagName": "A",
@@ -411,7 +411,7 @@
             {
               "tagName": "A",
               "text": "See all jobs",
-              "delay": 101
+              "delay": 102
             },
             {
               "tagName": "A",
@@ -426,7 +426,7 @@
             {
               "tagName": "A",
               "text": "Kiosks and Interactives",
-              "delay": 100
+              "delay": 102
             },
             {
               "tagName": "A",
@@ -446,52 +446,52 @@
             {
               "tagName": "A",
               "text": "Research",
-              "delay": 101
+              "delay": 102
             },
             {
               "tagName": "A",
               "text": "Strategy and Policy",
-              "delay": 100
+              "delay": 102
             },
             {
               "tagName": "A",
               "text": "Web Accessibility",
-              "delay": 101
+              "delay": 102
             },
             {
               "tagName": "A",
               "text": "Workshops and Trainings",
-              "delay": 101
+              "delay": 100
             },
             {
               "tagName": "A",
               "text": "Prime Access Consulting",
-              "delay": 101
+              "delay": 104
             },
             {
               "tagName": "A",
               "text": "Contact",
-              "delay": 102
-            },
-            {
-              "tagName": "A",
-              "text": "Accessibility",
               "delay": 101
             },
             {
               "tagName": "A",
+              "text": "Accessibility",
+              "delay": 104
+            },
+            {
+              "tagName": "A",
               "text": "Privacy Policy",
-              "delay": 100
+              "delay": 101
             },
             {
               "tagName": "A",
               "text": "Twitter",
-              "delay": 100
+              "delay": 102
             },
             {
               "tagName": "A",
               "text": "LinkedIn",
-              "delay": 102
+              "delay": 104
             },
             {
               "tagName": "INPUT",
@@ -1248,13 +1248,20 @@
       "url": "https://www.pac.bz/",
       "result": {
         "roleElements": 3,
-        "badRoleElements": 2,
+        "badRoleElements": 1,
+        "redundantRoleElements": 1,
         "tagNames": {
           "MAIN": {
-            "main": 1
+            "main": {
+              "bad": 0,
+              "redundant": 1
+            }
           },
           "DIV": {
-            "status": 1
+            "status": {
+              "bad": 1,
+              "redundant": 0
+            }
           }
         }
       }
@@ -4823,7 +4830,7 @@
   "endTime": "2022-07-09T15:18:56",
   "elapsedSeconds": 102,
   "score": {
-    "scoreProcID": "sp12a",
+    "scoreProcID": "sp12b",
     "logWeights": {
       "logCount": 0.5,
       "logSize": 0.01,
@@ -4846,12 +4853,12 @@
     "packageDetails": {
       "testaro": {
         "focAll": 2,
-        "focInd": 3,
+        "focInd": 9,
         "focOp": 12,
         "hover": 6,
         "labClash": 1,
         "linkUl": 18,
-        "role": 2,
+        "role": 3,
         "styleDiff": 20,
         "zIndex": 15
       },
@@ -4906,7 +4913,7 @@
         "focusIndication": {
           "testaro": {
             "focInd": {
-              "score": 3,
+              "score": 9,
               "what": "Focused element displaying no or nostandard focus indicator"
             }
           }
@@ -5172,7 +5179,7 @@
     },
     "preventionScores": {},
     "summary": {
-      "total": 259,
+      "total": 265,
       "log": 0,
       "preventions": 0,
       "solos": 0,
@@ -5188,6 +5195,10 @@
         {
           "groupName": "contrastAA",
           "score": 19
+        },
+        {
+          "groupName": "focusIndication",
+          "score": 11
         },
         {
           "groupName": "focusableOperable",
@@ -5220,10 +5231,6 @@
         {
           "groupName": "controlLabel",
           "score": 6
-        },
-        {
-          "groupName": "focusIndication",
-          "score": 5
         },
         {
           "groupName": "imageTextLong",

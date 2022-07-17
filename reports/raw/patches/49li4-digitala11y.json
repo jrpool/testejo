@@ -1,0 +1,447 @@
+{
+  "id": "49li4-digitala11y",
+  "host": {
+    "id": "digitala11y",
+    "which": "https://www.digitala11y.com/",
+    "what": "DigitalA11Y"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-16T21:46:14"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-16T21:47:26"
+    }
+  ],
+  "script": {
+    "id": "tp12",
+    "what": "Alfa, Axe, HTML CodeSniffer, IBM, Tenon, WAVE, and 16 custom tests",
+    "strict": true,
+    "timeLimit": 150,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.digitala11y.com/",
+        "what": "DigitalA11Y"
+      },
+      {
+        "type": "test",
+        "which": "focInd",
+        "revealAll": false,
+        "allowedDelay": 250,
+        "withItems": true,
+        "what": "focus indicators"
+      },
+      {
+        "type": "test",
+        "which": "hover",
+        "headSize": 20,
+        "headSampleSize": 20,
+        "tailSampleSize": 15,
+        "withItems": true,
+        "what": "hover impacts"
+      },
+      {
+        "type": "test",
+        "which": "role",
+        "what": "validity and necessity of role assignments"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.digitala11y.com/",
+      "what": "DigitalA11Y",
+      "result": "https://www.digitala11y.com/"
+    },
+    {
+      "type": "test",
+      "which": "focInd",
+      "revealAll": false,
+      "allowedDelay": 250,
+      "withItems": true,
+      "what": "focus indicators",
+      "url": "https://www.digitala11y.com/",
+      "result": {
+        "totals": {
+          "total": 43,
+          "types": {
+            "indicatorMissing": {
+              "total": 37,
+              "tagNames": {
+                "A": 35,
+                "BUTTON": 2
+              }
+            },
+            "nonOutlinePresent": {
+              "total": 6,
+              "tagNames": {
+                "A": 3,
+                "INPUT": 1,
+                "BUTTON": 2
+              }
+            },
+            "outlinePresent": {
+              "total": 0,
+              "meanDelay": 0,
+              "tagNames": {}
+            }
+          }
+        },
+        "items": {
+          "indicatorMissing": [
+            {
+              "tagName": "A",
+              "text": "DigitalA11YYour Accessibility Partner"
+            },
+            {
+              "tagName": "A",
+              "text": "Home"
+            },
+            {
+              "tagName": "A",
+              "text": "About"
+            },
+            {
+              "tagName": "A",
+              "text": "Blog"
+            },
+            {
+              "tagName": "A",
+              "text": "ResourcesExpand"
+            },
+            {
+              "tagName": "BUTTON",
+              "text": ""
+            },
+            {
+              "tagName": "A",
+              "text": "Contact"
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Search DigitalA11Y Search"
+            },
+            {
+              "tagName": "A",
+              "text": "EXPLORE WCAG"
+            },
+            {
+              "tagName": "A",
+              "text": "EXPLORE ARIA"
+            },
+            {
+              "tagName": "A",
+              "text": "EXPLORE TOOLS"
+            },
+            {
+              "tagName": "A",
+              "text": "Tools"
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility Tools and Resources for Designers"
+            },
+            {
+              "tagName": "A",
+              "text": "Read More Accessibility Tools and Resources for DesignersContinue"
+            },
+            {
+              "tagName": "A",
+              "text": "Tools"
+            },
+            {
+              "tagName": "A",
+              "text": "Free Accessibility Linters to Automate Accessibility Workflow"
+            },
+            {
+              "tagName": "A",
+              "text": "Read More Free Accessibility Linters to Automate Accessibility WorkflowContinue"
+            },
+            {
+              "tagName": "A",
+              "text": "Web Accessibility"
+            },
+            {
+              "tagName": "A",
+              "text": "Do We Need Screen Reader for Accessibility Testing"
+            },
+            {
+              "tagName": "A",
+              "text": "Read More Do We Need Screen Reader for Accessibility TestingContinue"
+            },
+            {
+              "tagName": "A",
+              "text": ""
+            },
+            {
+              "tagName": "A",
+              "text": "Web Accessibility"
+            },
+            {
+              "tagName": "A",
+              "text": "Scroll to top: Does it need to be accessible?"
+            },
+            {
+              "tagName": "A",
+              "text": "Read More Scroll to top: Does it need to be accessible?Continue"
+            },
+            {
+              "tagName": "A",
+              "text": "Web Accessibility"
+            },
+            {
+              "tagName": "A",
+              "text": "ADA Digital Accessibility Lawsuits 2021: Our takeaway"
+            },
+            {
+              "tagName": "A",
+              "text": "Read More ADA Digital Accessibility Lawsuits 2021: Our takeawayContinue"
+            },
+            {
+              "tagName": "A",
+              "text": "WCAG"
+            },
+            {
+              "tagName": "A",
+              "text": "WCAG 2.2: What we know till now"
+            },
+            {
+              "tagName": "A",
+              "text": "Read More WCAG 2.2: What we know till nowContinue"
+            },
+            {
+              "tagName": "A",
+              "text": "Terms & Conditions"
+            },
+            {
+              "tagName": "A",
+              "text": "Privacy Policy"
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility Statement"
+            },
+            {
+              "tagName": "A",
+              "text": "Disclaimer"
+            },
+            {
+              "tagName": "A",
+              "text": "Facebook"
+            },
+            {
+              "tagName": "A",
+              "text": "Twitter"
+            },
+            {
+              "tagName": "A",
+              "text": "Linkedin"
+            }
+          ],
+          "nonOutlinePresent": [
+            {
+              "tagName": "A",
+              "text": "Skip to content"
+            },
+            {
+              "tagName": "A",
+              "text": "Ask a Question"
+            },
+            {
+              "tagName": "A",
+              "text": "Explore the Blog"
+            },
+            {
+              "tagName": "INPUT",
+              "text": ""
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Sign-Up"
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Scroll to top"
+            }
+          ],
+          "outlinePresent": []
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.digitala11y.com/",
+      "what": "URL",
+      "result": "https://www.digitala11y.com/"
+    },
+    {
+      "type": "test",
+      "which": "hover",
+      "headSize": 20,
+      "headSampleSize": 20,
+      "tailSampleSize": 15,
+      "withItems": true,
+      "what": "hover-caused content changes",
+      "url": "https://www.digitala11y.com/",
+      "result": {
+        "totals": {
+          "triggers": 48,
+          "headTriggers": 20,
+          "tailTriggers": 28,
+          "impactTriggers": 3,
+          "additions": 18,
+          "removals": 9,
+          "opacityChanges": 0,
+          "opacityImpact": 0,
+          "unhoverables": 3
+        },
+        "items": {
+          "head": {
+            "impactTriggers": [
+              {
+                "tagName": "LI",
+                "text": "ResourcesExpandWAI-ARIAWCAGCheatSheetsA11YBlogs",
+                "additions": 9,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "A",
+                "text": "ResourcesExpand",
+                "additions": 9,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "LI",
+                "text": "Contact",
+                "additions": 0,
+                "removals": 9,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              }
+            ],
+            "unhoverables": [
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Skiptocontent"
+              },
+              {
+                "tagName": "BUTTON",
+                "id": "",
+                "text": ""
+              }
+            ]
+          },
+          "tail": {
+            "impactTriggers": [],
+            "unhoverables": [
+              {
+                "tagName": "BUTTON",
+                "id": "kt-scroll-up-reader",
+                "text": "Scrolltotop"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.digitala11y.com/",
+      "what": "URL",
+      "result": "https://www.digitala11y.com/"
+    },
+    {
+      "type": "test",
+      "which": "role",
+      "what": "roles",
+      "url": "https://www.digitala11y.com/",
+      "result": {
+        "roleElements": 14,
+        "badRoleElements": 2,
+        "redundantRoleElements": 3,
+        "tagNames": {
+          "HEADER": {
+            "banner": {
+              "bad": 1,
+              "redundant": 0
+            }
+          },
+          "NAV": {
+            "navigation": {
+              "bad": 0,
+              "redundant": 2
+            }
+          },
+          "MAIN": {
+            "main": {
+              "bad": 0,
+              "redundant": 1
+            }
+          },
+          "FOOTER": {
+            "contentinfo": {
+              "bad": 1,
+              "redundant": 0
+            }
+          }
+        }
+      }
+    }
+  ],
+  "timeStamp": "49li4",
+  "startTime": "2022-07-16T21:46:14",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "hover",
+      45
+    ],
+    [
+      "focInd",
+      13
+    ],
+    [
+      "role",
+      0
+    ]
+  ],
+  "logCount": 0,
+  "logSize": 0,
+  "errorLogCount": 0,
+  "errorLogSize": 0,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-16T21:47:26",
+  "elapsedSeconds": 71
+}

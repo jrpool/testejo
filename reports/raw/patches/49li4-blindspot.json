@@ -1,0 +1,663 @@
+{
+  "id": "49li4-blindspot",
+  "host": {
+    "id": "blindspot",
+    "which": "https://myblindspot.org/",
+    "what": "My Blind Spot"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-16T22:00:00"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-16T22:01:00"
+    }
+  ],
+  "script": {
+    "id": "tp12",
+    "what": "Alfa, Axe, HTML CodeSniffer, IBM, Tenon, WAVE, and 16 custom tests",
+    "strict": true,
+    "timeLimit": 150,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://myblindspot.org/",
+        "what": "My Blind Spot"
+      },
+      {
+        "type": "test",
+        "which": "focInd",
+        "revealAll": false,
+        "allowedDelay": 250,
+        "withItems": true,
+        "what": "focus indicators"
+      },
+      {
+        "type": "test",
+        "which": "hover",
+        "headSize": 20,
+        "headSampleSize": 20,
+        "tailSampleSize": 15,
+        "withItems": true,
+        "what": "hover impacts"
+      },
+      {
+        "type": "test",
+        "which": "role",
+        "what": "validity and necessity of role assignments"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://myblindspot.org/",
+      "what": "My Blind Spot",
+      "result": "https://myblindspot.org/"
+    },
+    {
+      "type": "test",
+      "which": "focInd",
+      "revealAll": false,
+      "allowedDelay": 250,
+      "withItems": true,
+      "what": "focus indicators",
+      "url": "https://myblindspot.org/",
+      "result": {
+        "totals": {
+          "total": 78,
+          "types": {
+            "indicatorMissing": {
+              "total": 11,
+              "tagNames": {
+                "A": 9,
+                "IFRAME": 2
+              }
+            },
+            "nonOutlinePresent": {
+              "total": 0,
+              "tagNames": {}
+            },
+            "outlinePresent": {
+              "total": 67,
+              "meanDelay": 0,
+              "tagNames": {
+                "A": 67
+              }
+            }
+          }
+        },
+        "items": {
+          "indicatorMissing": [
+            {
+              "tagName": "A",
+              "text": "About MBS"
+            },
+            {
+              "tagName": "A",
+              "text": "OUR VISION"
+            },
+            {
+              "tagName": "A",
+              "text": "SERVICES"
+            },
+            {
+              "tagName": "IFRAME",
+              "text": ""
+            },
+            {
+              "tagName": "A",
+              "text": "VIEW ALL OUR ARTICLES"
+            },
+            {
+              "tagName": "A",
+              "text": "View the AccessAbility Works Podcast"
+            },
+            {
+              "tagName": "A",
+              "text": "LEARN MORE about SUPPORTING MY BLIND SPOT ON AMAZON SMILE"
+            },
+            {
+              "tagName": "A",
+              "text": "Learn how to donate"
+            },
+            {
+              "tagName": "A",
+              "text": "Subscribe Now"
+            },
+            {
+              "tagName": "A",
+              "text": "Go to Top"
+            },
+            {
+              "tagName": "IFRAME",
+              "text": ""
+            }
+          ],
+          "nonOutlinePresent": [],
+          "outlinePresent": [
+            {
+              "tagName": "A",
+              "text": "Skip to content",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Home",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Services",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Resources",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "AccessAbility BLOG",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "AccessAbility Works Podcast",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Our Store",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Contact Us",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Donate",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Madison Avenue Recognizes People with Disabilities Can Sell Anything–Especially Inclusion!",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Should Characters With Disabilities Only Be Played by Actors With Disabilities?",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "MBS’s Rhea Guntalilib Wrote a Book!",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Situational Disability: The “Other” Disability",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Eye-Opening: A Story of Friendship, Fishing & Adventure",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Privacy Policy",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility Conformance",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility Defined",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "EEO Policy",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Volunteer",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Get QuickBooks Online",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "GEO protection plugin",
+              "delay": 0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://myblindspot.org/",
+      "what": "URL",
+      "result": "https://myblindspot.org/"
+    },
+    {
+      "type": "test",
+      "which": "hover",
+      "headSize": 20,
+      "headSampleSize": 20,
+      "tailSampleSize": 15,
+      "withItems": true,
+      "what": "hover-caused content changes",
+      "url": "https://myblindspot.org/",
+      "result": {
+        "totals": {
+          "triggers": 96,
+          "headTriggers": 20,
+          "tailTriggers": 76,
+          "impactTriggers": 8,
+          "additions": 86,
+          "removals": 0,
+          "opacityChanges": 0,
+          "opacityImpact": 0,
+          "unhoverables": 1
+        },
+        "items": {
+          "head": {
+            "impactTriggers": [
+              {
+                "tagName": "LI",
+                "text": "AboutMBSAboutUsStaffStrategicPartnersDonors",
+                "additions": 13,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "A",
+                "text": "AboutMBS",
+                "additions": 13,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "LI",
+                "text": "ServicesMarketingBrochure",
+                "additions": 4,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "A",
+                "text": "Services",
+                "additions": 4,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "LI",
+                "text": "ResourcesAdvocacy&RightsStateAgenciesfortheDisable",
+                "additions": 22,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "A",
+                "text": "Resources",
+                "additions": 22,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "LI",
+                "text": "OurStoreQuickBooksFAQs",
+                "additions": 4,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "A",
+                "text": "OurStore",
+                "additions": 4,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              }
+            ],
+            "unhoverables": [
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Skiptocontent"
+              }
+            ]
+          },
+          "tail": {
+            "impactTriggers": [],
+            "unhoverables": []
+          }
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://myblindspot.org/",
+      "what": "URL",
+      "result": "https://myblindspot.org/"
+    },
+    {
+      "type": "test",
+      "which": "role",
+      "what": "roles",
+      "url": "https://myblindspot.org/",
+      "result": {
+        "roleElements": 11,
+        "badRoleElements": 1,
+        "redundantRoleElements": 0,
+        "tagNames": {
+          "A": {
+            "button": {
+              "bad": 1,
+              "redundant": 0
+            }
+          }
+        }
+      }
+    }
+  ],
+  "timeStamp": "49li4",
+  "startTime": "2022-07-16T22:00:00",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "hover",
+      45
+    ],
+    [
+      "focInd",
+      4
+    ],
+    [
+      "role",
+      0
+    ]
+  ],
+  "logCount": 6,
+  "logSize": 318,
+  "errorLogCount": 0,
+  "errorLogSize": 0,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-16T22:01:00",
+  "elapsedSeconds": 59
+}

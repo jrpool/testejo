@@ -1,0 +1,353 @@
+{
+  "id": "49li4-adaexpertise",
+  "host": {
+    "id": "adaexpertise",
+    "which": "https://adaexpertise.com/",
+    "what": "ADA Expertise Consulting"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-16T21:25:58"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-16T21:26:51"
+    }
+  ],
+  "script": {
+    "id": "tp12",
+    "what": "Alfa, Axe, HTML CodeSniffer, IBM, Tenon, WAVE, and 16 custom tests",
+    "strict": true,
+    "timeLimit": 150,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://adaexpertise.com/",
+        "what": "ADA Expertise Consulting"
+      },
+      {
+        "type": "test",
+        "which": "focInd",
+        "revealAll": false,
+        "allowedDelay": 250,
+        "withItems": true,
+        "what": "focus indicators"
+      },
+      {
+        "type": "test",
+        "which": "hover",
+        "headSize": 20,
+        "headSampleSize": 20,
+        "tailSampleSize": 15,
+        "withItems": true,
+        "what": "hover impacts"
+      },
+      {
+        "type": "test",
+        "which": "role",
+        "what": "validity and necessity of role assignments"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://adaexpertise.com/",
+      "what": "ADA Expertise Consulting",
+      "result": "https://adaexpertise.com/"
+    },
+    {
+      "type": "test",
+      "which": "focInd",
+      "revealAll": false,
+      "allowedDelay": 250,
+      "withItems": true,
+      "what": "focus indicators",
+      "url": "https://adaexpertise.com/",
+      "result": {
+        "totals": {
+          "total": 23,
+          "types": {
+            "indicatorMissing": {
+              "total": 0,
+              "tagNames": {}
+            },
+            "nonOutlinePresent": {
+              "total": 0,
+              "tagNames": {}
+            },
+            "outlinePresent": {
+              "total": 23,
+              "meanDelay": 0,
+              "tagNames": {
+                "A": 23
+              }
+            }
+          }
+        },
+        "items": {
+          "indicatorMissing": [],
+          "nonOutlinePresent": [],
+          "outlinePresent": [
+            {
+              "tagName": "A",
+              "text": "Skip to content",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Schedule a call or Zoom meeting",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "How to Change Text Size",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Home",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "About",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Services",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Clients & Accolades",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Media",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Blog",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Contact Us",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Contact us",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "More Reviews",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Contact Us",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Read More About ADA in Lodging",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Contact Us",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "More Reviews",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Contact Us for More Information",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "What to Do If You Encounter A Problem Using Our Website",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "305-896-3000",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "30853 Granada AvenueBig Pine Key, FL 33043",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "email",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "SmilingWebDesign.com",
+              "delay": 0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://adaexpertise.com/",
+      "what": "URL",
+      "result": "https://adaexpertise.com/"
+    },
+    {
+      "type": "test",
+      "which": "hover",
+      "headSize": 20,
+      "headSampleSize": 20,
+      "tailSampleSize": 15,
+      "withItems": true,
+      "what": "hover-caused content changes",
+      "url": "https://adaexpertise.com/",
+      "result": {
+        "totals": {
+          "triggers": 58,
+          "headTriggers": 20,
+          "tailTriggers": 38,
+          "impactTriggers": 2,
+          "additions": 48,
+          "removals": 0,
+          "opacityChanges": 0,
+          "opacityImpact": 0,
+          "unhoverables": 1
+        },
+        "items": {
+          "head": {
+            "impactTriggers": [
+              {
+                "tagName": "LI",
+                "text": "ServicesADALawsuitAssistanceOvercomingMythsAboutth",
+                "additions": 24,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "A",
+                "text": "Services",
+                "additions": 24,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              }
+            ],
+            "unhoverables": [
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Skiptocontent"
+              }
+            ]
+          },
+          "tail": {
+            "impactTriggers": [],
+            "unhoverables": []
+          }
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://adaexpertise.com/",
+      "what": "URL",
+      "result": "https://adaexpertise.com/"
+    },
+    {
+      "type": "test",
+      "which": "role",
+      "what": "roles",
+      "url": "https://adaexpertise.com/",
+      "result": {
+        "roleElements": 10,
+        "badRoleElements": 2,
+        "redundantRoleElements": 0,
+        "tagNames": {
+          "HEADER": {
+            "banner": {
+              "bad": 1,
+              "redundant": 0
+            }
+          },
+          "DIV": {
+            "main": {
+              "bad": 1,
+              "redundant": 0
+            }
+          }
+        }
+      }
+    }
+  ],
+  "timeStamp": "49li4",
+  "startTime": "2022-07-16T21:25:58",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "hover",
+      46
+    ],
+    [
+      "focInd",
+      0
+    ],
+    [
+      "role",
+      0
+    ]
+  ],
+  "logCount": 6,
+  "logSize": 345,
+  "errorLogCount": 3,
+  "errorLogSize": 207,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-16T21:26:51",
+  "elapsedSeconds": 52
+}

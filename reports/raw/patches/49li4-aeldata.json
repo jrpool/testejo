@@ -1,0 +1,580 @@
+{
+  "id": "49li4-aeldata",
+  "host": {
+    "id": "aeldata",
+    "which": "https://aeldata.com/",
+    "what": "AEL Data"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-16T21:28:43"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-16T21:29:37"
+    }
+  ],
+  "script": {
+    "id": "tp12",
+    "what": "Alfa, Axe, HTML CodeSniffer, IBM, Tenon, WAVE, and 16 custom tests",
+    "strict": true,
+    "timeLimit": 150,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://aeldata.com/",
+        "what": "AEL Data"
+      },
+      {
+        "type": "test",
+        "which": "focInd",
+        "revealAll": false,
+        "allowedDelay": 250,
+        "withItems": true,
+        "what": "focus indicators"
+      },
+      {
+        "type": "test",
+        "which": "hover",
+        "headSize": 20,
+        "headSampleSize": 20,
+        "tailSampleSize": 15,
+        "withItems": true,
+        "what": "hover impacts"
+      },
+      {
+        "type": "test",
+        "which": "role",
+        "what": "validity and necessity of role assignments"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://aeldata.com/",
+      "what": "AEL Data",
+      "result": "https://aeldata.com/"
+    },
+    {
+      "type": "test",
+      "which": "focInd",
+      "revealAll": false,
+      "allowedDelay": 250,
+      "withItems": true,
+      "what": "focus indicators",
+      "url": "https://aeldata.com/",
+      "result": {
+        "totals": {
+          "total": 57,
+          "types": {
+            "indicatorMissing": {
+              "total": 4,
+              "tagNames": {
+                "BUTTON": 4
+              }
+            },
+            "nonOutlinePresent": {
+              "total": 4,
+              "tagNames": {
+                "INPUT": 3,
+                "TEXTAREA": 1
+              }
+            },
+            "outlinePresent": {
+              "total": 49,
+              "meanDelay": 23,
+              "tagNames": {
+                "A": 43,
+                "INPUT": 2,
+                "BUTTON": 4
+              }
+            }
+          }
+        },
+        "items": {
+          "indicatorMissing": [
+            {
+              "tagName": "BUTTON",
+              "text": "Previous"
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Next"
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Previous"
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Next"
+            }
+          ],
+          "nonOutlinePresent": [
+            {
+              "tagName": "INPUT",
+              "text": ""
+            },
+            {
+              "tagName": "INPUT",
+              "text": ""
+            },
+            {
+              "tagName": "INPUT",
+              "text": ""
+            },
+            {
+              "tagName": "TEXTAREA",
+              "text": ""
+            }
+          ],
+          "outlinePresent": [
+            {
+              "tagName": "A",
+              "text": "Skip to main navigation",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Skip to main content",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Skip to footer",
+              "delay": 0
+            },
+            {
+              "tagName": "INPUT",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "INPUT",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Facebook",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Twitter",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Linkedin",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Home",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "About us",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Services",
+              "delay": 0
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Services - Child menu",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Web Accessibility",
+              "delay": 0
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Web Accessibility - Child menu",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Resources",
+              "delay": 0
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Resources - Child menu",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Contact us",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Talk to our experts",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Send Enquiry",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Read More About AEL Data",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Learn more about Accessibility",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "Learn more about Educational",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Learn more about ePublishing",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Learn more about Ebook Conversion",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Learn more about Responsive Design",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Learn more about Digital Solutions",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Click here for a Virtual Meeting",
+              "delay": 101
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Send",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Understanding Success Criterion 3.1.2: Language of Parts",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "Continue reading…",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Understanding Success Criterion 1.3.6 Identify Purpose",
+              "delay": 106
+            },
+            {
+              "tagName": "A",
+              "text": "Continue reading…",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Understanding Success Criterion 1.3.5: Identify Input Purpose",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "Continue reading…",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "About us",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Blog",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Get in touch",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Education",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Publishing",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Digital Solutions",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Terms and Conditions",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Privacy Policy",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility Policy",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Security Policies",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Sitemap",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Facebook",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Twitter",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Linkedin",
+              "delay": 0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://aeldata.com/",
+      "what": "URL",
+      "result": "https://aeldata.com/"
+    },
+    {
+      "type": "test",
+      "which": "hover",
+      "headSize": 20,
+      "headSampleSize": 20,
+      "tailSampleSize": 15,
+      "withItems": true,
+      "what": "hover-caused content changes",
+      "url": "https://aeldata.com/",
+      "result": {
+        "totals": {
+          "triggers": 115,
+          "headTriggers": 20,
+          "tailTriggers": 95,
+          "impactTriggers": 7,
+          "additions": 79,
+          "removals": 0,
+          "opacityChanges": 0,
+          "opacityImpact": 0,
+          "unhoverables": 4
+        },
+        "items": {
+          "head": {
+            "impactTriggers": [
+              {
+                "tagName": "LI",
+                "text": "ServicesServices-ChildmenuEbookEbook-ChildmenuInte",
+                "additions": 17,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "A",
+                "text": "Services",
+                "additions": 17,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "BUTTON",
+                "text": "Services-Childmenu",
+                "additions": 17,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "LI",
+                "text": "WebAccessibilityWebAccessibility-ChildmenuAccessib",
+                "additions": 7,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "A",
+                "text": "WebAccessibility",
+                "additions": 7,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "BUTTON",
+                "text": "WebAccessibility-Childmenu",
+                "additions": 7,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "LI",
+                "text": "ResourcesResources-ChildmenuBlogWebComplianceWebCo",
+                "additions": 7,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              }
+            ],
+            "unhoverables": [
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Skiptomainnavigation"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Skiptomaincontent"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Skiptofooter"
+              }
+            ]
+          },
+          "tail": {
+            "impactTriggers": [],
+            "unhoverables": [
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "UnderstandingSuccessCriterion2.5.6:ConcurrentInput"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://aeldata.com/",
+      "what": "URL",
+      "result": "https://aeldata.com/"
+    },
+    {
+      "type": "test",
+      "which": "role",
+      "what": "roles",
+      "url": "https://aeldata.com/",
+      "result": {
+        "roleElements": 29,
+        "badRoleElements": 11,
+        "redundantRoleElements": 0,
+        "tagNames": {
+          "A": {
+            "button": {
+              "bad": 10,
+              "redundant": 0
+            }
+          },
+          "DIV": {
+            "button": {
+              "bad": 1,
+              "redundant": 0
+            }
+          }
+        }
+      }
+    }
+  ],
+  "timeStamp": "49li4",
+  "startTime": "2022-07-16T21:28:43",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "hover",
+      41
+    ],
+    [
+      "focInd",
+      4
+    ],
+    [
+      "role",
+      0
+    ]
+  ],
+  "logCount": 28,
+  "logSize": 4866,
+  "errorLogCount": 22,
+  "errorLogSize": 4683,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-16T21:29:37",
+  "elapsedSeconds": 53
+}

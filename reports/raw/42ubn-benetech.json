@@ -304,16 +304,16 @@
           "total": 56,
           "types": {
             "indicatorMissing": {
-              "total": 0,
-              "tagNames": {}
-            },
-            "nonOutlinePresent": {
               "total": 4,
               "tagNames": {
                 "BLOCKQUOTE": 1,
                 "IFRAME": 1,
                 "A": 2
               }
+            },
+            "nonOutlinePresent": {
+              "total": 0,
+              "tagNames": {}
             },
             "outlinePresent": {
               "total": 52,
@@ -327,8 +327,7 @@
           }
         },
         "items": {
-          "indicatorMissing": [],
-          "nonOutlinePresent": [
+          "indicatorMissing": [
             {
               "tagName": "BLOCKQUOTE",
               "text": "<img src=\"https://benetech.org/wp-content/uploads/2017/08/skoll-logo-trans-1-2-e1503515071224-300x20"
@@ -346,6 +345,7 @@
               "text": "Get Involved"
             }
           ],
+          "nonOutlinePresent": [],
           "outlinePresent": [
             {
               "tagName": "A",
@@ -440,17 +440,17 @@
             {
               "tagName": "DIV",
               "text": "<img src=\"https://benetech.org/wp-content/uploads/2021/10/thumbnail-2018-12-17-09h04m55s253-e1560541",
-              "delay": 101
+              "delay": 103
             },
             {
               "tagName": "DIV",
               "text": "<img src=\"https://benetech.org/wp-content/uploads/2017/05/Hero-slider-Bridging-thumb-60x60.jpg\">",
-              "delay": 102
+              "delay": 101
             },
             {
               "tagName": "DIV",
               "text": "<img src=\"https://benetech.org/wp-content/uploads/2021/09/2boys-scaled-60x60.jpg\">",
-              "delay": 101
+              "delay": 102
             },
             {
               "tagName": "DIV",
@@ -500,12 +500,12 @@
             {
               "tagName": "DIV",
               "text": "",
-              "delay": 102
+              "delay": 101
             },
             {
               "tagName": "DIV",
               "text": "",
-              "delay": 101
+              "delay": 103
             },
             {
               "tagName": "A",
@@ -1424,11 +1424,11 @@
           "headTriggers": 20,
           "tailTriggers": 62,
           "impactTriggers": 6,
-          "additions": 0,
+          "additions": 60,
           "removals": 0,
-          "opacityChanges": 6,
-          "opacityImpact": 72,
-          "unhoverables": 1
+          "opacityChanges": 0,
+          "opacityImpact": 0,
+          "unhoverables": 2
         },
         "items": {
           "head": {
@@ -1436,50 +1436,50 @@
               {
                 "tagName": "LI",
                 "text": "WorkWorkOverviewEducationInternationalEducationUSE",
-                "additions": 0,
+                "additions": 10,
                 "removals": 0,
-                "opacityChanges": 1,
-                "opacityImpact": 16
+                "opacityChanges": 0,
+                "opacityImpact": 0
               },
               {
                 "tagName": "A",
                 "text": "Work",
-                "additions": 0,
+                "additions": 10,
                 "removals": 0,
-                "opacityChanges": 1,
-                "opacityImpact": 16
+                "opacityChanges": 0,
+                "opacityImpact": 0
               },
               {
                 "tagName": "LI",
                 "text": "ApproachApproachOverviewInnovationCommunitiesSoftw",
-                "additions": 0,
+                "additions": 7,
                 "removals": 0,
-                "opacityChanges": 1,
-                "opacityImpact": 8
+                "opacityChanges": 0,
+                "opacityImpact": 0
               },
               {
                 "tagName": "A",
                 "text": "Approach",
-                "additions": 0,
+                "additions": 7,
                 "removals": 0,
-                "opacityChanges": 1,
-                "opacityImpact": 8
+                "opacityChanges": 0,
+                "opacityImpact": 0
               },
               {
                 "tagName": "LI",
                 "text": "AboutOurStoryLeadershipResourcesEventsCareersFinan",
-                "additions": 0,
+                "additions": 13,
                 "removals": 0,
-                "opacityChanges": 1,
-                "opacityImpact": 12
+                "opacityChanges": 0,
+                "opacityImpact": 0
               },
               {
                 "tagName": "A",
                 "text": "About",
-                "additions": 0,
+                "additions": 13,
                 "removals": 0,
-                "opacityChanges": 1,
-                "opacityImpact": 12
+                "opacityChanges": 0,
+                "opacityImpact": 0
               }
             ],
             "unhoverables": [
@@ -1492,7 +1492,13 @@
           },
           "tail": {
             "impactTriggers": [],
-            "unhoverables": []
+            "unhoverables": [
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "LearnMore"
+              }
+            ]
           }
         }
       }
@@ -1724,23 +1730,42 @@
       "url": "https://benetech.org/",
       "result": {
         "roleElements": 19,
-        "badRoleElements": 18,
+        "badRoleElements": 15,
+        "redundantRoleElements": 3,
         "tagNames": {
           "HEADER": {
-            "banner": 1
+            "banner": {
+              "bad": 1,
+              "redundant": 0
+            }
           },
           "BUTTON": {
-            "button": 1
+            "button": {
+              "bad": 0,
+              "redundant": 1
+            }
           },
           "NAV": {
-            "navigation": 2
+            "navigation": {
+              "bad": 0,
+              "redundant": 2
+            }
           },
           "SPAN": {
-            "button": 4
+            "button": {
+              "bad": 4,
+              "redundant": 0
+            }
           },
           "DIV": {
-            "button": 9,
-            "main": 1
+            "button": {
+              "bad": 9,
+              "redundant": 0
+            },
+            "main": {
+              "bad": 1,
+              "redundant": 0
+            }
           }
         }
       }

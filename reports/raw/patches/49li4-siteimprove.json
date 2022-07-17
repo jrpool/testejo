@@ -1,0 +1,669 @@
+{
+  "id": "49li4-siteimprove",
+  "host": {
+    "id": "siteimprove",
+    "which": "https://siteimprove.com/en-us/accessibility/",
+    "what": "Siteimprove"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-16T22:04:51"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-16T22:05:27"
+    }
+  ],
+  "script": {
+    "id": "tp12",
+    "what": "Alfa, Axe, HTML CodeSniffer, IBM, Tenon, WAVE, and 16 custom tests",
+    "strict": true,
+    "timeLimit": 150,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://siteimprove.com/en-us/accessibility/",
+        "what": "Siteimprove"
+      },
+      {
+        "type": "test",
+        "which": "focInd",
+        "revealAll": false,
+        "allowedDelay": 250,
+        "withItems": true,
+        "what": "focus indicators"
+      },
+      {
+        "type": "test",
+        "which": "hover",
+        "headSize": 20,
+        "headSampleSize": 20,
+        "tailSampleSize": 15,
+        "withItems": true,
+        "what": "hover impacts"
+      },
+      {
+        "type": "test",
+        "which": "role",
+        "what": "validity and necessity of role assignments"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://siteimprove.com/en-us/accessibility/",
+      "what": "Siteimprove",
+      "result": "https://www.siteimprove.com/platform/accessibility/"
+    },
+    {
+      "type": "test",
+      "which": "focInd",
+      "revealAll": false,
+      "allowedDelay": 250,
+      "withItems": true,
+      "what": "focus indicators",
+      "url": "https://www.siteimprove.com/platform/accessibility/",
+      "result": {
+        "totals": {
+          "total": 60,
+          "types": {
+            "indicatorMissing": {
+              "total": 0,
+              "tagNames": {}
+            },
+            "nonOutlinePresent": {
+              "total": 16,
+              "tagNames": {
+                "BUTTON": 4,
+                "A": 8,
+                "INPUT": 3,
+                "SELECT": 1
+              }
+            },
+            "outlinePresent": {
+              "total": 44,
+              "meanDelay": 0,
+              "tagNames": {
+                "A": 31,
+                "BUTTON": 11,
+                "INPUT": 2
+              }
+            }
+          }
+        },
+        "items": {
+          "indicatorMissing": [],
+          "nonOutlinePresent": [
+            {
+              "tagName": "BUTTON",
+              "text": "Allow all cookies"
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Open settingsClose settings"
+            },
+            {
+              "tagName": "A",
+              "text": "Contact Us"
+            },
+            {
+              "tagName": "BUTTON",
+              "text": ""
+            },
+            {
+              "tagName": "A",
+              "text": "Get in touch"
+            },
+            {
+              "tagName": "A",
+              "text": ""
+            },
+            {
+              "tagName": "INPUT",
+              "text": ""
+            },
+            {
+              "tagName": "INPUT",
+              "text": ""
+            },
+            {
+              "tagName": "SELECT",
+              "text": "Education Finance Government IT Manufacturing Non-profit Retail Services Other"
+            },
+            {
+              "tagName": "INPUT",
+              "text": ""
+            },
+            {
+              "tagName": "A",
+              "text": "Start the conversation"
+            },
+            {
+              "tagName": "A",
+              "text": "Twitter"
+            },
+            {
+              "tagName": "A",
+              "text": "Facebook"
+            },
+            {
+              "tagName": "A",
+              "text": "LinkedIn"
+            },
+            {
+              "tagName": "A",
+              "text": "Youtube"
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Change language: English"
+            }
+          ],
+          "outlinePresent": [
+            {
+              "tagName": "A",
+              "text": "Cookie Notice",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Skip to main content",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Products",
+              "delay": 0
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Solutions",
+              "delay": 0
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Customers",
+              "delay": 0
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Resources",
+              "delay": 0
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Partners",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Help Center",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Login",
+              "delay": 0
+            },
+            {
+              "tagName": "INPUT",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "INPUT",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Privacy Policy",
+              "delay": 0
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Automated accessibility checks",
+              "delay": 0
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Guidance and practical recommendations",
+              "delay": 0
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Issue highlighting",
+              "delay": 0
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Accessibility issue categorization",
+              "delay": 0
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Progress monitoring",
+              "delay": 0
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Potential issues",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "The Must-Have Digital Accessibility Handbook Web Accessibility",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Section 508 Refresh: Now What? Web Accessibility",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Checklist for Content Editors/Creators Web Accessibility",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Platform",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Integrations",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Pricing",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "About us",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Leadership",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Board of directors",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Contact",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Press & news",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "CSR",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Open positions",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Culture",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Teams",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Locations",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Getting started",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Guides and FAQs",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Community",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "System status",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "For developers",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Privacy",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "VPAT",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Legal",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility Statement",
+              "delay": 0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://siteimprove.com/en-us/accessibility/",
+      "what": "URL",
+      "result": "https://www.siteimprove.com/platform/accessibility/"
+    },
+    {
+      "type": "test",
+      "which": "hover",
+      "headSize": 20,
+      "headSampleSize": 20,
+      "tailSampleSize": 15,
+      "withItems": true,
+      "what": "hover-caused content changes",
+      "url": "https://www.siteimprove.com/platform/accessibility/",
+      "result": {
+        "totals": {
+          "triggers": 90,
+          "headTriggers": 20,
+          "tailTriggers": 70,
+          "impactTriggers": 0,
+          "additions": 0,
+          "removals": 0,
+          "opacityChanges": 0,
+          "opacityImpact": 0,
+          "unhoverables": 32
+        },
+        "items": {
+          "head": {
+            "impactTriggers": [],
+            "unhoverables": [
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Skiptomaincontent"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "<svgxmlns=\"http://www.w3.org/2000/svg\"xmlns:xlink="
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "ProductsPlatformGofromexecutingtoexcellentInclusiv"
+              },
+              {
+                "tagName": "BUTTON",
+                "id": "nav-0",
+                "text": "Products"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "SolutionsMarketersInsightsthatfuelgrowthAgenciesAd"
+              },
+              {
+                "tagName": "BUTTON",
+                "id": "nav-1",
+                "text": "Solutions"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "CustomersCustomerstoriesSeethepossibilitiesSiteimp"
+              },
+              {
+                "tagName": "BUTTON",
+                "id": "nav-2",
+                "text": "Customers"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "ResourcesLearn&connectBlogEverythingfromindustrytr"
+              },
+              {
+                "tagName": "BUTTON",
+                "id": "nav-3",
+                "text": "Resources"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "PartnersOverviewTheSiteimprovePartnershipProgram–B"
+              },
+              {
+                "tagName": "BUTTON",
+                "id": "nav-4",
+                "text": "Partners"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "HelpCenter"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "HelpCenter"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "Login"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Login"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "ContactUs"
+              }
+            ]
+          },
+          "tail": {
+            "impactTriggers": [],
+            "unhoverables": [
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "Legal"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Contact"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "GuidesandFAQs"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "PrivacyPolicy"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Openpositions"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "<divclass=\"w100\"><imgsrc=\"/globalassets/media/shar"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "Aboutus"
+              },
+              {
+                "tagName": "BUTTON",
+                "id": "a-6409",
+                "text": "Automatedaccessibilitychecks"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "Press&news"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Getintouch"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "CSR"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Platform"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "Privacy"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "LinkedIn"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "Leadership"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://siteimprove.com/en-us/accessibility/",
+      "what": "URL",
+      "result": "https://www.siteimprove.com/platform/accessibility/"
+    },
+    {
+      "type": "test",
+      "which": "role",
+      "what": "roles",
+      "url": "https://www.siteimprove.com/platform/accessibility/",
+      "result": {
+        "roleElements": 52,
+        "badRoleElements": 15,
+        "redundantRoleElements": 0,
+        "tagNames": {
+          "SECTION": {
+            "navigation": {
+              "bad": 5,
+              "redundant": 0
+            }
+          },
+          "P": {
+            "heading": {
+              "bad": 10,
+              "redundant": 0
+            }
+          }
+        }
+      }
+    }
+  ],
+  "timeStamp": "49li4",
+  "startTime": "2022-07-16T22:04:51",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "hover",
+      22
+    ],
+    [
+      "focInd",
+      5
+    ],
+    [
+      "role",
+      0
+    ]
+  ],
+  "logCount": 3,
+  "logSize": 48,
+  "errorLogCount": 0,
+  "errorLogSize": 0,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-16T22:05:27",
+  "elapsedSeconds": 36
+}

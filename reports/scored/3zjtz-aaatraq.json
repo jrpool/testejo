@@ -303,10 +303,6 @@
           "total": 46,
           "types": {
             "indicatorMissing": {
-              "total": 0,
-              "tagNames": {}
-            },
-            "nonOutlinePresent": {
               "total": 46,
               "tagNames": {
                 "A": 42,
@@ -314,6 +310,10 @@
                 "INPUT": 1,
                 "IFRAME": 1
               }
+            },
+            "nonOutlinePresent": {
+              "total": 0,
+              "tagNames": {}
             },
             "outlinePresent": {
               "total": 0,
@@ -323,8 +323,7 @@
           }
         },
         "items": {
-          "indicatorMissing": [],
-          "nonOutlinePresent": [
+          "indicatorMissing": [
             {
               "tagName": "A",
               "text": "Skip to content"
@@ -510,6 +509,7 @@
               "text": ""
             }
           ],
+          "nonOutlinePresent": [],
           "outlinePresent": []
         }
       }
@@ -2189,7 +2189,7 @@
           "removals": 0,
           "opacityChanges": 0,
           "opacityImpact": 0,
-          "unhoverables": 33
+          "unhoverables": 34
         },
         "items": {
           "head": {
@@ -2301,39 +2301,59 @@
             "impactTriggers": [],
             "unhoverables": [
               {
+                "tagName": "LI",
+                "id": "",
+                "text": "DeployinginDrupal"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "ExecutivesCEOCIO(information)CMO(marketing)CRO(ris"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "ContentProduction"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "Supported"
+              },
+              {
                 "tagName": "A",
                 "id": "",
-                "text": "Digital"
+                "text": "BecomeaSalesAgent"
               },
               {
                 "tagName": "LI",
                 "id": "",
-                "text": "Legal"
+                "text": "TheAAAtraqshield"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "InsurancePools"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "Somethingfunny"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "Tea-trolleyoperative"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "SiteImprove"
               },
               {
                 "tagName": "A",
                 "id": "",
-                "text": "CIO(information)"
-              },
-              {
-                "tagName": "LI",
-                "id": "",
-                "text": "accessiBe"
-              },
-              {
-                "tagName": "LI",
-                "id": "",
-                "text": "Monsido"
-              },
-              {
-                "tagName": "LI",
-                "id": "",
-                "text": "AddingtoShopify"
-              },
-              {
-                "tagName": "LI",
-                "id": "",
-                "text": "Don'tclickthislink"
+                "text": "CRO(risk)"
               },
               {
                 "tagName": "LI",
@@ -2343,27 +2363,12 @@
               {
                 "tagName": "A",
                 "id": "",
-                "text": "Cookies"
+                "text": "YouTube"
               },
               {
                 "tagName": "LI",
                 "id": "",
-                "text": "LawFirms"
-              },
-              {
-                "tagName": "LI",
-                "id": "",
-                "text": "SiteImprove"
-              },
-              {
-                "tagName": "LI",
-                "id": "",
-                "text": "InsurancePools"
-              },
-              {
-                "tagName": "A",
-                "id": "",
-                "text": "Subscribe"
+                "text": "CMO(marketing)"
               }
             ]
           }
@@ -3171,6 +3176,7 @@
       "result": {
         "roleElements": 36,
         "badRoleElements": 0,
+        "redundantRoleElements": 0,
         "tagNames": {}
       }
     },
@@ -18545,7 +18551,7 @@
   "endTime": "2022-07-06T02:42:38",
   "elapsedSeconds": 103,
   "score": {
-    "scoreProcID": "sp12a",
+    "scoreProcID": "sp12b",
     "logWeights": {
       "logCount": 0.5,
       "logSize": 0.01,
@@ -18568,9 +18574,9 @@
     "packageDetails": {
       "testaro": {
         "bulk": 0,
-        "focInd": 46,
+        "focInd": 138,
         "focOp": 70,
-        "hover": 33,
+        "hover": 34,
         "linkUl": 108,
         "styleDiff": 29,
         "zIndex": 143
@@ -18647,7 +18653,7 @@
         "focusIndication": {
           "testaro": {
             "focInd": {
-              "score": 46,
+              "score": 138,
               "what": "Focused element displaying no or nostandard focus indicator"
             }
           },
@@ -18669,7 +18675,7 @@
         "hoverSurprise": {
           "testaro": {
             "hover": {
-              "score": 8,
+              "score": 9,
               "what": "Content changes caused by hovering"
             }
           }
@@ -18782,7 +18788,7 @@
           "alfa": {
             "r74": {
               "score": 84,
-              "what": "Paragraph text has absolute font size"
+              "what": "Paragraph text has an absolute font size"
             }
           }
         },
@@ -19035,7 +19041,7 @@
     },
     "preventionScores": {},
     "summary": {
-      "total": 1201,
+      "total": 1294,
       "log": 93,
       "preventions": 0,
       "solos": 0,
@@ -19043,6 +19049,10 @@
         {
           "groupName": "overflowHidden",
           "score": 266
+        },
+        {
+          "groupName": "focusIndication",
+          "score": 140
         },
         {
           "groupName": "noLeading",
@@ -19073,10 +19083,6 @@
           "score": 50
         },
         {
-          "groupName": "focusIndication",
-          "score": 48
-        },
-        {
           "groupName": "contrastAA",
           "score": 48
         },
@@ -19098,7 +19104,7 @@
         },
         {
           "groupName": "hoverSurprise",
-          "score": 10
+          "score": 11
         },
         {
           "groupName": "headingEmpty",

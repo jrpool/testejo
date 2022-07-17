@@ -303,15 +303,18 @@
           "total": 141,
           "types": {
             "indicatorMissing": {
-              "total": 0,
-              "tagNames": {}
+              "total": 87,
+              "tagNames": {
+                "A": 83,
+                "BUTTON": 2,
+                "INPUT": 2
+              }
             },
             "nonOutlinePresent": {
-              "total": 141,
+              "total": 54,
               "tagNames": {
-                "A": 136,
-                "BUTTON": 2,
-                "INPUT": 3
+                "A": 53,
+                "INPUT": 1
               }
             },
             "outlinePresent": {
@@ -322,8 +325,7 @@
           }
         },
         "items": {
-          "indicatorMissing": [],
-          "nonOutlinePresent": [
+          "indicatorMissing": [
             {
               "tagName": "A",
               "text": "visionaustralia.org/COVID-19"
@@ -359,14 +361,6 @@
             {
               "tagName": "A",
               "text": "Shop"
-            },
-            {
-              "tagName": "A",
-              "text": ""
-            },
-            {
-              "tagName": "INPUT",
-              "text": ""
             },
             {
               "tagName": "INPUT",
@@ -658,6 +652,40 @@
             },
             {
               "tagName": "A",
+              "text": "Facebook"
+            },
+            {
+              "tagName": "A",
+              "text": "Twitter"
+            },
+            {
+              "tagName": "A",
+              "text": "YouTube"
+            },
+            {
+              "tagName": "A",
+              "text": "LinkedIn"
+            },
+            {
+              "tagName": "INPUT",
+              "text": ""
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Sign up"
+            }
+          ],
+          "nonOutlinePresent": [
+            {
+              "tagName": "A",
+              "text": ""
+            },
+            {
+              "tagName": "INPUT",
+              "text": ""
+            },
+            {
+              "tagName": "A",
               "text": "Eye conditions"
             },
             {
@@ -863,30 +891,6 @@
             {
               "tagName": "A",
               "text": "Careers"
-            },
-            {
-              "tagName": "A",
-              "text": "Facebook"
-            },
-            {
-              "tagName": "A",
-              "text": "Twitter"
-            },
-            {
-              "tagName": "A",
-              "text": "YouTube"
-            },
-            {
-              "tagName": "A",
-              "text": "LinkedIn"
-            },
-            {
-              "tagName": "INPUT",
-              "text": ""
-            },
-            {
-              "tagName": "BUTTON",
-              "text": "Sign up"
             }
           ],
           "outlinePresent": []
@@ -2999,23 +3003,42 @@
       "url": "https://www.visionaustralia.org/services/digital-access",
       "result": {
         "roleElements": 22,
-        "badRoleElements": 20,
+        "badRoleElements": 16,
+        "redundantRoleElements": 4,
         "tagNames": {
           "A": {
-            "button": 14
+            "button": {
+              "bad": 14,
+              "redundant": 0
+            }
           },
           "NAV": {
-            "navigation": 2
+            "navigation": {
+              "bad": 0,
+              "redundant": 2
+            }
           },
           "DIV": {
-            "main": 1,
-            "navigation": 1
+            "main": {
+              "bad": 1,
+              "redundant": 0
+            },
+            "navigation": {
+              "bad": 1,
+              "redundant": 0
+            }
           },
           "ASIDE": {
-            "complementary": 1
+            "complementary": {
+              "bad": 0,
+              "redundant": 1
+            }
           },
           "ARTICLE": {
-            "article": 1
+            "article": {
+              "bad": 0,
+              "redundant": 1
+            }
           }
         }
       }

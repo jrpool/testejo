@@ -304,14 +304,14 @@
           "total": 32,
           "types": {
             "indicatorMissing": {
-              "total": 0,
-              "tagNames": {}
-            },
-            "nonOutlinePresent": {
               "total": 32,
               "tagNames": {
                 "A": 32
               }
+            },
+            "nonOutlinePresent": {
+              "total": 0,
+              "tagNames": {}
             },
             "outlinePresent": {
               "total": 0,
@@ -321,8 +321,7 @@
           }
         },
         "items": {
-          "indicatorMissing": [],
-          "nonOutlinePresent": [
+          "indicatorMissing": [
             {
               "tagName": "A",
               "text": "Explorer le contenu"
@@ -452,6 +451,7 @@
               "text": ""
             }
           ],
+          "nonOutlinePresent": [],
           "outlinePresent": []
         }
       }
@@ -1014,22 +1014,38 @@
       "url": "https://ideance.net/fr/",
       "result": {
         "roleElements": 18,
-        "badRoleElements": 5,
+        "badRoleElements": 3,
+        "redundantRoleElements": 2,
         "tagNames": {
           "HEADER": {
-            "banner": 1
+            "banner": {
+              "bad": 1,
+              "redundant": 0
+            }
           },
           "NAV": {
-            "navigation": 1
+            "navigation": {
+              "bad": 0,
+              "redundant": 1
+            }
           },
           "MAIN": {
-            "main": 1
+            "main": {
+              "bad": 0,
+              "redundant": 1
+            }
           },
           "SPAN": {
-            "text": 1
+            "text": {
+              "bad": 1,
+              "redundant": 0
+            }
           },
           "FOOTER": {
-            "contentinfo": 1
+            "contentinfo": {
+              "bad": 1,
+              "redundant": 0
+            }
           }
         }
       }

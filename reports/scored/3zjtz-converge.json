@@ -300,31 +300,37 @@
       "url": "https://convergeaccessibility.com/",
       "result": {
         "totals": {
-          "total": 39,
+          "total": 37,
           "types": {
             "indicatorMissing": {
-              "total": 0,
-              "tagNames": {}
+              "total": 1,
+              "tagNames": {
+                "INPUT": 1
+              }
             },
             "nonOutlinePresent": {
-              "total": 5,
+              "total": 3,
               "tagNames": {
-                "INPUT": 4,
-                "A": 1
+                "INPUT": 3
               }
             },
             "outlinePresent": {
-              "total": 34,
+              "total": 33,
               "meanDelay": 10,
               "tagNames": {
-                "A": 32,
+                "A": 31,
                 "INPUT": 2
               }
             }
           }
         },
         "items": {
-          "indicatorMissing": [],
+          "indicatorMissing": [
+            {
+              "tagName": "INPUT",
+              "text": ""
+            }
+          ],
           "nonOutlinePresent": [
             {
               "tagName": "INPUT",
@@ -337,14 +343,6 @@
             {
               "tagName": "INPUT",
               "text": ""
-            },
-            {
-              "tagName": "INPUT",
-              "text": ""
-            },
-            {
-              "tagName": "A",
-              "text": "Ok"
             }
           ],
           "outlinePresent": [
@@ -411,7 +409,7 @@
             {
               "tagName": "A",
               "text": "Watch Latest Video",
-              "delay": 100
+              "delay": 102
             },
             {
               "tagName": "A",
@@ -440,7 +438,7 @@
             },
             {
               "tagName": "A",
-              "text": "Belinda Banger, VP, Cole and Associates",
+              "text": "Avinash Dongre, Manager - ThoughtFocus",
               "delay": 0
             },
             {
@@ -511,11 +509,6 @@
             {
               "tagName": "A",
               "text": "Back to top ↑",
-              "delay": 0
-            },
-            {
-              "tagName": "A",
-              "text": "Privacy & Cookie Policy",
               "delay": 0
             }
           ]
@@ -1066,14 +1059,14 @@
       "url": "https://convergeaccessibility.com/",
       "result": {
         "totals": {
-          "triggers": 48,
+          "triggers": 46,
           "headTriggers": 20,
-          "tailTriggers": 28,
+          "tailTriggers": 26,
           "impactTriggers": 2,
-          "additions": 0,
+          "additions": 9,
           "removals": 0,
-          "opacityChanges": 2,
-          "opacityImpact": 16,
+          "opacityChanges": 1,
+          "opacityImpact": 8,
           "unhoverables": 3
         },
         "items": {
@@ -1082,10 +1075,10 @@
               {
                 "tagName": "LI",
                 "text": "ProductsandServicesLitigationServicesExpertAccessi",
-                "additions": 0,
+                "additions": 9,
                 "removals": 0,
-                "opacityChanges": 1,
-                "opacityImpact": 8
+                "opacityChanges": 0,
+                "opacityImpact": 0
               },
               {
                 "tagName": "A",
@@ -1413,11 +1406,15 @@
       "what": "roles",
       "url": "https://convergeaccessibility.com/",
       "result": {
-        "roleElements": 30,
+        "roleElements": 29,
         "badRoleElements": 8,
+        "redundantRoleElements": 0,
         "tagNames": {
           "A": {
-            "button": 8
+            "button": {
+              "bad": 8,
+              "redundant": 0
+            }
           }
         }
       }
@@ -5703,7 +5700,7 @@
   "endTime": "2022-07-06T01:24:24",
   "elapsedSeconds": 102,
   "score": {
-    "scoreProcID": "sp12a",
+    "scoreProcID": "sp12b",
     "logWeights": {
       "logCount": 0.5,
       "logSize": 0.01,
@@ -5727,12 +5724,12 @@
       "testaro": {
         "bulk": 0,
         "focAll": 8,
-        "focInd": 5,
+        "focInd": 6,
         "focOp": 2,
-        "hover": 9,
+        "hover": 11,
         "labClash": 3,
         "linkUl": 32,
-        "role": 8,
+        "role": 16,
         "styleDiff": 21,
         "zIndex": 14
       },
@@ -5807,7 +5804,7 @@
         "focusIndication": {
           "testaro": {
             "focInd": {
-              "score": 5,
+              "score": 6,
               "what": "Focused element displaying no or nostandard focus indicator"
             }
           },
@@ -5829,7 +5826,7 @@
         "hoverSurprise": {
           "testaro": {
             "hover": {
-              "score": 2,
+              "score": 3,
               "what": "Content changes caused by hovering"
             }
           }
@@ -5853,7 +5850,7 @@
         "roleBad": {
           "testaro": {
             "role": {
-              "score": 6,
+              "score": 12,
               "what": "Nonexistent or implicit-overriding role"
             }
           }
@@ -6145,7 +6142,7 @@
     },
     "preventionScores": {},
     "summary": {
-      "total": 248,
+      "total": 256,
       "log": 12,
       "preventions": 0,
       "solos": 0,
@@ -6161,6 +6158,10 @@
         {
           "groupName": "contrastAAA",
           "score": 17
+        },
+        {
+          "groupName": "roleBad",
+          "score": 14
         },
         {
           "groupName": "contentBeyondLandmarks",
@@ -6187,7 +6188,7 @@
           "score": 8
         },
         {
-          "groupName": "roleBad",
+          "groupName": "focusIndication",
           "score": 8
         },
         {
@@ -6197,10 +6198,6 @@
         {
           "groupName": "linkForcesNewWindow",
           "score": 8
-        },
-        {
-          "groupName": "focusIndication",
-          "score": 7
         },
         {
           "groupName": "inconsistentStyles",
@@ -6219,6 +6216,10 @@
           "score": 6
         },
         {
+          "groupName": "hoverSurprise",
+          "score": 5
+        },
+        {
           "groupName": "noLeading",
           "score": 5
         },
@@ -6228,10 +6229,6 @@
         },
         {
           "groupName": "focusableOperable",
-          "score": 4
-        },
-        {
-          "groupName": "hoverSurprise",
           "score": 4
         },
         {

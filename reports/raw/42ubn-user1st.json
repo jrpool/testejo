@@ -301,17 +301,15 @@
       "url": "https://user1st.com/",
       "result": {
         "totals": {
-          "total": 38,
+          "total": 37,
           "types": {
             "indicatorMissing": {
               "total": 0,
               "tagNames": {}
             },
             "nonOutlinePresent": {
-              "total": 1,
-              "tagNames": {
-                "IFRAME": 1
-              }
+              "total": 0,
+              "tagNames": {}
             },
             "outlinePresent": {
               "total": 37,
@@ -325,13 +323,13 @@
         },
         "items": {
           "indicatorMissing": [],
-          "nonOutlinePresent": [
-            {
-              "tagName": "IFRAME",
-              "text": ""
-            }
-          ],
+          "nonOutlinePresent": [],
           "outlinePresent": [
+            {
+              "tagName": "A",
+              "text": "Open Accessibility Menu",
+              "delay": 0
+            },
             {
               "tagName": "A",
               "text": "Privacy Policy",
@@ -345,11 +343,6 @@
             {
               "tagName": "A",
               "text": "Decline",
-              "delay": 0
-            },
-            {
-              "tagName": "A",
-              "text": "Open Accessibility Menu",
               "delay": 0
             },
             {
@@ -381,11 +374,6 @@
               "tagName": "A",
               "text": "Contact Us",
               "delay": 0
-            },
-            {
-              "tagName": "BUTTON",
-              "text": "",
-              "delay": 101
             },
             {
               "tagName": "A",
@@ -435,7 +423,7 @@
             {
               "tagName": "A",
               "text": "Youtube",
-              "delay": 103
+              "delay": 100
             },
             {
               "tagName": "A",
@@ -445,7 +433,7 @@
             {
               "tagName": "A",
               "text": "Linkedin-in",
-              "delay": 102
+              "delay": 101
             },
             {
               "tagName": "A",
@@ -516,6 +504,11 @@
               "tagName": "A",
               "text": "Privacy Policy",
               "delay": 0
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "",
+              "delay": 100
             }
           ]
         }
@@ -1141,11 +1134,11 @@
           "headTriggers": 20,
           "tailTriggers": 34,
           "impactTriggers": 4,
-          "additions": 0,
+          "additions": 60,
           "removals": 0,
-          "opacityChanges": 6,
-          "opacityImpact": 338,
-          "unhoverables": 3
+          "opacityChanges": 3,
+          "opacityImpact": 169,
+          "unhoverables": 10
         },
         "items": {
           "head": {
@@ -1153,6 +1146,14 @@
               {
                 "tagName": "LI",
                 "text": "AboutUsLearnmoreaboutUser1stOurVisionOurStoryOurTe",
+                "additions": 60,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "LI",
+                "text": "SolutionsUser1stsolutionsbyuseuRemediateWebAccessi",
                 "additions": 0,
                 "removals": 0,
                 "opacityChanges": 1,
@@ -1160,19 +1161,11 @@
               },
               {
                 "tagName": "LI",
-                "text": "SolutionsUser1stsolutionsbyuseuRemediateWebAccessi",
-                "additions": 0,
-                "removals": 0,
-                "opacityChanges": 2,
-                "opacityImpact": 103
-              },
-              {
-                "tagName": "LI",
                 "text": "ServicesUser1stservicesVPATVoluntaryProductAccessi",
                 "additions": 0,
                 "removals": 0,
-                "opacityChanges": 2,
-                "opacityImpact": 110
+                "opacityChanges": 1,
+                "opacityImpact": 44
               },
               {
                 "tagName": "LI",
@@ -1197,12 +1190,47 @@
               {
                 "tagName": "A",
                 "id": "",
-                "text": "VPAT"
+                "text": "Twitter"
               },
               {
                 "tagName": "A",
                 "id": "",
+                "text": "OurTeam"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Linkedin-in"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Facebook-f"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "User1stintheNews"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
                 "text": "AccessibilityTraining"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "PrivacyPolicy"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Audits&Certification"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "Audits&Certification"
               }
             ]
           }
@@ -1404,17 +1432,27 @@
       "what": "roles",
       "url": "https://user1st.com/",
       "result": {
-        "roleElements": 23,
-        "badRoleElements": 8,
+        "roleElements": 22,
+        "badRoleElements": 7,
+        "redundantRoleElements": 1,
         "tagNames": {
           "A": {
-            "button": 6
+            "button": {
+              "bad": 6,
+              "redundant": 0
+            }
           },
           "UL": {
-            "navigation": 1
+            "navigation": {
+              "bad": 1,
+              "redundant": 0
+            }
           },
           "MAIN": {
-            "main": 1
+            "main": {
+              "bad": 0,
+              "redundant": 1
+            }
           }
         }
       }

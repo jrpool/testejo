@@ -1,0 +1,392 @@
+{
+  "id": "49li4-intopia",
+  "host": {
+    "id": "intopia",
+    "which": "https://intopia.digital/",
+    "what": "Intopia"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-16T21:55:35"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-16T21:56:43"
+    }
+  ],
+  "script": {
+    "id": "tp12",
+    "what": "Alfa, Axe, HTML CodeSniffer, IBM, Tenon, WAVE, and 16 custom tests",
+    "strict": true,
+    "timeLimit": 150,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://intopia.digital/",
+        "what": "Intopia"
+      },
+      {
+        "type": "test",
+        "which": "focInd",
+        "revealAll": false,
+        "allowedDelay": 250,
+        "withItems": true,
+        "what": "focus indicators"
+      },
+      {
+        "type": "test",
+        "which": "hover",
+        "headSize": 20,
+        "headSampleSize": 20,
+        "tailSampleSize": 15,
+        "withItems": true,
+        "what": "hover impacts"
+      },
+      {
+        "type": "test",
+        "which": "role",
+        "what": "validity and necessity of role assignments"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://intopia.digital/",
+      "what": "Intopia",
+      "result": "https://intopia.digital/"
+    },
+    {
+      "type": "test",
+      "which": "focInd",
+      "revealAll": false,
+      "allowedDelay": 250,
+      "withItems": true,
+      "what": "focus indicators",
+      "url": "https://intopia.digital/",
+      "result": {
+        "totals": {
+          "total": 34,
+          "types": {
+            "indicatorMissing": {
+              "total": 21,
+              "tagNames": {
+                "INPUT": 3,
+                "A": 18
+              }
+            },
+            "nonOutlinePresent": {
+              "total": 5,
+              "tagNames": {
+                "A": 4,
+                "INPUT": 1
+              }
+            },
+            "outlinePresent": {
+              "total": 8,
+              "meanDelay": 0,
+              "tagNames": {
+                "A": 7,
+                "BUTTON": 1
+              }
+            }
+          }
+        },
+        "items": {
+          "indicatorMissing": [
+            {
+              "tagName": "INPUT",
+              "text": ""
+            },
+            {
+              "tagName": "A",
+              "text": "Services"
+            },
+            {
+              "tagName": "A",
+              "text": "Resources"
+            },
+            {
+              "tagName": "A",
+              "text": "About us"
+            },
+            {
+              "tagName": "A",
+              "text": "Work with us"
+            },
+            {
+              "tagName": "A",
+              "text": "Articles"
+            },
+            {
+              "tagName": "A",
+              "text": "Contact us"
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility testing"
+            },
+            {
+              "tagName": "A",
+              "text": "Strategy & consulting"
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility training"
+            },
+            {
+              "tagName": "A",
+              "text": "Usability testing"
+            },
+            {
+              "tagName": "INPUT",
+              "text": ""
+            },
+            {
+              "tagName": "INPUT",
+              "text": ""
+            },
+            {
+              "tagName": "A",
+              "text": "About us"
+            },
+            {
+              "tagName": "A",
+              "text": "Services"
+            },
+            {
+              "tagName": "A",
+              "text": "Work with us"
+            },
+            {
+              "tagName": "A",
+              "text": "Contact us"
+            },
+            {
+              "tagName": "A",
+              "text": "Articles"
+            },
+            {
+              "tagName": "A",
+              "text": "Intopia on Facebook"
+            },
+            {
+              "tagName": "A",
+              "text": "Intopia on Twitter"
+            },
+            {
+              "tagName": "A",
+              "text": "Intopia on LinkedIn"
+            }
+          ],
+          "nonOutlinePresent": [
+            {
+              "tagName": "A",
+              "text": "Skip to content"
+            },
+            {
+              "tagName": "A",
+              "text": "See our services"
+            },
+            {
+              "tagName": "A",
+              "text": "See our resources"
+            },
+            {
+              "tagName": "A",
+              "text": "Read about our philosophy"
+            },
+            {
+              "tagName": "INPUT",
+              "text": ""
+            }
+          ],
+          "outlinePresent": [
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Intopia",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "PB Web Development",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://intopia.digital/",
+      "what": "URL",
+      "result": "https://intopia.digital/"
+    },
+    {
+      "type": "test",
+      "which": "hover",
+      "headSize": 20,
+      "headSampleSize": 20,
+      "tailSampleSize": 15,
+      "withItems": true,
+      "what": "hover-caused content changes",
+      "url": "https://intopia.digital/",
+      "result": {
+        "totals": {
+          "triggers": 50,
+          "headTriggers": 20,
+          "tailTriggers": 30,
+          "impactTriggers": 0,
+          "additions": 0,
+          "removals": 0,
+          "opacityChanges": 0,
+          "opacityImpact": 0,
+          "unhoverables": 1
+        },
+        "items": {
+          "head": {
+            "impactTriggers": [],
+            "unhoverables": [
+              {
+                "tagName": "A",
+                "id": "skip-link",
+                "text": "Skiptocontent"
+              }
+            ]
+          },
+          "tail": {
+            "impactTriggers": [],
+            "unhoverables": []
+          }
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://intopia.digital/",
+      "what": "URL",
+      "result": "https://intopia.digital/"
+    },
+    {
+      "type": "test",
+      "which": "role",
+      "what": "roles",
+      "url": "https://intopia.digital/",
+      "result": {
+        "roleElements": 10,
+        "badRoleElements": 5,
+        "redundantRoleElements": 3,
+        "tagNames": {
+          "HEADER": {
+            "banner": {
+              "bad": 1,
+              "redundant": 0
+            }
+          },
+          "NAV": {
+            "navigation": {
+              "bad": 0,
+              "redundant": 2
+            }
+          },
+          "MAIN": {
+            "main": {
+              "bad": 0,
+              "redundant": 1
+            }
+          },
+          "FOOTER": {
+            "contentinfo": {
+              "bad": 1,
+              "redundant": 0
+            }
+          },
+          "SPAN": {
+            "text": {
+              "bad": 3,
+              "redundant": 0
+            }
+          }
+        }
+      }
+    }
+  ],
+  "timeStamp": "49li4",
+  "startTime": "2022-07-16T21:55:35",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "hover",
+      49
+    ],
+    [
+      "focInd",
+      8
+    ],
+    [
+      "role",
+      0
+    ]
+  ],
+  "logCount": 3,
+  "logSize": 807,
+  "errorLogCount": 3,
+  "errorLogSize": 807,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-16T21:56:43",
+  "elapsedSeconds": 67
+}

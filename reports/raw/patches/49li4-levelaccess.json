@@ -1,0 +1,606 @@
+{
+  "id": "49li4-levelaccess",
+  "host": {
+    "id": "levelaccess",
+    "which": "https://www.levelaccess.com/",
+    "what": "Level Access"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-16T21:56:45"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-16T21:57:56"
+    }
+  ],
+  "script": {
+    "id": "tp12",
+    "what": "Alfa, Axe, HTML CodeSniffer, IBM, Tenon, WAVE, and 16 custom tests",
+    "strict": true,
+    "timeLimit": 150,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.levelaccess.com/",
+        "what": "Level Access"
+      },
+      {
+        "type": "test",
+        "which": "focInd",
+        "revealAll": false,
+        "allowedDelay": 250,
+        "withItems": true,
+        "what": "focus indicators"
+      },
+      {
+        "type": "test",
+        "which": "hover",
+        "headSize": 20,
+        "headSampleSize": 20,
+        "tailSampleSize": 15,
+        "withItems": true,
+        "what": "hover impacts"
+      },
+      {
+        "type": "test",
+        "which": "role",
+        "what": "validity and necessity of role assignments"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.levelaccess.com/",
+      "what": "Level Access",
+      "result": "https://www.levelaccess.com/"
+    },
+    {
+      "type": "test",
+      "which": "focInd",
+      "revealAll": false,
+      "allowedDelay": 250,
+      "withItems": true,
+      "what": "focus indicators",
+      "url": "https://www.levelaccess.com/",
+      "result": {
+        "totals": {
+          "total": 75,
+          "types": {
+            "indicatorMissing": {
+              "total": 0,
+              "tagNames": {}
+            },
+            "nonOutlinePresent": {
+              "total": 0,
+              "tagNames": {}
+            },
+            "outlinePresent": {
+              "total": 75,
+              "meanDelay": 28,
+              "tagNames": {
+                "A": 67,
+                "BUTTON": 8
+              }
+            }
+          }
+        },
+        "items": {
+          "indicatorMissing": [],
+          "nonOutlinePresent": [],
+          "outlinePresent": [
+            {
+              "tagName": "A",
+              "text": "Skip to content",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Skip to navigation",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Just announced: Level Access and eSSENTIAL Accessibility agree to merge! Read more.",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "1.866.599.0338",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Contact Us",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Toggle search form visibility",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Level Access Logo - return to the home page",
+              "delay": 0
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Solutions",
+              "delay": 101
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Software",
+              "delay": 100
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Services",
+              "delay": 100
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Resources",
+              "delay": 104
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Company",
+              "delay": 102
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Compliance",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Free Risk Assessment",
+              "delay": 106
+            },
+            {
+              "tagName": "A",
+              "text": "Have you received a complaint or demand letter?",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "JUST ANNOUNCED: Level Access and Essential Accessibility Agree to Merge.",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Free Risk Assessment",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Digital Accessibility 101",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Learn How We Can Help",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Find Out How",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Obtain a VPAT",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "Learn How",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Let Us Help",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Previous",
+              "delay": 0
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Next",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Read Our Customer Stories",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Read More",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Read More",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Read More",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Learn More",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Learn More",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Learn More",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Test a Page NowOpens in new window",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Install the Chrome ExtensionOpens in new window",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Free Risk Assessment",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Download Free Tools",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "View All Resources",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "eBook: Making the Business Case for Accessibility",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "eBook: ADA Compliance & Digital Accessibility",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Make Your Website More Inclusive By Addressing These 12 Common Accessibility Bugs",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "DirectionsOpens in new window",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "1.866.599.0328",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "info@levelaccess.com",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Laws & Standards",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Articles",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Webinars",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Whitepapers",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Product Announcements",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Road to Accessibility",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Software",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Web Accessibility Services",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Training",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "SaaS",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Testing",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Our Team",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Careers",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Customers",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Our Awards",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "News",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Visit Level Access on Twitter in new windowOpens in new window",
+              "delay": 105
+            },
+            {
+              "tagName": "A",
+              "text": "Visit Level Access on Facebook in new windowOpens in new window",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Visit Level Access on LinkedIn in new windowOpens in new window",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Visit Level Access on YouTube in new windowOpens in new window",
+              "delay": 104
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility Statement",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Trust Center",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Privacy Statement",
+              "delay": 0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.levelaccess.com/",
+      "what": "URL",
+      "result": "https://www.levelaccess.com/"
+    },
+    {
+      "type": "test",
+      "which": "hover",
+      "headSize": 20,
+      "headSampleSize": 20,
+      "tailSampleSize": 15,
+      "withItems": true,
+      "what": "hover-caused content changes",
+      "url": "https://www.levelaccess.com/",
+      "result": {
+        "totals": {
+          "triggers": 128,
+          "headTriggers": 20,
+          "tailTriggers": 108,
+          "impactTriggers": 0,
+          "additions": 0,
+          "removals": 0,
+          "opacityChanges": 0,
+          "opacityImpact": 0,
+          "unhoverables": 2
+        },
+        "items": {
+          "head": {
+            "impactTriggers": [],
+            "unhoverables": [
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Skiptocontent"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Skiptonavigation"
+              }
+            ]
+          },
+          "tail": {
+            "impactTriggers": [],
+            "unhoverables": []
+          }
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.levelaccess.com/",
+      "what": "URL",
+      "result": "https://www.levelaccess.com/"
+    },
+    {
+      "type": "test",
+      "which": "role",
+      "what": "roles",
+      "url": "https://www.levelaccess.com/",
+      "result": {
+        "roleElements": 68,
+        "badRoleElements": 3,
+        "redundantRoleElements": 0,
+        "tagNames": {
+          "A": {
+            "button": {
+              "bad": 1,
+              "redundant": 0
+            }
+          },
+          "DIV": {
+            "group": {
+              "bad": 1,
+              "redundant": 0
+            },
+            "status": {
+              "bad": 1,
+              "redundant": 0
+            }
+          }
+        }
+      }
+    }
+  ],
+  "timeStamp": "49li4",
+  "startTime": "2022-07-16T21:56:45",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "hover",
+      57
+    ],
+    [
+      "focInd",
+      2
+    ],
+    [
+      "role",
+      0
+    ]
+  ],
+  "logCount": 6,
+  "logSize": 774,
+  "errorLogCount": 3,
+  "errorLogSize": 537,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-16T21:57:56",
+  "elapsedSeconds": 70
+}

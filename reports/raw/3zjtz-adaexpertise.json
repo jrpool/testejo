@@ -862,10 +862,10 @@
           "headTriggers": 20,
           "tailTriggers": 38,
           "impactTriggers": 2,
-          "additions": 0,
+          "additions": 48,
           "removals": 0,
-          "opacityChanges": 2,
-          "opacityImpact": 54,
+          "opacityChanges": 0,
+          "opacityImpact": 0,
           "unhoverables": 1
         },
         "items": {
@@ -874,18 +874,18 @@
               {
                 "tagName": "LI",
                 "text": "ServicesADALawsuitAssistanceOvercomingMythsAboutth",
-                "additions": 0,
+                "additions": 24,
                 "removals": 0,
-                "opacityChanges": 1,
-                "opacityImpact": 27
+                "opacityChanges": 0,
+                "opacityImpact": 0
               },
               {
                 "tagName": "A",
                 "text": "Services",
-                "additions": 0,
+                "additions": 24,
                 "removals": 0,
-                "opacityChanges": 1,
-                "opacityImpact": 27
+                "opacityChanges": 0,
+                "opacityImpact": 0
               }
             ],
             "unhoverables": [
@@ -1101,12 +1101,19 @@
       "result": {
         "roleElements": 10,
         "badRoleElements": 2,
+        "redundantRoleElements": 0,
         "tagNames": {
           "HEADER": {
-            "banner": 1
+            "banner": {
+              "bad": 1,
+              "redundant": 0
+            }
           },
           "DIV": {
-            "main": 1
+            "main": {
+              "bad": 1,
+              "redundant": 0
+            }
           }
         }
       }

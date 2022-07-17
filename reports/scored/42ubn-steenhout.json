@@ -304,14 +304,14 @@
           "total": 15,
           "types": {
             "indicatorMissing": {
-              "total": 0,
-              "tagNames": {}
-            },
-            "nonOutlinePresent": {
               "total": 1,
               "tagNames": {
                 "A": 1
               }
+            },
+            "nonOutlinePresent": {
+              "total": 0,
+              "tagNames": {}
             },
             "outlinePresent": {
               "total": 14,
@@ -325,13 +325,13 @@
           }
         },
         "items": {
-          "indicatorMissing": [],
-          "nonOutlinePresent": [
+          "indicatorMissing": [
             {
               "tagName": "A",
               "text": "Skip to main content"
             }
           ],
+          "nonOutlinePresent": [],
           "outlinePresent": [
             {
               "tagName": "A",
@@ -812,6 +812,7 @@
       "result": {
         "roleElements": 1,
         "badRoleElements": 0,
+        "redundantRoleElements": 0,
         "tagNames": {}
       }
     },
@@ -5160,7 +5161,7 @@
   "endTime": "2022-07-09T15:15:36",
   "elapsedSeconds": 87,
   "score": {
-    "scoreProcID": "sp12a",
+    "scoreProcID": "sp12b",
     "logWeights": {
       "logCount": 0.5,
       "logSize": 0.01,
@@ -5182,7 +5183,7 @@
     },
     "packageDetails": {
       "testaro": {
-        "focInd": 1,
+        "focInd": 3,
         "hover": 1,
         "linkUl": 2,
         "styleDiff": 4,
@@ -5217,7 +5218,7 @@
         "focusIndication": {
           "testaro": {
             "focInd": {
-              "score": 1,
+              "score": 3,
               "what": "Focused element displaying no or nostandard focus indicator"
             }
           }
@@ -5369,7 +5370,7 @@
     },
     "preventionScores": {},
     "summary": {
-      "total": 167,
+      "total": 169,
       "log": 59,
       "preventions": 0,
       "solos": 0,
@@ -5391,16 +5392,16 @@
           "score": 8
         },
         {
+          "groupName": "focusIndication",
+          "score": 5
+        },
+        {
           "groupName": "allItalics",
           "score": 4
         },
         {
           "groupName": "textRotated",
           "score": 4
-        },
-        {
-          "groupName": "focusIndication",
-          "score": 3
         },
         {
           "groupName": "hoverSurprise",

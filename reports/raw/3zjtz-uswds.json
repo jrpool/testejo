@@ -328,7 +328,7 @@
             {
               "tagName": "A",
               "text": "Skip to main content",
-              "delay": 104
+              "delay": 105
             },
             {
               "tagName": "BUTTON",
@@ -2909,16 +2909,26 @@
       "url": "https://designsystem.digital.gov/documentation/accessibility/",
       "result": {
         "roleElements": 14,
-        "badRoleElements": 3,
+        "badRoleElements": 2,
+        "redundantRoleElements": 1,
         "tagNames": {
           "HEADER": {
-            "banner": 1
+            "banner": {
+              "bad": 1,
+              "redundant": 0
+            }
           },
           "NAV": {
-            "navigation": 1
+            "navigation": {
+              "bad": 0,
+              "redundant": 1
+            }
           },
           "SECTION": {
-            "complementary": 1
+            "complementary": {
+              "bad": 1,
+              "redundant": 0
+            }
           }
         }
       }

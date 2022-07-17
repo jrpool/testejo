@@ -303,14 +303,16 @@
           "total": 62,
           "types": {
             "indicatorMissing": {
-              "total": 0,
-              "tagNames": {}
+              "total": 26,
+              "tagNames": {
+                "INPUT": 2,
+                "A": 24
+              }
             },
             "nonOutlinePresent": {
-              "total": 30,
+              "total": 4,
               "tagNames": {
-                "INPUT": 6,
-                "A": 24
+                "INPUT": 4
               }
             },
             "outlinePresent": {
@@ -323,8 +325,7 @@
           }
         },
         "items": {
-          "indicatorMissing": [],
-          "nonOutlinePresent": [
+          "indicatorMissing": [
             {
               "tagName": "INPUT",
               "text": ""
@@ -426,23 +427,25 @@
               "text": ""
             },
             {
-              "tagName": "INPUT",
-              "text": ""
-            },
-            {
-              "tagName": "INPUT",
-              "text": ""
-            },
-            {
-              "tagName": "INPUT",
-              "text": ""
-            },
-            {
-              "tagName": "INPUT",
-              "text": ""
-            },
-            {
               "tagName": "A",
+              "text": ""
+            }
+          ],
+          "nonOutlinePresent": [
+            {
+              "tagName": "INPUT",
+              "text": ""
+            },
+            {
+              "tagName": "INPUT",
+              "text": ""
+            },
+            {
+              "tagName": "INPUT",
+              "text": ""
+            },
+            {
+              "tagName": "INPUT",
               "text": ""
             }
           ],
@@ -1502,12 +1505,12 @@
           "triggers": 83,
           "headTriggers": 20,
           "tailTriggers": 63,
-          "impactTriggers": 23,
+          "impactTriggers": 27,
           "additions": 0,
           "removals": 0,
-          "opacityChanges": 118,
-          "opacityImpact": 255,
-          "unhoverables": 5
+          "opacityChanges": 126,
+          "opacityImpact": 221,
+          "unhoverables": 7
         },
         "items": {
           "head": {
@@ -1546,39 +1549,47 @@
             "impactTriggers": [
               {
                 "tagName": "LI",
-                "text": "Donate",
-                "additions": 0,
-                "removals": 0,
-                "opacityChanges": 9,
-                "opacityImpact": 24
-              },
-              {
-                "tagName": "A",
-                "text": "Resources",
+                "text": "ResourcesAccessibilityTriviaAccessibilitySkillsHir",
                 "additions": 0,
                 "removals": 0,
                 "opacityChanges": 5,
                 "opacityImpact": 12
               },
               {
-                "tagName": "A",
-                "text": "CreatingAccessibleCourseContent",
+                "tagName": "LI",
+                "text": "InitiativesFacultyGrantsStudyAwayTeachAccessTutori",
                 "additions": 0,
                 "removals": 0,
-                "opacityChanges": 4,
-                "opacityImpact": 4
+                "opacityChanges": 9,
+                "opacityImpact": 21
+              },
+              {
+                "tagName": "A",
+                "text": "ContactUs",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 7,
+                "opacityImpact": 7
               },
               {
                 "tagName": "A",
                 "text": "News&Events",
                 "additions": 0,
                 "removals": 0,
-                "opacityChanges": 5,
-                "opacityImpact": 12
+                "opacityChanges": 3,
+                "opacityImpact": 3
               },
               {
                 "tagName": "A",
-                "text": "ClickheretoseealltheNewsandEvents",
+                "text": "VIEWOURCOMPLETELISTOFPARTNERS",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 1
+              },
+              {
+                "tagName": "A",
+                "text": "Clickheretobecomeamember",
                 "additions": 0,
                 "removals": 0,
                 "opacityChanges": 1,
@@ -1587,7 +1598,12 @@
             ],
             "unhoverables": [
               {
-                "tagName": "A",
+                "tagName": "LI",
+                "id": "",
+                "text": "WhyTeachAccessibility?FactSheet"
+              },
+              {
+                "tagName": "LI",
                 "id": "",
                 "text": "AccessibilityTrivia"
               },
@@ -1597,9 +1613,14 @@
                 "text": "TeachAccessTutorial"
               },
               {
-                "tagName": "LI",
+                "tagName": "A",
                 "id": "",
-                "text": "FacultyGrants"
+                "text": "StudyAway"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "AccessibilityTrivia"
               }
             ]
           }
@@ -1880,9 +1901,13 @@
       "result": {
         "roleElements": 2,
         "badRoleElements": 1,
+        "redundantRoleElements": 0,
         "tagNames": {
           "DIV": {
-            "main": 1
+            "main": {
+              "bad": 1,
+              "redundant": 0
+            }
           }
         }
       }

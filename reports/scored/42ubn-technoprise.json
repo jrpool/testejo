@@ -399,27 +399,27 @@
             {
               "tagName": "A",
               "text": "Learn More",
-              "delay": 102
+              "delay": 105
             },
             {
               "tagName": "A",
               "text": "Learn More",
-              "delay": 100
-            },
-            {
-              "tagName": "A",
-              "text": "Learn More",
-              "delay": 100
-            },
-            {
-              "tagName": "A",
-              "text": "Learn More",
-              "delay": 102
+              "delay": 103
             },
             {
               "tagName": "A",
               "text": "Learn More",
               "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Learn More",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Learn More",
+              "delay": 103
             },
             {
               "tagName": "A",
@@ -913,16 +913,25 @@
           "triggers": 42,
           "headTriggers": 20,
           "tailTriggers": 22,
-          "impactTriggers": 0,
+          "impactTriggers": 1,
           "additions": 0,
           "removals": 0,
-          "opacityChanges": 0,
-          "opacityImpact": 0,
+          "opacityChanges": 1,
+          "opacityImpact": 13,
           "unhoverables": 0
         },
         "items": {
           "head": {
-            "impactTriggers": [],
+            "impactTriggers": [
+              {
+                "tagName": "A",
+                "text": "Skiptocontent",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 13
+              }
+            ],
             "unhoverables": []
           },
           "tail": {
@@ -1148,16 +1157,26 @@
       "url": "https://technopriseglobal.com/",
       "result": {
         "roleElements": 6,
-        "badRoleElements": 3,
+        "badRoleElements": 2,
+        "redundantRoleElements": 1,
         "tagNames": {
           "MAIN": {
-            "main": 1
+            "main": {
+              "bad": 0,
+              "redundant": 1
+            }
           },
           "DIV": {
-            "complementary": 1
+            "complementary": {
+              "bad": 1,
+              "redundant": 0
+            }
           },
           "FOOTER": {
-            "contentinfo": 1
+            "contentinfo": {
+              "bad": 1,
+              "redundant": 0
+            }
           }
         }
       }
@@ -5347,7 +5366,7 @@
   "endTime": "2022-07-09T15:32:25",
   "elapsedSeconds": 116,
   "score": {
-    "scoreProcID": "sp12a",
+    "scoreProcID": "sp12b",
     "logWeights": {
       "logCount": 0.5,
       "logSize": 0.01,
@@ -5371,8 +5390,9 @@
       "testaro": {
         "focInd": 4,
         "focOp": 9,
+        "hover": 4,
         "linkUl": 38,
-        "role": 3,
+        "role": 5,
         "styleDiff": 18,
         "zIndex": 7
       },
@@ -5435,6 +5455,14 @@
             }
           }
         },
+        "hoverSurprise": {
+          "testaro": {
+            "hover": {
+              "score": 1,
+              "what": "Content changes caused by hovering"
+            }
+          }
+        },
         "linkIndication": {
           "testaro": {
             "linkUl": {
@@ -5446,7 +5474,7 @@
         "roleBad": {
           "testaro": {
             "role": {
-              "score": 2,
+              "score": 4,
               "what": "Nonexistent or implicit-overriding role"
             }
           }
@@ -5493,7 +5521,7 @@
           "alfa": {
             "r74": {
               "score": 16,
-              "what": "Paragraph text has absolute font size"
+              "what": "Paragraph text has an absolute font size"
             }
           }
         },
@@ -5698,7 +5726,7 @@
     },
     "preventionScores": {},
     "summary": {
-      "total": 428,
+      "total": 433,
       "log": 209,
       "preventions": 0,
       "solos": 0,
@@ -5748,6 +5776,10 @@
           "score": 6
         },
         {
+          "groupName": "roleBad",
+          "score": 6
+        },
+        {
           "groupName": "contrastRisk",
           "score": 6
         },
@@ -5772,10 +5804,6 @@
           "score": 5
         },
         {
-          "groupName": "roleBad",
-          "score": 4
-        },
-        {
           "groupName": "zIndexNotZero",
           "score": 4
         },
@@ -5790,6 +5818,10 @@
         {
           "groupName": "allCaps",
           "score": 4
+        },
+        {
+          "groupName": "hoverSurprise",
+          "score": 3
         },
         {
           "groupName": "hiddenContentRisk",

@@ -1523,6 +1523,7 @@
       "result": {
         "roleElements": 9,
         "badRoleElements": 0,
+        "redundantRoleElements": 0,
         "tagNames": {}
       }
     },

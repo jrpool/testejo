@@ -1,0 +1,380 @@
+{
+  "id": "49li4-3play",
+  "host": {
+    "id": "3play",
+    "which": "https://www.3playmedia.com/",
+    "what": "3Play Media"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-16T21:14:33"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-16T21:15:35"
+    }
+  ],
+  "script": {
+    "id": "tp12",
+    "what": "Alfa, Axe, HTML CodeSniffer, IBM, Tenon, WAVE, and 16 custom tests",
+    "strict": true,
+    "timeLimit": 150,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.3playmedia.com/",
+        "what": "3Play Media"
+      },
+      {
+        "type": "test",
+        "which": "focInd",
+        "revealAll": false,
+        "allowedDelay": 250,
+        "withItems": true,
+        "what": "focus indicators"
+      },
+      {
+        "type": "test",
+        "which": "hover",
+        "headSize": 20,
+        "headSampleSize": 20,
+        "tailSampleSize": 15,
+        "withItems": true,
+        "what": "hover impacts"
+      },
+      {
+        "type": "test",
+        "which": "role",
+        "what": "validity and necessity of role assignments"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.3playmedia.com/",
+      "what": "3Play Media",
+      "result": "https://www.3playmedia.com/"
+    },
+    {
+      "type": "test",
+      "which": "focInd",
+      "revealAll": false,
+      "allowedDelay": 250,
+      "withItems": true,
+      "what": "focus indicators",
+      "url": "https://www.3playmedia.com/",
+      "result": {
+        "totals": {
+          "total": 38,
+          "types": {
+            "indicatorMissing": {
+              "total": 0,
+              "tagNames": {}
+            },
+            "nonOutlinePresent": {
+              "total": 27,
+              "tagNames": {
+                "A": 27
+              }
+            },
+            "outlinePresent": {
+              "total": 11,
+              "meanDelay": 101,
+              "tagNames": {
+                "A": 11
+              }
+            }
+          }
+        },
+        "items": {
+          "indicatorMissing": [],
+          "nonOutlinePresent": [
+            {
+              "tagName": "A",
+              "text": "Jobs"
+            },
+            {
+              "tagName": "A",
+              "text": "Contact Us"
+            },
+            {
+              "tagName": "A",
+              "text": "Support"
+            },
+            {
+              "tagName": "A",
+              "text": "Login"
+            },
+            {
+              "tagName": "A",
+              "text": "Services"
+            },
+            {
+              "tagName": "A",
+              "text": "Why 3Play?"
+            },
+            {
+              "tagName": "A",
+              "text": "Learn"
+            },
+            {
+              "tagName": "A",
+              "text": "Company"
+            },
+            {
+              "tagName": "A",
+              "text": "Pricing"
+            },
+            {
+              "tagName": "A",
+              "text": "Search"
+            },
+            {
+              "tagName": "A",
+              "text": "<img src=\"https://www.3playmedia.com/wp-content/uploads/2022/03/V500_BrandAssociation_WorkingWithV50"
+            },
+            {
+              "tagName": "A",
+              "text": "Support"
+            },
+            {
+              "tagName": "A",
+              "text": "Jobs"
+            },
+            {
+              "tagName": "A",
+              "text": "Contact Us"
+            },
+            {
+              "tagName": "A",
+              "text": "Blog"
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility"
+            },
+            {
+              "tagName": "A",
+              "text": "Sitemap"
+            },
+            {
+              "tagName": "A",
+              "text": "Twitter"
+            },
+            {
+              "tagName": "A",
+              "text": "Facebook"
+            },
+            {
+              "tagName": "A",
+              "text": "LinkedIn"
+            },
+            {
+              "tagName": "A",
+              "text": "YouTube"
+            },
+            {
+              "tagName": "A",
+              "text": "info@3playmedia.com"
+            },
+            {
+              "tagName": "A",
+              "text": "Privacy Policy"
+            },
+            {
+              "tagName": "A",
+              "text": "Terms"
+            },
+            {
+              "tagName": "A",
+              "text": "Security"
+            },
+            {
+              "tagName": "A",
+              "text": "System Status"
+            },
+            {
+              "tagName": "A",
+              "text": "3 Media Web"
+            }
+          ],
+          "outlinePresent": [
+            {
+              "tagName": "A",
+              "text": "View Plans & Pricing >>",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Find out why they chose 3Play media",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Learn More About Closed Captioning >>",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Learn More About Live Captioning >>",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Learn More About Audio Description >>",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Learn More About Translation >>",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Read the Announcement",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Our Promises To You >>",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "How we protect you",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "See All Integrations",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "View Plans",
+              "delay": 101
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.3playmedia.com/",
+      "what": "URL",
+      "result": "https://www.3playmedia.com/"
+    },
+    {
+      "type": "test",
+      "which": "hover",
+      "headSize": 20,
+      "headSampleSize": 20,
+      "tailSampleSize": 15,
+      "withItems": true,
+      "what": "hover-caused content changes",
+      "url": "https://www.3playmedia.com/",
+      "result": {
+        "totals": {
+          "triggers": 71,
+          "headTriggers": 20,
+          "tailTriggers": 51,
+          "impactTriggers": 0,
+          "additions": 0,
+          "removals": 0,
+          "opacityChanges": 0,
+          "opacityImpact": 0,
+          "unhoverables": 2
+        },
+        "items": {
+          "head": {
+            "impactTriggers": [],
+            "unhoverables": [
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "SkiptoMainContent"
+              }
+            ]
+          },
+          "tail": {
+            "impactTriggers": [],
+            "unhoverables": [
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "ViewPlans&Pricing>>"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.3playmedia.com/",
+      "what": "URL",
+      "result": "https://www.3playmedia.com/"
+    },
+    {
+      "type": "test",
+      "which": "role",
+      "what": "roles",
+      "url": "https://www.3playmedia.com/",
+      "result": {
+        "roleElements": 0,
+        "badRoleElements": 0,
+        "redundantRoleElements": 0,
+        "tagNames": {}
+      }
+    }
+  ],
+  "timeStamp": "49li4",
+  "startTime": "2022-07-16T21:14:33",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "hover",
+      47
+    ],
+    [
+      "focInd",
+      10
+    ],
+    [
+      "role",
+      0
+    ]
+  ],
+  "logCount": 26,
+  "logSize": 2305,
+  "errorLogCount": 12,
+  "errorLogSize": 914,
+  "prohibitedCount": 4,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-16T21:15:35",
+  "elapsedSeconds": 62
+}

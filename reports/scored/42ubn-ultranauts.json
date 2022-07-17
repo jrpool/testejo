@@ -304,14 +304,14 @@
           "total": 42,
           "types": {
             "indicatorMissing": {
-              "total": 0,
-              "tagNames": {}
-            },
-            "nonOutlinePresent": {
               "total": 1,
               "tagNames": {
                 "IFRAME": 1
               }
+            },
+            "nonOutlinePresent": {
+              "total": 0,
+              "tagNames": {}
             },
             "outlinePresent": {
               "total": 41,
@@ -324,13 +324,13 @@
           }
         },
         "items": {
-          "indicatorMissing": [],
-          "nonOutlinePresent": [
+          "indicatorMissing": [
             {
               "tagName": "IFRAME",
               "text": ""
             }
           ],
+          "nonOutlinePresent": [],
           "outlinePresent": [
             {
               "tagName": "A",
@@ -465,7 +465,7 @@
             {
               "tagName": "A",
               "text": "Learn More",
-              "delay": 101
+              "delay": 105
             },
             {
               "tagName": "A",
@@ -485,7 +485,7 @@
             {
               "tagName": "A",
               "text": "Learn More",
-              "delay": 104
+              "delay": 102
             },
             {
               "tagName": "A",
@@ -1453,10 +1453,10 @@
           "headTriggers": 20,
           "tailTriggers": 13,
           "impactTriggers": 4,
-          "additions": 0,
+          "additions": 58,
           "removals": 0,
-          "opacityChanges": 4,
-          "opacityImpact": 54,
+          "opacityChanges": 0,
+          "opacityImpact": 0,
           "unhoverables": 1
         },
         "items": {
@@ -1465,34 +1465,34 @@
               {
                 "tagName": "LI",
                 "text": "ServicesDataQualityServicesSoftwareQualityServices",
-                "additions": 0,
+                "additions": 13,
                 "removals": 0,
-                "opacityChanges": 1,
-                "opacityImpact": 12
+                "opacityChanges": 0,
+                "opacityImpact": 0
               },
               {
                 "tagName": "A",
                 "text": "Services",
-                "additions": 0,
+                "additions": 13,
                 "removals": 0,
-                "opacityChanges": 1,
-                "opacityImpact": 12
+                "opacityChanges": 0,
+                "opacityImpact": 0
               },
               {
                 "tagName": "LI",
                 "text": "AboutCompanyUniversalWorkplaceTeamPressJobs",
-                "additions": 0,
+                "additions": 16,
                 "removals": 0,
-                "opacityChanges": 1,
-                "opacityImpact": 15
+                "opacityChanges": 0,
+                "opacityImpact": 0
               },
               {
                 "tagName": "A",
                 "text": "About",
-                "additions": 0,
+                "additions": 16,
                 "removals": 0,
-                "opacityChanges": 1,
-                "opacityImpact": 15
+                "opacityChanges": 0,
+                "opacityImpact": 0
               }
             ],
             "unhoverables": [
@@ -1817,9 +1817,13 @@
       "result": {
         "roleElements": 29,
         "badRoleElements": 14,
+        "redundantRoleElements": 0,
         "tagNames": {
           "A": {
-            "button": 14
+            "button": {
+              "bad": 14,
+              "redundant": 0
+            }
           }
         }
       }
@@ -9899,7 +9903,7 @@
   "endTime": "2022-07-09T15:36:55",
   "elapsedSeconds": 132,
   "score": {
-    "scoreProcID": "sp12a",
+    "scoreProcID": "sp12b",
     "logWeights": {
       "logCount": 0.5,
       "logSize": 0.01,
@@ -9924,12 +9928,12 @@
         "motion": 24,
         "bulk": 0,
         "focAll": 20,
-        "focInd": 1,
+        "focInd": 3,
         "focOp": 40,
-        "hover": 15,
+        "hover": 26,
         "linkUl": 86,
         "menuNav": 64,
-        "role": 14,
+        "role": 28,
         "styleDiff": 30,
         "zIndex": 103
       },
@@ -10020,7 +10024,7 @@
         "focusIndication": {
           "testaro": {
             "focInd": {
-              "score": 1,
+              "score": 3,
               "what": "Focused element displaying no or nostandard focus indicator"
             }
           }
@@ -10036,7 +10040,7 @@
         "hoverSurprise": {
           "testaro": {
             "hover": {
-              "score": 4,
+              "score": 7,
               "what": "Content changes caused by hovering"
             }
           }
@@ -10060,7 +10064,7 @@
         "roleBad": {
           "testaro": {
             "role": {
-              "score": 11,
+              "score": 21,
               "what": "Nonexistent or implicit-overriding role"
             }
           }
@@ -10151,7 +10155,7 @@
           "alfa": {
             "r74": {
               "score": 22,
-              "what": "Paragraph text has absolute font size"
+              "what": "Paragraph text has an absolute font size"
             }
           }
         },
@@ -10159,7 +10163,7 @@
           "alfa": {
             "r80": {
               "score": 10,
-              "what": "Paragraph text has absolute line height"
+              "what": "Paragraph text has an absolute line height"
             }
           }
         },
@@ -10420,7 +10424,7 @@
     },
     "preventionScores": {},
     "summary": {
-      "total": 584,
+      "total": 599,
       "log": 47,
       "preventions": 0,
       "solos": 0,
@@ -10458,6 +10462,10 @@
           "score": 24
         },
         {
+          "groupName": "roleBad",
+          "score": 23
+        },
+        {
           "groupName": "contrastAAA",
           "score": 22
         },
@@ -10476,10 +10484,6 @@
         {
           "groupName": "spontaneousMotion",
           "score": 14
-        },
-        {
-          "groupName": "roleBad",
-          "score": 13
         },
         {
           "groupName": "leadingAbsolute",
@@ -10502,6 +10506,10 @@
           "score": 10
         },
         {
+          "groupName": "hoverSurprise",
+          "score": 9
+        },
+        {
           "groupName": "linkVague",
           "score": 8
         },
@@ -10512,10 +10520,6 @@
         {
           "groupName": "fontSmall",
           "score": 7
-        },
-        {
-          "groupName": "hoverSurprise",
-          "score": 6
         },
         {
           "groupName": "iframeTitleBad",
@@ -10530,6 +10534,10 @@
           "score": 6
         },
         {
+          "groupName": "focusIndication",
+          "score": 5
+        },
+        {
           "groupName": "h1Missing",
           "score": 4
         },
@@ -10539,10 +10547,6 @@
         },
         {
           "groupName": "visibleBulk",
-          "score": 3
-        },
-        {
-          "groupName": "focusIndication",
           "score": 3
         },
         {

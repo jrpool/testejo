@@ -303,19 +303,20 @@
           "total": 87,
           "types": {
             "indicatorMissing": {
-              "total": 0,
-              "tagNames": {}
+              "total": 1,
+              "tagNames": {
+                "IFRAME": 1
+              }
             },
             "nonOutlinePresent": {
-              "total": 2,
+              "total": 1,
               "tagNames": {
-                "A": 1,
-                "IFRAME": 1
+                "A": 1
               }
             },
             "outlinePresent": {
               "total": 85,
-              "meanDelay": 77,
+              "meanDelay": 78,
               "tagNames": {
                 "A": 75,
                 "INPUT": 7,
@@ -326,27 +327,28 @@
           }
         },
         "items": {
-          "indicatorMissing": [],
+          "indicatorMissing": [
+            {
+              "tagName": "IFRAME",
+              "text": ""
+            }
+          ],
           "nonOutlinePresent": [
             {
               "tagName": "A",
               "text": "Show details"
-            },
-            {
-              "tagName": "IFRAME",
-              "text": ""
             }
           ],
           "outlinePresent": [
             {
               "tagName": "A",
               "text": "Use necessary cookies only",
-              "delay": 101
+              "delay": 102
             },
             {
               "tagName": "A",
               "text": "Allow all cookies",
-              "delay": 101
+              "delay": 103
             },
             {
               "tagName": "A",
@@ -371,7 +373,7 @@
             {
               "tagName": "A",
               "text": "Free ARC Account",
-              "delay": 101
+              "delay": 100
             },
             {
               "tagName": "A",
@@ -381,7 +383,7 @@
             {
               "tagName": "A",
               "text": "Contact",
-              "delay": 101
+              "delay": 102
             },
             {
               "tagName": "A",
@@ -411,12 +413,12 @@
             {
               "tagName": "A",
               "text": "Get Started",
-              "delay": 102
+              "delay": 103
             },
             {
               "tagName": "A",
               "text": "Talk to Us",
-              "delay": 101
+              "delay": 100
             },
             {
               "tagName": "A",
@@ -426,7 +428,7 @@
             {
               "tagName": "A",
               "text": "Learn About Conformance",
-              "delay": 102
+              "delay": 103
             },
             {
               "tagName": "A",
@@ -436,12 +438,12 @@
             {
               "tagName": "A",
               "text": "Learn about ARC Platform",
-              "delay": 101
+              "delay": 103
             },
             {
               "tagName": "A",
               "text": "Learn About Legal Risks",
-              "delay": 102
+              "delay": 100
             },
             {
               "tagName": "A",
@@ -451,27 +453,27 @@
             {
               "tagName": "A",
               "text": "Read the transcript.",
-              "delay": 101
+              "delay": 102
             },
             {
               "tagName": "A",
               "text": "Learn More",
-              "delay": 101
+              "delay": 100
             },
             {
               "tagName": "A",
               "text": "Create Free Account",
-              "delay": 100
-            },
-            {
-              "tagName": "A",
-              "text": "Get your free website accessibility scan",
               "delay": 101
             },
             {
               "tagName": "A",
+              "text": "Get your free website accessibility scan",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
               "text": "Learn about our services",
-              "delay": 100
+              "delay": 101
             },
             {
               "tagName": "A",
@@ -486,12 +488,12 @@
             {
               "tagName": "A",
               "text": "Live Events",
-              "delay": 100
+              "delay": 104
             },
             {
               "tagName": "A",
-              "text": "Webinar, July 27 at 12PM ET: Quickly Test Your Website for JAWS Screen Reader Compatibility",
-              "delay": 103
+              "text": "Webinar, July 20 at 12PM ET: Best Practices to Structure Accessibility Testing",
+              "delay": 102
             },
             {
               "tagName": "A",
@@ -501,22 +503,42 @@
             {
               "tagName": "A",
               "text": "Live Events",
-              "delay": 102
+              "delay": 101
             },
             {
               "tagName": "A",
-              "text": "Webinar, July 13 at 12PM ET: Hiring for Cognitive Diversity in Tech",
+              "text": "Webinar, July 27 at 12PM ET: Quickly Test Your Website for JAWS Screen Reader Compatibility",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "ARC Platform",
               "delay": 101
             },
             {
               "tagName": "A",
               "text": "Business",
-              "delay": 104
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "World of Accessibility",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "ARC Toolkit v5 released",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Business",
+              "delay": 101
             },
             {
               "tagName": "A",
               "text": "User Experience (UX)",
-              "delay": 101
+              "delay": 104
             },
             {
               "tagName": "A",
@@ -526,37 +548,17 @@
             {
               "tagName": "A",
               "text": "Events",
-              "delay": 102
+              "delay": 105
             },
             {
               "tagName": "A",
               "text": "On Demand Webinars",
-              "delay": 103
+              "delay": 101
             },
             {
               "tagName": "A",
               "text": "On-Demand Webinar, June 14 at 12PM ET: How to Retrofit Your Self-Service Kiosk for Usability and Acc",
-              "delay": 101
-            },
-            {
-              "tagName": "A",
-              "text": "Business",
-              "delay": 101
-            },
-            {
-              "tagName": "A",
-              "text": "Events",
-              "delay": 101
-            },
-            {
-              "tagName": "A",
-              "text": "World of Accessibility",
-              "delay": 104
-            },
-            {
-              "tagName": "A",
-              "text": "Global Accessibility Awareness Day (GAAD) 2022",
-              "delay": 101
+              "delay": 102
             },
             {
               "tagName": "A",
@@ -576,67 +578,67 @@
             {
               "tagName": "A",
               "text": "World of Accessibility",
-              "delay": 101
+              "delay": 102
             },
             {
               "tagName": "A",
               "text": "Top Ten Most Common Web Accessibility Issues",
-              "delay": 100
+              "delay": 102
             },
             {
               "tagName": "A",
               "text": "Business",
-              "delay": 101
+              "delay": 103
             },
             {
               "tagName": "A",
               "text": "World of Accessibility",
-              "delay": 103
+              "delay": 100
             },
             {
               "tagName": "A",
               "text": "Inclusive XR Can Transform Your Workplace",
-              "delay": 101
+              "delay": 102
             },
             {
               "tagName": "A",
               "text": "KnowledgeBase Content",
-              "delay": 103
+              "delay": 102
             },
             {
               "tagName": "A",
               "text": "Introduction to Cognitive Disability and Accessibility Testing",
-              "delay": 101
+              "delay": 102
             },
             {
               "tagName": "A",
               "text": "KnowledgeBase Content",
-              "delay": 103
+              "delay": 102
             },
             {
               "tagName": "A",
               "text": "Introduction to A.I. and Accessibility Testing",
-              "delay": 100
-            },
-            {
-              "tagName": "A",
-              "text": "World of Accessibility",
-              "delay": 103
-            },
-            {
-              "tagName": "A",
-              "text": "A Starter Guide For Improving Digital Accessibility",
               "delay": 101
             },
             {
               "tagName": "A",
+              "text": "World of Accessibility",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "A Starter Guide For Improving Digital Accessibility",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
               "text": "Accessibility Strategy",
-              "delay": 104
+              "delay": 101
             },
             {
               "tagName": "A",
               "text": "Accessibility Strategy for Product Management",
-              "delay": 100
+              "delay": 102
             },
             {
               "tagName": "INPUT",
@@ -676,7 +678,7 @@
             {
               "tagName": "BUTTON",
               "text": "Submit your inquiry",
-              "delay": 104
+              "delay": 103
             },
             {
               "tagName": "A",
@@ -696,7 +698,7 @@
             {
               "tagName": "A",
               "text": "ARC Platform",
-              "delay": 101
+              "delay": 103
             },
             {
               "tagName": "A",
@@ -706,57 +708,57 @@
             {
               "tagName": "A",
               "text": "508 Compliance",
-              "delay": 102
+              "delay": 101
             },
             {
               "tagName": "A",
               "text": "Conformance",
-              "delay": 101
+              "delay": 100
             },
             {
               "tagName": "A",
               "text": "About TPGi",
-              "delay": 104
+              "delay": 102
             },
             {
               "tagName": "A",
               "text": "Careers",
-              "delay": 100
-            },
-            {
-              "tagName": "A",
-              "text": "Blog",
-              "delay": 102
-            },
-            {
-              "tagName": "A",
-              "text": "Vispero™",
-              "delay": 100
-            },
-            {
-              "tagName": "A",
-              "text": "Site Credits",
-              "delay": 104
-            },
-            {
-              "tagName": "A",
-              "text": "Privacy Policy",
-              "delay": 100
-            },
-            {
-              "tagName": "A",
-              "text": "Accessibility Statement",
-              "delay": 101
-            },
-            {
-              "tagName": "A",
-              "text": "Follow us on YouTube",
               "delay": 103
             },
             {
               "tagName": "A",
+              "text": "Blog",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Vispero™",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "Site Credits",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Privacy Policy",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility Statement",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "Follow us on YouTube",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
               "text": "Follow us on Twitter",
-              "delay": 102
+              "delay": 103
             },
             {
               "tagName": "A",
@@ -4146,16 +4148,26 @@
       "url": "https://www.tpgi.com/",
       "result": {
         "roleElements": 14,
-        "badRoleElements": 6,
+        "badRoleElements": 1,
+        "redundantRoleElements": 5,
         "tagNames": {
           "NAV": {
-            "navigation": 4
+            "navigation": {
+              "bad": 0,
+              "redundant": 4
+            }
           },
           "MAIN": {
-            "main": 1
+            "main": {
+              "bad": 0,
+              "redundant": 1
+            }
           },
           "FOOTER": {
-            "contentinfo": 1
+            "contentinfo": {
+              "bad": 1,
+              "redundant": 0
+            }
           }
         }
       }

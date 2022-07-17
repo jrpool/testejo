@@ -303,14 +303,15 @@
           "total": 36,
           "types": {
             "indicatorMissing": {
-              "total": 0,
-              "tagNames": {}
+              "total": 2,
+              "tagNames": {
+                "IFRAME": 2
+              }
             },
             "nonOutlinePresent": {
-              "total": 5,
+              "total": 3,
               "tagNames": {
-                "BUTTON": 3,
-                "IFRAME": 2
+                "BUTTON": 3
               }
             },
             "outlinePresent": {
@@ -323,15 +324,20 @@
           }
         },
         "items": {
-          "indicatorMissing": [],
-          "nonOutlinePresent": [
+          "indicatorMissing": [
             {
-              "tagName": "BUTTON",
-              "text": "ACCEDER"
+              "tagName": "IFRAME",
+              "text": ""
             },
             {
               "tagName": "IFRAME",
               "text": ""
+            }
+          ],
+          "nonOutlinePresent": [
+            {
+              "tagName": "BUTTON",
+              "text": "ACCEDER"
             },
             {
               "tagName": "BUTTON",
@@ -340,10 +346,6 @@
             {
               "tagName": "BUTTON",
               "text": "SUSCRIBIRSE AL BOLETÍN"
-            },
-            {
-              "tagName": "IFRAME",
-              "text": ""
             }
           ],
           "outlinePresent": [
@@ -1823,9 +1825,13 @@
       "result": {
         "roleElements": 40,
         "badRoleElements": 1,
+        "redundantRoleElements": 0,
         "tagNames": {
           "A": {
-            "button": 1
+            "button": {
+              "bad": 1,
+              "redundant": 0
+            }
           }
         }
       }

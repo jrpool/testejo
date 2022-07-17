@@ -303,15 +303,17 @@
           "total": 85,
           "types": {
             "indicatorMissing": {
-              "total": 0,
-              "tagNames": {}
+              "total": 51,
+              "tagNames": {
+                "BUTTON": 1,
+                "A": 50
+              }
             },
             "nonOutlinePresent": {
-              "total": 85,
+              "total": 34,
               "tagNames": {
-                "A": 83,
-                "INPUT": 1,
-                "BUTTON": 1
+                "A": 33,
+                "INPUT": 1
               }
             },
             "outlinePresent": {
@@ -322,40 +324,7 @@
           }
         },
         "items": {
-          "indicatorMissing": [],
-          "nonOutlinePresent": [
-            {
-              "tagName": "A",
-              "text": "Skip to Content"
-            },
-            {
-              "tagName": "A",
-              "text": "Change Text Size or Colors"
-            },
-            {
-              "tagName": "A",
-              "text": "All Translations"
-            },
-            {
-              "tagName": "A",
-              "text": ""
-            },
-            {
-              "tagName": "A",
-              "text": "Web Accessibility Initiative WAI"
-            },
-            {
-              "tagName": "A",
-              "text": "Get Involved"
-            },
-            {
-              "tagName": "A",
-              "text": "About W3C WAI"
-            },
-            {
-              "tagName": "INPUT",
-              "text": ""
-            },
+          "indicatorMissing": [
             {
               "tagName": "BUTTON",
               "text": ""
@@ -395,62 +364,6 @@
             {
               "tagName": "A",
               "text": "WAI-ARIA"
-            },
-            {
-              "tagName": "A",
-              "text": "Standards/Guidelines"
-            },
-            {
-              "tagName": "A",
-              "text": "Web Content – WCAG 2"
-            },
-            {
-              "tagName": "A",
-              "text": "WCAG 3 Draft"
-            },
-            {
-              "tagName": "A",
-              "text": "Authoring Tools – ATAG"
-            },
-            {
-              "tagName": "A",
-              "text": "User Agents – UAAG"
-            },
-            {
-              "tagName": "A",
-              "text": "WAI-ARIA"
-            },
-            {
-              "tagName": "A",
-              "text": "Evaluation – ACT & EARL"
-            },
-            {
-              "tagName": "A",
-              "text": "WAI-Adapt"
-            },
-            {
-              "tagName": "A",
-              "text": "Pronunciation"
-            },
-            {
-              "tagName": "A",
-              "text": "Standards Harmonization is Essential"
-            },
-            {
-              "tagName": "A",
-              "text": "W3C Process for Developing Standards"
-            },
-            {
-              "tagName": "A",
-              "text": "Referencing and Linking to Standards"
-            },
-            {
-              "tagName": "A",
-              "text": "Cognitive Accessibility at W3C"
-            },
-            {
-              "tagName": "A",
-              "text": "Mobile Accessibility at W3C"
             },
             {
               "tagName": "A",
@@ -598,26 +511,6 @@
             },
             {
               "tagName": "A",
-              "text": "W3C Web Accessibility Initiative (WAI)"
-            },
-            {
-              "tagName": "A",
-              "text": "Twitter"
-            },
-            {
-              "tagName": "A",
-              "text": "Feed"
-            },
-            {
-              "tagName": "A",
-              "text": "YouTube"
-            },
-            {
-              "tagName": "A",
-              "text": "Get News in Email"
-            },
-            {
-              "tagName": "A",
               "text": "MIT"
             },
             {
@@ -635,6 +528,116 @@
             {
               "tagName": "A",
               "text": "Permission to Use WAI Material"
+            }
+          ],
+          "nonOutlinePresent": [
+            {
+              "tagName": "A",
+              "text": "Skip to Content"
+            },
+            {
+              "tagName": "A",
+              "text": "Change Text Size or Colors"
+            },
+            {
+              "tagName": "A",
+              "text": "All Translations"
+            },
+            {
+              "tagName": "A",
+              "text": ""
+            },
+            {
+              "tagName": "A",
+              "text": "Web Accessibility Initiative WAI"
+            },
+            {
+              "tagName": "A",
+              "text": "Get Involved"
+            },
+            {
+              "tagName": "A",
+              "text": "About W3C WAI"
+            },
+            {
+              "tagName": "INPUT",
+              "text": ""
+            },
+            {
+              "tagName": "A",
+              "text": "Standards/Guidelines"
+            },
+            {
+              "tagName": "A",
+              "text": "Web Content – WCAG 2"
+            },
+            {
+              "tagName": "A",
+              "text": "WCAG 3 Draft"
+            },
+            {
+              "tagName": "A",
+              "text": "Authoring Tools – ATAG"
+            },
+            {
+              "tagName": "A",
+              "text": "User Agents – UAAG"
+            },
+            {
+              "tagName": "A",
+              "text": "WAI-ARIA"
+            },
+            {
+              "tagName": "A",
+              "text": "Evaluation – ACT & EARL"
+            },
+            {
+              "tagName": "A",
+              "text": "WAI-Adapt"
+            },
+            {
+              "tagName": "A",
+              "text": "Pronunciation"
+            },
+            {
+              "tagName": "A",
+              "text": "Standards Harmonization is Essential"
+            },
+            {
+              "tagName": "A",
+              "text": "W3C Process for Developing Standards"
+            },
+            {
+              "tagName": "A",
+              "text": "Referencing and Linking to Standards"
+            },
+            {
+              "tagName": "A",
+              "text": "Cognitive Accessibility at W3C"
+            },
+            {
+              "tagName": "A",
+              "text": "Mobile Accessibility at W3C"
+            },
+            {
+              "tagName": "A",
+              "text": "W3C Web Accessibility Initiative (WAI)"
+            },
+            {
+              "tagName": "A",
+              "text": "Twitter"
+            },
+            {
+              "tagName": "A",
+              "text": "Feed"
+            },
+            {
+              "tagName": "A",
+              "text": "YouTube"
+            },
+            {
+              "tagName": "A",
+              "text": "Get News in Email"
             },
             {
               "tagName": "A",
@@ -1533,11 +1536,11 @@
           "triggers": 143,
           "headTriggers": 20,
           "tailTriggers": 123,
-          "impactTriggers": 8,
+          "impactTriggers": 0,
           "additions": 0,
           "removals": 0,
-          "opacityChanges": 8,
-          "opacityImpact": 25,
+          "opacityChanges": 0,
+          "opacityImpact": 0,
           "unhoverables": 0
         },
         "items": {
@@ -1546,16 +1549,7 @@
             "unhoverables": []
           },
           "tail": {
-            "impactTriggers": [
-              {
-                "tagName": "LI",
-                "text": "AccessibleNameandDescription:ComputationandAPIMapp",
-                "additions": 0,
-                "removals": 0,
-                "opacityChanges": 1,
-                "opacityImpact": 3
-              }
-            ],
+            "impactTriggers": [],
             "unhoverables": []
           }
         }
@@ -1807,6 +1801,7 @@
       "result": {
         "roleElements": 2,
         "badRoleElements": 0,
+        "redundantRoleElements": 0,
         "tagNames": {}
       }
     },

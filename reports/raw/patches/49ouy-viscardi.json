@@ -1,0 +1,869 @@
+{
+  "id": "49ouy-viscardi",
+  "host": {
+    "id": "viscardi",
+    "which": "https://www.viscardicenter.org/digital-accessibility-services/web-accessibility/",
+    "what": "Viscardi Center"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-16T23:45:47"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-16T23:46:32"
+    }
+  ],
+  "script": {
+    "id": "tp12",
+    "what": "Alfa, Axe, HTML CodeSniffer, IBM, Tenon, WAVE, and 16 custom tests",
+    "strict": true,
+    "timeLimit": 150,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.viscardicenter.org/digital-accessibility-services/web-accessibility/",
+        "what": "Viscardi Center"
+      },
+      {
+        "type": "test",
+        "which": "focInd",
+        "revealAll": false,
+        "allowedDelay": 250,
+        "withItems": true,
+        "what": "focus indicators"
+      },
+      {
+        "type": "test",
+        "which": "hover",
+        "headSize": 20,
+        "headSampleSize": 20,
+        "tailSampleSize": 15,
+        "withItems": true,
+        "what": "hover impacts"
+      },
+      {
+        "type": "test",
+        "which": "role",
+        "what": "validity and necessity of role assignments"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.viscardicenter.org/digital-accessibility-services/web-accessibility/",
+      "what": "Viscardi Center",
+      "result": "https://www.viscardicenter.org/digital-accessibility-services/web-accessibility/"
+    },
+    {
+      "type": "test",
+      "which": "focInd",
+      "revealAll": false,
+      "allowedDelay": 250,
+      "withItems": true,
+      "what": "focus indicators",
+      "url": "https://www.viscardicenter.org/digital-accessibility-services/web-accessibility/",
+      "result": {
+        "totals": {
+          "total": 98,
+          "types": {
+            "indicatorMissing": {
+              "total": 10,
+              "tagNames": {
+                "A": 8,
+                "INPUT": 2
+              }
+            },
+            "nonOutlinePresent": {
+              "total": 0,
+              "tagNames": {}
+            },
+            "outlinePresent": {
+              "total": 88,
+              "meanDelay": 102,
+              "tagNames": {
+                "A": 87,
+                "DIV": 1
+              }
+            }
+          }
+        },
+        "items": {
+          "indicatorMissing": [
+            {
+              "tagName": "A",
+              "text": "Skip to Content ↵ENTER"
+            },
+            {
+              "tagName": "A",
+              "text": "Skip to Menu ↵ENTER"
+            },
+            {
+              "tagName": "A",
+              "text": "Skip to Footer ↵ENTER"
+            },
+            {
+              "tagName": "INPUT",
+              "text": ""
+            },
+            {
+              "tagName": "INPUT",
+              "text": ""
+            },
+            {
+              "tagName": "A",
+              "text": "Share on Facebook"
+            },
+            {
+              "tagName": "A",
+              "text": "Click to share on Twitter"
+            },
+            {
+              "tagName": "A",
+              "text": "Click to share on Google+"
+            },
+            {
+              "tagName": "A",
+              "text": "Click to share on LinkedIN"
+            },
+            {
+              "tagName": "A",
+              "text": "Site Map"
+            }
+          ],
+          "nonOutlinePresent": [],
+          "outlinePresent": [
+            {
+              "tagName": "A",
+              "text": "The Viscardi Center",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "DONATE",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Login",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Media Room",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "Contact Us",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "Home",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Our Services",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Abilities, Inc.",
+              "delay": 104
+            },
+            {
+              "tagName": "A",
+              "text": "E-Learning",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "Henry Viscardi School",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "The Disability Entrepreneurship Institute",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Nathaniel H. Kornreich Technology Center",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Services by Type",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Services by Age/Audience",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Services for Businesses",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "How to Obtain Services",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Our Stories",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Adults",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Businesses",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Children",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Donors",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Get Involved",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Ways to Give",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Together We Soar Campaign",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Advocacy",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Volunteer",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Share Your Story",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Viscardi Alumni",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "News & Events",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "News",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Blog",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "Events",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Media Room",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Viscardi Voice Newsletter",
+              "delay": 104
+            },
+            {
+              "tagName": "A",
+              "text": "Digital Accessibility",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Document Accessibility",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Web Accessibility",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Captioning & CART Services",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Audio Description",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Viscardi Multimedia Learning Center",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "About",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "History",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "Staff Leadership and Boards of Directors",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "Henry Viscardi Achievement Awards",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Sunny",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "FAQs",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Careers",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "Financials",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Contact Us",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "A",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "A",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "A",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "www.viscardicenter.org",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Digital Accessibility Services",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "Compare our services, pricing and expertise to other companies with similar offerings.",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "here.",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Document Accessibility",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Captioning & CART Services",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Audio Description",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Viscardi Multimedia Learning Center",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Assistive Technology",
+              "delay": 105
+            },
+            {
+              "tagName": "A",
+              "text": "Education",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "Empowerment",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "daservices@viscardicenter.org",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Document Accessibility",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Web Accessibility",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Captioning & CART Services",
+              "delay": 104
+            },
+            {
+              "tagName": "A",
+              "text": "Audio Description",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "Viscardi Multimedia Learning Center",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Digital Accessibility Interest Form",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "info@viscardicenter.org",
+              "delay": 111
+            },
+            {
+              "tagName": "A",
+              "text": "Careers at the Viscardi Center",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Staff Log in",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Privacy",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Sign up For Enews",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 104
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Infinite Media Corp.",
+              "delay": 101
+            },
+            {
+              "tagName": "DIV",
+              "text": "",
+              "delay": 104
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.viscardicenter.org/digital-accessibility-services/web-accessibility/",
+      "what": "URL",
+      "result": "https://www.viscardicenter.org/digital-accessibility-services/web-accessibility/"
+    },
+    {
+      "type": "test",
+      "which": "hover",
+      "headSize": 20,
+      "headSampleSize": 20,
+      "tailSampleSize": 15,
+      "withItems": true,
+      "what": "hover-caused content changes",
+      "url": "https://www.viscardicenter.org/digital-accessibility-services/web-accessibility/",
+      "result": {
+        "totals": {
+          "triggers": 175,
+          "headTriggers": 20,
+          "tailTriggers": 155,
+          "impactTriggers": 30,
+          "additions": 0,
+          "removals": 0,
+          "opacityChanges": 30,
+          "opacityImpact": 248,
+          "unhoverables": 13
+        },
+        "items": {
+          "head": {
+            "impactTriggers": [
+              {
+                "tagName": "LI",
+                "text": "<aclass=\"\"target=\"_blank\"href=\"https://www.faceboo",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "A",
+                "text": "<imgsrc=\"https://www.viscardicenter.org/wp-content",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "LI",
+                "text": "<aclass=\"\"target=\"_blank\"href=\"https://twitter.com",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "A",
+                "text": "<imgsrc=\"https://www.viscardicenter.org/wp-content",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "LI",
+                "text": "<aclass=\"\"target=\"_blank\"href=\"https://www.linkedi",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "A",
+                "text": "<imgsrc=\"https://www.viscardicenter.org/wp-content",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "LI",
+                "text": "<aclass=\"\"target=\"_blank\"href=\"http://www.youtube.",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "A",
+                "text": "<imgsrc=\"https://www.viscardicenter.org/wp-content",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "LI",
+                "text": "<aclass=\"\"target=\"_blank\"href=\"https://www.instagr",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 0
+              }
+            ],
+            "unhoverables": [
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "SkiptoContent↵ENTER"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "SkiptoMenu↵ENTER"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "SkiptoFooter↵ENTER"
+              }
+            ]
+          },
+          "tail": {
+            "impactTriggers": [
+              {
+                "tagName": "LI",
+                "text": "AboutHistoryStaffLeadershipandBoardsofDirectorsHen",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 24
+              },
+              {
+                "tagName": "A",
+                "text": "<imgsrc=\"https://www.viscardicenter.org/wp-content",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 0
+              }
+            ],
+            "unhoverables": [
+              {
+                "tagName": "LI",
+                "id": "menu-item-8518",
+                "text": "Donors"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "HowtoObtainServices"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "TogetherWeSoarCampaign"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Businesses"
+              },
+              {
+                "tagName": "LI",
+                "id": "menu-item-9149",
+                "text": "HenryViscardiAchievementAwards"
+              },
+              {
+                "tagName": "LI",
+                "id": "menu-item-1537",
+                "text": "News"
+              },
+              {
+                "tagName": "LI",
+                "id": "menu-item-1536",
+                "text": "MediaRoom"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "ViscardiAlumni"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "WebAccessibility"
+              },
+              {
+                "tagName": "LI",
+                "id": "menu-item-13263",
+                "text": "ViscardiMultimediaLearningCenter"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.viscardicenter.org/digital-accessibility-services/web-accessibility/",
+      "what": "URL",
+      "result": "https://www.viscardicenter.org/digital-accessibility-services/web-accessibility/"
+    },
+    {
+      "type": "test",
+      "which": "role",
+      "what": "roles",
+      "url": "https://www.viscardicenter.org/digital-accessibility-services/web-accessibility/",
+      "result": {
+        "roleElements": 106,
+        "badRoleElements": 97,
+        "redundantRoleElements": 1,
+        "tagNames": {
+          "SPAN": {
+            "button": {
+              "bad": 33,
+              "redundant": 0
+            }
+          },
+          "ASIDE": {
+            "complementary": {
+              "bad": 0,
+              "redundant": 1
+            }
+          },
+          "DIV": {
+            "button": {
+              "bad": 59,
+              "redundant": 0
+            }
+          },
+          "A": {
+            "button": {
+              "bad": 5,
+              "redundant": 0
+            }
+          }
+        }
+      }
+    }
+  ],
+  "timeStamp": "49ouy",
+  "startTime": "2022-07-16T23:45:47",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "hover",
+      27
+    ],
+    [
+      "focInd",
+      13
+    ],
+    [
+      "role",
+      0
+    ]
+  ],
+  "logCount": 6,
+  "logSize": 345,
+  "errorLogCount": 3,
+  "errorLogSize": 207,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-16T23:46:32",
+  "elapsedSeconds": 45
+}

@@ -338,7 +338,15 @@
             },
             {
               "tagName": "A",
-              "text": "Accessibility Testing"
+              "text": "Accessibility Audit"
+            },
+            {
+              "tagName": "A",
+              "text": "Manage Accessibility"
+            },
+            {
+              "tagName": "A",
+              "text": "Compliance"
             },
             {
               "tagName": "A",
@@ -346,47 +354,39 @@
             },
             {
               "tagName": "A",
-              "text": "Accessibility Consulting"
-            },
-            {
-              "tagName": "A",
-              "text": "VPAT Creation"
-            },
-            {
-              "tagName": "A",
               "text": "Contact Us"
             },
             {
               "tagName": "A",
-              "text": "Read More Read more on Accessibility Testing"
+              "text": "Read More on Accessibility Testing"
             },
             {
               "tagName": "A",
-              "text": "Read More Read more on VPAT Creation"
+              "text": "Read More on VPAT Creation"
             },
             {
               "tagName": "A",
-              "text": "Read More Read more on Accessibility Documents"
+              "text": "Read More on Accessibility Documents"
             },
             {
               "tagName": "A",
-              "text": "Read More Read more on Accessibility Consulting"
+              "text": "Read More on Accessibility Consulting"
             },
             {
               "tagName": "A",
-              "text": "Read More"
+              "text": "Read More on SAAS Accessibility Toolkit"
             },
             {
               "tagName": "A",
-              "text": "Read More Read more on Accessibility in our DNA"
+              "text": "Read More on Accessibility in our DNA"
             },
             {
               "tagName": "A",
-              "text": "Read More Read more on Passion to Excel"
+              "text": "Read More on Passion to Excel"
             },
             {
               "tagName": "A",
-              "text": "Read More Read more on Belief in Innovation"
+              "text": "Read More on Belief in Innovation"
             },
             {
               "tagName": "A",
@@ -394,7 +394,7 @@
             },
             {
               "tagName": "A",
-              "text": "accessibility testing"
+              "text": "accessibility audit"
             },
             {
               "tagName": "A",
@@ -430,15 +430,15 @@
             },
             {
               "tagName": "A",
-              "text": "What is an Accessibility Audit?"
+              "text": "What is a VPAT? Should I create a VPAT for my product?"
             },
             {
               "tagName": "A",
-              "text": "Image Description – An Integral part of Content Accessibility"
+              "text": "Importance of Mobile Accessibility"
             },
             {
               "tagName": "A",
-              "text": "Building accessibility into your company culture"
+              "text": "ACCESSIBILITY BUZZ – June 2022"
             },
             {
               "tagName": "A",
@@ -1762,10 +1762,17 @@
       "result": {
         "roleElements": 15,
         "badRoleElements": 4,
+        "redundantRoleElements": 0,
         "tagNames": {
           "DIV": {
-            "navigation": 3,
-            "status": 1
+            "navigation": {
+              "bad": 3,
+              "redundant": 0
+            },
+            "status": {
+              "bad": 1,
+              "redundant": 0
+            }
           }
         }
       }

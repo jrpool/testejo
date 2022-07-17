@@ -380,7 +380,7 @@
             {
               "tagName": "A",
               "text": "Tanaguru Engine",
-              "delay": 101
+              "delay": 102
             },
             {
               "tagName": "A",
@@ -415,7 +415,7 @@
             {
               "tagName": "A",
               "text": "Contactez-nous",
-              "delay": 102
+              "delay": 101
             },
             {
               "tagName": "A",
@@ -1115,13 +1115,13 @@
             "unhoverables": [
               {
                 "tagName": "LI",
-                "id": "menu-item-875",
-                "text": "Nouscontacter"
+                "id": "menu-item-587",
+                "text": "Industrialiser"
               },
               {
                 "tagName": "LI",
-                "id": "menu-item-589",
-                "text": "Développer"
+                "id": "menu-item-875",
+                "text": "Nouscontacter"
               }
             ]
           }
@@ -1389,19 +1389,32 @@
       "url": "https://www.tanaguru.com/",
       "result": {
         "roleElements": 14,
-        "badRoleElements": 4,
+        "badRoleElements": 2,
+        "redundantRoleElements": 2,
         "tagNames": {
           "HEADER": {
-            "banner": 1
+            "banner": {
+              "bad": 1,
+              "redundant": 0
+            }
           },
           "NAV": {
-            "navigation": 1
+            "navigation": {
+              "bad": 0,
+              "redundant": 1
+            }
           },
           "MAIN": {
-            "main": 1
+            "main": {
+              "bad": 0,
+              "redundant": 1
+            }
           },
           "FOOTER": {
-            "contentinfo": 1
+            "contentinfo": {
+              "bad": 1,
+              "redundant": 0
+            }
           }
         }
       }

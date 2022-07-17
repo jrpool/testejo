@@ -304,14 +304,14 @@
           "total": 42,
           "types": {
             "indicatorMissing": {
-              "total": 0,
-              "tagNames": {}
-            },
-            "nonOutlinePresent": {
               "total": 1,
               "tagNames": {
                 "IFRAME": 1
               }
+            },
+            "nonOutlinePresent": {
+              "total": 0,
+              "tagNames": {}
             },
             "outlinePresent": {
               "total": 41,
@@ -324,13 +324,13 @@
           }
         },
         "items": {
-          "indicatorMissing": [],
-          "nonOutlinePresent": [
+          "indicatorMissing": [
             {
               "tagName": "IFRAME",
               "text": ""
             }
           ],
+          "nonOutlinePresent": [],
           "outlinePresent": [
             {
               "tagName": "A",
@@ -465,7 +465,7 @@
             {
               "tagName": "A",
               "text": "Learn More",
-              "delay": 101
+              "delay": 105
             },
             {
               "tagName": "A",
@@ -485,7 +485,7 @@
             {
               "tagName": "A",
               "text": "Learn More",
-              "delay": 104
+              "delay": 102
             },
             {
               "tagName": "A",
@@ -1453,10 +1453,10 @@
           "headTriggers": 20,
           "tailTriggers": 13,
           "impactTriggers": 4,
-          "additions": 0,
+          "additions": 58,
           "removals": 0,
-          "opacityChanges": 4,
-          "opacityImpact": 54,
+          "opacityChanges": 0,
+          "opacityImpact": 0,
           "unhoverables": 1
         },
         "items": {
@@ -1465,34 +1465,34 @@
               {
                 "tagName": "LI",
                 "text": "ServicesDataQualityServicesSoftwareQualityServices",
-                "additions": 0,
+                "additions": 13,
                 "removals": 0,
-                "opacityChanges": 1,
-                "opacityImpact": 12
+                "opacityChanges": 0,
+                "opacityImpact": 0
               },
               {
                 "tagName": "A",
                 "text": "Services",
-                "additions": 0,
+                "additions": 13,
                 "removals": 0,
-                "opacityChanges": 1,
-                "opacityImpact": 12
+                "opacityChanges": 0,
+                "opacityImpact": 0
               },
               {
                 "tagName": "LI",
                 "text": "AboutCompanyUniversalWorkplaceTeamPressJobs",
-                "additions": 0,
+                "additions": 16,
                 "removals": 0,
-                "opacityChanges": 1,
-                "opacityImpact": 15
+                "opacityChanges": 0,
+                "opacityImpact": 0
               },
               {
                 "tagName": "A",
                 "text": "About",
-                "additions": 0,
+                "additions": 16,
                 "removals": 0,
-                "opacityChanges": 1,
-                "opacityImpact": 15
+                "opacityChanges": 0,
+                "opacityImpact": 0
               }
             ],
             "unhoverables": [
@@ -1817,9 +1817,13 @@
       "result": {
         "roleElements": 29,
         "badRoleElements": 14,
+        "redundantRoleElements": 0,
         "tagNames": {
           "A": {
-            "button": 14
+            "button": {
+              "bad": 14,
+              "redundant": 0
+            }
           }
         }
       }

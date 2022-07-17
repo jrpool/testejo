@@ -303,14 +303,14 @@
           "total": 44,
           "types": {
             "indicatorMissing": {
-              "total": 0,
-              "tagNames": {}
-            },
-            "nonOutlinePresent": {
               "total": 2,
               "tagNames": {
                 "DIV": 2
               }
+            },
+            "nonOutlinePresent": {
+              "total": 0,
+              "tagNames": {}
             },
             "outlinePresent": {
               "total": 42,
@@ -325,8 +325,7 @@
           }
         },
         "items": {
-          "indicatorMissing": [],
-          "nonOutlinePresent": [
+          "indicatorMissing": [
             {
               "tagName": "DIV",
               "text": ""
@@ -336,6 +335,7 @@
               "text": "Privatsphäre-EinstellungenWir setzen auf unserer Website Cookies ein. Einige von ihnen sind notwendi"
             }
           ],
+          "nonOutlinePresent": [],
           "outlinePresent": [
             {
               "tagName": "INPUT",
@@ -1236,7 +1236,7 @@
           "removals": 0,
           "opacityChanges": 0,
           "opacityImpact": 0,
-          "unhoverables": 33
+          "unhoverables": 31
         },
         "items": {
           "head": {
@@ -1348,14 +1348,44 @@
             "impactTriggers": [],
             "unhoverables": [
               {
-                "tagName": "LI",
+                "tagName": "A",
                 "id": "",
-                "text": "ErklärungzurBarrierefreiheit"
+                "text": "StandderTechnik"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Datenschutz"
               },
               {
                 "tagName": "LI",
                 "id": "",
-                "text": "Datenschutz"
+                "text": "Barrieremelden✉"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Mehrerfahren:CountdownzurvollendigitalenBarrierefr"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Glossar"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Webauftritt"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Barrieremelden✉"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Impressum"
               },
               {
                 "tagName": "A",
@@ -1363,54 +1393,14 @@
                 "text": "Mehrerfahren:DerersteBerichtüberdenStandderBarrier"
               },
               {
-                "tagName": "A",
-                "id": "",
-                "text": "Barrierefreiheit"
-              },
-              {
-                "tagName": "A",
-                "id": "",
-                "text": "Barrierefreiheit"
-              },
-              {
-                "tagName": "A",
-                "id": "",
-                "text": "Barrierefreiheit"
-              },
-              {
-                "tagName": "A",
-                "id": "",
-                "text": "Datenschutz"
-              },
-              {
-                "tagName": "A",
-                "id": "",
-                "text": "AlleNachrichten"
-              },
-              {
-                "tagName": "A",
-                "id": "",
-                "text": "Twitter"
-              },
-              {
                 "tagName": "LI",
                 "id": "",
+                "text": "ErklärungzurBarrierefreiheit"
+              },
+              {
+                "tagName": "A",
+                "id": "",
                 "text": "Twitter"
-              },
-              {
-                "tagName": "A",
-                "id": "",
-                "text": "DigitaleBarrierefreiheit"
-              },
-              {
-                "tagName": "A",
-                "id": "",
-                "text": "Mehrerfahren:Veranstaltung:WebinarAGSoftwareundAGM"
-              },
-              {
-                "tagName": "A",
-                "id": "",
-                "text": "nachoben"
               }
             ]
           }
@@ -1687,13 +1677,20 @@
       "url": "https://www.bfit-bund.de/DE/Home/home_node.html",
       "result": {
         "roleElements": 3,
-        "badRoleElements": 3,
+        "badRoleElements": 1,
+        "redundantRoleElements": 2,
         "tagNames": {
           "NAV": {
-            "navigation": 2
+            "navigation": {
+              "bad": 0,
+              "redundant": 2
+            }
           },
           "FOOTER": {
-            "contentinfo": 1
+            "contentinfo": {
+              "bad": 1,
+              "redundant": 0
+            }
           }
         }
       }
@@ -5631,7 +5628,7 @@
   "endTime": "2022-07-06T01:49:18",
   "elapsedSeconds": 110,
   "score": {
-    "scoreProcID": "sp12a",
+    "scoreProcID": "sp12b",
     "logWeights": {
       "logCount": 0.5,
       "logSize": 0.01,
@@ -5654,11 +5651,11 @@
     "packageDetails": {
       "testaro": {
         "focAll": 86,
-        "focInd": 2,
+        "focInd": 6,
         "focOp": 10,
-        "hover": 33,
+        "hover": 31,
         "linkUl": 50,
-        "role": 3,
+        "role": 4,
         "styleDiff": 14,
         "zIndex": 23
       },
@@ -5719,7 +5716,7 @@
         "focusIndication": {
           "testaro": {
             "focInd": {
-              "score": 2,
+              "score": 6,
               "what": "Focused element displaying no or nostandard focus indicator"
             }
           },
@@ -5757,7 +5754,7 @@
         "roleBad": {
           "testaro": {
             "role": {
-              "score": 2,
+              "score": 3,
               "what": "Nonexistent or implicit-overriding role"
             }
           }
@@ -5824,7 +5821,7 @@
           "alfa": {
             "r74": {
               "score": 8,
-              "what": "Paragraph text has absolute font size"
+              "what": "Paragraph text has an absolute font size"
             }
           }
         },
@@ -5832,7 +5829,7 @@
           "alfa": {
             "r80": {
               "score": 26,
-              "what": "Paragraph text has absolute line height"
+              "what": "Paragraph text has an absolute line height"
             }
           }
         },
@@ -6031,7 +6028,7 @@
       "ibm": 100
     },
     "summary": {
-      "total": 552,
+      "total": 557,
       "log": 117,
       "preventions": 100,
       "solos": 0,
@@ -6069,6 +6066,10 @@
           "score": 10
         },
         {
+          "groupName": "focusIndication",
+          "score": 9
+        },
+        {
           "groupName": "zIndexNotZero",
           "score": 8
         },
@@ -6093,7 +6094,7 @@
           "score": 6
         },
         {
-          "groupName": "focusIndication",
+          "groupName": "roleBad",
           "score": 5
         },
         {
@@ -6111,10 +6112,6 @@
         {
           "groupName": "linkForcesNewWindow",
           "score": 5
-        },
-        {
-          "groupName": "roleBad",
-          "score": 4
         },
         {
           "groupName": "skipRepeatedContent",

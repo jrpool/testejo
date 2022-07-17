@@ -298,14 +298,14 @@
           "total": 77,
           "types": {
             "indicatorMissing": {
-              "total": 0,
-              "tagNames": {}
-            },
-            "nonOutlinePresent": {
               "total": 1,
               "tagNames": {
                 "IFRAME": 1
               }
+            },
+            "nonOutlinePresent": {
+              "total": 0,
+              "tagNames": {}
             },
             "outlinePresent": {
               "total": 76,
@@ -319,13 +319,13 @@
           }
         },
         "items": {
-          "indicatorMissing": [],
-          "nonOutlinePresent": [
+          "indicatorMissing": [
             {
               "tagName": "IFRAME",
               "text": ""
             }
           ],
+          "nonOutlinePresent": [],
           "outlinePresent": [
             {
               "tagName": "A",
@@ -339,42 +339,42 @@
             },
             {
               "tagName": "A",
-              "text": "HOME",
+              "text": "Home",
               "delay": 0
             },
             {
               "tagName": "A",
-              "text": "SERVICES",
+              "text": "Services",
               "delay": 0
             },
             {
               "tagName": "A",
-              "text": "SOLUTIONS",
+              "text": "Solutions",
               "delay": 0
             },
             {
               "tagName": "A",
-              "text": "BLOG",
+              "text": "Blog",
               "delay": 0
             },
             {
               "tagName": "A",
-              "text": "CASE STUDIES",
+              "text": "Case Studies",
               "delay": 0
             },
             {
               "tagName": "A",
-              "text": "COMPANY",
+              "text": "Company",
               "delay": 0
             },
             {
               "tagName": "A",
-              "text": "CONTACT",
+              "text": "Contact",
               "delay": 0
             },
             {
               "tagName": "A",
-              "text": "GET STARTED",
+              "text": "Get Started",
               "delay": 0
             },
             {
@@ -390,7 +390,7 @@
             {
               "tagName": "BUTTON",
               "text": "Previous slide",
-              "delay": 102
+              "delay": 106
             },
             {
               "tagName": "A",
@@ -410,7 +410,7 @@
             {
               "tagName": "BUTTON",
               "text": "Next slide",
-              "delay": 102
+              "delay": 100
             },
             {
               "tagName": "BUTTON",
@@ -429,32 +429,32 @@
             },
             {
               "tagName": "A",
-              "text": "LEARN MORE",
+              "text": "Learn More",
               "delay": 0
             },
             {
               "tagName": "A",
-              "text": "LEARN MORE",
+              "text": "Learn More",
               "delay": 0
             },
             {
               "tagName": "A",
-              "text": "LEARN MORE",
+              "text": "Learn More",
               "delay": 0
             },
             {
               "tagName": "A",
-              "text": "LEARN MORE",
+              "text": "Learn More",
               "delay": 0
             },
             {
               "tagName": "A",
-              "text": "LEARN MORE",
+              "text": "Learn More",
               "delay": 0
             },
             {
               "tagName": "A",
-              "text": "LEARN MORE",
+              "text": "Learn More",
               "delay": 0
             },
             {
@@ -514,67 +514,67 @@
             },
             {
               "tagName": "A",
-              "text": "LEARN MORE",
+              "text": "Learn More",
               "delay": 0
             },
             {
               "tagName": "A",
-              "text": "LEARN MORE",
+              "text": "Learn More",
               "delay": 0
             },
             {
               "tagName": "A",
-              "text": "LEARN MORE",
+              "text": "Learn More",
               "delay": 0
             },
             {
               "tagName": "A",
-              "text": "LEARN MORE",
+              "text": "Learn More",
               "delay": 0
             },
             {
               "tagName": "A",
-              "text": "LEARN MORE",
+              "text": "Learn More",
               "delay": 0
             },
             {
               "tagName": "A",
-              "text": "LEARN MORE",
+              "text": "Learn More",
               "delay": 0
             },
             {
               "tagName": "A",
-              "text": "LEARN MORE",
+              "text": "Learn More",
               "delay": 0
             },
             {
               "tagName": "BUTTON",
-              "text": "READ MORE",
+              "text": "Read More",
               "delay": 0
             },
             {
               "tagName": "BUTTON",
-              "text": "READ MORE",
+              "text": "Read More",
               "delay": 0
             },
             {
               "tagName": "BUTTON",
-              "text": "READ MORE",
+              "text": "Read More",
               "delay": 0
             },
             {
               "tagName": "BUTTON",
-              "text": "READ MORE",
+              "text": "Read More",
               "delay": 0
             },
             {
               "tagName": "BUTTON",
-              "text": "READ MORE",
+              "text": "Read More",
               "delay": 0
             },
             {
               "tagName": "BUTTON",
-              "text": "READ MORE",
+              "text": "Read More",
               "delay": 0
             },
             {
@@ -1870,12 +1870,12 @@
           "triggers": 139,
           "headTriggers": 20,
           "tailTriggers": 119,
-          "impactTriggers": 16,
+          "impactTriggers": 0,
           "additions": 0,
           "removals": 0,
-          "opacityChanges": 16,
+          "opacityChanges": 0,
           "opacityImpact": 0,
-          "unhoverables": 2
+          "unhoverables": 1
         },
         "items": {
           "head": {
@@ -1883,37 +1883,14 @@
             "unhoverables": [
               {
                 "tagName": "A",
-                "id": "",
+                "id": "skip",
                 "text": "Skiptomaincontent"
               }
             ]
           },
           "tail": {
-            "impactTriggers": [
-              {
-                "tagName": "LI",
-                "text": "<ahref=\"https://www.facebook.com/Zenythgroup/\"targ",
-                "additions": 0,
-                "removals": 0,
-                "opacityChanges": 1,
-                "opacityImpact": 0
-              },
-              {
-                "tagName": "LI",
-                "text": "<ahref=\"https://twitter.com/zenythgroup\"target=\"_b",
-                "additions": 0,
-                "removals": 0,
-                "opacityChanges": 1,
-                "opacityImpact": 0
-              }
-            ],
-            "unhoverables": [
-              {
-                "tagName": "A",
-                "id": "",
-                "text": "<imgstyle=\"margin-top:1em;\"src=\"/uploads/customers"
-              }
-            ]
+            "impactTriggers": [],
+            "unhoverables": []
           }
         }
       }
@@ -2588,26 +2565,29 @@
       "what": "roles",
       "url": "https://zenythgroup.com/index",
       "result": {
-        "roleElements": 90,
-        "badRoleElements": 75,
+        "roleElements": 34,
+        "badRoleElements": 19,
+        "redundantRoleElements": 0,
         "tagNames": {
-          "A": {
-            "button": 20
-          },
-          "SECTION": {
-            "main": 1
-          },
           "DIV": {
-            "heading": 29,
-            "group": 7,
-            "button": 9,
-            "slider": 2
-          },
-          "BUTTON": {
-            "button": 6
+            "group": {
+              "bad": 7,
+              "redundant": 0
+            },
+            "button": {
+              "bad": 9,
+              "redundant": 0
+            },
+            "slider": {
+              "bad": 2,
+              "redundant": 0
+            }
           },
           "FOOTER": {
-            "contentinfo": 1
+            "contentinfo": {
+              "bad": 1,
+              "redundant": 0
+            }
           }
         }
       }
@@ -15243,7 +15223,7 @@
   "endTime": "2022-07-09T00:42:18",
   "elapsedSeconds": 117,
   "score": {
-    "scoreProcID": "sp12a",
+    "scoreProcID": "sp12b",
     "logWeights": {
       "logCount": 0.5,
       "logSize": 0.01,
@@ -15266,12 +15246,12 @@
     "packageDetails": {
       "testaro": {
         "bulk": 0,
-        "focInd": 1,
+        "focInd": 3,
         "focOp": 39,
-        "hover": 37,
+        "hover": 1,
         "linkUl": 94,
         "menuNav": 34,
-        "role": 75,
+        "role": 38,
         "styleDiff": 21,
         "zIndex": 39
       },
@@ -15338,7 +15318,7 @@
         "focusIndication": {
           "testaro": {
             "focInd": {
-              "score": 1,
+              "score": 3,
               "what": "Focused element displaying no or nostandard focus indicator"
             }
           }
@@ -15354,7 +15334,7 @@
         "hoverSurprise": {
           "testaro": {
             "hover": {
-              "score": 9,
+              "score": 1,
               "what": "Content changes caused by hovering"
             }
           }
@@ -15378,7 +15358,7 @@
         "roleBad": {
           "testaro": {
             "role": {
-              "score": 56,
+              "score": 29,
               "what": "Nonexistent or implicit-overriding role"
             }
           }
@@ -15487,7 +15467,7 @@
           "alfa": {
             "r74": {
               "score": 56,
-              "what": "Paragraph text has absolute font size"
+              "what": "Paragraph text has an absolute font size"
             }
           }
         },
@@ -15692,7 +15672,7 @@
       "ibm": 100
     },
     "summary": {
-      "total": 718,
+      "total": 685,
       "log": 29,
       "preventions": 100,
       "solos": 0,
@@ -15700,10 +15680,6 @@
         {
           "groupName": "contrastAA",
           "score": 63
-        },
-        {
-          "groupName": "roleBad",
-          "score": 58
         },
         {
           "groupName": "fontSizeAbsolute",
@@ -15723,6 +15699,10 @@
         },
         {
           "groupName": "focusableOperable",
+          "score": 31
+        },
+        {
+          "groupName": "roleBad",
           "score": 31
         },
         {
@@ -15752,10 +15732,6 @@
         {
           "groupName": "zIndexNotZero",
           "score": 12
-        },
-        {
-          "groupName": "hoverSurprise",
-          "score": 11
         },
         {
           "groupName": "linkTextsSame",
@@ -15794,6 +15770,10 @@
           "score": 6
         },
         {
+          "groupName": "focusIndication",
+          "score": 5
+        },
+        {
           "groupName": "horizontalScrolling",
           "score": 5
         },
@@ -15802,7 +15782,7 @@
           "score": 3
         },
         {
-          "groupName": "focusIndication",
+          "groupName": "hoverSurprise",
           "score": 3
         },
         {

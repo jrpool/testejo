@@ -1,0 +1,464 @@
+{
+  "id": "49li4-accessfirst",
+  "host": {
+    "id": "accessfirst",
+    "which": "https://www.access-first.fr/",
+    "what": "Access First"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-16T21:18:23"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-16T21:19:21"
+    }
+  ],
+  "script": {
+    "id": "tp12",
+    "what": "Alfa, Axe, HTML CodeSniffer, IBM, Tenon, WAVE, and 16 custom tests",
+    "strict": true,
+    "timeLimit": 150,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.access-first.fr/",
+        "what": "Access First"
+      },
+      {
+        "type": "test",
+        "which": "focInd",
+        "revealAll": false,
+        "allowedDelay": 250,
+        "withItems": true,
+        "what": "focus indicators"
+      },
+      {
+        "type": "test",
+        "which": "hover",
+        "headSize": 20,
+        "headSampleSize": 20,
+        "tailSampleSize": 15,
+        "withItems": true,
+        "what": "hover impacts"
+      },
+      {
+        "type": "test",
+        "which": "role",
+        "what": "validity and necessity of role assignments"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.access-first.fr/",
+      "what": "Access First",
+      "result": "https://www.access-first.fr/"
+    },
+    {
+      "type": "test",
+      "which": "focInd",
+      "revealAll": false,
+      "allowedDelay": 250,
+      "withItems": true,
+      "what": "focus indicators",
+      "url": "https://www.access-first.fr/",
+      "result": {
+        "totals": {
+          "total": 39,
+          "types": {
+            "indicatorMissing": {
+              "total": 0,
+              "tagNames": {}
+            },
+            "nonOutlinePresent": {
+              "total": 0,
+              "tagNames": {}
+            },
+            "outlinePresent": {
+              "total": 39,
+              "meanDelay": 102,
+              "tagNames": {
+                "A": 26,
+                "INPUT": 13
+              }
+            }
+          }
+        },
+        "items": {
+          "indicatorMissing": [],
+          "nonOutlinePresent": [],
+          "outlinePresent": [
+            {
+              "tagName": "A",
+              "text": "Aller au contenu",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Audits d’accessibilité",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Conseil et accompagnement",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Formations",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Qui sommes-nous ?",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Faq",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "équipe d’experts et d’expertes accessibilité",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Audits d’accessibilité (RGAA, WCAG)",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Conseil et accompagnement",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Formations",
+              "delay": 102
+            },
+            {
+              "tagName": "INPUT",
+              "text": "",
+              "delay": 100
+            },
+            {
+              "tagName": "INPUT",
+              "text": "",
+              "delay": 102
+            },
+            {
+              "tagName": "INPUT",
+              "text": "",
+              "delay": 102
+            },
+            {
+              "tagName": "INPUT",
+              "text": "",
+              "delay": 102
+            },
+            {
+              "tagName": "INPUT",
+              "text": "",
+              "delay": 103
+            },
+            {
+              "tagName": "INPUT",
+              "text": "",
+              "delay": 101
+            },
+            {
+              "tagName": "INPUT",
+              "text": "",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Cas d’usage : Access First accompagne l’INA",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "L’accessibilité numérique : qui, quoi, comment ?",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Offre d’emploi – Consultant.e expérimenté.e en accessibilité numérique",
+              "delay": 102
+            },
+            {
+              "tagName": "INPUT",
+              "text": "",
+              "delay": 102
+            },
+            {
+              "tagName": "INPUT",
+              "text": "",
+              "delay": 101
+            },
+            {
+              "tagName": "INPUT",
+              "text": "",
+              "delay": 101
+            },
+            {
+              "tagName": "INPUT",
+              "text": "",
+              "delay": 101
+            },
+            {
+              "tagName": "INPUT",
+              "text": "",
+              "delay": 101
+            },
+            {
+              "tagName": "INPUT",
+              "text": "",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Accueil",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Audits d’accessibilité",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Formations",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Conseil et accompagnement",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Qui sommes-nous ?",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibilité du site",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Mentions légales",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Plan du site",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Conditions Générales de Vente",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Access First",
+              "delay": 101
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.access-first.fr/",
+      "what": "URL",
+      "result": "https://www.access-first.fr/"
+    },
+    {
+      "type": "test",
+      "which": "hover",
+      "headSize": 20,
+      "headSampleSize": 20,
+      "tailSampleSize": 15,
+      "withItems": true,
+      "what": "hover-caused content changes",
+      "url": "https://www.access-first.fr/",
+      "result": {
+        "totals": {
+          "triggers": 49,
+          "headTriggers": 20,
+          "tailTriggers": 29,
+          "impactTriggers": 3,
+          "additions": 0,
+          "removals": 0,
+          "opacityChanges": 3,
+          "opacityImpact": 0,
+          "unhoverables": 2
+        },
+        "items": {
+          "head": {
+            "impactTriggers": [
+              {
+                "tagName": "A",
+                "text": "<imgsrc=\"/wp-content/uploads/2021/04/logo-access-f",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 0
+              }
+            ],
+            "unhoverables": [
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "équiped’expertsetd’expertesaccessibilité"
+              },
+              {
+                "tagName": "LI",
+                "id": "field_1_6",
+                "text": "Téléphone*Obligatoire"
+              }
+            ]
+          },
+          "tail": {
+            "impactTriggers": [
+              {
+                "tagName": "A",
+                "text": "<imgwidth=\"250\"height=\"158\"src=\"https://www.access",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 0
+              }
+            ],
+            "unhoverables": []
+          }
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.access-first.fr/",
+      "what": "URL",
+      "result": "https://www.access-first.fr/"
+    },
+    {
+      "type": "test",
+      "which": "role",
+      "what": "roles",
+      "url": "https://www.access-first.fr/",
+      "result": {
+        "roleElements": 17,
+        "badRoleElements": 3,
+        "redundantRoleElements": 5,
+        "tagNames": {
+          "HEADER": {
+            "banner": {
+              "bad": 1,
+              "redundant": 0
+            }
+          },
+          "NAV": {
+            "navigation": {
+              "bad": 0,
+              "redundant": 1
+            }
+          },
+          "MAIN": {
+            "main": {
+              "bad": 0,
+              "redundant": 1
+            }
+          },
+          "FOOTER": {
+            "contentinfo": {
+              "bad": 1,
+              "redundant": 0
+            }
+          },
+          "BUTTON": {
+            "button": {
+              "bad": 0,
+              "redundant": 3
+            }
+          },
+          "DIV": {
+            "complementary": {
+              "bad": 1,
+              "redundant": 0
+            }
+          }
+        }
+      }
+    }
+  ],
+  "timeStamp": "49li4",
+  "startTime": "2022-07-16T21:18:23",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "hover",
+      47
+    ],
+    [
+      "focInd",
+      4
+    ],
+    [
+      "role",
+      0
+    ]
+  ],
+  "logCount": 9,
+  "logSize": 345,
+  "errorLogCount": 3,
+  "errorLogSize": 105,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-16T21:19:21",
+  "elapsedSeconds": 58
+}

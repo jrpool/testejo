@@ -1,0 +1,26 @@
+{
+  "id": "focind",
+  "what": "Alfa, Axe, HTML CodeSniffer, IBM, Tenon, WAVE, and 16 custom tests",
+  "strict": true,
+  "timeLimit": 60,
+  "commands": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://*",
+      "what": "any page"
+    },
+    {
+      "type": "test",
+      "which": "focInd",
+      "revealAll": false,
+      "allowedDelay": 1000,
+      "withItems": true,
+      "what": "focus indicators"
+    }
+  ]
+}

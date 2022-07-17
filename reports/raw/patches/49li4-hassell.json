@@ -1,0 +1,455 @@
+{
+  "id": "49li4-hassell",
+  "host": {
+    "id": "hassell",
+    "which": "https://www.hassellinclusion.com/",
+    "what": "Hassell Inclusion"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-16T21:52:30"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-16T21:53:42"
+    }
+  ],
+  "script": {
+    "id": "tp12",
+    "what": "Alfa, Axe, HTML CodeSniffer, IBM, Tenon, WAVE, and 16 custom tests",
+    "strict": true,
+    "timeLimit": 150,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.hassellinclusion.com/",
+        "what": "Hassell Inclusion"
+      },
+      {
+        "type": "test",
+        "which": "focInd",
+        "revealAll": false,
+        "allowedDelay": 250,
+        "withItems": true,
+        "what": "focus indicators"
+      },
+      {
+        "type": "test",
+        "which": "hover",
+        "headSize": 20,
+        "headSampleSize": 20,
+        "tailSampleSize": 15,
+        "withItems": true,
+        "what": "hover impacts"
+      },
+      {
+        "type": "test",
+        "which": "role",
+        "what": "validity and necessity of role assignments"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.hassellinclusion.com/",
+      "what": "Hassell Inclusion",
+      "result": "https://www.hassellinclusion.com/"
+    },
+    {
+      "type": "test",
+      "which": "focInd",
+      "revealAll": false,
+      "allowedDelay": 250,
+      "withItems": true,
+      "what": "focus indicators",
+      "url": "https://www.hassellinclusion.com/",
+      "result": {
+        "totals": {
+          "total": 44,
+          "types": {
+            "indicatorMissing": {
+              "total": 42,
+              "tagNames": {
+                "A": 28,
+                "INPUT": 1,
+                "BUTTON": 11,
+                "IFRAME": 1,
+                "LI": 1
+              }
+            },
+            "nonOutlinePresent": {
+              "total": 2,
+              "tagNames": {
+                "A": 1,
+                "BUTTON": 1
+              }
+            },
+            "outlinePresent": {
+              "total": 0,
+              "meanDelay": 0,
+              "tagNames": {}
+            }
+          }
+        },
+        "items": {
+          "indicatorMissing": [
+            {
+              "tagName": "A",
+              "text": ""
+            },
+            {
+              "tagName": "INPUT",
+              "text": ""
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Search"
+            },
+            {
+              "tagName": "A",
+              "text": "Log In"
+            },
+            {
+              "tagName": "A",
+              "text": "Our Services"
+            },
+            {
+              "tagName": "A",
+              "text": "Training"
+            },
+            {
+              "tagName": "A",
+              "text": "Why Inclusion"
+            },
+            {
+              "tagName": "A",
+              "text": "Our Team"
+            },
+            {
+              "tagName": "A",
+              "text": "Our Clients"
+            },
+            {
+              "tagName": "A",
+              "text": "Insights"
+            },
+            {
+              "tagName": "A",
+              "text": "Get in Touch"
+            },
+            {
+              "tagName": "A",
+              "text": "HiHub"
+            },
+            {
+              "tagName": "A",
+              "text": "Trends in Digital Accessibility for 2022 (POSTER)"
+            },
+            {
+              "tagName": "A",
+              "text": "Hassell Inclusion wins International Acclaim for Digital Accessibility Expertise"
+            },
+            {
+              "tagName": "A",
+              "text": "5 Tips for building buy-in to Digital Accessibility"
+            },
+            {
+              "tagName": "IFRAME",
+              "text": ""
+            },
+            {
+              "tagName": "A",
+              "text": "Register for access now"
+            },
+            {
+              "tagName": "A",
+              "text": "Find your score"
+            },
+            {
+              "tagName": "A",
+              "text": "Register your place"
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Bequeathed"
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Tearfund"
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Galaxkey"
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Global brand"
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Payfont"
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Scope"
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "BBC"
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Reflex Arc"
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Previous Review"
+            },
+            {
+              "tagName": "LI",
+              "text": "Bequeathed: We already had an audit with lots of things we ought to do. It didn't say what to do in "
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Next Review"
+            },
+            {
+              "tagName": "A",
+              "text": "View our Case Studies"
+            },
+            {
+              "tagName": "A",
+              "text": "Share on Facebook"
+            },
+            {
+              "tagName": "A",
+              "text": "Tweet this link"
+            },
+            {
+              "tagName": "A",
+              "text": "Share on LinkedIn"
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility statement"
+            },
+            {
+              "tagName": "A",
+              "text": "Privacy Policy"
+            },
+            {
+              "tagName": "A",
+              "text": "Cookie Policy"
+            },
+            {
+              "tagName": "A",
+              "text": "Terms of Use For HiHub"
+            },
+            {
+              "tagName": "A",
+              "text": "Facebook"
+            },
+            {
+              "tagName": "A",
+              "text": "Twitter"
+            },
+            {
+              "tagName": "A",
+              "text": "LinkedIn"
+            },
+            {
+              "tagName": "A",
+              "text": "0208 106 1186"
+            }
+          ],
+          "nonOutlinePresent": [
+            {
+              "tagName": "A",
+              "text": "Skip to main content"
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "View Transcript"
+            }
+          ],
+          "outlinePresent": []
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.hassellinclusion.com/",
+      "what": "URL",
+      "result": "https://www.hassellinclusion.com/"
+    },
+    {
+      "type": "test",
+      "which": "hover",
+      "headSize": 20,
+      "headSampleSize": 20,
+      "tailSampleSize": 15,
+      "withItems": true,
+      "what": "hover-caused content changes",
+      "url": "https://www.hassellinclusion.com/",
+      "result": {
+        "totals": {
+          "triggers": 115,
+          "headTriggers": 20,
+          "tailTriggers": 95,
+          "impactTriggers": 11,
+          "additions": 92,
+          "removals": 0,
+          "opacityChanges": 0,
+          "opacityImpact": 0,
+          "unhoverables": 1
+        },
+        "items": {
+          "head": {
+            "impactTriggers": [
+              {
+                "tagName": "LI",
+                "text": "OurServicesOurAuditsISO30071-1servicesExpandAwaren",
+                "additions": 22,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "A",
+                "text": "OurServices",
+                "additions": 22,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "LI",
+                "text": "WhyInclusionISO30071-1StandardOurbooksISO30071-1Di",
+                "additions": 19,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "A",
+                "text": "WhyInclusion",
+                "additions": 19,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "LI",
+                "text": "HiHubOnDemandWebinars",
+                "additions": 4,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              }
+            ],
+            "unhoverables": [
+              {
+                "tagName": "A",
+                "id": "skip",
+                "text": "Skiptomaincontent"
+              }
+            ]
+          },
+          "tail": {
+            "impactTriggers": [
+              {
+                "tagName": "BUTTON",
+                "text": "PreviousReview",
+                "additions": 1,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              }
+            ],
+            "unhoverables": []
+          }
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.hassellinclusion.com/",
+      "what": "URL",
+      "result": "https://www.hassellinclusion.com/"
+    },
+    {
+      "type": "test",
+      "which": "role",
+      "what": "roles",
+      "url": "https://www.hassellinclusion.com/",
+      "result": {
+        "roleElements": 22,
+        "badRoleElements": 5,
+        "redundantRoleElements": 0,
+        "tagNames": {
+          "SPAN": {
+            "text": {
+              "bad": 4,
+              "redundant": 0
+            }
+          },
+          "DIV": {
+            "navigation": {
+              "bad": 1,
+              "redundant": 0
+            }
+          }
+        }
+      }
+    }
+  ],
+  "timeStamp": "49li4",
+  "startTime": "2022-07-16T21:52:30",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "hover",
+      47
+    ],
+    [
+      "focInd",
+      14
+    ],
+    [
+      "role",
+      0
+    ]
+  ],
+  "logCount": 12,
+  "logSize": 147,
+  "errorLogCount": 0,
+  "errorLogSize": 0,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-16T21:53:42",
+  "elapsedSeconds": 72
+}

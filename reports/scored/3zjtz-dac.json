@@ -1063,25 +1063,44 @@
       "url": "https://digitalaccessibilitycentre.org/",
       "result": {
         "roleElements": 31,
-        "badRoleElements": 17,
+        "badRoleElements": 15,
+        "redundantRoleElements": 2,
         "tagNames": {
           "HEADER": {
-            "banner": 1
+            "banner": {
+              "bad": 1,
+              "redundant": 0
+            }
           },
           "IMG": {
-            "button": 3
+            "button": {
+              "bad": 3,
+              "redundant": 0
+            }
           },
           "NAV": {
-            "navigation": 1
+            "navigation": {
+              "bad": 0,
+              "redundant": 1
+            }
           },
           "A": {
-            "button": 10
+            "button": {
+              "bad": 10,
+              "redundant": 0
+            }
           },
           "MAIN": {
-            "main": 1
+            "main": {
+              "bad": 0,
+              "redundant": 1
+            }
           },
           "FOOTER": {
-            "contentinfo": 1
+            "contentinfo": {
+              "bad": 1,
+              "redundant": 0
+            }
           }
         }
       }
@@ -2415,7 +2434,7 @@
   "endTime": "2022-07-06T01:47:28",
   "elapsedSeconds": 103,
   "score": {
-    "scoreProcID": "sp12a",
+    "scoreProcID": "sp12b",
     "logWeights": {
       "logCount": 0.5,
       "logSize": 0.01,
@@ -2439,7 +2458,7 @@
       "testaro": {
         "hover": 1,
         "linkUl": 28,
-        "role": 17,
+        "role": 32,
         "styleDiff": 7,
         "zIndex": 2
       },
@@ -2490,7 +2509,7 @@
         "roleBad": {
           "testaro": {
             "role": {
-              "score": 13,
+              "score": 24,
               "what": "Nonexistent or implicit-overriding role"
             }
           }
@@ -2632,18 +2651,18 @@
     },
     "preventionScores": {},
     "summary": {
-      "total": 103,
+      "total": 114,
       "log": 0,
       "preventions": 0,
       "solos": 0,
       "groups": [
         {
-          "groupName": "linkIndication",
-          "score": 16
+          "groupName": "roleBad",
+          "score": 26
         },
         {
-          "groupName": "roleBad",
-          "score": 15
+          "groupName": "linkIndication",
+          "score": 16
         },
         {
           "groupName": "ariaReferenceBad",

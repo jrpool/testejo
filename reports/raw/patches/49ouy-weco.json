@@ -1,0 +1,601 @@
+{
+  "id": "49ouy-weco",
+  "host": {
+    "id": "weco",
+    "which": "https://theweco.com/",
+    "what": "WeCo"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-16T23:51:37"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-16T23:52:29"
+    }
+  ],
+  "script": {
+    "id": "tp12",
+    "what": "Alfa, Axe, HTML CodeSniffer, IBM, Tenon, WAVE, and 16 custom tests",
+    "strict": true,
+    "timeLimit": 150,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://theweco.com/",
+        "what": "WeCo"
+      },
+      {
+        "type": "test",
+        "which": "focInd",
+        "revealAll": false,
+        "allowedDelay": 250,
+        "withItems": true,
+        "what": "focus indicators"
+      },
+      {
+        "type": "test",
+        "which": "hover",
+        "headSize": 20,
+        "headSampleSize": 20,
+        "tailSampleSize": 15,
+        "withItems": true,
+        "what": "hover impacts"
+      },
+      {
+        "type": "test",
+        "which": "role",
+        "what": "validity and necessity of role assignments"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://theweco.com/",
+      "what": "WeCo",
+      "result": "https://theweco.com/"
+    },
+    {
+      "type": "test",
+      "which": "focInd",
+      "revealAll": false,
+      "allowedDelay": 250,
+      "withItems": true,
+      "what": "focus indicators",
+      "url": "https://theweco.com/",
+      "result": {
+        "totals": {
+          "total": 54,
+          "types": {
+            "indicatorMissing": {
+              "total": 10,
+              "tagNames": {
+                "INPUT": 9,
+                "IFRAME": 1
+              }
+            },
+            "nonOutlinePresent": {
+              "total": 1,
+              "tagNames": {
+                "INPUT": 1
+              }
+            },
+            "outlinePresent": {
+              "total": 43,
+              "meanDelay": 101,
+              "tagNames": {
+                "A": 41,
+                "BUTTON": 2
+              }
+            }
+          }
+        },
+        "items": {
+          "indicatorMissing": [
+            {
+              "tagName": "INPUT",
+              "text": ""
+            },
+            {
+              "tagName": "INPUT",
+              "text": ""
+            },
+            {
+              "tagName": "INPUT",
+              "text": ""
+            },
+            {
+              "tagName": "INPUT",
+              "text": ""
+            },
+            {
+              "tagName": "INPUT",
+              "text": ""
+            },
+            {
+              "tagName": "INPUT",
+              "text": ""
+            },
+            {
+              "tagName": "INPUT",
+              "text": ""
+            },
+            {
+              "tagName": "INPUT",
+              "text": ""
+            },
+            {
+              "tagName": "INPUT",
+              "text": ""
+            },
+            {
+              "tagName": "IFRAME",
+              "text": ""
+            }
+          ],
+          "nonOutlinePresent": [
+            {
+              "tagName": "INPUT",
+              "text": ""
+            }
+          ],
+          "outlinePresent": [
+            {
+              "tagName": "A",
+              "text": "Skip to primary navigation",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Skip to main content",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Skip to footer",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "WeCo Digital Accessibility",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Home",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Our Story & Founder",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Services",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "Who We Are",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "Contact Us",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "Jobs and Internships",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Resources",
+              "delay": 104
+            },
+            {
+              "tagName": "A",
+              "text": "Site Access",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility SMEs with Disabilities",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Welcome continued",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Contact Us",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "Find out how accessible your website is, and how to improve it. about Manual Accessibility Audits an",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Plug into direct feedback by users who live with disabilities. about Disability-Focused Usability Te",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Learn accessibility from a community of professionals at this free event... about Accessibility Even",
+              "delay": 105
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Bringing free resources to help you learn about, and stay accessible. It's our mission. about Access",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Bringing the needs of real users living with disabilities to life for your team. about Usability and",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Learn about accessibility from professionals who live with disabilities. about WeCo’s Accessibility ",
+              "delay": 106
+            },
+            {
+              "tagName": "A",
+              "text": "855-849-5050",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "accessinfo@theweco.com",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "CONTACT US",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "Site Map",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Resources",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "Privacy Policy",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility Policy",
+              "delay": 104
+            },
+            {
+              "tagName": "A",
+              "text": "FACEBOOK",
+              "delay": 104
+            },
+            {
+              "tagName": "A",
+              "text": "LINKEDIN",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "TWITTER",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "YOUTUBE",
+              "delay": 101
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Long Description",
+              "delay": 102
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Long Description",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Log in",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "Skip to navigation",
+              "delay": 101
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://theweco.com/",
+      "what": "URL",
+      "result": "https://theweco.com/"
+    },
+    {
+      "type": "test",
+      "which": "hover",
+      "headSize": 20,
+      "headSampleSize": 20,
+      "tailSampleSize": 15,
+      "withItems": true,
+      "what": "hover-caused content changes",
+      "url": "https://theweco.com/",
+      "result": {
+        "totals": {
+          "triggers": 52,
+          "headTriggers": 20,
+          "tailTriggers": 32,
+          "impactTriggers": 12,
+          "additions": 69,
+          "removals": 62,
+          "opacityChanges": 1,
+          "opacityImpact": 6,
+          "unhoverables": 3
+        },
+        "items": {
+          "head": {
+            "impactTriggers": [
+              {
+                "tagName": "LI",
+                "text": "OurStory&FounderSubmenuOurMissionForthePressandMed",
+                "additions": 7,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "A",
+                "text": "OurStory&Founder",
+                "additions": 0,
+                "removals": 7,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "LI",
+                "text": "ServicesSubmenuFreeAccessibilityReviewAccessibilit",
+                "additions": 25,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "A",
+                "text": "Services",
+                "additions": 0,
+                "removals": 25,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "LI",
+                "text": "WhoWeAreSubmenuOurWork&ClientsOurTesters",
+                "additions": 7,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "A",
+                "text": "WhoWeAre",
+                "additions": 0,
+                "removals": 7,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "LI",
+                "text": "JobsandInternshipsSubmenuWorkingasaTesterApplicati",
+                "additions": 7,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "A",
+                "text": "JobsandInternships",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 6
+              },
+              {
+                "tagName": "LI",
+                "text": "ResourcesSubmenuAccessBlogEventsSubmenuDisabilityP",
+                "additions": 19,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "A",
+                "text": "Resources",
+                "additions": 0,
+                "removals": 19,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "LI",
+                "text": "SiteAccessSubmenuSiteMap",
+                "additions": 4,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "A",
+                "text": "SiteAccess",
+                "additions": 0,
+                "removals": 4,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              }
+            ],
+            "unhoverables": [
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Skiptoprimarynavigation"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Skiptomaincontent"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Skiptofooter"
+              }
+            ]
+          },
+          "tail": {
+            "impactTriggers": [],
+            "unhoverables": []
+          }
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://theweco.com/",
+      "what": "URL",
+      "result": "https://theweco.com/"
+    },
+    {
+      "type": "test",
+      "which": "role",
+      "what": "roles",
+      "url": "https://theweco.com/",
+      "result": {
+        "roleElements": 25,
+        "badRoleElements": 2,
+        "redundantRoleElements": 12,
+        "tagNames": {
+          "DIV": {
+            "navigation": {
+              "bad": 1,
+              "redundant": 0
+            }
+          },
+          "BUTTON": {
+            "button": {
+              "bad": 0,
+              "redundant": 12
+            }
+          },
+          "P": {
+            "status": {
+              "bad": 1,
+              "redundant": 0
+            }
+          }
+        }
+      }
+    }
+  ],
+  "timeStamp": "49ouy",
+  "startTime": "2022-07-16T23:51:37",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "hover",
+      36
+    ],
+    [
+      "focInd",
+      8
+    ],
+    [
+      "role",
+      0
+    ]
+  ],
+  "logCount": 3,
+  "logSize": 138,
+  "errorLogCount": 0,
+  "errorLogSize": 0,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-16T23:52:29",
+  "elapsedSeconds": 52
+}

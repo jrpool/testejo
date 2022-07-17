@@ -1,0 +1,709 @@
+{
+  "id": "49li4-deque",
+  "host": {
+    "id": "deque",
+    "which": "https://deque.com/",
+    "what": "Deque"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-16T21:44:49"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-16T21:46:02"
+    }
+  ],
+  "script": {
+    "id": "tp12",
+    "what": "Alfa, Axe, HTML CodeSniffer, IBM, Tenon, WAVE, and 16 custom tests",
+    "strict": true,
+    "timeLimit": 150,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://deque.com/",
+        "what": "Deque"
+      },
+      {
+        "type": "test",
+        "which": "focInd",
+        "revealAll": false,
+        "allowedDelay": 250,
+        "withItems": true,
+        "what": "focus indicators"
+      },
+      {
+        "type": "test",
+        "which": "hover",
+        "headSize": 20,
+        "headSampleSize": 20,
+        "tailSampleSize": 15,
+        "withItems": true,
+        "what": "hover impacts"
+      },
+      {
+        "type": "test",
+        "which": "role",
+        "what": "validity and necessity of role assignments"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://deque.com/",
+      "what": "Deque",
+      "result": "https://deque.com/"
+    },
+    {
+      "type": "test",
+      "which": "focInd",
+      "revealAll": false,
+      "allowedDelay": 250,
+      "withItems": true,
+      "what": "focus indicators",
+      "url": "https://deque.com/",
+      "result": {
+        "totals": {
+          "total": 91,
+          "types": {
+            "indicatorMissing": {
+              "total": 67,
+              "tagNames": {
+                "A": 66,
+                "DIV": 1
+              }
+            },
+            "nonOutlinePresent": {
+              "total": 16,
+              "tagNames": {
+                "A": 13,
+                "INPUT": 3
+              }
+            },
+            "outlinePresent": {
+              "total": 8,
+              "meanDelay": 13,
+              "tagNames": {
+                "A": 7,
+                "BUTTON": 1
+              }
+            }
+          }
+        },
+        "items": {
+          "indicatorMissing": [
+            {
+              "tagName": "A",
+              "text": "Decline"
+            },
+            {
+              "tagName": "A",
+              "text": "Accept"
+            },
+            {
+              "tagName": "A",
+              "text": "Deque Deque Logo"
+            },
+            {
+              "tagName": "A",
+              "text": "Read More About Free GAAD Resources"
+            },
+            {
+              "tagName": "A",
+              "text": "Read More About Axe-con is complete"
+            },
+            {
+              "tagName": "A",
+              "text": "Read More About Deque Adds Linter to axe DevTools"
+            },
+            {
+              "tagName": "A",
+              "text": "Read More About Rethink what automated testing can achieve"
+            },
+            {
+              "tagName": "A",
+              "text": "Install free Chrome extension"
+            },
+            {
+              "tagName": "A",
+              "text": "Learn More"
+            },
+            {
+              "tagName": "A",
+              "text": "Learn More"
+            },
+            {
+              "tagName": "A",
+              "text": "Learn More"
+            },
+            {
+              "tagName": "A",
+              "text": "View More Customers"
+            },
+            {
+              "tagName": "A",
+              "text": "Read More about the Agile Accessibility Handbook"
+            },
+            {
+              "tagName": "A",
+              "text": "View Now panel on how persons with disabilities use the web"
+            },
+            {
+              "tagName": "A",
+              "text": "Download Now infographic on accessibility"
+            },
+            {
+              "tagName": "A",
+              "text": "Apply Now for a deque university scholarship"
+            },
+            {
+              "tagName": "A",
+              "text": "Download Now the accessibility checklist"
+            },
+            {
+              "tagName": "A",
+              "text": "703-225-0380"
+            },
+            {
+              "tagName": "A",
+              "text": "Email Us"
+            },
+            {
+              "tagName": "A",
+              "text": "support helpdesk"
+            },
+            {
+              "tagName": "A",
+              "text": "Company"
+            },
+            {
+              "tagName": "A",
+              "text": "Our Team"
+            },
+            {
+              "tagName": "A",
+              "text": "Our Customers"
+            },
+            {
+              "tagName": "A",
+              "text": "Contact"
+            },
+            {
+              "tagName": "A",
+              "text": "axe Tools"
+            },
+            {
+              "tagName": "A",
+              "text": "axe DevTools"
+            },
+            {
+              "tagName": "A",
+              "text": "axe Auditor"
+            },
+            {
+              "tagName": "A",
+              "text": "axe Monitor"
+            },
+            {
+              "tagName": "A",
+              "text": "Free Browser Extensions"
+            },
+            {
+              "tagName": "A",
+              "text": "Services & Training"
+            },
+            {
+              "tagName": "A",
+              "text": "Training Overview"
+            },
+            {
+              "tagName": "A",
+              "text": "Audits"
+            },
+            {
+              "tagName": "A",
+              "text": "Awareness Lab"
+            },
+            {
+              "tagName": "A",
+              "text": "Remediation"
+            },
+            {
+              "tagName": "A",
+              "text": "Program Strategy & Compliance"
+            },
+            {
+              "tagName": "A",
+              "text": "News & Resources"
+            },
+            {
+              "tagName": "A",
+              "text": "Blog"
+            },
+            {
+              "tagName": "A",
+              "text": "Webinars"
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility in Design"
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility in Development"
+            },
+            {
+              "tagName": "A",
+              "text": "Shift Left"
+            },
+            {
+              "tagName": "A",
+              "text": "Compliance"
+            },
+            {
+              "tagName": "A",
+              "text": "ADA"
+            },
+            {
+              "tagName": "A",
+              "text": "WCAG"
+            },
+            {
+              "tagName": "A",
+              "text": "Section 508"
+            },
+            {
+              "tagName": "A",
+              "text": "AODA"
+            },
+            {
+              "tagName": "A",
+              "text": "CVAA"
+            },
+            {
+              "tagName": "A",
+              "text": "EN 301 549"
+            },
+            {
+              "tagName": "A",
+              "text": "VPAT"
+            },
+            {
+              "tagName": "A",
+              "text": "Industries"
+            },
+            {
+              "tagName": "A",
+              "text": "Finance & Banking"
+            },
+            {
+              "tagName": "A",
+              "text": "Retail"
+            },
+            {
+              "tagName": "A",
+              "text": "Healthcare"
+            },
+            {
+              "tagName": "A",
+              "text": "Government"
+            },
+            {
+              "tagName": "A",
+              "text": "Telecommunications"
+            },
+            {
+              "tagName": "A",
+              "text": "Education"
+            },
+            {
+              "tagName": "A",
+              "text": "Web Agencies"
+            },
+            {
+              "tagName": "A",
+              "text": "1-703-225-0380"
+            },
+            {
+              "tagName": "A",
+              "text": "Terms of Use"
+            },
+            {
+              "tagName": "A",
+              "text": "Privacy Policy"
+            },
+            {
+              "tagName": "A",
+              "text": "Careers"
+            },
+            {
+              "tagName": "A",
+              "text": "Sitemap"
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility Statement"
+            },
+            {
+              "tagName": "A",
+              "text": "LinkedIn"
+            },
+            {
+              "tagName": "A",
+              "text": "Twitter"
+            },
+            {
+              "tagName": "A",
+              "text": "GitHub"
+            },
+            {
+              "tagName": "DIV",
+              "text": ""
+            }
+          ],
+          "nonOutlinePresent": [
+            {
+              "tagName": "A",
+              "text": "Skip to content"
+            },
+            {
+              "tagName": "INPUT",
+              "text": ""
+            },
+            {
+              "tagName": "A",
+              "text": "axe Tools"
+            },
+            {
+              "tagName": "A",
+              "text": "Services & Training"
+            },
+            {
+              "tagName": "A",
+              "text": "News & Resources"
+            },
+            {
+              "tagName": "A",
+              "text": "Compliance"
+            },
+            {
+              "tagName": "A",
+              "text": "Company"
+            },
+            {
+              "tagName": "A",
+              "text": "Contact Us"
+            },
+            {
+              "tagName": "A",
+              "text": "Request a Demo"
+            },
+            {
+              "tagName": "A",
+              "text": "Free Consultation"
+            },
+            {
+              "tagName": "A",
+              "text": "Learn More About Deque"
+            },
+            {
+              "tagName": "A",
+              "text": "Contact Us to schedule a consultation"
+            },
+            {
+              "tagName": "A",
+              "text": "Skip to Sub Footer"
+            },
+            {
+              "tagName": "A",
+              "text": "Skip to Top"
+            },
+            {
+              "tagName": "INPUT",
+              "text": ""
+            },
+            {
+              "tagName": "INPUT",
+              "text": ""
+            }
+          ],
+          "outlinePresent": [
+            {
+              "tagName": "A",
+              "text": "please read our Privacy Policy",
+              "delay": 0
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Submit",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "<img width=\"200\" height=\"100\" src=\"https://www.deque.com/wp-content/uploads/2021/05/clever_logo-e162",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "<img width=\"200\" height=\"100\" src=\"https://www.deque.com/wp-content/uploads/2021/05/harlandclake_log",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "<img width=\"200\" height=\"100\" src=\"https://www.deque.com/wp-content/uploads/2021/05/macerich_logo-e1",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "<img width=\"200\" height=\"100\" src=\"https://www.deque.com/wp-content/uploads/2021/05/puritanlife_logo",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "<img width=\"200\" height=\"100\" src=\"https://www.deque.com/wp-content/uploads/2021/05/freshworks_logo-",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "<img width=\"200\" height=\"100\" src=\"https://www.deque.com/wp-content/uploads/2021/09/usertesting-e163",
+              "delay": 0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://deque.com/",
+      "what": "URL",
+      "result": "https://deque.com/"
+    },
+    {
+      "type": "test",
+      "which": "hover",
+      "headSize": 20,
+      "headSampleSize": 20,
+      "tailSampleSize": 15,
+      "withItems": true,
+      "what": "hover-caused content changes",
+      "url": "https://deque.com/",
+      "result": {
+        "totals": {
+          "triggers": 165,
+          "headTriggers": 20,
+          "tailTriggers": 145,
+          "impactTriggers": 10,
+          "additions": 130,
+          "removals": 0,
+          "opacityChanges": 0,
+          "opacityImpact": 0,
+          "unhoverables": 4
+        },
+        "items": {
+          "head": {
+            "impactTriggers": [
+              {
+                "tagName": "LI",
+                "text": "axeToolsaxeToolsOverviewaxeDevToolsaxeAuditoraxeMo",
+                "additions": 13,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "A",
+                "text": "axeTools",
+                "additions": 13,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "LI",
+                "text": "Services&TrainingServicesOverviewTrainingAccessibi",
+                "additions": 13,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "A",
+                "text": "Services&Training",
+                "additions": 13,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "LI",
+                "text": "News&ResourcesNews&ResourcesOverviewBlogAccessibil",
+                "additions": 11,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "A",
+                "text": "News&Resources",
+                "additions": 11,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "LI",
+                "text": "ComplianceComplianceOverviewADAWCAGSection508AODAC",
+                "additions": 15,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "A",
+                "text": "Compliance",
+                "additions": 15,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "LI",
+                "text": "CompanyCompanyOverviewOurCustomersOurTeamCareersCo",
+                "additions": 13,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "A",
+                "text": "Company",
+                "additions": 13,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              }
+            ],
+            "unhoverables": [
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Skiptocontent"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Deque"
+              }
+            ]
+          },
+          "tail": {
+            "impactTriggers": [],
+            "unhoverables": [
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Sitemap"
+              },
+              {
+                "tagName": "LI",
+                "id": "menu-item-332",
+                "text": "TermsofUse"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://deque.com/",
+      "what": "URL",
+      "result": "https://deque.com/"
+    },
+    {
+      "type": "test",
+      "which": "role",
+      "what": "roles",
+      "url": "https://deque.com/",
+      "result": {
+        "roleElements": 88,
+        "badRoleElements": 3,
+        "redundantRoleElements": 1,
+        "tagNames": {
+          "DIV": {
+            "banner": {
+              "bad": 1,
+              "redundant": 0
+            },
+            "button": {
+              "bad": 1,
+              "redundant": 0
+            }
+          },
+          "MAIN": {
+            "main": {
+              "bad": 0,
+              "redundant": 1
+            }
+          },
+          "FOOTER": {
+            "contentinfo": {
+              "bad": 1,
+              "redundant": 0
+            }
+          }
+        }
+      }
+    }
+  ],
+  "timeStamp": "49li4",
+  "startTime": "2022-07-16T21:44:49",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "hover",
+      36
+    ],
+    [
+      "focInd",
+      26
+    ],
+    [
+      "role",
+      0
+    ]
+  ],
+  "logCount": 21,
+  "logSize": 2757,
+  "errorLogCount": 9,
+  "errorLogSize": 777,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-16T21:46:02",
+  "elapsedSeconds": 72
+}

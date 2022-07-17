@@ -1090,11 +1090,11 @@
           "triggers": 53,
           "headTriggers": 20,
           "tailTriggers": 33,
-          "impactTriggers": 11,
-          "additions": 0,
+          "impactTriggers": 13,
+          "additions": 36,
           "removals": 0,
-          "opacityChanges": 21,
-          "opacityImpact": 45,
+          "opacityChanges": 18,
+          "opacityImpact": 24,
           "unhoverables": 4
         },
         "items": {
@@ -1103,34 +1103,34 @@
               {
                 "tagName": "LI",
                 "text": "ProductsLERALERAHelpLERAFAQs",
-                "additions": 0,
+                "additions": 7,
                 "removals": 0,
-                "opacityChanges": 2,
-                "opacityImpact": 6
+                "opacityChanges": 0,
+                "opacityImpact": 0
               },
               {
                 "tagName": "A",
                 "text": "Products",
-                "additions": 0,
+                "additions": 7,
                 "removals": 0,
-                "opacityChanges": 2,
-                "opacityImpact": 6
+                "opacityChanges": 0,
+                "opacityImpact": 0
               },
               {
                 "tagName": "LI",
                 "text": "Services&ConsultingDigitalAccessibilityAccessibili",
-                "additions": 0,
+                "additions": 11,
                 "removals": 0,
-                "opacityChanges": 2,
-                "opacityImpact": 10
+                "opacityChanges": 0,
+                "opacityImpact": 0
               },
               {
                 "tagName": "A",
                 "text": "Services&Consulting",
-                "additions": 0,
+                "additions": 11,
                 "removals": 0,
-                "opacityChanges": 2,
-                "opacityImpact": 10
+                "opacityChanges": 0,
+                "opacityImpact": 0
               }
             ],
             "unhoverables": [
@@ -1155,11 +1155,11 @@
             "impactTriggers": [
               {
                 "tagName": "A",
-                "text": "Pinterest",
+                "text": "Instagram",
                 "additions": 0,
                 "removals": 0,
                 "opacityChanges": 2,
-                "opacityImpact": 2
+                "opacityImpact": 5
               },
               {
                 "tagName": "A",
@@ -1172,6 +1172,14 @@
               {
                 "tagName": "A",
                 "text": "Facebook",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 2,
+                "opacityImpact": 2
+              },
+              {
+                "tagName": "A",
+                "text": "Twitter",
                 "additions": 0,
                 "removals": 0,
                 "opacityChanges": 2,
@@ -1438,9 +1446,13 @@
       "result": {
         "roleElements": 21,
         "badRoleElements": 9,
+        "redundantRoleElements": 0,
         "tagNames": {
           "A": {
-            "button": 9
+            "button": {
+              "bad": 9,
+              "redundant": 0
+            }
           }
         }
       }
@@ -7191,7 +7203,7 @@
   "endTime": "2022-07-09T14:22:01",
   "elapsedSeconds": 114,
   "score": {
-    "scoreProcID": "sp12a",
+    "scoreProcID": "sp12b",
     "logWeights": {
       "logCount": 0.5,
       "logSize": 0.01,
@@ -7215,9 +7227,9 @@
       "testaro": {
         "bulk": 0,
         "focOp": 2,
-        "hover": 35,
+        "hover": 47,
         "linkUl": 50,
-        "role": 9,
+        "role": 18,
         "styleDiff": 24,
         "zIndex": 20
       },
@@ -7295,7 +7307,7 @@
         "hoverSurprise": {
           "testaro": {
             "hover": {
-              "score": 9,
+              "score": 12,
               "what": "Content changes caused by hovering"
             }
           }
@@ -7317,7 +7329,7 @@
         "roleBad": {
           "testaro": {
             "role": {
-              "score": 7,
+              "score": 14,
               "what": "Nonexistent or implicit-overriding role"
             }
           }
@@ -7390,7 +7402,7 @@
           "alfa": {
             "r74": {
               "score": 4,
-              "what": "Paragraph text has absolute font size"
+              "what": "Paragraph text has an absolute font size"
             }
           }
         },
@@ -7637,7 +7649,7 @@
     },
     "preventionScores": {},
     "summary": {
-      "total": 431,
+      "total": 441,
       "log": 100,
       "preventions": 0,
       "solos": 0,
@@ -7667,6 +7679,14 @@
           "score": 20
         },
         {
+          "groupName": "roleBad",
+          "score": 16
+        },
+        {
+          "groupName": "hoverSurprise",
+          "score": 14
+        },
+        {
           "groupName": "linkTextsSame",
           "score": 12
         },
@@ -7675,16 +7695,8 @@
           "score": 12
         },
         {
-          "groupName": "hoverSurprise",
-          "score": 11
-        },
-        {
           "groupName": "contrastAAA",
           "score": 10
-        },
-        {
-          "groupName": "roleBad",
-          "score": 9
         },
         {
           "groupName": "inconsistentStyles",

@@ -300,18 +300,18 @@
       "url": "https://accessibe.com/",
       "result": {
         "totals": {
-          "total": 126,
+          "total": 125,
           "types": {
             "indicatorMissing": {
-              "total": 0,
-              "tagNames": {}
+              "total": 3,
+              "tagNames": {
+                "A": 3
+              }
             },
             "nonOutlinePresent": {
-              "total": 5,
+              "total": 1,
               "tagNames": {
-                "A": 3,
-                "INPUT": 1,
-                "IFRAME": 1
+                "INPUT": 1
               }
             },
             "outlinePresent": {
@@ -326,8 +326,7 @@
           }
         },
         "items": {
-          "indicatorMissing": [],
-          "nonOutlinePresent": [
+          "indicatorMissing": [
             {
               "tagName": "A",
               "text": "Skip to content"
@@ -339,13 +338,11 @@
             {
               "tagName": "A",
               "text": "Skip to footer"
-            },
+            }
+          ],
+          "nonOutlinePresent": [
             {
               "tagName": "INPUT",
-              "text": ""
-            },
-            {
-              "tagName": "IFRAME",
               "text": ""
             }
           ],
@@ -4587,11 +4584,11 @@
           "triggers": 295,
           "headTriggers": 20,
           "tailTriggers": 275,
-          "impactTriggers": 7,
-          "additions": 0,
-          "removals": 0,
-          "opacityChanges": 7,
-          "opacityImpact": 416,
+          "impactTriggers": 62,
+          "additions": 1070,
+          "removals": 96,
+          "opacityChanges": 55,
+          "opacityImpact": 422,
           "unhoverables": 4
         },
         "items": {
@@ -4600,58 +4597,58 @@
               {
                 "tagName": "LI",
                 "text": "ProductsWebAccessibilityforDevelopersaccessFlowOve",
-                "additions": 0,
+                "additions": 84,
                 "removals": 0,
-                "opacityChanges": 1,
-                "opacityImpact": 83
+                "opacityChanges": 0,
+                "opacityImpact": 0
               },
               {
                 "tagName": "A",
                 "text": "Products",
                 "additions": 0,
-                "removals": 0,
-                "opacityChanges": 1,
-                "opacityImpact": 83
+                "removals": 18,
+                "opacityChanges": 0,
+                "opacityImpact": 0
               },
               {
                 "tagName": "LI",
                 "text": "ServicesServicesOverviewFileAccessibilityMediaAcce",
                 "additions": 0,
-                "removals": 0,
-                "opacityChanges": 1,
-                "opacityImpact": 50
+                "removals": 18,
+                "opacityChanges": 0,
+                "opacityImpact": 0
               },
               {
                 "tagName": "A",
                 "text": "Services",
                 "additions": 0,
-                "removals": 0,
-                "opacityChanges": 1,
-                "opacityImpact": 50
+                "removals": 11,
+                "opacityChanges": 0,
+                "opacityImpact": 0
               },
               {
                 "tagName": "LI",
                 "text": "CompanyAboutaccessiBeOurImpactCareersOurVisionacce",
                 "additions": 0,
-                "removals": 0,
-                "opacityChanges": 1,
-                "opacityImpact": 50
+                "removals": 11,
+                "opacityChanges": 0,
+                "opacityImpact": 0
               },
               {
                 "tagName": "A",
                 "text": "Company",
                 "additions": 0,
-                "removals": 0,
-                "opacityChanges": 1,
-                "opacityImpact": 50
+                "removals": 11,
+                "opacityChanges": 0,
+                "opacityImpact": 0
               },
               {
                 "tagName": "LI",
                 "text": "PartnersAgencyPartnerProgramStrategicPartnershipsA",
-                "additions": 0,
-                "removals": 0,
-                "opacityChanges": 1,
-                "opacityImpact": 50
+                "additions": 51,
+                "removals": 27,
+                "opacityChanges": 0,
+                "opacityImpact": 0
               }
             ],
             "unhoverables": [
@@ -4673,12 +4670,37 @@
             ]
           },
           "tail": {
-            "impactTriggers": [],
-            "unhoverables": [
+            "impactTriggers": [
+              {
+                "tagName": "A",
+                "text": "SeeOver100accessiBeWebsites",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 3
+              },
+              {
+                "tagName": "A",
+                "text": "Partners",
+                "additions": 51,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
               {
                 "tagName": "BUTTON",
+                "text": "<svgfocusable=\"false\"aria-hidden=\"true\"viewBox=\"00",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 2,
+                "opacityImpact": 20
+              }
+            ],
+            "unhoverables": [
+              {
+                "tagName": "A",
                 "id": "",
-                "text": "WatchVideo"
+                "text": "NewWindow"
               }
             ]
           }
@@ -5297,23 +5319,45 @@
       "what": "roles",
       "url": "https://accessibe.com/",
       "result": {
-        "roleElements": 389,
-        "badRoleElements": 37,
+        "roleElements": 581,
+        "badRoleElements": 214,
+        "redundantRoleElements": 0,
         "tagNames": {
           "DIV": {
-            "button": 31
+            "button": {
+              "bad": 166,
+              "redundant": 0
+            }
           },
-          "SECTION": {
-            "main": 1
-          },
-          "P": {
-            "heading": 1
+          "A": {
+            "button": {
+              "bad": 9,
+              "redundant": 0
+            }
           },
           "SPAN": {
-            "button": 3
+            "button": {
+              "bad": 36,
+              "redundant": 0
+            }
+          },
+          "SECTION": {
+            "main": {
+              "bad": 1,
+              "redundant": 0
+            }
+          },
+          "P": {
+            "heading": {
+              "bad": 1,
+              "redundant": 0
+            }
           },
           "FOOTER": {
-            "contentinfo": 1
+            "contentinfo": {
+              "bad": 1,
+              "redundant": 0
+            }
           }
         }
       }

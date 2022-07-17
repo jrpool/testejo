@@ -328,7 +328,7 @@
             {
               "tagName": "A",
               "text": "Skip to main content",
-              "delay": 104
+              "delay": 105
             },
             {
               "tagName": "BUTTON",
@@ -2909,16 +2909,26 @@
       "url": "https://designsystem.digital.gov/documentation/accessibility/",
       "result": {
         "roleElements": 14,
-        "badRoleElements": 3,
+        "badRoleElements": 2,
+        "redundantRoleElements": 1,
         "tagNames": {
           "HEADER": {
-            "banner": 1
+            "banner": {
+              "bad": 1,
+              "redundant": 0
+            }
           },
           "NAV": {
-            "navigation": 1
+            "navigation": {
+              "bad": 0,
+              "redundant": 1
+            }
           },
           "SECTION": {
-            "complementary": 1
+            "complementary": {
+              "bad": 1,
+              "redundant": 0
+            }
           }
         }
       }
@@ -9097,7 +9107,7 @@
   "endTime": "2022-07-06T01:00:13",
   "elapsedSeconds": 122,
   "score": {
-    "scoreProcID": "sp12a",
+    "scoreProcID": "sp12b",
     "logWeights": {
       "logCount": 0.5,
       "logSize": 0.01,
@@ -9122,7 +9132,7 @@
         "bulk": 0,
         "hover": 1,
         "linkUl": 84,
-        "role": 3,
+        "role": 5,
         "styleDiff": 31,
         "zIndex": 11
       },
@@ -9189,7 +9199,7 @@
         "roleBad": {
           "testaro": {
             "role": {
-              "score": 2,
+              "score": 4,
               "what": "Nonexistent or implicit-overriding role"
             }
           }
@@ -9385,7 +9395,7 @@
     },
     "preventionScores": {},
     "summary": {
-      "total": 250,
+      "total": 252,
       "log": 0,
       "preventions": 0,
       "solos": 0,
@@ -9423,6 +9433,10 @@
           "score": 7
         },
         {
+          "groupName": "roleBad",
+          "score": 6
+        },
+        {
           "groupName": "targetSize",
           "score": 6
         },
@@ -9441,10 +9455,6 @@
         {
           "groupName": "linkForcesNewWindow",
           "score": 5
-        },
-        {
-          "groupName": "roleBad",
-          "score": 4
         },
         {
           "groupName": "pseudoLinkRisk",

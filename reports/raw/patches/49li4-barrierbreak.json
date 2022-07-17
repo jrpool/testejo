@@ -1,0 +1,423 @@
+{
+  "id": "49li4-barrierbreak",
+  "host": {
+    "id": "barrierbreak",
+    "which": "https://www.barrierbreak.com/",
+    "what": "Barrier Break"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-16T21:39:19"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-16T21:40:45"
+    }
+  ],
+  "script": {
+    "id": "tp12",
+    "what": "Alfa, Axe, HTML CodeSniffer, IBM, Tenon, WAVE, and 16 custom tests",
+    "strict": true,
+    "timeLimit": 150,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.barrierbreak.com/",
+        "what": "Barrier Break"
+      },
+      {
+        "type": "test",
+        "which": "focInd",
+        "revealAll": false,
+        "allowedDelay": 250,
+        "withItems": true,
+        "what": "focus indicators"
+      },
+      {
+        "type": "test",
+        "which": "hover",
+        "headSize": 20,
+        "headSampleSize": 20,
+        "tailSampleSize": 15,
+        "withItems": true,
+        "what": "hover impacts"
+      },
+      {
+        "type": "test",
+        "which": "role",
+        "what": "validity and necessity of role assignments"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.barrierbreak.com/",
+      "what": "Barrier Break",
+      "result": "https://www.barrierbreak.com/"
+    },
+    {
+      "type": "test",
+      "which": "focInd",
+      "revealAll": false,
+      "allowedDelay": 250,
+      "withItems": true,
+      "what": "focus indicators",
+      "url": "https://www.barrierbreak.com/",
+      "result": {
+        "totals": {
+          "total": 50,
+          "types": {
+            "indicatorMissing": {
+              "total": 0,
+              "tagNames": {}
+            },
+            "nonOutlinePresent": {
+              "total": 49,
+              "tagNames": {
+                "A": 49
+              }
+            },
+            "outlinePresent": {
+              "total": 1,
+              "meanDelay": 0,
+              "tagNames": {
+                "BUTTON": 1
+              }
+            }
+          }
+        },
+        "items": {
+          "indicatorMissing": [],
+          "nonOutlinePresent": [
+            {
+              "tagName": "A",
+              "text": "Skip to content"
+            },
+            {
+              "tagName": "A",
+              "text": ""
+            },
+            {
+              "tagName": "A",
+              "text": "About Us"
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility Audit"
+            },
+            {
+              "tagName": "A",
+              "text": "Manage Accessibility"
+            },
+            {
+              "tagName": "A",
+              "text": "Compliance"
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility Documents"
+            },
+            {
+              "tagName": "A",
+              "text": "Contact Us"
+            },
+            {
+              "tagName": "A",
+              "text": "Read More on Accessibility Testing"
+            },
+            {
+              "tagName": "A",
+              "text": "Read More on VPAT Creation"
+            },
+            {
+              "tagName": "A",
+              "text": "Read More on Accessibility Documents"
+            },
+            {
+              "tagName": "A",
+              "text": "Read More on Accessibility Consulting"
+            },
+            {
+              "tagName": "A",
+              "text": "Read More on SAAS Accessibility Toolkit"
+            },
+            {
+              "tagName": "A",
+              "text": "Read More on Accessibility in our DNA"
+            },
+            {
+              "tagName": "A",
+              "text": "Read More on Passion to Excel"
+            },
+            {
+              "tagName": "A",
+              "text": "Read More on Belief in Innovation"
+            },
+            {
+              "tagName": "A",
+              "text": "About BarrierBreak"
+            },
+            {
+              "tagName": "A",
+              "text": "accessibility audit"
+            },
+            {
+              "tagName": "A",
+              "text": "accessible documents"
+            },
+            {
+              "tagName": "A",
+              "text": "accessibility consulting"
+            },
+            {
+              "tagName": "A",
+              "text": "compliance to Section 508"
+            },
+            {
+              "tagName": "A",
+              "text": "ADA"
+            },
+            {
+              "tagName": "A",
+              "text": "VPAT Creation"
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility Procurement"
+            },
+            {
+              "tagName": "A",
+              "text": ""
+            },
+            {
+              "tagName": "A",
+              "text": "Blog"
+            },
+            {
+              "tagName": "A",
+              "text": "What is a VPAT? Should I create a VPAT for my product?"
+            },
+            {
+              "tagName": "A",
+              "text": "Importance of Mobile Accessibility"
+            },
+            {
+              "tagName": "A",
+              "text": "ACCESSIBILITY BUZZ – June 2022"
+            },
+            {
+              "tagName": "A",
+              "text": "HotelA11Y"
+            },
+            {
+              "tagName": "A",
+              "text": "247 Accessible Documents"
+            },
+            {
+              "tagName": "A",
+              "text": "Learning at BarrierBreak"
+            },
+            {
+              "tagName": "A",
+              "text": "Techshare India"
+            },
+            {
+              "tagName": "A",
+              "text": "Empathy Experiences"
+            },
+            {
+              "tagName": "A",
+              "text": "#SpotlightAccessibility"
+            },
+            {
+              "tagName": "A",
+              "text": "#CovidAccessibilityBugBounty"
+            },
+            {
+              "tagName": "A",
+              "text": "Contact Us"
+            },
+            {
+              "tagName": "A",
+              "text": "+15862329773"
+            },
+            {
+              "tagName": "A",
+              "text": "sales@barrierbreak.com"
+            },
+            {
+              "tagName": "A",
+              "text": ""
+            },
+            {
+              "tagName": "A",
+              "text": ""
+            },
+            {
+              "tagName": "A",
+              "text": ""
+            },
+            {
+              "tagName": "A",
+              "text": ""
+            },
+            {
+              "tagName": "A",
+              "text": ""
+            },
+            {
+              "tagName": "A",
+              "text": "BarrierBreak in News"
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility Statement"
+            },
+            {
+              "tagName": "A",
+              "text": "Privacy Policy"
+            },
+            {
+              "tagName": "A",
+              "text": "Sitemap"
+            },
+            {
+              "tagName": "A",
+              "text": "Back To Toparrow_upward"
+            }
+          ],
+          "outlinePresent": [
+            {
+              "tagName": "BUTTON",
+              "text": "Download Now!",
+              "delay": 0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.barrierbreak.com/",
+      "what": "URL",
+      "result": "https://www.barrierbreak.com/"
+    },
+    {
+      "type": "test",
+      "which": "hover",
+      "headSize": 20,
+      "headSampleSize": 20,
+      "tailSampleSize": 15,
+      "withItems": true,
+      "what": "hover-caused content changes",
+      "url": "https://www.barrierbreak.com/",
+      "result": {
+        "totals": {
+          "triggers": 75,
+          "headTriggers": 20,
+          "tailTriggers": 55,
+          "impactTriggers": 0,
+          "additions": 0,
+          "removals": 0,
+          "opacityChanges": 0,
+          "opacityImpact": 0,
+          "unhoverables": 1
+        },
+        "items": {
+          "head": {
+            "impactTriggers": [],
+            "unhoverables": [
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Skiptocontent"
+              }
+            ]
+          },
+          "tail": {
+            "impactTriggers": [],
+            "unhoverables": []
+          }
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.barrierbreak.com/",
+      "what": "URL",
+      "result": "https://www.barrierbreak.com/"
+    },
+    {
+      "type": "test",
+      "which": "role",
+      "what": "roles",
+      "url": "https://www.barrierbreak.com/",
+      "result": {
+        "roleElements": 15,
+        "badRoleElements": 4,
+        "redundantRoleElements": 0,
+        "tagNames": {
+          "DIV": {
+            "navigation": {
+              "bad": 3,
+              "redundant": 0
+            },
+            "status": {
+              "bad": 1,
+              "redundant": 0
+            }
+          }
+        }
+      }
+    }
+  ],
+  "timeStamp": "49li4",
+  "startTime": "2022-07-16T21:39:19",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "hover",
+      50
+    ],
+    [
+      "focInd",
+      15
+    ],
+    [
+      "role",
+      0
+    ]
+  ],
+  "logCount": 3,
+  "logSize": 138,
+  "errorLogCount": 0,
+  "errorLogSize": 0,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-16T21:40:45",
+  "elapsedSeconds": 85
+}

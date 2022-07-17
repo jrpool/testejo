@@ -1,0 +1,530 @@
+{
+  "id": "49li4-ruh",
+  "host": {
+    "id": "ruh",
+    "which": "https://www.ruhglobal.com/",
+    "what": "Ruh Global IMPACT"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-16T22:03:41"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-16T22:04:47"
+    }
+  ],
+  "script": {
+    "id": "tp12",
+    "what": "Alfa, Axe, HTML CodeSniffer, IBM, Tenon, WAVE, and 16 custom tests",
+    "strict": true,
+    "timeLimit": 150,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.ruhglobal.com/",
+        "what": "Ruh Global IMPACT"
+      },
+      {
+        "type": "test",
+        "which": "focInd",
+        "revealAll": false,
+        "allowedDelay": 250,
+        "withItems": true,
+        "what": "focus indicators"
+      },
+      {
+        "type": "test",
+        "which": "hover",
+        "headSize": 20,
+        "headSampleSize": 20,
+        "tailSampleSize": 15,
+        "withItems": true,
+        "what": "hover impacts"
+      },
+      {
+        "type": "test",
+        "which": "role",
+        "what": "validity and necessity of role assignments"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.ruhglobal.com/",
+      "what": "Ruh Global IMPACT",
+      "result": "https://www.ruhglobal.com/"
+    },
+    {
+      "type": "test",
+      "which": "focInd",
+      "revealAll": false,
+      "allowedDelay": 250,
+      "withItems": true,
+      "what": "focus indicators",
+      "url": "https://www.ruhglobal.com/",
+      "result": {
+        "totals": {
+          "total": 51,
+          "types": {
+            "indicatorMissing": {
+              "total": 0,
+              "tagNames": {}
+            },
+            "nonOutlinePresent": {
+              "total": 0,
+              "tagNames": {}
+            },
+            "outlinePresent": {
+              "total": 51,
+              "meanDelay": 44,
+              "tagNames": {
+                "A": 33,
+                "SPAN": 16,
+                "DIV": 2
+              }
+            }
+          }
+        },
+        "items": {
+          "indicatorMissing": [],
+          "nonOutlinePresent": [],
+          "outlinePresent": [
+            {
+              "tagName": "A",
+              "text": "Skip to Content",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Skip to navigation",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "<img width=\"989\" height=\"297\" src=\"https://844585.smushcdn.com/599114/wp-content/uploads/2019/06/Log",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Home",
+              "delay": 129
+            },
+            {
+              "tagName": "A",
+              "text": "About Us",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "Services",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Clients",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Shows",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Media",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Contact",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "<img width=\"800\" height=\"116\" src=\"https://844585.smushcdn.com/599114/wp-content/uploads/2021/07/Mai",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Join the movement",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "Schedule an Appointment",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Download free PDF",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Schedule an Appointment",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Download free PDF",
+              "delay": 100
+            },
+            {
+              "tagName": "SPAN",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "SPAN",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "SPAN",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "SPAN",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "SPAN",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "SPAN",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "SPAN",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "SPAN",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "SPAN",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "SPAN",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "SPAN",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "SPAN",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "SPAN",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "SPAN",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "SPAN",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "SPAN",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "DIV",
+              "text": "Previous",
+              "delay": 0
+            },
+            {
+              "tagName": "DIV",
+              "text": "Next",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Schedule an Appointment",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Join The Valuable 500 today",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Sign up for our free webinar",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "Schedule an Appointment",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "Get in touch with our experts right now.",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Schedule an Appointment",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Home",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Services",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Show",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Blog",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Contact Us",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Privacy Policy",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Facebook-f",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Twitter",
+              "delay": 104
+            },
+            {
+              "tagName": "A",
+              "text": "Youtube",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "Linkedin-in",
+              "delay": 102
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.ruhglobal.com/",
+      "what": "URL",
+      "result": "https://www.ruhglobal.com/"
+    },
+    {
+      "type": "test",
+      "which": "hover",
+      "headSize": 20,
+      "headSampleSize": 20,
+      "tailSampleSize": 15,
+      "withItems": true,
+      "what": "hover-caused content changes",
+      "url": "https://www.ruhglobal.com/",
+      "result": {
+        "totals": {
+          "triggers": 54,
+          "headTriggers": 20,
+          "tailTriggers": 34,
+          "impactTriggers": 7,
+          "additions": 0,
+          "removals": 0,
+          "opacityChanges": 7,
+          "opacityImpact": 14,
+          "unhoverables": 2
+        },
+        "items": {
+          "head": {
+            "impactTriggers": [],
+            "unhoverables": [
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "SkiptoContent"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Skiptonavigation"
+              }
+            ]
+          },
+          "tail": {
+            "impactTriggers": [
+              {
+                "tagName": "A",
+                "text": "Youtube",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 2
+              },
+              {
+                "tagName": "A",
+                "text": "Linkedin-in",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 2
+              },
+              {
+                "tagName": "A",
+                "text": "Twitter",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 2
+              }
+            ],
+            "unhoverables": []
+          }
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.ruhglobal.com/",
+      "what": "URL",
+      "result": "https://www.ruhglobal.com/"
+    },
+    {
+      "type": "test",
+      "which": "role",
+      "what": "roles",
+      "url": "https://www.ruhglobal.com/",
+      "result": {
+        "roleElements": 51,
+        "badRoleElements": 37,
+        "redundantRoleElements": 2,
+        "tagNames": {
+          "DIV": {
+            "navigation": {
+              "bad": 1,
+              "redundant": 0
+            },
+            "button": {
+              "bad": 3,
+              "redundant": 0
+            }
+          },
+          "NAV": {
+            "navigation": {
+              "bad": 0,
+              "redundant": 2
+            }
+          },
+          "UL": {
+            "group": {
+              "bad": 4,
+              "redundant": 0
+            }
+          },
+          "A": {
+            "button": {
+              "bad": 13,
+              "redundant": 0
+            }
+          },
+          "SPAN": {
+            "button": {
+              "bad": 16,
+              "redundant": 0
+            }
+          }
+        }
+      }
+    }
+  ],
+  "timeStamp": "49li4",
+  "startTime": "2022-07-16T22:03:41",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "hover",
+      48
+    ],
+    [
+      "focInd",
+      3
+    ],
+    [
+      "role",
+      0
+    ]
+  ],
+  "logCount": 3,
+  "logSize": 138,
+  "errorLogCount": 0,
+  "errorLogSize": 0,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-16T22:04:47",
+  "elapsedSeconds": 66
+}

@@ -304,18 +304,18 @@
           "total": 65,
           "types": {
             "indicatorMissing": {
-              "total": 0,
-              "tagNames": {}
-            },
-            "nonOutlinePresent": {
               "total": 6,
               "tagNames": {
                 "INPUT": 6
               }
             },
+            "nonOutlinePresent": {
+              "total": 0,
+              "tagNames": {}
+            },
             "outlinePresent": {
               "total": 59,
-              "meanDelay": 80,
+              "meanDelay": 82,
               "tagNames": {
                 "A": 59
               }
@@ -323,8 +323,7 @@
           }
         },
         "items": {
-          "indicatorMissing": [],
-          "nonOutlinePresent": [
+          "indicatorMissing": [
             {
               "tagName": "INPUT",
               "text": ""
@@ -350,11 +349,12 @@
               "text": ""
             }
           ],
+          "nonOutlinePresent": [],
           "outlinePresent": [
             {
               "tagName": "A",
               "text": "Connect with Sales",
-              "delay": 100
+              "delay": 101
             },
             {
               "tagName": "A",
@@ -364,12 +364,12 @@
             {
               "tagName": "A",
               "text": "Request Pricing",
-              "delay": 101
+              "delay": 102
             },
             {
               "tagName": "A",
               "text": "<img src=\"https://verbit.ai/wp-content/uploads/2022/02/Verbit-logo_Blue-01-1.svg\" class=\"attachment-",
-              "delay": 101
+              "delay": 102
             },
             {
               "tagName": "A",
@@ -379,7 +379,7 @@
             {
               "tagName": "A",
               "text": "Solutions",
-              "delay": 101
+              "delay": 100
             },
             {
               "tagName": "A",
@@ -394,27 +394,27 @@
             {
               "tagName": "A",
               "text": "Resources",
-              "delay": 102
+              "delay": 100
             },
             {
               "tagName": "A",
               "text": "Company",
-              "delay": 101
+              "delay": 100
             },
             {
               "tagName": "A",
               "text": "Events",
-              "delay": 100
+              "delay": 104
             },
             {
               "tagName": "A",
               "text": "EN",
-              "delay": 101
+              "delay": 102
             },
             {
               "tagName": "A",
               "text": "Connect with Sales",
-              "delay": 100
+              "delay": 101
             },
             {
               "tagName": "A",
@@ -434,7 +434,7 @@
             {
               "tagName": "A",
               "text": "Learn More",
-              "delay": 101
+              "delay": 102
             },
             {
               "tagName": "A",
@@ -444,7 +444,7 @@
             {
               "tagName": "A",
               "text": "Learn More",
-              "delay": 103
+              "delay": 107
             },
             {
               "tagName": "A",
@@ -454,7 +454,7 @@
             {
               "tagName": "A",
               "text": "Learn More",
-              "delay": 100
+              "delay": 103
             },
             {
               "tagName": "A",
@@ -464,12 +464,12 @@
             {
               "tagName": "A",
               "text": "Learn More",
-              "delay": 101
+              "delay": 100
             },
             {
               "tagName": "A",
               "text": "Privacy Policy",
-              "delay": 100
+              "delay": 102
             },
             {
               "tagName": "A",
@@ -479,7 +479,7 @@
             {
               "tagName": "A",
               "text": "Corporate & General Business",
-              "delay": 101
+              "delay": 100
             },
             {
               "tagName": "A",
@@ -499,7 +499,7 @@
             {
               "tagName": "A",
               "text": "Court Reporting & Depositions",
-              "delay": 100
+              "delay": 103
             },
             {
               "tagName": "A",
@@ -509,7 +509,7 @@
             {
               "tagName": "A",
               "text": "Live Captioning & Real-Time Transcription",
-              "delay": 102
+              "delay": 101
             },
             {
               "tagName": "A",
@@ -519,22 +519,22 @@
             {
               "tagName": "A",
               "text": "Audio & Video Transcription",
-              "delay": 102
+              "delay": 100
             },
             {
               "tagName": "A",
               "text": "Audio Description",
-              "delay": 100
+              "delay": 103
             },
             {
               "tagName": "A",
               "text": "Translation",
-              "delay": 102
+              "delay": 101
             },
             {
               "tagName": "A",
               "text": "Transcription for Legal Proceedings",
-              "delay": 100
+              "delay": 102
             },
             {
               "tagName": "A",
@@ -549,22 +549,22 @@
             {
               "tagName": "A",
               "text": "eLearning",
-              "delay": 100
-            },
-            {
-              "tagName": "A",
-              "text": "Legal",
               "delay": 102
             },
             {
               "tagName": "A",
-              "text": "Media",
+              "text": "Legal",
               "delay": 101
             },
             {
               "tagName": "A",
+              "text": "Media",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
               "text": "Corporate",
-              "delay": 100
+              "delay": 102
             },
             {
               "tagName": "A",
@@ -574,37 +574,37 @@
             {
               "tagName": "A",
               "text": "Customers",
-              "delay": 101
+              "delay": 104
             },
             {
               "tagName": "A",
               "text": "Contact Us",
-              "delay": 101
+              "delay": 102
             },
             {
               "tagName": "A",
               "text": "Careers",
-              "delay": 101
-            },
-            {
-              "tagName": "A",
-              "text": "Press",
               "delay": 100
             },
             {
               "tagName": "A",
-              "text": "VPAT",
+              "text": "Press",
               "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "VPAT",
+              "delay": 103
             },
             {
               "tagName": "A",
               "text": "Trust",
-              "delay": 101
+              "delay": 102
             },
             {
               "tagName": "A",
               "text": "FAQ",
-              "delay": 103
+              "delay": 101
             },
             {
               "tagName": "A",
@@ -614,27 +614,27 @@
             {
               "tagName": "A",
               "text": "Partners",
-              "delay": 101
+              "delay": 104
             },
             {
               "tagName": "A",
               "text": "<img src=\"https://verbit.ai/wp-content/uploads/2020/09/Linkedin-icon.svg\" class=\"attachment-full siz",
-              "delay": 100
+              "delay": 101
             },
             {
               "tagName": "A",
               "text": "<img src=\"https://verbit.ai/wp-content/uploads/2020/09/Facebook-icon.svg\" class=\"attachment-full siz",
-              "delay": 101
+              "delay": 100
             },
             {
               "tagName": "A",
               "text": "<img src=\"https://verbit.ai/wp-content/uploads/2020/09/Twitter-icon.svg\" class=\"attachment-full size",
-              "delay": 102
+              "delay": 101
             },
             {
               "tagName": "A",
               "text": "Join us as a transcriber",
-              "delay": 101
+              "delay": 103
             },
             {
               "tagName": "A",
@@ -644,7 +644,7 @@
             {
               "tagName": "A",
               "text": "Legal",
-              "delay": 101
+              "delay": 103
             }
           ]
         }
@@ -2558,10 +2558,10 @@
           "headTriggers": 20,
           "tailTriggers": 98,
           "impactTriggers": 5,
-          "additions": 0,
+          "additions": 10,
           "removals": 0,
-          "opacityChanges": 7,
-          "opacityImpact": 24,
+          "opacityChanges": 6,
+          "opacityImpact": 15,
           "unhoverables": 25
         },
         "items": {
@@ -2594,10 +2594,10 @@
               {
                 "tagName": "LI",
                 "text": "ENESFRFR-CA",
-                "additions": 0,
+                "additions": 10,
                 "removals": 0,
-                "opacityChanges": 2,
-                "opacityImpact": 12
+                "opacityChanges": 1,
+                "opacityImpact": 3
               },
               {
                 "tagName": "A",
@@ -2675,49 +2675,9 @@
             "impactTriggers": [],
             "unhoverables": [
               {
-                "tagName": "LI",
-                "id": "",
-                "text": "Audio&VideoCaptioning"
-              },
-              {
-                "tagName": "LI",
-                "id": "",
-                "text": "Proofedtranscriptswithinthreebusinessdays"
-              },
-              {
                 "tagName": "A",
                 "id": "",
-                "text": "Press"
-              },
-              {
-                "tagName": "LI",
-                "id": "",
-                "text": "Corporate"
-              },
-              {
-                "tagName": "LI",
-                "id": "",
-                "text": "4-hourturnaroundtime"
-              },
-              {
-                "tagName": "A",
-                "id": "",
-                "text": "Audio&VideoCaptioning"
-              },
-              {
-                "tagName": "LI",
-                "id": "",
-                "text": "Roughdraftwithinonehour"
-              },
-              {
-                "tagName": "A",
-                "id": "",
-                "text": "Digital&OnlineLearning"
-              },
-              {
-                "tagName": "LI",
-                "id": "",
-                "text": "Real-time,customizedtranscription"
+                "text": "FAQ"
               },
               {
                 "tagName": "LI",
@@ -2725,19 +2685,59 @@
                 "text": "HIPAA,SOC2,HECVAT,VPAT,GDPRcompliance"
               },
               {
-                "tagName": "LI",
+                "tagName": "A",
                 "id": "",
-                "text": "Audio&VideoTranscription"
+                "text": "Education&DisabilityNeeds<imgsrc=\"https://verbit.a"
               },
               {
                 "tagName": "LI",
                 "id": "",
-                "text": "IntegrationwithLMS,webconferencingandmediahostingp"
+                "text": "Education"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Resources"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "LearnMore"
               },
               {
                 "tagName": "LI",
                 "id": "",
-                "text": "Corporate&GeneralBusiness"
+                "text": "LiveCaptioning&Real-TimeTranscription"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "Interactivetranscriptsfornotetaking,searchandshari"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Education"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Legal"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "CourtReporting&Depositions"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Joinusasatranscriber"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Pricing"
               }
             ]
           }
@@ -3078,13 +3078,20 @@
       "url": "https://verbit.ai/",
       "result": {
         "roleElements": 5,
-        "badRoleElements": 3,
+        "badRoleElements": 2,
+        "redundantRoleElements": 1,
         "tagNames": {
           "P": {
-            "status": 2
+            "status": {
+              "bad": 2,
+              "redundant": 0
+            }
           },
           "MAIN": {
-            "main": 1
+            "main": {
+              "bad": 0,
+              "redundant": 1
+            }
           }
         }
       }

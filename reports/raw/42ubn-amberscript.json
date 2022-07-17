@@ -309,14 +309,14 @@
           "total": 72,
           "types": {
             "indicatorMissing": {
-              "total": 0,
-              "tagNames": {}
-            },
-            "nonOutlinePresent": {
               "total": 3,
               "tagNames": {
                 "BUTTON": 3
               }
+            },
+            "nonOutlinePresent": {
+              "total": 0,
+              "tagNames": {}
             },
             "outlinePresent": {
               "total": 69,
@@ -329,8 +329,7 @@
           }
         },
         "items": {
-          "indicatorMissing": [],
-          "nonOutlinePresent": [
+          "indicatorMissing": [
             {
               "tagName": "BUTTON",
               "text": ""
@@ -344,6 +343,7 @@
               "text": ""
             }
           ],
+          "nonOutlinePresent": [],
           "outlinePresent": [
             {
               "tagName": "A",
@@ -353,7 +353,7 @@
             {
               "tagName": "A",
               "text": "",
-              "delay": 101
+              "delay": 102
             },
             {
               "tagName": "INPUT",
@@ -553,7 +553,7 @@
             {
               "tagName": "A",
               "text": "Automatische transcriptie",
-              "delay": 101
+              "delay": 105
             },
             {
               "tagName": "A",
@@ -563,7 +563,7 @@
             {
               "tagName": "A",
               "text": "Automatische ondertitels",
-              "delay": 101
+              "delay": 103
             },
             {
               "tagName": "A",
@@ -573,7 +573,7 @@
             {
               "tagName": "A",
               "text": "Prijzen",
-              "delay": 101
+              "delay": 102
             },
             {
               "tagName": "A",
@@ -583,12 +583,12 @@
             {
               "tagName": "A",
               "text": "API & aangepaste modellen",
-              "delay": 100
+              "delay": 101
             },
             {
               "tagName": "A",
               "text": "Data annotation",
-              "delay": 102
+              "delay": 101
             },
             {
               "tagName": "A",
@@ -603,12 +603,12 @@
             {
               "tagName": "A",
               "text": "Digitale toegankelijkheid",
-              "delay": 100
+              "delay": 102
             },
             {
               "tagName": "A",
               "text": "Amberscript academy",
-              "delay": 101
+              "delay": 103
             },
             {
               "tagName": "A",
@@ -618,7 +618,7 @@
             {
               "tagName": "A",
               "text": "Sectoren",
-              "delay": 101
+              "delay": 103
             },
             {
               "tagName": "A",
@@ -633,22 +633,22 @@
             {
               "tagName": "A",
               "text": "WER",
-              "delay": 102
-            },
-            {
-              "tagName": "A",
-              "text": "Over ons",
-              "delay": 101
-            },
-            {
-              "tagName": "A",
-              "text": "Carrière",
               "delay": 103
             },
             {
               "tagName": "A",
+              "text": "Over ons",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Carrière",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
               "text": "Werk als online transcribent",
-              "delay": 100
+              "delay": 104
             },
             {
               "tagName": "A",
@@ -658,7 +658,7 @@
             {
               "tagName": "A",
               "text": "Nieuws",
-              "delay": 101
+              "delay": 104
             },
             {
               "tagName": "A",
@@ -668,7 +668,7 @@
             {
               "tagName": "A",
               "text": "Neem contact op",
-              "delay": 100
+              "delay": 102
             },
             {
               "tagName": "A",
@@ -2634,11 +2634,11 @@
           "triggers": 103,
           "headTriggers": 20,
           "tailTriggers": 83,
-          "impactTriggers": 9,
-          "additions": 0,
-          "removals": 0,
-          "opacityChanges": 24,
-          "opacityImpact": 365,
+          "impactTriggers": 12,
+          "additions": 224,
+          "removals": 81,
+          "opacityChanges": 4,
+          "opacityImpact": 173,
           "unhoverables": 1
         },
         "items": {
@@ -2647,18 +2647,18 @@
               {
                 "tagName": "A",
                 "text": "<inputtype=\"checkbox\">",
-                "additions": 0,
-                "removals": 0,
-                "opacityChanges": 16,
-                "opacityImpact": 19
+                "additions": 119,
+                "removals": 1,
+                "opacityChanges": 0,
+                "opacityImpact": 0
               },
               {
                 "tagName": "LI",
                 "text": "ProductenProductenAutomatischetranscriptieHandmati",
-                "additions": 0,
+                "additions": 22,
                 "removals": 0,
-                "opacityChanges": 1,
-                "opacityImpact": 42
+                "opacityChanges": 0,
+                "opacityImpact": 0
               },
               {
                 "tagName": "A",
@@ -2671,10 +2671,10 @@
               {
                 "tagName": "LI",
                 "text": "BedrijfsoplossingenBedrijfsoplossingenBedrijfsoplo",
-                "additions": 0,
-                "removals": 0,
-                "opacityChanges": 1,
-                "opacityImpact": 42
+                "additions": 22,
+                "removals": 19,
+                "opacityChanges": 0,
+                "opacityImpact": 0
               },
               {
                 "tagName": "A",
@@ -2686,11 +2686,27 @@
               },
               {
                 "tagName": "LI",
-                "text": "InformatieMeerinformatieDigitaletoegankelijkheidAm",
+                "text": "Prijzen",
                 "additions": 0,
+                "removals": 19,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "A",
+                "text": "Prijzen",
+                "additions": 0,
+                "removals": 3,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "LI",
+                "text": "InformatieMeerinformatieDigitaletoegankelijkheidAm",
+                "additions": 22,
                 "removals": 0,
-                "opacityChanges": 1,
-                "opacityImpact": 21
+                "opacityChanges": 0,
+                "opacityImpact": 0
               },
               {
                 "tagName": "A",
@@ -2703,10 +2719,10 @@
               {
                 "tagName": "LI",
                 "text": "NederlandsTalenEnglish(Engels)Español(Spaans)Dansk",
-                "additions": 0,
+                "additions": 39,
                 "removals": 0,
-                "opacityChanges": 1,
-                "opacityImpact": 68
+                "opacityChanges": 0,
+                "opacityImpact": 0
               },
               {
                 "tagName": "A",
@@ -2715,6 +2731,14 @@
                 "removals": 0,
                 "opacityChanges": 1,
                 "opacityImpact": 68
+              },
+              {
+                "tagName": "A",
+                "text": "Inloggen",
+                "additions": 0,
+                "removals": 39,
+                "opacityChanges": 0,
+                "opacityImpact": 0
               }
             ],
             "unhoverables": [
@@ -3047,6 +3071,7 @@
       "result": {
         "roleElements": 7,
         "badRoleElements": 0,
+        "redundantRoleElements": 0,
         "tagNames": {}
       }
     },

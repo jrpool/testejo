@@ -1,0 +1,539 @@
+{
+  "id": "49li4-accessibleweb",
+  "host": {
+    "id": "accessibleweb",
+    "which": "https://accessibleweb.com/",
+    "what": "Accessible Web"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-16T21:24:13"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-16T21:25:16"
+    }
+  ],
+  "script": {
+    "id": "tp12",
+    "what": "Alfa, Axe, HTML CodeSniffer, IBM, Tenon, WAVE, and 16 custom tests",
+    "strict": true,
+    "timeLimit": 150,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://accessibleweb.com/",
+        "what": "Accessible Web"
+      },
+      {
+        "type": "test",
+        "which": "focInd",
+        "revealAll": false,
+        "allowedDelay": 250,
+        "withItems": true,
+        "what": "focus indicators"
+      },
+      {
+        "type": "test",
+        "which": "hover",
+        "headSize": 20,
+        "headSampleSize": 20,
+        "tailSampleSize": 15,
+        "withItems": true,
+        "what": "hover impacts"
+      },
+      {
+        "type": "test",
+        "which": "role",
+        "what": "validity and necessity of role assignments"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://accessibleweb.com/",
+      "what": "Accessible Web",
+      "result": "https://accessibleweb.com/"
+    },
+    {
+      "type": "test",
+      "which": "focInd",
+      "revealAll": false,
+      "allowedDelay": 250,
+      "withItems": true,
+      "what": "focus indicators",
+      "url": "https://accessibleweb.com/",
+      "result": {
+        "totals": {
+          "total": 62,
+          "types": {
+            "indicatorMissing": {
+              "total": 7,
+              "tagNames": {
+                "A": 5,
+                "IFRAME": 1,
+                "DIV": 1
+              }
+            },
+            "nonOutlinePresent": {
+              "total": 13,
+              "tagNames": {
+                "A": 8,
+                "BUTTON": 3,
+                "INPUT": 2
+              }
+            },
+            "outlinePresent": {
+              "total": 42,
+              "meanDelay": 0,
+              "tagNames": {
+                "A": 42
+              }
+            }
+          }
+        },
+        "items": {
+          "indicatorMissing": [
+            {
+              "tagName": "A",
+              "text": "Solutions"
+            },
+            {
+              "tagName": "A",
+              "text": "Education"
+            },
+            {
+              "tagName": "A",
+              "text": "Free Tools"
+            },
+            {
+              "tagName": "A",
+              "text": "Company"
+            },
+            {
+              "tagName": "A",
+              "text": "Log In"
+            },
+            {
+              "tagName": "IFRAME",
+              "text": ""
+            },
+            {
+              "tagName": "DIV",
+              "text": ""
+            }
+          ],
+          "nonOutlinePresent": [
+            {
+              "tagName": "A",
+              "text": "Show details"
+            },
+            {
+              "tagName": "A",
+              "text": "Skip to content"
+            },
+            {
+              "tagName": "A",
+              "text": "Try RAMP for Free"
+            },
+            {
+              "tagName": "A",
+              "text": "Search"
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Try for Free"
+            },
+            {
+              "tagName": "A",
+              "text": "Contact Sales"
+            },
+            {
+              "tagName": "A",
+              "text": "SCHEDULE A CONSULTATION"
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Try for Free"
+            },
+            {
+              "tagName": "A",
+              "text": "Get In Touch"
+            },
+            {
+              "tagName": "A",
+              "text": "Skip Footer Links"
+            },
+            {
+              "tagName": "INPUT",
+              "text": ""
+            },
+            {
+              "tagName": "INPUT",
+              "text": ""
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Subscribe"
+            }
+          ],
+          "outlinePresent": [
+            {
+              "tagName": "A",
+              "text": "cookies policy",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "privacy policy.",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Accept",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "//<![CDATA[\n(function(){for(var g=\"function\"==typeof Object.defineProperties?Object.defineProperty:f",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Explore Page Scanning & Monitoring features",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Explore Remediation Task Features",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Explore User Ticket features",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "ADA Compliance process",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "AODA Compliance process",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Read our client highlights",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Visit the Accessible Web Blog",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Visit the Accessible Web Podcast",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Proud Member of the International Association of Accessibility Professionals",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Become an Agency Partner",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "B Corps",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Education / Higher Ed",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Entertainment",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Food & Beverage",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Government/State Agencies",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Healthcare",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Insurance & Financial",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Nonprofit Organizations",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Real Estate",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Recreation",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Retail & Ecommerce",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Travel & Lodging",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "1-888-534-0187",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "1-802-448-5591",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "everyone@accessibleweb.com",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "50 Lakeside Ave, Suite 821Burlington, VT 05401",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Schedule a Call",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "About Accessible Web",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Blog",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Careers",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Sitemap",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Privacy Policy",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Terms of Service",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Status",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "View our Facebook Page",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "View our Linkedin Page",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "View our Twitter Page",
+              "delay": 0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://accessibleweb.com/",
+      "what": "URL",
+      "result": "https://accessibleweb.com/"
+    },
+    {
+      "type": "test",
+      "which": "hover",
+      "headSize": 20,
+      "headSampleSize": 20,
+      "tailSampleSize": 15,
+      "withItems": true,
+      "what": "hover-caused content changes",
+      "url": "https://accessibleweb.com/",
+      "result": {
+        "totals": {
+          "triggers": 92,
+          "headTriggers": 20,
+          "tailTriggers": 72,
+          "impactTriggers": 0,
+          "additions": 0,
+          "removals": 0,
+          "opacityChanges": 0,
+          "opacityImpact": 0,
+          "unhoverables": 2
+        },
+        "items": {
+          "head": {
+            "impactTriggers": [],
+            "unhoverables": [
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Skiptocontent"
+              }
+            ]
+          },
+          "tail": {
+            "impactTriggers": [],
+            "unhoverables": [
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Sitemap"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://accessibleweb.com/",
+      "what": "URL",
+      "result": "https://accessibleweb.com/"
+    },
+    {
+      "type": "test",
+      "which": "role",
+      "what": "roles",
+      "url": "https://accessibleweb.com/",
+      "result": {
+        "roleElements": 27,
+        "badRoleElements": 9,
+        "redundantRoleElements": 1,
+        "tagNames": {
+          "A": {
+            "button": {
+              "bad": 7,
+              "redundant": 0
+            }
+          },
+          "MAIN": {
+            "main": {
+              "bad": 0,
+              "redundant": 1
+            }
+          },
+          "FOOTER": {
+            "contentinfo": {
+              "bad": 1,
+              "redundant": 0
+            }
+          },
+          "DIV": {
+            "button": {
+              "bad": 1,
+              "redundant": 0
+            }
+          }
+        }
+      }
+    }
+  ],
+  "timeStamp": "49li4",
+  "startTime": "2022-07-16T21:24:13",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "hover",
+      48
+    ],
+    [
+      "focInd",
+      6
+    ],
+    [
+      "role",
+      0
+    ]
+  ],
+  "logCount": 12,
+  "logSize": 1767,
+  "errorLogCount": 9,
+  "errorLogSize": 1629,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-16T21:25:16",
+  "elapsedSeconds": 62
+}

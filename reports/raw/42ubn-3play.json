@@ -440,12 +440,12 @@
             {
               "tagName": "A",
               "text": "View Plans & Pricing >>",
-              "delay": 101
+              "delay": 102
             },
             {
               "tagName": "A",
               "text": "Find out why they chose 3Play media",
-              "delay": 101
+              "delay": 100
             },
             {
               "tagName": "A",
@@ -460,7 +460,7 @@
             {
               "tagName": "A",
               "text": "Learn More About Audio Description >>",
-              "delay": 101
+              "delay": 102
             },
             {
               "tagName": "A",
@@ -470,7 +470,7 @@
             {
               "tagName": "A",
               "text": "Read the Announcement",
-              "delay": 101
+              "delay": 102
             },
             {
               "tagName": "A",
@@ -490,7 +490,7 @@
             {
               "tagName": "A",
               "text": "View Plans",
-              "delay": 102
+              "delay": 101
             }
           ]
         }
@@ -1211,25 +1211,16 @@
           "triggers": 71,
           "headTriggers": 20,
           "tailTriggers": 51,
-          "impactTriggers": 1,
-          "additions": 4,
+          "impactTriggers": 0,
+          "additions": 0,
           "removals": 0,
           "opacityChanges": 0,
           "opacityImpact": 0,
-          "unhoverables": 5
+          "unhoverables": 2
         },
         "items": {
           "head": {
-            "impactTriggers": [
-              {
-                "tagName": "A",
-                "text": "<imgwidth=\"600\"height=\"77\"src=\"https://www.3playme",
-                "additions": 4,
-                "removals": 0,
-                "opacityChanges": 0,
-                "opacityImpact": 0
-              }
-            ],
+            "impactTriggers": [],
             "unhoverables": [
               {
                 "tagName": "A",
@@ -1244,22 +1235,7 @@
               {
                 "tagName": "A",
                 "id": "",
-                "text": "Terms"
-              },
-              {
-                "tagName": "LI",
-                "id": "menu-item-676",
-                "text": "Terms"
-              },
-              {
-                "tagName": "LI",
-                "id": "menu-item-677",
-                "text": "PrivacyPolicy"
-              },
-              {
-                "tagName": "A",
-                "id": "",
-                "text": "LearnMoreAboutClosedCaptioning>>"
+                "text": "ViewPlans&Pricing>>"
               }
             ]
           }
@@ -1485,6 +1461,7 @@
       "result": {
         "roleElements": 0,
         "badRoleElements": 0,
+        "redundantRoleElements": 0,
         "tagNames": {}
       }
     },

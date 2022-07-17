@@ -1299,7 +1299,7 @@
           "removals": 0,
           "opacityChanges": 0,
           "opacityImpact": 0,
-          "unhoverables": 3
+          "unhoverables": 4
         },
         "items": {
           "head": {
@@ -1324,7 +1324,13 @@
           },
           "tail": {
             "impactTriggers": [],
-            "unhoverables": []
+            "unhoverables": [
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "<imgsrc=\"/images/stories/IAAP_Organ_Member_White.p"
+              }
+            ]
           }
         }
       }
@@ -1559,11 +1565,21 @@
       "result": {
         "roleElements": 4,
         "badRoleElements": 3,
+        "redundantRoleElements": 0,
         "tagNames": {
           "DIV": {
-            "navigation": 1,
-            "main": 1,
-            "contentinfo": 1
+            "navigation": {
+              "bad": 1,
+              "redundant": 0
+            },
+            "main": {
+              "bad": 1,
+              "redundant": 0
+            },
+            "contentinfo": {
+              "bad": 1,
+              "redundant": 0
+            }
           }
         }
       }
@@ -7099,7 +7115,7 @@
   "endTime": "2022-07-06T01:43:41",
   "elapsedSeconds": 103,
   "score": {
-    "scoreProcID": "sp12a",
+    "scoreProcID": "sp12b",
     "logWeights": {
       "logCount": 0.5,
       "logSize": 0.01,
@@ -7121,9 +7137,9 @@
     },
     "packageDetails": {
       "testaro": {
-        "hover": 3,
+        "hover": 4,
         "linkUl": 22,
-        "role": 3,
+        "role": 6,
         "styleDiff": 28,
         "zIndex": 1
       },
@@ -7173,7 +7189,7 @@
         "roleBad": {
           "testaro": {
             "role": {
-              "score": 2,
+              "score": 5,
               "what": "Nonexistent or implicit-overriding role"
             }
           }
@@ -7321,7 +7337,7 @@
       "htmlcs": 100
     },
     "summary": {
-      "total": 599,
+      "total": 602,
       "log": 170,
       "preventions": 100,
       "solos": 0,
@@ -7351,6 +7367,10 @@
           "score": 9
         },
         {
+          "groupName": "roleBad",
+          "score": 7
+        },
+        {
           "groupName": "contrastAAA",
           "score": 7
         },
@@ -7361,10 +7381,6 @@
         {
           "groupName": "linkForcesNewWindow",
           "score": 5
-        },
-        {
-          "groupName": "roleBad",
-          "score": 4
         },
         {
           "groupName": "linkTextsSame",

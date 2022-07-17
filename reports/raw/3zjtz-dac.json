@@ -1063,25 +1063,44 @@
       "url": "https://digitalaccessibilitycentre.org/",
       "result": {
         "roleElements": 31,
-        "badRoleElements": 17,
+        "badRoleElements": 15,
+        "redundantRoleElements": 2,
         "tagNames": {
           "HEADER": {
-            "banner": 1
+            "banner": {
+              "bad": 1,
+              "redundant": 0
+            }
           },
           "IMG": {
-            "button": 3
+            "button": {
+              "bad": 3,
+              "redundant": 0
+            }
           },
           "NAV": {
-            "navigation": 1
+            "navigation": {
+              "bad": 0,
+              "redundant": 1
+            }
           },
           "A": {
-            "button": 10
+            "button": {
+              "bad": 10,
+              "redundant": 0
+            }
           },
           "MAIN": {
-            "main": 1
+            "main": {
+              "bad": 0,
+              "redundant": 1
+            }
           },
           "FOOTER": {
-            "contentinfo": 1
+            "contentinfo": {
+              "bad": 1,
+              "redundant": 0
+            }
           }
         }
       }

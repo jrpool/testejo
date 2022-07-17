@@ -399,27 +399,27 @@
             {
               "tagName": "A",
               "text": "Learn More",
-              "delay": 102
+              "delay": 105
             },
             {
               "tagName": "A",
               "text": "Learn More",
-              "delay": 100
-            },
-            {
-              "tagName": "A",
-              "text": "Learn More",
-              "delay": 100
-            },
-            {
-              "tagName": "A",
-              "text": "Learn More",
-              "delay": 102
+              "delay": 103
             },
             {
               "tagName": "A",
               "text": "Learn More",
               "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Learn More",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Learn More",
+              "delay": 103
             },
             {
               "tagName": "A",
@@ -913,16 +913,25 @@
           "triggers": 42,
           "headTriggers": 20,
           "tailTriggers": 22,
-          "impactTriggers": 0,
+          "impactTriggers": 1,
           "additions": 0,
           "removals": 0,
-          "opacityChanges": 0,
-          "opacityImpact": 0,
+          "opacityChanges": 1,
+          "opacityImpact": 13,
           "unhoverables": 0
         },
         "items": {
           "head": {
-            "impactTriggers": [],
+            "impactTriggers": [
+              {
+                "tagName": "A",
+                "text": "Skiptocontent",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 13
+              }
+            ],
             "unhoverables": []
           },
           "tail": {
@@ -1148,16 +1157,26 @@
       "url": "https://technopriseglobal.com/",
       "result": {
         "roleElements": 6,
-        "badRoleElements": 3,
+        "badRoleElements": 2,
+        "redundantRoleElements": 1,
         "tagNames": {
           "MAIN": {
-            "main": 1
+            "main": {
+              "bad": 0,
+              "redundant": 1
+            }
           },
           "DIV": {
-            "complementary": 1
+            "complementary": {
+              "bad": 1,
+              "redundant": 0
+            }
           },
           "FOOTER": {
-            "contentinfo": 1
+            "contentinfo": {
+              "bad": 1,
+              "redundant": 0
+            }
           }
         }
       }

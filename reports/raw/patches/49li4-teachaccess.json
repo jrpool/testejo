@@ -1,0 +1,599 @@
+{
+  "id": "49li4-teachaccess",
+  "host": {
+    "id": "teachaccess",
+    "which": "https://teachaccess.org/",
+    "what": "Teach Access"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-16T22:05:46"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-16T22:06:39"
+    }
+  ],
+  "script": {
+    "id": "tp12",
+    "what": "Alfa, Axe, HTML CodeSniffer, IBM, Tenon, WAVE, and 16 custom tests",
+    "strict": true,
+    "timeLimit": 150,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://teachaccess.org/",
+        "what": "Teach Access"
+      },
+      {
+        "type": "test",
+        "which": "focInd",
+        "revealAll": false,
+        "allowedDelay": 250,
+        "withItems": true,
+        "what": "focus indicators"
+      },
+      {
+        "type": "test",
+        "which": "hover",
+        "headSize": 20,
+        "headSampleSize": 20,
+        "tailSampleSize": 15,
+        "withItems": true,
+        "what": "hover impacts"
+      },
+      {
+        "type": "test",
+        "which": "role",
+        "what": "validity and necessity of role assignments"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://teachaccess.org/",
+      "what": "Teach Access",
+      "result": "https://teachaccess.org/"
+    },
+    {
+      "type": "test",
+      "which": "focInd",
+      "revealAll": false,
+      "allowedDelay": 250,
+      "withItems": true,
+      "what": "focus indicators",
+      "url": "https://teachaccess.org/",
+      "result": {
+        "totals": {
+          "total": 62,
+          "types": {
+            "indicatorMissing": {
+              "total": 26,
+              "tagNames": {
+                "INPUT": 2,
+                "A": 24
+              }
+            },
+            "nonOutlinePresent": {
+              "total": 4,
+              "tagNames": {
+                "INPUT": 4
+              }
+            },
+            "outlinePresent": {
+              "total": 32,
+              "meanDelay": 0,
+              "tagNames": {
+                "A": 32
+              }
+            }
+          }
+        },
+        "items": {
+          "indicatorMissing": [
+            {
+              "tagName": "INPUT",
+              "text": ""
+            },
+            {
+              "tagName": "A",
+              "text": "About"
+            },
+            {
+              "tagName": "A",
+              "text": "Our Team"
+            },
+            {
+              "tagName": "A",
+              "text": "Join Our Team: Dir. of Dev & Partnerships"
+            },
+            {
+              "tagName": "A",
+              "text": "Mission & Vision"
+            },
+            {
+              "tagName": "A",
+              "text": "Membership"
+            },
+            {
+              "tagName": "A",
+              "text": "Teach Access Task Forces"
+            },
+            {
+              "tagName": "A",
+              "text": "Frequently Asked Questions"
+            },
+            {
+              "tagName": "A",
+              "text": "Supporters & Contributors"
+            },
+            {
+              "tagName": "A",
+              "text": "Videos"
+            },
+            {
+              "tagName": "A",
+              "text": "Initiatives"
+            },
+            {
+              "tagName": "A",
+              "text": "Faculty Grants"
+            },
+            {
+              "tagName": "A",
+              "text": "Study Away"
+            },
+            {
+              "tagName": "A",
+              "text": "Teach Access Tutorial"
+            },
+            {
+              "tagName": "A",
+              "text": "Resources"
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility Trivia"
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility Skills Hiring Toolkit"
+            },
+            {
+              "tagName": "A",
+              "text": "Why Teach Accessibility? Fact Sheet"
+            },
+            {
+              "tagName": "A",
+              "text": "Creating Accessible Course Content"
+            },
+            {
+              "tagName": "A",
+              "text": "News & Events"
+            },
+            {
+              "tagName": "A",
+              "text": "Contact Us"
+            },
+            {
+              "tagName": "A",
+              "text": "Donate"
+            },
+            {
+              "tagName": "A",
+              "text": ""
+            },
+            {
+              "tagName": "A",
+              "text": ""
+            },
+            {
+              "tagName": "INPUT",
+              "text": ""
+            },
+            {
+              "tagName": "A",
+              "text": ""
+            }
+          ],
+          "nonOutlinePresent": [
+            {
+              "tagName": "INPUT",
+              "text": ""
+            },
+            {
+              "tagName": "INPUT",
+              "text": ""
+            },
+            {
+              "tagName": "INPUT",
+              "text": ""
+            },
+            {
+              "tagName": "INPUT",
+              "text": ""
+            }
+          ],
+          "outlinePresent": [
+            {
+              "tagName": "A",
+              "text": "Skip to content",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "View our complete list of contributors.",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "VIEW OUR COMPLETE LIST OF PARTNERS",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Click here to become a member",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Click here to view the fact sheet",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Summer 2022 Update",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Happy Global Accessibility Awareness Day (GAAD)!",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Global Accessibility Awareness Day (GAAD) Announcements",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Teach Access Spring 2022 Update",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Fall 2021 Update",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Click here to see all the News and Events",
+              "delay": 0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://teachaccess.org/",
+      "what": "URL",
+      "result": "https://teachaccess.org/"
+    },
+    {
+      "type": "test",
+      "which": "hover",
+      "headSize": 20,
+      "headSampleSize": 20,
+      "tailSampleSize": 15,
+      "withItems": true,
+      "what": "hover-caused content changes",
+      "url": "https://teachaccess.org/",
+      "result": {
+        "totals": {
+          "triggers": 83,
+          "headTriggers": 20,
+          "tailTriggers": 63,
+          "impactTriggers": 27,
+          "additions": 0,
+          "removals": 0,
+          "opacityChanges": 126,
+          "opacityImpact": 221,
+          "unhoverables": 7
+        },
+        "items": {
+          "head": {
+            "impactTriggers": [
+              {
+                "tagName": "LI",
+                "text": "AboutOurTeamJoinOurTeam:Dir.ofDev&PartnershipsMiss",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 9,
+                "opacityImpact": 24
+              },
+              {
+                "tagName": "A",
+                "text": "About",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 8,
+                "opacityImpact": 8
+              }
+            ],
+            "unhoverables": [
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Skiptocontent"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "<spanclass=\"close-wrap\"><spanclass=\"close-lineclos"
+              }
+            ]
+          },
+          "tail": {
+            "impactTriggers": [
+              {
+                "tagName": "LI",
+                "text": "ResourcesAccessibilityTriviaAccessibilitySkillsHir",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 5,
+                "opacityImpact": 12
+              },
+              {
+                "tagName": "LI",
+                "text": "InitiativesFacultyGrantsStudyAwayTeachAccessTutori",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 9,
+                "opacityImpact": 21
+              },
+              {
+                "tagName": "A",
+                "text": "ContactUs",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 7,
+                "opacityImpact": 7
+              },
+              {
+                "tagName": "A",
+                "text": "News&Events",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 3,
+                "opacityImpact": 3
+              },
+              {
+                "tagName": "A",
+                "text": "VIEWOURCOMPLETELISTOFPARTNERS",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 1
+              },
+              {
+                "tagName": "A",
+                "text": "Clickheretobecomeamember",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 1
+              }
+            ],
+            "unhoverables": [
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "WhyTeachAccessibility?FactSheet"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "AccessibilityTrivia"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "TeachAccessTutorial"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "StudyAway"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "AccessibilityTrivia"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://teachaccess.org/",
+      "what": "URL",
+      "result": "https://teachaccess.org/"
+    },
+    {
+      "type": "test",
+      "which": "role",
+      "what": "roles",
+      "url": "https://teachaccess.org/",
+      "result": {
+        "roleElements": 2,
+        "badRoleElements": 1,
+        "redundantRoleElements": 0,
+        "tagNames": {
+          "DIV": {
+            "main": {
+              "bad": 1,
+              "redundant": 0
+            }
+          }
+        }
+      }
+    }
+  ],
+  "timeStamp": "49li4",
+  "startTime": "2022-07-16T22:05:46",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "hover",
+      37
+    ],
+    [
+      "focInd",
+      10
+    ],
+    [
+      "role",
+      0
+    ]
+  ],
+  "logCount": 6,
+  "logSize": 345,
+  "errorLogCount": 3,
+  "errorLogSize": 207,
+  "prohibitedCount": 3,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-16T22:06:39",
+  "elapsedSeconds": 53
+}

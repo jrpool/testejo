@@ -304,14 +304,14 @@
           "total": 5,
           "types": {
             "indicatorMissing": {
-              "total": 0,
-              "tagNames": {}
-            },
-            "nonOutlinePresent": {
               "total": 2,
               "tagNames": {
                 "IFRAME": 2
               }
+            },
+            "nonOutlinePresent": {
+              "total": 0,
+              "tagNames": {}
             },
             "outlinePresent": {
               "total": 3,
@@ -323,8 +323,7 @@
           }
         },
         "items": {
-          "indicatorMissing": [],
-          "nonOutlinePresent": [
+          "indicatorMissing": [
             {
               "tagName": "IFRAME",
               "text": ""
@@ -334,6 +333,7 @@
               "text": ""
             }
           ],
+          "nonOutlinePresent": [],
           "outlinePresent": [
             {
               "tagName": "A",
@@ -645,6 +645,7 @@
       "result": {
         "roleElements": 0,
         "badRoleElements": 0,
+        "redundantRoleElements": 0,
         "tagNames": {}
       }
     },
@@ -3235,7 +3236,7 @@
   "endTime": "2022-07-09T15:09:07",
   "elapsedSeconds": 49,
   "score": {
-    "scoreProcID": "sp12a",
+    "scoreProcID": "sp12b",
     "logWeights": {
       "logCount": 0.5,
       "logSize": 0.01,
@@ -3257,7 +3258,7 @@
     },
     "packageDetails": {
       "testaro": {
-        "focInd": 2
+        "focInd": 6
       },
       "alfa": {
         "r13": 8,
@@ -3302,7 +3303,7 @@
         "focusIndication": {
           "testaro": {
             "focInd": {
-              "score": 2,
+              "score": 6,
               "what": "Focused element displaying no or nostandard focus indicator"
             }
           }
@@ -3421,7 +3422,7 @@
           "alfa": {
             "r74": {
               "score": 2,
-              "what": "Paragraph text has absolute font size"
+              "what": "Paragraph text has an absolute font size"
             }
           }
         },
@@ -3508,7 +3509,7 @@
     },
     "preventionScores": {},
     "summary": {
-      "total": 159,
+      "total": 163,
       "log": 30,
       "preventions": 0,
       "solos": 0,
@@ -3534,6 +3535,10 @@
           "score": 10
         },
         {
+          "groupName": "focusIndication",
+          "score": 8
+        },
+        {
           "groupName": "metaBansZoom",
           "score": 8
         },
@@ -3556,10 +3561,6 @@
         {
           "groupName": "linkForcesNewWindow",
           "score": 5
-        },
-        {
-          "groupName": "focusIndication",
-          "score": 4
         },
         {
           "groupName": "fontSizeAbsolute",

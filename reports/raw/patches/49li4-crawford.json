@@ -1,0 +1,705 @@
+{
+  "id": "49li4-crawford",
+  "host": {
+    "id": "crawford",
+    "which": "https://www.crawfordtech.com/accessibilitynow",
+    "what": "Crawford Technologies"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-16T21:43:24"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-16T21:44:39"
+    }
+  ],
+  "script": {
+    "id": "tp12",
+    "what": "Alfa, Axe, HTML CodeSniffer, IBM, Tenon, WAVE, and 16 custom tests",
+    "strict": true,
+    "timeLimit": 150,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.crawfordtech.com/accessibilitynow",
+        "what": "Crawford Technologies"
+      },
+      {
+        "type": "test",
+        "which": "focInd",
+        "revealAll": false,
+        "allowedDelay": 250,
+        "withItems": true,
+        "what": "focus indicators"
+      },
+      {
+        "type": "test",
+        "which": "hover",
+        "headSize": 20,
+        "headSampleSize": 20,
+        "tailSampleSize": 15,
+        "withItems": true,
+        "what": "hover impacts"
+      },
+      {
+        "type": "test",
+        "which": "role",
+        "what": "validity and necessity of role assignments"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.crawfordtech.com/accessibilitynow",
+      "what": "Crawford Technologies",
+      "result": "https://crawfordtech.com/accessibilitynow/"
+    },
+    {
+      "type": "test",
+      "which": "focInd",
+      "revealAll": false,
+      "allowedDelay": 250,
+      "withItems": true,
+      "what": "focus indicators",
+      "url": "https://crawfordtech.com/accessibilitynow/",
+      "result": {
+        "totals": {
+          "total": 79,
+          "types": {
+            "indicatorMissing": {
+              "total": 24,
+              "tagNames": {
+                "INPUT": 1,
+                "IFRAME": 4,
+                "path": 17,
+                "A": 2
+              }
+            },
+            "nonOutlinePresent": {
+              "total": 1,
+              "tagNames": {
+                "A": 1
+              }
+            },
+            "outlinePresent": {
+              "total": 54,
+              "meanDelay": 0,
+              "tagNames": {
+                "A": 53,
+                "BUTTON": 1
+              }
+            }
+          }
+        },
+        "items": {
+          "indicatorMissing": [
+            {
+              "tagName": "INPUT",
+              "text": ""
+            },
+            {
+              "tagName": "IFRAME",
+              "text": ""
+            },
+            {
+              "tagName": "IFRAME",
+              "text": ""
+            },
+            {
+              "tagName": "path",
+              "text": ""
+            },
+            {
+              "tagName": "path",
+              "text": ""
+            },
+            {
+              "tagName": "path",
+              "text": ""
+            },
+            {
+              "tagName": "path",
+              "text": ""
+            },
+            {
+              "tagName": "path",
+              "text": ""
+            },
+            {
+              "tagName": "path",
+              "text": ""
+            },
+            {
+              "tagName": "path",
+              "text": ""
+            },
+            {
+              "tagName": "path",
+              "text": ""
+            },
+            {
+              "tagName": "path",
+              "text": ""
+            },
+            {
+              "tagName": "path",
+              "text": ""
+            },
+            {
+              "tagName": "path",
+              "text": ""
+            },
+            {
+              "tagName": "path",
+              "text": ""
+            },
+            {
+              "tagName": "path",
+              "text": ""
+            },
+            {
+              "tagName": "path",
+              "text": ""
+            },
+            {
+              "tagName": "path",
+              "text": ""
+            },
+            {
+              "tagName": "path",
+              "text": ""
+            },
+            {
+              "tagName": "path",
+              "text": ""
+            },
+            {
+              "tagName": "A",
+              "text": "Accept"
+            },
+            {
+              "tagName": "A",
+              "text": "Reject"
+            },
+            {
+              "tagName": "IFRAME",
+              "text": ""
+            },
+            {
+              "tagName": "IFRAME",
+              "text": ""
+            }
+          ],
+          "nonOutlinePresent": [
+            {
+              "tagName": "A",
+              "text": "Skip to content"
+            }
+          ],
+          "outlinePresent": [
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Crawford Technologies",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Twitter",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Facebook",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "LinkedIn",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Log In",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Sign Up For Support",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Sign Up for Newsletters",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Sign Up for Support",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Sign Up for Webinars",
+              "delay": 0
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Search",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "eDeliveryNow®",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "AccessibilityNow®",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Products",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Services",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Industries",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "About Us",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Resources",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Contact",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Blog",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "MasterONE",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Learn more",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Learn more >",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Learn more >",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Learn more >",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Learn more >",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Learn more >",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Learn more >",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Learn more >",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Learn more >",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Learn more >",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Learn more >",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Learn more >",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Learn more >",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "CONTACT US",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "What is a Net Promoter Score?",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Twitter",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Facebook",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "LinkedIn",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Events",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "FLGISA Annual Conference",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "AHEAD",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Press Releases",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Crawford Technologies Showcases Secure Cloud Data & Workflow Solutions That Accelerate ROI on High-s",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Crawford Technologies Launches CCM Gateway SDK to Modernize Document Storage for Digital Transformat",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Webinars",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Putting AI to Work Today for Making Documents Accessible",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Security and Risk Management",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Crawford Technologies",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility Statement",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "AODA Policy",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Privacy Policy",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "COVID Response",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Read More",
+              "delay": 0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.crawfordtech.com/accessibilitynow",
+      "what": "URL",
+      "result": "https://crawfordtech.com/accessibilitynow/"
+    },
+    {
+      "type": "test",
+      "which": "hover",
+      "headSize": 20,
+      "headSampleSize": 20,
+      "tailSampleSize": 15,
+      "withItems": true,
+      "what": "hover-caused content changes",
+      "url": "https://crawfordtech.com/accessibilitynow/",
+      "result": {
+        "totals": {
+          "triggers": 83,
+          "headTriggers": 20,
+          "tailTriggers": 63,
+          "impactTriggers": 29,
+          "additions": 328,
+          "removals": 0,
+          "opacityChanges": 13,
+          "opacityImpact": 483,
+          "unhoverables": 2
+        },
+        "items": {
+          "head": {
+            "impactTriggers": [],
+            "unhoverables": [
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Skiptocontent"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "CrawfordTechnologies"
+              }
+            ]
+          },
+          "tail": {
+            "impactTriggers": [
+              {
+                "tagName": "A",
+                "text": "Products",
+                "additions": 23,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "LI",
+                "text": "AccessibilityNow®AccessibilityNowAccessibilityNow.",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 22
+              },
+              {
+                "tagName": "LI",
+                "text": "ProductsProductPortfolioDocumentAccessibilityBeinc",
+                "additions": 23,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "LI",
+                "text": "AboutUsAboutUsManagementTeamExperienced,knowledgea",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 22
+              },
+              {
+                "tagName": "A",
+                "text": "Blog",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 71
+              },
+              {
+                "tagName": "LI",
+                "text": "ContactOfficeLocationsOfficesintheUnitedStates,Can",
+                "additions": 5,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "A",
+                "text": "Resources",
+                "additions": 27,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              }
+            ],
+            "unhoverables": []
+          }
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.crawfordtech.com/accessibilitynow",
+      "what": "URL",
+      "result": "https://crawfordtech.com/accessibilitynow/"
+    },
+    {
+      "type": "test",
+      "which": "role",
+      "what": "roles",
+      "url": "https://crawfordtech.com/accessibilitynow/",
+      "result": {
+        "roleElements": 39,
+        "badRoleElements": 31,
+        "redundantRoleElements": 5,
+        "tagNames": {
+          "DIV": {
+            "navigation": {
+              "bad": 2,
+              "redundant": 0
+            }
+          },
+          "A": {
+            "button": {
+              "bad": 8,
+              "redundant": 0
+            }
+          },
+          "HEADER": {
+            "banner": {
+              "bad": 1,
+              "redundant": 0
+            }
+          },
+          "NAV": {
+            "navigation": {
+              "bad": 0,
+              "redundant": 4
+            }
+          },
+          "MAIN": {
+            "main": {
+              "bad": 0,
+              "redundant": 1
+            }
+          },
+          "svg": {
+            "group": {
+              "bad": 1,
+              "redundant": 0
+            }
+          },
+          "g": {
+            "list": {
+              "bad": 1,
+              "redundant": 0
+            }
+          },
+          "path": {
+            "listitem": {
+              "bad": 17,
+              "redundant": 0
+            }
+          },
+          "FOOTER": {
+            "contentinfo": {
+              "bad": 1,
+              "redundant": 0
+            }
+          }
+        }
+      }
+    }
+  ],
+  "timeStamp": "49li4",
+  "startTime": "2022-07-16T21:43:24",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "hover",
+      44
+    ],
+    [
+      "focInd",
+      8
+    ],
+    [
+      "role",
+      0
+    ]
+  ],
+  "logCount": 43,
+  "logSize": 5298,
+  "errorLogCount": 10,
+  "errorLogSize": 1003,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-16T21:44:39",
+  "elapsedSeconds": 74
+}

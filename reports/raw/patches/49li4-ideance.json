@@ -1,0 +1,361 @@
+{
+  "id": "49li4-ideance",
+  "host": {
+    "id": "ideance",
+    "which": "https://ideance.net/fr/",
+    "what": "Ideance"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-16T21:54:00"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-16T21:55:07"
+    }
+  ],
+  "script": {
+    "id": "tp12",
+    "what": "Alfa, Axe, HTML CodeSniffer, IBM, Tenon, WAVE, and 16 custom tests",
+    "strict": true,
+    "timeLimit": 150,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://ideance.net/fr/",
+        "what": "Ideance"
+      },
+      {
+        "type": "test",
+        "which": "focInd",
+        "revealAll": false,
+        "allowedDelay": 250,
+        "withItems": true,
+        "what": "focus indicators"
+      },
+      {
+        "type": "test",
+        "which": "hover",
+        "headSize": 20,
+        "headSampleSize": 20,
+        "tailSampleSize": 15,
+        "withItems": true,
+        "what": "hover impacts"
+      },
+      {
+        "type": "test",
+        "which": "role",
+        "what": "validity and necessity of role assignments"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://ideance.net/fr/",
+      "what": "Ideance",
+      "result": "https://ideance.net/fr/"
+    },
+    {
+      "type": "test",
+      "which": "focInd",
+      "revealAll": false,
+      "allowedDelay": 250,
+      "withItems": true,
+      "what": "focus indicators",
+      "url": "https://ideance.net/fr/",
+      "result": {
+        "totals": {
+          "total": 32,
+          "types": {
+            "indicatorMissing": {
+              "total": 32,
+              "tagNames": {
+                "A": 32
+              }
+            },
+            "nonOutlinePresent": {
+              "total": 0,
+              "tagNames": {}
+            },
+            "outlinePresent": {
+              "total": 0,
+              "meanDelay": 0,
+              "tagNames": {}
+            }
+          }
+        },
+        "items": {
+          "indicatorMissing": [
+            {
+              "tagName": "A",
+              "text": "Explorer le contenu"
+            },
+            {
+              "tagName": "A",
+              "text": "Aide à la navigation"
+            },
+            {
+              "tagName": "A",
+              "text": "English version"
+            },
+            {
+              "tagName": "A",
+              "text": "contact@ideance.fr"
+            },
+            {
+              "tagName": "A",
+              "text": "+33 (0)2 78 77 59 82"
+            },
+            {
+              "tagName": "A",
+              "text": "Conseil et expertise web, mobile et progiciels"
+            },
+            {
+              "tagName": "A",
+              "text": "Formation accessibilité"
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibilité des contenus vidéos, PDF, FALC"
+            },
+            {
+              "tagName": "A",
+              "text": "Audits d’accessibilité RGAA et WCAG"
+            },
+            {
+              "tagName": "A",
+              "text": "Qui sommes-nous ? À propos d’Ideance"
+            },
+            {
+              "tagName": "A",
+              "text": "Toute notre expertise"
+            },
+            {
+              "tagName": "A",
+              "text": "Nos audits d’accessibilité"
+            },
+            {
+              "tagName": "A",
+              "text": "Nos formations"
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibilité des contenus"
+            },
+            {
+              "tagName": "A",
+              "text": "Retour d’expérience sur le RGAA et les impacts du schéma pluriannuel sur la mise en conformité"
+            },
+            {
+              "tagName": "A",
+              "text": "a11y Paris"
+            },
+            {
+              "tagName": "A",
+              "text": "Qu’est-ce qu’un contenu accessible ?"
+            },
+            {
+              "tagName": "A",
+              "text": "Découvrir les usages pour mieux appréhender l’accessibilité, Accessibilité et éthique dans le numéri"
+            },
+            {
+              "tagName": "A",
+              "text": "3 bonnes pratiques pour la conception d’applications mobiles plus accessibles"
+            },
+            {
+              "tagName": "A",
+              "text": "Découvrir notre équipe"
+            },
+            {
+              "tagName": "A",
+              "text": "contact@ideance.fr"
+            },
+            {
+              "tagName": "A",
+              "text": "+33 (0)2 78 77 59 82"
+            },
+            {
+              "tagName": "A",
+              "text": ""
+            },
+            {
+              "tagName": "A",
+              "text": ""
+            },
+            {
+              "tagName": "A",
+              "text": ""
+            },
+            {
+              "tagName": "A",
+              "text": "Ressources d’accessibilité"
+            },
+            {
+              "tagName": "A",
+              "text": "Lexically (glossaire)"
+            },
+            {
+              "tagName": "A",
+              "text": "Plan du site"
+            },
+            {
+              "tagName": "A",
+              "text": "Mentions légales"
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibilité : totalement conforme"
+            },
+            {
+              "tagName": "A",
+              "text": ""
+            },
+            {
+              "tagName": "A",
+              "text": ""
+            }
+          ],
+          "nonOutlinePresent": [],
+          "outlinePresent": []
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://ideance.net/fr/",
+      "what": "URL",
+      "result": "https://ideance.net/fr/"
+    },
+    {
+      "type": "test",
+      "which": "hover",
+      "headSize": 20,
+      "headSampleSize": 20,
+      "tailSampleSize": 15,
+      "withItems": true,
+      "what": "hover-caused content changes",
+      "url": "https://ideance.net/fr/",
+      "result": {
+        "totals": {
+          "triggers": 68,
+          "headTriggers": 20,
+          "tailTriggers": 48,
+          "impactTriggers": 0,
+          "additions": 0,
+          "removals": 0,
+          "opacityChanges": 0,
+          "opacityImpact": 0,
+          "unhoverables": 0
+        },
+        "items": {
+          "head": {
+            "impactTriggers": [],
+            "unhoverables": []
+          },
+          "tail": {
+            "impactTriggers": [],
+            "unhoverables": []
+          }
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://ideance.net/fr/",
+      "what": "URL",
+      "result": "https://ideance.net/fr/"
+    },
+    {
+      "type": "test",
+      "which": "role",
+      "what": "roles",
+      "url": "https://ideance.net/fr/",
+      "result": {
+        "roleElements": 18,
+        "badRoleElements": 3,
+        "redundantRoleElements": 2,
+        "tagNames": {
+          "HEADER": {
+            "banner": {
+              "bad": 1,
+              "redundant": 0
+            }
+          },
+          "NAV": {
+            "navigation": {
+              "bad": 0,
+              "redundant": 1
+            }
+          },
+          "MAIN": {
+            "main": {
+              "bad": 0,
+              "redundant": 1
+            }
+          },
+          "SPAN": {
+            "text": {
+              "bad": 1,
+              "redundant": 0
+            }
+          },
+          "FOOTER": {
+            "contentinfo": {
+              "bad": 1,
+              "redundant": 0
+            }
+          }
+        }
+      }
+    }
+  ],
+  "timeStamp": "49li4",
+  "startTime": "2022-07-16T21:54:00",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "hover",
+      50
+    ],
+    [
+      "focInd",
+      10
+    ],
+    [
+      "role",
+      0
+    ]
+  ],
+  "logCount": 0,
+  "logSize": 0,
+  "errorLogCount": 0,
+  "errorLogSize": 0,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-16T21:55:07",
+  "elapsedSeconds": 66
+}

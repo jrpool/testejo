@@ -380,7 +380,7 @@
             {
               "tagName": "A",
               "text": "Tanaguru Engine",
-              "delay": 101
+              "delay": 102
             },
             {
               "tagName": "A",
@@ -415,7 +415,7 @@
             {
               "tagName": "A",
               "text": "Contactez-nous",
-              "delay": 102
+              "delay": 101
             },
             {
               "tagName": "A",
@@ -1115,13 +1115,13 @@
             "unhoverables": [
               {
                 "tagName": "LI",
-                "id": "menu-item-875",
-                "text": "Nouscontacter"
+                "id": "menu-item-587",
+                "text": "Industrialiser"
               },
               {
                 "tagName": "LI",
-                "id": "menu-item-589",
-                "text": "Développer"
+                "id": "menu-item-875",
+                "text": "Nouscontacter"
               }
             ]
           }
@@ -1389,19 +1389,32 @@
       "url": "https://www.tanaguru.com/",
       "result": {
         "roleElements": 14,
-        "badRoleElements": 4,
+        "badRoleElements": 2,
+        "redundantRoleElements": 2,
         "tagNames": {
           "HEADER": {
-            "banner": 1
+            "banner": {
+              "bad": 1,
+              "redundant": 0
+            }
           },
           "NAV": {
-            "navigation": 1
+            "navigation": {
+              "bad": 0,
+              "redundant": 1
+            }
           },
           "MAIN": {
-            "main": 1
+            "main": {
+              "bad": 0,
+              "redundant": 1
+            }
           },
           "FOOTER": {
-            "contentinfo": 1
+            "contentinfo": {
+              "bad": 1,
+              "redundant": 0
+            }
           }
         }
       }
@@ -6827,7 +6840,7 @@
   "endTime": "2022-07-09T15:30:27",
   "elapsedSeconds": 128,
   "score": {
-    "scoreProcID": "sp12a",
+    "scoreProcID": "sp12b",
     "logWeights": {
       "logCount": 0.5,
       "logSize": 0.01,
@@ -6852,7 +6865,7 @@
         "focOp": 26,
         "hover": 14,
         "linkUl": 26,
-        "role": 4,
+        "role": 6,
         "styleDiff": 24,
         "zIndex": 3
       },
@@ -6921,7 +6934,7 @@
         "roleBad": {
           "testaro": {
             "role": {
-              "score": 3,
+              "score": 5,
               "what": "Nonexistent or implicit-overriding role"
             }
           }
@@ -7123,7 +7136,7 @@
     },
     "preventionScores": {},
     "summary": {
-      "total": 288,
+      "total": 290,
       "log": 78,
       "preventions": 0,
       "solos": 0,
@@ -7165,6 +7178,10 @@
           "score": 8
         },
         {
+          "groupName": "roleBad",
+          "score": 7
+        },
+        {
           "groupName": "hoverSurprise",
           "score": 6
         },
@@ -7175,10 +7192,6 @@
         {
           "groupName": "targetSize",
           "score": 6
-        },
-        {
-          "groupName": "roleBad",
-          "score": 5
         },
         {
           "groupName": "decorativeImageRisk",

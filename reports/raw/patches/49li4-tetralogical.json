@@ -1,0 +1,378 @@
+{
+  "id": "49li4-tetralogical",
+  "host": {
+    "id": "tetralogical",
+    "which": "https://tetralogical.com/",
+    "what": "TetraLogical"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-16T22:07:31"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-16T22:08:27"
+    }
+  ],
+  "script": {
+    "id": "tp12",
+    "what": "Alfa, Axe, HTML CodeSniffer, IBM, Tenon, WAVE, and 16 custom tests",
+    "strict": true,
+    "timeLimit": 150,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://tetralogical.com/",
+        "what": "TetraLogical"
+      },
+      {
+        "type": "test",
+        "which": "focInd",
+        "revealAll": false,
+        "allowedDelay": 250,
+        "withItems": true,
+        "what": "focus indicators"
+      },
+      {
+        "type": "test",
+        "which": "hover",
+        "headSize": 20,
+        "headSampleSize": 20,
+        "tailSampleSize": 15,
+        "withItems": true,
+        "what": "hover impacts"
+      },
+      {
+        "type": "test",
+        "which": "role",
+        "what": "validity and necessity of role assignments"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://tetralogical.com/",
+      "what": "TetraLogical",
+      "result": "https://tetralogical.com/"
+    },
+    {
+      "type": "test",
+      "which": "focInd",
+      "revealAll": false,
+      "allowedDelay": 250,
+      "withItems": true,
+      "what": "focus indicators",
+      "url": "https://tetralogical.com/",
+      "result": {
+        "totals": {
+          "total": 34,
+          "types": {
+            "indicatorMissing": {
+              "total": 0,
+              "tagNames": {}
+            },
+            "nonOutlinePresent": {
+              "total": 0,
+              "tagNames": {}
+            },
+            "outlinePresent": {
+              "total": 34,
+              "meanDelay": 0,
+              "tagNames": {
+                "A": 34
+              }
+            }
+          }
+        },
+        "items": {
+          "indicatorMissing": [],
+          "nonOutlinePresent": [],
+          "outlinePresent": [
+            {
+              "tagName": "A",
+              "text": "Skip to main content",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "#tll-inclusive { fill: #A900C0; } #tll-sustainable { fill: #FF1958; } #tll-ethical { fill: #E100A0; ",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "About",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Services",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "News",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Blog",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Initial assessments",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "assessments",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Agile usability testing",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "usability testing",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Embedded accessibility",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "helpdesk",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Instructor-led training",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "self-led training",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Design reviews",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "usability reviews",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Design system accessibility",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Sustainable accessibility",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "member of the W3C",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "User Experience Network",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "agile usability testing",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "usability testing",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "#tlp-inclusive, #tlp-inclusive-text { fill: #A900C0; } #tlp-sustainable, #tlp-sustainable-text { fil",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Léonie Watson at DCDC",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Patrick H. Lauke at Bitwarden Community Forum",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "More news items",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Meet the team: Léonie Watson",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Android accessibility: roles and TalkBack",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "More blog posts",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "hello@tetralogical.com",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://tetralogical.com/",
+      "what": "URL",
+      "result": "https://tetralogical.com/"
+    },
+    {
+      "type": "test",
+      "which": "hover",
+      "headSize": 20,
+      "headSampleSize": 20,
+      "tailSampleSize": 15,
+      "withItems": true,
+      "what": "hover-caused content changes",
+      "url": "https://tetralogical.com/",
+      "result": {
+        "totals": {
+          "triggers": 49,
+          "headTriggers": 20,
+          "tailTriggers": 29,
+          "impactTriggers": 0,
+          "additions": 0,
+          "removals": 0,
+          "opacityChanges": 0,
+          "opacityImpact": 0,
+          "unhoverables": 1
+        },
+        "items": {
+          "head": {
+            "impactTriggers": [],
+            "unhoverables": [
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Skiptomaincontent"
+              }
+            ]
+          },
+          "tail": {
+            "impactTriggers": [],
+            "unhoverables": []
+          }
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://tetralogical.com/",
+      "what": "URL",
+      "result": "https://tetralogical.com/"
+    },
+    {
+      "type": "test",
+      "which": "role",
+      "what": "roles",
+      "url": "https://tetralogical.com/",
+      "result": {
+        "roleElements": 6,
+        "badRoleElements": 0,
+        "redundantRoleElements": 0,
+        "tagNames": {}
+      }
+    }
+  ],
+  "timeStamp": "49li4",
+  "startTime": "2022-07-16T22:07:31",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "hover",
+      50
+    ],
+    [
+      "focInd",
+      0
+    ],
+    [
+      "role",
+      0
+    ]
+  ],
+  "logCount": 3,
+  "logSize": 303,
+  "errorLogCount": 3,
+  "errorLogSize": 303,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-16T22:08:27",
+  "elapsedSeconds": 56
+}

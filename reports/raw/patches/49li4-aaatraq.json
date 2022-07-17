@@ -1,0 +1,561 @@
+{
+  "id": "49li4-aaatraq",
+  "host": {
+    "id": "aaatraq",
+    "which": "https://aaatraq.com/",
+    "what": "AAAtraq"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-16T21:15:38"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-16T21:16:22"
+    }
+  ],
+  "script": {
+    "id": "tp12",
+    "what": "Alfa, Axe, HTML CodeSniffer, IBM, Tenon, WAVE, and 16 custom tests",
+    "strict": true,
+    "timeLimit": 150,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://aaatraq.com/",
+        "what": "AAAtraq"
+      },
+      {
+        "type": "test",
+        "which": "focInd",
+        "revealAll": false,
+        "allowedDelay": 250,
+        "withItems": true,
+        "what": "focus indicators"
+      },
+      {
+        "type": "test",
+        "which": "hover",
+        "headSize": 20,
+        "headSampleSize": 20,
+        "tailSampleSize": 15,
+        "withItems": true,
+        "what": "hover impacts"
+      },
+      {
+        "type": "test",
+        "which": "role",
+        "what": "validity and necessity of role assignments"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://aaatraq.com/",
+      "what": "AAAtraq",
+      "result": "https://aaatraq.com/"
+    },
+    {
+      "type": "test",
+      "which": "focInd",
+      "revealAll": false,
+      "allowedDelay": 250,
+      "withItems": true,
+      "what": "focus indicators",
+      "url": "https://aaatraq.com/",
+      "result": {
+        "totals": {
+          "total": 46,
+          "types": {
+            "indicatorMissing": {
+              "total": 46,
+              "tagNames": {
+                "A": 42,
+                "BUTTON": 2,
+                "INPUT": 1,
+                "IFRAME": 1
+              }
+            },
+            "nonOutlinePresent": {
+              "total": 0,
+              "tagNames": {}
+            },
+            "outlinePresent": {
+              "total": 0,
+              "meanDelay": 0,
+              "tagNames": {}
+            }
+          }
+        },
+        "items": {
+          "indicatorMissing": [
+            {
+              "tagName": "A",
+              "text": "Skip to content"
+            },
+            {
+              "tagName": "BUTTON",
+              "text": ""
+            },
+            {
+              "tagName": "A",
+              "text": ""
+            },
+            {
+              "tagName": "INPUT",
+              "text": ""
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Check now"
+            },
+            {
+              "tagName": "A",
+              "text": "/ Find out more"
+            },
+            {
+              "tagName": "A",
+              "text": "Download the white paper"
+            },
+            {
+              "tagName": "A",
+              "text": "Home"
+            },
+            {
+              "tagName": "A",
+              "text": "About"
+            },
+            {
+              "tagName": "A",
+              "text": "Articles"
+            },
+            {
+              "tagName": "A",
+              "text": "FAQ"
+            },
+            {
+              "tagName": "A",
+              "text": "Contact"
+            },
+            {
+              "tagName": "A",
+              "text": "Careers"
+            },
+            {
+              "tagName": "A",
+              "text": "Investors"
+            },
+            {
+              "tagName": "A",
+              "text": "Subscribe"
+            },
+            {
+              "tagName": "A",
+              "text": "Login"
+            },
+            {
+              "tagName": "A",
+              "text": "The AAAtraq shield"
+            },
+            {
+              "tagName": "A",
+              "text": "Costs indemnity"
+            },
+            {
+              "tagName": "A",
+              "text": "Owner - Operator"
+            },
+            {
+              "tagName": "A",
+              "text": "Executives"
+            },
+            {
+              "tagName": "A",
+              "text": "CEO"
+            },
+            {
+              "tagName": "A",
+              "text": "CIO (information)"
+            },
+            {
+              "tagName": "A",
+              "text": "CMO (marketing)"
+            },
+            {
+              "tagName": "A",
+              "text": "CRO (risk)"
+            },
+            {
+              "tagName": "A",
+              "text": "CFO (finance)"
+            },
+            {
+              "tagName": "A",
+              "text": "Legal"
+            },
+            {
+              "tagName": "A",
+              "text": "Digital"
+            },
+            {
+              "tagName": "A",
+              "text": "Content Production"
+            },
+            {
+              "tagName": "A",
+              "text": "HR"
+            },
+            {
+              "tagName": "A",
+              "text": "Insurance Pools"
+            },
+            {
+              "tagName": "A",
+              "text": "Law Firms"
+            },
+            {
+              "tagName": "A",
+              "text": "Insurance Brokers"
+            },
+            {
+              "tagName": "A",
+              "text": "Associations (Member Bodies)"
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility specialists"
+            },
+            {
+              "tagName": "A",
+              "text": "Become a Sales Agent"
+            },
+            {
+              "tagName": "A",
+              "text": "Subscribe"
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility 101"
+            },
+            {
+              "tagName": "A",
+              "text": "Terms & Conditions (opens in a new window)"
+            },
+            {
+              "tagName": "A",
+              "text": "Privacy (opens in a new window)"
+            },
+            {
+              "tagName": "A",
+              "text": "Cookies"
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility"
+            },
+            {
+              "tagName": "A",
+              "text": "Twitter"
+            },
+            {
+              "tagName": "A",
+              "text": "Linked in"
+            },
+            {
+              "tagName": "A",
+              "text": "Instagram"
+            },
+            {
+              "tagName": "A",
+              "text": "You Tube"
+            },
+            {
+              "tagName": "IFRAME",
+              "text": ""
+            }
+          ],
+          "nonOutlinePresent": [],
+          "outlinePresent": []
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://aaatraq.com/",
+      "what": "URL",
+      "result": "https://aaatraq.com/"
+    },
+    {
+      "type": "test",
+      "which": "hover",
+      "headSize": 20,
+      "headSampleSize": 20,
+      "tailSampleSize": 15,
+      "withItems": true,
+      "what": "hover-caused content changes",
+      "url": "https://aaatraq.com/",
+      "result": {
+        "totals": {
+          "triggers": 133,
+          "headTriggers": 20,
+          "tailTriggers": 113,
+          "impactTriggers": 0,
+          "additions": 0,
+          "removals": 0,
+          "opacityChanges": 0,
+          "opacityImpact": 0,
+          "unhoverables": 34
+        },
+        "items": {
+          "head": {
+            "impactTriggers": [],
+            "unhoverables": [
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Skiptocontent"
+              },
+              {
+                "tagName": "BUTTON",
+                "id": "burger-menu-open",
+                "text": ""
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "<imgsrc=\"/static/images/logo-white.220cdeffea81.pn"
+              },
+              {
+                "tagName": "BUTTON",
+                "id": "",
+                "text": "Checknow"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "/Findoutmore"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Downloadthewhitepaper"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "AAAtraq"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "Home"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Home"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "About"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "About"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "INDEX"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "Articles"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Articles"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "FAQ"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "FAQ"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "Contact"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Contact"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "Careers"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Careers"
+              }
+            ]
+          },
+          "tail": {
+            "impactTriggers": [],
+            "unhoverables": [
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "DeployinginDrupal"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "ExecutivesCEOCIO(information)CMO(marketing)CRO(ris"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "ContentProduction"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "Supported"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "BecomeaSalesAgent"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "TheAAAtraqshield"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "InsurancePools"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "Somethingfunny"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "Tea-trolleyoperative"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "SiteImprove"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "CRO(risk)"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "TryforFREE"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "YouTube"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "CMO(marketing)"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://aaatraq.com/",
+      "what": "URL",
+      "result": "https://aaatraq.com/"
+    },
+    {
+      "type": "test",
+      "which": "role",
+      "what": "roles",
+      "url": "https://aaatraq.com/",
+      "result": {
+        "roleElements": 36,
+        "badRoleElements": 0,
+        "redundantRoleElements": 0,
+        "tagNames": {}
+      }
+    }
+  ],
+  "timeStamp": "49li4",
+  "startTime": "2022-07-16T21:15:38",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "hover",
+      21
+    ],
+    [
+      "focInd",
+      14
+    ],
+    [
+      "role",
+      0
+    ]
+  ],
+  "logCount": 0,
+  "logSize": 0,
+  "errorLogCount": 0,
+  "errorLogSize": 0,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-16T21:16:22",
+  "elapsedSeconds": 44
+}

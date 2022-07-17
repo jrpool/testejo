@@ -1,0 +1,655 @@
+{
+  "id": "49li4-monsido",
+  "host": {
+    "id": "monsido",
+    "which": "https://monsido.com/",
+    "what": "Monsido"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-16T21:59:10"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-16T21:59:59"
+    }
+  ],
+  "script": {
+    "id": "tp12",
+    "what": "Alfa, Axe, HTML CodeSniffer, IBM, Tenon, WAVE, and 16 custom tests",
+    "strict": true,
+    "timeLimit": 150,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://monsido.com/",
+        "what": "Monsido"
+      },
+      {
+        "type": "test",
+        "which": "focInd",
+        "revealAll": false,
+        "allowedDelay": 250,
+        "withItems": true,
+        "what": "focus indicators"
+      },
+      {
+        "type": "test",
+        "which": "hover",
+        "headSize": 20,
+        "headSampleSize": 20,
+        "tailSampleSize": 15,
+        "withItems": true,
+        "what": "hover impacts"
+      },
+      {
+        "type": "test",
+        "which": "role",
+        "what": "validity and necessity of role assignments"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://monsido.com/",
+      "what": "Monsido",
+      "result": "https://monsido.com/"
+    },
+    {
+      "type": "test",
+      "which": "focInd",
+      "revealAll": false,
+      "allowedDelay": 250,
+      "withItems": true,
+      "what": "focus indicators",
+      "url": "https://monsido.com/",
+      "result": {
+        "totals": {
+          "total": 62,
+          "types": {
+            "indicatorMissing": {
+              "total": 5,
+              "tagNames": {
+                "DIV": 3,
+                "BUTTON": 2
+              }
+            },
+            "nonOutlinePresent": {
+              "total": 5,
+              "tagNames": {
+                "A": 2,
+                "BUTTON": 3
+              }
+            },
+            "outlinePresent": {
+              "total": 52,
+              "meanDelay": 17,
+              "tagNames": {
+                "BUTTON": 3,
+                "A": 44,
+                "INPUT": 1,
+                "LI": 4
+              }
+            }
+          }
+        },
+        "items": {
+          "indicatorMissing": [
+            {
+              "tagName": "DIV",
+              "text": ""
+            },
+            {
+              "tagName": "DIV",
+              "text": ""
+            },
+            {
+              "tagName": "BUTTON",
+              "text": ""
+            },
+            {
+              "tagName": "BUTTON",
+              "text": ""
+            },
+            {
+              "tagName": "DIV",
+              "text": ""
+            }
+          ],
+          "nonOutlinePresent": [
+            {
+              "tagName": "A",
+              "text": "Skip to Content"
+            },
+            {
+              "tagName": "A",
+              "text": "Powered by Monsido. The link opens in a new tab.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#34c6d0"
+            },
+            {
+              "tagName": "BUTTON",
+              "text": ""
+            },
+            {
+              "tagName": "BUTTON",
+              "text": ""
+            },
+            {
+              "tagName": "BUTTON",
+              "text": ""
+            }
+          ],
+          "outlinePresent": [
+            {
+              "tagName": "BUTTON",
+              "text": "Skip to Cookie banner",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Monsido is now part of CivicPlus®",
+              "delay": 0
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "×",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Scan My Site",
+              "delay": 100
+            },
+            {
+              "tagName": "INPUT",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "LI",
+              "text": "Web Accessibility Audit your site’s accessibility status and fix WCAG 2.1 and ADA issues with our we",
+              "delay": 0
+            },
+            {
+              "tagName": "LI",
+              "text": "Content Quality Assurance Improve your website user experience by identifying and fixing common erro",
+              "delay": 0
+            },
+            {
+              "tagName": "LI",
+              "text": "Data Privacy Take control of any personal data available on your website and demonstrate your effort",
+              "delay": 0
+            },
+            {
+              "tagName": "LI",
+              "text": "Website Performance Optimize your site speed by identifying elements that are slowing it down and di",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Platform Features",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Web Accessibility Solutions",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Our tech stack",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "See all customers",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Read Case Study",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Yes, Show Me!",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "<img src=\"https://assets.monsido.com/images/2022/06/10/monsido_powered-by-civicplus_logo.svg\" alt=\"M",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Quality Assurance",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility Compliance",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "SEO",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Heartbeat",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Work Smarter",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Product Training",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Live Support",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Help Center",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "About Us",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Contact Us",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Partner Programs",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Blog",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Career",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "About Optimere Solutions",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Request a Demo",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Request an Intro Call",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Get More Info",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Monsido's American support: +1 858-281-2185",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "APAC",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Monsido's Australian support: +61 2 9051 0590",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Monsido's European support: +45 89 88 85 05",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Monsido UK Office: +44 20 8138 8450",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Career\nWant to join the Monsido team? We're expanding globally, so check out our available positions",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Cookie Preferences",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Cookie Policy",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "General Terms & Conditions",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Data Protection",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility Statement",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://monsido.com/",
+      "what": "URL",
+      "result": "https://monsido.com/"
+    },
+    {
+      "type": "test",
+      "which": "hover",
+      "headSize": 20,
+      "headSampleSize": 20,
+      "tailSampleSize": 15,
+      "withItems": true,
+      "what": "hover-caused content changes",
+      "url": "https://monsido.com/",
+      "result": {
+        "totals": {
+          "triggers": 139,
+          "headTriggers": 20,
+          "tailTriggers": 119,
+          "impactTriggers": 17,
+          "additions": 0,
+          "removals": 0,
+          "opacityChanges": 17,
+          "opacityImpact": 17,
+          "unhoverables": 17
+        },
+        "items": {
+          "head": {
+            "impactTriggers": [
+              {
+                "tagName": "BUTTON",
+                "text": "×",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 1
+              }
+            ],
+            "unhoverables": [
+              {
+                "tagName": "BUTTON",
+                "id": "",
+                "text": "SkiptoCookiebanner"
+              },
+              {
+                "tagName": "A",
+                "id": "skip-to-content",
+                "text": "SkiptoContent"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "<imgsrc=\"https://assets.monsido.com/images/2021/04"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "<imgsrc=\"https://assets.monsido.com/images/2021/02"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "<imgsrc=\"https://assets.monsido.com/images/2021/02"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "<imgsrc=\"https://assets.monsido.com/images/2021/02"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "<imgsrc=\"https://assets.monsido.com/images/2021/02"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "<imgsrc=\"https://assets.monsido.com/images/2021/02"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "<imgsrc=\"https://assets.monsido.com/images/2022/03"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "<imgsrc=\"https://assets.monsido.com/images/2021/02"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "<imgsrc=\"https://assets.monsido.com/images/2021/02"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "<imgsrc=\"https://assets.monsido.com/images/2021/02"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "<imgsrc=\"https://assets.monsido.com/images/2021/02"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "<imgsrc=\"https://assets.monsido.com/images/2021/02"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "<imgsrc=\"https://assets.monsido.com/images/2021/02"
+              }
+            ]
+          },
+          "tail": {
+            "impactTriggers": [
+              {
+                "tagName": "BUTTON",
+                "text": "<spanclass=\"fafa-chevron-right\"aria-hidden=\"true\">",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 1
+              },
+              {
+                "tagName": "BUTTON",
+                "text": "<spanclass=\"fafa-chevron-left\"aria-hidden=\"true\"><",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 1
+              }
+            ],
+            "unhoverables": [
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "<imgsrc=\"https://assets.monsido.com/images/2021/02"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "<imgsrc=\"https://assets.monsido.com/images/2021/02"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://monsido.com/",
+      "what": "URL",
+      "result": "https://monsido.com/"
+    },
+    {
+      "type": "test",
+      "which": "role",
+      "what": "roles",
+      "url": "https://monsido.com/",
+      "result": {
+        "roleElements": 7,
+        "badRoleElements": 3,
+        "redundantRoleElements": 3,
+        "tagNames": {
+          "NAV": {
+            "navigation": {
+              "bad": 0,
+              "redundant": 1
+            },
+            "navigation ": {
+              "bad": 1,
+              "redundant": 0
+            }
+          },
+          "MAIN": {
+            "main": {
+              "bad": 0,
+              "redundant": 1
+            }
+          },
+          "DIV": {
+            "button": {
+              "bad": 2,
+              "redundant": 0
+            }
+          },
+          "BUTTON": {
+            "button": {
+              "bad": 0,
+              "redundant": 1
+            }
+          }
+        }
+      }
+    }
+  ],
+  "timeStamp": "49li4",
+  "startTime": "2022-07-16T21:59:10",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "hover",
+      37
+    ],
+    [
+      "focInd",
+      4
+    ],
+    [
+      "role",
+      0
+    ]
+  ],
+  "logCount": 3,
+  "logSize": 138,
+  "errorLogCount": 0,
+  "errorLogSize": 0,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-16T21:59:59",
+  "elapsedSeconds": 49
+}

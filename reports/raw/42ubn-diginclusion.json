@@ -301,7 +301,7 @@
       "url": "https://diginclusion.com/",
       "result": {
         "totals": {
-          "total": 5,
+          "total": 13,
           "types": {
             "indicatorMissing": {
               "total": 0,
@@ -312,10 +312,10 @@
               "tagNames": {}
             },
             "outlinePresent": {
-              "total": 5,
-              "meanDelay": 0,
+              "total": 13,
+              "meanDelay": 24,
               "tagNames": {
-                "A": 5
+                "A": 13
               }
             }
           }
@@ -326,18 +326,58 @@
           "outlinePresent": [
             {
               "tagName": "A",
-              "text": "hello@diginclusion.com",
+              "text": "Home",
               "delay": 0
             },
             {
               "tagName": "A",
-              "text": "02920001470",
+              "text": "How Can We Help?",
               "delay": 0
             },
             {
               "tagName": "A",
-              "text": "Shoot us an email here!",
+              "text": "HUGR",
               "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Training",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Our Work",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Blog",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "About Us",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Find Out More",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "We'll help you find out",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Find out more",
+              "delay": 105
+            },
+            {
+              "tagName": "A",
+              "text": "Find out More",
+              "delay": 100
             },
             {
               "tagName": "A",
@@ -460,8 +500,8 @@
       "url": "https://diginclusion.com/",
       "result": {
         "totals": {
-          "triggers": 5,
-          "headTriggers": 5,
+          "triggers": 18,
+          "headTriggers": 18,
           "tailTriggers": 0,
           "impactTriggers": 0,
           "additions": 0,
@@ -646,6 +686,7 @@
       "result": {
         "roleElements": 0,
         "badRoleElements": 0,
+        "redundantRoleElements": 0,
         "tagNames": {}
       }
     },

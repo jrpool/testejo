@@ -300,31 +300,37 @@
       "url": "https://convergeaccessibility.com/",
       "result": {
         "totals": {
-          "total": 39,
+          "total": 37,
           "types": {
             "indicatorMissing": {
-              "total": 0,
-              "tagNames": {}
+              "total": 1,
+              "tagNames": {
+                "INPUT": 1
+              }
             },
             "nonOutlinePresent": {
-              "total": 5,
+              "total": 3,
               "tagNames": {
-                "INPUT": 4,
-                "A": 1
+                "INPUT": 3
               }
             },
             "outlinePresent": {
-              "total": 34,
+              "total": 33,
               "meanDelay": 10,
               "tagNames": {
-                "A": 32,
+                "A": 31,
                 "INPUT": 2
               }
             }
           }
         },
         "items": {
-          "indicatorMissing": [],
+          "indicatorMissing": [
+            {
+              "tagName": "INPUT",
+              "text": ""
+            }
+          ],
           "nonOutlinePresent": [
             {
               "tagName": "INPUT",
@@ -337,14 +343,6 @@
             {
               "tagName": "INPUT",
               "text": ""
-            },
-            {
-              "tagName": "INPUT",
-              "text": ""
-            },
-            {
-              "tagName": "A",
-              "text": "Ok"
             }
           ],
           "outlinePresent": [
@@ -411,7 +409,7 @@
             {
               "tagName": "A",
               "text": "Watch Latest Video",
-              "delay": 100
+              "delay": 102
             },
             {
               "tagName": "A",
@@ -440,7 +438,7 @@
             },
             {
               "tagName": "A",
-              "text": "Belinda Banger, VP, Cole and Associates",
+              "text": "Avinash Dongre, Manager - ThoughtFocus",
               "delay": 0
             },
             {
@@ -511,11 +509,6 @@
             {
               "tagName": "A",
               "text": "Back to top ↑",
-              "delay": 0
-            },
-            {
-              "tagName": "A",
-              "text": "Privacy & Cookie Policy",
               "delay": 0
             }
           ]
@@ -1066,14 +1059,14 @@
       "url": "https://convergeaccessibility.com/",
       "result": {
         "totals": {
-          "triggers": 48,
+          "triggers": 46,
           "headTriggers": 20,
-          "tailTriggers": 28,
+          "tailTriggers": 26,
           "impactTriggers": 2,
-          "additions": 0,
+          "additions": 9,
           "removals": 0,
-          "opacityChanges": 2,
-          "opacityImpact": 16,
+          "opacityChanges": 1,
+          "opacityImpact": 8,
           "unhoverables": 3
         },
         "items": {
@@ -1082,10 +1075,10 @@
               {
                 "tagName": "LI",
                 "text": "ProductsandServicesLitigationServicesExpertAccessi",
-                "additions": 0,
+                "additions": 9,
                 "removals": 0,
-                "opacityChanges": 1,
-                "opacityImpact": 8
+                "opacityChanges": 0,
+                "opacityImpact": 0
               },
               {
                 "tagName": "A",
@@ -1413,11 +1406,15 @@
       "what": "roles",
       "url": "https://convergeaccessibility.com/",
       "result": {
-        "roleElements": 30,
+        "roleElements": 29,
         "badRoleElements": 8,
+        "redundantRoleElements": 0,
         "tagNames": {
           "A": {
-            "button": 8
+            "button": {
+              "bad": 8,
+              "redundant": 0
+            }
           }
         }
       }

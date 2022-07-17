@@ -303,19 +303,19 @@
           "total": 98,
           "types": {
             "indicatorMissing": {
-              "total": 0,
-              "tagNames": {}
-            },
-            "nonOutlinePresent": {
               "total": 10,
               "tagNames": {
                 "A": 8,
                 "INPUT": 2
               }
             },
+            "nonOutlinePresent": {
+              "total": 0,
+              "tagNames": {}
+            },
             "outlinePresent": {
               "total": 88,
-              "meanDelay": 101,
+              "meanDelay": 102,
               "tagNames": {
                 "A": 87,
                 "DIV": 1
@@ -324,8 +324,7 @@
           }
         },
         "items": {
-          "indicatorMissing": [],
-          "nonOutlinePresent": [
+          "indicatorMissing": [
             {
               "tagName": "A",
               "text": "Skip to Content ↵ENTER"
@@ -367,6 +366,7 @@
               "text": "Site Map"
             }
           ],
+          "nonOutlinePresent": [],
           "outlinePresent": [
             {
               "tagName": "A",
@@ -381,17 +381,27 @@
             {
               "tagName": "A",
               "text": "Login",
-              "delay": 100
+              "delay": 101
             },
             {
               "tagName": "A",
               "text": "Media Room",
-              "delay": 100
+              "delay": 103
             },
             {
               "tagName": "A",
               "text": "Contact Us",
-              "delay": 103
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 101
             },
             {
               "tagName": "A",
@@ -401,62 +411,52 @@
             {
               "tagName": "A",
               "text": "",
-              "delay": 100
-            },
-            {
-              "tagName": "A",
-              "text": "",
               "delay": 103
             },
             {
               "tagName": "A",
               "text": "",
-              "delay": 100
-            },
-            {
-              "tagName": "A",
-              "text": "",
-              "delay": 100
+              "delay": 103
             },
             {
               "tagName": "A",
               "text": "Home",
-              "delay": 102
+              "delay": 101
             },
             {
               "tagName": "A",
               "text": "Our Services",
-              "delay": 101
+              "delay": 100
             },
             {
               "tagName": "A",
               "text": "Abilities, Inc.",
-              "delay": 100
+              "delay": 104
             },
             {
               "tagName": "A",
               "text": "E-Learning",
-              "delay": 100
-            },
-            {
-              "tagName": "A",
-              "text": "Henry Viscardi School",
-              "delay": 102
-            },
-            {
-              "tagName": "A",
-              "text": "The Disability Entrepreneurship Institute",
-              "delay": 101
-            },
-            {
-              "tagName": "A",
-              "text": "Nathaniel H. Kornreich Technology Center",
               "delay": 103
             },
             {
               "tagName": "A",
+              "text": "Henry Viscardi School",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "The Disability Entrepreneurship Institute",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Nathaniel H. Kornreich Technology Center",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
               "text": "Services by Type",
-              "delay": 101
+              "delay": 102
             },
             {
               "tagName": "A",
@@ -466,22 +466,22 @@
             {
               "tagName": "A",
               "text": "Services for Businesses",
-              "delay": 101
+              "delay": 103
             },
             {
               "tagName": "A",
               "text": "How to Obtain Services",
-              "delay": 100
+              "delay": 101
             },
             {
               "tagName": "A",
               "text": "Our Stories",
-              "delay": 103
+              "delay": 101
             },
             {
               "tagName": "A",
               "text": "Adults",
-              "delay": 103
+              "delay": 100
             },
             {
               "tagName": "A",
@@ -491,12 +491,12 @@
             {
               "tagName": "A",
               "text": "Children",
-              "delay": 101
+              "delay": 100
             },
             {
               "tagName": "A",
               "text": "Donors",
-              "delay": 103
+              "delay": 100
             },
             {
               "tagName": "A",
@@ -506,7 +506,7 @@
             {
               "tagName": "A",
               "text": "Ways to Give",
-              "delay": 103
+              "delay": 102
             },
             {
               "tagName": "A",
@@ -516,7 +516,7 @@
             {
               "tagName": "A",
               "text": "Advocacy",
-              "delay": 102
+              "delay": 100
             },
             {
               "tagName": "A",
@@ -526,17 +526,17 @@
             {
               "tagName": "A",
               "text": "Share Your Story",
-              "delay": 101
+              "delay": 100
             },
             {
               "tagName": "A",
               "text": "Viscardi Alumni",
-              "delay": 101
+              "delay": 100
             },
             {
               "tagName": "A",
               "text": "News & Events",
-              "delay": 102
+              "delay": 103
             },
             {
               "tagName": "A",
@@ -546,12 +546,12 @@
             {
               "tagName": "A",
               "text": "Blog",
-              "delay": 102
+              "delay": 103
             },
             {
               "tagName": "A",
               "text": "Events",
-              "delay": 100
+              "delay": 101
             },
             {
               "tagName": "A",
@@ -561,7 +561,7 @@
             {
               "tagName": "A",
               "text": "Viscardi Voice Newsletter",
-              "delay": 101
+              "delay": 104
             },
             {
               "tagName": "A",
@@ -576,42 +576,42 @@
             {
               "tagName": "A",
               "text": "Web Accessibility",
-              "delay": 101
-            },
-            {
-              "tagName": "A",
-              "text": "Captioning & CART Services",
-              "delay": 103
-            },
-            {
-              "tagName": "A",
-              "text": "Audio Description",
-              "delay": 101
-            },
-            {
-              "tagName": "A",
-              "text": "Viscardi Multimedia Learning Center",
               "delay": 102
             },
             {
               "tagName": "A",
-              "text": "About",
+              "text": "Captioning & CART Services",
               "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Audio Description",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Viscardi Multimedia Learning Center",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "About",
+              "delay": 103
             },
             {
               "tagName": "A",
               "text": "History",
-              "delay": 100
+              "delay": 103
             },
             {
               "tagName": "A",
               "text": "Staff Leadership and Boards of Directors",
-              "delay": 101
+              "delay": 103
             },
             {
               "tagName": "A",
               "text": "Henry Viscardi Achievement Awards",
-              "delay": 101
+              "delay": 100
             },
             {
               "tagName": "A",
@@ -621,12 +621,12 @@
             {
               "tagName": "A",
               "text": "FAQs",
-              "delay": 102
+              "delay": 101
             },
             {
               "tagName": "A",
               "text": "Careers",
-              "delay": 100
+              "delay": 103
             },
             {
               "tagName": "A",
@@ -636,32 +636,32 @@
             {
               "tagName": "A",
               "text": "Contact Us",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "A",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "A",
               "delay": 101
             },
             {
               "tagName": "A",
               "text": "A",
-              "delay": 100
-            },
-            {
-              "tagName": "A",
-              "text": "A",
-              "delay": 100
-            },
-            {
-              "tagName": "A",
-              "text": "A",
-              "delay": 100
+              "delay": 101
             },
             {
               "tagName": "A",
               "text": "www.viscardicenter.org",
-              "delay": 100
+              "delay": 101
             },
             {
               "tagName": "A",
               "text": "Digital Accessibility Services",
-              "delay": 101
+              "delay": 103
             },
             {
               "tagName": "A",
@@ -671,12 +671,12 @@
             {
               "tagName": "A",
               "text": "here.",
-              "delay": 100
+              "delay": 101
             },
             {
               "tagName": "A",
               "text": "Document Accessibility",
-              "delay": 104
+              "delay": 101
             },
             {
               "tagName": "A",
@@ -686,22 +686,22 @@
             {
               "tagName": "A",
               "text": "Audio Description",
-              "delay": 103
-            },
-            {
-              "tagName": "A",
-              "text": "Viscardi Multimedia Learning Center",
-              "delay": 100
-            },
-            {
-              "tagName": "A",
-              "text": "Assistive Technology",
               "delay": 101
             },
             {
               "tagName": "A",
-              "text": "Education",
+              "text": "Viscardi Multimedia Learning Center",
               "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Assistive Technology",
+              "delay": 105
+            },
+            {
+              "tagName": "A",
+              "text": "Education",
+              "delay": 103
             },
             {
               "tagName": "A",
@@ -711,17 +711,17 @@
             {
               "tagName": "A",
               "text": "daservices@viscardicenter.org",
-              "delay": 101
+              "delay": 102
             },
             {
               "tagName": "A",
               "text": "Document Accessibility",
-              "delay": 101
+              "delay": 102
             },
             {
               "tagName": "A",
               "text": "Web Accessibility",
-              "delay": 101
+              "delay": 102
             },
             {
               "tagName": "A",
@@ -731,32 +731,32 @@
             {
               "tagName": "A",
               "text": "Audio Description",
-              "delay": 100
+              "delay": 103
             },
             {
               "tagName": "A",
               "text": "Viscardi Multimedia Learning Center",
-              "delay": 102
+              "delay": 101
             },
             {
               "tagName": "A",
               "text": "Digital Accessibility Interest Form",
-              "delay": 100
+              "delay": 102
             },
             {
               "tagName": "A",
               "text": "info@viscardicenter.org",
-              "delay": 104
+              "delay": 111
             },
             {
               "tagName": "A",
               "text": "Careers at the Viscardi Center",
-              "delay": 100
+              "delay": 101
             },
             {
               "tagName": "A",
               "text": "Staff Log in",
-              "delay": 104
+              "delay": 103
             },
             {
               "tagName": "A",
@@ -771,21 +771,6 @@
             {
               "tagName": "A",
               "text": "Sign up For Enews",
-              "delay": 105
-            },
-            {
-              "tagName": "A",
-              "text": "",
-              "delay": 100
-            },
-            {
-              "tagName": "A",
-              "text": "",
-              "delay": 103
-            },
-            {
-              "tagName": "A",
-              "text": "",
               "delay": 101
             },
             {
@@ -796,17 +781,32 @@
             {
               "tagName": "A",
               "text": "",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 104
+            },
+            {
+              "tagName": "A",
+              "text": "",
               "delay": 102
             },
             {
               "tagName": "A",
+              "text": "",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
               "text": "Infinite Media Corp.",
-              "delay": 102
+              "delay": 101
             },
             {
               "tagName": "DIV",
               "text": "",
-              "delay": 103
+              "delay": 104
             }
           ]
         }
@@ -2448,8 +2448,8 @@
           "additions": 0,
           "removals": 0,
           "opacityChanges": 30,
-          "opacityImpact": 0,
-          "unhoverables": 10
+          "opacityImpact": 248,
+          "unhoverables": 13
         },
         "items": {
           "head": {
@@ -2549,15 +2549,15 @@
             "impactTriggers": [
               {
                 "tagName": "LI",
-                "text": "<aclass=\"\"target=\"_blank\"href=\"https://www.instagr",
+                "text": "AboutHistoryStaffLeadershipandBoardsofDirectorsHen",
                 "additions": 0,
                 "removals": 0,
                 "opacityChanges": 1,
-                "opacityImpact": 0
+                "opacityImpact": 24
               },
               {
-                "tagName": "LI",
-                "text": "<aclass=\"\"target=\"_blank\"href=\"https://www.linkedi",
+                "tagName": "A",
+                "text": "<imgsrc=\"https://www.viscardicenter.org/wp-content",
                 "additions": 0,
                 "removals": 0,
                 "opacityChanges": 1,
@@ -2567,38 +2567,53 @@
             "unhoverables": [
               {
                 "tagName": "LI",
-                "id": "menu-item-1520",
-                "text": "ServicesbyAge/Audience"
-              },
-              {
-                "tagName": "LI",
-                "id": "menu-item-12735",
-                "text": "DocumentAccessibility"
+                "id": "menu-item-8518",
+                "text": "Donors"
               },
               {
                 "tagName": "A",
                 "id": "",
+                "text": "HowtoObtainServices"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "TogetherWeSoarCampaign"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Businesses"
+              },
+              {
+                "tagName": "LI",
+                "id": "menu-item-9149",
                 "text": "HenryViscardiAchievementAwards"
-              },
-              {
-                "tagName": "LI",
-                "id": "menu-item-1522",
-                "text": "ServicesforBusinesses"
-              },
-              {
-                "tagName": "A",
-                "id": "",
-                "text": "Advocacy"
-              },
-              {
-                "tagName": "LI",
-                "id": "menu-item-1539",
-                "text": "History"
               },
               {
                 "tagName": "LI",
                 "id": "menu-item-1537",
                 "text": "News"
+              },
+              {
+                "tagName": "LI",
+                "id": "menu-item-1536",
+                "text": "MediaRoom"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "ViscardiAlumni"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "WebAccessibility"
+              },
+              {
+                "tagName": "LI",
+                "id": "menu-item-13263",
+                "text": "ViscardiMultimediaLearningCenter"
               }
             ]
           }
@@ -2911,19 +2926,32 @@
       "url": "https://www.viscardicenter.org/digital-accessibility-services/web-accessibility/",
       "result": {
         "roleElements": 106,
-        "badRoleElements": 98,
+        "badRoleElements": 97,
+        "redundantRoleElements": 1,
         "tagNames": {
           "SPAN": {
-            "button": 33
+            "button": {
+              "bad": 33,
+              "redundant": 0
+            }
           },
           "ASIDE": {
-            "complementary": 1
+            "complementary": {
+              "bad": 0,
+              "redundant": 1
+            }
           },
           "DIV": {
-            "button": 59
+            "button": {
+              "bad": 59,
+              "redundant": 0
+            }
           },
           "A": {
-            "button": 5
+            "button": {
+              "bad": 5,
+              "redundant": 0
+            }
           }
         }
       }

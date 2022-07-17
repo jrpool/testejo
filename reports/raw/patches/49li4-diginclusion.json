@@ -1,0 +1,267 @@
+{
+  "id": "49li4-diginclusion",
+  "host": {
+    "id": "diginclusion",
+    "which": "https://diginclusion.com/",
+    "what": "Dig Inclusion"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-16T21:45:34"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-16T21:46:10"
+    }
+  ],
+  "script": {
+    "id": "tp12",
+    "what": "Alfa, Axe, HTML CodeSniffer, IBM, Tenon, WAVE, and 16 custom tests",
+    "strict": true,
+    "timeLimit": 150,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://diginclusion.com/",
+        "what": "Dig Inclusion"
+      },
+      {
+        "type": "test",
+        "which": "focInd",
+        "revealAll": false,
+        "allowedDelay": 250,
+        "withItems": true,
+        "what": "focus indicators"
+      },
+      {
+        "type": "test",
+        "which": "hover",
+        "headSize": 20,
+        "headSampleSize": 20,
+        "tailSampleSize": 15,
+        "withItems": true,
+        "what": "hover impacts"
+      },
+      {
+        "type": "test",
+        "which": "role",
+        "what": "validity and necessity of role assignments"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://diginclusion.com/",
+      "what": "Dig Inclusion",
+      "result": "https://diginclusion.com/"
+    },
+    {
+      "type": "test",
+      "which": "focInd",
+      "revealAll": false,
+      "allowedDelay": 250,
+      "withItems": true,
+      "what": "focus indicators",
+      "url": "https://diginclusion.com/",
+      "result": {
+        "totals": {
+          "total": 13,
+          "types": {
+            "indicatorMissing": {
+              "total": 0,
+              "tagNames": {}
+            },
+            "nonOutlinePresent": {
+              "total": 0,
+              "tagNames": {}
+            },
+            "outlinePresent": {
+              "total": 13,
+              "meanDelay": 24,
+              "tagNames": {
+                "A": 13
+              }
+            }
+          }
+        },
+        "items": {
+          "indicatorMissing": [],
+          "nonOutlinePresent": [],
+          "outlinePresent": [
+            {
+              "tagName": "A",
+              "text": "Home",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "How Can We Help?",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "HUGR",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Training",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Our Work",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Blog",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "About Us",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Find Out More",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "We'll help you find out",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Find out more",
+              "delay": 105
+            },
+            {
+              "tagName": "A",
+              "text": "Find out More",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Home",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Policies",
+              "delay": 0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://diginclusion.com/",
+      "what": "URL",
+      "result": "https://diginclusion.com/"
+    },
+    {
+      "type": "test",
+      "which": "hover",
+      "headSize": 20,
+      "headSampleSize": 20,
+      "tailSampleSize": 15,
+      "withItems": true,
+      "what": "hover-caused content changes",
+      "url": "https://diginclusion.com/",
+      "result": {
+        "totals": {
+          "triggers": 18,
+          "headTriggers": 18,
+          "tailTriggers": 0,
+          "impactTriggers": 0,
+          "additions": 0,
+          "removals": 0,
+          "opacityChanges": 0,
+          "opacityImpact": 0,
+          "unhoverables": 0
+        },
+        "items": {
+          "head": {
+            "impactTriggers": [],
+            "unhoverables": []
+          },
+          "tail": {
+            "impactTriggers": [],
+            "unhoverables": []
+          }
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://diginclusion.com/",
+      "what": "URL",
+      "result": "https://diginclusion.com/"
+    },
+    {
+      "type": "test",
+      "which": "role",
+      "what": "roles",
+      "url": "https://diginclusion.com/",
+      "result": {
+        "roleElements": 0,
+        "badRoleElements": 0,
+        "redundantRoleElements": 0,
+        "tagNames": {}
+      }
+    }
+  ],
+  "timeStamp": "49li4",
+  "startTime": "2022-07-16T21:45:34",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "hover",
+      25
+    ],
+    [
+      "focInd",
+      0
+    ],
+    [
+      "role",
+      0
+    ]
+  ],
+  "logCount": 0,
+  "logSize": 0,
+  "errorLogCount": 0,
+  "errorLogSize": 0,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-16T21:46:10",
+  "elapsedSeconds": 35
+}

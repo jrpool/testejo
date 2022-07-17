@@ -1,0 +1,404 @@
+{
+  "id": "49li4-primeaccess",
+  "host": {
+    "id": "primeaccess",
+    "which": "https://www.pac.bz/",
+    "what": "Prime Access Consulting"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-16T22:02:36"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-16T22:03:37"
+    }
+  ],
+  "script": {
+    "id": "tp12",
+    "what": "Alfa, Axe, HTML CodeSniffer, IBM, Tenon, WAVE, and 16 custom tests",
+    "strict": true,
+    "timeLimit": 150,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.pac.bz/",
+        "what": "Prime Access Consulting"
+      },
+      {
+        "type": "test",
+        "which": "focInd",
+        "revealAll": false,
+        "allowedDelay": 250,
+        "withItems": true,
+        "what": "focus indicators"
+      },
+      {
+        "type": "test",
+        "which": "hover",
+        "headSize": 20,
+        "headSampleSize": 20,
+        "tailSampleSize": 15,
+        "withItems": true,
+        "what": "hover impacts"
+      },
+      {
+        "type": "test",
+        "which": "role",
+        "what": "validity and necessity of role assignments"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.pac.bz/",
+      "what": "Prime Access Consulting",
+      "result": "https://www.pac.bz/"
+    },
+    {
+      "type": "test",
+      "which": "focInd",
+      "revealAll": false,
+      "allowedDelay": 250,
+      "withItems": true,
+      "what": "focus indicators",
+      "url": "https://www.pac.bz/",
+      "result": {
+        "totals": {
+          "total": 34,
+          "types": {
+            "indicatorMissing": {
+              "total": 3,
+              "tagNames": {
+                "A": 1,
+                "BUTTON": 1,
+                "INPUT": 1
+              }
+            },
+            "nonOutlinePresent": {
+              "total": 0,
+              "tagNames": {}
+            },
+            "outlinePresent": {
+              "total": 31,
+              "meanDelay": 95,
+              "tagNames": {
+                "A": 28,
+                "BUTTON": 2,
+                "INPUT": 1
+              }
+            }
+          }
+        },
+        "items": {
+          "indicatorMissing": [
+            {
+              "tagName": "A",
+              "text": "Brand Guidelines Evaluation for the Field Museum\nA review of visual brand identity to develop improv"
+            },
+            {
+              "tagName": "BUTTON",
+              "text": ""
+            },
+            {
+              "tagName": "INPUT",
+              "text": ""
+            }
+          ],
+          "nonOutlinePresent": [],
+          "outlinePresent": [
+            {
+              "tagName": "A",
+              "text": "Skip to content",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "PAC",
+              "delay": 104
+            },
+            {
+              "tagName": "A",
+              "text": "About",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Services",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Projects",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Resources",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "News",
+              "delay": 105
+            },
+            {
+              "tagName": "A",
+              "text": "Blog",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Contact",
+              "delay": 101
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "SearchClose",
+              "delay": 105
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "PAC’s Founder Receives Catalyst Award from the Themed Entertainment Association",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "More News",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "See all jobs",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "More about Sina",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Design Evaluations",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Kiosks and Interactives",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Lectures and Keynotes",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Legal",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Mobile Applications",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Research",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Strategy and Policy",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Web Accessibility",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Workshops and Trainings",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Prime Access Consulting",
+              "delay": 104
+            },
+            {
+              "tagName": "A",
+              "text": "Contact",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility",
+              "delay": 104
+            },
+            {
+              "tagName": "A",
+              "text": "Privacy Policy",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Twitter",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "LinkedIn",
+              "delay": 104
+            },
+            {
+              "tagName": "INPUT",
+              "text": "",
+              "delay": 101
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.pac.bz/",
+      "what": "URL",
+      "result": "https://www.pac.bz/"
+    },
+    {
+      "type": "test",
+      "which": "hover",
+      "headSize": 20,
+      "headSampleSize": 20,
+      "tailSampleSize": 15,
+      "withItems": true,
+      "what": "hover-caused content changes",
+      "url": "https://www.pac.bz/",
+      "result": {
+        "totals": {
+          "triggers": 104,
+          "headTriggers": 20,
+          "tailTriggers": 84,
+          "impactTriggers": 1,
+          "additions": 0,
+          "removals": 0,
+          "opacityChanges": 1,
+          "opacityImpact": 26,
+          "unhoverables": 1
+        },
+        "items": {
+          "head": {
+            "impactTriggers": [
+              {
+                "tagName": "A",
+                "text": "PAC",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 26
+              }
+            ],
+            "unhoverables": [
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Skiptocontent"
+              }
+            ]
+          },
+          "tail": {
+            "impactTriggers": [],
+            "unhoverables": []
+          }
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.pac.bz/",
+      "what": "URL",
+      "result": "https://www.pac.bz/"
+    },
+    {
+      "type": "test",
+      "which": "role",
+      "what": "roles",
+      "url": "https://www.pac.bz/",
+      "result": {
+        "roleElements": 3,
+        "badRoleElements": 1,
+        "redundantRoleElements": 1,
+        "tagNames": {
+          "MAIN": {
+            "main": {
+              "bad": 0,
+              "redundant": 1
+            }
+          },
+          "DIV": {
+            "status": {
+              "bad": 1,
+              "redundant": 0
+            }
+          }
+        }
+      }
+    }
+  ],
+  "timeStamp": "49li4",
+  "startTime": "2022-07-16T22:02:36",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "hover",
+      52
+    ],
+    [
+      "focInd",
+      4
+    ],
+    [
+      "role",
+      0
+    ]
+  ],
+  "logCount": 0,
+  "logSize": 0,
+  "errorLogCount": 0,
+  "errorLogSize": 0,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-16T22:03:37",
+  "elapsedSeconds": 61
+}

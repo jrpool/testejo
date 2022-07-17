@@ -1,0 +1,943 @@
+{
+  "id": "49li4-texthelp",
+  "host": {
+    "id": "texthelp",
+    "which": "https://www.texthelp.com/",
+    "what": "Texthelp"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-16T22:08:31"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-16T22:09:12"
+    }
+  ],
+  "script": {
+    "id": "tp12",
+    "what": "Alfa, Axe, HTML CodeSniffer, IBM, Tenon, WAVE, and 16 custom tests",
+    "strict": true,
+    "timeLimit": 150,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.texthelp.com/",
+        "what": "Texthelp"
+      },
+      {
+        "type": "test",
+        "which": "focInd",
+        "revealAll": false,
+        "allowedDelay": 250,
+        "withItems": true,
+        "what": "focus indicators"
+      },
+      {
+        "type": "test",
+        "which": "hover",
+        "headSize": 20,
+        "headSampleSize": 20,
+        "tailSampleSize": 15,
+        "withItems": true,
+        "what": "hover impacts"
+      },
+      {
+        "type": "test",
+        "which": "role",
+        "what": "validity and necessity of role assignments"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.texthelp.com/",
+      "what": "Texthelp",
+      "result": "https://www.texthelp.com/"
+    },
+    {
+      "type": "test",
+      "which": "focInd",
+      "revealAll": false,
+      "allowedDelay": 250,
+      "withItems": true,
+      "what": "focus indicators",
+      "url": "https://www.texthelp.com/",
+      "result": {
+        "totals": {
+          "total": 118,
+          "types": {
+            "indicatorMissing": {
+              "total": 0,
+              "tagNames": {}
+            },
+            "nonOutlinePresent": {
+              "total": 0,
+              "tagNames": {}
+            },
+            "outlinePresent": {
+              "total": 118,
+              "meanDelay": 37,
+              "tagNames": {
+                "A": 112,
+                "BUTTON": 5,
+                "INPUT": 1
+              }
+            }
+          }
+        },
+        "items": {
+          "indicatorMissing": [],
+          "nonOutlinePresent": [],
+          "outlinePresent": [
+            {
+              "tagName": "A",
+              "text": "Skip to content",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Texthelp Logo",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Products",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Read&Write",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Equatio",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Speechstream",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "WriQ",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Fluency Tutor",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "OrbitNote",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Read&Write",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "ReachDeck",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Login to your account",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "Pricing",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Education",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Overview",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Schools",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Higher Education",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Publishers",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Workplace",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Overview",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Public Sector",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Private Sector",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Not for profit",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Resources",
+              "delay": 0
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Guides & Articles",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Web Accessibility Guide",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Teaching Math Online",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Universal Design for Learning",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Neurodiversity",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Diversity & Inclusion",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Inclusive Digital Banking",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Reading Instruction",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Inclusive Education",
+              "delay": 0
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Type",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Impact Studies",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Customer Stories",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Webinars",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Events",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Podcasts",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Blog",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "News",
+              "delay": 0
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Need Help?",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Texthelp Academy",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Support",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Training",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Certification Program",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Toolmatcher",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Contact Us",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "About Texthelp",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Careers",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Search",
+              "delay": 0
+            },
+            {
+              "tagName": "INPUT",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Search",
+              "delay": 101
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Academy",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Contact Us",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "In Education",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "In the Workplace",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Read more",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Explore Education Solutions",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "More customer stories",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Learn more",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Try Now",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Learn more",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Try Equatio",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Learn more",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Try WriQ",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Learn more",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Try Fluency Tutor",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Learn more",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Try OrbitNote",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Learn more",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Explore Workplace Solutions",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "More customer stories",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Learn more",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Request a trial",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Learn more",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Request a trial",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "let us know",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Read&Write for Education",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Read&Write for Work",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Equatio",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "WriQ",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Fluency Tutor",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "ReachDeck",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Speechstream",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "OrbitNote",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Schools",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Higher Ed",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Govt & Public Sector",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Private Sector",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Non-Profit",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Vision & Mission",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Careers",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Press",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Contact Us",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Support",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Training",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Inclusive Digital Banking",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "UDL",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Web Accessibility",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Diversity & Inclusion",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Remote Working",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Reading Instruction",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "English (US)",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Privacy",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Terms",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Compliance",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Online Policy",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Information Security",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Product Privacy",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Cookies",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Modern Slavery",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.texthelp.com/",
+      "what": "URL",
+      "result": "https://www.texthelp.com/"
+    },
+    {
+      "type": "test",
+      "which": "hover",
+      "headSize": 20,
+      "headSampleSize": 20,
+      "tailSampleSize": 15,
+      "withItems": true,
+      "what": "hover-caused content changes",
+      "url": "https://www.texthelp.com/",
+      "result": {
+        "totals": {
+          "triggers": 215,
+          "headTriggers": 20,
+          "tailTriggers": 195,
+          "impactTriggers": 41,
+          "additions": 13,
+          "removals": 13,
+          "opacityChanges": 28,
+          "opacityImpact": 332,
+          "unhoverables": 21
+        },
+        "items": {
+          "head": {
+            "impactTriggers": [
+              {
+                "tagName": "LI",
+                "text": "ProductsViewAllProductsForEducationRead&WriteEquat",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 49
+              },
+              {
+                "tagName": "A",
+                "text": "Products",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 49
+              }
+            ],
+            "unhoverables": [
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Skiptocontent"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "Read&Write"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Read&Write"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "Equatio"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Equatio"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "Speechstream"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Speechstream"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "WriQ"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "WriQ"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "FluencyTutor"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "FluencyTutor"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "OrbitNote"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "OrbitNote"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "Read&Write"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Read&Write"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "ReachDeck"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "ReachDeck"
+              }
+            ]
+          },
+          "tail": {
+            "impactTriggers": [
+              {
+                "tagName": "LI",
+                "text": "WorkplaceOverviewPublicSectorPrivateSectorNotforpr",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 9
+              },
+              {
+                "tagName": "A",
+                "text": "Education",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 9
+              },
+              {
+                "tagName": "A",
+                "text": "TryNow",
+                "additions": 1,
+                "removals": 1,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              }
+            ],
+            "unhoverables": [
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Toolmatcher"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "Overview"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "TexthelpAcademy"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "TexthelpAcademy"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.texthelp.com/",
+      "what": "URL",
+      "result": "https://www.texthelp.com/"
+    },
+    {
+      "type": "test",
+      "which": "role",
+      "what": "roles",
+      "url": "https://www.texthelp.com/",
+      "result": {
+        "roleElements": 0,
+        "badRoleElements": 0,
+        "redundantRoleElements": 0,
+        "tagNames": {}
+      }
+    }
+  ],
+  "timeStamp": "49li4",
+  "startTime": "2022-07-16T22:08:31",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "hover",
+      28
+    ],
+    [
+      "focInd",
+      3
+    ],
+    [
+      "role",
+      0
+    ]
+  ],
+  "logCount": 3,
+  "logSize": 3,
+  "errorLogCount": 0,
+  "errorLogSize": 0,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-16T22:09:12",
+  "elapsedSeconds": 40
+}

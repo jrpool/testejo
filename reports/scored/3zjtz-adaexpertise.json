@@ -862,10 +862,10 @@
           "headTriggers": 20,
           "tailTriggers": 38,
           "impactTriggers": 2,
-          "additions": 0,
+          "additions": 48,
           "removals": 0,
-          "opacityChanges": 2,
-          "opacityImpact": 54,
+          "opacityChanges": 0,
+          "opacityImpact": 0,
           "unhoverables": 1
         },
         "items": {
@@ -874,18 +874,18 @@
               {
                 "tagName": "LI",
                 "text": "ServicesADALawsuitAssistanceOvercomingMythsAboutth",
-                "additions": 0,
+                "additions": 24,
                 "removals": 0,
-                "opacityChanges": 1,
-                "opacityImpact": 27
+                "opacityChanges": 0,
+                "opacityImpact": 0
               },
               {
                 "tagName": "A",
                 "text": "Services",
-                "additions": 0,
+                "additions": 24,
                 "removals": 0,
-                "opacityChanges": 1,
-                "opacityImpact": 27
+                "opacityChanges": 0,
+                "opacityImpact": 0
               }
             ],
             "unhoverables": [
@@ -1101,12 +1101,19 @@
       "result": {
         "roleElements": 10,
         "badRoleElements": 2,
+        "redundantRoleElements": 0,
         "tagNames": {
           "HEADER": {
-            "banner": 1
+            "banner": {
+              "bad": 1,
+              "redundant": 0
+            }
           },
           "DIV": {
-            "main": 1
+            "main": {
+              "bad": 1,
+              "redundant": 0
+            }
           }
         }
       }
@@ -7995,7 +8002,7 @@
   "endTime": "2022-07-06T02:52:42",
   "elapsedSeconds": 100,
   "score": {
-    "scoreProcID": "sp12a",
+    "scoreProcID": "sp12b",
     "logWeights": {
       "logCount": 0.5,
       "logSize": 0.01,
@@ -8020,8 +8027,8 @@
         "bulk": 1,
         "focAll": 18,
         "focOp": 18,
-        "hover": 11,
-        "role": 2,
+        "hover": 19,
+        "role": 4,
         "styleDiff": 2,
         "zIndex": 5
       },
@@ -8089,7 +8096,7 @@
         "hoverSurprise": {
           "testaro": {
             "hover": {
-              "score": 3,
+              "score": 5,
               "what": "Content changes caused by hovering"
             }
           }
@@ -8097,7 +8104,7 @@
         "roleBad": {
           "testaro": {
             "role": {
-              "score": 2,
+              "score": 3,
               "what": "Nonexistent or implicit-overriding role"
             }
           }
@@ -8164,7 +8171,7 @@
           "alfa": {
             "r74": {
               "score": 6,
-              "what": "Paragraph text has absolute font size"
+              "what": "Paragraph text has an absolute font size"
             }
           }
         },
@@ -8305,7 +8312,7 @@
     },
     "preventionScores": {},
     "summary": {
-      "total": 315,
+      "total": 318,
       "log": 51,
       "preventions": 0,
       "solos": 0,
@@ -8347,6 +8354,10 @@
           "score": 8
         },
         {
+          "groupName": "hoverSurprise",
+          "score": 7
+        },
+        {
           "groupName": "fontSmall",
           "score": 7
         },
@@ -8363,7 +8374,7 @@
           "score": 6
         },
         {
-          "groupName": "hoverSurprise",
+          "groupName": "roleBad",
           "score": 5
         },
         {
@@ -8373,10 +8384,6 @@
         {
           "groupName": "horizontalScrolling",
           "score": 5
-        },
-        {
-          "groupName": "roleBad",
-          "score": 4
         },
         {
           "groupName": "visibleBulk",

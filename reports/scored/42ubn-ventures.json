@@ -304,16 +304,18 @@
           "total": 27,
           "types": {
             "indicatorMissing": {
-              "total": 0,
-              "tagNames": {}
-            },
-            "nonOutlinePresent": {
-              "total": 27,
+              "total": 25,
               "tagNames": {
-                "A": 24,
+                "A": 22,
                 "IFRAME": 1,
                 "INPUT": 1,
                 "BUTTON": 1
+              }
+            },
+            "nonOutlinePresent": {
+              "total": 2,
+              "tagNames": {
+                "A": 2
               }
             },
             "outlinePresent": {
@@ -324,12 +326,7 @@
           }
         },
         "items": {
-          "indicatorMissing": [],
-          "nonOutlinePresent": [
-            {
-              "tagName": "A",
-              "text": "skip to Main Content"
-            },
+          "indicatorMissing": [
             {
               "tagName": "A",
               "text": "Facebook"
@@ -365,10 +362,6 @@
             {
               "tagName": "A",
               "text": "Get Started Now!"
-            },
-            {
-              "tagName": "A",
-              "text": "Sign-Up Now!"
             },
             {
               "tagName": "A",
@@ -433,6 +426,16 @@
             {
               "tagName": "BUTTON",
               "text": ""
+            }
+          ],
+          "nonOutlinePresent": [
+            {
+              "tagName": "A",
+              "text": "skip to Main Content"
+            },
+            {
+              "tagName": "A",
+              "text": "Sign-Up Now!"
             }
           ],
           "outlinePresent": []
@@ -893,7 +896,22 @@
               {
                 "tagName": "A",
                 "id": "",
+                "text": "WhyYouNeedIt"
+              },
+              {
+                "tagName": "LI",
+                "id": "sidr-id-menu-item-465",
+                "text": "WhyYouNeedIt"
+              },
+              {
+                "tagName": "A",
+                "id": "",
                 "text": "FAQs"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "WebsiteAccessibilityTips"
               },
               {
                 "tagName": "A",
@@ -902,23 +920,8 @@
               },
               {
                 "tagName": "LI",
-                "id": "sidr-id-menu-item-262",
-                "text": "WebsiteAccessibilityTips"
-              },
-              {
-                "tagName": "A",
-                "id": "",
-                "text": "WhyYouNeedIt"
-              },
-              {
-                "tagName": "A",
-                "id": "",
-                "text": "WebsiteAccessibilityTips"
-              },
-              {
-                "tagName": "BUTTON",
-                "id": "",
-                "text": "<spanclass=\"fafa-search\"></span>"
+                "id": "sidr-id-menu-item-261",
+                "text": "FAQs"
               },
               {
                 "tagName": "A",
@@ -926,9 +929,9 @@
                 "text": "×"
               },
               {
-                "tagName": "LI",
-                "id": "sidr-id-menu-item-263",
-                "text": "AboutUs"
+                "tagName": "BUTTON",
+                "id": "",
+                "text": "<spanclass=\"fafa-search\"></span>"
               }
             ]
           }
@@ -1168,9 +1171,13 @@
       "result": {
         "roleElements": 10,
         "badRoleElements": 8,
+        "redundantRoleElements": 0,
         "tagNames": {
           "A": {
-            "button": 8
+            "button": {
+              "bad": 8,
+              "redundant": 0
+            }
           }
         }
       }
@@ -7397,7 +7404,7 @@
   "endTime": "2022-07-09T14:18:01",
   "elapsedSeconds": 155,
   "score": {
-    "scoreProcID": "sp12a",
+    "scoreProcID": "sp12b",
     "logWeights": {
       "logCount": 0.5,
       "logSize": 0.01,
@@ -7420,11 +7427,11 @@
     "packageDetails": {
       "testaro": {
         "focAll": 2,
-        "focInd": 27,
+        "focInd": 77,
         "focOp": 10,
         "hover": 11,
         "linkUl": 36,
-        "role": 8,
+        "role": 16,
         "styleDiff": 17,
         "zIndex": 17
       },
@@ -7495,7 +7502,7 @@
         "focusIndication": {
           "testaro": {
             "focInd": {
-              "score": 27,
+              "score": 77,
               "what": "Focused element displaying no or nostandard focus indicator"
             }
           },
@@ -7533,7 +7540,7 @@
         "roleBad": {
           "testaro": {
             "role": {
-              "score": 6,
+              "score": 12,
               "what": "Nonexistent or implicit-overriding role"
             }
           }
@@ -7855,18 +7862,18 @@
     },
     "preventionScores": {},
     "summary": {
-      "total": 445,
+      "total": 499,
       "log": 80,
       "preventions": 0,
       "solos": 0,
       "groups": [
         {
-          "groupName": "contrastAA",
-          "score": 55
+          "groupName": "focusIndication",
+          "score": 91
         },
         {
-          "groupName": "focusIndication",
-          "score": 43
+          "groupName": "contrastAA",
+          "score": 55
         },
         {
           "groupName": "contentBeyondLandmarks",
@@ -7889,6 +7896,10 @@
           "score": 16
         },
         {
+          "groupName": "roleBad",
+          "score": 14
+        },
+        {
           "groupName": "contrastAAA",
           "score": 14
         },
@@ -7907,10 +7918,6 @@
         {
           "groupName": "contrastRisk",
           "score": 9
-        },
-        {
-          "groupName": "roleBad",
-          "score": 8
         },
         {
           "groupName": "headingStructure",

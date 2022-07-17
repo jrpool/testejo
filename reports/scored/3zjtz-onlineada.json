@@ -303,28 +303,31 @@
           "total": 27,
           "types": {
             "indicatorMissing": {
+              "total": 6,
+              "tagNames": {
+                "A": 6
+              }
+            },
+            "nonOutlinePresent": {
               "total": 0,
               "tagNames": {}
             },
-            "nonOutlinePresent": {
-              "total": 4,
-              "tagNames": {
-                "A": 4
-              }
-            },
             "outlinePresent": {
-              "total": 23,
-              "meanDelay": 24,
+              "total": 21,
+              "meanDelay": 7,
               "tagNames": {
-                "A": 22,
+                "A": 20,
                 "BUTTON": 1
               }
             }
           }
         },
         "items": {
-          "indicatorMissing": [],
-          "nonOutlinePresent": [
+          "indicatorMissing": [
+            {
+              "tagName": "A",
+              "text": "LEARN MORE"
+            },
             {
               "tagName": "A",
               "text": "JOIN THE PARTNER PROGRAM"
@@ -335,6 +338,10 @@
             },
             {
               "tagName": "A",
+              "text": "GET YOUR FREE ANALYSIS"
+            },
+            {
+              "tagName": "A",
               "text": "Check us out on linkedin Linkedin"
             },
             {
@@ -342,6 +349,7 @@
               "text": "Check us out on youtube Youtube"
             }
           ],
+          "nonOutlinePresent": [],
           "outlinePresent": [
             {
               "tagName": "A",
@@ -357,11 +365,6 @@
               "tagName": "BUTTON",
               "text": "",
               "delay": 0
-            },
-            {
-              "tagName": "A",
-              "text": "LEARN MORE",
-              "delay": 139
             },
             {
               "tagName": "A",
@@ -385,13 +388,8 @@
             },
             {
               "tagName": "A",
-              "text": "GET YOUR FREE ANALYSIS",
-              "delay": 301
-            },
-            {
-              "tagName": "A",
               "text": "GET CONNECTED",
-              "delay": 102
+              "delay": 101
             },
             {
               "tagName": "A",
@@ -1098,6 +1096,7 @@
       "result": {
         "roleElements": 1,
         "badRoleElements": 0,
+        "redundantRoleElements": 0,
         "tagNames": {}
       }
     },
@@ -10522,7 +10521,7 @@
   "endTime": "2022-07-06T01:38:32",
   "elapsedSeconds": 278,
   "score": {
-    "scoreProcID": "sp12a",
+    "scoreProcID": "sp12b",
     "logWeights": {
       "logCount": 0.5,
       "logSize": 0.01,
@@ -10546,7 +10545,7 @@
       "testaro": {
         "bulk": 1,
         "focAll": 44,
-        "focInd": 4,
+        "focInd": 18,
         "focOp": 5,
         "hover": 1,
         "linkUl": 30,
@@ -10633,7 +10632,7 @@
         "focusIndication": {
           "testaro": {
             "focInd": {
-              "score": 4,
+              "score": 18,
               "what": "Focused element displaying no or nostandard focus indicator"
             }
           }
@@ -10822,7 +10821,7 @@
           "alfa": {
             "r74": {
               "score": 12,
-              "what": "Paragraph text has absolute font size"
+              "what": "Paragraph text has an absolute font size"
             }
           }
         },
@@ -11019,7 +11018,7 @@
     },
     "preventionScores": {},
     "summary": {
-      "total": 576,
+      "total": 590,
       "log": 157,
       "preventions": 0,
       "solos": 0,
@@ -11039,6 +11038,10 @@
         {
           "groupName": "linkNoText",
           "score": 35
+        },
+        {
+          "groupName": "focusIndication",
+          "score": 20
         },
         {
           "groupName": "linkForcesNewWindow",
@@ -11083,10 +11086,6 @@
         {
           "groupName": "inconsistentStyles",
           "score": 8
-        },
-        {
-          "groupName": "focusIndication",
-          "score": 6
         },
         {
           "groupName": "focusableOperable",

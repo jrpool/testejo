@@ -1,0 +1,530 @@
+{
+  "id": "49li4-abilitynet",
+  "host": {
+    "id": "abilitynet",
+    "which": "https://www.abilitynet.org.uk/",
+    "what": "AbilityNet"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-16T21:16:58"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-16T21:18:20"
+    }
+  ],
+  "script": {
+    "id": "tp12",
+    "what": "Alfa, Axe, HTML CodeSniffer, IBM, Tenon, WAVE, and 16 custom tests",
+    "strict": true,
+    "timeLimit": 150,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.abilitynet.org.uk/",
+        "what": "AbilityNet"
+      },
+      {
+        "type": "test",
+        "which": "focInd",
+        "revealAll": false,
+        "allowedDelay": 250,
+        "withItems": true,
+        "what": "focus indicators"
+      },
+      {
+        "type": "test",
+        "which": "hover",
+        "headSize": 20,
+        "headSampleSize": 20,
+        "tailSampleSize": 15,
+        "withItems": true,
+        "what": "hover impacts"
+      },
+      {
+        "type": "test",
+        "which": "role",
+        "what": "validity and necessity of role assignments"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.abilitynet.org.uk/",
+      "what": "AbilityNet",
+      "result": "https://www.abilitynet.org.uk/"
+    },
+    {
+      "type": "test",
+      "which": "focInd",
+      "revealAll": false,
+      "allowedDelay": 250,
+      "withItems": true,
+      "what": "focus indicators",
+      "url": "https://www.abilitynet.org.uk/",
+      "result": {
+        "totals": {
+          "total": 66,
+          "types": {
+            "indicatorMissing": {
+              "total": 3,
+              "tagNames": {
+                "INPUT": 2,
+                "IFRAME": 1
+              }
+            },
+            "nonOutlinePresent": {
+              "total": 63,
+              "tagNames": {
+                "A": 62,
+                "BUTTON": 1
+              }
+            },
+            "outlinePresent": {
+              "total": 0,
+              "meanDelay": 0,
+              "tagNames": {}
+            }
+          }
+        },
+        "items": {
+          "indicatorMissing": [
+            {
+              "tagName": "INPUT",
+              "text": ""
+            },
+            {
+              "tagName": "INPUT",
+              "text": ""
+            },
+            {
+              "tagName": "IFRAME",
+              "text": ""
+            }
+          ],
+          "nonOutlinePresent": [
+            {
+              "tagName": "A",
+              "text": ""
+            },
+            {
+              "tagName": "A",
+              "text": "About"
+            },
+            {
+              "tagName": "A",
+              "text": "News & Blogs"
+            },
+            {
+              "tagName": "A",
+              "text": "Training"
+            },
+            {
+              "tagName": "A",
+              "text": "Support us"
+            },
+            {
+              "tagName": "A",
+              "text": "Contact"
+            },
+            {
+              "tagName": "A",
+              "text": "Jobs"
+            },
+            {
+              "tagName": "A",
+              "text": "DSA and HE Services"
+            },
+            {
+              "tagName": "A",
+              "text": "Free Tech Support and Information"
+            },
+            {
+              "tagName": "A",
+              "text": "Digital Accessibility"
+            },
+            {
+              "tagName": "A",
+              "text": "Workplace Services"
+            },
+            {
+              "tagName": "A",
+              "text": "My Computer My Way"
+            },
+            {
+              "tagName": "A",
+              "text": "Free higher education webinar Join AbilityNet and University of Greenwich on Tuesday 19 July at 1pm "
+            },
+            {
+              "tagName": "A",
+              "text": ""
+            },
+            {
+              "tagName": "A",
+              "text": "Pros and cons of wearables for people with sight loss"
+            },
+            {
+              "tagName": "A",
+              "text": "Download our free Digital Accessibility Maturity Model"
+            },
+            {
+              "tagName": "A",
+              "text": "AbilityNet pledges to end digital poverty by 2030"
+            },
+            {
+              "tagName": "A",
+              "text": "affordable online training courses"
+            },
+            {
+              "tagName": "A",
+              "text": "How to do accessible, inclusive onboarding"
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility testing in mobile apps"
+            },
+            {
+              "tagName": "A",
+              "text": "Digital Accessibility Legislation"
+            },
+            {
+              "tagName": "A",
+              "text": "How to develop inclusive, accessible career progression practices"
+            },
+            {
+              "tagName": "A",
+              "text": "PDF accessibility"
+            },
+            {
+              "tagName": "A",
+              "text": "How to develop accessible, inclusive collaboration and teamwork"
+            },
+            {
+              "tagName": "A",
+              "text": "Accessible translation and localisation"
+            },
+            {
+              "tagName": "A",
+              "text": "Accessible social media"
+            },
+            {
+              "tagName": "A",
+              "text": "Understanding accessibility evaluations and testing results"
+            },
+            {
+              "tagName": "A",
+              "text": "How to run accessible, inclusive hybrid meetings and events in Zoom, Teams and more"
+            },
+            {
+              "tagName": "A",
+              "text": "DSA and HE Services Helping disabled students achieve their goals in higher and further education"
+            },
+            {
+              "tagName": "A",
+              "text": "IT Support at Home Our friendly and trustworthy IT volunteers help you get the most from your tech a"
+            },
+            {
+              "tagName": "A",
+              "text": "Free Resources Use our factsheets and other free resources to learn more about disability and techno"
+            },
+            {
+              "tagName": "A",
+              "text": "Digital Accessibility We help you build websites and apps that are accessible and legally compliant"
+            },
+            {
+              "tagName": "A",
+              "text": "Workplace Services Working with employees and employers to help disabled people achieve their true p"
+            },
+            {
+              "tagName": "A",
+              "text": "TechShare Pro Our annual accessibility and inclusive design conference for digital professionals"
+            },
+            {
+              "tagName": "A",
+              "text": "My Computer My Way Our free guide to every accessibility feature on every laptop, desktop tablet and"
+            },
+            {
+              "tagName": "A",
+              "text": "Tech4Good Awards Our annual Awards event that celebrates the amazing people who use tech to make the"
+            },
+            {
+              "tagName": "A",
+              "text": ""
+            },
+            {
+              "tagName": "A",
+              "text": ""
+            },
+            {
+              "tagName": "A",
+              "text": ""
+            },
+            {
+              "tagName": "A",
+              "text": "Learn new skills at our free webinars Use our library of free webinar recordings to learn more about"
+            },
+            {
+              "tagName": "A",
+              "text": "Contact Us Speak to us for advice and information, or if you have any questions about disability and"
+            },
+            {
+              "tagName": "A",
+              "text": "AbilityNet Factsheets Our factsheets provide advice and information about how technology can help pe"
+            },
+            {
+              "tagName": "A",
+              "text": "My Computer My Way AbilityNet's easy to use online guide allows you to discover small changes that c"
+            },
+            {
+              "tagName": "A",
+              "text": "Keep in touch Sign up for our email news"
+            },
+            {
+              "tagName": "A",
+              "text": "Current jobs See our latest vacancies"
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Back to top"
+            },
+            {
+              "tagName": "A",
+              "text": "0800 048 7642"
+            },
+            {
+              "tagName": "A",
+              "text": "Sign up for our newsletter"
+            },
+            {
+              "tagName": "A",
+              "text": "DSA and HE Services"
+            },
+            {
+              "tagName": "A",
+              "text": "IT Support at Home"
+            },
+            {
+              "tagName": "A",
+              "text": "Free Resources"
+            },
+            {
+              "tagName": "A",
+              "text": "Digital Accessibility"
+            },
+            {
+              "tagName": "A",
+              "text": "Workplace Services"
+            },
+            {
+              "tagName": "A",
+              "text": "My Computer My Way"
+            },
+            {
+              "tagName": "A",
+              "text": "Contact"
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility Statement"
+            },
+            {
+              "tagName": "A",
+              "text": "Privacy Policy"
+            },
+            {
+              "tagName": "A",
+              "text": "Site Map"
+            },
+            {
+              "tagName": "A",
+              "text": "Legal"
+            },
+            {
+              "tagName": "A",
+              "text": "Support us"
+            },
+            {
+              "tagName": "A",
+              "text": "News & Blogs"
+            },
+            {
+              "tagName": "A",
+              "text": "About"
+            },
+            {
+              "tagName": "A",
+              "text": "User Login"
+            }
+          ],
+          "outlinePresent": []
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.abilitynet.org.uk/",
+      "what": "URL",
+      "result": "https://www.abilitynet.org.uk/"
+    },
+    {
+      "type": "test",
+      "which": "hover",
+      "headSize": 20,
+      "headSampleSize": 20,
+      "tailSampleSize": 15,
+      "withItems": true,
+      "what": "hover-caused content changes",
+      "url": "https://www.abilitynet.org.uk/",
+      "result": {
+        "totals": {
+          "triggers": 100,
+          "headTriggers": 20,
+          "tailTriggers": 80,
+          "impactTriggers": 8,
+          "additions": 159,
+          "removals": 62,
+          "opacityChanges": 0,
+          "opacityImpact": 0,
+          "unhoverables": 1
+        },
+        "items": {
+          "head": {
+            "impactTriggers": [
+              {
+                "tagName": "LI",
+                "text": "DSAandHEServicesAboutourDSAServicesBookyourDSANeed",
+                "additions": 29,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "LI",
+                "text": "FreeTechSupportandInformationAboutourfreetechsuppo",
+                "additions": 33,
+                "removals": 29,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "LI",
+                "text": "DigitalAccessibilityAboutourAccessibilityServicesO",
+                "additions": 33,
+                "removals": 33,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              }
+            ],
+            "unhoverables": [
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Skiptocontent"
+              }
+            ]
+          },
+          "tail": {
+            "impactTriggers": [
+              {
+                "tagName": "LI",
+                "text": "MyComputerMyWayMyComputerMyWayVision-seeingthescre",
+                "additions": 12,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              }
+            ],
+            "unhoverables": []
+          }
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.abilitynet.org.uk/",
+      "what": "URL",
+      "result": "https://www.abilitynet.org.uk/"
+    },
+    {
+      "type": "test",
+      "which": "role",
+      "what": "roles",
+      "url": "https://www.abilitynet.org.uk/",
+      "result": {
+        "roleElements": 13,
+        "badRoleElements": 5,
+        "redundantRoleElements": 2,
+        "tagNames": {
+          "NAV": {
+            "navigation": {
+              "bad": 0,
+              "redundant": 1
+            }
+          },
+          "A": {
+            "button": {
+              "bad": 5,
+              "redundant": 0
+            }
+          },
+          "MAIN": {
+            "main": {
+              "bad": 0,
+              "redundant": 1
+            }
+          }
+        }
+      }
+    }
+  ],
+  "timeStamp": "49li4",
+  "startTime": "2022-07-16T21:16:58",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "hover",
+      47
+    ],
+    [
+      "focInd",
+      20
+    ],
+    [
+      "role",
+      0
+    ]
+  ],
+  "logCount": 45,
+  "logSize": 6465,
+  "errorLogCount": 24,
+  "errorLogSize": 1230,
+  "prohibitedCount": 3,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-16T21:18:20",
+  "elapsedSeconds": 82
+}

@@ -304,15 +304,15 @@
           "total": 42,
           "types": {
             "indicatorMissing": {
-              "total": 0,
-              "tagNames": {}
-            },
-            "nonOutlinePresent": {
               "total": 2,
               "tagNames": {
                 "A": 1,
                 "DIV": 1
               }
+            },
+            "nonOutlinePresent": {
+              "total": 0,
+              "tagNames": {}
             },
             "outlinePresent": {
               "total": 40,
@@ -325,8 +325,7 @@
           }
         },
         "items": {
-          "indicatorMissing": [],
-          "nonOutlinePresent": [
+          "indicatorMissing": [
             {
               "tagName": "A",
               "text": ""
@@ -336,6 +335,7 @@
               "text": ""
             }
           ],
+          "nonOutlinePresent": [],
           "outlinePresent": [
             {
               "tagName": "A",
@@ -345,7 +345,7 @@
             {
               "tagName": "BUTTON",
               "text": "",
-              "delay": 102
+              "delay": 106
             },
             {
               "tagName": "A",
@@ -375,7 +375,7 @@
             {
               "tagName": "BUTTON",
               "text": "Get Started",
-              "delay": 101
+              "delay": 102
             },
             {
               "tagName": "BUTTON",
@@ -385,27 +385,27 @@
             {
               "tagName": "A",
               "text": "Learn About Our Approach to Digital Quality",
-              "delay": 101
+              "delay": 104
             },
             {
               "tagName": "A",
               "text": "See How We Help Your Industry",
-              "delay": 100
+              "delay": 101
             },
             {
               "tagName": "A",
               "text": "Learn How We Help Brands Like Yours",
-              "delay": 103
+              "delay": 101
             },
             {
               "tagName": "A",
               "text": "Register Now",
-              "delay": 101
+              "delay": 104
             },
             {
               "tagName": "A",
               "text": "Learn More About Our Community",
-              "delay": 101
+              "delay": 100
             },
             {
               "tagName": "A",
@@ -1497,12 +1497,12 @@
           "triggers": 62,
           "headTriggers": 20,
           "tailTriggers": 42,
-          "impactTriggers": 5,
-          "additions": 0,
+          "impactTriggers": 9,
+          "additions": 510,
           "removals": 0,
-          "opacityChanges": 25,
+          "opacityChanges": 1,
           "opacityImpact": 0,
-          "unhoverables": 1
+          "unhoverables": 2
         },
         "items": {
           "head": {
@@ -1510,33 +1510,65 @@
               {
                 "tagName": "LI",
                 "text": "WhyApplauseTheApplausePlatformThecomprehensiveplat",
-                "additions": 0,
+                "additions": 34,
                 "removals": 0,
-                "opacityChanges": 6,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "BUTTON",
+                "text": "WhyApplause",
+                "additions": 40,
+                "removals": 0,
+                "opacityChanges": 0,
                 "opacityImpact": 0
               },
               {
                 "tagName": "LI",
                 "text": "OurSolutionsPlatformFeaturesApplauseCodelessAutoma",
-                "additions": 0,
+                "additions": 136,
                 "removals": 0,
-                "opacityChanges": 5,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "BUTTON",
+                "text": "OurSolutions",
+                "additions": 141,
+                "removals": 0,
+                "opacityChanges": 0,
                 "opacityImpact": 0
               },
               {
                 "tagName": "LI",
                 "text": "AboutUsWhoWeAreLearnmoreaboutApplause'shistory,our",
-                "additions": 0,
+                "additions": 34,
                 "removals": 0,
-                "opacityChanges": 6,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "BUTTON",
+                "text": "AboutUs",
+                "additions": 40,
+                "removals": 0,
+                "opacityChanges": 0,
                 "opacityImpact": 0
               },
               {
                 "tagName": "LI",
                 "text": "ResourcesBlogReadthelatestindustrynewsonremotetest",
-                "additions": 0,
+                "additions": 39,
                 "removals": 0,
-                "opacityChanges": 7,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "BUTTON",
+                "text": "Resources",
+                "additions": 46,
+                "removals": 0,
+                "opacityChanges": 0,
                 "opacityImpact": 0
               },
               {
@@ -1557,6 +1589,11 @@
                 "tagName": "BUTTON",
                 "id": "wistia-0sxiqh1891_popover_popover_close_button",
                 "text": "<imgalt=\"Clicktoclosevideo\"style=\"height:34px;widt"
+              },
+              {
+                "tagName": "A",
+                "id": "wistia_94",
+                "text": "<divid=\"wistia_112.thumbnail\"tabindex=\"-1\"style=\"c"
               }
             ]
           }
@@ -1908,25 +1945,44 @@
       "url": "https://www.applause.com/",
       "result": {
         "roleElements": 30,
-        "badRoleElements": 15,
+        "badRoleElements": 12,
+        "redundantRoleElements": 3,
         "tagNames": {
           "HEADER": {
-            "banner": 1
+            "banner": {
+              "bad": 1,
+              "redundant": 0
+            }
           },
           "MAIN": {
-            "main": 1
+            "main": {
+              "bad": 0,
+              "redundant": 1
+            }
           },
           "A": {
-            "button": 10
+            "button": {
+              "bad": 10,
+              "redundant": 0
+            }
           },
           "NAV": {
-            "navigation": 1
+            "navigation": {
+              "bad": 0,
+              "redundant": 1
+            }
           },
           "DIV": {
-            "button": 1
+            "button": {
+              "bad": 1,
+              "redundant": 0
+            }
           },
           "BUTTON": {
-            "button": 1
+            "button": {
+              "bad": 0,
+              "redundant": 1
+            }
           }
         }
       }

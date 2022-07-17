@@ -1,0 +1,218 @@
+{
+  "id": "49li4-iaap",
+  "host": {
+    "id": "iaap",
+    "which": "https://www.accessibilityassociation.org/s/",
+    "what": "IAAP"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-16T21:53:45"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-16T21:54:34"
+    }
+  ],
+  "script": {
+    "id": "tp12",
+    "what": "Alfa, Axe, HTML CodeSniffer, IBM, Tenon, WAVE, and 16 custom tests",
+    "strict": true,
+    "timeLimit": 150,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.accessibilityassociation.org/s/",
+        "what": "IAAP"
+      },
+      {
+        "type": "test",
+        "which": "focInd",
+        "revealAll": false,
+        "allowedDelay": 250,
+        "withItems": true,
+        "what": "focus indicators"
+      },
+      {
+        "type": "test",
+        "which": "hover",
+        "headSize": 20,
+        "headSampleSize": 20,
+        "tailSampleSize": 15,
+        "withItems": true,
+        "what": "hover impacts"
+      },
+      {
+        "type": "test",
+        "which": "role",
+        "what": "validity and necessity of role assignments"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.accessibilityassociation.org/s/",
+      "what": "IAAP",
+      "result": "https://www.accessibilityassociation.org/s/"
+    },
+    {
+      "type": "test",
+      "which": "focInd",
+      "revealAll": false,
+      "allowedDelay": 250,
+      "withItems": true,
+      "what": "focus indicators",
+      "url": "https://www.accessibilityassociation.org/s/",
+      "result": {
+        "totals": {
+          "total": 0,
+          "types": {
+            "indicatorMissing": {
+              "total": 0,
+              "tagNames": {}
+            },
+            "nonOutlinePresent": {
+              "total": 0,
+              "tagNames": {}
+            },
+            "outlinePresent": {
+              "total": 0,
+              "meanDelay": 0,
+              "tagNames": {}
+            }
+          }
+        },
+        "items": {
+          "indicatorMissing": [],
+          "nonOutlinePresent": [],
+          "outlinePresent": []
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.accessibilityassociation.org/s/",
+      "what": "URL",
+      "result": "https://www.accessibilityassociation.org/s/"
+    },
+    {
+      "type": "test",
+      "which": "hover",
+      "headSize": 20,
+      "headSampleSize": 20,
+      "tailSampleSize": 15,
+      "withItems": true,
+      "what": "hover-caused content changes",
+      "url": "https://www.accessibilityassociation.org/s/",
+      "result": {
+        "totals": {
+          "triggers": 0,
+          "headTriggers": 0,
+          "tailTriggers": 0,
+          "impactTriggers": 0,
+          "additions": 0,
+          "removals": 0,
+          "opacityChanges": 0,
+          "opacityImpact": 0,
+          "unhoverables": 0
+        },
+        "items": {
+          "head": {
+            "impactTriggers": [],
+            "unhoverables": []
+          },
+          "tail": {
+            "impactTriggers": [],
+            "unhoverables": []
+          }
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.accessibilityassociation.org/s/",
+      "what": "URL",
+      "result": "https://www.accessibilityassociation.org/s/"
+    },
+    {
+      "type": "test",
+      "which": "role",
+      "what": "roles",
+      "url": "https://www.accessibilityassociation.org/s/",
+      "result": {
+        "roleElements": 3,
+        "badRoleElements": 2,
+        "redundantRoleElements": 1,
+        "tagNames": {
+          "HEADER": {
+            "banner": {
+              "bad": 1,
+              "redundant": 0
+            }
+          },
+          "DIV": {
+            "main": {
+              "bad": 1,
+              "redundant": 0
+            }
+          },
+          "BUTTON": {
+            "button": {
+              "bad": 0,
+              "redundant": 1
+            }
+          }
+        }
+      }
+    }
+  ],
+  "timeStamp": "49li4",
+  "startTime": "2022-07-16T21:53:45",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "focInd",
+      0
+    ],
+    [
+      "hover",
+      0
+    ],
+    [
+      "role",
+      0
+    ]
+  ],
+  "logCount": 19,
+  "logSize": 3661,
+  "errorLogCount": 9,
+  "errorLogSize": 2643,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 3,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-16T21:54:34",
+  "elapsedSeconds": 49
+}

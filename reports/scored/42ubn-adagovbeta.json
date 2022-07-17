@@ -329,7 +329,7 @@
             {
               "tagName": "A",
               "text": "Skip to main content",
-              "delay": 101
+              "delay": 106
             },
             {
               "tagName": "BUTTON",
@@ -1226,6 +1226,7 @@
       "result": {
         "roleElements": 8,
         "badRoleElements": 0,
+        "redundantRoleElements": 0,
         "tagNames": {}
       }
     },
@@ -3862,7 +3863,7 @@
   "endTime": "2022-07-09T14:20:02",
   "elapsedSeconds": 101,
   "score": {
-    "scoreProcID": "sp12a",
+    "scoreProcID": "sp12b",
     "logWeights": {
       "logCount": 0.5,
       "logSize": 0.01,

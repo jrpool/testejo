@@ -303,19 +303,19 @@
           "total": 34,
           "types": {
             "indicatorMissing": {
-              "total": 0,
-              "tagNames": {}
-            },
-            "nonOutlinePresent": {
               "total": 25,
               "tagNames": {
                 "BUTTON": 4,
                 "A": 21
               }
             },
+            "nonOutlinePresent": {
+              "total": 0,
+              "tagNames": {}
+            },
             "outlinePresent": {
               "total": 9,
-              "meanDelay": 90,
+              "meanDelay": 89,
               "tagNames": {
                 "A": 9
               }
@@ -323,8 +323,7 @@
           }
         },
         "items": {
-          "indicatorMissing": [],
-          "nonOutlinePresent": [
+          "indicatorMissing": [
             {
               "tagName": "BUTTON",
               "text": "Why Evinced"
@@ -426,6 +425,7 @@
               "text": "<img alt=\"Level AA conformance, W3C WAI Web Content Accessibility Guidelines 2.1\" srcSet=\"/wcag/wcag"
             }
           ],
+          "nonOutlinePresent": [],
           "outlinePresent": [
             {
               "tagName": "A",
@@ -435,7 +435,7 @@
             {
               "tagName": "A",
               "text": "Get Started",
-              "delay": 102
+              "delay": 101
             },
             {
               "tagName": "A",
@@ -450,27 +450,27 @@
             {
               "tagName": "A",
               "text": "Learn More",
-              "delay": 102
-            },
-            {
-              "tagName": "A",
-              "text": "Learn More",
-              "delay": 101
-            },
-            {
-              "tagName": "A",
-              "text": "Learn More",
               "delay": 103
             },
             {
               "tagName": "A",
               "text": "Learn More",
-              "delay": 104
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Learn More",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Learn More",
+              "delay": 101
             },
             {
               "tagName": "A",
               "text": "Get Started",
-              "delay": 101
+              "delay": 100
             }
           ]
         }
@@ -999,10 +999,10 @@
           "triggers": 96,
           "headTriggers": 20,
           "tailTriggers": 76,
-          "impactTriggers": 5,
+          "impactTriggers": 10,
           "additions": 0,
           "removals": 0,
-          "opacityChanges": 5,
+          "opacityChanges": 10,
           "opacityImpact": 0,
           "unhoverables": 12
         },
@@ -1094,27 +1094,36 @@
             ]
           },
           "tail": {
-            "impactTriggers": [],
+            "impactTriggers": [
+              {
+                "tagName": "LI",
+                "text": "DevelopersDocumentationKnowledgeBaseWebinarsBlog",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 0
+              }
+            ],
             "unhoverables": [
               {
-                "tagName": "LI",
+                "tagName": "A",
                 "id": "",
-                "text": "Webinars"
+                "text": "KnowledgeBase"
               },
               {
-                "tagName": "LI",
+                "tagName": "A",
                 "id": "",
                 "text": "Careers"
               },
               {
-                "tagName": "LI",
+                "tagName": "A",
                 "id": "",
-                "text": "Blog"
+                "text": "Documentation"
               },
               {
-                "tagName": "LI",
+                "tagName": "A",
                 "id": "",
-                "text": "About"
+                "text": "GetStarted"
               }
             ]
           }
@@ -1368,6 +1377,7 @@
       "result": {
         "roleElements": 1,
         "badRoleElements": 0,
+        "redundantRoleElements": 0,
         "tagNames": {}
       }
     },

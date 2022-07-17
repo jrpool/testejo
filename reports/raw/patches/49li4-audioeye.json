@@ -1,0 +1,630 @@
+{
+  "id": "49li4-audioeye",
+  "host": {
+    "id": "audioeye",
+    "which": "https://www.audioeye.com/",
+    "what": "AudioEye"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-16T21:34:19"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-16T21:39:49"
+    }
+  ],
+  "script": {
+    "id": "tp12",
+    "what": "Alfa, Axe, HTML CodeSniffer, IBM, Tenon, WAVE, and 16 custom tests",
+    "strict": true,
+    "timeLimit": 150,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.audioeye.com/",
+        "what": "AudioEye"
+      },
+      {
+        "type": "test",
+        "which": "focInd",
+        "revealAll": false,
+        "allowedDelay": 250,
+        "withItems": true,
+        "what": "focus indicators"
+      },
+      {
+        "type": "test",
+        "which": "hover",
+        "headSize": 20,
+        "headSampleSize": 20,
+        "tailSampleSize": 15,
+        "withItems": true,
+        "what": "hover impacts"
+      },
+      {
+        "type": "test",
+        "which": "role",
+        "what": "validity and necessity of role assignments"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.audioeye.com/",
+      "what": "AudioEye",
+      "result": "https://www.audioeye.com/"
+    },
+    {
+      "type": "test",
+      "which": "focInd",
+      "revealAll": false,
+      "allowedDelay": 250,
+      "withItems": true,
+      "what": "focus indicators",
+      "url": "https://www.audioeye.com/",
+      "result": {
+        "totals": {
+          "total": 71,
+          "types": {
+            "indicatorMissing": {
+              "total": 1,
+              "tagNames": {
+                "BUTTON": 1
+              }
+            },
+            "nonOutlinePresent": {
+              "total": 0,
+              "tagNames": {}
+            },
+            "outlinePresent": {
+              "total": 70,
+              "meanDelay": 25,
+              "tagNames": {
+                "A": 56,
+                "BUTTON": 13,
+                "INPUT": 1
+              }
+            }
+          }
+        },
+        "items": {
+          "indicatorMissing": [
+            {
+              "tagName": "BUTTON",
+              "text": ""
+            }
+          ],
+          "nonOutlinePresent": [],
+          "outlinePresent": [
+            {
+              "tagName": "A",
+              "text": "Skip to main content",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Product",
+              "delay": 0
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Compliance",
+              "delay": 0
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Partners",
+              "delay": 0
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Company",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Pricing",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "LoginLogin opens in a new tab",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Get Demo",
+              "delay": 121
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Start Free Trial",
+              "delay": 132
+            },
+            {
+              "tagName": "A",
+              "text": "Get the Report",
+              "delay": 128
+            },
+            {
+              "tagName": "INPUT",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Free Scan",
+              "delay": 133
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Start Free Trial",
+              "delay": 128
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Start Free Trial",
+              "delay": 119
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "1",
+              "delay": 0
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "2",
+              "delay": 0
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "3",
+              "delay": 0
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Become a Partner",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Free Consultation",
+              "delay": 137
+            },
+            {
+              "tagName": "A",
+              "text": "Learn more about the A11iance Team",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "View All Integrations",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Download White Paper",
+              "delay": 178
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Start Free Trial",
+              "delay": 142
+            },
+            {
+              "tagName": "A",
+              "text": "How It Works",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Pricing",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Integrations",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Website Accessibility Checker",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Document Remediation",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Accessible Web Design Guide",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility Statement",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "About Us",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Investor Relations",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Partner Program",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Careers",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Blog",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Press Center",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Case Studies",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Compliance Overview",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Lawsuits",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "WCAG 2.1",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "ADA",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Section 508",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "AODA",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "CA State & Unruh",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Contact Us",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Schedule A Demo",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Request Legal Support",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Request Partner SupportRequest Partner Support opens in a new tab",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Apply to Become a Partner",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Help CenterHelp Center opens in a new tab",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "System StatusSystem Status opens in a new tab",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Terms of Service",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Privacy Policy",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Privacy Settings",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "linkedin opens in a new tab",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "facebook opens in a new tab",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "twitter opens in a new tab",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "instagram opens in a new tab",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "www.audioeye.com/ip",
+              "delay": 0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.audioeye.com/",
+      "what": "URL",
+      "result": "https://www.audioeye.com/"
+    },
+    {
+      "type": "test",
+      "which": "hover",
+      "headSize": 20,
+      "headSampleSize": 20,
+      "tailSampleSize": 15,
+      "withItems": true,
+      "what": "hover-caused content changes",
+      "url": "https://www.audioeye.com/",
+      "result": {
+        "totals": {
+          "triggers": 130,
+          "headTriggers": 20,
+          "tailTriggers": 110,
+          "impactTriggers": 1,
+          "additions": 1,
+          "removals": 0,
+          "opacityChanges": 0,
+          "opacityImpact": 0,
+          "unhoverables": 2
+        },
+        "items": {
+          "head": {
+            "impactTriggers": [
+              {
+                "tagName": "BUTTON",
+                "text": "StartFreeTrial",
+                "additions": 1,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              }
+            ],
+            "unhoverables": [
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Skiptomaincontent"
+              },
+              {
+                "tagName": "BUTTON",
+                "id": "",
+                "text": "FreeScan"
+              }
+            ]
+          },
+          "tail": {
+            "impactTriggers": [],
+            "unhoverables": []
+          }
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.audioeye.com/",
+      "what": "URL",
+      "result": "https://www.audioeye.com/"
+    },
+    {
+      "type": "test",
+      "which": "role",
+      "what": "roles",
+      "url": "https://www.audioeye.com/",
+      "result": {
+        "roleElements": 38,
+        "badRoleElements": 23,
+        "redundantRoleElements": 9,
+        "tagNames": {
+          "DIV": {
+            "banner": {
+              "bad": 1,
+              "redundant": 0
+            },
+            "main": {
+              "bad": 1,
+              "redundant": 0
+            },
+            "heading": {
+              "bad": 2,
+              "redundant": 0
+            },
+            "contentinfo": {
+              "bad": 1,
+              "redundant": 0
+            }
+          },
+          "NAV": {
+            "navigation": {
+              "bad": 0,
+              "redundant": 3
+            }
+          },
+          "BUTTON": {
+            "button": {
+              "bad": 0,
+              "redundant": 5
+            }
+          },
+          "P": {
+            "heading": {
+              "bad": 16,
+              "redundant": 0
+            }
+          },
+          "H3": {
+            "heading": {
+              "bad": 0,
+              "redundant": 1
+            }
+          },
+          "A": {
+            "button": {
+              "bad": 2,
+              "redundant": 0
+            }
+          }
+        }
+      }
+    }
+  ],
+  "timeStamp": "49li4",
+  "startTime": "2022-07-16T21:34:19",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "hover",
+      314
+    ],
+    [
+      "focInd",
+      2
+    ],
+    [
+      "role",
+      0
+    ]
+  ],
+  "logCount": 3,
+  "logSize": 915,
+  "errorLogCount": 3,
+  "errorLogSize": 915,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-16T21:39:49",
+  "elapsedSeconds": 329
+}

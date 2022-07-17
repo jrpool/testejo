@@ -1485,8 +1485,8 @@
           "triggers": 85,
           "headTriggers": 20,
           "tailTriggers": 65,
-          "impactTriggers": 0,
-          "additions": 0,
+          "impactTriggers": 8,
+          "additions": 392,
           "removals": 0,
           "opacityChanges": 0,
           "opacityImpact": 0,
@@ -1494,7 +1494,72 @@
         },
         "items": {
           "head": {
-            "impactTriggers": [],
+            "impactTriggers": [
+              {
+                "tagName": "LI",
+                "text": "FirefoxBrowsersCloseFirefoxBrowsersmenuFirefoxforD",
+                "additions": 51,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "A",
+                "text": "FirefoxBrowsers",
+                "additions": 51,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "LI",
+                "text": "ProductsCloseProductsmenuFirefoxMonitorSeeifyourem",
+                "additions": 59,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "A",
+                "text": "Products",
+                "additions": 59,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "LI",
+                "text": "WhoWeAreCloseWhoWeAremenuMozillaManifestoLearnabou",
+                "additions": 50,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "A",
+                "text": "WhoWeAre",
+                "additions": 50,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "LI",
+                "text": "InnovationCloseInnovationmenuMozillaHubsGatherinth",
+                "additions": 36,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "A",
+                "text": "Innovation",
+                "additions": 36,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              }
+            ],
             "unhoverables": []
           },
           "tail": {
@@ -1873,10 +1938,14 @@
       "url": "https://www.mozilla.org/en-US/",
       "result": {
         "roleElements": 1,
-        "badRoleElements": 1,
+        "badRoleElements": 0,
+        "redundantRoleElements": 1,
         "tagNames": {
           "MAIN": {
-            "main": 1
+            "main": {
+              "bad": 0,
+              "redundant": 1
+            }
           }
         }
       }
@@ -5942,7 +6011,7 @@
   "endTime": "2022-07-06T00:58:10",
   "elapsedSeconds": 130,
   "score": {
-    "scoreProcID": "sp12a",
+    "scoreProcID": "sp12b",
     "logWeights": {
       "logCount": 0.5,
       "logSize": 0.01,
@@ -5966,6 +6035,7 @@
       "testaro": {
         "focAll": 14,
         "focInd": 10,
+        "hover": 134,
         "linkUl": 92,
         "role": 1,
         "styleDiff": 30,
@@ -6028,6 +6098,14 @@
             "focInd": {
               "score": 10,
               "what": "Focused element displaying no or nostandard focus indicator"
+            }
+          }
+        },
+        "hoverSurprise": {
+          "testaro": {
+            "hover": {
+              "score": 34,
+              "what": "Content changes caused by hovering"
             }
           }
         },
@@ -6288,7 +6366,7 @@
       "ibm": 100
     },
     "summary": {
-      "total": 336,
+      "total": 372,
       "log": 0,
       "preventions": 100,
       "solos": 0,
@@ -6296,6 +6374,10 @@
         {
           "groupName": "linkIndication",
           "score": 50
+        },
+        {
+          "groupName": "hoverSurprise",
+          "score": 36
         },
         {
           "groupName": "contrastRisk",

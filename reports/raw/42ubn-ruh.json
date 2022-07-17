@@ -344,17 +344,17 @@
             {
               "tagName": "A",
               "text": "Home",
-              "delay": 101
+              "delay": 129
             },
             {
               "tagName": "A",
               "text": "About Us",
-              "delay": 100
+              "delay": 103
             },
             {
               "tagName": "A",
               "text": "Services",
-              "delay": 103
+              "delay": 101
             },
             {
               "tagName": "A",
@@ -369,12 +369,12 @@
             {
               "tagName": "A",
               "text": "Media",
-              "delay": 102
+              "delay": 101
             },
             {
               "tagName": "A",
               "text": "Contact",
-              "delay": 100
+              "delay": 102
             },
             {
               "tagName": "A",
@@ -384,7 +384,7 @@
             {
               "tagName": "A",
               "text": "Join the movement",
-              "delay": 101
+              "delay": 103
             },
             {
               "tagName": "A",
@@ -404,7 +404,7 @@
             {
               "tagName": "A",
               "text": "Download free PDF",
-              "delay": 102
+              "delay": 100
             },
             {
               "tagName": "SPAN",
@@ -499,7 +499,7 @@
             {
               "tagName": "A",
               "text": "Schedule an Appointment",
-              "delay": 100
+              "delay": 101
             },
             {
               "tagName": "A",
@@ -509,22 +509,22 @@
             {
               "tagName": "A",
               "text": "Sign up for our free webinar",
-              "delay": 101
+              "delay": 103
             },
             {
               "tagName": "A",
               "text": "Schedule an Appointment",
-              "delay": 101
+              "delay": 103
             },
             {
               "tagName": "A",
               "text": "Get in touch with our experts right now.",
-              "delay": 100
+              "delay": 102
             },
             {
               "tagName": "A",
               "text": "Schedule an Appointment",
-              "delay": 101
+              "delay": 102
             },
             {
               "tagName": "A",
@@ -564,22 +564,22 @@
             {
               "tagName": "A",
               "text": "Facebook-f",
-              "delay": 102
+              "delay": 101
             },
             {
               "tagName": "A",
               "text": "Twitter",
-              "delay": 101
+              "delay": 104
             },
             {
               "tagName": "A",
               "text": "Youtube",
-              "delay": 101
+              "delay": 103
             },
             {
               "tagName": "A",
               "text": "Linkedin-in",
-              "delay": 101
+              "delay": 102
             }
           ]
         }
@@ -1278,11 +1278,11 @@
           "triggers": 54,
           "headTriggers": 20,
           "tailTriggers": 34,
-          "impactTriggers": 0,
+          "impactTriggers": 7,
           "additions": 0,
           "removals": 0,
-          "opacityChanges": 0,
-          "opacityImpact": 0,
+          "opacityChanges": 7,
+          "opacityImpact": 14,
           "unhoverables": 2
         },
         "items": {
@@ -1302,7 +1302,32 @@
             ]
           },
           "tail": {
-            "impactTriggers": [],
+            "impactTriggers": [
+              {
+                "tagName": "A",
+                "text": "Youtube",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 2
+              },
+              {
+                "tagName": "A",
+                "text": "Linkedin-in",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 2
+              },
+              {
+                "tagName": "A",
+                "text": "Twitter",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 2
+              }
+            ],
             "unhoverables": []
           }
         }
@@ -1516,23 +1541,42 @@
       "url": "https://www.ruhglobal.com/",
       "result": {
         "roleElements": 51,
-        "badRoleElements": 39,
+        "badRoleElements": 37,
+        "redundantRoleElements": 2,
         "tagNames": {
           "DIV": {
-            "navigation": 1,
-            "button": 3
+            "navigation": {
+              "bad": 1,
+              "redundant": 0
+            },
+            "button": {
+              "bad": 3,
+              "redundant": 0
+            }
           },
           "NAV": {
-            "navigation": 2
+            "navigation": {
+              "bad": 0,
+              "redundant": 2
+            }
           },
           "UL": {
-            "group": 4
+            "group": {
+              "bad": 4,
+              "redundant": 0
+            }
           },
           "A": {
-            "button": 13
+            "button": {
+              "bad": 13,
+              "redundant": 0
+            }
           },
           "SPAN": {
-            "button": 16
+            "button": {
+              "bad": 16,
+              "redundant": 0
+            }
           }
         }
       }

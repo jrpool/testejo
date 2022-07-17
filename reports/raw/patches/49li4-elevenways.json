@@ -1,0 +1,351 @@
+{
+  "id": "49li4-elevenways",
+  "host": {
+    "id": "elevenways",
+    "which": "https://www.elevenways.be/",
+    "what": "Eleven Ways"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-16T21:47:00"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-16T21:48:07"
+    }
+  ],
+  "script": {
+    "id": "tp12",
+    "what": "Alfa, Axe, HTML CodeSniffer, IBM, Tenon, WAVE, and 16 custom tests",
+    "strict": true,
+    "timeLimit": 150,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.elevenways.be/",
+        "what": "Eleven Ways"
+      },
+      {
+        "type": "test",
+        "which": "focInd",
+        "revealAll": false,
+        "allowedDelay": 250,
+        "withItems": true,
+        "what": "focus indicators"
+      },
+      {
+        "type": "test",
+        "which": "hover",
+        "headSize": 20,
+        "headSampleSize": 20,
+        "tailSampleSize": 15,
+        "withItems": true,
+        "what": "hover impacts"
+      },
+      {
+        "type": "test",
+        "which": "role",
+        "what": "validity and necessity of role assignments"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.elevenways.be/",
+      "what": "Eleven Ways",
+      "result": "https://www.elevenways.be/"
+    },
+    {
+      "type": "test",
+      "which": "focInd",
+      "revealAll": false,
+      "allowedDelay": 250,
+      "withItems": true,
+      "what": "focus indicators",
+      "url": "https://www.elevenways.be/",
+      "result": {
+        "totals": {
+          "total": 33,
+          "types": {
+            "indicatorMissing": {
+              "total": 3,
+              "tagNames": {
+                "A": 3
+              }
+            },
+            "nonOutlinePresent": {
+              "total": 27,
+              "tagNames": {
+                "BUTTON": 1,
+                "A": 24,
+                "INPUT": 2
+              }
+            },
+            "outlinePresent": {
+              "total": 3,
+              "meanDelay": 0,
+              "tagNames": {
+                "INPUT": 3
+              }
+            }
+          }
+        },
+        "items": {
+          "indicatorMissing": [
+            {
+              "tagName": "A",
+              "text": "Sla de navigatie over"
+            },
+            {
+              "tagName": "A",
+              "text": "Home"
+            },
+            {
+              "tagName": "A",
+              "text": ""
+            }
+          ],
+          "nonOutlinePresent": [
+            {
+              "tagName": "BUTTON",
+              "text": "Ik snap het (verberg cookie-waarschuwing)"
+            },
+            {
+              "tagName": "A",
+              "text": "Krijg gratis advies"
+            },
+            {
+              "tagName": "A",
+              "text": "Contact"
+            },
+            {
+              "tagName": "A",
+              "text": "Bestel een audit"
+            },
+            {
+              "tagName": "A",
+              "text": "Neem contact op"
+            },
+            {
+              "tagName": "A",
+              "text": "Vraag een gesprek aan over HARP"
+            },
+            {
+              "tagName": "A",
+              "text": "Thomas Byttebier"
+            },
+            {
+              "tagName": "INPUT",
+              "text": ""
+            },
+            {
+              "tagName": "INPUT",
+              "text": ""
+            },
+            {
+              "tagName": "A",
+              "text": "roel@elevenways.be"
+            },
+            {
+              "tagName": "A",
+              "text": "info-coronavirus.be"
+            },
+            {
+              "tagName": "A",
+              "text": "Corona Rensponse site"
+            },
+            {
+              "tagName": "A",
+              "text": "info@elevenways.be"
+            },
+            {
+              "tagName": "A",
+              "text": "+32 (0)78 079 111"
+            },
+            {
+              "tagName": "A",
+              "text": "@elevenways_be"
+            },
+            {
+              "tagName": "A",
+              "text": "DiAX"
+            },
+            {
+              "tagName": "A",
+              "text": "Roel Van Gils, Founder & Consultant(IAAP-WAS)"
+            },
+            {
+              "tagName": "A",
+              "text": "Régine Lambrecht, Senior Trainer(IAAP-WAS)"
+            },
+            {
+              "tagName": "A",
+              "text": "Jelle De Loecker, Accessibility Engineer"
+            },
+            {
+              "tagName": "A",
+              "text": "Sophie Ragas, Accessibility Consultant"
+            },
+            {
+              "tagName": "A",
+              "text": "Méryem Lahouel, Acccessibility Consultant"
+            },
+            {
+              "tagName": "A",
+              "text": "Christophe Strobbe, Senior Researcher"
+            },
+            {
+              "tagName": "A",
+              "text": "WCAG 2.1"
+            },
+            {
+              "tagName": "A",
+              "text": "AnySurfer"
+            },
+            {
+              "tagName": "A",
+              "text": "Kouter 7B-202, B-9000 Gent"
+            },
+            {
+              "tagName": "A",
+              "text": "+32 (0)78 079 111"
+            },
+            {
+              "tagName": "A",
+              "text": "info@elevenways.be"
+            }
+          ],
+          "outlinePresent": [
+            {
+              "tagName": "INPUT",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "INPUT",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "INPUT",
+              "text": "",
+              "delay": 0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.elevenways.be/",
+      "what": "URL",
+      "result": "https://www.elevenways.be/"
+    },
+    {
+      "type": "test",
+      "which": "hover",
+      "headSize": 20,
+      "headSampleSize": 20,
+      "tailSampleSize": 15,
+      "withItems": true,
+      "what": "hover-caused content changes",
+      "url": "https://www.elevenways.be/",
+      "result": {
+        "totals": {
+          "triggers": 69,
+          "headTriggers": 20,
+          "tailTriggers": 49,
+          "impactTriggers": 0,
+          "additions": 0,
+          "removals": 0,
+          "opacityChanges": 0,
+          "opacityImpact": 0,
+          "unhoverables": 1
+        },
+        "items": {
+          "head": {
+            "impactTriggers": [],
+            "unhoverables": [
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Sladenavigatieover"
+              }
+            ]
+          },
+          "tail": {
+            "impactTriggers": [],
+            "unhoverables": []
+          }
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.elevenways.be/",
+      "what": "URL",
+      "result": "https://www.elevenways.be/"
+    },
+    {
+      "type": "test",
+      "which": "role",
+      "what": "roles",
+      "url": "https://www.elevenways.be/",
+      "result": {
+        "roleElements": 0,
+        "badRoleElements": 0,
+        "redundantRoleElements": 0,
+        "tagNames": {}
+      }
+    }
+  ],
+  "timeStamp": "49li4",
+  "startTime": "2022-07-16T21:47:00",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "hover",
+      50
+    ],
+    [
+      "focInd",
+      9
+    ],
+    [
+      "role",
+      0
+    ]
+  ],
+  "logCount": 0,
+  "logSize": 0,
+  "errorLogCount": 0,
+  "errorLogSize": 0,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-16T21:48:07",
+  "elapsedSeconds": 67
+}

@@ -1,0 +1,504 @@
+{
+  "id": "49li4-aten",
+  "host": {
+    "id": "aten",
+    "which": "https://atendesigngroup.com/",
+    "what": "Aten Design Group"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-16T21:32:39"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-16T21:33:30"
+    }
+  ],
+  "script": {
+    "id": "tp12",
+    "what": "Alfa, Axe, HTML CodeSniffer, IBM, Tenon, WAVE, and 16 custom tests",
+    "strict": true,
+    "timeLimit": 150,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://atendesigngroup.com/",
+        "what": "Aten Design Group"
+      },
+      {
+        "type": "test",
+        "which": "focInd",
+        "revealAll": false,
+        "allowedDelay": 250,
+        "withItems": true,
+        "what": "focus indicators"
+      },
+      {
+        "type": "test",
+        "which": "hover",
+        "headSize": 20,
+        "headSampleSize": 20,
+        "tailSampleSize": 15,
+        "withItems": true,
+        "what": "hover impacts"
+      },
+      {
+        "type": "test",
+        "which": "role",
+        "what": "validity and necessity of role assignments"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://atendesigngroup.com/",
+      "what": "Aten Design Group",
+      "result": "https://atendesigngroup.com/"
+    },
+    {
+      "type": "test",
+      "which": "focInd",
+      "revealAll": false,
+      "allowedDelay": 250,
+      "withItems": true,
+      "what": "focus indicators",
+      "url": "https://atendesigngroup.com/",
+      "result": {
+        "totals": {
+          "total": 40,
+          "types": {
+            "indicatorMissing": {
+              "total": 1,
+              "tagNames": {
+                "IFRAME": 1
+              }
+            },
+            "nonOutlinePresent": {
+              "total": 0,
+              "tagNames": {}
+            },
+            "outlinePresent": {
+              "total": 39,
+              "meanDelay": 52,
+              "tagNames": {
+                "A": 37,
+                "INPUT": 2
+              }
+            }
+          }
+        },
+        "items": {
+          "indicatorMissing": [
+            {
+              "tagName": "IFRAME",
+              "text": ""
+            }
+          ],
+          "nonOutlinePresent": [],
+          "outlinePresent": [
+            {
+              "tagName": "A",
+              "text": "Skip to main content",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Aten",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "About",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Services",
+              "delay": 105
+            },
+            {
+              "tagName": "A",
+              "text": "Articles",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Webinars",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "Work",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "Contact",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Let's Talk",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "See Our Work",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Human Rights Watch",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Pride Month: Partners Supporting Change",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Client work",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Set up a local Drupal multisite with Lando on Mac OS",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Drupal",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "What to Expect in the Design Process",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Design",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "Making the case for a Drupal 7 to Backdrop CMS upgrade",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Backdrop CMS",
+              "delay": 104
+            },
+            {
+              "tagName": "A",
+              "text": "Backdrop CMS on Pantheon with fast configuration management",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Backdrop CMS",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Aten Lights On Support",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Drupal",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "Aten Goes Remote!",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Jobs",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "A guide to accessible user experience",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "WETA",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "1615 Platte St.Suite 200 Denver, CO, 80202 U.S.A",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Phone(303) 831-0448",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "work@aten.io",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Twitter",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Facebook",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Instagram",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "LinkedIn",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "YouTube",
+              "delay": 0
+            },
+            {
+              "tagName": "INPUT",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "INPUT",
+              "text": "",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility",
+              "delay": 0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://atendesigngroup.com/",
+      "what": "URL",
+      "result": "https://atendesigngroup.com/"
+    },
+    {
+      "type": "test",
+      "which": "hover",
+      "headSize": 20,
+      "headSampleSize": 20,
+      "tailSampleSize": 15,
+      "withItems": true,
+      "what": "hover-caused content changes",
+      "url": "https://atendesigngroup.com/",
+      "result": {
+        "totals": {
+          "triggers": 50,
+          "headTriggers": 20,
+          "tailTriggers": 30,
+          "impactTriggers": 11,
+          "additions": 0,
+          "removals": 0,
+          "opacityChanges": 11,
+          "opacityImpact": 6,
+          "unhoverables": 2
+        },
+        "items": {
+          "head": {
+            "impactTriggers": [
+              {
+                "tagName": "A",
+                "text": "HumanRightsWatch",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 2
+              }
+            ],
+            "unhoverables": [
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Skiptomaincontent"
+              }
+            ]
+          },
+          "tail": {
+            "impactTriggers": [
+              {
+                "tagName": "A",
+                "text": "Instagram",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "LI",
+                "text": "Facebook",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "A",
+                "text": "WETA",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 2
+              },
+              {
+                "tagName": "LI",
+                "text": "Twitter",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "LI",
+                "text": "YouTube",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 0
+              }
+            ],
+            "unhoverables": [
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Accessibility"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://atendesigngroup.com/",
+      "what": "URL",
+      "result": "https://atendesigngroup.com/"
+    },
+    {
+      "type": "test",
+      "which": "role",
+      "what": "roles",
+      "url": "https://atendesigngroup.com/",
+      "result": {
+        "roleElements": 18,
+        "badRoleElements": 3,
+        "redundantRoleElements": 13,
+        "tagNames": {
+          "HEADER": {
+            "banner": {
+              "bad": 1,
+              "redundant": 0
+            }
+          },
+          "NAV": {
+            "navigation": {
+              "bad": 0,
+              "redundant": 1
+            }
+          },
+          "MAIN": {
+            "main": {
+              "bad": 0,
+              "redundant": 1
+            }
+          },
+          "ARTICLE": {
+            "article": {
+              "bad": 0,
+              "redundant": 11
+            }
+          },
+          "FOOTER": {
+            "contentinfo": {
+              "bad": 1,
+              "redundant": 0
+            }
+          },
+          "DIV": {
+            "banner": {
+              "bad": 1,
+              "redundant": 0
+            }
+          }
+        }
+      }
+    }
+  ],
+  "timeStamp": "49li4",
+  "startTime": "2022-07-16T21:32:39",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "hover",
+      42
+    ],
+    [
+      "focInd",
+      3
+    ],
+    [
+      "role",
+      0
+    ]
+  ],
+  "logCount": 3,
+  "logSize": 303,
+  "errorLogCount": 3,
+  "errorLogSize": 303,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-16T21:33:30",
+  "elapsedSeconds": 51
+}

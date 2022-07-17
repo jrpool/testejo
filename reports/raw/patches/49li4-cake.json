@@ -1,0 +1,395 @@
+{
+  "id": "49li4-cake",
+  "host": {
+    "id": "cake",
+    "which": "https://ilikecake.ie/",
+    "what": "Ilikecake"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-16T21:54:35"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-16T21:55:31"
+    }
+  ],
+  "script": {
+    "id": "tp12",
+    "what": "Alfa, Axe, HTML CodeSniffer, IBM, Tenon, WAVE, and 16 custom tests",
+    "strict": true,
+    "timeLimit": 150,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://ilikecake.ie/",
+        "what": "Ilikecake"
+      },
+      {
+        "type": "test",
+        "which": "focInd",
+        "revealAll": false,
+        "allowedDelay": 250,
+        "withItems": true,
+        "what": "focus indicators"
+      },
+      {
+        "type": "test",
+        "which": "hover",
+        "headSize": 20,
+        "headSampleSize": 20,
+        "tailSampleSize": 15,
+        "withItems": true,
+        "what": "hover impacts"
+      },
+      {
+        "type": "test",
+        "which": "role",
+        "what": "validity and necessity of role assignments"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://ilikecake.ie/",
+      "what": "Ilikecake",
+      "result": "https://ilikecake.ie/"
+    },
+    {
+      "type": "test",
+      "which": "focInd",
+      "revealAll": false,
+      "allowedDelay": 250,
+      "withItems": true,
+      "what": "focus indicators",
+      "url": "https://ilikecake.ie/",
+      "result": {
+        "totals": {
+          "total": 27,
+          "types": {
+            "indicatorMissing": {
+              "total": 0,
+              "tagNames": {}
+            },
+            "nonOutlinePresent": {
+              "total": 5,
+              "tagNames": {
+                "INPUT": 4,
+                "TEXTAREA": 1
+              }
+            },
+            "outlinePresent": {
+              "total": 22,
+              "meanDelay": 23,
+              "tagNames": {
+                "A": 18,
+                "H1": 3,
+                "BUTTON": 1
+              }
+            }
+          }
+        },
+        "items": {
+          "indicatorMissing": [],
+          "nonOutlinePresent": [
+            {
+              "tagName": "INPUT",
+              "text": ""
+            },
+            {
+              "tagName": "INPUT",
+              "text": ""
+            },
+            {
+              "tagName": "INPUT",
+              "text": ""
+            },
+            {
+              "tagName": "TEXTAREA",
+              "text": ""
+            },
+            {
+              "tagName": "INPUT",
+              "text": ""
+            }
+          ],
+          "outlinePresent": [
+            {
+              "tagName": "A",
+              "text": "Home",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "What We Do",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Our Work",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Contact",
+              "delay": 0
+            },
+            {
+              "tagName": "H1",
+              "text": "What We Do",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Website Design We create websites custom-designed to your organisations specific requirements. Respo",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Website Development We can undertake everything from website template creation, database development",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility Audits We undertake accessibility audits for our clients and can advise website tender",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility Training We undertake accessibility training at both a conceptual level and a practica",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "MORE",
+              "delay": 0
+            },
+            {
+              "tagName": "H1",
+              "text": "Our Work",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Take a closer look",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Burythorpe House",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Take a closer look",
+              "delay": 203
+            },
+            {
+              "tagName": "A",
+              "text": "An Coimisinéir Teanga",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Take a closer look",
+              "delay": 202
+            },
+            {
+              "tagName": "A",
+              "text": "Argos YachtCharter",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "MORE",
+              "delay": 0
+            },
+            {
+              "tagName": "H1",
+              "text": "Contact Us",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "info@ilikecake.ie",
+              "delay": 0
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Submit",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "GDPR",
+              "delay": 0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://ilikecake.ie/",
+      "what": "URL",
+      "result": "https://ilikecake.ie/"
+    },
+    {
+      "type": "test",
+      "which": "hover",
+      "headSize": 20,
+      "headSampleSize": 20,
+      "tailSampleSize": 15,
+      "withItems": true,
+      "what": "hover-caused content changes",
+      "url": "https://ilikecake.ie/",
+      "result": {
+        "totals": {
+          "triggers": 34,
+          "headTriggers": 20,
+          "tailTriggers": 14,
+          "impactTriggers": 7,
+          "additions": 0,
+          "removals": 0,
+          "opacityChanges": 13,
+          "opacityImpact": 12,
+          "unhoverables": 0
+        },
+        "items": {
+          "head": {
+            "impactTriggers": [],
+            "unhoverables": []
+          },
+          "tail": {
+            "impactTriggers": [
+              {
+                "tagName": "A",
+                "text": "Takeacloserlook",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 3,
+                "opacityImpact": 3
+              },
+              {
+                "tagName": "A",
+                "text": "BurythorpeHouse",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "A",
+                "text": "Takeacloserlook",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 3,
+                "opacityImpact": 3
+              },
+              {
+                "tagName": "A",
+                "text": "AnCoimisinéirTeanga",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "A",
+                "text": "Takeacloserlook",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 3,
+                "opacityImpact": 3
+              },
+              {
+                "tagName": "A",
+                "text": "ArgosYachtCharter",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "A",
+                "text": "MORE",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 3
+              }
+            ],
+            "unhoverables": []
+          }
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://ilikecake.ie/",
+      "what": "URL",
+      "result": "https://ilikecake.ie/"
+    },
+    {
+      "type": "test",
+      "which": "role",
+      "what": "roles",
+      "url": "https://ilikecake.ie/",
+      "result": {
+        "roleElements": 0,
+        "badRoleElements": 0,
+        "redundantRoleElements": 0,
+        "tagNames": {}
+      }
+    }
+  ],
+  "timeStamp": "49li4",
+  "startTime": "2022-07-16T21:54:35",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "hover",
+      45
+    ],
+    [
+      "focInd",
+      2
+    ],
+    [
+      "role",
+      0
+    ]
+  ],
+  "logCount": 6,
+  "logSize": 291,
+  "errorLogCount": 3,
+  "errorLogSize": 207,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-16T21:55:31",
+  "elapsedSeconds": 55
+}

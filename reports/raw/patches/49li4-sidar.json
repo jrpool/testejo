@@ -1,0 +1,508 @@
+{
+  "id": "49li4-sidar",
+  "host": {
+    "id": "sidar",
+    "which": "http://www.sidar.org/#goto_a11yhoy",
+    "what": "Fundación Sidar"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-16T21:50:30"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-16T21:51:40"
+    }
+  ],
+  "script": {
+    "id": "tp12",
+    "what": "Alfa, Axe, HTML CodeSniffer, IBM, Tenon, WAVE, and 16 custom tests",
+    "strict": true,
+    "timeLimit": 150,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "http://www.sidar.org/#goto_a11yhoy",
+        "what": "Fundación Sidar"
+      },
+      {
+        "type": "test",
+        "which": "focInd",
+        "revealAll": false,
+        "allowedDelay": 250,
+        "withItems": true,
+        "what": "focus indicators"
+      },
+      {
+        "type": "test",
+        "which": "hover",
+        "headSize": 20,
+        "headSampleSize": 20,
+        "tailSampleSize": 15,
+        "withItems": true,
+        "what": "hover impacts"
+      },
+      {
+        "type": "test",
+        "which": "role",
+        "what": "validity and necessity of role assignments"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "http://www.sidar.org/#goto_a11yhoy",
+      "what": "Fundación Sidar",
+      "result": "http://www.sidar.org/#goto_a11yhoy"
+    },
+    {
+      "type": "test",
+      "which": "focInd",
+      "revealAll": false,
+      "allowedDelay": 250,
+      "withItems": true,
+      "what": "focus indicators",
+      "url": "http://www.sidar.org/#goto_a11yhoy",
+      "result": {
+        "totals": {
+          "total": 61,
+          "types": {
+            "indicatorMissing": {
+              "total": 5,
+              "tagNames": {
+                "IFRAME": 3,
+                "A": 2
+              }
+            },
+            "nonOutlinePresent": {
+              "total": 0,
+              "tagNames": {}
+            },
+            "outlinePresent": {
+              "total": 56,
+              "meanDelay": 0,
+              "tagNames": {
+                "A": 47,
+                "SELECT": 1,
+                "INPUT": 8
+              }
+            }
+          }
+        },
+        "items": {
+          "indicatorMissing": [
+            {
+              "tagName": "IFRAME",
+              "text": ""
+            },
+            {
+              "tagName": "IFRAME",
+              "text": ""
+            },
+            {
+              "tagName": "IFRAME",
+              "text": ""
+            },
+            {
+              "tagName": "A",
+              "text": "Accesibilidad"
+            },
+            {
+              "tagName": "A",
+              "text": "Revise su página"
+            }
+          ],
+          "nonOutlinePresent": [],
+          "outlinePresent": [
+            {
+              "tagName": "A",
+              "text": ">>contenido",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Qué, cómo...",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Recursos",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "En acción",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "FAQ",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Presentación",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Actividades",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Publicaciones",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Órganos de Gobierno",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "FAQ",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Información",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Ediciones anteriores",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Mapa del sitio",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Canal Accesibilidad",
+              "delay": 0
+            },
+            {
+              "tagName": "SELECT",
+              "text": "Normal\nNro 2\nNro 3\nNro 4\nNro 5\nNro 6\nNro 7\nNro 8\nNro 9\nNro 10",
+              "delay": 0
+            },
+            {
+              "tagName": "INPUT",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "INPUT",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Algunos donantes...",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "EDIPO",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "accesoweb-subscribe@yahoogroups.com",
+              "delay": 0
+            },
+            {
+              "tagName": "INPUT",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "INPUT",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "es.groups.yahoo.com",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "enlace para regístrarte",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Accesibilidad Hoy",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "HERA FFX",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "HERA",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "HERA-XP",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "probar HERA-XP",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "información sobre HERA",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "usar HERA",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Principal",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Seminario",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Fundación",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Mapa",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Inicio",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "HERA-XP",
+              "delay": 0
+            },
+            {
+              "tagName": "INPUT",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "INPUT",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "HERA",
+              "delay": 0
+            },
+            {
+              "tagName": "INPUT",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "INPUT",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "W3C XHTML 1.0",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "W3C CSS",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "W3C WAI-AA",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "· TAW 1.1",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "HERA WAI-AA",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "· Acceso U.",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Webmaster",
+              "delay": 0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "http://www.sidar.org/#goto_a11yhoy",
+      "what": "URL",
+      "result": "http://www.sidar.org/#goto_a11yhoy"
+    },
+    {
+      "type": "test",
+      "which": "hover",
+      "headSize": 20,
+      "headSampleSize": 20,
+      "tailSampleSize": 15,
+      "withItems": true,
+      "what": "hover-caused content changes",
+      "url": "http://www.sidar.org/#goto_a11yhoy",
+      "result": {
+        "totals": {
+          "triggers": 67,
+          "headTriggers": 20,
+          "tailTriggers": 47,
+          "impactTriggers": 0,
+          "additions": 0,
+          "removals": 0,
+          "opacityChanges": 0,
+          "opacityImpact": 0,
+          "unhoverables": 0
+        },
+        "items": {
+          "head": {
+            "impactTriggers": [],
+            "unhoverables": []
+          },
+          "tail": {
+            "impactTriggers": [],
+            "unhoverables": []
+          }
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "http://www.sidar.org/#goto_a11yhoy",
+      "what": "URL",
+      "result": "http://www.sidar.org/#goto_a11yhoy"
+    },
+    {
+      "type": "test",
+      "which": "role",
+      "what": "roles",
+      "url": "http://www.sidar.org/#goto_a11yhoy",
+      "result": {
+        "roleElements": 10,
+        "badRoleElements": 0,
+        "redundantRoleElements": 0,
+        "tagNames": {}
+      }
+    }
+  ],
+  "timeStamp": "49li4",
+  "startTime": "2022-07-16T21:50:30",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "hover",
+      57
+    ],
+    [
+      "focInd",
+      2
+    ],
+    [
+      "role",
+      0
+    ]
+  ],
+  "logCount": 15,
+  "logSize": 3096,
+  "errorLogCount": 9,
+  "errorLogSize": 1266,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-16T21:51:40",
+  "elapsedSeconds": 69
+}

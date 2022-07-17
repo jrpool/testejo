@@ -304,16 +304,18 @@
           "total": 27,
           "types": {
             "indicatorMissing": {
-              "total": 0,
-              "tagNames": {}
-            },
-            "nonOutlinePresent": {
-              "total": 27,
+              "total": 25,
               "tagNames": {
-                "A": 24,
+                "A": 22,
                 "IFRAME": 1,
                 "INPUT": 1,
                 "BUTTON": 1
+              }
+            },
+            "nonOutlinePresent": {
+              "total": 2,
+              "tagNames": {
+                "A": 2
               }
             },
             "outlinePresent": {
@@ -324,12 +326,7 @@
           }
         },
         "items": {
-          "indicatorMissing": [],
-          "nonOutlinePresent": [
-            {
-              "tagName": "A",
-              "text": "skip to Main Content"
-            },
+          "indicatorMissing": [
             {
               "tagName": "A",
               "text": "Facebook"
@@ -365,10 +362,6 @@
             {
               "tagName": "A",
               "text": "Get Started Now!"
-            },
-            {
-              "tagName": "A",
-              "text": "Sign-Up Now!"
             },
             {
               "tagName": "A",
@@ -433,6 +426,16 @@
             {
               "tagName": "BUTTON",
               "text": ""
+            }
+          ],
+          "nonOutlinePresent": [
+            {
+              "tagName": "A",
+              "text": "skip to Main Content"
+            },
+            {
+              "tagName": "A",
+              "text": "Sign-Up Now!"
             }
           ],
           "outlinePresent": []
@@ -893,7 +896,22 @@
               {
                 "tagName": "A",
                 "id": "",
+                "text": "WhyYouNeedIt"
+              },
+              {
+                "tagName": "LI",
+                "id": "sidr-id-menu-item-465",
+                "text": "WhyYouNeedIt"
+              },
+              {
+                "tagName": "A",
+                "id": "",
                 "text": "FAQs"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "WebsiteAccessibilityTips"
               },
               {
                 "tagName": "A",
@@ -902,23 +920,8 @@
               },
               {
                 "tagName": "LI",
-                "id": "sidr-id-menu-item-262",
-                "text": "WebsiteAccessibilityTips"
-              },
-              {
-                "tagName": "A",
-                "id": "",
-                "text": "WhyYouNeedIt"
-              },
-              {
-                "tagName": "A",
-                "id": "",
-                "text": "WebsiteAccessibilityTips"
-              },
-              {
-                "tagName": "BUTTON",
-                "id": "",
-                "text": "<spanclass=\"fafa-search\"></span>"
+                "id": "sidr-id-menu-item-261",
+                "text": "FAQs"
               },
               {
                 "tagName": "A",
@@ -926,9 +929,9 @@
                 "text": "×"
               },
               {
-                "tagName": "LI",
-                "id": "sidr-id-menu-item-263",
-                "text": "AboutUs"
+                "tagName": "BUTTON",
+                "id": "",
+                "text": "<spanclass=\"fafa-search\"></span>"
               }
             ]
           }
@@ -1168,9 +1171,13 @@
       "result": {
         "roleElements": 10,
         "badRoleElements": 8,
+        "redundantRoleElements": 0,
         "tagNames": {
           "A": {
-            "button": 8
+            "button": {
+              "bad": 8,
+              "redundant": 0
+            }
           }
         }
       }

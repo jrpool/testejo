@@ -1,0 +1,618 @@
+{
+  "id": "49ouy-zenythgroup",
+  "host": {
+    "id": "zenythgroup",
+    "which": "https://zenythgroup.com/index",
+    "what": "Zenyth Group"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-16T23:52:32"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-16T23:53:32"
+    }
+  ],
+  "script": {
+    "id": "tp12",
+    "what": "Alfa, Axe, HTML CodeSniffer, IBM, Tenon, WAVE, and 16 custom tests",
+    "strict": true,
+    "timeLimit": 150,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://zenythgroup.com/index",
+        "what": "Zenyth Group"
+      },
+      {
+        "type": "test",
+        "which": "focInd",
+        "revealAll": false,
+        "allowedDelay": 250,
+        "withItems": true,
+        "what": "focus indicators"
+      },
+      {
+        "type": "test",
+        "which": "hover",
+        "headSize": 20,
+        "headSampleSize": 20,
+        "tailSampleSize": 15,
+        "withItems": true,
+        "what": "hover impacts"
+      },
+      {
+        "type": "test",
+        "which": "role",
+        "what": "validity and necessity of role assignments"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://zenythgroup.com/index",
+      "what": "Zenyth Group",
+      "result": "https://zenythgroup.com/index"
+    },
+    {
+      "type": "test",
+      "which": "focInd",
+      "revealAll": false,
+      "allowedDelay": 250,
+      "withItems": true,
+      "what": "focus indicators",
+      "url": "https://zenythgroup.com/index",
+      "result": {
+        "totals": {
+          "total": 77,
+          "types": {
+            "indicatorMissing": {
+              "total": 1,
+              "tagNames": {
+                "IFRAME": 1
+              }
+            },
+            "nonOutlinePresent": {
+              "total": 0,
+              "tagNames": {}
+            },
+            "outlinePresent": {
+              "total": 76,
+              "meanDelay": 10,
+              "tagNames": {
+                "A": 54,
+                "BUTTON": 12,
+                "DIV": 10
+              }
+            }
+          }
+        },
+        "items": {
+          "indicatorMissing": [
+            {
+              "tagName": "IFRAME",
+              "text": ""
+            }
+          ],
+          "nonOutlinePresent": [],
+          "outlinePresent": [
+            {
+              "tagName": "A",
+              "text": "Skip to main content",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Home",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Services",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Solutions",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Blog",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Case Studies",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Company",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Contact",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Get Started",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Get Started",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Free Assessment",
+              "delay": 0
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Previous slide",
+              "delay": 106
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Next slide",
+              "delay": 100
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Go to slide 1",
+              "delay": 0
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Go to slide 2",
+              "delay": 0
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Go to slide 3",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Learn More",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Learn More",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Learn More",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Learn More",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Learn More",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Learn More",
+              "delay": 0
+            },
+            {
+              "tagName": "DIV",
+              "text": "Play",
+              "delay": 0
+            },
+            {
+              "tagName": "DIV",
+              "text": "Restart",
+              "delay": 0
+            },
+            {
+              "tagName": "DIV",
+              "text": "Rewind",
+              "delay": 0
+            },
+            {
+              "tagName": "DIV",
+              "text": "Forward",
+              "delay": 0
+            },
+            {
+              "tagName": "DIV",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "DIV",
+              "text": "Volume",
+              "delay": 0
+            },
+            {
+              "tagName": "DIV",
+              "text": "Slower",
+              "delay": 0
+            },
+            {
+              "tagName": "DIV",
+              "text": "Faster",
+              "delay": 0
+            },
+            {
+              "tagName": "DIV",
+              "text": "Preferences",
+              "delay": 0
+            },
+            {
+              "tagName": "DIV",
+              "text": "Enter full screen",
+              "delay": 0
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "View Transcript",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Learn More",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Learn More",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Learn More",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Learn More",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Learn More",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Learn More",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Learn More",
+              "delay": 0
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Read More",
+              "delay": 0
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Read More",
+              "delay": 0
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Read More",
+              "delay": 0
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Read More",
+              "delay": 0
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Read More",
+              "delay": 0
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Read More",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Website & Mobile App Audits",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility Support",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Remediation Services",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Scripting",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Legal Compliance Consulting",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Letter of Reasonable Accessibility",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "eCommerce / Retail",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Education",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Financial Services",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Healthcare",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Hospitality / Travel",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Public Sector",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Technology",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Blog",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Case Studies",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Support",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "About Us",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Leadership",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Contact Us",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Sitemap",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility Statement",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://zenythgroup.com/index",
+      "what": "URL",
+      "result": "https://zenythgroup.com/index"
+    },
+    {
+      "type": "test",
+      "which": "hover",
+      "headSize": 20,
+      "headSampleSize": 20,
+      "tailSampleSize": 15,
+      "withItems": true,
+      "what": "hover-caused content changes",
+      "url": "https://zenythgroup.com/index",
+      "result": {
+        "totals": {
+          "triggers": 139,
+          "headTriggers": 20,
+          "tailTriggers": 119,
+          "impactTriggers": 0,
+          "additions": 0,
+          "removals": 0,
+          "opacityChanges": 0,
+          "opacityImpact": 0,
+          "unhoverables": 1
+        },
+        "items": {
+          "head": {
+            "impactTriggers": [],
+            "unhoverables": [
+              {
+                "tagName": "A",
+                "id": "skip",
+                "text": "Skiptomaincontent"
+              }
+            ]
+          },
+          "tail": {
+            "impactTriggers": [],
+            "unhoverables": []
+          }
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://zenythgroup.com/index",
+      "what": "URL",
+      "result": "https://zenythgroup.com/index"
+    },
+    {
+      "type": "test",
+      "which": "role",
+      "what": "roles",
+      "url": "https://zenythgroup.com/index",
+      "result": {
+        "roleElements": 34,
+        "badRoleElements": 19,
+        "redundantRoleElements": 0,
+        "tagNames": {
+          "DIV": {
+            "group": {
+              "bad": 7,
+              "redundant": 0
+            },
+            "button": {
+              "bad": 9,
+              "redundant": 0
+            },
+            "slider": {
+              "bad": 2,
+              "redundant": 0
+            }
+          },
+          "FOOTER": {
+            "contentinfo": {
+              "bad": 1,
+              "redundant": 0
+            }
+          }
+        }
+      }
+    }
+  ],
+  "timeStamp": "49ouy",
+  "startTime": "2022-07-16T23:52:32",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "hover",
+      50
+    ],
+    [
+      "focInd",
+      1
+    ],
+    [
+      "role",
+      0
+    ]
+  ],
+  "logCount": 0,
+  "logSize": 0,
+  "errorLogCount": 0,
+  "errorLogSize": 0,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-16T23:53:32",
+  "elapsedSeconds": 59
+}

@@ -315,7 +315,7 @@
             },
             "outlinePresent": {
               "total": 22,
-              "meanDelay": 23,
+              "meanDelay": 24,
               "tagNames": {
                 "A": 22
               }
@@ -350,7 +350,7 @@
             {
               "tagName": "A",
               "text": "To main content",
-              "delay": 102
+              "delay": 101
             },
             {
               "tagName": "A",
@@ -365,12 +365,12 @@
             {
               "tagName": "A",
               "text": "Artiklar",
-              "delay": 101
+              "delay": 103
             },
             {
               "tagName": "A",
               "text": "Om oss",
-              "delay": 102
+              "delay": 100
             },
             {
               "tagName": "A",
@@ -1013,6 +1013,7 @@
       "result": {
         "roleElements": 3,
         "badRoleElements": 0,
+        "redundantRoleElements": 0,
         "tagNames": {}
       }
     },
@@ -5581,7 +5582,7 @@
   "endTime": "2022-07-09T14:35:38",
   "elapsedSeconds": 122,
   "score": {
-    "scoreProcID": "sp12a",
+    "scoreProcID": "sp12b",
     "logWeights": {
       "logCount": 0.5,
       "logSize": 0.01,

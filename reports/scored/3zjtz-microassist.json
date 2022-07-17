@@ -303,18 +303,20 @@
           "total": 61,
           "types": {
             "indicatorMissing": {
-              "total": 0,
-              "tagNames": {}
+              "total": 2,
+              "tagNames": {
+                "A": 2
+              }
             },
             "nonOutlinePresent": {
-              "total": 6,
+              "total": 4,
               "tagNames": {
-                "A": 6
+                "A": 4
               }
             },
             "outlinePresent": {
               "total": 55,
-              "meanDelay": 90,
+              "meanDelay": 89,
               "tagNames": {
                 "A": 50,
                 "LI": 1,
@@ -325,12 +327,17 @@
           }
         },
         "items": {
-          "indicatorMissing": [],
-          "nonOutlinePresent": [
+          "indicatorMissing": [
             {
               "tagName": "A",
               "text": "Open Search Field"
             },
+            {
+              "tagName": "A",
+              "text": "Back to Top"
+            }
+          ],
+          "nonOutlinePresent": [
             {
               "tagName": "A",
               "text": "LEARN WHAT'S NEXT"
@@ -346,17 +353,13 @@
             {
               "tagName": "A",
               "text": "EXPLORE COURSES"
-            },
-            {
-              "tagName": "A",
-              "text": "Back to Top"
             }
           ],
           "outlinePresent": [
             {
               "tagName": "A",
               "text": "Skip to main content",
-              "delay": 101
+              "delay": 102
             },
             {
               "tagName": "A",
@@ -366,7 +369,7 @@
             {
               "tagName": "A",
               "text": "State & Federal Contracts for Government",
-              "delay": 103
+              "delay": 100
             },
             {
               "tagName": "A",
@@ -376,17 +379,17 @@
             {
               "tagName": "A",
               "text": "info@microassist.com",
-              "delay": 101
+              "delay": 100
             },
             {
               "tagName": "A",
               "text": "(512) 794-8440",
-              "delay": 103
+              "delay": 102
             },
             {
               "tagName": "A",
               "text": "Microassist",
-              "delay": 101
+              "delay": 100
             },
             {
               "tagName": "A",
@@ -406,7 +409,7 @@
             {
               "tagName": "A",
               "text": "About",
-              "delay": 101
+              "delay": 100
             },
             {
               "tagName": "LI",
@@ -421,12 +424,12 @@
             {
               "tagName": "A",
               "text": "Subscribe to Accessibility in the News.",
-              "delay": 101
+              "delay": 100
             },
             {
               "tagName": "A",
               "text": "",
-              "delay": 101
+              "delay": 102
             },
             {
               "tagName": "A",
@@ -436,87 +439,87 @@
             {
               "tagName": "A",
               "text": "Read more",
-              "delay": 100
+              "delay": 101
             },
             {
               "tagName": "A",
               "text": "",
-              "delay": 101
+              "delay": 100
             },
             {
               "tagName": "A",
               "text": "Microassist Elearning Examples Drawn from Texas DSHS Projects",
-              "delay": 101
+              "delay": 100
             },
             {
               "tagName": "A",
               "text": "Read more",
-              "delay": 101
-            },
-            {
-              "tagName": "A",
-              "text": "",
-              "delay": 103
-            },
-            {
-              "tagName": "A",
-              "text": "What The Overturning of Roe V. Wade Means For People With Disabilities",
-              "delay": 103
-            },
-            {
-              "tagName": "A",
-              "text": "Read more",
-              "delay": 101
-            },
-            {
-              "tagName": "A",
-              "text": "",
               "delay": 104
             },
             {
               "tagName": "A",
+              "text": "",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Six Years of AITN Later, How Has The ADA Landscape Changed?",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Read more",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "DOJ Guidance on Web Accessibility and the ADA as Related to Title II",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "Read more",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "What The Overturning of Roe V. Wade Means For People With Disabilities",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Read more",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
               "text": "MTA Vows To Make Subway 95% Accessible... By 2055",
-              "delay": 100
+              "delay": 103
             },
             {
               "tagName": "A",
               "text": "Read more",
-              "delay": 101
-            },
-            {
-              "tagName": "A",
-              "text": "",
-              "delay": 100
-            },
-            {
-              "tagName": "A",
-              "text": "Accessibility Testing Tool Reality Check",
-              "delay": 102
-            },
-            {
-              "tagName": "A",
-              "text": "Read more",
-              "delay": 102
-            },
-            {
-              "tagName": "A",
-              "text": "",
-              "delay": 101
-            },
-            {
-              "tagName": "A",
-              "text": "What Will Accessible Outdoor Recreation Look Like This Summer?",
-              "delay": 101
-            },
-            {
-              "tagName": "A",
-              "text": "Read more",
-              "delay": 101
+              "delay": 104
             },
             {
               "tagName": "A",
               "text": "See More Posts",
-              "delay": 103
+              "delay": 102
             },
             {
               "tagName": "INPUT",
@@ -526,7 +529,7 @@
             {
               "tagName": "INPUT",
               "text": "",
-              "delay": 102
+              "delay": 101
             },
             {
               "tagName": "DIV",
@@ -536,22 +539,22 @@
             {
               "tagName": "A",
               "text": "Government Solutions",
-              "delay": 102
+              "delay": 100
             },
             {
               "tagName": "A",
               "text": "Accessibility in the News",
-              "delay": 101
+              "delay": 104
             },
             {
               "tagName": "A",
               "text": "Learning Dispatch (Blog)",
-              "delay": 103
+              "delay": 102
             },
             {
               "tagName": "A",
               "text": "Lexis-Nexis Mealey’s® Commentaries",
-              "delay": 104
+              "delay": 102
             },
             {
               "tagName": "A",
@@ -561,47 +564,47 @@
             {
               "tagName": "A",
               "text": "Digital Accessibility Blog",
-              "delay": 103
-            },
-            {
-              "tagName": "A",
-              "text": "(512) 794-8440",
-              "delay": 100
-            },
-            {
-              "tagName": "A",
-              "text": "(512) 794-8742",
-              "delay": 103
-            },
-            {
-              "tagName": "A",
-              "text": "info@microassist.com",
-              "delay": 100
-            },
-            {
-              "tagName": "A",
-              "text": "MORE",
-              "delay": 103
-            },
-            {
-              "tagName": "A",
-              "text": "Privacy",
               "delay": 101
             },
             {
               "tagName": "A",
-              "text": "Accessibility Statement",
+              "text": "(512) 794-8440",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "(512) 794-8742",
               "delay": 100
             },
             {
               "tagName": "A",
+              "text": "info@microassist.com",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "MORE",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Privacy",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility Statement",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
               "text": "Site Map",
-              "delay": 102
+              "delay": 100
             },
             {
               "tagName": "A",
               "text": "Contact Us",
-              "delay": 103
+              "delay": 100
             },
             {
               "tagName": "A",
@@ -611,17 +614,17 @@
             {
               "tagName": "A",
               "text": "Microassist on Facebook",
-              "delay": 102
+              "delay": 100
             },
             {
               "tagName": "A",
               "text": "Microassist on Twitter",
-              "delay": 101
+              "delay": 103
             },
             {
               "tagName": "A",
               "text": "Microassist on Linked In",
-              "delay": 101
+              "delay": 103
             },
             {
               "tagName": "A",
@@ -1848,11 +1851,11 @@
           "triggers": 65,
           "headTriggers": 20,
           "tailTriggers": 45,
-          "impactTriggers": 9,
-          "additions": 0,
-          "removals": 0,
-          "opacityChanges": 12,
-          "opacityImpact": 279,
+          "impactTriggers": 8,
+          "additions": 97,
+          "removals": 97,
+          "opacityChanges": 0,
+          "opacityImpact": 0,
           "unhoverables": 2
         },
         "items": {
@@ -1861,74 +1864,66 @@
               {
                 "tagName": "LI",
                 "text": "AccessibilityAccessibilityAuditsVPATConsultingServ",
-                "additions": 0,
+                "additions": 28,
                 "removals": 0,
-                "opacityChanges": 1,
-                "opacityImpact": 27
+                "opacityChanges": 0,
+                "opacityImpact": 0
               },
               {
                 "tagName": "A",
                 "text": "Accessibility",
                 "additions": 0,
-                "removals": 0,
-                "opacityChanges": 1,
-                "opacityImpact": 27
+                "removals": 28,
+                "opacityChanges": 0,
+                "opacityImpact": 0
               },
               {
                 "tagName": "LI",
                 "text": "CustomElearningElearningPhilosophyAccessibleElearn",
-                "additions": 0,
+                "additions": 25,
                 "removals": 0,
-                "opacityChanges": 2,
-                "opacityImpact": 51
+                "opacityChanges": 0,
+                "opacityImpact": 0
               },
               {
                 "tagName": "A",
                 "text": "CustomElearning",
                 "additions": 0,
-                "removals": 0,
-                "opacityChanges": 1,
-                "opacityImpact": 24
+                "removals": 25,
+                "opacityChanges": 0,
+                "opacityImpact": 0
               },
               {
                 "tagName": "LI",
                 "text": "ClassroomTrainingCourseListCourseScheduleClassroom",
-                "additions": 0,
+                "additions": 16,
                 "removals": 0,
-                "opacityChanges": 2,
-                "opacityImpact": 39
+                "opacityChanges": 0,
+                "opacityImpact": 0
               },
               {
                 "tagName": "A",
                 "text": "ClassroomTraining",
                 "additions": 0,
-                "removals": 0,
-                "opacityChanges": 1,
-                "opacityImpact": 15
+                "removals": 16,
+                "opacityChanges": 0,
+                "opacityImpact": 0
               },
               {
                 "tagName": "LI",
                 "text": "AboutGovernmentSolutionsBlogsTeamCareerOpportuniti",
-                "additions": 0,
+                "additions": 28,
                 "removals": 0,
-                "opacityChanges": 2,
-                "opacityImpact": 42
+                "opacityChanges": 0,
+                "opacityImpact": 0
               },
               {
                 "tagName": "A",
                 "text": "About",
                 "additions": 0,
-                "removals": 0,
-                "opacityChanges": 1,
-                "opacityImpact": 27
-              },
-              {
-                "tagName": "LI",
-                "text": "OpenSearchFieldEnteryourtexthere...",
-                "additions": 0,
-                "removals": 0,
-                "opacityChanges": 1,
-                "opacityImpact": 27
+                "removals": 28,
+                "opacityChanges": 0,
+                "opacityImpact": 0
               }
             ],
             "unhoverables": [
@@ -2246,16 +2241,29 @@
       "result": {
         "roleElements": 78,
         "badRoleElements": 4,
+        "redundantRoleElements": 0,
         "tagNames": {
           "DIV": {
-            "complementary": 1,
-            "contentinfo": 1
+            "complementary": {
+              "bad": 1,
+              "redundant": 0
+            },
+            "contentinfo": {
+              "bad": 1,
+              "redundant": 0
+            }
           },
           "A": {
-            "button": 1
+            "button": {
+              "bad": 1,
+              "redundant": 0
+            }
           },
           "SECTION": {
-            "navigation": 1
+            "navigation": {
+              "bad": 1,
+              "redundant": 0
+            }
           }
         }
       }
@@ -10789,7 +10797,7 @@
   "endTime": "2022-07-06T01:32:17",
   "elapsedSeconds": 120,
   "score": {
-    "scoreProcID": "sp12a",
+    "scoreProcID": "sp12b",
     "logWeights": {
       "logCount": 0.5,
       "logSize": 0.01,
@@ -10813,11 +10821,11 @@
       "testaro": {
         "bulk": 0,
         "focAll": 2,
-        "focInd": 6,
+        "focInd": 10,
         "focOp": 14,
-        "hover": 50,
+        "hover": 144,
         "linkUl": 110,
-        "role": 4,
+        "role": 8,
         "styleDiff": 23,
         "zIndex": 67
       },
@@ -10911,7 +10919,7 @@
         "focusIndication": {
           "testaro": {
             "focInd": {
-              "score": 6,
+              "score": 10,
               "what": "Focused element displaying no or nostandard focus indicator"
             }
           }
@@ -10927,7 +10935,7 @@
         "hoverSurprise": {
           "testaro": {
             "hover": {
-              "score": 13,
+              "score": 36,
               "what": "Content changes caused by hovering"
             }
           }
@@ -10949,7 +10957,7 @@
         "roleBad": {
           "testaro": {
             "role": {
-              "score": 3,
+              "score": 6,
               "what": "Nonexistent or implicit-overriding role"
             }
           }
@@ -11052,7 +11060,7 @@
           "alfa": {
             "r74": {
               "score": 26,
-              "what": "Paragraph text has absolute font size"
+              "what": "Paragraph text has an absolute font size"
             }
           }
         },
@@ -11060,7 +11068,7 @@
           "alfa": {
             "r80": {
               "score": 24,
-              "what": "Paragraph text has absolute line height"
+              "what": "Paragraph text has an absolute line height"
             }
           }
         },
@@ -11389,7 +11397,7 @@
     },
     "preventionScores": {},
     "summary": {
-      "total": 766,
+      "total": 796,
       "log": 39,
       "preventions": 0,
       "solos": 0,
@@ -11401,6 +11409,10 @@
         {
           "groupName": "linkIndication",
           "score": 59
+        },
+        {
+          "groupName": "hoverSurprise",
+          "score": 38
         },
         {
           "groupName": "fontSizeAbsolute",
@@ -11435,10 +11447,6 @@
           "score": 16
         },
         {
-          "groupName": "hoverSurprise",
-          "score": 15
-        },
-        {
           "groupName": "focusableOperable",
           "score": 13
         },
@@ -11451,6 +11459,10 @@
           "score": 13
         },
         {
+          "groupName": "focusIndication",
+          "score": 12
+        },
+        {
           "groupName": "linkTextsSame",
           "score": 12
         },
@@ -11459,7 +11471,7 @@
           "score": 11
         },
         {
-          "groupName": "focusIndication",
+          "groupName": "roleBad",
           "score": 8
         },
         {
@@ -11485,10 +11497,6 @@
         {
           "groupName": "tabIndexMissing",
           "score": 6
-        },
-        {
-          "groupName": "roleBad",
-          "score": 5
         },
         {
           "groupName": "noLeading",

@@ -788,16 +788,26 @@
       "url": "https://www.accessibilityassociation.org/s/",
       "result": {
         "roleElements": 3,
-        "badRoleElements": 3,
+        "badRoleElements": 2,
+        "redundantRoleElements": 1,
         "tagNames": {
           "HEADER": {
-            "banner": 1
+            "banner": {
+              "bad": 1,
+              "redundant": 0
+            }
           },
           "DIV": {
-            "main": 1
+            "main": {
+              "bad": 1,
+              "redundant": 0
+            }
           },
           "BUTTON": {
-            "button": 1
+            "button": {
+              "bad": 0,
+              "redundant": 1
+            }
           }
         }
       }

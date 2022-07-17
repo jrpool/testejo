@@ -362,17 +362,17 @@
             {
               "tagName": "A",
               "text": "Learn about InterAccess Usability Testing",
-              "delay": 102
+              "delay": 101
             },
             {
               "tagName": "A",
               "text": "Get WCAG 2.x help",
-              "delay": 106
+              "delay": 103
             },
             {
               "tagName": "A",
               "text": "See more InterAccess services",
-              "delay": 101
+              "delay": 102
             }
           ]
         }
@@ -758,19 +758,32 @@
       "url": "https://interaccess.ie/",
       "result": {
         "roleElements": 4,
-        "badRoleElements": 4,
+        "badRoleElements": 3,
+        "redundantRoleElements": 1,
         "tagNames": {
           "HEADER": {
-            "banner": 1
+            "banner": {
+              "bad": 1,
+              "redundant": 0
+            }
           },
           "NAV": {
-            "navigation": 1
+            "navigation": {
+              "bad": 0,
+              "redundant": 1
+            }
           },
           "DIV": {
-            "main": 1
+            "main": {
+              "bad": 1,
+              "redundant": 0
+            }
           },
           "FOOTER": {
-            "contentinfo": 1
+            "contentinfo": {
+              "bad": 1,
+              "redundant": 0
+            }
           }
         }
       }
@@ -4138,7 +4151,7 @@
   "endTime": "2022-07-09T15:05:50",
   "elapsedSeconds": 107,
   "score": {
-    "scoreProcID": "sp12a",
+    "scoreProcID": "sp12b",
     "logWeights": {
       "logCount": 0.5,
       "logSize": 0.01,
@@ -4161,7 +4174,7 @@
     "packageDetails": {
       "testaro": {
         "linkUl": 12,
-        "role": 4,
+        "role": 7,
         "styleDiff": 9,
         "zIndex": 3
       },
@@ -4214,7 +4227,7 @@
         "roleBad": {
           "testaro": {
             "role": {
-              "score": 3,
+              "score": 5,
               "what": "Nonexistent or implicit-overriding role"
             }
           }
@@ -4420,7 +4433,7 @@
     },
     "preventionScores": {},
     "summary": {
-      "total": 334,
+      "total": 336,
       "log": 211,
       "preventions": 0,
       "solos": 0,
@@ -4451,7 +4464,7 @@
         },
         {
           "groupName": "roleBad",
-          "score": 5
+          "score": 7
         },
         {
           "groupName": "titleRedundant",

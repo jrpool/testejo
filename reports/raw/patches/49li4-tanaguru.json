@@ -1,0 +1,492 @@
+{
+  "id": "49li4-tanaguru",
+  "host": {
+    "id": "tanaguru",
+    "which": "https://www.tanaguru.com/",
+    "what": "Tanaguru"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-16T22:05:31"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-16T22:06:24"
+    }
+  ],
+  "script": {
+    "id": "tp12",
+    "what": "Alfa, Axe, HTML CodeSniffer, IBM, Tenon, WAVE, and 16 custom tests",
+    "strict": true,
+    "timeLimit": 150,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.tanaguru.com/",
+        "what": "Tanaguru"
+      },
+      {
+        "type": "test",
+        "which": "focInd",
+        "revealAll": false,
+        "allowedDelay": 250,
+        "withItems": true,
+        "what": "focus indicators"
+      },
+      {
+        "type": "test",
+        "which": "hover",
+        "headSize": 20,
+        "headSampleSize": 20,
+        "tailSampleSize": 15,
+        "withItems": true,
+        "what": "hover impacts"
+      },
+      {
+        "type": "test",
+        "which": "role",
+        "what": "validity and necessity of role assignments"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.tanaguru.com/",
+      "what": "Tanaguru",
+      "result": "https://www.tanaguru.com/"
+    },
+    {
+      "type": "test",
+      "which": "focInd",
+      "revealAll": false,
+      "allowedDelay": 250,
+      "withItems": true,
+      "what": "focus indicators",
+      "url": "https://www.tanaguru.com/",
+      "result": {
+        "totals": {
+          "total": 38,
+          "types": {
+            "indicatorMissing": {
+              "total": 0,
+              "tagNames": {}
+            },
+            "nonOutlinePresent": {
+              "total": 0,
+              "tagNames": {}
+            },
+            "outlinePresent": {
+              "total": 38,
+              "meanDelay": 10,
+              "tagNames": {
+                "A": 31,
+                "INPUT": 1,
+                "BUTTON": 5,
+                "SELECT": 1
+              }
+            }
+          }
+        },
+        "items": {
+          "indicatorMissing": [],
+          "nonOutlinePresent": [],
+          "outlinePresent": [
+            {
+              "tagName": "A",
+              "text": "Aller au contenu",
+              "delay": 0
+            },
+            {
+              "tagName": "INPUT",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Rechercher sur le site",
+              "delay": 0
+            },
+            {
+              "tagName": "SELECT",
+              "text": "FrançaisEnglish",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Outils",
+              "delay": 0
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Services",
+              "delay": 0
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Références",
+              "delay": 0
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "À propos",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Blog",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Tanaguru Engine",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Découvrez Tanaguru",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Formation accessibilité numérique",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Expertise accessibilité numérique",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Les outils d'accessibilité numérique",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Création de sites accessibles",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Tous nos clients",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Contactez-nous",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Solutions",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Aide",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Téléchargements",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Prestations",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Formations",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Accompagner et conseiller",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Industrialiser",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Développer",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Nos clients",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Notre équipe",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Nous contacter",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Blog",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Tanaguru sur Twitter",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Tanaguru sur Github",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Tanaguru sur LinkedIn",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Mentions légales",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Politique de confidentialité",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Crédits",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibilité",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Plan du site",
+              "delay": 0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.tanaguru.com/",
+      "what": "URL",
+      "result": "https://www.tanaguru.com/"
+    },
+    {
+      "type": "test",
+      "which": "hover",
+      "headSize": 20,
+      "headSampleSize": 20,
+      "tailSampleSize": 15,
+      "withItems": true,
+      "what": "hover-caused content changes",
+      "url": "https://www.tanaguru.com/",
+      "result": {
+        "totals": {
+          "triggers": 93,
+          "headTriggers": 20,
+          "tailTriggers": 73,
+          "impactTriggers": 0,
+          "additions": 0,
+          "removals": 0,
+          "opacityChanges": 0,
+          "opacityImpact": 0,
+          "unhoverables": 14
+        },
+        "items": {
+          "head": {
+            "impactTriggers": [],
+            "unhoverables": [
+              {
+                "tagName": "LI",
+                "id": "menu-item-867",
+                "text": "Solutions"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Solutions"
+              },
+              {
+                "tagName": "LI",
+                "id": "menu-item-868",
+                "text": "Aide"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Aide"
+              },
+              {
+                "tagName": "LI",
+                "id": "menu-item-1037",
+                "text": "Téléchargements"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Téléchargements"
+              },
+              {
+                "tagName": "LI",
+                "id": "menu-item-29",
+                "text": "Prestations"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Prestations"
+              },
+              {
+                "tagName": "LI",
+                "id": "menu-item-2826",
+                "text": "Formations"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Formations"
+              },
+              {
+                "tagName": "LI",
+                "id": "menu-item-588",
+                "text": "Accompagneretconseiller"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Accompagneretconseiller"
+              }
+            ]
+          },
+          "tail": {
+            "impactTriggers": [],
+            "unhoverables": [
+              {
+                "tagName": "LI",
+                "id": "menu-item-587",
+                "text": "Industrialiser"
+              },
+              {
+                "tagName": "LI",
+                "id": "menu-item-875",
+                "text": "Nouscontacter"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.tanaguru.com/",
+      "what": "URL",
+      "result": "https://www.tanaguru.com/"
+    },
+    {
+      "type": "test",
+      "which": "role",
+      "what": "roles",
+      "url": "https://www.tanaguru.com/",
+      "result": {
+        "roleElements": 14,
+        "badRoleElements": 2,
+        "redundantRoleElements": 2,
+        "tagNames": {
+          "HEADER": {
+            "banner": {
+              "bad": 1,
+              "redundant": 0
+            }
+          },
+          "NAV": {
+            "navigation": {
+              "bad": 0,
+              "redundant": 1
+            }
+          },
+          "MAIN": {
+            "main": {
+              "bad": 0,
+              "redundant": 1
+            }
+          },
+          "FOOTER": {
+            "contentinfo": {
+              "bad": 1,
+              "redundant": 0
+            }
+          }
+        }
+      }
+    }
+  ],
+  "timeStamp": "49li4",
+  "startTime": "2022-07-16T22:05:31",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "hover",
+      38
+    ],
+    [
+      "focInd",
+      0
+    ],
+    [
+      "role",
+      0
+    ]
+  ],
+  "logCount": 6,
+  "logSize": 966,
+  "errorLogCount": 3,
+  "errorLogSize": 828,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-16T22:06:24",
+  "elapsedSeconds": 52
+}

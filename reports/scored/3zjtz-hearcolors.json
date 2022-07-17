@@ -303,14 +303,15 @@
           "total": 36,
           "types": {
             "indicatorMissing": {
-              "total": 0,
-              "tagNames": {}
+              "total": 2,
+              "tagNames": {
+                "IFRAME": 2
+              }
             },
             "nonOutlinePresent": {
-              "total": 5,
+              "total": 3,
               "tagNames": {
-                "BUTTON": 3,
-                "IFRAME": 2
+                "BUTTON": 3
               }
             },
             "outlinePresent": {
@@ -323,15 +324,20 @@
           }
         },
         "items": {
-          "indicatorMissing": [],
-          "nonOutlinePresent": [
+          "indicatorMissing": [
             {
-              "tagName": "BUTTON",
-              "text": "ACCEDER"
+              "tagName": "IFRAME",
+              "text": ""
             },
             {
               "tagName": "IFRAME",
               "text": ""
+            }
+          ],
+          "nonOutlinePresent": [
+            {
+              "tagName": "BUTTON",
+              "text": "ACCEDER"
             },
             {
               "tagName": "BUTTON",
@@ -340,10 +346,6 @@
             {
               "tagName": "BUTTON",
               "text": "SUSCRIBIRSE AL BOLETÍN"
-            },
-            {
-              "tagName": "IFRAME",
-              "text": ""
             }
           ],
           "outlinePresent": [
@@ -1823,9 +1825,13 @@
       "result": {
         "roleElements": 40,
         "badRoleElements": 1,
+        "redundantRoleElements": 0,
         "tagNames": {
           "A": {
-            "button": 1
+            "button": {
+              "bad": 1,
+              "redundant": 0
+            }
           }
         }
       }
@@ -8230,7 +8236,7 @@
   "endTime": "2022-07-06T01:51:12",
   "elapsedSeconds": 113,
   "score": {
-    "scoreProcID": "sp12a",
+    "scoreProcID": "sp12b",
     "logWeights": {
       "logCount": 0.5,
       "logSize": 0.01,
@@ -8253,12 +8259,12 @@
     "packageDetails": {
       "testaro": {
         "motion": 0,
-        "focInd": 5,
+        "focInd": 9,
         "focOp": 3,
         "labClash": 2,
         "linkUl": 40,
         "menuNav": 44,
-        "role": 1,
+        "role": 2,
         "styleDiff": 23,
         "zIndex": 9
       },
@@ -8328,7 +8334,7 @@
         "focusIndication": {
           "testaro": {
             "focInd": {
-              "score": 5,
+              "score": 9,
               "what": "Focused element displaying no or nostandard focus indicator"
             }
           },
@@ -8380,7 +8386,7 @@
         "roleBad": {
           "testaro": {
             "role": {
-              "score": 1,
+              "score": 2,
               "what": "Nonexistent or implicit-overriding role"
             }
           }
@@ -8702,7 +8708,7 @@
     },
     "preventionScores": {},
     "summary": {
-      "total": 646,
+      "total": 651,
       "log": 250,
       "preventions": 0,
       "solos": 0,
@@ -8736,12 +8742,12 @@
           "score": 14
         },
         {
-          "groupName": "ariaBadAttribute",
-          "score": 10
+          "groupName": "focusIndication",
+          "score": 13
         },
         {
-          "groupName": "focusIndication",
-          "score": 9
+          "groupName": "ariaBadAttribute",
+          "score": 10
         },
         {
           "groupName": "iframeTitleBad",
@@ -8792,6 +8798,10 @@
           "score": 4
         },
         {
+          "groupName": "roleBad",
+          "score": 4
+        },
+        {
           "groupName": "zIndexNotZero",
           "score": 4
         },
@@ -8813,10 +8823,6 @@
         },
         {
           "groupName": "labelClash",
-          "score": 3
-        },
-        {
-          "groupName": "roleBad",
           "score": 3
         },
         {

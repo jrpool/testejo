@@ -303,10 +303,6 @@
           "total": 67,
           "types": {
             "indicatorMissing": {
-              "total": 0,
-              "tagNames": {}
-            },
-            "nonOutlinePresent": {
               "total": 11,
               "tagNames": {
                 "A": 5,
@@ -315,6 +311,10 @@
                 "BUTTON": 3,
                 "IFRAME": 1
               }
+            },
+            "nonOutlinePresent": {
+              "total": 0,
+              "tagNames": {}
             },
             "outlinePresent": {
               "total": 56,
@@ -327,8 +327,7 @@
           }
         },
         "items": {
-          "indicatorMissing": [],
-          "nonOutlinePresent": [
+          "indicatorMissing": [
             {
               "tagName": "A",
               "text": ""
@@ -374,6 +373,7 @@
               "text": ""
             }
           ],
+          "nonOutlinePresent": [],
           "outlinePresent": [
             {
               "tagName": "A",
@@ -1400,7 +1400,7 @@
           "removals": 0,
           "opacityChanges": 0,
           "opacityImpact": 0,
-          "unhoverables": 18
+          "unhoverables": 19
         },
         "items": {
           "head": {
@@ -1500,7 +1500,13 @@
           },
           "tail": {
             "impactTriggers": [],
-            "unhoverables": []
+            "unhoverables": [
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Getafreeaccessibilityconsultation"
+              }
+            ]
           }
         }
       }
@@ -1759,13 +1765,23 @@
       "result": {
         "roleElements": 18,
         "badRoleElements": 5,
+        "redundantRoleElements": 0,
         "tagNames": {
           "A": {
-            "button": 2
+            "button": {
+              "bad": 2,
+              "redundant": 0
+            }
           },
           "DIV": {
-            "group": 1,
-            "status": 2
+            "group": {
+              "bad": 1,
+              "redundant": 0
+            },
+            "status": {
+              "bad": 2,
+              "redundant": 0
+            }
           }
         }
       }

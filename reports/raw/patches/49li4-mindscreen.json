@@ -1,0 +1,309 @@
+{
+  "id": "49li4-mindscreen",
+  "host": {
+    "id": "mindscreen",
+    "which": "https://www.mindscreen.de/",
+    "what": "mindscreen"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-16T21:58:15"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-16T21:59:08"
+    }
+  ],
+  "script": {
+    "id": "tp12",
+    "what": "Alfa, Axe, HTML CodeSniffer, IBM, Tenon, WAVE, and 16 custom tests",
+    "strict": true,
+    "timeLimit": 150,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.mindscreen.de/",
+        "what": "mindscreen"
+      },
+      {
+        "type": "test",
+        "which": "focInd",
+        "revealAll": false,
+        "allowedDelay": 250,
+        "withItems": true,
+        "what": "focus indicators"
+      },
+      {
+        "type": "test",
+        "which": "hover",
+        "headSize": 20,
+        "headSampleSize": 20,
+        "tailSampleSize": 15,
+        "withItems": true,
+        "what": "hover impacts"
+      },
+      {
+        "type": "test",
+        "which": "role",
+        "what": "validity and necessity of role assignments"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.mindscreen.de/",
+      "what": "mindscreen",
+      "result": "https://www.mindscreen.de/"
+    },
+    {
+      "type": "test",
+      "which": "focInd",
+      "revealAll": false,
+      "allowedDelay": 250,
+      "withItems": true,
+      "what": "focus indicators",
+      "url": "https://www.mindscreen.de/",
+      "result": {
+        "totals": {
+          "total": 26,
+          "types": {
+            "indicatorMissing": {
+              "total": 9,
+              "tagNames": {
+                "A": 9
+              }
+            },
+            "nonOutlinePresent": {
+              "total": 17,
+              "tagNames": {
+                "A": 17
+              }
+            },
+            "outlinePresent": {
+              "total": 0,
+              "meanDelay": 0,
+              "tagNames": {}
+            }
+          }
+        },
+        "items": {
+          "indicatorMissing": [
+            {
+              "tagName": "A",
+              "text": "Barrierefreie Websites mit TYPO3 und Neos"
+            },
+            {
+              "tagName": "A",
+              "text": "Schulungen und Workshops"
+            },
+            {
+              "tagName": "A",
+              "text": "Unsere Leistungen im Bereich digitale Barrierefreiheit"
+            },
+            {
+              "tagName": "A",
+              "text": "mindscreen CAAT"
+            },
+            {
+              "tagName": "A",
+              "text": "Tester*in für Barrierefreiheit"
+            },
+            {
+              "tagName": "A",
+              "text": ""
+            },
+            {
+              "tagName": "A",
+              "text": "mindscreen Blog"
+            },
+            {
+              "tagName": "A",
+              "text": "Schnelle Barrierefreiheitstests mit Developer Tools in Microsoft Edge"
+            },
+            {
+              "tagName": "A",
+              "text": "GitLab fixing problems in open source software can make you feel better"
+            }
+          ],
+          "nonOutlinePresent": [
+            {
+              "tagName": "A",
+              "text": ""
+            },
+            {
+              "tagName": "A",
+              "text": "salon@caat.report."
+            },
+            {
+              "tagName": "A",
+              "text": "caat.report"
+            },
+            {
+              "tagName": "A",
+              "text": "bezirk-oberbayern.de"
+            },
+            {
+              "tagName": "A",
+              "text": "abledocs.com"
+            },
+            {
+              "tagName": "A",
+              "text": "Eventliste zu digitaler Barrierefreiheit"
+            },
+            {
+              "tagName": "A",
+              "text": "Konferenz zum BFSG"
+            },
+            {
+              "tagName": "A",
+              "text": "Symposium – Leichte Sprache. Symposium zu Kunst und Teilhabe"
+            },
+            {
+              "tagName": "A",
+              "text": "UIG Tagung 2022"
+            },
+            {
+              "tagName": "A",
+              "text": "GitLab Free"
+            },
+            {
+              "tagName": "A",
+              "text": "my first GitLab issue: Related issues / Linked issues stylesheet problem"
+            },
+            {
+              "tagName": "A",
+              "text": "salon@mindscreen.de"
+            },
+            {
+              "tagName": "A",
+              "text": "salon@mindscreen.de"
+            },
+            {
+              "tagName": "A",
+              "text": "Impressum"
+            },
+            {
+              "tagName": "A",
+              "text": "Datenschutzerklärung"
+            },
+            {
+              "tagName": "A",
+              "text": "Erklärung zur Barrierefreiheit"
+            },
+            {
+              "tagName": "A",
+              "text": "Allgemeine Geschäftsbedingungen Webhosting"
+            }
+          ],
+          "outlinePresent": []
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.mindscreen.de/",
+      "what": "URL",
+      "result": "https://www.mindscreen.de/"
+    },
+    {
+      "type": "test",
+      "which": "hover",
+      "headSize": 20,
+      "headSampleSize": 20,
+      "tailSampleSize": 15,
+      "withItems": true,
+      "what": "hover-caused content changes",
+      "url": "https://www.mindscreen.de/",
+      "result": {
+        "totals": {
+          "triggers": 26,
+          "headTriggers": 20,
+          "tailTriggers": 6,
+          "impactTriggers": 0,
+          "additions": 0,
+          "removals": 0,
+          "opacityChanges": 0,
+          "opacityImpact": 0,
+          "unhoverables": 0
+        },
+        "items": {
+          "head": {
+            "impactTriggers": [],
+            "unhoverables": []
+          },
+          "tail": {
+            "impactTriggers": [],
+            "unhoverables": []
+          }
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.mindscreen.de/",
+      "what": "URL",
+      "result": "https://www.mindscreen.de/"
+    },
+    {
+      "type": "test",
+      "which": "role",
+      "what": "roles",
+      "url": "https://www.mindscreen.de/",
+      "result": {
+        "roleElements": 0,
+        "badRoleElements": 0,
+        "redundantRoleElements": 0,
+        "tagNames": {}
+      }
+    }
+  ],
+  "timeStamp": "49li4",
+  "startTime": "2022-07-16T21:58:15",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "hover",
+      36
+    ],
+    [
+      "focInd",
+      8
+    ],
+    [
+      "role",
+      0
+    ]
+  ],
+  "logCount": 0,
+  "logSize": 0,
+  "errorLogCount": 0,
+  "errorLogSize": 0,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-16T21:59:08",
+  "elapsedSeconds": 52
+}

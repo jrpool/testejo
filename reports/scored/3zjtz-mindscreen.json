@@ -303,13 +303,15 @@
           "total": 26,
           "types": {
             "indicatorMissing": {
-              "total": 0,
-              "tagNames": {}
+              "total": 9,
+              "tagNames": {
+                "A": 9
+              }
             },
             "nonOutlinePresent": {
-              "total": 26,
+              "total": 17,
               "tagNames": {
-                "A": 26
+                "A": 17
               }
             },
             "outlinePresent": {
@@ -320,20 +322,7 @@
           }
         },
         "items": {
-          "indicatorMissing": [],
-          "nonOutlinePresent": [
-            {
-              "tagName": "A",
-              "text": ""
-            },
-            {
-              "tagName": "A",
-              "text": "salon@caat.report."
-            },
-            {
-              "tagName": "A",
-              "text": "caat.report"
-            },
+          "indicatorMissing": [
             {
               "tagName": "A",
               "text": "Barrierefreie Websites mit TYPO3 und Neos"
@@ -353,6 +342,36 @@
             {
               "tagName": "A",
               "text": "Tester*in für Barrierefreiheit"
+            },
+            {
+              "tagName": "A",
+              "text": ""
+            },
+            {
+              "tagName": "A",
+              "text": "mindscreen Blog"
+            },
+            {
+              "tagName": "A",
+              "text": "Schnelle Barrierefreiheitstests mit Developer Tools in Microsoft Edge"
+            },
+            {
+              "tagName": "A",
+              "text": "GitLab fixing problems in open source software can make you feel better"
+            }
+          ],
+          "nonOutlinePresent": [
+            {
+              "tagName": "A",
+              "text": ""
+            },
+            {
+              "tagName": "A",
+              "text": "salon@caat.report."
+            },
+            {
+              "tagName": "A",
+              "text": "caat.report"
             },
             {
               "tagName": "A",
@@ -380,27 +399,11 @@
             },
             {
               "tagName": "A",
-              "text": ""
-            },
-            {
-              "tagName": "A",
-              "text": "mindscreen Blog"
-            },
-            {
-              "tagName": "A",
-              "text": "Schnelle Barrierefreiheitstests mit Developer Tools in Microsoft Edge"
-            },
-            {
-              "tagName": "A",
               "text": "GitLab Free"
             },
             {
               "tagName": "A",
               "text": "my first GitLab issue: Related issues / Linked issues stylesheet problem"
-            },
-            {
-              "tagName": "A",
-              "text": "GitLab fixing problems in open source software can make you feel better"
             },
             {
               "tagName": "A",
@@ -913,6 +916,7 @@
       "result": {
         "roleElements": 0,
         "badRoleElements": 0,
+        "redundantRoleElements": 0,
         "tagNames": {}
       }
     },
@@ -2918,7 +2922,7 @@
   "endTime": "2022-07-06T01:33:54",
   "elapsedSeconds": 97,
   "score": {
-    "scoreProcID": "sp12a",
+    "scoreProcID": "sp12b",
     "logWeights": {
       "logCount": 0.5,
       "logSize": 0.01,
@@ -2940,7 +2944,7 @@
     },
     "packageDetails": {
       "testaro": {
-        "focInd": 26,
+        "focInd": 44,
         "linkUl": 16,
         "styleDiff": 12
       },
@@ -2971,7 +2975,7 @@
         "focusIndication": {
           "testaro": {
             "focInd": {
-              "score": 26,
+              "score": 44,
               "what": "Focused element displaying no or nostandard focus indicator"
             }
           },
@@ -3083,14 +3087,14 @@
     },
     "preventionScores": {},
     "summary": {
-      "total": 113,
+      "total": 131,
       "log": 0,
       "preventions": 0,
       "solos": 0,
       "groups": [
         {
           "groupName": "focusIndication",
-          "score": 28
+          "score": 46
         },
         {
           "groupName": "linkForcesNewWindow",

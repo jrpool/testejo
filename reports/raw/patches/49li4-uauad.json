@@ -1,0 +1,774 @@
+{
+  "id": "49li4-uauad",
+  "host": {
+    "id": "uauad",
+    "which": "https://web.ua.es/va/accesibilidad/",
+    "what": "Unitat d’Accessibilitat Digital de la Universitat d’Alacant"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-16T22:12:26"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-16T22:13:32"
+    }
+  ],
+  "script": {
+    "id": "tp12",
+    "what": "Alfa, Axe, HTML CodeSniffer, IBM, Tenon, WAVE, and 16 custom tests",
+    "strict": true,
+    "timeLimit": 150,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://web.ua.es/va/accesibilidad/",
+        "what": "Unitat d’Accessibilitat Digital de la Universitat d’Alacant"
+      },
+      {
+        "type": "test",
+        "which": "focInd",
+        "revealAll": false,
+        "allowedDelay": 250,
+        "withItems": true,
+        "what": "focus indicators"
+      },
+      {
+        "type": "test",
+        "which": "hover",
+        "headSize": 20,
+        "headSampleSize": 20,
+        "tailSampleSize": 15,
+        "withItems": true,
+        "what": "hover impacts"
+      },
+      {
+        "type": "test",
+        "which": "role",
+        "what": "validity and necessity of role assignments"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://web.ua.es/va/accesibilidad/",
+      "what": "Unitat d’Accessibilitat Digital de la Universitat d’Alacant",
+      "result": "https://web.ua.es/va/accesibilidad/"
+    },
+    {
+      "type": "test",
+      "which": "focInd",
+      "revealAll": false,
+      "allowedDelay": 250,
+      "withItems": true,
+      "what": "focus indicators",
+      "url": "https://web.ua.es/va/accesibilidad/",
+      "result": {
+        "totals": {
+          "total": 106,
+          "types": {
+            "indicatorMissing": {
+              "total": 2,
+              "tagNames": {
+                "A": 2
+              }
+            },
+            "nonOutlinePresent": {
+              "total": 7,
+              "tagNames": {
+                "BUTTON": 6,
+                "INPUT": 1
+              }
+            },
+            "outlinePresent": {
+              "total": 97,
+              "meanDelay": 0,
+              "tagNames": {
+                "A": 97
+              }
+            }
+          }
+        },
+        "items": {
+          "indicatorMissing": [
+            {
+              "tagName": "A",
+              "text": "Previous"
+            },
+            {
+              "tagName": "A",
+              "text": "Next"
+            }
+          ],
+          "nonOutlinePresent": [
+            {
+              "tagName": "BUTTON",
+              "text": "Acceptar"
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Rebutjar"
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Leer"
+            },
+            {
+              "tagName": "INPUT",
+              "text": ""
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Buscar"
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Reanudar"
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Pausar"
+            }
+          ],
+          "outlinePresent": [
+            {
+              "tagName": "A",
+              "text": "Ir a contenido",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "política de galetes",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Estudis",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Governança",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Organització",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Español",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "English",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Facebook",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Twitter",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Youtube",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Instagram",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "LinkedIn",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Seu Electrònica",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Webmail",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "UACloud CV",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Llocs d'interés",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Unitat d'Accessibilitat Digital",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Presentació",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Continguts accessibles",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Tecnologies accessibles",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Formació",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Investigació",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "CAD:UA",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "APPS ACCESSIBLES",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Informació general",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Els nostres serveis",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Formulari de sol·licituds",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Normativa d'accessibilitat digital",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Guia de creació de documents digitals accessibles",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibilitat Web",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Pautes d'accessibilitat WCAG",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Plantilles per a elaborar continguts accessibles",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Guia de tecnologies accessibles",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Vídeo tutorials de tecnologies accessibles",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Aula laboratori de tecnologies accessibles",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Recursos accessibles en la UA",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Apps accessibles",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Cursos",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Aprèn a ser accessible amb els nostres vídeos",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Guia d'educació inclusiva",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Guies de disseny curricular",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Investigació en Accessibilitat Digital en la UA",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Emprenedoria social i accessibilitat digital",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Exemples d'innovació social i accessibilitat",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Jornades, esdeveniments i convocatòries",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Rep les nostres novetats en el teu e-mail",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Segueix-nos en Twitter",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Segueix-nos en Facebook",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Contacta amb nosaltres",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "ver más noticias",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Canal RSS",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Formació sobre creació de documents digitals accessibles en el Projecte Internacional Transform4Euro",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Més de 1000 participants en la Setmana de l'Accessibilitat Digital en la UA 2022",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Projecte ACCESS a República Dominicana",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Setmana de l'Accessibilitat Digital en la UA 2022",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Workshop \"How to be accessible when publishing on social networks?\"",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "La Universitat d’Alacant lliura els primers Premis Accessibilitat UA",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "III Jornada d'Emprenedoria i Investigació en Accessibilitat Digital",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Participem en V Congrés Internacional Universitat i Discapacitat",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "2a jornada Bretxa Digital i Discapacitat",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Publiquem una sèrie de vídeo tutorials sobre tecnologies accessibles",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Lliurament del premi en accessibilitat en la gala dels Premis Impuls",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Formació en el projecte internacional ENTENDRE",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Taller Publicació accessible en xarxes socials",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Signatures accessibles per a correu electrònic de la UA",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Assistim a una conferència sobre exoesquelets biònics",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Curs per a PDI \"Creant materials digitals accessibles i inclusius\"",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Taller del projecte ACCESS sobre materials digitals accessibles",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Incorpora subtítols automàtics en espanyol a les teues videoconferències o classes en línia de Googl",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Reunió de les Unitats Responsables d'Accessibilitat amb l'Observatori d'Accessibilitat Web",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Webinar EDICO: Editor científic de l'ONCE",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "La Universitat d'Alacant posa en marxa un servei per a acabar amb les barreres digitals",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "La UA posa en marxa una aplicació que reconeix la veu i la transcriu automàticament",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Premie Accessibilitat UA en els Premis Impuls ua:emprèn",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "La UA es converteix en la primera universitat a implementar la tecnologia Navilens per a facilitar l",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "La UA trenca barreres amb la presentació de noves apps i pioners projectes d'emprenedoria en matèria",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Inici",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Contacte",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Estadístiques",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Mapa del lloc",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Compartir",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Carretera Sant Vicent del Raspeig s/n03690 Sant Vicent del Raspeig - Alacant Tel.: 96 590 3400 - Fax",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Sol·licita més informació",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Seguretat i emergències: 112",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Facebook",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Twitter",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Youtube",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Instagram",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "LinkedIn",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Condicions d'ús",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibilitat",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Política de privacitat",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Galetes",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Informació Legal",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "© Universitat d'Alacant 1996-2022",
+              "delay": 0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://web.ua.es/va/accesibilidad/",
+      "what": "URL",
+      "result": "https://web.ua.es/va/accesibilidad/"
+    },
+    {
+      "type": "test",
+      "which": "hover",
+      "headSize": 20,
+      "headSampleSize": 20,
+      "tailSampleSize": 15,
+      "withItems": true,
+      "what": "hover-caused content changes",
+      "url": "https://web.ua.es/va/accesibilidad/",
+      "result": {
+        "totals": {
+          "triggers": 173,
+          "headTriggers": 20,
+          "tailTriggers": 153,
+          "impactTriggers": 10,
+          "additions": 0,
+          "removals": 0,
+          "opacityChanges": 10,
+          "opacityImpact": 0,
+          "unhoverables": 4
+        },
+        "items": {
+          "head": {
+            "impactTriggers": [],
+            "unhoverables": [
+              {
+                "tagName": "A",
+                "id": "primerenlace",
+                "text": "Iracontenido"
+              }
+            ]
+          },
+          "tail": {
+            "impactTriggers": [
+              {
+                "tagName": "A",
+                "text": "LaUAesconverteixenlaprimerauniversitataimplementar",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 0
+              }
+            ],
+            "unhoverables": [
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "Galetes"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Accessibilitat"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "Accessibilitat"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://web.ua.es/va/accesibilidad/",
+      "what": "URL",
+      "result": "https://web.ua.es/va/accesibilidad/"
+    },
+    {
+      "type": "test",
+      "which": "role",
+      "what": "roles",
+      "url": "https://web.ua.es/va/accesibilidad/",
+      "result": {
+        "roleElements": 38,
+        "badRoleElements": 21,
+        "redundantRoleElements": 0,
+        "tagNames": {
+          "A": {
+            "button": {
+              "bad": 20,
+              "redundant": 0
+            }
+          },
+          "DIV": {
+            "complementary": {
+              "bad": 1,
+              "redundant": 0
+            }
+          }
+        }
+      }
+    }
+  ],
+  "timeStamp": "49li4",
+  "startTime": "2022-07-16T22:12:26",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "hover",
+      48
+    ],
+    [
+      "focInd",
+      3
+    ],
+    [
+      "role",
+      0
+    ]
+  ],
+  "logCount": 0,
+  "logSize": 0,
+  "errorLogCount": 0,
+  "errorLogSize": 0,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-16T22:13:32",
+  "elapsedSeconds": 66
+}

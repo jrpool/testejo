@@ -1,0 +1,547 @@
+{
+  "id": "49ouy-w3cwaiaria",
+  "host": {
+    "id": "w3cwaiaria",
+    "which": "https://www.w3.org/WAI/standards-guidelines/aria/",
+    "what": "W3C WAI-ARIA"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-16T23:49:42"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-16T23:50:42"
+    }
+  ],
+  "script": {
+    "id": "tp12",
+    "what": "Alfa, Axe, HTML CodeSniffer, IBM, Tenon, WAVE, and 16 custom tests",
+    "strict": true,
+    "timeLimit": 150,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.w3.org/WAI/standards-guidelines/aria/",
+        "what": "W3C WAI-ARIA"
+      },
+      {
+        "type": "test",
+        "which": "focInd",
+        "revealAll": false,
+        "allowedDelay": 250,
+        "withItems": true,
+        "what": "focus indicators"
+      },
+      {
+        "type": "test",
+        "which": "hover",
+        "headSize": 20,
+        "headSampleSize": 20,
+        "tailSampleSize": 15,
+        "withItems": true,
+        "what": "hover impacts"
+      },
+      {
+        "type": "test",
+        "which": "role",
+        "what": "validity and necessity of role assignments"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.w3.org/WAI/standards-guidelines/aria/",
+      "what": "W3C WAI-ARIA",
+      "result": "https://www.w3.org/WAI/standards-guidelines/aria/"
+    },
+    {
+      "type": "test",
+      "which": "focInd",
+      "revealAll": false,
+      "allowedDelay": 250,
+      "withItems": true,
+      "what": "focus indicators",
+      "url": "https://www.w3.org/WAI/standards-guidelines/aria/",
+      "result": {
+        "totals": {
+          "total": 85,
+          "types": {
+            "indicatorMissing": {
+              "total": 51,
+              "tagNames": {
+                "BUTTON": 1,
+                "A": 50
+              }
+            },
+            "nonOutlinePresent": {
+              "total": 34,
+              "tagNames": {
+                "A": 33,
+                "INPUT": 1
+              }
+            },
+            "outlinePresent": {
+              "total": 0,
+              "meanDelay": 0,
+              "tagNames": {}
+            }
+          }
+        },
+        "items": {
+          "indicatorMissing": [
+            {
+              "tagName": "BUTTON",
+              "text": ""
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility Fundamentals"
+            },
+            {
+              "tagName": "A",
+              "text": "Planning & Policies"
+            },
+            {
+              "tagName": "A",
+              "text": "Design & Develop"
+            },
+            {
+              "tagName": "A",
+              "text": "Test & Evaluate"
+            },
+            {
+              "tagName": "A",
+              "text": "Teach & Advocate"
+            },
+            {
+              "tagName": "A",
+              "text": "Standards/Guidelines"
+            },
+            {
+              "tagName": "A",
+              "text": "Home"
+            },
+            {
+              "tagName": "A",
+              "text": "Standards/Guidelines"
+            },
+            {
+              "tagName": "A",
+              "text": "WAI-ARIA"
+            },
+            {
+              "tagName": "A",
+              "text": "WAI-ARIA standard"
+            },
+            {
+              "tagName": "A",
+              "text": "WAI-ARIA Authoring Practices Guide (APG)"
+            },
+            {
+              "tagName": "A",
+              "text": "Introduction"
+            },
+            {
+              "tagName": "A",
+              "text": "Authoring Practices Guide (APG)"
+            },
+            {
+              "tagName": "A",
+              "text": "Versions"
+            },
+            {
+              "tagName": "A",
+              "text": "Who develops WAI-ARIA"
+            },
+            {
+              "tagName": "A",
+              "text": "Introduction to Web\nAccessibility"
+            },
+            {
+              "tagName": "A",
+              "text": "Essential Components\nof Web Accessibility"
+            },
+            {
+              "tagName": "A",
+              "text": "ARIA Authoring Practices Guide (APG)"
+            },
+            {
+              "tagName": "A",
+              "text": "WAI-ARIA 1.0"
+            },
+            {
+              "tagName": "A",
+              "text": "WAI-ARIA 1.1"
+            },
+            {
+              "tagName": "A",
+              "text": "WAI-ARIA 1.2"
+            },
+            {
+              "tagName": "A",
+              "text": "WAI-ARIA 1.2"
+            },
+            {
+              "tagName": "A",
+              "text": "Core Accessibility API Mappings 1.2"
+            },
+            {
+              "tagName": "A",
+              "text": "Accessible Name and Description: Computation and API Mappings\n1.2"
+            },
+            {
+              "tagName": "A",
+              "text": "HTML Accessibility API Mappings 1.0"
+            },
+            {
+              "tagName": "A",
+              "text": "SVG Accessibility API Mappings 1.0"
+            },
+            {
+              "tagName": "A",
+              "text": "WAI-ARIA GitHub\nRepository"
+            },
+            {
+              "tagName": "A",
+              "text": "How WAI Develops Accessibility Guidelines through the W3C\nProcess"
+            },
+            {
+              "tagName": "A",
+              "text": "ARIA WG"
+            },
+            {
+              "tagName": "A",
+              "text": "W3C"
+            },
+            {
+              "tagName": "A",
+              "text": "WAI"
+            },
+            {
+              "tagName": "A",
+              "text": "ARIA WG public page"
+            },
+            {
+              "tagName": "A",
+              "text": "How WAI Develops Accessibility Guidelines through the W3C Process:\nMilestones and Opportunities to C"
+            },
+            {
+              "tagName": "A",
+              "text": "WAI home page"
+            },
+            {
+              "tagName": "A",
+              "text": "WAI Interest Group"
+            },
+            {
+              "tagName": "A",
+              "text": "Participating in WAI"
+            },
+            {
+              "tagName": "A",
+              "text": "wai@w3.org"
+            },
+            {
+              "tagName": "A",
+              "text": "E-mail"
+            },
+            {
+              "tagName": "A",
+              "text": "Fork & Edit on GitHub"
+            },
+            {
+              "tagName": "A",
+              "text": "New GitHub Issue"
+            },
+            {
+              "tagName": "A",
+              "text": "Back to Top"
+            },
+            {
+              "tagName": "A",
+              "text": "Michael Cooper"
+            },
+            {
+              "tagName": "A",
+              "text": "Shawn Lawton Henry"
+            },
+            {
+              "tagName": "A",
+              "text": "ARIA WG"
+            },
+            {
+              "tagName": "A",
+              "text": "EOWG"
+            },
+            {
+              "tagName": "A",
+              "text": "MIT"
+            },
+            {
+              "tagName": "A",
+              "text": "ERCIM"
+            },
+            {
+              "tagName": "A",
+              "text": "Keio"
+            },
+            {
+              "tagName": "A",
+              "text": "Beihang"
+            },
+            {
+              "tagName": "A",
+              "text": "Permission to Use WAI Material"
+            }
+          ],
+          "nonOutlinePresent": [
+            {
+              "tagName": "A",
+              "text": "Skip to Content"
+            },
+            {
+              "tagName": "A",
+              "text": "Change Text Size or Colors"
+            },
+            {
+              "tagName": "A",
+              "text": "All Translations"
+            },
+            {
+              "tagName": "A",
+              "text": ""
+            },
+            {
+              "tagName": "A",
+              "text": "Web Accessibility Initiative WAI"
+            },
+            {
+              "tagName": "A",
+              "text": "Get Involved"
+            },
+            {
+              "tagName": "A",
+              "text": "About W3C WAI"
+            },
+            {
+              "tagName": "INPUT",
+              "text": ""
+            },
+            {
+              "tagName": "A",
+              "text": "Standards/Guidelines"
+            },
+            {
+              "tagName": "A",
+              "text": "Web Content – WCAG 2"
+            },
+            {
+              "tagName": "A",
+              "text": "WCAG 3 Draft"
+            },
+            {
+              "tagName": "A",
+              "text": "Authoring Tools – ATAG"
+            },
+            {
+              "tagName": "A",
+              "text": "User Agents – UAAG"
+            },
+            {
+              "tagName": "A",
+              "text": "WAI-ARIA"
+            },
+            {
+              "tagName": "A",
+              "text": "Evaluation – ACT & EARL"
+            },
+            {
+              "tagName": "A",
+              "text": "WAI-Adapt"
+            },
+            {
+              "tagName": "A",
+              "text": "Pronunciation"
+            },
+            {
+              "tagName": "A",
+              "text": "Standards Harmonization is Essential"
+            },
+            {
+              "tagName": "A",
+              "text": "W3C Process for Developing Standards"
+            },
+            {
+              "tagName": "A",
+              "text": "Referencing and Linking to Standards"
+            },
+            {
+              "tagName": "A",
+              "text": "Cognitive Accessibility at W3C"
+            },
+            {
+              "tagName": "A",
+              "text": "Mobile Accessibility at W3C"
+            },
+            {
+              "tagName": "A",
+              "text": "W3C Web Accessibility Initiative (WAI)"
+            },
+            {
+              "tagName": "A",
+              "text": "Twitter"
+            },
+            {
+              "tagName": "A",
+              "text": "Feed"
+            },
+            {
+              "tagName": "A",
+              "text": "YouTube"
+            },
+            {
+              "tagName": "A",
+              "text": "Get News in Email"
+            },
+            {
+              "tagName": "A",
+              "text": "Contact WAI"
+            },
+            {
+              "tagName": "A",
+              "text": "Site Map"
+            },
+            {
+              "tagName": "A",
+              "text": "News"
+            },
+            {
+              "tagName": "A",
+              "text": "Archive"
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility Statement"
+            },
+            {
+              "tagName": "A",
+              "text": "Translations"
+            },
+            {
+              "tagName": "A",
+              "text": "Resources for Roles"
+            }
+          ],
+          "outlinePresent": []
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.w3.org/WAI/standards-guidelines/aria/",
+      "what": "URL",
+      "result": "https://www.w3.org/WAI/standards-guidelines/aria/"
+    },
+    {
+      "type": "test",
+      "which": "hover",
+      "headSize": 20,
+      "headSampleSize": 20,
+      "tailSampleSize": 15,
+      "withItems": true,
+      "what": "hover-caused content changes",
+      "url": "https://www.w3.org/WAI/standards-guidelines/aria/",
+      "result": {
+        "totals": {
+          "triggers": 143,
+          "headTriggers": 20,
+          "tailTriggers": 123,
+          "impactTriggers": 0,
+          "additions": 0,
+          "removals": 0,
+          "opacityChanges": 0,
+          "opacityImpact": 0,
+          "unhoverables": 0
+        },
+        "items": {
+          "head": {
+            "impactTriggers": [],
+            "unhoverables": []
+          },
+          "tail": {
+            "impactTriggers": [],
+            "unhoverables": []
+          }
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.w3.org/WAI/standards-guidelines/aria/",
+      "what": "URL",
+      "result": "https://www.w3.org/WAI/standards-guidelines/aria/"
+    },
+    {
+      "type": "test",
+      "which": "role",
+      "what": "roles",
+      "url": "https://www.w3.org/WAI/standards-guidelines/aria/",
+      "result": {
+        "roleElements": 2,
+        "badRoleElements": 0,
+        "redundantRoleElements": 0,
+        "tagNames": {}
+      }
+    }
+  ],
+  "timeStamp": "49ouy",
+  "startTime": "2022-07-16T23:49:42",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "hover",
+      55
+    ],
+    [
+      "focInd",
+      0
+    ],
+    [
+      "role",
+      0
+    ]
+  ],
+  "logCount": 3,
+  "logSize": 303,
+  "errorLogCount": 3,
+  "errorLogSize": 303,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-16T23:50:42",
+  "elapsedSeconds": 59
+}

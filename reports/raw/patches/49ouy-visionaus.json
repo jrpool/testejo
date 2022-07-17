@@ -1,0 +1,813 @@
+{
+  "id": "49ouy-visionaus",
+  "host": {
+    "id": "visionaus",
+    "which": "https://www.visionaustralia.org/services/digital-access",
+    "what": "Vision Australia"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-16T23:46:37"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-16T23:48:34"
+    }
+  ],
+  "script": {
+    "id": "tp12",
+    "what": "Alfa, Axe, HTML CodeSniffer, IBM, Tenon, WAVE, and 16 custom tests",
+    "strict": true,
+    "timeLimit": 150,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.visionaustralia.org/services/digital-access",
+        "what": "Vision Australia"
+      },
+      {
+        "type": "test",
+        "which": "focInd",
+        "revealAll": false,
+        "allowedDelay": 250,
+        "withItems": true,
+        "what": "focus indicators"
+      },
+      {
+        "type": "test",
+        "which": "hover",
+        "headSize": 20,
+        "headSampleSize": 20,
+        "tailSampleSize": 15,
+        "withItems": true,
+        "what": "hover impacts"
+      },
+      {
+        "type": "test",
+        "which": "role",
+        "what": "validity and necessity of role assignments"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.visionaustralia.org/services/digital-access",
+      "what": "Vision Australia",
+      "result": "https://www.visionaustralia.org/services/digital-access"
+    },
+    {
+      "type": "test",
+      "which": "focInd",
+      "revealAll": false,
+      "allowedDelay": 250,
+      "withItems": true,
+      "what": "focus indicators",
+      "url": "https://www.visionaustralia.org/services/digital-access",
+      "result": {
+        "totals": {
+          "total": 141,
+          "types": {
+            "indicatorMissing": {
+              "total": 87,
+              "tagNames": {
+                "A": 83,
+                "BUTTON": 2,
+                "INPUT": 2
+              }
+            },
+            "nonOutlinePresent": {
+              "total": 54,
+              "tagNames": {
+                "A": 53,
+                "INPUT": 1
+              }
+            },
+            "outlinePresent": {
+              "total": 0,
+              "meanDelay": 0,
+              "tagNames": {}
+            }
+          }
+        },
+        "items": {
+          "indicatorMissing": [
+            {
+              "tagName": "A",
+              "text": "visionaustralia.org/COVID-19"
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "×"
+            },
+            {
+              "tagName": "A",
+              "text": "Skip to main content"
+            },
+            {
+              "tagName": "A",
+              "text": "1300 84 74 66"
+            },
+            {
+              "tagName": "A",
+              "text": "Login MyVA"
+            },
+            {
+              "tagName": "A",
+              "text": "Seeing Eye Dogs"
+            },
+            {
+              "tagName": "A",
+              "text": "Library"
+            },
+            {
+              "tagName": "A",
+              "text": "Radio"
+            },
+            {
+              "tagName": "A",
+              "text": "Shop"
+            },
+            {
+              "tagName": "INPUT",
+              "text": ""
+            },
+            {
+              "tagName": "A",
+              "text": "Donate now"
+            },
+            {
+              "tagName": "A",
+              "text": "Home"
+            },
+            {
+              "tagName": "A",
+              "text": "Information"
+            },
+            {
+              "tagName": "A",
+              "text": "Referral"
+            },
+            {
+              "tagName": "A",
+              "text": "Services"
+            },
+            {
+              "tagName": "A",
+              "text": "Community"
+            },
+            {
+              "tagName": "A",
+              "text": "Get Involved"
+            },
+            {
+              "tagName": "A",
+              "text": "About us"
+            },
+            {
+              "tagName": "A",
+              "text": "Home"
+            },
+            {
+              "tagName": "A",
+              "text": "Services"
+            },
+            {
+              "tagName": "A",
+              "text": "Find the right support"
+            },
+            {
+              "tagName": "A",
+              "text": "Telehealth"
+            },
+            {
+              "tagName": "A",
+              "text": "Children"
+            },
+            {
+              "tagName": "A",
+              "text": "Adults"
+            },
+            {
+              "tagName": "A",
+              "text": "Older Adults"
+            },
+            {
+              "tagName": "A",
+              "text": "Library"
+            },
+            {
+              "tagName": "A",
+              "text": "Employment Assistance"
+            },
+            {
+              "tagName": "A",
+              "text": "Cornerstone"
+            },
+            {
+              "tagName": "A",
+              "text": "Digital Access Consulting"
+            },
+            {
+              "tagName": "A",
+              "text": "Our Services"
+            },
+            {
+              "tagName": "A",
+              "text": "Training"
+            },
+            {
+              "tagName": "A",
+              "text": "Events"
+            },
+            {
+              "tagName": "A",
+              "text": "Blog"
+            },
+            {
+              "tagName": "A",
+              "text": "Tools and Resources"
+            },
+            {
+              "tagName": "A",
+              "text": "Our Work"
+            },
+            {
+              "tagName": "A",
+              "text": "Usability Testing"
+            },
+            {
+              "tagName": "A",
+              "text": "About Us"
+            },
+            {
+              "tagName": "A",
+              "text": "Contact us"
+            },
+            {
+              "tagName": "A",
+              "text": "Print Accessibility"
+            },
+            {
+              "tagName": "A",
+              "text": "NDIS"
+            },
+            {
+              "tagName": "A",
+              "text": "industry recognised and trusted services"
+            },
+            {
+              "tagName": "A",
+              "text": "1300 367 055"
+            },
+            {
+              "tagName": "A",
+              "text": "digitalaccess@visionaustralia.org"
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility Policy and Strategy"
+            },
+            {
+              "tagName": "A",
+              "text": "Design and User Research"
+            },
+            {
+              "tagName": "A",
+              "text": "Auditing Services"
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility Support"
+            },
+            {
+              "tagName": "A",
+              "text": "Document Accessibility"
+            },
+            {
+              "tagName": "A",
+              "text": "training courses"
+            },
+            {
+              "tagName": "A",
+              "text": "Accessible Communications and Marketing"
+            },
+            {
+              "tagName": "A",
+              "text": "Inclusive Design"
+            },
+            {
+              "tagName": "A",
+              "text": "Creating Accessible Documents: Word and PDF"
+            },
+            {
+              "tagName": "A",
+              "text": "Advanced Creating Accessible Documents: Microsoft Office"
+            },
+            {
+              "tagName": "A",
+              "text": "Advanced Creating Accessible Documents: Adobe PDF"
+            },
+            {
+              "tagName": "A",
+              "text": "Web Accessibility Techniques and Testing"
+            },
+            {
+              "tagName": "A",
+              "text": "eLearning DAT 101"
+            },
+            {
+              "tagName": "A",
+              "text": "In-house Training Options"
+            },
+            {
+              "tagName": "A",
+              "text": "tools and resources"
+            },
+            {
+              "tagName": "A",
+              "text": "Document Accessibility Toolbar (DAT)"
+            },
+            {
+              "tagName": "A",
+              "text": "Colour Contrast Analyse"
+            },
+            {
+              "tagName": "A",
+              "text": "blog articles"
+            },
+            {
+              "tagName": "A",
+              "text": "Chatting with Eamon about his experiences with disability and assistive technology"
+            },
+            {
+              "tagName": "A",
+              "text": "Typography in Inclusive Design Part 1: 8 key tips for accessible typography"
+            },
+            {
+              "tagName": "A",
+              "text": "Typography in Inclusive Design Part 2: Choosing typefaces and laying out text content"
+            },
+            {
+              "tagName": "A",
+              "text": "The New Requirements for WCAG 2.2"
+            },
+            {
+              "tagName": "A",
+              "text": "Inclusive usability testing: The benefits of inclusive design"
+            },
+            {
+              "tagName": "A",
+              "text": "How to make social media accessible: Our top three tips"
+            },
+            {
+              "tagName": "A",
+              "text": "free webinar events"
+            },
+            {
+              "tagName": "A",
+              "text": "our YouTube channel"
+            },
+            {
+              "tagName": "A",
+              "text": "newsletter"
+            },
+            {
+              "tagName": "A",
+              "text": "1300 367 055"
+            },
+            {
+              "tagName": "A",
+              "text": "digitalaccess@visionaustralia.org"
+            },
+            {
+              "tagName": "A",
+              "text": "Site map"
+            },
+            {
+              "tagName": "A",
+              "text": "Privacy"
+            },
+            {
+              "tagName": "A",
+              "text": "Terms and Conditions"
+            },
+            {
+              "tagName": "A",
+              "text": "Contact us"
+            },
+            {
+              "tagName": "A",
+              "text": "1300 84 74 66"
+            },
+            {
+              "tagName": "A",
+              "text": "Seeing Eye Dogs"
+            },
+            {
+              "tagName": "A",
+              "text": "Library"
+            },
+            {
+              "tagName": "A",
+              "text": "Shop"
+            },
+            {
+              "tagName": "A",
+              "text": "Radio"
+            },
+            {
+              "tagName": "A",
+              "text": "Facebook"
+            },
+            {
+              "tagName": "A",
+              "text": "Twitter"
+            },
+            {
+              "tagName": "A",
+              "text": "YouTube"
+            },
+            {
+              "tagName": "A",
+              "text": "LinkedIn"
+            },
+            {
+              "tagName": "INPUT",
+              "text": ""
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Sign up"
+            }
+          ],
+          "nonOutlinePresent": [
+            {
+              "tagName": "A",
+              "text": ""
+            },
+            {
+              "tagName": "INPUT",
+              "text": ""
+            },
+            {
+              "tagName": "A",
+              "text": "Eye conditions"
+            },
+            {
+              "tagName": "A",
+              "text": "Living Independently"
+            },
+            {
+              "tagName": "A",
+              "text": "Adaptive Technology"
+            },
+            {
+              "tagName": "A",
+              "text": "Eye health"
+            },
+            {
+              "tagName": "A",
+              "text": "Newly diagnosed"
+            },
+            {
+              "tagName": "A",
+              "text": "Family, Friends, and Carers"
+            },
+            {
+              "tagName": "A",
+              "text": "Your rights"
+            },
+            {
+              "tagName": "A",
+              "text": "eSafety"
+            },
+            {
+              "tagName": "A",
+              "text": "Register for services"
+            },
+            {
+              "tagName": "A",
+              "text": "Family Referral"
+            },
+            {
+              "tagName": "A",
+              "text": "Healthcare professionals"
+            },
+            {
+              "tagName": "A",
+              "text": "NDIS"
+            },
+            {
+              "tagName": "A",
+              "text": "My Aged Care"
+            },
+            {
+              "tagName": "A",
+              "text": "Other benefits and funding options"
+            },
+            {
+              "tagName": "A",
+              "text": "Low Vision Assessment Service"
+            },
+            {
+              "tagName": "A",
+              "text": "Find the right support"
+            },
+            {
+              "tagName": "A",
+              "text": "Telehealth"
+            },
+            {
+              "tagName": "A",
+              "text": "Children"
+            },
+            {
+              "tagName": "A",
+              "text": "Adults"
+            },
+            {
+              "tagName": "A",
+              "text": "Older Adults"
+            },
+            {
+              "tagName": "A",
+              "text": "Library"
+            },
+            {
+              "tagName": "A",
+              "text": "Employment Assistance"
+            },
+            {
+              "tagName": "A",
+              "text": "Cornerstone"
+            },
+            {
+              "tagName": "A",
+              "text": "Digital Access Consulting"
+            },
+            {
+              "tagName": "A",
+              "text": "Print Accessibility"
+            },
+            {
+              "tagName": "A",
+              "text": "NDIS"
+            },
+            {
+              "tagName": "A",
+              "text": "Groups"
+            },
+            {
+              "tagName": "A",
+              "text": "Events"
+            },
+            {
+              "tagName": "A",
+              "text": "News"
+            },
+            {
+              "tagName": "A",
+              "text": "Newsletters"
+            },
+            {
+              "tagName": "A",
+              "text": "Podcasts"
+            },
+            {
+              "tagName": "A",
+              "text": "Blogs and Stories"
+            },
+            {
+              "tagName": "A",
+              "text": "Classifieds"
+            },
+            {
+              "tagName": "A",
+              "text": "Webinars"
+            },
+            {
+              "tagName": "A",
+              "text": "Ways to help"
+            },
+            {
+              "tagName": "A",
+              "text": "Become a member"
+            },
+            {
+              "tagName": "A",
+              "text": "Lottery"
+            },
+            {
+              "tagName": "A",
+              "text": "Carols by Candlelight"
+            },
+            {
+              "tagName": "A",
+              "text": "Gifts in Wills"
+            },
+            {
+              "tagName": "A",
+              "text": "Philanthropy"
+            },
+            {
+              "tagName": "A",
+              "text": "Fundraise for us"
+            },
+            {
+              "tagName": "A",
+              "text": "Volunteer"
+            },
+            {
+              "tagName": "A",
+              "text": "Donate now"
+            },
+            {
+              "tagName": "A",
+              "text": "Gifts in memory and celebration"
+            },
+            {
+              "tagName": "A",
+              "text": "Supporter newsletters"
+            },
+            {
+              "tagName": "A",
+              "text": "Who we are and what we do"
+            },
+            {
+              "tagName": "A",
+              "text": "Contact us"
+            },
+            {
+              "tagName": "A",
+              "text": "Governance"
+            },
+            {
+              "tagName": "A",
+              "text": "Reports and publications"
+            },
+            {
+              "tagName": "A",
+              "text": "Advocacy"
+            },
+            {
+              "tagName": "A",
+              "text": "Position Statements"
+            },
+            {
+              "tagName": "A",
+              "text": "Careers"
+            }
+          ],
+          "outlinePresent": []
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.visionaustralia.org/services/digital-access",
+      "what": "URL",
+      "result": "https://www.visionaustralia.org/services/digital-access"
+    },
+    {
+      "type": "test",
+      "which": "hover",
+      "headSize": 20,
+      "headSampleSize": 20,
+      "tailSampleSize": 15,
+      "withItems": true,
+      "what": "hover-caused content changes",
+      "url": "https://www.visionaustralia.org/services/digital-access",
+      "result": {
+        "totals": {
+          "triggers": 270,
+          "headTriggers": 20,
+          "tailTriggers": 250,
+          "impactTriggers": 0,
+          "additions": 0,
+          "removals": 0,
+          "opacityChanges": 0,
+          "opacityImpact": 0,
+          "unhoverables": 1
+        },
+        "items": {
+          "head": {
+            "impactTriggers": [],
+            "unhoverables": [
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Skiptomaincontent"
+              }
+            ]
+          },
+          "tail": {
+            "impactTriggers": [],
+            "unhoverables": []
+          }
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.visionaustralia.org/services/digital-access",
+      "what": "URL",
+      "result": "https://www.visionaustralia.org/services/digital-access"
+    },
+    {
+      "type": "test",
+      "which": "role",
+      "what": "roles",
+      "url": "https://www.visionaustralia.org/services/digital-access",
+      "result": {
+        "roleElements": 22,
+        "badRoleElements": 16,
+        "redundantRoleElements": 4,
+        "tagNames": {
+          "A": {
+            "button": {
+              "bad": 14,
+              "redundant": 0
+            }
+          },
+          "NAV": {
+            "navigation": {
+              "bad": 0,
+              "redundant": 2
+            }
+          },
+          "DIV": {
+            "main": {
+              "bad": 1,
+              "redundant": 0
+            },
+            "navigation": {
+              "bad": 1,
+              "redundant": 0
+            }
+          },
+          "ASIDE": {
+            "complementary": {
+              "bad": 0,
+              "redundant": 1
+            }
+          },
+          "ARTICLE": {
+            "article": {
+              "bad": 0,
+              "redundant": 1
+            }
+          }
+        }
+      }
+    }
+  ],
+  "timeStamp": "49ouy",
+  "startTime": "2022-07-16T23:46:37",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "hover",
+      51
+    ],
+    [
+      "focInd",
+      44
+    ],
+    [
+      "role",
+      0
+    ]
+  ],
+  "logCount": 9,
+  "logSize": 1047,
+  "errorLogCount": 9,
+  "errorLogSize": 1047,
+  "prohibitedCount": 3,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-16T23:48:34",
+  "elapsedSeconds": 116
+}

@@ -329,7 +329,7 @@
             {
               "tagName": "A",
               "text": "Skip to main content",
-              "delay": 101
+              "delay": 106
             },
             {
               "tagName": "BUTTON",
@@ -1226,6 +1226,7 @@
       "result": {
         "roleElements": 8,
         "badRoleElements": 0,
+        "redundantRoleElements": 0,
         "tagNames": {}
       }
     },

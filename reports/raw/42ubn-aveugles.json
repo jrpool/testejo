@@ -301,21 +301,23 @@
       "url": "https://aveuglesdefrance.org/",
       "result": {
         "totals": {
-          "total": 105,
+          "total": 101,
           "types": {
             "indicatorMissing": {
-              "total": 0,
-              "tagNames": {}
+              "total": 7,
+              "tagNames": {
+                "A": 7
+              }
             },
             "nonOutlinePresent": {
               "total": 0,
               "tagNames": {}
             },
             "outlinePresent": {
-              "total": 105,
-              "meanDelay": 14,
+              "total": 94,
+              "meanDelay": 12,
               "tagNames": {
-                "A": 98,
+                "A": 87,
                 "BUTTON": 5,
                 "INPUT": 2
               }
@@ -323,7 +325,36 @@
           }
         },
         "items": {
-          "indicatorMissing": [],
+          "indicatorMissing": [
+            {
+              "tagName": "A",
+              "text": "Voir son parcours"
+            },
+            {
+              "tagName": "A",
+              "text": "Portrait précédent"
+            },
+            {
+              "tagName": "A",
+              "text": "Portrait suivant"
+            },
+            {
+              "tagName": "A",
+              "text": "1"
+            },
+            {
+              "tagName": "A",
+              "text": "2"
+            },
+            {
+              "tagName": "A",
+              "text": "3"
+            },
+            {
+              "tagName": "A",
+              "text": "4"
+            }
+          ],
           "nonOutlinePresent": [],
           "outlinePresent": [
             {
@@ -468,37 +499,17 @@
             },
             {
               "tagName": "A",
-              "text": "Voir son parcours",
-              "delay": 102
-            },
-            {
-              "tagName": "A",
-              "text": "Portrait précédent",
+              "text": "",
               "delay": 0
             },
             {
               "tagName": "A",
-              "text": "Portrait suivant",
+              "text": "La Fédération des Aveugles de France interpelle le Gouvernement sur la scolarisation des enfants déf",
               "delay": 0
             },
             {
               "tagName": "A",
-              "text": "1",
-              "delay": 0
-            },
-            {
-              "tagName": "A",
-              "text": "2",
-              "delay": 0
-            },
-            {
-              "tagName": "A",
-              "text": "3",
-              "delay": 0
-            },
-            {
-              "tagName": "A",
-              "text": "4",
+              "text": "En savoir plus",
               "delay": 0
             },
             {
@@ -533,23 +544,8 @@
             },
             {
               "tagName": "A",
-              "text": "",
-              "delay": 0
-            },
-            {
-              "tagName": "A",
-              "text": "Journée Mondiale dédiée à l'accessibilité numérique",
-              "delay": 0
-            },
-            {
-              "tagName": "A",
-              "text": "En savoir plus",
-              "delay": 0
-            },
-            {
-              "tagName": "A",
               "text": "Voir toutes les actualités",
-              "delay": 100
+              "delay": 101
             },
             {
               "tagName": "A",
@@ -608,32 +604,22 @@
             },
             {
               "tagName": "A",
-              "text": "07 Juil",
+              "text": "16 Juil",
               "delay": 0
             },
             {
               "tagName": "A",
-              "text": "#aeroports",
+              "text": "#Braille",
               "delay": 0
             },
             {
               "tagName": "A",
-              "text": "@cfpsaa",
+              "text": "@ins_hea",
               "delay": 0
             },
             {
               "tagName": "A",
-              "text": "@Aveugles_France",
-              "delay": 0
-            },
-            {
-              "tagName": "A",
-              "text": "#droits",
-              "delay": 0
-            },
-            {
-              "tagName": "A",
-              "text": "https://t.co/RtwShSUqFc",
+              "text": "https://t.co/ZCBzlQ2fVW",
               "delay": 0
             },
             {
@@ -643,72 +629,12 @@
             },
             {
               "tagName": "A",
-              "text": "04 Juil",
+              "text": "15 Juil",
               "delay": 0
             },
             {
               "tagName": "A",
-              "text": "#aveugles",
-              "delay": 0
-            },
-            {
-              "tagName": "A",
-              "text": "#malvoyantes",
-              "delay": 0
-            },
-            {
-              "tagName": "A",
-              "text": "#application",
-              "delay": 0
-            },
-            {
-              "tagName": "A",
-              "text": "@Aveugles_France",
-              "delay": 0
-            },
-            {
-              "tagName": "A",
-              "text": "#maladies",
-              "delay": 0
-            },
-            {
-              "tagName": "A",
-              "text": "https://t.co/Zbe731UBUs",
-              "delay": 0
-            },
-            {
-              "tagName": "A",
-              "text": "#réalitévirtuelle",
-              "delay": 0
-            },
-            {
-              "tagName": "A",
-              "text": "https://t.co/cGFlteCdRI",
-              "delay": 0
-            },
-            {
-              "tagName": "A",
-              "text": "Aveugles_France",
-              "delay": 0
-            },
-            {
-              "tagName": "A",
-              "text": "30 Juin",
-              "delay": 0
-            },
-            {
-              "tagName": "A",
-              "text": "#numerique",
-              "delay": 0
-            },
-            {
-              "tagName": "A",
-              "text": "#inclusion",
-              "delay": 0
-            },
-            {
-              "tagName": "A",
-              "text": "@Aveugles_France",
+              "text": "@access42net",
               "delay": 0
             },
             {
@@ -718,22 +644,72 @@
             },
             {
               "tagName": "A",
-              "text": "#accessibilite",
+              "text": "#WCAG",
               "delay": 0
             },
             {
               "tagName": "A",
-              "text": "@LeTelegramme",
+              "text": "@Aveugles_France",
               "delay": 0
             },
             {
               "tagName": "A",
-              "text": "https://t.co/bC5GoFYWTc",
+              "text": "#accessibility",
               "delay": 0
             },
             {
               "tagName": "A",
-              "text": "Ressources documentaires",
+              "text": "https://t.co/yBW1IS56VO",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Aveugles_France",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "15 Juil",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "#bac2022",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "#brevet2022",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "#aveugles",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "@anpea_asso",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "@Aveugles_France",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "@education_gouv",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "https://t.co/IwyEAXygQV",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Transparence financière",
               "delay": 0
             },
             {
@@ -743,7 +719,7 @@
             },
             {
               "tagName": "A",
-              "text": "Le don entreprise",
+              "text": "Faire un don aux Aveugles de France",
               "delay": 0
             },
             {
@@ -764,7 +740,7 @@
             {
               "tagName": "BUTTON",
               "text": "Je m'inscris",
-              "delay": 101
+              "delay": 102
             },
             {
               "tagName": "A",
@@ -839,12 +815,12 @@
             {
               "tagName": "BUTTON",
               "text": "Tout refuser",
-              "delay": 103
+              "delay": 104
             },
             {
               "tagName": "BUTTON",
               "text": "Paramétrer",
-              "delay": 101
+              "delay": 102
             },
             {
               "tagName": "BUTTON",
@@ -1932,15 +1908,15 @@
       "url": "https://aveuglesdefrance.org/",
       "result": {
         "totals": {
-          "triggers": 152,
+          "triggers": 148,
           "headTriggers": 20,
-          "tailTriggers": 132,
-          "impactTriggers": 22,
+          "tailTriggers": 128,
+          "impactTriggers": 4,
           "additions": 0,
           "removals": 0,
-          "opacityChanges": 22,
-          "opacityImpact": 179,
-          "unhoverables": 19
+          "opacityChanges": 4,
+          "opacityImpact": 56,
+          "unhoverables": 20
         },
         "items": {
           "head": {
@@ -2057,44 +2033,32 @@
             ]
           },
           "tail": {
-            "impactTriggers": [
-              {
-                "tagName": "A",
-                "text": "Jesoutiens",
-                "additions": 0,
-                "removals": 0,
-                "opacityChanges": 1,
-                "opacityImpact": 8
-              },
-              {
-                "tagName": "A",
-                "text": "Toutsavoir",
-                "additions": 0,
-                "removals": 0,
-                "opacityChanges": 1,
-                "opacityImpact": 6
-              }
-            ],
+            "impactTriggers": [],
             "unhoverables": [
               {
                 "tagName": "A",
                 "id": "",
-                "text": "Fichespratiques"
+                "text": "FaireunlegsauxAveuglesdeFrance"
               },
               {
                 "tagName": "A",
                 "id": "",
-                "text": "Nosformations"
-              },
-              {
-                "tagName": "LI",
-                "id": "menu-item-112",
                 "text": "Fichespratiques"
               },
               {
                 "tagName": "A",
                 "id": "",
                 "text": "Ensavoirplus"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Plandusite"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Suivez-noussurfacebook"
               }
             ]
           }
@@ -2431,19 +2395,32 @@
       "url": "https://aveuglesdefrance.org/",
       "result": {
         "roleElements": 6,
-        "badRoleElements": 6,
+        "badRoleElements": 2,
+        "redundantRoleElements": 4,
         "tagNames": {
           "HEADER": {
-            "banner": 1
+            "banner": {
+              "bad": 1,
+              "redundant": 0
+            }
           },
           "NAV": {
-            "navigation": 3
+            "navigation": {
+              "bad": 0,
+              "redundant": 3
+            }
           },
           "MAIN": {
-            "main": 1
+            "main": {
+              "bad": 0,
+              "redundant": 1
+            }
           },
           "FOOTER": {
-            "contentinfo": 1
+            "contentinfo": {
+              "bad": 1,
+              "redundant": 0
+            }
           }
         }
       }

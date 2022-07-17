@@ -1,0 +1,426 @@
+{
+  "id": "49ouy-unityweb",
+  "host": {
+    "id": "unityweb",
+    "which": "https://unitywebagency.com/",
+    "what": "Unity Web Agency"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-16T23:39:32"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-16T23:40:26"
+    }
+  ],
+  "script": {
+    "id": "tp12",
+    "what": "Alfa, Axe, HTML CodeSniffer, IBM, Tenon, WAVE, and 16 custom tests",
+    "strict": true,
+    "timeLimit": 150,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://unitywebagency.com/",
+        "what": "Unity Web Agency"
+      },
+      {
+        "type": "test",
+        "which": "focInd",
+        "revealAll": false,
+        "allowedDelay": 250,
+        "withItems": true,
+        "what": "focus indicators"
+      },
+      {
+        "type": "test",
+        "which": "hover",
+        "headSize": 20,
+        "headSampleSize": 20,
+        "tailSampleSize": 15,
+        "withItems": true,
+        "what": "hover impacts"
+      },
+      {
+        "type": "test",
+        "which": "role",
+        "what": "validity and necessity of role assignments"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://unitywebagency.com/",
+      "what": "Unity Web Agency",
+      "result": "https://unitywebagency.com/"
+    },
+    {
+      "type": "test",
+      "which": "focInd",
+      "revealAll": false,
+      "allowedDelay": 250,
+      "withItems": true,
+      "what": "focus indicators",
+      "url": "https://unitywebagency.com/",
+      "result": {
+        "totals": {
+          "total": 33,
+          "types": {
+            "indicatorMissing": {
+              "total": 0,
+              "tagNames": {}
+            },
+            "nonOutlinePresent": {
+              "total": 33,
+              "tagNames": {
+                "A": 22,
+                "BUTTON": 9,
+                "INPUT": 2
+              }
+            },
+            "outlinePresent": {
+              "total": 0,
+              "meanDelay": 0,
+              "tagNames": {}
+            }
+          }
+        },
+        "items": {
+          "indicatorMissing": [],
+          "nonOutlinePresent": [
+            {
+              "tagName": "A",
+              "text": "Skip to content"
+            },
+            {
+              "tagName": "A",
+              "text": ""
+            },
+            {
+              "tagName": "A",
+              "text": "Services"
+            },
+            {
+              "tagName": "A",
+              "text": "Resources"
+            },
+            {
+              "tagName": "A",
+              "text": "Portfolio"
+            },
+            {
+              "tagName": "A",
+              "text": "Company"
+            },
+            {
+              "tagName": "A",
+              "text": "Contact Us"
+            },
+            {
+              "tagName": "A",
+              "text": "Let's Chat"
+            },
+            {
+              "tagName": "A",
+              "text": "all our websites are fully inclusive and accessible"
+            },
+            {
+              "tagName": "A",
+              "text": "WCAG Level AA compliance"
+            },
+            {
+              "tagName": "A",
+              "text": "300% eco-friendly hosting platform"
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Previous"
+            },
+            {
+              "tagName": "A",
+              "text": "Thread Capital"
+            },
+            {
+              "tagName": "A",
+              "text": "Right Build International"
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Next"
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Go to slide 1"
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Go to slide 2"
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Go to slide 3"
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Go to slide 4"
+            },
+            {
+              "tagName": "A",
+              "text": "Certified B Corporation website"
+            },
+            {
+              "tagName": "A",
+              "text": "How We “Sprint” Through Development"
+            },
+            {
+              "tagName": "A",
+              "text": "What’s So Wrong With Carousels?"
+            },
+            {
+              "tagName": "A",
+              "text": "Accessible website agency seeking Marketing Coordinator"
+            },
+            {
+              "tagName": "A",
+              "text": "Let’s chat!"
+            },
+            {
+              "tagName": "INPUT",
+              "text": ""
+            },
+            {
+              "tagName": "INPUT",
+              "text": ""
+            },
+            {
+              "tagName": "A",
+              "text": ""
+            },
+            {
+              "tagName": "A",
+              "text": "Terms & Conditions"
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility Policy"
+            },
+            {
+              "tagName": "A",
+              "text": "Privacy Policy"
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Preferences"
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Decline"
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Accept"
+            }
+          ],
+          "outlinePresent": []
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://unitywebagency.com/",
+      "what": "URL",
+      "result": "https://unitywebagency.com/"
+    },
+    {
+      "type": "test",
+      "which": "hover",
+      "headSize": 20,
+      "headSampleSize": 20,
+      "tailSampleSize": 15,
+      "withItems": true,
+      "what": "hover-caused content changes",
+      "url": "https://unitywebagency.com/",
+      "result": {
+        "totals": {
+          "triggers": 58,
+          "headTriggers": 20,
+          "tailTriggers": 38,
+          "impactTriggers": 6,
+          "additions": 38,
+          "removals": 0,
+          "opacityChanges": 0,
+          "opacityImpact": 0,
+          "unhoverables": 2
+        },
+        "items": {
+          "head": {
+            "impactTriggers": [
+              {
+                "tagName": "LI",
+                "text": "ServicesCustomWordPressWebsitesManagedWordPressHos",
+                "additions": 7,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "A",
+                "text": "Services",
+                "additions": 7,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "LI",
+                "text": "ResourcesBlogInsideImpactPodcastWebAccessibilityGu",
+                "additions": 7,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "A",
+                "text": "Resources",
+                "additions": 7,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "LI",
+                "text": "CompanyAboutUsCareers",
+                "additions": 5,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "A",
+                "text": "Company",
+                "additions": 5,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              }
+            ],
+            "unhoverables": [
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Skiptocontent"
+              }
+            ]
+          },
+          "tail": {
+            "impactTriggers": [],
+            "unhoverables": []
+          }
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://unitywebagency.com/",
+      "what": "URL",
+      "result": "https://unitywebagency.com/"
+    },
+    {
+      "type": "test",
+      "which": "role",
+      "what": "roles",
+      "url": "https://unitywebagency.com/",
+      "result": {
+        "roleElements": 17,
+        "badRoleElements": 14,
+        "redundantRoleElements": 1,
+        "tagNames": {
+          "HEADER": {
+            "banner": {
+              "bad": 1,
+              "redundant": 0
+            }
+          },
+          "DIV": {
+            "navigation": {
+              "bad": 1,
+              "redundant": 0
+            },
+            "group": {
+              "bad": 10,
+              "redundant": 0
+            }
+          },
+          "MAIN": {
+            "main": {
+              "bad": 0,
+              "redundant": 1
+            }
+          },
+          "A": {
+            "button": {
+              "bad": 1,
+              "redundant": 0
+            }
+          },
+          "FOOTER": {
+            "contentinfo": {
+              "bad": 1,
+              "redundant": 0
+            }
+          }
+        }
+      }
+    }
+  ],
+  "timeStamp": "49ouy",
+  "startTime": "2022-07-16T23:39:32",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "hover",
+      24
+    ],
+    [
+      "focInd",
+      0
+    ],
+    [
+      "role",
+      0
+    ]
+  ],
+  "logCount": 31,
+  "logSize": 2586,
+  "errorLogCount": 13,
+  "errorLogSize": 1089,
+  "prohibitedCount": 6,
+  "visitTimeoutCount": 1,
+  "visitRejectionCount": 5,
+  "endTime": "2022-07-16T23:40:26",
+  "elapsedSeconds": 54
+}

@@ -301,18 +301,20 @@
       "url": "https://commonlook.com/",
       "result": {
         "totals": {
-          "total": 88,
+          "total": 90,
           "types": {
             "indicatorMissing": {
-              "total": 0,
-              "tagNames": {}
-            },
-            "nonOutlinePresent": {
-              "total": 9,
+              "total": 6,
               "tagNames": {
-                "A": 6,
+                "A": 3,
                 "INPUT": 1,
                 "IFRAME": 2
+              }
+            },
+            "nonOutlinePresent": {
+              "total": 5,
+              "tagNames": {
+                "A": 5
               }
             },
             "outlinePresent": {
@@ -327,8 +329,7 @@
           }
         },
         "items": {
-          "indicatorMissing": [],
-          "nonOutlinePresent": [
+          "indicatorMissing": [
             {
               "tagName": "A",
               "text": "I want to…"
@@ -345,6 +346,16 @@
               "tagName": "IFRAME",
               "text": ""
             },
+            {
+              "tagName": "A",
+              "text": "Ok"
+            },
+            {
+              "tagName": "A",
+              "text": "Privacy policy"
+            }
+          ],
+          "nonOutlinePresent": [
             {
               "tagName": "A",
               "text": "Start"
@@ -2111,15 +2122,15 @@
       "url": "https://commonlook.com/",
       "result": {
         "totals": {
-          "triggers": 103,
+          "triggers": 105,
           "headTriggers": 20,
-          "tailTriggers": 83,
-          "impactTriggers": 17,
-          "additions": 0,
+          "tailTriggers": 85,
+          "impactTriggers": 28,
+          "additions": 48,
           "removals": 0,
-          "opacityChanges": 36,
-          "opacityImpact": 288,
-          "unhoverables": 7
+          "opacityChanges": 28,
+          "opacityImpact": 17,
+          "unhoverables": 3
         },
         "items": {
           "head": {
@@ -2127,138 +2138,138 @@
               {
                 "tagName": "LI",
                 "text": "Iwantto…GetPricingCreatePDFsRemediate/FixTrack/Mon",
-                "additions": 0,
+                "additions": 22,
                 "removals": 0,
-                "opacityChanges": 2,
-                "opacityImpact": 21
+                "opacityChanges": 1,
+                "opacityImpact": 0
               },
               {
                 "tagName": "A",
                 "text": "Iwantto…",
                 "additions": 0,
                 "removals": 0,
-                "opacityChanges": 2,
-                "opacityImpact": 21
+                "opacityChanges": 1,
+                "opacityImpact": 0
               },
               {
                 "tagName": "BUTTON",
                 "text": "",
                 "additions": 0,
                 "removals": 0,
-                "opacityChanges": 2,
-                "opacityImpact": 21
+                "opacityChanges": 1,
+                "opacityImpact": 0
               },
               {
                 "tagName": "LI",
                 "text": "PricingHowmuchdoesCommonLookCost?CommercialPricing",
                 "additions": 0,
                 "removals": 0,
-                "opacityChanges": 3,
-                "opacityImpact": 8
+                "opacityChanges": 1,
+                "opacityImpact": 0
               },
               {
                 "tagName": "A",
                 "text": "PricingHowmuchdoesCommonLookCost?",
                 "additions": 0,
                 "removals": 0,
-                "opacityChanges": 3,
-                "opacityImpact": 8
+                "opacityChanges": 1,
+                "opacityImpact": 0
               },
               {
                 "tagName": "BUTTON",
                 "text": "",
                 "additions": 0,
                 "removals": 0,
-                "opacityChanges": 2,
-                "opacityImpact": 8
+                "opacityChanges": 1,
+                "opacityImpact": 0
               },
               {
                 "tagName": "LI",
                 "text": "PromotionsCommonLookSuitesJumpStartPlanHugesavings",
                 "additions": 0,
                 "removals": 0,
-                "opacityChanges": 2,
-                "opacityImpact": 9
+                "opacityChanges": 1,
+                "opacityImpact": 0
               },
               {
                 "tagName": "A",
                 "text": "Promotions",
                 "additions": 0,
                 "removals": 0,
-                "opacityChanges": 2,
-                "opacityImpact": 9
+                "opacityChanges": 1,
+                "opacityImpact": 0
               },
               {
                 "tagName": "BUTTON",
                 "text": "",
                 "additions": 0,
                 "removals": 0,
-                "opacityChanges": 2,
-                "opacityImpact": 9
+                "opacityChanges": 1,
+                "opacityImpact": 0
               },
               {
                 "tagName": "LI",
                 "text": "SoftwareCommonLook®PDFValidatorFreePDFcheckerCommo",
-                "additions": 0,
+                "additions": 26,
                 "removals": 0,
-                "opacityChanges": 2,
-                "opacityImpact": 28
+                "opacityChanges": 1,
+                "opacityImpact": 0
               },
               {
                 "tagName": "A",
                 "text": "Software",
                 "additions": 0,
                 "removals": 0,
-                "opacityChanges": 2,
-                "opacityImpact": 28
+                "opacityChanges": 1,
+                "opacityImpact": 0
               },
               {
                 "tagName": "BUTTON",
                 "text": "",
                 "additions": 0,
                 "removals": 0,
-                "opacityChanges": 2,
-                "opacityImpact": 28
+                "opacityChanges": 1,
+                "opacityImpact": 0
               },
               {
                 "tagName": "LI",
                 "text": "ServicesCertifiedCommonLookPDFRemediatorCommonLook",
                 "additions": 0,
                 "removals": 0,
-                "opacityChanges": 2,
-                "opacityImpact": 14
+                "opacityChanges": 1,
+                "opacityImpact": 0
               },
               {
                 "tagName": "A",
                 "text": "Services",
                 "additions": 0,
                 "removals": 0,
-                "opacityChanges": 2,
-                "opacityImpact": 14
+                "opacityChanges": 1,
+                "opacityImpact": 0
               },
               {
                 "tagName": "BUTTON",
                 "text": "",
                 "additions": 0,
                 "removals": 0,
-                "opacityChanges": 2,
-                "opacityImpact": 14
+                "opacityChanges": 1,
+                "opacityImpact": 0
               },
               {
                 "tagName": "LI",
                 "text": "Events/TrainingScheduledClassesTrainingClassListSe",
                 "additions": 0,
                 "removals": 0,
-                "opacityChanges": 2,
-                "opacityImpact": 24
+                "opacityChanges": 1,
+                "opacityImpact": 0
               },
               {
                 "tagName": "A",
                 "text": "Events/Training",
                 "additions": 0,
                 "removals": 0,
-                "opacityChanges": 2,
-                "opacityImpact": 24
+                "opacityChanges": 1,
+                "opacityImpact": 0
               }
             ],
             "unhoverables": [
@@ -2280,29 +2291,25 @@
             ]
           },
           "tail": {
-            "impactTriggers": [],
-            "unhoverables": [
+            "impactTriggers": [
               {
                 "tagName": "A",
-                "id": "",
-                "text": "CommonLook"
+                "text": "<divclass=\"fl-content-slider-svg-container\"><svgve",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 3
               },
               {
-                "tagName": "A",
-                "id": "",
-                "text": "GoogleChromeAccessibility"
-              },
-              {
-                "tagName": "A",
-                "id": "",
-                "text": "Skipbacktomainnavigation"
-              },
-              {
-                "tagName": "A",
-                "id": "",
-                "text": ""
+                "tagName": "LI",
+                "text": "Read/LearnFAQsCaseStudiesDocumentationAccessibilit",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 0
               }
-            ]
+            ],
+            "unhoverables": []
           }
         }
       }
@@ -2693,15 +2700,25 @@
       "what": "roles",
       "url": "https://commonlook.com/",
       "result": {
-        "roleElements": 25,
+        "roleElements": 26,
         "badRoleElements": 16,
+        "redundantRoleElements": 0,
         "tagNames": {
           "A": {
-            "button": 13
+            "button": {
+              "bad": 13,
+              "redundant": 0
+            }
           },
           "DIV": {
-            "group": 1,
-            "button": 2
+            "group": {
+              "bad": 1,
+              "redundant": 0
+            },
+            "button": {
+              "bad": 2,
+              "redundant": 0
+            }
           }
         }
       }

@@ -1,0 +1,609 @@
+{
+  "id": "49li4-microassist",
+  "host": {
+    "id": "microassist",
+    "which": "https://www.microassist.com/",
+    "what": "Microassist"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-16T21:58:00"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-16T21:58:58"
+    }
+  ],
+  "script": {
+    "id": "tp12",
+    "what": "Alfa, Axe, HTML CodeSniffer, IBM, Tenon, WAVE, and 16 custom tests",
+    "strict": true,
+    "timeLimit": 150,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.microassist.com/",
+        "what": "Microassist"
+      },
+      {
+        "type": "test",
+        "which": "focInd",
+        "revealAll": false,
+        "allowedDelay": 250,
+        "withItems": true,
+        "what": "focus indicators"
+      },
+      {
+        "type": "test",
+        "which": "hover",
+        "headSize": 20,
+        "headSampleSize": 20,
+        "tailSampleSize": 15,
+        "withItems": true,
+        "what": "hover impacts"
+      },
+      {
+        "type": "test",
+        "which": "role",
+        "what": "validity and necessity of role assignments"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.microassist.com/",
+      "what": "Microassist",
+      "result": "https://www.microassist.com/"
+    },
+    {
+      "type": "test",
+      "which": "focInd",
+      "revealAll": false,
+      "allowedDelay": 250,
+      "withItems": true,
+      "what": "focus indicators",
+      "url": "https://www.microassist.com/",
+      "result": {
+        "totals": {
+          "total": 61,
+          "types": {
+            "indicatorMissing": {
+              "total": 2,
+              "tagNames": {
+                "A": 2
+              }
+            },
+            "nonOutlinePresent": {
+              "total": 4,
+              "tagNames": {
+                "A": 4
+              }
+            },
+            "outlinePresent": {
+              "total": 55,
+              "meanDelay": 89,
+              "tagNames": {
+                "A": 50,
+                "LI": 1,
+                "DIV": 2,
+                "INPUT": 2
+              }
+            }
+          }
+        },
+        "items": {
+          "indicatorMissing": [
+            {
+              "tagName": "A",
+              "text": "Open Search Field"
+            },
+            {
+              "tagName": "A",
+              "text": "Back to Top"
+            }
+          ],
+          "nonOutlinePresent": [
+            {
+              "tagName": "A",
+              "text": "LEARN WHAT'S NEXT"
+            },
+            {
+              "tagName": "A",
+              "text": "WHY ACCESSIBILITY?"
+            },
+            {
+              "tagName": "A",
+              "text": "WORK WITH US"
+            },
+            {
+              "tagName": "A",
+              "text": "EXPLORE COURSES"
+            }
+          ],
+          "outlinePresent": [
+            {
+              "tagName": "A",
+              "text": "Skip to main content",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Skip to primary navigation",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "State & Federal Contracts for Government",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Contact Us:",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "info@microassist.com",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "(512) 794-8440",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Microassist",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Custom Elearning",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Classroom Training",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "About",
+              "delay": 100
+            },
+            {
+              "tagName": "LI",
+              "text": "Open Search Field Enter your text here...",
+              "delay": 0
+            },
+            {
+              "tagName": "DIV",
+              "text": "Featured in the Wall Street Journal. Subscribe to Accessibility in the News.",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Subscribe to Accessibility in the News.",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Project Spotlight: Verbal De-escalation Training for the National Center for Campus Public Safety",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Read more",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Microassist Elearning Examples Drawn from Texas DSHS Projects",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Read more",
+              "delay": 104
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Six Years of AITN Later, How Has The ADA Landscape Changed?",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Read more",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "DOJ Guidance on Web Accessibility and the ADA as Related to Title II",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "Read more",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "What The Overturning of Roe V. Wade Means For People With Disabilities",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Read more",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "MTA Vows To Make Subway 95% Accessible... By 2055",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "Read more",
+              "delay": 104
+            },
+            {
+              "tagName": "A",
+              "text": "See More Posts",
+              "delay": 102
+            },
+            {
+              "tagName": "INPUT",
+              "text": "",
+              "delay": 100
+            },
+            {
+              "tagName": "INPUT",
+              "text": "",
+              "delay": 101
+            },
+            {
+              "tagName": "DIV",
+              "text": "Government Solutions Accessibility in the News Learning Dispatch (Blog) Lexis-Nexis Mealey’s® Commen",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Government Solutions",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility in the News",
+              "delay": 104
+            },
+            {
+              "tagName": "A",
+              "text": "Learning Dispatch (Blog)",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Lexis-Nexis Mealey’s® Commentaries",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Classroom Course Schedule",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Digital Accessibility Blog",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "(512) 794-8440",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "(512) 794-8742",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "info@microassist.com",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "MORE",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Privacy",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility Statement",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Site Map",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Contact Us",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Microassist on Facebook",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Microassist on Twitter",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "Microassist on Linked In",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "Microassist on Youtube",
+              "delay": 101
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.microassist.com/",
+      "what": "URL",
+      "result": "https://www.microassist.com/"
+    },
+    {
+      "type": "test",
+      "which": "hover",
+      "headSize": 20,
+      "headSampleSize": 20,
+      "tailSampleSize": 15,
+      "withItems": true,
+      "what": "hover-caused content changes",
+      "url": "https://www.microassist.com/",
+      "result": {
+        "totals": {
+          "triggers": 65,
+          "headTriggers": 20,
+          "tailTriggers": 45,
+          "impactTriggers": 8,
+          "additions": 97,
+          "removals": 97,
+          "opacityChanges": 0,
+          "opacityImpact": 0,
+          "unhoverables": 2
+        },
+        "items": {
+          "head": {
+            "impactTriggers": [
+              {
+                "tagName": "LI",
+                "text": "AccessibilityAccessibilityAuditsVPATConsultingServ",
+                "additions": 28,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "A",
+                "text": "Accessibility",
+                "additions": 0,
+                "removals": 28,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "LI",
+                "text": "CustomElearningElearningPhilosophyAccessibleElearn",
+                "additions": 25,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "A",
+                "text": "CustomElearning",
+                "additions": 0,
+                "removals": 25,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "LI",
+                "text": "ClassroomTrainingCourseListCourseScheduleClassroom",
+                "additions": 16,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "A",
+                "text": "ClassroomTraining",
+                "additions": 0,
+                "removals": 16,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "LI",
+                "text": "AboutGovernmentSolutionsBlogsTeamCareerOpportuniti",
+                "additions": 28,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "A",
+                "text": "About",
+                "additions": 0,
+                "removals": 28,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              }
+            ],
+            "unhoverables": [
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Skiptomaincontent"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Skiptoprimarynavigation"
+              }
+            ]
+          },
+          "tail": {
+            "impactTriggers": [],
+            "unhoverables": []
+          }
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.microassist.com/",
+      "what": "URL",
+      "result": "https://www.microassist.com/"
+    },
+    {
+      "type": "test",
+      "which": "role",
+      "what": "roles",
+      "url": "https://www.microassist.com/",
+      "result": {
+        "roleElements": 78,
+        "badRoleElements": 4,
+        "redundantRoleElements": 0,
+        "tagNames": {
+          "DIV": {
+            "complementary": {
+              "bad": 1,
+              "redundant": 0
+            },
+            "contentinfo": {
+              "bad": 1,
+              "redundant": 0
+            }
+          },
+          "A": {
+            "button": {
+              "bad": 1,
+              "redundant": 0
+            }
+          },
+          "SECTION": {
+            "navigation": {
+              "bad": 1,
+              "redundant": 0
+            }
+          }
+        }
+      }
+    }
+  ],
+  "timeStamp": "49li4",
+  "startTime": "2022-07-16T21:58:00",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "hover",
+      42
+    ],
+    [
+      "focInd",
+      8
+    ],
+    [
+      "role",
+      0
+    ]
+  ],
+  "logCount": 3,
+  "logSize": 138,
+  "errorLogCount": 0,
+  "errorLogSize": 0,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-16T21:58:58",
+  "elapsedSeconds": 57
+}

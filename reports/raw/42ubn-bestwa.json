@@ -304,14 +304,14 @@
           "total": 141,
           "types": {
             "indicatorMissing": {
-              "total": 0,
-              "tagNames": {}
-            },
-            "nonOutlinePresent": {
               "total": 141,
               "tagNames": {
                 "A": 141
               }
+            },
+            "nonOutlinePresent": {
+              "total": 0,
+              "tagNames": {}
             },
             "outlinePresent": {
               "total": 0,
@@ -321,8 +321,7 @@
           }
         },
         "items": {
-          "indicatorMissing": [],
-          "nonOutlinePresent": [
+          "indicatorMissing": [
             {
               "tagName": "A",
               "text": ""
@@ -888,6 +887,7 @@
               "text": "42studio.io"
             }
           ],
+          "nonOutlinePresent": [],
           "outlinePresent": []
         }
       }
@@ -3216,12 +3216,12 @@
           "triggers": 216,
           "headTriggers": 20,
           "tailTriggers": 196,
-          "impactTriggers": 1,
+          "impactTriggers": 14,
           "additions": 0,
           "removals": 0,
-          "opacityChanges": 2,
-          "opacityImpact": 2,
-          "unhoverables": 8
+          "opacityChanges": 28,
+          "opacityImpact": 28,
+          "unhoverables": 7
         },
         "items": {
           "head": {
@@ -3238,47 +3238,51 @@
             "unhoverables": []
           },
           "tail": {
-            "impactTriggers": [],
+            "impactTriggers": [
+              {
+                "tagName": "A",
+                "text": "Comparenow",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 2,
+                "opacityImpact": 2
+              }
+            ],
             "unhoverables": [
               {
                 "tagName": "LI",
-                "id": "menu-item-819",
-                "text": "UserWayInitialScannerTool"
+                "id": "menu-item-8010",
+                "text": "ComplianceSheriffReview"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Hybrid"
               },
               {
                 "tagName": "LI",
-                "id": "menu-item-8013",
-                "text": "InteractiveAccessibilityReview"
+                "id": "menu-item-765",
+                "text": "TheUnitedKingdom"
               },
               {
                 "tagName": "A",
                 "id": "",
-                "text": "Compliance"
-              },
-              {
-                "tagName": "A",
-                "id": "",
-                "text": "HubSpot"
-              },
-              {
-                "tagName": "A",
-                "id": "",
-                "text": "42studio.io"
-              },
-              {
-                "tagName": "A",
-                "id": "",
-                "text": "OnlineADAReview"
+                "text": "UserWay"
               },
               {
                 "tagName": "LI",
-                "id": "menu-item-6881",
-                "text": "HubSpot"
+                "id": "menu-item-4156",
+                "text": "EqualWebvsAdally"
               },
               {
-                "tagName": "LI",
-                "id": "menu-item-167",
-                "text": "EqualWeb"
+                "tagName": "A",
+                "id": "",
+                "text": "Seeallcategories"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "PrestaShop"
               }
             ]
           }
@@ -3671,9 +3675,13 @@
       "result": {
         "roleElements": 11,
         "badRoleElements": 2,
+        "redundantRoleElements": 0,
         "tagNames": {
           "P": {
-            "status": 2
+            "status": {
+              "bad": 2,
+              "redundant": 0
+            }
           }
         }
       }

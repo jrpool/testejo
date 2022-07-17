@@ -304,15 +304,16 @@
           "total": 106,
           "types": {
             "indicatorMissing": {
-              "total": 0,
-              "tagNames": {}
+              "total": 2,
+              "tagNames": {
+                "A": 2
+              }
             },
             "nonOutlinePresent": {
-              "total": 9,
+              "total": 7,
               "tagNames": {
                 "BUTTON": 6,
-                "INPUT": 1,
-                "A": 2
+                "INPUT": 1
               }
             },
             "outlinePresent": {
@@ -325,7 +326,16 @@
           }
         },
         "items": {
-          "indicatorMissing": [],
+          "indicatorMissing": [
+            {
+              "tagName": "A",
+              "text": "Previous"
+            },
+            {
+              "tagName": "A",
+              "text": "Next"
+            }
+          ],
           "nonOutlinePresent": [
             {
               "tagName": "BUTTON",
@@ -348,20 +358,12 @@
               "text": "Buscar"
             },
             {
-              "tagName": "A",
-              "text": "Previous"
-            },
-            {
               "tagName": "BUTTON",
               "text": "Reanudar"
             },
             {
               "tagName": "BUTTON",
               "text": "Pausar"
-            },
-            {
-              "tagName": "A",
-              "text": "Next"
             }
           ],
           "outlinePresent": [
@@ -8097,12 +8099,12 @@
           "triggers": 173,
           "headTriggers": 20,
           "tailTriggers": 153,
-          "impactTriggers": 51,
+          "impactTriggers": 10,
           "additions": 0,
           "removals": 0,
-          "opacityChanges": 51,
-          "opacityImpact": 10,
-          "unhoverables": 3
+          "opacityChanges": 10,
+          "opacityImpact": 0,
+          "unhoverables": 4
         },
         "items": {
           "head": {
@@ -8119,39 +8121,7 @@
             "impactTriggers": [
               {
                 "tagName": "A",
-                "text": "LaUniversitatd'Alacantposaenmarxaunserveiperaacaba",
-                "additions": 0,
-                "removals": 0,
-                "opacityChanges": 1,
-                "opacityImpact": 0
-              },
-              {
-                "tagName": "A",
-                "text": "Mésde1000participantsenlaSetmanadel'Accessibilitat",
-                "additions": 0,
-                "removals": 0,
-                "opacityChanges": 1,
-                "opacityImpact": 1
-              },
-              {
-                "tagName": "A",
-                "text": "SignaturesaccessiblesperacorreuelectrònicdelaUA",
-                "additions": 0,
-                "removals": 0,
-                "opacityChanges": 1,
-                "opacityImpact": 0
-              },
-              {
-                "tagName": "A",
-                "text": "2ajornadaBretxaDigitaliDiscapacitat",
-                "additions": 0,
-                "removals": 0,
-                "opacityChanges": 1,
-                "opacityImpact": 0
-              },
-              {
-                "tagName": "A",
-                "text": "Publiquemunasèriedevídeotutorialssobretecnologiesa",
+                "text": "LaUAesconverteixenlaprimerauniversitataimplementar",
                 "additions": 0,
                 "removals": 0,
                 "opacityChanges": 1,
@@ -8160,14 +8130,19 @@
             ],
             "unhoverables": [
               {
+                "tagName": "LI",
+                "id": "",
+                "text": "Galetes"
+              },
+              {
                 "tagName": "A",
                 "id": "",
-                "text": "Facebook"
+                "text": "Accessibilitat"
               },
               {
                 "tagName": "LI",
                 "id": "",
-                "text": "Youtube"
+                "text": "Accessibilitat"
               }
             ]
           }
@@ -8658,12 +8633,19 @@
       "result": {
         "roleElements": 38,
         "badRoleElements": 21,
+        "redundantRoleElements": 0,
         "tagNames": {
           "A": {
-            "button": 20
+            "button": {
+              "bad": 20,
+              "redundant": 0
+            }
           },
           "DIV": {
-            "complementary": 1
+            "complementary": {
+              "bad": 1,
+              "redundant": 0
+            }
           }
         }
       }

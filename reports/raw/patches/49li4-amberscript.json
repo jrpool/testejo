@@ -1,0 +1,666 @@
+{
+  "id": "49li4-amberscript",
+  "host": {
+    "id": "amberscript",
+    "which": "https://www.amberscript.com/nl/",
+    "what": "Amberscript"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-16T21:29:38"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-16T21:30:37"
+    }
+  ],
+  "script": {
+    "id": "tp12",
+    "what": "Alfa, Axe, HTML CodeSniffer, IBM, Tenon, WAVE, and 16 custom tests",
+    "strict": true,
+    "timeLimit": 150,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.amberscript.com/nl/",
+        "what": "Amberscript"
+      },
+      {
+        "type": "test",
+        "which": "focInd",
+        "revealAll": false,
+        "allowedDelay": 250,
+        "withItems": true,
+        "what": "focus indicators"
+      },
+      {
+        "type": "test",
+        "which": "hover",
+        "headSize": 20,
+        "headSampleSize": 20,
+        "tailSampleSize": 15,
+        "withItems": true,
+        "what": "hover impacts"
+      },
+      {
+        "type": "test",
+        "which": "role",
+        "what": "validity and necessity of role assignments"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.amberscript.com/nl/",
+      "what": "Amberscript",
+      "result": "https://www.amberscript.com/nl/"
+    },
+    {
+      "type": "test",
+      "which": "focInd",
+      "revealAll": false,
+      "allowedDelay": 250,
+      "withItems": true,
+      "what": "focus indicators",
+      "url": "https://www.amberscript.com/nl/",
+      "result": {
+        "totals": {
+          "total": 72,
+          "types": {
+            "indicatorMissing": {
+              "total": 3,
+              "tagNames": {
+                "BUTTON": 3
+              }
+            },
+            "nonOutlinePresent": {
+              "total": 0,
+              "tagNames": {}
+            },
+            "outlinePresent": {
+              "total": 69,
+              "meanDelay": 37,
+              "tagNames": {
+                "A": 68,
+                "INPUT": 1
+              }
+            }
+          }
+        },
+        "items": {
+          "indicatorMissing": [
+            {
+              "tagName": "BUTTON",
+              "text": ""
+            },
+            {
+              "tagName": "BUTTON",
+              "text": ""
+            },
+            {
+              "tagName": "BUTTON",
+              "text": ""
+            }
+          ],
+          "nonOutlinePresent": [],
+          "outlinePresent": [
+            {
+              "tagName": "A",
+              "text": "Skip to content",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 102
+            },
+            {
+              "tagName": "INPUT",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Producten",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Bedrijfsoplossingen",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Prijzen",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Informatie",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Inloggen",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Probeer nu gratis",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Probeer nu gratis",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Start nu",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Handmatige transcriptie Meer weten Handmatige transcriptie Onze transcribenten zetten je audio of vi",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Handmatige ondertitels Meer weten Handmatige ondertitels Originele of vertaalde ondertitels gemaakt ",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Data annotation Meer weten Data annotation We creëren trainingsmateriaal met annotators die zijn get",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "API & aangepaste modellen Meer weten API & aangepaste modellen Gebruik onze API of creëer een eigen ",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Automatische transcriptie Meer weten Automatische transcriptie Zet je audio of video automatisch om ",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Automatische ondertitels Meer weten Automatische ondertitels Zet je audio of video automatisch om na",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Offerte aanvragen",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Probeer nu gratis",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Probeer nu gratis",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Probeer nu gratis",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Meer over bedrijfsoplossingen",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Offerte aanvragen",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Lees de case study",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Gebaseerd op 376 reviews",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Meer informatie",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Nieuws 4 nov 2021 Amberscript haalt € 8 miljoen op om audio- en videomateriaal voor iedereen toegank",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Nieuws 14 sep 2021 Emerce – Denk bij video-content aan doven en slechthorenden",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Blog 8 jun 2021 Het Nederlandse interpunctiemodel",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Vacatures",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Junior Inside Sales Consultant DACH Full-time Vacature tonen Group",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Operations & Community Specialist (French) Full-time Vacature tonen Group",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "French-Canadian Transcriber (Freelancer) Full-time Vacature tonen Group",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Meer over ons",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Carrières",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Probeer nu gratis",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Automatische transcriptie",
+              "delay": 105
+            },
+            {
+              "tagName": "A",
+              "text": "Handmatige transcriptie",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Automatische ondertitels",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "Handmatige ondertitels",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Prijzen",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Bedrijfsoplossingen",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "API & aangepaste modellen",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Data annotation",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Case studies",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "OFFERTE AANVRAGEN",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Digitale toegankelijkheid",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Amberscript academy",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "Bestandsformaten",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Sectoren",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "Helpdesk",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Blog",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "WER",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "Over ons",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Carrière",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Werk als online transcribent",
+              "delay": 104
+            },
+            {
+              "tagName": "A",
+              "text": "Affiliate programma",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Nieuws",
+              "delay": 104
+            },
+            {
+              "tagName": "A",
+              "text": "Databeveiliging en privacy",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Neem contact op",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Privacybeleid",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Gebruikersvoorwaarden",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.amberscript.com/nl/",
+      "what": "URL",
+      "result": "https://www.amberscript.com/nl/"
+    },
+    {
+      "type": "test",
+      "which": "hover",
+      "headSize": 20,
+      "headSampleSize": 20,
+      "tailSampleSize": 15,
+      "withItems": true,
+      "what": "hover-caused content changes",
+      "url": "https://www.amberscript.com/nl/",
+      "result": {
+        "totals": {
+          "triggers": 103,
+          "headTriggers": 20,
+          "tailTriggers": 83,
+          "impactTriggers": 12,
+          "additions": 224,
+          "removals": 81,
+          "opacityChanges": 4,
+          "opacityImpact": 173,
+          "unhoverables": 1
+        },
+        "items": {
+          "head": {
+            "impactTriggers": [
+              {
+                "tagName": "A",
+                "text": "<inputtype=\"checkbox\">",
+                "additions": 119,
+                "removals": 1,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "LI",
+                "text": "ProductenProductenAutomatischetranscriptieHandmati",
+                "additions": 22,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "A",
+                "text": "Producten",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 42
+              },
+              {
+                "tagName": "LI",
+                "text": "BedrijfsoplossingenBedrijfsoplossingenBedrijfsoplo",
+                "additions": 22,
+                "removals": 19,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "A",
+                "text": "Bedrijfsoplossingen",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 42
+              },
+              {
+                "tagName": "LI",
+                "text": "Prijzen",
+                "additions": 0,
+                "removals": 19,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "A",
+                "text": "Prijzen",
+                "additions": 0,
+                "removals": 3,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "LI",
+                "text": "InformatieMeerinformatieDigitaletoegankelijkheidAm",
+                "additions": 22,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "A",
+                "text": "Informatie",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 21
+              },
+              {
+                "tagName": "LI",
+                "text": "NederlandsTalenEnglish(Engels)Español(Spaans)Dansk",
+                "additions": 39,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "A",
+                "text": "Nederlands",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 68
+              },
+              {
+                "tagName": "A",
+                "text": "Inloggen",
+                "additions": 0,
+                "removals": 39,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              }
+            ],
+            "unhoverables": [
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Skiptocontent"
+              }
+            ]
+          },
+          "tail": {
+            "impactTriggers": [],
+            "unhoverables": []
+          }
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.amberscript.com/nl/",
+      "what": "URL",
+      "result": "https://www.amberscript.com/nl/"
+    },
+    {
+      "type": "test",
+      "which": "role",
+      "what": "roles",
+      "url": "https://www.amberscript.com/nl/",
+      "result": {
+        "roleElements": 7,
+        "badRoleElements": 0,
+        "redundantRoleElements": 0,
+        "tagNames": {}
+      }
+    }
+  ],
+  "timeStamp": "49li4",
+  "startTime": "2022-07-16T21:29:38",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "hover",
+      45
+    ],
+    [
+      "focInd",
+      4
+    ],
+    [
+      "role",
+      0
+    ]
+  ],
+  "logCount": 5,
+  "logSize": 1156,
+  "errorLogCount": 5,
+  "errorLogSize": 1156,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-16T21:30:37",
+  "elapsedSeconds": 58
+}

@@ -304,14 +304,14 @@
           "total": 32,
           "types": {
             "indicatorMissing": {
-              "total": 0,
-              "tagNames": {}
-            },
-            "nonOutlinePresent": {
               "total": 32,
               "tagNames": {
                 "A": 32
               }
+            },
+            "nonOutlinePresent": {
+              "total": 0,
+              "tagNames": {}
             },
             "outlinePresent": {
               "total": 0,
@@ -321,8 +321,7 @@
           }
         },
         "items": {
-          "indicatorMissing": [],
-          "nonOutlinePresent": [
+          "indicatorMissing": [
             {
               "tagName": "A",
               "text": "Explorer le contenu"
@@ -452,6 +451,7 @@
               "text": ""
             }
           ],
+          "nonOutlinePresent": [],
           "outlinePresent": []
         }
       }
@@ -1014,22 +1014,38 @@
       "url": "https://ideance.net/fr/",
       "result": {
         "roleElements": 18,
-        "badRoleElements": 5,
+        "badRoleElements": 3,
+        "redundantRoleElements": 2,
         "tagNames": {
           "HEADER": {
-            "banner": 1
+            "banner": {
+              "bad": 1,
+              "redundant": 0
+            }
           },
           "NAV": {
-            "navigation": 1
+            "navigation": {
+              "bad": 0,
+              "redundant": 1
+            }
           },
           "MAIN": {
-            "main": 1
+            "main": {
+              "bad": 0,
+              "redundant": 1
+            }
           },
           "SPAN": {
-            "text": 1
+            "text": {
+              "bad": 1,
+              "redundant": 0
+            }
           },
           "FOOTER": {
-            "contentinfo": 1
+            "contentinfo": {
+              "bad": 1,
+              "redundant": 0
+            }
           }
         }
       }
@@ -8696,7 +8712,7 @@
   "endTime": "2022-07-09T15:01:54",
   "elapsedSeconds": 116,
   "score": {
-    "scoreProcID": "sp12a",
+    "scoreProcID": "sp12b",
     "logWeights": {
       "logCount": 0.5,
       "logSize": 0.01,
@@ -8718,9 +8734,9 @@
     },
     "packageDetails": {
       "testaro": {
-        "focInd": 32,
+        "focInd": 96,
         "linkUl": 24,
-        "role": 5,
+        "role": 8,
         "styleDiff": 13,
         "zIndex": 1
       },
@@ -8766,7 +8782,7 @@
         "focusIndication": {
           "testaro": {
             "focInd": {
-              "score": 32,
+              "score": 96,
               "what": "Focused element displaying no or nostandard focus indicator"
             }
           }
@@ -8782,7 +8798,7 @@
         "roleBad": {
           "testaro": {
             "role": {
-              "score": 4,
+              "score": 6,
               "what": "Nonexistent or implicit-overriding role"
             }
           },
@@ -8986,18 +9002,18 @@
     },
     "preventionScores": {},
     "summary": {
-      "total": 237,
+      "total": 303,
       "log": 0,
       "preventions": 0,
       "solos": 0,
       "groups": [
         {
-          "groupName": "contrastAA",
-          "score": 79
+          "groupName": "focusIndication",
+          "score": 98
         },
         {
-          "groupName": "focusIndication",
-          "score": 34
+          "groupName": "contrastAA",
+          "score": 79
         },
         {
           "groupName": "contrastAAA",
@@ -9016,16 +9032,16 @@
           "score": 10
         },
         {
+          "groupName": "roleBad",
+          "score": 9
+        },
+        {
           "groupName": "contrastRisk",
           "score": 8
         },
         {
           "groupName": "targetSize",
           "score": 8
-        },
-        {
-          "groupName": "roleBad",
-          "score": 7
         },
         {
           "groupName": "invisibleLabel",

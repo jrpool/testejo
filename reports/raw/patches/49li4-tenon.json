@@ -1,0 +1,648 @@
+{
+  "id": "49li4-tenon",
+  "host": {
+    "id": "tenon",
+    "which": "https://tenon.io/",
+    "what": "Tenon"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-16T22:06:41"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-16T22:07:28"
+    }
+  ],
+  "script": {
+    "id": "tp12",
+    "what": "Alfa, Axe, HTML CodeSniffer, IBM, Tenon, WAVE, and 16 custom tests",
+    "strict": true,
+    "timeLimit": 150,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://tenon.io/",
+        "what": "Tenon"
+      },
+      {
+        "type": "test",
+        "which": "focInd",
+        "revealAll": false,
+        "allowedDelay": 250,
+        "withItems": true,
+        "what": "focus indicators"
+      },
+      {
+        "type": "test",
+        "which": "hover",
+        "headSize": 20,
+        "headSampleSize": 20,
+        "tailSampleSize": 15,
+        "withItems": true,
+        "what": "hover impacts"
+      },
+      {
+        "type": "test",
+        "which": "role",
+        "what": "validity and necessity of role assignments"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://tenon.io/",
+      "what": "Tenon",
+      "result": "https://tenon.io/"
+    },
+    {
+      "type": "test",
+      "which": "focInd",
+      "revealAll": false,
+      "allowedDelay": 250,
+      "withItems": true,
+      "what": "focus indicators",
+      "url": "https://tenon.io/",
+      "result": {
+        "totals": {
+          "total": 67,
+          "types": {
+            "indicatorMissing": {
+              "total": 11,
+              "tagNames": {
+                "A": 5,
+                "DIV": 1,
+                "INPUT": 1,
+                "BUTTON": 3,
+                "IFRAME": 1
+              }
+            },
+            "nonOutlinePresent": {
+              "total": 0,
+              "tagNames": {}
+            },
+            "outlinePresent": {
+              "total": 56,
+              "meanDelay": 0,
+              "tagNames": {
+                "A": 55,
+                "SECTION": 1
+              }
+            }
+          }
+        },
+        "items": {
+          "indicatorMissing": [
+            {
+              "tagName": "A",
+              "text": ""
+            },
+            {
+              "tagName": "A",
+              "text": "Get a free accessibility consultation"
+            },
+            {
+              "tagName": "DIV",
+              "text": "Test website"
+            },
+            {
+              "tagName": "INPUT",
+              "text": ""
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Test now"
+            },
+            {
+              "tagName": "A",
+              "text": "+1 866.599.0331"
+            },
+            {
+              "tagName": "A",
+              "text": "Sign up now"
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "I agree"
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Don't track me on this browser"
+            },
+            {
+              "tagName": "A",
+              "text": "+1 866.599.0331"
+            },
+            {
+              "tagName": "IFRAME",
+              "text": ""
+            }
+          ],
+          "nonOutlinePresent": [],
+          "outlinePresent": [
+            {
+              "tagName": "A",
+              "text": "Accept",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Decline",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Skip to content",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Free Trial",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Pricing",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Documentation",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Integrations",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility Services",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Blog",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Careers",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Client Sign In",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Level Access has acquired Tenon",
+              "delay": 0
+            },
+            {
+              "tagName": "SECTION",
+              "text": "Test your websiteEnter a URL to testTest nowInclude http:// or https://",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Get a free accessibility consultation",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "free trial",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "paid plans",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "free consultation",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Tenon's browser plugins",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "get integration code",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Contact us to find out more about Tenon Enterprise",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Or e-mail us at sales@tenon.io",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Extreme Accessibility: Rapid Discovery And Remediation",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Accessible Validation Of Checkbox And Radiobutton Groups",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Bleeding Edge Accessibility",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Jared Smith: Accessibility Mechanics",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "What to do when you are sued for your inaccessible website",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "The Digital Accessibility Legal Summit, March 12th 2019",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "AccessU",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "NCDT 2019",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Perl Con 2019",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "AccessU",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "NCDT 2019",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Perl Con",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "sales@tenon.io",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "support@tenon.io",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Twitter",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "LinkedIn",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "AngelList",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Github",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "About",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Services",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Terms of Use",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Privacy & security",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "What Tenon tests",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "API Quick start",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "API Overview",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "API Request",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "API Response",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "API Response codes",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "What to do when you are sued for your inaccessible website",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Accessible Validation Of Checkbox And Radiobutton Groups",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Extreme Accessibility: Rapid Discovery And Remediation",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Perl Con",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "AccessU",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "NCDT 2019",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Found an accessibility issue on this site? Let us know!",
+              "delay": 0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://tenon.io/",
+      "what": "URL",
+      "result": "https://tenon.io/"
+    },
+    {
+      "type": "test",
+      "which": "hover",
+      "headSize": 20,
+      "headSampleSize": 20,
+      "tailSampleSize": 15,
+      "withItems": true,
+      "what": "hover-caused content changes",
+      "url": "https://tenon.io/",
+      "result": {
+        "totals": {
+          "triggers": 131,
+          "headTriggers": 20,
+          "tailTriggers": 111,
+          "impactTriggers": 0,
+          "additions": 0,
+          "removals": 0,
+          "opacityChanges": 0,
+          "opacityImpact": 0,
+          "unhoverables": 19
+        },
+        "items": {
+          "head": {
+            "impactTriggers": [],
+            "unhoverables": [
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Skiptocontent"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "FreeTrial"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "FreeTrial"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "Pricing"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Pricing"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "Documentation"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Documentation"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "Integrations"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Integrations"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "AccessibilityServices"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "AccessibilityServices"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "Blog"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Blog"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "Careers"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Careers"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "ClientSignIn"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "ClientSignIn"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "<imgsrc=\"data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9"
+              }
+            ]
+          },
+          "tail": {
+            "impactTriggers": [],
+            "unhoverables": [
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Getafreeaccessibilityconsultation"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://tenon.io/",
+      "what": "URL",
+      "result": "https://tenon.io/"
+    },
+    {
+      "type": "test",
+      "which": "role",
+      "what": "roles",
+      "url": "https://tenon.io/",
+      "result": {
+        "roleElements": 18,
+        "badRoleElements": 5,
+        "redundantRoleElements": 0,
+        "tagNames": {
+          "A": {
+            "button": {
+              "bad": 2,
+              "redundant": 0
+            }
+          },
+          "DIV": {
+            "group": {
+              "bad": 1,
+              "redundant": 0
+            },
+            "status": {
+              "bad": 2,
+              "redundant": 0
+            }
+          }
+        }
+      }
+    }
+  ],
+  "timeStamp": "49li4",
+  "startTime": "2022-07-16T22:06:41",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "hover",
+      34
+    ],
+    [
+      "focInd",
+      4
+    ],
+    [
+      "role",
+      0
+    ]
+  ],
+  "logCount": 6,
+  "logSize": 189,
+  "errorLogCount": 0,
+  "errorLogSize": 0,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-16T22:07:28",
+  "elapsedSeconds": 47
+}

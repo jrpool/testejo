@@ -304,14 +304,14 @@
           "total": 141,
           "types": {
             "indicatorMissing": {
-              "total": 0,
-              "tagNames": {}
-            },
-            "nonOutlinePresent": {
               "total": 141,
               "tagNames": {
                 "A": 141
               }
+            },
+            "nonOutlinePresent": {
+              "total": 0,
+              "tagNames": {}
             },
             "outlinePresent": {
               "total": 0,
@@ -321,8 +321,7 @@
           }
         },
         "items": {
-          "indicatorMissing": [],
-          "nonOutlinePresent": [
+          "indicatorMissing": [
             {
               "tagName": "A",
               "text": ""
@@ -888,6 +887,7 @@
               "text": "42studio.io"
             }
           ],
+          "nonOutlinePresent": [],
           "outlinePresent": []
         }
       }
@@ -3216,12 +3216,12 @@
           "triggers": 216,
           "headTriggers": 20,
           "tailTriggers": 196,
-          "impactTriggers": 1,
+          "impactTriggers": 14,
           "additions": 0,
           "removals": 0,
-          "opacityChanges": 2,
-          "opacityImpact": 2,
-          "unhoverables": 8
+          "opacityChanges": 28,
+          "opacityImpact": 28,
+          "unhoverables": 7
         },
         "items": {
           "head": {
@@ -3238,47 +3238,51 @@
             "unhoverables": []
           },
           "tail": {
-            "impactTriggers": [],
+            "impactTriggers": [
+              {
+                "tagName": "A",
+                "text": "Comparenow",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 2,
+                "opacityImpact": 2
+              }
+            ],
             "unhoverables": [
               {
                 "tagName": "LI",
-                "id": "menu-item-819",
-                "text": "UserWayInitialScannerTool"
+                "id": "menu-item-8010",
+                "text": "ComplianceSheriffReview"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Hybrid"
               },
               {
                 "tagName": "LI",
-                "id": "menu-item-8013",
-                "text": "InteractiveAccessibilityReview"
+                "id": "menu-item-765",
+                "text": "TheUnitedKingdom"
               },
               {
                 "tagName": "A",
                 "id": "",
-                "text": "Compliance"
-              },
-              {
-                "tagName": "A",
-                "id": "",
-                "text": "HubSpot"
-              },
-              {
-                "tagName": "A",
-                "id": "",
-                "text": "42studio.io"
-              },
-              {
-                "tagName": "A",
-                "id": "",
-                "text": "OnlineADAReview"
+                "text": "UserWay"
               },
               {
                 "tagName": "LI",
-                "id": "menu-item-6881",
-                "text": "HubSpot"
+                "id": "menu-item-4156",
+                "text": "EqualWebvsAdally"
               },
               {
-                "tagName": "LI",
-                "id": "menu-item-167",
-                "text": "EqualWeb"
+                "tagName": "A",
+                "id": "",
+                "text": "Seeallcategories"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "PrestaShop"
               }
             ]
           }
@@ -3671,9 +3675,13 @@
       "result": {
         "roleElements": 11,
         "badRoleElements": 2,
+        "redundantRoleElements": 0,
         "tagNames": {
           "P": {
-            "status": 2
+            "status": {
+              "bad": 2,
+              "redundant": 0
+            }
           }
         }
       }
@@ -26069,7 +26077,7 @@
   "endTime": "2022-07-09T14:43:20",
   "elapsedSeconds": 183,
   "score": {
-    "scoreProcID": "sp12a",
+    "scoreProcID": "sp12b",
     "logWeights": {
       "logCount": 0.5,
       "logSize": 0.01,
@@ -26094,11 +26102,11 @@
         "motion": 3,
         "bulk": 1,
         "focAll": 4,
-        "focInd": 141,
+        "focInd": 423,
         "focOp": 66,
-        "hover": 11,
+        "hover": 43,
         "linkUl": 116,
-        "role": 2,
+        "role": 4,
         "styleDiff": 28,
         "zIndex": 32
       },
@@ -26195,7 +26203,7 @@
         "focusIndication": {
           "testaro": {
             "focInd": {
-              "score": 141,
+              "score": 423,
               "what": "Focused element displaying no or nostandard focus indicator"
             }
           },
@@ -26217,7 +26225,7 @@
         "hoverSurprise": {
           "testaro": {
             "hover": {
-              "score": 3,
+              "score": 11,
               "what": "Content changes caused by hovering"
             }
           }
@@ -26233,7 +26241,7 @@
         "roleBad": {
           "testaro": {
             "role": {
-              "score": 2,
+              "score": 3,
               "what": "Nonexistent or implicit-overriding role"
             }
           }
@@ -26388,7 +26396,7 @@
           "alfa": {
             "r74": {
               "score": 10,
-              "what": "Paragraph text has absolute font size"
+              "what": "Paragraph text has an absolute font size"
             }
           }
         },
@@ -26621,11 +26629,15 @@
     },
     "preventionScores": {},
     "summary": {
-      "total": 1641,
+      "total": 1932,
       "log": 194,
       "preventions": 0,
       "solos": 0,
       "groups": [
+        {
+          "groupName": "focusIndication",
+          "score": 480
+        },
         {
           "groupName": "contentBeyondLandmarks",
           "score": 282
@@ -26633,10 +26645,6 @@
         {
           "groupName": "linkForcesNewWindow",
           "score": 254
-        },
-        {
-          "groupName": "focusIndication",
-          "score": 198
         },
         {
           "groupName": "contrastAA",
@@ -26695,6 +26703,10 @@
           "score": 15
         },
         {
+          "groupName": "hoverSurprise",
+          "score": 13
+        },
+        {
           "groupName": "fontSizeAbsolute",
           "score": 12
         },
@@ -26731,7 +26743,7 @@
           "score": 5
         },
         {
-          "groupName": "hoverSurprise",
+          "groupName": "roleBad",
           "score": 5
         },
         {
@@ -26740,10 +26752,6 @@
         },
         {
           "groupName": "spontaneousMotion",
-          "score": 4
-        },
-        {
-          "groupName": "roleBad",
           "score": 4
         },
         {

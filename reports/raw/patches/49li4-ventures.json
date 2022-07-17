@@ -1,0 +1,379 @@
+{
+  "id": "49li4-ventures",
+  "host": {
+    "id": "ventures",
+    "which": "https://accessibilityventures.com/",
+    "what": "Accessibility Ventures"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-16T21:21:58"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-16T21:23:06"
+    }
+  ],
+  "script": {
+    "id": "tp12",
+    "what": "Alfa, Axe, HTML CodeSniffer, IBM, Tenon, WAVE, and 16 custom tests",
+    "strict": true,
+    "timeLimit": 150,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://accessibilityventures.com/",
+        "what": "Accessibility Ventures"
+      },
+      {
+        "type": "test",
+        "which": "focInd",
+        "revealAll": false,
+        "allowedDelay": 250,
+        "withItems": true,
+        "what": "focus indicators"
+      },
+      {
+        "type": "test",
+        "which": "hover",
+        "headSize": 20,
+        "headSampleSize": 20,
+        "tailSampleSize": 15,
+        "withItems": true,
+        "what": "hover impacts"
+      },
+      {
+        "type": "test",
+        "which": "role",
+        "what": "validity and necessity of role assignments"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://accessibilityventures.com/",
+      "what": "Accessibility Ventures",
+      "result": "https://accessibilityventures.com/"
+    },
+    {
+      "type": "test",
+      "which": "focInd",
+      "revealAll": false,
+      "allowedDelay": 250,
+      "withItems": true,
+      "what": "focus indicators",
+      "url": "https://accessibilityventures.com/",
+      "result": {
+        "totals": {
+          "total": 27,
+          "types": {
+            "indicatorMissing": {
+              "total": 25,
+              "tagNames": {
+                "A": 22,
+                "IFRAME": 1,
+                "INPUT": 1,
+                "BUTTON": 1
+              }
+            },
+            "nonOutlinePresent": {
+              "total": 2,
+              "tagNames": {
+                "A": 2
+              }
+            },
+            "outlinePresent": {
+              "total": 0,
+              "meanDelay": 0,
+              "tagNames": {}
+            }
+          }
+        },
+        "items": {
+          "indicatorMissing": [
+            {
+              "tagName": "A",
+              "text": "Facebook"
+            },
+            {
+              "tagName": "A",
+              "text": ""
+            },
+            {
+              "tagName": "A",
+              "text": "About Us"
+            },
+            {
+              "tagName": "A",
+              "text": "Why You Need It"
+            },
+            {
+              "tagName": "A",
+              "text": "Website Accessibility Tips"
+            },
+            {
+              "tagName": "A",
+              "text": "FAQs"
+            },
+            {
+              "tagName": "A",
+              "text": "Get Started Now!"
+            },
+            {
+              "tagName": "IFRAME",
+              "text": ""
+            },
+            {
+              "tagName": "A",
+              "text": "Get Started Now!"
+            },
+            {
+              "tagName": "A",
+              "text": "Get Started Now!"
+            },
+            {
+              "tagName": "A",
+              "text": "484-378-1824"
+            },
+            {
+              "tagName": "A",
+              "text": "Email Us"
+            },
+            {
+              "tagName": "A",
+              "text": "Privacy Policy"
+            },
+            {
+              "tagName": "A",
+              "text": "Cancellation Policy"
+            },
+            {
+              "tagName": "A",
+              "text": "Support Center"
+            },
+            {
+              "tagName": "A",
+              "text": "Terms of Service"
+            },
+            {
+              "tagName": "A",
+              "text": "Accept"
+            },
+            {
+              "tagName": "A",
+              "text": "Reject"
+            },
+            {
+              "tagName": "A",
+              "text": "Read More"
+            },
+            {
+              "tagName": "A",
+              "text": "About Us"
+            },
+            {
+              "tagName": "A",
+              "text": "Why You Need It"
+            },
+            {
+              "tagName": "A",
+              "text": "Website Accessibility Tips"
+            },
+            {
+              "tagName": "A",
+              "text": "FAQs"
+            },
+            {
+              "tagName": "INPUT",
+              "text": ""
+            },
+            {
+              "tagName": "BUTTON",
+              "text": ""
+            }
+          ],
+          "nonOutlinePresent": [
+            {
+              "tagName": "A",
+              "text": "skip to Main Content"
+            },
+            {
+              "tagName": "A",
+              "text": "Sign-Up Now!"
+            }
+          ],
+          "outlinePresent": []
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://accessibilityventures.com/",
+      "what": "URL",
+      "result": "https://accessibilityventures.com/"
+    },
+    {
+      "type": "test",
+      "which": "hover",
+      "headSize": 20,
+      "headSampleSize": 20,
+      "tailSampleSize": 15,
+      "withItems": true,
+      "what": "hover-caused content changes",
+      "url": "https://accessibilityventures.com/",
+      "result": {
+        "totals": {
+          "triggers": 38,
+          "headTriggers": 20,
+          "tailTriggers": 18,
+          "impactTriggers": 1,
+          "additions": 0,
+          "removals": 0,
+          "opacityChanges": 1,
+          "opacityImpact": 2,
+          "unhoverables": 9
+        },
+        "items": {
+          "head": {
+            "impactTriggers": [
+              {
+                "tagName": "A",
+                "text": "Facebook",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 2
+              }
+            ],
+            "unhoverables": [
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "skiptoMainContent"
+              }
+            ]
+          },
+          "tail": {
+            "impactTriggers": [],
+            "unhoverables": [
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "WhyYouNeedIt"
+              },
+              {
+                "tagName": "LI",
+                "id": "sidr-id-menu-item-465",
+                "text": "WhyYouNeedIt"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "FAQs"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "WebsiteAccessibilityTips"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "AboutUs"
+              },
+              {
+                "tagName": "LI",
+                "id": "sidr-id-menu-item-261",
+                "text": "FAQs"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "×"
+              },
+              {
+                "tagName": "BUTTON",
+                "id": "",
+                "text": "<spanclass=\"fafa-search\"></span>"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://accessibilityventures.com/",
+      "what": "URL",
+      "result": "https://accessibilityventures.com/"
+    },
+    {
+      "type": "test",
+      "which": "role",
+      "what": "roles",
+      "url": "https://accessibilityventures.com/",
+      "result": {
+        "roleElements": 10,
+        "badRoleElements": 8,
+        "redundantRoleElements": 0,
+        "tagNames": {
+          "A": {
+            "button": {
+              "bad": 8,
+              "redundant": 0
+            }
+          }
+        }
+      }
+    }
+  ],
+  "timeStamp": "49li4",
+  "startTime": "2022-07-16T21:21:58",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "hover",
+      43
+    ],
+    [
+      "focInd",
+      8
+    ],
+    [
+      "role",
+      0
+    ]
+  ],
+  "logCount": 9,
+  "logSize": 963,
+  "errorLogCount": 3,
+  "errorLogSize": 120,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-16T21:23:06",
+  "elapsedSeconds": 68
+}

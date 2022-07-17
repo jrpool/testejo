@@ -303,14 +303,14 @@
           "total": 81,
           "types": {
             "indicatorMissing": {
-              "total": 0,
-              "tagNames": {}
-            },
-            "nonOutlinePresent": {
               "total": 1,
               "tagNames": {
                 "IFRAME": 1
               }
+            },
+            "nonOutlinePresent": {
+              "total": 0,
+              "tagNames": {}
             },
             "outlinePresent": {
               "total": 80,
@@ -324,28 +324,28 @@
           }
         },
         "items": {
-          "indicatorMissing": [],
-          "nonOutlinePresent": [
+          "indicatorMissing": [
             {
               "tagName": "IFRAME",
               "text": ""
             }
           ],
+          "nonOutlinePresent": [],
           "outlinePresent": [
             {
               "tagName": "A",
               "text": "Skip to main menu",
-              "delay": 102
+              "delay": 103
             },
             {
               "tagName": "A",
               "text": "Skip to main content",
-              "delay": 104
+              "delay": 101
             },
             {
               "tagName": "A",
               "text": "",
-              "delay": 104
+              "delay": 101
             },
             {
               "tagName": "INPUT",
@@ -360,7 +360,7 @@
             {
               "tagName": "A",
               "text": "Donate",
-              "delay": 104
+              "delay": 101
             },
             {
               "tagName": "A",
@@ -370,82 +370,82 @@
             {
               "tagName": "A",
               "text": "0 items Cart",
-              "delay": 102
+              "delay": 104
             },
             {
               "tagName": "A",
               "text": "Life with Vision Loss",
-              "delay": 101
-            },
-            {
-              "tagName": "A",
-              "text": "Educational Resources",
-              "delay": 102
-            },
-            {
-              "tagName": "A",
-              "text": "Accessibility Solutions",
-              "delay": 103
-            },
-            {
-              "tagName": "A",
-              "text": "Resources",
-              "delay": 102
-            },
-            {
-              "tagName": "A",
-              "text": "R&D",
-              "delay": 103
-            },
-            {
-              "tagName": "A",
-              "text": "Louis",
-              "delay": 102
-            },
-            {
-              "tagName": "A",
-              "text": "Catalogs",
-              "delay": 102
-            },
-            {
-              "tagName": "A",
-              "text": "Shop",
               "delay": 100
             },
             {
               "tagName": "A",
-              "text": "Contact",
-              "delay": 102
-            },
-            {
-              "tagName": "A",
-              "text": "Support APH",
+              "text": "Educational Resources",
               "delay": 101
             },
             {
               "tagName": "A",
-              "text": "Inquire About Braille",
+              "text": "Accessibility Solutions",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Resources",
               "delay": 103
             },
             {
               "tagName": "A",
-              "text": "Inquire About Accessible Tests",
+              "text": "R&D",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Louis",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "Catalogs",
               "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Shop",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Contact",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "Support APH",
+              "delay": 104
+            },
+            {
+              "tagName": "A",
+              "text": "Inquire About Braille",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Inquire About Accessible Tests",
+              "delay": 100
             },
             {
               "tagName": "A",
               "text": "Inquire About Accessible Audio",
-              "delay": 101
+              "delay": 100
             },
             {
               "tagName": "A",
               "text": "Inquire About Tactile Graphics",
-              "delay": 101
+              "delay": 103
             },
             {
               "tagName": "A",
               "text": "Inquire About Large Print",
-              "delay": 102
+              "delay": 101
             },
             {
               "tagName": "A",
@@ -570,27 +570,27 @@
             {
               "tagName": "A",
               "text": "Accessibility Solutions",
-              "delay": 101
-            },
-            {
-              "tagName": "A",
-              "text": "Resources",
-              "delay": 104
-            },
-            {
-              "tagName": "A",
-              "text": "R&D",
               "delay": 100
             },
             {
               "tagName": "A",
-              "text": "Louis",
+              "text": "Resources",
               "delay": 103
             },
             {
               "tagName": "A",
-              "text": "Federal Quota",
+              "text": "R&D",
               "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Louis",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Federal Quota",
+              "delay": 102
             },
             {
               "tagName": "A",
@@ -600,22 +600,22 @@
             {
               "tagName": "A",
               "text": "Blog",
-              "delay": 102
+              "delay": 101
             },
             {
               "tagName": "A",
               "text": "Newsroom",
-              "delay": 100
+              "delay": 101
             },
             {
               "tagName": "A",
               "text": "Annual Reports",
-              "delay": 100
+              "delay": 101
             },
             {
               "tagName": "A",
               "text": "Careers",
-              "delay": 102
+              "delay": 103
             },
             {
               "tagName": "A",
@@ -625,22 +625,22 @@
             {
               "tagName": "A",
               "text": "Corporate Ethics",
-              "delay": 101
+              "delay": 103
             },
             {
               "tagName": "A",
               "text": "Donor Privacy Policy",
-              "delay": 102
+              "delay": 101
             },
             {
               "tagName": "A",
               "text": "Terms of Use",
-              "delay": 102
+              "delay": 103
             },
             {
               "tagName": "A",
               "text": "Museum & Tours",
-              "delay": 102
+              "delay": 100
             },
             {
               "tagName": "A",
@@ -660,12 +660,12 @@
             {
               "tagName": "A",
               "text": "Return Policy",
-              "delay": 101
+              "delay": 102
             },
             {
               "tagName": "A",
               "text": "Order Status",
-              "delay": 104
+              "delay": 101
             },
             {
               "tagName": "A",
@@ -675,32 +675,12 @@
             {
               "tagName": "A",
               "text": "",
-              "delay": 102
-            },
-            {
-              "tagName": "A",
-              "text": "",
               "delay": 101
             },
             {
               "tagName": "A",
               "text": "",
               "delay": 101
-            },
-            {
-              "tagName": "A",
-              "text": "",
-              "delay": 101
-            },
-            {
-              "tagName": "A",
-              "text": "",
-              "delay": 101
-            },
-            {
-              "tagName": "A",
-              "text": "",
-              "delay": 100
             },
             {
               "tagName": "A",
@@ -714,23 +694,43 @@
             },
             {
               "tagName": "A",
-              "text": "Privacy Policy",
-              "delay": 101
+              "text": "",
+              "delay": 100
             },
             {
               "tagName": "A",
-              "text": "Accessibility",
-              "delay": 104
-            },
-            {
-              "tagName": "A",
-              "text": "Manuals & Downloads",
+              "text": "",
               "delay": 102
             },
             {
               "tagName": "A",
-              "text": "APH Catalogs",
+              "text": "",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "",
               "delay": 104
+            },
+            {
+              "tagName": "A",
+              "text": "Privacy Policy",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "Manuals & Downloads",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "APH Catalogs",
+              "delay": 101
             }
           ]
         }
@@ -1818,11 +1818,11 @@
           "triggers": 103,
           "headTriggers": 20,
           "tailTriggers": 83,
-          "impactTriggers": 10,
-          "additions": 0,
+          "impactTriggers": 16,
+          "additions": 101,
           "removals": 0,
-          "opacityChanges": 10,
-          "opacityImpact": 106,
+          "opacityChanges": 0,
+          "opacityImpact": 0,
           "unhoverables": 2
         },
         "items": {
@@ -1831,82 +1831,82 @@
               {
                 "tagName": "LI",
                 "text": "0itemsCartTotal:$0.00ViewCartCheckout",
-                "additions": 0,
+                "additions": 8,
                 "removals": 0,
-                "opacityChanges": 1,
-                "opacityImpact": 9
+                "opacityChanges": 0,
+                "opacityImpact": 0
               },
               {
                 "tagName": "A",
                 "text": "0itemsCart",
-                "additions": 0,
+                "additions": 8,
                 "removals": 0,
-                "opacityChanges": 1,
-                "opacityImpact": 9
+                "opacityChanges": 0,
+                "opacityImpact": 0
               },
               {
                 "tagName": "LI",
                 "text": "LifewithVisionLossRecentDiagnosisKidswithVisionLos",
-                "additions": 0,
+                "additions": 5,
                 "removals": 0,
-                "opacityChanges": 1,
-                "opacityImpact": 8
+                "opacityChanges": 0,
+                "opacityImpact": 0
               },
               {
                 "tagName": "A",
                 "text": "LifewithVisionLoss",
-                "additions": 0,
+                "additions": 5,
                 "removals": 0,
-                "opacityChanges": 1,
-                "opacityImpact": 8
+                "opacityChanges": 0,
+                "opacityImpact": 0
               },
               {
                 "tagName": "LI",
                 "text": "EducationalResourcesCoreCurriculumExpandedCoreCurr",
-                "additions": 0,
+                "additions": 9,
                 "removals": 0,
-                "opacityChanges": 1,
-                "opacityImpact": 16
+                "opacityChanges": 0,
+                "opacityImpact": 0
               },
               {
                 "tagName": "A",
                 "text": "EducationalResources",
-                "additions": 0,
+                "additions": 9,
                 "removals": 0,
-                "opacityChanges": 1,
-                "opacityImpact": 16
+                "opacityChanges": 0,
+                "opacityImpact": 0
               },
               {
                 "tagName": "LI",
                 "text": "ResourcesAPHPressAPHLibraryAPHMuseumHallofFameTact",
-                "additions": 0,
+                "additions": 8,
                 "removals": 0,
-                "opacityChanges": 1,
-                "opacityImpact": 14
+                "opacityChanges": 0,
+                "opacityImpact": 0
               },
               {
                 "tagName": "A",
                 "text": "Resources",
-                "additions": 0,
+                "additions": 8,
                 "removals": 0,
-                "opacityChanges": 1,
-                "opacityImpact": 14
+                "opacityChanges": 0,
+                "opacityImpact": 0
               },
               {
                 "tagName": "LI",
                 "text": "R&DGetInvolvedProductDevelopmentResearchResources",
-                "additions": 0,
+                "additions": 4,
                 "removals": 0,
-                "opacityChanges": 1,
-                "opacityImpact": 6
+                "opacityChanges": 0,
+                "opacityImpact": 0
               },
               {
                 "tagName": "A",
                 "text": "R&D",
-                "additions": 0,
+                "additions": 4,
                 "removals": 0,
-                "opacityChanges": 1,
-                "opacityImpact": 6
+                "opacityChanges": 0,
+                "opacityImpact": 0
               }
             ],
             "unhoverables": [
@@ -1923,7 +1923,16 @@
             ]
           },
           "tail": {
-            "impactTriggers": [],
+            "impactTriggers": [
+              {
+                "tagName": "A",
+                "text": "SupportAPH",
+                "additions": 6,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              }
+            ],
             "unhoverables": []
           }
         }
@@ -2395,6 +2404,7 @@
       "result": {
         "roleElements": 2,
         "badRoleElements": 0,
+        "redundantRoleElements": 0,
         "tagNames": {}
       }
     },
@@ -6656,7 +6666,7 @@
   "endTime": "2022-07-06T01:45:44",
   "elapsedSeconds": 123,
   "score": {
-    "scoreProcID": "sp12a",
+    "scoreProcID": "sp12b",
     "logWeights": {
       "logCount": 0.5,
       "logSize": 0.01,
@@ -6679,8 +6689,8 @@
     "packageDetails": {
       "testaro": {
         "bulk": 0,
-        "focInd": 1,
-        "hover": 35,
+        "focInd": 3,
+        "hover": 64,
         "labClash": 1,
         "linkUl": 52,
         "styleDiff": 25,
@@ -6741,7 +6751,7 @@
         "focusIndication": {
           "testaro": {
             "focInd": {
-              "score": 1,
+              "score": 3,
               "what": "Focused element displaying no or nostandard focus indicator"
             }
           },
@@ -6755,7 +6765,7 @@
         "hoverSurprise": {
           "testaro": {
             "hover": {
-              "score": 9,
+              "score": 16,
               "what": "Content changes caused by hovering"
             }
           }
@@ -7025,7 +7035,7 @@
     },
     "preventionScores": {},
     "summary": {
-      "total": 369,
+      "total": 378,
       "log": 139,
       "preventions": 0,
       "solos": 0,
@@ -7043,16 +7053,16 @@
           "score": 26
         },
         {
+          "groupName": "hoverSurprise",
+          "score": 18
+        },
+        {
           "groupName": "contrastAAA",
           "score": 14
         },
         {
           "groupName": "contrastAA",
           "score": 12
-        },
-        {
-          "groupName": "hoverSurprise",
-          "score": 11
         },
         {
           "groupName": "inconsistentStyles",
@@ -7079,6 +7089,10 @@
           "score": 6
         },
         {
+          "groupName": "focusIndication",
+          "score": 5
+        },
+        {
           "groupName": "fontSmall",
           "score": 5
         },
@@ -7100,10 +7114,6 @@
         },
         {
           "groupName": "visibleBulk",
-          "score": 3
-        },
-        {
-          "groupName": "focusIndication",
           "score": 3
         },
         {

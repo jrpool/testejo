@@ -1,0 +1,511 @@
+{
+  "id": "49li4-shawtrust",
+  "host": {
+    "id": "shawtrust",
+    "which": "https://www.accessibility-services.co.uk/",
+    "what": "Shaw Trust Accessibility Services"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-16T22:03:56"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-16T22:05:03"
+    }
+  ],
+  "script": {
+    "id": "tp12",
+    "what": "Alfa, Axe, HTML CodeSniffer, IBM, Tenon, WAVE, and 16 custom tests",
+    "strict": true,
+    "timeLimit": 150,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.accessibility-services.co.uk/",
+        "what": "Shaw Trust Accessibility Services"
+      },
+      {
+        "type": "test",
+        "which": "focInd",
+        "revealAll": false,
+        "allowedDelay": 250,
+        "withItems": true,
+        "what": "focus indicators"
+      },
+      {
+        "type": "test",
+        "which": "hover",
+        "headSize": 20,
+        "headSampleSize": 20,
+        "tailSampleSize": 15,
+        "withItems": true,
+        "what": "hover impacts"
+      },
+      {
+        "type": "test",
+        "which": "role",
+        "what": "validity and necessity of role assignments"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.accessibility-services.co.uk/",
+      "what": "Shaw Trust Accessibility Services",
+      "result": "https://www.accessibility-services.co.uk/"
+    },
+    {
+      "type": "test",
+      "which": "focInd",
+      "revealAll": false,
+      "allowedDelay": 250,
+      "withItems": true,
+      "what": "focus indicators",
+      "url": "https://www.accessibility-services.co.uk/",
+      "result": {
+        "totals": {
+          "total": 58,
+          "types": {
+            "indicatorMissing": {
+              "total": 3,
+              "tagNames": {
+                "IFRAME": 1,
+                "A": 2
+              }
+            },
+            "nonOutlinePresent": {
+              "total": 12,
+              "tagNames": {
+                "A": 10,
+                "INPUT": 2
+              }
+            },
+            "outlinePresent": {
+              "total": 43,
+              "meanDelay": 103,
+              "tagNames": {
+                "A": 43
+              }
+            }
+          }
+        },
+        "items": {
+          "indicatorMissing": [
+            {
+              "tagName": "IFRAME",
+              "text": "Your browser does not support iframes."
+            },
+            {
+              "tagName": "A",
+              "text": "Allow"
+            },
+            {
+              "tagName": "A",
+              "text": "Disable"
+            }
+          ],
+          "nonOutlinePresent": [
+            {
+              "tagName": "A",
+              "text": "Skip to content"
+            },
+            {
+              "tagName": "INPUT",
+              "text": ""
+            },
+            {
+              "tagName": "A",
+              "text": "News/Blog"
+            },
+            {
+              "tagName": "A",
+              "text": "Our Accreditations"
+            },
+            {
+              "tagName": "A",
+              "text": "Cymraeg"
+            },
+            {
+              "tagName": "A",
+              "text": "Home"
+            },
+            {
+              "tagName": "A",
+              "text": "About Us"
+            },
+            {
+              "tagName": "A",
+              "text": "Meet The Team"
+            },
+            {
+              "tagName": "A",
+              "text": "Services"
+            },
+            {
+              "tagName": "A",
+              "text": "Clients"
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility Help"
+            },
+            {
+              "tagName": "INPUT",
+              "text": ""
+            }
+          ],
+          "outlinePresent": [
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "0300 123 7005",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility-Services@Shaw-Trust.org.uk",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "Contact us",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Take advantage of our FREE Accessibility Snapshot service",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Free Accessibility Snapshot Explore More",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Digital Accessibility Explore More",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Digital Consultancy Explore More",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Meet The Team",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "web accessibility standards",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Consultancy",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Digital Accessibility Assessment",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "User Testing",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Design and Template Reviews",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "See more clients",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Take advantage of our FREE Accessibility Snapshot service",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "0300 123 7005",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility-Services@Shaw-Trust.org.uk",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Free Accessibility Snapshot",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Digital Accessibility",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Digital Consultancy",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Home",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "About Us",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Meet The Team",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Clients",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "News/Blog",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility Help",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Contact us",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Linked In",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Twitter",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "YouTube",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "Facebook",
+              "delay": 104
+            },
+            {
+              "tagName": "A",
+              "text": "@ShawTrusta11y",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "zcu.io/7wvz",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "Terms & Conditions",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Privacy & Cookies",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Subject Access Request",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Privacy Policy",
+              "delay": 101
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.accessibility-services.co.uk/",
+      "what": "URL",
+      "result": "https://www.accessibility-services.co.uk/"
+    },
+    {
+      "type": "test",
+      "which": "hover",
+      "headSize": 20,
+      "headSampleSize": 20,
+      "tailSampleSize": 15,
+      "withItems": true,
+      "what": "hover-caused content changes",
+      "url": "https://www.accessibility-services.co.uk/",
+      "result": {
+        "totals": {
+          "triggers": 99,
+          "headTriggers": 20,
+          "tailTriggers": 79,
+          "impactTriggers": 12,
+          "additions": 106,
+          "removals": 0,
+          "opacityChanges": 5,
+          "opacityImpact": 0,
+          "unhoverables": 0
+        },
+        "items": {
+          "head": {
+            "impactTriggers": [
+              {
+                "tagName": "LI",
+                "text": "ServicesFreeAccessibilitySnapshotConsultancyDigita",
+                "additions": 22,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              }
+            ],
+            "unhoverables": []
+          },
+          "tail": {
+            "impactTriggers": [
+              {
+                "tagName": "LI",
+                "text": "DigitalConsultancyExploreMore",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "A",
+                "text": "AccessibilityHelp",
+                "additions": 16,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              }
+            ],
+            "unhoverables": []
+          }
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.accessibility-services.co.uk/",
+      "what": "URL",
+      "result": "https://www.accessibility-services.co.uk/"
+    },
+    {
+      "type": "test",
+      "which": "role",
+      "what": "roles",
+      "url": "https://www.accessibility-services.co.uk/",
+      "result": {
+        "roleElements": 2,
+        "badRoleElements": 0,
+        "redundantRoleElements": 0,
+        "tagNames": {}
+      }
+    }
+  ],
+  "timeStamp": "49li4",
+  "startTime": "2022-07-16T22:03:56",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "hover",
+      47
+    ],
+    [
+      "focInd",
+      9
+    ],
+    [
+      "role",
+      0
+    ]
+  ],
+  "logCount": 3,
+  "logSize": 138,
+  "errorLogCount": 0,
+  "errorLogSize": 0,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-16T22:05:03",
+  "elapsedSeconds": 67
+}

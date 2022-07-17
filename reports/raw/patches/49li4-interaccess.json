@@ -1,0 +1,277 @@
+{
+  "id": "49li4-interaccess",
+  "host": {
+    "id": "interaccess",
+    "which": "https://interaccess.ie/",
+    "what": "InterAccess"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-16T21:55:10"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-16T21:55:58"
+    }
+  ],
+  "script": {
+    "id": "tp12",
+    "what": "Alfa, Axe, HTML CodeSniffer, IBM, Tenon, WAVE, and 16 custom tests",
+    "strict": true,
+    "timeLimit": 150,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://interaccess.ie/",
+        "what": "InterAccess"
+      },
+      {
+        "type": "test",
+        "which": "focInd",
+        "revealAll": false,
+        "allowedDelay": 250,
+        "withItems": true,
+        "what": "focus indicators"
+      },
+      {
+        "type": "test",
+        "which": "hover",
+        "headSize": 20,
+        "headSampleSize": 20,
+        "tailSampleSize": 15,
+        "withItems": true,
+        "what": "hover impacts"
+      },
+      {
+        "type": "test",
+        "which": "role",
+        "what": "validity and necessity of role assignments"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://interaccess.ie/",
+      "what": "InterAccess",
+      "result": "https://interaccess.ie/"
+    },
+    {
+      "type": "test",
+      "which": "focInd",
+      "revealAll": false,
+      "allowedDelay": 250,
+      "withItems": true,
+      "what": "focus indicators",
+      "url": "https://interaccess.ie/",
+      "result": {
+        "totals": {
+          "total": 10,
+          "types": {
+            "indicatorMissing": {
+              "total": 0,
+              "tagNames": {}
+            },
+            "nonOutlinePresent": {
+              "total": 0,
+              "tagNames": {}
+            },
+            "outlinePresent": {
+              "total": 10,
+              "meanDelay": 41,
+              "tagNames": {
+                "A": 10
+              }
+            }
+          }
+        },
+        "items": {
+          "indicatorMissing": [],
+          "nonOutlinePresent": [],
+          "outlinePresent": [
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "About",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Services",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Training",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Usability Testing",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Contact",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "See our credentials",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Learn about InterAccess Usability Testing",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Get WCAG 2.x help",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "See more InterAccess services",
+              "delay": 102
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://interaccess.ie/",
+      "what": "URL",
+      "result": "https://interaccess.ie/"
+    },
+    {
+      "type": "test",
+      "which": "hover",
+      "headSize": 20,
+      "headSampleSize": 20,
+      "tailSampleSize": 15,
+      "withItems": true,
+      "what": "hover-caused content changes",
+      "url": "https://interaccess.ie/",
+      "result": {
+        "totals": {
+          "triggers": 23,
+          "headTriggers": 20,
+          "tailTriggers": 3,
+          "impactTriggers": 0,
+          "additions": 0,
+          "removals": 0,
+          "opacityChanges": 0,
+          "opacityImpact": 0,
+          "unhoverables": 0
+        },
+        "items": {
+          "head": {
+            "impactTriggers": [],
+            "unhoverables": []
+          },
+          "tail": {
+            "impactTriggers": [],
+            "unhoverables": []
+          }
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://interaccess.ie/",
+      "what": "URL",
+      "result": "https://interaccess.ie/"
+    },
+    {
+      "type": "test",
+      "which": "role",
+      "what": "roles",
+      "url": "https://interaccess.ie/",
+      "result": {
+        "roleElements": 4,
+        "badRoleElements": 3,
+        "redundantRoleElements": 1,
+        "tagNames": {
+          "HEADER": {
+            "banner": {
+              "bad": 1,
+              "redundant": 0
+            }
+          },
+          "NAV": {
+            "navigation": {
+              "bad": 0,
+              "redundant": 1
+            }
+          },
+          "DIV": {
+            "main": {
+              "bad": 1,
+              "redundant": 0
+            }
+          },
+          "FOOTER": {
+            "contentinfo": {
+              "bad": 1,
+              "redundant": 0
+            }
+          }
+        }
+      }
+    }
+  ],
+  "timeStamp": "49li4",
+  "startTime": "2022-07-16T21:55:10",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "hover",
+      32
+    ],
+    [
+      "focInd",
+      1
+    ],
+    [
+      "role",
+      0
+    ]
+  ],
+  "logCount": 6,
+  "logSize": 345,
+  "errorLogCount": 3,
+  "errorLogSize": 207,
+  "prohibitedCount": 3,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-16T21:55:58",
+  "elapsedSeconds": 47
+}

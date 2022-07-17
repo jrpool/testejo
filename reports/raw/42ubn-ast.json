@@ -304,10 +304,6 @@
           "total": 63,
           "types": {
             "indicatorMissing": {
-              "total": 0,
-              "tagNames": {}
-            },
-            "nonOutlinePresent": {
               "total": 3,
               "tagNames": {
                 "IFRAME": 1,
@@ -315,9 +311,13 @@
                 "A": 1
               }
             },
+            "nonOutlinePresent": {
+              "total": 0,
+              "tagNames": {}
+            },
             "outlinePresent": {
               "total": 60,
-              "meanDelay": 87,
+              "meanDelay": 94,
               "tagNames": {
                 "A": 54,
                 "INPUT": 3,
@@ -327,8 +327,7 @@
           }
         },
         "items": {
-          "indicatorMissing": [],
-          "nonOutlinePresent": [
+          "indicatorMissing": [
             {
               "tagName": "IFRAME",
               "text": ""
@@ -342,11 +341,12 @@
               "text": "Our Approach"
             }
           ],
+          "nonOutlinePresent": [],
           "outlinePresent": [
             {
               "tagName": "A",
               "text": "Powered by Cookiebot",
-              "delay": 100
+              "delay": 101
             },
             {
               "tagName": "A",
@@ -356,12 +356,12 @@
             {
               "tagName": "A",
               "text": "Details",
-              "delay": 101
+              "delay": 102
             },
             {
               "tagName": "A",
               "text": "About",
-              "delay": 100
+              "delay": 101
             },
             {
               "tagName": "INPUT",
@@ -381,17 +381,17 @@
             {
               "tagName": "BUTTON",
               "text": "Deny",
-              "delay": 101
+              "delay": 104
             },
             {
               "tagName": "BUTTON",
               "text": "Allow selection",
-              "delay": 102
+              "delay": 100
             },
             {
               "tagName": "BUTTON",
               "text": "Allow all",
-              "delay": 101
+              "delay": 100
             },
             {
               "tagName": "A",
@@ -406,32 +406,32 @@
             {
               "tagName": "A",
               "text": "About",
-              "delay": 101
+              "delay": 103
             },
             {
               "tagName": "A",
               "text": "Services",
-              "delay": 102
+              "delay": 101
             },
             {
               "tagName": "A",
               "text": "Resources",
-              "delay": 100
+              "delay": 102
             },
             {
               "tagName": "A",
               "text": "Contact",
-              "delay": 101
+              "delay": 103
             },
             {
               "tagName": "A",
               "text": "Login",
-              "delay": 100
+              "delay": 102
             },
             {
               "tagName": "A",
               "text": "",
-              "delay": 101
+              "delay": 104
             },
             {
               "tagName": "A",
@@ -441,22 +441,22 @@
             {
               "tagName": "A",
               "text": "Feature Tour",
-              "delay": 100
+              "delay": 101
             },
             {
               "tagName": "A",
               "text": "Post & Live Video Captioning",
-              "delay": 102
+              "delay": 101
             },
             {
               "tagName": "A",
               "text": "Post production or real time captioning for virtually all types of applications and media sources.",
-              "delay": 103
+              "delay": 100
             },
             {
               "tagName": "A",
               "text": "Audio Description",
-              "delay": 100
+              "delay": 101
             },
             {
               "tagName": "A",
@@ -466,37 +466,37 @@
             {
               "tagName": "A",
               "text": "Video Encoding",
-              "delay": 102
+              "delay": 101
             },
             {
               "tagName": "A",
               "text": "Provide subtitles and captions on an even wider range of devices and players.",
-              "delay": 101
+              "delay": 100
             },
             {
               "tagName": "A",
               "text": "Caption Translations",
-              "delay": 100
+              "delay": 107
             },
             {
               "tagName": "A",
               "text": "Reach international audiences and ensure accessibility compliance in additional languages.",
-              "delay": 100
-            },
-            {
-              "tagName": "A",
-              "text": "Transcription",
-              "delay": 100
-            },
-            {
-              "tagName": "A",
-              "text": "Word-for-word transcripts for meetings, classroom sessions and video in as little as eight hours.",
               "delay": 101
             },
             {
               "tagName": "A",
+              "text": "Transcription",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "Word-for-word transcripts for meetings, classroom sessions and video in as little as eight hours.",
+              "delay": 104
+            },
+            {
+              "tagName": "A",
               "text": "Other Services",
-              "delay": 102
+              "delay": 104
             },
             {
               "tagName": "A",
@@ -506,7 +506,7 @@
             {
               "tagName": "A",
               "text": "About AST",
-              "delay": 101
+              "delay": 103
             },
             {
               "tagName": "A",
@@ -516,7 +516,7 @@
             {
               "tagName": "A",
               "text": "Benefits:",
-              "delay": 100
+              "delay": 101
             },
             {
               "tagName": "A",
@@ -526,17 +526,17 @@
             {
               "tagName": "A",
               "text": "Why Caption?",
-              "delay": 101
+              "delay": 102
             },
             {
               "tagName": "A",
               "text": "Join Us",
-              "delay": 101
+              "delay": 102
             },
             {
               "tagName": "A",
               "text": "Our Blog",
-              "delay": 101
+              "delay": 114
             },
             {
               "tagName": "A",
@@ -546,87 +546,82 @@
             {
               "tagName": "A",
               "text": "Get Started",
-              "delay": 101
+              "delay": 123
             },
             {
               "tagName": "A",
               "text": "get started",
-              "delay": 101
+              "delay": 110
             },
             {
               "tagName": "A",
               "text": "Get Pricing",
-              "delay": 101
+              "delay": 129
             },
             {
               "tagName": "A",
               "text": "Home",
-              "delay": 101
+              "delay": 116
             },
             {
               "tagName": "A",
               "text": "Login",
-              "delay": 101
+              "delay": 102
             },
             {
               "tagName": "A",
               "text": "Support",
-              "delay": 103
+              "delay": 101
             },
             {
               "tagName": "A",
               "text": "Get Pricing",
-              "delay": 102
+              "delay": 104
             },
             {
               "tagName": "A",
               "text": "Accessibility Statement",
-              "delay": 100
+              "delay": 102
             },
             {
               "tagName": "A",
               "text": "FAQ",
-              "delay": 101
+              "delay": 104
             },
             {
               "tagName": "A",
               "text": "Sitemap",
-              "delay": 102
+              "delay": 104
             },
             {
               "tagName": "A",
               "text": "Privacy Policy",
-              "delay": 101
+              "delay": 104
             },
             {
               "tagName": "A",
               "text": "Contact Us",
-              "delay": 101
+              "delay": 102
             },
             {
               "tagName": "A",
               "text": "Get Started",
-              "delay": 100
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Hosting Online Events? 8 Best Practices for Museums & Libraries",
+              "delay": 101
             },
             {
               "tagName": "A",
               "text": "5 Online Learning Tips for Boosting Student Engagement",
-              "delay": 100
+              "delay": 101
             },
             {
               "tagName": "A",
               "text": "Assistive Technologies For Students with Low Vision",
-              "delay": 102
-            },
-            {
-              "tagName": "A",
-              "text": "UK Universities Need to Embrace Today’s Accessibility Standards",
               "delay": 101
-            },
-            {
-              "tagName": "A",
-              "text": "",
-              "delay": 102
             },
             {
               "tagName": "A",
@@ -636,12 +631,17 @@
             {
               "tagName": "A",
               "text": "",
-              "delay": 102
+              "delay": 109
             },
             {
               "tagName": "A",
               "text": "",
               "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 103
             }
           ]
         }
@@ -2196,11 +2196,11 @@
           "triggers": 79,
           "headTriggers": 20,
           "tailTriggers": 59,
-          "impactTriggers": 12,
-          "additions": 0,
+          "impactTriggers": 16,
+          "additions": 125,
           "removals": 0,
-          "opacityChanges": 12,
-          "opacityImpact": 88,
+          "opacityChanges": 3,
+          "opacityImpact": 0,
           "unhoverables": 3
         },
         "items": {
@@ -2233,74 +2233,74 @@
               {
                 "tagName": "LI",
                 "text": "CustomersCaseStudiesEducationSolutionsCorporateSol",
-                "additions": 0,
+                "additions": 9,
                 "removals": 0,
-                "opacityChanges": 1,
-                "opacityImpact": 8
+                "opacityChanges": 0,
+                "opacityImpact": 0
               },
               {
                 "tagName": "A",
                 "text": "Customers",
-                "additions": 0,
+                "additions": 9,
                 "removals": 0,
-                "opacityChanges": 1,
-                "opacityImpact": 8
+                "opacityChanges": 0,
+                "opacityImpact": 0
               },
               {
                 "tagName": "LI",
                 "text": "AboutOurCompanyASTValuesCareersPartners",
-                "additions": 0,
+                "additions": 9,
                 "removals": 0,
-                "opacityChanges": 1,
-                "opacityImpact": 8
+                "opacityChanges": 0,
+                "opacityImpact": 0
               },
               {
                 "tagName": "A",
                 "text": "About",
-                "additions": 0,
+                "additions": 9,
                 "removals": 0,
-                "opacityChanges": 1,
-                "opacityImpact": 8
+                "opacityChanges": 0,
+                "opacityImpact": 0
               },
               {
                 "tagName": "LI",
                 "text": "ServicesFeatureTourHowitWorksCaptioningIntegration",
-                "additions": 0,
+                "additions": 11,
                 "removals": 0,
-                "opacityChanges": 1,
-                "opacityImpact": 10
+                "opacityChanges": 0,
+                "opacityImpact": 0
               },
               {
                 "tagName": "A",
                 "text": "Services",
-                "additions": 0,
+                "additions": 11,
                 "removals": 0,
-                "opacityChanges": 1,
-                "opacityImpact": 10
+                "opacityChanges": 0,
+                "opacityImpact": 0
               },
               {
                 "tagName": "LI",
                 "text": "ResourcesSupportBenefitsofCaptioningandDescription",
-                "additions": 0,
+                "additions": 13,
                 "removals": 0,
-                "opacityChanges": 1,
-                "opacityImpact": 12
+                "opacityChanges": 0,
+                "opacityImpact": 0
               },
               {
                 "tagName": "A",
                 "text": "Resources",
-                "additions": 0,
+                "additions": 13,
                 "removals": 0,
-                "opacityChanges": 1,
-                "opacityImpact": 12
+                "opacityChanges": 0,
+                "opacityImpact": 0
               },
               {
                 "tagName": "LI",
                 "text": "ContactGetPricingScheduleaDemoorConsultationSuppor",
-                "additions": 0,
+                "additions": 13,
                 "removals": 0,
-                "opacityChanges": 1,
-                "opacityImpact": 12
+                "opacityChanges": 0,
+                "opacityImpact": 0
               }
             ],
             "unhoverables": [
@@ -2312,17 +2312,26 @@
             ]
           },
           "tail": {
-            "impactTriggers": [],
+            "impactTriggers": [
+              {
+                "tagName": "A",
+                "text": "Login",
+                "additions": 7,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              }
+            ],
             "unhoverables": [
               {
                 "tagName": "A",
                 "id": "",
-                "text": "Reachinternationalaudiencesandensureaccessibilityc"
+                "text": "Postproductionorrealtimecaptioningforvirtuallyallt"
               },
               {
                 "tagName": "A",
                 "id": "",
-                "text": "Word-for-wordtranscriptsformeetings,classroomsessi"
+                "text": "Resultreview,DVD/MP4Transfer,CopyEdit,videoSEO,int"
               }
             ]
           }
@@ -3002,28 +3011,50 @@
       "url": "https://www.automaticsync.com/captionsync/",
       "result": {
         "roleElements": 61,
-        "badRoleElements": 8,
+        "badRoleElements": 6,
+        "redundantRoleElements": 2,
         "tagNames": {
           "DIV": {
-            "complementary": 1
+            "complementary": {
+              "bad": 1,
+              "redundant": 0
+            }
           },
           "A": {
-            "button": 1
+            "button": {
+              "bad": 1,
+              "redundant": 0
+            }
           },
           "LI": {
-            "separator": 2
+            "separator": {
+              "bad": 2,
+              "redundant": 0
+            }
           },
           "HEADER": {
-            "banner": 1
+            "banner": {
+              "bad": 1,
+              "redundant": 0
+            }
           },
           "NAV": {
-            "navigation": 1
+            "navigation": {
+              "bad": 0,
+              "redundant": 1
+            }
           },
           "MAIN": {
-            "main": 1
+            "main": {
+              "bad": 0,
+              "redundant": 1
+            }
           },
           "FOOTER": {
-            "contentinfo": 1
+            "contentinfo": {
+              "bad": 1,
+              "redundant": 0
+            }
           }
         }
       }

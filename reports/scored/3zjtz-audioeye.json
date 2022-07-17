@@ -303,14 +303,14 @@
           "total": 71,
           "types": {
             "indicatorMissing": {
-              "total": 0,
-              "tagNames": {}
-            },
-            "nonOutlinePresent": {
               "total": 1,
               "tagNames": {
                 "BUTTON": 1
               }
+            },
+            "nonOutlinePresent": {
+              "total": 0,
+              "tagNames": {}
             },
             "outlinePresent": {
               "total": 70,
@@ -324,13 +324,13 @@
           }
         },
         "items": {
-          "indicatorMissing": [],
-          "nonOutlinePresent": [
+          "indicatorMissing": [
             {
               "tagName": "BUTTON",
               "text": ""
             }
           ],
+          "nonOutlinePresent": [],
           "outlinePresent": [
             {
               "tagName": "A",
@@ -380,12 +380,12 @@
             {
               "tagName": "BUTTON",
               "text": "Start Free Trial",
-              "delay": 131
+              "delay": 132
             },
             {
               "tagName": "A",
-              "text": "Book Demo",
-              "delay": 133
+              "text": "Get the Report",
+              "delay": 128
             },
             {
               "tagName": "INPUT",
@@ -395,17 +395,17 @@
             {
               "tagName": "BUTTON",
               "text": "Free Scan",
-              "delay": 130
+              "delay": 133
             },
             {
               "tagName": "BUTTON",
               "text": "Start Free Trial",
-              "delay": 121
+              "delay": 128
             },
             {
               "tagName": "BUTTON",
               "text": "Start Free Trial",
-              "delay": 107
+              "delay": 119
             },
             {
               "tagName": "BUTTON",
@@ -430,12 +430,12 @@
             {
               "tagName": "A",
               "text": "Become a Partner",
-              "delay": 122
+              "delay": 102
             },
             {
               "tagName": "A",
               "text": "Free Consultation",
-              "delay": 129
+              "delay": 137
             },
             {
               "tagName": "A",
@@ -445,7 +445,7 @@
             {
               "tagName": "A",
               "text": "View All Integrations",
-              "delay": 108
+              "delay": 103
             },
             {
               "tagName": "A",
@@ -495,12 +495,12 @@
             {
               "tagName": "A",
               "text": "Download White Paper",
-              "delay": 101
+              "delay": 178
             },
             {
               "tagName": "BUTTON",
               "text": "Start Free Trial",
-              "delay": 100
+              "delay": 142
             },
             {
               "tagName": "A",
@@ -2351,7 +2351,7 @@
           "removals": 0,
           "opacityChanges": 0,
           "opacityImpact": 0,
-          "unhoverables": 1
+          "unhoverables": 2
         },
         "items": {
           "head": {
@@ -2370,6 +2370,11 @@
                 "tagName": "A",
                 "id": "",
                 "text": "Skiptomaincontent"
+              },
+              {
+                "tagName": "BUTTON",
+                "id": "",
+                "text": "FreeScan"
               }
             ]
           },
@@ -2996,28 +3001,56 @@
       "url": "https://www.audioeye.com/",
       "result": {
         "roleElements": 38,
-        "badRoleElements": 32,
+        "badRoleElements": 23,
+        "redundantRoleElements": 9,
         "tagNames": {
           "DIV": {
-            "banner": 1,
-            "main": 1,
-            "heading": 2,
-            "contentinfo": 1
+            "banner": {
+              "bad": 1,
+              "redundant": 0
+            },
+            "main": {
+              "bad": 1,
+              "redundant": 0
+            },
+            "heading": {
+              "bad": 2,
+              "redundant": 0
+            },
+            "contentinfo": {
+              "bad": 1,
+              "redundant": 0
+            }
           },
           "NAV": {
-            "navigation": 3
+            "navigation": {
+              "bad": 0,
+              "redundant": 3
+            }
           },
           "BUTTON": {
-            "button": 5
+            "button": {
+              "bad": 0,
+              "redundant": 5
+            }
           },
           "P": {
-            "heading": 16
+            "heading": {
+              "bad": 16,
+              "redundant": 0
+            }
           },
           "H3": {
-            "heading": 1
+            "heading": {
+              "bad": 0,
+              "redundant": 1
+            }
           },
           "A": {
-            "button": 2
+            "button": {
+              "bad": 2,
+              "redundant": 0
+            }
           }
         }
       }
@@ -23516,7 +23549,7 @@
   "endTime": "2022-07-06T02:21:56",
   "elapsedSeconds": 830,
   "score": {
-    "scoreProcID": "sp12a",
+    "scoreProcID": "sp12b",
     "logWeights": {
       "logCount": 0.5,
       "logSize": 0.01,
@@ -23540,11 +23573,11 @@
       "testaro": {
         "motion": 0,
         "bulk": 1,
-        "focInd": 1,
+        "focInd": 3,
         "focOp": 180,
-        "hover": 3,
+        "hover": 4,
         "linkUl": 310,
-        "role": 32,
+        "role": 55,
         "styleDiff": 16,
         "zIndex": 386
       },
@@ -23616,7 +23649,7 @@
         "focusIndication": {
           "testaro": {
             "focInd": {
-              "score": 1,
+              "score": 3,
               "what": "Focused element displaying no or nostandard focus indicator"
             }
           }
@@ -23648,7 +23681,7 @@
         "roleBad": {
           "testaro": {
             "role": {
-              "score": 24,
+              "score": 41,
               "what": "Nonexistent or implicit-overriding role"
             }
           }
@@ -23932,7 +23965,7 @@
       "ibm": 100
     },
     "summary": {
-      "total": 1427,
+      "total": 1446,
       "log": 119,
       "preventions": 100,
       "solos": 0,
@@ -23962,16 +23995,16 @@
           "score": 59
         },
         {
+          "groupName": "roleBad",
+          "score": 43
+        },
+        {
           "groupName": "contrastRisk",
           "score": 39
         },
         {
           "groupName": "noLeading",
           "score": 32
-        },
-        {
-          "groupName": "roleBad",
-          "score": 26
         },
         {
           "groupName": "targetSize",
@@ -24004,6 +24037,10 @@
         {
           "groupName": "inconsistentStyles",
           "score": 6
+        },
+        {
+          "groupName": "focusIndication",
+          "score": 5
         },
         {
           "groupName": "horizontalScrolling",
@@ -24039,10 +24076,6 @@
         },
         {
           "groupName": "visibleBulk",
-          "score": 3
-        },
-        {
-          "groupName": "focusIndication",
           "score": 3
         },
         {

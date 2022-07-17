@@ -440,12 +440,12 @@
             },
             {
               "tagName": "A",
-              "text": "Patrick H. Lauke at Bitwarden Community Forum",
+              "text": "Léonie Watson at DCDC",
               "delay": 0
             },
             {
               "tagName": "A",
-              "text": "Announcing our new recruitment service",
+              "text": "Patrick H. Lauke at Bitwarden Community Forum",
               "delay": 0
             },
             {
@@ -455,12 +455,12 @@
             },
             {
               "tagName": "A",
-              "text": "Accessible design systems",
+              "text": "Meet the team: Léonie Watson",
               "delay": 0
             },
             {
               "tagName": "A",
-              "text": "Meet the team: Patrick H. Lauke",
+              "text": "Android accessibility: roles and TalkBack",
               "delay": 0
             },
             {
@@ -1053,6 +1053,7 @@
       "result": {
         "roleElements": 6,
         "badRoleElements": 0,
+        "redundantRoleElements": 0,
         "tagNames": {}
       }
     },
@@ -3588,7 +3589,7 @@
   "endTime": "2022-07-06T02:51:02",
   "elapsedSeconds": 84,
   "score": {
-    "scoreProcID": "sp12a",
+    "scoreProcID": "sp12b",
     "logWeights": {
       "logCount": 0.5,
       "logSize": 0.01,

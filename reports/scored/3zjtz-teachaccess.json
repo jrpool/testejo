@@ -303,14 +303,16 @@
           "total": 62,
           "types": {
             "indicatorMissing": {
-              "total": 0,
-              "tagNames": {}
+              "total": 26,
+              "tagNames": {
+                "INPUT": 2,
+                "A": 24
+              }
             },
             "nonOutlinePresent": {
-              "total": 30,
+              "total": 4,
               "tagNames": {
-                "INPUT": 6,
-                "A": 24
+                "INPUT": 4
               }
             },
             "outlinePresent": {
@@ -323,8 +325,7 @@
           }
         },
         "items": {
-          "indicatorMissing": [],
-          "nonOutlinePresent": [
+          "indicatorMissing": [
             {
               "tagName": "INPUT",
               "text": ""
@@ -426,23 +427,25 @@
               "text": ""
             },
             {
-              "tagName": "INPUT",
-              "text": ""
-            },
-            {
-              "tagName": "INPUT",
-              "text": ""
-            },
-            {
-              "tagName": "INPUT",
-              "text": ""
-            },
-            {
-              "tagName": "INPUT",
-              "text": ""
-            },
-            {
               "tagName": "A",
+              "text": ""
+            }
+          ],
+          "nonOutlinePresent": [
+            {
+              "tagName": "INPUT",
+              "text": ""
+            },
+            {
+              "tagName": "INPUT",
+              "text": ""
+            },
+            {
+              "tagName": "INPUT",
+              "text": ""
+            },
+            {
+              "tagName": "INPUT",
               "text": ""
             }
           ],
@@ -1502,12 +1505,12 @@
           "triggers": 83,
           "headTriggers": 20,
           "tailTriggers": 63,
-          "impactTriggers": 23,
+          "impactTriggers": 27,
           "additions": 0,
           "removals": 0,
-          "opacityChanges": 118,
-          "opacityImpact": 255,
-          "unhoverables": 5
+          "opacityChanges": 126,
+          "opacityImpact": 221,
+          "unhoverables": 7
         },
         "items": {
           "head": {
@@ -1546,39 +1549,47 @@
             "impactTriggers": [
               {
                 "tagName": "LI",
-                "text": "Donate",
-                "additions": 0,
-                "removals": 0,
-                "opacityChanges": 9,
-                "opacityImpact": 24
-              },
-              {
-                "tagName": "A",
-                "text": "Resources",
+                "text": "ResourcesAccessibilityTriviaAccessibilitySkillsHir",
                 "additions": 0,
                 "removals": 0,
                 "opacityChanges": 5,
                 "opacityImpact": 12
               },
               {
-                "tagName": "A",
-                "text": "CreatingAccessibleCourseContent",
+                "tagName": "LI",
+                "text": "InitiativesFacultyGrantsStudyAwayTeachAccessTutori",
                 "additions": 0,
                 "removals": 0,
-                "opacityChanges": 4,
-                "opacityImpact": 4
+                "opacityChanges": 9,
+                "opacityImpact": 21
+              },
+              {
+                "tagName": "A",
+                "text": "ContactUs",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 7,
+                "opacityImpact": 7
               },
               {
                 "tagName": "A",
                 "text": "News&Events",
                 "additions": 0,
                 "removals": 0,
-                "opacityChanges": 5,
-                "opacityImpact": 12
+                "opacityChanges": 3,
+                "opacityImpact": 3
               },
               {
                 "tagName": "A",
-                "text": "ClickheretoseealltheNewsandEvents",
+                "text": "VIEWOURCOMPLETELISTOFPARTNERS",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 1
+              },
+              {
+                "tagName": "A",
+                "text": "Clickheretobecomeamember",
                 "additions": 0,
                 "removals": 0,
                 "opacityChanges": 1,
@@ -1587,7 +1598,12 @@
             ],
             "unhoverables": [
               {
-                "tagName": "A",
+                "tagName": "LI",
+                "id": "",
+                "text": "WhyTeachAccessibility?FactSheet"
+              },
+              {
+                "tagName": "LI",
                 "id": "",
                 "text": "AccessibilityTrivia"
               },
@@ -1597,9 +1613,14 @@
                 "text": "TeachAccessTutorial"
               },
               {
-                "tagName": "LI",
+                "tagName": "A",
                 "id": "",
-                "text": "FacultyGrants"
+                "text": "StudyAway"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "AccessibilityTrivia"
               }
             ]
           }
@@ -1880,9 +1901,13 @@
       "result": {
         "roleElements": 2,
         "badRoleElements": 1,
+        "redundantRoleElements": 0,
         "tagNames": {
           "DIV": {
-            "main": 1
+            "main": {
+              "bad": 1,
+              "redundant": 0
+            }
           }
         }
       }
@@ -11195,7 +11220,7 @@
   "endTime": "2022-07-06T02:49:37",
   "elapsedSeconds": 136,
   "score": {
-    "scoreProcID": "sp12a",
+    "scoreProcID": "sp12b",
     "logWeights": {
       "logCount": 0.5,
       "logSize": 0.01,
@@ -11218,11 +11243,11 @@
     "packageDetails": {
       "testaro": {
         "bulk": 1,
-        "focInd": 30,
+        "focInd": 82,
         "focOp": 10,
-        "hover": 100,
+        "hover": 108,
         "linkUl": 16,
-        "role": 1,
+        "role": 2,
         "styleDiff": 19,
         "zIndex": 157
       },
@@ -11296,7 +11321,7 @@
         "focusIndication": {
           "testaro": {
             "focInd": {
-              "score": 30,
+              "score": 82,
               "what": "Focused element displaying no or nostandard focus indicator"
             }
           },
@@ -11318,7 +11343,7 @@
         "hoverSurprise": {
           "testaro": {
             "hover": {
-              "score": 25,
+              "score": 27,
               "what": "Content changes caused by hovering"
             }
           }
@@ -11334,7 +11359,7 @@
         "roleBad": {
           "testaro": {
             "role": {
-              "score": 1,
+              "score": 2,
               "what": "Nonexistent or implicit-overriding role"
             }
           }
@@ -11495,7 +11520,7 @@
           "alfa": {
             "r80": {
               "score": 2,
-              "what": "Paragraph text has absolute line height"
+              "what": "Paragraph text has an absolute line height"
             }
           }
         },
@@ -11688,11 +11713,15 @@
     },
     "preventionScores": {},
     "summary": {
-      "total": 700,
+      "total": 755,
       "log": 225,
       "preventions": 0,
       "solos": 0,
       "groups": [
+        {
+          "groupName": "focusIndication",
+          "score": 94
+        },
         {
           "groupName": "contentBeyondLandmarks",
           "score": 61
@@ -11700,10 +11729,6 @@
         {
           "groupName": "linkNoText",
           "score": 54
-        },
-        {
-          "groupName": "focusIndication",
-          "score": 42
         },
         {
           "groupName": "zIndexNotZero",
@@ -11715,7 +11740,7 @@
         },
         {
           "groupName": "hoverSurprise",
-          "score": 27
+          "score": 29
         },
         {
           "groupName": "leadingClipsText",
@@ -11794,6 +11819,10 @@
           "score": 5
         },
         {
+          "groupName": "roleBad",
+          "score": 4
+        },
+        {
           "groupName": "leadingAbsolute",
           "score": 4
         },
@@ -11807,10 +11836,6 @@
         },
         {
           "groupName": "visibleBulk",
-          "score": 3
-        },
-        {
-          "groupName": "roleBad",
           "score": 3
         },
         {

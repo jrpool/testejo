@@ -304,13 +304,15 @@
           "total": 19,
           "types": {
             "indicatorMissing": {
-              "total": 0,
-              "tagNames": {}
+              "total": 3,
+              "tagNames": {
+                "A": 3
+              }
             },
             "nonOutlinePresent": {
-              "total": 19,
+              "total": 16,
               "tagNames": {
-                "A": 19
+                "A": 16
               }
             },
             "outlinePresent": {
@@ -321,7 +323,20 @@
           }
         },
         "items": {
-          "indicatorMissing": [],
+          "indicatorMissing": [
+            {
+              "tagName": "A",
+              "text": "Accessibility for All"
+            },
+            {
+              "tagName": "A",
+              "text": "Your Team"
+            },
+            {
+              "tagName": "A",
+              "text": "Contact Us"
+            }
+          ],
           "nonOutlinePresent": [
             {
               "tagName": "A",
@@ -338,18 +353,6 @@
             {
               "tagName": "A",
               "text": ""
-            },
-            {
-              "tagName": "A",
-              "text": "Accessibility for All"
-            },
-            {
-              "tagName": "A",
-              "text": "Your Team"
-            },
-            {
-              "tagName": "A",
-              "text": "Contact Us"
             },
             {
               "tagName": "A",
@@ -719,10 +722,10 @@
           "headTriggers": 20,
           "tailTriggers": 2,
           "impactTriggers": 6,
-          "additions": 0,
-          "removals": 0,
-          "opacityChanges": 8,
-          "opacityImpact": 12,
+          "additions": 8,
+          "removals": 3,
+          "opacityChanges": 6,
+          "opacityImpact": 0,
           "unhoverables": 3
         },
         "items": {
@@ -731,18 +734,18 @@
               {
                 "tagName": "LI",
                 "text": "AccessibilityforAllADAComplianceBusinessCaseforAcc",
-                "additions": 0,
+                "additions": 4,
                 "removals": 0,
-                "opacityChanges": 2,
-                "opacityImpact": 6
+                "opacityChanges": 1,
+                "opacityImpact": 0
               },
               {
                 "tagName": "A",
                 "text": "AccessibilityforAll",
-                "additions": 0,
+                "additions": 4,
                 "removals": 0,
-                "opacityChanges": 2,
-                "opacityImpact": 6
+                "opacityChanges": 1,
+                "opacityImpact": 0
               },
               {
                 "tagName": "LI",
@@ -756,7 +759,7 @@
                 "tagName": "A",
                 "text": "YourTeam",
                 "additions": 0,
-                "removals": 0,
+                "removals": 3,
                 "opacityChanges": 1,
                 "opacityImpact": 0
               },
@@ -983,10 +986,17 @@
       "result": {
         "roleElements": 2,
         "badRoleElements": 2,
+        "redundantRoleElements": 0,
         "tagNames": {
           "DIV": {
-            "navigation": 1,
-            "main": 1
+            "navigation": {
+              "bad": 1,
+              "redundant": 0
+            },
+            "main": {
+              "bad": 1,
+              "redundant": 0
+            }
           }
         }
       }

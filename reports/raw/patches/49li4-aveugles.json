@@ -1,0 +1,865 @@
+{
+  "id": "49li4-aveugles",
+  "host": {
+    "id": "aveugles",
+    "which": "https://aveuglesdefrance.org/",
+    "what": "Fédération des Aveugles et Amblyopes de France"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-16T21:49:30"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-16T21:50:14"
+    }
+  ],
+  "script": {
+    "id": "tp12",
+    "what": "Alfa, Axe, HTML CodeSniffer, IBM, Tenon, WAVE, and 16 custom tests",
+    "strict": true,
+    "timeLimit": 150,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://aveuglesdefrance.org/",
+        "what": "Fédération des Aveugles et Amblyopes de France"
+      },
+      {
+        "type": "test",
+        "which": "focInd",
+        "revealAll": false,
+        "allowedDelay": 250,
+        "withItems": true,
+        "what": "focus indicators"
+      },
+      {
+        "type": "test",
+        "which": "hover",
+        "headSize": 20,
+        "headSampleSize": 20,
+        "tailSampleSize": 15,
+        "withItems": true,
+        "what": "hover impacts"
+      },
+      {
+        "type": "test",
+        "which": "role",
+        "what": "validity and necessity of role assignments"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://aveuglesdefrance.org/",
+      "what": "Fédération des Aveugles et Amblyopes de France",
+      "result": "https://aveuglesdefrance.org/"
+    },
+    {
+      "type": "test",
+      "which": "focInd",
+      "revealAll": false,
+      "allowedDelay": 250,
+      "withItems": true,
+      "what": "focus indicators",
+      "url": "https://aveuglesdefrance.org/",
+      "result": {
+        "totals": {
+          "total": 101,
+          "types": {
+            "indicatorMissing": {
+              "total": 7,
+              "tagNames": {
+                "A": 7
+              }
+            },
+            "nonOutlinePresent": {
+              "total": 0,
+              "tagNames": {}
+            },
+            "outlinePresent": {
+              "total": 94,
+              "meanDelay": 12,
+              "tagNames": {
+                "A": 87,
+                "BUTTON": 5,
+                "INPUT": 2
+              }
+            }
+          }
+        },
+        "items": {
+          "indicatorMissing": [
+            {
+              "tagName": "A",
+              "text": "Voir son parcours"
+            },
+            {
+              "tagName": "A",
+              "text": "Portrait précédent"
+            },
+            {
+              "tagName": "A",
+              "text": "Portrait suivant"
+            },
+            {
+              "tagName": "A",
+              "text": "1"
+            },
+            {
+              "tagName": "A",
+              "text": "2"
+            },
+            {
+              "tagName": "A",
+              "text": "3"
+            },
+            {
+              "tagName": "A",
+              "text": "4"
+            }
+          ],
+          "nonOutlinePresent": [],
+          "outlinePresent": [
+            {
+              "tagName": "A",
+              "text": "Passer au contenu",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "La Fédération",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Présentation",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Les membres de la Fédération",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Transparence financière",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Une association à votre écoute",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Nos Combats",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Éducation / Petite enfance",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Emploi / Formation",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Personnes âgées et dépendance",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibilité",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Nouvelles technologies",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Nos formations",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Recherche médicale / Santé",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Culture / Sport / Loisirs",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Je soutiens",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Faire un don aux Aveugles de France",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Faire un legs aux Aveugles de France",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Le don entreprise",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Tout savoir",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Ressources documentaires",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Fiches pratiques",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Contact",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Recherche",
+              "delay": 0
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Je soutiens",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Suivez-nous sur facebook",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Suivez-nous sur Youtube",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "La Fédération des Aveugles de France interpelle le Gouvernement sur la scolarisation des enfants déf",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "En savoir plus",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Impôts sur le revenu 2022Les Aveugles de France dénoncent l’inaccessibilité de la plateforme de décl",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "En savoir plus",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Quand les Déficients Visuels infiltrent le débat politique",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "En savoir plus",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Voir toutes les actualités",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Je soutiens la Fédération",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Formations certifiantes ou qualifiantes",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "En savoir plus",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Éducation, rééducation, accompagnement",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "En savoir plus",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Numérique et technologies adaptées",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "En savoir plus",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Voir toutes les formations",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "@Aveugles_France",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Aveugles_France",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "16 Juil",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "#Braille",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "@ins_hea",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "https://t.co/ZCBzlQ2fVW",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Aveugles_France",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "15 Juil",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "@access42net",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "#a11y",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "#WCAG",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "@Aveugles_France",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "#accessibility",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "https://t.co/yBW1IS56VO",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Aveugles_France",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "15 Juil",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "#bac2022",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "#brevet2022",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "#aveugles",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "@anpea_asso",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "@Aveugles_France",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "@education_gouv",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "https://t.co/IwyEAXygQV",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Transparence financière",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "En savoir plus",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Faire un don aux Aveugles de France",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "En savoir plus",
+              "delay": 0
+            },
+            {
+              "tagName": "INPUT",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "INPUT",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Je m'inscris",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Partenaires",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Espace presse",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Fiches pratiques",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Suivez-nous sur facebook",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Suivez-nous sur Twitter",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Suivez-nous sur Youtube",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Tél. : 01 44 42 91 91",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Données personnelles",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Mentions légales – RGPD",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Plan du site",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "personnelles et consentements.",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Mentions légales - RGPD.",
+              "delay": 0
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Tout refuser",
+              "delay": 104
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Paramétrer",
+              "delay": 102
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Tout accepter",
+              "delay": 100
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://aveuglesdefrance.org/",
+      "what": "URL",
+      "result": "https://aveuglesdefrance.org/"
+    },
+    {
+      "type": "test",
+      "which": "hover",
+      "headSize": 20,
+      "headSampleSize": 20,
+      "tailSampleSize": 15,
+      "withItems": true,
+      "what": "hover-caused content changes",
+      "url": "https://aveuglesdefrance.org/",
+      "result": {
+        "totals": {
+          "triggers": 148,
+          "headTriggers": 20,
+          "tailTriggers": 128,
+          "impactTriggers": 4,
+          "additions": 0,
+          "removals": 0,
+          "opacityChanges": 4,
+          "opacityImpact": 56,
+          "unhoverables": 20
+        },
+        "items": {
+          "head": {
+            "impactTriggers": [
+              {
+                "tagName": "LI",
+                "text": "LaFédérationUneFédérationpouretparlesaveuglesPrése",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 10
+              },
+              {
+                "tagName": "A",
+                "text": "LaFédération",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 10
+              },
+              {
+                "tagName": "LI",
+                "text": "NosCombatsLaFédération,plusdecentansdecombatspoure",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 18
+              },
+              {
+                "tagName": "A",
+                "text": "NosCombats",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 18
+              }
+            ],
+            "unhoverables": [
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Passeraucontenu"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "Présentation"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Présentation"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "LesmembresdelaFédération"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "LesmembresdelaFédération"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "Transparencefinancière"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Transparencefinancière"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "Uneassociationàvotreécoute"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Uneassociationàvotreécoute"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "Éducation/Petiteenfance"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Éducation/Petiteenfance"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "Emploi/Formation"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Emploi/Formation"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "Personnesâgéesetdépendance"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Personnesâgéesetdépendance"
+              }
+            ]
+          },
+          "tail": {
+            "impactTriggers": [],
+            "unhoverables": [
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "FaireunlegsauxAveuglesdeFrance"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Fichespratiques"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Ensavoirplus"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Plandusite"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Suivez-noussurfacebook"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://aveuglesdefrance.org/",
+      "what": "URL",
+      "result": "https://aveuglesdefrance.org/"
+    },
+    {
+      "type": "test",
+      "which": "role",
+      "what": "roles",
+      "url": "https://aveuglesdefrance.org/",
+      "result": {
+        "roleElements": 6,
+        "badRoleElements": 2,
+        "redundantRoleElements": 4,
+        "tagNames": {
+          "HEADER": {
+            "banner": {
+              "bad": 1,
+              "redundant": 0
+            }
+          },
+          "NAV": {
+            "navigation": {
+              "bad": 0,
+              "redundant": 3
+            }
+          },
+          "MAIN": {
+            "main": {
+              "bad": 0,
+              "redundant": 1
+            }
+          },
+          "FOOTER": {
+            "contentinfo": {
+              "bad": 1,
+              "redundant": 0
+            }
+          }
+        }
+      }
+    }
+  ],
+  "timeStamp": "49li4",
+  "startTime": "2022-07-16T21:49:30",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "hover",
+      31
+    ],
+    [
+      "focInd",
+      2
+    ],
+    [
+      "role",
+      0
+    ]
+  ],
+  "logCount": 0,
+  "logSize": 0,
+  "errorLogCount": 0,
+  "errorLogSize": 0,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-16T21:50:14",
+  "elapsedSeconds": 44
+}

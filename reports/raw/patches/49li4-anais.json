@@ -1,0 +1,132 @@
+{
+  "id": "49li4-anais",
+  "host": {
+    "id": "anais",
+    "which": "https://a11y.anais.digital/",
+    "what": "Anais Digital"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-16T21:31:33"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-16T21:31:39"
+    }
+  ],
+  "script": {
+    "id": "tp12",
+    "what": "Alfa, Axe, HTML CodeSniffer, IBM, Tenon, WAVE, and 16 custom tests",
+    "strict": true,
+    "timeLimit": 150,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://a11y.anais.digital/",
+        "what": "Anais Digital"
+      },
+      {
+        "type": "test",
+        "which": "focInd",
+        "revealAll": false,
+        "allowedDelay": 250,
+        "withItems": true,
+        "what": "focus indicators"
+      },
+      {
+        "type": "test",
+        "which": "hover",
+        "headSize": 20,
+        "headSampleSize": 20,
+        "tailSampleSize": 15,
+        "withItems": true,
+        "what": "hover impacts"
+      },
+      {
+        "type": "test",
+        "which": "role",
+        "what": "validity and necessity of role assignments"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://a11y.anais.digital/",
+      "what": "Anais Digital",
+      "result": "ERROR: Attempts to visit https://a11y.anais.digital/ failed"
+    },
+    {
+      "type": "test",
+      "which": "focInd",
+      "revealAll": false,
+      "allowedDelay": 250,
+      "withItems": true,
+      "what": "focus indicators",
+      "result": "ERROR: No page identified"
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://a11y.anais.digital/",
+      "what": "URL",
+      "result": "ERROR: Attempts to visit https://a11y.anais.digital/ failed"
+    },
+    {
+      "type": "test",
+      "which": "hover",
+      "headSize": 20,
+      "headSampleSize": 20,
+      "tailSampleSize": 15,
+      "withItems": true,
+      "what": "hover impacts",
+      "result": "ERROR: No page identified"
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://a11y.anais.digital/",
+      "what": "URL",
+      "result": "ERROR: Attempts to visit https://a11y.anais.digital/ failed"
+    },
+    {
+      "type": "test",
+      "which": "role",
+      "what": "validity and necessity of role assignments",
+      "result": "ERROR: No page identified"
+    }
+  ],
+  "timeStamp": "49li4",
+  "startTime": "2022-07-16T21:31:33",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [],
+  "logCount": 9,
+  "logSize": 513,
+  "errorLogCount": 9,
+  "errorLogSize": 513,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 15,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-16T21:31:39",
+  "elapsedSeconds": 5
+}

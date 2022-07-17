@@ -304,15 +304,16 @@
           "total": 106,
           "types": {
             "indicatorMissing": {
-              "total": 0,
-              "tagNames": {}
+              "total": 2,
+              "tagNames": {
+                "A": 2
+              }
             },
             "nonOutlinePresent": {
-              "total": 9,
+              "total": 7,
               "tagNames": {
                 "BUTTON": 6,
-                "INPUT": 1,
-                "A": 2
+                "INPUT": 1
               }
             },
             "outlinePresent": {
@@ -325,7 +326,16 @@
           }
         },
         "items": {
-          "indicatorMissing": [],
+          "indicatorMissing": [
+            {
+              "tagName": "A",
+              "text": "Previous"
+            },
+            {
+              "tagName": "A",
+              "text": "Next"
+            }
+          ],
           "nonOutlinePresent": [
             {
               "tagName": "BUTTON",
@@ -348,20 +358,12 @@
               "text": "Buscar"
             },
             {
-              "tagName": "A",
-              "text": "Previous"
-            },
-            {
               "tagName": "BUTTON",
               "text": "Reanudar"
             },
             {
               "tagName": "BUTTON",
               "text": "Pausar"
-            },
-            {
-              "tagName": "A",
-              "text": "Next"
             }
           ],
           "outlinePresent": [
@@ -8097,12 +8099,12 @@
           "triggers": 173,
           "headTriggers": 20,
           "tailTriggers": 153,
-          "impactTriggers": 51,
+          "impactTriggers": 10,
           "additions": 0,
           "removals": 0,
-          "opacityChanges": 51,
-          "opacityImpact": 10,
-          "unhoverables": 3
+          "opacityChanges": 10,
+          "opacityImpact": 0,
+          "unhoverables": 4
         },
         "items": {
           "head": {
@@ -8119,39 +8121,7 @@
             "impactTriggers": [
               {
                 "tagName": "A",
-                "text": "LaUniversitatd'Alacantposaenmarxaunserveiperaacaba",
-                "additions": 0,
-                "removals": 0,
-                "opacityChanges": 1,
-                "opacityImpact": 0
-              },
-              {
-                "tagName": "A",
-                "text": "Mésde1000participantsenlaSetmanadel'Accessibilitat",
-                "additions": 0,
-                "removals": 0,
-                "opacityChanges": 1,
-                "opacityImpact": 1
-              },
-              {
-                "tagName": "A",
-                "text": "SignaturesaccessiblesperacorreuelectrònicdelaUA",
-                "additions": 0,
-                "removals": 0,
-                "opacityChanges": 1,
-                "opacityImpact": 0
-              },
-              {
-                "tagName": "A",
-                "text": "2ajornadaBretxaDigitaliDiscapacitat",
-                "additions": 0,
-                "removals": 0,
-                "opacityChanges": 1,
-                "opacityImpact": 0
-              },
-              {
-                "tagName": "A",
-                "text": "Publiquemunasèriedevídeotutorialssobretecnologiesa",
+                "text": "LaUAesconverteixenlaprimerauniversitataimplementar",
                 "additions": 0,
                 "removals": 0,
                 "opacityChanges": 1,
@@ -8160,14 +8130,19 @@
             ],
             "unhoverables": [
               {
+                "tagName": "LI",
+                "id": "",
+                "text": "Galetes"
+              },
+              {
                 "tagName": "A",
                 "id": "",
-                "text": "Facebook"
+                "text": "Accessibilitat"
               },
               {
                 "tagName": "LI",
                 "id": "",
-                "text": "Youtube"
+                "text": "Accessibilitat"
               }
             ]
           }
@@ -8658,12 +8633,19 @@
       "result": {
         "roleElements": 38,
         "badRoleElements": 21,
+        "redundantRoleElements": 0,
         "tagNames": {
           "A": {
-            "button": 20
+            "button": {
+              "bad": 20,
+              "redundant": 0
+            }
           },
           "DIV": {
-            "complementary": 1
+            "complementary": {
+              "bad": 1,
+              "redundant": 0
+            }
           }
         }
       }
@@ -22774,7 +22756,7 @@
   "endTime": "2022-07-09T15:40:41",
   "elapsedSeconds": 222,
   "score": {
-    "scoreProcID": "sp12a",
+    "scoreProcID": "sp12b",
     "logWeights": {
       "logCount": 0.5,
       "logSize": 0.01,
@@ -22799,12 +22781,12 @@
         "motion": 27,
         "bulk": 0,
         "focAll": 4,
-        "focInd": 9,
+        "focInd": 13,
         "focOp": 10,
-        "hover": 116,
+        "hover": 26,
         "labClash": 3,
         "linkUl": 196,
-        "role": 21,
+        "role": 42,
         "styleDiff": 94,
         "zIndex": 42
       },
@@ -22890,7 +22872,7 @@
         "focusIndication": {
           "testaro": {
             "focInd": {
-              "score": 9,
+              "score": 13,
               "what": "Focused element displaying no or nostandard focus indicator"
             }
           }
@@ -22906,7 +22888,7 @@
         "hoverSurprise": {
           "testaro": {
             "hover": {
-              "score": 29,
+              "score": 7,
               "what": "Content changes caused by hovering"
             }
           }
@@ -22942,7 +22924,7 @@
         "roleBad": {
           "testaro": {
             "role": {
-              "score": 16,
+              "score": 32,
               "what": "Nonexistent or implicit-overriding role"
             }
           }
@@ -23029,7 +23011,7 @@
           "alfa": {
             "r80": {
               "score": 8,
-              "what": "Paragraph text has absolute line height"
+              "what": "Paragraph text has an absolute line height"
             }
           }
         },
@@ -23250,7 +23232,7 @@
     },
     "preventionScores": {},
     "summary": {
-      "total": 674,
+      "total": 672,
       "log": 0,
       "preventions": 0,
       "solos": 0,
@@ -23276,8 +23258,8 @@
           "score": 41
         },
         {
-          "groupName": "hoverSurprise",
-          "score": 31
+          "groupName": "roleBad",
+          "score": 34
         },
         {
           "groupName": "leadingClipsText",
@@ -23288,16 +23270,16 @@
           "score": 26
         },
         {
-          "groupName": "roleBad",
-          "score": 18
-        },
-        {
           "groupName": "spontaneousMotion",
           "score": 16
         },
         {
           "groupName": "contrastRisk",
           "score": 16
+        },
+        {
+          "groupName": "focusIndication",
+          "score": 15
         },
         {
           "groupName": "noLeading",
@@ -23320,10 +23302,6 @@
           "score": 12
         },
         {
-          "groupName": "focusIndication",
-          "score": 11
-        },
-        {
           "groupName": "focusableOperable",
           "score": 10
         },
@@ -23334,6 +23312,10 @@
         {
           "groupName": "accessKeyDuplicate",
           "score": 10
+        },
+        {
+          "groupName": "hoverSurprise",
+          "score": 9
         },
         {
           "groupName": "linkNoText",

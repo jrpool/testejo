@@ -304,15 +304,15 @@
           "total": 152,
           "types": {
             "indicatorMissing": {
-              "total": 0,
-              "tagNames": {}
-            },
-            "nonOutlinePresent": {
               "total": 2,
               "tagNames": {
                 "BUTTON": 1,
                 "DIV": 1
               }
+            },
+            "nonOutlinePresent": {
+              "total": 0,
+              "tagNames": {}
             },
             "outlinePresent": {
               "total": 150,
@@ -328,8 +328,7 @@
           }
         },
         "items": {
-          "indicatorMissing": [],
-          "nonOutlinePresent": [
+          "indicatorMissing": [
             {
               "tagName": "BUTTON",
               "text": ""
@@ -339,6 +338,7 @@
               "text": ""
             }
           ],
+          "nonOutlinePresent": [],
           "outlinePresent": [
             {
               "tagName": "DIV",
@@ -5084,9 +5084,9 @@
           "impactTriggers": 1,
           "additions": 0,
           "removals": 0,
-          "opacityChanges": 2,
+          "opacityChanges": 48,
           "opacityImpact": 0,
-          "unhoverables": 3
+          "unhoverables": 4
         },
         "items": {
           "head": {
@@ -5096,7 +5096,7 @@
                 "text": "LIVEWEBINAR🎥July26@2pmEST,RethinkingWebAccessibil",
                 "additions": 0,
                 "removals": 0,
-                "opacityChanges": 2,
+                "opacityChanges": 48,
                 "opacityImpact": 0
               }
             ],
@@ -5114,12 +5114,17 @@
               {
                 "tagName": "A",
                 "id": "",
-                "text": "<imgalt=\"UnitedNationsPopulationFundwebsite\"src=\"/"
+                "text": "Brand"
               },
               {
                 "tagName": "A",
                 "id": "",
-                "text": "<imgalt=\"GarthBrookswebsite\"src=\"/content-img/widg"
+                "text": "<imgalt=\"ToyotaDirectwebsite\"src=\"/content-img/wid"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "<imgalt=\"USSailingwebsite\"src=\"/content-img/widget"
               }
             ]
           }
@@ -5549,23 +5554,45 @@
       "what": "roles",
       "url": "https://userway.org/",
       "result": {
-        "roleElements": 110,
+        "roleElements": 105,
         "badRoleElements": 61,
+        "redundantRoleElements": 0,
         "tagNames": {
           "DIV": {
-            "button": 6,
-            "main": 1,
-            "group": 33,
-            "heading": 11
+            "button": {
+              "bad": 6,
+              "redundant": 0
+            },
+            "main": {
+              "bad": 1,
+              "redundant": 0
+            },
+            "group": {
+              "bad": 33,
+              "redundant": 0
+            },
+            "heading": {
+              "bad": 11,
+              "redundant": 0
+            }
           },
           "HEADER": {
-            "banner": 1
+            "banner": {
+              "bad": 1,
+              "redundant": 0
+            }
           },
           "A": {
-            "button": 4
+            "button": {
+              "bad": 4,
+              "redundant": 0
+            }
           },
           "SPAN": {
-            "button": 5
+            "button": {
+              "bad": 5,
+              "redundant": 0
+            }
           }
         }
       }

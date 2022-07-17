@@ -303,14 +303,14 @@
           "total": 68,
           "types": {
             "indicatorMissing": {
-              "total": 0,
-              "tagNames": {}
-            },
-            "nonOutlinePresent": {
               "total": 1,
               "tagNames": {
                 "IFRAME": 1
               }
+            },
+            "nonOutlinePresent": {
+              "total": 0,
+              "tagNames": {}
             },
             "outlinePresent": {
               "total": 67,
@@ -325,13 +325,13 @@
           }
         },
         "items": {
-          "indicatorMissing": [],
-          "nonOutlinePresent": [
+          "indicatorMissing": [
             {
               "tagName": "IFRAME",
               "text": ""
             }
           ],
+          "nonOutlinePresent": [],
           "outlinePresent": [
             {
               "tagName": "BUTTON",
@@ -371,22 +371,22 @@
             {
               "tagName": "A",
               "text": "Accueil",
-              "delay": 103
+              "delay": 101
             },
             {
               "tagName": "A",
               "text": "Qu'est-ce que c'est ?",
-              "delay": 101
+              "delay": 103
             },
             {
               "tagName": "A",
               "text": "Comment ça marche ?",
-              "delay": 101
+              "delay": 100
             },
             {
               "tagName": "A",
               "text": "Les sites équipés",
-              "delay": 100
+              "delay": 101
             },
             {
               "tagName": "A",
@@ -396,12 +396,12 @@
             {
               "tagName": "A",
               "text": "Nos engagements",
-              "delay": 103
+              "delay": 101
             },
             {
               "tagName": "A",
               "text": "Recrutement",
-              "delay": 101
+              "delay": 103
             },
             {
               "tagName": "A",
@@ -411,12 +411,12 @@
             {
               "tagName": "A",
               "text": "J'ai un site web",
-              "delay": 106
+              "delay": 102
             },
             {
               "tagName": "A",
               "text": "Je veux devenir partenaire",
-              "delay": 103
+              "delay": 102
             },
             {
               "tagName": "A",
@@ -426,7 +426,7 @@
             {
               "tagName": "A",
               "text": "Je choisis mon filtre",
-              "delay": 102
+              "delay": 101
             },
             {
               "tagName": "A",
@@ -441,7 +441,7 @@
             {
               "tagName": "A",
               "text": "Je choisis mon filtre",
-              "delay": 105
+              "delay": 102
             },
             {
               "tagName": "A",
@@ -451,7 +451,7 @@
             {
               "tagName": "BUTTON",
               "text": "",
-              "delay": 105
+              "delay": 102
             },
             {
               "tagName": "H3",
@@ -470,12 +470,7 @@
             },
             {
               "tagName": "A",
-              "text": "Clarins",
-              "delay": 0
-            },
-            {
-              "tagName": "A",
-              "text": "Viva Technology",
+              "text": "Printemps",
               "delay": 0
             },
             {
@@ -485,12 +480,12 @@
             },
             {
               "tagName": "A",
-              "text": "Auchan recrute",
+              "text": "Arkea Banque",
               "delay": 0
             },
             {
               "tagName": "A",
-              "text": "Mr Bricolage",
+              "text": "LCI",
               "delay": 0
             },
             {
@@ -500,17 +495,22 @@
             },
             {
               "tagName": "A",
-              "text": "Printemps",
+              "text": "Fnac",
               "delay": 0
             },
             {
               "tagName": "A",
-              "text": "TF1 et vous",
+              "text": "Randstad",
               "delay": 0
             },
             {
               "tagName": "A",
-              "text": "Audiens",
+              "text": "Michelin",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Lacoste",
               "delay": 0
             },
             {
@@ -521,22 +521,22 @@
             {
               "tagName": "A",
               "text": "Voir tous les sites équipés",
-              "delay": 100
+              "delay": 101
             },
             {
               "tagName": "A",
               "text": "Inclusiv'Day 2022",
-              "delay": 102
+              "delay": 100
             },
             {
               "tagName": "A",
               "text": "Programme et inscriptions",
-              "delay": 102
+              "delay": 101
             },
             {
               "tagName": "A",
               "text": "En savoir plus sur Digital Workplace",
-              "delay": 103
+              "delay": 101
             },
             {
               "tagName": "BUTTON",
@@ -551,7 +551,7 @@
             {
               "tagName": "INPUT",
               "text": "",
-              "delay": 102
+              "delay": 101
             },
             {
               "tagName": "A",
@@ -566,7 +566,7 @@
             {
               "tagName": "A",
               "text": "CONSULTER LES ARCHIVES DES ÉDITIONS PASSÉES",
-              "delay": 101
+              "delay": 103
             },
             {
               "tagName": "A",
@@ -581,62 +581,62 @@
             {
               "tagName": "A",
               "text": "Accueil",
-              "delay": 105
+              "delay": 102
             },
             {
               "tagName": "A",
               "text": "Qu'est-ce que c'est ?",
-              "delay": 103
+              "delay": 102
             },
             {
               "tagName": "A",
               "text": "Comment ça marche ?",
-              "delay": 101
+              "delay": 102
             },
             {
               "tagName": "A",
               "text": "Où l'utiliser ?",
-              "delay": 101
+              "delay": 103
             },
             {
               "tagName": "A",
               "text": "Blog",
-              "delay": 103
+              "delay": 102
             },
             {
               "tagName": "A",
               "text": "Nous contacter",
-              "delay": 102
+              "delay": 103
             },
             {
               "tagName": "A",
               "text": "Recrutement",
-              "delay": 101
-            },
-            {
-              "tagName": "A",
-              "text": "Qui sommes-nous ?",
-              "delay": 100
-            },
-            {
-              "tagName": "A",
-              "text": "Aide et Accessibilité",
               "delay": 102
             },
             {
               "tagName": "A",
-              "text": "Mentions légales",
+              "text": "Qui sommes-nous ?",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Aide et Accessibilité",
               "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "Mentions légales",
+              "delay": 100
             },
             {
               "tagName": "A",
               "text": "Données personnelles",
-              "delay": 101
+              "delay": 104
             },
             {
               "tagName": "A",
               "text": "FAQ",
-              "delay": 103
+              "delay": 101
             },
             {
               "tagName": "A",
@@ -646,22 +646,22 @@
             {
               "tagName": "A",
               "text": "Aller à la page Facebook",
-              "delay": 100
+              "delay": 104
             },
             {
               "tagName": "A",
               "text": "Aller à la page Twitter",
-              "delay": 102
+              "delay": 101
             },
             {
               "tagName": "A",
               "text": "Aller à la page Youtube",
-              "delay": 105
+              "delay": 103
             },
             {
               "tagName": "A",
               "text": "Aller à la page LinkedIn",
-              "delay": 101
+              "delay": 100
             },
             {
               "tagName": "A",
@@ -1653,12 +1653,12 @@
           "triggers": 103,
           "headTriggers": 20,
           "tailTriggers": 83,
-          "impactTriggers": 1,
-          "additions": 0,
+          "impactTriggers": 6,
+          "additions": 5,
           "removals": 0,
-          "opacityChanges": 21,
-          "opacityImpact": 6,
-          "unhoverables": 0
+          "opacityChanges": 3,
+          "opacityImpact": 2,
+          "unhoverables": 5
         },
         "items": {
           "head": {
@@ -1668,15 +1668,82 @@
                 "text": "Adaptezl'affichage",
                 "additions": 0,
                 "removals": 0,
-                "opacityChanges": 21,
-                "opacityImpact": 6
+                "opacityChanges": 3,
+                "opacityImpact": 2
+              },
+              {
+                "tagName": "LI",
+                "text": "LasolutionQu'est-cequec'est?Commentçamarche?Lessit",
+                "additions": 1,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "A",
+                "text": "Qu'est-cequec'est?",
+                "additions": 1,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "A",
+                "text": "Commentçamarche?",
+                "additions": 1,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "LI",
+                "text": "L'entrepriseQuisommes-nous?NosengagementsRecruteme",
+                "additions": 1,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "A",
+                "text": "Quisommes-nous?",
+                "additions": 1,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
               }
             ],
-            "unhoverables": []
+            "unhoverables": [
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "Qu'est-cequec'est?"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "Commentçamarche?"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "Quisommes-nous?"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "Nosengagements"
+              }
+            ]
           },
           "tail": {
             "impactTriggers": [],
-            "unhoverables": []
+            "unhoverables": [
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "J'aiunsiteweb"
+              }
+            ]
           }
         }
       }
@@ -2039,19 +2106,32 @@
       "url": "https://www.facil-iti.fr/",
       "result": {
         "roleElements": 35,
-        "badRoleElements": 6,
+        "badRoleElements": 2,
+        "redundantRoleElements": 4,
         "tagNames": {
           "HEADER": {
-            "banner": 1
+            "banner": {
+              "bad": 1,
+              "redundant": 0
+            }
           },
           "NAV": {
-            "navigation": 3
+            "navigation": {
+              "bad": 0,
+              "redundant": 3
+            }
           },
           "MAIN": {
-            "main": 1
+            "main": {
+              "bad": 0,
+              "redundant": 1
+            }
           },
           "FOOTER": {
-            "contentinfo": 1
+            "contentinfo": {
+              "bad": 1,
+              "redundant": 0
+            }
           }
         }
       }
@@ -12030,7 +12110,7 @@
   "endTime": "2022-07-06T02:40:54",
   "elapsedSeconds": 145,
   "score": {
-    "scoreProcID": "sp12a",
+    "scoreProcID": "sp12b",
     "logWeights": {
       "logCount": 0.5,
       "logSize": 0.01,
@@ -12054,11 +12134,11 @@
       "testaro": {
         "motion": 1,
         "bulk": 1,
-        "focInd": 1,
+        "focInd": 3,
         "focOp": 16,
-        "hover": 7,
+        "hover": 19,
         "linkUl": 96,
-        "role": 6,
+        "role": 8,
         "styleDiff": 39,
         "tabNav": 16,
         "zIndex": 30
@@ -12143,7 +12223,7 @@
         "focusIndication": {
           "testaro": {
             "focInd": {
-              "score": 1,
+              "score": 3,
               "what": "Focused element displaying no or nostandard focus indicator"
             }
           },
@@ -12165,7 +12245,7 @@
         "hoverSurprise": {
           "testaro": {
             "hover": {
-              "score": 2,
+              "score": 5,
               "what": "Content changes caused by hovering"
             }
           }
@@ -12181,7 +12261,7 @@
         "roleBad": {
           "testaro": {
             "role": {
-              "score": 5,
+              "score": 6,
               "what": "Nonexistent or implicit-overriding role"
             }
           }
@@ -12304,7 +12384,7 @@
           "alfa": {
             "r74": {
               "score": 2,
-              "what": "Paragraph text has absolute font size"
+              "what": "Paragraph text has an absolute font size"
             }
           }
         },
@@ -12565,7 +12645,7 @@
     },
     "preventionScores": {},
     "summary": {
-      "total": 468,
+      "total": 473,
       "log": 10,
       "preventions": 0,
       "solos": 0,
@@ -12643,15 +12723,19 @@
           "score": 9
         },
         {
+          "groupName": "focusIndication",
+          "score": 8
+        },
+        {
+          "groupName": "roleBad",
+          "score": 8
+        },
+        {
           "groupName": "controlLabel",
           "score": 8
         },
         {
-          "groupName": "focusIndication",
-          "score": 7
-        },
-        {
-          "groupName": "roleBad",
+          "groupName": "hoverSurprise",
           "score": 7
         },
         {
@@ -12681,10 +12765,6 @@
         {
           "groupName": "horizontalScrolling",
           "score": 5
-        },
-        {
-          "groupName": "hoverSurprise",
-          "score": 4
         },
         {
           "groupName": "fontSizeAbsolute",

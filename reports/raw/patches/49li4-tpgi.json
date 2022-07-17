@@ -1,0 +1,669 @@
+{
+  "id": "49li4-tpgi",
+  "host": {
+    "id": "tpgi",
+    "which": "https://www.tpgi.com/",
+    "what": "TPGi"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-16T22:09:16"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-16T22:10:26"
+    }
+  ],
+  "script": {
+    "id": "tp12",
+    "what": "Alfa, Axe, HTML CodeSniffer, IBM, Tenon, WAVE, and 16 custom tests",
+    "strict": true,
+    "timeLimit": 150,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.tpgi.com/",
+        "what": "TPGi"
+      },
+      {
+        "type": "test",
+        "which": "focInd",
+        "revealAll": false,
+        "allowedDelay": 250,
+        "withItems": true,
+        "what": "focus indicators"
+      },
+      {
+        "type": "test",
+        "which": "hover",
+        "headSize": 20,
+        "headSampleSize": 20,
+        "tailSampleSize": 15,
+        "withItems": true,
+        "what": "hover impacts"
+      },
+      {
+        "type": "test",
+        "which": "role",
+        "what": "validity and necessity of role assignments"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.tpgi.com/",
+      "what": "TPGi",
+      "result": "https://www.tpgi.com/"
+    },
+    {
+      "type": "test",
+      "which": "focInd",
+      "revealAll": false,
+      "allowedDelay": 250,
+      "withItems": true,
+      "what": "focus indicators",
+      "url": "https://www.tpgi.com/",
+      "result": {
+        "totals": {
+          "total": 87,
+          "types": {
+            "indicatorMissing": {
+              "total": 1,
+              "tagNames": {
+                "IFRAME": 1
+              }
+            },
+            "nonOutlinePresent": {
+              "total": 1,
+              "tagNames": {
+                "A": 1
+              }
+            },
+            "outlinePresent": {
+              "total": 85,
+              "meanDelay": 78,
+              "tagNames": {
+                "A": 75,
+                "INPUT": 7,
+                "BUTTON": 2,
+                "TEXTAREA": 1
+              }
+            }
+          }
+        },
+        "items": {
+          "indicatorMissing": [
+            {
+              "tagName": "IFRAME",
+              "text": ""
+            }
+          ],
+          "nonOutlinePresent": [
+            {
+              "tagName": "A",
+              "text": "Show details"
+            }
+          ],
+          "outlinePresent": [
+            {
+              "tagName": "A",
+              "text": "Use necessary cookies only",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Allow all cookies",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "Skip to main content",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "<img src=\"https://www.tpgi.com/wp-content/themes/bedstone/images/logo.svg\" alt=\"TPGi\" width=\"180\" he",
+              "delay": 101
+            },
+            {
+              "tagName": "INPUT",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Free ARC Account",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Login",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Contact",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "ARC Platform",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Solutions",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Resources",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "About",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Blog",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Get Started",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "Talk to Us",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Start with a Free Website Scan",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Learn About Conformance",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "Learn about Services",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Learn about ARC Platform",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "Learn About Legal Risks",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Watch it on YouTube",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Read the transcript.",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Learn More",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Create Free Account",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Get your free website accessibility scan",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Learn about our services",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "View All Blog Posts",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Events",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "Live Events",
+              "delay": 104
+            },
+            {
+              "tagName": "A",
+              "text": "Webinar, July 20 at 12PM ET: Best Practices to Structure Accessibility Testing",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Events",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Live Events",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Webinar, July 27 at 12PM ET: Quickly Test Your Website for JAWS Screen Reader Compatibility",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "ARC Platform",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Business",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "World of Accessibility",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "ARC Toolkit v5 released",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Business",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "User Experience (UX)",
+              "delay": 104
+            },
+            {
+              "tagName": "A",
+              "text": "UX Series 5: Usability Testing and Digital Accessibility",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Events",
+              "delay": 105
+            },
+            {
+              "tagName": "A",
+              "text": "On Demand Webinars",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "On-Demand Webinar, June 14 at 12PM ET: How to Retrofit Your Self-Service Kiosk for Usability and Acc",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Development",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Does WCAG Apply to Kiosks?",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Business",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "World of Accessibility",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Top Ten Most Common Web Accessibility Issues",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Business",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "World of Accessibility",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Inclusive XR Can Transform Your Workplace",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "KnowledgeBase Content",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Introduction to Cognitive Disability and Accessibility Testing",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "KnowledgeBase Content",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Introduction to A.I. and Accessibility Testing",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "World of Accessibility",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "A Starter Guide For Improving Digital Accessibility",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility Strategy",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility Strategy for Product Management",
+              "delay": 102
+            },
+            {
+              "tagName": "INPUT",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "INPUT",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "INPUT",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "INPUT",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "INPUT",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "INPUT",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "TEXTAREA",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Submit your inquiry",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "+1 (877) 775-9474",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "info@tpgi.com",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Directions",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "ARC Platform",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility Solutions",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "508 Compliance",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Conformance",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "About TPGi",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Careers",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "Blog",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Vispero™",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "Site Credits",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Privacy Policy",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility Statement",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "Follow us on YouTube",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Follow us on Twitter",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "Connect with us on LinkedIn",
+              "delay": 101
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.tpgi.com/",
+      "what": "URL",
+      "result": "https://www.tpgi.com/"
+    },
+    {
+      "type": "test",
+      "which": "hover",
+      "headSize": 20,
+      "headSampleSize": 20,
+      "tailSampleSize": 15,
+      "withItems": true,
+      "what": "hover-caused content changes",
+      "url": "https://www.tpgi.com/",
+      "result": {
+        "totals": {
+          "triggers": 124,
+          "headTriggers": 20,
+          "tailTriggers": 104,
+          "impactTriggers": 0,
+          "additions": 0,
+          "removals": 0,
+          "opacityChanges": 0,
+          "opacityImpact": 0,
+          "unhoverables": 1
+        },
+        "items": {
+          "head": {
+            "impactTriggers": [],
+            "unhoverables": [
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Skiptomaincontent"
+              }
+            ]
+          },
+          "tail": {
+            "impactTriggers": [],
+            "unhoverables": []
+          }
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.tpgi.com/",
+      "what": "URL",
+      "result": "https://www.tpgi.com/"
+    },
+    {
+      "type": "test",
+      "which": "role",
+      "what": "roles",
+      "url": "https://www.tpgi.com/",
+      "result": {
+        "roleElements": 14,
+        "badRoleElements": 1,
+        "redundantRoleElements": 5,
+        "tagNames": {
+          "NAV": {
+            "navigation": {
+              "bad": 0,
+              "redundant": 4
+            }
+          },
+          "MAIN": {
+            "main": {
+              "bad": 0,
+              "redundant": 1
+            }
+          },
+          "FOOTER": {
+            "contentinfo": {
+              "bad": 1,
+              "redundant": 0
+            }
+          }
+        }
+      }
+    }
+  ],
+  "timeStamp": "49li4",
+  "startTime": "2022-07-16T22:09:16",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "hover",
+      51
+    ],
+    [
+      "focInd",
+      8
+    ],
+    [
+      "role",
+      0
+    ]
+  ],
+  "logCount": 15,
+  "logSize": 792,
+  "errorLogCount": 6,
+  "errorLogSize": 312,
+  "prohibitedCount": 3,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-16T22:10:26",
+  "elapsedSeconds": 69
+}

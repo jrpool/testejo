@@ -20,10 +20,10 @@
         <div id="synopsis">
           <p><strong>Page</strong>: Modern Accessibility</p>
           <p><strong>URL</strong>: https://modernaccessibility.com/</p>
-          <p><strong>Score</strong>: 159</p>
+          <p><strong>Score</strong>: 163</p>
           <p><strong>Tested by</strong>: Testaro, procedure <code>tp12</code></p>
-          <p><strong>Scored by</strong>: Testilo, procedure <code>sp12a</code></p>
-          <p><strong>Digested by</strong>: Testilo, procedure <code>dp12a</code></p>
+          <p><strong>Scored by</strong>: Testilo, procedure <code>sp12b</code></p>
+          <p><strong>Digested by</strong>: Testilo, procedure <code>dp12b</code></p>
         </div>
       </header>
       <h2>Introduction</h2>
@@ -39,26 +39,26 @@
         <li><a href="https://wave.webaim.org/api/">WAVE</a> by WebAIM</li>
       </ul>
       <p>Testaro produced a report enumerating the test results.</p>
-      <p><a href="https://www.npmjs.com/package/testilo">Testilo</a> processed the report and used the <code>sp12a</code> scoring procedure to compute partial and total scores for the page. The total score is 159 (where 0 is the best possible score). The scored report is appended below.</p>
-      <p>Finally, Testilo used procedure <code>dp12a</code> to produce this digest, briefly explaining how <code>sp12a</code> computed the scores.</p>
+      <p><a href="https://www.npmjs.com/package/testilo">Testilo</a> processed the report and used the <code>sp12b</code> scoring procedure to compute partial and total scores for the page. The total score is 163 (where 0 is the best possible score). The scored report is appended below.</p>
+      <p>Finally, Testilo used procedure <code>dp12b</code> to produce this digest, briefly explaining how <code>sp12a</code> computed the scores.</p>
       <h2>Score summary</h2>
       <table class="allBorder secondCellRight">
         <caption>Score components</caption>
         <tbody class="headersLeft">
-        <tr><th>total</th><td>159</td></tr>
+        <tr><th>total</th><td>163</td></tr>
         <tr><th>log</th><td>30</td></tr>
         <tr><th>contrastAA</th><td>19</td></tr>
         <tr><th>iframeTitleBad</th><td>16</td></tr>
         <tr><th>contentBeyondLandmarks</th><td>13</td></tr>
         <tr><th>regionNoText</th><td>10</td></tr>
         <tr><th>leadingClipsText</th><td>10</td></tr>
+        <tr><th>focusIndication</th><td>8</td></tr>
         <tr><th>metaBansZoom</th><td>8</td></tr>
         <tr><th>contrastAAA</th><td>8</td></tr>
         <tr><th>fontSmall</th><td>7</td></tr>
         <tr><th>noLeading</th><td>5</td></tr>
         <tr><th>horizontalScrolling</th><td>5</td></tr>
         <tr><th>linkForcesNewWindow</th><td>5</td></tr>
-        <tr><th>focusIndication</th><td>4</td></tr>
         <tr><th>fontSizeAbsolute</th><td>4</td></tr>
         <tr><th>skipRepeatedContent</th><td>3</td></tr>
         <tr><th>frameContentRisk</th><td>3</td></tr>
@@ -97,6 +97,10 @@
       <ul>
       <li>Package <code>tenon</code>, test <code>144</code>, score 8 (Line height is insufficent to properly display the computed font size)</li>
       </ul>
+      <p><span class="componentID">focusIndication</span>: Score 8. Issues reported by tests in this category:</p>
+      <ul>
+      <li>Package <code>testaro</code>, test <code>focInd</code>, score 6 (Focused element displaying no or nostandard focus indicator)</li>
+      </ul>
       <p><span class="componentID">metaBansZoom</span>: Score 8. Issues reported by tests in this category:</p>
       <ul>
       <li>Package <code>alfa</code>, test <code>r47</code>, score 4 (Meta element restricts zooming)</li>
@@ -125,13 +129,9 @@
       <ul>
       <li>Package <code>tenon</code>, test <code>218</code>, score 3 (Link opens in a new window without user control)</li>
       </ul>
-      <p><span class="componentID">focusIndication</span>: Score 4. Issues reported by tests in this category:</p>
-      <ul>
-      <li>Package <code>testaro</code>, test <code>focInd</code>, score 2 (Focused element displaying no or nostandard focus indicator)</li>
-      </ul>
       <p><span class="componentID">fontSizeAbsolute</span>: Score 4. Issues reported by tests in this category:</p>
       <ul>
-      <li>Package <code>alfa</code>, test <code>r74</code>, score 2 (Paragraph text has absolute font size)</li>
+      <li>Package <code>alfa</code>, test <code>r74</code>, score 2 (Paragraph text has an absolute font size)</li>
       </ul>
       <p><span class="componentID">skipRepeatedContent</span>: Score 3. Issues reported by tests in this category:</p>
       <ul>
@@ -154,7 +154,7 @@
       <li>Package <code>wave</code>, test <code>a:region_missing</code>, score 1 (Page has no regions or ARIA landmarks)</li>
       </ul>
       <h2>Discussion</h2>
-      <p>Although there are widely accepted <a href="https://www.w3.org/WAI/standards-guidelines/">accessibility standards</a>, there is no unanimity about how to define, test, and quantify accessibility. The failures reported in this digest merit investigation as potential opportunities for improved accessibility. Investigation may lead you to conclude that some of the reported failures do not actually harm accessibility. Conversely, some substantial accessibility faults can escape detection by any of these tests. You may question the attempt to assign an accessibility score to a web page, or you may prefer weightings and formulas different from those used by <code>sp12a</code>. You can modify and extend Testaro and Testilo to fit other theories and priorities.</p>
+      <p>Although there are widely accepted <a href="https://www.w3.org/WAI/standards-guidelines/">accessibility standards</a>, there is no unanimity about how to define, test, and quantify accessibility. The failures reported in this digest merit investigation as potential opportunities for improved accessibility. Investigation may lead you to conclude that some of the reported failures do not actually harm accessibility. Conversely, some substantial accessibility faults can escape detection by any of these tests. You may question the attempt to assign an accessibility score to a web page, or you may prefer weightings and formulas different from those used by <code>sp12b</code>. You can modify and extend Testaro and Testilo to fit other theories and priorities.</p>
       <p>Here, in brief, is how <code>sp12a</code> computes a score for a page.</p>
       <ul>
         <li>It finds all the defects and warnings (let&rsquo;s call them <q>issues</q>) recorded in the report.</li>
@@ -167,7 +167,7 @@
         <li>It assigns an estimated score each time the page prevents one of the packages or one of the Testaro tests from being run on the page.</li>
         <li>It adds the scores together to obtain a total score.</li>
       </ul>
-      <p>The precise rules of <code>sp12a</code> are found in the <a href="https://github.com/jrpool/testilo/blob/main/procs/score/sp12a.js">code itself</a>.</p>
+      <p>The precise rules of <code>sp12b</code> are found in the <a href="https://github.com/jrpool/testilo/blob/main/procs/score/sp12b.js">code itself</a>.</p>
       <h2>Report</h2>
       <pre>{
   "id": "42ubn-moderna11y",
@@ -475,14 +475,14 @@
           "total": 5,
           "types": {
             "indicatorMissing": {
-              "total": 0,
-              "tagNames": {}
-            },
-            "nonOutlinePresent": {
               "total": 2,
               "tagNames": {
                 "IFRAME": 2
               }
+            },
+            "nonOutlinePresent": {
+              "total": 0,
+              "tagNames": {}
             },
             "outlinePresent": {
               "total": 3,
@@ -494,8 +494,7 @@
           }
         },
         "items": {
-          "indicatorMissing": [],
-          "nonOutlinePresent": [
+          "indicatorMissing": [
             {
               "tagName": "IFRAME",
               "text": ""
@@ -505,6 +504,7 @@
               "text": ""
             }
           ],
+          "nonOutlinePresent": [],
           "outlinePresent": [
             {
               "tagName": "A",
@@ -816,6 +816,7 @@
       "result": {
         "roleElements": 0,
         "badRoleElements": 0,
+        "redundantRoleElements": 0,
         "tagNames": {}
       }
     },
@@ -3406,7 +3407,7 @@
   "endTime": "2022-07-09T15:09:07",
   "elapsedSeconds": 49,
   "score": {
-    "scoreProcID": "sp12a",
+    "scoreProcID": "sp12b",
     "logWeights": {
       "logCount": 0.5,
       "logSize": 0.01,
@@ -3428,7 +3429,7 @@
     },
     "packageDetails": {
       "testaro": {
-        "focInd": 2
+        "focInd": 6
       },
       "alfa": {
         "r13": 8,
@@ -3473,7 +3474,7 @@
         "focusIndication": {
           "testaro": {
             "focInd": {
-              "score": 2,
+              "score": 6,
               "what": "Focused element displaying no or nostandard focus indicator"
             }
           }
@@ -3592,7 +3593,7 @@
           "alfa": {
             "r74": {
               "score": 2,
-              "what": "Paragraph text has absolute font size"
+              "what": "Paragraph text has an absolute font size"
             }
           }
         },
@@ -3679,7 +3680,7 @@
     },
     "preventionScores": {},
     "summary": {
-      "total": 159,
+      "total": 163,
       "log": 30,
       "preventions": 0,
       "solos": 0,
@@ -3705,6 +3706,10 @@
           "score": 10
         },
         {
+          "groupName": "focusIndication",
+          "score": 8
+        },
+        {
           "groupName": "metaBansZoom",
           "score": 8
         },
@@ -3727,10 +3732,6 @@
         {
           "groupName": "linkForcesNewWindow",
           "score": 5
-        },
-        {
-          "groupName": "focusIndication",
-          "score": 4
         },
         {
           "groupName": "fontSizeAbsolute",

@@ -303,16 +303,18 @@
           "total": 79,
           "types": {
             "indicatorMissing": {
-              "total": 0,
-              "tagNames": {}
-            },
-            "nonOutlinePresent": {
-              "total": 25,
+              "total": 24,
               "tagNames": {
-                "A": 3,
                 "INPUT": 1,
                 "IFRAME": 4,
-                "path": 17
+                "path": 17,
+                "A": 2
+              }
+            },
+            "nonOutlinePresent": {
+              "total": 1,
+              "tagNames": {
+                "A": 1
               }
             },
             "outlinePresent": {
@@ -326,12 +328,7 @@
           }
         },
         "items": {
-          "indicatorMissing": [],
-          "nonOutlinePresent": [
-            {
-              "tagName": "A",
-              "text": "Skip to content"
-            },
+          "indicatorMissing": [
             {
               "tagName": "INPUT",
               "text": ""
@@ -427,6 +424,12 @@
             {
               "tagName": "IFRAME",
               "text": ""
+            }
+          ],
+          "nonOutlinePresent": [
+            {
+              "tagName": "A",
+              "text": "Skip to content"
             }
           ],
           "outlinePresent": [
@@ -647,12 +650,12 @@
             },
             {
               "tagName": "A",
-              "text": "Crawford Technologies Launches CCM Gateway SDK to Modernize Document Storage for Digital Transformat",
+              "text": "Crawford Technologies Showcases Secure Cloud Data & Workflow Solutions That Accelerate ROI on High-s",
               "delay": 0
             },
             {
               "tagName": "A",
-              "text": "Crawford Technologies’ New Digital Transform Engine Version 5.2 Streamlines the Creation of Customer",
+              "text": "Crawford Technologies Launches CCM Gateway SDK to Modernize Document Storage for Digital Transformat",
               "delay": 0
             },
             {
@@ -3153,12 +3156,12 @@
           "triggers": 83,
           "headTriggers": 20,
           "tailTriggers": 63,
-          "impactTriggers": 8,
-          "additions": 0,
+          "impactTriggers": 29,
+          "additions": 328,
           "removals": 0,
-          "opacityChanges": 8,
-          "opacityImpact": 353,
-          "unhoverables": 5
+          "opacityChanges": 13,
+          "opacityImpact": 483,
+          "unhoverables": 2
         },
         "items": {
           "head": {
@@ -3180,38 +3183,62 @@
             "impactTriggers": [
               {
                 "tagName": "A",
-                "text": "AccessibilityNow®",
-                "additions": 0,
+                "text": "Products",
+                "additions": 23,
                 "removals": 0,
-                "opacityChanges": 1,
-                "opacityImpact": 42
-              },
-              {
-                "tagName": "A",
-                "text": "eDeliveryNow®",
-                "additions": 0,
-                "removals": 0,
-                "opacityChanges": 1,
-                "opacityImpact": 42
-              }
-            ],
-            "unhoverables": [
-              {
-                "tagName": "A",
-                "id": "",
-                "text": "CrawfordTechnologies"
+                "opacityChanges": 0,
+                "opacityImpact": 0
               },
               {
                 "tagName": "LI",
-                "id": "",
-                "text": "AccessibilityStatement"
+                "text": "AccessibilityNow®AccessibilityNowAccessibilityNow.",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 22
+              },
+              {
+                "tagName": "LI",
+                "text": "ProductsProductPortfolioDocumentAccessibilityBeinc",
+                "additions": 23,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "LI",
+                "text": "AboutUsAboutUsManagementTeamExperienced,knowledgea",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 22
               },
               {
                 "tagName": "A",
-                "id": "",
-                "text": "PrivacyPolicy"
+                "text": "Blog",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 71
+              },
+              {
+                "tagName": "LI",
+                "text": "ContactOfficeLocationsOfficesintheUnitedStates,Can",
+                "additions": 5,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "A",
+                "text": "Resources",
+                "additions": 27,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
               }
-            ]
+            ],
+            "unhoverables": []
           }
         }
       }
@@ -3729,34 +3756,62 @@
       "url": "https://crawfordtech.com/accessibilitynow/",
       "result": {
         "roleElements": 39,
-        "badRoleElements": 36,
+        "badRoleElements": 31,
+        "redundantRoleElements": 5,
         "tagNames": {
           "DIV": {
-            "navigation": 2
+            "navigation": {
+              "bad": 2,
+              "redundant": 0
+            }
           },
           "A": {
-            "button": 8
+            "button": {
+              "bad": 8,
+              "redundant": 0
+            }
           },
           "HEADER": {
-            "banner": 1
+            "banner": {
+              "bad": 1,
+              "redundant": 0
+            }
           },
           "NAV": {
-            "navigation": 4
+            "navigation": {
+              "bad": 0,
+              "redundant": 4
+            }
           },
           "MAIN": {
-            "main": 1
+            "main": {
+              "bad": 0,
+              "redundant": 1
+            }
           },
           "svg": {
-            "group": 1
+            "group": {
+              "bad": 1,
+              "redundant": 0
+            }
           },
           "g": {
-            "list": 1
+            "list": {
+              "bad": 1,
+              "redundant": 0
+            }
           },
           "path": {
-            "listitem": 17
+            "listitem": {
+              "bad": 17,
+              "redundant": 0
+            }
           },
           "FOOTER": {
-            "contentinfo": 1
+            "contentinfo": {
+              "bad": 1,
+              "redundant": 0
+            }
           }
         }
       }
@@ -19023,7 +19078,7 @@
   "endTime": "2022-07-06T01:28:03",
   "elapsedSeconds": 219,
   "score": {
-    "scoreProcID": "sp12a",
+    "scoreProcID": "sp12b",
     "logWeights": {
       "logCount": 0.5,
       "logSize": 0.01,
@@ -19048,11 +19103,11 @@
         "motion": 1,
         "bulk": 0,
         "focAll": 4,
-        "focInd": 25,
+        "focInd": 73,
         "focOp": 18,
-        "hover": 58,
+        "hover": 209,
         "linkUl": 284,
-        "role": 36,
+        "role": 67,
         "styleDiff": 49,
         "zIndex": 217
       },
@@ -19170,7 +19225,7 @@
         "focusIndication": {
           "testaro": {
             "focInd": {
-              "score": 25,
+              "score": 73,
               "what": "Focused element displaying no or nostandard focus indicator"
             }
           },
@@ -19192,7 +19247,7 @@
         "hoverSurprise": {
           "testaro": {
             "hover": {
-              "score": 15,
+              "score": 52,
               "what": "Content changes caused by hovering"
             }
           }
@@ -19220,7 +19275,7 @@
         "roleBad": {
           "testaro": {
             "role": {
-              "score": 27,
+              "score": 50,
               "what": "Nonexistent or implicit-overriding role"
             }
           },
@@ -19439,7 +19494,7 @@
           "alfa": {
             "r74": {
               "score": 88,
-              "what": "Paragraph text has absolute font size"
+              "what": "Paragraph text has an absolute font size"
             }
           }
         },
@@ -19455,7 +19510,7 @@
           "alfa": {
             "r80": {
               "score": 58,
-              "what": "Paragraph text has absolute line height"
+              "what": "Paragraph text has an absolute line height"
             }
           }
         },
@@ -19756,7 +19811,7 @@
       "ibm": 100
     },
     "summary": {
-      "total": 1438,
+      "total": 1546,
       "log": 386,
       "preventions": 100,
       "solos": 0,
@@ -19768,6 +19823,10 @@
         {
           "groupName": "fontSizeAbsolute",
           "score": 90
+        },
+        {
+          "groupName": "focusIndication",
+          "score": 85
         },
         {
           "groupName": "noLeading",
@@ -19786,12 +19845,12 @@
           "score": 56
         },
         {
-          "groupName": "focusIndication",
-          "score": 37
+          "groupName": "hoverSurprise",
+          "score": 54
         },
         {
           "groupName": "roleBad",
-          "score": 29
+          "score": 52
         },
         {
           "groupName": "linkForcesNewWindow",
@@ -19808,10 +19867,6 @@
         {
           "groupName": "iframeTitleBad",
           "score": 20
-        },
-        {
-          "groupName": "hoverSurprise",
-          "score": 17
         },
         {
           "groupName": "contrastAA",

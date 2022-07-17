@@ -300,7 +300,7 @@
       "url": "https://www.siteimprove.com/platform/accessibility/",
       "result": {
         "totals": {
-          "total": 59,
+          "total": 60,
           "types": {
             "indicatorMissing": {
               "total": 0,
@@ -316,10 +316,10 @@
               }
             },
             "outlinePresent": {
-              "total": 43,
+              "total": 44,
               "meanDelay": 0,
               "tagNames": {
-                "A": 30,
+                "A": 31,
                 "BUTTON": 11,
                 "INPUT": 2
               }
@@ -528,6 +528,11 @@
             {
               "tagName": "A",
               "text": "Leadership",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Board of directors",
               "delay": 0
             },
             {
@@ -1608,9 +1613,9 @@
       "url": "https://www.siteimprove.com/platform/accessibility/",
       "result": {
         "totals": {
-          "triggers": 88,
+          "triggers": 90,
           "headTriggers": 20,
-          "tailTriggers": 68,
+          "tailTriggers": 70,
           "impactTriggers": 0,
           "additions": 0,
           "removals": 0,
@@ -1715,12 +1720,37 @@
               {
                 "tagName": "LI",
                 "id": "",
-                "text": "Systemstatus"
+                "text": "Legal"
               },
               {
                 "tagName": "A",
                 "id": "",
-                "text": "Legal"
+                "text": "Contact"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "GuidesandFAQs"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "PrivacyPolicy"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Openpositions"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "<divclass=\"w100\"><imgsrc=\"/globalassets/media/shar"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "Aboutus"
               },
               {
                 "tagName": "BUTTON",
@@ -1728,17 +1758,27 @@
                 "text": "Automatedaccessibilitychecks"
               },
               {
+                "tagName": "LI",
+                "id": "",
+                "text": "Press&news"
+              },
+              {
                 "tagName": "A",
                 "id": "",
-                "text": "Community"
+                "text": "Getintouch"
               },
               {
-                "tagName": "BUTTON",
-                "id": "a-6414",
-                "text": "Potentialissues"
+                "tagName": "LI",
+                "id": "",
+                "text": "CSR"
               },
               {
                 "tagName": "A",
+                "id": "",
+                "text": "Platform"
+              },
+              {
+                "tagName": "LI",
                 "id": "",
                 "text": "Privacy"
               },
@@ -1748,44 +1788,9 @@
                 "text": "LinkedIn"
               },
               {
-                "tagName": "A",
-                "id": "",
-                "text": "Locations"
-              },
-              {
                 "tagName": "LI",
                 "id": "",
-                "text": "Aboutus"
-              },
-              {
-                "tagName": "A",
-                "id": "",
-                "text": "Teams"
-              },
-              {
-                "tagName": "A",
-                "id": "",
                 "text": "Leadership"
-              },
-              {
-                "tagName": "A",
-                "id": "",
-                "text": "Facebook"
-              },
-              {
-                "tagName": "A",
-                "id": "",
-                "text": "Aboutus"
-              },
-              {
-                "tagName": "A",
-                "id": "",
-                "text": "TheMust-HaveDigitalAccessibilityHandbookWebAccessi"
-              },
-              {
-                "tagName": "BUTTON",
-                "id": "a-6412",
-                "text": "Accessibilityissuecategorization"
               }
             ]
           }
@@ -2307,12 +2312,19 @@
       "result": {
         "roleElements": 52,
         "badRoleElements": 15,
+        "redundantRoleElements": 0,
         "tagNames": {
           "SECTION": {
-            "navigation": 5
+            "navigation": {
+              "bad": 5,
+              "redundant": 0
+            }
           },
           "P": {
-            "heading": 10
+            "heading": {
+              "bad": 10,
+              "redundant": 0
+            }
           }
         }
       }

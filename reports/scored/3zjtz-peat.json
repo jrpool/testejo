@@ -303,15 +303,15 @@
           "total": 60,
           "types": {
             "indicatorMissing": {
-              "total": 0,
-              "tagNames": {}
-            },
-            "nonOutlinePresent": {
               "total": 10,
               "tagNames": {
                 "INPUT": 6,
                 "A": 4
               }
+            },
+            "nonOutlinePresent": {
+              "total": 0,
+              "tagNames": {}
             },
             "outlinePresent": {
               "total": 50,
@@ -323,8 +323,7 @@
           }
         },
         "items": {
-          "indicatorMissing": [],
-          "nonOutlinePresent": [
+          "indicatorMissing": [
             {
               "tagName": "INPUT",
               "text": ""
@@ -366,6 +365,7 @@
               "text": ""
             }
           ],
+          "nonOutlinePresent": [],
           "outlinePresent": [
             {
               "tagName": "A",
@@ -414,7 +414,7 @@
             },
             {
               "tagName": "A",
-              "text": "Collaboration & Action",
+              "text": "Resources for Your Job",
               "delay": 0
             },
             {
@@ -1909,10 +1909,10 @@
           "headTriggers": 20,
           "tailTriggers": 52,
           "impactTriggers": 13,
-          "additions": 0,
+          "additions": 146,
           "removals": 0,
-          "opacityChanges": 13,
-          "opacityImpact": 143,
+          "opacityChanges": 5,
+          "opacityImpact": 11,
           "unhoverables": 1
         },
         "items": {
@@ -1937,66 +1937,66 @@
               {
                 "tagName": "LI",
                 "text": "AboutPEATWhatWeDoPEATThinkTankPEATNewsletterBlog",
-                "additions": 0,
+                "additions": 13,
                 "removals": 0,
-                "opacityChanges": 1,
-                "opacityImpact": 12
+                "opacityChanges": 0,
+                "opacityImpact": 0
               },
               {
                 "tagName": "A",
                 "text": "AboutPEAT",
-                "additions": 0,
+                "additions": 13,
                 "removals": 0,
-                "opacityChanges": 1,
-                "opacityImpact": 12
+                "opacityChanges": 0,
+                "opacityImpact": 0
               },
               {
                 "tagName": "LI",
                 "text": "TheFutureofWorkArtificialIntelligence(AI)Autonomou",
-                "additions": 0,
+                "additions": 22,
                 "removals": 0,
-                "opacityChanges": 1,
-                "opacityImpact": 21
+                "opacityChanges": 0,
+                "opacityImpact": 0
               },
               {
                 "tagName": "A",
                 "text": "TheFutureofWork",
-                "additions": 0,
+                "additions": 22,
                 "removals": 0,
-                "opacityChanges": 1,
-                "opacityImpact": 21
+                "opacityChanges": 0,
+                "opacityImpact": 0
               },
               {
                 "tagName": "LI",
-                "text": "EmployerToolkitsInclusiveXR&HybridWorkToolkitAI&Di",
-                "additions": 0,
+                "text": "EmployerToolkitsTheAccessibilityPlaybookforEmergin",
+                "additions": 28,
                 "removals": 0,
-                "opacityChanges": 1,
-                "opacityImpact": 24
+                "opacityChanges": 0,
+                "opacityImpact": 0
               },
               {
                 "tagName": "A",
                 "text": "EmployerToolkits",
-                "additions": 0,
+                "additions": 28,
                 "removals": 0,
-                "opacityChanges": 1,
-                "opacityImpact": 24
+                "opacityChanges": 0,
+                "opacityImpact": 0
               },
               {
                 "tagName": "LI",
-                "text": "Collaboration&ActionTeachAccess:ACaseStudyInclusiv",
-                "additions": 0,
+                "text": "ResourcesforYourJobHR,HiringManagers&RecruitersOrg",
+                "additions": 10,
                 "removals": 0,
-                "opacityChanges": 1,
-                "opacityImpact": 9
+                "opacityChanges": 0,
+                "opacityImpact": 0
               },
               {
                 "tagName": "A",
-                "text": "Collaboration&Action",
-                "additions": 0,
+                "text": "ResourcesforYourJob",
+                "additions": 10,
                 "removals": 0,
-                "opacityChanges": 1,
-                "opacityImpact": 9
+                "opacityChanges": 0,
+                "opacityImpact": 0
               }
             ],
             "unhoverables": [
@@ -2011,7 +2011,7 @@
             "impactTriggers": [
               {
                 "tagName": "A",
-                "text": "linkedin",
+                "text": "twitter",
                 "additions": 0,
                 "removals": 0,
                 "opacityChanges": 1,
@@ -2386,10 +2386,14 @@
       "url": "https://www.peatworks.org/",
       "result": {
         "roleElements": 4,
-        "badRoleElements": 1,
+        "badRoleElements": 0,
+        "redundantRoleElements": 1,
         "tagNames": {
           "NAV": {
-            "navigation": 1
+            "navigation": {
+              "bad": 0,
+              "redundant": 1
+            }
           }
         }
       }
@@ -8764,7 +8768,7 @@
   "endTime": "2022-07-06T01:55:12",
   "elapsedSeconds": 134,
   "score": {
-    "scoreProcID": "sp12a",
+    "scoreProcID": "sp12b",
     "logWeights": {
       "logCount": 0.5,
       "logSize": 0.01,
@@ -8788,9 +8792,9 @@
       "testaro": {
         "bulk": 0,
         "focAll": 46,
-        "focInd": 10,
+        "focInd": 30,
         "focOp": 48,
-        "hover": 44,
+        "hover": 73,
         "linkUl": 76,
         "role": 1,
         "styleDiff": 33,
@@ -8869,7 +8873,7 @@
         "focusIndication": {
           "testaro": {
             "focInd": {
-              "score": 10,
+              "score": 30,
               "what": "Focused element displaying no or nostandard focus indicator"
             }
           },
@@ -8891,7 +8895,7 @@
         "hoverSurprise": {
           "testaro": {
             "hover": {
-              "score": 11,
+              "score": 18,
               "what": "Content changes caused by hovering"
             }
           }
@@ -9217,7 +9221,7 @@
     },
     "preventionScores": {},
     "summary": {
-      "total": 669,
+      "total": 696,
       "log": 297,
       "preventions": 0,
       "solos": 0,
@@ -9235,12 +9239,20 @@
           "score": 37
         },
         {
+          "groupName": "focusIndication",
+          "score": 33
+        },
+        {
           "groupName": "contrastAA",
           "score": 28
         },
         {
           "groupName": "contrastAAA",
           "score": 23
+        },
+        {
+          "groupName": "hoverSurprise",
+          "score": 20
         },
         {
           "groupName": "zIndexNotZero",
@@ -9253,14 +9265,6 @@
         {
           "groupName": "linkForcesNewWindow",
           "score": 14
-        },
-        {
-          "groupName": "focusIndication",
-          "score": 13
-        },
-        {
-          "groupName": "hoverSurprise",
-          "score": 13
         },
         {
           "groupName": "inconsistentStyles",

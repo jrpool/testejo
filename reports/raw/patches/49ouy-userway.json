@@ -1,0 +1,1036 @@
+{
+  "id": "49ouy-userway",
+  "host": {
+    "id": "userway",
+    "which": "https://userway.org/",
+    "what": "UserWay"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-16T23:42:27"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-16T23:44:19"
+    }
+  ],
+  "script": {
+    "id": "tp12",
+    "what": "Alfa, Axe, HTML CodeSniffer, IBM, Tenon, WAVE, and 16 custom tests",
+    "strict": true,
+    "timeLimit": 150,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://userway.org/",
+        "what": "UserWay"
+      },
+      {
+        "type": "test",
+        "which": "focInd",
+        "revealAll": false,
+        "allowedDelay": 250,
+        "withItems": true,
+        "what": "focus indicators"
+      },
+      {
+        "type": "test",
+        "which": "hover",
+        "headSize": 20,
+        "headSampleSize": 20,
+        "tailSampleSize": 15,
+        "withItems": true,
+        "what": "hover impacts"
+      },
+      {
+        "type": "test",
+        "which": "role",
+        "what": "validity and necessity of role assignments"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://userway.org/",
+      "what": "UserWay",
+      "result": "https://userway.org/"
+    },
+    {
+      "type": "test",
+      "which": "focInd",
+      "revealAll": false,
+      "allowedDelay": 250,
+      "withItems": true,
+      "what": "focus indicators",
+      "url": "https://userway.org/",
+      "result": {
+        "totals": {
+          "total": 152,
+          "types": {
+            "indicatorMissing": {
+              "total": 2,
+              "tagNames": {
+                "BUTTON": 1,
+                "DIV": 1
+              }
+            },
+            "nonOutlinePresent": {
+              "total": 0,
+              "tagNames": {}
+            },
+            "outlinePresent": {
+              "total": 150,
+              "meanDelay": 0,
+              "tagNames": {
+                "DIV": 5,
+                "A": 129,
+                "BUTTON": 9,
+                "SPAN": 5,
+                "INPUT": 2
+              }
+            }
+          }
+        },
+        "items": {
+          "indicatorMissing": [
+            {
+              "tagName": "BUTTON",
+              "text": ""
+            },
+            {
+              "tagName": "DIV",
+              "text": ""
+            }
+          ],
+          "nonOutlinePresent": [],
+          "outlinePresent": [
+            {
+              "tagName": "DIV",
+              "text": "Skip to main content",
+              "delay": 0
+            },
+            {
+              "tagName": "DIV",
+              "text": "Enable accessibility forvisually impaired",
+              "delay": 0
+            },
+            {
+              "tagName": "DIV",
+              "text": "Open the accessibilitymenu",
+              "delay": 0
+            },
+            {
+              "tagName": "DIV",
+              "text": "Open the AccessibleNavigation Menu",
+              "delay": 0
+            },
+            {
+              "tagName": "DIV",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "LIVE WEBINAR 🎥July 26 @2pm EST, Rethinking Web Accessibility: Achieving Enterprise Compliance - fea",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Solutions",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Pricing",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Resources",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Partners",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Industries",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "About",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Sign in",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Request a DemoRequest a DemoDemo",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Start Free Trial",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Start Free Trial",
+              "delay": 0
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Watch the Video",
+              "delay": 0
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "SPAN",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "SPAN",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "SPAN",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "SPAN",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "SPAN",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Start Free Trial",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Start Free Trial",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Live Webinar",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "07/26/2022, 2PM EST",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Download Case Study",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Download Case Study",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Download Case Study",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Start Free Trial",
+              "delay": 0
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Watch the Campaign",
+              "delay": 0
+            },
+            {
+              "tagName": "INPUT",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Scan",
+              "delay": 0
+            },
+            {
+              "tagName": "INPUT",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Scan Now",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility Widget",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility Scanner",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility Inspector",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility Audit",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Content Moderator",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Contrast Checker",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility Statement Generator",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "PDF Remediation",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Video Remediation",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Recover Your Embed Code",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "VPAT - Voluntary Disclosure",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Dyslexia Font (UDF)",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Compare",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Widget Add-ons",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "API Access",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "FAQ",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Testimonials",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Languages",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Tutorials",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Blog",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Regulatory Compliance",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Platforms",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "API Documentation",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "The Basics of Web Accessibility",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Featured Content",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Tax Benefits",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Handling Legal Complaints",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Immediate Mitigation Actions",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "UserWay University",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Investor Relations",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "ADA",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "WCAG",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Section 5O8",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "EN 301-549",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "AODA",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "HIPAA",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "GDPR",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "COPPA",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "FERPA",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "ATAG",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "CVAA",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Powering Accessibility for All Industries",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Government & Public Sector",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Banking, Financial, Insurance",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Academia & Education",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Consumer & Retail",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "IT & Security",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Healthcare & Medical",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Automotive & Transportation",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Hospitality + F&B",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "NGO & NPO",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Media & Entertainment",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Law Enforcement",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Who We Are",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Team",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Brand",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Press",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Customer Stories",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Contact Us",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Careers",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Support",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "WordPress Accessibility",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Elementor Accessibility",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Shopify Accessibility",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Wix Accessibility",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "SquareSpace Accessibility",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Weebly Accessibility",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Joomla Accessibility",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Adobe Muse Accessibility",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "PrestaShop Accessibility",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Magento Accessibility",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Umbraco Accessibility",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Drupal Accessibility",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "SpaceCraft Accessibility",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Webflow Accessibility",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "BigCommerce Accessibility",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Duda Accessibility",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "HubSpot Accessibility",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "HTML/CSS Accessibility",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Tilda Accessibility",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Dreamweaver Accessibility",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Google Tag Manager Accessibility",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Moodle Accessibility",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "CMS Max Accessibility",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Strikingly Accessibility",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Terms of Use",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Privacy Policy",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Cookie Policy",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Font License",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility Statement",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Statement of Compliance",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Cookie Policy",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Privacy Policy",
+              "delay": 0
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "I agree",
+              "delay": 0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://userway.org/",
+      "what": "URL",
+      "result": "https://userway.org/"
+    },
+    {
+      "type": "test",
+      "which": "hover",
+      "headSize": 20,
+      "headSampleSize": 20,
+      "tailSampleSize": 15,
+      "withItems": true,
+      "what": "hover-caused content changes",
+      "url": "https://userway.org/",
+      "result": {
+        "totals": {
+          "triggers": 290,
+          "headTriggers": 20,
+          "tailTriggers": 270,
+          "impactTriggers": 1,
+          "additions": 0,
+          "removals": 0,
+          "opacityChanges": 48,
+          "opacityImpact": 0,
+          "unhoverables": 4
+        },
+        "items": {
+          "head": {
+            "impactTriggers": [
+              {
+                "tagName": "A",
+                "text": "LIVEWEBINAR🎥July26@2pmEST,RethinkingWebAccessibil",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 48,
+                "opacityImpact": 0
+              }
+            ],
+            "unhoverables": [
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "___"
+              }
+            ]
+          },
+          "tail": {
+            "impactTriggers": [],
+            "unhoverables": [
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Brand"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "<imgalt=\"ToyotaDirectwebsite\"src=\"/content-img/wid"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "<imgalt=\"USSailingwebsite\"src=\"/content-img/widget"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://userway.org/",
+      "what": "URL",
+      "result": "https://userway.org/"
+    },
+    {
+      "type": "test",
+      "which": "role",
+      "what": "roles",
+      "url": "https://userway.org/",
+      "result": {
+        "roleElements": 105,
+        "badRoleElements": 61,
+        "redundantRoleElements": 0,
+        "tagNames": {
+          "DIV": {
+            "button": {
+              "bad": 6,
+              "redundant": 0
+            },
+            "main": {
+              "bad": 1,
+              "redundant": 0
+            },
+            "group": {
+              "bad": 33,
+              "redundant": 0
+            },
+            "heading": {
+              "bad": 11,
+              "redundant": 0
+            }
+          },
+          "HEADER": {
+            "banner": {
+              "bad": 1,
+              "redundant": 0
+            }
+          },
+          "A": {
+            "button": {
+              "bad": 4,
+              "redundant": 0
+            }
+          },
+          "SPAN": {
+            "button": {
+              "bad": 5,
+              "redundant": 0
+            }
+          }
+        }
+      }
+    }
+  ],
+  "timeStamp": "49ouy",
+  "startTime": "2022-07-16T23:42:27",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "hover",
+      90
+    ],
+    [
+      "focInd",
+      1
+    ],
+    [
+      "role",
+      0
+    ]
+  ],
+  "logCount": 82,
+  "logSize": 7629,
+  "errorLogCount": 26,
+  "errorLogSize": 5499,
+  "prohibitedCount": 3,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-16T23:44:19",
+  "elapsedSeconds": 111
+}

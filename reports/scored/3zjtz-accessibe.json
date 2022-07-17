@@ -300,18 +300,18 @@
       "url": "https://accessibe.com/",
       "result": {
         "totals": {
-          "total": 126,
+          "total": 125,
           "types": {
             "indicatorMissing": {
-              "total": 0,
-              "tagNames": {}
+              "total": 3,
+              "tagNames": {
+                "A": 3
+              }
             },
             "nonOutlinePresent": {
-              "total": 5,
+              "total": 1,
               "tagNames": {
-                "A": 3,
-                "INPUT": 1,
-                "IFRAME": 1
+                "INPUT": 1
               }
             },
             "outlinePresent": {
@@ -326,8 +326,7 @@
           }
         },
         "items": {
-          "indicatorMissing": [],
-          "nonOutlinePresent": [
+          "indicatorMissing": [
             {
               "tagName": "A",
               "text": "Skip to content"
@@ -339,13 +338,11 @@
             {
               "tagName": "A",
               "text": "Skip to footer"
-            },
+            }
+          ],
+          "nonOutlinePresent": [
             {
               "tagName": "INPUT",
-              "text": ""
-            },
-            {
-              "tagName": "IFRAME",
               "text": ""
             }
           ],
@@ -4587,11 +4584,11 @@
           "triggers": 295,
           "headTriggers": 20,
           "tailTriggers": 275,
-          "impactTriggers": 7,
-          "additions": 0,
-          "removals": 0,
-          "opacityChanges": 7,
-          "opacityImpact": 416,
+          "impactTriggers": 62,
+          "additions": 1070,
+          "removals": 96,
+          "opacityChanges": 55,
+          "opacityImpact": 422,
           "unhoverables": 4
         },
         "items": {
@@ -4600,58 +4597,58 @@
               {
                 "tagName": "LI",
                 "text": "ProductsWebAccessibilityforDevelopersaccessFlowOve",
-                "additions": 0,
+                "additions": 84,
                 "removals": 0,
-                "opacityChanges": 1,
-                "opacityImpact": 83
+                "opacityChanges": 0,
+                "opacityImpact": 0
               },
               {
                 "tagName": "A",
                 "text": "Products",
                 "additions": 0,
-                "removals": 0,
-                "opacityChanges": 1,
-                "opacityImpact": 83
+                "removals": 18,
+                "opacityChanges": 0,
+                "opacityImpact": 0
               },
               {
                 "tagName": "LI",
                 "text": "ServicesServicesOverviewFileAccessibilityMediaAcce",
                 "additions": 0,
-                "removals": 0,
-                "opacityChanges": 1,
-                "opacityImpact": 50
+                "removals": 18,
+                "opacityChanges": 0,
+                "opacityImpact": 0
               },
               {
                 "tagName": "A",
                 "text": "Services",
                 "additions": 0,
-                "removals": 0,
-                "opacityChanges": 1,
-                "opacityImpact": 50
+                "removals": 11,
+                "opacityChanges": 0,
+                "opacityImpact": 0
               },
               {
                 "tagName": "LI",
                 "text": "CompanyAboutaccessiBeOurImpactCareersOurVisionacce",
                 "additions": 0,
-                "removals": 0,
-                "opacityChanges": 1,
-                "opacityImpact": 50
+                "removals": 11,
+                "opacityChanges": 0,
+                "opacityImpact": 0
               },
               {
                 "tagName": "A",
                 "text": "Company",
                 "additions": 0,
-                "removals": 0,
-                "opacityChanges": 1,
-                "opacityImpact": 50
+                "removals": 11,
+                "opacityChanges": 0,
+                "opacityImpact": 0
               },
               {
                 "tagName": "LI",
                 "text": "PartnersAgencyPartnerProgramStrategicPartnershipsA",
-                "additions": 0,
-                "removals": 0,
-                "opacityChanges": 1,
-                "opacityImpact": 50
+                "additions": 51,
+                "removals": 27,
+                "opacityChanges": 0,
+                "opacityImpact": 0
               }
             ],
             "unhoverables": [
@@ -4673,12 +4670,37 @@
             ]
           },
           "tail": {
-            "impactTriggers": [],
-            "unhoverables": [
+            "impactTriggers": [
+              {
+                "tagName": "A",
+                "text": "SeeOver100accessiBeWebsites",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 3
+              },
+              {
+                "tagName": "A",
+                "text": "Partners",
+                "additions": 51,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
               {
                 "tagName": "BUTTON",
+                "text": "<svgfocusable=\"false\"aria-hidden=\"true\"viewBox=\"00",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 2,
+                "opacityImpact": 20
+              }
+            ],
+            "unhoverables": [
+              {
+                "tagName": "A",
                 "id": "",
-                "text": "WatchVideo"
+                "text": "NewWindow"
               }
             ]
           }
@@ -5297,23 +5319,45 @@
       "what": "roles",
       "url": "https://accessibe.com/",
       "result": {
-        "roleElements": 389,
-        "badRoleElements": 37,
+        "roleElements": 581,
+        "badRoleElements": 214,
+        "redundantRoleElements": 0,
         "tagNames": {
           "DIV": {
-            "button": 31
+            "button": {
+              "bad": 166,
+              "redundant": 0
+            }
           },
-          "SECTION": {
-            "main": 1
-          },
-          "P": {
-            "heading": 1
+          "A": {
+            "button": {
+              "bad": 9,
+              "redundant": 0
+            }
           },
           "SPAN": {
-            "button": 3
+            "button": {
+              "bad": 36,
+              "redundant": 0
+            }
+          },
+          "SECTION": {
+            "main": {
+              "bad": 1,
+              "redundant": 0
+            }
+          },
+          "P": {
+            "heading": {
+              "bad": 1,
+              "redundant": 0
+            }
           },
           "FOOTER": {
-            "contentinfo": 1
+            "contentinfo": {
+              "bad": 1,
+              "redundant": 0
+            }
           }
         }
       }
@@ -53787,7 +53831,7 @@
   "endTime": "2022-07-06T01:15:49",
   "elapsedSeconds": 222,
   "score": {
-    "scoreProcID": "sp12a",
+    "scoreProcID": "sp12b",
     "logWeights": {
       "logCount": 0.5,
       "logSize": 0.01,
@@ -53812,11 +53856,11 @@
         "motion": 4,
         "bulk": 6,
         "focAll": 16,
-        "focInd": 5,
+        "focInd": 10,
         "focOp": 523,
-        "hover": 61,
+        "hover": 598,
         "linkUl": 212,
-        "role": 37,
+        "role": 428,
         "styleDiff": 47,
         "zIndex": 219
       },
@@ -53910,7 +53954,7 @@
         "focusIndication": {
           "testaro": {
             "focInd": {
-              "score": 5,
+              "score": 10,
               "what": "Focused element displaying no or nostandard focus indicator"
             }
           },
@@ -53932,7 +53976,7 @@
         "hoverSurprise": {
           "testaro": {
             "hover": {
-              "score": 15,
+              "score": 150,
               "what": "Content changes caused by hovering"
             }
           }
@@ -53948,7 +53992,7 @@
         "roleBad": {
           "testaro": {
             "role": {
-              "score": 28,
+              "score": 321,
               "what": "Nonexistent or implicit-overriding role"
             }
           },
@@ -54067,7 +54111,7 @@
           "alfa": {
             "r74": {
               "score": 12,
-              "what": "Paragraph text has absolute font size"
+              "what": "Paragraph text has an absolute font size"
             }
           }
         },
@@ -54328,7 +54372,7 @@
     },
     "preventionScores": {},
     "summary": {
-      "total": 2429,
+      "total": 2859,
       "log": 31,
       "preventions": 0,
       "solos": 0,
@@ -54342,6 +54386,10 @@
           "score": 394
         },
         {
+          "groupName": "roleBad",
+          "score": 324
+        },
+        {
           "groupName": "linkForcesNewWindow",
           "score": 311
         },
@@ -54352,6 +54400,10 @@
         {
           "groupName": "duplicateID",
           "score": 248
+        },
+        {
+          "groupName": "hoverSurprise",
+          "score": 152
         },
         {
           "groupName": "linkIndication",
@@ -54382,10 +54434,6 @@
           "score": 32
         },
         {
-          "groupName": "roleBad",
-          "score": 31
-        },
-        {
           "groupName": "overflowHidden",
           "score": 22
         },
@@ -54395,11 +54443,7 @@
         },
         {
           "groupName": "focusIndication",
-          "score": 17
-        },
-        {
-          "groupName": "hoverSurprise",
-          "score": 17
+          "score": 19
         },
         {
           "groupName": "internalLinkBroken",

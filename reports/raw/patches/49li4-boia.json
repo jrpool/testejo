@@ -1,0 +1,605 @@
+{
+  "id": "49li4-boia",
+  "host": {
+    "id": "boia",
+    "which": "https://www.boia.org/",
+    "what": "Bureau of Internet Accessibility"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-16T21:41:44"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-16T21:42:36"
+    }
+  ],
+  "script": {
+    "id": "tp12",
+    "what": "Alfa, Axe, HTML CodeSniffer, IBM, Tenon, WAVE, and 16 custom tests",
+    "strict": true,
+    "timeLimit": 150,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.boia.org/",
+        "what": "Bureau of Internet Accessibility"
+      },
+      {
+        "type": "test",
+        "which": "focInd",
+        "revealAll": false,
+        "allowedDelay": 250,
+        "withItems": true,
+        "what": "focus indicators"
+      },
+      {
+        "type": "test",
+        "which": "hover",
+        "headSize": 20,
+        "headSampleSize": 20,
+        "tailSampleSize": 15,
+        "withItems": true,
+        "what": "hover impacts"
+      },
+      {
+        "type": "test",
+        "which": "role",
+        "what": "validity and necessity of role assignments"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.boia.org/",
+      "what": "Bureau of Internet Accessibility",
+      "result": "https://www.boia.org/"
+    },
+    {
+      "type": "test",
+      "which": "focInd",
+      "revealAll": false,
+      "allowedDelay": 250,
+      "withItems": true,
+      "what": "focus indicators",
+      "url": "https://www.boia.org/",
+      "result": {
+        "totals": {
+          "total": 58,
+          "types": {
+            "indicatorMissing": {
+              "total": 0,
+              "tagNames": {}
+            },
+            "nonOutlinePresent": {
+              "total": 6,
+              "tagNames": {
+                "INPUT": 1,
+                "BUTTON": 1,
+                "A": 4
+              }
+            },
+            "outlinePresent": {
+              "total": 52,
+              "meanDelay": 0,
+              "tagNames": {
+                "A": 38,
+                "INPUT": 13,
+                "TEXTAREA": 1
+              }
+            }
+          }
+        },
+        "items": {
+          "indicatorMissing": [],
+          "nonOutlinePresent": [
+            {
+              "tagName": "INPUT",
+              "text": ""
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "SUBMIT"
+            },
+            {
+              "tagName": "A",
+              "text": "VIEW ALL SERVICES"
+            },
+            {
+              "tagName": "A",
+              "text": "LEARN MORE"
+            },
+            {
+              "tagName": "A",
+              "text": "TOOL DETAILS"
+            },
+            {
+              "tagName": "A",
+              "text": "GET STARTED"
+            }
+          ],
+          "outlinePresent": [
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility Audits",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Compliance Roadmap",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Services & Tools",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Industries",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Blog",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "About",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "WCAG 2.1 A/AA AUDITS Complete audits using both human and artificial intelligence to give you an acc",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "TRAINING Self-paced and live training for your entire team or a single individual",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "SUPPORT & REMEDIATION We support your team at every step throughout the audit process and then for t",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "WEB, MOBILE, PDF, APPLICATION & KIOSK TESTING Testing expertise for everything digital from webpages",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "AUTOMATED TESTING PLATFORM Scan a page, section or your complete site on-demand and see real-time is",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "LEGAL AND COMPLIANCE ASSISTANCE We provide you with proof of compliance to prevent lawsuits.",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Education BoIA helps school districts, public and private K-12, college, university and other educat",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Finance & Insurance Consumers expect that online banking, interactive stock trading and processing o",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Healthcare Navigating the complexities of Section 1557 and WCAG 2.0 A/AA to ensure all patients and",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Retail Online shopping is more than just a convenience. For many, it may be one of the only fully in",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Hospitality & Travel Convenience your business and pleasure travelers with an experience that is ful",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Software & SaaS Application testing requires a unique process with security protocols and custom use",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Federal Government Federal agencies are required to provide websites, mobile applications and kiosks",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "State & Local Government All citizens have the right to interact with their state and local governme",
+              "delay": 0
+            },
+            {
+              "tagName": "INPUT",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "INPUT",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "INPUT",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "INPUT",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "INPUT",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "INPUT",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Read More",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Read More",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Read More",
+              "delay": 0
+            },
+            {
+              "tagName": "INPUT",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "INPUT",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Bureau of Internet Accessibility5600 Post Road #114-274East Greenwich, RI 02818",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "401-830-0075",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "contact@boia.org",
+              "delay": 0
+            },
+            {
+              "tagName": "INPUT",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "INPUT",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "INPUT",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "INPUT",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "TEXTAREA",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "INPUT",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility Statement",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Privacy Policy",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Terms of Services",
+              "delay": 0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.boia.org/",
+      "what": "URL",
+      "result": "https://www.boia.org/"
+    },
+    {
+      "type": "test",
+      "which": "hover",
+      "headSize": 20,
+      "headSampleSize": 20,
+      "tailSampleSize": 15,
+      "withItems": true,
+      "what": "hover-caused content changes",
+      "url": "https://www.boia.org/",
+      "result": {
+        "totals": {
+          "triggers": 59,
+          "headTriggers": 20,
+          "tailTriggers": 39,
+          "impactTriggers": 13,
+          "additions": 199,
+          "removals": 0,
+          "opacityChanges": 0,
+          "opacityImpact": 0,
+          "unhoverables": 0
+        },
+        "items": {
+          "head": {
+            "impactTriggers": [
+              {
+                "tagName": "LI",
+                "text": "AccessibilityAuditsOverviewWebsiteAccessibilityAud",
+                "additions": 15,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "A",
+                "text": "AccessibilityAudits",
+                "additions": 15,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "LI",
+                "text": "ComplianceRoadmapOverviewFreeResourcesWCAG2.1Princ",
+                "additions": 17,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "A",
+                "text": "ComplianceRoadmap",
+                "additions": 17,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "LI",
+                "text": "Services&ToolsOverviewWCAG2.1A/AAAuditsErrorCast™A",
+                "additions": 23,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "A",
+                "text": "Services&Tools",
+                "additions": 23,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "LI",
+                "text": "IndustriesOverviewEducationFinancial&InsuranceHeal",
+                "additions": 19,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "A",
+                "text": "Industries",
+                "additions": 19,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "LI",
+                "text": "BlogBlog-DigitalAccessibilityWebinarsMonthlyNewsle",
+                "additions": 7,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "A",
+                "text": "Blog",
+                "additions": 7,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "LI",
+                "text": "AboutOverviewWhyBOIA?CompatibilityTestingTeamWhatW",
+                "additions": 17,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "A",
+                "text": "About",
+                "additions": 17,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "A",
+                "text": "WCAG2.1A/AAAUDITSCompleteauditsusingbothhumanandar",
+                "additions": 3,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              }
+            ],
+            "unhoverables": []
+          },
+          "tail": {
+            "impactTriggers": [],
+            "unhoverables": []
+          }
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.boia.org/",
+      "what": "URL",
+      "result": "https://www.boia.org/"
+    },
+    {
+      "type": "test",
+      "which": "role",
+      "what": "roles",
+      "url": "https://www.boia.org/",
+      "result": {
+        "roleElements": 138,
+        "badRoleElements": 2,
+        "redundantRoleElements": 0,
+        "tagNames": {
+          "DIV": {
+            "navigation": {
+              "bad": 2,
+              "redundant": 0
+            }
+          }
+        }
+      }
+    }
+  ],
+  "timeStamp": "49li4",
+  "startTime": "2022-07-16T21:41:44",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "hover",
+      37
+    ],
+    [
+      "focInd",
+      2
+    ],
+    [
+      "role",
+      0
+    ]
+  ],
+  "logCount": 15,
+  "logSize": 876,
+  "errorLogCount": 0,
+  "errorLogSize": 0,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-16T21:42:36",
+  "elapsedSeconds": 51
+}

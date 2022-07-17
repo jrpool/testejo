@@ -303,15 +303,18 @@
           "total": 43,
           "types": {
             "indicatorMissing": {
-              "total": 0,
-              "tagNames": {}
+              "total": 37,
+              "tagNames": {
+                "A": 35,
+                "BUTTON": 2
+              }
             },
             "nonOutlinePresent": {
-              "total": 43,
+              "total": 6,
               "tagNames": {
-                "A": 38,
-                "BUTTON": 4,
-                "INPUT": 1
+                "A": 3,
+                "INPUT": 1,
+                "BUTTON": 2
               }
             },
             "outlinePresent": {
@@ -322,12 +325,7 @@
           }
         },
         "items": {
-          "indicatorMissing": [],
-          "nonOutlinePresent": [
-            {
-              "tagName": "A",
-              "text": "Skip to content"
-            },
+          "indicatorMissing": [
             {
               "tagName": "A",
               "text": "DigitalA11YYour Accessibility Partner"
@@ -359,14 +357,6 @@
             {
               "tagName": "BUTTON",
               "text": "Search DigitalA11Y Search"
-            },
-            {
-              "tagName": "A",
-              "text": "Ask a Question"
-            },
-            {
-              "tagName": "A",
-              "text": "Explore the Blog"
             },
             {
               "tagName": "A",
@@ -457,14 +447,6 @@
               "text": "Read More WCAG 2.2: What we know till nowContinue"
             },
             {
-              "tagName": "INPUT",
-              "text": ""
-            },
-            {
-              "tagName": "BUTTON",
-              "text": "Sign-Up"
-            },
-            {
               "tagName": "A",
               "text": "Terms & Conditions"
             },
@@ -491,6 +473,28 @@
             {
               "tagName": "A",
               "text": "Linkedin"
+            }
+          ],
+          "nonOutlinePresent": [
+            {
+              "tagName": "A",
+              "text": "Skip to content"
+            },
+            {
+              "tagName": "A",
+              "text": "Ask a Question"
+            },
+            {
+              "tagName": "A",
+              "text": "Explore the Blog"
+            },
+            {
+              "tagName": "INPUT",
+              "text": ""
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Sign-Up"
             },
             {
               "tagName": "BUTTON",
@@ -1137,16 +1141,41 @@
           "triggers": 48,
           "headTriggers": 20,
           "tailTriggers": 28,
-          "impactTriggers": 0,
-          "additions": 0,
-          "removals": 0,
+          "impactTriggers": 3,
+          "additions": 18,
+          "removals": 9,
           "opacityChanges": 0,
           "opacityImpact": 0,
           "unhoverables": 3
         },
         "items": {
           "head": {
-            "impactTriggers": [],
+            "impactTriggers": [
+              {
+                "tagName": "LI",
+                "text": "ResourcesExpandWAI-ARIAWCAGCheatSheetsA11YBlogs",
+                "additions": 9,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "A",
+                "text": "ResourcesExpand",
+                "additions": 9,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "LI",
+                "text": "Contact",
+                "additions": 0,
+                "removals": 9,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              }
+            ],
             "unhoverables": [
               {
                 "tagName": "A",
@@ -1491,19 +1520,32 @@
       "url": "https://www.digitala11y.com/",
       "result": {
         "roleElements": 14,
-        "badRoleElements": 5,
+        "badRoleElements": 2,
+        "redundantRoleElements": 3,
         "tagNames": {
           "HEADER": {
-            "banner": 1
+            "banner": {
+              "bad": 1,
+              "redundant": 0
+            }
           },
           "NAV": {
-            "navigation": 2
+            "navigation": {
+              "bad": 0,
+              "redundant": 2
+            }
           },
           "MAIN": {
-            "main": 1
+            "main": {
+              "bad": 0,
+              "redundant": 1
+            }
           },
           "FOOTER": {
-            "contentinfo": 1
+            "contentinfo": {
+              "bad": 1,
+              "redundant": 0
+            }
           }
         }
       }

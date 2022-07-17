@@ -1,0 +1,536 @@
+{
+  "id": "49li4-applause",
+  "host": {
+    "id": "applause",
+    "which": "https://www.applause.com/",
+    "what": "Applause"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-16T21:31:43"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-16T21:32:38"
+    }
+  ],
+  "script": {
+    "id": "tp12",
+    "what": "Alfa, Axe, HTML CodeSniffer, IBM, Tenon, WAVE, and 16 custom tests",
+    "strict": true,
+    "timeLimit": 150,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.applause.com/",
+        "what": "Applause"
+      },
+      {
+        "type": "test",
+        "which": "focInd",
+        "revealAll": false,
+        "allowedDelay": 250,
+        "withItems": true,
+        "what": "focus indicators"
+      },
+      {
+        "type": "test",
+        "which": "hover",
+        "headSize": 20,
+        "headSampleSize": 20,
+        "tailSampleSize": 15,
+        "withItems": true,
+        "what": "hover impacts"
+      },
+      {
+        "type": "test",
+        "which": "role",
+        "what": "validity and necessity of role assignments"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.applause.com/",
+      "what": "Applause",
+      "result": "https://www.applause.com/"
+    },
+    {
+      "type": "test",
+      "which": "focInd",
+      "revealAll": false,
+      "allowedDelay": 250,
+      "withItems": true,
+      "what": "focus indicators",
+      "url": "https://www.applause.com/",
+      "result": {
+        "totals": {
+          "total": 42,
+          "types": {
+            "indicatorMissing": {
+              "total": 2,
+              "tagNames": {
+                "A": 1,
+                "DIV": 1
+              }
+            },
+            "nonOutlinePresent": {
+              "total": 0,
+              "tagNames": {}
+            },
+            "outlinePresent": {
+              "total": 40,
+              "meanDelay": 19,
+              "tagNames": {
+                "A": 33,
+                "BUTTON": 7
+              }
+            }
+          }
+        },
+        "items": {
+          "indicatorMissing": [
+            {
+              "tagName": "A",
+              "text": ""
+            },
+            {
+              "tagName": "DIV",
+              "text": ""
+            }
+          ],
+          "nonOutlinePresent": [],
+          "outlinePresent": [
+            {
+              "tagName": "A",
+              "text": "Digital Quality Matters More Than Ever: Download the State of Digital Quality 2022 today to release ",
+              "delay": 0
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "",
+              "delay": 106
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Why Applause",
+              "delay": 0
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Our Solutions",
+              "delay": 0
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "About Us",
+              "delay": 0
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Resources",
+              "delay": 0
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Get Started",
+              "delay": 102
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Find Out How We Can Help",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Learn About Our Approach to Digital Quality",
+              "delay": 104
+            },
+            {
+              "tagName": "A",
+              "text": "See How We Help Your Industry",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Learn How We Help Brands Like Yours",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Register Now",
+              "delay": 104
+            },
+            {
+              "tagName": "A",
+              "text": "Learn More About Our Community",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "General",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Account Sign In",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Contact Us",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Pricing Inquiry",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Resources",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Blog",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Newsroom",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Resource Library",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Webinars",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "About Us",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Who We Are",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Where We Are",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Join Our Team",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Social",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Twitter",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Facebook",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Instagram",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "LinkedIn",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "WeChat",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "English",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Terms of Use",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Privacy Policy",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility Commitment",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Modern Slavery Act",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.applause.com/",
+      "what": "URL",
+      "result": "https://www.applause.com/"
+    },
+    {
+      "type": "test",
+      "which": "hover",
+      "headSize": 20,
+      "headSampleSize": 20,
+      "tailSampleSize": 15,
+      "withItems": true,
+      "what": "hover-caused content changes",
+      "url": "https://www.applause.com/",
+      "result": {
+        "totals": {
+          "triggers": 62,
+          "headTriggers": 20,
+          "tailTriggers": 42,
+          "impactTriggers": 9,
+          "additions": 510,
+          "removals": 0,
+          "opacityChanges": 1,
+          "opacityImpact": 0,
+          "unhoverables": 2
+        },
+        "items": {
+          "head": {
+            "impactTriggers": [
+              {
+                "tagName": "LI",
+                "text": "WhyApplauseTheApplausePlatformThecomprehensiveplat",
+                "additions": 34,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "BUTTON",
+                "text": "WhyApplause",
+                "additions": 40,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "LI",
+                "text": "OurSolutionsPlatformFeaturesApplauseCodelessAutoma",
+                "additions": 136,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "BUTTON",
+                "text": "OurSolutions",
+                "additions": 141,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "LI",
+                "text": "AboutUsWhoWeAreLearnmoreaboutApplause'shistory,our",
+                "additions": 34,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "BUTTON",
+                "text": "AboutUs",
+                "additions": 40,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "LI",
+                "text": "ResourcesBlogReadthelatestindustrynewsonremotetest",
+                "additions": 39,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "BUTTON",
+                "text": "Resources",
+                "additions": 46,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "A",
+                "text": "<svgversion=\"1.1\"xmlns=\"http://www.w3.org/2000/svg",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 0
+              }
+            ],
+            "unhoverables": []
+          },
+          "tail": {
+            "impactTriggers": [],
+            "unhoverables": [
+              {
+                "tagName": "BUTTON",
+                "id": "wistia-0sxiqh1891_popover_popover_close_button",
+                "text": "<imgalt=\"Clicktoclosevideo\"style=\"height:34px;widt"
+              },
+              {
+                "tagName": "A",
+                "id": "wistia_94",
+                "text": "<divid=\"wistia_112.thumbnail\"tabindex=\"-1\"style=\"c"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.applause.com/",
+      "what": "URL",
+      "result": "https://www.applause.com/"
+    },
+    {
+      "type": "test",
+      "which": "role",
+      "what": "roles",
+      "url": "https://www.applause.com/",
+      "result": {
+        "roleElements": 30,
+        "badRoleElements": 12,
+        "redundantRoleElements": 3,
+        "tagNames": {
+          "HEADER": {
+            "banner": {
+              "bad": 1,
+              "redundant": 0
+            }
+          },
+          "MAIN": {
+            "main": {
+              "bad": 0,
+              "redundant": 1
+            }
+          },
+          "A": {
+            "button": {
+              "bad": 10,
+              "redundant": 0
+            }
+          },
+          "NAV": {
+            "navigation": {
+              "bad": 0,
+              "redundant": 1
+            }
+          },
+          "DIV": {
+            "button": {
+              "bad": 1,
+              "redundant": 0
+            }
+          },
+          "BUTTON": {
+            "button": {
+              "bad": 0,
+              "redundant": 1
+            }
+          }
+        }
+      }
+    }
+  ],
+  "timeStamp": "49li4",
+  "startTime": "2022-07-16T21:31:43",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "hover",
+      42
+    ],
+    [
+      "focInd",
+      2
+    ],
+    [
+      "role",
+      0
+    ]
+  ],
+  "logCount": 15,
+  "logSize": 2217,
+  "errorLogCount": 12,
+  "errorLogSize": 2040,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-16T21:32:38",
+  "elapsedSeconds": 54
+}

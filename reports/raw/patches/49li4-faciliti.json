@@ -1,0 +1,648 @@
+{
+  "id": "49li4-faciliti",
+  "host": {
+    "id": "faciliti",
+    "which": "https://www.facil-iti.fr/",
+    "what": "FACIL’iti"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-16T21:49:20"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-16T21:50:26"
+    }
+  ],
+  "script": {
+    "id": "tp12",
+    "what": "Alfa, Axe, HTML CodeSniffer, IBM, Tenon, WAVE, and 16 custom tests",
+    "strict": true,
+    "timeLimit": 150,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.facil-iti.fr/",
+        "what": "FACIL’iti"
+      },
+      {
+        "type": "test",
+        "which": "focInd",
+        "revealAll": false,
+        "allowedDelay": 250,
+        "withItems": true,
+        "what": "focus indicators"
+      },
+      {
+        "type": "test",
+        "which": "hover",
+        "headSize": 20,
+        "headSampleSize": 20,
+        "tailSampleSize": 15,
+        "withItems": true,
+        "what": "hover impacts"
+      },
+      {
+        "type": "test",
+        "which": "role",
+        "what": "validity and necessity of role assignments"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.facil-iti.fr/",
+      "what": "FACIL’iti",
+      "result": "https://www.facil-iti.fr/"
+    },
+    {
+      "type": "test",
+      "which": "focInd",
+      "revealAll": false,
+      "allowedDelay": 250,
+      "withItems": true,
+      "what": "focus indicators",
+      "url": "https://www.facil-iti.fr/",
+      "result": {
+        "totals": {
+          "total": 68,
+          "types": {
+            "indicatorMissing": {
+              "total": 1,
+              "tagNames": {
+                "IFRAME": 1
+              }
+            },
+            "nonOutlinePresent": {
+              "total": 0,
+              "tagNames": {}
+            },
+            "outlinePresent": {
+              "total": 67,
+              "meanDelay": 69,
+              "tagNames": {
+                "BUTTON": 8,
+                "A": 56,
+                "H3": 1,
+                "INPUT": 2
+              }
+            }
+          }
+        },
+        "items": {
+          "indicatorMissing": [
+            {
+              "tagName": "IFRAME",
+              "text": ""
+            }
+          ],
+          "nonOutlinePresent": [],
+          "outlinePresent": [
+            {
+              "tagName": "BUTTON",
+              "text": "Adaptezl'affichage",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Aller au contenu",
+              "delay": 0
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "A-",
+              "delay": 0
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "A+",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Choisir un filtre",
+              "delay": 0
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "fr",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Accueil",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Qu'est-ce que c'est ?",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "Comment ça marche ?",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Les sites équipés",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Qui sommes-nous ?",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Nos engagements",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Recrutement",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "Blog",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "J'ai un site web",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Je veux devenir partenaire",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Nous contacter",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Je choisis mon filtre",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Malvoyance",
+              "delay": 102
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Afficher la transcription de la vidéo",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Je choisis mon filtre",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "ABILYMPICS",
+              "delay": 0
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "",
+              "delay": 102
+            },
+            {
+              "tagName": "H3",
+              "text": "ABILYMPICS",
+              "delay": 0
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "",
+              "delay": 104
+            },
+            {
+              "tagName": "A",
+              "text": "J'ai une demande !",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Printemps",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Orano",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Arkea Banque",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "LCI",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "La Redoute",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Fnac",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Randstad",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Michelin",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Lacoste",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "...",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Voir tous les sites équipés",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Inclusiv'Day 2022",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Programme et inscriptions",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "En savoir plus sur Digital Workplace",
+              "delay": 101
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Voir plus d’actualités",
+              "delay": 103
+            },
+            {
+              "tagName": "INPUT",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "INPUT",
+              "text": "",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "règles de confidentialité",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "conditions d'utilisation",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "CONSULTER LES ARCHIVES DES ÉDITIONS PASSÉES",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "Je choisis mon filtre",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": ".st0{fill:#FFFFFF;}",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Accueil",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Qu'est-ce que c'est ?",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Comment ça marche ?",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Où l'utiliser ?",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "Blog",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Nous contacter",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "Recrutement",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Qui sommes-nous ?",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Aide et Accessibilité",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "Mentions légales",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Données personnelles",
+              "delay": 104
+            },
+            {
+              "tagName": "A",
+              "text": "FAQ",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Gestion des cookies",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Aller à la page Facebook",
+              "delay": 104
+            },
+            {
+              "tagName": "A",
+              "text": "Aller à la page Twitter",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Aller à la page Youtube",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "Aller à la page LinkedIn",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Aller à la page Instagram",
+              "delay": 103
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.facil-iti.fr/",
+      "what": "URL",
+      "result": "https://www.facil-iti.fr/"
+    },
+    {
+      "type": "test",
+      "which": "hover",
+      "headSize": 20,
+      "headSampleSize": 20,
+      "tailSampleSize": 15,
+      "withItems": true,
+      "what": "hover-caused content changes",
+      "url": "https://www.facil-iti.fr/",
+      "result": {
+        "totals": {
+          "triggers": 103,
+          "headTriggers": 20,
+          "tailTriggers": 83,
+          "impactTriggers": 6,
+          "additions": 5,
+          "removals": 0,
+          "opacityChanges": 3,
+          "opacityImpact": 2,
+          "unhoverables": 5
+        },
+        "items": {
+          "head": {
+            "impactTriggers": [
+              {
+                "tagName": "BUTTON",
+                "text": "Adaptezl'affichage",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 3,
+                "opacityImpact": 2
+              },
+              {
+                "tagName": "LI",
+                "text": "LasolutionQu'est-cequec'est?Commentçamarche?Lessit",
+                "additions": 1,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "A",
+                "text": "Qu'est-cequec'est?",
+                "additions": 1,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "A",
+                "text": "Commentçamarche?",
+                "additions": 1,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "LI",
+                "text": "L'entrepriseQuisommes-nous?NosengagementsRecruteme",
+                "additions": 1,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "A",
+                "text": "Quisommes-nous?",
+                "additions": 1,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              }
+            ],
+            "unhoverables": [
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "Qu'est-cequec'est?"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "Commentçamarche?"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "Quisommes-nous?"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "Nosengagements"
+              }
+            ]
+          },
+          "tail": {
+            "impactTriggers": [],
+            "unhoverables": [
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "J'aiunsiteweb"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.facil-iti.fr/",
+      "what": "URL",
+      "result": "https://www.facil-iti.fr/"
+    },
+    {
+      "type": "test",
+      "which": "role",
+      "what": "roles",
+      "url": "https://www.facil-iti.fr/",
+      "result": {
+        "roleElements": 35,
+        "badRoleElements": 2,
+        "redundantRoleElements": 4,
+        "tagNames": {
+          "HEADER": {
+            "banner": {
+              "bad": 1,
+              "redundant": 0
+            }
+          },
+          "NAV": {
+            "navigation": {
+              "bad": 0,
+              "redundant": 3
+            }
+          },
+          "MAIN": {
+            "main": {
+              "bad": 0,
+              "redundant": 1
+            }
+          },
+          "FOOTER": {
+            "contentinfo": {
+              "bad": 1,
+              "redundant": 0
+            }
+          }
+        }
+      }
+    }
+  ],
+  "timeStamp": "49li4",
+  "startTime": "2022-07-16T21:49:20",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "hover",
+      49
+    ],
+    [
+      "focInd",
+      5
+    ],
+    [
+      "role",
+      0
+    ]
+  ],
+  "logCount": 0,
+  "logSize": 0,
+  "errorLogCount": 0,
+  "errorLogSize": 0,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-16T21:50:26",
+  "elapsedSeconds": 66
+}

@@ -1,0 +1,705 @@
+{
+  "id": "49ouy-verbit",
+  "host": {
+    "id": "verbit",
+    "which": "https://verbit.ai/",
+    "what": "Verbit"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-16T23:45:02"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-16T23:45:43"
+    }
+  ],
+  "script": {
+    "id": "tp12",
+    "what": "Alfa, Axe, HTML CodeSniffer, IBM, Tenon, WAVE, and 16 custom tests",
+    "strict": true,
+    "timeLimit": 150,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://verbit.ai/",
+        "what": "Verbit"
+      },
+      {
+        "type": "test",
+        "which": "focInd",
+        "revealAll": false,
+        "allowedDelay": 250,
+        "withItems": true,
+        "what": "focus indicators"
+      },
+      {
+        "type": "test",
+        "which": "hover",
+        "headSize": 20,
+        "headSampleSize": 20,
+        "tailSampleSize": 15,
+        "withItems": true,
+        "what": "hover impacts"
+      },
+      {
+        "type": "test",
+        "which": "role",
+        "what": "validity and necessity of role assignments"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://verbit.ai/",
+      "what": "Verbit",
+      "result": "https://verbit.ai/"
+    },
+    {
+      "type": "test",
+      "which": "focInd",
+      "revealAll": false,
+      "allowedDelay": 250,
+      "withItems": true,
+      "what": "focus indicators",
+      "url": "https://verbit.ai/",
+      "result": {
+        "totals": {
+          "total": 65,
+          "types": {
+            "indicatorMissing": {
+              "total": 6,
+              "tagNames": {
+                "INPUT": 6
+              }
+            },
+            "nonOutlinePresent": {
+              "total": 0,
+              "tagNames": {}
+            },
+            "outlinePresent": {
+              "total": 59,
+              "meanDelay": 82,
+              "tagNames": {
+                "A": 59
+              }
+            }
+          }
+        },
+        "items": {
+          "indicatorMissing": [
+            {
+              "tagName": "INPUT",
+              "text": ""
+            },
+            {
+              "tagName": "INPUT",
+              "text": ""
+            },
+            {
+              "tagName": "INPUT",
+              "text": ""
+            },
+            {
+              "tagName": "INPUT",
+              "text": ""
+            },
+            {
+              "tagName": "INPUT",
+              "text": ""
+            },
+            {
+              "tagName": "INPUT",
+              "text": ""
+            }
+          ],
+          "nonOutlinePresent": [],
+          "outlinePresent": [
+            {
+              "tagName": "A",
+              "text": "Connect with Sales",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Log In",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Request Pricing",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "<img src=\"https://verbit.ai/wp-content/uploads/2022/02/Verbit-logo_Blue-01-1.svg\" class=\"attachment-",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Industries",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Solutions",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Customers",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Pricing",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Resources",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Company",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Events",
+              "delay": 104
+            },
+            {
+              "tagName": "A",
+              "text": "EN",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Connect with Sales",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Court Reporting& Depositions <img src=\"https://verbit.ai/wp-content/uploads/2020/09/Court-reportingd",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Learn More",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Education & Disability Needs <img src=\"https://verbit.ai/wp-content/uploads/2020/09/Educaton-Disabil",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Learn More",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Distance Learning & eLearning <img src=\"https://verbit.ai/wp-content/uploads/2020/09/Distance-Learni",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Learn More",
+              "delay": 107
+            },
+            {
+              "tagName": "A",
+              "text": "MediaProduction <img src=\"https://verbit.ai/wp-content/uploads/2020/09/Media-Production.svg\" class=\"",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Learn More",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "Enterprise & General Business <img src=\"https://verbit.ai/wp-content/uploads/2020/09/Enterprise-Gene",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Learn More",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Privacy Policy",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Industries",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Corporate & General Business",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Education",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Digital & Online Learning",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Media Production",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Court Reporting & Depositions",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "Solutions",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Live Captioning & Real-Time Transcription",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Audio & Video Captioning",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Audio & Video Transcription",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Audio Description",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "Translation",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Transcription for Legal Proceedings",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Resources",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Education",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "eLearning",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Legal",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Media",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Corporate",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "More on Verbit",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Customers",
+              "delay": 104
+            },
+            {
+              "tagName": "A",
+              "text": "Contact Us",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Careers",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Press",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "VPAT",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "Trust",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "FAQ",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Pricing",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Partners",
+              "delay": 104
+            },
+            {
+              "tagName": "A",
+              "text": "<img src=\"https://verbit.ai/wp-content/uploads/2020/09/Linkedin-icon.svg\" class=\"attachment-full siz",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "<img src=\"https://verbit.ai/wp-content/uploads/2020/09/Facebook-icon.svg\" class=\"attachment-full siz",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "<img src=\"https://verbit.ai/wp-content/uploads/2020/09/Twitter-icon.svg\" class=\"attachment-full size",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Join us as a transcriber",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "Privacy",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Legal",
+              "delay": 103
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://verbit.ai/",
+      "what": "URL",
+      "result": "https://verbit.ai/"
+    },
+    {
+      "type": "test",
+      "which": "hover",
+      "headSize": 20,
+      "headSampleSize": 20,
+      "tailSampleSize": 15,
+      "withItems": true,
+      "what": "hover-caused content changes",
+      "url": "https://verbit.ai/",
+      "result": {
+        "totals": {
+          "triggers": 118,
+          "headTriggers": 20,
+          "tailTriggers": 98,
+          "impactTriggers": 5,
+          "additions": 10,
+          "removals": 0,
+          "opacityChanges": 6,
+          "opacityImpact": 15,
+          "unhoverables": 25
+        },
+        "items": {
+          "head": {
+            "impactTriggers": [
+              {
+                "tagName": "A",
+                "text": "ConnectwithSales",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "LI",
+                "text": "Events",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "A",
+                "text": "Events",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "LI",
+                "text": "ENESFRFR-CA",
+                "additions": 10,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 3
+              },
+              {
+                "tagName": "A",
+                "text": "EN",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 2,
+                "opacityImpact": 12
+              }
+            ],
+            "unhoverables": [
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "IndustriesCorporate&GeneralBusinessEducationDigita"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Industries"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "SolutionsLiveCaptioning&Real-TimeTranscriptionAudi"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Solutions"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "Customers"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Customers"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "PricingEducation:DisabilityCoordinatorsSolutionDis"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Pricing"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "ResourcesBlogCaseStudiesCorporateFinanceEducatione"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Resources"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "CompanyAboutUsPartners&IntegrationCareers"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Company"
+              }
+            ]
+          },
+          "tail": {
+            "impactTriggers": [],
+            "unhoverables": [
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "FAQ"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "HIPAA,SOC2,HECVAT,VPAT,GDPRcompliance"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Education&DisabilityNeeds<imgsrc=\"https://verbit.a"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "Education"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Resources"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "LearnMore"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "LiveCaptioning&Real-TimeTranscription"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "Interactivetranscriptsfornotetaking,searchandshari"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Education"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Legal"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "CourtReporting&Depositions"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Joinusasatranscriber"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Pricing"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://verbit.ai/",
+      "what": "URL",
+      "result": "https://verbit.ai/"
+    },
+    {
+      "type": "test",
+      "which": "role",
+      "what": "roles",
+      "url": "https://verbit.ai/",
+      "result": {
+        "roleElements": 5,
+        "badRoleElements": 2,
+        "redundantRoleElements": 1,
+        "tagNames": {
+          "P": {
+            "status": {
+              "bad": 2,
+              "redundant": 0
+            }
+          },
+          "MAIN": {
+            "main": {
+              "bad": 0,
+              "redundant": 1
+            }
+          }
+        }
+      }
+    }
+  ],
+  "timeStamp": "49ouy",
+  "startTime": "2022-07-16T23:45:02",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "hover",
+      23
+    ],
+    [
+      "focInd",
+      7
+    ],
+    [
+      "role",
+      0
+    ]
+  ],
+  "logCount": 10,
+  "logSize": 667,
+  "errorLogCount": 9,
+  "errorLogSize": 621,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-16T23:45:43",
+  "elapsedSeconds": 41
+}

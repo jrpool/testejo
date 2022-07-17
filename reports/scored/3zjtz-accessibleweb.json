@@ -300,37 +300,35 @@
       "url": "https://accessibleweb.com/",
       "result": {
         "totals": {
-          "total": 57,
+          "total": 62,
           "types": {
             "indicatorMissing": {
-              "total": 0,
-              "tagNames": {}
+              "total": 7,
+              "tagNames": {
+                "A": 5,
+                "IFRAME": 1,
+                "DIV": 1
+              }
             },
             "nonOutlinePresent": {
-              "total": 18,
+              "total": 13,
               "tagNames": {
-                "A": 12,
+                "A": 8,
                 "BUTTON": 3,
-                "INPUT": 2,
-                "IFRAME": 1
+                "INPUT": 2
               }
             },
             "outlinePresent": {
-              "total": 39,
+              "total": 42,
               "meanDelay": 0,
               "tagNames": {
-                "A": 39
+                "A": 42
               }
             }
           }
         },
         "items": {
-          "indicatorMissing": [],
-          "nonOutlinePresent": [
-            {
-              "tagName": "A",
-              "text": "Skip to content"
-            },
+          "indicatorMissing": [
             {
               "tagName": "A",
               "text": "Solutions"
@@ -350,6 +348,24 @@
             {
               "tagName": "A",
               "text": "Log In"
+            },
+            {
+              "tagName": "IFRAME",
+              "text": ""
+            },
+            {
+              "tagName": "DIV",
+              "text": ""
+            }
+          ],
+          "nonOutlinePresent": [
+            {
+              "tagName": "A",
+              "text": "Show details"
+            },
+            {
+              "tagName": "A",
+              "text": "Skip to content"
             },
             {
               "tagName": "A",
@@ -394,16 +410,27 @@
             {
               "tagName": "BUTTON",
               "text": "Subscribe"
-            },
-            {
-              "tagName": "IFRAME",
-              "text": ""
             }
           ],
           "outlinePresent": [
             {
               "tagName": "A",
-              "text": "",
+              "text": "cookies policy",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "privacy policy.",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Accept",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "//<![CDATA[\n(function(){for(var g=\"function\"==typeof Object.defineProperties?Object.defineProperty:f",
               "delay": 0
             },
             {
@@ -2451,19 +2478,32 @@
       "url": "https://accessibleweb.com/",
       "result": {
         "roleElements": 27,
-        "badRoleElements": 10,
+        "badRoleElements": 9,
+        "redundantRoleElements": 1,
         "tagNames": {
           "A": {
-            "button": 7
+            "button": {
+              "bad": 7,
+              "redundant": 0
+            }
           },
           "MAIN": {
-            "main": 1
+            "main": {
+              "bad": 0,
+              "redundant": 1
+            }
           },
           "FOOTER": {
-            "contentinfo": 1
+            "contentinfo": {
+              "bad": 1,
+              "redundant": 0
+            }
           },
           "DIV": {
-            "button": 1
+            "button": {
+              "bad": 1,
+              "redundant": 0
+            }
           }
         }
       }
@@ -12467,7 +12507,7 @@
   "endTime": "2022-07-06T02:27:17",
   "elapsedSeconds": 162,
   "score": {
-    "scoreProcID": "sp12a",
+    "scoreProcID": "sp12b",
     "logWeights": {
       "logCount": 0.5,
       "logSize": 0.01,
@@ -12491,11 +12531,11 @@
       "testaro": {
         "motion": 2,
         "bulk": 0,
-        "focInd": 18,
+        "focInd": 34,
         "focOp": 6,
         "hover": 2,
         "linkUl": 74,
-        "role": 10,
+        "role": 19,
         "styleDiff": 36,
         "zIndex": 35
       },
@@ -12579,7 +12619,7 @@
         "focusIndication": {
           "testaro": {
             "focInd": {
-              "score": 18,
+              "score": 34,
               "what": "Focused element displaying no or nostandard focus indicator"
             }
           },
@@ -12617,7 +12657,7 @@
         "roleBad": {
           "testaro": {
             "role": {
-              "score": 8,
+              "score": 14,
               "what": "Nonexistent or implicit-overriding role"
             }
           },
@@ -12991,7 +13031,7 @@
     },
     "preventionScores": {},
     "summary": {
-      "total": 982,
+      "total": 1004,
       "log": 300,
       "preventions": 0,
       "solos": 0,
@@ -13017,6 +13057,10 @@
           "score": 39
         },
         {
+          "groupName": "focusIndication",
+          "score": 36
+        },
+        {
           "groupName": "contentBeyondLandmarks",
           "score": 30
         },
@@ -13025,8 +13069,8 @@
           "score": 26
         },
         {
-          "groupName": "focusIndication",
-          "score": 20
+          "groupName": "roleBad",
+          "score": 17
         },
         {
           "groupName": "linkPair",
@@ -13035,10 +13079,6 @@
         {
           "groupName": "targetSize",
           "score": 14
-        },
-        {
-          "groupName": "roleBad",
-          "score": 11
         },
         {
           "groupName": "inconsistentStyles",

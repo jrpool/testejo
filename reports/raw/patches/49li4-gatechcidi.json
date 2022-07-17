@@ -1,0 +1,488 @@
+{
+  "id": "49li4-gatechcidi",
+  "host": {
+    "id": "gatechcidi",
+    "which": "https://cidi.gatech.edu/",
+    "what": "Georgia Tech CIDI"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-16T21:51:40"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-16T21:52:50"
+    }
+  ],
+  "script": {
+    "id": "tp12",
+    "what": "Alfa, Axe, HTML CodeSniffer, IBM, Tenon, WAVE, and 16 custom tests",
+    "strict": true,
+    "timeLimit": 150,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://cidi.gatech.edu/",
+        "what": "Georgia Tech CIDI"
+      },
+      {
+        "type": "test",
+        "which": "focInd",
+        "revealAll": false,
+        "allowedDelay": 250,
+        "withItems": true,
+        "what": "focus indicators"
+      },
+      {
+        "type": "test",
+        "which": "hover",
+        "headSize": 20,
+        "headSampleSize": 20,
+        "tailSampleSize": 15,
+        "withItems": true,
+        "what": "hover impacts"
+      },
+      {
+        "type": "test",
+        "which": "role",
+        "what": "validity and necessity of role assignments"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://cidi.gatech.edu/",
+      "what": "Georgia Tech CIDI",
+      "result": "https://cidi.gatech.edu/"
+    },
+    {
+      "type": "test",
+      "which": "focInd",
+      "revealAll": false,
+      "allowedDelay": 250,
+      "withItems": true,
+      "what": "focus indicators",
+      "url": "https://cidi.gatech.edu/",
+      "result": {
+        "totals": {
+          "total": 53,
+          "types": {
+            "indicatorMissing": {
+              "total": 6,
+              "tagNames": {
+                "A": 6
+              }
+            },
+            "nonOutlinePresent": {
+              "total": 47,
+              "tagNames": {
+                "A": 46,
+                "BUTTON": 1
+              }
+            },
+            "outlinePresent": {
+              "total": 0,
+              "meanDelay": 0,
+              "tagNames": {}
+            }
+          }
+        },
+        "items": {
+          "indicatorMissing": [
+            {
+              "tagName": "A",
+              "text": "Center for Inclusive Design and Innovation"
+            },
+            {
+              "tagName": "A",
+              "text": "College of Design"
+            },
+            {
+              "tagName": "A",
+              "text": ".st0{fill:#AA985D;}"
+            },
+            {
+              "tagName": "A",
+              "text": ".st0{fill:#AA985D;}"
+            },
+            {
+              "tagName": "A",
+              "text": ".st0{fill:#AA985D;}"
+            },
+            {
+              "tagName": "A",
+              "text": ".st0{fill:#AA985D;}"
+            }
+          ],
+          "nonOutlinePresent": [
+            {
+              "tagName": "A",
+              "text": "Skip to main navigation"
+            },
+            {
+              "tagName": "A",
+              "text": "Skip to main content"
+            },
+            {
+              "tagName": "A",
+              "text": "Skip To Keyboard Navigation"
+            },
+            {
+              "tagName": "A",
+              "text": ""
+            },
+            {
+              "tagName": "A",
+              "text": "About"
+            },
+            {
+              "tagName": "A",
+              "text": "Research"
+            },
+            {
+              "tagName": "A",
+              "text": "Services"
+            },
+            {
+              "tagName": "A",
+              "text": "Education"
+            },
+            {
+              "tagName": "A",
+              "text": "Portfolio"
+            },
+            {
+              "tagName": "A",
+              "text": "News & Events"
+            },
+            {
+              "tagName": "A",
+              "text": "Contact"
+            },
+            {
+              "tagName": "A",
+              "text": "Membership"
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Open Search"
+            },
+            {
+              "tagName": "A",
+              "text": "Services We Offer"
+            },
+            {
+              "tagName": "A",
+              "text": "Our Mission"
+            },
+            {
+              "tagName": "A",
+              "text": "View All Available Resources"
+            },
+            {
+              "tagName": "A",
+              "text": "Projects"
+            },
+            {
+              "tagName": "A",
+              "text": "Opportunities"
+            },
+            {
+              "tagName": "A",
+              "text": "Become a Member"
+            },
+            {
+              "tagName": "A",
+              "text": "Learn More About Our Services"
+            },
+            {
+              "tagName": "A",
+              "text": "Schedule A Tour"
+            },
+            {
+              "tagName": "A",
+              "text": "See All News"
+            },
+            {
+              "tagName": "A",
+              "text": "See All Events"
+            },
+            {
+              "tagName": "A",
+              "text": "Contact Us"
+            },
+            {
+              "tagName": "A",
+              "text": "+1 404.894.2000"
+            },
+            {
+              "tagName": "A",
+              "text": "Campus Map"
+            },
+            {
+              "tagName": "A",
+              "text": "General"
+            },
+            {
+              "tagName": "A",
+              "text": "Directory"
+            },
+            {
+              "tagName": "A",
+              "text": "Employment"
+            },
+            {
+              "tagName": "A",
+              "text": "Emergency Information"
+            },
+            {
+              "tagName": "A",
+              "text": "Legal"
+            },
+            {
+              "tagName": "A",
+              "text": "Legal & Privacy Information"
+            },
+            {
+              "tagName": "A",
+              "text": "Human Trafficking Notice"
+            },
+            {
+              "tagName": "A",
+              "text": "Title IX/Sexual Misconduct"
+            },
+            {
+              "tagName": "A",
+              "text": "Hazing Public Disclosures"
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility"
+            },
+            {
+              "tagName": "A",
+              "text": "Accountability"
+            },
+            {
+              "tagName": "A",
+              "text": "Accreditation"
+            },
+            {
+              "tagName": "A",
+              "text": ""
+            },
+            {
+              "tagName": "A",
+              "text": "GT LOGIN"
+            },
+            {
+              "tagName": "A",
+              "text": ""
+            },
+            {
+              "tagName": "A",
+              "text": ""
+            },
+            {
+              "tagName": "A",
+              "text": ""
+            },
+            {
+              "tagName": "A",
+              "text": ""
+            },
+            {
+              "tagName": "A",
+              "text": ""
+            },
+            {
+              "tagName": "A",
+              "text": "Log in"
+            },
+            {
+              "tagName": "A",
+              "text": "HQ"
+            }
+          ],
+          "outlinePresent": []
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://cidi.gatech.edu/",
+      "what": "URL",
+      "result": "https://cidi.gatech.edu/"
+    },
+    {
+      "type": "test",
+      "which": "hover",
+      "headSize": 20,
+      "headSampleSize": 20,
+      "tailSampleSize": 15,
+      "withItems": true,
+      "what": "hover-caused content changes",
+      "url": "https://cidi.gatech.edu/",
+      "result": {
+        "totals": {
+          "triggers": 81,
+          "headTriggers": 20,
+          "tailTriggers": 61,
+          "impactTriggers": 0,
+          "additions": 0,
+          "removals": 0,
+          "opacityChanges": 0,
+          "opacityImpact": 0,
+          "unhoverables": 5
+        },
+        "items": {
+          "head": {
+            "impactTriggers": [],
+            "unhoverables": [
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Skiptomainnavigation"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Skiptomaincontent"
+              },
+              {
+                "tagName": "A",
+                "id": "page-navigation",
+                "text": "SkipToKeyboardNavigation"
+              }
+            ]
+          },
+          "tail": {
+            "impactTriggers": [],
+            "unhoverables": [
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "General"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Legal"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://cidi.gatech.edu/",
+      "what": "URL",
+      "result": "https://cidi.gatech.edu/"
+    },
+    {
+      "type": "test",
+      "which": "role",
+      "what": "roles",
+      "url": "https://cidi.gatech.edu/",
+      "result": {
+        "roleElements": 25,
+        "badRoleElements": 8,
+        "redundantRoleElements": 7,
+        "tagNames": {
+          "HEADER": {
+            "banner": {
+              "bad": 1,
+              "redundant": 0
+            }
+          },
+          "DIV": {
+            "navigation": {
+              "bad": 2,
+              "redundant": 0
+            },
+            "main": {
+              "bad": 1,
+              "redundant": 0
+            },
+            "complementary": {
+              "bad": 3,
+              "redundant": 0
+            },
+            "contentinfo": {
+              "bad": 1,
+              "redundant": 0
+            }
+          },
+          "NAV": {
+            "navigation": {
+              "bad": 0,
+              "redundant": 5
+            }
+          },
+          "BUTTON": {
+            "button": {
+              "bad": 0,
+              "redundant": 1
+            }
+          },
+          "ARTICLE": {
+            "article": {
+              "bad": 0,
+              "redundant": 1
+            }
+          }
+        }
+      }
+    }
+  ],
+  "timeStamp": "49li4",
+  "startTime": "2022-07-16T21:51:40",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "hover",
+      46
+    ],
+    [
+      "focInd",
+      17
+    ],
+    [
+      "role",
+      0
+    ]
+  ],
+  "logCount": 3,
+  "logSize": 303,
+  "errorLogCount": 3,
+  "errorLogSize": 303,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-16T21:52:50",
+  "elapsedSeconds": 70
+}

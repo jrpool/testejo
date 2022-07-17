@@ -304,16 +304,17 @@
           "total": 65,
           "types": {
             "indicatorMissing": {
-              "total": 0,
-              "tagNames": {}
-            },
-            "nonOutlinePresent": {
-              "total": 11,
+              "total": 8,
               "tagNames": {
-                "A": 2,
                 "IFRAME": 1,
                 "INPUT": 6,
-                "TEXTAREA": 1,
+                "TEXTAREA": 1
+              }
+            },
+            "nonOutlinePresent": {
+              "total": 3,
+              "tagNames": {
+                "A": 2,
                 "BUTTON": 1
               }
             },
@@ -328,16 +329,7 @@
           }
         },
         "items": {
-          "indicatorMissing": [],
-          "nonOutlinePresent": [
-            {
-              "tagName": "A",
-              "text": "What We Do"
-            },
-            {
-              "tagName": "A",
-              "text": "Markets"
-            },
+          "indicatorMissing": [
             {
               "tagName": "IFRAME",
               "text": ""
@@ -369,6 +361,16 @@
             {
               "tagName": "TEXTAREA",
               "text": ""
+            }
+          ],
+          "nonOutlinePresent": [
+            {
+              "tagName": "A",
+              "text": "What We Do"
+            },
+            {
+              "tagName": "A",
+              "text": "Markets"
             },
             {
               "tagName": "BUTTON",
@@ -1868,9 +1870,13 @@
       "result": {
         "roleElements": 9,
         "badRoleElements": 3,
+        "redundantRoleElements": 0,
         "tagNames": {
           "A": {
-            "button": 3
+            "button": {
+              "bad": 3,
+              "redundant": 0
+            }
           }
         }
       }

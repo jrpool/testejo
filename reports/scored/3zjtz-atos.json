@@ -300,23 +300,23 @@
       "url": "https://atos.net/en/lp/accessibility-and-assistive-technology-iux",
       "result": {
         "totals": {
-          "total": 48,
+          "total": 53,
           "types": {
             "indicatorMissing": {
-              "total": 0,
-              "tagNames": {}
-            },
-            "nonOutlinePresent": {
               "total": 1,
               "tagNames": {
                 "INPUT": 1
               }
             },
+            "nonOutlinePresent": {
+              "total": 0,
+              "tagNames": {}
+            },
             "outlinePresent": {
-              "total": 47,
+              "total": 52,
               "meanDelay": 0,
               "tagNames": {
-                "A": 38,
+                "A": 43,
                 "FORM": 1,
                 "BUTTON": 6,
                 "INPUT": 2
@@ -325,13 +325,13 @@
           }
         },
         "items": {
-          "indicatorMissing": [],
-          "nonOutlinePresent": [
+          "indicatorMissing": [
             {
               "tagName": "INPUT",
               "text": ""
             }
           ],
+          "nonOutlinePresent": [],
           "outlinePresent": [
             {
               "tagName": "A",
@@ -490,7 +490,32 @@
             },
             {
               "tagName": "A",
-              "text": "Read more",
+              "text": "Global GAAD Content",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Iberia GAAD Content",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "India & APAC GAAD Content",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "DACH GAAD Content",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "France GAAD Content",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "UK & Ireland GAAD Content",
               "delay": 0
             },
             {
@@ -1285,15 +1310,15 @@
       "url": "https://atos.net/en/lp/accessibility-and-assistive-technology-iux",
       "result": {
         "totals": {
-          "triggers": 73,
+          "triggers": 78,
           "headTriggers": 20,
-          "tailTriggers": 53,
+          "tailTriggers": 58,
           "impactTriggers": 0,
           "additions": 0,
           "removals": 0,
           "opacityChanges": 0,
           "opacityImpact": 0,
-          "unhoverables": 16
+          "unhoverables": 17
         },
         "items": {
           "head": {
@@ -1342,7 +1367,12 @@
               {
                 "tagName": "A",
                 "id": "",
-                "text": "<imgsrc=\"https://atos.net/wp-content/uploads/2020/"
+                "text": "TriblioPrivacyPolicy"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "<divid=\"footer_globe\"></div>"
               },
               {
                 "tagName": "A",
@@ -1350,19 +1380,19 @@
                 "text": "<imgsrc=\"https://atos.net/wp-content/uploads/2020/"
               },
               {
-                "tagName": "LI",
+                "tagName": "BUTTON",
                 "id": "",
-                "text": "<ahref=\"https://twitter.com/atos_iux\"target=\"82211"
+                "text": "Acceptselectedcookies"
               },
               {
                 "tagName": "LI",
-                "id": "",
-                "text": "<ahref=\"https://www.instagram.com/atosglobal/\"targ"
+                "id": "menu-item-12613",
+                "text": "Privacy"
               },
               {
-                "tagName": "LI",
-                "id": "menu-item-13095",
-                "text": "RSSfeeds"
+                "tagName": "A",
+                "id": "",
+                "text": "<imgsrc=\"https://atos.net/wp-content/uploads/2020/"
               },
               {
                 "tagName": "A",
@@ -1370,19 +1400,19 @@
                 "text": "Termsandconditions"
               },
               {
-                "tagName": "A",
-                "id": "",
-                "text": "Accessibility"
-              },
-              {
-                "tagName": "A",
-                "id": "",
+                "tagName": "LI",
+                "id": "menu-item-207007",
                 "text": "Contact"
               },
               {
                 "tagName": "LI",
-                "id": "menu-item-207007",
-                "text": "Contact"
+                "id": "menu-item-12640",
+                "text": "Termsandconditions"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "©AtosSE2022allrightsreserved"
               }
             ]
           }
@@ -1730,13 +1760,20 @@
       "url": "https://atos.net/en/lp/accessibility-and-assistive-technology-iux",
       "result": {
         "roleElements": 2,
-        "badRoleElements": 2,
+        "badRoleElements": 0,
+        "redundantRoleElements": 2,
         "tagNames": {
           "MAIN": {
-            "main": 1
+            "main": {
+              "bad": 0,
+              "redundant": 1
+            }
           },
           "H1": {
-            "heading": 1
+            "heading": {
+              "bad": 0,
+              "redundant": 1
+            }
           }
         }
       }
@@ -12740,7 +12777,7 @@
   "endTime": "2022-07-06T02:29:17",
   "elapsedSeconds": 119,
   "score": {
-    "scoreProcID": "sp12a",
+    "scoreProcID": "sp12b",
     "logWeights": {
       "logCount": 0.5,
       "logSize": 0.01,
@@ -12764,9 +12801,9 @@
       "testaro": {
         "bulk": 1,
         "focAll": 12,
-        "focInd": 1,
+        "focInd": 3,
         "focOp": 3,
-        "hover": 16,
+        "hover": 17,
         "labClash": 1,
         "linkUl": 70,
         "role": 2,
@@ -12859,7 +12896,7 @@
         "focusIndication": {
           "testaro": {
             "focInd": {
-              "score": 1,
+              "score": 3,
               "what": "Focused element displaying no or nostandard focus indicator"
             }
           }
@@ -13289,7 +13326,7 @@
       "ibm": 100
     },
     "summary": {
-      "total": 777,
+      "total": 779,
       "log": 87,
       "preventions": 100,
       "solos": 0,
@@ -13371,6 +13408,10 @@
           "score": 6
         },
         {
+          "groupName": "focusIndication",
+          "score": 5
+        },
+        {
           "groupName": "linkPair",
           "score": 5
         },
@@ -13400,10 +13441,6 @@
         },
         {
           "groupName": "visibleBulk",
-          "score": 3
-        },
-        {
-          "groupName": "focusIndication",
           "score": 3
         },
         {

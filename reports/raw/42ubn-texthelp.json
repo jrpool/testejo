@@ -384,7 +384,7 @@
             {
               "tagName": "A",
               "text": "Login to your account",
-              "delay": 101
+              "delay": 103
             },
             {
               "tagName": "A",
@@ -589,7 +589,7 @@
             {
               "tagName": "BUTTON",
               "text": "Search",
-              "delay": 100
+              "delay": 101
             },
             {
               "tagName": "BUTTON",
@@ -599,12 +599,12 @@
             {
               "tagName": "A",
               "text": "Academy",
-              "delay": 100
+              "delay": 101
             },
             {
               "tagName": "A",
               "text": "Contact Us",
-              "delay": 100
+              "delay": 102
             },
             {
               "tagName": "A",
@@ -619,7 +619,7 @@
             {
               "tagName": "A",
               "text": "Read more",
-              "delay": 101
+              "delay": 100
             },
             {
               "tagName": "A",
@@ -629,6 +629,16 @@
             {
               "tagName": "A",
               "text": "More customer stories",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Learn more",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Try Now",
               "delay": 102
             },
             {
@@ -638,23 +648,13 @@
             },
             {
               "tagName": "A",
-              "text": "Try Now",
-              "delay": 101
-            },
-            {
-              "tagName": "A",
-              "text": "Learn more",
-              "delay": 101
-            },
-            {
-              "tagName": "A",
               "text": "Try Equatio",
-              "delay": 100
+              "delay": 101
             },
             {
               "tagName": "A",
               "text": "Learn more",
-              "delay": 101
+              "delay": 100
             },
             {
               "tagName": "A",
@@ -674,22 +674,22 @@
             {
               "tagName": "A",
               "text": "Learn more",
-              "delay": 102
-            },
-            {
-              "tagName": "A",
-              "text": "Try OrbitNote",
               "delay": 101
             },
             {
               "tagName": "A",
-              "text": "Learn more",
+              "text": "Try OrbitNote",
               "delay": 100
             },
             {
               "tagName": "A",
+              "text": "Learn more",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
               "text": "Explore Workplace Solutions",
-              "delay": 100
+              "delay": 101
             },
             {
               "tagName": "A",
@@ -704,17 +704,17 @@
             {
               "tagName": "A",
               "text": "Request a trial",
-              "delay": 101
+              "delay": 100
             },
             {
               "tagName": "A",
               "text": "Learn more",
-              "delay": 100
+              "delay": 102
             },
             {
               "tagName": "A",
               "text": "Request a trial",
-              "delay": 100
+              "delay": 101
             },
             {
               "tagName": "A",
@@ -849,7 +849,7 @@
             {
               "tagName": "A",
               "text": "English (US)",
-              "delay": 100
+              "delay": 101
             },
             {
               "tagName": "A",
@@ -2114,15 +2114,15 @@
       "url": "https://www.texthelp.com/",
       "result": {
         "totals": {
-          "triggers": 214,
+          "triggers": 215,
           "headTriggers": 20,
-          "tailTriggers": 194,
-          "impactTriggers": 15,
+          "tailTriggers": 195,
+          "impactTriggers": 41,
           "additions": 13,
           "removals": 13,
-          "opacityChanges": 2,
-          "opacityImpact": 98,
-          "unhoverables": 24
+          "opacityChanges": 28,
+          "opacityImpact": 332,
+          "unhoverables": 21
         },
         "items": {
           "head": {
@@ -2235,6 +2235,22 @@
           "tail": {
             "impactTriggers": [
               {
+                "tagName": "LI",
+                "text": "WorkplaceOverviewPublicSectorPrivateSectorNotforpr",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 9
+              },
+              {
+                "tagName": "A",
+                "text": "Education",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 9
+              },
+              {
                 "tagName": "A",
                 "text": "TryNow",
                 "additions": 1,
@@ -2245,39 +2261,24 @@
             ],
             "unhoverables": [
               {
-                "tagName": "LI",
+                "tagName": "A",
                 "id": "",
-                "text": "Events"
+                "text": "Toolmatcher"
               },
               {
-                "tagName": "A",
+                "tagName": "LI",
                 "id": "",
                 "text": "Overview"
               },
               {
-                "tagName": "A",
-                "id": "",
-                "text": "PublicSector"
-              },
-              {
-                "tagName": "A",
-                "id": "",
-                "text": "Support"
-              },
-              {
-                "tagName": "A",
-                "id": "",
-                "text": "Blog"
-              },
-              {
-                "tagName": "A",
-                "id": "",
-                "text": "Notforprofit"
-              },
-              {
                 "tagName": "LI",
                 "id": "",
-                "text": "Blog"
+                "text": "TexthelpAcademy"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "TexthelpAcademy"
               }
             ]
           }
@@ -2558,6 +2559,7 @@
       "result": {
         "roleElements": 0,
         "badRoleElements": 0,
+        "redundantRoleElements": 0,
         "tagNames": {}
       }
     },

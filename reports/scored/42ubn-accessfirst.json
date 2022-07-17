@@ -328,12 +328,12 @@
             {
               "tagName": "A",
               "text": "Aller au contenu",
-              "delay": 102
+              "delay": 103
             },
             {
               "tagName": "A",
               "text": "",
-              "delay": 100
+              "delay": 101
             },
             {
               "tagName": "A",
@@ -343,7 +343,7 @@
             {
               "tagName": "A",
               "text": "Conseil et accompagnement",
-              "delay": 103
+              "delay": 101
             },
             {
               "tagName": "A",
@@ -358,7 +358,7 @@
             {
               "tagName": "A",
               "text": "Faq",
-              "delay": 101
+              "delay": 102
             },
             {
               "tagName": "A",
@@ -373,7 +373,7 @@
             {
               "tagName": "A",
               "text": "Conseil et accompagnement",
-              "delay": 101
+              "delay": 100
             },
             {
               "tagName": "A",
@@ -388,7 +388,22 @@
             {
               "tagName": "INPUT",
               "text": "",
-              "delay": 100
+              "delay": 102
+            },
+            {
+              "tagName": "INPUT",
+              "text": "",
+              "delay": 102
+            },
+            {
+              "tagName": "INPUT",
+              "text": "",
+              "delay": 102
+            },
+            {
+              "tagName": "INPUT",
+              "text": "",
+              "delay": 103
             },
             {
               "tagName": "INPUT",
@@ -398,22 +413,7 @@
             {
               "tagName": "INPUT",
               "text": "",
-              "delay": 100
-            },
-            {
-              "tagName": "INPUT",
-              "text": "",
-              "delay": 101
-            },
-            {
-              "tagName": "INPUT",
-              "text": "",
-              "delay": 101
-            },
-            {
-              "tagName": "INPUT",
-              "text": "",
-              "delay": 101
+              "delay": 102
             },
             {
               "tagName": "A",
@@ -428,32 +428,32 @@
             {
               "tagName": "A",
               "text": "L’accessibilité numérique : qui, quoi, comment ?",
-              "delay": 101
+              "delay": 102
             },
             {
               "tagName": "A",
               "text": "",
-              "delay": 100
+              "delay": 101
             },
             {
               "tagName": "A",
               "text": "Offre d’emploi – Consultant.e expérimenté.e en accessibilité numérique",
-              "delay": 100
-            },
-            {
-              "tagName": "INPUT",
-              "text": "",
-              "delay": 101
-            },
-            {
-              "tagName": "INPUT",
-              "text": "",
-              "delay": 100
+              "delay": 102
             },
             {
               "tagName": "INPUT",
               "text": "",
               "delay": 102
+            },
+            {
+              "tagName": "INPUT",
+              "text": "",
+              "delay": 101
+            },
+            {
+              "tagName": "INPUT",
+              "text": "",
+              "delay": 101
             },
             {
               "tagName": "INPUT",
@@ -473,17 +473,17 @@
             {
               "tagName": "A",
               "text": "Accueil",
-              "delay": 101
+              "delay": 100
             },
             {
               "tagName": "A",
               "text": "Audits d’accessibilité",
-              "delay": 102
+              "delay": 100
             },
             {
               "tagName": "A",
               "text": "Formations",
-              "delay": 101
+              "delay": 100
             },
             {
               "tagName": "A",
@@ -498,12 +498,12 @@
             {
               "tagName": "A",
               "text": "Accessibilité du site",
-              "delay": 102
+              "delay": 101
             },
             {
               "tagName": "A",
               "text": "Mentions légales",
-              "delay": 101
+              "delay": 102
             },
             {
               "tagName": "A",
@@ -513,7 +513,7 @@
             {
               "tagName": "A",
               "text": "Conditions Générales de Vente",
-              "delay": 101
+              "delay": 102
             },
             {
               "tagName": "A",
@@ -1286,7 +1286,7 @@
           "removals": 0,
           "opacityChanges": 3,
           "opacityImpact": 0,
-          "unhoverables": 4
+          "unhoverables": 2
         },
         "items": {
           "head": {
@@ -1317,25 +1317,14 @@
             "impactTriggers": [
               {
                 "tagName": "A",
-                "text": "<imgwidth=\"1233\"height=\"924\"src=\"https://www.acces",
+                "text": "<imgwidth=\"250\"height=\"158\"src=\"https://www.access",
                 "additions": 0,
                 "removals": 0,
                 "opacityChanges": 1,
                 "opacityImpact": 0
               }
             ],
-            "unhoverables": [
-              {
-                "tagName": "A",
-                "id": "",
-                "text": "ConditionsGénéralesdeVente"
-              },
-              {
-                "tagName": "A",
-                "id": "",
-                "text": "Plandusite"
-              }
-            ]
+            "unhoverables": []
           }
         }
       }
@@ -1756,25 +1745,44 @@
       "url": "https://www.access-first.fr/",
       "result": {
         "roleElements": 17,
-        "badRoleElements": 8,
+        "badRoleElements": 3,
+        "redundantRoleElements": 5,
         "tagNames": {
           "HEADER": {
-            "banner": 1
+            "banner": {
+              "bad": 1,
+              "redundant": 0
+            }
           },
           "NAV": {
-            "navigation": 1
+            "navigation": {
+              "bad": 0,
+              "redundant": 1
+            }
           },
           "MAIN": {
-            "main": 1
+            "main": {
+              "bad": 0,
+              "redundant": 1
+            }
           },
           "FOOTER": {
-            "contentinfo": 1
+            "contentinfo": {
+              "bad": 1,
+              "redundant": 0
+            }
           },
           "BUTTON": {
-            "button": 3
+            "button": {
+              "bad": 0,
+              "redundant": 3
+            }
           },
           "DIV": {
-            "complementary": 1
+            "complementary": {
+              "bad": 1,
+              "redundant": 0
+            }
           }
         }
       }
@@ -9076,7 +9084,7 @@
   "endTime": "2022-07-09T14:13:11",
   "elapsedSeconds": 110,
   "score": {
-    "scoreProcID": "sp12a",
+    "scoreProcID": "sp12b",
     "logWeights": {
       "logCount": 0.5,
       "logSize": 0.01,
@@ -9100,10 +9108,10 @@
       "testaro": {
         "focAll": 2,
         "focOp": 6,
-        "hover": 11,
+        "hover": 9,
         "labClash": 1,
         "linkUl": 10,
-        "role": 8,
+        "role": 11,
         "styleDiff": 19,
         "zIndex": 8
       },
@@ -9181,7 +9189,7 @@
         "hoverSurprise": {
           "testaro": {
             "hover": {
-              "score": 3,
+              "score": 2,
               "what": "Content changes caused by hovering"
             }
           }
@@ -9211,7 +9219,7 @@
         "roleBad": {
           "testaro": {
             "role": {
-              "score": 6,
+              "score": 8,
               "what": "Nonexistent or implicit-overriding role"
             }
           }
@@ -9525,7 +9533,7 @@
     },
     "preventionScores": {},
     "summary": {
-      "total": 379,
+      "total": 380,
       "log": 51,
       "preventions": 0,
       "solos": 0,
@@ -9555,15 +9563,15 @@
           "score": 11
         },
         {
+          "groupName": "roleBad",
+          "score": 10
+        },
+        {
           "groupName": "targetSize",
           "score": 10
         },
         {
           "groupName": "linkIndication",
-          "score": 8
-        },
-        {
-          "groupName": "roleBad",
           "score": 8
         },
         {
@@ -9579,10 +9587,6 @@
           "score": 6
         },
         {
-          "groupName": "hoverSurprise",
-          "score": 5
-        },
-        {
           "groupName": "asideTopLandmark",
           "score": 5
         },
@@ -9596,6 +9600,10 @@
         },
         {
           "groupName": "tabFocusability",
+          "score": 4
+        },
+        {
+          "groupName": "hoverSurprise",
           "score": 4
         },
         {

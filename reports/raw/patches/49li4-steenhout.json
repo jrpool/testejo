@@ -1,0 +1,287 @@
+{
+  "id": "49li4-steenhout",
+  "host": {
+    "id": "steenhout",
+    "which": "https://incl.ca/",
+    "what": "Nicolas Steenhout"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-16T22:00:10"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-16T22:00:49"
+    }
+  ],
+  "script": {
+    "id": "tp12",
+    "what": "Alfa, Axe, HTML CodeSniffer, IBM, Tenon, WAVE, and 16 custom tests",
+    "strict": true,
+    "timeLimit": 150,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://incl.ca/",
+        "what": "Nicolas Steenhout"
+      },
+      {
+        "type": "test",
+        "which": "focInd",
+        "revealAll": false,
+        "allowedDelay": 250,
+        "withItems": true,
+        "what": "focus indicators"
+      },
+      {
+        "type": "test",
+        "which": "hover",
+        "headSize": 20,
+        "headSampleSize": 20,
+        "tailSampleSize": 15,
+        "withItems": true,
+        "what": "hover impacts"
+      },
+      {
+        "type": "test",
+        "which": "role",
+        "what": "validity and necessity of role assignments"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://incl.ca/",
+      "what": "Nicolas Steenhout",
+      "result": "https://incl.ca/"
+    },
+    {
+      "type": "test",
+      "which": "focInd",
+      "revealAll": false,
+      "allowedDelay": 250,
+      "withItems": true,
+      "what": "focus indicators",
+      "url": "https://incl.ca/",
+      "result": {
+        "totals": {
+          "total": 15,
+          "types": {
+            "indicatorMissing": {
+              "total": 1,
+              "tagNames": {
+                "A": 1
+              }
+            },
+            "nonOutlinePresent": {
+              "total": 0,
+              "tagNames": {}
+            },
+            "outlinePresent": {
+              "total": 14,
+              "meanDelay": 0,
+              "tagNames": {
+                "A": 12,
+                "INPUT": 1,
+                "BUTTON": 1
+              }
+            }
+          }
+        },
+        "items": {
+          "indicatorMissing": [
+            {
+              "tagName": "A",
+              "text": "Skip to main content"
+            }
+          ],
+          "nonOutlinePresent": [],
+          "outlinePresent": [
+            {
+              "tagName": "A",
+              "text": "Français",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Part of a Whole",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "speak",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "train",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "consult",
+              "delay": 0
+            },
+            {
+              "tagName": "INPUT",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Search",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "vavroom",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "nic@incl.ca",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "blog archive",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Sitemap",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Terms of Use",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Privacy Policy",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility statement",
+              "delay": 0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://incl.ca/",
+      "what": "URL",
+      "result": "https://incl.ca/"
+    },
+    {
+      "type": "test",
+      "which": "hover",
+      "headSize": 20,
+      "headSampleSize": 20,
+      "tailSampleSize": 15,
+      "withItems": true,
+      "what": "hover-caused content changes",
+      "url": "https://incl.ca/",
+      "result": {
+        "totals": {
+          "triggers": 23,
+          "headTriggers": 20,
+          "tailTriggers": 3,
+          "impactTriggers": 0,
+          "additions": 0,
+          "removals": 0,
+          "opacityChanges": 0,
+          "opacityImpact": 0,
+          "unhoverables": 1
+        },
+        "items": {
+          "head": {
+            "impactTriggers": [],
+            "unhoverables": [
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Skiptomaincontent"
+              }
+            ]
+          },
+          "tail": {
+            "impactTriggers": [],
+            "unhoverables": []
+          }
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://incl.ca/",
+      "what": "URL",
+      "result": "https://incl.ca/"
+    },
+    {
+      "type": "test",
+      "which": "role",
+      "what": "roles",
+      "url": "https://incl.ca/",
+      "result": {
+        "roleElements": 1,
+        "badRoleElements": 0,
+        "redundantRoleElements": 0,
+        "tagNames": {}
+      }
+    }
+  ],
+  "timeStamp": "49li4",
+  "startTime": "2022-07-16T22:00:10",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "hover",
+      32
+    ],
+    [
+      "focInd",
+      0
+    ],
+    [
+      "role",
+      0
+    ]
+  ],
+  "logCount": 6,
+  "logSize": 372,
+  "errorLogCount": 3,
+  "errorLogSize": 234,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-16T22:00:49",
+  "elapsedSeconds": 38
+}

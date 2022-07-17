@@ -301,31 +301,46 @@
       "url": "https://www.accessibility-services.co.uk/",
       "result": {
         "totals": {
-          "total": 59,
+          "total": 58,
           "types": {
             "indicatorMissing": {
-              "total": 0,
-              "tagNames": {}
+              "total": 3,
+              "tagNames": {
+                "IFRAME": 1,
+                "A": 2
+              }
             },
             "nonOutlinePresent": {
-              "total": 15,
+              "total": 12,
               "tagNames": {
-                "A": 12,
-                "INPUT": 2,
-                "IFRAME": 1
+                "A": 10,
+                "INPUT": 2
               }
             },
             "outlinePresent": {
-              "total": 44,
-              "meanDelay": 102,
+              "total": 43,
+              "meanDelay": 103,
               "tagNames": {
-                "A": 44
+                "A": 43
               }
             }
           }
         },
         "items": {
-          "indicatorMissing": [],
+          "indicatorMissing": [
+            {
+              "tagName": "IFRAME",
+              "text": "Your browser does not support iframes."
+            },
+            {
+              "tagName": "A",
+              "text": "Allow"
+            },
+            {
+              "tagName": "A",
+              "text": "Disable"
+            }
+          ],
           "nonOutlinePresent": [
             {
               "tagName": "A",
@@ -374,35 +389,23 @@
             {
               "tagName": "INPUT",
               "text": ""
-            },
-            {
-              "tagName": "IFRAME",
-              "text": "Your browser does not support iframes."
-            },
-            {
-              "tagName": "A",
-              "text": "Allow"
-            },
-            {
-              "tagName": "A",
-              "text": "Disable"
             }
           ],
           "outlinePresent": [
             {
               "tagName": "A",
               "text": "",
-              "delay": 102
+              "delay": 103
             },
             {
               "tagName": "A",
               "text": "0300 123 7005",
-              "delay": 101
+              "delay": 103
             },
             {
               "tagName": "A",
               "text": "Accessibility-Services@Shaw-Trust.org.uk",
-              "delay": 102
+              "delay": 103
             },
             {
               "tagName": "A",
@@ -412,7 +415,7 @@
             {
               "tagName": "A",
               "text": "Take advantage of our FREE Accessibility Snapshot service",
-              "delay": 102
+              "delay": 101
             },
             {
               "tagName": "A",
@@ -427,12 +430,12 @@
             {
               "tagName": "A",
               "text": "Digital Consultancy Explore More",
-              "delay": 101
+              "delay": 100
             },
             {
               "tagName": "A",
               "text": "Meet The Team",
-              "delay": 103
+              "delay": 101
             },
             {
               "tagName": "A",
@@ -441,13 +444,23 @@
             },
             {
               "tagName": "A",
+              "text": "Consultancy",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
               "text": "Digital Accessibility Assessment",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "User Testing",
               "delay": 102
             },
             {
               "tagName": "A",
-              "text": "Media Services",
-              "delay": 100
+              "text": "Design and Template Reviews",
+              "delay": 103
             },
             {
               "tagName": "A",
@@ -462,11 +475,6 @@
             {
               "tagName": "A",
               "text": "",
-              "delay": 100
-            },
-            {
-              "tagName": "A",
-              "text": "",
               "delay": 101
             },
             {
@@ -477,7 +485,12 @@
             {
               "tagName": "A",
               "text": "",
-              "delay": 102
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 101
             },
             {
               "tagName": "A",
@@ -487,7 +500,7 @@
             {
               "tagName": "A",
               "text": "0300 123 7005",
-              "delay": 102
+              "delay": 101
             },
             {
               "tagName": "A",
@@ -512,7 +525,7 @@
             {
               "tagName": "A",
               "text": "Home",
-              "delay": 101
+              "delay": 102
             },
             {
               "tagName": "A",
@@ -522,27 +535,27 @@
             {
               "tagName": "A",
               "text": "Meet The Team",
-              "delay": 101
+              "delay": 102
             },
             {
               "tagName": "A",
               "text": "Clients",
-              "delay": 101
+              "delay": 102
             },
             {
               "tagName": "A",
               "text": "News/Blog",
-              "delay": 100
+              "delay": 102
             },
             {
               "tagName": "A",
               "text": "Accessibility Help",
-              "delay": 100
+              "delay": 101
             },
             {
               "tagName": "A",
               "text": "Contact us",
-              "delay": 102
+              "delay": 101
             },
             {
               "tagName": "A",
@@ -557,12 +570,12 @@
             {
               "tagName": "A",
               "text": "YouTube",
-              "delay": 101
+              "delay": 103
             },
             {
               "tagName": "A",
               "text": "Facebook",
-              "delay": 101
+              "delay": 104
             },
             {
               "tagName": "A",
@@ -571,43 +584,28 @@
             },
             {
               "tagName": "A",
-              "text": "@webaim",
-              "delay": 100
-            },
-            {
-              "tagName": "A",
-              "text": "zcu.io/EvP9",
-              "delay": 101
-            },
-            {
-              "tagName": "A",
-              "text": "#Accessibility",
-              "delay": 101
-            },
-            {
-              "tagName": "A",
-              "text": "#DigitalAccessibilityMatters",
-              "delay": 100
+              "text": "zcu.io/7wvz",
+              "delay": 103
             },
             {
               "tagName": "A",
               "text": "Terms & Conditions",
-              "delay": 102
-            },
-            {
-              "tagName": "A",
-              "text": "Privacy & Cookies",
-              "delay": 102
-            },
-            {
-              "tagName": "A",
-              "text": "Subject Access Request",
               "delay": 101
             },
             {
               "tagName": "A",
-              "text": "Privacy Policy",
+              "text": "Privacy & Cookies",
               "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Subject Access Request",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Privacy Policy",
+              "delay": 101
             }
           ]
         }
@@ -1448,35 +1446,50 @@
       "url": "https://www.accessibility-services.co.uk/",
       "result": {
         "totals": {
-          "triggers": 102,
+          "triggers": 99,
           "headTriggers": 20,
-          "tailTriggers": 82,
-          "impactTriggers": 0,
-          "additions": 0,
+          "tailTriggers": 79,
+          "impactTriggers": 12,
+          "additions": 106,
           "removals": 0,
-          "opacityChanges": 0,
+          "opacityChanges": 5,
           "opacityImpact": 0,
-          "unhoverables": 2
+          "unhoverables": 0
         },
         "items": {
           "head": {
-            "impactTriggers": [],
+            "impactTriggers": [
+              {
+                "tagName": "LI",
+                "text": "ServicesFreeAccessibilitySnapshotConsultancyDigita",
+                "additions": 22,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              }
+            ],
             "unhoverables": []
           },
           "tail": {
-            "impactTriggers": [],
-            "unhoverables": [
+            "impactTriggers": [
               {
-                "tagName": "A",
-                "id": "",
-                "text": "SubjectAccessRequest"
+                "tagName": "LI",
+                "text": "DigitalConsultancyExploreMore",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 0
               },
               {
                 "tagName": "A",
-                "id": "",
-                "text": "#Accessibility"
+                "text": "AccessibilityHelp",
+                "additions": 16,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
               }
-            ]
+            ],
+            "unhoverables": []
           }
         }
       }
@@ -1731,6 +1744,7 @@
       "result": {
         "roleElements": 2,
         "badRoleElements": 0,
+        "redundantRoleElements": 0,
         "tagNames": {}
       }
     },

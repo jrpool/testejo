@@ -304,14 +304,17 @@
           "total": 34,
           "types": {
             "indicatorMissing": {
-              "total": 0,
-              "tagNames": {}
+              "total": 21,
+              "tagNames": {
+                "INPUT": 3,
+                "A": 18
+              }
             },
             "nonOutlinePresent": {
-              "total": 26,
+              "total": 5,
               "tagNames": {
-                "A": 22,
-                "INPUT": 4
+                "A": 4,
+                "INPUT": 1
               }
             },
             "outlinePresent": {
@@ -325,12 +328,7 @@
           }
         },
         "items": {
-          "indicatorMissing": [],
-          "nonOutlinePresent": [
-            {
-              "tagName": "A",
-              "text": "Skip to content"
-            },
+          "indicatorMissing": [
             {
               "tagName": "INPUT",
               "text": ""
@@ -361,10 +359,6 @@
             },
             {
               "tagName": "A",
-              "text": "See our services"
-            },
-            {
-              "tagName": "A",
               "text": "Accessibility testing"
             },
             {
@@ -378,18 +372,6 @@
             {
               "tagName": "A",
               "text": "Usability testing"
-            },
-            {
-              "tagName": "A",
-              "text": "See our resources"
-            },
-            {
-              "tagName": "A",
-              "text": "Read about our philosophy"
-            },
-            {
-              "tagName": "INPUT",
-              "text": ""
             },
             {
               "tagName": "INPUT",
@@ -430,6 +412,28 @@
             {
               "tagName": "A",
               "text": "Intopia on LinkedIn"
+            }
+          ],
+          "nonOutlinePresent": [
+            {
+              "tagName": "A",
+              "text": "Skip to content"
+            },
+            {
+              "tagName": "A",
+              "text": "See our services"
+            },
+            {
+              "tagName": "A",
+              "text": "See our resources"
+            },
+            {
+              "tagName": "A",
+              "text": "Read about our philosophy"
+            },
+            {
+              "tagName": "INPUT",
+              "text": ""
             }
           ],
           "outlinePresent": [
@@ -1273,22 +1277,38 @@
       "url": "https://intopia.digital/",
       "result": {
         "roleElements": 10,
-        "badRoleElements": 8,
+        "badRoleElements": 5,
+        "redundantRoleElements": 3,
         "tagNames": {
           "HEADER": {
-            "banner": 1
+            "banner": {
+              "bad": 1,
+              "redundant": 0
+            }
           },
           "NAV": {
-            "navigation": 2
+            "navigation": {
+              "bad": 0,
+              "redundant": 2
+            }
           },
           "MAIN": {
-            "main": 1
+            "main": {
+              "bad": 0,
+              "redundant": 1
+            }
           },
           "FOOTER": {
-            "contentinfo": 1
+            "contentinfo": {
+              "bad": 1,
+              "redundant": 0
+            }
           },
           "SPAN": {
-            "text": 3
+            "text": {
+              "bad": 3,
+              "redundant": 0
+            }
           }
         }
       }
@@ -4989,7 +5009,7 @@
   "endTime": "2022-07-09T15:08:00",
   "elapsedSeconds": 127,
   "score": {
-    "scoreProcID": "sp12a",
+    "scoreProcID": "sp12b",
     "logWeights": {
       "logCount": 0.5,
       "logSize": 0.01,
@@ -5011,10 +5031,10 @@
     },
     "packageDetails": {
       "testaro": {
-        "focInd": 26,
+        "focInd": 68,
         "hover": 1,
         "linkUl": 26,
-        "role": 8,
+        "role": 13,
         "styleDiff": 16,
         "zIndex": 6
       },
@@ -5061,7 +5081,7 @@
         "focusIndication": {
           "testaro": {
             "focInd": {
-              "score": 26,
+              "score": 68,
               "what": "Focused element displaying no or nostandard focus indicator"
             }
           }
@@ -5085,7 +5105,7 @@
         "roleBad": {
           "testaro": {
             "role": {
-              "score": 6,
+              "score": 10,
               "what": "Nonexistent or implicit-overriding role"
             }
           },
@@ -5295,14 +5315,14 @@
     },
     "preventionScores": {},
     "summary": {
-      "total": 286,
+      "total": 331,
       "log": 107,
       "preventions": 0,
       "solos": 0,
       "groups": [
         {
           "groupName": "focusIndication",
-          "score": 28
+          "score": 70
         },
         {
           "groupName": "contrastAAA",
@@ -5313,16 +5333,16 @@
           "score": 17
         },
         {
+          "groupName": "roleBad",
+          "score": 16
+        },
+        {
           "groupName": "contrastAA",
           "score": 16
         },
         {
           "groupName": "linkIndication",
           "score": 15
-        },
-        {
-          "groupName": "roleBad",
-          "score": 13
         },
         {
           "groupName": "targetSize",

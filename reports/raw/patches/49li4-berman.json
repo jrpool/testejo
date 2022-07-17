@@ -1,0 +1,514 @@
+{
+  "id": "49li4-berman",
+  "host": {
+    "id": "berman",
+    "which": "https://wcag2.com/",
+    "what": "David Berman Developments"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-16T21:44:39"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-16T21:45:32"
+    }
+  ],
+  "script": {
+    "id": "tp12",
+    "what": "Alfa, Axe, HTML CodeSniffer, IBM, Tenon, WAVE, and 16 custom tests",
+    "strict": true,
+    "timeLimit": 150,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://wcag2.com/",
+        "what": "David Berman Developments"
+      },
+      {
+        "type": "test",
+        "which": "focInd",
+        "revealAll": false,
+        "allowedDelay": 250,
+        "withItems": true,
+        "what": "focus indicators"
+      },
+      {
+        "type": "test",
+        "which": "hover",
+        "headSize": 20,
+        "headSampleSize": 20,
+        "tailSampleSize": 15,
+        "withItems": true,
+        "what": "hover impacts"
+      },
+      {
+        "type": "test",
+        "which": "role",
+        "what": "validity and necessity of role assignments"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://wcag2.com/",
+      "what": "David Berman Developments",
+      "result": "https://wcag2.com/"
+    },
+    {
+      "type": "test",
+      "which": "focInd",
+      "revealAll": false,
+      "allowedDelay": 250,
+      "withItems": true,
+      "what": "focus indicators",
+      "url": "https://wcag2.com/",
+      "result": {
+        "totals": {
+          "total": 44,
+          "types": {
+            "indicatorMissing": {
+              "total": 0,
+              "tagNames": {}
+            },
+            "nonOutlinePresent": {
+              "total": 0,
+              "tagNames": {}
+            },
+            "outlinePresent": {
+              "total": 44,
+              "meanDelay": 27,
+              "tagNames": {
+                "A": 44
+              }
+            }
+          }
+        },
+        "items": {
+          "indicatorMissing": [],
+          "nonOutlinePresent": [],
+          "outlinePresent": [
+            {
+              "tagName": "A",
+              "text": "Skip to content",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "wcag2.com",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "About",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Strategy",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Training",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Training home",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility Cookbook",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Auditing",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Remediation",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Contact Us",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "“David's training used real-life examples, got people up and interacting. It was an amazing experien",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Strategy",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Training",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Auditing",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Remediation",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "facebook",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "twitter",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "linkedin",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "youtube",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Powered by:",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "1999–2022 David Berman Developments Inc | +1-613-728-6777 | All rights reserved",
+              "delay": 0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://wcag2.com/",
+      "what": "URL",
+      "result": "https://wcag2.com/"
+    },
+    {
+      "type": "test",
+      "which": "hover",
+      "headSize": 20,
+      "headSampleSize": 20,
+      "tailSampleSize": 15,
+      "withItems": true,
+      "what": "hover-caused content changes",
+      "url": "https://wcag2.com/",
+      "result": {
+        "totals": {
+          "triggers": 70,
+          "headTriggers": 20,
+          "tailTriggers": 50,
+          "impactTriggers": 10,
+          "additions": 0,
+          "removals": 0,
+          "opacityChanges": 10,
+          "opacityImpact": 20,
+          "unhoverables": 6
+        },
+        "items": {
+          "head": {
+            "impactTriggers": [],
+            "unhoverables": [
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Skiptocontent"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "“David'strainingusedreal-lifeexamples,gotpeopleupa"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "<imgloading=\"lazy\"id=\"soliloquy-image-774\"class=\"s"
+              }
+            ]
+          },
+          "tail": {
+            "impactTriggers": [
+              {
+                "tagName": "LI",
+                "text": "<ahref=\"\"class=\"soliloquy-linksoliloquy-thumbnails",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 2
+              },
+              {
+                "tagName": "LI",
+                "text": "<ahref=\"\"class=\"soliloquy-linksoliloquy-thumbnails",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 2
+              },
+              {
+                "tagName": "LI",
+                "text": "facebook",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 2
+              }
+            ],
+            "unhoverables": [
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "<ahref=\"\"class=\"soliloquy-linksoliloquy-thumbnails"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "<imgid=\"soliloquy-thumbnail-image-1585\"class=\"soli"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "<imgid=\"soliloquy-thumbnail-image-773\"class=\"solil"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://wcag2.com/",
+      "what": "URL",
+      "result": "https://wcag2.com/"
+    },
+    {
+      "type": "test",
+      "which": "role",
+      "what": "roles",
+      "url": "https://wcag2.com/",
+      "result": {
+        "roleElements": 9,
+        "badRoleElements": 8,
+        "redundantRoleElements": 1,
+        "tagNames": {
+          "HEADER": {
+            "banner": {
+              "bad": 1,
+              "redundant": 0
+            }
+          },
+          "NAV": {
+            "navigation": {
+              "bad": 0,
+              "redundant": 1
+            }
+          },
+          "A": {
+            "button": {
+              "bad": 2,
+              "redundant": 0
+            }
+          },
+          "DIV": {
+            "main": {
+              "bad": 3,
+              "redundant": 0
+            },
+            "complementary": {
+              "bad": 1,
+              "redundant": 0
+            }
+          },
+          "FOOTER": {
+            "contentinfo": {
+              "bad": 1,
+              "redundant": 0
+            }
+          }
+        }
+      }
+    }
+  ],
+  "timeStamp": "49li4",
+  "startTime": "2022-07-16T21:44:39",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "hover",
+      42
+    ],
+    [
+      "focInd",
+      1
+    ],
+    [
+      "role",
+      0
+    ]
+  ],
+  "logCount": 7,
+  "logSize": 1312,
+  "errorLogCount": 4,
+  "errorLogSize": 1174,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-16T21:45:32",
+  "elapsedSeconds": 52
+}

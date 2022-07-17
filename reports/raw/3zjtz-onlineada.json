@@ -303,28 +303,31 @@
           "total": 27,
           "types": {
             "indicatorMissing": {
+              "total": 6,
+              "tagNames": {
+                "A": 6
+              }
+            },
+            "nonOutlinePresent": {
               "total": 0,
               "tagNames": {}
             },
-            "nonOutlinePresent": {
-              "total": 4,
-              "tagNames": {
-                "A": 4
-              }
-            },
             "outlinePresent": {
-              "total": 23,
-              "meanDelay": 24,
+              "total": 21,
+              "meanDelay": 7,
               "tagNames": {
-                "A": 22,
+                "A": 20,
                 "BUTTON": 1
               }
             }
           }
         },
         "items": {
-          "indicatorMissing": [],
-          "nonOutlinePresent": [
+          "indicatorMissing": [
+            {
+              "tagName": "A",
+              "text": "LEARN MORE"
+            },
             {
               "tagName": "A",
               "text": "JOIN THE PARTNER PROGRAM"
@@ -335,6 +338,10 @@
             },
             {
               "tagName": "A",
+              "text": "GET YOUR FREE ANALYSIS"
+            },
+            {
+              "tagName": "A",
               "text": "Check us out on linkedin Linkedin"
             },
             {
@@ -342,6 +349,7 @@
               "text": "Check us out on youtube Youtube"
             }
           ],
+          "nonOutlinePresent": [],
           "outlinePresent": [
             {
               "tagName": "A",
@@ -357,11 +365,6 @@
               "tagName": "BUTTON",
               "text": "",
               "delay": 0
-            },
-            {
-              "tagName": "A",
-              "text": "LEARN MORE",
-              "delay": 139
             },
             {
               "tagName": "A",
@@ -385,13 +388,8 @@
             },
             {
               "tagName": "A",
-              "text": "GET YOUR FREE ANALYSIS",
-              "delay": 301
-            },
-            {
-              "tagName": "A",
               "text": "GET CONNECTED",
-              "delay": 102
+              "delay": 101
             },
             {
               "tagName": "A",
@@ -1098,6 +1096,7 @@
       "result": {
         "roleElements": 1,
         "badRoleElements": 0,
+        "redundantRoleElements": 0,
         "tagNames": {}
       }
     },

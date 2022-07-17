@@ -300,36 +300,32 @@
       "url": "https://www.accessibilityoz.com/",
       "result": {
         "totals": {
-          "total": 66,
+          "total": 65,
           "types": {
             "indicatorMissing": {
-              "total": 0,
-              "tagNames": {}
-            },
-            "nonOutlinePresent": {
-              "total": 6,
+              "total": 5,
               "tagNames": {
-                "INPUT": 1,
                 "A": 5
               }
             },
+            "nonOutlinePresent": {
+              "total": 1,
+              "tagNames": {
+                "INPUT": 1
+              }
+            },
             "outlinePresent": {
-              "total": 60,
+              "total": 59,
               "meanDelay": 0,
               "tagNames": {
-                "A": 59,
+                "A": 58,
                 "BUTTON": 1
               }
             }
           }
         },
         "items": {
-          "indicatorMissing": [],
-          "nonOutlinePresent": [
-            {
-              "tagName": "INPUT",
-              "text": ""
-            },
+          "indicatorMissing": [
             {
               "tagName": "A",
               "text": "Pause"
@@ -348,6 +344,12 @@
             },
             {
               "tagName": "A",
+              "text": ""
+            }
+          ],
+          "nonOutlinePresent": [
+            {
+              "tagName": "INPUT",
               "text": ""
             }
           ],
@@ -479,6 +481,36 @@
             },
             {
               "tagName": "A",
+              "text": "https://t.co/SbzNl4UcHi",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "2 days ago",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "https://t.co/vYvykTgNff",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "3 days ago",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "https://t.co/RlrMckFxxB",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "6 days ago",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
               "text": "@LFLegal",
               "delay": 0
             },
@@ -489,7 +521,7 @@
             },
             {
               "tagName": "A",
-              "text": "6 days ago",
+              "text": "2 weeks ago",
               "delay": 0
             },
             {
@@ -499,7 +531,7 @@
             },
             {
               "tagName": "A",
-              "text": "1 week ago",
+              "text": "3 weeks ago",
               "delay": 0
             },
             {
@@ -509,42 +541,7 @@
             },
             {
               "tagName": "A",
-              "text": "1 week ago",
-              "delay": 0
-            },
-            {
-              "tagName": "A",
-              "text": "@Translink_QLD",
-              "delay": 0
-            },
-            {
-              "tagName": "A",
-              "text": "#MoveTogether",
-              "delay": 0
-            },
-            {
-              "tagName": "A",
-              "text": "2 weeks ago",
-              "delay": 0
-            },
-            {
-              "tagName": "A",
-              "text": "https://t.co/hQKqoLapMC",
-              "delay": 0
-            },
-            {
-              "tagName": "A",
               "text": "3 weeks ago",
-              "delay": 0
-            },
-            {
-              "tagName": "A",
-              "text": "https://t.co/y5xXgyjDAY",
-              "delay": 0
-            },
-            {
-              "tagName": "A",
-              "text": "4 weeks ago",
               "delay": 0
             },
             {
@@ -1717,9 +1714,9 @@
       "url": "https://www.accessibilityoz.com/",
       "result": {
         "totals": {
-          "triggers": 76,
+          "triggers": 75,
           "headTriggers": 20,
-          "tailTriggers": 56,
+          "tailTriggers": 55,
           "impactTriggers": 0,
           "additions": 0,
           "removals": 0,
@@ -1736,9 +1733,9 @@
             "impactTriggers": [],
             "unhoverables": [
               {
-                "tagName": "A",
+                "tagName": "LI",
                 "id": "",
-                "text": "<imgclass=\"alignnonesize-fullwp-image-3674\"src=\"//"
+                "text": "<divclass=\"slide-content\"><p><ahref=\"/services/tes"
               }
             ]
           }
@@ -2666,19 +2663,32 @@
       "url": "https://www.accessibilityoz.com/",
       "result": {
         "roleElements": 78,
-        "badRoleElements": 6,
+        "badRoleElements": 5,
+        "redundantRoleElements": 1,
         "tagNames": {
           "HEADER": {
-            "banner": 1
+            "banner": {
+              "bad": 1,
+              "redundant": 0
+            }
           },
           "NAV": {
-            "navigation": 1
+            "navigation": {
+              "bad": 0,
+              "redundant": 1
+            }
           },
           "A": {
-            "button": 3
+            "button": {
+              "bad": 3,
+              "redundant": 0
+            }
           },
           "FOOTER": {
-            "contentinfo": 1
+            "contentinfo": {
+              "bad": 1,
+              "redundant": 0
+            }
           }
         }
       }

@@ -304,14 +304,15 @@
           "total": 47,
           "types": {
             "indicatorMissing": {
-              "total": 0,
-              "tagNames": {}
+              "total": 1,
+              "tagNames": {
+                "IFRAME": 1
+              }
             },
             "nonOutlinePresent": {
-              "total": 10,
+              "total": 9,
               "tagNames": {
-                "INPUT": 9,
-                "IFRAME": 1
+                "INPUT": 9
               }
             },
             "outlinePresent": {
@@ -328,7 +329,12 @@
           }
         },
         "items": {
-          "indicatorMissing": [],
+          "indicatorMissing": [
+            {
+              "tagName": "IFRAME",
+              "text": ""
+            }
+          ],
           "nonOutlinePresent": [
             {
               "tagName": "INPUT",
@@ -365,10 +371,6 @@
             {
               "tagName": "INPUT",
               "text": ""
-            },
-            {
-              "tagName": "IFRAME",
-              "text": ""
             }
           ],
           "outlinePresent": [
@@ -395,22 +397,22 @@
             {
               "tagName": "A",
               "text": "ADA Compliance",
-              "delay": 101
+              "delay": 100
             },
             {
               "tagName": "A",
               "text": "Free Resources",
-              "delay": 102
+              "delay": 101
             },
             {
               "tagName": "A",
               "text": "Blog",
-              "delay": 100
+              "delay": 101
             },
             {
               "tagName": "A",
               "text": "About",
-              "delay": 100
+              "delay": 102
             },
             {
               "tagName": "A",
@@ -420,7 +422,7 @@
             {
               "tagName": "A",
               "text": "Free Evaluation",
-              "delay": 101
+              "delay": 105
             },
             {
               "tagName": "A",
@@ -430,17 +432,17 @@
             {
               "tagName": "A",
               "text": "Website AccessibilityAudit We give you the full picture of accessibility for your website or app. Ou",
-              "delay": 101
+              "delay": 103
             },
             {
               "tagName": "A",
               "text": "Website Accessibility Repair We implement the recommendations we provide in our website accessibilit",
-              "delay": 102
+              "delay": 100
             },
             {
               "tagName": "A",
               "text": "Website Accessibility Training We teach web accessibility to decision makers and developers empoweri",
-              "delay": 100
+              "delay": 103
             },
             {
               "tagName": "A",
@@ -1354,11 +1356,11 @@
           "triggers": 64,
           "headTriggers": 20,
           "tailTriggers": 44,
-          "impactTriggers": 2,
-          "additions": 0,
-          "removals": 0,
-          "opacityChanges": 2,
-          "opacityImpact": 34,
+          "impactTriggers": 3,
+          "additions": 36,
+          "removals": 18,
+          "opacityChanges": 0,
+          "opacityImpact": 0,
           "unhoverables": 1
         },
         "items": {
@@ -1367,18 +1369,26 @@
               {
                 "tagName": "LI",
                 "text": "ServicesAuditAutomatedTestingTool:Rocket®PDFRemedi",
-                "additions": 0,
+                "additions": 18,
                 "removals": 0,
-                "opacityChanges": 1,
-                "opacityImpact": 17
+                "opacityChanges": 0,
+                "opacityImpact": 0
               },
               {
                 "tagName": "A",
                 "text": "Services",
-                "additions": 0,
+                "additions": 18,
                 "removals": 0,
-                "opacityChanges": 1,
-                "opacityImpact": 17
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "LI",
+                "text": "ADACompliance",
+                "additions": 0,
+                "removals": 18,
+                "opacityChanges": 0,
+                "opacityImpact": 0
               }
             ],
             "unhoverables": [
@@ -1800,9 +1810,13 @@
       "result": {
         "roleElements": 13,
         "badRoleElements": 1,
+        "redundantRoleElements": 0,
         "tagNames": {
           "DIV": {
-            "button": 1
+            "button": {
+              "bad": 1,
+              "redundant": 0
+            }
           }
         }
       }
@@ -11091,7 +11105,7 @@
   "endTime": "2022-07-09T14:38:11",
   "elapsedSeconds": 149,
   "score": {
-    "scoreProcID": "sp12a",
+    "scoreProcID": "sp12b",
     "logWeights": {
       "logCount": 0.5,
       "logSize": 0.01,
@@ -11115,11 +11129,11 @@
       "testaro": {
         "bulk": 0,
         "focAll": 18,
-        "focInd": 10,
+        "focInd": 12,
         "focOp": 8,
-        "hover": 9,
+        "hover": 36,
         "linkUl": 46,
-        "role": 1,
+        "role": 2,
         "styleDiff": 22,
         "zIndex": 15
       },
@@ -11196,7 +11210,7 @@
         "focusIndication": {
           "testaro": {
             "focInd": {
-              "score": 10,
+              "score": 12,
               "what": "Focused element displaying no or nostandard focus indicator"
             }
           }
@@ -11212,7 +11226,7 @@
         "hoverSurprise": {
           "testaro": {
             "hover": {
-              "score": 2,
+              "score": 9,
               "what": "Content changes caused by hovering"
             }
           }
@@ -11228,7 +11242,7 @@
         "roleBad": {
           "testaro": {
             "role": {
-              "score": 1,
+              "score": 2,
               "what": "Nonexistent or implicit-overriding role"
             }
           }
@@ -11560,7 +11574,7 @@
     },
     "preventionScores": {},
     "summary": {
-      "total": 619,
+      "total": 629,
       "log": 161,
       "preventions": 0,
       "solos": 0,
@@ -11595,7 +11609,11 @@
         },
         {
           "groupName": "focusIndication",
-          "score": 12
+          "score": 14
+        },
+        {
+          "groupName": "hoverSurprise",
+          "score": 11
         },
         {
           "groupName": "fontSmall",
@@ -11654,7 +11672,7 @@
           "score": 5
         },
         {
-          "groupName": "hoverSurprise",
+          "groupName": "roleBad",
           "score": 4
         },
         {
@@ -11663,10 +11681,6 @@
         },
         {
           "groupName": "visibleBulk",
-          "score": 3
-        },
-        {
-          "groupName": "roleBad",
           "score": 3
         },
         {

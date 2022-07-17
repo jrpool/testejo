@@ -1,0 +1,572 @@
+{
+  "id": "49li4-atos",
+  "host": {
+    "id": "atos",
+    "which": "https://atos.net/en/lp/accessibility-and-assistive-technology-iux",
+    "what": "Atos"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-16T21:33:34"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-16T21:34:18"
+    }
+  ],
+  "script": {
+    "id": "tp12",
+    "what": "Alfa, Axe, HTML CodeSniffer, IBM, Tenon, WAVE, and 16 custom tests",
+    "strict": true,
+    "timeLimit": 150,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://atos.net/en/lp/accessibility-and-assistive-technology-iux",
+        "what": "Atos"
+      },
+      {
+        "type": "test",
+        "which": "focInd",
+        "revealAll": false,
+        "allowedDelay": 250,
+        "withItems": true,
+        "what": "focus indicators"
+      },
+      {
+        "type": "test",
+        "which": "hover",
+        "headSize": 20,
+        "headSampleSize": 20,
+        "tailSampleSize": 15,
+        "withItems": true,
+        "what": "hover impacts"
+      },
+      {
+        "type": "test",
+        "which": "role",
+        "what": "validity and necessity of role assignments"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://atos.net/en/lp/accessibility-and-assistive-technology-iux",
+      "what": "Atos",
+      "result": "https://atos.net/en/lp/accessibility-and-assistive-technology-iux"
+    },
+    {
+      "type": "test",
+      "which": "focInd",
+      "revealAll": false,
+      "allowedDelay": 250,
+      "withItems": true,
+      "what": "focus indicators",
+      "url": "https://atos.net/en/lp/accessibility-and-assistive-technology-iux",
+      "result": {
+        "totals": {
+          "total": 53,
+          "types": {
+            "indicatorMissing": {
+              "total": 1,
+              "tagNames": {
+                "INPUT": 1
+              }
+            },
+            "nonOutlinePresent": {
+              "total": 0,
+              "tagNames": {}
+            },
+            "outlinePresent": {
+              "total": 52,
+              "meanDelay": 0,
+              "tagNames": {
+                "A": 43,
+                "FORM": 1,
+                "BUTTON": 6,
+                "INPUT": 2
+              }
+            }
+          }
+        },
+        "items": {
+          "indicatorMissing": [
+            {
+              "tagName": "INPUT",
+              "text": ""
+            }
+          ],
+          "nonOutlinePresent": [],
+          "outlinePresent": [
+            {
+              "tagName": "A",
+              "text": "Skip to main content",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Key Offerings",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Our Vision",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Experts",
+              "delay": 0
+            },
+            {
+              "tagName": "FORM",
+              "text": "Our website uses cookies to give you the most optimal experience online by: measuring our audience, ",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "cookies",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "privacy policy",
+              "delay": 0
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Accept all cookies",
+              "delay": 0
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Decline all cookies",
+              "delay": 0
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Customize",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Privacy policy",
+              "delay": 0
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Accept all cookies",
+              "delay": 0
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Decline all cookies",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Matomo on premise",
+              "delay": 0
+            },
+            {
+              "tagName": "INPUT",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Adobe Privacy policy",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Marketo Privacy Policy",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Pardot Privacy Policy",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Oktopost Privacy Policy",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "MRP Privacy Policy",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "AccountInsight Privacy Policy",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Triblio Privacy Policy",
+              "delay": 0
+            },
+            {
+              "tagName": "INPUT",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "LinkedIn Policy",
+              "delay": 0
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Accept selected cookies",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Raison D’etre",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility Testing",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Global GAAD Content",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Iberia GAAD Content",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "India & APAC GAAD Content",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "DACH GAAD Content",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "France GAAD Content",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "UK & Ireland GAAD Content",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Read all blogs by Neil Milliken",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Read all blogs by Jim Smith",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "via email to Atos ICT4IC team",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "ICT4IC event webpage",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Register your interest",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Privacy",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Fraud Awareness",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Terms and conditions",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "RSS feeds",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Contact",
+              "delay": 0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://atos.net/en/lp/accessibility-and-assistive-technology-iux",
+      "what": "URL",
+      "result": "https://atos.net/en/lp/accessibility-and-assistive-technology-iux"
+    },
+    {
+      "type": "test",
+      "which": "hover",
+      "headSize": 20,
+      "headSampleSize": 20,
+      "tailSampleSize": 15,
+      "withItems": true,
+      "what": "hover-caused content changes",
+      "url": "https://atos.net/en/lp/accessibility-and-assistive-technology-iux",
+      "result": {
+        "totals": {
+          "triggers": 78,
+          "headTriggers": 20,
+          "tailTriggers": 58,
+          "impactTriggers": 0,
+          "additions": 0,
+          "removals": 0,
+          "opacityChanges": 0,
+          "opacityImpact": 0,
+          "unhoverables": 17
+        },
+        "items": {
+          "head": {
+            "impactTriggers": [],
+            "unhoverables": [
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Skiptomaincontent"
+              },
+              {
+                "tagName": "BUTTON",
+                "id": "",
+                "text": "Acceptallcookies"
+              },
+              {
+                "tagName": "BUTTON",
+                "id": "",
+                "text": "Declineallcookies"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Matomoonpremise"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "AdobePrivacypolicy"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "MarketoPrivacyPolicy"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "PardotPrivacyPolicy"
+              }
+            ]
+          },
+          "tail": {
+            "impactTriggers": [],
+            "unhoverables": [
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "TriblioPrivacyPolicy"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "<divid=\"footer_globe\"></div>"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "<imgsrc=\"https://atos.net/wp-content/uploads/2020/"
+              },
+              {
+                "tagName": "BUTTON",
+                "id": "",
+                "text": "Acceptselectedcookies"
+              },
+              {
+                "tagName": "LI",
+                "id": "menu-item-12613",
+                "text": "Privacy"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "<imgsrc=\"https://atos.net/wp-content/uploads/2020/"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Termsandconditions"
+              },
+              {
+                "tagName": "LI",
+                "id": "menu-item-207007",
+                "text": "Contact"
+              },
+              {
+                "tagName": "LI",
+                "id": "menu-item-12640",
+                "text": "Termsandconditions"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "©AtosSE2022allrightsreserved"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://atos.net/en/lp/accessibility-and-assistive-technology-iux",
+      "what": "URL",
+      "result": "https://atos.net/en/lp/accessibility-and-assistive-technology-iux"
+    },
+    {
+      "type": "test",
+      "which": "role",
+      "what": "roles",
+      "url": "https://atos.net/en/lp/accessibility-and-assistive-technology-iux",
+      "result": {
+        "roleElements": 2,
+        "badRoleElements": 0,
+        "redundantRoleElements": 2,
+        "tagNames": {
+          "MAIN": {
+            "main": {
+              "bad": 0,
+              "redundant": 1
+            }
+          },
+          "H1": {
+            "heading": {
+              "bad": 0,
+              "redundant": 1
+            }
+          }
+        }
+      }
+    }
+  ],
+  "timeStamp": "49li4",
+  "startTime": "2022-07-16T21:33:34",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "hover",
+      35
+    ],
+    [
+      "focInd",
+      1
+    ],
+    [
+      "role",
+      0
+    ]
+  ],
+  "logCount": 0,
+  "logSize": 0,
+  "errorLogCount": 0,
+  "errorLogSize": 0,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-16T21:34:18",
+  "elapsedSeconds": 44
+}

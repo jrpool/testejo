@@ -408,7 +408,7 @@
             {
               "tagName": "A",
               "text": "Take a closer look",
-              "delay": 101
+              "delay": 100
             },
             {
               "tagName": "A",
@@ -418,7 +418,7 @@
             {
               "tagName": "A",
               "text": "Take a closer look",
-              "delay": 201
+              "delay": 203
             },
             {
               "tagName": "A",
@@ -428,7 +428,7 @@
             {
               "tagName": "A",
               "text": "Take a closer look",
-              "delay": 201
+              "delay": 202
             },
             {
               "tagName": "A",
@@ -1135,11 +1135,11 @@
           "triggers": 34,
           "headTriggers": 20,
           "tailTriggers": 14,
-          "impactTriggers": 6,
+          "impactTriggers": 7,
           "additions": 0,
           "removals": 0,
-          "opacityChanges": 12,
-          "opacityImpact": 9,
+          "opacityChanges": 13,
+          "opacityImpact": 12,
           "unhoverables": 0
         },
         "items": {
@@ -1196,6 +1196,14 @@
                 "removals": 0,
                 "opacityChanges": 1,
                 "opacityImpact": 0
+              },
+              {
+                "tagName": "A",
+                "text": "MORE",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 3
               }
             ],
             "unhoverables": []
@@ -1473,6 +1481,7 @@
       "result": {
         "roleElements": 0,
         "badRoleElements": 0,
+        "redundantRoleElements": 0,
         "tagNames": {}
       }
     },
@@ -9921,7 +9930,7 @@
   "endTime": "2022-07-09T15:04:01",
   "elapsedSeconds": 123,
   "score": {
-    "scoreProcID": "sp12a",
+    "scoreProcID": "sp12b",
     "logWeights": {
       "logCount": 0.5,
       "logSize": 0.01,
@@ -9946,7 +9955,7 @@
         "focAll": 2,
         "focInd": 5,
         "focOp": 24,
-        "hover": 15,
+        "hover": 18,
         "linkUl": 56,
         "styleDiff": 21,
         "zIndex": 12
@@ -10028,7 +10037,7 @@
         "hoverSurprise": {
           "testaro": {
             "hover": {
-              "score": 4,
+              "score": 5,
               "what": "Content changes caused by hovering"
             }
           }
@@ -10278,7 +10287,7 @@
     },
     "preventionScores": {},
     "summary": {
-      "total": 337,
+      "total": 338,
       "log": 48,
       "preventions": 0,
       "solos": 0,
@@ -10332,16 +10341,16 @@
           "score": 8
         },
         {
+          "groupName": "hoverSurprise",
+          "score": 7
+        },
+        {
           "groupName": "inconsistentStyles",
           "score": 7
         },
         {
           "groupName": "contrastRisk",
           "score": 7
-        },
-        {
-          "groupName": "hoverSurprise",
-          "score": 6
         },
         {
           "groupName": "zIndexNotZero",

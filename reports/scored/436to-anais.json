@@ -300,288 +300,7 @@
       "allowedDelay": 250,
       "withItems": true,
       "what": "focus indicators",
-      "url": "https://www.anais.digital/fr/",
-      "result": {
-        "totals": {
-          "total": 50,
-          "types": {
-            "indicatorMissing": {
-              "total": 0,
-              "tagNames": {}
-            },
-            "nonOutlinePresent": {
-              "total": 1,
-              "tagNames": {
-                "IFRAME": 1
-              }
-            },
-            "outlinePresent": {
-              "total": 49,
-              "meanDelay": 9,
-              "tagNames": {
-                "A": 44,
-                "BUTTON": 5
-              }
-            }
-          }
-        },
-        "items": {
-          "indicatorMissing": [],
-          "nonOutlinePresent": [
-            {
-              "tagName": "IFRAME",
-              "text": ""
-            }
-          ],
-          "outlinePresent": [
-            {
-              "tagName": "A",
-              "text": "Skip to content",
-              "delay": 0
-            },
-            {
-              "tagName": "A",
-              "text": "Skip to sidebar",
-              "delay": 0
-            },
-            {
-              "tagName": "A",
-              "text": "",
-              "delay": 0
-            },
-            {
-              "tagName": "A",
-              "text": "Plan du site",
-              "delay": 0
-            },
-            {
-              "tagName": "A",
-              "text": "Digital strategy case studies",
-              "delay": 0
-            },
-            {
-              "tagName": "A",
-              "text": "Expertises",
-              "delay": 0
-            },
-            {
-              "tagName": "A",
-              "text": "Formations UX et accessibilité",
-              "delay": 0
-            },
-            {
-              "tagName": "A",
-              "text": "Jobs",
-              "delay": 0
-            },
-            {
-              "tagName": "A",
-              "text": "Blog",
-              "delay": 0
-            },
-            {
-              "tagName": "A",
-              "text": "Podcast",
-              "delay": 0
-            },
-            {
-              "tagName": "A",
-              "text": "À propos",
-              "delay": 0
-            },
-            {
-              "tagName": "BUTTON",
-              "text": "English",
-              "delay": 0
-            },
-            {
-              "tagName": "A",
-              "text": "Contact",
-              "delay": 0
-            },
-            {
-              "tagName": "A",
-              "text": "Ce que nous faisons",
-              "delay": 0
-            },
-            {
-              "tagName": "A",
-              "text": "Ce que vous recherchez",
-              "delay": 0
-            },
-            {
-              "tagName": "A",
-              "text": "Skip the content",
-              "delay": 0
-            },
-            {
-              "tagName": "BUTTON",
-              "text": "",
-              "delay": 0
-            },
-            {
-              "tagName": "A",
-              "text": "",
-              "delay": 0
-            },
-            {
-              "tagName": "A",
-              "text": "",
-              "delay": 0
-            },
-            {
-              "tagName": "A",
-              "text": "",
-              "delay": 0
-            },
-            {
-              "tagName": "A",
-              "text": "",
-              "delay": 0
-            },
-            {
-              "tagName": "A",
-              "text": "",
-              "delay": 0
-            },
-            {
-              "tagName": "A",
-              "text": "",
-              "delay": 0
-            },
-            {
-              "tagName": "A",
-              "text": "",
-              "delay": 0
-            },
-            {
-              "tagName": "A",
-              "text": "Voir tous nos projets",
-              "delay": 0
-            },
-            {
-              "tagName": "A",
-              "text": "En savoir plus",
-              "delay": 0
-            },
-            {
-              "tagName": "A",
-              "text": "Contactez-nous",
-              "delay": 0
-            },
-            {
-              "tagName": "A",
-              "text": "À propos",
-              "delay": 0
-            },
-            {
-              "tagName": "A",
-              "text": "Postuler",
-              "delay": 0
-            },
-            {
-              "tagName": "A",
-              "text": "",
-              "delay": 101
-            },
-            {
-              "tagName": "A",
-              "text": "",
-              "delay": 102
-            },
-            {
-              "tagName": "A",
-              "text": "",
-              "delay": 101
-            },
-            {
-              "tagName": "A",
-              "text": "",
-              "delay": 0
-            },
-            {
-              "tagName": "A",
-              "text": "Digital strategy case studies",
-              "delay": 0
-            },
-            {
-              "tagName": "A",
-              "text": "Expertises",
-              "delay": 0
-            },
-            {
-              "tagName": "A",
-              "text": "Training",
-              "delay": 0
-            },
-            {
-              "tagName": "A",
-              "text": "Blog",
-              "delay": 0
-            },
-            {
-              "tagName": "A",
-              "text": "Jobs",
-              "delay": 0
-            },
-            {
-              "tagName": "A",
-              "text": "À propos",
-              "delay": 0
-            },
-            {
-              "tagName": "A",
-              "text": "Contact",
-              "delay": 0
-            },
-            {
-              "tagName": "A",
-              "text": "Blog",
-              "delay": 0
-            },
-            {
-              "tagName": "A",
-              "text": "",
-              "delay": 0
-            },
-            {
-              "tagName": "A",
-              "text": "",
-              "delay": 0
-            },
-            {
-              "tagName": "A",
-              "text": "",
-              "delay": 0
-            },
-            {
-              "tagName": "BUTTON",
-              "text": "English",
-              "delay": 0
-            },
-            {
-              "tagName": "A",
-              "text": "Confidentialité",
-              "delay": 0
-            },
-            {
-              "tagName": "A",
-              "text": "Plan du site",
-              "delay": 0
-            },
-            {
-              "tagName": "BUTTON",
-              "text": "Accepter tous les cookies",
-              "delay": 0
-            },
-            {
-              "tagName": "BUTTON",
-              "text": "Paramètres des cookies",
-              "delay": 0
-            }
-          ]
-        }
-      }
+      "result": "ERROR: No page identified"
     },
     {
       "type": "launch",
@@ -1171,203 +890,8 @@
       "headSampleSize": 20,
       "tailSampleSize": 15,
       "withItems": true,
-      "what": "hover-caused content changes",
-      "url": "https://www.anais.digital/fr/",
-      "result": {
-        "totals": {
-          "triggers": 74,
-          "headTriggers": 20,
-          "tailTriggers": 54,
-          "impactTriggers": 0,
-          "additions": 0,
-          "removals": 0,
-          "opacityChanges": 0,
-          "opacityImpact": 0,
-          "unhoverables": 34
-        },
-        "items": {
-          "head": {
-            "impactTriggers": [],
-            "unhoverables": [
-              {
-                "tagName": "A",
-                "id": "",
-                "text": "Skiptocontent"
-              },
-              {
-                "tagName": "A",
-                "id": "",
-                "text": "Skiptosidebar"
-              },
-              {
-                "tagName": "A",
-                "id": "",
-                "text": "<imgsrc=\"https://www.anais.digital/wp-content/uplo"
-              },
-              {
-                "tagName": "LI",
-                "id": "menu-item-1887",
-                "text": "Plandusite"
-              },
-              {
-                "tagName": "A",
-                "id": "",
-                "text": "Plandusite"
-              },
-              {
-                "tagName": "LI",
-                "id": "menu-item-199",
-                "text": "Digitalstrategycasestudies"
-              },
-              {
-                "tagName": "A",
-                "id": "",
-                "text": "Digitalstrategycasestudies"
-              },
-              {
-                "tagName": "LI",
-                "id": "menu-item-197",
-                "text": "Expertises"
-              },
-              {
-                "tagName": "A",
-                "id": "",
-                "text": "Expertises"
-              },
-              {
-                "tagName": "LI",
-                "id": "menu-item-2004",
-                "text": "FormationsUXetaccessibilité"
-              },
-              {
-                "tagName": "A",
-                "id": "",
-                "text": "FormationsUXetaccessibilité"
-              },
-              {
-                "tagName": "LI",
-                "id": "menu-item-196",
-                "text": "Jobs"
-              },
-              {
-                "tagName": "A",
-                "id": "",
-                "text": "Jobs"
-              },
-              {
-                "tagName": "LI",
-                "id": "menu-item-2082",
-                "text": "Blog"
-              },
-              {
-                "tagName": "A",
-                "id": "",
-                "text": "Blog"
-              },
-              {
-                "tagName": "LI",
-                "id": "menu-item-2005",
-                "text": "Podcast"
-              },
-              {
-                "tagName": "A",
-                "id": "",
-                "text": "Podcast"
-              },
-              {
-                "tagName": "LI",
-                "id": "menu-item-194",
-                "text": "Àpropos"
-              },
-              {
-                "tagName": "A",
-                "id": "",
-                "text": "Àpropos"
-              },
-              {
-                "tagName": "LI",
-                "id": "",
-                "text": "EnglishEnglishFrançais"
-              }
-            ]
-          },
-          "tail": {
-            "impactTriggers": [],
-            "unhoverables": [
-              {
-                "tagName": "BUTTON",
-                "id": "",
-                "text": "English"
-              },
-              {
-                "tagName": "A",
-                "id": "",
-                "text": "Àpropos"
-              },
-              {
-                "tagName": "A",
-                "id": "",
-                "text": "Àpropos"
-              },
-              {
-                "tagName": "LI",
-                "id": "menu-item-718",
-                "text": "Digitalstrategycasestudies"
-              },
-              {
-                "tagName": "A",
-                "id": "",
-                "text": "<imgsrc=\"https://www.anais.digital/wp-content/uplo"
-              },
-              {
-                "tagName": "A",
-                "id": "",
-                "text": "<imgsrc=\"https://www.anais.digital/wp-content/uplo"
-              },
-              {
-                "tagName": "LI",
-                "id": "menu-item-200",
-                "text": "·Confidentialité"
-              },
-              {
-                "tagName": "LI",
-                "id": "menu-item-1719",
-                "text": "Blog"
-              },
-              {
-                "tagName": "A",
-                "id": "",
-                "text": "Digitalstrategycasestudies"
-              },
-              {
-                "tagName": "A",
-                "id": "",
-                "text": "Blog"
-              },
-              {
-                "tagName": "A",
-                "id": "",
-                "text": "Postuler"
-              },
-              {
-                "tagName": "BUTTON",
-                "id": "",
-                "text": "English"
-              },
-              {
-                "tagName": "LI",
-                "id": "menu-item-721",
-                "text": "Jobs"
-              },
-              {
-                "tagName": "A",
-                "id": "",
-                "text": "Contact"
-              }
-            ]
-          }
-        }
-      }
+      "what": "hover impacts",
+      "result": "ERROR: No page identified"
     },
     {
       "type": "launch",
@@ -1629,23 +1153,8 @@
     {
       "type": "test",
       "which": "role",
-      "what": "roles",
-      "url": "https://www.anais.digital/fr/",
-      "result": {
-        "roleElements": 18,
-        "badRoleElements": 9,
-        "tagNames": {
-          "ARTICLE": {
-            "group": 7
-          },
-          "DIV": {
-            "group": 1
-          },
-          "ASIDE": {
-            "complementary": 1
-          }
-        }
-      }
+      "what": "validity and necessity of role assignments",
+      "result": "ERROR: No page identified"
     },
     {
       "type": "test",
@@ -9471,7 +8980,7 @@
   "endTime": "2022-07-09T23:10:54",
   "elapsedSeconds": 101,
   "score": {
-    "scoreProcID": "sp12a",
+    "scoreProcID": "sp12b",
     "logWeights": {
       "logCount": 0.5,
       "logSize": 0.01,
@@ -9494,11 +9003,8 @@
     "packageDetails": {
       "testaro": {
         "focAll": 2,
-        "focInd": 1,
         "focOp": 2,
-        "hover": 34,
         "linkUl": 38,
-        "role": 9,
         "styleDiff": 28,
         "zIndex": 27
       },
@@ -9559,14 +9065,6 @@
             }
           }
         },
-        "focusIndication": {
-          "testaro": {
-            "focInd": {
-              "score": 1,
-              "what": "Focused element displaying no or nostandard focus indicator"
-            }
-          }
-        },
         "focusableOperable": {
           "testaro": {
             "focOp": {
@@ -9575,33 +9073,11 @@
             }
           }
         },
-        "hoverSurprise": {
-          "testaro": {
-            "hover": {
-              "score": 9,
-              "what": "Content changes caused by hovering"
-            }
-          }
-        },
         "linkIndication": {
           "testaro": {
             "linkUl": {
               "score": 19,
               "what": "Non-underlined adjacent links"
-            }
-          }
-        },
-        "roleBad": {
-          "testaro": {
-            "role": {
-              "score": 7,
-              "what": "Nonexistent or implicit-overriding role"
-            }
-          },
-          "axe": {
-            "aria-allowed-role": {
-              "score": 5,
-              "what": "ARIA role is not appropriate for the element"
             }
           }
         },
@@ -9759,6 +9235,14 @@
             }
           }
         },
+        "roleBad": {
+          "axe": {
+            "aria-allowed-role": {
+              "score": 5,
+              "what": "ARIA role is not appropriate for the element"
+            }
+          }
+        },
         "linkNoText": {
           "htmlcs": {
             "e:AA.1_1_1.H30.2": {
@@ -9882,7 +9366,7 @@
       "testaro-bulk": 50
     },
     "summary": {
-      "total": 465,
+      "total": 447,
       "log": 0,
       "preventions": 50,
       "solos": 0,
@@ -9932,14 +9416,6 @@
           "score": 14
         },
         {
-          "groupName": "hoverSurprise",
-          "score": 11
-        },
-        {
-          "groupName": "roleBad",
-          "score": 11
-        },
-        {
           "groupName": "overflowHidden",
           "score": 10
         },
@@ -9961,6 +9437,10 @@
         },
         {
           "groupName": "invisibleLabel",
+          "score": 7
+        },
+        {
+          "groupName": "roleBad",
           "score": 7
         },
         {
@@ -9986,10 +9466,6 @@
         {
           "groupName": "pseudoLinkRisk",
           "score": 4
-        },
-        {
-          "groupName": "focusIndication",
-          "score": 3
         },
         {
           "groupName": "frameContentRisk",

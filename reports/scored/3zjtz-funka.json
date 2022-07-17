@@ -303,13 +303,15 @@
           "total": 31,
           "types": {
             "indicatorMissing": {
-              "total": 0,
-              "tagNames": {}
+              "total": 5,
+              "tagNames": {
+                "A": 5
+              }
             },
             "nonOutlinePresent": {
-              "total": 25,
+              "total": 20,
               "tagNames": {
-                "A": 25
+                "A": 20
               }
             },
             "outlinePresent": {
@@ -322,20 +324,7 @@
           }
         },
         "items": {
-          "indicatorMissing": [],
-          "nonOutlinePresent": [
-            {
-              "tagName": "A",
-              "text": "Go to content"
-            },
-            {
-              "tagName": "A",
-              "text": "More information about cookies in our privacy policy"
-            },
-            {
-              "tagName": "A",
-              "text": ""
-            },
+          "indicatorMissing": [
             {
               "tagName": "A",
               "text": "Our services"
@@ -355,6 +344,20 @@
             {
               "tagName": "A",
               "text": "About Us"
+            }
+          ],
+          "nonOutlinePresent": [
+            {
+              "tagName": "A",
+              "text": "Go to content"
+            },
+            {
+              "tagName": "A",
+              "text": "More information about cookies in our privacy policy"
+            },
+            {
+              "tagName": "A",
+              "text": ""
             },
             {
               "tagName": "A",
@@ -1357,6 +1360,7 @@
       "result": {
         "roleElements": 1,
         "badRoleElements": 0,
+        "redundantRoleElements": 0,
         "tagNames": {}
       }
     },
@@ -4688,7 +4692,7 @@
   "endTime": "2022-07-06T02:24:35",
   "elapsedSeconds": 158,
   "score": {
-    "scoreProcID": "sp12a",
+    "scoreProcID": "sp12b",
     "logWeights": {
       "logCount": 0.5,
       "logSize": 0.01,
@@ -4710,7 +4714,7 @@
     },
     "packageDetails": {
       "testaro": {
-        "focInd": 25,
+        "focInd": 35,
         "focOp": 2,
         "hover": 1,
         "linkUl": 30,
@@ -4753,7 +4757,7 @@
         "focusIndication": {
           "testaro": {
             "focInd": {
-              "score": 25,
+              "score": 35,
               "what": "Focused element displaying no or nostandard focus indicator"
             }
           },
@@ -4953,11 +4957,15 @@
     },
     "preventionScores": {},
     "summary": {
-      "total": 264,
+      "total": 274,
       "log": 43,
       "preventions": 0,
       "solos": 0,
       "groups": [
+        {
+          "groupName": "focusIndication",
+          "score": 39
+        },
         {
           "groupName": "noLeading",
           "score": 38
@@ -4965,10 +4973,6 @@
         {
           "groupName": "leadingClipsText",
           "score": 34
-        },
-        {
-          "groupName": "focusIndication",
-          "score": 29
         },
         {
           "groupName": "linkForcesNewWindow",

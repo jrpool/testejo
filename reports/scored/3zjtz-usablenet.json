@@ -1564,13 +1564,20 @@
       "url": "https://usablenet.com/",
       "result": {
         "roleElements": 5,
-        "badRoleElements": 3,
+        "badRoleElements": 2,
+        "redundantRoleElements": 1,
         "tagNames": {
           "SUMMARY": {
-            "button": 1
+            "button": {
+              "bad": 0,
+              "redundant": 1
+            }
           },
           "A": {
-            "button": 2
+            "button": {
+              "bad": 2,
+              "redundant": 0
+            }
           }
         }
       }
@@ -6065,7 +6072,7 @@
   "endTime": "2022-07-06T01:10:36",
   "elapsedSeconds": 126,
   "score": {
-    "scoreProcID": "sp12a",
+    "scoreProcID": "sp12b",
     "logWeights": {
       "logCount": 0.5,
       "logSize": 0.01,
@@ -6090,7 +6097,7 @@
         "focOp": 11,
         "hover": 4,
         "linkUl": 96,
-        "role": 3,
+        "role": 5,
         "styleDiff": 20,
         "zIndex": 14
       },
@@ -6170,7 +6177,7 @@
         "roleBad": {
           "testaro": {
             "role": {
-              "score": 2,
+              "score": 4,
               "what": "Nonexistent or implicit-overriding role"
             }
           }
@@ -6265,7 +6272,7 @@
           "alfa": {
             "r74": {
               "score": 2,
-              "what": "Paragraph text has absolute font size"
+              "what": "Paragraph text has an absolute font size"
             }
           }
         },
@@ -6273,7 +6280,7 @@
           "alfa": {
             "r80": {
               "score": 2,
-              "what": "Paragraph text has absolute line height"
+              "what": "Paragraph text has an absolute line height"
             }
           }
         },
@@ -6464,7 +6471,7 @@
       "ibm": 100
     },
     "summary": {
-      "total": 606,
+      "total": 608,
       "log": 211,
       "preventions": 100,
       "solos": 0,
@@ -6514,6 +6521,10 @@
           "score": 7
         },
         {
+          "groupName": "roleBad",
+          "score": 6
+        },
+        {
           "groupName": "zIndexNotZero",
           "score": 6
         },
@@ -6536,10 +6547,6 @@
         {
           "groupName": "horizontalScrolling",
           "score": 5
-        },
-        {
-          "groupName": "roleBad",
-          "score": 4
         },
         {
           "groupName": "fontSizeAbsolute",

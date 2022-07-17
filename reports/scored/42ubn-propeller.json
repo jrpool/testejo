@@ -304,14 +304,14 @@
           "total": 50,
           "types": {
             "indicatorMissing": {
-              "total": 0,
-              "tagNames": {}
-            },
-            "nonOutlinePresent": {
               "total": 1,
               "tagNames": {
                 "BUTTON": 1
               }
+            },
+            "nonOutlinePresent": {
+              "total": 0,
+              "tagNames": {}
             },
             "outlinePresent": {
               "total": 49,
@@ -326,13 +326,13 @@
           }
         },
         "items": {
-          "indicatorMissing": [],
-          "nonOutlinePresent": [
+          "indicatorMissing": [
             {
               "tagName": "BUTTON",
               "text": ""
             }
           ],
+          "nonOutlinePresent": [],
           "outlinePresent": [
             {
               "tagName": "A",
@@ -1947,20 +1947,36 @@
       "url": "https://www.accessibility.works/",
       "result": {
         "roleElements": 16,
-        "badRoleElements": 7,
+        "badRoleElements": 6,
+        "redundantRoleElements": 1,
         "tagNames": {
           "HEADER": {
-            "banner": 1
+            "banner": {
+              "bad": 1,
+              "redundant": 0
+            }
           },
           "NAV": {
-            "navigation": 1
+            "navigation": {
+              "bad": 0,
+              "redundant": 1
+            }
           },
           "DIV": {
-            "main": 1,
-            "group": 3
+            "main": {
+              "bad": 1,
+              "redundant": 0
+            },
+            "group": {
+              "bad": 3,
+              "redundant": 0
+            }
           },
           "A": {
-            "button": 1
+            "button": {
+              "bad": 1,
+              "redundant": 0
+            }
           }
         }
       }
@@ -15733,7 +15749,7 @@
   "endTime": "2022-07-09T15:21:24",
   "elapsedSeconds": 145,
   "score": {
-    "scoreProcID": "sp12a",
+    "scoreProcID": "sp12b",
     "logWeights": {
       "logCount": 0.5,
       "logSize": 0.01,
@@ -15757,11 +15773,11 @@
       "testaro": {
         "motion": 12,
         "bulk": 0,
-        "focInd": 1,
+        "focInd": 3,
         "focOp": 26,
         "hover": 16,
         "linkUl": 74,
-        "role": 7,
+        "role": 13,
         "styleDiff": 35,
         "zIndex": 21
       },
@@ -15844,7 +15860,7 @@
         "focusIndication": {
           "testaro": {
             "focInd": {
-              "score": 1,
+              "score": 3,
               "what": "Focused element displaying no or nostandard focus indicator"
             }
           }
@@ -15876,7 +15892,7 @@
         "roleBad": {
           "testaro": {
             "role": {
-              "score": 5,
+              "score": 10,
               "what": "Nonexistent or implicit-overriding role"
             }
           }
@@ -15977,7 +15993,7 @@
           "alfa": {
             "r74": {
               "score": 2,
-              "what": "Paragraph text has absolute font size"
+              "what": "Paragraph text has an absolute font size"
             }
           }
         },
@@ -16242,7 +16258,7 @@
     },
     "preventionScores": {},
     "summary": {
-      "total": 756,
+      "total": 763,
       "log": 169,
       "preventions": 0,
       "solos": 0,
@@ -16304,6 +16320,10 @@
           "score": 14
         },
         {
+          "groupName": "roleBad",
+          "score": 12
+        },
+        {
           "groupName": "targetSize",
           "score": 12
         },
@@ -16332,10 +16352,6 @@
           "score": 8
         },
         {
-          "groupName": "roleBad",
-          "score": 7
-        },
-        {
           "groupName": "zIndexNotZero",
           "score": 7
         },
@@ -16360,6 +16376,10 @@
           "score": 6
         },
         {
+          "groupName": "focusIndication",
+          "score": 5
+        },
+        {
           "groupName": "linkPair",
           "score": 5
         },
@@ -16377,10 +16397,6 @@
         },
         {
           "groupName": "visibleBulk",
-          "score": 3
-        },
-        {
-          "groupName": "focusIndication",
           "score": 3
         },
         {

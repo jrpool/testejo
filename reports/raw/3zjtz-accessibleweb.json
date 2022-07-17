@@ -300,37 +300,35 @@
       "url": "https://accessibleweb.com/",
       "result": {
         "totals": {
-          "total": 57,
+          "total": 62,
           "types": {
             "indicatorMissing": {
-              "total": 0,
-              "tagNames": {}
+              "total": 7,
+              "tagNames": {
+                "A": 5,
+                "IFRAME": 1,
+                "DIV": 1
+              }
             },
             "nonOutlinePresent": {
-              "total": 18,
+              "total": 13,
               "tagNames": {
-                "A": 12,
+                "A": 8,
                 "BUTTON": 3,
-                "INPUT": 2,
-                "IFRAME": 1
+                "INPUT": 2
               }
             },
             "outlinePresent": {
-              "total": 39,
+              "total": 42,
               "meanDelay": 0,
               "tagNames": {
-                "A": 39
+                "A": 42
               }
             }
           }
         },
         "items": {
-          "indicatorMissing": [],
-          "nonOutlinePresent": [
-            {
-              "tagName": "A",
-              "text": "Skip to content"
-            },
+          "indicatorMissing": [
             {
               "tagName": "A",
               "text": "Solutions"
@@ -350,6 +348,24 @@
             {
               "tagName": "A",
               "text": "Log In"
+            },
+            {
+              "tagName": "IFRAME",
+              "text": ""
+            },
+            {
+              "tagName": "DIV",
+              "text": ""
+            }
+          ],
+          "nonOutlinePresent": [
+            {
+              "tagName": "A",
+              "text": "Show details"
+            },
+            {
+              "tagName": "A",
+              "text": "Skip to content"
             },
             {
               "tagName": "A",
@@ -394,16 +410,27 @@
             {
               "tagName": "BUTTON",
               "text": "Subscribe"
-            },
-            {
-              "tagName": "IFRAME",
-              "text": ""
             }
           ],
           "outlinePresent": [
             {
               "tagName": "A",
-              "text": "",
+              "text": "cookies policy",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "privacy policy.",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Accept",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "//<![CDATA[\n(function(){for(var g=\"function\"==typeof Object.defineProperties?Object.defineProperty:f",
               "delay": 0
             },
             {
@@ -2451,19 +2478,32 @@
       "url": "https://accessibleweb.com/",
       "result": {
         "roleElements": 27,
-        "badRoleElements": 10,
+        "badRoleElements": 9,
+        "redundantRoleElements": 1,
         "tagNames": {
           "A": {
-            "button": 7
+            "button": {
+              "bad": 7,
+              "redundant": 0
+            }
           },
           "MAIN": {
-            "main": 1
+            "main": {
+              "bad": 0,
+              "redundant": 1
+            }
           },
           "FOOTER": {
-            "contentinfo": 1
+            "contentinfo": {
+              "bad": 1,
+              "redundant": 0
+            }
           },
           "DIV": {
-            "button": 1
+            "button": {
+              "bad": 1,
+              "redundant": 0
+            }
           }
         }
       }

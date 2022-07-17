@@ -1,0 +1,463 @@
+{
+  "id": "49li4-evinced",
+  "host": {
+    "id": "evinced",
+    "which": "https://www.evinced.com/",
+    "what": "Evinced"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-16T21:48:35"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-16T21:49:25"
+    }
+  ],
+  "script": {
+    "id": "tp12",
+    "what": "Alfa, Axe, HTML CodeSniffer, IBM, Tenon, WAVE, and 16 custom tests",
+    "strict": true,
+    "timeLimit": 150,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.evinced.com/",
+        "what": "Evinced"
+      },
+      {
+        "type": "test",
+        "which": "focInd",
+        "revealAll": false,
+        "allowedDelay": 250,
+        "withItems": true,
+        "what": "focus indicators"
+      },
+      {
+        "type": "test",
+        "which": "hover",
+        "headSize": 20,
+        "headSampleSize": 20,
+        "tailSampleSize": 15,
+        "withItems": true,
+        "what": "hover impacts"
+      },
+      {
+        "type": "test",
+        "which": "role",
+        "what": "validity and necessity of role assignments"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.evinced.com/",
+      "what": "Evinced",
+      "result": "https://www.evinced.com/"
+    },
+    {
+      "type": "test",
+      "which": "focInd",
+      "revealAll": false,
+      "allowedDelay": 250,
+      "withItems": true,
+      "what": "focus indicators",
+      "url": "https://www.evinced.com/",
+      "result": {
+        "totals": {
+          "total": 34,
+          "types": {
+            "indicatorMissing": {
+              "total": 25,
+              "tagNames": {
+                "BUTTON": 4,
+                "A": 21
+              }
+            },
+            "nonOutlinePresent": {
+              "total": 0,
+              "tagNames": {}
+            },
+            "outlinePresent": {
+              "total": 9,
+              "meanDelay": 89,
+              "tagNames": {
+                "A": 9
+              }
+            }
+          }
+        },
+        "items": {
+          "indicatorMissing": [
+            {
+              "tagName": "BUTTON",
+              "text": "Why Evinced"
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Products"
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Developers"
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Company"
+            },
+            {
+              "tagName": "A",
+              "text": "<img aria-hidden=\"true\" alt=\"\" sizes=\"100vw\" srcSet=\"https://res.cloudinary.com/evinced-inc/image/up"
+            },
+            {
+              "tagName": "A",
+              "text": "Find More Bugs"
+            },
+            {
+              "tagName": "A",
+              "text": "Get Organized"
+            },
+            {
+              "tagName": "A",
+              "text": "Stay In Control"
+            },
+            {
+              "tagName": "A",
+              "text": "Easy Integration"
+            },
+            {
+              "tagName": "A",
+              "text": "Web Flow Analyzer"
+            },
+            {
+              "tagName": "A",
+              "text": "Mobile Flow Analyzer"
+            },
+            {
+              "tagName": "A",
+              "text": "Automation SDKs"
+            },
+            {
+              "tagName": "A",
+              "text": "Site Scanner"
+            },
+            {
+              "tagName": "A",
+              "text": "Debugger"
+            },
+            {
+              "tagName": "A",
+              "text": "Documentation"
+            },
+            {
+              "tagName": "A",
+              "text": "Knowledge Base"
+            },
+            {
+              "tagName": "A",
+              "text": "Webinars"
+            },
+            {
+              "tagName": "A",
+              "text": "Blog"
+            },
+            {
+              "tagName": "A",
+              "text": "About"
+            },
+            {
+              "tagName": "A",
+              "text": "Technology"
+            },
+            {
+              "tagName": "A",
+              "text": "Careers"
+            },
+            {
+              "tagName": "A",
+              "text": "Privacy"
+            },
+            {
+              "tagName": "A",
+              "text": "Terms of Use"
+            },
+            {
+              "tagName": "A",
+              "text": "Sitemap"
+            },
+            {
+              "tagName": "A",
+              "text": "<img alt=\"Level AA conformance, W3C WAI Web Content Accessibility Guidelines 2.1\" srcSet=\"/wcag/wcag"
+            }
+          ],
+          "nonOutlinePresent": [],
+          "outlinePresent": [
+            {
+              "tagName": "A",
+              "text": "<img aria-hidden=\"true\" alt=\"\" sizes=\"100vw\" srcSet=\"https://res.cloudinary.com/evinced-inc/image/up",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Get Started",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Log In",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Get Started",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Learn More",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "Learn More",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Learn More",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Learn More",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Get Started",
+              "delay": 100
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.evinced.com/",
+      "what": "URL",
+      "result": "https://www.evinced.com/"
+    },
+    {
+      "type": "test",
+      "which": "hover",
+      "headSize": 20,
+      "headSampleSize": 20,
+      "tailSampleSize": 15,
+      "withItems": true,
+      "what": "hover-caused content changes",
+      "url": "https://www.evinced.com/",
+      "result": {
+        "totals": {
+          "triggers": 96,
+          "headTriggers": 20,
+          "tailTriggers": 76,
+          "impactTriggers": 10,
+          "additions": 0,
+          "removals": 0,
+          "opacityChanges": 10,
+          "opacityImpact": 0,
+          "unhoverables": 12
+        },
+        "items": {
+          "head": {
+            "impactTriggers": [
+              {
+                "tagName": "LI",
+                "text": "WhyEvincedFindMoreBugsGetOrganizedStayInControlEas",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "BUTTON",
+                "text": "WhyEvinced",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "LI",
+                "text": "Products<imgaria-hidden=\"true\"alt=\"\"sizes=\"100vw\"s",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "BUTTON",
+                "text": "Products",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "LI",
+                "text": "<imgaria-hidden=\"true\"alt=\"\"sizes=\"100vw\"srcSet=\"h",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 0
+              }
+            ],
+            "unhoverables": [
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "FindMoreBugs"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "FindMoreBugs"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "GetOrganized"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "GetOrganized"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "StayInControl"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "StayInControl"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "EasyIntegration"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "EasyIntegration"
+              }
+            ]
+          },
+          "tail": {
+            "impactTriggers": [
+              {
+                "tagName": "LI",
+                "text": "DevelopersDocumentationKnowledgeBaseWebinarsBlog",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 0
+              }
+            ],
+            "unhoverables": [
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "KnowledgeBase"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Careers"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Documentation"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "GetStarted"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.evinced.com/",
+      "what": "URL",
+      "result": "https://www.evinced.com/"
+    },
+    {
+      "type": "test",
+      "which": "role",
+      "what": "roles",
+      "url": "https://www.evinced.com/",
+      "result": {
+        "roleElements": 1,
+        "badRoleElements": 0,
+        "redundantRoleElements": 0,
+        "tagNames": {}
+      }
+    }
+  ],
+  "timeStamp": "49li4",
+  "startTime": "2022-07-16T21:48:35",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "hover",
+      36
+    ],
+    [
+      "focInd",
+      7
+    ],
+    [
+      "role",
+      0
+    ]
+  ],
+  "logCount": 1,
+  "logSize": 69,
+  "errorLogCount": 1,
+  "errorLogSize": 69,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-16T21:49:25",
+  "elapsedSeconds": 50
+}

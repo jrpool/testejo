@@ -1317,8 +1317,8 @@
           "triggers": 63,
           "headTriggers": 20,
           "tailTriggers": 43,
-          "impactTriggers": 0,
-          "additions": 0,
+          "impactTriggers": 3,
+          "additions": 38,
           "removals": 0,
           "opacityChanges": 0,
           "opacityImpact": 0,
@@ -1326,7 +1326,32 @@
         },
         "items": {
           "head": {
-            "impactTriggers": [],
+            "impactTriggers": [
+              {
+                "tagName": "LI",
+                "text": "ConferenceConferenceMainGeneralCallforPresentation",
+                "additions": 14,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "A",
+                "text": "Conference",
+                "additions": 14,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "LI",
+                "text": "JournalJournalMainJournalCallforPapersAwardsPrevio",
+                "additions": 10,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              }
+            ],
             "unhoverables": []
           },
           "tail": {
@@ -1627,9 +1652,13 @@
       "result": {
         "roleElements": 29,
         "badRoleElements": 1,
+        "redundantRoleElements": 0,
         "tagNames": {
           "HEADER": {
-            "banner": 1
+            "banner": {
+              "bad": 1,
+              "redundant": 0
+            }
           }
         }
       }
@@ -12087,7 +12116,7 @@
   "endTime": "2022-07-06T02:36:20",
   "elapsedSeconds": 107,
   "score": {
-    "scoreProcID": "sp12a",
+    "scoreProcID": "sp12b",
     "logWeights": {
       "logCount": 0.5,
       "logSize": 0.01,
@@ -12109,8 +12138,9 @@
     },
     "packageDetails": {
       "testaro": {
+        "hover": 17,
         "linkUl": 20,
-        "role": 1,
+        "role": 2,
         "styleDiff": 29,
         "zIndex": 8
       },
@@ -12170,6 +12200,14 @@
     },
     "groupDetails": {
       "groups": {
+        "hoverSurprise": {
+          "testaro": {
+            "hover": {
+              "score": 4,
+              "what": "Content changes caused by hovering"
+            }
+          }
+        },
         "linkIndication": {
           "testaro": {
             "linkUl": {
@@ -12181,7 +12219,7 @@
         "roleBad": {
           "testaro": {
             "role": {
-              "score": 1,
+              "score": 2,
               "what": "Nonexistent or implicit-overriding role"
             }
           }
@@ -12284,7 +12322,7 @@
           "alfa": {
             "r74": {
               "score": 2,
-              "what": "Paragraph text has absolute font size"
+              "what": "Paragraph text has an absolute font size"
             }
           }
         },
@@ -12292,7 +12330,7 @@
           "alfa": {
             "r80": {
               "score": 2,
-              "what": "Paragraph text has absolute line height"
+              "what": "Paragraph text has an absolute line height"
             }
           }
         },
@@ -12515,7 +12553,7 @@
     },
     "preventionScores": {},
     "summary": {
-      "total": 658,
+      "total": 665,
       "log": 231,
       "preventions": 0,
       "solos": 0,
@@ -12569,6 +12607,10 @@
           "score": 9
         },
         {
+          "groupName": "hoverSurprise",
+          "score": 6
+        },
+        {
           "groupName": "linkTextsSame",
           "score": 6
         },
@@ -12583,6 +12625,10 @@
         {
           "groupName": "horizontalScrolling",
           "score": 5
+        },
+        {
+          "groupName": "roleBad",
+          "score": 4
         },
         {
           "groupName": "zIndexNotZero",
@@ -12607,10 +12653,6 @@
         {
           "groupName": "titleRedundant",
           "score": 4
-        },
-        {
-          "groupName": "roleBad",
-          "score": 3
         },
         {
           "groupName": "skipRepeatedContent",

@@ -303,15 +303,17 @@
           "total": 31,
           "types": {
             "indicatorMissing": {
-              "total": 0,
-              "tagNames": {}
-            },
-            "nonOutlinePresent": {
-              "total": 28,
+              "total": 24,
               "tagNames": {
-                "A": 25,
+                "A": 21,
                 "SPAN": 2,
                 "DIV": 1
+              }
+            },
+            "nonOutlinePresent": {
+              "total": 4,
+              "tagNames": {
+                "A": 4
               }
             },
             "outlinePresent": {
@@ -326,12 +328,7 @@
           }
         },
         "items": {
-          "indicatorMissing": [],
-          "nonOutlinePresent": [
-            {
-              "tagName": "A",
-              "text": "Skip to content"
-            },
+          "indicatorMissing": [
             {
               "tagName": "A",
               "text": ""
@@ -390,23 +387,11 @@
             },
             {
               "tagName": "A",
-              "text": "Featured Presentation How to Determine If a Company Knows About Digital Accessibility Meryl Evans Ma"
-            },
-            {
-              "tagName": "A",
               "text": "See More Presentations"
             },
             {
               "tagName": "A",
-              "text": "Featured Article Why This Electronic Health Records Accessibility Lawsuit Matters Thomas Logan Jun 1"
-            },
-            {
-              "tagName": "A",
               "text": "See More Articles"
-            },
-            {
-              "tagName": "A",
-              "text": "Featured Activist How Can a Blind Person Use Virtual Reality? May 05, 2022"
             },
             {
               "tagName": "A",
@@ -439,6 +424,24 @@
             {
               "tagName": "A",
               "text": "Contact Us"
+            }
+          ],
+          "nonOutlinePresent": [
+            {
+              "tagName": "A",
+              "text": "Skip to content"
+            },
+            {
+              "tagName": "A",
+              "text": "Featured Presentation How to Determine If a Company Knows About Digital Accessibility Meryl Evans Ma"
+            },
+            {
+              "tagName": "A",
+              "text": "Featured Article What Are the Top 6 Problem Spots for Blind Testers in Accessibility Testing? Rhea A"
+            },
+            {
+              "tagName": "A",
+              "text": "Featured Activist How Can a Blind Person Use Virtual Reality? May 05, 2022"
             }
           ],
           "outlinePresent": [
@@ -952,16 +955,49 @@
           "triggers": 32,
           "headTriggers": 20,
           "tailTriggers": 12,
-          "impactTriggers": 0,
-          "additions": 0,
-          "removals": 0,
+          "impactTriggers": 4,
+          "additions": 22,
+          "removals": 22,
           "opacityChanges": 0,
           "opacityImpact": 0,
           "unhoverables": 3
         },
         "items": {
           "head": {
-            "impactTriggers": [],
+            "impactTriggers": [
+              {
+                "tagName": "LI",
+                "text": "ServicesExpertAuditsTrainingExpertWitnessADADemand",
+                "additions": 9,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "LI",
+                "text": "OurWork",
+                "additions": 0,
+                "removals": 9,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "LI",
+                "text": "BlogActivistsAR/VR/XRArticlesGlobalNewsPresentatio",
+                "additions": 13,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "LI",
+                "text": "About",
+                "additions": 0,
+                "removals": 13,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              }
+            ],
             "unhoverables": [
               {
                 "tagName": "A",
@@ -1410,21 +1446,37 @@
       "result": {
         "roleElements": 53,
         "badRoleElements": 7,
+        "redundantRoleElements": 0,
         "tagNames": {
           "HEADER": {
-            "banner": 1
+            "banner": {
+              "bad": 1,
+              "redundant": 0
+            }
           },
           "A": {
-            "button": 2
+            "button": {
+              "bad": 2,
+              "redundant": 0
+            }
           },
           "SPAN": {
-            "button": 2
+            "button": {
+              "bad": 2,
+              "redundant": 0
+            }
           },
           "DIV": {
-            "button": 1
+            "button": {
+              "bad": 1,
+              "redundant": 0
+            }
           },
           "FOOTER": {
-            "contentinfo": 1
+            "contentinfo": {
+              "bad": 1,
+              "redundant": 0
+            }
           }
         }
       }
@@ -3859,7 +3911,7 @@
   "endTime": "2022-07-06T02:31:01",
   "elapsedSeconds": 104,
   "score": {
-    "scoreProcID": "sp12a",
+    "scoreProcID": "sp12b",
     "logWeights": {
       "logCount": 0.5,
       "logSize": 0.01,
@@ -3881,13 +3933,13 @@
     },
     "packageDetails": {
       "testaro": {
-        "focInd": 28,
+        "focInd": 76,
         "focOp": 5,
-        "hover": 3,
+        "hover": 40,
         "labClash": 1,
         "linkUl": 42,
         "menuNav": 120,
-        "role": 7,
+        "role": 14,
         "styleDiff": 16,
         "zIndex": 8
       },
@@ -3929,7 +3981,7 @@
         "focusIndication": {
           "testaro": {
             "focInd": {
-              "score": 28,
+              "score": 76,
               "what": "Focused element displaying no or nostandard focus indicator"
             }
           },
@@ -3951,7 +4003,7 @@
         "hoverSurprise": {
           "testaro": {
             "hover": {
-              "score": 1,
+              "score": 10,
               "what": "Content changes caused by hovering"
             }
           }
@@ -3983,7 +4035,7 @@
         "roleBad": {
           "testaro": {
             "role": {
-              "score": 5,
+              "score": 11,
               "what": "Nonexistent or implicit-overriding role"
             }
           }
@@ -4163,18 +4215,18 @@
     },
     "preventionScores": {},
     "summary": {
-      "total": 238,
+      "total": 301,
       "log": 1,
       "preventions": 0,
       "solos": 0,
       "groups": [
         {
-          "groupName": "menuNavigation",
-          "score": 62
+          "groupName": "focusIndication",
+          "score": 79
         },
         {
-          "groupName": "focusIndication",
-          "score": 31
+          "groupName": "menuNavigation",
+          "score": 62
         },
         {
           "groupName": "targetSize",
@@ -4190,7 +4242,11 @@
         },
         {
           "groupName": "roleBad",
-          "score": 7
+          "score": 13
+        },
+        {
+          "groupName": "hoverSurprise",
+          "score": 12
         },
         {
           "groupName": "focusableOperable",
@@ -4227,10 +4283,6 @@
         {
           "groupName": "formNewWindow",
           "score": 4
-        },
-        {
-          "groupName": "hoverSurprise",
-          "score": 3
         },
         {
           "groupName": "labelClash",

@@ -415,7 +415,7 @@
             },
             {
               "tagName": "A",
-              "text": "Unity Website Breakdown: Part 1"
+              "text": "Accessible website agency seeking Marketing Coordinator"
             },
             {
               "tagName": "A",
@@ -1270,10 +1270,85 @@
       "headSampleSize": 20,
       "tailSampleSize": 15,
       "withItems": true,
-      "what": "hover impacts",
+      "what": "hover-caused content changes",
+      "url": "https://unitywebagency.com/",
       "result": {
-        "prevented": true,
-        "error": "ERROR running hover test"
+        "totals": {
+          "triggers": 58,
+          "headTriggers": 20,
+          "tailTriggers": 38,
+          "impactTriggers": 6,
+          "additions": 38,
+          "removals": 0,
+          "opacityChanges": 0,
+          "opacityImpact": 0,
+          "unhoverables": 2
+        },
+        "items": {
+          "head": {
+            "impactTriggers": [
+              {
+                "tagName": "LI",
+                "text": "ServicesCustomWordPressWebsitesManagedWordPressHos",
+                "additions": 7,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "A",
+                "text": "Services",
+                "additions": 7,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "LI",
+                "text": "ResourcesBlogInsideImpactPodcastWebAccessibilityGu",
+                "additions": 7,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "A",
+                "text": "Resources",
+                "additions": 7,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "LI",
+                "text": "CompanyAboutUsCareers",
+                "additions": 5,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "A",
+                "text": "Company",
+                "additions": 5,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              }
+            ],
+            "unhoverables": [
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Skiptocontent"
+              }
+            ]
+          },
+          "tail": {
+            "impactTriggers": [],
+            "unhoverables": []
+          }
+        }
       }
     },
     {
@@ -1785,23 +1860,42 @@
       "url": "https://unitywebagency.com/",
       "result": {
         "roleElements": 17,
-        "badRoleElements": 15,
+        "badRoleElements": 14,
+        "redundantRoleElements": 1,
         "tagNames": {
           "HEADER": {
-            "banner": 1
+            "banner": {
+              "bad": 1,
+              "redundant": 0
+            }
           },
           "DIV": {
-            "navigation": 1,
-            "group": 10
+            "navigation": {
+              "bad": 1,
+              "redundant": 0
+            },
+            "group": {
+              "bad": 10,
+              "redundant": 0
+            }
           },
           "MAIN": {
-            "main": 1
+            "main": {
+              "bad": 0,
+              "redundant": 1
+            }
           },
           "A": {
-            "button": 1
+            "button": {
+              "bad": 1,
+              "redundant": 0
+            }
           },
           "FOOTER": {
-            "contentinfo": 1
+            "contentinfo": {
+              "bad": 1,
+              "redundant": 0
+            }
           }
         }
       }
@@ -6213,7 +6307,7 @@
   "endTime": "2022-07-10T01:04:42",
   "elapsedSeconds": 109,
   "score": {
-    "scoreProcID": "sp12a",
+    "scoreProcID": "sp12b",
     "logWeights": {
       "logCount": 0.5,
       "logSize": 0.01,
@@ -6239,9 +6333,10 @@
         "focAll": 54,
         "focInd": 33,
         "focOp": 20,
+        "hover": 25,
         "linkUl": 52,
         "radioSet": 4,
-        "role": 15,
+        "role": 29,
         "styleDiff": 17,
         "zIndex": 35
       },
@@ -6313,6 +6408,14 @@
             }
           }
         },
+        "hoverSurprise": {
+          "testaro": {
+            "hover": {
+              "score": 6,
+              "what": "Content changes caused by hovering"
+            }
+          }
+        },
         "linkIndication": {
           "testaro": {
             "linkUl": {
@@ -6344,7 +6447,7 @@
         "roleBad": {
           "testaro": {
             "role": {
-              "score": 11,
+              "score": 22,
               "what": "Nonexistent or implicit-overriding role"
             }
           }
@@ -6383,7 +6486,7 @@
           "alfa": {
             "r74": {
               "score": 2,
-              "what": "Paragraph text has absolute font size"
+              "what": "Paragraph text has an absolute font size"
             }
           }
         },
@@ -6536,13 +6639,11 @@
       },
       "solos": {}
     },
-    "preventionScores": {
-      "testaro-hover": 50
-    },
+    "preventionScores": {},
     "summary": {
-      "total": 1043,
+      "total": 1012,
       "log": 699,
-      "preventions": 50,
+      "preventions": 0,
       "solos": 0,
       "groups": [
         {
@@ -6562,6 +6663,10 @@
           "score": 29
         },
         {
+          "groupName": "roleBad",
+          "score": 24
+        },
+        {
           "groupName": "contrastAA",
           "score": 23
         },
@@ -6570,16 +6675,16 @@
           "score": 17
         },
         {
-          "groupName": "roleBad",
-          "score": 13
-        },
-        {
           "groupName": "zIndexNotZero",
           "score": 11
         },
         {
           "groupName": "contrastAAA",
           "score": 11
+        },
+        {
+          "groupName": "hoverSurprise",
+          "score": 8
         },
         {
           "groupName": "contrastRisk",

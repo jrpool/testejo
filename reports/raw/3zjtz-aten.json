@@ -303,14 +303,14 @@
           "total": 40,
           "types": {
             "indicatorMissing": {
-              "total": 0,
-              "tagNames": {}
-            },
-            "nonOutlinePresent": {
               "total": 1,
               "tagNames": {
                 "IFRAME": 1
               }
+            },
+            "nonOutlinePresent": {
+              "total": 0,
+              "tagNames": {}
             },
             "outlinePresent": {
               "total": 39,
@@ -323,13 +323,13 @@
           }
         },
         "items": {
-          "indicatorMissing": [],
-          "nonOutlinePresent": [
+          "indicatorMissing": [
             {
               "tagName": "IFRAME",
               "text": ""
             }
           ],
+          "nonOutlinePresent": [],
           "outlinePresent": [
             {
               "tagName": "A",
@@ -344,12 +344,12 @@
             {
               "tagName": "A",
               "text": "About",
-              "delay": 100
+              "delay": 101
             },
             {
               "tagName": "A",
               "text": "Services",
-              "delay": 102
+              "delay": 105
             },
             {
               "tagName": "A",
@@ -359,12 +359,12 @@
             {
               "tagName": "A",
               "text": "Webinars",
-              "delay": 104
+              "delay": 103
             },
             {
               "tagName": "A",
               "text": "Work",
-              "delay": 102
+              "delay": 103
             },
             {
               "tagName": "A",
@@ -379,7 +379,7 @@
             {
               "tagName": "A",
               "text": "See Our Work",
-              "delay": 101
+              "delay": 100
             },
             {
               "tagName": "A",
@@ -404,7 +404,7 @@
             {
               "tagName": "A",
               "text": "Drupal",
-              "delay": 104
+              "delay": 101
             },
             {
               "tagName": "A",
@@ -414,7 +414,7 @@
             {
               "tagName": "A",
               "text": "Design",
-              "delay": 100
+              "delay": 103
             },
             {
               "tagName": "A",
@@ -424,7 +424,7 @@
             {
               "tagName": "A",
               "text": "Backdrop CMS",
-              "delay": 101
+              "delay": 104
             },
             {
               "tagName": "A",
@@ -434,7 +434,7 @@
             {
               "tagName": "A",
               "text": "Backdrop CMS",
-              "delay": 100
+              "delay": 101
             },
             {
               "tagName": "A",
@@ -444,7 +444,7 @@
             {
               "tagName": "A",
               "text": "Drupal",
-              "delay": 102
+              "delay": 103
             },
             {
               "tagName": "A",
@@ -454,7 +454,7 @@
             {
               "tagName": "A",
               "text": "Jobs",
-              "delay": 105
+              "delay": 101
             },
             {
               "tagName": "A",
@@ -464,7 +464,7 @@
             {
               "tagName": "A",
               "text": "Accessibility",
-              "delay": 104
+              "delay": 100
             },
             {
               "tagName": "A",
@@ -474,17 +474,17 @@
             {
               "tagName": "A",
               "text": "1615 Platte St.Suite 200 Denver, CO, 80202 U.S.A",
-              "delay": 103
+              "delay": 101
             },
             {
               "tagName": "A",
               "text": "Phone(303) 831-0448",
-              "delay": 102
+              "delay": 103
             },
             {
               "tagName": "A",
               "text": "work@aten.io",
-              "delay": 104
+              "delay": 100
             },
             {
               "tagName": "A",
@@ -519,7 +519,7 @@
             {
               "tagName": "INPUT",
               "text": "",
-              "delay": 100
+              "delay": 101
             },
             {
               "tagName": "A",
@@ -1120,12 +1120,12 @@
           "triggers": 50,
           "headTriggers": 20,
           "tailTriggers": 30,
-          "impactTriggers": 9,
+          "impactTriggers": 11,
           "additions": 0,
           "removals": 0,
-          "opacityChanges": 9,
-          "opacityImpact": 2,
-          "unhoverables": 1
+          "opacityChanges": 11,
+          "opacityImpact": 6,
+          "unhoverables": 2
         },
         "items": {
           "head": {
@@ -1151,15 +1151,7 @@
             "impactTriggers": [
               {
                 "tagName": "A",
-                "text": "Twitter",
-                "additions": 0,
-                "removals": 0,
-                "opacityChanges": 1,
-                "opacityImpact": 0
-              },
-              {
-                "tagName": "A",
-                "text": "LinkedIn",
+                "text": "Instagram",
                 "additions": 0,
                 "removals": 0,
                 "opacityChanges": 1,
@@ -1175,6 +1167,22 @@
               },
               {
                 "tagName": "A",
+                "text": "WETA",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 2
+              },
+              {
+                "tagName": "LI",
+                "text": "Twitter",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "LI",
                 "text": "YouTube",
                 "additions": 0,
                 "removals": 0,
@@ -1182,7 +1190,13 @@
                 "opacityImpact": 0
               }
             ],
-            "unhoverables": []
+            "unhoverables": [
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Accessibility"
+              }
+            ]
           }
         }
       }
@@ -1433,25 +1447,44 @@
       "url": "https://atendesigngroup.com/",
       "result": {
         "roleElements": 18,
-        "badRoleElements": 16,
+        "badRoleElements": 3,
+        "redundantRoleElements": 13,
         "tagNames": {
           "HEADER": {
-            "banner": 1
+            "banner": {
+              "bad": 1,
+              "redundant": 0
+            }
           },
           "NAV": {
-            "navigation": 1
+            "navigation": {
+              "bad": 0,
+              "redundant": 1
+            }
           },
           "MAIN": {
-            "main": 1
+            "main": {
+              "bad": 0,
+              "redundant": 1
+            }
           },
           "ARTICLE": {
-            "article": 11
+            "article": {
+              "bad": 0,
+              "redundant": 11
+            }
           },
           "FOOTER": {
-            "contentinfo": 1
+            "contentinfo": {
+              "bad": 1,
+              "redundant": 0
+            }
           },
           "DIV": {
-            "banner": 1
+            "banner": {
+              "bad": 1,
+              "redundant": 0
+            }
           }
         }
       }

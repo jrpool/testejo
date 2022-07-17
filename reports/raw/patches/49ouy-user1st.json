@@ -1,0 +1,492 @@
+{
+  "id": "49ouy-user1st",
+  "host": {
+    "id": "user1st",
+    "which": "https://www.user1st.com/",
+    "what": "User1st"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-16T23:41:27"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-16T23:42:23"
+    }
+  ],
+  "script": {
+    "id": "tp12",
+    "what": "Alfa, Axe, HTML CodeSniffer, IBM, Tenon, WAVE, and 16 custom tests",
+    "strict": true,
+    "timeLimit": 150,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.user1st.com/",
+        "what": "User1st"
+      },
+      {
+        "type": "test",
+        "which": "focInd",
+        "revealAll": false,
+        "allowedDelay": 250,
+        "withItems": true,
+        "what": "focus indicators"
+      },
+      {
+        "type": "test",
+        "which": "hover",
+        "headSize": 20,
+        "headSampleSize": 20,
+        "tailSampleSize": 15,
+        "withItems": true,
+        "what": "hover impacts"
+      },
+      {
+        "type": "test",
+        "which": "role",
+        "what": "validity and necessity of role assignments"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.user1st.com/",
+      "what": "User1st",
+      "result": "https://user1st.com/"
+    },
+    {
+      "type": "test",
+      "which": "focInd",
+      "revealAll": false,
+      "allowedDelay": 250,
+      "withItems": true,
+      "what": "focus indicators",
+      "url": "https://user1st.com/",
+      "result": {
+        "totals": {
+          "total": 37,
+          "types": {
+            "indicatorMissing": {
+              "total": 0,
+              "tagNames": {}
+            },
+            "nonOutlinePresent": {
+              "total": 0,
+              "tagNames": {}
+            },
+            "outlinePresent": {
+              "total": 37,
+              "meanDelay": 16,
+              "tagNames": {
+                "A": 36,
+                "BUTTON": 1
+              }
+            }
+          }
+        },
+        "items": {
+          "indicatorMissing": [],
+          "nonOutlinePresent": [],
+          "outlinePresent": [
+            {
+              "tagName": "A",
+              "text": "Open Accessibility Menu",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Privacy Policy",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Accept",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Decline",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "About Us",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Solutions",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Services",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Blog",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Contact Us",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Check your site's compliance",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Support Consumers’ Desire for Inclusivity and Become Accessible",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "ADA Compliance Testing: 6 Easy Website Tests You Can Perform",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "3 Ways Website Accessibility Checkers Deliver for Commercial Websites",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Request a Demo",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Youtube",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Twitter",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Linkedin-in",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Facebook-f",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Our Vision",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Our Story",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Our Team",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "User1st in the News",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "uRemediate",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Check1st",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "VPAT",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Audits & Certification",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility Training",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Manual Remediation & Testing",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Blog",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Contact Us",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Privacy Policy",
+              "delay": 0
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "",
+              "delay": 100
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.user1st.com/",
+      "what": "URL",
+      "result": "https://user1st.com/"
+    },
+    {
+      "type": "test",
+      "which": "hover",
+      "headSize": 20,
+      "headSampleSize": 20,
+      "tailSampleSize": 15,
+      "withItems": true,
+      "what": "hover-caused content changes",
+      "url": "https://user1st.com/",
+      "result": {
+        "totals": {
+          "triggers": 54,
+          "headTriggers": 20,
+          "tailTriggers": 34,
+          "impactTriggers": 4,
+          "additions": 60,
+          "removals": 0,
+          "opacityChanges": 3,
+          "opacityImpact": 169,
+          "unhoverables": 10
+        },
+        "items": {
+          "head": {
+            "impactTriggers": [
+              {
+                "tagName": "LI",
+                "text": "AboutUsLearnmoreaboutUser1stOurVisionOurStoryOurTe",
+                "additions": 60,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "LI",
+                "text": "SolutionsUser1stsolutionsbyuseuRemediateWebAccessi",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 59
+              },
+              {
+                "tagName": "LI",
+                "text": "ServicesUser1stservicesVPATVoluntaryProductAccessi",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 44
+              },
+              {
+                "tagName": "LI",
+                "text": "Blog",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 66
+              }
+            ],
+            "unhoverables": [
+              {
+                "tagName": "A",
+                "id": "u1st_openMenu",
+                "text": "OpenAccessibilityMenu"
+              }
+            ]
+          },
+          "tail": {
+            "impactTriggers": [],
+            "unhoverables": [
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Twitter"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "OurTeam"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Linkedin-in"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Facebook-f"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "User1stintheNews"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "AccessibilityTraining"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "PrivacyPolicy"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Audits&Certification"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "Audits&Certification"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.user1st.com/",
+      "what": "URL",
+      "result": "https://user1st.com/"
+    },
+    {
+      "type": "test",
+      "which": "role",
+      "what": "roles",
+      "url": "https://user1st.com/",
+      "result": {
+        "roleElements": 22,
+        "badRoleElements": 7,
+        "redundantRoleElements": 1,
+        "tagNames": {
+          "A": {
+            "button": {
+              "bad": 6,
+              "redundant": 0
+            }
+          },
+          "UL": {
+            "navigation": {
+              "bad": 1,
+              "redundant": 0
+            }
+          },
+          "MAIN": {
+            "main": {
+              "bad": 0,
+              "redundant": 1
+            }
+          }
+        }
+      }
+    }
+  ],
+  "timeStamp": "49ouy",
+  "startTime": "2022-07-16T23:41:27",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "hover",
+      41
+    ],
+    [
+      "focInd",
+      1
+    ],
+    [
+      "role",
+      0
+    ]
+  ],
+  "logCount": 9,
+  "logSize": 939,
+  "errorLogCount": 3,
+  "errorLogSize": 537,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-16T23:42:23",
+  "elapsedSeconds": 56
+}

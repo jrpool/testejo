@@ -1,0 +1,535 @@
+{
+  "id": "49li4-mozilla",
+  "host": {
+    "id": "mozilla",
+    "which": "https://www.mozilla.org/en-US/",
+    "what": "Mozilla"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-16T21:59:15"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-16T22:00:08"
+    }
+  ],
+  "script": {
+    "id": "tp12",
+    "what": "Alfa, Axe, HTML CodeSniffer, IBM, Tenon, WAVE, and 16 custom tests",
+    "strict": true,
+    "timeLimit": 150,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.mozilla.org/en-US/",
+        "what": "Mozilla"
+      },
+      {
+        "type": "test",
+        "which": "focInd",
+        "revealAll": false,
+        "allowedDelay": 250,
+        "withItems": true,
+        "what": "focus indicators"
+      },
+      {
+        "type": "test",
+        "which": "hover",
+        "headSize": 20,
+        "headSampleSize": 20,
+        "tailSampleSize": 15,
+        "withItems": true,
+        "what": "hover impacts"
+      },
+      {
+        "type": "test",
+        "which": "role",
+        "what": "validity and necessity of role assignments"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.mozilla.org/en-US/",
+      "what": "Mozilla",
+      "result": "https://www.mozilla.org/en-US/"
+    },
+    {
+      "type": "test",
+      "which": "focInd",
+      "revealAll": false,
+      "allowedDelay": 250,
+      "withItems": true,
+      "what": "focus indicators",
+      "url": "https://www.mozilla.org/en-US/",
+      "result": {
+        "totals": {
+          "total": 53,
+          "types": {
+            "indicatorMissing": {
+              "total": 0,
+              "tagNames": {}
+            },
+            "nonOutlinePresent": {
+              "total": 10,
+              "tagNames": {
+                "A": 7,
+                "INPUT": 1,
+                "BUTTON": 1,
+                "SELECT": 1
+              }
+            },
+            "outlinePresent": {
+              "total": 43,
+              "meanDelay": 0,
+              "tagNames": {
+                "A": 43
+              }
+            }
+          }
+        },
+        "items": {
+          "indicatorMissing": [],
+          "nonOutlinePresent": [
+            {
+              "tagName": "A",
+              "text": "Download Firefox"
+            },
+            {
+              "tagName": "A",
+              "text": "Sign up for Pocket"
+            },
+            {
+              "tagName": "A",
+              "text": "Get Mozilla VPN"
+            },
+            {
+              "tagName": "A",
+              "text": "Explore Firefox"
+            },
+            {
+              "tagName": "A",
+              "text": "Try Pocket"
+            },
+            {
+              "tagName": "A",
+              "text": "Try Relay"
+            },
+            {
+              "tagName": "INPUT",
+              "text": ""
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Sign Up Now"
+            },
+            {
+              "tagName": "A",
+              "text": "Download Firefox"
+            },
+            {
+              "tagName": "SELECT",
+              "text": "aragonés عربي Asturianu Azərbaycanca Беларуская Български বাংলা Bosanski Català Maya Kaqchikel Češti"
+            }
+          ],
+          "outlinePresent": [
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Firefox Browsers",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Products",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Who We Are",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Innovation",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Learn more about us",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Visit the Mozilla Foundation",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Firefox Privacy Notice",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Mozilla",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Mozilla Manifesto",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Press Center",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Corporate Blog",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Careers",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Contact",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Donate",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Privacy Hub",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Browser Comparison",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Brand Standards",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Product Help",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "File a Bug",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Developer Edition",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Beta",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Beta for Android",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Nightly",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Nightly for Android",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Enterprise",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Tools",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Twitter (@mozilla)",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Instagram (@mozilla)",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "LinkedIn (@mozilla)",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "TikTok (@mozilla)",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Spotify (@mozilla)",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Twitter (@firefox)",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Instagram (@firefox)",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "YouTube (@firefoxchannel)",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Language",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Website Privacy Notice",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Cookies",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Legal",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Community Participation Guidelines",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Mozilla Corporation’s",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Mozilla Foundation",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Creative Commons license",
+              "delay": 0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.mozilla.org/en-US/",
+      "what": "URL",
+      "result": "https://www.mozilla.org/en-US/"
+    },
+    {
+      "type": "test",
+      "which": "hover",
+      "headSize": 20,
+      "headSampleSize": 20,
+      "tailSampleSize": 15,
+      "withItems": true,
+      "what": "hover-caused content changes",
+      "url": "https://www.mozilla.org/en-US/",
+      "result": {
+        "totals": {
+          "triggers": 85,
+          "headTriggers": 20,
+          "tailTriggers": 65,
+          "impactTriggers": 8,
+          "additions": 392,
+          "removals": 0,
+          "opacityChanges": 0,
+          "opacityImpact": 0,
+          "unhoverables": 0
+        },
+        "items": {
+          "head": {
+            "impactTriggers": [
+              {
+                "tagName": "LI",
+                "text": "FirefoxBrowsersCloseFirefoxBrowsersmenuFirefoxforD",
+                "additions": 51,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "A",
+                "text": "FirefoxBrowsers",
+                "additions": 51,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "LI",
+                "text": "ProductsCloseProductsmenuFirefoxMonitorSeeifyourem",
+                "additions": 59,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "A",
+                "text": "Products",
+                "additions": 59,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "LI",
+                "text": "WhoWeAreCloseWhoWeAremenuMozillaManifestoLearnabou",
+                "additions": 50,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "A",
+                "text": "WhoWeAre",
+                "additions": 50,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "LI",
+                "text": "InnovationCloseInnovationmenuMozillaHubsGatherinth",
+                "additions": 36,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "A",
+                "text": "Innovation",
+                "additions": 36,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              }
+            ],
+            "unhoverables": []
+          },
+          "tail": {
+            "impactTriggers": [],
+            "unhoverables": []
+          }
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.mozilla.org/en-US/",
+      "what": "URL",
+      "result": "https://www.mozilla.org/en-US/"
+    },
+    {
+      "type": "test",
+      "which": "role",
+      "what": "roles",
+      "url": "https://www.mozilla.org/en-US/",
+      "result": {
+        "roleElements": 1,
+        "badRoleElements": 0,
+        "redundantRoleElements": 1,
+        "tagNames": {
+          "MAIN": {
+            "main": {
+              "bad": 0,
+              "redundant": 1
+            }
+          }
+        }
+      }
+    }
+  ],
+  "timeStamp": "49li4",
+  "startTime": "2022-07-16T21:59:15",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "hover",
+      43
+    ],
+    [
+      "focInd",
+      3
+    ],
+    [
+      "role",
+      0
+    ]
+  ],
+  "logCount": 0,
+  "logSize": 0,
+  "errorLogCount": 0,
+  "errorLogSize": 0,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-16T22:00:08",
+  "elapsedSeconds": 52
+}

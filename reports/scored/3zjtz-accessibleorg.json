@@ -976,6 +976,7 @@
       "result": {
         "roleElements": 9,
         "badRoleElements": 0,
+        "redundantRoleElements": 0,
         "tagNames": {}
       }
     },
@@ -6013,7 +6014,7 @@
   "endTime": "2022-07-06T02:43:53",
   "elapsedSeconds": 74,
   "score": {
-    "scoreProcID": "sp12a",
+    "scoreProcID": "sp12b",
     "logWeights": {
       "logCount": 0.5,
       "logSize": 0.01,
@@ -6140,7 +6141,7 @@
           "alfa": {
             "r74": {
               "score": 12,
-              "what": "Paragraph text has absolute font size"
+              "what": "Paragraph text has an absolute font size"
             }
           }
         },

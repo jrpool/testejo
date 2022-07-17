@@ -303,17 +303,19 @@
           "total": 39,
           "types": {
             "indicatorMissing": {
-              "total": 0,
-              "tagNames": {}
-            },
-            "nonOutlinePresent": {
-              "total": 15,
+              "total": 13,
               "tagNames": {
                 "DIV": 4,
-                "A": 4,
                 "IFRAME": 1,
                 "INPUT": 5,
-                "BUTTON": 1
+                "BUTTON": 1,
+                "A": 2
+              }
+            },
+            "nonOutlinePresent": {
+              "total": 2,
+              "tagNames": {
+                "A": 2
               }
             },
             "outlinePresent": {
@@ -326,19 +328,10 @@
           }
         },
         "items": {
-          "indicatorMissing": [],
-          "nonOutlinePresent": [
+          "indicatorMissing": [
             {
               "tagName": "DIV",
               "text": "PartnersOur Partners Love Us!Give your clients full digital accessibility - fast\nGive your clients f"
-            },
-            {
-              "tagName": "A",
-              "text": "Request Demo"
-            },
-            {
-              "tagName": "A",
-              "text": "Learn More"
             },
             {
               "tagName": "DIV",
@@ -387,6 +380,16 @@
             {
               "tagName": "A",
               "text": "Play"
+            }
+          ],
+          "nonOutlinePresent": [
+            {
+              "tagName": "A",
+              "text": "Request Demo"
+            },
+            {
+              "tagName": "A",
+              "text": "Learn More"
             }
           ],
           "outlinePresent": [
@@ -1023,12 +1026,12 @@
           "triggers": 61,
           "headTriggers": 20,
           "tailTriggers": 41,
-          "impactTriggers": 4,
+          "impactTriggers": 3,
           "additions": 0,
           "removals": 0,
-          "opacityChanges": 4,
-          "opacityImpact": 16,
-          "unhoverables": 7
+          "opacityChanges": 3,
+          "opacityImpact": 12,
+          "unhoverables": 8
         },
         "items": {
           "head": {
@@ -1056,14 +1059,6 @@
                 "removals": 0,
                 "opacityChanges": 1,
                 "opacityImpact": 4
-              },
-              {
-                "tagName": "A",
-                "text": "WCAGSuccessCriteria",
-                "additions": 0,
-                "removals": 0,
-                "opacityChanges": 1,
-                "opacityImpact": 4
               }
             ],
             "unhoverables": [
@@ -1076,6 +1071,11 @@
                 "tagName": "LI",
                 "id": "menu-item-2955",
                 "text": "WCAGSuccessCriteria"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "WCAGSuccessCriteria"
               }
             ]
           },
@@ -1085,12 +1085,12 @@
               {
                 "tagName": "A",
                 "id": "",
-                "text": "LearnMore"
+                "text": "RequestDemo"
               },
               {
-                "tagName": "A",
-                "id": "",
-                "text": "GetStarted"
+                "tagName": "LI",
+                "id": "menu-item-584",
+                "text": "TermsofUse"
               },
               {
                 "tagName": "A",
@@ -1105,7 +1105,7 @@
               {
                 "tagName": "A",
                 "id": "",
-                "text": "PrivacyPolicy"
+                "text": "LearnMore"
               }
             ]
           }
@@ -1375,20 +1375,36 @@
       "url": "https://mk-sense.com/",
       "result": {
         "roleElements": 18,
-        "badRoleElements": 10,
+        "badRoleElements": 8,
+        "redundantRoleElements": 2,
         "tagNames": {
           "DIV": {
-            "navigation": 2,
-            "button": 3
+            "navigation": {
+              "bad": 2,
+              "redundant": 0
+            },
+            "button": {
+              "bad": 3,
+              "redundant": 0
+            }
           },
           "A": {
-            "button": 3
+            "button": {
+              "bad": 3,
+              "redundant": 0
+            }
           },
           "NAV": {
-            "navigation": 1
+            "navigation": {
+              "bad": 0,
+              "redundant": 1
+            }
           },
           "MAIN": {
-            "main": 1
+            "main": {
+              "bad": 0,
+              "redundant": 1
+            }
           }
         }
       }

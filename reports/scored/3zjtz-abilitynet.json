@@ -300,19 +300,20 @@
       "url": "https://www.abilitynet.org.uk/",
       "result": {
         "totals": {
-          "total": 67,
+          "total": 66,
           "types": {
             "indicatorMissing": {
-              "total": 0,
-              "tagNames": {}
+              "total": 3,
+              "tagNames": {
+                "INPUT": 2,
+                "IFRAME": 1
+              }
             },
             "nonOutlinePresent": {
-              "total": 67,
+              "total": 63,
               "tagNames": {
-                "A": 63,
-                "INPUT": 2,
-                "BUTTON": 1,
-                "IFRAME": 1
+                "A": 62,
+                "BUTTON": 1
               }
             },
             "outlinePresent": {
@@ -323,7 +324,20 @@
           }
         },
         "items": {
-          "indicatorMissing": [],
+          "indicatorMissing": [
+            {
+              "tagName": "INPUT",
+              "text": ""
+            },
+            {
+              "tagName": "INPUT",
+              "text": ""
+            },
+            {
+              "tagName": "IFRAME",
+              "text": ""
+            }
+          ],
           "nonOutlinePresent": [
             {
               "tagName": "A",
@@ -354,24 +368,12 @@
               "text": "Jobs"
             },
             {
-              "tagName": "INPUT",
-              "text": ""
-            },
-            {
-              "tagName": "INPUT",
-              "text": ""
-            },
-            {
               "tagName": "A",
               "text": "DSA and HE Services"
             },
             {
               "tagName": "A",
-              "text": "IT Support At Home"
-            },
-            {
-              "tagName": "A",
-              "text": "Free Resources"
+              "text": "Free Tech Support and Information"
             },
             {
               "tagName": "A",
@@ -387,7 +389,7 @@
             },
             {
               "tagName": "A",
-              "text": "How to be inclusive in recruitment Join us to discuss the importance of embedding inclusivity at eve"
+              "text": "Free higher education webinar Join AbilityNet and University of Greenwich on Tuesday 19 July at 1pm "
             },
             {
               "tagName": "A",
@@ -395,35 +397,19 @@
             },
             {
               "tagName": "A",
+              "text": "Pros and cons of wearables for people with sight loss"
+            },
+            {
+              "tagName": "A",
+              "text": "Download our free Digital Accessibility Maturity Model"
+            },
+            {
+              "tagName": "A",
               "text": "AbilityNet pledges to end digital poverty by 2030"
             },
             {
               "tagName": "A",
-              "text": "8 ways to grow empathy in the workplace"
-            },
-            {
-              "tagName": "A",
-              "text": "How to prepare for your first job"
-            },
-            {
-              "tagName": "A",
               "text": "affordable online training courses"
-            },
-            {
-              "tagName": "A",
-              "text": "How to do accessible, inclusive recruitment"
-            },
-            {
-              "tagName": "A",
-              "text": "Introduction to Digital Accessibility << FREE"
-            },
-            {
-              "tagName": "A",
-              "text": "Accessible mobile development"
-            },
-            {
-              "tagName": "A",
-              "text": "How to build a disability inclusive workplace << FREE"
             },
             {
               "tagName": "A",
@@ -432,6 +418,10 @@
             {
               "tagName": "A",
               "text": "Accessibility testing in mobile apps"
+            },
+            {
+              "tagName": "A",
+              "text": "Digital Accessibility Legislation"
             },
             {
               "tagName": "A",
@@ -447,7 +437,19 @@
             },
             {
               "tagName": "A",
+              "text": "Accessible translation and localisation"
+            },
+            {
+              "tagName": "A",
               "text": "Accessible social media"
+            },
+            {
+              "tagName": "A",
+              "text": "Understanding accessibility evaluations and testing results"
+            },
+            {
+              "tagName": "A",
+              "text": "How to run accessible, inclusive hybrid meetings and events in Zoom, Teams and more"
             },
             {
               "tagName": "A",
@@ -588,10 +590,6 @@
             {
               "tagName": "A",
               "text": "User Login"
-            },
-            {
-              "tagName": "IFRAME",
-              "text": ""
             }
           ],
           "outlinePresent": []
@@ -2356,19 +2354,44 @@
       "url": "https://www.abilitynet.org.uk/",
       "result": {
         "totals": {
-          "triggers": 102,
+          "triggers": 100,
           "headTriggers": 20,
-          "tailTriggers": 82,
-          "impactTriggers": 0,
-          "additions": 0,
-          "removals": 0,
+          "tailTriggers": 80,
+          "impactTriggers": 8,
+          "additions": 159,
+          "removals": 62,
           "opacityChanges": 0,
           "opacityImpact": 0,
           "unhoverables": 1
         },
         "items": {
           "head": {
-            "impactTriggers": [],
+            "impactTriggers": [
+              {
+                "tagName": "LI",
+                "text": "DSAandHEServicesAboutourDSAServicesBookyourDSANeed",
+                "additions": 29,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "LI",
+                "text": "FreeTechSupportandInformationAboutourfreetechsuppo",
+                "additions": 33,
+                "removals": 29,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "LI",
+                "text": "DigitalAccessibilityAboutourAccessibilityServicesO",
+                "additions": 33,
+                "removals": 33,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              }
+            ],
             "unhoverables": [
               {
                 "tagName": "A",
@@ -2378,7 +2401,16 @@
             ]
           },
           "tail": {
-            "impactTriggers": [],
+            "impactTriggers": [
+              {
+                "tagName": "LI",
+                "text": "MyComputerMyWayMyComputerMyWayVision-seeingthescre",
+                "additions": 12,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              }
+            ],
             "unhoverables": []
           }
         }
@@ -2753,17 +2785,27 @@
       "what": "roles",
       "url": "https://www.abilitynet.org.uk/",
       "result": {
-        "roleElements": 15,
-        "badRoleElements": 8,
+        "roleElements": 13,
+        "badRoleElements": 5,
+        "redundantRoleElements": 2,
         "tagNames": {
           "NAV": {
-            "navigation": 1
+            "navigation": {
+              "bad": 0,
+              "redundant": 1
+            }
           },
           "A": {
-            "button": 6
+            "button": {
+              "bad": 5,
+              "redundant": 0
+            }
           },
           "MAIN": {
-            "main": 1
+            "main": {
+              "bad": 0,
+              "redundant": 1
+            }
           }
         }
       }
@@ -7189,7 +7231,7 @@
   "endTime": "2022-07-06T02:08:06",
   "elapsedSeconds": 157,
   "score": {
-    "scoreProcID": "sp12a",
+    "scoreProcID": "sp12b",
     "logWeights": {
       "logCount": 0.5,
       "logSize": 0.01,
@@ -7213,12 +7255,12 @@
       "testaro": {
         "bulk": 0,
         "focAll": 2,
-        "focInd": 67,
+        "focInd": 72,
         "focOp": 12,
-        "hover": 1,
+        "hover": 127,
         "labClash": 1,
         "linkUl": 120,
-        "role": 8,
+        "role": 12,
         "styleDiff": 41,
         "zIndex": 22
       },
@@ -7308,7 +7350,7 @@
         "focusIndication": {
           "testaro": {
             "focInd": {
-              "score": 67,
+              "score": 72,
               "what": "Focused element displaying no or nostandard focus indicator"
             }
           },
@@ -7330,7 +7372,7 @@
         "hoverSurprise": {
           "testaro": {
             "hover": {
-              "score": 1,
+              "score": 32,
               "what": "Content changes caused by hovering"
             }
           }
@@ -7354,7 +7396,7 @@
         "roleBad": {
           "testaro": {
             "role": {
-              "score": 6,
+              "score": 9,
               "what": "Nonexistent or implicit-overriding role"
             }
           }
@@ -7754,18 +7796,22 @@
     },
     "preventionScores": {},
     "summary": {
-      "total": 1056,
+      "total": 1095,
       "log": 671,
       "preventions": 0,
       "solos": 0,
       "groups": [
         {
           "groupName": "focusIndication",
-          "score": 70
+          "score": 75
         },
         {
           "groupName": "linkIndication",
           "score": 62
+        },
+        {
+          "groupName": "hoverSurprise",
+          "score": 34
         },
         {
           "groupName": "linkNoText",
@@ -7792,16 +7838,16 @@
           "score": 11
         },
         {
+          "groupName": "roleBad",
+          "score": 11
+        },
+        {
           "groupName": "iframeTitleBad",
           "score": 9
         },
         {
           "groupName": "pageLanguage",
           "score": 9
-        },
-        {
-          "groupName": "roleBad",
-          "score": 8
         },
         {
           "groupName": "zIndexNotZero",
@@ -7857,10 +7903,6 @@
         },
         {
           "groupName": "visibleBulk",
-          "score": 3
-        },
-        {
-          "groupName": "hoverSurprise",
           "score": 3
         },
         {

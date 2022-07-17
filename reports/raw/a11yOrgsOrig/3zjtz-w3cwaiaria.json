@@ -1,0 +1,3709 @@
+{
+  "id": "3zjtz-w3cwaiaria",
+  "host": {
+    "id": "w3cwaiaria",
+    "which": "https://www.w3.org/WAI/standards-guidelines/aria/",
+    "what": "W3C WAI-ARIA"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-06T00:54:21"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-06T00:55:59"
+    }
+  ],
+  "script": {
+    "id": "tp12",
+    "what": "Alfa, Axe, HTML CodeSniffer, IBM, Tenon, WAVE, and 16 custom tests",
+    "strict": true,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "webkit",
+        "what": "Webkit browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.w3.org/WAI/standards-guidelines/aria/",
+        "what": "W3C WAI-ARIA"
+      },
+      {
+        "type": "tenonRequest",
+        "id": "a",
+        "withNewContent": true,
+        "what": "Tenon API version 2 test request"
+      },
+      {
+        "type": "test",
+        "which": "motion",
+        "what": "spontaneous change of content; requires webkit",
+        "delay": 2500,
+        "interval": 2500,
+        "count": 5
+      },
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.w3.org/WAI/standards-guidelines/aria/",
+        "what": "W3C WAI-ARIA"
+      },
+      {
+        "type": "test",
+        "which": "bulk",
+        "what": "count of visible elements"
+      },
+      {
+        "type": "test",
+        "which": "embAc",
+        "withItems": true,
+        "what": "active elements incorrectly embedded in each other"
+      },
+      {
+        "type": "test",
+        "which": "focAll",
+        "what": "Tab-focusability"
+      },
+      {
+        "type": "test",
+        "which": "focInd",
+        "revealAll": false,
+        "allowedDelay": 250,
+        "withItems": true,
+        "what": "focus indicators"
+      },
+      {
+        "type": "test",
+        "which": "focOp",
+        "withItems": true,
+        "what": "focusability and operability of elements"
+      },
+      {
+        "type": "test",
+        "which": "hover",
+        "headSize": 20,
+        "headSampleSize": 20,
+        "tailSampleSize": 15,
+        "withItems": true,
+        "what": "hover impacts"
+      },
+      {
+        "type": "test",
+        "which": "labClash",
+        "withItems": true,
+        "what": "unlabeled and mislabeled form controls"
+      },
+      {
+        "type": "test",
+        "which": "linkUl",
+        "withItems": true,
+        "what": "underlining of inline links"
+      },
+      {
+        "type": "test",
+        "which": "menuNav",
+        "withItems": true,
+        "what": "keyboard navigation within true-focus menus"
+      },
+      {
+        "type": "test",
+        "which": "radioSet",
+        "withItems": true,
+        "what": "grouping of radio buttons in fieldsets"
+      },
+      {
+        "type": "test",
+        "which": "role",
+        "what": "validity and necessity of role assignments"
+      },
+      {
+        "type": "test",
+        "which": "styleDiff",
+        "withItems": true,
+        "what": "style consistency of headings, buttons, and links"
+      },
+      {
+        "type": "test",
+        "which": "tabNav",
+        "withItems": true,
+        "what": "keyboard navigation within tab lists"
+      },
+      {
+        "type": "test",
+        "which": "zIndex",
+        "withItems": true,
+        "what": "elements with non-auto z indexes"
+      },
+      {
+        "type": "test",
+        "which": "alfa",
+        "what": "Siteimprove alfa"
+      },
+      {
+        "type": "test",
+        "which": "axe",
+        "detailLevel": 2,
+        "rules": [],
+        "what": "Axe core, all rules"
+      },
+      {
+        "type": "test",
+        "which": "htmlcs",
+        "what": "HTML CodeSniffer"
+      },
+      {
+        "type": "test",
+        "which": "ibm",
+        "withItems": true,
+        "what": "IBM Accessibility Checker, with page content and again with URL"
+      },
+      {
+        "type": "test",
+        "which": "wave",
+        "reportType": 4,
+        "what": "WAVE, report-type 4"
+      },
+      {
+        "type": "test",
+        "which": "tenon",
+        "id": "a",
+        "what": "Tenon API version 2 result retrieval"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "webkit",
+      "what": "Webkit browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.w3.org/WAI/standards-guidelines/aria/",
+      "what": "W3C WAI-ARIA",
+      "result": "https://www.w3.org/WAI/standards-guidelines/aria/"
+    },
+    {
+      "type": "tenonRequest",
+      "id": "a",
+      "withNewContent": true,
+      "what": "Tenon API version 2 test request",
+      "url": "https://www.w3.org/WAI/standards-guidelines/aria/"
+    },
+    {
+      "type": "test",
+      "which": "motion",
+      "what": "motion",
+      "delay": 2500,
+      "interval": 2500,
+      "count": 5,
+      "url": "https://www.w3.org/WAI/standards-guidelines/aria/",
+      "result": {
+        "bytes": [
+          136927,
+          136927,
+          136927,
+          136927,
+          136927
+        ],
+        "localRatios": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "meanLocalRatio": 1,
+        "maxLocalRatio": 1,
+        "globalRatio": 1,
+        "pixelChanges": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "meanPixelChange": 0,
+        "maxPixelChange": 0,
+        "changeFrequency": 0
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.w3.org/WAI/standards-guidelines/aria/",
+      "what": "W3C WAI-ARIA",
+      "result": "https://www.w3.org/WAI/standards-guidelines/aria/"
+    },
+    {
+      "type": "test",
+      "which": "bulk",
+      "what": "count of visible elements",
+      "url": "https://www.w3.org/WAI/standards-guidelines/aria/",
+      "result": {
+        "visibleElements": 298
+      }
+    },
+    {
+      "type": "test",
+      "which": "embAc",
+      "withItems": true,
+      "what": "active elements embedded in links or buttons",
+      "url": "https://www.w3.org/WAI/standards-guidelines/aria/",
+      "result": {
+        "totals": {
+          "links": 0,
+          "buttons": 0,
+          "inputs": 0,
+          "selects": 0
+        },
+        "items": []
+      }
+    },
+    {
+      "type": "test",
+      "which": "focAll",
+      "what": "focusable and Tab-focused elements",
+      "url": "https://www.w3.org/WAI/standards-guidelines/aria/",
+      "result": {
+        "tabFocusables": 85,
+        "tabFocused": 85,
+        "discrepancy": 0
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.w3.org/WAI/standards-guidelines/aria/",
+      "what": "URL",
+      "result": "https://www.w3.org/WAI/standards-guidelines/aria/"
+    },
+    {
+      "type": "test",
+      "which": "focInd",
+      "revealAll": false,
+      "allowedDelay": 250,
+      "withItems": true,
+      "what": "focus indicators",
+      "url": "https://www.w3.org/WAI/standards-guidelines/aria/",
+      "result": {
+        "totals": {
+          "total": 85,
+          "types": {
+            "indicatorMissing": {
+              "total": 0,
+              "tagNames": {}
+            },
+            "nonOutlinePresent": {
+              "total": 85,
+              "tagNames": {
+                "A": 83,
+                "INPUT": 1,
+                "BUTTON": 1
+              }
+            },
+            "outlinePresent": {
+              "total": 0,
+              "meanDelay": 0,
+              "tagNames": {}
+            }
+          }
+        },
+        "items": {
+          "indicatorMissing": [],
+          "nonOutlinePresent": [
+            {
+              "tagName": "A",
+              "text": "Skip to Content"
+            },
+            {
+              "tagName": "A",
+              "text": "Change Text Size or Colors"
+            },
+            {
+              "tagName": "A",
+              "text": "All Translations"
+            },
+            {
+              "tagName": "A",
+              "text": ""
+            },
+            {
+              "tagName": "A",
+              "text": "Web Accessibility Initiative WAI"
+            },
+            {
+              "tagName": "A",
+              "text": "Get Involved"
+            },
+            {
+              "tagName": "A",
+              "text": "About W3C WAI"
+            },
+            {
+              "tagName": "INPUT",
+              "text": ""
+            },
+            {
+              "tagName": "BUTTON",
+              "text": ""
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility Fundamentals"
+            },
+            {
+              "tagName": "A",
+              "text": "Planning & Policies"
+            },
+            {
+              "tagName": "A",
+              "text": "Design & Develop"
+            },
+            {
+              "tagName": "A",
+              "text": "Test & Evaluate"
+            },
+            {
+              "tagName": "A",
+              "text": "Teach & Advocate"
+            },
+            {
+              "tagName": "A",
+              "text": "Standards/Guidelines"
+            },
+            {
+              "tagName": "A",
+              "text": "Home"
+            },
+            {
+              "tagName": "A",
+              "text": "Standards/Guidelines"
+            },
+            {
+              "tagName": "A",
+              "text": "WAI-ARIA"
+            },
+            {
+              "tagName": "A",
+              "text": "Standards/Guidelines"
+            },
+            {
+              "tagName": "A",
+              "text": "Web Content – WCAG 2"
+            },
+            {
+              "tagName": "A",
+              "text": "WCAG 3 Draft"
+            },
+            {
+              "tagName": "A",
+              "text": "Authoring Tools – ATAG"
+            },
+            {
+              "tagName": "A",
+              "text": "User Agents – UAAG"
+            },
+            {
+              "tagName": "A",
+              "text": "WAI-ARIA"
+            },
+            {
+              "tagName": "A",
+              "text": "Evaluation – ACT & EARL"
+            },
+            {
+              "tagName": "A",
+              "text": "WAI-Adapt"
+            },
+            {
+              "tagName": "A",
+              "text": "Pronunciation"
+            },
+            {
+              "tagName": "A",
+              "text": "Standards Harmonization is Essential"
+            },
+            {
+              "tagName": "A",
+              "text": "W3C Process for Developing Standards"
+            },
+            {
+              "tagName": "A",
+              "text": "Referencing and Linking to Standards"
+            },
+            {
+              "tagName": "A",
+              "text": "Cognitive Accessibility at W3C"
+            },
+            {
+              "tagName": "A",
+              "text": "Mobile Accessibility at W3C"
+            },
+            {
+              "tagName": "A",
+              "text": "WAI-ARIA standard"
+            },
+            {
+              "tagName": "A",
+              "text": "WAI-ARIA Authoring Practices Guide (APG)"
+            },
+            {
+              "tagName": "A",
+              "text": "Introduction"
+            },
+            {
+              "tagName": "A",
+              "text": "Authoring Practices Guide (APG)"
+            },
+            {
+              "tagName": "A",
+              "text": "Versions"
+            },
+            {
+              "tagName": "A",
+              "text": "Who develops WAI-ARIA"
+            },
+            {
+              "tagName": "A",
+              "text": "Introduction to Web\nAccessibility"
+            },
+            {
+              "tagName": "A",
+              "text": "Essential Components\nof Web Accessibility"
+            },
+            {
+              "tagName": "A",
+              "text": "ARIA Authoring Practices Guide (APG)"
+            },
+            {
+              "tagName": "A",
+              "text": "WAI-ARIA 1.0"
+            },
+            {
+              "tagName": "A",
+              "text": "WAI-ARIA 1.1"
+            },
+            {
+              "tagName": "A",
+              "text": "WAI-ARIA 1.2"
+            },
+            {
+              "tagName": "A",
+              "text": "WAI-ARIA 1.2"
+            },
+            {
+              "tagName": "A",
+              "text": "Core Accessibility API Mappings 1.2"
+            },
+            {
+              "tagName": "A",
+              "text": "Accessible Name and Description: Computation and API Mappings\n1.2"
+            },
+            {
+              "tagName": "A",
+              "text": "HTML Accessibility API Mappings 1.0"
+            },
+            {
+              "tagName": "A",
+              "text": "SVG Accessibility API Mappings 1.0"
+            },
+            {
+              "tagName": "A",
+              "text": "WAI-ARIA GitHub\nRepository"
+            },
+            {
+              "tagName": "A",
+              "text": "How WAI Develops Accessibility Guidelines through the W3C\nProcess"
+            },
+            {
+              "tagName": "A",
+              "text": "ARIA WG"
+            },
+            {
+              "tagName": "A",
+              "text": "W3C"
+            },
+            {
+              "tagName": "A",
+              "text": "WAI"
+            },
+            {
+              "tagName": "A",
+              "text": "ARIA WG public page"
+            },
+            {
+              "tagName": "A",
+              "text": "How WAI Develops Accessibility Guidelines through the W3C Process:\nMilestones and Opportunities to C"
+            },
+            {
+              "tagName": "A",
+              "text": "WAI home page"
+            },
+            {
+              "tagName": "A",
+              "text": "WAI Interest Group"
+            },
+            {
+              "tagName": "A",
+              "text": "Participating in WAI"
+            },
+            {
+              "tagName": "A",
+              "text": "wai@w3.org"
+            },
+            {
+              "tagName": "A",
+              "text": "E-mail"
+            },
+            {
+              "tagName": "A",
+              "text": "Fork & Edit on GitHub"
+            },
+            {
+              "tagName": "A",
+              "text": "New GitHub Issue"
+            },
+            {
+              "tagName": "A",
+              "text": "Back to Top"
+            },
+            {
+              "tagName": "A",
+              "text": "Michael Cooper"
+            },
+            {
+              "tagName": "A",
+              "text": "Shawn Lawton Henry"
+            },
+            {
+              "tagName": "A",
+              "text": "ARIA WG"
+            },
+            {
+              "tagName": "A",
+              "text": "EOWG"
+            },
+            {
+              "tagName": "A",
+              "text": "W3C Web Accessibility Initiative (WAI)"
+            },
+            {
+              "tagName": "A",
+              "text": "Twitter"
+            },
+            {
+              "tagName": "A",
+              "text": "Feed"
+            },
+            {
+              "tagName": "A",
+              "text": "YouTube"
+            },
+            {
+              "tagName": "A",
+              "text": "Get News in Email"
+            },
+            {
+              "tagName": "A",
+              "text": "MIT"
+            },
+            {
+              "tagName": "A",
+              "text": "ERCIM"
+            },
+            {
+              "tagName": "A",
+              "text": "Keio"
+            },
+            {
+              "tagName": "A",
+              "text": "Beihang"
+            },
+            {
+              "tagName": "A",
+              "text": "Permission to Use WAI Material"
+            },
+            {
+              "tagName": "A",
+              "text": "Contact WAI"
+            },
+            {
+              "tagName": "A",
+              "text": "Site Map"
+            },
+            {
+              "tagName": "A",
+              "text": "News"
+            },
+            {
+              "tagName": "A",
+              "text": "Archive"
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility Statement"
+            },
+            {
+              "tagName": "A",
+              "text": "Translations"
+            },
+            {
+              "tagName": "A",
+              "text": "Resources for Roles"
+            }
+          ],
+          "outlinePresent": []
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.w3.org/WAI/standards-guidelines/aria/",
+      "what": "URL",
+      "result": "https://www.w3.org/WAI/standards-guidelines/aria/"
+    },
+    {
+      "type": "test",
+      "which": "focOp",
+      "withItems": true,
+      "what": "focusability and operability",
+      "url": "https://www.w3.org/WAI/standards-guidelines/aria/",
+      "result": {
+        "totals": {
+          "total": 99,
+          "types": {
+            "onlyFocusable": {
+              "total": 0,
+              "tagNames": {}
+            },
+            "onlyOperable": {
+              "total": 0,
+              "tagNames": {}
+            },
+            "focusableAndOperable": {
+              "total": 99,
+              "tagNames": {
+                "A": 96,
+                "BUTTON": 2,
+                "INPUT": 1
+              }
+            }
+          }
+        },
+        "items": {
+          "onlyFocusable": [],
+          "onlyOperable": [],
+          "focusableAndOperable": [
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "Skip to Content",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "Change Text Size or Colors",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "All Translations",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "<a lang=\"en\" class=\"home w3c\" href=\"https://www.w3.org/\" style=\"cursor: default;",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "Web Accessibility Initiative WAI",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "BUTTON",
+              "id": "openmenu",
+              "text": "Menu",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": false
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "Get Involved",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "About W3C WAI",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "INPUT",
+              "id": "header-search",
+              "text": "<input id=\"header-search\" type=\"search\" name=\"q\" placeholder=\"Search\" aria-label",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": false
+            },
+            {
+              "tagName": "BUTTON",
+              "id": "",
+              "text": "<button class=\"button button-icon button-nobg button-noborder\"><span><svg focusa",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": false
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "Accessibility Fundamentals",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "Planning & Policies",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "Design & Develop",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "Test & Evaluate",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "Teach & Advocate",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "Standards/Guidelines",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "Home",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "Standards/Guidelines",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "WAI-ARIA",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "Standards/Guidelines",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "Web Content – WCAG 2",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "How to Meet WCAG 2 (Quick Reference)",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "At a Glance",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "The Documents",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "Applying to Non-Web ICT",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "New in 2.2 Draft",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "New in 2.1",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "Translations",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "Commenting",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "Conformance Logos",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "FAQ",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "WCAG 3 Draft",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "Authoring Tools – ATAG",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "At a Glance",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "User Agents – UAAG",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "WAI-ARIA",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "Evaluation – ACT & EARL",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "Accessibility Conformance Testing – ACT",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "Evaluation and Report Language – EARL",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "WAI-Adapt",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "Pronunciation",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "Standards Harmonization is Essential",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "W3C Process for Developing Standards",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "Referencing and Linking to Standards",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "Cognitive Accessibility at W3C",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "Mobile Accessibility at W3C",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "WAI-ARIA standard",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "WAI-ARIA Authoring Practices Guide (APG)",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "markdown-toc-introduction",
+              "text": "Introduction",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "markdown-toc-authoring-practices-guide-apg",
+              "text": "Authoring Practices Guide (APG)",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "markdown-toc-versions",
+              "text": "Versions",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "markdown-toc-who-develops-wai-aria",
+              "text": "Who develops WAI-ARIA",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "Introduction to Web\nAccessibility",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "Essential Components\nof Web Accessibility",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "ARIA Authoring Practices Guide (APG)",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "WAI-ARIA 1.0",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "WAI-ARIA 1.1",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "WAI-ARIA 1.2",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "WAI-ARIA 1.2",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "Core Accessibility API Mappings 1.2",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "Accessible Name and Description: Computation and API Mappings\n1.2",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "HTML Accessibility API Mappings 1.0",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "SVG Accessibility API Mappings 1.0",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "WAI-ARIA GitHub\nRepository",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "How WAI Develops Accessibility Guidelines through the W3C\nProcess",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "ARIA WG",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "W3C",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "WAI",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "ARIA WG public page",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "How WAI Develops Accessibility Guidelines through the W3C Process:\nMilestones an",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "WAI home page",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "WAI Interest Group",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "Participating in WAI",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "wai@w3.org",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "E-mail",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "Fork & Edit on GitHub",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "New GitHub Issue",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "Back to Top",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "Michael Cooper",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "Shawn Lawton Henry",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "ARIA WG",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "EOWG",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "W3C Web Accessibility Initiative (WAI)",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "Twitter",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "Feed",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "YouTube",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "Get News in Email",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "MIT",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "ERCIM",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "Keio",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "Beihang",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "Permission to Use WAI Material",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "Contact WAI",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "Site Map",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "News",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "Archive",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "Accessibility Statement",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "Translations",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "Resources for Roles",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.w3.org/WAI/standards-guidelines/aria/",
+      "what": "URL",
+      "result": "https://www.w3.org/WAI/standards-guidelines/aria/"
+    },
+    {
+      "type": "test",
+      "which": "hover",
+      "headSize": 20,
+      "headSampleSize": 20,
+      "tailSampleSize": 15,
+      "withItems": true,
+      "what": "hover-caused content changes",
+      "url": "https://www.w3.org/WAI/standards-guidelines/aria/",
+      "result": {
+        "totals": {
+          "triggers": 143,
+          "headTriggers": 20,
+          "tailTriggers": 123,
+          "impactTriggers": 8,
+          "additions": 0,
+          "removals": 0,
+          "opacityChanges": 8,
+          "opacityImpact": 25,
+          "unhoverables": 0
+        },
+        "items": {
+          "head": {
+            "impactTriggers": [],
+            "unhoverables": []
+          },
+          "tail": {
+            "impactTriggers": [
+              {
+                "tagName": "LI",
+                "text": "AccessibleNameandDescription:ComputationandAPIMapp",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 3
+              }
+            ],
+            "unhoverables": []
+          }
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.w3.org/WAI/standards-guidelines/aria/",
+      "what": "URL",
+      "result": "https://www.w3.org/WAI/standards-guidelines/aria/"
+    },
+    {
+      "type": "test",
+      "which": "labClash",
+      "withItems": true,
+      "what": "labeling inconsistencies",
+      "url": "https://www.w3.org/WAI/standards-guidelines/aria/",
+      "result": {
+        "totals": {
+          "mislabeled": 1,
+          "unlabeled": 1,
+          "wellLabeled": 1
+        },
+        "items": {
+          "mislabeled": [
+            {
+              "index": 1,
+              "tagName": "INPUT",
+              "type": "search",
+              "labelTypes": [
+                "aria-label",
+                "label"
+              ],
+              "texts": {
+                "attribute": "Search",
+                "label": [
+                  "Search:"
+                ]
+              }
+            }
+          ],
+          "unlabeled": [
+            {
+              "index": 2,
+              "tagName": "BUTTON",
+              "type": "submit",
+              "content": "{<button class=\"button button-icon button-nobg button-noborder\"><span><svg focusable=\"false\" aria-label=\"Submit Search\" class=\"icon-search \"><use xlink:href=\"/WAI/assets/images/icons.svg#icon-search\"></use></svg></span></button>}"
+            }
+          ],
+          "wellLabeled": [
+            {
+              "index": 0,
+              "tagName": "BUTTON",
+              "type": "submit",
+              "texts": {
+                "content": "Menu"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "test",
+      "which": "linkUl",
+      "withItems": true,
+      "what": "adjacent-link underlining",
+      "url": "https://www.w3.org/WAI/standards-guidelines/aria/",
+      "result": {
+        "totals": {
+          "links": 96,
+          "adjacent": {
+            "total": 55,
+            "underlined": 31,
+            "underlinedPercent": 56
+          }
+        },
+        "items": {
+          "underlined": [
+            "Introduction to WebAccessibility",
+            "Essential Componentsof Web Accessibility",
+            "ARIA Authoring Practices Guide (APG)",
+            "WAI-ARIA 1.0",
+            "WAI-ARIA 1.1",
+            "WAI-ARIA 1.2",
+            "WAI-ARIA 1.2",
+            "Core Accessibility API Mappings 1.2",
+            "Accessible Name and Description: Computation and API Mappings1.2",
+            "HTML Accessibility API Mappings 1.0",
+            "SVG Accessibility API Mappings 1.0",
+            "WAI-ARIA GitHubRepository",
+            "How WAI Develops Accessibility Guidelines through the W3CProcess",
+            "ARIA WG",
+            "W3C",
+            "WAI",
+            "ARIA WG public page",
+            "How WAI Develops Accessibility Guidelines through the W3C Process:Milestones and Opportunities to Contribute",
+            "WAI home page",
+            "WAI Interest Group",
+            "Participating in WAI",
+            "wai@w3.org",
+            "Michael Cooper",
+            "Shawn Lawton Henry",
+            "ARIA WG",
+            "EOWG",
+            "MIT",
+            "ERCIM",
+            "Keio",
+            "Beihang",
+            "Permission to Use WAI Material"
+          ],
+          "notUnderlined": [
+            "",
+            "Web Accessibility Initiative WAI",
+            "Get Involved",
+            "About W3C WAI",
+            "Standards/Guidelines",
+            "Web Content – WCAG 2",
+            "WCAG 3 Draft",
+            "Authoring Tools – ATAG",
+            "At a Glance",
+            "User Agents – UAAG",
+            "WAI-ARIA",
+            "Evaluation – ACT & EARL",
+            "WAI-Adapt",
+            "Pronunciation",
+            "Standards Harmonization is Essential",
+            "W3C Process for Developing Standards",
+            "Referencing and Linking to Standards",
+            "Cognitive Accessibility at W3C",
+            "Mobile Accessibility at W3C",
+            "E-mail",
+            "Fork & Edit on GitHub",
+            "New GitHub Issue",
+            "Back to Top",
+            "W3C Web Accessibility Initiative (WAI)"
+          ]
+        }
+      }
+    },
+    {
+      "type": "test",
+      "which": "menuNav",
+      "withItems": true,
+      "what": "keyboard navigation between focusable menu items",
+      "url": "https://www.w3.org/WAI/standards-guidelines/aria/",
+      "result": {
+        "totals": {
+          "navigations": {
+            "all": {
+              "total": 0,
+              "correct": 0,
+              "incorrect": 0
+            },
+            "specific": {
+              "tab": {
+                "total": 0,
+                "correct": 0,
+                "incorrect": 0
+              },
+              "left": {
+                "total": 0,
+                "correct": 0,
+                "incorrect": 0
+              },
+              "right": {
+                "total": 0,
+                "correct": 0,
+                "incorrect": 0
+              },
+              "up": {
+                "total": 0,
+                "correct": 0,
+                "incorrect": 0
+              },
+              "down": {
+                "total": 0,
+                "correct": 0,
+                "incorrect": 0
+              },
+              "home": {
+                "total": 0,
+                "correct": 0,
+                "incorrect": 0
+              },
+              "end": {
+                "total": 0,
+                "correct": 0,
+                "incorrect": 0
+              }
+            }
+          },
+          "menuItems": {
+            "total": 0,
+            "correct": 0,
+            "incorrect": 0
+          },
+          "menus": {
+            "total": 0,
+            "correct": 0,
+            "incorrect": 0
+          }
+        },
+        "menuItems": {
+          "incorrect": [],
+          "correct": []
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.w3.org/WAI/standards-guidelines/aria/",
+      "what": "URL",
+      "result": "https://www.w3.org/WAI/standards-guidelines/aria/"
+    },
+    {
+      "type": "test",
+      "which": "radioSet",
+      "withItems": true,
+      "what": "fieldset grouping of radio buttons",
+      "url": "https://www.w3.org/WAI/standards-guidelines/aria/",
+      "result": {
+        "totals": {
+          "total": 0,
+          "inSet": 0,
+          "percent": "N.A."
+        },
+        "items": {
+          "inSet": [],
+          "notInSet": []
+        }
+      }
+    },
+    {
+      "type": "test",
+      "which": "role",
+      "what": "roles",
+      "url": "https://www.w3.org/WAI/standards-guidelines/aria/",
+      "result": {
+        "roleElements": 2,
+        "badRoleElements": 0,
+        "tagNames": {}
+      }
+    },
+    {
+      "type": "test",
+      "which": "styleDiff",
+      "withItems": true,
+      "what": "style inconsistencies",
+      "url": "https://www.w3.org/WAI/standards-guidelines/aria/",
+      "result": {
+        "mainStyles": [
+          "fontStyle",
+          "fontWeight",
+          "opacity",
+          "textDecorationLine",
+          "textDecorationStyle",
+          "textDecorationThickness"
+        ],
+        "buttonStyles": [
+          "borderStyle",
+          "borderWidth",
+          "height",
+          "lineHeight",
+          "maxHeight",
+          "maxWidth",
+          "minHeight",
+          "minWidth",
+          "outlineOffset",
+          "outlineStyle",
+          "outlineWidth"
+        ],
+        "headingStyles": [
+          "color",
+          "fontSize"
+        ],
+        "listLinkStyles": [
+          "color",
+          "fontSize",
+          "lineHeight"
+        ],
+        "totals": {
+          "button": {
+            "total": 2,
+            "subtotals": [
+              1,
+              1
+            ]
+          },
+          "adjacentLink": {
+            "total": 55,
+            "subtotals": [
+              25,
+              18,
+              6,
+              5,
+              1
+            ]
+          },
+          "listLink": {
+            "total": 41,
+            "subtotals": [
+              16,
+              12,
+              6,
+              3,
+              2,
+              1,
+              1
+            ]
+          },
+          "h1": {
+            "total": 1
+          },
+          "h2": {
+            "total": 6,
+            "subtotals": [
+              4,
+              2
+            ]
+          },
+          "h3": {
+            "total": 3
+          }
+        },
+        "items": {
+          "button": {
+            "height": {
+              "auto": [
+                "Menu"
+              ],
+              "38.1953px": [
+                ""
+              ]
+            },
+            "minHeight": {
+              "0px": [
+                "Menu"
+              ],
+              "auto": [
+                ""
+              ]
+            },
+            "minWidth": {
+              "0px": [
+                "Menu"
+              ],
+              "auto": [
+                ""
+              ]
+            }
+          },
+          "adjacentLink": {
+            "fontWeight": {
+              "400": [
+                "",
+                "Web Accessibility Initiative WAI",
+                "Get Involved",
+                "About W3C WAI",
+                "Web Content – WCAG 2",
+                "WCAG 3 Draft",
+                "Authoring Tools – ATAG",
+                "At a Glance",
+                "User Agents – UAAG",
+                "Evaluation – ACT & EARL",
+                "WAI-Adapt",
+                "Pronunciation",
+                "Standards Harmonization is Essential",
+                "W3C Process for Developing Standards",
+                "Referencing and Linking to Standards",
+                "Cognitive Accessibility at W3C",
+                "Mobile Accessibility at W3C",
+                "Introduction to Web Accessibility",
+                "Essential Components of Web Accessibility",
+                "WAI-ARIA 1.0",
+                "WAI-ARIA 1.1",
+                "WAI-ARIA 1.2",
+                "WAI-ARIA GitHub Repository",
+                "How WAI Develops Accessibility Guidelines through the W3C Process",
+                "ARIA WG",
+                "W3C",
+                "WAI",
+                "ARIA WG public page",
+                "How WAI Develops Accessibility Guidelines through the W3C Process: Milestones and Opportunities to Contribute",
+                "WAI home page",
+                "WAI Interest Group",
+                "Participating in WAI",
+                "wai@w3.org",
+                "Michael Cooper",
+                "Shawn Lawton Henry",
+                "ARIA WG",
+                "EOWG",
+                "W3C Web Accessibility Initiative (WAI)",
+                "MIT",
+                "ERCIM",
+                "Keio",
+                "Beihang",
+                "Permission to Use WAI Material"
+              ],
+              "700": [
+                "Standards/Guidelines",
+                "WAI-ARIA",
+                "ARIA Authoring Practices Guide (APG)",
+                "WAI-ARIA 1.2",
+                "Core Accessibility API Mappings 1.2",
+                "Accessible Name and Description: Computation and API Mappings 1.2",
+                "HTML Accessibility API Mappings 1.0",
+                "SVG Accessibility API Mappings 1.0",
+                "E-mail",
+                "Fork & Edit on GitHub",
+                "New GitHub Issue",
+                "Back to Top"
+              ]
+            },
+            "opacity": {
+              "0": [
+                "Back to Top"
+              ],
+              "1": [
+                "",
+                "Web Accessibility Initiative WAI",
+                "Get Involved",
+                "About W3C WAI",
+                "Standards/Guidelines",
+                "Web Content – WCAG 2",
+                "WCAG 3 Draft",
+                "Authoring Tools – ATAG",
+                "At a Glance",
+                "User Agents – UAAG",
+                "WAI-ARIA",
+                "Evaluation – ACT & EARL",
+                "WAI-Adapt",
+                "Pronunciation",
+                "Standards Harmonization is Essential",
+                "W3C Process for Developing Standards",
+                "Referencing and Linking to Standards",
+                "Cognitive Accessibility at W3C",
+                "Mobile Accessibility at W3C",
+                "Introduction to Web Accessibility",
+                "Essential Components of Web Accessibility",
+                "ARIA Authoring Practices Guide (APG)",
+                "WAI-ARIA 1.0",
+                "WAI-ARIA 1.1",
+                "WAI-ARIA 1.2",
+                "WAI-ARIA 1.2",
+                "Core Accessibility API Mappings 1.2",
+                "Accessible Name and Description: Computation and API Mappings 1.2",
+                "HTML Accessibility API Mappings 1.0",
+                "SVG Accessibility API Mappings 1.0",
+                "WAI-ARIA GitHub Repository",
+                "How WAI Develops Accessibility Guidelines through the W3C Process",
+                "ARIA WG",
+                "W3C",
+                "WAI",
+                "ARIA WG public page",
+                "How WAI Develops Accessibility Guidelines through the W3C Process: Milestones and Opportunities to Contribute",
+                "WAI home page",
+                "WAI Interest Group",
+                "Participating in WAI",
+                "wai@w3.org",
+                "E-mail",
+                "Fork & Edit on GitHub",
+                "New GitHub Issue",
+                "Michael Cooper",
+                "Shawn Lawton Henry",
+                "ARIA WG",
+                "EOWG",
+                "W3C Web Accessibility Initiative (WAI)",
+                "MIT",
+                "ERCIM",
+                "Keio",
+                "Beihang",
+                "Permission to Use WAI Material"
+              ]
+            },
+            "textDecorationLine": {
+              "none": [
+                "",
+                "Web Accessibility Initiative WAI",
+                "Get Involved",
+                "About W3C WAI",
+                "Standards/Guidelines",
+                "Web Content – WCAG 2",
+                "WCAG 3 Draft",
+                "Authoring Tools – ATAG",
+                "At a Glance",
+                "User Agents – UAAG",
+                "WAI-ARIA",
+                "Evaluation – ACT & EARL",
+                "WAI-Adapt",
+                "Pronunciation",
+                "Standards Harmonization is Essential",
+                "W3C Process for Developing Standards",
+                "Referencing and Linking to Standards",
+                "Cognitive Accessibility at W3C",
+                "Mobile Accessibility at W3C",
+                "E-mail",
+                "Fork & Edit on GitHub",
+                "New GitHub Issue",
+                "Back to Top",
+                "W3C Web Accessibility Initiative (WAI)"
+              ],
+              "underline": [
+                "Introduction to Web Accessibility",
+                "Essential Components of Web Accessibility",
+                "ARIA Authoring Practices Guide (APG)",
+                "WAI-ARIA 1.0",
+                "WAI-ARIA 1.1",
+                "WAI-ARIA 1.2",
+                "WAI-ARIA 1.2",
+                "Core Accessibility API Mappings 1.2",
+                "Accessible Name and Description: Computation and API Mappings 1.2",
+                "HTML Accessibility API Mappings 1.0",
+                "SVG Accessibility API Mappings 1.0",
+                "WAI-ARIA GitHub Repository",
+                "How WAI Develops Accessibility Guidelines through the W3C Process",
+                "ARIA WG",
+                "W3C",
+                "WAI",
+                "ARIA WG public page",
+                "How WAI Develops Accessibility Guidelines through the W3C Process: Milestones and Opportunities to Contribute",
+                "WAI home page",
+                "WAI Interest Group",
+                "Participating in WAI",
+                "wai@w3.org",
+                "Michael Cooper",
+                "Shawn Lawton Henry",
+                "ARIA WG",
+                "EOWG",
+                "MIT",
+                "ERCIM",
+                "Keio",
+                "Beihang",
+                "Permission to Use WAI Material"
+              ]
+            }
+          },
+          "listLink": {
+            "fontWeight": {
+              "400": [
+                "Skip to Content",
+                "Change Text Size or Colors",
+                "All Translations",
+                "Accessibility Fundamentals",
+                "Planning & Policies",
+                "Design & Develop",
+                "Test & Evaluate",
+                "Teach & Advocate",
+                "Standards/Guidelines",
+                "Home",
+                "Standards/Guidelines",
+                "How to Meet WCAG 2 (Quick Reference)",
+                "At a Glance",
+                "The Documents",
+                "Applying to Non-Web ICT",
+                "New in 2.2 Draft",
+                "New in 2.1",
+                "Translations",
+                "Commenting",
+                "Conformance Logos",
+                "FAQ",
+                "Accessibility Conformance Testing – ACT",
+                "Evaluation and Report Language – EARL",
+                "WAI-ARIA standard",
+                "WAI-ARIA Authoring Practices Guide (APG)",
+                "Introduction",
+                "Authoring Practices Guide (APG)",
+                "Versions",
+                "Who develops WAI-ARIA",
+                "Twitter",
+                "Feed",
+                "YouTube",
+                "Contact WAI",
+                "Site Map",
+                "News",
+                "Archive",
+                "Accessibility Statement",
+                "Translations",
+                "Resources for Roles"
+              ],
+              "700": [
+                "WAI-ARIA",
+                "Get News in Email"
+              ]
+            },
+            "textDecorationLine": {
+              "none": [
+                "Skip to Content",
+                "Change Text Size or Colors",
+                "All Translations",
+                "Accessibility Fundamentals",
+                "Planning & Policies",
+                "Design & Develop",
+                "Test & Evaluate",
+                "Teach & Advocate",
+                "Standards/Guidelines",
+                "WAI-ARIA",
+                "How to Meet WCAG 2 (Quick Reference)",
+                "At a Glance",
+                "The Documents",
+                "Applying to Non-Web ICT",
+                "New in 2.2 Draft",
+                "New in 2.1",
+                "Translations",
+                "Commenting",
+                "Conformance Logos",
+                "FAQ",
+                "Accessibility Conformance Testing – ACT",
+                "Evaluation and Report Language – EARL",
+                "Twitter",
+                "Feed",
+                "YouTube",
+                "Get News in Email",
+                "Contact WAI",
+                "Site Map",
+                "News",
+                "Archive",
+                "Accessibility Statement",
+                "Translations",
+                "Resources for Roles"
+              ],
+              "underline": [
+                "Home",
+                "Standards/Guidelines",
+                "WAI-ARIA standard",
+                "WAI-ARIA Authoring Practices Guide (APG)",
+                "Introduction",
+                "Authoring Practices Guide (APG)",
+                "Versions",
+                "Who develops WAI-ARIA"
+              ]
+            },
+            "color": {
+              "rgb(0, 51, 102)": [
+                "Skip to Content",
+                "Change Text Size or Colors",
+                "All Translations",
+                "Home",
+                "Standards/Guidelines",
+                "WAI-ARIA",
+                "WAI-ARIA standard",
+                "WAI-ARIA Authoring Practices Guide (APG)",
+                "Introduction",
+                "Authoring Practices Guide (APG)",
+                "Versions",
+                "Who develops WAI-ARIA"
+              ],
+              "rgb(255, 255, 255)": [
+                "Accessibility Fundamentals",
+                "Planning & Policies",
+                "Design & Develop",
+                "Test & Evaluate",
+                "Teach & Advocate",
+                "Standards/Guidelines",
+                "How to Meet WCAG 2 (Quick Reference)",
+                "At a Glance",
+                "The Documents",
+                "Applying to Non-Web ICT",
+                "New in 2.2 Draft",
+                "New in 2.1",
+                "Translations",
+                "Commenting",
+                "Conformance Logos",
+                "FAQ",
+                "Accessibility Conformance Testing – ACT",
+                "Evaluation and Report Language – EARL",
+                "Twitter",
+                "Feed",
+                "YouTube",
+                "Get News in Email",
+                "Contact WAI",
+                "Site Map",
+                "News",
+                "Archive",
+                "Accessibility Statement",
+                "Translations",
+                "Resources for Roles"
+              ]
+            },
+            "fontSize": {
+              "13px": [
+                "Skip to Content",
+                "Change Text Size or Colors",
+                "All Translations",
+                "Home",
+                "Standards/Guidelines",
+                "WAI-ARIA",
+                "How to Meet WCAG 2 (Quick Reference)",
+                "At a Glance",
+                "The Documents",
+                "Applying to Non-Web ICT",
+                "New in 2.2 Draft",
+                "New in 2.1",
+                "Translations",
+                "Commenting",
+                "Conformance Logos",
+                "FAQ",
+                "Accessibility Conformance Testing – ACT",
+                "Evaluation and Report Language – EARL",
+                "Get News in Email"
+              ],
+              "14px": [
+                "Accessibility Fundamentals",
+                "Planning & Policies",
+                "Design & Develop",
+                "Test & Evaluate",
+                "Teach & Advocate",
+                "Standards/Guidelines",
+                "Twitter",
+                "Feed",
+                "YouTube",
+                "Contact WAI",
+                "Site Map",
+                "News",
+                "Archive",
+                "Accessibility Statement",
+                "Translations",
+                "Resources for Roles"
+              ],
+              "16px": [
+                "WAI-ARIA standard",
+                "WAI-ARIA Authoring Practices Guide (APG)",
+                "Introduction",
+                "Authoring Practices Guide (APG)",
+                "Versions",
+                "Who develops WAI-ARIA"
+              ]
+            },
+            "lineHeight": {
+              "19.5px": [
+                "Skip to Content",
+                "Change Text Size or Colors",
+                "All Translations",
+                "Home",
+                "Standards/Guidelines",
+                "WAI-ARIA",
+                "How to Meet WCAG 2 (Quick Reference)",
+                "At a Glance",
+                "The Documents",
+                "Applying to Non-Web ICT",
+                "New in 2.2 Draft",
+                "New in 2.1",
+                "Translations",
+                "Commenting",
+                "Conformance Logos",
+                "FAQ",
+                "Accessibility Conformance Testing – ACT",
+                "Evaluation and Report Language – EARL"
+              ],
+              "21px": [
+                "Accessibility Fundamentals",
+                "Planning & Policies",
+                "Design & Develop",
+                "Test & Evaluate",
+                "Teach & Advocate",
+                "Standards/Guidelines",
+                "Twitter",
+                "Feed",
+                "YouTube",
+                "Contact WAI",
+                "Site Map",
+                "News",
+                "Archive",
+                "Accessibility Statement",
+                "Translations",
+                "Resources for Roles"
+              ],
+              "24px": [
+                "WAI-ARIA standard",
+                "WAI-ARIA Authoring Practices Guide (APG)",
+                "Introduction",
+                "Authoring Practices Guide (APG)",
+                "Versions",
+                "Who develops WAI-ARIA"
+              ],
+              "18.2px": [
+                "Get News in Email"
+              ]
+            }
+          },
+          "h2": {
+            "fontSize": {
+              "16px": [
+                "Summary",
+                "Help improve this page"
+              ],
+              "22px": [
+                "Introduction",
+                "Authoring Practices Guide (APG)",
+                "Versions",
+                "Who develops WAI-ARIA"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "test",
+      "which": "tabNav",
+      "withItems": true,
+      "what": "keyboard navigation between tab elements",
+      "url": "https://www.w3.org/WAI/standards-guidelines/aria/",
+      "result": {
+        "totals": {
+          "navigations": {
+            "all": {
+              "total": 0,
+              "correct": 0,
+              "incorrect": 0
+            },
+            "specific": {
+              "tab": {
+                "total": 0,
+                "correct": 0,
+                "incorrect": 0
+              },
+              "left": {
+                "total": 0,
+                "correct": 0,
+                "incorrect": 0
+              },
+              "right": {
+                "total": 0,
+                "correct": 0,
+                "incorrect": 0
+              },
+              "up": {
+                "total": 0,
+                "correct": 0,
+                "incorrect": 0
+              },
+              "down": {
+                "total": 0,
+                "correct": 0,
+                "incorrect": 0
+              },
+              "home": {
+                "total": 0,
+                "correct": 0,
+                "incorrect": 0
+              },
+              "end": {
+                "total": 0,
+                "correct": 0,
+                "incorrect": 0
+              }
+            }
+          },
+          "tabElements": {
+            "total": 0,
+            "correct": 0,
+            "incorrect": 0
+          },
+          "tabLists": {
+            "total": 0,
+            "correct": 0,
+            "incorrect": 0
+          }
+        },
+        "tabElements": {
+          "incorrect": [],
+          "correct": []
+        }
+      }
+    },
+    {
+      "type": "test",
+      "which": "zIndex",
+      "withItems": true,
+      "what": "z indexes",
+      "url": "https://www.w3.org/WAI/standards-guidelines/aria/",
+      "result": {
+        "totals": {
+          "total": 0,
+          "tagNames": {}
+        },
+        "items": []
+      }
+    },
+    {
+      "type": "test",
+      "which": "alfa",
+      "what": "alfa",
+      "url": "https://www.w3.org/WAI/standards-guidelines/aria/",
+      "result": {
+        "totals": {
+          "failures": 0,
+          "warnings": 0
+        },
+        "items": []
+      }
+    },
+    {
+      "type": "test",
+      "which": "axe",
+      "detailLevel": 2,
+      "rules": [],
+      "what": "Axe",
+      "url": "https://www.w3.org/WAI/standards-guidelines/aria/",
+      "result": {
+        "totals": {
+          "rulesNA": 48,
+          "rulesPassed": 47,
+          "rulesWarned": 3,
+          "rulesViolated": 2,
+          "warnings": {
+            "minor": 4,
+            "moderate": 0,
+            "serious": 6,
+            "critical": 0
+          },
+          "violations": {
+            "minor": 0,
+            "moderate": 1,
+            "serious": 1,
+            "critical": 0
+          }
+        },
+        "details": {
+          "testEngine": {
+            "name": "axe-core",
+            "version": "4.4.2"
+          },
+          "testRunner": {
+            "name": "axe"
+          },
+          "testEnvironment": {
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/102.0.5005.40 Safari/537.36",
+            "windowWidth": 1280,
+            "windowHeight": 720,
+            "orientationAngle": 90,
+            "orientationType": "landscape-primary"
+          },
+          "timestamp": "2022-07-06T00:55:47.106Z",
+          "url": "https://www.w3.org/WAI/standards-guidelines/aria/",
+          "toolOptions": {
+            "resultTypes": [
+              "violations",
+              "incomplete"
+            ],
+            "runOnly": {
+              "type": "tag",
+              "values": [
+                "experimental",
+                "best-practice",
+                "wcag2a",
+                "wcag2aa",
+                "wcag2aaa",
+                "wcag21a",
+                "wcag21aa",
+                "wcag21aaa"
+              ]
+            },
+            "reporter": "v1"
+          },
+          "incomplete": [
+            {
+              "id": "color-contrast-enhanced",
+              "impact": "serious",
+              "tags": [
+                "cat.color",
+                "wcag2aaa",
+                "wcag146"
+              ],
+              "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AAA contrast ratio thresholds",
+              "help": "Elements must have sufficient color contrast",
+              "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/color-contrast-enhanced?application=axeAPI",
+              "nodes": [
+                {
+                  "any": [
+                    {
+                      "id": "color-contrast-enhanced",
+                      "data": {
+                        "fgColor": "#003366",
+                        "contrastRatio": 0,
+                        "fontSize": "9.8pt (13px)",
+                        "fontWeight": "normal",
+                        "messageKey": "elmPartiallyObscured",
+                        "expectedContrastRatio": "7:1"
+                      },
+                      "relatedNodes": [
+                        {
+                          "html": "<nav aria-label=\"Skip Link and Language Selector\" id=\"controls\" class=\"default-grid\">",
+                          "target": [
+                            "#controls"
+                          ]
+                        }
+                      ],
+                      "impact": "serious",
+                      "message": "Element's background color could not be determined because it's partially obscured by another element"
+                    }
+                  ],
+                  "all": [],
+                  "none": [],
+                  "impact": "serious",
+                  "html": "<a href=\"#main\">Skip to Content</a>",
+                  "target": [
+                    "a[href$=\"#main\"]"
+                  ],
+                  "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+                },
+                {
+                  "any": [
+                    {
+                      "id": "color-contrast-enhanced",
+                      "data": {
+                        "fgColor": "#003366",
+                        "contrastRatio": 0,
+                        "fontSize": "9.8pt (13px)",
+                        "fontWeight": "normal",
+                        "messageKey": "elmPartiallyObscured",
+                        "expectedContrastRatio": "7:1"
+                      },
+                      "relatedNodes": [
+                        {
+                          "html": "<nav aria-label=\"Skip Link and Language Selector\" id=\"controls\" class=\"default-grid\">",
+                          "target": [
+                            "#controls"
+                          ]
+                        }
+                      ],
+                      "impact": "serious",
+                      "message": "Element's background color could not be determined because it's partially obscured by another element"
+                    }
+                  ],
+                  "all": [],
+                  "none": [],
+                  "impact": "serious",
+                  "html": "<a href=\"/WAI/meta/customize/\">Change Text Size or Colors</a>",
+                  "target": [
+                    "a[href$=\"customize/\"]"
+                  ],
+                  "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+                },
+                {
+                  "any": [
+                    {
+                      "id": "color-contrast-enhanced",
+                      "data": {
+                        "fgColor": "#003366",
+                        "contrastRatio": 0,
+                        "fontSize": "9.8pt (13px)",
+                        "fontWeight": "normal",
+                        "messageKey": "elmPartiallyObscured",
+                        "expectedContrastRatio": "7:1"
+                      },
+                      "relatedNodes": [
+                        {
+                          "html": "<nav aria-label=\"Skip Link and Language Selector\" id=\"controls\" class=\"default-grid\">",
+                          "target": [
+                            "#controls"
+                          ]
+                        }
+                      ],
+                      "impact": "serious",
+                      "message": "Element's background color could not be determined because it's partially obscured by another element"
+                    }
+                  ],
+                  "all": [],
+                  "none": [],
+                  "impact": "serious",
+                  "html": "<a href=\"/WAI/translations/\">All Translations <svg focusable=\"false\" aria-hidden=\"true\" class=\"icon-translations \"><use xlink:href=\"/WAI/assets/images/icons.svg#icon-translations\"></use></svg></a>",
+                  "target": [
+                    ".opt:nth-child(3) > a[href$=\"translations/\"]"
+                  ],
+                  "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+                }
+              ]
+            },
+            {
+              "id": "color-contrast",
+              "impact": "serious",
+              "tags": [
+                "cat.color",
+                "wcag2aa",
+                "wcag143"
+              ],
+              "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+              "help": "Elements must have sufficient color contrast",
+              "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/color-contrast?application=axeAPI",
+              "nodes": [
+                {
+                  "any": [
+                    {
+                      "id": "color-contrast",
+                      "data": {
+                        "fgColor": "#003366",
+                        "contrastRatio": 0,
+                        "fontSize": "9.8pt (13px)",
+                        "fontWeight": "normal",
+                        "messageKey": "elmPartiallyObscured",
+                        "expectedContrastRatio": "4.5:1"
+                      },
+                      "relatedNodes": [
+                        {
+                          "html": "<nav aria-label=\"Skip Link and Language Selector\" id=\"controls\" class=\"default-grid\">",
+                          "target": [
+                            "#controls"
+                          ]
+                        }
+                      ],
+                      "impact": "serious",
+                      "message": "Element's background color could not be determined because it's partially obscured by another element"
+                    }
+                  ],
+                  "all": [],
+                  "none": [],
+                  "impact": "serious",
+                  "html": "<a href=\"#main\">Skip to Content</a>",
+                  "target": [
+                    "a[href$=\"#main\"]"
+                  ],
+                  "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+                },
+                {
+                  "any": [
+                    {
+                      "id": "color-contrast",
+                      "data": {
+                        "fgColor": "#003366",
+                        "contrastRatio": 0,
+                        "fontSize": "9.8pt (13px)",
+                        "fontWeight": "normal",
+                        "messageKey": "elmPartiallyObscured",
+                        "expectedContrastRatio": "4.5:1"
+                      },
+                      "relatedNodes": [
+                        {
+                          "html": "<nav aria-label=\"Skip Link and Language Selector\" id=\"controls\" class=\"default-grid\">",
+                          "target": [
+                            "#controls"
+                          ]
+                        }
+                      ],
+                      "impact": "serious",
+                      "message": "Element's background color could not be determined because it's partially obscured by another element"
+                    }
+                  ],
+                  "all": [],
+                  "none": [],
+                  "impact": "serious",
+                  "html": "<a href=\"/WAI/meta/customize/\">Change Text Size or Colors</a>",
+                  "target": [
+                    "a[href$=\"customize/\"]"
+                  ],
+                  "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+                },
+                {
+                  "any": [
+                    {
+                      "id": "color-contrast",
+                      "data": {
+                        "fgColor": "#003366",
+                        "contrastRatio": 0,
+                        "fontSize": "9.8pt (13px)",
+                        "fontWeight": "normal",
+                        "messageKey": "elmPartiallyObscured",
+                        "expectedContrastRatio": "4.5:1"
+                      },
+                      "relatedNodes": [
+                        {
+                          "html": "<nav aria-label=\"Skip Link and Language Selector\" id=\"controls\" class=\"default-grid\">",
+                          "target": [
+                            "#controls"
+                          ]
+                        }
+                      ],
+                      "impact": "serious",
+                      "message": "Element's background color could not be determined because it's partially obscured by another element"
+                    }
+                  ],
+                  "all": [],
+                  "none": [],
+                  "impact": "serious",
+                  "html": "<a href=\"/WAI/translations/\">All Translations <svg focusable=\"false\" aria-hidden=\"true\" class=\"icon-translations \"><use xlink:href=\"/WAI/assets/images/icons.svg#icon-translations\"></use></svg></a>",
+                  "target": [
+                    ".opt:nth-child(3) > a[href$=\"translations/\"]"
+                  ],
+                  "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+                }
+              ]
+            },
+            {
+              "id": "hidden-content",
+              "impact": "minor",
+              "tags": [
+                "cat.structure",
+                "experimental",
+                "review-item",
+                "best-practice"
+              ],
+              "description": "Informs users about hidden content.",
+              "help": "Hidden content on the page should be analyzed",
+              "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/hidden-content?application=axeAPI",
+              "nodes": [
+                {
+                  "any": [
+                    {
+                      "id": "hidden-content",
+                      "data": null,
+                      "relatedNodes": [],
+                      "impact": "minor",
+                      "message": "There is hidden content on the page that was not analyzed. You will need to trigger the display of this content in order to analyze it."
+                    }
+                  ],
+                  "all": [],
+                  "none": [],
+                  "impact": "minor",
+                  "html": "<button class=\"button button-menu\" aria-haspopup=\"true\" aria-expanded=\"false\" id=\"openmenu\"><span><svg focusable=\"false\" aria-hidden=\"true\" class=\"icon-menu \"><use xlink:href=\"/WAI/assets/images/icons.svg#icon-menu\"></use></svg> Menu</span></button>",
+                  "target": [
+                    "#openmenu"
+                  ],
+                  "failureSummary": "Fix any of the following:\n  There is hidden content on the page that was not analyzed. You will need to trigger the display of this content in order to analyze it."
+                },
+                {
+                  "any": [
+                    {
+                      "id": "hidden-content",
+                      "data": null,
+                      "relatedNodes": [],
+                      "impact": "minor",
+                      "message": "There is hidden content on the page that was not analyzed. You will need to trigger the display of this content in order to analyze it."
+                    }
+                  ],
+                  "all": [],
+                  "none": [],
+                  "impact": "minor",
+                  "html": "<ul>",
+                  "target": [
+                    "li:nth-child(2) > ul"
+                  ],
+                  "failureSummary": "Fix any of the following:\n  There is hidden content on the page that was not analyzed. You will need to trigger the display of this content in order to analyze it."
+                },
+                {
+                  "any": [
+                    {
+                      "id": "hidden-content",
+                      "data": null,
+                      "relatedNodes": [],
+                      "impact": "minor",
+                      "message": "There is hidden content on the page that was not analyzed. You will need to trigger the display of this content in order to analyze it."
+                    }
+                  ],
+                  "all": [],
+                  "none": [],
+                  "impact": "minor",
+                  "html": "<ul><li>\n  <a lang=\"en\" href=\"/WAI/standards-guidelines/atag/glance/\" class=\"page-link\"><span>At a Glance</span></a></li></ul>",
+                  "target": [
+                    "li:nth-child(4) > ul"
+                  ],
+                  "failureSummary": "Fix any of the following:\n  There is hidden content on the page that was not analyzed. You will need to trigger the display of this content in order to analyze it."
+                },
+                {
+                  "any": [
+                    {
+                      "id": "hidden-content",
+                      "data": null,
+                      "relatedNodes": [],
+                      "impact": "minor",
+                      "message": "There is hidden content on the page that was not analyzed. You will need to trigger the display of this content in order to analyze it."
+                    }
+                  ],
+                  "all": [],
+                  "none": [],
+                  "impact": "minor",
+                  "html": "<ul><li>\n  <a lang=\"en\" href=\"/WAI/standards-guidelines/act/\" class=\"page-link\"><span>Accessibility Conformance Testing – ACT</span></a></li><li>\n  <a lang=\"en\" href=\"/WAI/standards-guidelines/earl/\" class=\"page-link\"><span>Evaluation and Report Language – EARL</span></a></li></ul>",
+                  "target": [
+                    "li:nth-child(7) > ul"
+                  ],
+                  "failureSummary": "Fix any of the following:\n  There is hidden content on the page that was not analyzed. You will need to trigger the display of this content in order to analyze it."
+                }
+              ]
+            }
+          ],
+          "violations": [
+            {
+              "id": "landmark-no-duplicate-contentinfo",
+              "impact": "moderate",
+              "tags": [
+                "cat.semantics",
+                "best-practice"
+              ],
+              "description": "Ensures the document has at most one contentinfo landmark",
+              "help": "Document should not have more than one contentinfo landmark",
+              "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/landmark-no-duplicate-contentinfo?application=axeAPI",
+              "nodes": [
+                {
+                  "any": [
+                    {
+                      "id": "page-no-duplicate-contentinfo",
+                      "data": null,
+                      "relatedNodes": [
+                        {
+                          "html": "<footer class=\"site-footer grid-4q\" aria-label=\"Site\">",
+                          "target": [
+                            ".site-footer"
+                          ]
+                        }
+                      ],
+                      "impact": "moderate",
+                      "message": "Document has more than one contentinfo landmark"
+                    }
+                  ],
+                  "all": [],
+                  "none": [],
+                  "impact": "moderate",
+                  "html": "<footer id=\"wai-site-footer\" class=\"page-footer default-grid\" aria-label=\"Page\">",
+                  "target": [
+                    "#wai-site-footer"
+                  ],
+                  "failureSummary": "Fix any of the following:\n  Document has more than one contentinfo landmark"
+                }
+              ]
+            },
+            {
+              "id": "p-as-heading",
+              "impact": "serious",
+              "tags": [
+                "cat.semantics",
+                "wcag2a",
+                "wcag131",
+                "experimental"
+              ],
+              "description": "Ensure bold, italic text and font-size is not used to style <p> elements as a heading",
+              "help": "Styled <p> elements must not be used as headings",
+              "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/p-as-heading?application=axeAPI",
+              "nodes": [
+                {
+                  "any": [],
+                  "all": [
+                    {
+                      "id": "p-as-heading",
+                      "data": null,
+                      "relatedNodes": [],
+                      "impact": "serious",
+                      "message": "Heading elements should be used instead of styled <p> elements"
+                    }
+                  ],
+                  "none": [],
+                  "impact": "serious",
+                  "html": "<p><a class=\"largelink\" href=\"https://www.w3.org/WAI/\" lang=\"en\" dir=\"auto\" translate=\"no\">W3C Web Accessibility Initiative (WAI)</a></p>",
+                  "target": [
+                    ".q1-start > div:nth-child(1) > p:nth-child(1)"
+                  ],
+                  "failureSummary": "Fix all of the following:\n  Heading elements should be used instead of styled <p> elements"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.w3.org/WAI/standards-guidelines/aria/",
+      "what": "URL",
+      "result": "https://www.w3.org/WAI/standards-guidelines/aria/"
+    },
+    {
+      "type": "test",
+      "which": "htmlcs",
+      "what": "HTML CodeSniffer WCAG 2.1 AA ruleset",
+      "url": "https://www.w3.org/WAI/standards-guidelines/aria/",
+      "result": {
+        "Error": {
+          "AA.3_1_2.H58.1.Lang": {
+            "The language specified in the lang attribute of this element does not appear to be well-formed.": [
+              {
+                "tagName": "nav",
+                "id": "",
+                "code": "<nav class=\"mainnav\" aria-label=\"Main\" lang=\"\">...</nav>"
+              }
+            ]
+          },
+          "AA.4_1_2.H91.A.NoContent": {
+            "Anchor element found with a valid href attribute, but no link content has been supplied.": [
+              {
+                "tagName": "a",
+                "id": "",
+                "code": "<a lang=\"en\" class=\"home w3c\" href=\"https://www.w3.org/\">...</a>"
+              }
+            ]
+          },
+          "AA.4_1_2.H91.Button.Name": {
+            "This button element does not have a name available to an accessibility API. Valid names are: title attribute, element content, aria-label attribute, aria-labelledby attribute.": [
+              {
+                "tagName": "button",
+                "id": "",
+                "code": "<button class=\"button button-icon button-nobg button-noborder\">...</button>"
+              }
+            ]
+          }
+        },
+        "Warning": {
+          "AA.1_3_1.H48": {
+            "If this element contains a navigation section, it is recommended that it be marked up as a list.": [
+              {
+                "tagName": "div",
+                "id": "",
+                "code": "<div class=\"button-group\">...</div>"
+              },
+              {
+                "tagName": "div",
+                "id": "",
+                "code": "<div class=\"logos\">...</div>"
+              },
+              {
+                "tagName": "p",
+                "id": "",
+                "code": "<p>...</p>"
+              }
+            ]
+          },
+          "AA.1_4_10.C32,C31,C33,C38,SCR34,G206": {
+            "This element has \"position: fixed\". This may require scrolling in two dimensions, which is considered a failure of this Success Criterion.": [
+              {
+                "tagName": "a",
+                "id": "",
+                "code": "<a class=\"button button-backtotop\" href=\"#top\">...</a>"
+              }
+            ]
+          },
+          "AA.1_4_3.G18.Abs": {
+            "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 4.5:1.": [
+              {
+                "tagName": "span",
+                "id": "",
+                "code": "<span class=\"visuallyhidden\">...</span>"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.w3.org/WAI/standards-guidelines/aria/",
+      "what": "URL",
+      "result": "https://www.w3.org/WAI/standards-guidelines/aria/"
+    },
+    {
+      "type": "test",
+      "which": "ibm",
+      "withItems": true,
+      "what": "IBM Accessibility Checker",
+      "url": "https://www.w3.org/WAI/standards-guidelines/aria/",
+      "result": {
+        "content": {
+          "totals": {
+            "violation": 4,
+            "recommendation": 2,
+            "ignored": 0
+          },
+          "items": [
+            {
+              "ruleId": "Rpt_Aria_MultipleContentinfoInSiblingSet_Implicit",
+              "path": {
+                "dom": "/html[1]/body[1]/footer[2]",
+                "aria": "/document[1]/contentinfo[2]"
+              },
+              "message": "Multiple elements with \"contentinfo\" role found on a page",
+              "bounds": {
+                "left": 8,
+                "top": 4687,
+                "height": 733,
+                "width": 784
+              },
+              "snippet": "<footer aria-label=\"Site\" class=\"site-footer grid-4q\">",
+              "level": "violation"
+            },
+            {
+              "ruleId": "Rpt_Aria_MultipleContentinfoInSiblingSet_Implicit",
+              "path": {
+                "dom": "/html[1]/body[1]/footer[1]",
+                "aria": "/document[1]/contentinfo[1]"
+              },
+              "message": "Multiple elements with \"contentinfo\" role found on a page",
+              "bounds": {
+                "left": 8,
+                "top": 4565,
+                "height": 106,
+                "width": 784
+              },
+              "snippet": "<footer aria-label=\"Page\" class=\"page-footer default-grid\" id=\"wai-site-footer\">",
+              "level": "violation"
+            },
+            {
+              "ruleId": "Rpt_Aria_MultipleComplementaryLandmarks_Implicit",
+              "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/aside[1]",
+                "aria": "/document[1]/main[1]/complementary[1]"
+              },
+              "message": "Multiple elements with \"complementary\" role do not have unique labels",
+              "bounds": {
+                "left": 8,
+                "top": 1822,
+                "height": 154,
+                "width": 784
+              },
+              "snippet": "<aside class=\"box box-full\">",
+              "level": "violation"
+            },
+            {
+              "ruleId": "Rpt_Aria_ComplementaryRequiredLabel_Implicit",
+              "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/aside[1]",
+                "aria": "/document[1]/main[1]/complementary[1]"
+              },
+              "message": "The element with \"complementary\" role does not have a label",
+              "bounds": {
+                "left": 8,
+                "top": 1822,
+                "height": 154,
+                "width": 784
+              },
+              "snippet": "<aside class=\"box box-full\">",
+              "level": "violation"
+            },
+            {
+              "ruleId": "Rpt_Aria_ComplementaryLandmarkLabel_Implicit",
+              "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/aside[2]",
+                "aria": "/document[1]/main[1]/complementary[2]"
+              },
+              "message": "The element with \"complementary\" role does not have a visible label",
+              "bounds": {
+                "left": 8,
+                "top": 4121,
+                "height": 275,
+                "width": 784
+              },
+              "snippet": "<aside aria-label=\"feedback\" id=\"helpimprove\" class=\"box box-icon box-space-above\">",
+              "level": "recommendation"
+            },
+            {
+              "ruleId": "element_attribute_deprecated",
+              "path": {
+                "dom": "/html[1]/head[1]/meta[3]",
+                "aria": "/document[1]"
+              },
+              "message": "The HTML attribute(s) \"http-equiv\" is deprecated for the <meta> element in HTML 5",
+              "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 0,
+                "width": 0
+              },
+              "snippet": "<meta content=\"IE=edge\" http-equiv=\"X-UA-Compatible\">",
+              "level": "recommendation"
+            }
+          ]
+        },
+        "url": {
+          "totals": {
+            "violation": 4,
+            "recommendation": 2,
+            "ignored": 0
+          },
+          "items": [
+            {
+              "ruleId": "Rpt_Aria_MultipleContentinfoInSiblingSet_Implicit",
+              "path": {
+                "dom": "/html[1]/body[1]/footer[2]",
+                "aria": "/document[1]/contentinfo[2]"
+              },
+              "message": "Multiple elements with \"contentinfo\" role found on a page",
+              "bounds": {
+                "left": 0,
+                "top": 4124,
+                "height": 417,
+                "width": 800
+              },
+              "snippet": "<footer aria-label=\"Site\" class=\"site-footer grid-4q\">",
+              "level": "violation"
+            },
+            {
+              "ruleId": "Rpt_Aria_MultipleContentinfoInSiblingSet_Implicit",
+              "path": {
+                "dom": "/html[1]/body[1]/footer[1]",
+                "aria": "/document[1]/contentinfo[1]"
+              },
+              "message": "Multiple elements with \"contentinfo\" role found on a page",
+              "bounds": {
+                "left": 0,
+                "top": 4012,
+                "height": 112,
+                "width": 800
+              },
+              "snippet": "<footer aria-label=\"Page\" class=\"page-footer default-grid\" id=\"wai-site-footer\">",
+              "level": "violation"
+            },
+            {
+              "ruleId": "Rpt_Aria_MultipleComplementaryLandmarks_Implicit",
+              "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/aside[1]",
+                "aria": "/document[1]/main[1]/complementary[1]"
+              },
+              "message": "Multiple elements with \"complementary\" role do not have unique labels",
+              "bounds": {
+                "left": 16,
+                "top": 311,
+                "height": 218,
+                "width": 768
+              },
+              "snippet": "<aside class=\"box box-full\">",
+              "level": "violation"
+            },
+            {
+              "ruleId": "Rpt_Aria_ComplementaryRequiredLabel_Implicit",
+              "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/aside[1]",
+                "aria": "/document[1]/main[1]/complementary[1]"
+              },
+              "message": "The element with \"complementary\" role does not have a label",
+              "bounds": {
+                "left": 16,
+                "top": 311,
+                "height": 218,
+                "width": 768
+              },
+              "snippet": "<aside class=\"box box-full\">",
+              "level": "violation"
+            },
+            {
+              "ruleId": "Rpt_Aria_ComplementaryLandmarkLabel_Implicit",
+              "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/aside[2]",
+                "aria": "/document[1]/main[1]/complementary[2]"
+              },
+              "message": "The element with \"complementary\" role does not have a visible label",
+              "bounds": {
+                "left": 16,
+                "top": 3804,
+                "height": 177,
+                "width": 768
+              },
+              "snippet": "<aside aria-label=\"feedback\" id=\"helpimprove\" class=\"box box-icon box-space-above\">",
+              "level": "recommendation"
+            },
+            {
+              "ruleId": "element_attribute_deprecated",
+              "path": {
+                "dom": "/html[1]/head[1]/meta[3]",
+                "aria": "/document[1]"
+              },
+              "message": "The HTML attribute(s) \"http-equiv\" is deprecated for the <meta> element in HTML 5",
+              "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 0,
+                "width": 0
+              },
+              "snippet": "<meta content=\"IE=edge\" http-equiv=\"X-UA-Compatible\">",
+              "level": "recommendation"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.w3.org/WAI/standards-guidelines/aria/",
+      "what": "URL",
+      "result": "https://www.w3.org/WAI/standards-guidelines/aria/"
+    },
+    {
+      "type": "test",
+      "which": "wave",
+      "reportType": 4,
+      "what": "WAVE",
+      "url": "https://www.w3.org/WAI/standards-guidelines/aria/",
+      "result": {
+        "status": {
+          "success": true,
+          "httpstatuscode": 200
+        },
+        "statistics": {
+          "pagetitle": "WAI-ARIA Overview | Web Accessibility Initiative (WAI) | W3C",
+          "pageurl": "https://www.w3.org/WAI/standards-guidelines/aria/",
+          "time": 2.13,
+          "creditsremaining": 450,
+          "allitemcount": 116,
+          "totalelements": 382,
+          "waveurl": "http://wave.webaim.org/report?url=https://www.w3.org/WAI/standards-guidelines/aria/"
+        },
+        "categories": {
+          "error": {
+            "description": "Errors",
+            "count": 1,
+            "items": {
+              "language_missing": {
+                "id": "language_missing",
+                "description": "Language missing or invalid",
+                "count": 1,
+                "selectors": [
+                  "HTML > BODY#top > NAV:first-child + HEADER + NAV"
+                ],
+                "wcag": [
+                  {
+                    "name": "3.1.1 Language of Page (Level A)",
+                    "link": "https://webaim.org/standards/wcag/checklist#sc3.1.1"
+                  }
+                ]
+              }
+            }
+          },
+          "contrast": {
+            "description": "Contrast Errors",
+            "count": 0,
+            "items": []
+          },
+          "alert": {
+            "description": "Alerts",
+            "count": 2,
+            "items": {
+              "link_redundant": {
+                "id": "link_redundant",
+                "description": "Redundant link",
+                "count": 1,
+                "selectors": [
+                  "HTML > BODY#top > NAV:first-child + HEADER + NAV + NAV + DIV > MAIN#main > HEADER:first-child + ASIDE + NAV + H2 + P + P + H3 + P + P + P + UL + H2 + P + P + H2 + UL + H3 + P + P + UL > LI:first-child > STRONG:first-child > A:first-child"
+                ],
+                "wcag": [
+                  {
+                    "name": "2.4.4 Link Purpose (In Context) (Level A)",
+                    "link": "https://webaim.org/standards/wcag/checklist#sc2.4.4"
+                  }
+                ]
+              },
+              "noscript": {
+                "id": "noscript",
+                "description": "Noscript element",
+                "count": 1,
+                "selectors": [
+                  "HTML > BODY#top > NAV:first-child + HEADER + NAV + NAV + DIV + FOOTER + FOOTER + SCRIPT + SCRIPT + SCRIPT + SCRIPT + SCRIPT + NOSCRIPT"
+                ],
+                "wcag": []
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.w3.org/WAI/standards-guidelines/aria/",
+      "what": "URL",
+      "result": "https://www.w3.org/WAI/standards-guidelines/aria/"
+    },
+    {
+      "type": "test",
+      "which": "tenon",
+      "id": "a",
+      "what": "Tenon",
+      "url": "https://www.w3.org/WAI/standards-guidelines/aria/",
+      "result": {
+        "status": 200,
+        "message": "OK",
+        "code": "success",
+        "info": "Success",
+        "moreInfo": "https://tenon.io/documentation/apiv2/response-codes#success",
+        "responseExecTime": "0.076",
+        "responseTime": "2022-07-06T00:55:59.815Z",
+        "data": {
+          "apiErrors": [],
+          "documentSize": 997423,
+          "metadata": null,
+          "resultSummary": {
+            "tests": {
+              "total": 180,
+              "passing": 177,
+              "failing": 3
+            },
+            "issues": {
+              "totalErrors": 5,
+              "totalWarnings": 0,
+              "totalIssues": 5
+            },
+            "issuesByLevel": {
+              "A": {
+                "count": 5,
+                "pct": 100
+              },
+              "AA": {
+                "count": 2,
+                "pct": 40
+              },
+              "AAA": {
+                "count": 5,
+                "pct": 100
+              }
+            },
+            "density": {
+              "errorDensity": 1,
+              "warningDensity": 0,
+              "allDensity": 1
+            }
+          },
+          "projectID": "E4B12DC9-2F67-8DB7-26C9-E50C8490",
+          "responseID": "b62e1373-d402-4591-b694-336290db25e5",
+          "docID": "473d293a-e9c9-4094-9135-e70b8297355f",
+          "sourceHash": "8820e3260a6455dddcef8928ae640afc",
+          "urlHttpCode": 200,
+          "clientScriptErrors": [],
+          "remainingApiCalls": {
+            "planCalls": 0,
+            "boosts": 19
+          },
+          "globalStats": {
+            "errorDensity": "N/A",
+            "warningDensity": "N/A",
+            "allDensity": "N/A",
+            "stdDev": "N/A"
+          },
+          "resultUrl": "http://ngnix/history.php?responseID=b62e1373-d402-4591-b694-336290db25e5",
+          "resultSet": [
+            {
+              "tID": 98,
+              "bpID": 105,
+              "priority": 100,
+              "level": [
+                "A",
+                "AAA"
+              ],
+              "certainty": 100,
+              "errorTitle": "These links have the same text but different destinations.",
+              "standards": [
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level A: 2.4.4 Link Purpose (In Context)",
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level AAA: 2.4.9 Link Purpose (Link Only)"
+              ],
+              "resultTitle": "Don't reuse the same link text for links that have different destinations",
+              "errorDescription": "This link has the same text as another link that goes to a different place. Using the same text for multiple links which point to different pages is ambiguous and may be confusing for assistive technology users, or for users who have a cognitive disability. Link text should tell the user where they will go if they follow the link. If two links on a page go to two different destinations, use different link text that accurately and concisely describes their destination.",
+              "viewPortLocation": {
+                "top-left": {
+                  "x": 0,
+                  "y": 0
+                },
+                "bottom-right": {
+                  "x": -48,
+                  "y": -17
+                },
+                "height": -17,
+                "width": -48
+              },
+              "position": {
+                "line": 4047,
+                "column": 0
+              },
+              "errorSnippet": "&lt;a lang=\"en\" href=\"/WAI/standards-guidelines/atag/glance/\" class=\"page-link\"&gt;&lt;span&gt;At a Glance&lt;/span&gt;&lt;/a&gt;",
+              "xpath": "/html/body/div[1]/div[1]/nav[1]/ul[1]/li[4]/ul[1]/li[1]/a[1]",
+              "issueID": "05cdfce55d6748c51559a702063efd29",
+              "signature": "4391f77dbb82e10956b0fec961bae704",
+              "ref": "https://tenon.io/bestpractice.php?bpID=105&tID=98&issueID=05cdfce55d6748c51559a702063efd29"
+            },
+            {
+              "tID": 98,
+              "bpID": 105,
+              "priority": 100,
+              "level": [
+                "A",
+                "AAA"
+              ],
+              "certainty": 100,
+              "errorTitle": "These links have the same text but different destinations.",
+              "standards": [
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level A: 2.4.4 Link Purpose (In Context)",
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level AAA: 2.4.9 Link Purpose (Link Only)"
+              ],
+              "resultTitle": "Don't reuse the same link text for links that have different destinations",
+              "errorDescription": "This link has the same text as another link that goes to a different place. Using the same text for multiple links which point to different pages is ambiguous and may be confusing for assistive technology users, or for users who have a cognitive disability. Link text should tell the user where they will go if they follow the link. If two links on a page go to two different destinations, use different link text that accurately and concisely describes their destination.",
+              "viewPortLocation": {
+                "top-left": {
+                  "x": 877,
+                  "y": 4596.90625
+                },
+                "bottom-right": {
+                  "x": 936,
+                  "y": 4615.90625
+                },
+                "height": 19,
+                "width": 59
+              },
+              "position": {
+                "line": 6847,
+                "column": 33
+              },
+              "errorSnippet": "&lt;a href=\"https://www.w3.org/WAI/ARIA/\"&gt;ARIA WG&lt;/a&gt;",
+              "xpath": "/html/body/footer[1]/div[1]/p[3]/a[1]",
+              "issueID": "26893986edfc30270c99dc2465d82425",
+              "signature": "e9d4f1704f0f07e4d45dcf7fc372a3d0",
+              "ref": "https://tenon.io/bestpractice.php?bpID=105&tID=98&issueID=26893986edfc30270c99dc2465d82425"
+            },
+            {
+              "tID": 98,
+              "bpID": 105,
+              "priority": 100,
+              "level": [
+                "A",
+                "AAA"
+              ],
+              "certainty": 100,
+              "errorTitle": "These links have the same text but different destinations.",
+              "standards": [
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level A: 2.4.4 Link Purpose (In Context)",
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level AAA: 2.4.9 Link Purpose (Link Only)"
+              ],
+              "resultTitle": "Don't reuse the same link text for links that have different destinations",
+              "errorDescription": "This link has the same text as another link that goes to a different place. Using the same text for multiple links which point to different pages is ambiguous and may be confusing for assistive technology users, or for users who have a cognitive disability. Link text should tell the user where they will go if they follow the link. If two links on a page go to two different destinations, use different link text that accurately and concisely describes their destination.",
+              "viewPortLocation": {
+                "top-left": {
+                  "x": 752,
+                  "y": 4815.90625
+                },
+                "bottom-right": {
+                  "x": 835,
+                  "y": 4834.90625
+                },
+                "height": 19,
+                "width": 83
+              },
+              "position": {
+                "line": 7805,
+                "column": 0
+              },
+              "errorSnippet": "&lt;a href=\"/WAI/translations/\"&gt; Translations&lt;/a&gt;",
+              "xpath": "/html/body/footer[2]/div[2]/ul[1]/li[6]/a[1]",
+              "issueID": "e0720c95a26f5c275b2e7f943a4d5be5",
+              "signature": "522d79d266a331d48b9ce295e7b60d2a",
+              "ref": "https://tenon.io/bestpractice.php?bpID=105&tID=98&issueID=e0720c95a26f5c275b2e7f943a4d5be5"
+            },
+            {
+              "tID": 134,
+              "bpID": 211,
+              "priority": 66,
+              "level": [
+                "A",
+                "AA",
+                "AAA"
+              ],
+              "certainty": 100,
+              "errorTitle": "Very small text found.",
+              "standards": [
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level A: 1.3.1 Info and Relationships",
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level AA: 1.4.5 Images of Text",
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level AA: 3.2.4 Consistent Identification",
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level AA: 1.4.4 Resize text",
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level AAA: 2.5.5 Target Size"
+              ],
+              "resultTitle": "Ensure content is legible.",
+              "errorDescription": "This text's CSS `font-size` is set very small. This text is going to be difficult to read, especially for those who are partially sighted or have low-vision. Update the CSS `font-size` value to use a larger value.",
+              "viewPortLocation": {
+                "top-left": {
+                  "x": 236,
+                  "y": 4850.25
+                },
+                "bottom-right": {
+                  "x": 246,
+                  "y": 4865.25
+                },
+                "height": 15,
+                "width": 10
+              },
+              "position": {
+                "line": 8102,
+                "column": 31
+              },
+              "errorSnippet": "&lt;sup&gt;®&lt;/sup&gt;",
+              "xpath": "/html/body/footer[2]/div[1]/div[3]/p[1]/sup[1]",
+              "issueID": "9026be0bc09c7d3a20650effce26a533",
+              "signature": "8a7d9dec3964d9cedcb06dfec0cc6d84",
+              "ref": "https://tenon.io/bestpractice.php?bpID=211&tID=134&issueID=9026be0bc09c7d3a20650effce26a533"
+            },
+            {
+              "tID": 152,
+              "bpID": 211,
+              "priority": 88,
+              "level": [
+                "A",
+                "AA",
+                "AAA"
+              ],
+              "certainty": 100,
+              "errorTitle": "This actionable element is smaller than the minimum required size.",
+              "standards": [
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level A: 1.3.1 Info and Relationships",
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level AA: 1.4.5 Images of Text",
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level AA: 3.2.4 Consistent Identification",
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level AA: 1.4.4 Resize text",
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level AAA: 2.5.5 Target Size"
+              ],
+              "resultTitle": "Ensure content is legible.",
+              "errorDescription": "This actionable element is smaller than the stated minimum defined by all mobile platform developer guides. Minimum sizes for actionable elements ensure that those elements can be operated by people with vision, motor and cognitive disabilities. Even if this system is not explicitly intended for mobile use, it should be enlarged with CSS to meet minimu requirements and improve usability for users with vision, motor and cognitive disabilities.",
+              "viewPortLocation": {
+                "top-left": {
+                  "x": 0,
+                  "y": 0
+                },
+                "bottom-right": {
+                  "x": -48,
+                  "y": -17
+                },
+                "height": -17,
+                "width": -48
+              },
+              "position": {
+                "line": 4046,
+                "column": 0
+              },
+              "errorSnippet": "&lt;a lang=\"en\" href=\"/WAI/standards-guidelines/wcag/faq/\" class=\"page-link\"&gt;&lt;span&gt;FAQ&lt;/span&gt;&lt;/a&gt;",
+              "xpath": "/html/body/div[1]/div[1]/nav[1]/ul[1]/li[2]/ul[1]/li[10]/a[1]",
+              "issueID": "6af68a2537f60a17f831577a81fe7c92",
+              "signature": "22680c9cf777c264d3bdfd047aa46504",
+              "ref": "https://tenon.io/bestpractice.php?bpID=211&tID=152&issueID=6af68a2537f60a17f831577a81fe7c92"
+            }
+          ],
+          "log": []
+        }
+      }
+    }
+  ],
+  "timeStamp": "3zjtz",
+  "startTime": "2022-07-06T00:54:21",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "hover",
+      56
+    ],
+    [
+      "motion",
+      13
+    ],
+    [
+      "ibm",
+      4
+    ],
+    [
+      "alfa",
+      3
+    ],
+    [
+      "wave",
+      2
+    ],
+    [
+      "focAll",
+      1
+    ],
+    [
+      "axe",
+      1
+    ],
+    [
+      "tenon",
+      1
+    ],
+    [
+      "bulk",
+      0
+    ],
+    [
+      "embAc",
+      0
+    ],
+    [
+      "focInd",
+      0
+    ],
+    [
+      "focOp",
+      0
+    ],
+    [
+      "labClash",
+      0
+    ],
+    [
+      "linkUl",
+      0
+    ],
+    [
+      "menuNav",
+      0
+    ],
+    [
+      "radioSet",
+      0
+    ],
+    [
+      "role",
+      0
+    ],
+    [
+      "styleDiff",
+      0
+    ],
+    [
+      "tabNav",
+      0
+    ],
+    [
+      "zIndex",
+      0
+    ],
+    [
+      "htmlcs",
+      0
+    ]
+  ],
+  "logCount": 10,
+  "logSize": 1010,
+  "errorLogCount": 10,
+  "errorLogSize": 1010,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-06T00:55:59",
+  "elapsedSeconds": 98
+}

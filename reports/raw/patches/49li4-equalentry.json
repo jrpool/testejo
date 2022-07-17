@@ -1,0 +1,419 @@
+{
+  "id": "49li4-equalentry",
+  "host": {
+    "id": "equalentry",
+    "which": "https://equalentry.com/",
+    "what": "Equal Entry"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-16T21:47:30"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-16T21:48:33"
+    }
+  ],
+  "script": {
+    "id": "tp12",
+    "what": "Alfa, Axe, HTML CodeSniffer, IBM, Tenon, WAVE, and 16 custom tests",
+    "strict": true,
+    "timeLimit": 150,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://equalentry.com/",
+        "what": "Equal Entry"
+      },
+      {
+        "type": "test",
+        "which": "focInd",
+        "revealAll": false,
+        "allowedDelay": 250,
+        "withItems": true,
+        "what": "focus indicators"
+      },
+      {
+        "type": "test",
+        "which": "hover",
+        "headSize": 20,
+        "headSampleSize": 20,
+        "tailSampleSize": 15,
+        "withItems": true,
+        "what": "hover impacts"
+      },
+      {
+        "type": "test",
+        "which": "role",
+        "what": "validity and necessity of role assignments"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://equalentry.com/",
+      "what": "Equal Entry",
+      "result": "https://equalentry.com/"
+    },
+    {
+      "type": "test",
+      "which": "focInd",
+      "revealAll": false,
+      "allowedDelay": 250,
+      "withItems": true,
+      "what": "focus indicators",
+      "url": "https://equalentry.com/",
+      "result": {
+        "totals": {
+          "total": 31,
+          "types": {
+            "indicatorMissing": {
+              "total": 24,
+              "tagNames": {
+                "A": 21,
+                "SPAN": 2,
+                "DIV": 1
+              }
+            },
+            "nonOutlinePresent": {
+              "total": 4,
+              "tagNames": {
+                "A": 4
+              }
+            },
+            "outlinePresent": {
+              "total": 3,
+              "meanDelay": 0,
+              "tagNames": {
+                "INPUT": 1,
+                "TEXTAREA": 1,
+                "BUTTON": 1
+              }
+            }
+          }
+        },
+        "items": {
+          "indicatorMissing": [
+            {
+              "tagName": "A",
+              "text": ""
+            },
+            {
+              "tagName": "A",
+              "text": "Services"
+            },
+            {
+              "tagName": "SPAN",
+              "text": ""
+            },
+            {
+              "tagName": "A",
+              "text": "Our Work"
+            },
+            {
+              "tagName": "A",
+              "text": "Blog"
+            },
+            {
+              "tagName": "SPAN",
+              "text": ""
+            },
+            {
+              "tagName": "A",
+              "text": "About"
+            },
+            {
+              "tagName": "A",
+              "text": "KB"
+            },
+            {
+              "tagName": "A",
+              "text": ""
+            },
+            {
+              "tagName": "DIV",
+              "text": ""
+            },
+            {
+              "tagName": "A",
+              "text": "Expert Audits Review of user interfaces and wireframes for accessibility issues that affect people w"
+            },
+            {
+              "tagName": "A",
+              "text": "Training Materials We can produce customized accessibility trainings for your organization’s workflo"
+            },
+            {
+              "tagName": "A",
+              "text": "Expert Witness We can evaluate and report on the adherence to technical standards for Information Co"
+            },
+            {
+              "tagName": "A",
+              "text": "What’s new at Equal Entry?"
+            },
+            {
+              "tagName": "A",
+              "text": "See More Presentations"
+            },
+            {
+              "tagName": "A",
+              "text": "See More Articles"
+            },
+            {
+              "tagName": "A",
+              "text": "See More Activists"
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility"
+            },
+            {
+              "tagName": "A",
+              "text": "Privacy"
+            },
+            {
+              "tagName": "A",
+              "text": "YouTube"
+            },
+            {
+              "tagName": "A",
+              "text": "Twitter"
+            },
+            {
+              "tagName": "A",
+              "text": "Facebook"
+            },
+            {
+              "tagName": "A",
+              "text": "LinkedIn"
+            },
+            {
+              "tagName": "A",
+              "text": "Contact Us"
+            }
+          ],
+          "nonOutlinePresent": [
+            {
+              "tagName": "A",
+              "text": "Skip to content"
+            },
+            {
+              "tagName": "A",
+              "text": "Featured Presentation How to Determine If a Company Knows About Digital Accessibility Meryl Evans Ma"
+            },
+            {
+              "tagName": "A",
+              "text": "Featured Article What Are the Top 6 Problem Spots for Blind Testers in Accessibility Testing? Rhea A"
+            },
+            {
+              "tagName": "A",
+              "text": "Featured Activist How Can a Blind Person Use Virtual Reality? May 05, 2022"
+            }
+          ],
+          "outlinePresent": [
+            {
+              "tagName": "INPUT",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "TEXTAREA",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Submit",
+              "delay": 0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://equalentry.com/",
+      "what": "URL",
+      "result": "https://equalentry.com/"
+    },
+    {
+      "type": "test",
+      "which": "hover",
+      "headSize": 20,
+      "headSampleSize": 20,
+      "tailSampleSize": 15,
+      "withItems": true,
+      "what": "hover-caused content changes",
+      "url": "https://equalentry.com/",
+      "result": {
+        "totals": {
+          "triggers": 32,
+          "headTriggers": 20,
+          "tailTriggers": 12,
+          "impactTriggers": 4,
+          "additions": 22,
+          "removals": 22,
+          "opacityChanges": 0,
+          "opacityImpact": 0,
+          "unhoverables": 3
+        },
+        "items": {
+          "head": {
+            "impactTriggers": [
+              {
+                "tagName": "LI",
+                "text": "ServicesExpertAuditsTrainingExpertWitnessADADemand",
+                "additions": 9,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "LI",
+                "text": "OurWork",
+                "additions": 0,
+                "removals": 9,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "LI",
+                "text": "BlogActivistsAR/VR/XRArticlesGlobalNewsPresentatio",
+                "additions": 13,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "LI",
+                "text": "About",
+                "additions": 0,
+                "removals": 13,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              }
+            ],
+            "unhoverables": [
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Skiptocontent"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Services"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Blog"
+              }
+            ]
+          },
+          "tail": {
+            "impactTriggers": [],
+            "unhoverables": []
+          }
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://equalentry.com/",
+      "what": "URL",
+      "result": "https://equalentry.com/"
+    },
+    {
+      "type": "test",
+      "which": "role",
+      "what": "roles",
+      "url": "https://equalentry.com/",
+      "result": {
+        "roleElements": 53,
+        "badRoleElements": 7,
+        "redundantRoleElements": 0,
+        "tagNames": {
+          "HEADER": {
+            "banner": {
+              "bad": 1,
+              "redundant": 0
+            }
+          },
+          "A": {
+            "button": {
+              "bad": 2,
+              "redundant": 0
+            }
+          },
+          "SPAN": {
+            "button": {
+              "bad": 2,
+              "redundant": 0
+            }
+          },
+          "DIV": {
+            "button": {
+              "bad": 1,
+              "redundant": 0
+            }
+          },
+          "FOOTER": {
+            "contentinfo": {
+              "bad": 1,
+              "redundant": 0
+            }
+          }
+        }
+      }
+    }
+  ],
+  "timeStamp": "49li4",
+  "startTime": "2022-07-16T21:47:30",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "hover",
+      43
+    ],
+    [
+      "focInd",
+      9
+    ],
+    [
+      "role",
+      0
+    ]
+  ],
+  "logCount": 0,
+  "logSize": 0,
+  "errorLogCount": 0,
+  "errorLogSize": 0,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-16T21:48:33",
+  "elapsedSeconds": 62
+}

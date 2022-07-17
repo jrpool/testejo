@@ -304,17 +304,20 @@
           "total": 44,
           "types": {
             "indicatorMissing": {
-              "total": 0,
-              "tagNames": {}
-            },
-            "nonOutlinePresent": {
-              "total": 44,
+              "total": 42,
               "tagNames": {
-                "A": 29,
+                "A": 28,
                 "INPUT": 1,
-                "BUTTON": 12,
+                "BUTTON": 11,
                 "IFRAME": 1,
                 "LI": 1
+              }
+            },
+            "nonOutlinePresent": {
+              "total": 2,
+              "tagNames": {
+                "A": 1,
+                "BUTTON": 1
               }
             },
             "outlinePresent": {
@@ -325,12 +328,7 @@
           }
         },
         "items": {
-          "indicatorMissing": [],
-          "nonOutlinePresent": [
-            {
-              "tagName": "A",
-              "text": "Skip to main content"
-            },
+          "indicatorMissing": [
             {
               "tagName": "A",
               "text": ""
@@ -396,10 +394,6 @@
               "text": ""
             },
             {
-              "tagName": "BUTTON",
-              "text": "View Transcript"
-            },
-            {
               "tagName": "A",
               "text": "Register for access now"
             },
@@ -425,6 +419,14 @@
             },
             {
               "tagName": "BUTTON",
+              "text": "Global brand"
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Payfont"
+            },
+            {
+              "tagName": "BUTTON",
               "text": "Scope"
             },
             {
@@ -434,14 +436,6 @@
             {
               "tagName": "BUTTON",
               "text": "Reflex Arc"
-            },
-            {
-              "tagName": "BUTTON",
-              "text": "Global brand"
-            },
-            {
-              "tagName": "BUTTON",
-              "text": "Payfont"
             },
             {
               "tagName": "BUTTON",
@@ -502,6 +496,16 @@
             {
               "tagName": "A",
               "text": "0208 106 1186"
+            }
+          ],
+          "nonOutlinePresent": [
+            {
+              "tagName": "A",
+              "text": "Skip to main content"
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "View Transcript"
             }
           ],
           "outlinePresent": []
@@ -1197,8 +1201,8 @@
           "triggers": 115,
           "headTriggers": 20,
           "tailTriggers": 95,
-          "impactTriggers": 0,
-          "additions": 0,
+          "impactTriggers": 11,
+          "additions": 92,
           "removals": 0,
           "opacityChanges": 0,
           "opacityImpact": 0,
@@ -1206,7 +1210,48 @@
         },
         "items": {
           "head": {
-            "impactTriggers": [],
+            "impactTriggers": [
+              {
+                "tagName": "LI",
+                "text": "OurServicesOurAuditsISO30071-1servicesExpandAwaren",
+                "additions": 22,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "A",
+                "text": "OurServices",
+                "additions": 22,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "LI",
+                "text": "WhyInclusionISO30071-1StandardOurbooksISO30071-1Di",
+                "additions": 19,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "A",
+                "text": "WhyInclusion",
+                "additions": 19,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "LI",
+                "text": "HiHubOnDemandWebinars",
+                "additions": 4,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              }
+            ],
             "unhoverables": [
               {
                 "tagName": "A",
@@ -1216,7 +1261,16 @@
             ]
           },
           "tail": {
-            "impactTriggers": [],
+            "impactTriggers": [
+              {
+                "tagName": "BUTTON",
+                "text": "PreviousReview",
+                "additions": 1,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              }
+            ],
             "unhoverables": []
           }
         }
@@ -1517,12 +1571,19 @@
       "result": {
         "roleElements": 22,
         "badRoleElements": 5,
+        "redundantRoleElements": 0,
         "tagNames": {
           "SPAN": {
-            "text": 4
+            "text": {
+              "bad": 4,
+              "redundant": 0
+            }
           },
           "DIV": {
-            "navigation": 1
+            "navigation": {
+              "bad": 1,
+              "redundant": 0
+            }
           }
         }
       }
@@ -10120,7 +10181,7 @@
   "endTime": "2022-07-09T14:59:53",
   "elapsedSeconds": 156,
   "score": {
-    "scoreProcID": "sp12a",
+    "scoreProcID": "sp12b",
     "logWeights": {
       "logCount": 0.5,
       "logSize": 0.01,
@@ -10145,11 +10206,11 @@
         "motion": 0,
         "bulk": 0,
         "focAll": 32,
-        "focInd": 44,
+        "focInd": 128,
         "focOp": 1,
-        "hover": 1,
+        "hover": 51,
         "linkUl": 32,
-        "role": 5,
+        "role": 10,
         "styleDiff": 21,
         "zIndex": 14
       },
@@ -10226,7 +10287,7 @@
         "focusIndication": {
           "testaro": {
             "focInd": {
-              "score": 44,
+              "score": 128,
               "what": "Focused element displaying no or nostandard focus indicator"
             }
           },
@@ -10248,7 +10309,7 @@
         "hoverSurprise": {
           "testaro": {
             "hover": {
-              "score": 1,
+              "score": 13,
               "what": "Content changes caused by hovering"
             }
           }
@@ -10264,7 +10325,7 @@
         "roleBad": {
           "testaro": {
             "role": {
-              "score": 4,
+              "score": 8,
               "what": "Nonexistent or implicit-overriding role"
             }
           },
@@ -10520,14 +10581,14 @@
     },
     "preventionScores": {},
     "summary": {
-      "total": 373,
+      "total": 470,
       "log": 40,
       "preventions": 0,
       "solos": 0,
       "groups": [
         {
           "groupName": "focusIndication",
-          "score": 56
+          "score": 140
         },
         {
           "groupName": "contrastAA",
@@ -10546,12 +10607,16 @@
           "score": 18
         },
         {
+          "groupName": "roleBad",
+          "score": 18
+        },
+        {
           "groupName": "imageNoText",
           "score": 18
         },
         {
-          "groupName": "roleBad",
-          "score": 17
+          "groupName": "hoverSurprise",
+          "score": 15
         },
         {
           "groupName": "contrastAAA",
@@ -10623,10 +10688,6 @@
         },
         {
           "groupName": "focusableOperable",
-          "score": 3
-        },
-        {
-          "groupName": "hoverSurprise",
           "score": 3
         },
         {

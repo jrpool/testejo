@@ -1,0 +1,313 @@
+{
+  "id": "49li4-passio",
+  "host": {
+    "id": "passio",
+    "which": "https://passio.co.uk/",
+    "what": "Passio"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-16T22:01:01"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-16T22:01:51"
+    }
+  ],
+  "script": {
+    "id": "tp12",
+    "what": "Alfa, Axe, HTML CodeSniffer, IBM, Tenon, WAVE, and 16 custom tests",
+    "strict": true,
+    "timeLimit": 150,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://passio.co.uk/",
+        "what": "Passio"
+      },
+      {
+        "type": "test",
+        "which": "focInd",
+        "revealAll": false,
+        "allowedDelay": 250,
+        "withItems": true,
+        "what": "focus indicators"
+      },
+      {
+        "type": "test",
+        "which": "hover",
+        "headSize": 20,
+        "headSampleSize": 20,
+        "tailSampleSize": 15,
+        "withItems": true,
+        "what": "hover impacts"
+      },
+      {
+        "type": "test",
+        "which": "role",
+        "what": "validity and necessity of role assignments"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://passio.co.uk/",
+      "what": "Passio",
+      "result": "https://passio.co.uk/"
+    },
+    {
+      "type": "test",
+      "which": "focInd",
+      "revealAll": false,
+      "allowedDelay": 250,
+      "withItems": true,
+      "what": "focus indicators",
+      "url": "https://passio.co.uk/",
+      "result": {
+        "totals": {
+          "total": 22,
+          "types": {
+            "indicatorMissing": {
+              "total": 0,
+              "tagNames": {}
+            },
+            "nonOutlinePresent": {
+              "total": 0,
+              "tagNames": {}
+            },
+            "outlinePresent": {
+              "total": 22,
+              "meanDelay": 0,
+              "tagNames": {
+                "A": 19,
+                "BUTTON": 3
+              }
+            }
+          }
+        },
+        "items": {
+          "indicatorMissing": [],
+          "nonOutlinePresent": [],
+          "outlinePresent": [
+            {
+              "tagName": "A",
+              "text": "<img alt=\"Passio home page\" srcSet=\"/_next/static/media/passio-logo.fee87d9b.svg 1x, /_next/static/m",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Projects",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Blog",
+              "delay": 0
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Read More",
+              "delay": 0
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Read More",
+              "delay": 0
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Read More",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "All Blog Posts→",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "<img alt=\"University College London homepage\" srcSet=\"/_next/static/media/ucl.40982680.png 1x, /_nex",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "<img alt=\"Innovate UK homepage\" srcSet=\"/_next/static/media/innovateuk.af6e9aa3.png 1x, /_next/stati",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "<img alt=\"Neatebox homepage\" srcSet=\"/_next/static/media/neatebox.6b10ac57.png 1x, /_next/static/med",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "<img alt=\"South East of Scotland Transport Partnership homepage\" srcSet=\"/_next/static/media/sestran",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "<img alt=\"Catalyst homepage\" srcSet=\"/_next/static/media/catalyst.371b6ea3.png 1x, /_next/static/med",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "<img alt=\"Arc Scotland homepage\" srcSet=\"/_next/static/media/arc_scotland.ce8edfc9.png 1x, /_next/st",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "<img alt=\"Global Innovation Disability Hub homepage\" srcSet=\"/_next/static/media/gdi.7650b397.png 1x",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "<img alt=\"eWorkLife homepage\" srcSet=\"/_next/static/media/eworklife.c576f33b.png 1x, /_next/static/m",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "<img alt=\"Co-operative College homepage\" srcSet=\"/_next/static/media/coop.0477ceb8.png 1x, /_next/st",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "<img alt=\"NHS England homepage\" srcSet=\"/_next/static/media/nhs.0b0b6ace.png 1x, /_next/static/media",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "<img alt=\"Scottish Autism homepage\" srcSet=\"/_next/static/media/scottish-autism.a0a71f04.png 1x, /_n",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "<img alt=\"National Autistic Taskforce homepage\" srcSet=\"/_next/static/media/national-autistic-taskfo",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "<img alt=\"Cyber Essentials\" srcSet=\"/_next/static/media/cyber-badge.1b525b27.png 1x, /_next/static/m",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "<img alt=\"B Corp Certified\" srcSet=\"/_next/static/media/b-corp-logo.eb761dd2.png 1x, /_next/static/m",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Privacy Notice",
+              "delay": 0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://passio.co.uk/",
+      "what": "URL",
+      "result": "https://passio.co.uk/"
+    },
+    {
+      "type": "test",
+      "which": "hover",
+      "headSize": 20,
+      "headSampleSize": 20,
+      "tailSampleSize": 15,
+      "withItems": true,
+      "what": "hover-caused content changes",
+      "url": "https://passio.co.uk/",
+      "result": {
+        "totals": {
+          "triggers": 25,
+          "headTriggers": 20,
+          "tailTriggers": 5,
+          "impactTriggers": 0,
+          "additions": 0,
+          "removals": 0,
+          "opacityChanges": 0,
+          "opacityImpact": 0,
+          "unhoverables": 0
+        },
+        "items": {
+          "head": {
+            "impactTriggers": [],
+            "unhoverables": []
+          },
+          "tail": {
+            "impactTriggers": [],
+            "unhoverables": []
+          }
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://passio.co.uk/",
+      "what": "URL",
+      "result": "https://passio.co.uk/"
+    },
+    {
+      "type": "test",
+      "which": "role",
+      "what": "roles",
+      "url": "https://passio.co.uk/",
+      "result": {
+        "roleElements": 1,
+        "badRoleElements": 0,
+        "redundantRoleElements": 0,
+        "tagNames": {}
+      }
+    }
+  ],
+  "timeStamp": "49li4",
+  "startTime": "2022-07-16T22:01:01",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "hover",
+      41
+    ],
+    [
+      "focInd",
+      0
+    ],
+    [
+      "role",
+      0
+    ]
+  ],
+  "logCount": 9,
+  "logSize": 504,
+  "errorLogCount": 6,
+  "errorLogSize": 414,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-16T22:01:51",
+  "elapsedSeconds": 50
+}

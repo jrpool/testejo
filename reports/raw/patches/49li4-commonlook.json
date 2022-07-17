@@ -1,0 +1,838 @@
+{
+  "id": "49li4-commonlook",
+  "host": {
+    "id": "commonlook",
+    "which": "https://commonlook.com/",
+    "what": "CommonLook"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-16T21:42:39"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-16T21:43:23"
+    }
+  ],
+  "script": {
+    "id": "tp12",
+    "what": "Alfa, Axe, HTML CodeSniffer, IBM, Tenon, WAVE, and 16 custom tests",
+    "strict": true,
+    "timeLimit": 150,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://commonlook.com/",
+        "what": "CommonLook"
+      },
+      {
+        "type": "test",
+        "which": "focInd",
+        "revealAll": false,
+        "allowedDelay": 250,
+        "withItems": true,
+        "what": "focus indicators"
+      },
+      {
+        "type": "test",
+        "which": "hover",
+        "headSize": 20,
+        "headSampleSize": 20,
+        "tailSampleSize": 15,
+        "withItems": true,
+        "what": "hover impacts"
+      },
+      {
+        "type": "test",
+        "which": "role",
+        "what": "validity and necessity of role assignments"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://commonlook.com/",
+      "what": "CommonLook",
+      "result": "https://commonlook.com/"
+    },
+    {
+      "type": "test",
+      "which": "focInd",
+      "revealAll": false,
+      "allowedDelay": 250,
+      "withItems": true,
+      "what": "focus indicators",
+      "url": "https://commonlook.com/",
+      "result": {
+        "totals": {
+          "total": 90,
+          "types": {
+            "indicatorMissing": {
+              "total": 6,
+              "tagNames": {
+                "A": 3,
+                "INPUT": 1,
+                "IFRAME": 2
+              }
+            },
+            "nonOutlinePresent": {
+              "total": 5,
+              "tagNames": {
+                "A": 5
+              }
+            },
+            "outlinePresent": {
+              "total": 79,
+              "meanDelay": 0,
+              "tagNames": {
+                "A": 71,
+                "BUTTON": 7,
+                "INPUT": 1
+              }
+            }
+          }
+        },
+        "items": {
+          "indicatorMissing": [
+            {
+              "tagName": "A",
+              "text": "I want to…"
+            },
+            {
+              "tagName": "INPUT",
+              "text": ""
+            },
+            {
+              "tagName": "IFRAME",
+              "text": ""
+            },
+            {
+              "tagName": "IFRAME",
+              "text": ""
+            },
+            {
+              "tagName": "A",
+              "text": "Ok"
+            },
+            {
+              "tagName": "A",
+              "text": "Privacy policy"
+            }
+          ],
+          "nonOutlinePresent": [
+            {
+              "tagName": "A",
+              "text": "Start"
+            },
+            {
+              "tagName": "A",
+              "text": "Stop"
+            },
+            {
+              "tagName": "A",
+              "text": "1"
+            },
+            {
+              "tagName": "A",
+              "text": "2"
+            },
+            {
+              "tagName": "A",
+              "text": "3"
+            }
+          ],
+          "outlinePresent": [
+            {
+              "tagName": "A",
+              "text": "Skip to main navigation",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Skip to main content",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Skip to footer",
+              "delay": 0
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "PricingHow much does CommonLook Cost?",
+              "delay": 0
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Promotions",
+              "delay": 0
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Software",
+              "delay": 0
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Services",
+              "delay": 0
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Events / Training",
+              "delay": 0
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Read / Learn",
+              "delay": 0
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Call Now",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "About",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Partners",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Legal",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Contact",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Support",
+              "delay": 0
+            },
+            {
+              "tagName": "INPUT",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Learn More",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "<img width=\"500\" height=\"430\" loading='false' class=\"fl-slide-photo-img wp-image-80690 lazyload\" src",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Get Started",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Learn More",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "<img width=\"600\" height=\"600\" loading='false' class=\"fl-slide-photo-img wp-image-76644 lazyload\" src",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Learn More",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "<img width=\"500\" height=\"430\" loading='false' class=\"fl-slide-photo-img wp-image-80690 lazyload\" src",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Get Started",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Commercial Pricing",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Education Pricing",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Government Pricing",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Proprietary PDF\nAccessibility Software",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Professional PDF\nRemediation Services",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "World-Class PDF\nAccessibility Training",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "CommonLook Services",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "CommonLook PDF",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "CommonLook Training",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Google Chrome Accessibility",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Practice Leader – Accessibility and Usability",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Food and Drug Administration",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "CommonLook",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Google Chrome Accessibility",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Peoples Health",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Google Chrome Accessibility",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Practice Leader – Accessibility and Usability",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Learn More About Compliance",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "<img class=\"fl-photo-img wp-image-66124 size-full lazyload\" src=\"https://commonlook.com/wp-content/u",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Read Google's Announcement",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "<img class=\"fl-photo-img wp-image-78611 size-full lazyload\" src=\"https://commonlook.com/wp-content/u",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Learn More",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Skip back to main navigation",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Careers -",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Training -",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Support",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "info@commonlook.com",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "+1 202-902-0988",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "+1 613-270-9582",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "+614-0232-4978",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Subscribe Here",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Facebook",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Twitter",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "LinkedIn",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "<img class=\"lazyload\" src=\"/wp-content/uploads/2021/03/OS_Badge_V1_250px.png\" height=\"70%\" width=\"70",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "<img class=\"lazyload\" src=\"/wp-content/uploads/2021/05/access-ready-authorized-1.jpg \" height=\"90%\" ",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Privacy Policy",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Terms of Use",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility",
+              "delay": 0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://commonlook.com/",
+      "what": "URL",
+      "result": "https://commonlook.com/"
+    },
+    {
+      "type": "test",
+      "which": "hover",
+      "headSize": 20,
+      "headSampleSize": 20,
+      "tailSampleSize": 15,
+      "withItems": true,
+      "what": "hover-caused content changes",
+      "url": "https://commonlook.com/",
+      "result": {
+        "totals": {
+          "triggers": 105,
+          "headTriggers": 20,
+          "tailTriggers": 85,
+          "impactTriggers": 28,
+          "additions": 48,
+          "removals": 0,
+          "opacityChanges": 28,
+          "opacityImpact": 17,
+          "unhoverables": 3
+        },
+        "items": {
+          "head": {
+            "impactTriggers": [
+              {
+                "tagName": "LI",
+                "text": "Iwantto…GetPricingCreatePDFsRemediate/FixTrack/Mon",
+                "additions": 22,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "A",
+                "text": "Iwantto…",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "BUTTON",
+                "text": "",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "LI",
+                "text": "PricingHowmuchdoesCommonLookCost?CommercialPricing",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "A",
+                "text": "PricingHowmuchdoesCommonLookCost?",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "BUTTON",
+                "text": "",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "LI",
+                "text": "PromotionsCommonLookSuitesJumpStartPlanHugesavings",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "A",
+                "text": "Promotions",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "BUTTON",
+                "text": "",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "LI",
+                "text": "SoftwareCommonLook®PDFValidatorFreePDFcheckerCommo",
+                "additions": 26,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "A",
+                "text": "Software",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "BUTTON",
+                "text": "",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "LI",
+                "text": "ServicesCertifiedCommonLookPDFRemediatorCommonLook",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "A",
+                "text": "Services",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "BUTTON",
+                "text": "",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "LI",
+                "text": "Events/TrainingScheduledClassesTrainingClassListSe",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "A",
+                "text": "Events/Training",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 0
+              }
+            ],
+            "unhoverables": [
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Skiptomainnavigation"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Skiptomaincontent"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Skiptofooter"
+              }
+            ]
+          },
+          "tail": {
+            "impactTriggers": [
+              {
+                "tagName": "A",
+                "text": "<divclass=\"fl-content-slider-svg-container\"><svgve",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 3
+              },
+              {
+                "tagName": "LI",
+                "text": "Read/LearnFAQsCaseStudiesDocumentationAccessibilit",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 0
+              }
+            ],
+            "unhoverables": []
+          }
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://commonlook.com/",
+      "what": "URL",
+      "result": "https://commonlook.com/"
+    },
+    {
+      "type": "test",
+      "which": "role",
+      "what": "roles",
+      "url": "https://commonlook.com/",
+      "result": {
+        "roleElements": 26,
+        "badRoleElements": 16,
+        "redundantRoleElements": 0,
+        "tagNames": {
+          "A": {
+            "button": {
+              "bad": 13,
+              "redundant": 0
+            }
+          },
+          "DIV": {
+            "group": {
+              "bad": 1,
+              "redundant": 0
+            },
+            "button": {
+              "bad": 2,
+              "redundant": 0
+            }
+          }
+        }
+      }
+    }
+  ],
+  "timeStamp": "49li4",
+  "startTime": "2022-07-16T21:42:39",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "hover",
+      31
+    ],
+    [
+      "focInd",
+      4
+    ],
+    [
+      "role",
+      0
+    ]
+  ],
+  "logCount": 6,
+  "logSize": 315,
+  "errorLogCount": 1,
+  "errorLogSize": 38,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-16T21:43:23",
+  "elapsedSeconds": 43
+}

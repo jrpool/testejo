@@ -300,24 +300,24 @@
       "url": "https://holistica11y.com/",
       "result": {
         "totals": {
-          "total": 58,
+          "total": 57,
           "types": {
             "indicatorMissing": {
-              "total": 0,
-              "tagNames": {}
-            },
-            "nonOutlinePresent": {
               "total": 2,
               "tagNames": {
                 "INPUT": 1,
                 "BUTTON": 1
               }
             },
+            "nonOutlinePresent": {
+              "total": 0,
+              "tagNames": {}
+            },
             "outlinePresent": {
-              "total": 56,
+              "total": 55,
               "meanDelay": 98,
               "tagNames": {
-                "A": 51,
+                "A": 50,
                 "INPUT": 3,
                 "TEXTAREA": 1,
                 "BUTTON": 1
@@ -326,8 +326,7 @@
           }
         },
         "items": {
-          "indicatorMissing": [],
-          "nonOutlinePresent": [
+          "indicatorMissing": [
             {
               "tagName": "INPUT",
               "text": ""
@@ -337,11 +336,12 @@
               "text": "Subscribe"
             }
           ],
+          "nonOutlinePresent": [],
           "outlinePresent": [
             {
               "tagName": "A",
               "text": "Skip to content",
-              "delay": 104
+              "delay": 101
             },
             {
               "tagName": "A",
@@ -351,32 +351,32 @@
             {
               "tagName": "A",
               "text": "HolisticA11Y",
-              "delay": 101
+              "delay": 100
             },
             {
               "tagName": "A",
               "text": "Home",
-              "delay": 100
+              "delay": 103
             },
             {
               "tagName": "A",
               "text": "About",
-              "delay": 103
+              "delay": 102
             },
             {
               "tagName": "A",
               "text": "Services",
-              "delay": 103
-            },
-            {
-              "tagName": "A",
-              "text": "Trainings",
               "delay": 100
             },
             {
               "tagName": "A",
+              "text": "Trainings",
+              "delay": 104
+            },
+            {
+              "tagName": "A",
               "text": "Blog",
-              "delay": 102
+              "delay": 101
             },
             {
               "tagName": "A",
@@ -396,57 +396,57 @@
             {
               "tagName": "A",
               "text": "Accessibility Consulting",
-              "delay": 101
+              "delay": 103
             },
             {
               "tagName": "A",
               "text": "Accessibility Trainings",
-              "delay": 101
+              "delay": 100
             },
             {
               "tagName": "A",
               "text": "PERCEIVABLE",
-              "delay": 103
+              "delay": 101
             },
             {
               "tagName": "A",
               "text": "OPERABLE",
-              "delay": 101
+              "delay": 103
             },
             {
               "tagName": "A",
               "text": "UNDERSTANDABLE",
-              "delay": 103
+              "delay": 102
             },
             {
               "tagName": "A",
               "text": "ROBUST",
-              "delay": 101
+              "delay": 102
             },
             {
               "tagName": "A",
               "text": "Color Contrast Checker",
-              "delay": 101
+              "delay": 100
             },
             {
               "tagName": "A",
               "text": "Web Accessibility Checklist",
-              "delay": 102
+              "delay": 100
             },
             {
               "tagName": "A",
               "text": "Website Accessibility Checker",
-              "delay": 103
+              "delay": 102
             },
             {
               "tagName": "A",
               "text": "Accessibility Cost Calculator",
-              "delay": 102
+              "delay": 101
             },
             {
               "tagName": "INPUT",
               "text": "",
-              "delay": 102
+              "delay": 104
             },
             {
               "tagName": "INPUT",
@@ -456,12 +456,12 @@
             {
               "tagName": "INPUT",
               "text": "",
-              "delay": 101
+              "delay": 103
             },
             {
               "tagName": "TEXTAREA",
               "text": "",
-              "delay": 102
+              "delay": 101
             },
             {
               "tagName": "BUTTON",
@@ -471,12 +471,12 @@
             {
               "tagName": "A",
               "text": "Lets Start Your Project!",
-              "delay": 101
+              "delay": 100
             },
             {
               "tagName": "A",
               "text": "Accessibility Audits",
-              "delay": 101
+              "delay": 102
             },
             {
               "tagName": "A",
@@ -486,22 +486,22 @@
             {
               "tagName": "A",
               "text": "Accessible Website Design & Development",
-              "delay": 103
+              "delay": 102
             },
             {
               "tagName": "A",
               "text": "Accessibility Remediation",
-              "delay": 100
+              "delay": 102
             },
             {
               "tagName": "A",
               "text": "VPATs and Accessibility Statements",
-              "delay": 103
+              "delay": 100
             },
             {
               "tagName": "A",
               "text": "Web Accessibility Testing",
-              "delay": 101
+              "delay": 104
             },
             {
               "tagName": "A",
@@ -511,32 +511,32 @@
             {
               "tagName": "A",
               "text": "Web Accessibility For Developers",
-              "delay": 100
-            },
-            {
-              "tagName": "A",
-              "text": "Web Accessibility for Content Authors",
-              "delay": 103
-            },
-            {
-              "tagName": "A",
-              "text": "Accessibility Testing with Screen Readers",
-              "delay": 102
-            },
-            {
-              "tagName": "A",
-              "text": "Free Color Contrast Checker",
-              "delay": 103
-            },
-            {
-              "tagName": "A",
-              "text": "Digital Accessibility Checklists and Cheat Sheets",
               "delay": 101
             },
             {
               "tagName": "A",
-              "text": "Free Web Accessibility Checker",
+              "text": "Web Accessibility for Content Authors",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility Testing with Screen Readers",
               "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "Free Color Contrast Checker",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Digital Accessibility Checklists and Cheat Sheets",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "Free Web Accessibility Checker",
+              "delay": 102
             },
             {
               "tagName": "A",
@@ -546,17 +546,17 @@
             {
               "tagName": "A",
               "text": "WCAG",
-              "delay": 104
-            },
-            {
-              "tagName": "A",
-              "text": "ADA",
               "delay": 101
             },
             {
               "tagName": "A",
-              "text": "Section 508",
+              "text": "ADA",
               "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Section 508",
+              "delay": 103
             },
             {
               "tagName": "A",
@@ -566,57 +566,52 @@
             {
               "tagName": "A",
               "text": "EN 301 549",
-              "delay": 104
+              "delay": 101
             },
             {
               "tagName": "A",
-              "text": "Home",
+              "text": "Terms and Conditions",
               "delay": 100
             },
             {
               "tagName": "A",
-              "text": "About",
-              "delay": 103
+              "text": "Privacy Policy",
+              "delay": 100
             },
             {
               "tagName": "A",
-              "text": "Services",
+              "text": "Careers",
               "delay": 101
             },
             {
               "tagName": "A",
-              "text": "Trainings",
-              "delay": 104
+              "text": "Sitemap",
+              "delay": 100
             },
             {
               "tagName": "A",
-              "text": "Blog",
-              "delay": 101
-            },
-            {
-              "tagName": "A",
-              "text": "Contact",
-              "delay": 103
-            },
-            {
-              "tagName": "A",
-              "text": "Facebook",
-              "delay": 104
-            },
-            {
-              "tagName": "A",
-              "text": "Twitter",
-              "delay": 104
-            },
-            {
-              "tagName": "A",
-              "text": "Instagram",
+              "text": "Accessibility Statement",
               "delay": 102
             },
             {
               "tagName": "A",
+              "text": "Facebook",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Twitter",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Instagram",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
               "text": "Linkedin",
-              "delay": 104
+              "delay": 103
             }
           ]
         }
@@ -1743,14 +1738,14 @@
       "url": "https://holistica11y.com/",
       "result": {
         "totals": {
-          "triggers": 88,
+          "triggers": 86,
           "headTriggers": 20,
-          "tailTriggers": 68,
-          "impactTriggers": 4,
-          "additions": 0,
-          "removals": 0,
-          "opacityChanges": 4,
-          "opacityImpact": 164,
+          "tailTriggers": 66,
+          "impactTriggers": 5,
+          "additions": 46,
+          "removals": 22,
+          "opacityChanges": 0,
+          "opacityImpact": 0,
           "unhoverables": 1
         },
         "items": {
@@ -1759,34 +1754,42 @@
               {
                 "tagName": "LI",
                 "text": "ServicesMenuToggleAccessibilityAuditsMenuToggleWeb",
-                "additions": 0,
+                "additions": 18,
                 "removals": 0,
-                "opacityChanges": 1,
-                "opacityImpact": 52
+                "opacityChanges": 0,
+                "opacityImpact": 0
               },
               {
                 "tagName": "A",
                 "text": "Services",
-                "additions": 0,
+                "additions": 6,
                 "removals": 0,
-                "opacityChanges": 1,
-                "opacityImpact": 52
+                "opacityChanges": 0,
+                "opacityImpact": 0
               },
               {
                 "tagName": "LI",
                 "text": "TrainingsMenuToggleWebAccessibilityTestingAccessib",
-                "additions": 0,
-                "removals": 0,
-                "opacityChanges": 1,
-                "opacityImpact": 30
+                "additions": 16,
+                "removals": 12,
+                "opacityChanges": 0,
+                "opacityImpact": 0
               },
               {
                 "tagName": "A",
                 "text": "Trainings",
-                "additions": 0,
+                "additions": 6,
                 "removals": 0,
-                "opacityChanges": 1,
-                "opacityImpact": 30
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "LI",
+                "text": "Blog",
+                "additions": 0,
+                "removals": 10,
+                "opacityChanges": 0,
+                "opacityImpact": 0
               }
             ],
             "unhoverables": [
@@ -2220,11 +2223,15 @@
       "what": "roles",
       "url": "https://holistica11y.com/",
       "result": {
-        "roleElements": 22,
-        "badRoleElements": 1,
+        "roleElements": 20,
+        "badRoleElements": 0,
+        "redundantRoleElements": 1,
         "tagNames": {
           "A": {
-            "link": 1
+            "link": {
+              "bad": 0,
+              "redundant": 1
+            }
           }
         }
       }
@@ -7268,7 +7275,7 @@
   "endTime": "2022-07-06T02:56:27",
   "elapsedSeconds": 128,
   "score": {
-    "scoreProcID": "sp12a",
+    "scoreProcID": "sp12b",
     "logWeights": {
       "logCount": 0.5,
       "logSize": 0.01,
@@ -7291,9 +7298,9 @@
     "packageDetails": {
       "testaro": {
         "bulk": 0,
-        "focInd": 2,
+        "focInd": 6,
         "focOp": 2,
-        "hover": 26,
+        "hover": 47,
         "linkUl": 88,
         "role": 1,
         "styleDiff": 27,
@@ -7354,7 +7361,7 @@
         "focusIndication": {
           "testaro": {
             "focInd": {
-              "score": 2,
+              "score": 6,
               "what": "Focused element displaying no or nostandard focus indicator"
             }
           }
@@ -7370,7 +7377,7 @@
         "hoverSurprise": {
           "testaro": {
             "hover": {
-              "score": 7,
+              "score": 12,
               "what": "Content changes caused by hovering"
             }
           }
@@ -7497,7 +7504,7 @@
           "alfa": {
             "r74": {
               "score": 8,
-              "what": "Paragraph text has absolute font size"
+              "what": "Paragraph text has an absolute font size"
             }
           }
         },
@@ -7638,7 +7645,7 @@
     },
     "preventionScores": {},
     "summary": {
-      "total": 282,
+      "total": 291,
       "log": 36,
       "preventions": 0,
       "solos": 0,
@@ -7650,6 +7657,10 @@
         {
           "groupName": "leadingClipsText",
           "score": 26
+        },
+        {
+          "groupName": "hoverSurprise",
+          "score": 14
         },
         {
           "groupName": "ariaBadAttribute",
@@ -7680,12 +7691,12 @@
           "score": 10
         },
         {
-          "groupName": "hoverSurprise",
+          "groupName": "inconsistentStyles",
           "score": 9
         },
         {
-          "groupName": "inconsistentStyles",
-          "score": 9
+          "groupName": "focusIndication",
+          "score": 8
         },
         {
           "groupName": "headingStructure",
@@ -7710,10 +7721,6 @@
         {
           "groupName": "horizontalScrolling",
           "score": 5
-        },
-        {
-          "groupName": "focusIndication",
-          "score": 4
         },
         {
           "groupName": "focusableOperable",

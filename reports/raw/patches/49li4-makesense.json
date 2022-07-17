@@ -1,0 +1,488 @@
+{
+  "id": "49li4-makesense",
+  "host": {
+    "id": "makesense",
+    "which": "https://mk-sense.com/",
+    "what": "Make-Sense"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-16T21:57:10"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-16T21:58:11"
+    }
+  ],
+  "script": {
+    "id": "tp12",
+    "what": "Alfa, Axe, HTML CodeSniffer, IBM, Tenon, WAVE, and 16 custom tests",
+    "strict": true,
+    "timeLimit": 150,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://mk-sense.com/",
+        "what": "Make-Sense"
+      },
+      {
+        "type": "test",
+        "which": "focInd",
+        "revealAll": false,
+        "allowedDelay": 250,
+        "withItems": true,
+        "what": "focus indicators"
+      },
+      {
+        "type": "test",
+        "which": "hover",
+        "headSize": 20,
+        "headSampleSize": 20,
+        "tailSampleSize": 15,
+        "withItems": true,
+        "what": "hover impacts"
+      },
+      {
+        "type": "test",
+        "which": "role",
+        "what": "validity and necessity of role assignments"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://mk-sense.com/",
+      "what": "Make-Sense",
+      "result": "https://mk-sense.com/"
+    },
+    {
+      "type": "test",
+      "which": "focInd",
+      "revealAll": false,
+      "allowedDelay": 250,
+      "withItems": true,
+      "what": "focus indicators",
+      "url": "https://mk-sense.com/",
+      "result": {
+        "totals": {
+          "total": 39,
+          "types": {
+            "indicatorMissing": {
+              "total": 13,
+              "tagNames": {
+                "DIV": 4,
+                "IFRAME": 1,
+                "INPUT": 5,
+                "BUTTON": 1,
+                "A": 2
+              }
+            },
+            "nonOutlinePresent": {
+              "total": 2,
+              "tagNames": {
+                "A": 2
+              }
+            },
+            "outlinePresent": {
+              "total": 24,
+              "meanDelay": 0,
+              "tagNames": {
+                "A": 24
+              }
+            }
+          }
+        },
+        "items": {
+          "indicatorMissing": [
+            {
+              "tagName": "DIV",
+              "text": "PartnersOur Partners Love Us!Give your clients full digital accessibility - fast\nGive your clients f"
+            },
+            {
+              "tagName": "DIV",
+              "text": ""
+            },
+            {
+              "tagName": "DIV",
+              "text": ""
+            },
+            {
+              "tagName": "DIV",
+              "text": ""
+            },
+            {
+              "tagName": "IFRAME",
+              "text": ""
+            },
+            {
+              "tagName": "INPUT",
+              "text": ""
+            },
+            {
+              "tagName": "INPUT",
+              "text": ""
+            },
+            {
+              "tagName": "INPUT",
+              "text": ""
+            },
+            {
+              "tagName": "INPUT",
+              "text": ""
+            },
+            {
+              "tagName": "INPUT",
+              "text": ""
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Send My Accessibility Report"
+            },
+            {
+              "tagName": "A",
+              "text": "Stop"
+            },
+            {
+              "tagName": "A",
+              "text": "Play"
+            }
+          ],
+          "nonOutlinePresent": [
+            {
+              "tagName": "A",
+              "text": "Request Demo"
+            },
+            {
+              "tagName": "A",
+              "text": "Learn More"
+            }
+          ],
+          "outlinePresent": [
+            {
+              "tagName": "A",
+              "text": "Accept",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Home",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Our Platform",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "About",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "WCAG Success Criteria",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Packages",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Partners",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "About Us",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Blog",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Contact",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Login",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "WCAG 2.0 and WCAG2.1",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Learn More",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "NEWCHIP ACCELERATOR PROGRAM SELECTS MAKE-SENSE FOR LATEST COHORT",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Read More",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "DIGITAL ACCESSIBILITY PLATFORM MAKE-SENSE NOW AVAILABLE IN THE MICROSOFT AZURE MARKET PLACE",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Read More",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "info@mk-sense.com​",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Linkedin",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Twitter",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Instagram",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Terms of Use",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Privacy Policy",
+              "delay": 0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://mk-sense.com/",
+      "what": "URL",
+      "result": "https://mk-sense.com/"
+    },
+    {
+      "type": "test",
+      "which": "hover",
+      "headSize": 20,
+      "headSampleSize": 20,
+      "tailSampleSize": 15,
+      "withItems": true,
+      "what": "hover-caused content changes",
+      "url": "https://mk-sense.com/",
+      "result": {
+        "totals": {
+          "triggers": 61,
+          "headTriggers": 20,
+          "tailTriggers": 41,
+          "impactTriggers": 3,
+          "additions": 0,
+          "removals": 0,
+          "opacityChanges": 3,
+          "opacityImpact": 12,
+          "unhoverables": 8
+        },
+        "items": {
+          "head": {
+            "impactTriggers": [
+              {
+                "tagName": "LI",
+                "text": "OurPlatformAboutWCAGSuccessCriteria",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 4
+              },
+              {
+                "tagName": "A",
+                "text": "OurPlatform",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 4
+              },
+              {
+                "tagName": "A",
+                "text": "About",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 4
+              }
+            ],
+            "unhoverables": [
+              {
+                "tagName": "LI",
+                "id": "menu-item-2966",
+                "text": "About"
+              },
+              {
+                "tagName": "LI",
+                "id": "menu-item-2955",
+                "text": "WCAGSuccessCriteria"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "WCAGSuccessCriteria"
+              }
+            ]
+          },
+          "tail": {
+            "impactTriggers": [],
+            "unhoverables": [
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "RequestDemo"
+              },
+              {
+                "tagName": "LI",
+                "id": "menu-item-584",
+                "text": "TermsofUse"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "TermsofUse"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "RequestDemo"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "LearnMore"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://mk-sense.com/",
+      "what": "URL",
+      "result": "https://mk-sense.com/"
+    },
+    {
+      "type": "test",
+      "which": "role",
+      "what": "roles",
+      "url": "https://mk-sense.com/",
+      "result": {
+        "roleElements": 18,
+        "badRoleElements": 8,
+        "redundantRoleElements": 2,
+        "tagNames": {
+          "DIV": {
+            "navigation": {
+              "bad": 2,
+              "redundant": 0
+            },
+            "button": {
+              "bad": 3,
+              "redundant": 0
+            }
+          },
+          "A": {
+            "button": {
+              "bad": 3,
+              "redundant": 0
+            }
+          },
+          "NAV": {
+            "navigation": {
+              "bad": 0,
+              "redundant": 1
+            }
+          },
+          "MAIN": {
+            "main": {
+              "bad": 0,
+              "redundant": 1
+            }
+          }
+        }
+      }
+    }
+  ],
+  "timeStamp": "49li4",
+  "startTime": "2022-07-16T21:57:10",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "hover",
+      41
+    ],
+    [
+      "focInd",
+      5
+    ],
+    [
+      "role",
+      0
+    ]
+  ],
+  "logCount": 24,
+  "logSize": 1176,
+  "errorLogCount": 5,
+  "errorLogSize": 575,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-16T21:58:11",
+  "elapsedSeconds": 60
+}

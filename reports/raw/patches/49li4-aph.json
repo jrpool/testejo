@@ -1,0 +1,712 @@
+{
+  "id": "49li4-aph",
+  "host": {
+    "id": "aph",
+    "which": "https://www.aph.org/accessibility-solutions/",
+    "what": "American Printing House"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-16T21:30:38"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-16T21:31:30"
+    }
+  ],
+  "script": {
+    "id": "tp12",
+    "what": "Alfa, Axe, HTML CodeSniffer, IBM, Tenon, WAVE, and 16 custom tests",
+    "strict": true,
+    "timeLimit": 150,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.aph.org/accessibility-solutions/",
+        "what": "American Printing House"
+      },
+      {
+        "type": "test",
+        "which": "focInd",
+        "revealAll": false,
+        "allowedDelay": 250,
+        "withItems": true,
+        "what": "focus indicators"
+      },
+      {
+        "type": "test",
+        "which": "hover",
+        "headSize": 20,
+        "headSampleSize": 20,
+        "tailSampleSize": 15,
+        "withItems": true,
+        "what": "hover impacts"
+      },
+      {
+        "type": "test",
+        "which": "role",
+        "what": "validity and necessity of role assignments"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.aph.org/accessibility-solutions/",
+      "what": "American Printing House",
+      "result": "https://www.aph.org/accessibility-solutions/"
+    },
+    {
+      "type": "test",
+      "which": "focInd",
+      "revealAll": false,
+      "allowedDelay": 250,
+      "withItems": true,
+      "what": "focus indicators",
+      "url": "https://www.aph.org/accessibility-solutions/",
+      "result": {
+        "totals": {
+          "total": 81,
+          "types": {
+            "indicatorMissing": {
+              "total": 1,
+              "tagNames": {
+                "IFRAME": 1
+              }
+            },
+            "nonOutlinePresent": {
+              "total": 0,
+              "tagNames": {}
+            },
+            "outlinePresent": {
+              "total": 80,
+              "meanDelay": 72,
+              "tagNames": {
+                "A": 58,
+                "INPUT": 21,
+                "TEXTAREA": 1
+              }
+            }
+          }
+        },
+        "items": {
+          "indicatorMissing": [
+            {
+              "tagName": "IFRAME",
+              "text": ""
+            }
+          ],
+          "nonOutlinePresent": [],
+          "outlinePresent": [
+            {
+              "tagName": "A",
+              "text": "Skip to main menu",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "Skip to main content",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 101
+            },
+            {
+              "tagName": "INPUT",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "INPUT",
+              "text": "",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Donate",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Login",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "0 items Cart",
+              "delay": 104
+            },
+            {
+              "tagName": "A",
+              "text": "Life with Vision Loss",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Educational Resources",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility Solutions",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Resources",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "R&D",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Louis",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "Catalogs",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Shop",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Contact",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "Support APH",
+              "delay": 104
+            },
+            {
+              "tagName": "A",
+              "text": "Inquire About Braille",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Inquire About Accessible Tests",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Inquire About Accessible Audio",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Inquire About Tactile Graphics",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "Inquire About Large Print",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "GoodMaps",
+              "delay": 101
+            },
+            {
+              "tagName": "INPUT",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "INPUT",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "INPUT",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "INPUT",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "INPUT",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "TEXTAREA",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "INPUT",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "INPUT",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "INPUT",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "INPUT",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "INPUT",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "INPUT",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "INPUT",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "INPUT",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "INPUT",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "INPUT",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "INPUT",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "INPUT",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "INPUT",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "INPUT",
+              "text": "",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Home",
+              "delay": 104
+            },
+            {
+              "tagName": "A",
+              "text": "Life with Vision Loss",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Educational Resources",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility Solutions",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Resources",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "R&D",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Louis",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Federal Quota",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "About Us",
+              "delay": 104
+            },
+            {
+              "tagName": "A",
+              "text": "Blog",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Newsroom",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Annual Reports",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Careers",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "Customer Service",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Corporate Ethics",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "Donor Privacy Policy",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Terms of Use",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "Museum & Tours",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Awards from APH",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "Board of Trustees",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Business Opportunities",
+              "delay": 104
+            },
+            {
+              "tagName": "A",
+              "text": "Return Policy",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Order Status",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Contact",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 104
+            },
+            {
+              "tagName": "A",
+              "text": "Privacy Policy",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility",
+              "delay": 103
+            },
+            {
+              "tagName": "A",
+              "text": "Manuals & Downloads",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "APH Catalogs",
+              "delay": 101
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.aph.org/accessibility-solutions/",
+      "what": "URL",
+      "result": "https://www.aph.org/accessibility-solutions/"
+    },
+    {
+      "type": "test",
+      "which": "hover",
+      "headSize": 20,
+      "headSampleSize": 20,
+      "tailSampleSize": 15,
+      "withItems": true,
+      "what": "hover-caused content changes",
+      "url": "https://www.aph.org/accessibility-solutions/",
+      "result": {
+        "totals": {
+          "triggers": 103,
+          "headTriggers": 20,
+          "tailTriggers": 83,
+          "impactTriggers": 16,
+          "additions": 101,
+          "removals": 0,
+          "opacityChanges": 0,
+          "opacityImpact": 0,
+          "unhoverables": 2
+        },
+        "items": {
+          "head": {
+            "impactTriggers": [
+              {
+                "tagName": "LI",
+                "text": "0itemsCartTotal:$0.00ViewCartCheckout",
+                "additions": 8,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "A",
+                "text": "0itemsCart",
+                "additions": 8,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "LI",
+                "text": "LifewithVisionLossRecentDiagnosisKidswithVisionLos",
+                "additions": 5,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "A",
+                "text": "LifewithVisionLoss",
+                "additions": 5,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "LI",
+                "text": "EducationalResourcesCoreCurriculumExpandedCoreCurr",
+                "additions": 9,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "A",
+                "text": "EducationalResources",
+                "additions": 9,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "LI",
+                "text": "ResourcesAPHPressAPHLibraryAPHMuseumHallofFameTact",
+                "additions": 8,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "A",
+                "text": "Resources",
+                "additions": 8,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "LI",
+                "text": "R&DGetInvolvedProductDevelopmentResearchResources",
+                "additions": 4,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "A",
+                "text": "R&D",
+                "additions": 4,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              }
+            ],
+            "unhoverables": [
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Skiptomainmenu"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Skiptomaincontent"
+              }
+            ]
+          },
+          "tail": {
+            "impactTriggers": [
+              {
+                "tagName": "A",
+                "text": "SupportAPH",
+                "additions": 6,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              }
+            ],
+            "unhoverables": []
+          }
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.aph.org/accessibility-solutions/",
+      "what": "URL",
+      "result": "https://www.aph.org/accessibility-solutions/"
+    },
+    {
+      "type": "test",
+      "which": "role",
+      "what": "roles",
+      "url": "https://www.aph.org/accessibility-solutions/",
+      "result": {
+        "roleElements": 2,
+        "badRoleElements": 0,
+        "redundantRoleElements": 0,
+        "tagNames": {}
+      }
+    }
+  ],
+  "timeStamp": "49li4",
+  "startTime": "2022-07-16T21:30:38",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "hover",
+      38
+    ],
+    [
+      "focInd",
+      7
+    ],
+    [
+      "role",
+      0
+    ]
+  ],
+  "logCount": 51,
+  "logSize": 882,
+  "errorLogCount": 0,
+  "errorLogSize": 0,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-16T21:31:30",
+  "elapsedSeconds": 51
+}

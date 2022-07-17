@@ -313,15 +313,17 @@
           "total": 62,
           "types": {
             "indicatorMissing": {
-              "total": 0,
-              "tagNames": {}
+              "total": 5,
+              "tagNames": {
+                "DIV": 3,
+                "BUTTON": 2
+              }
             },
             "nonOutlinePresent": {
-              "total": 10,
+              "total": 5,
               "tagNames": {
                 "A": 2,
-                "DIV": 3,
-                "BUTTON": 5
+                "BUTTON": 3
               }
             },
             "outlinePresent": {
@@ -337,31 +339,32 @@
           }
         },
         "items": {
-          "indicatorMissing": [],
+          "indicatorMissing": [
+            {
+              "tagName": "DIV",
+              "text": ""
+            },
+            {
+              "tagName": "DIV",
+              "text": ""
+            },
+            {
+              "tagName": "BUTTON",
+              "text": ""
+            },
+            {
+              "tagName": "BUTTON",
+              "text": ""
+            },
+            {
+              "tagName": "DIV",
+              "text": ""
+            }
+          ],
           "nonOutlinePresent": [
             {
               "tagName": "A",
               "text": "Skip to Content"
-            },
-            {
-              "tagName": "DIV",
-              "text": ""
-            },
-            {
-              "tagName": "DIV",
-              "text": ""
-            },
-            {
-              "tagName": "BUTTON",
-              "text": ""
-            },
-            {
-              "tagName": "BUTTON",
-              "text": ""
-            },
-            {
-              "tagName": "DIV",
-              "text": ""
             },
             {
               "tagName": "A",
@@ -409,7 +412,7 @@
             {
               "tagName": "A",
               "text": "Scan My Site",
-              "delay": 101
+              "delay": 100
             },
             {
               "tagName": "INPUT",
@@ -464,7 +467,7 @@
             {
               "tagName": "A",
               "text": "Yes, Show Me!",
-              "delay": 101
+              "delay": 100
             },
             {
               "tagName": "A",
@@ -3178,12 +3181,12 @@
           "triggers": 139,
           "headTriggers": 20,
           "tailTriggers": 119,
-          "impactTriggers": 9,
+          "impactTriggers": 17,
           "additions": 0,
           "removals": 0,
-          "opacityChanges": 9,
-          "opacityImpact": 9,
-          "unhoverables": 18
+          "opacityChanges": 17,
+          "opacityImpact": 17,
+          "unhoverables": 17
         },
         "items": {
           "head": {
@@ -3284,14 +3287,17 @@
                 "removals": 0,
                 "opacityChanges": 1,
                 "opacityImpact": 1
+              },
+              {
+                "tagName": "BUTTON",
+                "text": "<spanclass=\"fafa-chevron-left\"aria-hidden=\"true\"><",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 1
               }
             ],
             "unhoverables": [
-              {
-                "tagName": "A",
-                "id": "",
-                "text": "Monsido'sEuropeansupport:+4589888505"
-              },
               {
                 "tagName": "LI",
                 "id": "",
@@ -3842,20 +3848,36 @@
       "url": "https://monsido.com/",
       "result": {
         "roleElements": 7,
-        "badRoleElements": 6,
+        "badRoleElements": 3,
+        "redundantRoleElements": 3,
         "tagNames": {
           "NAV": {
-            "navigation": 1,
-            "navigation ": 1
+            "navigation": {
+              "bad": 0,
+              "redundant": 1
+            },
+            "navigation ": {
+              "bad": 1,
+              "redundant": 0
+            }
           },
           "MAIN": {
-            "main": 1
+            "main": {
+              "bad": 0,
+              "redundant": 1
+            }
           },
           "DIV": {
-            "button": 2
+            "button": {
+              "bad": 2,
+              "redundant": 0
+            }
           },
           "BUTTON": {
-            "button": 1
+            "button": {
+              "bad": 0,
+              "redundant": 1
+            }
           }
         }
       }
@@ -19386,7 +19408,7 @@
   "endTime": "2022-07-10T01:02:24",
   "elapsedSeconds": 121,
   "score": {
-    "scoreProcID": "sp12a",
+    "scoreProcID": "sp12b",
     "logWeights": {
       "logCount": 0.5,
       "logSize": 0.01,
@@ -19411,11 +19433,11 @@
         "bulk": 1,
         "embAc": 24,
         "focAll": 4,
-        "focInd": 10,
+        "focInd": 20,
         "focOp": 14,
-        "hover": 39,
+        "hover": 56,
         "linkUl": 470,
-        "role": 6,
+        "role": 9,
         "styleDiff": 59,
         "zIndex": 105
       },
@@ -19505,7 +19527,7 @@
         "focusIndication": {
           "testaro": {
             "focInd": {
-              "score": 10,
+              "score": 20,
               "what": "Focused element displaying no or nostandard focus indicator"
             }
           }
@@ -19521,7 +19543,7 @@
         "hoverSurprise": {
           "testaro": {
             "hover": {
-              "score": 10,
+              "score": 14,
               "what": "Content changes caused by hovering"
             }
           }
@@ -19537,7 +19559,7 @@
         "roleBad": {
           "testaro": {
             "role": {
-              "score": 5,
+              "score": 7,
               "what": "Nonexistent or implicit-overriding role"
             }
           }
@@ -19658,7 +19680,7 @@
           "alfa": {
             "r74": {
               "score": 10,
-              "what": "Paragraph text has absolute font size"
+              "what": "Paragraph text has an absolute font size"
             }
           }
         },
@@ -19674,7 +19696,7 @@
           "alfa": {
             "r80": {
               "score": 4,
-              "what": "Paragraph text has absolute line height"
+              "what": "Paragraph text has an absolute line height"
             }
           }
         },
@@ -19895,7 +19917,7 @@
       "ibm": 100
     },
     "summary": {
-      "total": 1068,
+      "total": 1084,
       "log": 19,
       "preventions": 100,
       "solos": 0,
@@ -19933,6 +19955,10 @@
           "score": 23
         },
         {
+          "groupName": "focusIndication",
+          "score": 22
+        },
+        {
           "groupName": "activeEmbedding",
           "score": 20
         },
@@ -19945,16 +19971,12 @@
           "score": 17
         },
         {
+          "groupName": "hoverSurprise",
+          "score": 16
+        },
+        {
           "groupName": "focusableOperable",
           "score": 13
-        },
-        {
-          "groupName": "focusIndication",
-          "score": 12
-        },
-        {
-          "groupName": "hoverSurprise",
-          "score": 12
         },
         {
           "groupName": "fontSizeAbsolute",
@@ -19969,6 +19991,10 @@
           "score": 10
         },
         {
+          "groupName": "roleBad",
+          "score": 9
+        },
+        {
           "groupName": "contrastAA",
           "score": 9
         },
@@ -19979,10 +20005,6 @@
         {
           "groupName": "contrastRisk",
           "score": 8
-        },
-        {
-          "groupName": "roleBad",
-          "score": 7
         },
         {
           "groupName": "invisibleLabel",

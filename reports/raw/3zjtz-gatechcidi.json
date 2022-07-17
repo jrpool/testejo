@@ -303,13 +303,15 @@
           "total": 53,
           "types": {
             "indicatorMissing": {
-              "total": 0,
-              "tagNames": {}
+              "total": 6,
+              "tagNames": {
+                "A": 6
+              }
             },
             "nonOutlinePresent": {
-              "total": 53,
+              "total": 47,
               "tagNames": {
-                "A": 52,
+                "A": 46,
                 "BUTTON": 1
               }
             },
@@ -321,7 +323,32 @@
           }
         },
         "items": {
-          "indicatorMissing": [],
+          "indicatorMissing": [
+            {
+              "tagName": "A",
+              "text": "Center for Inclusive Design and Innovation"
+            },
+            {
+              "tagName": "A",
+              "text": "College of Design"
+            },
+            {
+              "tagName": "A",
+              "text": ".st0{fill:#AA985D;}"
+            },
+            {
+              "tagName": "A",
+              "text": ".st0{fill:#AA985D;}"
+            },
+            {
+              "tagName": "A",
+              "text": ".st0{fill:#AA985D;}"
+            },
+            {
+              "tagName": "A",
+              "text": ".st0{fill:#AA985D;}"
+            }
+          ],
           "nonOutlinePresent": [
             {
               "tagName": "A",
@@ -338,14 +365,6 @@
             {
               "tagName": "A",
               "text": ""
-            },
-            {
-              "tagName": "A",
-              "text": "Center for Inclusive Design and Innovation"
-            },
-            {
-              "tagName": "A",
-              "text": "College of Design"
             },
             {
               "tagName": "A",
@@ -414,22 +433,6 @@
             {
               "tagName": "A",
               "text": "Schedule A Tour"
-            },
-            {
-              "tagName": "A",
-              "text": ".st0{fill:#AA985D;}"
-            },
-            {
-              "tagName": "A",
-              "text": ".st0{fill:#AA985D;}"
-            },
-            {
-              "tagName": "A",
-              "text": ".st0{fill:#AA985D;}"
-            },
-            {
-              "tagName": "A",
-              "text": ".st0{fill:#AA985D;}"
             },
             {
               "tagName": "A",
@@ -1332,7 +1335,7 @@
           "removals": 0,
           "opacityChanges": 0,
           "opacityImpact": 0,
-          "unhoverables": 3
+          "unhoverables": 5
         },
         "items": {
           "head": {
@@ -1357,7 +1360,18 @@
           },
           "tail": {
             "impactTriggers": [],
-            "unhoverables": []
+            "unhoverables": [
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "General"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Legal"
+              }
+            ]
           }
         }
       }
@@ -1602,25 +1616,50 @@
       "url": "https://cidi.gatech.edu/",
       "result": {
         "roleElements": 25,
-        "badRoleElements": 15,
+        "badRoleElements": 8,
+        "redundantRoleElements": 7,
         "tagNames": {
           "HEADER": {
-            "banner": 1
+            "banner": {
+              "bad": 1,
+              "redundant": 0
+            }
           },
           "DIV": {
-            "navigation": 2,
-            "main": 1,
-            "complementary": 3,
-            "contentinfo": 1
+            "navigation": {
+              "bad": 2,
+              "redundant": 0
+            },
+            "main": {
+              "bad": 1,
+              "redundant": 0
+            },
+            "complementary": {
+              "bad": 3,
+              "redundant": 0
+            },
+            "contentinfo": {
+              "bad": 1,
+              "redundant": 0
+            }
           },
           "NAV": {
-            "navigation": 5
+            "navigation": {
+              "bad": 0,
+              "redundant": 5
+            }
           },
           "BUTTON": {
-            "button": 1
+            "button": {
+              "bad": 0,
+              "redundant": 1
+            }
           },
           "ARTICLE": {
-            "article": 1
+            "article": {
+              "bad": 0,
+              "redundant": 1
+            }
           }
         }
       }

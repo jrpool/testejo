@@ -788,16 +788,26 @@
       "url": "https://www.accessibilityassociation.org/s/",
       "result": {
         "roleElements": 3,
-        "badRoleElements": 3,
+        "badRoleElements": 2,
+        "redundantRoleElements": 1,
         "tagNames": {
           "HEADER": {
-            "banner": 1
+            "banner": {
+              "bad": 1,
+              "redundant": 0
+            }
           },
           "DIV": {
-            "main": 1
+            "main": {
+              "bad": 1,
+              "redundant": 0
+            }
           },
           "BUTTON": {
-            "button": 1
+            "button": {
+              "bad": 0,
+              "redundant": 1
+            }
           }
         }
       }
@@ -7187,7 +7197,7 @@
   "endTime": "2022-07-06T00:54:21",
   "elapsedSeconds": 238,
   "score": {
-    "scoreProcID": "sp12a",
+    "scoreProcID": "sp12b",
     "logWeights": {
       "logCount": 0.5,
       "logSize": 0.01,
@@ -7211,7 +7221,7 @@
       "testaro": {
         "focAll": 18,
         "linkUl": 30,
-        "role": 3,
+        "role": 5,
         "styleDiff": 30,
         "zIndex": 23
       },
@@ -7276,7 +7286,7 @@
         "roleBad": {
           "testaro": {
             "role": {
-              "score": 2,
+              "score": 4,
               "what": "Nonexistent or implicit-overriding role"
             }
           }
@@ -7520,7 +7530,7 @@
       "ibm": 100
     },
     "summary": {
-      "total": 929,
+      "total": 931,
       "log": 538,
       "preventions": 100,
       "solos": 0,
@@ -7566,6 +7576,10 @@
           "score": 8
         },
         {
+          "groupName": "roleBad",
+          "score": 6
+        },
+        {
           "groupName": "duplicateID",
           "score": 6
         },
@@ -7584,10 +7598,6 @@
         {
           "groupName": "horizontalScrolling",
           "score": 5
-        },
-        {
-          "groupName": "roleBad",
-          "score": 4
         },
         {
           "groupName": "skipRepeatedContent",

@@ -303,14 +303,14 @@
           "total": 44,
           "types": {
             "indicatorMissing": {
-              "total": 0,
-              "tagNames": {}
-            },
-            "nonOutlinePresent": {
               "total": 2,
               "tagNames": {
                 "DIV": 2
               }
+            },
+            "nonOutlinePresent": {
+              "total": 0,
+              "tagNames": {}
             },
             "outlinePresent": {
               "total": 42,
@@ -325,8 +325,7 @@
           }
         },
         "items": {
-          "indicatorMissing": [],
-          "nonOutlinePresent": [
+          "indicatorMissing": [
             {
               "tagName": "DIV",
               "text": ""
@@ -336,6 +335,7 @@
               "text": "Privatsphäre-EinstellungenWir setzen auf unserer Website Cookies ein. Einige von ihnen sind notwendi"
             }
           ],
+          "nonOutlinePresent": [],
           "outlinePresent": [
             {
               "tagName": "INPUT",
@@ -1236,7 +1236,7 @@
           "removals": 0,
           "opacityChanges": 0,
           "opacityImpact": 0,
-          "unhoverables": 33
+          "unhoverables": 31
         },
         "items": {
           "head": {
@@ -1348,14 +1348,44 @@
             "impactTriggers": [],
             "unhoverables": [
               {
-                "tagName": "LI",
+                "tagName": "A",
                 "id": "",
-                "text": "ErklärungzurBarrierefreiheit"
+                "text": "StandderTechnik"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Datenschutz"
               },
               {
                 "tagName": "LI",
                 "id": "",
-                "text": "Datenschutz"
+                "text": "Barrieremelden✉"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Mehrerfahren:CountdownzurvollendigitalenBarrierefr"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Glossar"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Webauftritt"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Barrieremelden✉"
+              },
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Impressum"
               },
               {
                 "tagName": "A",
@@ -1363,54 +1393,14 @@
                 "text": "Mehrerfahren:DerersteBerichtüberdenStandderBarrier"
               },
               {
-                "tagName": "A",
-                "id": "",
-                "text": "Barrierefreiheit"
-              },
-              {
-                "tagName": "A",
-                "id": "",
-                "text": "Barrierefreiheit"
-              },
-              {
-                "tagName": "A",
-                "id": "",
-                "text": "Barrierefreiheit"
-              },
-              {
-                "tagName": "A",
-                "id": "",
-                "text": "Datenschutz"
-              },
-              {
-                "tagName": "A",
-                "id": "",
-                "text": "AlleNachrichten"
-              },
-              {
-                "tagName": "A",
-                "id": "",
-                "text": "Twitter"
-              },
-              {
                 "tagName": "LI",
                 "id": "",
+                "text": "ErklärungzurBarrierefreiheit"
+              },
+              {
+                "tagName": "A",
+                "id": "",
                 "text": "Twitter"
-              },
-              {
-                "tagName": "A",
-                "id": "",
-                "text": "DigitaleBarrierefreiheit"
-              },
-              {
-                "tagName": "A",
-                "id": "",
-                "text": "Mehrerfahren:Veranstaltung:WebinarAGSoftwareundAGM"
-              },
-              {
-                "tagName": "A",
-                "id": "",
-                "text": "nachoben"
               }
             ]
           }
@@ -1687,13 +1677,20 @@
       "url": "https://www.bfit-bund.de/DE/Home/home_node.html",
       "result": {
         "roleElements": 3,
-        "badRoleElements": 3,
+        "badRoleElements": 1,
+        "redundantRoleElements": 2,
         "tagNames": {
           "NAV": {
-            "navigation": 2
+            "navigation": {
+              "bad": 0,
+              "redundant": 2
+            }
           },
           "FOOTER": {
-            "contentinfo": 1
+            "contentinfo": {
+              "bad": 1,
+              "redundant": 0
+            }
           }
         }
       }

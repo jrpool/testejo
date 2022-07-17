@@ -312,7 +312,7 @@
             },
             "outlinePresent": {
               "total": 75,
-              "meanDelay": 29,
+              "meanDelay": 28,
               "tagNames": {
                 "A": 67,
                 "BUTTON": 8
@@ -341,7 +341,7 @@
             },
             {
               "tagName": "A",
-              "text": "1.866.599.0328",
+              "text": "1.866.599.0338",
               "delay": 0
             },
             {
@@ -362,22 +362,22 @@
             {
               "tagName": "BUTTON",
               "text": "Solutions",
-              "delay": 102
+              "delay": 101
             },
             {
               "tagName": "BUTTON",
               "text": "Software",
-              "delay": 101
+              "delay": 100
             },
             {
               "tagName": "BUTTON",
               "text": "Services",
-              "delay": 101
+              "delay": 100
             },
             {
               "tagName": "BUTTON",
               "text": "Resources",
-              "delay": 102
+              "delay": 104
             },
             {
               "tagName": "BUTTON",
@@ -387,12 +387,12 @@
             {
               "tagName": "BUTTON",
               "text": "Compliance",
-              "delay": 103
+              "delay": 101
             },
             {
               "tagName": "A",
               "text": "Free Risk Assessment",
-              "delay": 165
+              "delay": 106
             },
             {
               "tagName": "A",
@@ -417,22 +417,22 @@
             {
               "tagName": "A",
               "text": "Learn How We Can Help",
-              "delay": 101
+              "delay": 100
             },
             {
               "tagName": "A",
               "text": "Find Out How",
-              "delay": 114
+              "delay": 102
             },
             {
               "tagName": "A",
               "text": "Obtain a VPAT",
-              "delay": 101
+              "delay": 103
             },
             {
               "tagName": "A",
               "text": "Learn How",
-              "delay": 129
+              "delay": 101
             },
             {
               "tagName": "A",
@@ -672,17 +672,17 @@
             {
               "tagName": "A",
               "text": "Visit Level Access on Facebook in new windowOpens in new window",
-              "delay": 102
+              "delay": 100
             },
             {
               "tagName": "A",
               "text": "Visit Level Access on LinkedIn in new windowOpens in new window",
-              "delay": 102
+              "delay": 100
             },
             {
               "tagName": "A",
               "text": "Visit Level Access on YouTube in new windowOpens in new window",
-              "delay": 103
+              "delay": 104
             },
             {
               "tagName": "A",
@@ -2548,13 +2548,23 @@
       "result": {
         "roleElements": 68,
         "badRoleElements": 3,
+        "redundantRoleElements": 0,
         "tagNames": {
           "A": {
-            "button": 1
+            "button": {
+              "bad": 1,
+              "redundant": 0
+            }
           },
           "DIV": {
-            "group": 1,
-            "status": 1
+            "group": {
+              "bad": 1,
+              "redundant": 0
+            },
+            "status": {
+              "bad": 1,
+              "redundant": 0
+            }
           }
         }
       }
@@ -14182,7 +14192,7 @@
   "endTime": "2022-07-06T01:05:34",
   "elapsedSeconds": 156,
   "score": {
-    "scoreProcID": "sp12a",
+    "scoreProcID": "sp12b",
     "logWeights": {
       "logCount": 0.5,
       "logSize": 0.01,
@@ -14208,7 +14218,7 @@
         "focOp": 2,
         "hover": 2,
         "linkUl": 104,
-        "role": 3,
+        "role": 6,
         "styleDiff": 38,
         "zIndex": 30
       },
@@ -14294,7 +14304,7 @@
         "roleBad": {
           "testaro": {
             "role": {
-              "score": 2,
+              "score": 5,
               "what": "Nonexistent or implicit-overriding role"
             }
           }
@@ -14355,7 +14365,7 @@
           "alfa": {
             "r74": {
               "score": 22,
-              "what": "Paragraph text has absolute font size"
+              "what": "Paragraph text has an absolute font size"
             }
           }
         },
@@ -14572,7 +14582,7 @@
     },
     "preventionScores": {},
     "summary": {
-      "total": 529,
+      "total": 532,
       "log": 119,
       "preventions": 0,
       "solos": 0,
@@ -14626,6 +14636,10 @@
           "score": 8
         },
         {
+          "groupName": "roleBad",
+          "score": 7
+        },
+        {
           "groupName": "linkPair",
           "score": 7
         },
@@ -14647,10 +14661,6 @@
         },
         {
           "groupName": "focusableOperable",
-          "score": 4
-        },
-        {
-          "groupName": "roleBad",
           "score": 4
         },
         {

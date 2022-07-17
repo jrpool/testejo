@@ -408,7 +408,7 @@
             {
               "tagName": "A",
               "text": "Take a closer look",
-              "delay": 101
+              "delay": 100
             },
             {
               "tagName": "A",
@@ -418,7 +418,7 @@
             {
               "tagName": "A",
               "text": "Take a closer look",
-              "delay": 201
+              "delay": 203
             },
             {
               "tagName": "A",
@@ -428,7 +428,7 @@
             {
               "tagName": "A",
               "text": "Take a closer look",
-              "delay": 201
+              "delay": 202
             },
             {
               "tagName": "A",
@@ -1135,11 +1135,11 @@
           "triggers": 34,
           "headTriggers": 20,
           "tailTriggers": 14,
-          "impactTriggers": 6,
+          "impactTriggers": 7,
           "additions": 0,
           "removals": 0,
-          "opacityChanges": 12,
-          "opacityImpact": 9,
+          "opacityChanges": 13,
+          "opacityImpact": 12,
           "unhoverables": 0
         },
         "items": {
@@ -1196,6 +1196,14 @@
                 "removals": 0,
                 "opacityChanges": 1,
                 "opacityImpact": 0
+              },
+              {
+                "tagName": "A",
+                "text": "MORE",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 3
               }
             ],
             "unhoverables": []
@@ -1473,6 +1481,7 @@
       "result": {
         "roleElements": 0,
         "badRoleElements": 0,
+        "redundantRoleElements": 0,
         "tagNames": {}
       }
     },

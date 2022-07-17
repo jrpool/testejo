@@ -1,0 +1,559 @@
+{
+  "id": "49li4-a11yoz",
+  "host": {
+    "id": "a11yoz",
+    "which": "https://www.accessibilityoz.com/",
+    "what": "AccessibilityOz"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-16T21:23:08"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-16T21:24:10"
+    }
+  ],
+  "script": {
+    "id": "tp12",
+    "what": "Alfa, Axe, HTML CodeSniffer, IBM, Tenon, WAVE, and 16 custom tests",
+    "strict": true,
+    "timeLimit": 150,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.accessibilityoz.com/",
+        "what": "AccessibilityOz"
+      },
+      {
+        "type": "test",
+        "which": "focInd",
+        "revealAll": false,
+        "allowedDelay": 250,
+        "withItems": true,
+        "what": "focus indicators"
+      },
+      {
+        "type": "test",
+        "which": "hover",
+        "headSize": 20,
+        "headSampleSize": 20,
+        "tailSampleSize": 15,
+        "withItems": true,
+        "what": "hover impacts"
+      },
+      {
+        "type": "test",
+        "which": "role",
+        "what": "validity and necessity of role assignments"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.accessibilityoz.com/",
+      "what": "AccessibilityOz",
+      "result": "https://www.accessibilityoz.com/"
+    },
+    {
+      "type": "test",
+      "which": "focInd",
+      "revealAll": false,
+      "allowedDelay": 250,
+      "withItems": true,
+      "what": "focus indicators",
+      "url": "https://www.accessibilityoz.com/",
+      "result": {
+        "totals": {
+          "total": 65,
+          "types": {
+            "indicatorMissing": {
+              "total": 5,
+              "tagNames": {
+                "A": 5
+              }
+            },
+            "nonOutlinePresent": {
+              "total": 1,
+              "tagNames": {
+                "INPUT": 1
+              }
+            },
+            "outlinePresent": {
+              "total": 59,
+              "meanDelay": 0,
+              "tagNames": {
+                "A": 58,
+                "BUTTON": 1
+              }
+            }
+          }
+        },
+        "items": {
+          "indicatorMissing": [
+            {
+              "tagName": "A",
+              "text": "Pause"
+            },
+            {
+              "tagName": "A",
+              "text": "Previous"
+            },
+            {
+              "tagName": "A",
+              "text": "Next"
+            },
+            {
+              "tagName": "A",
+              "text": ""
+            },
+            {
+              "tagName": "A",
+              "text": ""
+            }
+          ],
+          "nonOutlinePresent": [
+            {
+              "tagName": "INPUT",
+              "text": ""
+            }
+          ],
+          "outlinePresent": [
+            {
+              "tagName": "A",
+              "text": "Skip to the content",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Login",
+              "delay": 0
+            },
+            {
+              "tagName": "BUTTON",
+              "text": "Find",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "AccessibilityOz",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "About",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Services",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Training",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Products",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Factsheets",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Resources",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Blog",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Contact Us",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Testing\nwebsites and applications",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Mobile and\ntablet accessibility testing",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility\ntesting during the web development cycle",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Accessible\nWord, PDF and HTML",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Video\naccessibility",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "User testing\nwith assistive technologies",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Support\nhours and OzWiki access",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Training",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Online Training",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility Day",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Virtual workshop in July: Testing Mobile Sites and Native Apps for Accessibility",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Check out these virtual accessibility events!",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "@accessibilityoz",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "https://t.co/SbzNl4UcHi",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "2 days ago",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "https://t.co/vYvykTgNff",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "3 days ago",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "https://t.co/RlrMckFxxB",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "6 days ago",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "@LFLegal",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "https://t.co/7t2ZBO2B5r",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "2 weeks ago",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "https://t.co/DCuNeli5mY",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "3 weeks ago",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "https://t.co/mhku8rzXCz",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "3 weeks ago",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Find out more",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "View the full list",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Contact us online",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "@accessibilityoz",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "accessibilityoz",
+              "delay": 0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.accessibilityoz.com/",
+      "what": "URL",
+      "result": "https://www.accessibilityoz.com/"
+    },
+    {
+      "type": "test",
+      "which": "hover",
+      "headSize": 20,
+      "headSampleSize": 20,
+      "tailSampleSize": 15,
+      "withItems": true,
+      "what": "hover-caused content changes",
+      "url": "https://www.accessibilityoz.com/",
+      "result": {
+        "totals": {
+          "triggers": 75,
+          "headTriggers": 20,
+          "tailTriggers": 55,
+          "impactTriggers": 0,
+          "additions": 0,
+          "removals": 0,
+          "opacityChanges": 0,
+          "opacityImpact": 0,
+          "unhoverables": 1
+        },
+        "items": {
+          "head": {
+            "impactTriggers": [],
+            "unhoverables": []
+          },
+          "tail": {
+            "impactTriggers": [],
+            "unhoverables": [
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "<divclass=\"slide-content\"><p><ahref=\"/services/tes"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.accessibilityoz.com/",
+      "what": "URL",
+      "result": "https://www.accessibilityoz.com/"
+    },
+    {
+      "type": "test",
+      "which": "role",
+      "what": "roles",
+      "url": "https://www.accessibilityoz.com/",
+      "result": {
+        "roleElements": 78,
+        "badRoleElements": 5,
+        "redundantRoleElements": 1,
+        "tagNames": {
+          "HEADER": {
+            "banner": {
+              "bad": 1,
+              "redundant": 0
+            }
+          },
+          "NAV": {
+            "navigation": {
+              "bad": 0,
+              "redundant": 1
+            }
+          },
+          "A": {
+            "button": {
+              "bad": 3,
+              "redundant": 0
+            }
+          },
+          "FOOTER": {
+            "contentinfo": {
+              "bad": 1,
+              "redundant": 0
+            }
+          }
+        }
+      }
+    }
+  ],
+  "timeStamp": "49li4",
+  "startTime": "2022-07-16T21:23:08",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "hover",
+      54
+    ],
+    [
+      "focInd",
+      2
+    ],
+    [
+      "role",
+      0
+    ]
+  ],
+  "logCount": 12,
+  "logSize": 1947,
+  "errorLogCount": 6,
+  "errorLogSize": 1722,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-16T21:24:10",
+  "elapsedSeconds": 61
+}

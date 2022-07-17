@@ -1,0 +1,599 @@
+{
+  "id": "49li4-peat",
+  "host": {
+    "id": "peat",
+    "which": "https://www.peatworks.org/",
+    "what": "PEAT"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-16T22:01:56"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-16T22:02:45"
+    }
+  ],
+  "script": {
+    "id": "tp12",
+    "what": "Alfa, Axe, HTML CodeSniffer, IBM, Tenon, WAVE, and 16 custom tests",
+    "strict": true,
+    "timeLimit": 150,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.peatworks.org/",
+        "what": "PEAT"
+      },
+      {
+        "type": "test",
+        "which": "focInd",
+        "revealAll": false,
+        "allowedDelay": 250,
+        "withItems": true,
+        "what": "focus indicators"
+      },
+      {
+        "type": "test",
+        "which": "hover",
+        "headSize": 20,
+        "headSampleSize": 20,
+        "tailSampleSize": 15,
+        "withItems": true,
+        "what": "hover impacts"
+      },
+      {
+        "type": "test",
+        "which": "role",
+        "what": "validity and necessity of role assignments"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.peatworks.org/",
+      "what": "PEAT",
+      "result": "https://www.peatworks.org/"
+    },
+    {
+      "type": "test",
+      "which": "focInd",
+      "revealAll": false,
+      "allowedDelay": 250,
+      "withItems": true,
+      "what": "focus indicators",
+      "url": "https://www.peatworks.org/",
+      "result": {
+        "totals": {
+          "total": 60,
+          "types": {
+            "indicatorMissing": {
+              "total": 10,
+              "tagNames": {
+                "INPUT": 6,
+                "A": 4
+              }
+            },
+            "nonOutlinePresent": {
+              "total": 0,
+              "tagNames": {}
+            },
+            "outlinePresent": {
+              "total": 50,
+              "meanDelay": 0,
+              "tagNames": {
+                "A": 50
+              }
+            }
+          }
+        },
+        "items": {
+          "indicatorMissing": [
+            {
+              "tagName": "INPUT",
+              "text": ""
+            },
+            {
+              "tagName": "INPUT",
+              "text": ""
+            },
+            {
+              "tagName": "A",
+              "text": "Go to the Future of Work podcast"
+            },
+            {
+              "tagName": "A",
+              "text": "Go to PEAT’s Impact page"
+            },
+            {
+              "tagName": "A",
+              "text": "Go to the Accessibility Playbook for Emerging Technology Initiatives"
+            },
+            {
+              "tagName": "A",
+              "text": "Learn More About PEAT"
+            },
+            {
+              "tagName": "INPUT",
+              "text": ""
+            },
+            {
+              "tagName": "INPUT",
+              "text": ""
+            },
+            {
+              "tagName": "INPUT",
+              "text": ""
+            },
+            {
+              "tagName": "INPUT",
+              "text": ""
+            }
+          ],
+          "nonOutlinePresent": [],
+          "outlinePresent": [
+            {
+              "tagName": "A",
+              "text": "Skip to content",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "twitter",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "linkedin",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "About PEAT",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Resource Library",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Contact",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "The Future of Work",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Employer Toolkits",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Resources for Your Job",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Hear from accessibility experts",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Make virtual meetings accessible",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Handle captioning & ASL requests",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Subscribe to PEAT’s Newsletter",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Inclusive XR & Hybrid Work Toolkit",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "AI & Disability Inclusion",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Telework & Accessibility",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Inclusive XR in the Workplace",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "DOJ Affirms the ADA Applies to Digital Accessibility",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Read More »",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Extended Reality & Mental Health Support",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Read More »",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Nondiscrimination, Technology and the Americans with Disabilities Act (ADA)",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Read More »",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Check Out PEAT’s axe-con & CSUN Slides",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Read More »",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Learn more about our Staff Training Resources.",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Learn more about TalentWorks.",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Learn more about Buy-IT!.",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Learn more about Policy Matters.",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "procurement language",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Explore 175 settlements addressing how the ADA applies to digital accessibility",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Use this checklist",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Contact Us",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "About PEAT",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Resource Library",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "The Future of Work",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Digital Accessibility Toolkits",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Policy and Workforce Development",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Podcast: A Personal Story of Long COVID & Disability Disclosure",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Creating a Truly Inclusive Workplace: A Conversation Between Colleagues with Disabilities",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "DOJ Affirms the ADA Applies to Digital Accessibility",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "EEOC Informal Discussion Letters Relating to Selection, Pre-Employment Inquiries, and Confidentialit",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Office of Disability Employment Policy",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Wheelhouse Group",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Privacy and Security Statement",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility Statement",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "twitter",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "linkedin",
+              "delay": 0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.peatworks.org/",
+      "what": "URL",
+      "result": "https://www.peatworks.org/"
+    },
+    {
+      "type": "test",
+      "which": "hover",
+      "headSize": 20,
+      "headSampleSize": 20,
+      "tailSampleSize": 15,
+      "withItems": true,
+      "what": "hover-caused content changes",
+      "url": "https://www.peatworks.org/",
+      "result": {
+        "totals": {
+          "triggers": 72,
+          "headTriggers": 20,
+          "tailTriggers": 52,
+          "impactTriggers": 13,
+          "additions": 146,
+          "removals": 0,
+          "opacityChanges": 5,
+          "opacityImpact": 11,
+          "unhoverables": 1
+        },
+        "items": {
+          "head": {
+            "impactTriggers": [
+              {
+                "tagName": "A",
+                "text": "twitter",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 2
+              },
+              {
+                "tagName": "A",
+                "text": "linkedin",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 2
+              },
+              {
+                "tagName": "LI",
+                "text": "AboutPEATWhatWeDoPEATThinkTankPEATNewsletterBlog",
+                "additions": 13,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "A",
+                "text": "AboutPEAT",
+                "additions": 13,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "LI",
+                "text": "TheFutureofWorkArtificialIntelligence(AI)Autonomou",
+                "additions": 22,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "A",
+                "text": "TheFutureofWork",
+                "additions": 22,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "LI",
+                "text": "EmployerToolkitsTheAccessibilityPlaybookforEmergin",
+                "additions": 28,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "A",
+                "text": "EmployerToolkits",
+                "additions": 28,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "LI",
+                "text": "ResourcesforYourJobHR,HiringManagers&RecruitersOrg",
+                "additions": 10,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "A",
+                "text": "ResourcesforYourJob",
+                "additions": 10,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              }
+            ],
+            "unhoverables": [
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "Skiptocontent"
+              }
+            ]
+          },
+          "tail": {
+            "impactTriggers": [
+              {
+                "tagName": "A",
+                "text": "twitter",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 1,
+                "opacityImpact": 2
+              }
+            ],
+            "unhoverables": []
+          }
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.peatworks.org/",
+      "what": "URL",
+      "result": "https://www.peatworks.org/"
+    },
+    {
+      "type": "test",
+      "which": "role",
+      "what": "roles",
+      "url": "https://www.peatworks.org/",
+      "result": {
+        "roleElements": 4,
+        "badRoleElements": 0,
+        "redundantRoleElements": 1,
+        "tagNames": {
+          "NAV": {
+            "navigation": {
+              "bad": 0,
+              "redundant": 1
+            }
+          }
+        }
+      }
+    }
+  ],
+  "timeStamp": "49li4",
+  "startTime": "2022-07-16T22:01:56",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "hover",
+      37
+    ],
+    [
+      "focInd",
+      3
+    ],
+    [
+      "role",
+      0
+    ]
+  ],
+  "logCount": 13,
+  "logSize": 2876,
+  "errorLogCount": 10,
+  "errorLogSize": 2738,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-16T22:02:45",
+  "elapsedSeconds": 49
+}

@@ -1564,13 +1564,20 @@
       "url": "https://usablenet.com/",
       "result": {
         "roleElements": 5,
-        "badRoleElements": 3,
+        "badRoleElements": 2,
+        "redundantRoleElements": 1,
         "tagNames": {
           "SUMMARY": {
-            "button": 1
+            "button": {
+              "bad": 0,
+              "redundant": 1
+            }
           },
           "A": {
-            "button": 2
+            "button": {
+              "bad": 2,
+              "redundant": 0
+            }
           }
         }
       }
