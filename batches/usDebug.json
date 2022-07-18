@@ -1,0 +1,11 @@
+{
+  "id": "usfedexec",
+  "what": "U.S. federal executive agencies",
+  "hosts": [
+    {
+      "id": "dos",
+      "which": "https://www.state.gov/",
+      "what": "Department of State (DOS)[crashed on ibm after page and URL timeouts]"
+    }
+  ]
+}
