@@ -1,0 +1,18 @@
+{
+  "id": "urlcheck",
+  "what": "URL check",
+  "strict": true,
+  "timeLimit": 10,
+  "commands": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.example.com",
+      "what": "any page"
+    }
+  ]
+}

@@ -1,0 +1,136 @@
+{
+  "id": "usfedexecpop",
+  "what": "Popular U.S. federal executive agencies",
+  "hosts": [
+    {
+      "id": "acl",
+      "which": "https://acl.gov/",
+      "what": "Administration for Community Living"
+    },
+    {
+      "id": "ahrq",
+      "which": "https://ahrq.gov/",
+      "what": "Agency for Healthcare Research and Quality"
+    },
+    {
+      "id": "bjs",
+      "which": "https://bjs.gov/",
+      "what": "Bureau of Justice Statistics"
+    },
+    {
+      "id": "cancer",
+      "which": "https://cancer.gov/",
+      "what": "National Cancer Institute"
+    },
+    {
+      "id": "cbp",
+      "which": "https://cbp.gov/",
+      "what": "Customs and Border Protection"
+    },
+    {
+      "id": "cdc",
+      "which": "https://cdc.gov/",
+      "what": "Centers for Disease Control and Prevention"
+    },
+    {
+      "id": "cisa",
+      "which": "https://cisa.gov/",
+      "what": "Cybersecurity and Infrastructure Security Agency"
+    },
+    {
+      "id": "cms",
+      "which": "https://cms.gov/",
+      "what": "Centers for Medicare and Medicaid Services"
+    },
+    {
+      "id": "darpa",
+      "which": "https://darpa.mil/",
+      "what": "Defense Advanced Research Projects Agency"
+    },
+    {
+      "id": "dtic",
+      "which": "https://discover.dtic.mil/",
+      "what": "Defense Technical Information Center (DTIC)"
+    },
+    {
+      "id": "eia",
+      "which": "https://eia.gov/",
+      "what": "Energy Information Administration"
+    },
+    {
+      "id": "energystar",
+      "which": "https://energystar.gov/",
+      "what": "ENERGY STAR"
+    },
+    {
+      "id": "fda",
+      "which": "https://fda.gov/",
+      "what": "Food and Drug Administration"
+    },
+    {
+      "id": "hrsa",
+      "which": "https://hrsa.gov/",
+      "what": "Health Resources and Services Administration"
+    },
+    {
+      "id": "huduser",
+      "which": "https://huduser.gov/",
+      "what": "Office of Policy Development and Research (PD&R)"
+    },
+    {
+      "id": "ice",
+      "which": "https://ice.gov/",
+      "what": "Immigration and Customs Enforcement"
+    },
+    {
+      "id": "investor",
+      "which": "https://investor.gov/",
+      "what": "Office of Investor Education and Advocacy"
+    },
+    {
+      "id": "ncbi",
+      "which": "https://ncbi.nlm.nih.gov/",
+      "what": "National Center for Biotechnology Information"
+    },
+    {
+      "id": "nhtsa",
+      "which": "https://nhtsa.gov/",
+      "what": "National Highway Traffic Safety Administration"
+    },
+    {
+      "id": "osti",
+      "which": "https://osti.gov/",
+      "what": "Department of Energy Office of Scientific and Technical Information"
+    },
+    {
+      "id": "samhsa",
+      "which": "https://samhsa.gov/",
+      "what": "Substance Abuse and Mental Health Services Administration (SAMHSA)"
+    },
+    {
+      "id": "studentaid",
+      "which": "https://studentaid.gov/",
+      "what": "Federal Student Aid"
+    },
+    {
+      "id": "tsa",
+      "which": "https://tsa.gov/",
+      "what": "Transportation Security Administration"
+    },
+    {
+      "id": "us-cert",
+      "which": "https://us-cert.gov/",
+      "what": "U.S. Computer Emergency Readiness Team"
+    },
+    {
+      "id": "usa",
+      "which": "https://usa.gov/",
+      "what": "U.S. Government Services and Information"
+    },
+    {
+      "id": "usembassy",
+      "which": "https://usembassy.gov/",
+      "what": "U.S. Embassy"
+    }
+  ]
+}

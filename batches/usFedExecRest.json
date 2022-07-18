@@ -3,26 +3,6 @@
   "what": "U.S. federal executive agencies",
   "hosts": [
     {
-      "id": "achp",
-      "which": "https://www.achp.gov/",
-      "what": "Advisory Council on Historic Preservation (ACHP)"
-    },
-    {
-      "id": "agm",
-      "which": "https://www.usagm.gov/",
-      "what": "Agency for Global Media"
-    },
-    {
-      "id": "ars",
-      "which": "https://www.ars.usda.gov/",
-      "what": "Agricultural Research Service"
-    },
-    {
-      "id": "airforce",
-      "which": "https://www.af.mil/",
-      "what": "Air Force"
-    },
-    {
       "id": "ttb",
       "which": "https://www.ttb.gov/",
       "what": "Alcohol and Tobacco Tax and Trade Bureau (TTB)"
@@ -195,7 +175,7 @@
     {
       "id": "dos",
       "which": "https://www.state.gov/",
-      "what": "Department of State (DOS)"
+      "what": "Department of State (DOS)[crashed on ibm after page and URL timeouts]"
     },
     {
       "id": "dsl",
@@ -240,7 +220,7 @@
     {
       "id": "epa",
       "which": "https://www.epa.gov/",
-      "what": "Environmental Protection Agency (EPA)"
+      "what": "Environmental Protection Agency (EPA)[crashed on ibm after page timeout]"
     },
     {
       "id": "eeoc",
@@ -350,7 +330,7 @@
     {
       "id": "forestsvc",
       "which": "https://www.fs.usda.gov/",
-      "what": "Forest Service"
+      "what": "Forest Service[crashed on tabNav]"
     },
     {
       "id": "gsa",
@@ -525,7 +505,7 @@
     {
       "id": "amtrak",
       "which": "https://www.amtrak.com/home.html",
-      "what": "National Railroad Passenger Corporation (AMTRAK)"
+      "what": "National Railroad Passenger Corporation (AMTRAK)[crashed on tabNav]"
     },
     {
       "id": "nsf",
@@ -590,7 +570,7 @@
     {
       "id": "oge",
       "which": "https://www.oge.gov/",
-      "what": "Office of Government Ethics (OGE)"
+      "what": "Office of Government Ethics (OGE)[crashed on radioSet]"
     },
     {
       "id": "ojp",
@@ -640,7 +620,7 @@
     {
       "id": "dfc",
       "which": "https://www.dfc.gov/",
-      "what": "U.S. International Development Finance Corporation (DFC)"
+      "what": "U.S. International Development Finance Corporation (DFC)[crashed on menuNav]"
     },
     {
       "id": "pantex",
@@ -650,7 +630,7 @@
     {
       "id": "pto",
       "which": "https://www.uspto.gov/",
-      "what": "Patent and Trademark Office"
+      "what": "Patent and Trademark Office[crashed on menuNav]"
     },
     {
       "id": "peacecorps",
@@ -765,7 +745,7 @@
     {
       "id": "uspis",
       "which": "https://www.uspis.gov/",
-      "what": "US Postal Inspection Service"
+      "what": "US Postal Inspection Service[crashed on ibm after page timeout]"
     },
     {
       "id": "usaid",
@@ -785,7 +765,7 @@
     {
       "id": "usps",
       "which": "https://www.usps.com/",
-      "what": "United States Postal Service (USPS)"
+      "what": "United States Postal Service (USPS)[crashed on ibm after page timeout]"
     },
     {
       "id": "ustda",
