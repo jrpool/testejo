@@ -1,0 +1,2261 @@
+{
+  "id": "4cg53-oge",
+  "host": {
+    "id": "oge",
+    "which": "https://www.oge.gov/",
+    "what": "Office of Government Ethics (OGE) [crashed on radioSet]"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-19T23:08:59"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-19T23:09:08"
+    }
+  ],
+  "script": {
+    "id": "tabNav",
+    "what": "tabNav test",
+    "strict": true,
+    "timeLimit": 30,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.oge.gov/",
+        "what": "Office of Government Ethics (OGE) [crashed on radioSet]"
+      },
+      {
+        "type": "tenonRequest",
+        "id": "a",
+        "withNewContent": true,
+        "what": "Tenon API version 2 test request"
+      },
+      {
+        "type": "test",
+        "which": "menuNav",
+        "withItems": true,
+        "what": "keyboard navigation within true-focus menus"
+      },
+      {
+        "type": "test",
+        "which": "tenon",
+        "id": "a",
+        "what": "Tenon API version 2 result retrieval"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.oge.gov/",
+      "what": "Office of Government Ethics (OGE) [crashed on radioSet]",
+      "result": "https://www.oge.gov/"
+    },
+    {
+      "type": "tenonRequest",
+      "id": "a",
+      "withNewContent": true,
+      "what": "Tenon API version 2 test request",
+      "url": "https://www.oge.gov/"
+    },
+    {
+      "type": "test",
+      "which": "menuNav",
+      "withItems": true,
+      "what": "keyboard navigation between focusable menu items",
+      "url": "https://www.oge.gov/",
+      "result": {
+        "totals": {
+          "navigations": {
+            "all": {
+              "total": 0,
+              "correct": 0,
+              "incorrect": 0
+            },
+            "specific": {
+              "tab": {
+                "total": 0,
+                "correct": 0,
+                "incorrect": 0
+              },
+              "left": {
+                "total": 0,
+                "correct": 0,
+                "incorrect": 0
+              },
+              "right": {
+                "total": 0,
+                "correct": 0,
+                "incorrect": 0
+              },
+              "up": {
+                "total": 0,
+                "correct": 0,
+                "incorrect": 0
+              },
+              "down": {
+                "total": 0,
+                "correct": 0,
+                "incorrect": 0
+              },
+              "home": {
+                "total": 0,
+                "correct": 0,
+                "incorrect": 0
+              },
+              "end": {
+                "total": 0,
+                "correct": 0,
+                "incorrect": 0
+              }
+            }
+          },
+          "menuItems": {
+            "total": 0,
+            "correct": 0,
+            "incorrect": 0
+          },
+          "menus": {
+            "total": 0,
+            "correct": 0,
+            "incorrect": 0
+          }
+        },
+        "menuItems": {
+          "incorrect": [],
+          "correct": []
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.oge.gov/",
+      "what": "URL",
+      "result": "https://www.oge.gov/"
+    },
+    {
+      "type": "test",
+      "which": "tenon",
+      "id": "a",
+      "what": "Tenon",
+      "url": "https://www.oge.gov/",
+      "result": {
+        "status": 200,
+        "message": "OK",
+        "code": "success",
+        "info": "Success",
+        "moreInfo": "https://tenon.io/documentation/apiv2/response-codes#success",
+        "responseExecTime": "0.065",
+        "responseTime": "2022-07-19T23:09:08.451Z",
+        "data": {
+          "apiErrors": [],
+          "documentSize": 1011972,
+          "metadata": null,
+          "resultSummary": {
+            "tests": {
+              "total": 180,
+              "passing": 171,
+              "failing": 9
+            },
+            "issues": {
+              "totalErrors": 40,
+              "totalWarnings": 13,
+              "totalIssues": 53
+            },
+            "issuesByLevel": {
+              "A": {
+                "count": 20,
+                "pct": 37.74
+              },
+              "AA": {
+                "count": 16,
+                "pct": 30.19
+              },
+              "AAA": {
+                "count": 53,
+                "pct": 100
+              }
+            },
+            "density": {
+              "errorDensity": 4,
+              "warningDensity": 1,
+              "allDensity": 5
+            }
+          },
+          "projectID": "04CDF65C-DEE7-6E37-78E8-5A9472A3",
+          "responseID": "6fc29fe9-1fb9-4bcf-9154-54f4b42665f9",
+          "docID": "fec22a15-f594-4293-fab4-578045fc1a5b",
+          "sourceHash": "781f0c6ce56d4b6e5c5f4f2d64a216f0",
+          "urlHttpCode": 200,
+          "clientScriptErrors": [],
+          "remainingApiCalls": {
+            "planCalls": 0,
+            "boosts": 20
+          },
+          "globalStats": {
+            "errorDensity": "N/A",
+            "warningDensity": "N/A",
+            "allDensity": "N/A",
+            "stdDev": "N/A"
+          },
+          "resultUrl": "http://ngnix/history.php?responseID=6fc29fe9-1fb9-4bcf-9154-54f4b42665f9",
+          "resultSet": [
+            {
+              "tID": 28,
+              "bpID": 3,
+              "priority": 100,
+              "level": [
+                "AAA"
+              ],
+              "certainty": 100,
+              "errorTitle": "The layout or sizing of this page causes horizontal scrolling.",
+              "standards": [
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level AAA: 1.4.8 Visual Presentation"
+              ],
+              "resultTitle": "Avoid layouts that result in horizontal scroll",
+              "errorDescription": "This page is too wide, causing horizontal scrolling (at the tested viewport size). Horizontal scrolling will cause difficulties for users with low vision, especially if they have their monitor set to a low resolution. Review HTML, CSS and page element sizes to ensure 100% width is not exceeded.",
+              "viewPortLocation": {
+                "top-left": {
+                  "x": 0,
+                  "y": 0
+                },
+                "bottom-right": {
+                  "x": 1024,
+                  "y": 3292.81
+                },
+                "height": 3292.81,
+                "width": 1024
+              },
+              "position": {
+                "line": 2118,
+                "column": 60
+              },
+              "errorSnippet": "&lt;body text=\"#000000\" bgcolor=\"#FFFFFF\"&gt; &lt;form onsubmit=\"return false;\nreturn true;\" action=\"\"&gt;&lt;!--begin header--&gt;&lt;!--add this to all documents--&gt;\n&lt;!--add this to all documents--&gt;\n&lt;!--Begin skipnav--&gt;\n&lt;a class=\"usa-s",
+              "xpath": "/html/body",
+              "issueID": "90be36162a6327175f54d14cbc951fd0",
+              "signature": "125f90e404bf29f2c9f2b9e664d5ba69",
+              "ref": "https://tenon.io/bestpractice.php?bpID=3&tID=28&issueID=90be36162a6327175f54d14cbc951fd0"
+            },
+            {
+              "tID": 73,
+              "bpID": 106,
+              "priority": 100,
+              "level": [
+                "A",
+                "AAA"
+              ],
+              "certainty": 100,
+              "errorTitle": "This link text is uninformative.",
+              "standards": [
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level A: 2.4.4 Link Purpose (In Context)",
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level AAA: 2.4.9 Link Purpose (Link Only)"
+              ],
+              "resultTitle": "Make sure that link text (and the alternate text for any images that are used as links) describes the destination or purpose of the link.",
+              "errorDescription": "The text in this link is too generic to be helpful for users.  Users will be unable to discern the purpose or destination of the link without reading the text that surrounds it. Change the text in this link to something that is unique and informative so that the user can understand what content or actions can be found at the link's destination.",
+              "viewPortLocation": {
+                "top-left": {
+                  "x": 124,
+                  "y": 269.390625
+                },
+                "bottom-right": {
+                  "x": 209,
+                  "y": 289.390625
+                },
+                "height": 20,
+                "width": 85
+              },
+              "position": {
+                "line": 6409,
+                "column": 0
+              },
+              "errorSnippet": "&lt;a href=\"/web/oge.nsf/News+Releases/29AF718CE3093A198525886A004DDFBE?OpenDocument\" style=\" text-transform: uppercase; font-size: .95rem; font-style: normal; font-family: Open Sans, Source Sans, Merriweather, sans-serif; color: #005278;\n\"&gt;Read More&",
+              "xpath": "/html/body/main[1]/section[2]/div[1]/div[1]/div[1]/div[3]/div[1]/div[2]/div[1]/h3[2]/a[1]",
+              "issueID": "7871466f0be730bcad901bc6b721f7a2",
+              "signature": "b850ef0f84d1f609227cb6732b33a091",
+              "ref": "https://tenon.io/bestpractice.php?bpID=106&tID=73&issueID=7871466f0be730bcad901bc6b721f7a2"
+            },
+            {
+              "tID": 95,
+              "bpID": 181,
+              "priority": 95,
+              "level": [
+                "AAA"
+              ],
+              "certainty": 100,
+              "errorTitle": "This element has insufficient color contrast (Level AAA).",
+              "standards": [
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level AAA: 1.4.6 Contrast (Enhanced)"
+              ],
+              "resultTitle": "Avoid using color as the only visual means of conveying information",
+              "errorDescription": "This element has insufficient contrast between the foreground color (the text) and the background color when measured against the WCAG 2.0 Level AAA requirements. Sufficient color contrast is important for users who have low-vision or are color-blind, because text with a low contrast ratio may be difficult or impossible for such users to see. Increase the contrast of this content. This can be done by adjusting the color(s) used by either the foreground content or background content – or both.",
+              "viewPortLocation": {
+                "top-left": {
+                  "x": 0,
+                  "y": 0
+                },
+                "bottom-right": {
+                  "x": 331,
+                  "y": 17
+                },
+                "height": 17,
+                "width": 331
+              },
+              "position": {
+                "line": 82,
+                "column": 19560
+              },
+              "errorSnippet": "&lt;p class=\"usa-banner__header-text\"&gt;An official website of the United States government&lt;/p&gt;",
+              "xpath": "/html/body/form[1]/section[1]/div[1]/header[1]/div[1]/div[2]/p[1]",
+              "issueID": "048fc1e6ffff89f47736aeca70d3f692",
+              "signature": "60cb01a1dc5347c3a8a392a02f6292b5",
+              "ref": "https://tenon.io/bestpractice.php?bpID=181&tID=95&issueID=048fc1e6ffff89f47736aeca70d3f692"
+            },
+            {
+              "tID": 95,
+              "bpID": 181,
+              "priority": 95,
+              "level": [
+                "AAA"
+              ],
+              "certainty": 100,
+              "errorTitle": "This element has insufficient color contrast (Level AAA).",
+              "standards": [
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level AAA: 1.4.6 Contrast (Enhanced)"
+              ],
+              "resultTitle": "Avoid using color as the only visual means of conveying information",
+              "errorDescription": "This element has insufficient contrast between the foreground color (the text) and the background color when measured against the WCAG 2.0 Level AAA requirements. Sufficient color contrast is important for users who have low-vision or are color-blind, because text with a low contrast ratio may be difficult or impossible for such users to see. Increase the contrast of this content. This can be done by adjusting the color(s) used by either the foreground content or background content – or both.",
+              "viewPortLocation": {
+                "top-left": {
+                  "x": 204,
+                  "y": 0
+                },
+                "bottom-right": {
+                  "x": 271,
+                  "y": 15
+                },
+                "height": 15,
+                "width": 67
+              },
+              "position": {
+                "line": 5881,
+                "column": 0
+              },
+              "errorSnippet": "&lt;a href=\"/web/oge.nsf/site-index\"&gt;Site Index&lt;/a&gt;",
+              "xpath": "/html/body/form[1]/section[2]/header[1]/nav[1]/div[1]/div[1]/ul[1]/li[1]/a[1]",
+              "issueID": "4cc7afb4ee2b51b7cba85efa9859f2b8",
+              "signature": "4e626ca587c5e5c77c5cd55205adabf6",
+              "ref": "https://tenon.io/bestpractice.php?bpID=181&tID=95&issueID=4cc7afb4ee2b51b7cba85efa9859f2b8"
+            },
+            {
+              "tID": 95,
+              "bpID": 181,
+              "priority": 95,
+              "level": [
+                "AAA"
+              ],
+              "certainty": 100,
+              "errorTitle": "This element has insufficient color contrast (Level AAA).",
+              "standards": [
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level AAA: 1.4.6 Contrast (Enhanced)"
+              ],
+              "resultTitle": "Avoid using color as the only visual means of conveying information",
+              "errorDescription": "This element has insufficient contrast between the foreground color (the text) and the background color when measured against the WCAG 2.0 Level AAA requirements. Sufficient color contrast is important for users who have low-vision or are color-blind, because text with a low contrast ratio may be difficult or impossible for such users to see. Increase the contrast of this content. This can be done by adjusting the color(s) used by either the foreground content or background content – or both.",
+              "viewPortLocation": {
+                "top-left": {
+                  "x": 289,
+                  "y": 0
+                },
+                "bottom-right": {
+                  "x": 384,
+                  "y": 15
+                },
+                "height": 15,
+                "width": 95
+              },
+              "position": {
+                "line": 6240,
+                "column": 0
+              },
+              "errorSnippet": "&lt;a href=\"/web/oge.nsf/OGE Forms\"&gt;Forms Library &lt;/a&gt;",
+              "xpath": "/html/body/form[1]/section[2]/header[1]/nav[1]/div[1]/div[1]/ul[1]/li[2]/a[1]",
+              "issueID": "7606962f09a7989e4316b51db2373667",
+              "signature": "f44f28dd096785d2c465f047739f5ae3",
+              "ref": "https://tenon.io/bestpractice.php?bpID=181&tID=95&issueID=7606962f09a7989e4316b51db2373667"
+            },
+            {
+              "tID": 95,
+              "bpID": 181,
+              "priority": 95,
+              "level": [
+                "AAA"
+              ],
+              "certainty": 100,
+              "errorTitle": "This element has insufficient color contrast (Level AAA).",
+              "standards": [
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level AAA: 1.4.6 Contrast (Enhanced)"
+              ],
+              "resultTitle": "Avoid using color as the only visual means of conveying information",
+              "errorDescription": "This element has insufficient contrast between the foreground color (the text) and the background color when measured against the WCAG 2.0 Level AAA requirements. Sufficient color contrast is important for users who have low-vision or are color-blind, because text with a low contrast ratio may be difficult or impossible for such users to see. Increase the contrast of this content. This can be done by adjusting the color(s) used by either the foreground content or background content – or both.",
+              "viewPortLocation": {
+                "top-left": {
+                  "x": 402,
+                  "y": 0
+                },
+                "bottom-right": {
+                  "x": 478,
+                  "y": 15
+                },
+                "height": 15,
+                "width": 76
+              },
+              "position": {
+                "line": 6240,
+                "column": 0
+              },
+              "errorSnippet": "&lt;a href=\"/web/oge.nsf/about_contacts\"&gt;Contact Us&lt;/a&gt;",
+              "xpath": "/html/body/form[1]/section[2]/header[1]/nav[1]/div[1]/div[1]/ul[1]/li[3]/a[1]",
+              "issueID": "3f2f910ff92c8f322c2daf59cf85634a",
+              "signature": "54d6b066449472ef0ed5f6c94c1e80af",
+              "ref": "https://tenon.io/bestpractice.php?bpID=181&tID=95&issueID=3f2f910ff92c8f322c2daf59cf85634a"
+            },
+            {
+              "tID": 98,
+              "bpID": 105,
+              "priority": 100,
+              "level": [
+                "A",
+                "AAA"
+              ],
+              "certainty": 100,
+              "errorTitle": "These links have the same text but different destinations.",
+              "standards": [
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level A: 2.4.4 Link Purpose (In Context)",
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level AAA: 2.4.9 Link Purpose (Link Only)"
+              ],
+              "resultTitle": "Don't reuse the same link text for links that have different destinations",
+              "errorDescription": "This link has the same text as another link that goes to a different place. Using the same text for multiple links which point to different pages is ambiguous and may be confusing for assistive technology users, or for users who have a cognitive disability. Link text should tell the user where they will go if they follow the link. If two links on a page go to two different destinations, use different link text that accurately and concisely describes their destination.",
+              "viewPortLocation": {
+                "top-left": {
+                  "x": 0,
+                  "y": 0
+                },
+                "bottom-right": {
+                  "x": 0,
+                  "y": 0
+                },
+                "height": 0,
+                "width": 0
+              },
+              "position": {
+                "line": 131,
+                "column": 79
+              },
+              "errorSnippet": "&lt;a href=\"#\" id=\"\"&gt;Congressional Correspondence &lt;/a&gt;",
+              "xpath": "/html/body/form[1]/section[2]/header[1]/nav[1]/div[1]/ul[1]/li[1]/div[1]/div[1]/div[4]/ul[1]/li[2]/a[1]",
+              "issueID": "babb40277afbd25c3d53965bb5975a19",
+              "signature": "b7030b63348d336595550550f7f9ceee",
+              "ref": "https://tenon.io/bestpractice.php?bpID=105&tID=98&issueID=babb40277afbd25c3d53965bb5975a19"
+            },
+            {
+              "tID": 98,
+              "bpID": 105,
+              "priority": 100,
+              "level": [
+                "A",
+                "AAA"
+              ],
+              "certainty": 100,
+              "errorTitle": "These links have the same text but different destinations.",
+              "standards": [
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level A: 2.4.4 Link Purpose (In Context)",
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level AAA: 2.4.9 Link Purpose (Link Only)"
+              ],
+              "resultTitle": "Don't reuse the same link text for links that have different destinations",
+              "errorDescription": "This link has the same text as another link that goes to a different place. Using the same text for multiple links which point to different pages is ambiguous and may be confusing for assistive technology users, or for users who have a cognitive disability. Link text should tell the user where they will go if they follow the link. If two links on a page go to two different destinations, use different link text that accurately and concisely describes their destination.",
+              "viewPortLocation": {
+                "top-left": {
+                  "x": 0,
+                  "y": 0
+                },
+                "bottom-right": {
+                  "x": 0,
+                  "y": 0
+                },
+                "height": 0,
+                "width": 0
+              },
+              "position": {
+                "line": 1118,
+                "column": 5796
+              },
+              "errorSnippet": "&lt;a href=\"#\" id=\"\"&gt;Reports to Congress&lt;/a&gt;",
+              "xpath": "/html/body/form[1]/section[2]/header[1]/nav[1]/div[1]/ul[1]/li[1]/div[1]/div[1]/div[4]/ul[1]/li[3]/a[1]",
+              "issueID": "ff7aac88cf31cd7784f5c045b28888ce",
+              "signature": "f643045b793f46f35bc4179fd87de695",
+              "ref": "https://tenon.io/bestpractice.php?bpID=105&tID=98&issueID=ff7aac88cf31cd7784f5c045b28888ce"
+            },
+            {
+              "tID": 98,
+              "bpID": 105,
+              "priority": 100,
+              "level": [
+                "A",
+                "AAA"
+              ],
+              "certainty": 100,
+              "errorTitle": "These links have the same text but different destinations.",
+              "standards": [
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level A: 2.4.4 Link Purpose (In Context)",
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level AAA: 2.4.9 Link Purpose (Link Only)"
+              ],
+              "resultTitle": "Don't reuse the same link text for links that have different destinations",
+              "errorDescription": "This link has the same text as another link that goes to a different place. Using the same text for multiple links which point to different pages is ambiguous and may be confusing for assistive technology users, or for users who have a cognitive disability. Link text should tell the user where they will go if they follow the link. If two links on a page go to two different destinations, use different link text that accurately and concisely describes their destination.",
+              "viewPortLocation": {
+                "top-left": {
+                  "x": 402,
+                  "y": 0
+                },
+                "bottom-right": {
+                  "x": 478,
+                  "y": 15
+                },
+                "height": 15,
+                "width": 76
+              },
+              "position": {
+                "line": 6240,
+                "column": 0
+              },
+              "errorSnippet": "&lt;a href=\"/web/oge.nsf/about_contacts\"&gt;Contact Us&lt;/a&gt;",
+              "xpath": "/html/body/form[1]/section[2]/header[1]/nav[1]/div[1]/div[1]/ul[1]/li[3]/a[1]",
+              "issueID": "714bfb5c31a5eba1eb0a8f8e3c19fd78",
+              "signature": "0f544b3a32eb4bba581f6113a24185e8",
+              "ref": "https://tenon.io/bestpractice.php?bpID=105&tID=98&issueID=714bfb5c31a5eba1eb0a8f8e3c19fd78"
+            },
+            {
+              "tID": 129,
+              "bpID": 211,
+              "priority": 85,
+              "level": [
+                "A",
+                "AA",
+                "AAA"
+              ],
+              "certainty": 100,
+              "errorTitle": "CSS underline on text has been detected that is not a link.",
+              "standards": [
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level A: 1.3.1 Info and Relationships",
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level AA: 1.4.5 Images of Text",
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level AA: 3.2.4 Consistent Identification",
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level AA: 1.4.4 Resize text",
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level AAA: 2.5.5 Target Size"
+              ],
+              "resultTitle": "Ensure content is legible.",
+              "errorDescription": "The text in this passage has been styled to display underlined but it is not a link. Underlined text on the web or on apps is universally accepted as signifying that the relevant text is a link. Applying underline to text that is not a link is likely to confuse many users, and especially people with cognitive impairments, learning disabilities or dyslexia. Remove the underlining from this passage of text.",
+              "viewPortLocation": {
+                "top-left": {
+                  "x": 0,
+                  "y": -2
+                },
+                "bottom-right": {
+                  "x": 140,
+                  "y": 14
+                },
+                "height": 16,
+                "width": 140
+              },
+              "position": {
+                "line": 2913,
+                "column": 138
+              },
+              "errorSnippet": "&lt;p class=\"usa-banner__header-action\" aria-hidden=\"true\" style=\"\"&gt;Here’s how you know&lt;/p&gt;",
+              "xpath": "/html/body/form[1]/section[1]/div[1]/header[1]/div[1]/div[2]/p[2]",
+              "issueID": "215b1da5386b9d76076b92954b4b51dc",
+              "signature": "72b35c595d36f92044c364aad9efd13d",
+              "ref": "https://tenon.io/bestpractice.php?bpID=211&tID=129&issueID=215b1da5386b9d76076b92954b4b51dc"
+            },
+            {
+              "tID": 129,
+              "bpID": 211,
+              "priority": 85,
+              "level": [
+                "A",
+                "AA",
+                "AAA"
+              ],
+              "certainty": 100,
+              "errorTitle": "CSS underline on text has been detected that is not a link.",
+              "standards": [
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level A: 1.3.1 Info and Relationships",
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level AA: 1.4.5 Images of Text",
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level AA: 3.2.4 Consistent Identification",
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level AA: 1.4.4 Resize text",
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level AAA: 2.5.5 Target Size"
+              ],
+              "resultTitle": "Ensure content is legible.",
+              "errorDescription": "The text in this passage has been styled to display underlined but it is not a link. Underlined text on the web or on apps is universally accepted as signifying that the relevant text is a link. Applying underline to text that is not a link is likely to confuse many users, and especially people with cognitive impairments, learning disabilities or dyslexia. Remove the underlining from this passage of text.",
+              "viewPortLocation": {
+                "top-left": {
+                  "x": 0,
+                  "y": -1
+                },
+                "bottom-right": {
+                  "x": 137,
+                  "y": 18
+                },
+                "height": 19,
+                "width": 137
+              },
+              "position": {
+                "line": 7809,
+                "column": 11
+              },
+              "errorSnippet": "&lt;span class=\"usa-banner__button-text\"&gt;Here’s how you know&lt;/span&gt;",
+              "xpath": "/html/body/form[1]/section[1]/div[1]/header[1]/div[1]/button[1]/span[1]",
+              "issueID": "3408cbacc71b4cc4516a7d17098767af",
+              "signature": "4851ee8fc3314d6d128f44bda48be978",
+              "ref": "https://tenon.io/bestpractice.php?bpID=211&tID=129&issueID=3408cbacc71b4cc4516a7d17098767af"
+            },
+            {
+              "tID": 144,
+              "bpID": 14,
+              "priority": 91,
+              "level": [
+                "AAA"
+              ],
+              "certainty": 100,
+              "errorTitle": "This content's line height is insufficent to properly display the computed element font size.",
+              "standards": [
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level AAA: 1.4.8 Visual Presentation"
+              ],
+              "resultTitle": "Set a `line-height` (leading) that is at least one and a half times the current font size.",
+              "errorDescription": "This content's line height is insufficent to properly display the computed element font size. Line height that is less than 150% of the computed element font size limits content readability for people with dyslexia, low vision, cognitive impairments or learning disabilities. Set the `line-height` for this content to a value of 1.5 or higher. Using a proportional, unitless value like 1.5 or 150% will ensure that the line-height scales if the user zooms the browser window.",
+              "viewPortLocation": {
+                "top-left": {
+                  "x": 0,
+                  "y": 0
+                },
+                "bottom-right": {
+                  "x": 1024,
+                  "y": 3292.81
+                },
+                "height": 3292.81,
+                "width": 1024
+              },
+              "position": {
+                "line": 2118,
+                "column": 60
+              },
+              "errorSnippet": "&lt;body text=\"#000000\" bgcolor=\"#FFFFFF\"&gt; &lt;form onsubmit=\"return false;\nreturn true;\" action=\"\"&gt;&lt;!--begin header--&gt;&lt;!--add this to all documents--&gt;\n&lt;!--add this to all documents--&gt;\n&lt;!--Begin skipnav--&gt;\n&lt;a class=\"usa-s",
+              "xpath": "/html/body",
+              "issueID": "ae3b990c006932acc48e3f360bdd9df8",
+              "signature": "cb607555f37f5bfc39bf1e452c4314b1",
+              "ref": "https://tenon.io/bestpractice.php?bpID=14&tID=144&issueID=ae3b990c006932acc48e3f360bdd9df8"
+            },
+            {
+              "tID": 144,
+              "bpID": 14,
+              "priority": 91,
+              "level": [
+                "AAA"
+              ],
+              "certainty": 100,
+              "errorTitle": "This content's line height is insufficent to properly display the computed element font size.",
+              "standards": [
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level AAA: 1.4.8 Visual Presentation"
+              ],
+              "resultTitle": "Set a `line-height` (leading) that is at least one and a half times the current font size.",
+              "errorDescription": "This content's line height is insufficent to properly display the computed element font size. Line height that is less than 150% of the computed element font size limits content readability for people with dyslexia, low vision, cognitive impairments or learning disabilities. Set the `line-height` for this content to a value of 1.5 or higher. Using a proportional, unitless value like 1.5 or 150% will ensure that the line-height scales if the user zooms the browser window.",
+              "viewPortLocation": {
+                "top-left": {
+                  "x": -16,
+                  "y": 174
+                },
+                "bottom-right": {
+                  "x": 1008,
+                  "y": 221
+                },
+                "height": 47,
+                "width": 1024
+              },
+              "position": {
+                "line": 7858,
+                "column": 2
+              },
+              "errorSnippet": "&lt;nav role=\"navigation\" class=\"usa-nav\" aria-labelledby=\"main navigation\"&gt; &lt;div class=\"usa-nav__inner\"&gt; &lt;button class=\"usa-nav__close\" style=\"\"&gt;&lt;img src=\"/web/oge.nsf/close-primary.png\" alt=\"close\"&gt;&lt;/button&gt; &lt;ul class=\"usa",
+              "xpath": "/html/body/form[1]/section[2]/header[1]/nav[1]",
+              "issueID": "01e407785608834a2cbf7ef29cad13db",
+              "signature": "c4bcf3b5a0f728441cef8be08630fbe3",
+              "ref": "https://tenon.io/bestpractice.php?bpID=14&tID=144&issueID=01e407785608834a2cbf7ef29cad13db"
+            },
+            {
+              "tID": 144,
+              "bpID": 14,
+              "priority": 91,
+              "level": [
+                "AAA"
+              ],
+              "certainty": 100,
+              "errorTitle": "This content's line height is insufficent to properly display the computed element font size.",
+              "standards": [
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level AAA: 1.4.8 Visual Presentation"
+              ],
+              "resultTitle": "Set a `line-height` (leading) that is at least one and a half times the current font size.",
+              "errorDescription": "This content's line height is insufficent to properly display the computed element font size. Line height that is less than 150% of the computed element font size limits content readability for people with dyslexia, low vision, cognitive impairments or learning disabilities. Set the `line-height` for this content to a value of 1.5 or higher. Using a proportional, unitless value like 1.5 or 150% will ensure that the line-height scales if the user zooms the browser window.",
+              "viewPortLocation": {
+                "top-left": {
+                  "x": 16,
+                  "y": 0
+                },
+                "bottom-right": {
+                  "x": 108,
+                  "y": 47
+                },
+                "height": 47,
+                "width": 92
+              },
+              "position": {
+                "line": 4,
+                "column": 3
+              },
+              "errorSnippet": "&lt;li class=\"usa-nav__primary-item\"&gt; &lt;button class=\"usa-accordion__button usa-nav__link \" aria-expanded=\"false\" aria-controls=\"extended-mega-nav-section-one\"&gt;&lt;span class=\"main-nav-item\" id=\"hamburger-item-1\"&gt;About&lt;/span&gt;&lt;/button&",
+              "xpath": "/html/body/form[1]/section[2]/header[1]/nav[1]/div[1]/ul[1]/li[1]",
+              "issueID": "e10abe35e385dfabdc0acccc3912a83f",
+              "signature": "4d69dc3fb1eb5a72814393428b970904",
+              "ref": "https://tenon.io/bestpractice.php?bpID=14&tID=144&issueID=e10abe35e385dfabdc0acccc3912a83f"
+            },
+            {
+              "tID": 144,
+              "bpID": 14,
+              "priority": 91,
+              "level": [
+                "AAA"
+              ],
+              "certainty": 100,
+              "errorTitle": "This content's line height is insufficent to properly display the computed element font size.",
+              "standards": [
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level AAA: 1.4.8 Visual Presentation"
+              ],
+              "resultTitle": "Set a `line-height` (leading) that is at least one and a half times the current font size.",
+              "errorDescription": "This content's line height is insufficent to properly display the computed element font size. Line height that is less than 150% of the computed element font size limits content readability for people with dyslexia, low vision, cognitive impairments or learning disabilities. Set the `line-height` for this content to a value of 1.5 or higher. Using a proportional, unitless value like 1.5 or 150% will ensure that the line-height scales if the user zooms the browser window.",
+              "viewPortLocation": {
+                "top-left": {
+                  "x": 108,
+                  "y": 0
+                },
+                "bottom-right": {
+                  "x": 341,
+                  "y": 47
+                },
+                "height": 47,
+                "width": 233
+              },
+              "position": {
+                "line": 7912,
+                "column": 10
+              },
+              "errorSnippet": "&lt;li class=\"usa-nav__primary-item\"&gt; &lt;button class=\"usa-accordion__button usa-nav__link\" aria-expanded=\"false\" aria-controls=\"extended-mega-nav-section-two\"&gt;&lt;span class=\"main-nav-item\" id=\"hamburger-item-2\"&gt;Access Ethics Documents&lt;/spa",
+              "xpath": "/html/body/form[1]/section[2]/header[1]/nav[1]/div[1]/ul[1]/li[2]",
+              "issueID": "f1e06428590b098d79d2d78de008be24",
+              "signature": "686c2d94509785bf7db4877a4f81ce61",
+              "ref": "https://tenon.io/bestpractice.php?bpID=14&tID=144&issueID=f1e06428590b098d79d2d78de008be24"
+            },
+            {
+              "tID": 144,
+              "bpID": 14,
+              "priority": 91,
+              "level": [
+                "AAA"
+              ],
+              "certainty": 100,
+              "errorTitle": "This content's line height is insufficent to properly display the computed element font size.",
+              "standards": [
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level AAA: 1.4.8 Visual Presentation"
+              ],
+              "resultTitle": "Set a `line-height` (leading) that is at least one and a half times the current font size.",
+              "errorDescription": "This content's line height is insufficent to properly display the computed element font size. Line height that is less than 150% of the computed element font size limits content readability for people with dyslexia, low vision, cognitive impairments or learning disabilities. Set the `line-height` for this content to a value of 1.5 or higher. Using a proportional, unitless value like 1.5 or 150% will ensure that the line-height scales if the user zooms the browser window.",
+              "viewPortLocation": {
+                "top-left": {
+                  "x": 341,
+                  "y": 0
+                },
+                "bottom-right": {
+                  "x": 603,
+                  "y": 47
+                },
+                "height": 47,
+                "width": 262
+              },
+              "position": {
+                "line": 7982,
+                "column": 6
+              },
+              "errorSnippet": "&lt;li class=\"usa-nav__primary-item\"&gt; &lt;button class=\"usa-accordion__button usa-nav__link\" aria-expanded=\"false\" aria-controls=\"extended-mega-nav-section-three\"&gt;&lt;span class=\"main-nav-item\" id=\"hamburger-item-3\"&gt;Resources for Ethics Official",
+              "xpath": "/html/body/form[1]/section[2]/header[1]/nav[1]/div[1]/ul[1]/li[3]",
+              "issueID": "48592443a818f89d5e7608d233a101a4",
+              "signature": "8c4e5e544e112e583d5a309c8f22ea42",
+              "ref": "https://tenon.io/bestpractice.php?bpID=14&tID=144&issueID=48592443a818f89d5e7608d233a101a4"
+            },
+            {
+              "tID": 144,
+              "bpID": 14,
+              "priority": 91,
+              "level": [
+                "AAA"
+              ],
+              "certainty": 100,
+              "errorTitle": "This content's line height is insufficent to properly display the computed element font size.",
+              "standards": [
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level AAA: 1.4.8 Visual Presentation"
+              ],
+              "resultTitle": "Set a `line-height` (leading) that is at least one and a half times the current font size.",
+              "errorDescription": "This content's line height is insufficent to properly display the computed element font size. Line height that is less than 150% of the computed element font size limits content readability for people with dyslexia, low vision, cognitive impairments or learning disabilities. Set the `line-height` for this content to a value of 1.5 or higher. Using a proportional, unitless value like 1.5 or 150% will ensure that the line-height scales if the user zooms the browser window.",
+              "viewPortLocation": {
+                "top-left": {
+                  "x": 603,
+                  "y": 0
+                },
+                "bottom-right": {
+                  "x": 896,
+                  "y": 47
+                },
+                "height": 47,
+                "width": 293
+              },
+              "position": {
+                "line": 8078,
+                "column": 10
+              },
+              "errorSnippet": "&lt;li class=\"usa-nav__primary-item\" id=\"ham-item-4\"&gt; &lt;button class=\"usa-accordion__button usa-nav__link\" aria-expanded=\"false\" aria-controls=\"extended-mega-nav-section-four\"&gt;&lt;span class=\"main-nav-item\" id=\"hamburger-item-4\"&gt;Resources for ",
+              "xpath": "/html/body/form[1]/section[2]/header[1]/nav[1]/div[1]/ul[1]/li[4]",
+              "issueID": "8d7e3e32d99a3eb57e0deb66b0769266",
+              "signature": "734161c15b7fefbbbace36ab44ef3994",
+              "ref": "https://tenon.io/bestpractice.php?bpID=14&tID=144&issueID=8d7e3e32d99a3eb57e0deb66b0769266"
+            },
+            {
+              "tID": 144,
+              "bpID": 14,
+              "priority": 91,
+              "level": [
+                "AAA"
+              ],
+              "certainty": 100,
+              "errorTitle": "This content's line height is insufficent to properly display the computed element font size.",
+              "standards": [
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level AAA: 1.4.8 Visual Presentation"
+              ],
+              "resultTitle": "Set a `line-height` (leading) that is at least one and a half times the current font size.",
+              "errorDescription": "This content's line height is insufficent to properly display the computed element font size. Line height that is less than 150% of the computed element font size limits content readability for people with dyslexia, low vision, cognitive impairments or learning disabilities. Set the `line-height` for this content to a value of 1.5 or higher. Using a proportional, unitless value like 1.5 or 150% will ensure that the line-height scales if the user zooms the browser window.",
+              "viewPortLocation": {
+                "top-left": {
+                  "x": 0,
+                  "y": 222
+                },
+                "bottom-right": {
+                  "x": 1024,
+                  "y": 598
+                },
+                "height": 376,
+                "width": 1024
+              },
+              "position": {
+                "line": 8284,
+                "column": 28
+              },
+              "errorSnippet": "&lt;section class=\"usa-hero-v2\"&gt;\n&lt;div class=\"grid-container\"&gt;\n&lt;div class=\"usa-hero__callout-v2\"&gt;\n&lt;div class=\"hero-inner-wrapper\" style=\"position: relative;text-align: center;padding-top: 1rem;margin-left: -2rem;\"&gt;\n&lt;div id=\"tagline",
+              "xpath": "/html/body/main[1]/section[1]",
+              "issueID": "9a63a67cfb5a841d17332ee8a8985749",
+              "signature": "16cae951b5da36ffe84cb99e1c48e286",
+              "ref": "https://tenon.io/bestpractice.php?bpID=14&tID=144&issueID=9a63a67cfb5a841d17332ee8a8985749"
+            },
+            {
+              "tID": 144,
+              "bpID": 14,
+              "priority": 91,
+              "level": [
+                "AAA"
+              ],
+              "certainty": 100,
+              "errorTitle": "This content's line height is insufficent to properly display the computed element font size.",
+              "standards": [
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level AAA: 1.4.8 Visual Presentation"
+              ],
+              "resultTitle": "Set a `line-height` (leading) that is at least one and a half times the current font size.",
+              "errorDescription": "This content's line height is insufficent to properly display the computed element font size. Line height that is less than 150% of the computed element font size limits content readability for people with dyslexia, low vision, cognitive impairments or learning disabilities. Set the `line-height` for this content to a value of 1.5 or higher. Using a proportional, unitless value like 1.5 or 150% will ensure that the line-height scales if the user zooms the browser window.",
+              "viewPortLocation": {
+                "top-left": {
+                  "x": 17.59375,
+                  "y": 280.84375
+                },
+                "bottom-right": {
+                  "x": 455.99975,
+                  "y": 324.84375
+                },
+                "height": 44,
+                "width": 438.406
+              },
+              "position": {
+                "line": 3907,
+                "column": 33
+              },
+              "errorSnippet": "&lt;form class=\"usa-form\"&gt; &lt;label class=\"usa-label\" for=\"options\"&gt;&lt;/label&gt; &lt;select required=\"\" class=\"usa-select\" id=\"i-want-to\" name=\"options\" aria-label=\"dropdown menu\"&gt; &lt;option id=\"\" value=\"\" selected=\"\"&gt;I want to... &lt;/op",
+              "xpath": "/html/body/main[1]/section[2]/div[1]/div[1]/div[1]/div[1]/div[4]/form[1]",
+              "issueID": "e35da3deb3cbb9fd227590911cdf3f52",
+              "signature": "13af5f5a0c3a3b4bd2cef450a70432ee",
+              "ref": "https://tenon.io/bestpractice.php?bpID=14&tID=144&issueID=e35da3deb3cbb9fd227590911cdf3f52"
+            },
+            {
+              "tID": 144,
+              "bpID": 14,
+              "priority": 91,
+              "level": [
+                "AAA"
+              ],
+              "certainty": 100,
+              "errorTitle": "This content's line height is insufficent to properly display the computed element font size.",
+              "standards": [
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level AAA: 1.4.8 Visual Presentation"
+              ],
+              "resultTitle": "Set a `line-height` (leading) that is at least one and a half times the current font size.",
+              "errorDescription": "This content's line height is insufficent to properly display the computed element font size. Line height that is less than 150% of the computed element font size limits content readability for people with dyslexia, low vision, cognitive impairments or learning disabilities. Set the `line-height` for this content to a value of 1.5 or higher. Using a proportional, unitless value like 1.5 or 150% will ensure that the line-height scales if the user zooms the browser window.",
+              "viewPortLocation": {
+                "top-left": {
+                  "x": 20,
+                  "y": 147
+                },
+                "bottom-right": {
+                  "x": 392,
+                  "y": 227
+                },
+                "height": 80,
+                "width": 372
+              },
+              "position": {
+                "line": 8419,
+                "column": 9
+              },
+              "errorSnippet": "&lt;div class=\"feed-desc\"&gt;&lt;p&gt;This Legal Advisory discusses financial disclosure reporting considerations for collectible Non-Fungible Tokens (NFTs) and Fractionalized Non-Fungible Tokens (F-NFTs).&lt;/p&gt;&lt;/div&gt;",
+              "xpath": "/html/body/main[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[4]",
+              "issueID": "652c3515f854489ed101bf657fdf609e",
+              "signature": "64b43b53024db58ccc0e8e9e6263da8d",
+              "ref": "https://tenon.io/bestpractice.php?bpID=14&tID=144&issueID=652c3515f854489ed101bf657fdf609e"
+            },
+            {
+              "tID": 144,
+              "bpID": 14,
+              "priority": 91,
+              "level": [
+                "AAA"
+              ],
+              "certainty": 100,
+              "errorTitle": "This content's line height is insufficent to properly display the computed element font size.",
+              "standards": [
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level AAA: 1.4.8 Visual Presentation"
+              ],
+              "resultTitle": "Set a `line-height` (leading) that is at least one and a half times the current font size.",
+              "errorDescription": "This content's line height is insufficent to properly display the computed element font size. Line height that is less than 150% of the computed element font size limits content readability for people with dyslexia, low vision, cognitive impairments or learning disabilities. Set the `line-height` for this content to a value of 1.5 or higher. Using a proportional, unitless value like 1.5 or 150% will ensure that the line-height scales if the user zooms the browser window.",
+              "viewPortLocation": {
+                "top-left": {
+                  "x": 20,
+                  "y": 147
+                },
+                "bottom-right": {
+                  "x": 392,
+                  "y": 207
+                },
+                "height": 60,
+                "width": 372
+              },
+              "position": {
+                "line": 8423,
+                "column": 0
+              },
+              "errorSnippet": "&lt;div class=\"feed-desc\"&gt;&lt;p&gt;This Legal Advisory discusses the application of the 18 U.S.C. § 208 securities and mutual fund exemptions to cryptocurrency, stablecoins, and related investments. &lt;/p&gt;&lt;/div&gt;",
+              "xpath": "/html/body/main[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[4]",
+              "issueID": "1983ac77609eaf8e5d68e75d9834a8ba",
+              "signature": "9cb6df1cf258f21f722fe88f5dd63d8f",
+              "ref": "https://tenon.io/bestpractice.php?bpID=14&tID=144&issueID=1983ac77609eaf8e5d68e75d9834a8ba"
+            },
+            {
+              "tID": 144,
+              "bpID": 14,
+              "priority": 91,
+              "level": [
+                "AAA"
+              ],
+              "certainty": 100,
+              "errorTitle": "This content's line height is insufficent to properly display the computed element font size.",
+              "standards": [
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level AAA: 1.4.8 Visual Presentation"
+              ],
+              "resultTitle": "Set a `line-height` (leading) that is at least one and a half times the current font size.",
+              "errorDescription": "This content's line height is insufficent to properly display the computed element font size. Line height that is less than 150% of the computed element font size limits content readability for people with dyslexia, low vision, cognitive impairments or learning disabilities. Set the `line-height` for this content to a value of 1.5 or higher. Using a proportional, unitless value like 1.5 or 150% will ensure that the line-height scales if the user zooms the browser window.",
+              "viewPortLocation": {
+                "top-left": {
+                  "x": 20,
+                  "y": 97
+                },
+                "bottom-right": {
+                  "x": 392,
+                  "y": 197
+                },
+                "height": 100,
+                "width": 372
+              },
+              "position": {
+                "line": 8423,
+                "column": 0
+              },
+              "errorSnippet": "&lt;div class=\"feed-desc\"&gt;&lt;p&gt;One of our fundamental principles of ethical conduct in the executive branch requires the more than two million federal employees to provide equal opportunities to all Americans when carrying out their work.&lt;/p&gt",
+              "xpath": "/html/body/main[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[4]/div[4]",
+              "issueID": "66f85686423855344190150b371b2629",
+              "signature": "098824fe451e9c10245413418315dbce",
+              "ref": "https://tenon.io/bestpractice.php?bpID=14&tID=144&issueID=66f85686423855344190150b371b2629"
+            },
+            {
+              "tID": 144,
+              "bpID": 14,
+              "priority": 91,
+              "level": [
+                "AAA"
+              ],
+              "certainty": 100,
+              "errorTitle": "This content's line height is insufficent to properly display the computed element font size.",
+              "standards": [
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level AAA: 1.4.8 Visual Presentation"
+              ],
+              "resultTitle": "Set a `line-height` (leading) that is at least one and a half times the current font size.",
+              "errorDescription": "This content's line height is insufficent to properly display the computed element font size. Line height that is less than 150% of the computed element font size limits content readability for people with dyslexia, low vision, cognitive impairments or learning disabilities. Set the `line-height` for this content to a value of 1.5 or higher. Using a proportional, unitless value like 1.5 or 150% will ensure that the line-height scales if the user zooms the browser window.",
+              "viewPortLocation": {
+                "top-left": {
+                  "x": 20,
+                  "y": 147
+                },
+                "bottom-right": {
+                  "x": 392,
+                  "y": 287
+                },
+                "height": 140,
+                "width": 372
+              },
+              "position": {
+                "line": 8423,
+                "column": 0
+              },
+              "errorSnippet": "&lt;div class=\"feed-desc\"&gt;&lt;p&gt;In this Program Advisory, OGE asks each agency to forward its annual letter stating whether its components that are currently designated should remain designated for purposes of 18 U.S.C. § 207(c). Any request to mod",
+              "xpath": "/html/body/main[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[5]/div[4]",
+              "issueID": "1a68e70d7b8eda0aa41ad2ef64f1e789",
+              "signature": "0dd42b95ed00c618293839c2fbecd993",
+              "ref": "https://tenon.io/bestpractice.php?bpID=14&tID=144&issueID=1a68e70d7b8eda0aa41ad2ef64f1e789"
+            },
+            {
+              "tID": 144,
+              "bpID": 14,
+              "priority": 91,
+              "level": [
+                "AAA"
+              ],
+              "certainty": 100,
+              "errorTitle": "This content's line height is insufficent to properly display the computed element font size.",
+              "standards": [
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level AAA: 1.4.8 Visual Presentation"
+              ],
+              "resultTitle": "Set a `line-height` (leading) that is at least one and a half times the current font size.",
+              "errorDescription": "This content's line height is insufficent to properly display the computed element font size. Line height that is less than 150% of the computed element font size limits content readability for people with dyslexia, low vision, cognitive impairments or learning disabilities. Set the `line-height` for this content to a value of 1.5 or higher. Using a proportional, unitless value like 1.5 or 150% will ensure that the line-height scales if the user zooms the browser window.",
+              "viewPortLocation": {
+                "top-left": {
+                  "x": 20,
+                  "y": 147
+                },
+                "bottom-right": {
+                  "x": 392,
+                  "y": 227
+                },
+                "height": 80,
+                "width": 372
+              },
+              "position": {
+                "line": 8423,
+                "column": 0
+              },
+              "errorSnippet": "&lt;div class=\"feed-desc\"&gt;&lt;p&gt;This Legal Advisory discusses the application of the financial disclosure and conflict of interest rules to mutual funds purchased through the Thrift Savings Plan mutual fund window.&lt;/p&gt;&lt;/div&gt;",
+              "xpath": "/html/body/main[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[6]/div[4]",
+              "issueID": "4ec37688703a2786b92499800c4df872",
+              "signature": "edc8a198526df9c7513f5e8369c90b9f",
+              "ref": "https://tenon.io/bestpractice.php?bpID=14&tID=144&issueID=4ec37688703a2786b92499800c4df872"
+            },
+            {
+              "tID": 144,
+              "bpID": 14,
+              "priority": 91,
+              "level": [
+                "AAA"
+              ],
+              "certainty": 100,
+              "errorTitle": "This content's line height is insufficent to properly display the computed element font size.",
+              "standards": [
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level AAA: 1.4.8 Visual Presentation"
+              ],
+              "resultTitle": "Set a `line-height` (leading) that is at least one and a half times the current font size.",
+              "errorDescription": "This content's line height is insufficent to properly display the computed element font size. Line height that is less than 150% of the computed element font size limits content readability for people with dyslexia, low vision, cognitive impairments or learning disabilities. Set the `line-height` for this content to a value of 1.5 or higher. Using a proportional, unitless value like 1.5 or 150% will ensure that the line-height scales if the user zooms the browser window.",
+              "viewPortLocation": {
+                "top-left": {
+                  "x": 43.99375,
+                  "y": 146.62495
+                },
+                "bottom-right": {
+                  "x": 438.39975,
+                  "y": 294.62495
+                },
+                "height": 148,
+                "width": 394.406
+              },
+              "position": {
+                "line": 8423,
+                "column": 0
+              },
+              "errorSnippet": "&lt;div class=\"top-align-hp\"&gt; &lt;a href=\"/web/oge.nsf/Resources/Resources for Nominees to Senate-Confirmed Positions\"&gt;Resources for Nominees to Senate-Confirmed Positions&lt;/a&gt; &lt;p&gt;OGE provides a collection of resources to help potential ",
+              "xpath": "/html/body/main[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]",
+              "issueID": "42882e70e632a9313741287c56ea9b65",
+              "signature": "b51dd06d8bae5bd2bc83192b7f3fc417",
+              "ref": "https://tenon.io/bestpractice.php?bpID=14&tID=144&issueID=42882e70e632a9313741287c56ea9b65"
+            },
+            {
+              "tID": 144,
+              "bpID": 14,
+              "priority": 91,
+              "level": [
+                "AAA"
+              ],
+              "certainty": 100,
+              "errorTitle": "This content's line height is insufficent to properly display the computed element font size.",
+              "standards": [
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level AAA: 1.4.8 Visual Presentation"
+              ],
+              "resultTitle": "Set a `line-height` (leading) that is at least one and a half times the current font size.",
+              "errorDescription": "This content's line height is insufficent to properly display the computed element font size. Line height that is less than 150% of the computed element font size limits content readability for people with dyslexia, low vision, cognitive impairments or learning disabilities. Set the `line-height` for this content to a value of 1.5 or higher. Using a proportional, unitless value like 1.5 or 150% will ensure that the line-height scales if the user zooms the browser window.",
+              "viewPortLocation": {
+                "top-left": {
+                  "x": 43.99375,
+                  "y": 312.0312
+                },
+                "bottom-right": {
+                  "x": 438.39975,
+                  "y": 438.0312
+                },
+                "height": 126,
+                "width": 394.406
+              },
+              "position": {
+                "line": 8429,
+                "column": 5
+              },
+              "errorSnippet": "&lt;div class=\"top-align-hp\"&gt; &lt;a href=\"/web/oge.nsf/0/3D3B3F1EE20BA918852585BA0063A592/$FILE/Compilation of Federal Ethics Laws (2021).pdf?open\"&gt;Compilation of Federal Ethics Laws (PDF)&lt;/a&gt; &lt;p&gt;OGE has compiled the most pertinent laws",
+              "xpath": "/html/body/main[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]",
+              "issueID": "592d657865c5d12979b78f756222e1d7",
+              "signature": "99cc5209d6224f14d630eb3f99db6497",
+              "ref": "https://tenon.io/bestpractice.php?bpID=14&tID=144&issueID=592d657865c5d12979b78f756222e1d7"
+            },
+            {
+              "tID": 144,
+              "bpID": 14,
+              "priority": 91,
+              "level": [
+                "AAA"
+              ],
+              "certainty": 100,
+              "errorTitle": "This content's line height is insufficent to properly display the computed element font size.",
+              "standards": [
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level AAA: 1.4.8 Visual Presentation"
+              ],
+              "resultTitle": "Set a `line-height` (leading) that is at least one and a half times the current font size.",
+              "errorDescription": "This content's line height is insufficent to properly display the computed element font size. Line height that is less than 150% of the computed element font size limits content readability for people with dyslexia, low vision, cognitive impairments or learning disabilities. Set the `line-height` for this content to a value of 1.5 or higher. Using a proportional, unitless value like 1.5 or 150% will ensure that the line-height scales if the user zooms the browser window.",
+              "viewPortLocation": {
+                "top-left": {
+                  "x": 43.99375,
+                  "y": 455.43745
+                },
+                "bottom-right": {
+                  "x": 438.39975,
+                  "y": 581.43745
+                },
+                "height": 126,
+                "width": 394.406
+              },
+              "position": {
+                "line": 8431,
+                "column": 9
+              },
+              "errorSnippet": "&lt;div class=\"top-align-hp\"&gt; &lt;a href=\"/web/oge.nsf/0/86D5B4F72AF0FBCB852585B6005A1A22/$FILE/Standards%20of%20Ethical%20Conduct%20508.pdf\"&gt;Summary of the Standards of Ethical Conduct for Employees of the Executive Branch (PDF)&lt;/a&gt; &lt;p&gt",
+              "xpath": "/html/body/main[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[3]/div[1]",
+              "issueID": "0e15459eea91356adaa99e1b35ab6697",
+              "signature": "fae37348226267ed3e0ef7195368908b",
+              "ref": "https://tenon.io/bestpractice.php?bpID=14&tID=144&issueID=0e15459eea91356adaa99e1b35ab6697"
+            },
+            {
+              "tID": 144,
+              "bpID": 14,
+              "priority": 91,
+              "level": [
+                "AAA"
+              ],
+              "certainty": 100,
+              "errorTitle": "This content's line height is insufficent to properly display the computed element font size.",
+              "standards": [
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level AAA: 1.4.8 Visual Presentation"
+              ],
+              "resultTitle": "Set a `line-height` (leading) that is at least one and a half times the current font size.",
+              "errorDescription": "This content's line height is insufficent to properly display the computed element font size. Line height that is less than 150% of the computed element font size limits content readability for people with dyslexia, low vision, cognitive impairments or learning disabilities. Set the `line-height` for this content to a value of 1.5 or higher. Using a proportional, unitless value like 1.5 or 150% will ensure that the line-height scales if the user zooms the browser window.",
+              "viewPortLocation": {
+                "top-left": {
+                  "x": 43.99375,
+                  "y": 598.8437
+                },
+                "bottom-right": {
+                  "x": 438.39975,
+                  "y": 702.8437
+                },
+                "height": 104,
+                "width": 394.406
+              },
+              "position": {
+                "line": 8434,
+                "column": 15
+              },
+              "errorSnippet": "&lt;div class=\"top-align-hp\"&gt; &lt;a href=\"https://extapps2.oge.gov/Training/OGETraining.nsf/IEGHome.xsp\" target=\"_blank\"&gt;Institute for Ethics in Government&lt;/a&gt; &lt;p&gt;OGE provides professional development opportunities for executive branch ",
+              "xpath": "/html/body/main[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[4]/div[1]",
+              "issueID": "5936dd52e484a135fd074837d1811770",
+              "signature": "14d46296df420c3a1fb5a007e0c21ab3",
+              "ref": "https://tenon.io/bestpractice.php?bpID=14&tID=144&issueID=5936dd52e484a135fd074837d1811770"
+            },
+            {
+              "tID": 144,
+              "bpID": 14,
+              "priority": 91,
+              "level": [
+                "AAA"
+              ],
+              "certainty": 100,
+              "errorTitle": "This content's line height is insufficent to properly display the computed element font size.",
+              "standards": [
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level AAA: 1.4.8 Visual Presentation"
+              ],
+              "resultTitle": "Set a `line-height` (leading) that is at least one and a half times the current font size.",
+              "errorDescription": "This content's line height is insufficent to properly display the computed element font size. Line height that is less than 150% of the computed element font size limits content readability for people with dyslexia, low vision, cognitive impairments or learning disabilities. Set the `line-height` for this content to a value of 1.5 or higher. Using a proportional, unitless value like 1.5 or 150% will ensure that the line-height scales if the user zooms the browser window.",
+              "viewPortLocation": {
+                "top-left": {
+                  "x": 43.99375,
+                  "y": 720.24995
+                },
+                "bottom-right": {
+                  "x": 438.39975,
+                  "y": 802.24995
+                },
+                "height": 82,
+                "width": 394.406
+              },
+              "position": {
+                "line": 8440,
+                "column": 14
+              },
+              "errorSnippet": "&lt;div class=\"top-align-hp\"&gt; &lt;a href=\"https://www.oge.gov/Web/278eGuide.nsf\" target=\"_blank\"&gt;Public Financial Disclosure Guide&lt;/a&gt; &lt;p&gt;OGE maintains a guide to assist filers and reviewers of public financial disclosure reports. &lt;/",
+              "xpath": "/html/body/main[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[5]/div[1]",
+              "issueID": "0fc53d282a0681a4138d7798f8908695",
+              "signature": "af5fe8c1ba2dd5204940cdd7d4a56298",
+              "ref": "https://tenon.io/bestpractice.php?bpID=14&tID=144&issueID=0fc53d282a0681a4138d7798f8908695"
+            },
+            {
+              "tID": 144,
+              "bpID": 14,
+              "priority": 91,
+              "level": [
+                "AAA"
+              ],
+              "certainty": 100,
+              "errorTitle": "This content's line height is insufficent to properly display the computed element font size.",
+              "standards": [
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level AAA: 1.4.8 Visual Presentation"
+              ],
+              "resultTitle": "Set a `line-height` (leading) that is at least one and a half times the current font size.",
+              "errorDescription": "This content's line height is insufficent to properly display the computed element font size. Line height that is less than 150% of the computed element font size limits content readability for people with dyslexia, low vision, cognitive impairments or learning disabilities. Set the `line-height` for this content to a value of 1.5 or higher. Using a proportional, unitless value like 1.5 or 150% will ensure that the line-height scales if the user zooms the browser window.",
+              "viewPortLocation": {
+                "top-left": {
+                  "x": 43.99375,
+                  "y": 819.6562
+                },
+                "bottom-right": {
+                  "x": 438.39975,
+                  "y": 967.6562
+                },
+                "height": 148,
+                "width": 394.406
+              },
+              "position": {
+                "line": 8445,
+                "column": 35
+              },
+              "errorSnippet": "&lt;div class=\"top-align-hp\"&gt; &lt;a href=\"https://www.oge.gov/web/OGE.nsf/accessdocs_disclosure-faq\" target=\"_blank\"&gt;Updated Public Financial Disclosure Frequently Asked Questions&lt;/a&gt; &lt;p&gt;OGE developed Frequently Asked Questions on publi",
+              "xpath": "/html/body/main[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[6]/div[1]",
+              "issueID": "ad2d2688c258e3d01be1bea3efdacae1",
+              "signature": "077b14613363c4b0c18884bb9bc4f46a",
+              "ref": "https://tenon.io/bestpractice.php?bpID=14&tID=144&issueID=ad2d2688c258e3d01be1bea3efdacae1"
+            },
+            {
+              "tID": 144,
+              "bpID": 14,
+              "priority": 91,
+              "level": [
+                "AAA"
+              ],
+              "certainty": 100,
+              "errorTitle": "This content's line height is insufficent to properly display the computed element font size.",
+              "standards": [
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level AAA: 1.4.8 Visual Presentation"
+              ],
+              "resultTitle": "Set a `line-height` (leading) that is at least one and a half times the current font size.",
+              "errorDescription": "This content's line height is insufficent to properly display the computed element font size. Line height that is less than 150% of the computed element font size limits content readability for people with dyslexia, low vision, cognitive impairments or learning disabilities. Set the `line-height` for this content to a value of 1.5 or higher. Using a proportional, unitless value like 1.5 or 150% will ensure that the line-height scales if the user zooms the browser window.",
+              "viewPortLocation": {
+                "top-left": {
+                  "x": 16,
+                  "y": 0
+                },
+                "bottom-right": {
+                  "x": 960,
+                  "y": 74
+                },
+                "height": 74,
+                "width": 944
+              },
+              "position": {
+                "line": 8536,
+                "column": 33
+              },
+              "errorSnippet": "&lt;section class=\"usa-footer__primary-content usa-footer__primary-content--collapsible\"&gt; &lt;ul class=\"usa-list usa-list--unstyled\"&gt; &lt;li class=\"usa-footer__secondary-link\"&gt;&lt;a href=\"/web/oge.nsf/about_internal-agency-policies#web\"&gt;Acces",
+              "xpath": "/html/body/footer[1]/div[2]/div[1]/div[1]/div[1]/nav[1]/div[1]/div[1]/section[1]",
+              "issueID": "2eb5a86804e1166ac428a19e3a291934",
+              "signature": "409ef5ae4928173dd1c4b58c09a009ba",
+              "ref": "https://tenon.io/bestpractice.php?bpID=14&tID=144&issueID=2eb5a86804e1166ac428a19e3a291934"
+            },
+            {
+              "tID": 152,
+              "bpID": 211,
+              "priority": 88,
+              "level": [
+                "A",
+                "AA",
+                "AAA"
+              ],
+              "certainty": 100,
+              "errorTitle": "This actionable element is smaller than the minimum required size.",
+              "standards": [
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level A: 1.3.1 Info and Relationships",
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level AA: 1.4.5 Images of Text",
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level AA: 3.2.4 Consistent Identification",
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level AA: 1.4.4 Resize text",
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level AAA: 2.5.5 Target Size"
+              ],
+              "resultTitle": "Ensure content is legible.",
+              "errorDescription": "This actionable element is smaller than the stated minimum defined by all mobile platform developer guides. Minimum sizes for actionable elements ensure that those elements can be operated by people with vision, motor and cognitive disabilities. Even if this system is not explicitly intended for mobile use, it should be enlarged with CSS to meet minimu requirements and improve usability for users with vision, motor and cognitive disabilities.",
+              "viewPortLocation": {
+                "top-left": {
+                  "x": 0,
+                  "y": -8
+                },
+                "bottom-right": {
+                  "x": 0,
+                  "y": 32
+                },
+                "height": 40,
+                "width": 0
+              },
+              "position": {
+                "line": 83,
+                "column": 215
+              },
+              "errorSnippet": "&lt;input class=\"usa-input\" id=\"extended-mega-search-field-small\" type=\"search\" name=\"search\"&gt;",
+              "xpath": "/html/body/form[1]/section[2]/header[1]/nav[1]/div[1]/div[1]/div[1]/div[1]/input[1]",
+              "issueID": "aef6f7cbc5f8402d5dd38e8db790f7bf",
+              "signature": "8cb9c24dc787b640b3974394eedd64b0",
+              "ref": "https://tenon.io/bestpractice.php?bpID=211&tID=152&issueID=aef6f7cbc5f8402d5dd38e8db790f7bf"
+            },
+            {
+              "tID": 153,
+              "bpID": 211,
+              "priority": 85,
+              "level": [
+                "A",
+                "AA",
+                "AAA"
+              ],
+              "certainty": 60,
+              "errorTitle": "This long string of text is in all caps.",
+              "standards": [
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level A: 1.3.1 Info and Relationships",
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level AA: 1.4.5 Images of Text",
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level AA: 3.2.4 Consistent Identification",
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level AA: 1.4.4 Resize text",
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level AAA: 2.5.5 Target Size"
+              ],
+              "resultTitle": "Ensure content is legible.",
+              "errorDescription": "This element contains a long passage of text that is capitalized, either in the text itself or via CSS text-transform.  Capitalized text can be very difficult to read for users with dyslexia Modify this passage of text so that it is no longer all in upper case. Changing this to sentence case will result in significant improvements in readability.",
+              "viewPortLocation": {
+                "top-left": {
+                  "x": 0,
+                  "y": 0
+                },
+                "bottom-right": {
+                  "x": 0,
+                  "y": -10.4
+                },
+                "height": -10.4,
+                "width": 0
+              },
+              "position": {
+                "line": 6,
+                "column": 3
+              },
+              "errorSnippet": "&lt;li class=\"usa-nav__submenu-item section-landing\"&gt; &lt;strong&gt;Our Mission, Role, and History&lt;/strong&gt; &lt;/li&gt;",
+              "xpath": "/html/body/form[1]/section[2]/header[1]/nav[1]/div[1]/ul[1]/li[1]/div[1]/div[1]/div[1]/ul[1]/li[1]",
+              "issueID": "e09e3b648382137a53d6e39f8173040c",
+              "signature": "efbf4b713cfa3fd60459517c2b5f2298",
+              "ref": "https://tenon.io/bestpractice.php?bpID=211&tID=153&issueID=e09e3b648382137a53d6e39f8173040c"
+            },
+            {
+              "tID": 153,
+              "bpID": 211,
+              "priority": 85,
+              "level": [
+                "A",
+                "AA",
+                "AAA"
+              ],
+              "certainty": 60,
+              "errorTitle": "This long string of text is in all caps.",
+              "standards": [
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level A: 1.3.1 Info and Relationships",
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level AA: 1.4.5 Images of Text",
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level AA: 3.2.4 Consistent Identification",
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level AA: 1.4.4 Resize text",
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level AAA: 2.5.5 Target Size"
+              ],
+              "resultTitle": "Ensure content is legible.",
+              "errorDescription": "This element contains a long passage of text that is capitalized, either in the text itself or via CSS text-transform.  Capitalized text can be very difficult to read for users with dyslexia Modify this passage of text so that it is no longer all in upper case. Changing this to sentence case will result in significant improvements in readability.",
+              "viewPortLocation": {
+                "top-left": {
+                  "x": 0,
+                  "y": 0
+                },
+                "bottom-right": {
+                  "x": 0,
+                  "y": 0
+                },
+                "height": 0,
+                "width": 0
+              },
+              "position": {
+                "line": 7869,
+                "column": 11
+              },
+              "errorSnippet": "&lt;strong&gt;Our Mission, Role, and History&lt;/strong&gt;",
+              "xpath": "/html/body/form[1]/section[2]/header[1]/nav[1]/div[1]/ul[1]/li[1]/div[1]/div[1]/div[1]/ul[1]/li[1]/strong[1]",
+              "issueID": "3ee6fbd6ce7d47e5fe0fcd03d8dc8108",
+              "signature": "0e1d418238122a590d97f6b380196bfa",
+              "ref": "https://tenon.io/bestpractice.php?bpID=211&tID=153&issueID=3ee6fbd6ce7d47e5fe0fcd03d8dc8108"
+            },
+            {
+              "tID": 153,
+              "bpID": 211,
+              "priority": 85,
+              "level": [
+                "A",
+                "AA",
+                "AAA"
+              ],
+              "certainty": 60,
+              "errorTitle": "This long string of text is in all caps.",
+              "standards": [
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level A: 1.3.1 Info and Relationships",
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level AA: 1.4.5 Images of Text",
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level AA: 3.2.4 Consistent Identification",
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level AA: 1.4.4 Resize text",
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level AAA: 2.5.5 Target Size"
+              ],
+              "resultTitle": "Ensure content is legible.",
+              "errorDescription": "This element contains a long passage of text that is capitalized, either in the text itself or via CSS text-transform.  Capitalized text can be very difficult to read for users with dyslexia Modify this passage of text so that it is no longer all in upper case. Changing this to sentence case will result in significant improvements in readability.",
+              "viewPortLocation": {
+                "top-left": {
+                  "x": 0,
+                  "y": 0
+                },
+                "bottom-right": {
+                  "x": 0,
+                  "y": -10.4
+                },
+                "height": -10.4,
+                "width": 0
+              },
+              "position": {
+                "line": 3776,
+                "column": 474
+              },
+              "errorSnippet": "&lt;li class=\"usa-nav__submenu-item section-landing\"&gt; &lt;strong&gt;Our People &amp;amp; Organization&lt;/strong&gt; &lt;/li&gt;",
+              "xpath": "/html/body/form[1]/section[2]/header[1]/nav[1]/div[1]/ul[1]/li[1]/div[1]/div[1]/div[2]/ul[1]/li[1]",
+              "issueID": "16bde9b58b5d4f3ee2a228de92b81a5f",
+              "signature": "1f0115a68997827008b872ab70ae49b4",
+              "ref": "https://tenon.io/bestpractice.php?bpID=211&tID=153&issueID=16bde9b58b5d4f3ee2a228de92b81a5f"
+            },
+            {
+              "tID": 153,
+              "bpID": 211,
+              "priority": 85,
+              "level": [
+                "A",
+                "AA",
+                "AAA"
+              ],
+              "certainty": 60,
+              "errorTitle": "This long string of text is in all caps.",
+              "standards": [
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level A: 1.3.1 Info and Relationships",
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level AA: 1.4.5 Images of Text",
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level AA: 3.2.4 Consistent Identification",
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level AA: 1.4.4 Resize text",
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level AAA: 2.5.5 Target Size"
+              ],
+              "resultTitle": "Ensure content is legible.",
+              "errorDescription": "This element contains a long passage of text that is capitalized, either in the text itself or via CSS text-transform.  Capitalized text can be very difficult to read for users with dyslexia Modify this passage of text so that it is no longer all in upper case. Changing this to sentence case will result in significant improvements in readability.",
+              "viewPortLocation": {
+                "top-left": {
+                  "x": 0,
+                  "y": 0
+                },
+                "bottom-right": {
+                  "x": 0,
+                  "y": 0
+                },
+                "height": 0,
+                "width": 0
+              },
+              "position": {
+                "line": 7891,
+                "column": 11
+              },
+              "errorSnippet": "&lt;strong&gt;Our People &amp;amp; Organization&lt;/strong&gt;",
+              "xpath": "/html/body/form[1]/section[2]/header[1]/nav[1]/div[1]/ul[1]/li[1]/div[1]/div[1]/div[2]/ul[1]/li[1]/strong[1]",
+              "issueID": "c2f1698aa25618e9006419627b4ca6e8",
+              "signature": "dc4a0beedcc29e5d68665425a89e0979",
+              "ref": "https://tenon.io/bestpractice.php?bpID=211&tID=153&issueID=c2f1698aa25618e9006419627b4ca6e8"
+            },
+            {
+              "tID": 153,
+              "bpID": 211,
+              "priority": 85,
+              "level": [
+                "A",
+                "AA",
+                "AAA"
+              ],
+              "certainty": 60,
+              "errorTitle": "This long string of text is in all caps.",
+              "standards": [
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level A: 1.3.1 Info and Relationships",
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level AA: 1.4.5 Images of Text",
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level AA: 3.2.4 Consistent Identification",
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level AA: 1.4.4 Resize text",
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level AAA: 2.5.5 Target Size"
+              ],
+              "resultTitle": "Ensure content is legible.",
+              "errorDescription": "This element contains a long passage of text that is capitalized, either in the text itself or via CSS text-transform.  Capitalized text can be very difficult to read for users with dyslexia Modify this passage of text so that it is no longer all in upper case. Changing this to sentence case will result in significant improvements in readability.",
+              "viewPortLocation": {
+                "top-left": {
+                  "x": 0,
+                  "y": 0
+                },
+                "bottom-right": {
+                  "x": 0,
+                  "y": -10.4
+                },
+                "height": -10.4,
+                "width": 0
+              },
+              "position": {
+                "line": 7883,
+                "column": 10
+              },
+              "errorSnippet": "&lt;li class=\"usa-nav__submenu-item section-landing\"&gt; &lt;strong&gt;Partners in Government Integrity&lt;/strong&gt; &lt;/li&gt;",
+              "xpath": "/html/body/form[1]/section[2]/header[1]/nav[1]/div[1]/ul[1]/li[1]/div[1]/div[2]/div[1]/ul[1]/li[1]",
+              "issueID": "1113627e9dc2744a1d10ca608db4ba62",
+              "signature": "5221a561260b066af606c2b7ac1188f1",
+              "ref": "https://tenon.io/bestpractice.php?bpID=211&tID=153&issueID=1113627e9dc2744a1d10ca608db4ba62"
+            },
+            {
+              "tID": 153,
+              "bpID": 211,
+              "priority": 85,
+              "level": [
+                "A",
+                "AA",
+                "AAA"
+              ],
+              "certainty": 60,
+              "errorTitle": "This long string of text is in all caps.",
+              "standards": [
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level A: 1.3.1 Info and Relationships",
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level AA: 1.4.5 Images of Text",
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level AA: 3.2.4 Consistent Identification",
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level AA: 1.4.4 Resize text",
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level AAA: 2.5.5 Target Size"
+              ],
+              "resultTitle": "Ensure content is legible.",
+              "errorDescription": "This element contains a long passage of text that is capitalized, either in the text itself or via CSS text-transform.  Capitalized text can be very difficult to read for users with dyslexia Modify this passage of text so that it is no longer all in upper case. Changing this to sentence case will result in significant improvements in readability.",
+              "viewPortLocation": {
+                "top-left": {
+                  "x": 0,
+                  "y": 0
+                },
+                "bottom-right": {
+                  "x": 0,
+                  "y": 0
+                },
+                "height": 0,
+                "width": 0
+              },
+              "position": {
+                "line": 7944,
+                "column": 11
+              },
+              "errorSnippet": "&lt;strong&gt;Partners in Government Integrity&lt;/strong&gt;",
+              "xpath": "/html/body/form[1]/section[2]/header[1]/nav[1]/div[1]/ul[1]/li[1]/div[1]/div[2]/div[1]/ul[1]/li[1]/strong[1]",
+              "issueID": "f4bb0fc80fca453a6e6a522b658fd73f",
+              "signature": "61080b0ab154005b6e60e8acc0721e5c",
+              "ref": "https://tenon.io/bestpractice.php?bpID=211&tID=153&issueID=f4bb0fc80fca453a6e6a522b658fd73f"
+            },
+            {
+              "tID": 153,
+              "bpID": 211,
+              "priority": 85,
+              "level": [
+                "A",
+                "AA",
+                "AAA"
+              ],
+              "certainty": 60,
+              "errorTitle": "This long string of text is in all caps.",
+              "standards": [
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level A: 1.3.1 Info and Relationships",
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level AA: 1.4.5 Images of Text",
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level AA: 3.2.4 Consistent Identification",
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level AA: 1.4.4 Resize text",
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level AAA: 2.5.5 Target Size"
+              ],
+              "resultTitle": "Ensure content is legible.",
+              "errorDescription": "This element contains a long passage of text that is capitalized, either in the text itself or via CSS text-transform.  Capitalized text can be very difficult to read for users with dyslexia Modify this passage of text so that it is no longer all in upper case. Changing this to sentence case will result in significant improvements in readability.",
+              "viewPortLocation": {
+                "top-left": {
+                  "x": 0,
+                  "y": 0
+                },
+                "bottom-right": {
+                  "x": 0,
+                  "y": -10.4
+                },
+                "height": -10.4,
+                "width": 0
+              },
+              "position": {
+                "line": 7915,
+                "column": 10
+              },
+              "errorSnippet": "&lt;li class=\"usa-nav__submenu-item section-landing link-head\"&gt; &lt;a href=\"/web/oge.nsf/accessdocs_FOIA-landing\"&gt;&lt;strong&gt;Freedom of Information Act&lt;/strong&gt;&lt;/a&gt; &lt;/li&gt;",
+              "xpath": "/html/body/form[1]/section[2]/header[1]/nav[1]/div[1]/ul[1]/li[2]/div[1]/div[1]/div[1]/ul[1]/li[1]",
+              "issueID": "09e647363e9e54726690ed473a8bffd4",
+              "signature": "ac2ce99ad376c386050be35b8df00432",
+              "ref": "https://tenon.io/bestpractice.php?bpID=211&tID=153&issueID=09e647363e9e54726690ed473a8bffd4"
+            },
+            {
+              "tID": 153,
+              "bpID": 211,
+              "priority": 85,
+              "level": [
+                "A",
+                "AA",
+                "AAA"
+              ],
+              "certainty": 60,
+              "errorTitle": "This long string of text is in all caps.",
+              "standards": [
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level A: 1.3.1 Info and Relationships",
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level AA: 1.4.5 Images of Text",
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level AA: 3.2.4 Consistent Identification",
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level AA: 1.4.4 Resize text",
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level AAA: 2.5.5 Target Size"
+              ],
+              "resultTitle": "Ensure content is legible.",
+              "errorDescription": "This element contains a long passage of text that is capitalized, either in the text itself or via CSS text-transform.  Capitalized text can be very difficult to read for users with dyslexia Modify this passage of text so that it is no longer all in upper case. Changing this to sentence case will result in significant improvements in readability.",
+              "viewPortLocation": {
+                "top-left": {
+                  "x": 0,
+                  "y": 0
+                },
+                "bottom-right": {
+                  "x": 0,
+                  "y": 0
+                },
+                "height": 0,
+                "width": 0
+              },
+              "position": {
+                "line": 3716,
+                "column": 0
+              },
+              "errorSnippet": "&lt;a href=\"/web/oge.nsf/accessdocs_FOIA-landing\"&gt;&lt;strong&gt;Freedom of Information Act&lt;/strong&gt;&lt;/a&gt;",
+              "xpath": "/html/body/form[1]/section[2]/header[1]/nav[1]/div[1]/ul[1]/li[2]/div[1]/div[1]/div[1]/ul[1]/li[1]/a[1]",
+              "issueID": "a635854d685769f37689b2f2be3ab216",
+              "signature": "9e798c6d3012805686024a435ffe6c35",
+              "ref": "https://tenon.io/bestpractice.php?bpID=211&tID=153&issueID=a635854d685769f37689b2f2be3ab216"
+            },
+            {
+              "tID": 153,
+              "bpID": 211,
+              "priority": 85,
+              "level": [
+                "A",
+                "AA",
+                "AAA"
+              ],
+              "certainty": 60,
+              "errorTitle": "This long string of text is in all caps.",
+              "standards": [
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level A: 1.3.1 Info and Relationships",
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level AA: 1.4.5 Images of Text",
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level AA: 3.2.4 Consistent Identification",
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level AA: 1.4.4 Resize text",
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level AAA: 2.5.5 Target Size"
+              ],
+              "resultTitle": "Ensure content is legible.",
+              "errorDescription": "This element contains a long passage of text that is capitalized, either in the text itself or via CSS text-transform.  Capitalized text can be very difficult to read for users with dyslexia Modify this passage of text so that it is no longer all in upper case. Changing this to sentence case will result in significant improvements in readability.",
+              "viewPortLocation": {
+                "top-left": {
+                  "x": 0,
+                  "y": 0
+                },
+                "bottom-right": {
+                  "x": 0,
+                  "y": 0
+                },
+                "height": 0,
+                "width": 0
+              },
+              "position": {
+                "line": 7990,
+                "column": 58
+              },
+              "errorSnippet": "&lt;strong&gt;Freedom of Information Act&lt;/strong&gt;",
+              "xpath": "/html/body/form[1]/section[2]/header[1]/nav[1]/div[1]/ul[1]/li[2]/div[1]/div[1]/div[1]/ul[1]/li[1]/a[1]/strong[1]",
+              "issueID": "26d5c8ce76bff1824aeee690cf8dd1cd",
+              "signature": "2331c0de796617ebe41df4b92e444e0a",
+              "ref": "https://tenon.io/bestpractice.php?bpID=211&tID=153&issueID=26d5c8ce76bff1824aeee690cf8dd1cd"
+            },
+            {
+              "tID": 153,
+              "bpID": 211,
+              "priority": 85,
+              "level": [
+                "A",
+                "AA",
+                "AAA"
+              ],
+              "certainty": 60,
+              "errorTitle": "This long string of text is in all caps.",
+              "standards": [
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level A: 1.3.1 Info and Relationships",
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level AA: 1.4.5 Images of Text",
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level AA: 3.2.4 Consistent Identification",
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level AA: 1.4.4 Resize text",
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level AAA: 2.5.5 Target Size"
+              ],
+              "resultTitle": "Ensure content is legible.",
+              "errorDescription": "This element contains a long passage of text that is capitalized, either in the text itself or via CSS text-transform.  Capitalized text can be very difficult to read for users with dyslexia Modify this passage of text so that it is no longer all in upper case. Changing this to sentence case will result in significant improvements in readability.",
+              "viewPortLocation": {
+                "top-left": {
+                  "x": 0,
+                  "y": 0
+                },
+                "bottom-right": {
+                  "x": 0,
+                  "y": -10.4
+                },
+                "height": -10.4,
+                "width": 0
+              },
+              "position": {
+                "line": 7959,
+                "column": 10
+              },
+              "errorSnippet": "&lt;li class=\"usa-nav__submenu-item section-landing\"&gt; &lt;strong&gt;Executive Branch Wide Reports and Data&lt;/strong&gt; &lt;/li&gt;",
+              "xpath": "/html/body/form[1]/section[2]/header[1]/nav[1]/div[1]/ul[1]/li[2]/div[1]/div[1]/div[2]/ul[1]/li[1]",
+              "issueID": "e10d3228361d0862d36e8cec29a16a7b",
+              "signature": "fabd7a92ec5e02d31b868e181edf048b",
+              "ref": "https://tenon.io/bestpractice.php?bpID=211&tID=153&issueID=e10d3228361d0862d36e8cec29a16a7b"
+            },
+            {
+              "tID": 153,
+              "bpID": 211,
+              "priority": 85,
+              "level": [
+                "A",
+                "AA",
+                "AAA"
+              ],
+              "certainty": 60,
+              "errorTitle": "This long string of text is in all caps.",
+              "standards": [
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level A: 1.3.1 Info and Relationships",
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level AA: 1.4.5 Images of Text",
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level AA: 3.2.4 Consistent Identification",
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level AA: 1.4.4 Resize text",
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level AAA: 2.5.5 Target Size"
+              ],
+              "resultTitle": "Ensure content is legible.",
+              "errorDescription": "This element contains a long passage of text that is capitalized, either in the text itself or via CSS text-transform.  Capitalized text can be very difficult to read for users with dyslexia Modify this passage of text so that it is no longer all in upper case. Changing this to sentence case will result in significant improvements in readability.",
+              "viewPortLocation": {
+                "top-left": {
+                  "x": 0,
+                  "y": 0
+                },
+                "bottom-right": {
+                  "x": 0,
+                  "y": 0
+                },
+                "height": 0,
+                "width": 0
+              },
+              "position": {
+                "line": 8021,
+                "column": 11
+              },
+              "errorSnippet": "&lt;strong&gt;Executive Branch Wide Reports and Data&lt;/strong&gt;",
+              "xpath": "/html/body/form[1]/section[2]/header[1]/nav[1]/div[1]/ul[1]/li[2]/div[1]/div[1]/div[2]/ul[1]/li[1]/strong[1]",
+              "issueID": "b0894f8d3fd1f186c18a03ad922cbe1d",
+              "signature": "24be1459829ae4b2a85834e39135f400",
+              "ref": "https://tenon.io/bestpractice.php?bpID=211&tID=153&issueID=b0894f8d3fd1f186c18a03ad922cbe1d"
+            },
+            {
+              "tID": 153,
+              "bpID": 211,
+              "priority": 85,
+              "level": [
+                "A",
+                "AA",
+                "AAA"
+              ],
+              "certainty": 60,
+              "errorTitle": "This long string of text is in all caps.",
+              "standards": [
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level A: 1.3.1 Info and Relationships",
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level AA: 1.4.5 Images of Text",
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level AA: 3.2.4 Consistent Identification",
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level AA: 1.4.4 Resize text",
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level AAA: 2.5.5 Target Size"
+              ],
+              "resultTitle": "Ensure content is legible.",
+              "errorDescription": "This element contains a long passage of text that is capitalized, either in the text itself or via CSS text-transform.  Capitalized text can be very difficult to read for users with dyslexia Modify this passage of text so that it is no longer all in upper case. Changing this to sentence case will result in significant improvements in readability.",
+              "viewPortLocation": {
+                "top-left": {
+                  "x": 0,
+                  "y": 0
+                },
+                "bottom-right": {
+                  "x": 0,
+                  "y": -10.4
+                },
+                "height": -10.4,
+                "width": 0
+              },
+              "position": {
+                "line": 7989,
+                "column": 10
+              },
+              "errorSnippet": "&lt;li class=\"usa-nav__submenu-item section-landing link-head\"&gt;\n&lt;strong&gt;Managing Effective Ethics Programs&lt;/strong&gt; &lt;/li&gt;",
+              "xpath": "/html/body/form[1]/section[2]/header[1]/nav[1]/div[1]/ul[1]/li[3]/div[1]/div[1]/div[1]/ul[1]/li[1]",
+              "issueID": "db78658e8572a09547b1d9836aa805ee",
+              "signature": "85be08fc018ec9285d4e9c905432f4ea",
+              "ref": "https://tenon.io/bestpractice.php?bpID=211&tID=153&issueID=db78658e8572a09547b1d9836aa805ee"
+            },
+            {
+              "tID": 153,
+              "bpID": 211,
+              "priority": 85,
+              "level": [
+                "A",
+                "AA",
+                "AAA"
+              ],
+              "certainty": 60,
+              "errorTitle": "This long string of text is in all caps.",
+              "standards": [
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level A: 1.3.1 Info and Relationships",
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level AA: 1.4.5 Images of Text",
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level AA: 3.2.4 Consistent Identification",
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level AA: 1.4.4 Resize text",
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level AAA: 2.5.5 Target Size"
+              ],
+              "resultTitle": "Ensure content is legible.",
+              "errorDescription": "This element contains a long passage of text that is capitalized, either in the text itself or via CSS text-transform.  Capitalized text can be very difficult to read for users with dyslexia Modify this passage of text so that it is no longer all in upper case. Changing this to sentence case will result in significant improvements in readability.",
+              "viewPortLocation": {
+                "top-left": {
+                  "x": 0,
+                  "y": 0
+                },
+                "bottom-right": {
+                  "x": 0,
+                  "y": 0
+                },
+                "height": 0,
+                "width": 0
+              },
+              "position": {
+                "line": 8079,
+                "column": 1
+              },
+              "errorSnippet": "&lt;strong&gt;Managing Effective Ethics Programs&lt;/strong&gt;",
+              "xpath": "/html/body/form[1]/section[2]/header[1]/nav[1]/div[1]/ul[1]/li[3]/div[1]/div[1]/div[1]/ul[1]/li[1]/strong[1]",
+              "issueID": "129b27e39f4a6179773afab3a5341bec",
+              "signature": "85008fba921791a54e0e64e03ce80422",
+              "ref": "https://tenon.io/bestpractice.php?bpID=211&tID=153&issueID=129b27e39f4a6179773afab3a5341bec"
+            },
+            {
+              "tID": 218,
+              "bpID": 207,
+              "priority": 88,
+              "level": [
+                "AAA"
+              ],
+              "certainty": 100,
+              "errorTitle": "This link opens in a new window without user control.",
+              "standards": [
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level AAA: 3.2.5 Change on Request"
+              ],
+              "resultTitle": "Notify the user when links will open new windows or tabs",
+              "errorDescription": "This link opens in a new window without user control. Opening a new window or new tab unexpectedly can cause confusion for users, particularly for blind users and those with low vision, cogntive impairments or learning disabilities.. Avoid opening links in new windows or tabs. If it is unavoidable, give the user warning via text or a properly marked up and appropriate icon.",
+              "viewPortLocation": {
+                "top-left": {
+                  "x": 61.59375,
+                  "y": 620.4375
+                },
+                "bottom-right": {
+                  "x": 311.59375,
+                  "y": 640.4375
+                },
+                "height": 20,
+                "width": 250
+              },
+              "position": {
+                "line": 6876,
+                "column": 33
+              },
+              "errorSnippet": "&lt;a href=\"https://extapps2.oge.gov/Training/OGETraining.nsf/IEGHome.xsp\" target=\"_blank\"&gt;Institute for Ethics in Government&lt;/a&gt;",
+              "xpath": "/html/body/main[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[4]/div[1]/a[1]",
+              "issueID": "a55cf3e36cd0a7b7c4d26962cba0a544",
+              "signature": "0dd67802f05108752d84df0038f89ed9",
+              "ref": "https://tenon.io/bestpractice.php?bpID=207&tID=218&issueID=a55cf3e36cd0a7b7c4d26962cba0a544"
+            },
+            {
+              "tID": 218,
+              "bpID": 207,
+              "priority": 88,
+              "level": [
+                "AAA"
+              ],
+              "certainty": 100,
+              "errorTitle": "This link opens in a new window without user control.",
+              "standards": [
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level AAA: 3.2.5 Change on Request"
+              ],
+              "resultTitle": "Notify the user when links will open new windows or tabs",
+              "errorDescription": "This link opens in a new window without user control. Opening a new window or new tab unexpectedly can cause confusion for users, particularly for blind users and those with low vision, cogntive impairments or learning disabilities.. Avoid opening links in new windows or tabs. If it is unavoidable, give the user warning via text or a properly marked up and appropriate icon.",
+              "viewPortLocation": {
+                "top-left": {
+                  "x": 61.59375,
+                  "y": 741.84375
+                },
+                "bottom-right": {
+                  "x": 299.59375,
+                  "y": 761.84375
+                },
+                "height": 20,
+                "width": 238
+              },
+              "position": {
+                "line": 6877,
+                "column": 40
+              },
+              "errorSnippet": "&lt;a href=\"https://www.oge.gov/Web/278eGuide.nsf\" target=\"_blank\"&gt;Public Financial Disclosure Guide&lt;/a&gt;",
+              "xpath": "/html/body/main[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[5]/div[1]/a[1]",
+              "issueID": "66438319b8913d4f3f3ca64c083d79d5",
+              "signature": "ea971db827af6afadc4f9e6c9688d7b0",
+              "ref": "https://tenon.io/bestpractice.php?bpID=207&tID=218&issueID=66438319b8913d4f3f3ca64c083d79d5"
+            },
+            {
+              "tID": 218,
+              "bpID": 207,
+              "priority": 88,
+              "level": [
+                "AAA"
+              ],
+              "certainty": 100,
+              "errorTitle": "This link opens in a new window without user control.",
+              "standards": [
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level AAA: 3.2.5 Change on Request"
+              ],
+              "resultTitle": "Notify the user when links will open new windows or tabs",
+              "errorDescription": "This link opens in a new window without user control. Opening a new window or new tab unexpectedly can cause confusion for users, particularly for blind users and those with low vision, cogntive impairments or learning disabilities.. Avoid opening links in new windows or tabs. If it is unavoidable, give the user warning via text or a properly marked up and appropriate icon.",
+              "viewPortLocation": {
+                "top-left": {
+                  "x": 61.59375,
+                  "y": 841.25
+                },
+                "bottom-right": {
+                  "x": 449.59375,
+                  "y": 883.25
+                },
+                "height": 42,
+                "width": 388
+              },
+              "position": {
+                "line": 6888,
+                "column": 52
+              },
+              "errorSnippet": "&lt;a href=\"https://www.oge.gov/web/OGE.nsf/accessdocs_disclosure-faq\" target=\"_blank\"&gt;Updated Public Financial Disclosure Frequently Asked Questions&lt;/a&gt;",
+              "xpath": "/html/body/main[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[6]/div[1]/a[1]",
+              "issueID": "fd4b7e830c6a102c5f8f4ebe08fa9f23",
+              "signature": "71b0a4571f44d51763128ada5ab57e0b",
+              "ref": "https://tenon.io/bestpractice.php?bpID=207&tID=218&issueID=fd4b7e830c6a102c5f8f4ebe08fa9f23"
+            },
+            {
+              "tID": 218,
+              "bpID": 207,
+              "priority": 88,
+              "level": [
+                "AAA"
+              ],
+              "certainty": 100,
+              "errorTitle": "This link opens in a new window without user control.",
+              "standards": [
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level AAA: 3.2.5 Change on Request"
+              ],
+              "resultTitle": "Notify the user when links will open new windows or tabs",
+              "errorDescription": "This link opens in a new window without user control. Opening a new window or new tab unexpectedly can cause confusion for users, particularly for blind users and those with low vision, cogntive impairments or learning disabilities.. Avoid opening links in new windows or tabs. If it is unavoidable, give the user warning via text or a properly marked up and appropriate icon.",
+              "viewPortLocation": {
+                "top-left": {
+                  "x": 213.203125,
+                  "y": 1218.890625
+                },
+                "bottom-right": {
+                  "x": 309.203125,
+                  "y": 1248.015625
+                },
+                "height": 29.125,
+                "width": 96
+              },
+              "position": {
+                "line": 7297,
+                "column": 0
+              },
+              "errorSnippet": "&lt;a href=\"/web/oge.nsf/OGE%20Forms/072B8F6679028547852585B6005A2051/$FILE/OGE%20Form%20450%20Nov%202021.pdf?open\" target=\"_blank\" \"=\"\" class=\"quick-link-right\"&gt; &lt;span&gt;Form 450 (PDF)&lt;/span&gt; &lt;/a&gt;",
+              "xpath": "/html/body/main[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[4]/a[1]",
+              "issueID": "06459e6cb3c89cd94c82be5f1389361c",
+              "signature": "72fd47fc23b6edf239b3c07870fd1c7e",
+              "ref": "https://tenon.io/bestpractice.php?bpID=207&tID=218&issueID=06459e6cb3c89cd94c82be5f1389361c"
+            },
+            {
+              "tID": 218,
+              "bpID": 207,
+              "priority": 88,
+              "level": [
+                "AAA"
+              ],
+              "certainty": 100,
+              "errorTitle": "This link opens in a new window without user control.",
+              "standards": [
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level AAA: 3.2.5 Change on Request"
+              ],
+              "resultTitle": "Notify the user when links will open new windows or tabs",
+              "errorDescription": "This link opens in a new window without user control. Opening a new window or new tab unexpectedly can cause confusion for users, particularly for blind users and those with low vision, cogntive impairments or learning disabilities.. Avoid opening links in new windows or tabs. If it is unavoidable, give the user warning via text or a properly marked up and appropriate icon.",
+              "viewPortLocation": {
+                "top-left": {
+                  "x": 75.328125,
+                  "y": 1265.890625
+                },
+                "bottom-right": {
+                  "x": 368.328125,
+                  "y": 1295.015625
+                },
+                "height": 29.125,
+                "width": 293
+              },
+              "position": {
+                "line": 7794,
+                "column": 1
+              },
+              "errorSnippet": "&lt;a href=\"/web/oge.nsf/0/7E254215A97AF2A0852587C2006D4A86/$FILE/2022 Calendar of Important Ethics Dates and Deadlines.pdf?open\" target=\"_blank\" \"=\"\" class=\"quick-link-right\"&gt; &lt;span&gt;2022 Calendar of Important Ethics Dates (PDF)&lt;/span&gt; &lt",
+              "xpath": "/html/body/main[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[5]/a[1]",
+              "issueID": "de88933e5f19a0fdb952e87218a4d0e8",
+              "signature": "a37d91d8379a80bb28789215a3fe3e64",
+              "ref": "https://tenon.io/bestpractice.php?bpID=207&tID=218&issueID=de88933e5f19a0fdb952e87218a4d0e8"
+            },
+            {
+              "tID": 218,
+              "bpID": 207,
+              "priority": 88,
+              "level": [
+                "AAA"
+              ],
+              "certainty": 100,
+              "errorTitle": "This link opens in a new window without user control.",
+              "standards": [
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level AAA: 3.2.5 Change on Request"
+              ],
+              "resultTitle": "Notify the user when links will open new windows or tabs",
+              "errorDescription": "This link opens in a new window without user control. Opening a new window or new tab unexpectedly can cause confusion for users, particularly for blind users and those with low vision, cogntive impairments or learning disabilities.. Avoid opening links in new windows or tabs. If it is unavoidable, give the user warning via text or a properly marked up and appropriate icon.",
+              "viewPortLocation": {
+                "top-left": {
+                  "x": 537,
+                  "y": 17
+                },
+                "bottom-right": {
+                  "x": 708,
+                  "y": 37
+                },
+                "height": 20,
+                "width": 171
+              },
+              "position": {
+                "line": 7881,
+                "column": 1
+              },
+              "errorSnippet": "&lt;a href=\"/web/oge.nsf/0/C2D7587B383908F4852585B6005A183F/$FILE/Nofeartable (updated 6-10-19).pdf\" target=\"_blank\"&gt;No FEAR Act Data (PDF) |&lt;/a&gt;",
+              "xpath": "/html/body/footer[1]/div[2]/div[1]/div[1]/div[1]/nav[1]/div[1]/div[1]/section[1]/ul[1]/li[5]/a[1]",
+              "issueID": "7ba0d8227fe8b5fcc154b3b0669c8c01",
+              "signature": "9e74a555bb3d454ebe3f9467e3cc4bac",
+              "ref": "https://tenon.io/bestpractice.php?bpID=207&tID=218&issueID=7ba0d8227fe8b5fcc154b3b0669c8c01"
+            },
+            {
+              "tID": 218,
+              "bpID": 207,
+              "priority": 88,
+              "level": [
+                "AAA"
+              ],
+              "certainty": 100,
+              "errorTitle": "This link opens in a new window without user control.",
+              "standards": [
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level AAA: 3.2.5 Change on Request"
+              ],
+              "resultTitle": "Notify the user when links will open new windows or tabs",
+              "errorDescription": "This link opens in a new window without user control. Opening a new window or new tab unexpectedly can cause confusion for users, particularly for blind users and those with low vision, cogntive impairments or learning disabilities.. Avoid opening links in new windows or tabs. If it is unavoidable, give the user warning via text or a properly marked up and appropriate icon.",
+              "viewPortLocation": {
+                "top-left": {
+                  "x": 0,
+                  "y": 0
+                },
+                "bottom-right": {
+                  "x": 48,
+                  "y": 48
+                },
+                "height": 48,
+                "width": 48
+              },
+              "position": {
+                "line": 7916,
+                "column": 11
+              },
+              "errorSnippet": "&lt;a class=\"usa-social-link usa-social-link--twitter\" href=\"https://twitter.com/OfficeGovEthics\" target=\"_blank\"&gt; &lt;span&gt;Twitter&lt;/span&gt; &lt;/a&gt;",
+              "xpath": "/html/body/footer[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/a[1]",
+              "issueID": "b81082ee334b16b2fcce5cac80d25177",
+              "signature": "419f812cdbaa5469857a2b5c7f1f241b",
+              "ref": "https://tenon.io/bestpractice.php?bpID=207&tID=218&issueID=b81082ee334b16b2fcce5cac80d25177"
+            },
+            {
+              "tID": 218,
+              "bpID": 207,
+              "priority": 88,
+              "level": [
+                "AAA"
+              ],
+              "certainty": 100,
+              "errorTitle": "This link opens in a new window without user control.",
+              "standards": [
+                "Web Content Accessibility Guidelines (WCAG) 2.0, Level AAA: 3.2.5 Change on Request"
+              ],
+              "resultTitle": "Notify the user when links will open new windows or tabs",
+              "errorDescription": "This link opens in a new window without user control. Opening a new window or new tab unexpectedly can cause confusion for users, particularly for blind users and those with low vision, cogntive impairments or learning disabilities.. Avoid opening links in new windows or tabs. If it is unavoidable, give the user warning via text or a properly marked up and appropriate icon.",
+              "viewPortLocation": {
+                "top-left": {
+                  "x": 0,
+                  "y": 0
+                },
+                "bottom-right": {
+                  "x": 48,
+                  "y": 48
+                },
+                "height": 48,
+                "width": 48
+              },
+              "position": {
+                "line": 7919,
+                "column": 11
+              },
+              "errorSnippet": "&lt;a class=\"usa-social-link usa-social-link--youtube\" href=\"https://www.youtube.com/OGEInstitute\" target=\"_blank\"&gt; &lt;span&gt;YouTube&lt;/span&gt; &lt;/a&gt;",
+              "xpath": "/html/body/footer[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/a[1]",
+              "issueID": "144724552f532e61f50d19af7a0eee1f",
+              "signature": "299e5d240d71f5fe50ef0d2164596052",
+              "ref": "https://tenon.io/bestpractice.php?bpID=207&tID=218&issueID=144724552f532e61f50d19af7a0eee1f"
+            }
+          ],
+          "log": []
+        }
+      }
+    }
+  ],
+  "timeStamp": "4cg53",
+  "startTime": "2022-07-19T23:08:59",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "tenon",
+      1
+    ],
+    [
+      "menuNav",
+      0
+    ]
+  ],
+  "logCount": 0,
+  "logSize": 0,
+  "errorLogCount": 0,
+  "errorLogSize": 0,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-19T23:09:08",
+  "elapsedSeconds": 9
+}

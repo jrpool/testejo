@@ -1,0 +1,36 @@
+{
+  "id": "tp12",
+  "what": "Alfa, Axe, HTML CodeSniffer, IBM, Tenon, WAVE, and 16 custom tests",
+  "strict": true,
+  "timeLimit": 250,
+  "commands": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://*",
+      "what": "any page"
+    },
+    {
+      "type": "tenonRequest",
+      "id": "a",
+      "withNewContent": true,
+      "what": "Tenon API version 2 test request"
+    },
+    {
+      "type": "test",
+      "which": "ibm",
+      "withItems": true,
+      "what": "IBM Accessibility Checker, with page content and again with URL"
+    },
+    {
+      "type": "test",
+      "which": "tenon",
+      "id": "a",
+      "what": "Tenon API version 2 result retrieval"
+    }
+  ]
+}

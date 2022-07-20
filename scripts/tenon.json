@@ -1,0 +1,36 @@
+{
+  "id": "tenon",
+  "what": "tenon test",
+  "strict": true,
+  "timeLimit": 50,
+  "commands": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.hrw.org/",
+      "what": "Page"
+    },
+    {
+      "type": "tenonRequest",
+      "id": "a",
+      "withNewContent": true,
+      "what": "Tenon API version 2 test request"
+    },
+    {
+      "type": "test",
+      "which": "menuNav",
+      "withItems": true,
+      "what": "keyboard navigation within true-focus menus"
+    },
+    {
+      "type": "test",
+      "which": "tenon",
+      "id": "a",
+      "what": "Tenon API version 2 result retrieval"
+    }
+  ]
+}
