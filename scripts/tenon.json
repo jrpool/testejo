@@ -22,9 +22,12 @@
     },
     {
       "type": "test",
-      "which": "menuNav",
+      "which": "hover",
+      "headSize": 20,
+      "headSampleSize": 20,
+      "tailSampleSize": 15,
       "withItems": true,
-      "what": "keyboard navigation within true-focus menus"
+      "what": "hover impacts"
     },
     {
       "type": "test",
