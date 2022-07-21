@@ -74,7 +74,10 @@
       "allowedDelay": 250,
       "withItems": true,
       "what": "focus indicators",
-      "result": "ERROR: No page identified"
+      "result": {
+        "prevented": true,
+        "error": "ERROR: No page identified"
+      }
     },
     {
       "type": "launch",
@@ -95,7 +98,10 @@
       "tailSampleSize": 15,
       "withItems": true,
       "what": "hover impacts",
-      "result": "ERROR: No page identified"
+      "result": {
+        "prevented": true,
+        "error": "ERROR: No page identified"
+      }
     },
     {
       "type": "launch",
@@ -112,7 +118,10 @@
       "type": "test",
       "which": "role",
       "what": "validity and necessity of role assignments",
-      "result": "ERROR: No page identified"
+      "result": {
+        "prevented": true,
+        "error": "ERROR: No page identified"
+      }
     }
   ],
   "timeStamp": "49li4",

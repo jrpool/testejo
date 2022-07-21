@@ -8876,7 +8876,10 @@
       "which": "wave",
       "reportType": 4,
       "what": "WAVE, report-type 4",
-      "result": "ERROR: No page identified"
+      "result": {
+        "prevented": true,
+        "error": "ERROR: No page identified"
+      }
     },
     {
       "type": "launch",
@@ -8894,7 +8897,10 @@
       "which": "tenon",
       "id": "a",
       "what": "Tenon API version 2 result retrieval",
-      "result": "ERROR: No page identified"
+      "result": {
+        "prevented": true,
+        "error": "ERROR: No page identified"
+      }
     }
   ],
   "timeStamp": "4cdpt",

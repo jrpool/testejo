@@ -1,11 +1,11 @@
 {
-  "id": "usfedexec",
+  "id": "usdebug",
   "what": "U.S. federal executive agencies",
   "hosts": [
     {
-      "id": "dos",
-      "which": "https://www.state.gov/",
-      "what": "Department of State (DOS)[crashed on ibm after page and URL timeouts]"
+      "id": "uspis",
+      "which": "https://www.uspis.gov/",
+      "what": "US Postal Inspection Service"
     }
   ]
 }

@@ -1,0 +1,24 @@
+{
+  "id": "debug",
+  "what": "menuNav test",
+  "strict": true,
+  "timeLimit": 50,
+  "commands": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://*",
+      "what": "any page"
+    },
+    {
+      "type": "test",
+      "which": "menuNav",
+      "withItems": true,
+      "what": "keyboard navigation within true-focus menus"
+    }
+  ]
+}
