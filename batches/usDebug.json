@@ -3,9 +3,9 @@
   "what": "U.S. federal executive agencies",
   "hosts": [
     {
-      "id": "uspis",
-      "which": "https://www.uspis.gov/",
-      "what": "US Postal Inspection Service"
+      "id": "eric",
+      "which": "https://ies.ed.gov/ncee/projects/eric.asp",
+      "what": "Educational Resources Information Center (ERIC)"
     }
   ]
 }
