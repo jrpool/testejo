@@ -10253,6 +10253,14 @@
             }
           }
         },
+        "selectNavSurpriseRisk": {
+          "wave": {
+            "a:javascript_jumpmenu": {
+              "score": 1,
+              "what": "selection change may navigate to another page without notice"
+            }
+          }
+        },
         "videoCaptionRisk": {
           "wave": {
             "a:youtube_video": {
@@ -10350,21 +10358,17 @@
           }
         }
       },
-      "solos": {
-        "wave": {
-          "a:javascript_jumpmenu": 1
-        }
-      }
+      "solos": {}
     },
     "preventionScores": {
       "alfa": 100,
       "ibm": 100
     },
     "summary": {
-      "total": 922,
+      "total": 923,
       "log": 215,
       "preventions": 200,
-      "solos": 2,
+      "solos": 0,
       "groups": [
         {
           "groupName": "hoverSurprise",
@@ -10536,6 +10540,10 @@
         },
         {
           "groupName": "noScriptRisk",
+          "score": 3
+        },
+        {
+          "groupName": "selectNavSurpriseRisk",
           "score": 3
         },
         {

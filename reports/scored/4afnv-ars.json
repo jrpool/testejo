@@ -15359,6 +15359,22 @@
             }
           }
         },
+        "controlLabelInvisible": {
+          "axe": {
+            "label-title-only": {
+              "score": 6,
+              "what": "Form element has no visible label"
+            }
+          }
+        },
+        "bannerNotTop": {
+          "axe": {
+            "landmark-banner-is-top-level": {
+              "score": 2,
+              "what": "banner landmark is contained in another landmark"
+            }
+          }
+        },
         "footerTopLandmark": {
           "axe": {
             "landmark-contentinfo-is-top-level": {
@@ -15367,7 +15383,7 @@
             }
           }
         },
-        "mainTopLandmark": {
+        "mainNotTop": {
           "axe": {
             "landmark-main-is-top-level": {
               "score": 2,
@@ -15375,7 +15391,7 @@
             }
           }
         },
-        "bannerLandmark": {
+        "banners": {
           "axe": {
             "landmark-no-duplicate-banner": {
               "score": 1,
@@ -15383,7 +15399,7 @@
             }
           }
         },
-        "mainLandmark": {
+        "mainNot1": {
           "axe": {
             "landmark-no-duplicate-main": {
               "score": 1,
@@ -15488,6 +15504,14 @@
             "a:legend_missing": {
               "score": 1,
               "what": "Fieldset has no legend element"
+            }
+          }
+        },
+        "buttonNoText": {
+          "htmlcs": {
+            "e:AA.4_1_2.H91.Div.Name": {
+              "score": 8,
+              "what": "div element with button role has no accessible name"
             }
           }
         },
@@ -15710,22 +15734,14 @@
           }
         }
       },
-      "solos": {
-        "axe": {
-          "label-title-only": 6,
-          "landmark-banner-is-top-level": 4
-        },
-        "htmlcs": {
-          "e:AA.4_1_2.H91.Div.Name": 8
-        }
-      }
+      "solos": {}
     },
     "preventionScores": {},
     "summary": {
-      "total": 843,
+      "total": 829,
       "log": 1,
       "preventions": 0,
-      "solos": 36,
+      "solos": 0,
       "groups": [
         {
           "groupName": "focusIndication",
@@ -15796,6 +15812,10 @@
           "score": 10
         },
         {
+          "groupName": "buttonNoText",
+          "score": 10
+        },
+        {
           "groupName": "tabIndexMissing",
           "score": 10
         },
@@ -15813,6 +15833,10 @@
         },
         {
           "groupName": "linkIndication",
+          "score": 8
+        },
+        {
+          "groupName": "controlLabelInvisible",
           "score": 8
         },
         {
@@ -15872,7 +15896,11 @@
           "score": 4
         },
         {
-          "groupName": "mainTopLandmark",
+          "groupName": "bannerNotTop",
+          "score": 4
+        },
+        {
+          "groupName": "mainNotTop",
           "score": 4
         },
         {
@@ -15904,11 +15932,11 @@
           "score": 3
         },
         {
-          "groupName": "bannerLandmark",
+          "groupName": "banners",
           "score": 3
         },
         {
-          "groupName": "mainLandmark",
+          "groupName": "mainNot1",
           "score": 3
         },
         {

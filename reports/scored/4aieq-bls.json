@@ -29964,6 +29964,14 @@
             }
           }
         },
+        "controlLabelInvisible": {
+          "axe": {
+            "label-title-only": {
+              "score": 3,
+              "what": "Form element has no visible label"
+            }
+          }
+        },
         "iframeTitleBad": {
           "htmlcs": {
             "e:AA.2_4_1.H64.1": {
@@ -29997,6 +30005,24 @@
             "w:AA.1_4_3_F24.F24.FGColour": {
               "score": 1,
               "what": "Inline foreground color may lack a complementary background color"
+            }
+          }
+        },
+        "eventKeyboardRisk": {
+          "htmlcs": {
+            "w:AA.2_1_1.SCR20.MouseOut": {
+              "score": 1,
+              "what": "Mousing-out functionality may not be available by keyboard"
+            },
+            "w:AA.2_1_1.SCR20.MouseOver": {
+              "score": 1,
+              "what": "Mousing-over functionality may not be available by keyboard"
+            }
+          },
+          "wave": {
+            "a:event_handler": {
+              "score": 1,
+              "what": "Device-dependent event handler"
             }
           }
         },
@@ -30045,14 +30071,6 @@
             "a:noscript": {
               "score": 1,
               "what": "noscript element may fail to contain an accessible equivalent or alternative"
-            }
-          }
-        },
-        "eventKeyboardRisk": {
-          "wave": {
-            "a:event_handler": {
-              "score": 1,
-              "what": "Device-dependent event handler"
             }
           }
         },
@@ -30149,22 +30167,14 @@
           }
         }
       },
-      "solos": {
-        "axe": {
-          "label-title-only": 3
-        },
-        "htmlcs": {
-          "w:AA.2_1_1.SCR20.MouseOut": 1,
-          "w:AA.2_1_1.SCR20.MouseOver": 1
-        }
-      }
+      "solos": {}
     },
     "preventionScores": {},
     "summary": {
-      "total": 576,
+      "total": 572,
       "log": 67,
       "preventions": 0,
-      "solos": 10,
+      "solos": 0,
       "groups": [
         {
           "groupName": "linkIndication",
@@ -30247,6 +30257,10 @@
           "score": 5
         },
         {
+          "groupName": "controlLabelInvisible",
+          "score": 5
+        },
+        {
           "groupName": "horizontalScrolling",
           "score": 5
         },
@@ -30260,6 +30274,10 @@
         },
         {
           "groupName": "pseudoNavListRisk",
+          "score": 4
+        },
+        {
+          "groupName": "eventKeyboardRisk",
           "score": 4
         },
         {
@@ -30300,10 +30318,6 @@
         },
         {
           "groupName": "noScriptRisk",
-          "score": 3
-        },
-        {
-          "groupName": "eventKeyboardRisk",
           "score": 3
         },
         {

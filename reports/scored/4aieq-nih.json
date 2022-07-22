@@ -13735,6 +13735,10 @@
             "w:AA.2_1_1.G90": {
               "score": 3,
               "what": "Event handler functionality may not be available by keyboard"
+            },
+            "w:AA.2_1_1.SCR20.MouseDown": {
+              "score": 23,
+              "what": "Mousing-down functionality may not be available by keyboard"
             }
           },
           "wave": {
@@ -13847,18 +13851,14 @@
           }
         }
       },
-      "solos": {
-        "htmlcs": {
-          "w:AA.2_1_1.SCR20.MouseDown": 92
-        }
-      }
+      "solos": {}
     },
     "preventionScores": {},
     "summary": {
-      "total": 1090,
+      "total": 929,
       "log": 274,
       "preventions": 0,
-      "solos": 184,
+      "solos": 0,
       "groups": [
         {
           "groupName": "linkIndication",
@@ -13891,6 +13891,10 @@
         {
           "groupName": "targetSize",
           "score": 32
+        },
+        {
+          "groupName": "eventKeyboardRisk",
+          "score": 28
         },
         {
           "groupName": "focusableOperable",
@@ -13958,10 +13962,6 @@
         },
         {
           "groupName": "h1Missing",
-          "score": 5
-        },
-        {
-          "groupName": "eventKeyboardRisk",
           "score": 5
         },
         {

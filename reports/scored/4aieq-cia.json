@@ -9268,7 +9268,7 @@
             }
           }
         },
-        "invisibleLabel": {
+        "visibleLabelNotName": {
           "alfa": {
             "r14": {
               "score": 6,
@@ -9293,6 +9293,12 @@
             "r2": {
               "score": 4,
               "what": "Image has no accessible name"
+            }
+          },
+          "axe": {
+            "role-img-alt": {
+              "score": 3,
+              "what": "Element with role img has no text alternative"
             }
           }
         },
@@ -9559,18 +9565,14 @@
           }
         }
       },
-      "solos": {
-        "axe": {
-          "role-img-alt": 3
-        }
-      }
+      "solos": {}
     },
     "preventionScores": {},
     "summary": {
-      "total": 464,
+      "total": 459,
       "log": 79,
       "preventions": 0,
-      "solos": 6,
+      "solos": 0,
       "groups": [
         {
           "groupName": "focusIndication",
@@ -9613,7 +9615,7 @@
           "score": 12
         },
         {
-          "groupName": "invisibleLabel",
+          "groupName": "visibleLabelNotName",
           "score": 11
         },
         {
@@ -9633,11 +9635,11 @@
           "score": 8
         },
         {
-          "groupName": "inconsistentStyles",
-          "score": 6
+          "groupName": "imageNoText",
+          "score": 7
         },
         {
-          "groupName": "imageNoText",
+          "groupName": "inconsistentStyles",
           "score": 6
         },
         {

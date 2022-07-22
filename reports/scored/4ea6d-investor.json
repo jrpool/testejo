@@ -14869,6 +14869,12 @@
               "score": 3,
               "what": "Element does not have a valid role"
             }
+          },
+          "axe": {
+            "aria-roles": {
+              "score": 3,
+              "what": "ARIA role has an invalid value"
+            }
           }
         },
         "inconsistentStyles": {
@@ -14887,7 +14893,7 @@
             }
           }
         },
-        "invisibleLabel": {
+        "visibleLabelNotName": {
           "alfa": {
             "r14": {
               "score": 3,
@@ -15073,7 +15079,7 @@
             }
           }
         },
-        "mainLandmark": {
+        "mainNot1": {
           "axe": {
             "landmark-one-main": {
               "score": 1,
@@ -15278,18 +15284,14 @@
           }
         }
       },
-      "solos": {
-        "axe": {
-          "aria-roles": 4
-        }
-      }
+      "solos": {}
     },
     "preventionScores": {},
     "summary": {
-      "total": 898,
+      "total": 891,
       "log": 182,
       "preventions": 0,
-      "solos": 8,
+      "solos": 0,
       "groups": [
         {
           "groupName": "contentBeyondLandmarks",
@@ -15336,12 +15338,12 @@
           "score": 8
         },
         {
-          "groupName": "noLeading",
+          "groupName": "roleBad",
           "score": 8
         },
         {
-          "groupName": "roleBad",
-          "score": 7
+          "groupName": "noLeading",
+          "score": 8
         },
         {
           "groupName": "inconsistentStyles",
@@ -15364,7 +15366,7 @@
           "score": 6
         },
         {
-          "groupName": "invisibleLabel",
+          "groupName": "visibleLabelNotName",
           "score": 6
         },
         {
@@ -15444,7 +15446,7 @@
           "score": 3
         },
         {
-          "groupName": "mainLandmark",
+          "groupName": "mainNot1",
           "score": 3
         },
         {

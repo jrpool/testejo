@@ -23919,6 +23919,10 @@
             "button-name": {
               "score": 4,
               "what": "Button has no discernible text"
+            },
+            "input-button-name": {
+              "score": 4,
+              "what": "Input button has no discernible text"
             }
           },
           "wave": {
@@ -24134,11 +24138,19 @@
             }
           }
         },
-        "mainLandmark": {
+        "mainNot1": {
           "axe": {
             "landmark-one-main": {
               "score": 1,
               "what": "page has no main landmark"
+            }
+          }
+        },
+        "labelClash": {
+          "wave": {
+            "e:label_multiple": {
+              "score": 4,
+              "what": "Form control has more than one label associated with it"
             }
           }
         },
@@ -24223,23 +24235,16 @@
           }
         }
       },
-      "solos": {
-        "axe": {
-          "input-button-name": 4
-        },
-        "wave": {
-          "e:label_multiple": 8
-        }
-      }
+      "solos": {}
     },
     "preventionScores": {
       "htmlcs": 100
     },
     "summary": {
-      "total": 1472,
+      "total": 1456,
       "log": 213,
       "preventions": 100,
-      "solos": 24,
+      "solos": 0,
       "groups": [
         {
           "groupName": "linkNoText",
@@ -24278,12 +24283,12 @@
           "score": 31
         },
         {
-          "groupName": "linkTextsSame",
-          "score": 26
+          "groupName": "buttonNoText",
+          "score": 27
         },
         {
-          "groupName": "buttonNoText",
-          "score": 25
+          "groupName": "linkTextsSame",
+          "score": 26
         },
         {
           "groupName": "fontSizeAbsolute",
@@ -24334,6 +24339,10 @@
           "score": 6
         },
         {
+          "groupName": "labelClash",
+          "score": 6
+        },
+        {
           "groupName": "headingStructure",
           "score": 5
         },
@@ -24378,7 +24387,7 @@
           "score": 3
         },
         {
-          "groupName": "mainLandmark",
+          "groupName": "mainNot1",
           "score": 3
         },
         {

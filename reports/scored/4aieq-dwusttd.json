@@ -5970,6 +5970,12 @@
               "score": 6,
               "what": "Element does not have a valid role"
             }
+          },
+          "axe": {
+            "aria-roles": {
+              "score": 6,
+              "what": "ARIA role has an invalid value"
+            }
           }
         },
         "inconsistentStyles": {
@@ -6167,18 +6173,14 @@
           }
         }
       },
-      "solos": {
-        "axe": {
-          "aria-roles": 8
-        }
-      }
+      "solos": {}
     },
     "preventionScores": {},
     "summary": {
-      "total": 446,
+      "total": 433,
       "log": 35,
       "preventions": 0,
-      "solos": 16,
+      "solos": 0,
       "groups": [
         {
           "groupName": "focusIndication",
@@ -6202,7 +6204,7 @@
         },
         {
           "groupName": "roleBad",
-          "score": 9
+          "score": 12
         },
         {
           "groupName": "ariaBadAttribute",

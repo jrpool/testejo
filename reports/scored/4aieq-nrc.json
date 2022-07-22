@@ -21060,6 +21060,14 @@
             }
           }
         },
+        "tableHeaderCelless": {
+          "axe": {
+            "th-has-data-cells": {
+              "score": 1,
+              "what": "Table header refers to no cell"
+            }
+          }
+        },
         "ariaBadAttribute": {
           "axe": {
             "aria-allowed-attr": {
@@ -21315,20 +21323,16 @@
           }
         }
       },
-      "solos": {
-        "axe": {
-          "th-has-data-cells": 1
-        }
-      }
+      "solos": {}
     },
     "preventionScores": {
       "ibm": 100
     },
     "summary": {
-      "total": 1351,
+      "total": 1352,
       "log": 0,
       "preventions": 100,
-      "solos": 2,
+      "solos": 0,
       "groups": [
         {
           "groupName": "focusIndication",
@@ -21476,6 +21480,10 @@
         },
         {
           "groupName": "linkConfusionRisk",
+          "score": 3
+        },
+        {
+          "groupName": "tableHeaderCelless",
           "score": 3
         },
         {

@@ -15283,6 +15283,14 @@
             }
           }
         },
+        "bannerNotTop": {
+          "axe": {
+            "landmark-banner-is-top-level": {
+              "score": 1,
+              "what": "banner landmark is contained in another landmark"
+            }
+          }
+        },
         "footerTopLandmark": {
           "axe": {
             "landmark-contentinfo-is-top-level": {
@@ -15291,7 +15299,7 @@
             }
           }
         },
-        "mainTopLandmark": {
+        "mainNotTop": {
           "axe": {
             "landmark-main-is-top-level": {
               "score": 1,
@@ -15299,7 +15307,7 @@
             }
           }
         },
-        "mainLandmark": {
+        "mainNot1": {
           "axe": {
             "landmark-no-duplicate-main": {
               "score": 1,
@@ -15442,18 +15450,14 @@
           }
         }
       },
-      "solos": {
-        "axe": {
-          "landmark-banner-is-top-level": 2
-        }
-      }
+      "solos": {}
     },
     "preventionScores": {},
     "summary": {
-      "total": 858,
+      "total": 857,
       "log": 24,
       "preventions": 0,
-      "solos": 4,
+      "solos": 0,
       "groups": [
         {
           "groupName": "linkNoText",
@@ -15572,15 +15576,19 @@
           "score": 3
         },
         {
+          "groupName": "bannerNotTop",
+          "score": 3
+        },
+        {
           "groupName": "footerTopLandmark",
           "score": 3
         },
         {
-          "groupName": "mainTopLandmark",
+          "groupName": "mainNotTop",
           "score": 3
         },
         {
-          "groupName": "mainLandmark",
+          "groupName": "mainNot1",
           "score": 3
         },
         {

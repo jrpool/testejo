@@ -23553,6 +23553,14 @@
             }
           }
         },
+        "controlLabelInvisible": {
+          "axe": {
+            "label-title-only": {
+              "score": 3,
+              "what": "Form element has no visible label"
+            }
+          }
+        },
         "listChild": {
           "axe": {
             "list": {
@@ -23566,6 +23574,14 @@
             "listitem": {
               "score": 60,
               "what": "li element is not contained by a ul or ol element"
+            }
+          }
+        },
+        "notScrollable": {
+          "axe": {
+            "scrollable-region-focusable": {
+              "score": 2,
+              "what": "Element is scrollable but has no keyboard access"
             }
           }
         },
@@ -23705,10 +23721,6 @@
         }
       },
       "solos": {
-        "axe": {
-          "label-title-only": 3,
-          "scrollable-region-focusable": 2
-        },
         "wave": {
           "a:audio_video": 2
         }
@@ -23718,10 +23730,10 @@
       "htmlcs": 100
     },
     "summary": {
-      "total": 11171,
+      "total": 11170,
       "log": 9839,
       "preventions": 100,
-      "solos": 14,
+      "solos": 4,
       "groups": [
         {
           "groupName": "linkIndication",
@@ -23832,6 +23844,10 @@
           "score": 5
         },
         {
+          "groupName": "controlLabelInvisible",
+          "score": 5
+        },
+        {
           "groupName": "listChild",
           "score": 5
         },
@@ -23857,6 +23873,10 @@
         },
         {
           "groupName": "headingOfNothing",
+          "score": 4
+        },
+        {
+          "groupName": "notScrollable",
           "score": 4
         },
         {

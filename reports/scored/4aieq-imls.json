@@ -39391,7 +39391,7 @@
             }
           }
         },
-        "invisibleLabel": {
+        "visibleLabelNotName": {
           "alfa": {
             "r14": {
               "score": 60,
@@ -39600,6 +39600,14 @@
             "landmark-unique": {
               "score": 2,
               "what": "Landmark has a role and an accessible name that are identical to another"
+            }
+          }
+        },
+        "notScrollable": {
+          "axe": {
+            "scrollable-region-focusable": {
+              "score": 2,
+              "what": "Element is scrollable but has no keyboard access"
             }
           }
         },
@@ -39852,18 +39860,14 @@
           }
         }
       },
-      "solos": {
-        "axe": {
-          "scrollable-region-focusable": 2
-        }
-      }
+      "solos": {}
     },
     "preventionScores": {},
     "summary": {
       "total": 2529,
       "log": 219,
       "preventions": 0,
-      "solos": 4,
+      "solos": 0,
       "groups": [
         {
           "groupName": "contentBeyondLandmarks",
@@ -39890,7 +39894,7 @@
           "score": 102
         },
         {
-          "groupName": "invisibleLabel",
+          "groupName": "visibleLabelNotName",
           "score": 62
         },
         {
@@ -40031,6 +40035,10 @@
         },
         {
           "groupName": "landmarkConfusion",
+          "score": 4
+        },
+        {
+          "groupName": "notScrollable",
           "score": 4
         },
         {

@@ -26096,6 +26096,14 @@
             }
           }
         },
+        "controlLabelInvisible": {
+          "axe": {
+            "label-title-only": {
+              "score": 3,
+              "what": "Form element has no visible label"
+            }
+          }
+        },
         "controlLabel": {
           "axe": {
             "label": {
@@ -26104,7 +26112,7 @@
             }
           }
         },
-        "mainLandmark": {
+        "mainNot1": {
           "axe": {
             "landmark-one-main": {
               "score": 1,
@@ -26117,6 +26125,14 @@
             "region": {
               "score": 35,
               "what": "Some page content is not contained by landmarks"
+            }
+          }
+        },
+        "notScrollable": {
+          "axe": {
+            "scrollable-region-focusable": {
+              "score": 2,
+              "what": "Element is scrollable but has no keyboard access"
             }
           }
         },
@@ -26241,6 +26257,14 @@
             "w:AA.4_1_2.H91.Select.Value": {
               "score": 1,
               "what": "Select element value has no accessible name"
+            }
+          }
+        },
+        "labelClash": {
+          "wave": {
+            "e:label_multiple": {
+              "score": 4,
+              "what": "Form control has more than one label associated with it"
             }
           }
         },
@@ -26443,21 +26467,16 @@
       },
       "solos": {
         "axe": {
-          "label-title-only": 3,
-          "scrollable-region-focusable": 2,
           "td-has-header": 4
-        },
-        "wave": {
-          "e:label_multiple": 8
         }
       }
     },
     "preventionScores": {},
     "summary": {
-      "total": 1518,
+      "total": 1507,
       "log": 39,
       "preventions": 0,
-      "solos": 34,
+      "solos": 8,
       "groups": [
         {
           "groupName": "roleBad",
@@ -26604,6 +26623,10 @@
           "score": 6
         },
         {
+          "groupName": "labelClash",
+          "score": 6
+        },
+        {
           "groupName": "linkDestinationsSame",
           "score": 6
         },
@@ -26612,11 +26635,19 @@
           "score": 6
         },
         {
+          "groupName": "controlLabelInvisible",
+          "score": 5
+        },
+        {
           "groupName": "horizontalScrolling",
           "score": 5
         },
         {
           "groupName": "skipRepeatedContent",
+          "score": 4
+        },
+        {
+          "groupName": "notScrollable",
           "score": 4
         },
         {
@@ -26656,7 +26687,7 @@
           "score": 3
         },
         {
-          "groupName": "mainLandmark",
+          "groupName": "mainNot1",
           "score": 3
         },
         {

@@ -11417,7 +11417,27 @@
             }
           }
         },
-        "invisibleLabel": {
+        "buttonNoText": {
+          "axe": {
+            "input-button-name": {
+              "score": 4,
+              "what": "Input button has no discernible text"
+            }
+          },
+          "htmlcs": {
+            "e:AA.4_1_2.H91.InputButton.Name": {
+              "score": 4,
+              "what": "Button input element has no accessible name"
+            }
+          },
+          "wave": {
+            "e:button_empty": {
+              "score": 4,
+              "what": "Button is empty or has no value text"
+            }
+          }
+        },
+        "visibleLabelNotName": {
           "axe": {
             "label-content-name-mismatch": {
               "score": 5,
@@ -11481,14 +11501,6 @@
             }
           }
         },
-        "buttonNoText": {
-          "wave": {
-            "e:button_empty": {
-              "score": 4,
-              "what": "Button is empty or has no value text"
-            }
-          }
-        },
         "ariaReferenceBad": {
           "wave": {
             "e:aria_reference_broken": {
@@ -11526,6 +11538,14 @@
             "a:noscript": {
               "score": 1,
               "what": "noscript element may fail to contain an accessible equivalent or alternative"
+            }
+          }
+        },
+        "selectNavSurpriseRisk": {
+          "wave": {
+            "a:javascript_jumpmenu": {
+              "score": 1,
+              "what": "selection change may navigate to another page without notice"
             }
           }
         },
@@ -11608,24 +11628,14 @@
           }
         }
       },
-      "solos": {
-        "axe": {
-          "input-button-name": 4
-        },
-        "htmlcs": {
-          "e:AA.4_1_2.H91.InputButton.Name": 4
-        },
-        "wave": {
-          "a:javascript_jumpmenu": 1
-        }
-      }
+      "solos": {}
     },
     "preventionScores": {},
     "summary": {
-      "total": 500,
+      "total": 488,
       "log": 52,
       "preventions": 0,
-      "solos": 18,
+      "solos": 0,
       "groups": [
         {
           "groupName": "leadingClipsText",
@@ -11680,6 +11690,10 @@
           "score": 10
         },
         {
+          "groupName": "buttonNoText",
+          "score": 9
+        },
+        {
           "groupName": "focusIndication",
           "score": 8
         },
@@ -11688,7 +11702,7 @@
           "score": 8
         },
         {
-          "groupName": "invisibleLabel",
+          "groupName": "visibleLabelNotName",
           "score": 7
         },
         {
@@ -11701,10 +11715,6 @@
         },
         {
           "groupName": "overflowHidden",
-          "score": 6
-        },
-        {
-          "groupName": "buttonNoText",
           "score": 6
         },
         {
@@ -11785,6 +11795,10 @@
         },
         {
           "groupName": "noScriptRisk",
+          "score": 3
+        },
+        {
+          "groupName": "selectNavSurpriseRisk",
           "score": 3
         },
         {

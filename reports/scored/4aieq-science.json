@@ -20602,7 +20602,7 @@
             }
           }
         },
-        "invisibleLabel": {
+        "visibleLabelNotName": {
           "alfa": {
             "r14": {
               "score": 30,
@@ -20760,7 +20760,15 @@
             }
           }
         },
-        "mainTopLandmark": {
+        "controlLabelInvisible": {
+          "axe": {
+            "label-title-only": {
+              "score": 3,
+              "what": "Form element has no visible label"
+            }
+          }
+        },
+        "mainNotTop": {
           "axe": {
             "landmark-main-is-top-level": {
               "score": 1,
@@ -20768,7 +20776,7 @@
             }
           }
         },
-        "mainLandmark": {
+        "mainNot1": {
           "axe": {
             "landmark-no-duplicate-main": {
               "score": 1,
@@ -20953,18 +20961,14 @@
           }
         }
       },
-      "solos": {
-        "axe": {
-          "label-title-only": 3
-        }
-      }
+      "solos": {}
     },
     "preventionScores": {},
     "summary": {
-      "total": 1062,
+      "total": 1061,
       "log": 67,
       "preventions": 0,
-      "solos": 6,
+      "solos": 0,
       "groups": [
         {
           "groupName": "linkIndication",
@@ -20987,7 +20991,7 @@
           "score": 71
         },
         {
-          "groupName": "invisibleLabel",
+          "groupName": "visibleLabelNotName",
           "score": 61
         },
         {
@@ -21067,6 +21071,10 @@
           "score": 5
         },
         {
+          "groupName": "controlLabelInvisible",
+          "score": 5
+        },
+        {
           "groupName": "landmarkConfusion",
           "score": 5
         },
@@ -21099,11 +21107,11 @@
           "score": 3
         },
         {
-          "groupName": "mainTopLandmark",
+          "groupName": "mainNotTop",
           "score": 3
         },
         {
-          "groupName": "mainLandmark",
+          "groupName": "mainNot1",
           "score": 3
         },
         {

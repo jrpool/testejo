@@ -9866,6 +9866,14 @@
             }
           }
         },
+        "controlLabelInvisible": {
+          "axe": {
+            "label-title-only": {
+              "score": 3,
+              "what": "Form element has no visible label"
+            }
+          }
+        },
         "pseudoNavListRisk": {
           "htmlcs": {
             "w:AA.1_3_1.H48": {
@@ -10067,18 +10075,14 @@
           }
         }
       },
-      "solos": {
-        "axe": {
-          "label-title-only": 3
-        }
-      }
+      "solos": {}
     },
     "preventionScores": {},
     "summary": {
-      "total": 458,
+      "total": 457,
       "log": 57,
       "preventions": 0,
-      "solos": 6,
+      "solos": 0,
       "groups": [
         {
           "groupName": "linkForcesNewWindow",
@@ -10158,6 +10162,10 @@
         },
         {
           "groupName": "h1Missing",
+          "score": 5
+        },
+        {
+          "groupName": "controlLabelInvisible",
           "score": 5
         },
         {

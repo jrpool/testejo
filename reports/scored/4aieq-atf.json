@@ -10686,6 +10686,14 @@
             }
           }
         },
+        "selectNavSurpriseRisk": {
+          "wave": {
+            "a:javascript_jumpmenu": {
+              "score": 1,
+              "what": "selection change may navigate to another page without notice"
+            }
+          }
+        },
         "titleRedundant": {
           "wave": {
             "a:title_redundant": {
@@ -10765,18 +10773,14 @@
           }
         }
       },
-      "solos": {
-        "wave": {
-          "a:javascript_jumpmenu": 1
-        }
-      }
+      "solos": {}
     },
     "preventionScores": {},
     "summary": {
-      "total": 527,
+      "total": 528,
       "log": 56,
       "preventions": 0,
-      "solos": 2,
+      "solos": 0,
       "groups": [
         {
           "groupName": "linkIndication",
@@ -10920,6 +10924,10 @@
         },
         {
           "groupName": "selectNoText",
+          "score": 3
+        },
+        {
+          "groupName": "selectNavSurpriseRisk",
           "score": 3
         }
       ]

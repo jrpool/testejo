@@ -17438,6 +17438,14 @@
             }
           }
         },
+        "controlLabelInvisible": {
+          "axe": {
+            "label-title-only": {
+              "score": 3,
+              "what": "Form element has no visible label"
+            }
+          }
+        },
         "obsoleteAttribute": {
           "htmlcs": {
             "e:AA.1_3_1.H49.AlignAttr": {
@@ -17627,18 +17635,14 @@
           }
         }
       },
-      "solos": {
-        "axe": {
-          "label-title-only": 3
-        }
-      }
+      "solos": {}
     },
     "preventionScores": {},
     "summary": {
-      "total": 683,
+      "total": 682,
       "log": 56,
       "preventions": 0,
-      "solos": 6,
+      "solos": 0,
       "groups": [
         {
           "groupName": "linkIndication",
@@ -17722,6 +17726,10 @@
         },
         {
           "groupName": "zIndexNotZero",
+          "score": 5
+        },
+        {
+          "groupName": "controlLabelInvisible",
           "score": 5
         },
         {

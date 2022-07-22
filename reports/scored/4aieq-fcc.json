@@ -16863,6 +16863,14 @@
             }
           }
         },
+        "buttonNoText": {
+          "htmlcs": {
+            "e:AA.4_1_2.H91.InputButton.Name": {
+              "score": 4,
+              "what": "Button input element has no accessible name"
+            }
+          }
+        },
         "decorativeImageRisk": {
           "htmlcs": {
             "w:AA.1_1_1.H67.2": {
@@ -16911,7 +16919,7 @@
             }
           }
         },
-        "invisibleLabel": {
+        "visibleLabelNotName": {
           "htmlcs": {
             "w:AA.2_5_3.F96": {
               "score": 1,
@@ -17025,9 +17033,6 @@
         }
       },
       "solos": {
-        "htmlcs": {
-          "e:AA.4_1_2.H91.InputButton.Name": 4
-        },
         "wave": {
           "a:link_word": 3
         }
@@ -17035,10 +17040,10 @@
     },
     "preventionScores": {},
     "summary": {
-      "total": 1146,
+      "total": 1144,
       "log": 79,
       "preventions": 0,
-      "solos": 14,
+      "solos": 6,
       "groups": [
         {
           "groupName": "contrastAA",
@@ -17129,6 +17134,10 @@
           "score": 6
         },
         {
+          "groupName": "buttonNoText",
+          "score": 6
+        },
+        {
           "groupName": "tabIndexMissing",
           "score": 6
         },
@@ -17193,7 +17202,7 @@
           "score": 3
         },
         {
-          "groupName": "invisibleLabel",
+          "groupName": "visibleLabelNotName",
           "score": 3
         },
         {

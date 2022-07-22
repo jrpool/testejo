@@ -9440,6 +9440,14 @@
             }
           }
         },
+        "tableHeaderCelless": {
+          "axe": {
+            "th-has-data-cells": {
+              "score": 1,
+              "what": "Table header refers to no cell"
+            }
+          }
+        },
         "cssBansRotate": {
           "axe": {
             "css-orientation-lock": {
@@ -9456,11 +9464,35 @@
             }
           }
         },
+        "controlLabelInvisible": {
+          "axe": {
+            "label-title-only": {
+              "score": 3,
+              "what": "Form element has no visible label"
+            }
+          }
+        },
+        "cellHeadersNotInferrable": {
+          "htmlcs": {
+            "e:AA.1_3_1.H43.HeadersRequired": {
+              "score": 4,
+              "what": "Complex table requires headers attributes of cells"
+            }
+          }
+        },
         "tableCaption": {
           "htmlcs": {
             "w:AA.1_3_1.H39.3.NoCaption": {
               "score": 1,
               "what": "Table has no caption element"
+            }
+          }
+        },
+        "cellHeadersAmbiguityRisk": {
+          "htmlcs": {
+            "w:AA.1_3_1.H43.ScopeAmbiguous": {
+              "score": 1,
+              "what": "Complex table requires headers attributes of cells instead of header scopes"
             }
           }
         },
@@ -9629,23 +9661,14 @@
           }
         }
       },
-      "solos": {
-        "axe": {
-          "th-has-data-cells": 1,
-          "label-title-only": 3
-        },
-        "htmlcs": {
-          "e:AA.1_3_1.H43.HeadersRequired": 4,
-          "w:AA.1_3_1.H43.ScopeAmbiguous": 1
-        }
-      }
+      "solos": {}
     },
     "preventionScores": {},
     "summary": {
-      "total": 596,
+      "total": 595,
       "log": 117,
       "preventions": 0,
-      "solos": 18,
+      "solos": 0,
       "groups": [
         {
           "groupName": "focusIndication",
@@ -9704,6 +9727,10 @@
           "score": 6
         },
         {
+          "groupName": "cellHeadersNotInferrable",
+          "score": 6
+        },
+        {
           "groupName": "linkTextsSame",
           "score": 6
         },
@@ -9713,6 +9740,10 @@
         },
         {
           "groupName": "h1Missing",
+          "score": 5
+        },
+        {
+          "groupName": "controlLabelInvisible",
           "score": 5
         },
         {
@@ -9764,11 +9795,19 @@
           "score": 3
         },
         {
+          "groupName": "tableHeaderCelless",
+          "score": 3
+        },
+        {
           "groupName": "cssBansRotate",
           "score": 3
         },
         {
           "groupName": "tableCaption",
+          "score": 3
+        },
+        {
+          "groupName": "cellHeadersAmbiguityRisk",
           "score": 3
         },
         {

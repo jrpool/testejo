@@ -11970,7 +11970,7 @@
             }
           }
         },
-        "invisibleLabel": {
+        "visibleLabelNotName": {
           "axe": {
             "label-content-name-mismatch": {
               "score": 2,
@@ -11981,6 +11981,14 @@
             "w:AA.2_5_3.F96": {
               "score": 1,
               "what": "Visible label is not in the accessible name"
+            }
+          }
+        },
+        "controlLabelInvisible": {
+          "axe": {
+            "label-title-only": {
+              "score": 3,
+              "what": "Form element has no visible label"
             }
           }
         },
@@ -12203,18 +12211,14 @@
           }
         }
       },
-      "solos": {
-        "axe": {
-          "label-title-only": 3
-        }
-      }
+      "solos": {}
     },
     "preventionScores": {},
     "summary": {
-      "total": 932,
+      "total": 931,
       "log": 45,
       "preventions": 0,
-      "solos": 6,
+      "solos": 0,
       "groups": [
         {
           "groupName": "focusIndication",
@@ -12313,6 +12317,10 @@
           "score": 5
         },
         {
+          "groupName": "controlLabelInvisible",
+          "score": 5
+        },
+        {
           "groupName": "horizontalScrolling",
           "score": 5
         },
@@ -12321,7 +12329,7 @@
           "score": 5
         },
         {
-          "groupName": "invisibleLabel",
+          "groupName": "visibleLabelNotName",
           "score": 4
         },
         {

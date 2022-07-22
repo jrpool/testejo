@@ -19901,7 +19901,15 @@
             }
           }
         },
-        "mainTopLandmark": {
+        "controlLabelInvisible": {
+          "axe": {
+            "label-title-only": {
+              "score": 3,
+              "what": "Form element has no visible label"
+            }
+          }
+        },
+        "mainNotTop": {
           "axe": {
             "landmark-main-is-top-level": {
               "score": 1,
@@ -19909,7 +19917,7 @@
             }
           }
         },
-        "mainLandmark": {
+        "mainNot1": {
           "axe": {
             "landmark-no-duplicate-main": {
               "score": 1,
@@ -19974,6 +19982,14 @@
             "w:AA.1_4_3_F24.F24.FGColour": {
               "score": 1,
               "what": "Inline foreground color may lack a complementary background color"
+            }
+          }
+        },
+        "eventKeyboardRisk": {
+          "htmlcs": {
+            "w:AA.2_1_1.SCR20.MouseDown": {
+              "score": 3,
+              "what": "Mousing-down functionality may not be available by keyboard"
             }
           }
         },
@@ -20050,24 +20066,17 @@
           }
         }
       },
-      "solos": {
-        "axe": {
-          "label-title-only": 3
-        },
-        "htmlcs": {
-          "w:AA.2_1_1.SCR20.MouseDown": 10
-        }
-      }
+      "solos": {}
     },
     "preventionScores": {
       "testaro-menuNav": 50,
       "ibm": 100
     },
     "summary": {
-      "total": 1211,
+      "total": 1195,
       "log": 13,
       "preventions": 150,
-      "solos": 26,
+      "solos": 0,
       "groups": [
         {
           "groupName": "linkIndication",
@@ -20178,7 +20187,15 @@
           "score": 5
         },
         {
+          "groupName": "controlLabelInvisible",
+          "score": 5
+        },
+        {
           "groupName": "landmarkConfusion",
+          "score": 5
+        },
+        {
+          "groupName": "eventKeyboardRisk",
           "score": 5
         },
         {
@@ -20198,11 +20215,11 @@
           "score": 3
         },
         {
-          "groupName": "mainTopLandmark",
+          "groupName": "mainNotTop",
           "score": 3
         },
         {
-          "groupName": "mainLandmark",
+          "groupName": "mainNot1",
           "score": 3
         },
         {

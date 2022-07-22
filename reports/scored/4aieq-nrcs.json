@@ -19435,7 +19435,7 @@
             }
           }
         },
-        "mainLandmark": {
+        "mainNot1": {
           "axe": {
             "landmark-one-main": {
               "score": 1,
@@ -19521,6 +19521,20 @@
             }
           }
         },
+        "eventKeyboardRisk": {
+          "htmlcs": {
+            "w:AA.2_1_1.SCR20.MouseOver": {
+              "score": 1,
+              "what": "Mousing-over functionality may not be available by keyboard"
+            }
+          },
+          "wave": {
+            "a:event_handler": {
+              "score": 1,
+              "what": "Device-dependent event handler"
+            }
+          }
+        },
         "destinationLink": {
           "htmlcs": {
             "w:AA.4_1_2.H91.A.NoHref": {
@@ -19558,14 +19572,6 @@
             "a:noscript": {
               "score": 1,
               "what": "noscript element may fail to contain an accessible equivalent or alternative"
-            }
-          }
-        },
-        "eventKeyboardRisk": {
-          "wave": {
-            "a:event_handler": {
-              "score": 1,
-              "what": "Device-dependent event handler"
             }
           }
         },
@@ -19669,8 +19675,7 @@
           "accesskeys": 3
         },
         "htmlcs": {
-          "e:AA.1_1_1.H2.EG3": 8,
-          "w:AA.2_1_1.SCR20.MouseOver": 2
+          "e:AA.1_1_1.H2.EG3": 8
         },
         "tenon": {
           "101": 8
@@ -19679,10 +19684,10 @@
     },
     "preventionScores": {},
     "summary": {
-      "total": 1333,
+      "total": 1329,
       "log": 71,
       "preventions": 0,
-      "solos": 42,
+      "solos": 38,
       "groups": [
         {
           "groupName": "menuNavigation",
@@ -19853,7 +19858,7 @@
           "score": 3
         },
         {
-          "groupName": "mainLandmark",
+          "groupName": "mainNot1",
           "score": 3
         },
         {
@@ -19862,6 +19867,10 @@
         },
         {
           "groupName": "scrollRisk",
+          "score": 3
+        },
+        {
+          "groupName": "eventKeyboardRisk",
           "score": 3
         },
         {
@@ -19874,10 +19883,6 @@
         },
         {
           "groupName": "noScriptRisk",
-          "score": 3
-        },
-        {
-          "groupName": "eventKeyboardRisk",
           "score": 3
         },
         {

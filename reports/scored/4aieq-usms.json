@@ -15538,7 +15538,7 @@
             }
           }
         },
-        "mainLandmark": {
+        "mainNot1": {
           "axe": {
             "landmark-one-main": {
               "score": 1,
@@ -15601,6 +15601,14 @@
             "w:AA.1_4_3.G18.BgImage": {
               "score": 11,
               "what": "Contrast between the text and its background image may be less than 4.5:1"
+            }
+          }
+        },
+        "eventKeyboardRisk": {
+          "htmlcs": {
+            "w:AA.2_1_1.SCR20.MouseDown": {
+              "score": 4,
+              "what": "Mousing-down functionality may not be available by keyboard"
             }
           }
         },
@@ -15717,17 +15725,16 @@
       },
       "solos": {
         "htmlcs": {
-          "w:AA.1_3_1.H49.Font": 1,
-          "w:AA.2_1_1.SCR20.MouseDown": 14
+          "w:AA.1_3_1.H49.Font": 1
         }
       }
     },
     "preventionScores": {},
     "summary": {
-      "total": 929,
+      "total": 907,
       "log": 214,
       "preventions": 0,
-      "solos": 30,
+      "solos": 2,
       "groups": [
         {
           "groupName": "contentBeyondLandmarks",
@@ -15814,6 +15821,10 @@
           "score": 6
         },
         {
+          "groupName": "eventKeyboardRisk",
+          "score": 6
+        },
+        {
           "groupName": "targetSize",
           "score": 6
         },
@@ -15858,7 +15869,7 @@
           "score": 3
         },
         {
-          "groupName": "mainLandmark",
+          "groupName": "mainNot1",
           "score": 3
         },
         {

@@ -11658,7 +11658,7 @@
             }
           }
         },
-        "invisibleLabel": {
+        "visibleLabelNotName": {
           "alfa": {
             "r14": {
               "score": 3,
@@ -12015,7 +12015,7 @@
           "score": 6
         },
         {
-          "groupName": "invisibleLabel",
+          "groupName": "visibleLabelNotName",
           "score": 6
         },
         {

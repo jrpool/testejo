@@ -33833,7 +33833,7 @@
             }
           }
         },
-        "mainLandmark": {
+        "mainNot1": {
           "axe": {
             "landmark-one-main": {
               "score": 1,
@@ -33902,6 +33902,14 @@
             "e:label_empty": {
               "score": 9,
               "what": "Empty form label"
+            }
+          }
+        },
+        "labelClash": {
+          "wave": {
+            "e:label_multiple": {
+              "score": 6,
+              "what": "Form control has more than one label associated with it"
             }
           }
         },
@@ -34054,18 +34062,14 @@
           }
         }
       },
-      "solos": {
-        "wave": {
-          "e:label_multiple": 12
-        }
-      }
+      "solos": {}
     },
     "preventionScores": {},
     "summary": {
-      "total": 1781,
+      "total": 1765,
       "log": 200,
       "preventions": 0,
-      "solos": 24,
+      "solos": 0,
       "groups": [
         {
           "groupName": "contentBeyondLandmarks",
@@ -34164,6 +34168,10 @@
           "score": 9
         },
         {
+          "groupName": "labelClash",
+          "score": 8
+        },
+        {
           "groupName": "roleBad",
           "score": 7
         },
@@ -34228,7 +34236,7 @@
           "score": 3
         },
         {
-          "groupName": "mainLandmark",
+          "groupName": "mainNot1",
           "score": 3
         },
         {

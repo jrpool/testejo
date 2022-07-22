@@ -26504,7 +26504,7 @@
             }
           }
         },
-        "invisibleLabel": {
+        "visibleLabelNotName": {
           "alfa": {
             "r14": {
               "score": 9,
@@ -26752,7 +26752,7 @@
             }
           }
         },
-        "mainLandmark": {
+        "mainNot1": {
           "axe": {
             "landmark-one-main": {
               "score": 1,
@@ -26877,6 +26877,10 @@
             "w:AA.2_1_1.G90": {
               "score": 2,
               "what": "Event handler functionality may not be available by keyboard"
+            },
+            "w:AA.2_1_1.SCR20.MouseOver": {
+              "score": 3,
+              "what": "Mousing-over functionality may not be available by keyboard"
             }
           },
           "wave": {
@@ -26999,20 +27003,16 @@
           }
         }
       },
-      "solos": {
-        "htmlcs": {
-          "w:AA.2_1_1.SCR20.MouseOver": 11
-        }
-      }
+      "solos": {}
     },
     "preventionScores": {
       "ibm": 100
     },
     "summary": {
-      "total": 2132,
+      "total": 2112,
       "log": 232,
       "preventions": 100,
-      "solos": 22,
+      "solos": 0,
       "groups": [
         {
           "groupName": "contentBeyondLandmarks",
@@ -27091,7 +27091,7 @@
           "score": 16
         },
         {
-          "groupName": "invisibleLabel",
+          "groupName": "visibleLabelNotName",
           "score": 15
         },
         {
@@ -27127,15 +27127,15 @@
           "score": 9
         },
         {
+          "groupName": "eventKeyboardRisk",
+          "score": 9
+        },
+        {
           "groupName": "headingOfNothing",
           "score": 8
         },
         {
           "groupName": "imageTextRedundant",
-          "score": 7
-        },
-        {
-          "groupName": "eventKeyboardRisk",
           "score": 7
         },
         {
@@ -27207,7 +27207,7 @@
           "score": 3
         },
         {
-          "groupName": "mainLandmark",
+          "groupName": "mainNot1",
           "score": 3
         },
         {

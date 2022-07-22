@@ -19127,7 +19127,7 @@
             }
           }
         },
-        "invisibleLabel": {
+        "visibleLabelNotName": {
           "alfa": {
             "r14": {
               "score": 6,
@@ -19419,6 +19419,14 @@
             }
           }
         },
+        "acronymNoTitle": {
+          "tenon": {
+            "117": {
+              "score": 168,
+              "what": "acronym element has no useful title value (and is deprecated; use abbr)"
+            }
+          }
+        },
         "leadingClipsText": {
           "tenon": {
             "144": {
@@ -19451,6 +19459,14 @@
             }
           }
         },
+        "abbreviationNoTitle": {
+          "tenon": {
+            "233": {
+              "score": 112,
+              "what": "abbr element is first for its abbreviation but has no useful title value"
+            }
+          }
+        },
         "textRotated": {
           "tenon": {
             "271": {
@@ -19460,20 +19476,19 @@
           }
         }
       },
-      "solos": {
-        "tenon": {
-          "117": 168,
-          "233": 112
-        }
-      }
+      "solos": {}
     },
     "preventionScores": {},
     "summary": {
-      "total": 1227,
+      "total": 951,
       "log": 0,
       "preventions": 0,
-      "solos": 560,
+      "solos": 0,
       "groups": [
+        {
+          "groupName": "acronymNoTitle",
+          "score": 170
+        },
         {
           "groupName": "linkForcesNewWindow",
           "score": 164
@@ -19481,6 +19496,10 @@
         {
           "groupName": "fontSmall",
           "score": 119
+        },
+        {
+          "groupName": "abbreviationNoTitle",
+          "score": 114
         },
         {
           "groupName": "contrastAA",
@@ -19515,7 +19534,7 @@
           "score": 12
         },
         {
-          "groupName": "invisibleLabel",
+          "groupName": "visibleLabelNotName",
           "score": 11
         },
         {

@@ -27280,7 +27280,7 @@
             }
           }
         },
-        "invisibleLabel": {
+        "visibleLabelNotName": {
           "alfa": {
             "r14": {
               "score": 60,
@@ -27453,6 +27453,14 @@
             "css-orientation-lock": {
               "score": 1,
               "what": "CSS media query locks display orientation"
+            }
+          }
+        },
+        "controlLabelInvisible": {
+          "axe": {
+            "label-title-only": {
+              "score": 3,
+              "what": "Form element has no visible label"
             }
           }
         },
@@ -27693,18 +27701,14 @@
           }
         }
       },
-      "solos": {
-        "axe": {
-          "label-title-only": 3
-        }
-      }
+      "solos": {}
     },
     "preventionScores": {},
     "summary": {
-      "total": 13381,
+      "total": 13380,
       "log": 11765,
       "preventions": 0,
-      "solos": 6,
+      "solos": 0,
       "groups": [
         {
           "groupName": "contentBeyondLandmarks",
@@ -27727,7 +27731,7 @@
           "score": 77
         },
         {
-          "groupName": "invisibleLabel",
+          "groupName": "visibleLabelNotName",
           "score": 62
         },
         {
@@ -27841,6 +27845,10 @@
         {
           "groupName": "tabIndexMissing",
           "score": 6
+        },
+        {
+          "groupName": "controlLabelInvisible",
+          "score": 5
         },
         {
           "groupName": "contrastRisk",

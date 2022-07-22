@@ -19715,7 +19715,7 @@
             }
           }
         },
-        "mainTopLandmark": {
+        "mainNotTop": {
           "axe": {
             "landmark-main-is-top-level": {
               "score": 1,
@@ -19723,7 +19723,7 @@
             }
           }
         },
-        "bannerLandmark": {
+        "banners": {
           "axe": {
             "landmark-no-duplicate-banner": {
               "score": 1,
@@ -19731,7 +19731,7 @@
             }
           }
         },
-        "mainLandmark": {
+        "mainNot1": {
           "axe": {
             "landmark-no-duplicate-main": {
               "score": 1,
@@ -20028,15 +20028,15 @@
           "score": 3
         },
         {
-          "groupName": "mainTopLandmark",
+          "groupName": "mainNotTop",
           "score": 3
         },
         {
-          "groupName": "bannerLandmark",
+          "groupName": "banners",
           "score": 3
         },
         {
-          "groupName": "mainLandmark",
+          "groupName": "mainNot1",
           "score": 3
         },
         {

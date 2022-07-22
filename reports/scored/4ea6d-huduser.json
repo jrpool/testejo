@@ -19753,7 +19753,7 @@
             }
           }
         },
-        "bannerLandmark": {
+        "banners": {
           "axe": {
             "landmark-no-duplicate-banner": {
               "score": 1,
@@ -19761,7 +19761,7 @@
             }
           }
         },
-        "mainLandmark": {
+        "mainNot1": {
           "axe": {
             "landmark-one-main": {
               "score": 1,
@@ -20222,11 +20222,11 @@
           "score": 3
         },
         {
-          "groupName": "bannerLandmark",
+          "groupName": "banners",
           "score": 3
         },
         {
-          "groupName": "mainLandmark",
+          "groupName": "mainNot1",
           "score": 3
         },
         {

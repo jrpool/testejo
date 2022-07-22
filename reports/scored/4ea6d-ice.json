@@ -27653,6 +27653,14 @@
             }
           }
         },
+        "controlLabelInvisible": {
+          "axe": {
+            "label-title-only": {
+              "score": 3,
+              "what": "Form element has no visible label"
+            }
+          }
+        },
         "landmarkConfusion": {
           "axe": {
             "landmark-unique": {
@@ -27966,9 +27974,6 @@
         "alfa": {
           "r63": 24
         },
-        "axe": {
-          "label-title-only": 3
-        },
         "htmlcs": {
           "w:AA.2_1_2.F10": 6
         }
@@ -27978,10 +27983,10 @@
       "ibm": 100
     },
     "summary": {
-      "total": 1725,
+      "total": 1724,
       "log": 388,
       "preventions": 100,
-      "solos": 66,
+      "solos": 60,
       "groups": [
         {
           "groupName": "linkForcesNewWindow",
@@ -28129,6 +28134,10 @@
         },
         {
           "groupName": "imageTextRedundant",
+          "score": 5
+        },
+        {
+          "groupName": "controlLabelInvisible",
           "score": 5
         },
         {

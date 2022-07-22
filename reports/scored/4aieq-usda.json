@@ -7135,7 +7135,15 @@
             }
           }
         },
-        "bannerLandmark": {
+        "bannerNotTop": {
+          "axe": {
+            "landmark-banner-is-top-level": {
+              "score": 1,
+              "what": "banner landmark is contained in another landmark"
+            }
+          }
+        },
+        "banners": {
           "axe": {
             "landmark-no-duplicate-banner": {
               "score": 1,
@@ -7272,18 +7280,14 @@
           }
         }
       },
-      "solos": {
-        "axe": {
-          "landmark-banner-is-top-level": 2
-        }
-      }
+      "solos": {}
     },
     "preventionScores": {},
     "summary": {
-      "total": 361,
+      "total": 360,
       "log": 45,
       "preventions": 0,
-      "solos": 4,
+      "solos": 0,
       "groups": [
         {
           "groupName": "focusIndication",
@@ -7390,7 +7394,11 @@
           "score": 3
         },
         {
-          "groupName": "bannerLandmark",
+          "groupName": "bannerNotTop",
+          "score": 3
+        },
+        {
+          "groupName": "banners",
           "score": 3
         },
         {

@@ -7376,7 +7376,7 @@
             }
           }
         },
-        "invisibleLabel": {
+        "visibleLabelNotName": {
           "alfa": {
             "r14": {
               "score": 24,
@@ -7482,7 +7482,7 @@
             }
           }
         },
-        "bannerLandmark": {
+        "banners": {
           "axe": {
             "landmark-no-duplicate-banner": {
               "score": 1,
@@ -7677,7 +7677,7 @@
       "solos": 0,
       "groups": [
         {
-          "groupName": "invisibleLabel",
+          "groupName": "visibleLabelNotName",
           "score": 36
         },
         {
@@ -7777,7 +7777,7 @@
           "score": 3
         },
         {
-          "groupName": "bannerLandmark",
+          "groupName": "banners",
           "score": 3
         },
         {

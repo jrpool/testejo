@@ -13079,7 +13079,7 @@
             }
           }
         },
-        "invisibleLabel": {
+        "visibleLabelNotName": {
           "htmlcs": {
             "w:AA.2_5_3.F96": {
               "score": 3,
@@ -13092,6 +13092,14 @@
             "w:AA.4_1_2.H91.A.Empty": {
               "score": 1,
               "what": "Link element has an id attribute but no href attribute or text"
+            }
+          }
+        },
+        "labelClash": {
+          "wave": {
+            "e:label_multiple": {
+              "score": 4,
+              "what": "Form control has more than one label associated with it"
             }
           }
         },
@@ -13204,20 +13212,16 @@
           }
         }
       },
-      "solos": {
-        "wave": {
-          "e:label_multiple": 8
-        }
-      }
+      "solos": {}
     },
     "preventionScores": {
       "ibm": 100
     },
     "summary": {
-      "total": 690,
+      "total": 680,
       "log": 92,
       "preventions": 100,
-      "solos": 16,
+      "solos": 0,
       "groups": [
         {
           "groupName": "linkIndication",
@@ -13280,11 +13284,15 @@
           "score": 6
         },
         {
+          "groupName": "labelClash",
+          "score": 6
+        },
+        {
           "groupName": "imageTextRedundant",
           "score": 6
         },
         {
-          "groupName": "invisibleLabel",
+          "groupName": "visibleLabelNotName",
           "score": 5
         },
         {

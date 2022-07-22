@@ -15613,7 +15613,7 @@
             }
           }
         },
-        "invisibleLabel": {
+        "visibleLabelNotName": {
           "alfa": {
             "r14": {
               "score": 21,
@@ -15771,7 +15771,7 @@
             }
           }
         },
-        "bannerLandmark": {
+        "banners": {
           "axe": {
             "landmark-no-duplicate-banner": {
               "score": 1,
@@ -15895,6 +15895,14 @@
             }
           }
         },
+        "selectNavSurpriseRisk": {
+          "wave": {
+            "a:javascript_jumpmenu": {
+              "score": 2,
+              "what": "selection change may navigate to another page without notice"
+            }
+          }
+        },
         "horizontalScrolling": {
           "tenon": {
             "28": {
@@ -15968,18 +15976,14 @@
           }
         }
       },
-      "solos": {
-        "wave": {
-          "a:javascript_jumpmenu": 6
-        }
-      }
+      "solos": {}
     },
     "preventionScores": {},
     "summary": {
-      "total": 802,
+      "total": 794,
       "log": 19,
       "preventions": 0,
-      "solos": 12,
+      "solos": 0,
       "groups": [
         {
           "groupName": "linkIndication",
@@ -16010,7 +16014,7 @@
           "score": 36
         },
         {
-          "groupName": "invisibleLabel",
+          "groupName": "visibleLabelNotName",
           "score": 35
         },
         {
@@ -16102,6 +16106,10 @@
           "score": 4
         },
         {
+          "groupName": "selectNavSurpriseRisk",
+          "score": 4
+        },
+        {
           "groupName": "visibleBulk",
           "score": 3
         },
@@ -16122,7 +16130,7 @@
           "score": 3
         },
         {
-          "groupName": "bannerLandmark",
+          "groupName": "banners",
           "score": 3
         },
         {

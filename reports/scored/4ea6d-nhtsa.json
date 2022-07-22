@@ -17545,7 +17545,15 @@
             }
           }
         },
-        "asideTopLandmark": {
+        "bannerNotTop": {
+          "axe": {
+            "landmark-banner-is-top-level": {
+              "score": 2,
+              "what": "banner landmark is contained in another landmark"
+            }
+          }
+        },
+        "asideNotTop": {
           "axe": {
             "landmark-complementary-is-top-level": {
               "score": 3,
@@ -17561,7 +17569,7 @@
             }
           }
         },
-        "mainTopLandmark": {
+        "mainNotTop": {
           "axe": {
             "landmark-main-is-top-level": {
               "score": 1,
@@ -17569,7 +17577,7 @@
             }
           }
         },
-        "bannerLandmark": {
+        "banners": {
           "axe": {
             "landmark-no-duplicate-banner": {
               "score": 1,
@@ -17585,7 +17593,7 @@
             }
           }
         },
-        "mainLandmark": {
+        "mainNot1": {
           "axe": {
             "landmark-no-duplicate-main": {
               "score": 1,
@@ -17808,20 +17816,16 @@
           }
         }
       },
-      "solos": {
-        "axe": {
-          "landmark-banner-is-top-level": 4
-        }
-      }
+      "solos": {}
     },
     "preventionScores": {
       "ibm": 100
     },
     "summary": {
-      "total": 992,
+      "total": 988,
       "log": 85,
       "preventions": 100,
-      "solos": 8,
+      "solos": 0,
       "groups": [
         {
           "groupName": "contrastAA",
@@ -17928,7 +17932,7 @@
           "score": 6
         },
         {
-          "groupName": "asideTopLandmark",
+          "groupName": "asideNotTop",
           "score": 5
         },
         {
@@ -17950,6 +17954,10 @@
         {
           "groupName": "linkForcesNewWindow",
           "score": 5
+        },
+        {
+          "groupName": "bannerNotTop",
+          "score": 4
         },
         {
           "groupName": "landmarkConfusion",
@@ -17980,11 +17988,11 @@
           "score": 3
         },
         {
-          "groupName": "mainTopLandmark",
+          "groupName": "mainNotTop",
           "score": 3
         },
         {
-          "groupName": "bannerLandmark",
+          "groupName": "banners",
           "score": 3
         },
         {
@@ -17992,7 +18000,7 @@
           "score": 3
         },
         {
-          "groupName": "mainLandmark",
+          "groupName": "mainNot1",
           "score": 3
         },
         {

@@ -8938,7 +8938,7 @@
             }
           }
         },
-        "invisibleLabel": {
+        "visibleLabelNotName": {
           "axe": {
             "label-content-name-mismatch": {
               "score": 7,
@@ -9163,7 +9163,7 @@
           "score": 9
         },
         {
-          "groupName": "invisibleLabel",
+          "groupName": "visibleLabelNotName",
           "score": 9
         },
         {

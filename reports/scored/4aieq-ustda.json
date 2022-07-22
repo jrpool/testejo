@@ -22402,7 +22402,7 @@
             }
           }
         },
-        "mainLandmark": {
+        "mainNot1": {
           "axe": {
             "landmark-one-main": {
               "score": 1,
@@ -22437,6 +22437,14 @@
             "a:link_internal_broken": {
               "score": 1,
               "what": "Broken same-page link"
+            }
+          }
+        },
+        "buttonNoText": {
+          "htmlcs": {
+            "e:AA.4_1_2.H91.Div.Name": {
+              "score": 4,
+              "what": "div element with button role has no accessible name"
             }
           }
         },
@@ -22638,7 +22646,6 @@
           "no-autoplay-audio": 1
         },
         "htmlcs": {
-          "e:AA.4_1_2.H91.Div.Name": 4,
           "e:AA.4_1_2.H91.Span.Name": 4
         },
         "wave": {
@@ -22648,10 +22655,10 @@
     },
     "preventionScores": {},
     "summary": {
-      "total": 992,
+      "total": 990,
       "log": 17,
       "preventions": 0,
-      "solos": 20,
+      "solos": 12,
       "groups": [
         {
           "groupName": "overflowHidden",
@@ -22734,6 +22741,10 @@
           "score": 6
         },
         {
+          "groupName": "buttonNoText",
+          "score": 6
+        },
+        {
           "groupName": "allItalics",
           "score": 6
         },
@@ -22798,7 +22809,7 @@
           "score": 3
         },
         {
-          "groupName": "mainLandmark",
+          "groupName": "mainNot1",
           "score": 3
         },
         {

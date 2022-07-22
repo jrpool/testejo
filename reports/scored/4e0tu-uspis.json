@@ -4050,7 +4050,7 @@
             }
           }
         },
-        "invisibleLabel": {
+        "visibleLabelNotName": {
           "alfa": {
             "r14": {
               "score": 6,
@@ -4184,7 +4184,7 @@
           "score": 10
         },
         {
-          "groupName": "invisibleLabel",
+          "groupName": "visibleLabelNotName",
           "score": 8
         },
         {

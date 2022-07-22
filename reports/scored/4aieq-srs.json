@@ -25331,7 +25331,7 @@
             }
           }
         },
-        "mainLandmark": {
+        "mainNot1": {
           "axe": {
             "landmark-one-main": {
               "score": 1,
@@ -25434,6 +25434,18 @@
             "w:AA.2_1_1.G90": {
               "score": 13,
               "what": "Event handler functionality may not be available by keyboard"
+            },
+            "w:AA.2_1_1.SCR20.MouseDown": {
+              "score": 2,
+              "what": "Mousing-down functionality may not be available by keyboard"
+            },
+            "w:AA.2_1_1.SCR20.MouseOut": {
+              "score": 16,
+              "what": "Mousing-out functionality may not be available by keyboard"
+            },
+            "w:AA.2_1_1.SCR20.MouseOver": {
+              "score": 16,
+              "what": "Mousing-over functionality may not be available by keyboard"
             }
           },
           "wave": {
@@ -25578,10 +25590,7 @@
           "bypass": 1
         },
         "htmlcs": {
-          "w:AA.1_3_1.H49.Center": 1,
-          "w:AA.2_1_1.SCR20.MouseDown": 8,
-          "w:AA.2_1_1.SCR20.MouseOut": 65,
-          "w:AA.2_1_1.SCR20.MouseOver": 65
+          "w:AA.1_3_1.H49.Center": 1
         },
         "wave": {
           "a:heading_missing": 1
@@ -25593,10 +25602,10 @@
     },
     "preventionScores": {},
     "summary": {
-      "total": 1909,
+      "total": 1665,
       "log": 70,
       "preventions": 0,
-      "solos": 354,
+      "solos": 78,
       "groups": [
         {
           "groupName": "focusIndication",
@@ -25639,6 +25648,10 @@
           "score": 58
         },
         {
+          "groupName": "eventKeyboardRisk",
+          "score": 55
+        },
+        {
           "groupName": "layoutTable",
           "score": 31
         },
@@ -25652,10 +25665,6 @@
         },
         {
           "groupName": "noLeading",
-          "score": 23
-        },
-        {
-          "groupName": "eventKeyboardRisk",
           "score": 23
         },
         {
@@ -25771,7 +25780,7 @@
           "score": 3
         },
         {
-          "groupName": "mainLandmark",
+          "groupName": "mainNot1",
           "score": 3
         },
         {

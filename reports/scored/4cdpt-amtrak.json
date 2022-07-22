@@ -9166,6 +9166,10 @@
             "aria-allowed-role": {
               "score": 3,
               "what": "ARIA role is not appropriate for the element"
+            },
+            "aria-roles": {
+              "score": 3,
+              "what": "ARIA role has an invalid value"
             }
           }
         },
@@ -9323,7 +9327,7 @@
             }
           }
         },
-        "invisibleLabel": {
+        "visibleLabelNotName": {
           "axe": {
             "label-content-name-mismatch": {
               "score": 38,
@@ -9506,8 +9510,7 @@
       },
       "solos": {
         "axe": {
-          "audio-caption": 1,
-          "aria-roles": 4
+          "audio-caption": 1
         }
       }
     },
@@ -9517,14 +9520,14 @@
       "tenon": 100
     },
     "summary": {
-      "total": 5385,
+      "total": 5378,
       "log": 4442,
       "preventions": 300,
-      "solos": 10,
+      "solos": 2,
       "groups": [
         {
           "groupName": "roleBad",
-          "score": 72
+          "score": 73
         },
         {
           "groupName": "imageNoText",
@@ -9539,7 +9542,7 @@
           "score": 50
         },
         {
-          "groupName": "invisibleLabel",
+          "groupName": "visibleLabelNotName",
           "score": 44
         },
         {

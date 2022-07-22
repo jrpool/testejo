@@ -17157,7 +17157,15 @@
             }
           }
         },
-        "bannerLandmark": {
+        "controlLabelInvisible": {
+          "axe": {
+            "label-title-only": {
+              "score": 3,
+              "what": "Form element has no visible label"
+            }
+          }
+        },
+        "banners": {
           "axe": {
             "landmark-no-duplicate-banner": {
               "score": 1,
@@ -17165,7 +17173,7 @@
             }
           }
         },
-        "mainLandmark": {
+        "mainNot1": {
           "axe": {
             "landmark-one-main": {
               "score": 1,
@@ -17269,7 +17277,25 @@
             }
           }
         },
-        "invisibleLabel": {
+        "eventKeyboardRisk": {
+          "htmlcs": {
+            "w:AA.2_1_1.SCR20.MouseOut": {
+              "score": 5,
+              "what": "Mousing-out functionality may not be available by keyboard"
+            },
+            "w:AA.2_1_1.SCR20.MouseOver": {
+              "score": 5,
+              "what": "Mousing-over functionality may not be available by keyboard"
+            }
+          },
+          "wave": {
+            "a:event_handler": {
+              "score": 5,
+              "what": "Device-dependent event handler"
+            }
+          }
+        },
+        "visibleLabelNotName": {
           "htmlcs": {
             "w:AA.2_5_3.F96": {
               "score": 1,
@@ -17314,14 +17340,6 @@
             "a:link_pdf": {
               "score": 1,
               "what": "Link to PDF document"
-            }
-          }
-        },
-        "eventKeyboardRisk": {
-          "wave": {
-            "a:event_handler": {
-              "score": 5,
-              "what": "Device-dependent event handler"
             }
           }
         },
@@ -17406,22 +17424,14 @@
           }
         }
       },
-      "solos": {
-        "axe": {
-          "label-title-only": 3
-        },
-        "htmlcs": {
-          "w:AA.2_1_1.SCR20.MouseOut": 18,
-          "w:AA.2_1_1.SCR20.MouseOver": 18
-        }
-      }
+      "solos": {}
     },
     "preventionScores": {},
     "summary": {
-      "total": 1156,
+      "total": 1090,
       "log": 45,
       "preventions": 0,
-      "solos": 78,
+      "solos": 0,
       "groups": [
         {
           "groupName": "linkForcesNewWindow",
@@ -17492,6 +17502,10 @@
           "score": 14
         },
         {
+          "groupName": "eventKeyboardRisk",
+          "score": 14
+        },
+        {
           "groupName": "hoverSurprise",
           "score": 12
         },
@@ -17536,10 +17550,6 @@
           "score": 7
         },
         {
-          "groupName": "eventKeyboardRisk",
-          "score": 7
-        },
-        {
           "groupName": "ariaBadAttribute",
           "score": 6
         },
@@ -17561,6 +17571,10 @@
         },
         {
           "groupName": "h1Missing",
+          "score": 5
+        },
+        {
+          "groupName": "controlLabelInvisible",
           "score": 5
         },
         {
@@ -17596,11 +17610,11 @@
           "score": 3
         },
         {
-          "groupName": "bannerLandmark",
+          "groupName": "banners",
           "score": 3
         },
         {
-          "groupName": "mainLandmark",
+          "groupName": "mainNot1",
           "score": 3
         },
         {
@@ -17612,7 +17626,7 @@
           "score": 3
         },
         {
-          "groupName": "invisibleLabel",
+          "groupName": "visibleLabelNotName",
           "score": 3
         },
         {

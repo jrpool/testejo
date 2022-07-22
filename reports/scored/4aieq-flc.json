@@ -26333,6 +26333,12 @@
               "score": 6,
               "what": "Element does not have a valid role"
             }
+          },
+          "axe": {
+            "aria-roles": {
+              "score": 6,
+              "what": "ARIA role has an invalid value"
+            }
           }
         },
         "inconsistentStyles": {
@@ -26789,6 +26795,14 @@
             }
           }
         },
+        "labelClash": {
+          "wave": {
+            "e:label_multiple": {
+              "score": 20,
+              "what": "Form control has more than one label associated with it"
+            }
+          }
+        },
         "menuItemless": {
           "wave": {
             "e:aria_menu_broken": {
@@ -26916,21 +26930,14 @@
           }
         }
       },
-      "solos": {
-        "axe": {
-          "aria-roles": 8
-        },
-        "wave": {
-          "e:label_multiple": 40
-        }
-      }
+      "solos": {}
     },
     "preventionScores": {},
     "summary": {
-      "total": 2078,
+      "total": 2007,
       "log": 666,
       "preventions": 0,
-      "solos": 96,
+      "solos": 0,
       "groups": [
         {
           "groupName": "contrastAA",
@@ -26978,11 +26985,15 @@
         },
         {
           "groupName": "roleBad",
-          "score": 42
+          "score": 45
         },
         {
           "groupName": "fontSmall",
           "score": 31
+        },
+        {
+          "groupName": "labelClash",
+          "score": 22
         },
         {
           "groupName": "linkTextsSame",

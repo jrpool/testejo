@@ -7021,11 +7021,19 @@
             }
           }
         },
-        "invisibleLabel": {
+        "visibleLabelNotName": {
           "htmlcs": {
             "w:AA.2_5_3.F96": {
               "score": 1,
               "what": "Visible label is not in the accessible name"
+            }
+          }
+        },
+        "labelClash": {
+          "wave": {
+            "e:label_multiple": {
+              "score": 2,
+              "what": "Form control has more than one label associated with it"
             }
           }
         },
@@ -7070,20 +7078,16 @@
           }
         }
       },
-      "solos": {
-        "wave": {
-          "e:label_multiple": 4
-        }
-      }
+      "solos": {}
     },
     "preventionScores": {
       "ibm": 100
     },
     "summary": {
-      "total": 389,
+      "total": 385,
       "log": 56,
       "preventions": 100,
-      "solos": 8,
+      "solos": 0,
       "groups": [
         {
           "groupName": "linkIndication",
@@ -7142,6 +7146,10 @@
           "score": 4
         },
         {
+          "groupName": "labelClash",
+          "score": 4
+        },
+        {
           "groupName": "visibleBulk",
           "score": 3
         },
@@ -7166,7 +7174,7 @@
           "score": 3
         },
         {
-          "groupName": "invisibleLabel",
+          "groupName": "visibleLabelNotName",
           "score": 3
         },
         {

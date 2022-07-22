@@ -12117,7 +12117,15 @@
             }
           }
         },
-        "bannerLandmark": {
+        "bannerNotTop": {
+          "axe": {
+            "landmark-banner-is-top-level": {
+              "score": 1,
+              "what": "banner landmark is contained in another landmark"
+            }
+          }
+        },
+        "banners": {
           "axe": {
             "landmark-no-duplicate-banner": {
               "score": 1,
@@ -12162,6 +12170,14 @@
             "w:AA.1_4_3_F24.F24.BGColour": {
               "score": 1,
               "what": "Inline background color may lack a complementary foreground color"
+            }
+          }
+        },
+        "eventKeyboardRisk": {
+          "htmlcs": {
+            "w:AA.2_1_1.SCR20.MouseDown": {
+              "score": 1,
+              "what": "Mousing-down functionality may not be available by keyboard"
             }
           }
         },
@@ -12274,14 +12290,7 @@
           }
         }
       },
-      "solos": {
-        "axe": {
-          "landmark-banner-is-top-level": 2
-        },
-        "htmlcs": {
-          "w:AA.2_1_1.SCR20.MouseDown": 1
-        }
-      }
+      "solos": {}
     },
     "preventionScores": {
       "ibm": 100
@@ -12290,7 +12299,7 @@
       "total": 963,
       "log": 353,
       "preventions": 100,
-      "solos": 6,
+      "solos": 0,
       "groups": [
         {
           "groupName": "linkForcesNewWindow",
@@ -12417,7 +12426,11 @@
           "score": 3
         },
         {
-          "groupName": "bannerLandmark",
+          "groupName": "bannerNotTop",
+          "score": 3
+        },
+        {
+          "groupName": "banners",
           "score": 3
         },
         {
@@ -12430,6 +12443,10 @@
         },
         {
           "groupName": "pseudoNavListRisk",
+          "score": 3
+        },
+        {
+          "groupName": "eventKeyboardRisk",
           "score": 3
         },
         {

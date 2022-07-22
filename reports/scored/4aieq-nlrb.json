@@ -29852,7 +29852,7 @@
             }
           }
         },
-        "invisibleLabel": {
+        "visibleLabelNotName": {
           "alfa": {
             "r14": {
               "score": 3,
@@ -30112,6 +30112,14 @@
             }
           }
         },
+        "labelClash": {
+          "wave": {
+            "e:label_multiple": {
+              "score": 20,
+              "what": "Form control has more than one label associated with it"
+            }
+          }
+        },
         "ariaReferenceBad": {
           "wave": {
             "e:aria_reference_broken": {
@@ -30269,18 +30277,14 @@
           }
         }
       },
-      "solos": {
-        "wave": {
-          "e:label_multiple": 40
-        }
-      }
+      "solos": {}
     },
     "preventionScores": {},
     "summary": {
-      "total": 1557,
+      "total": 1499,
       "log": 46,
       "preventions": 0,
-      "solos": 80,
+      "solos": 0,
       "groups": [
         {
           "groupName": "focusableOperable",
@@ -30343,6 +30347,10 @@
           "score": 23
         },
         {
+          "groupName": "labelClash",
+          "score": 22
+        },
+        {
           "groupName": "fieldSetMissing",
           "score": 19
         },
@@ -30375,7 +30383,7 @@
           "score": 8
         },
         {
-          "groupName": "invisibleLabel",
+          "groupName": "visibleLabelNotName",
           "score": 6
         },
         {

@@ -29484,7 +29484,7 @@
             }
           }
         },
-        "invisibleLabel": {
+        "visibleLabelNotName": {
           "htmlcs": {
             "w:AA.2_5_3.F96": {
               "score": 1,
@@ -29749,7 +29749,7 @@
           "score": 3
         },
         {
-          "groupName": "invisibleLabel",
+          "groupName": "visibleLabelNotName",
           "score": 3
         },
         {

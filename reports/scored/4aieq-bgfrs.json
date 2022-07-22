@@ -19470,6 +19470,14 @@
             }
           }
         },
+        "notScrollable": {
+          "axe": {
+            "scrollable-region-focusable": {
+              "score": 2,
+              "what": "Element is scrollable but has no keyboard access"
+            }
+          }
+        },
         "pseudoHeadingRisk": {
           "htmlcs": {
             "w:AA.1_3_1.H42": {
@@ -19647,18 +19655,14 @@
           }
         }
       },
-      "solos": {
-        "axe": {
-          "scrollable-region-focusable": 2
-        }
-      }
+      "solos": {}
     },
     "preventionScores": {},
     "summary": {
       "total": 1750,
       "log": 471,
       "preventions": 0,
-      "solos": 4,
+      "solos": 0,
       "groups": [
         {
           "groupName": "linkIndication",
@@ -19770,6 +19774,10 @@
         },
         {
           "groupName": "landmarkConfusion",
+          "score": 4
+        },
+        {
+          "groupName": "notScrollable",
           "score": 4
         },
         {

@@ -11087,7 +11087,15 @@
             }
           }
         },
-        "mainLandmark": {
+        "controlLabelInvisible": {
+          "axe": {
+            "label-title-only": {
+              "score": 3,
+              "what": "Form element has no visible label"
+            }
+          }
+        },
+        "mainNot1": {
           "axe": {
             "landmark-one-main": {
               "score": 1,
@@ -11190,18 +11198,14 @@
           }
         }
       },
-      "solos": {
-        "axe": {
-          "label-title-only": 3
-        }
-      }
+      "solos": {}
     },
     "preventionScores": {},
     "summary": {
-      "total": 1202,
+      "total": 1201,
       "log": 701,
       "preventions": 0,
-      "solos": 6,
+      "solos": 0,
       "groups": [
         {
           "groupName": "contrastAA",
@@ -11256,6 +11260,10 @@
           "score": 6
         },
         {
+          "groupName": "controlLabelInvisible",
+          "score": 5
+        },
+        {
           "groupName": "roleBad",
           "score": 4
         },
@@ -11284,7 +11292,7 @@
           "score": 3
         },
         {
-          "groupName": "mainLandmark",
+          "groupName": "mainNot1",
           "score": 3
         },
         {

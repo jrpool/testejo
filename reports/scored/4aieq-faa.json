@@ -11966,7 +11966,7 @@
             }
           }
         },
-        "asideTopLandmark": {
+        "asideNotTop": {
           "axe": {
             "landmark-complementary-is-top-level": {
               "score": 1,
@@ -12315,7 +12315,7 @@
           "score": 3
         },
         {
-          "groupName": "asideTopLandmark",
+          "groupName": "asideNotTop",
           "score": 3
         },
         {

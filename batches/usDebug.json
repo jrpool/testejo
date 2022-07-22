@@ -3,9 +3,9 @@
   "what": "U.S. federal executive agencies",
   "hosts": [
     {
-      "id": "eric",
-      "which": "https://ies.ed.gov/ncee/projects/eric.asp",
-      "what": "Educational Resources Information Center (ERIC)"
+      "id": "cbp",
+      "which": "https://cbp.gov/",
+      "what": "Customs and Border Protection"
     }
   ]
 }

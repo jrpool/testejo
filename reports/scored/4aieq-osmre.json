@@ -13028,7 +13028,7 @@
             }
           }
         },
-        "invisibleLabel": {
+        "visibleLabelNotName": {
           "alfa": {
             "r14": {
               "score": 3,
@@ -13194,7 +13194,15 @@
             }
           }
         },
-        "bannerLandmark": {
+        "bannerNotTop": {
+          "axe": {
+            "landmark-banner-is-top-level": {
+              "score": 1,
+              "what": "banner landmark is contained in another landmark"
+            }
+          }
+        },
+        "banners": {
           "axe": {
             "landmark-no-duplicate-banner": {
               "score": 1,
@@ -13223,6 +13231,14 @@
             "region": {
               "score": 4,
               "what": "Some page content is not contained by landmarks"
+            }
+          }
+        },
+        "notScrollable": {
+          "axe": {
+            "scrollable-region-focusable": {
+              "score": 2,
+              "what": "Element is scrollable but has no keyboard access"
             }
           }
         },
@@ -13375,18 +13391,16 @@
       },
       "solos": {
         "axe": {
-          "accesskeys": 3,
-          "landmark-banner-is-top-level": 2,
-          "scrollable-region-focusable": 2
+          "accesskeys": 3
         }
       }
     },
     "preventionScores": {},
     "summary": {
-      "total": 545,
+      "total": 544,
       "log": 52,
       "preventions": 0,
-      "solos": 14,
+      "solos": 6,
       "groups": [
         {
           "groupName": "leadingClipsText",
@@ -13465,7 +13479,7 @@
           "score": 7
         },
         {
-          "groupName": "invisibleLabel",
+          "groupName": "visibleLabelNotName",
           "score": 6
         },
         {
@@ -13509,6 +13523,10 @@
           "score": 4
         },
         {
+          "groupName": "notScrollable",
+          "score": 4
+        },
+        {
           "groupName": "accessKeyDuplicate",
           "score": 4
         },
@@ -13529,7 +13547,11 @@
           "score": 3
         },
         {
-          "groupName": "bannerLandmark",
+          "groupName": "bannerNotTop",
+          "score": 3
+        },
+        {
+          "groupName": "banners",
           "score": 3
         },
         {

@@ -16357,6 +16357,12 @@
               "score": 21,
               "what": "Nonexistent or implicit-overriding role"
             }
+          },
+          "axe": {
+            "aria-roles": {
+              "score": 2,
+              "what": "ARIA role has an invalid value"
+            }
           }
         },
         "inconsistentStyles": {
@@ -16836,20 +16842,16 @@
           }
         }
       },
-      "solos": {
-        "axe": {
-          "aria-roles": 3
-        }
-      }
+      "solos": {}
     },
     "preventionScores": {
       "ibm": 100
     },
     "summary": {
-      "total": 976,
+      "total": 971,
       "log": 42,
       "preventions": 100,
-      "solos": 6,
+      "solos": 0,
       "groups": [
         {
           "groupName": "linkIndication",
@@ -16897,7 +16899,7 @@
         },
         {
           "groupName": "roleBad",
-          "score": 23
+          "score": 24
         },
         {
           "groupName": "linkNoText",

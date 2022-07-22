@@ -40511,7 +40511,7 @@
             }
           }
         },
-        "invisibleLabel": {
+        "visibleLabelNotName": {
           "alfa": {
             "r14": {
               "score": 6,
@@ -40663,7 +40663,27 @@
             }
           }
         },
-        "bannerLandmark": {
+        "buttonNoText": {
+          "axe": {
+            "input-button-name": {
+              "score": 4,
+              "what": "Input button has no discernible text"
+            }
+          },
+          "htmlcs": {
+            "e:AA.4_1_2.H91.InputButton.Name": {
+              "score": 4,
+              "what": "Button input element has no accessible name"
+            }
+          },
+          "wave": {
+            "e:button_empty": {
+              "score": 4,
+              "what": "Button is empty or has no value text"
+            }
+          }
+        },
+        "banners": {
           "axe": {
             "landmark-no-duplicate-banner": {
               "score": 1,
@@ -40679,7 +40699,7 @@
             }
           }
         },
-        "mainLandmark": {
+        "mainNot1": {
           "axe": {
             "landmark-one-main": {
               "score": 1,
@@ -40790,14 +40810,6 @@
             "w:AA.4_1_2.H91.A.Placeholder": {
               "score": 3,
               "what": "Link has text but no href, id, or name attribute"
-            }
-          }
-        },
-        "buttonNoText": {
-          "wave": {
-            "e:button_empty": {
-              "score": 4,
-              "what": "Button is empty or has no value text"
             }
           }
         },
@@ -40912,21 +40924,14 @@
           }
         }
       },
-      "solos": {
-        "axe": {
-          "input-button-name": 4
-        },
-        "htmlcs": {
-          "e:AA.4_1_2.H91.InputButton.Name": 4
-        }
-      }
+      "solos": {}
     },
     "preventionScores": {},
     "summary": {
-      "total": 2084,
+      "total": 2071,
       "log": 256,
       "preventions": 0,
-      "solos": 16,
+      "solos": 0,
       "groups": [
         {
           "groupName": "duplicateID",
@@ -41021,7 +41026,11 @@
           "score": 12
         },
         {
-          "groupName": "invisibleLabel",
+          "groupName": "visibleLabelNotName",
+          "score": 9
+        },
+        {
+          "groupName": "buttonNoText",
           "score": 9
         },
         {
@@ -41046,10 +41055,6 @@
         },
         {
           "groupName": "inputNoText",
-          "score": 6
-        },
-        {
-          "groupName": "buttonNoText",
           "score": 6
         },
         {
@@ -41105,7 +41110,7 @@
           "score": 3
         },
         {
-          "groupName": "bannerLandmark",
+          "groupName": "banners",
           "score": 3
         },
         {
@@ -41113,7 +41118,7 @@
           "score": 3
         },
         {
-          "groupName": "mainLandmark",
+          "groupName": "mainNot1",
           "score": 3
         },
         {

@@ -15461,7 +15461,7 @@
             }
           }
         },
-        "mainLandmark": {
+        "mainNot1": {
           "axe": {
             "landmark-one-main": {
               "score": 1,
@@ -15496,6 +15496,14 @@
             "e:AA.4_1_2.H91.Fieldset.Name": {
               "score": 3,
               "what": "Fieldset has no accessible name"
+            }
+          }
+        },
+        "buttonNoText": {
+          "htmlcs": {
+            "e:AA.4_1_2.H91.InputButton.Name": {
+              "score": 4,
+              "what": "Button input element has no accessible name"
             }
           }
         },
@@ -15642,18 +15650,14 @@
           }
         }
       },
-      "solos": {
-        "htmlcs": {
-          "e:AA.4_1_2.H91.InputButton.Name": 4
-        }
-      }
+      "solos": {}
     },
     "preventionScores": {},
     "summary": {
-      "total": 677,
+      "total": 675,
       "log": 45,
       "preventions": 0,
-      "solos": 8,
+      "solos": 0,
       "groups": [
         {
           "groupName": "linkIndication",
@@ -15740,6 +15744,10 @@
           "score": 6
         },
         {
+          "groupName": "buttonNoText",
+          "score": 6
+        },
+        {
           "groupName": "contrastRisk",
           "score": 6
         },
@@ -15792,7 +15800,7 @@
           "score": 3
         },
         {
-          "groupName": "mainLandmark",
+          "groupName": "mainNot1",
           "score": 3
         },
         {
