@@ -3,9 +3,9 @@
   "what": "U.S. federal executive agencies",
   "hosts": [
     {
-      "id": "cbp",
-      "which": "https://cbp.gov/",
-      "what": "Customs and Border Protection"
+      "id": "darpa",
+      "which": "https://www.darpa.mil/",
+      "what": "Defense Advanced Research Projects Agency"
     }
   ]
 }
