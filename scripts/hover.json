@@ -17,9 +17,9 @@
     {
       "type": "test",
       "which": "hover",
-      "headSize": 20,
-      "headSampleSize": 20,
-      "tailSampleSize": 15,
+      "headSize": 50,
+      "headSampleSize": 50,
+      "tailSampleSize": 50,
       "withItems": true,
       "what": "hover"
     }

@@ -1,0 +1,11 @@
+{
+  "id": "hrw",
+  "what": "Human Rights Watch",
+  "hosts": [
+    {
+      "id": "hrw",
+      "which": "https://www.hrw.org/",
+      "what": "Human Rights Watch"
+    }
+  ]
+}
