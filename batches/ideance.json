@@ -1,0 +1,11 @@
+{
+  "id": "ideance",
+  "what": "Ideance",
+  "hosts": [
+    {
+      "id": "ideance",
+      "which": "https://ideance.net/fr/",
+      "what": "Ideance"
+    }
+  ]
+}

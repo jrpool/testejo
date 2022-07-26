@@ -1,0 +1,273 @@
+{
+  "id": "4i27k-ideance",
+  "host": {
+    "id": "ideance",
+    "which": "https://ideance.net/fr/",
+    "what": "Ideance"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-26T00:37:53"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-26T00:37:55"
+    }
+  ],
+  "script": {
+    "id": "focind",
+    "what": "Alfa, Axe, HTML CodeSniffer, IBM, Tenon, WAVE, and 16 custom tests",
+    "strict": true,
+    "timeLimit": 60,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://ideance.net/fr/",
+        "what": "Ideance"
+      },
+      {
+        "type": "test",
+        "which": "focInd",
+        "revealAll": false,
+        "allowedDelay": 1000,
+        "withItems": true,
+        "what": "focus indicators"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://ideance.net/fr/",
+      "what": "Ideance",
+      "result": "https://ideance.net/fr/"
+    },
+    {
+      "type": "test",
+      "which": "focInd",
+      "revealAll": false,
+      "allowedDelay": 1000,
+      "withItems": true,
+      "what": "focus indicators",
+      "url": "https://ideance.net/fr/",
+      "result": {
+        "totals": {
+          "total": 32,
+          "types": {
+            "indicatorMissing": {
+              "total": 0,
+              "tagNames": {}
+            },
+            "nonOutlinePresent": {
+              "total": 0,
+              "tagNames": {}
+            },
+            "outlinePresent": {
+              "total": 32,
+              "meanDelay": 0,
+              "tagNames": {
+                "A": 32
+              }
+            }
+          }
+        },
+        "items": {
+          "indicatorMissing": [],
+          "nonOutlinePresent": [],
+          "outlinePresent": [
+            {
+              "tagName": "A",
+              "text": "Explorer le contenu",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Aide à la navigation",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "English version",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "contact@ideance.fr",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "+33 (0)2 78 77 59 82",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Conseil et expertise web, mobile et progiciels",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Formation accessibilité",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibilité des contenus vidéos, PDF, FALC",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Audits d’accessibilité RGAA et WCAG",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Qui sommes-nous ? À propos d’Ideance",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Toute notre expertise",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Nos audits d’accessibilité",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Nos formations",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibilité des contenus",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Retour d’expérience sur le RGAA et les impacts du schéma pluriannuel sur la mise en conformité",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "a11y Paris",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Qu’est-ce qu’un contenu accessible ?",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Découvrir les usages pour mieux appréhender l’accessibilité, Accessibilité et éthique dans le numéri",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "3 bonnes pratiques pour la conception d’applications mobiles plus accessibles",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Découvrir notre équipe",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "contact@ideance.fr",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "+33 (0)2 78 77 59 82",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Ressources d’accessibilité",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Lexically (glossaire)",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Plan du site",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Mentions légales",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibilité : totalement conforme",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "timeStamp": "4i27k",
+  "startTime": "2022-07-26T00:37:53",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "focInd",
+      0
+    ]
+  ],
+  "logCount": 0,
+  "logSize": 0,
+  "errorLogCount": 0,
+  "errorLogSize": 0,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-26T00:37:55",
+  "elapsedSeconds": 2
+}
