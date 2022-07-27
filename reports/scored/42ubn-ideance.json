@@ -295,7 +295,7 @@
       "type": "test",
       "which": "focInd",
       "revealAll": false,
-      "allowedDelay": 250,
+      "allowedDelay": 1000,
       "withItems": true,
       "what": "focus indicators",
       "url": "https://ideance.net/fr/",
@@ -304,155 +304,187 @@
           "total": 32,
           "types": {
             "indicatorMissing": {
-              "total": 32,
-              "tagNames": {
-                "A": 32
-              }
+              "total": 0,
+              "tagNames": {}
             },
             "nonOutlinePresent": {
               "total": 0,
               "tagNames": {}
             },
             "outlinePresent": {
-              "total": 0,
+              "total": 32,
               "meanDelay": 0,
-              "tagNames": {}
+              "tagNames": {
+                "A": 32
+              }
             }
           }
         },
         "items": {
-          "indicatorMissing": [
-            {
-              "tagName": "A",
-              "text": "Explorer le contenu"
-            },
-            {
-              "tagName": "A",
-              "text": "Aide à la navigation"
-            },
-            {
-              "tagName": "A",
-              "text": "English version"
-            },
-            {
-              "tagName": "A",
-              "text": "contact@ideance.fr"
-            },
-            {
-              "tagName": "A",
-              "text": "+33 (0)2 78 77 59 82"
-            },
-            {
-              "tagName": "A",
-              "text": "Conseil et expertise web, mobile et progiciels"
-            },
-            {
-              "tagName": "A",
-              "text": "Formation accessibilité"
-            },
-            {
-              "tagName": "A",
-              "text": "Accessibilité des contenus vidéos, PDF, FALC"
-            },
-            {
-              "tagName": "A",
-              "text": "Audits d’accessibilité RGAA et WCAG"
-            },
-            {
-              "tagName": "A",
-              "text": "Qui sommes-nous ? À propos d’Ideance"
-            },
-            {
-              "tagName": "A",
-              "text": "Toute notre expertise"
-            },
-            {
-              "tagName": "A",
-              "text": "Nos audits d’accessibilité"
-            },
-            {
-              "tagName": "A",
-              "text": "Nos formations"
-            },
-            {
-              "tagName": "A",
-              "text": "Accessibilité des contenus"
-            },
-            {
-              "tagName": "A",
-              "text": "Retour d’expérience sur le RGAA et les impacts du schéma pluriannuel sur la mise en conformité"
-            },
-            {
-              "tagName": "A",
-              "text": "a11y Paris"
-            },
-            {
-              "tagName": "A",
-              "text": "Qu’est-ce qu’un contenu accessible ?"
-            },
-            {
-              "tagName": "A",
-              "text": "Découvrir les usages pour mieux appréhender l’accessibilité, Accessibilité et éthique dans le numéri"
-            },
-            {
-              "tagName": "A",
-              "text": "3 bonnes pratiques pour la conception d’applications mobiles plus accessibles"
-            },
-            {
-              "tagName": "A",
-              "text": "Découvrir notre équipe"
-            },
-            {
-              "tagName": "A",
-              "text": "contact@ideance.fr"
-            },
-            {
-              "tagName": "A",
-              "text": "+33 (0)2 78 77 59 82"
-            },
-            {
-              "tagName": "A",
-              "text": ""
-            },
-            {
-              "tagName": "A",
-              "text": ""
-            },
-            {
-              "tagName": "A",
-              "text": ""
-            },
-            {
-              "tagName": "A",
-              "text": "Ressources d’accessibilité"
-            },
-            {
-              "tagName": "A",
-              "text": "Lexically (glossaire)"
-            },
-            {
-              "tagName": "A",
-              "text": "Plan du site"
-            },
-            {
-              "tagName": "A",
-              "text": "Mentions légales"
-            },
-            {
-              "tagName": "A",
-              "text": "Accessibilité : totalement conforme"
-            },
-            {
-              "tagName": "A",
-              "text": ""
-            },
-            {
-              "tagName": "A",
-              "text": ""
-            }
-          ],
+          "indicatorMissing": [],
           "nonOutlinePresent": [],
-          "outlinePresent": []
+          "outlinePresent": [
+            {
+              "tagName": "A",
+              "text": "Explorer le contenu",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Aide à la navigation",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "English version",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "contact@ideance.fr",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "+33 (0)2 78 77 59 82",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Conseil et expertise web, mobile et progiciels",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Formation accessibilité",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibilité des contenus vidéos, PDF, FALC",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Audits d’accessibilité RGAA et WCAG",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Qui sommes-nous ? À propos d’Ideance",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Toute notre expertise",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Nos audits d’accessibilité",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Nos formations",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibilité des contenus",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Retour d’expérience sur le RGAA et les impacts du schéma pluriannuel sur la mise en conformité",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "a11y Paris",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Qu’est-ce qu’un contenu accessible ?",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Découvrir les usages pour mieux appréhender l’accessibilité, Accessibilité et éthique dans le numéri",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "3 bonnes pratiques pour la conception d’applications mobiles plus accessibles",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Découvrir notre équipe",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "contact@ideance.fr",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "+33 (0)2 78 77 59 82",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Ressources d’accessibilité",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Lexically (glossaire)",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Plan du site",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Mentions légales",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibilité : totalement conforme",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            }
+          ]
         }
       }
     },
@@ -8627,7 +8659,7 @@
     ],
     [
       "focInd",
-      10
+      0
     ],
     [
       "alfa",
@@ -8710,5 +8742,367 @@
   "visitTimeoutCount": 0,
   "visitRejectionCount": 0,
   "endTime": "2022-07-09T15:01:54",
-  "elapsedSeconds": 116
+  "elapsedSeconds": 106,
+  "score": {
+    "scoreProcID": "sp12b",
+    "logWeights": {
+      "logCount": 0.5,
+      "logSize": 0.01,
+      "errorLogCount": 1,
+      "errorLogSize": 0.02,
+      "prohibitedCount": 15,
+      "visitTimeoutCount": 10,
+      "visitRejectionCount": 10
+    },
+    "soloWeight": 2,
+    "groupWeights": {
+      "absolute": 2,
+      "largest": 1,
+      "smaller": 0.4
+    },
+    "preventionWeights": {
+      "testaro": 50,
+      "other": 100
+    },
+    "packageDetails": {
+      "testaro": {
+        "linkUl": 24,
+        "role": 8,
+        "styleDiff": 13,
+        "zIndex": 1
+      },
+      "alfa": {
+        "r14": 4,
+        "r21": 4,
+        "r57": 4,
+        "r66": 30,
+        "r69": 30,
+        "r73": 4
+      },
+      "axe": {
+        "color-contrast-enhanced": 52,
+        "color-contrast": 52,
+        "hidden-content": 0,
+        "label-content-name-mismatch": 3,
+        "region": 2
+      },
+      "htmlcs": {
+        "e:AA.1_4_3.G18.Fail": 32,
+        "w:AA.1_1_1.H67.2": 12,
+        "w:AA.1_3_1.H42": 1,
+        "w:AA.1_4_3.G145.BgImage": 4,
+        "w:AA.1_4_3.G18.Abs": 1,
+        "w:AA.1_4_3.G18.Alpha": 2,
+        "w:AA.1_4_3.G18.BgImage": 11,
+        "w:AA.2_5_3.F96": 1
+      },
+      "wave": {
+        "c:contrast": 57
+      },
+      "tenon": {
+        "28": 4,
+        "95": 60,
+        "129": 3,
+        "144": 8,
+        "152": 12,
+        "153": 30
+      }
+    },
+    "groupDetails": {
+      "groups": {
+        "linkIndication": {
+          "testaro": {
+            "linkUl": {
+              "score": 12,
+              "what": "Non-underlined adjacent links"
+            }
+          }
+        },
+        "roleBad": {
+          "testaro": {
+            "role": {
+              "score": 6,
+              "what": "Nonexistent or implicit-overriding role"
+            }
+          },
+          "alfa": {
+            "r21": {
+              "score": 3,
+              "what": "Element does not have a valid role"
+            }
+          }
+        },
+        "inconsistentStyles": {
+          "testaro": {
+            "styleDiff": {
+              "score": 3,
+              "what": "Heading, link, and button style inconsistencies"
+            }
+          }
+        },
+        "zIndexNotZero": {
+          "testaro": {
+            "zIndex": {
+              "score": 1,
+              "what": "Layering with nondefault z-index values"
+            }
+          }
+        },
+        "visibleLabelNotName": {
+          "alfa": {
+            "r14": {
+              "score": 3,
+              "what": "Visible label is not in the accessible name"
+            }
+          },
+          "axe": {
+            "label-content-name-mismatch": {
+              "score": 2,
+              "what": "Element visible text is not part of its accessible name"
+            }
+          },
+          "htmlcs": {
+            "w:AA.2_5_3.F96": {
+              "score": 1,
+              "what": "Visible label is not in the accessible name"
+            }
+          }
+        },
+        "contentBeyondLandmarks": {
+          "alfa": {
+            "r57": {
+              "score": 2,
+              "what": "Perceivable text content is not included in any landmark"
+            }
+          },
+          "axe": {
+            "region": {
+              "score": 1,
+              "what": "Some page content is not contained by landmarks"
+            }
+          }
+        },
+        "contrastAAA": {
+          "alfa": {
+            "r66": {
+              "score": 8,
+              "what": "Text contrast less than AAA requires"
+            }
+          },
+          "axe": {
+            "color-contrast-enhanced": {
+              "score": 13,
+              "what": "Element has insufficient color contrast (Level AAA)"
+            }
+          },
+          "tenon": {
+            "95": {
+              "score": 15,
+              "what": "Element has insufficient color contrast (Level AAA)"
+            }
+          }
+        },
+        "contrastAA": {
+          "alfa": {
+            "r69": {
+              "score": 23,
+              "what": "Text outside widget has subminimum contrast"
+            }
+          },
+          "axe": {
+            "color-contrast": {
+              "score": 39,
+              "what": "Element has insufficient color contrast"
+            }
+          },
+          "htmlcs": {
+            "e:AA.1_4_3.G18.Fail": {
+              "score": 24,
+              "what": "Contrast between the text and its background is less than 4.5:1"
+            }
+          },
+          "wave": {
+            "c:contrast": {
+              "score": 43,
+              "what": "Very low contrast"
+            }
+          }
+        },
+        "noLeading": {
+          "alfa": {
+            "r73": {
+              "score": 3,
+              "what": "Paragraph of text has insufficient line height"
+            }
+          }
+        },
+        "hiddenContentRisk": {
+          "axe": {
+            "hidden-content": {
+              "score": 1,
+              "what": "Some content is hidden and therefore may not be testable for accessibility"
+            }
+          }
+        },
+        "decorativeImageRisk": {
+          "htmlcs": {
+            "w:AA.1_1_1.H67.2": {
+              "score": 3,
+              "what": "Image marked as decorative may be informative"
+            }
+          }
+        },
+        "pseudoHeadingRisk": {
+          "htmlcs": {
+            "w:AA.1_3_1.H42": {
+              "score": 1,
+              "what": "Heading coding is not used but the element may be intended as a heading"
+            }
+          }
+        },
+        "contrastRisk": {
+          "htmlcs": {
+            "w:AA.1_4_3.G145.BgImage": {
+              "score": 1,
+              "what": "Contrast between the text and its background image may be less than 3:1"
+            },
+            "w:AA.1_4_3.G18.Abs": {
+              "score": 1,
+              "what": "Contrast between the absolutely positioned text and its background may be inadequate"
+            },
+            "w:AA.1_4_3.G18.Alpha": {
+              "score": 1,
+              "what": "Contrast between the text and its background may be less than 4.5:1, given the transparency"
+            },
+            "w:AA.1_4_3.G18.BgImage": {
+              "score": 3,
+              "what": "Contrast between the text and its background image may be less than 4.5:1"
+            }
+          }
+        },
+        "horizontalScrolling": {
+          "tenon": {
+            "28": {
+              "score": 3,
+              "what": "Layout or sizing of the page causes horizontal scrolling"
+            }
+          }
+        },
+        "pseudoLinkRisk": {
+          "tenon": {
+            "129": {
+              "score": 1,
+              "what": "CSS underline on text that is not a link"
+            }
+          }
+        },
+        "leadingClipsText": {
+          "tenon": {
+            "144": {
+              "score": 8,
+              "what": "Line height is insufficent to properly display the computed font size"
+            }
+          }
+        },
+        "targetSize": {
+          "tenon": {
+            "152": {
+              "score": 6,
+              "what": "Actionable element is smaller than the minimum required size"
+            }
+          }
+        },
+        "allCaps": {
+          "tenon": {
+            "153": {
+              "score": 8,
+              "what": "Long string of text is in all caps"
+            }
+          }
+        }
+      },
+      "solos": {}
+    },
+    "preventionScores": {},
+    "summary": {
+      "total": 205,
+      "log": 0,
+      "preventions": 0,
+      "solos": 0,
+      "groups": [
+        {
+          "groupName": "contrastAA",
+          "score": 79
+        },
+        {
+          "groupName": "contrastAAA",
+          "score": 25
+        },
+        {
+          "groupName": "linkIndication",
+          "score": 14
+        },
+        {
+          "groupName": "leadingClipsText",
+          "score": 10
+        },
+        {
+          "groupName": "allCaps",
+          "score": 10
+        },
+        {
+          "groupName": "roleBad",
+          "score": 9
+        },
+        {
+          "groupName": "contrastRisk",
+          "score": 8
+        },
+        {
+          "groupName": "targetSize",
+          "score": 8
+        },
+        {
+          "groupName": "visibleLabelNotName",
+          "score": 6
+        },
+        {
+          "groupName": "inconsistentStyles",
+          "score": 5
+        },
+        {
+          "groupName": "noLeading",
+          "score": 5
+        },
+        {
+          "groupName": "decorativeImageRisk",
+          "score": 5
+        },
+        {
+          "groupName": "horizontalScrolling",
+          "score": 5
+        },
+        {
+          "groupName": "contentBeyondLandmarks",
+          "score": 4
+        },
+        {
+          "groupName": "zIndexNotZero",
+          "score": 3
+        },
+        {
+          "groupName": "hiddenContentRisk",
+          "score": 3
+        },
+        {
+          "groupName": "pseudoHeadingRisk",
+          "score": 3
+        },
+        {
+          "groupName": "pseudoLinkRisk",
+          "score": 3
+        }
+      ]
+    }
+  }
 }
