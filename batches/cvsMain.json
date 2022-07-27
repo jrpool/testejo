@@ -1,0 +1,21 @@
+{
+  "id": "cvsMain",
+  "what": "Main CVS Health web pages",
+  "hosts": [
+    {
+      "id": "cvs",
+      "which": "https://www.cvs.com/",
+      "what": "CVS"
+    },
+    {
+      "id": "caremark",
+      "which": "https://www.caremark.com/",
+      "what": "Caremark"
+    },
+    {
+      "id": "aetna",
+      "which": "https://www.aetna.com/",
+      "what": "Aetna"
+    }
+  ]
+}

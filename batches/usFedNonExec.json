@@ -1,0 +1,26 @@
+{
+  "id": "usfednonexec",
+  "what": "U.S. federal non-executive-branch entities",
+  "hosts": [
+    {
+      "id": "ussc",
+      "which": "https://www.supremecourt.gov/",
+      "what": "U.S. Supreme Court"
+    },
+    {
+      "id": "schumer",
+      "which": "https://www.schumer.senate.gov/",
+      "what": "Chuck Schumer"
+    },
+    {
+      "id": "aoc",
+      "which": "https://ocasio-cortez.house.gov/",
+      "what": "Representative Alexandria Ocasio-Cortez"
+    },
+    {
+      "id": "libcong",
+      "which": "https://www.loc.gov/",
+      "what": "Library of Congress"
+    }
+  ]
+}

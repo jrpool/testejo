@@ -1,8 +1,8 @@
 {
-  "id": "role",
-  "what": "Roles",
+  "id": "continuum",
+  "what": "Continuum",
   "strict": true,
-  "timeLimit": 15,
+  "timeLimit": 60,
   "commands": [
     {
       "type": "launch",
@@ -16,8 +16,8 @@
     },
     {
       "type": "test",
-      "which": "role",
-      "what": "Invalid and deprecated roles"
+      "which": "continuum",
+      "what": "Continuum"
     }
   ]
 }

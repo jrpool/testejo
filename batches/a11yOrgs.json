@@ -496,6 +496,21 @@
       "id": "zugang",
       "which": "https://www.access-for-all.ch/ch/",
       "what": "Zugang für alle"
+    },
+    {
+      "id": "simpliisolution",
+      "which": "https://www.simpliisolution.com/",
+      "what": "Simpliisolution"
+    },
+    {
+      "id": "zerobarriers",
+      "which": "https://www.0barriers.org/",
+      "what": "Zero Barriers Foundation"
+    },
+    {
+      "id": "techmore",
+      "which": "https://techmoreitsolutions.com/",
+      "what": "Techmore IT Solution Company"
     }
   ]
 }
