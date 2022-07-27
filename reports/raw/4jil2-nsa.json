@@ -1,0 +1,125 @@
+{
+  "id": "4jil2-nsa",
+  "host": {
+    "id": "nsa",
+    "which": "https://www.nsa.gov/",
+    "what": "National Security Agency (NSA)"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-27T14:33:24"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-27T14:33:30"
+    }
+  ],
+  "script": {
+    "id": "continuum",
+    "what": "Continuum",
+    "strict": true,
+    "timeLimit": 30,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.nsa.gov/",
+        "what": "National Security Agency (NSA)"
+      },
+      {
+        "type": "test",
+        "which": "continuum",
+        "what": "Continuum"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.nsa.gov/",
+      "what": "National Security Agency (NSA)",
+      "result": "https://www.nsa.gov/"
+    },
+    {
+      "type": "test",
+      "which": "continuum",
+      "what": "Level Access Continuum, community edition",
+      "url": "https://www.nsa.gov/",
+      "result": [
+        {
+          "engineTestId": 95,
+          "bestPracticeId": 1626,
+          "attribute": "This element has an aria-labelledby attribute value that includes one or more invalid or duplicate ids",
+          "attributeDetail": "This DIV has an aria-labelledby attribute value of 'Learn More about research', which includes one or more invalid or duplicate ids",
+          "element": "<div role=\"button\" class=\"animate2\" aria-labelledby=\"Learn More about research\"><a title=\"Learn More ...  research\" href=\"/Research/\" class=\"btn\" aria-label=\"Learn More about research\">LEARN MORE</a></div>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(24)>*:nth-child(4)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(4)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide the ID of an element which contains the label content for this element.",
+            "fix": {
+              "aria-labelledby": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "div[aria-labelledby=\"Learn More about research\"][class=\"animate2\"][role=\"button\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 95,
+          "bestPracticeId": 1626,
+          "attribute": "This element has an aria-labelledby attribute value that includes one or more invalid or duplicate ids",
+          "attributeDetail": "This DIV has an aria-labelledby attribute value of 'Learn More about Academics', which includes one or more invalid or duplicate ids",
+          "element": "<div role=\"button\" class=\"animate2\" aria-labelledby=\"Learn More about Academics\"><a title=\"Learn Mor ... ademics\" href=\"/Academics/\" class=\"btn\" aria-label=\"Learn More about Academics\">LEARN MORE</a></div>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(24)>*:nth-child(4)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(4)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(3)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide the ID of an element which contains the label content for this element.",
+            "fix": {
+              "aria-labelledby": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "div[aria-labelledby=\"Learn More about Academics\"][class=\"animate2\"][role=\"button\"]",
+            "attNo": 3
+          }
+        }
+      ]
+    }
+  ],
+  "timeStamp": "4jil2",
+  "startTime": "2022-07-27T14:33:24",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "continuum",
+      0
+    ]
+  ],
+  "logCount": 3,
+  "logSize": 331,
+  "errorLogCount": 1,
+  "errorLogSize": 69,
+  "prohibitedCount": 1,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-27T14:33:30",
+  "elapsedSeconds": 5
+}

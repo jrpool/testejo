@@ -1,0 +1,253 @@
+{
+  "id": "4jil2-nigc",
+  "host": {
+    "id": "nigc",
+    "which": "https://www.nigc.gov/",
+    "what": "National Indian Gaming Commission (NIGC)"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-27T14:32:01"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-27T14:32:10"
+    }
+  ],
+  "script": {
+    "id": "continuum",
+    "what": "Continuum",
+    "strict": true,
+    "timeLimit": 30,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.nigc.gov/",
+        "what": "National Indian Gaming Commission (NIGC)"
+      },
+      {
+        "type": "test",
+        "which": "continuum",
+        "what": "Continuum"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.nigc.gov/",
+      "what": "National Indian Gaming Commission (NIGC)",
+      "result": "https://www.nigc.gov/"
+    },
+    {
+      "type": "test",
+      "which": "continuum",
+      "what": "Level Access Continuum, community edition",
+      "url": "https://www.nigc.gov/",
+      "result": [
+        {
+          "engineTestId": 15,
+          "bestPracticeId": 338,
+          "attribute": "The alt attribute is not allowed on this element",
+          "attributeDetail": "The alt attribute is not allowed on this INPUT",
+          "element": "<input placeholder=\"Enter keywords\" aria-label=\"search\" alt=\"Search NIGC.gov\" class=\"form-control\" id=\"search\" name=\"keywords\" type=\"text\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "input[type=\"text\"][name=\"keywords\"][id=\"search\"][class=\"form-control\"][alt=\"Search NIGC.gov\"][aria-label=\"search\"][placeholder=\"Enter keywords\"]",
+            "attNo": 7
+          }
+        },
+        {
+          "engineTestId": 15,
+          "bestPracticeId": 338,
+          "attribute": "The alt attribute is not allowed on this element",
+          "attributeDetail": "The alt attribute is not allowed on this INPUT",
+          "element": "<input value=\"2\" type=\"checkbox\" name=\"group[3909][2]\" id=\"mce-group[3909]-3909-1\" alt=\"Ordinances\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(9)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "input[alt=\"Ordinances\"][id=\"mce-group[3909]-3909-1\"][name=\"group[3909][2]\"][type=\"checkbox\"][value=\"2\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 15,
+          "bestPracticeId": 338,
+          "attribute": "The alt attribute is not allowed on this element",
+          "attributeDetail": "The alt attribute is not allowed on this INPUT",
+          "element": "<input value=\"4\" type=\"checkbox\" name=\"group[3909][4]\" id=\"mce-group[3909]-3909-2\" alt=\"Training\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(12)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "input[alt=\"Training\"][id=\"mce-group[3909]-3909-2\"][name=\"group[3909][4]\"][type=\"checkbox\"][value=\"4\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 15,
+          "bestPracticeId": 338,
+          "attribute": "The alt attribute is not allowed on this element",
+          "attributeDetail": "The alt attribute is not allowed on this INPUT",
+          "element": "<input value=\"8\" type=\"checkbox\" name=\"group[3909][8]\" id=\"mce-group[3909]-3909-3\" alt=\"Bulletins\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(15)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "input[alt=\"Bulletins\"][id=\"mce-group[3909]-3909-3\"][name=\"group[3909][8]\"][type=\"checkbox\"][value=\"8\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 15,
+          "bestPracticeId": 338,
+          "attribute": "The alt attribute is not allowed on this element",
+          "attributeDetail": "The alt attribute is not allowed on this INPUT",
+          "element": "<input value=\"16\" type=\"checkbox\" name=\"group[3909][16]\" id=\"mce-group[3909]-3909-4\" alt=\"Enforcement Actions\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(18)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "input[alt=\"Enforcement Actions\"][id=\"mce-group[3909]-3909-4\"][name=\"group[3909][16]\"][type=\"checkbox\"][value=\"16\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 15,
+          "bestPracticeId": 338,
+          "attribute": "The alt attribute is not allowed on this element",
+          "attributeDetail": "The alt attribute is not allowed on this INPUT",
+          "element": "<input value=\"\" type=\"email\" name=\"EMAIL\" id=\"mce-EMAIL\" class=\"required email\" aria-label=\"subscribe\" alt=\"Enter Email\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "input[alt=\"Enter Email\"][aria-label=\"subscribe\"][class=\"required email\"][id=\"mce-EMAIL\"][name=\"EMAIL\"][type=\"email\"][value=\"\"]",
+            "attNo": 7
+          }
+        },
+        {
+          "engineTestId": 15,
+          "bestPracticeId": 338,
+          "attribute": "The alt attribute is not allowed on this element",
+          "attributeDetail": "The alt attribute is not allowed on this INPUT",
+          "element": "<input value=\"Subscribe\" type=\"submit\" name=\"subscribe\" id=\"mc-embedded-subscribe\" class=\"button\" alt=\"submit\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(3)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "input[alt=\"submit\"][class=\"button\"][id=\"mc-embedded-subscribe\"][name=\"subscribe\"][type=\"submit\"][value=\"Subscribe\"]",
+            "attNo": 6
+          }
+        },
+        {
+          "engineTestId": 59,
+          "bestPracticeId": 410,
+          "attribute": "This element has a content attribute set to a value that includes an instruction that sets the viewport's maximum-scale to less than 2",
+          "attributeDetail": "This META has a content attribute set to a value that includes an instruction that sets the viewport's maximum-scale to less than 2",
+          "element": "<meta content=\"width=device-width, initial-scale=1, maximum-scale=1\" name=\"viewport\">",
+          "testResult": 0,
+          "path": "head>meta:nth-of-type(3)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Select \"Save\" to change the viewport content attribute to \"width=device-width, initial-scale=1.0\", or \"Cancel\" if the fix should not be applied.",
+            "fix": {
+              "content": "width=device-width, initial-scale=1.0"
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "meta[name=\"viewport\"][content=\"width=device-width, initial-scale=1, maximum-scale=1\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This DIV has an id attribute of 'popular-post-list-sidebar', which is not unique in the same DOM",
+          "element": "<div id=\"popular-post-list-sidebar\"><div class=\"spost clearfix\"><div class=\"entry-image\"><a class=\"n ... /images/uploads/defaultNewsImage_thumb.jpg\" class=\"img-circle\"></a></div><div class=\"entry-c\"><div c",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[id=\"popular-post-list-sidebar\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This DIV has an id attribute of 'popular-post-list-sidebar', which is not unique in the same DOM",
+          "element": "<div id=\"popular-post-list-sidebar\"><div class=\"spost clearfix\"><div class=\"entry-image\"><a class=\"n ... ltation-sessions-for-2018\">Notice of Consultation Sessions for 2018</a></h4></div></div></div></div>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(3)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[id=\"popular-post-list-sidebar\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 281,
+          "bestPracticeId": 1626,
+          "attribute": "The aria-expanded attribute is not allowed on this element",
+          "attributeDetail": "The aria-expanded attribute is not allowed on this DIV",
+          "element": "<div aria-hidden=\"false\" aria-expanded=\"true\" role=\"tabpanel\" aria-labelledby=\"ui-id-1\" id=\"tabs-1\"  ... ail/nigc-chairman-simermeyer-announces-3-for-35-project-regulating-for-the-future\"><img alt=\"NIGC Ch",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[class=\"tab-content clearfix ui-tabs-panel ui-widget-content ui-corner-bottom\"][id=\"tabs-1\"][aria-labelledby=\"ui-id-1\"][role=\"tabpanel\"][aria-expanded=\"true\"][aria-hidden=\"false\"]",
+            "attNo": 6
+          }
+        }
+      ]
+    }
+  ],
+  "timeStamp": "4jil2",
+  "startTime": "2022-07-27T14:32:01",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "continuum",
+      0
+    ]
+  ],
+  "logCount": 1,
+  "logSize": 198,
+  "errorLogCount": 1,
+  "errorLogSize": 198,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-27T14:32:10",
+  "elapsedSeconds": 8
+}

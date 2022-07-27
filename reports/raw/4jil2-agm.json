@@ -1,0 +1,1046 @@
+{
+  "id": "4jil2-agm",
+  "host": {
+    "id": "agm",
+    "which": "https://www.usagm.gov/",
+    "what": "Agency for Global Media"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-27T14:20:38"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-27T14:20:46"
+    }
+  ],
+  "script": {
+    "id": "continuum",
+    "what": "Continuum",
+    "strict": true,
+    "timeLimit": 30,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.usagm.gov/",
+        "what": "Agency for Global Media"
+      },
+      {
+        "type": "test",
+        "which": "continuum",
+        "what": "Continuum"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.usagm.gov/",
+      "what": "Agency for Global Media",
+      "result": "https://www.usagm.gov/"
+    },
+    {
+      "type": "test",
+      "which": "continuum",
+      "what": "Level Access Continuum, community edition",
+      "url": "https://www.usagm.gov/",
+      "result": [
+        {
+          "engineTestId": 85,
+          "bestPracticeId": 1626,
+          "attribute": "This element has an aria-controls attribute value that includes one or more invalid or duplicate ids",
+          "attributeDetail": "This BUTTON has an aria-controls attribute value of 'gov-banner', which includes one or more invalid or duplicate ids",
+          "element": "<button aria-controls=\"gov-banner\" aria-expanded=\"false\" class=\"usa-disclaimer__button\"><span class=\"usa-disclaimer__button--text\">Here’s how you know</span></button>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "button[class=\"usa-disclaimer__button\"][aria-expanded=\"false\"][aria-controls=\"gov-banner\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 89,
+          "bestPracticeId": 362,
+          "attribute": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<img src=\"https://www.usagm.gov/wp-content/themes/bbgRedesign/img/logo_ocb--watermark.png\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[src=\"https://www.usagm.gov/wp-content/themes/bbgRedesign/img/logo_ocb--watermark.png\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 89,
+          "bestPracticeId": 362,
+          "attribute": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<img src=\"https://www.usagm.gov/wp-content/themes/bbgRedesign/img/logo_rferl--watermark.png\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[src=\"https://www.usagm.gov/wp-content/themes/bbgRedesign/img/logo_rferl--watermark.png\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 89,
+          "bestPracticeId": 362,
+          "attribute": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<img src=\"https://www.usagm.gov/wp-content/themes/bbgRedesign/img/logo_usagm--watermark.png\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[src=\"https://www.usagm.gov/wp-content/themes/bbgRedesign/img/logo_usagm--watermark.png\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 89,
+          "bestPracticeId": 362,
+          "attribute": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<img src=\"https://www.usagm.gov/wp-content/themes/bbgRedesign/img/logo_mbn--watermark.png\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[src=\"https://www.usagm.gov/wp-content/themes/bbgRedesign/img/logo_mbn--watermark.png\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 89,
+          "bestPracticeId": 362,
+          "attribute": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<img src=\"https://www.usagm.gov/wp-content/themes/bbgRedesign/img/logo_mbn--watermark.png\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[src=\"https://www.usagm.gov/wp-content/themes/bbgRedesign/img/logo_mbn--watermark.png\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 89,
+          "bestPracticeId": 362,
+          "attribute": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<img src=\"https://www.usagm.gov/wp-content/themes/bbgRedesign/img/logo_rferl--watermark.png\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[src=\"https://www.usagm.gov/wp-content/themes/bbgRedesign/img/logo_rferl--watermark.png\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 89,
+          "bestPracticeId": 362,
+          "attribute": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<img src=\"https://www.usagm.gov/wp-content/themes/bbgRedesign/img/logo_rferl--watermark.png\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[src=\"https://www.usagm.gov/wp-content/themes/bbgRedesign/img/logo_rferl--watermark.png\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 89,
+          "bestPracticeId": 362,
+          "attribute": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<img src=\"https://www.usagm.gov/wp-content/themes/bbgRedesign/img/logo_mbn--watermark.png\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[src=\"https://www.usagm.gov/wp-content/themes/bbgRedesign/img/logo_mbn--watermark.png\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 89,
+          "bestPracticeId": 362,
+          "attribute": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<img src=\"https://www.usagm.gov/wp-content/themes/bbgRedesign/img/logo_usagm--watermark.png\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[src=\"https://www.usagm.gov/wp-content/themes/bbgRedesign/img/logo_usagm--watermark.png\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 89,
+          "bestPracticeId": 362,
+          "attribute": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<img src=\"https://www.usagm.gov/wp-content/themes/bbgRedesign/img/logo_mbn--watermark.png\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[src=\"https://www.usagm.gov/wp-content/themes/bbgRedesign/img/logo_mbn--watermark.png\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 89,
+          "bestPracticeId": 362,
+          "attribute": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<img src=\"https://www.usagm.gov/wp-content/themes/bbgRedesign/img/social-icons/png-white/social-icons_twitter-100x100.png\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(5)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[src=\"https://www.usagm.gov/wp-content/themes/bbgRedesign/img/social-icons/png-white/social-icons_twitter-100x100.png\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 89,
+          "bestPracticeId": 362,
+          "attribute": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<img src=\"https://www.usagm.gov/wp-content/themes/bbgRedesign/img/logo_usagm--watermark.png\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(5)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[src=\"https://www.usagm.gov/wp-content/themes/bbgRedesign/img/logo_usagm--watermark.png\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 89,
+          "bestPracticeId": 362,
+          "attribute": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<img src=\"data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(6)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[src=\"data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 89,
+          "bestPracticeId": 362,
+          "attribute": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<img src=\"data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(6)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[src=\"data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 89,
+          "bestPracticeId": 362,
+          "attribute": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<img src=\"https://www.usagm.gov/wp-content/themes/bbgRedesign/img/USAGM-Logo-white.png\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[src=\"https://www.usagm.gov/wp-content/themes/bbgRedesign/img/USAGM-Logo-white.png\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg height=\"20\" width=\"20\"><path d=\"m16,25h82v60H16zl37,37q4,3 8,0l37-37M16,85l30-30m22,0 30,30\" stroke-width=\"6\" stroke=\"%23FFF\"></path></svg>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(3)>*:nth-child(1)>*:nth-child(2)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[width=\"20\"][height=\"20\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 228,
+          "bestPracticeId": 523,
+          "attribute": "This iframe element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This iframe element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<iframe allowfullscreen=\"\" allow=\"autoplay; encrypted-media;\" frameborder=\"0\" src=\"https://www.youtube.com/embed/LZq8sh8wvYw?rel=0\" style=\"width: 100%; height: 100%;\"></iframe>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(6)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Specify a descriptive label for the iframe.",
+            "fix": {
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "iframe[src=\"https://www.youtube.com/embed/LZq8sh8wvYw?rel=0\"][frameborder=\"0\"][allow=\"autoplay; encrypted-media;\"][allowfullscreen=\"\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a target=\"_blank\" href=\"https://www.facebook.com/USAGMgov/\"><i class=\"fab fa-facebook\"></i></a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(2)>*:nth-child(4)>*:nth-child(3)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"https://www.facebook.com/USAGMgov/\"][target=\"_blank\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a target=\"_blank\" href=\"https://twitter.com/USAGMgov\"><i class=\"fab fa-twitter\"></i></a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(2)>*:nth-child(4)>*:nth-child(3)>*:nth-child(3)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"https://twitter.com/USAGMgov\"][target=\"_blank\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a target=\"_blank\" href=\"https://www.youtube.com/channel/UCvYge67D7cpRJ6aYn2E9pPw\"><i class=\"fab fa-youtube\"></i></a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(2)>*:nth-child(4)>*:nth-child(3)>*:nth-child(3)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"https://www.youtube.com/channel/UCvYge67D7cpRJ6aYn2E9pPw\"][target=\"_blank\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a target=\"_blank\" href=\"https://www.linkedin.com/company/united-states-agency-for-global-media/\"><i class=\"fab fa-linkedin\"></i></a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(2)>*:nth-child(4)>*:nth-child(3)>*:nth-child(3)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"https://www.linkedin.com/company/united-states-agency-for-global-media/\"][target=\"_blank\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a target=\"_blank\" href=\"https://www.instagram.com/usagmgov/\"><i class=\"fab fa-instagram\"></i></a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(2)>*:nth-child(4)>*:nth-child(3)>*:nth-child(3)>*:nth-child(1)>*:nth-child(5)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"https://www.instagram.com/usagmgov/\"][target=\"_blank\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a href=\"https://www.usagm.gov/2022/07/11/on-historic-anniversary-martis-filling-information-gap-on- ... .gov/wp-content/uploads/2022/07/MicrosoftTeams-image-12-1040x624.png\" height=\"624\" width=\"1040\"></a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"https://www.usagm.gov/2022/07/11/on-historic-anniversary-martis-filling-information-gap-on-crackdown/\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a href=\"https://www.usagm.gov/networks/ocb/\"><img src=\"https://www.usagm.gov/wp-content/themes/bbgRedesign/img/logo_ocb--watermark.png\"></a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"https://www.usagm.gov/networks/ocb/\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a href=\"https://www.usagm.gov/2022/03/06/rfe-rl-suspends-operations-in-russia-following-kremlin-att ... ttps://www.usagm.gov/wp-content/uploads/2022/03/scoboda-1040x624.jpg\" height=\"624\" width=\"1040\"></a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"https://www.usagm.gov/2022/03/06/rfe-rl-suspends-operations-in-russia-following-kremlin-attacks/\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a href=\"https://www.usagm.gov/networks/rferl/\"><img src=\"https://www.usagm.gov/wp-content/themes/bbgRedesign/img/logo_rferl--watermark.png\"></a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"https://www.usagm.gov/networks/rferl/\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a href=\"https://www.usagm.gov/2022/03/05/usagm-condemns-kremlins-increasing-censorship-responds-to- ... /uploads/2022/03/Russia_Ukraine_Invasion_22058694196474-1040x624.jpg\" height=\"624\" width=\"1040\"></a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"https://www.usagm.gov/2022/03/05/usagm-condemns-kremlins-increasing-censorship-responds-to-a-surge-in-demand-for-reporting-from-its-networks/\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a href=\"https://www.usagm.gov\"><img src=\"https://www.usagm.gov/wp-content/themes/bbgRedesign/img/logo_usagm--watermark.png\"></a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"https://www.usagm.gov\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a href=\"https://www.usagm.gov/networks/mbn/\"><img src=\"https://www.usagm.gov/wp-content/themes/bbgRedesign/img/logo_mbn--watermark.png\"></a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"https://www.usagm.gov/networks/mbn/\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a href=\"https://www.usagm.gov/networks/mbn/\"><img src=\"https://www.usagm.gov/wp-content/themes/bbgRedesign/img/logo_mbn--watermark.png\"></a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"https://www.usagm.gov/networks/mbn/\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a href=\"https://www.usagm.gov/networks/rferl/\"><img src=\"https://www.usagm.gov/wp-content/themes/bbgRedesign/img/logo_rferl--watermark.png\"></a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"https://www.usagm.gov/networks/rferl/\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a href=\"https://www.usagm.gov/networks/rferl/\"><img src=\"https://www.usagm.gov/wp-content/themes/bbgRedesign/img/logo_rferl--watermark.png\"></a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"https://www.usagm.gov/networks/rferl/\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a href=\"https://www.usagm.gov/networks/mbn/\"><img src=\"https://www.usagm.gov/wp-content/themes/bbgRedesign/img/logo_mbn--watermark.png\"></a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"https://www.usagm.gov/networks/mbn/\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a href=\"https://www.usagm.gov\"><img src=\"https://www.usagm.gov/wp-content/themes/bbgRedesign/img/logo_usagm--watermark.png\"></a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"https://www.usagm.gov\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a href=\"https://www.usagm.gov/2022/03/22/sawa-marks-20-years-with-the-launch-of-sawa-sudan/\"><img s ... s://www.usagm.gov/wp-content/uploads/2022/03/SawaRadio-1040x624.jpeg\" height=\"624\" width=\"1040\"></a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"https://www.usagm.gov/2022/03/22/sawa-marks-20-years-with-the-launch-of-sawa-sudan/\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a href=\"https://www.usagm.gov/networks/mbn/\"><img src=\"https://www.usagm.gov/wp-content/themes/bbgRedesign/img/logo_mbn--watermark.png\"></a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"https://www.usagm.gov/networks/mbn/\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a href=\"https://twitter.com/USAGMgov/status/1500239301954744322\"><img src=\"https://www.usagm.gov/wp-content/themes/bbgRedesign/img/social-icons/png-white/social-icons_twitter-100x100.png\"></a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(5)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"https://twitter.com/USAGMgov/status/1500239301954744322\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a href=\"https://www.usagm.gov\"><img src=\"https://www.usagm.gov/wp-content/themes/bbgRedesign/img/logo_usagm--watermark.png\"></a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(5)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"https://www.usagm.gov\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a href=\"https://www.usagm.gov\"><img src=\"data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==\"></a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(6)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"https://www.usagm.gov\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a href=\"https://www.usagm.gov\"><img src=\"data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==\"></a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(6)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"https://www.usagm.gov\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a href=\"https://www.usagm.gov\" class=\"site-brand\"><img src=\"https://www.usagm.gov/wp-content/themes/bbgRedesign/img/USAGM-Logo-white.png\"></a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[class=\"site-brand\"][href=\"https://www.usagm.gov\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 281,
+          "bestPracticeId": 1626,
+          "attribute": "The aria-expanded attribute is not allowed on this element",
+          "attributeDetail": "The aria-expanded attribute is not allowed on this UL",
+          "element": "<ul aria-expanded=\"false\" class=\"menu nav-menu desktop-navigation\" id=\"primary-menu\"><li aria-haspop ... ct-page menu-item-47649\" id=\"menu-item-47649\"><a class=\"bbg__top-nav__link-text\" href=\"https://www.u",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(2)>*:nth-child(4)>*:nth-child(3)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "ul[id=\"primary-menu\"][class=\"menu nav-menu desktop-navigation\"][aria-expanded=\"false\"]",
+            "attNo": 3
+          }
+        }
+      ]
+    }
+  ],
+  "timeStamp": "4jil2",
+  "startTime": "2022-07-27T14:20:38",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "continuum",
+      0
+    ]
+  ],
+  "logCount": 1,
+  "logSize": 46,
+  "errorLogCount": 0,
+  "errorLogSize": 0,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-27T14:20:46",
+  "elapsedSeconds": 7
+}

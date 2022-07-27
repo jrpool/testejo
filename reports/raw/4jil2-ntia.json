@@ -1,0 +1,191 @@
+{
+  "id": "4jil2-ntia",
+  "host": {
+    "id": "ntia",
+    "which": "https://www.ntia.doc.gov/",
+    "what": "National Telecommunications and Information Administration"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-27T14:33:34"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-27T14:33:39"
+    }
+  ],
+  "script": {
+    "id": "continuum",
+    "what": "Continuum",
+    "strict": true,
+    "timeLimit": 30,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.ntia.doc.gov/",
+        "what": "National Telecommunications and Information Administration"
+      },
+      {
+        "type": "test",
+        "which": "continuum",
+        "what": "Continuum"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.ntia.doc.gov/",
+      "what": "National Telecommunications and Information Administration",
+      "result": "https://www.ntia.doc.gov/"
+    },
+    {
+      "type": "test",
+      "which": "continuum",
+      "what": "Level Access Continuum, community edition",
+      "url": "https://www.ntia.doc.gov/",
+      "result": [
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a onclick=\"toggleMenu()\" class=\"menu-toggle\" href=\"#nav\"><span></span><span></span><span></span></a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"#nav\"][class=\"menu-toggle\"][onclick=\"toggleMenu()\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a class=\"views-processed\" href=\"/blog/2022/ntia-seeks-input-competition-mobile-app-ecosystem\"><img  ... ntia.doc.gov/files/ntia/styles/flexslider_full/public/slideshow/mobile_front.jpg?itok=Pw4U_4lq\"></a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"/blog/2022/ntia-seeks-input-competition-mobile-app-ecosystem\"][class=\"views-processed\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a class=\"views-processed\" href=\"/blog/2022/ntia-celebrates-national-public-safety-telecommunicators ... doc.gov/files/ntia/styles/flexslider_full/public/slideshow/front_broadband_0.png?itok=fEO_uxns\"></a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"/blog/2022/ntia-celebrates-national-public-safety-telecommunicators-week\"][class=\"views-processed\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a class=\"views-processed\" href=\"/blog/2021/national-broadband-availability-map-reaches-40-state-us- ... ww.ntia.doc.gov/files/ntia/styles/flexslider_full/public/slideshow/map_front.png?itok=t2zNA91F\"></a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"/blog/2021/national-broadband-availability-map-reaches-40-state-us-territory-participants\"][class=\"views-processed\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a class=\"views-processed\" href=\"/blog/2021/nearly-three-fourths-online-households-continue-have-dig ... ia.doc.gov/files/ntia/styles/flexslider_full/public/slideshow/front_survey_0.jpg?itok=uqPerDY8\"></a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"/blog/2021/nearly-three-fourths-online-households-continue-have-digital-privacy-and-security-concerns\"][class=\"views-processed\"]",
+            "attNo": 2
+          }
+        }
+      ]
+    }
+  ],
+  "timeStamp": "4jil2",
+  "startTime": "2022-07-27T14:33:34",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "continuum",
+      0
+    ]
+  ],
+  "logCount": 1,
+  "logSize": 101,
+  "errorLogCount": 1,
+  "errorLogSize": 101,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-27T14:33:39",
+  "elapsedSeconds": 5
+}

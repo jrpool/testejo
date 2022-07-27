@@ -1,0 +1,354 @@
+{
+  "id": "4jil2-ita",
+  "host": {
+    "id": "ita",
+    "which": "https://www.trade.gov/",
+    "what": "International Trade Administration (ITA)"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-27T14:29:58"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-27T14:30:02"
+    }
+  ],
+  "script": {
+    "id": "continuum",
+    "what": "Continuum",
+    "strict": true,
+    "timeLimit": 30,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.trade.gov/",
+        "what": "International Trade Administration (ITA)"
+      },
+      {
+        "type": "test",
+        "which": "continuum",
+        "what": "Continuum"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.trade.gov/",
+      "what": "International Trade Administration (ITA)",
+      "result": "https://www.trade.gov/"
+    },
+    {
+      "type": "test",
+      "which": "continuum",
+      "what": "Level Access Continuum, community edition",
+      "url": "https://www.trade.gov/",
+      "result": [
+        {
+          "engineTestId": 83,
+          "bestPracticeId": 1626,
+          "attribute": "This element has an aria-describedby attribute value that includes one or more invalid or duplicate ids",
+          "attributeDetail": "This DIV has an aria-describedby attribute value of 'slick-slide-control00', which includes one or more invalid or duplicate ids",
+          "element": "<div style=\"width: 1280px; position: relative; left: 0px; top: 0px; z-index: 999; opacity: 1;\" aria- ... s compete at home and abroad.</div></div></div><div class=\"ita-hero-banner__wave\"></div></div></div>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[class=\"ita-slider__item ita-slider__item--active slick-slide slick-current slick-active\"][id=\"slick-slide00\"][data-slick-index=\"0\"][aria-hidden=\"false\"][tabindex=\"0\"][role=\"tabpanel\"][aria-describedby=\"slick-slide-control00\"]",
+            "attNo": 8
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This g has an id attribute of 'Group_416', which is not unique in the same DOM",
+          "element": "<g transform=\"translate(0 0)\" data-name=\"Group 416\" id=\"Group_416\"><path transform=\"translate(-23.23 ... 1.169,1.169,0,0,0,.739-.59.739.739,0,0,0-.006-.544Z\" class=\"cls-1\" data-name=\"Path 1184\"></path></g>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(5)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "g[id=\"Group_416\"][data-name=\"Group 416\"][transform=\"translate(0 0)\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This g has an id attribute of 'Group_416', which is not unique in the same DOM",
+          "element": "<g transform=\"translate(0 0)\" data-name=\"Group 416\" id=\"Group_416\"><path transform=\"translate(-23.23 ... 1.169,1.169,0,0,0,.739-.59.739.739,0,0,0-.006-.544Z\" class=\"cls-1\" data-name=\"Path 1184\"></path></g>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(5)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "g[id=\"Group_416\"][data-name=\"Group 416\"][transform=\"translate(0 0)\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg viewbox=\"0 0 32.646 20.52\" xmlns=\"http://www.w3.org/2000/svg\"><g transform=\"translate(0 0)\" dat ... .009a1.169,1.169,0,0,0,.739-.59.739.739,0,0,0-.006-.544Z\" class=\"cls-1\" data-name=\"Path 1184\"></path",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(5)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[viewbox=\"0 0 32.646 20.52\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg viewbox=\"0 0 32.646 20.52\" xmlns=\"http://www.w3.org/2000/svg\"><g transform=\"translate(0 0)\" dat ... .009a1.169,1.169,0,0,0,.739-.59.739.739,0,0,0-.006-.544Z\" class=\"cls-1\" data-name=\"Path 1184\"></path",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(5)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[viewbox=\"0 0 32.646 20.52\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg viewbox=\"0 0 221.219 88\" height=\"88\" width=\"221.219\" xmlns=\"http://www.w3.org/2000/svg\"><defs>< ... 6.8h.84v6.736h-.877l-2.146-3.416a21.728 21.728 0 0 1-1.258-2.249h-.03c.048.846.067 1.657.067 2.775v2",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[width=\"221.219\"][height=\"88\"][viewbox=\"0 0 221.219 88\"]",
+            "attNo": 4
+          }
+        },
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg viewbox=\"0 0 22.5 17.647\" height=\"17.647\" width=\"22.5\" xmlns=\"http://www.w3.org/2000/svg\"><path ... 331a4.473,4.473,0,0,1-2.027,2.454A9.5,9.5,0,0,0,22.5,2.1a9.734,9.734,0,0,1-2.313,2.3Z\"></path></svg>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[width=\"22.5\"][height=\"17.647\"][viewbox=\"0 0 22.5 17.647\"]",
+            "attNo": 4
+          }
+        },
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg viewbox=\"0 0 12.854 23.75\" height=\"23.75\" width=\"12.854\" xmlns=\"http://www.w3.org/2000/svg\"><pa ... 341,0,0,0,9.491,0C6.059,0,3.815,2.059,3.815,5.785V9.061H0v4.3H3.815V23.75h4.7V13.359Z\"></path></svg>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(3)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[width=\"12.854\"][height=\"23.75\"][viewbox=\"0 0 12.854 23.75\"]",
+            "attNo": 4
+          }
+        },
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg viewbox=\"0 0 27.871 19.31\" height=\"19.31\" width=\"27.871\" xmlns=\"http://www.w3.org/2000/svg\"><pa ... 82-6.653,35.683,35.683,0,0,0-.582-6.653Zm-16.2,10.737V5.591L18.37,9.675l-7.285,4.083Z\"></path></svg>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(3)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[width=\"27.871\"][height=\"19.31\"][viewbox=\"0 0 27.871 19.31\"]",
+            "attNo": 4
+          }
+        },
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg viewbox=\"0 0 31.5 31.5\" height=\"31.5\" width=\"31.5\" xmlns=\"http://www.w3.org/2000/svg\"><path fil ... 52V14.217h4.479V16.27h.063a4.917,4.917,0,0,1,4.423-2.426c4.725,0,5.6,3.115,5.6,7.165Z\"></path></svg>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(3)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[width=\"31.5\"][height=\"31.5\"][viewbox=\"0 0 31.5 31.5\"]",
+            "attNo": 4
+          }
+        },
+        {
+          "engineTestId": 260,
+          "bestPracticeId": 1626,
+          "attribute": "The aria-level attribute is not allowed on this element",
+          "attributeDetail": "The aria-level attribute is not allowed on this LI",
+          "element": "<li aria-level=\"1\" class=\"ita-header__menu-item ita-header__menu-item--expanded\"><span tabindex=\"0\"  ... h Foreign Markets\" href=\"/international-market-research\">Research Foreign Markets</a></li><li aria-l",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "li[class=\"ita-header__menu-item ita-header__menu-item--expanded\"][aria-level=\"1\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 260,
+          "bestPracticeId": 1626,
+          "attribute": "The aria-level attribute is not allowed on this element",
+          "attributeDetail": "The aria-level attribute is not allowed on this LI",
+          "element": "<li aria-level=\"1\" class=\"ita-header__menu-item ita-header__menu-item--expanded\"><span tabindex=\"0\"  ... vel=\"3\" class=\"ita-header__menu-item\"><a class=\"ita-header__menu-link\" title=\"Buy from the USA\" href",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "li[class=\"ita-header__menu-item ita-header__menu-item--expanded\"][aria-level=\"1\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 260,
+          "bestPracticeId": 1626,
+          "attribute": "The aria-level attribute is not allowed on this element",
+          "attributeDetail": "The aria-level attribute is not allowed on this LI",
+          "element": "<li aria-level=\"1\" class=\"ita-header__menu-item\"><a tabindex=\"0\" aria-expanded=\"false\" aria-haspopup ...  5.373 12 12v24z\"></path></svg></span><span class=\"ita-header__menu-title\">About ITA</span></a></li>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "li[class=\"ita-header__menu-item\"][aria-level=\"1\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 260,
+          "bestPracticeId": 1626,
+          "attribute": "The aria-level attribute is not allowed on this element",
+          "attributeDetail": "The aria-level attribute is not allowed on this LI",
+          "element": "<li aria-level=\"1\" class=\"ita-header__menu-item\"><a tabindex=\"0\" aria-expanded=\"false\" aria-haspopup ... ,0,0-.383-.755Z\"></path></svg></span><span class=\"ita-header__menu-title\">Contact Us</span></a></li>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "li[class=\"ita-header__menu-item\"][aria-level=\"1\"]",
+            "attNo": 2
+          }
+        }
+      ]
+    }
+  ],
+  "timeStamp": "4jil2",
+  "startTime": "2022-07-27T14:29:58",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "continuum",
+      0
+    ]
+  ],
+  "logCount": 3,
+  "logSize": 401,
+  "errorLogCount": 3,
+  "errorLogSize": 401,
+  "prohibitedCount": 1,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-27T14:30:02",
+  "elapsedSeconds": 4
+}

@@ -1,0 +1,80 @@
+{
+  "id": "4jil2-bea",
+  "host": {
+    "id": "bea",
+    "which": "https://www.bea.gov/",
+    "what": "Bureau of Economic Analysis (BEA)"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-27T14:21:49"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-27T14:21:55"
+    }
+  ],
+  "script": {
+    "id": "continuum",
+    "what": "Continuum",
+    "strict": true,
+    "timeLimit": 30,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.bea.gov/",
+        "what": "Bureau of Economic Analysis (BEA)"
+      },
+      {
+        "type": "test",
+        "which": "continuum",
+        "what": "Continuum"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.bea.gov/",
+      "what": "Bureau of Economic Analysis (BEA)",
+      "result": "https://www.bea.gov/"
+    },
+    {
+      "type": "test",
+      "which": "continuum",
+      "what": "Level Access Continuum, community edition",
+      "url": "https://www.bea.gov/",
+      "result": "NONE"
+    }
+  ],
+  "timeStamp": "4jil2",
+  "startTime": "2022-07-27T14:21:49",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "continuum",
+      0
+    ]
+  ],
+  "logCount": 2,
+  "logSize": 260,
+  "errorLogCount": 1,
+  "errorLogSize": 101,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-27T14:21:55",
+  "elapsedSeconds": 5
+}

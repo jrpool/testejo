@@ -1,0 +1,83 @@
+{
+  "id": "4jlwf-nasa",
+  "host": {
+    "id": "nasa",
+    "which": "https://www.nasa.gov/",
+    "what": "National Aeronautics and Space Administration (NASA)"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-27T16:44:08"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-27T16:44:37"
+    }
+  ],
+  "script": {
+    "id": "continuum",
+    "what": "Continuum",
+    "strict": true,
+    "timeLimit": 30,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.nasa.gov/",
+        "what": "National Aeronautics and Space Administration (NASA)"
+      },
+      {
+        "type": "test",
+        "which": "continuum",
+        "what": "Continuum"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.nasa.gov/",
+      "what": "National Aeronautics and Space Administration (NASA)",
+      "result": "https://www.nasa.gov/"
+    },
+    {
+      "type": "test",
+      "which": "continuum",
+      "what": "Level Access Continuum, community edition",
+      "url": "https://www.nasa.gov/",
+      "result": {
+        "prevented": true,
+        "error": "ERROR: Running all tests timed out"
+      }
+    }
+  ],
+  "timeStamp": "4jlwf",
+  "startTime": "2022-07-27T16:44:08",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "continuum",
+      20
+    ]
+  ],
+  "logCount": 6,
+  "logSize": 405,
+  "errorLogCount": 4,
+  "errorLogSize": 255,
+  "prohibitedCount": 1,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-27T16:44:37",
+  "elapsedSeconds": 28
+}

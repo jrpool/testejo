@@ -1,0 +1,80 @@
+{
+  "id": "4jil2-noaa",
+  "host": {
+    "id": "noaa",
+    "which": "https://www.noaa.gov/",
+    "what": "National Oceanic & Atmospheric Administration (NOAA)"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-27T14:32:57"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-27T14:33:03"
+    }
+  ],
+  "script": {
+    "id": "continuum",
+    "what": "Continuum",
+    "strict": true,
+    "timeLimit": 30,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.noaa.gov/",
+        "what": "National Oceanic & Atmospheric Administration (NOAA)"
+      },
+      {
+        "type": "test",
+        "which": "continuum",
+        "what": "Continuum"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.noaa.gov/",
+      "what": "National Oceanic & Atmospheric Administration (NOAA)",
+      "result": "https://www.noaa.gov/"
+    },
+    {
+      "type": "test",
+      "which": "continuum",
+      "what": "Level Access Continuum, community edition",
+      "url": "https://www.noaa.gov/",
+      "result": "NONE"
+    }
+  ],
+  "timeStamp": "4jil2",
+  "startTime": "2022-07-27T14:32:57",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "continuum",
+      0
+    ]
+  ],
+  "logCount": 2,
+  "logSize": 170,
+  "errorLogCount": 2,
+  "errorLogSize": 170,
+  "prohibitedCount": 1,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-27T14:33:03",
+  "elapsedSeconds": 5
+}

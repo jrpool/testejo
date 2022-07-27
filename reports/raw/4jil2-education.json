@@ -1,0 +1,118 @@
+{
+  "id": "4jil2-education",
+  "host": {
+    "id": "education",
+    "which": "https://www.ed.gov/",
+    "what": "Department of Education"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-27T14:24:02"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-27T14:24:08"
+    }
+  ],
+  "script": {
+    "id": "continuum",
+    "what": "Continuum",
+    "strict": true,
+    "timeLimit": 30,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.ed.gov/",
+        "what": "Department of Education"
+      },
+      {
+        "type": "test",
+        "which": "continuum",
+        "what": "Continuum"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.ed.gov/",
+      "what": "Department of Education",
+      "result": "https://www.ed.gov/"
+    },
+    {
+      "type": "test",
+      "which": "continuum",
+      "what": "Level Access Continuum, community edition",
+      "url": "https://www.ed.gov/",
+      "result": [
+        {
+          "engineTestId": 224,
+          "bestPracticeId": 338,
+          "attribute": "This button element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This button element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<button style=\"height:34px;\" class=\"btn btn-primary\" type=\"submit\" id=\"searchsubmit\" value=\"Search\"><span class=\"glyphicon glyphicon-search\"></span></button>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(4)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "button[value=\"Search\"][id=\"searchsubmit\"][type=\"submit\"][class=\"btn btn-primary\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a href=\"https://oese.ed.gov/offices/american-rescue-plan/\"><img alt=\"\" height=\"142\" width=\"190\" src ... featured_image/public/arp-feature.png?itok=ZsV0ko4P\" class=\"img-responsive\" typeof=\"foaf:Image\"></a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(3)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"https://oese.ed.gov/offices/american-rescue-plan/\"]",
+            "attNo": 1
+          }
+        }
+      ]
+    }
+  ],
+  "timeStamp": "4jil2",
+  "startTime": "2022-07-27T14:24:02",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "continuum",
+      0
+    ]
+  ],
+  "logCount": 1,
+  "logSize": 101,
+  "errorLogCount": 1,
+  "errorLogSize": 101,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-27T14:24:08",
+  "elapsedSeconds": 5
+}

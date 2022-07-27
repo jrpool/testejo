@@ -1,0 +1,96 @@
+{
+  "id": "4jil2-bep",
+  "host": {
+    "id": "bep",
+    "which": "https://www.bep.gov/",
+    "what": "Bureau of Engraving and Printing"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-27T14:21:55"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-27T14:22:02"
+    }
+  ],
+  "script": {
+    "id": "continuum",
+    "what": "Continuum",
+    "strict": true,
+    "timeLimit": 30,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.bep.gov/",
+        "what": "Bureau of Engraving and Printing"
+      },
+      {
+        "type": "test",
+        "which": "continuum",
+        "what": "Continuum"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.bep.gov/",
+      "what": "Bureau of Engraving and Printing",
+      "result": "https://www.bep.gov/"
+    },
+    {
+      "type": "test",
+      "which": "continuum",
+      "what": "Level Access Continuum, community edition",
+      "url": "https://www.bep.gov/",
+      "result": [
+        {
+          "engineTestId": 863,
+          "bestPracticeId": 2440,
+          "attribute": "This input should not rely on text in the placeholder attribute for an accessible name",
+          "attributeDetail": "This input should not rely on text in the placeholder attribute for an accessible name",
+          "element": "<input type=\"text\" placeholder=\"Email Address\" name=\"email\" id=\"email\" class=\"form__input usa-input\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(6)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(6)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "input[class=\"form__input usa-input\"][id=\"email\"][name=\"email\"][placeholder=\"Email Address\"][type=\"text\"]",
+            "attNo": 5
+          }
+        }
+      ]
+    }
+  ],
+  "timeStamp": "4jil2",
+  "startTime": "2022-07-27T14:21:55",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "continuum",
+      0
+    ]
+  ],
+  "logCount": 1,
+  "logSize": 101,
+  "errorLogCount": 1,
+  "errorLogSize": 101,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-27T14:22:02",
+  "elapsedSeconds": 6
+}

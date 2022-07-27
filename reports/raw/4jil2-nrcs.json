@@ -1,0 +1,269 @@
+{
+  "id": "4jil2-nrcs",
+  "host": {
+    "id": "nrcs",
+    "which": "https://www.nrcs.usda.gov/wps/portal/nrcs/site/national/home/",
+    "what": "Natural Resources Conservation Service"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-27T14:33:48"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-27T14:33:56"
+    }
+  ],
+  "script": {
+    "id": "continuum",
+    "what": "Continuum",
+    "strict": true,
+    "timeLimit": 30,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.nrcs.usda.gov/wps/portal/nrcs/site/national/home/",
+        "what": "Natural Resources Conservation Service"
+      },
+      {
+        "type": "test",
+        "which": "continuum",
+        "what": "Continuum"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.nrcs.usda.gov/wps/portal/nrcs/site/national/home/",
+      "what": "Natural Resources Conservation Service",
+      "result": "https://www.nrcs.usda.gov/wps/portal/nrcs/site/national/home/"
+    },
+    {
+      "type": "test",
+      "which": "continuum",
+      "what": "Level Access Continuum, community edition",
+      "url": "https://www.nrcs.usda.gov/wps/portal/nrcs/site/national/home/",
+      "result": [
+        {
+          "engineTestId": 15,
+          "bestPracticeId": 338,
+          "attribute": "The alt attribute is not allowed on this element",
+          "attributeDetail": "The alt attribute is not allowed on this INPUT",
+          "element": "<input class=\"long\" id=\"email\" name=\"email\" value=\"Sign up for email updates:\" onfocus=\"this.value=' ... ize: 12px;\" accesskey=\"k\" alt=\"Enter a valid email address to sign up for Gov Delivery\" type=\"text\">",
+          "testResult": 0,
+          "path": "body>table:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(6)>*:nth-child(3)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "input[type=\"text\"][alt=\"Enter a valid email address to sign up for Gov Delivery\"][accesskey=\"k\"][onfocus=\"this.value=''\"][value=\"Sign up for email updates:\"][name=\"email\"][id=\"email\"][class=\"long\"]",
+            "attNo": 9
+          }
+        },
+        {
+          "engineTestId": 15,
+          "bestPracticeId": 338,
+          "attribute": "The alt attribute is not allowed on this element",
+          "attributeDetail": "The alt attribute is not allowed on this INPUT",
+          "element": "<input class=\"btn\" name=\"commit\" value=\"Go\" alt=\"Submit button for Gov Delivery\" type=\"submit\">",
+          "testResult": 0,
+          "path": "body>table:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(6)>*:nth-child(4)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "input[type=\"submit\"][alt=\"Submit button for Gov Delivery\"][value=\"Go\"][name=\"commit\"][class=\"btn\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 99,
+          "bestPracticeId": 464,
+          "attribute": "This element does not have a ul element (without an ARIA-assigned role); ol element (without an ARIA-assigned role); or element with a role set to the value: list as a parent",
+          "attributeDetail": "This LI does not have a ul element (without an ARIA-assigned role); ol element (without an ARIA-assigned role); or element with a role set to the value: list as a parent",
+          "element": "<li class=\"left_corner_nav\"><a id=\"anch_3\" class=\"node_link\"></a></li>",
+          "testResult": 0,
+          "path": "body>table:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "li[class=\"left_corner_nav\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 99,
+          "bestPracticeId": 464,
+          "attribute": "This element does not have a ul element (without an ARIA-assigned role); ol element (without an ARIA-assigned role); or element with a role set to the value: list as a parent",
+          "attributeDetail": "This LI does not have a ul element (without an ARIA-assigned role); ol element (without an ARIA-assigned role); or element with a role set to the value: list as a parent",
+          "element": "<li tabindex=\"-1\" class=\"transparent_nav\"><img title=\"\" alt=\"\" src=\"/NRCS_WIDTheme/themes/html/NRCS_WIDTheme/images/transparent.gif\" height=\"2\" width=\"1\"></li>",
+          "testResult": 0,
+          "path": "body>table:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(3)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "li[class=\"transparent_nav\"][tabindex=\"-1\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 99,
+          "bestPracticeId": 464,
+          "attribute": "This element does not have a ul element (without an ARIA-assigned role); ol element (without an ARIA-assigned role); or element with a role set to the value: list as a parent",
+          "attributeDetail": "This LI does not have a ul element (without an ARIA-assigned role); ol element (without an ARIA-assigned role); or element with a role set to the value: list as a parent",
+          "element": "<li tabindex=\"-1\" class=\"transparent_nav\"><img title=\"\" alt=\"\" src=\"/NRCS_WIDTheme/themes/html/NRCS_WIDTheme/images/transparent.gif\" height=\"2\" width=\"1\"></li>",
+          "testResult": 0,
+          "path": "body>table:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(5)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "li[class=\"transparent_nav\"][tabindex=\"-1\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 99,
+          "bestPracticeId": 464,
+          "attribute": "This element does not have a ul element (without an ARIA-assigned role); ol element (without an ARIA-assigned role); or element with a role set to the value: list as a parent",
+          "attributeDetail": "This LI does not have a ul element (without an ARIA-assigned role); ol element (without an ARIA-assigned role); or element with a role set to the value: list as a parent",
+          "element": "<li tabindex=\"-1\" class=\"transparent_nav\"><img title=\"\" alt=\"\" src=\"/NRCS_WIDTheme/themes/html/NRCS_WIDTheme/images/transparent.gif\" height=\"2\" width=\"1\"></li>",
+          "testResult": 0,
+          "path": "body>table:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(7)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "li[class=\"transparent_nav\"][tabindex=\"-1\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 99,
+          "bestPracticeId": 464,
+          "attribute": "This element does not have a ul element (without an ARIA-assigned role); ol element (without an ARIA-assigned role); or element with a role set to the value: list as a parent",
+          "attributeDetail": "This LI does not have a ul element (without an ARIA-assigned role); ol element (without an ARIA-assigned role); or element with a role set to the value: list as a parent",
+          "element": "<li tabindex=\"-1\" class=\"transparent_nav\"><img title=\"\" alt=\"\" src=\"/NRCS_WIDTheme/themes/html/NRCS_WIDTheme/images/transparent.gif\" height=\"2\" width=\"1\"></li>",
+          "testResult": 0,
+          "path": "body>table:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(9)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "li[class=\"transparent_nav\"][tabindex=\"-1\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 99,
+          "bestPracticeId": 464,
+          "attribute": "This element does not have a ul element (without an ARIA-assigned role); ol element (without an ARIA-assigned role); or element with a role set to the value: list as a parent",
+          "attributeDetail": "This LI does not have a ul element (without an ARIA-assigned role); ol element (without an ARIA-assigned role); or element with a role set to the value: list as a parent",
+          "element": "<li class=\"right_corner_nav\"><a id=\"anch_90\" class=\"node_link\"></a></li>",
+          "testResult": 0,
+          "path": "body>table:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(11)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "li[class=\"right_corner_nav\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 118,
+          "bestPracticeId": 338,
+          "attribute": "This input (type=text) element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This input (type=text) element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<input type=\"text\" name=\"query\" id=\"query\" tabindex=\"9\" class=\"search\" autocomplete=\"off\">",
+          "testResult": 0,
+          "path": "body>table:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(4)>*:nth-child(1)>*:nth-child(5)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperTex": "Specify a descriptive label for the text input.",
+            "fix": {
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "input[autocomplete=\"off\"][class=\"search\"][tabindex=\"9\"][id=\"query\"][name=\"query\"][type=\"text\"]",
+            "attNo": 6
+          }
+        },
+        {
+          "engineTestId": 118,
+          "bestPracticeId": 338,
+          "attribute": "This input (type=text) element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This input (type=text) element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<input class=\"long\" id=\"email\" name=\"email\" value=\"Sign up for email updates:\" onfocus=\"this.value=' ... ize: 12px;\" accesskey=\"k\" alt=\"Enter a valid email address to sign up for Gov Delivery\" type=\"text\">",
+          "testResult": 0,
+          "path": "body>table:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(6)>*:nth-child(3)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperTex": "Specify a descriptive label for the text input.",
+            "fix": {
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "input[type=\"text\"][alt=\"Enter a valid email address to sign up for Gov Delivery\"][accesskey=\"k\"][onfocus=\"this.value=''\"][value=\"Sign up for email updates:\"][name=\"email\"][id=\"email\"][class=\"long\"]",
+            "attNo": 9
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a id=\"anch_91\" tabindex=\"-1\" href=\"http://www.nrcs.usda.gov\"></a>",
+          "testResult": 0,
+          "path": "body>table:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"http://www.nrcs.usda.gov\"][tabindex=\"-1\"][id=\"anch_91\"]",
+            "attNo": 3
+          }
+        }
+      ]
+    }
+  ],
+  "timeStamp": "4jil2",
+  "startTime": "2022-07-27T14:33:48",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "continuum",
+      1
+    ]
+  ],
+  "logCount": 2,
+  "logSize": 846,
+  "errorLogCount": 0,
+  "errorLogSize": 0,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-27T14:33:56",
+  "elapsedSeconds": 7
+}

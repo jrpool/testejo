@@ -1,0 +1,593 @@
+{
+  "id": "4jil2-dhs",
+  "host": {
+    "id": "dhs",
+    "which": "https://www.dhs.gov/",
+    "what": "Department of Homeland Security (DHS)"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-27T14:24:25"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-27T14:24:33"
+    }
+  ],
+  "script": {
+    "id": "continuum",
+    "what": "Continuum",
+    "strict": true,
+    "timeLimit": 30,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.dhs.gov/",
+        "what": "Department of Homeland Security (DHS)"
+      },
+      {
+        "type": "test",
+        "which": "continuum",
+        "what": "Continuum"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.dhs.gov/",
+      "what": "Department of Homeland Security (DHS)",
+      "result": "https://www.dhs.gov/"
+    },
+    {
+      "type": "test",
+      "which": "continuum",
+      "what": "Level Access Continuum, community edition",
+      "url": "https://www.dhs.gov/",
+      "result": [
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This DIV has an id attribute of 'desktop-submenu', which is not unique in the same DOM",
+          "element": "<div class=\"grid-row grid-gap-4\" id=\"desktop-submenu\"><div class=\"desktop:grid-col-3\"><div class=\"us ... -item\"><a class=\"survey-processed\" href=\"/topics\"><span><h3>Topics</h3></span></a></div></div></div>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[id=\"desktop-submenu\"][class=\"grid-row grid-gap-4\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This DIV has an id attribute of 'desktop-submenu', which is not unique in the same DOM",
+          "element": "<div class=\"grid-row grid-gap-4\" id=\"desktop-submenu\"><div class=\"desktop:grid-col-3\"><div class=\"us ... menu-item\"><a class=\"survey-processed\" href=\"/news\"><span><h3>News</h3></span></a></div></div></div>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[id=\"desktop-submenu\"][class=\"grid-row grid-gap-4\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This DIV has an id attribute of 'desktop-submenu', which is not unique in the same DOM",
+          "element": "<div class=\"grid-row grid-gap-4\" id=\"desktop-submenu\"><div class=\"desktop:grid-col-3\"><div class=\"us ... item\"><a class=\"survey-processed\" href=\"/focus\"><span><h3>In Focus</h3></span></a></div></div></div>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(3)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[id=\"desktop-submenu\"][class=\"grid-row grid-gap-4\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This DIV has an id attribute of 'desktop-submenu', which is not unique in the same DOM",
+          "element": "<div class=\"grid-row grid-gap-4\" id=\"desktop-submenu\"><div class=\"desktop:grid-col-3\"><div class=\"us ... \"><a class=\"survey-processed\" href=\"/how-do-i\"><span><h3>How Do I?</h3></span></a></div></div></div>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(4)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[id=\"desktop-submenu\"][class=\"grid-row grid-gap-4\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This DIV has an id attribute of 'desktop-submenu', which is not unique in the same DOM",
+          "element": "<div class=\"grid-row grid-gap-4\" id=\"desktop-submenu\"><div class=\"desktop:grid-col-3\"><div class=\"us ... ass=\"survey-processed\" href=\"/get-involved\"><span><h3>Get Involved</h3></span></a></div></div></div>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(5)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[id=\"desktop-submenu\"][class=\"grid-row grid-gap-4\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This DIV has an id attribute of 'desktop-submenu', which is not unique in the same DOM",
+          "element": "<div class=\"grid-row grid-gap-4\" id=\"desktop-submenu\"><div class=\"desktop:grid-col-3\"><div class=\"us ... ><a class=\"survey-processed\" href=\"/about-dhs\"><span><h3>About DHS</h3></span></a></div></div></div>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(6)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[id=\"desktop-submenu\"][class=\"grid-row grid-gap-4\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This DIV has an id attribute of 'extra-parent', which is not unique in the same DOM",
+          "element": "<div class=\"grid-row grid-gap-4\" id=\"extra-parent\"><div id=\"mobile-submenu\"><div class=\"usa-col\"><di ... d\" href=\"/topics/transportation-security\"><span>Transportation Security</span></a></div></div></div>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[id=\"extra-parent\"][class=\"grid-row grid-gap-4\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This DIV has an id attribute of 'extra-parent', which is not unique in the same DOM",
+          "element": "<div class=\"grid-row grid-gap-4\" id=\"extra-parent\"><div id=\"mobile-submenu\"><div class=\"usa-col\"><di ... v__submenu-item\"><a class=\"survey-processed\" href=\"/news-releases/testimony\"><span>Testimony</span><",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[id=\"extra-parent\"][class=\"grid-row grid-gap-4\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This DIV has an id attribute of 'extra-parent', which is not unique in the same DOM",
+          "element": "<div class=\"grid-row grid-gap-4\" id=\"extra-parent\"><div id=\"mobile-submenu\"><div class=\"usa-col\"><di ... \"><a class=\"survey-processed\" href=\"/ukraine\"><span>Uniting for Ukraine</span></a></div></div></div>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(3)>*:nth-child(2)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[id=\"extra-parent\"][class=\"grid-row grid-gap-4\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This DIV has an id attribute of 'extra-parent', which is not unique in the same DOM",
+          "element": "<div class=\"grid-row grid-gap-4\" id=\"extra-parent\"><div id=\"mobile-submenu\"><div class=\"usa-col\"><di ... \"survey-processed\" href=\"/how-do-i/for-the-public\"><span>For the Public</span></a></div></div></div>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(4)>*:nth-child(2)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[id=\"extra-parent\"][class=\"grid-row grid-gap-4\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This DIV has an id attribute of 'extra-parent', which is not unique in the same DOM",
+          "element": "<div class=\"grid-row grid-gap-4\" id=\"extra-parent\"><div id=\"mobile-submenu\"><div class=\"usa-col\"><di ... cessed\" href=\"/us-coast-guard-auxiliary\"><span>US Coast Guard Auxiliary</span></a></div></div></div>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(5)>*:nth-child(2)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[id=\"extra-parent\"][class=\"grid-row grid-gap-4\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This DIV has an id attribute of 'extra-parent', which is not unique in the same DOM",
+          "element": "<div class=\"grid-row grid-gap-4\" id=\"extra-parent\"><div id=\"mobile-submenu\"><div class=\"usa-col\"><di ... u-item\"><a class=\"survey-processed\" href=\"/site-links\"><span>Site Links</span></a></div></div></div>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(6)>*:nth-child(2)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[id=\"extra-parent\"][class=\"grid-row grid-gap-4\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This DIV has an id attribute of 'mobile-submenu', which is not unique in the same DOM",
+          "element": "<div id=\"mobile-submenu\"><div class=\"usa-col\"><div class=\"usa-nav__submenu-item\"><a class=\"survey-processed\" href=\"/topics\"><span>Topics</span></a></div></div></div>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[id=\"mobile-submenu\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This DIV has an id attribute of 'mobile-submenu', which is not unique in the same DOM",
+          "element": "<div id=\"mobile-submenu\"><div class=\"usa-col\"><div class=\"usa-nav__submenu-item\"><a class=\"survey-processed\" href=\"/news\"><span>News</span></a></div></div></div>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[id=\"mobile-submenu\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This DIV has an id attribute of 'mobile-submenu', which is not unique in the same DOM",
+          "element": "<div id=\"mobile-submenu\"><div class=\"usa-col\"><div class=\"usa-nav__submenu-item\"><a class=\"survey-processed\" href=\"/focus\"><span>In Focus</span></a></div></div></div>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(3)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[id=\"mobile-submenu\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This DIV has an id attribute of 'mobile-submenu', which is not unique in the same DOM",
+          "element": "<div id=\"mobile-submenu\"><div class=\"usa-col\"><div class=\"usa-nav__submenu-item\"><a class=\"survey-processed\" href=\"/how-do-i\"><span>How Do I?</span></a></div></div></div>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(4)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[id=\"mobile-submenu\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This DIV has an id attribute of 'mobile-submenu', which is not unique in the same DOM",
+          "element": "<div id=\"mobile-submenu\"><div class=\"usa-col\"><div class=\"usa-nav__submenu-item\"><a class=\"survey-processed\" href=\"/get-involved\"><span>Get Involved</span></a></div></div></div>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(5)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[id=\"mobile-submenu\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This DIV has an id attribute of 'mobile-submenu', which is not unique in the same DOM",
+          "element": "<div id=\"mobile-submenu\"><div class=\"usa-col\"><div class=\"usa-nav__submenu-item\"><a class=\"survey-processed\" href=\"/about-dhs\"><span>About DHS</span></a></div></div></div>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(6)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[id=\"mobile-submenu\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 95,
+          "bestPracticeId": 1626,
+          "attribute": "This element has an aria-labelledby attribute value that includes one or more invalid or duplicate ids",
+          "attributeDetail": "This NAV has an aria-labelledby attribute value of 'block-dhs-uswds-subtheme-footer-menu', which includes one or more invalid or duplicate ids",
+          "element": "<nav class=\"grid-col-9 block block-menu navigation menu--footer\" id=\"block-dhs-uswds-subtheme-footer ... class=\"last survey-processed\" title=\"USA.gov\" href=\"https://www.usa.gov\">USA.gov</a></li></ul></nav>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(6)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide the ID of an element which contains the label content for this element.",
+            "fix": {
+              "aria-labelledby": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[role=\"navigation\"][aria-labelledby=\"block-dhs-uswds-subtheme-footer-menu\"][id=\"block-dhs-uswds-subtheme-footer\"][class=\"grid-col-9 block block-menu navigation menu--footer\"]",
+            "attNo": 4
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a data-route-name=\"\" class=\"card-link survey-processed\" href=\"https://www.schoolsafety.gov\"><articl ... 22_0531_opa_schoolsafetygov.jpg?h=73306683&amp;itok=UTvT5Lci\"></div></div></div></div></article></a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"https://www.schoolsafety.gov\"][class=\"card-link survey-processed\"][data-route-name=\"\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a data-route-name=\"\" class=\"card-link survey-processed\" href=\"/ukraine\"><article class=\"media media ... 5_opa_u4u_dhsgov-card_final.jpg?h=73306683&amp;itok=DMZ8HVvX\"></div></div></div></div></article></a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"/ukraine\"][class=\"card-link survey-processed\"][data-route-name=\"\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a data-route-name=\"\" class=\"card-link survey-processed\" href=\"/allieswelcome?utm_source=hp_slidesho ... operation-allies-welcome-sc.jpg?h=73306683&amp;itok=ZH1qpwtI\"></div></div></div></div></article></a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"/allieswelcome?utm_source=hp_slideshow&utm_medium=web&utm_campaign=dhsgov\"][class=\"card-link survey-processed\"][data-route-name=\"\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a data-route-name=\"\" class=\"card-link survey-processed\" href=\"/dhs-actions-climate-change?utm_sourc ... 1-12/21_1215_climate-change.jpg?h=73306683&amp;itok=h_CfZD8w\"></div></div></div></div></article></a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"/dhs-actions-climate-change?utm_source=hp_slideshow&utm_medium=web&utm_campaign=dhsgov\"][class=\"card-link survey-processed\"][data-route-name=\"\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a data-route-name=\"\" class=\"card-link survey-processed\" href=\"/topics/cybersecurity?utm_source=hp_s ... k_1902760141_dhs-large-card.jpg?h=73306683&amp;itok=cBlUR1Cm\"></div></div></div></div></article></a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"/topics/cybersecurity?utm_source=hp_slideshow&utm_medium=web&utm_campaign=dhsgov\"][class=\"card-link survey-processed\"][data-route-name=\"\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a data-route-name=\"\" class=\"card-link survey-processed\" href=\"/real-id/are-you-real-id-ready\"><arti ... c/2021-12/21_1221_realid-sc.jpg?h=73306683&amp;itok=AT_XCBtR\"></div></div></div></div></article></a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(6)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"/real-id/are-you-real-id-ready\"][class=\"card-link survey-processed\"][data-route-name=\"\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a class=\"text-no-underline card-link survey-processed\" href=\"/homeland-security-careers\"><div class ... enterprise-careers.png?itok=dfEgtdzH\"></div></div></div></div></article></div></div></div></div></a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"/homeland-security-careers\"][class=\"text-no-underline card-link survey-processed\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a class=\"text-no-underline card-link survey-processed\" href=\"/see-something-say-something/how-to-re ... man-trafficking-sc.jpg?itok=tbrRaN2K\"></div></div></div></div></article></div></div></div></div></a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"/see-something-say-something/how-to-report-suspicious-activity\"][class=\"text-no-underline card-link survey-processed\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a class=\"text-no-underline card-link survey-processed\" href=\"/check-wait-times\"><div class=\"usa-car ... /22_0214-travel-sc.jpg?itok=gmnvzQ4D\"></div></div></div></div></article></div></div></div></div></a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"/check-wait-times\"][class=\"text-no-underline card-link survey-processed\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a class=\"text-no-underline card-link survey-processed\" href=\"/topics/cybersecurity\"><div class=\"usa ... aphy-Cybersecurity.jpg?itok=xBzXndrd\"></div></div></div></div></article></div></div></div></div></a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"/topics/cybersecurity\"][class=\"text-no-underline card-link survey-processed\"]",
+            "attNo": 2
+          }
+        }
+      ]
+    }
+  ],
+  "timeStamp": "4jil2",
+  "startTime": "2022-07-27T14:24:25",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "continuum",
+      0
+    ]
+  ],
+  "logCount": 2,
+  "logSize": 202,
+  "errorLogCount": 2,
+  "errorLogSize": 202,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-27T14:24:33",
+  "elapsedSeconds": 7
+}

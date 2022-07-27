@@ -1,0 +1,80 @@
+{
+  "id": "4jil2-ahrq",
+  "host": {
+    "id": "ahrq",
+    "which": "https://ahrq.gov/",
+    "what": "Agency for Healthcare Research and Quality"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-27T14:40:07"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-27T14:40:22"
+    }
+  ],
+  "script": {
+    "id": "continuum",
+    "what": "Continuum",
+    "strict": true,
+    "timeLimit": 30,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://ahrq.gov/",
+        "what": "Agency for Healthcare Research and Quality"
+      },
+      {
+        "type": "test",
+        "which": "continuum",
+        "what": "Continuum"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://ahrq.gov/",
+      "what": "Agency for Healthcare Research and Quality",
+      "result": "https://www.ahrq.gov/"
+    },
+    {
+      "type": "test",
+      "which": "continuum",
+      "what": "Level Access Continuum, community edition",
+      "url": "https://www.ahrq.gov/",
+      "result": "NONE"
+    }
+  ],
+  "timeStamp": "4jil2",
+  "startTime": "2022-07-27T14:40:07",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "continuum",
+      0
+    ]
+  ],
+  "logCount": 4,
+  "logSize": 489,
+  "errorLogCount": 3,
+  "errorLogSize": 154,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-27T14:40:22",
+  "elapsedSeconds": 15
+}

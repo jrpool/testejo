@@ -1,0 +1,270 @@
+{
+  "id": "4jil2-ies",
+  "host": {
+    "id": "ies",
+    "which": "https://ies.ed.gov/",
+    "what": "Institute of Education Sciences (IES)"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-27T14:29:24"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-27T14:29:31"
+    }
+  ],
+  "script": {
+    "id": "continuum",
+    "what": "Continuum",
+    "strict": true,
+    "timeLimit": 30,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://ies.ed.gov/",
+        "what": "Institute of Education Sciences (IES)"
+      },
+      {
+        "type": "test",
+        "which": "continuum",
+        "what": "Continuum"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://ies.ed.gov/",
+      "what": "Institute of Education Sciences (IES)",
+      "result": "https://ies.ed.gov/"
+    },
+    {
+      "type": "test",
+      "which": "continuum",
+      "what": "Level Access Continuum, community edition",
+      "url": "https://ies.ed.gov/",
+      "result": [
+        {
+          "engineTestId": 89,
+          "bestPracticeId": 362,
+          "attribute": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<img alt=\" \" src=\"/images/carousel/iesCarousel1.jpg\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[src=\"/images/carousel/iesCarousel1.jpg\"][alt=\" \"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 89,
+          "bestPracticeId": 362,
+          "attribute": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<img alt=\" \" src=\"/images/carousel/iesCarousel2.jpg\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[src=\"/images/carousel/iesCarousel2.jpg\"][alt=\" \"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 89,
+          "bestPracticeId": 362,
+          "attribute": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<img alt=\" \" src=\"/images/carousel/iesCarousel3.jpg\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(3)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[src=\"/images/carousel/iesCarousel3.jpg\"][alt=\" \"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 89,
+          "bestPracticeId": 362,
+          "attribute": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<img alt=\" \" src=\"/images/carousel/iesCarousel4.jpg\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(4)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[src=\"/images/carousel/iesCarousel4.jpg\"][alt=\" \"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 89,
+          "bestPracticeId": 362,
+          "attribute": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<img alt=\" \" src=\"/images/carousel/iesCarousel5.jpg\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(5)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[src=\"/images/carousel/iesCarousel5.jpg\"][alt=\" \"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 118,
+          "bestPracticeId": 338,
+          "attribute": "This input (type=text) element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This input (type=text) element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<input value=\"\" id=\"HFSPubsSearchBox\" name=\"searchstring\" type=\"text\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(3)>*:nth-child(2)>*:nth-child(2)>*:nth-child(3)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperTex": "Specify a descriptive label for the text input.",
+            "fix": {
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "input[type=\"text\"][name=\"searchstring\"][id=\"HFSPubsSearchBox\"][value=\"\"]",
+            "attNo": 4
+          }
+        },
+        {
+          "engineTestId": 118,
+          "bestPracticeId": 338,
+          "attribute": "This input (type=text) element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This input (type=text) element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<input name=\"Search\" id=\"HFSSearchBox\" value=\"Search\" type=\"text\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(2)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperTex": "Specify a descriptive label for the text input.",
+            "fix": {
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "input[type=\"text\"][value=\"Search\"][id=\"HFSSearchBox\"][name=\"Search\"]",
+            "attNo": 4
+          }
+        },
+        {
+          "engineTestId": 228,
+          "bestPracticeId": 523,
+          "attribute": "This iframe element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This iframe element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<iframe style=\" border: 1px solid #333;\" allowfullscreen=\"\" frameborder=\"0\" src=\"https://www.youtube.com/embed/l-aBA0GklOQ?rel=0\" height=\"173\" width=\"308\"></iframe>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(5)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Specify a descriptive label for the iframe.",
+            "fix": {
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "iframe[width=\"308\"][height=\"173\"][src=\"https://www.youtube.com/embed/l-aBA0GklOQ?rel=0\"][frameborder=\"0\"][allowfullscreen=\"\"]",
+            "attNo": 6
+          }
+        }
+      ]
+    }
+  ],
+  "timeStamp": "4jil2",
+  "startTime": "2022-07-27T14:29:24",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "continuum",
+      0
+    ]
+  ],
+  "logCount": 4,
+  "logSize": 1239,
+  "errorLogCount": 0,
+  "errorLogSize": 0,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-27T14:29:31",
+  "elapsedSeconds": 6
+}

@@ -1,0 +1,600 @@
+{
+  "id": "4jil2-fhfa",
+  "host": {
+    "id": "fhfa",
+    "which": "https://www.fhfa.gov/",
+    "what": "Federal Housing Finance Agency (FHFA)"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-27T14:27:47"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-27T14:27:54"
+    }
+  ],
+  "script": {
+    "id": "continuum",
+    "what": "Continuum",
+    "strict": true,
+    "timeLimit": 30,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.fhfa.gov/",
+        "what": "Federal Housing Finance Agency (FHFA)"
+      },
+      {
+        "type": "test",
+        "which": "continuum",
+        "what": "Continuum"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.fhfa.gov/",
+      "what": "Federal Housing Finance Agency (FHFA)",
+      "result": "https://www.fhfa.gov/"
+    },
+    {
+      "type": "test",
+      "which": "continuum",
+      "what": "Level Access Continuum, community edition",
+      "url": "https://www.fhfa.gov/",
+      "result": [
+        {
+          "engineTestId": 89,
+          "bestPracticeId": 362,
+          "attribute": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<img src=\"https://www.fhfa.gov/Slider%20Images/May-2022-HPI.png\" id=\"ctl00_ctl40_g_440fb51e_1c6d_4b1e_8363_109ce117db56_rptImageSlider_ctl00_imgSliderImage\">",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(12)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[id=\"ctl00_ctl40_g_440fb51e_1c6d_4b1e_8363_109ce117db56_rptImageSlider_ctl00_imgSliderImage\"][src=\"https://www.fhfa.gov/Slider%20Images/May-2022-HPI.png\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 89,
+          "bestPracticeId": 362,
+          "attribute": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<img src=\"https://www.fhfa.gov/Slider%20Images/FintechBannerHomePage-790x443.jpg\" id=\"ctl00_ctl40_g_440fb51e_1c6d_4b1e_8363_109ce117db56_rptImageSlider_ctl01_imgSliderImage\">",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(12)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[id=\"ctl00_ctl40_g_440fb51e_1c6d_4b1e_8363_109ce117db56_rptImageSlider_ctl01_imgSliderImage\"][src=\"https://www.fhfa.gov/Slider%20Images/FintechBannerHomePage-790x443.jpg\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 89,
+          "bestPracticeId": 362,
+          "attribute": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<img src=\"https://www.fhfa.gov/Slider%20Images/EHFP-Rotator.jpg\" id=\"ctl00_ctl40_g_440fb51e_1c6d_4b1e_8363_109ce117db56_rptImageSlider_ctl02_imgSliderImage\">",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(12)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[id=\"ctl00_ctl40_g_440fb51e_1c6d_4b1e_8363_109ce117db56_rptImageSlider_ctl02_imgSliderImage\"][src=\"https://www.fhfa.gov/Slider%20Images/EHFP-Rotator.jpg\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 89,
+          "bestPracticeId": 362,
+          "attribute": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<img src=\"https://www.fhfa.gov/Slider%20Images/2021-ARTC.png\" id=\"ctl00_ctl40_g_440fb51e_1c6d_4b1e_8363_109ce117db56_rptImageSlider_ctl03_imgSliderImage\">",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(12)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[id=\"ctl00_ctl40_g_440fb51e_1c6d_4b1e_8363_109ce117db56_rptImageSlider_ctl03_imgSliderImage\"][src=\"https://www.fhfa.gov/Slider%20Images/2021-ARTC.png\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 89,
+          "bestPracticeId": 362,
+          "attribute": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<img src=\"https://www.fhfa.gov/Slider%20Images/magnet-web2282022.png\" id=\"ctl00_ctl40_g_440fb51e_1c6d_4b1e_8363_109ce117db56_rptImageSlider_ctl04_imgSliderImage\">",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(12)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[id=\"ctl00_ctl40_g_440fb51e_1c6d_4b1e_8363_109ce117db56_rptImageSlider_ctl04_imgSliderImage\"][src=\"https://www.fhfa.gov/Slider%20Images/magnet-web2282022.png\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 89,
+          "bestPracticeId": 362,
+          "attribute": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<img src=\"https://www.fhfa.gov/Slider%20Images/PAVE%20Task%20Force%20Commitments.jpeg\" id=\"ctl00_ctl40_g_440fb51e_1c6d_4b1e_8363_109ce117db56_rptImageSlider_ctl06_imgSliderImage\">",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(12)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[id=\"ctl00_ctl40_g_440fb51e_1c6d_4b1e_8363_109ce117db56_rptImageSlider_ctl06_imgSliderImage\"][src=\"https://www.fhfa.gov/Slider%20Images/PAVE%20Task%20Force%20Commitments.jpeg\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 89,
+          "bestPracticeId": 362,
+          "attribute": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<img src=\"https://www.fhfa.gov/Slider%20Images/HUD-FHFA-MOU.png\" id=\"ctl00_ctl40_g_440fb51e_1c6d_4b1e_8363_109ce117db56_rptImageSlider_ctl07_imgSliderImage\">",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(12)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(8)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[id=\"ctl00_ctl40_g_440fb51e_1c6d_4b1e_8363_109ce117db56_rptImageSlider_ctl07_imgSliderImage\"][src=\"https://www.fhfa.gov/Slider%20Images/HUD-FHFA-MOU.png\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This LABEL has an id attribute of 'lblsubEmail', which is not unique in the same DOM",
+          "element": "<label style=\"display: none;\" id=\"lblsubEmail\" for=\"inputEmail\">jdoe@email.com</label>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(12)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "label[for=\"inputEmail\"][id=\"lblsubEmail\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This LABEL has an id attribute of 'lblsubEmail', which is not unique in the same DOM",
+          "element": "<label style=\"display: none;\" id=\"lblsubEmail\" for=\"inputEmail\">jdoe@email.com</label>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(12)>*:nth-child(1)>*:nth-child(4)>*:nth-child(2)>*:nth-child(3)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "label[for=\"inputEmail\"][id=\"lblsubEmail\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This INPUT has an id attribute of 'inputEmail', which is not unique in the same DOM",
+          "element": "<input value=\"jdoe@email.com\" name=\"emailAddress\" id=\"inputEmail\" class=\"custom-inputEmail\" type=\"text\">",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(12)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "input[type=\"text\"][class=\"custom-inputEmail\"][id=\"inputEmail\"][name=\"emailAddress\"][value=\"jdoe@email.com\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This INPUT has an id attribute of 'inputEmail', which is not unique in the same DOM",
+          "element": "<input value=\"jdoe@email.com\" name=\"emailAddress\" id=\"inputEmail\" class=\"custom-inputEmail\" type=\"text\">",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(12)>*:nth-child(1)>*:nth-child(4)>*:nth-child(2)>*:nth-child(3)>*:nth-child(1)>*:nth-child(3)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "input[type=\"text\"][class=\"custom-inputEmail\"][id=\"inputEmail\"][name=\"emailAddress\"][value=\"jdoe@email.com\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This INPUT has an id attribute of 'subEmailSubscription', which is not unique in the same DOM",
+          "element": "<input value=\"Subscribe\" id=\"subEmailSubscription\" class=\"custom-btnSubmit\" type=\"submit\">",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(12)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "input[type=\"submit\"][class=\"custom-btnSubmit\"][id=\"subEmailSubscription\"][value=\"Subscribe\"]",
+            "attNo": 4
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This INPUT has an id attribute of 'subEmailSubscription', which is not unique in the same DOM",
+          "element": "<input value=\"Subscribe\" id=\"subEmailSubscription\" class=\"custom-btnSubmit\" type=\"submit\">",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(12)>*:nth-child(1)>*:nth-child(4)>*:nth-child(2)>*:nth-child(3)>*:nth-child(1)>*:nth-child(4)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "input[type=\"submit\"][class=\"custom-btnSubmit\"][id=\"subEmailSubscription\"][value=\"Subscribe\"]",
+            "attNo": 4
+          }
+        },
+        {
+          "engineTestId": 118,
+          "bestPracticeId": 338,
+          "attribute": "This input (type=text) element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This input (type=text) element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<input value=\"jdoe@email.com\" name=\"emailAddress\" id=\"inputEmail\" class=\"custom-inputEmail\" type=\"text\">",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(12)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperTex": "Specify a descriptive label for the text input.",
+            "fix": {
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "input[type=\"text\"][class=\"custom-inputEmail\"][id=\"inputEmail\"][name=\"emailAddress\"][value=\"jdoe@email.com\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 118,
+          "bestPracticeId": 338,
+          "attribute": "This input (type=text) element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This input (type=text) element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<input value=\"jdoe@email.com\" name=\"emailAddress\" id=\"inputEmail\" class=\"custom-inputEmail\" type=\"text\">",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(12)>*:nth-child(1)>*:nth-child(4)>*:nth-child(2)>*:nth-child(3)>*:nth-child(1)>*:nth-child(3)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperTex": "Specify a descriptive label for the text input.",
+            "fix": {
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "input[type=\"text\"][class=\"custom-inputEmail\"][id=\"inputEmail\"][name=\"emailAddress\"][value=\"jdoe@email.com\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg xml:space=\"preserve\" enable-background=\"new 0 0 100 131.3\" viewbox=\"0 0 100 131.3\" y=\"0px\" x=\"0 ... 7,131.3,71.6,131.3z\"></path><circle r=\"14.6\" cy=\"14.6\" cx=\"50.3\" style=\"fill: #fff;\"></circle></svg>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(3)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[x=\"0px\"][y=\"0px\"][viewbox=\"0 0 100 131.3\"][enable-background=\"new 0 0 100 131.3\"]",
+            "attNo": 6
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a href=\"https://www.fhfa.gov/Media/PublicAffairs/Pages/FHFA-HPI-Up-1pt4-Percent-in-May-Up-18pt3-Per ... ng\" id=\"ctl00_ctl40_g_440fb51e_1c6d_4b1e_8363_109ce117db56_rptImageSlider_ctl00_imgSliderImage\"></a>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(12)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[id=\"ctl00_ctl40_g_440fb51e_1c6d_4b1e_8363_109ce117db56_rptImageSlider_ctl00_lnkImage\"][href=\"https://www.fhfa.gov/Media/PublicAffairs/Pages/FHFA-HPI-Up-1pt4-Percent-in-May-Up-18pt3-Percent-from-Last-Year.aspx\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a href=\"https://www.fhfa.gov/PolicyProgramsResearch/Programs/Pages/FinancialTechnology.aspx\" id=\"ct ... pg\" id=\"ctl00_ctl40_g_440fb51e_1c6d_4b1e_8363_109ce117db56_rptImageSlider_ctl01_imgSliderImage\"></a>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(12)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[id=\"ctl00_ctl40_g_440fb51e_1c6d_4b1e_8363_109ce117db56_rptImageSlider_ctl01_lnkImage\"][href=\"https://www.fhfa.gov/PolicyProgramsResearch/Programs/Pages/FinancialTechnology.aspx\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a href=\"https://www.fhfa.gov/PolicyProgramsResearch/Programs/Pages/Fair-Lending-Oversight-Program.a ... pg\" id=\"ctl00_ctl40_g_440fb51e_1c6d_4b1e_8363_109ce117db56_rptImageSlider_ctl02_imgSliderImage\"></a>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(12)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[id=\"ctl00_ctl40_g_440fb51e_1c6d_4b1e_8363_109ce117db56_rptImageSlider_ctl02_lnkImage\"][href=\"https://www.fhfa.gov/PolicyProgramsResearch/Programs/Pages/Fair-Lending-Oversight-Program.aspx\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a href=\"https://www.fhfa.gov/Media/PublicAffairs/Pages/FHFA-Issues-2021-Report-to-Congress.aspx\" id ... ng\" id=\"ctl00_ctl40_g_440fb51e_1c6d_4b1e_8363_109ce117db56_rptImageSlider_ctl03_imgSliderImage\"></a>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(12)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[id=\"ctl00_ctl40_g_440fb51e_1c6d_4b1e_8363_109ce117db56_rptImageSlider_ctl03_lnkImage\"][href=\"https://www.fhfa.gov/Media/PublicAffairs/Pages/FHFA-Issues-2021-Report-to-Congress.aspx\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a href=\"https://www.fhfa.gov/Media/PublicAffairs/Pages/FHFA-Announces-More-than1pt1-Billion-for-AH- ... ng\" id=\"ctl00_ctl40_g_440fb51e_1c6d_4b1e_8363_109ce117db56_rptImageSlider_ctl04_imgSliderImage\"></a>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(12)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(5)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[id=\"ctl00_ctl40_g_440fb51e_1c6d_4b1e_8363_109ce117db56_rptImageSlider_ctl04_lnkImage\"][href=\"https://www.fhfa.gov/Media/PublicAffairs/Pages/FHFA-Announces-More-than1pt1-Billion-for-AH-Programs.aspx\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a href=\"https://www.fhfa.gov/Media/PublicAffairs/Pages/Statement-FHFA-Acting-Director-SLT-on-the-Fi ... eg\" id=\"ctl00_ctl40_g_440fb51e_1c6d_4b1e_8363_109ce117db56_rptImageSlider_ctl06_imgSliderImage\"></a>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(12)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(7)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[id=\"ctl00_ctl40_g_440fb51e_1c6d_4b1e_8363_109ce117db56_rptImageSlider_ctl06_lnkImage\"][href=\"https://www.fhfa.gov/Media/PublicAffairs/Pages/Statement-FHFA-Acting-Director-SLT-on-the-Final-Report-from-the-Interagency-Task-Force-on-PAVE.aspx\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a href=\"https://www.fhfa.gov/Media/PublicAffairs/Pages/HUD-AND-FHFA-Announce-Collaboration-to-Advan ... ng\" id=\"ctl00_ctl40_g_440fb51e_1c6d_4b1e_8363_109ce117db56_rptImageSlider_ctl07_imgSliderImage\"></a>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(12)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(8)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[id=\"ctl00_ctl40_g_440fb51e_1c6d_4b1e_8363_109ce117db56_rptImageSlider_ctl07_lnkImage\"][href=\"https://www.fhfa.gov/Media/PublicAffairs/Pages/HUD-AND-FHFA-Announce-Collaboration-to-Advance-Fair-Housing-and-Fair-Lending-Enforcement.aspx\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a href=\"/Homeownersbuyer/MortgageAssistance/Pages/Coronavirus-Assistance-Information.aspx\"></a>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(12)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"/Homeownersbuyer/MortgageAssistance/Pages/Coronavirus-Assistance-Information.aspx\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 387,
+          "bestPracticeId": 375,
+          "attribute": "This element does not contain one or more: th elements (without an ARIA-assigned role); th elements with a role set to: rowheader | columnheader; or td elements with a role set to: rowheader | columnheader",
+          "attributeDetail": "This TABLE does not contain one or more: th elements (without an ARIA-assigned role); th elements with a role set to: rowheader | columnheader; or td elements with a role set to: rowheader | columnheader",
+          "element": "<table style=\"width: 100%; height: 100%;\" cellspacing=\"0\" class=\"ms-rteTable-0\"><tbody><tr class=\"ms ... <td style=\"width: 25%; height: 100%;\" class=\"ms-rteTableOddCol-0\"><br><br></td></tr></tbody></table>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(12)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(5)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "table[class=\"ms-rteTable-0\"][cellspacing=\"0\"]",
+            "attNo": 3
+          }
+        }
+      ]
+    }
+  ],
+  "timeStamp": "4jil2",
+  "startTime": "2022-07-27T14:27:47",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "continuum",
+      0
+    ]
+  ],
+  "logCount": 1,
+  "logSize": 69,
+  "errorLogCount": 1,
+  "errorLogSize": 69,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-27T14:27:54",
+  "elapsedSeconds": 7
+}

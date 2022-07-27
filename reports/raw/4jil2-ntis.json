@@ -1,0 +1,148 @@
+{
+  "id": "4jil2-ntis",
+  "host": {
+    "id": "ntis",
+    "which": "https://www.ntis.gov/",
+    "what": "National Technical Information Service (NTIS)"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-27T14:33:30"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-27T14:33:33"
+    }
+  ],
+  "script": {
+    "id": "continuum",
+    "what": "Continuum",
+    "strict": true,
+    "timeLimit": 30,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.ntis.gov/",
+        "what": "National Technical Information Service (NTIS)"
+      },
+      {
+        "type": "test",
+        "which": "continuum",
+        "what": "Continuum"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.ntis.gov/",
+      "what": "National Technical Information Service (NTIS)",
+      "result": "https://www.ntis.gov/"
+    },
+    {
+      "type": "test",
+      "which": "continuum",
+      "what": "Level Access Continuum, community edition",
+      "url": "https://www.ntis.gov/",
+      "result": [
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This A has an id attribute of 'idDataMeeting2', which is not unique in the same DOM",
+          "element": "<a href=\"/external_link_landing_page.xhtml?url=https%3A%2F%2Fdata-innovation-day-ntis.eventbrite.com ... eight=\"315\" alt=\"Data Meeting 2\" src=\"/assets/images/media/NTIS-Banner.gif\" id=\"idDataMeeting2\"></a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(4)>*:nth-child(2)>*:nth-child(2)>*:nth-child(6)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "a[id=\"idDataMeeting2\"][name=\"idDataMeeting2\"][href=\"/external_link_landing_page.xhtml?url=https%3A%2F%2Fdata-innovation-day-ntis.eventbrite.com.html\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This IMG has an id attribute of 'idDataMeeting2', which is not unique in the same DOM",
+          "element": "<img width=\"560\" height=\"315\" alt=\"Data Meeting 2\" src=\"/assets/images/media/NTIS-Banner.gif\" id=\"idDataMeeting2\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(4)>*:nth-child(2)>*:nth-child(2)>*:nth-child(6)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "img[id=\"idDataMeeting2\"][src=\"/assets/images/media/NTIS-Banner.gif\"][alt=\"Data Meeting 2\"][height=\"315\"][width=\"560\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 101,
+          "bestPracticeId": 429,
+          "attribute": "This element does not have a lang attribute",
+          "attributeDetail": "This HTML does not have a lang attribute",
+          "element": "<html xmlns=\"http://www.w3.org/1999/xhtml\"><head><script type=\"text/javascript\"></script><script typ ... ><a href=\"/about/disclaimer.xhtml\">Disclaimer</a></li><li><a href=\"/about/advisorybd/index.xhtml\">Ad",
+          "testResult": 0,
+          "path": "html",
+          "fixType": {
+            "fixType": 4,
+            "domSpec": false,
+            "helperText": "Enter the appropriate language value for the page.",
+            "fix": {
+              "lang": null
+            }
+          },
+          "fingerprint": {
+            "attNo": 0,
+            "css": "html",
+            "version": 2
+          }
+        },
+        {
+          "engineTestId": 863,
+          "bestPracticeId": 2440,
+          "attribute": "This input should not rely on text in the placeholder attribute for an accessible name",
+          "attributeDetail": "This input should not rely on text in the placeholder attribute for an accessible name",
+          "element": "<input name=\"searchText\" placeholder=\"Search\" id=\"search-box\" type=\"search\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(3)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "input[type=\"search\"][id=\"search-box\"][placeholder=\"Search\"][name=\"searchText\"]",
+            "attNo": 4
+          }
+        }
+      ]
+    }
+  ],
+  "timeStamp": "4jil2",
+  "startTime": "2022-07-27T14:33:30",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "continuum",
+      0
+    ]
+  ],
+  "logCount": 0,
+  "logSize": 0,
+  "errorLogCount": 0,
+  "errorLogSize": 0,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-27T14:33:33",
+  "elapsedSeconds": 3
+}

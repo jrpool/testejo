@@ -1,0 +1,439 @@
+{
+  "id": "4jil2-ustr",
+  "host": {
+    "id": "ustr",
+    "which": "https://ustr.gov/",
+    "what": "Office of the United States Trade Representative (USTR)"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-27T14:35:22"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-27T14:35:28"
+    }
+  ],
+  "script": {
+    "id": "continuum",
+    "what": "Continuum",
+    "strict": true,
+    "timeLimit": 30,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://ustr.gov/",
+        "what": "Office of the United States Trade Representative (USTR)"
+      },
+      {
+        "type": "test",
+        "which": "continuum",
+        "what": "Continuum"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://ustr.gov/",
+      "what": "Office of the United States Trade Representative (USTR)",
+      "result": "https://ustr.gov/"
+    },
+    {
+      "type": "test",
+      "which": "continuum",
+      "what": "Level Access Continuum, community edition",
+      "url": "https://ustr.gov/",
+      "result": [
+        {
+          "engineTestId": 22,
+          "bestPracticeId": 967,
+          "attribute": "This element should not contain input elements (without an assigned ARIA role and not type=hidden), keygen elements (without an assigned ARIA role), select elements (without an assigned ARIA role), textarea elements (without an assigned ARIA role) or button elements (without an assigned ARIA role)",
+          "attributeDetail": "This A should not contain input elements (without an assigned ARIA role and not type=hidden), keygen elements (without an assigned ARIA role), select elements (without an assigned ARIA role), textarea elements (without an assigned ARIA role) or button elements (without an assigned ARIA role)",
+          "element": "<a href=\"/about-us/policy-offices/press-office/speeches-and-remarks/2022/june/remarks-ambassador-kat ... ton class=\"btn btn-default \" type=\"button\">Read More<i class=\"bi bi-chevron-right\"></i></button></a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(2)>*:nth-child(4)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"/about-us/policy-offices/press-office/speeches-and-remarks/2022/june/remarks-ambassador-katherine-tai-during-opening-session-wto-12th-ministerial-conference\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 89,
+          "bestPracticeId": 362,
+          "attribute": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<img src=\"/themes/custom/ustr2021/images/nav-sep.png\" style=\"position:absolute;position: relative;height:100%;display: inline-flex;transform:translateX(-220px);\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(6)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[src=\"/themes/custom/ustr2021/images/nav-sep.png\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 89,
+          "bestPracticeId": 362,
+          "attribute": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<img src=\"/themes/custom/ustr2021/images/nav-sep.png\" style=\"position:absolute;position: relative;height:100%;display: inline-flex;transform:translateX(-220px);\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(6)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[src=\"/themes/custom/ustr2021/images/nav-sep.png\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 89,
+          "bestPracticeId": 362,
+          "attribute": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<img src=\"/sites/default/files/2022-06/F20220517ES-00249.png\" style=\"width:100%;\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(2)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[src=\"/sites/default/files/2022-06/F20220517ES-00249.png\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This LI has an id attribute of 'search', which is not unique in the same DOM",
+          "element": "<li class=\"text-right\" id=\"search\"><span><form accept-charset=\"utf-8\" method=\"get\" role=\"search\" act ... emes/custom/ustr2021/images/search-icon.png\" width=\"30px;\" alt=\"search\"></button></form></span></li>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(7)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "li[id=\"search\"][class=\"text-right\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This LI has an id attribute of 'search', which is not unique in the same DOM",
+          "element": "<li class=\"text-right\" id=\"search\"><span><form accept-charset=\"utf-8\" method=\"get\" role=\"search\" act ... emes/custom/ustr2021/images/search-icon.png\" width=\"30px;\" alt=\"search\"></button></form></span></li>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(7)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "li[id=\"search\"][class=\"text-right\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This H2 has an id attribute of 'news-press-releases-option', which is not unique in the same DOM",
+          "element": "<h2 class=\"news-menu-option active\" id=\"news-press-releases-option\">Press Releases</h2>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(2)>*:nth-child(6)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "h2[id=\"news-press-releases-option\"][class=\"news-menu-option active\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This H2 has an id attribute of 'news-press-releases-option', which is not unique in the same DOM",
+          "element": "<h2 class=\"news-menu-option active\" id=\"news-press-releases-option\">Press Releases</h2>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(2)>*:nth-child(6)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "h2[id=\"news-press-releases-option\"][class=\"news-menu-option active\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This H2 has an id attribute of 'news-speeches-option', which is not unique in the same DOM",
+          "element": "<h2 class=\"news-menu-option\" id=\"news-speeches-option\">Speeches and Remarks</h2>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(2)>*:nth-child(6)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "h2[id=\"news-speeches-option\"][class=\"news-menu-option\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This H2 has an id attribute of 'news-speeches-option', which is not unique in the same DOM",
+          "element": "<h2 class=\"news-menu-option\" id=\"news-speeches-option\">Speeches and Remarks</h2>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(2)>*:nth-child(6)>*:nth-child(1)>*:nth-child(4)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "h2[id=\"news-speeches-option\"][class=\"news-menu-option\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This H2 has an id attribute of 'news-blogs-option', which is not unique in the same DOM",
+          "element": "<h2 class=\"news-menu-option\" id=\"news-blogs-option\">Blogs and Op-eds</h2>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(2)>*:nth-child(6)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "h2[id=\"news-blogs-option\"][class=\"news-menu-option\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This H2 has an id attribute of 'news-blogs-option', which is not unique in the same DOM",
+          "element": "<h2 class=\"news-menu-option\" id=\"news-blogs-option\">Blogs and Op-eds</h2>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(2)>*:nth-child(6)>*:nth-child(1)>*:nth-child(4)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "h2[id=\"news-blogs-option\"][class=\"news-menu-option\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This H2 has an id attribute of 'initiatives-initiatives-first-option', which is not unique in the same DOM",
+          "element": "<h2 class=\"initiatives-menu-option active\" id=\"initiatives-initiatives-first-option\">Fighting for Workers</h2>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(2)>*:nth-child(8)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "h2[id=\"initiatives-initiatives-first-option\"][class=\"initiatives-menu-option active\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This H2 has an id attribute of 'initiatives-initiatives-first-option', which is not unique in the same DOM",
+          "element": "<h2 class=\"initiatives-menu-option active\" id=\"initiatives-initiatives-first-option\">Fighting for Workers</h2>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(2)>*:nth-child(8)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "h2[id=\"initiatives-initiatives-first-option\"][class=\"initiatives-menu-option active\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This H2 has an id attribute of 'initiatives-initiatives-second-option', which is not unique in the same DOM",
+          "element": "<h2 class=\"initiatives-menu-option\" id=\"initiatives-initiatives-second-option\">Supporting American Businesses</h2>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(2)>*:nth-child(8)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "h2[id=\"initiatives-initiatives-second-option\"][class=\"initiatives-menu-option\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This H2 has an id attribute of 'initiatives-initiatives-second-option', which is not unique in the same DOM",
+          "element": "<h2 class=\"initiatives-menu-option\" id=\"initiatives-initiatives-second-option\">Supporting American Businesses</h2>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(2)>*:nth-child(8)>*:nth-child(1)>*:nth-child(4)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "h2[id=\"initiatives-initiatives-second-option\"][class=\"initiatives-menu-option\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 99,
+          "bestPracticeId": 464,
+          "attribute": "This element does not have a ul element (without an ARIA-assigned role); ol element (without an ARIA-assigned role); or element with a role set to the value: list as a parent",
+          "attributeDetail": "This LI does not have a ul element (without an ARIA-assigned role); ol element (without an ARIA-assigned role); or element with a role set to the value: list as a parent",
+          "element": "<li class=\"featured-news-subject col-lg-6\"><div class=\"views-field views-field-field-date\"><div clas ... nity Act Ministerial Meeting During Africa Leaders Summit on December 13, 2022</a></span></div></li>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(2)>*:nth-child(6)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "li[class=\"featured-news-subject col-lg-6\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 99,
+          "bestPracticeId": 464,
+          "attribute": "This element does not have a ul element (without an ARIA-assigned role); ol element (without an ARIA-assigned role); or element with a role set to the value: list as a parent",
+          "attributeDetail": "This LI does not have a ul element (without an ARIA-assigned role); ol element (without an ARIA-assigned role); or element with a role set to the value: list as a parent",
+          "element": "<li class=\"featured-initiatives-subject col-lg-6\"><div class=\"views-field views-field-field-date\"><d ... -kingdom\">Tai, Raimondo Statements on 232 Tariff Agreement with United Kingdom</a></span></div></li>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(2)>*:nth-child(8)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "li[class=\"featured-initiatives-subject col-lg-6\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg viewbox=\"0 0 66 66\" height=\"96px\" width=\"96px\" class=\"goog-te-spinner\" xmlns=\"http://www.w3.org ... 33\" stroke-linecap=\"round\" stroke-width=\"6\" fill=\"none\" class=\"goog-te-spinner-path\"></circle></svg>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(6)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[class=\"goog-te-spinner\"][width=\"96px\"][height=\"96px\"][viewbox=\"0 0 66 66\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a href=\"/about-us/policy-offices/press-office/speeches-and-remarks/2022/june/remarks-ambassador-kat ... ton class=\"btn btn-default \" type=\"button\">Read More<i class=\"bi bi-chevron-right\"></i></button></a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(2)>*:nth-child(4)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"/about-us/policy-offices/press-office/speeches-and-remarks/2022/june/remarks-ambassador-katherine-tai-during-opening-session-wto-12th-ministerial-conference\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 863,
+          "bestPracticeId": 2440,
+          "attribute": "This input should not rely on text in the placeholder attribute for an accessible name",
+          "attributeDetail": "This input should not rely on text in the placeholder attribute for an accessible name",
+          "element": "<input placeholder=\"Email Address\" id=\"mce-EMAIL\" name=\"EMAIL\" value=\"\" type=\"email\" class=\"form-control form-control-lg\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(2)>*:nth-child(10)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "input[class=\"form-control form-control-lg\"][type=\"email\"][value=\"\"][name=\"EMAIL\"][id=\"mce-EMAIL\"][placeholder=\"Email Address\"]",
+            "attNo": 6
+          }
+        }
+      ]
+    }
+  ],
+  "timeStamp": "4jil2",
+  "startTime": "2022-07-27T14:35:22",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "continuum",
+      0
+    ]
+  ],
+  "logCount": 3,
+  "logSize": 945,
+  "errorLogCount": 1,
+  "errorLogSize": 101,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-27T14:35:28",
+  "elapsedSeconds": 5
+}

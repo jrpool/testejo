@@ -1,0 +1,298 @@
+{
+  "id": "4jil2-nws",
+  "host": {
+    "id": "nws",
+    "which": "https://www.weather.gov/",
+    "what": "National Weather Service"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-27T14:33:45"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-27T14:33:48"
+    }
+  ],
+  "script": {
+    "id": "continuum",
+    "what": "Continuum",
+    "strict": true,
+    "timeLimit": 30,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.weather.gov/",
+        "what": "National Weather Service"
+      },
+      {
+        "type": "test",
+        "which": "continuum",
+        "what": "Continuum"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.weather.gov/",
+      "what": "National Weather Service",
+      "result": "https://www.weather.gov/"
+    },
+    {
+      "type": "test",
+      "which": "continuum",
+      "what": "Level Access Continuum, community edition",
+      "url": "https://www.weather.gov/",
+      "result": [
+        {
+          "engineTestId": 89,
+          "bestPracticeId": 362,
+          "attribute": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<img src=\"/css/images/news-important.jpg\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(4)>*:nth-child(2)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[src=\"/css/images/news-important.jpg\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 89,
+          "bestPracticeId": 362,
+          "attribute": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<img src=\"/images/nws/wrn.gif\" style=\"width:140px;\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(4)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[src=\"/images/nws/wrn.gif\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 89,
+          "bestPracticeId": 362,
+          "attribute": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<img usemap=\"#US_large_imagemap_800_500\" src=\"//forecast.weather.gov/wwamap/png/US.png\" id=\"us\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(4)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(3)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[id=\"us\"][src=\"//forecast.weather.gov/wwamap/png/US.png\"][usemap=\"#US_large_imagemap_800_500\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 89,
+          "bestPracticeId": 362,
+          "attribute": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<img usemap=\"#alaska_imagemap_130_115\" src=\"//forecast.weather.gov/wwamap/png/ak.png\" id=\"alaska\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(4)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(3)>*:nth-child(3)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[id=\"alaska\"][src=\"//forecast.weather.gov/wwamap/png/ak.png\"][usemap=\"#alaska_imagemap_130_115\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 89,
+          "bestPracticeId": 362,
+          "attribute": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<img usemap=\"#hawaii_imagemap\" src=\"//weather.gov/wwamap/png/hi.png\" id=\"hawaii\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(4)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(3)>*:nth-child(3)>*:nth-child(1)>*:nth-child(3)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[id=\"hawaii\"][src=\"//weather.gov/wwamap/png/hi.png\"][usemap=\"#hawaii_imagemap\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This MAP has an id attribute of 'alaska_imagemap_130_115', which is not unique in the same DOM",
+          "element": "<map name=\"alaska_imagemap_130_115\" id=\"alaska_imagemap_130_115\"><area alt=\"Juneau, AK\" title=\"Junea ... es North and east of 144 degrees West\" href=\"https://www.weather.gov/ajk\" coords=\"81,80,84,82,87,84,",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(4)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(3)>*:nth-child(3)>*:nth-child(1)>*:nth-child(5)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "map[id=\"alaska_imagemap_130_115\"][name=\"alaska_imagemap_130_115\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This MAP has an id attribute of 'alaska_imagemap_130_115', which is not unique in the same DOM",
+          "element": "<map name=\"alaska_imagemap_130_115\" id=\"alaska_imagemap_130_115\"><area alt=\"Juneau, AK\" title=\"Junea ... \" coords=\"81,80,84,82,87,84,89,87,90,89,92,92,94,96,94,98,92,98,90,98,79,98,79,80\" shape=\"poly\"><are",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(4)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(3)>*:nth-child(3)>*:nth-child(1)>*:nth-child(6)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "map[id=\"alaska_imagemap_130_115\"][name=\"alaska_imagemap_130_115\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 101,
+          "bestPracticeId": 429,
+          "attribute": "This element does not have a lang attribute",
+          "attributeDetail": "This HTML does not have a lang attribute",
+          "element": "<html xmlns=\"http://www.w3.org/1999/xhtml\"><head>\n        <link href=\"http://purl.org/dc/elements/1. ... rc=\"/css/images/header_doc.png\"></a><a title=\"National Oceanic and Atmospheric Administration\" class",
+          "testResult": 0,
+          "path": "html",
+          "fixType": {
+            "fixType": 4,
+            "domSpec": false,
+            "helperText": "Enter the appropriate language value for the page.",
+            "fix": {
+              "lang": null
+            }
+          },
+          "fingerprint": {
+            "attNo": 0,
+            "css": "html",
+            "version": 2
+          }
+        },
+        {
+          "engineTestId": 114,
+          "bestPracticeId": 338,
+          "attribute": "This select element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This select element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<select name=\"menu\" size=\"1\"><option value=\"http://alerts.weather.gov\">Warnings By State</option><op ... weather.gov/cap/oh.php?x=1\">Ohio</option><option value=\"http://alerts.weather.gov/cap/ok.php?x=1\">Ok",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(4)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(3)>*:nth-child(3)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Specify a descriptive label for the select.",
+            "fix": {
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "select[size=\"1\"][name=\"menu\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a href=\"/wrn/\"><img src=\"/images/nws/wrn.gif\" style=\"width:140px;\"></a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(4)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"/wrn/\"]",
+            "attNo": 1
+          }
+        }
+      ]
+    }
+  ],
+  "timeStamp": "4jil2",
+  "startTime": "2022-07-27T14:33:45",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "continuum",
+      0
+    ]
+  ],
+  "logCount": 0,
+  "logSize": 0,
+  "errorLogCount": 0,
+  "errorLogSize": 0,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-27T14:33:48",
+  "elapsedSeconds": 3
+}

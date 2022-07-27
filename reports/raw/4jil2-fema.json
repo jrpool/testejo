@@ -1,0 +1,111 @@
+{
+  "id": "4jil2-fema",
+  "host": {
+    "id": "fema",
+    "which": "https://www.fema.gov/",
+    "what": "Federal Emergency Management Agency (FEMA)"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-27T14:27:36"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-27T14:27:41"
+    }
+  ],
+  "script": {
+    "id": "continuum",
+    "what": "Continuum",
+    "strict": true,
+    "timeLimit": 30,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.fema.gov/",
+        "what": "Federal Emergency Management Agency (FEMA)"
+      },
+      {
+        "type": "test",
+        "which": "continuum",
+        "what": "Continuum"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.fema.gov/",
+      "what": "Federal Emergency Management Agency (FEMA)",
+      "result": "https://www.fema.gov/"
+    },
+    {
+      "type": "test",
+      "which": "continuum",
+      "what": "Level Access Continuum, community edition",
+      "url": "https://www.fema.gov/",
+      "result": [
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This DIV has an id attribute of 'logo', which is not unique in the same DOM",
+          "element": "<div id=\"logo\" class=\"usa-logo\"><a aria-label=\"Home\" title=\"FEMA logo\" accesskey=\"1\" href=\"/\" class= ... mg alt=\"FEMA Logo\" src=\"/profiles/femad8_gov/themes/fema_uswds/images/fema-logo-blue.svg\"></a></div>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[class=\"usa-logo\"][id=\"logo\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This IMG has an id attribute of 'logo', which is not unique in the same DOM",
+          "element": "<img src=\"/profiles/femad8_gov/themes/fema_uswds/images/fema-logo-blue.svg\" alt=\" Logo\" id=\"logo\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "img[id=\"logo\"][alt=\" Logo\"][src=\"/profiles/femad8_gov/themes/fema_uswds/images/fema-logo-blue.svg\"]",
+            "attNo": 3
+          }
+        }
+      ]
+    }
+  ],
+  "timeStamp": "4jil2",
+  "startTime": "2022-07-27T14:27:36",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "continuum",
+      0
+    ]
+  ],
+  "logCount": 2,
+  "logSize": 202,
+  "errorLogCount": 2,
+  "errorLogSize": 202,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-27T14:27:41",
+  "elapsedSeconds": 5
+}

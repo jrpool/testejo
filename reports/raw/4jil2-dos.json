@@ -1,0 +1,405 @@
+{
+  "id": "4jil2-dos",
+  "host": {
+    "id": "dos",
+    "which": "https://www.state.gov/",
+    "what": "Department of State (DOS)"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-27T14:24:56"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-27T14:25:05"
+    }
+  ],
+  "script": {
+    "id": "continuum",
+    "what": "Continuum",
+    "strict": true,
+    "timeLimit": 30,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.state.gov/",
+        "what": "Department of State (DOS)"
+      },
+      {
+        "type": "test",
+        "which": "continuum",
+        "what": "Continuum"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.state.gov/",
+      "what": "Department of State (DOS)",
+      "result": "https://www.state.gov/"
+    },
+    {
+      "type": "test",
+      "which": "continuum",
+      "what": "Level Access Continuum, community edition",
+      "url": "https://www.state.gov/",
+      "result": [
+        {
+          "engineTestId": 37,
+          "bestPracticeId": 1626,
+          "attribute": "The role attribute value given to this element is not allowed.  The element's role attribute should be set to one of the following text values: button | checkbox | menuitem | menuitemcheckbox | menuitemradio | radio | tab | switch | treeitem; or the role attribute can be removed",
+          "attributeDetail": "The role attribute value of 'heading' given to this A is not allowed.  The element's role attribute should be set to one of the following text values: button | checkbox | menuitem | menuitemcheckbox | menuitemradio | radio | tab | switch | treeitem; or the role attribute can be removed",
+          "element": "<a tabindex=\"0\" aria-selected=\"false\" aria-controls=\"tab-1\" aria-level=\"3\" role=\"heading\" href=\"#tab ... \"https://www.state.gov/wp-content/uploads/2018/07/guyana-flag.gif\" height=\"48\" width=\"72\">Guyana</a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "a[id=\"tabcontrol-1\"][href=\"#tab-1\"][role=\"heading\"][aria-level=\"3\"][aria-controls=\"tab-1\"][aria-selected=\"false\"][tabindex=\"0\"]",
+            "attNo": 7
+          }
+        },
+        {
+          "engineTestId": 37,
+          "bestPracticeId": 1626,
+          "attribute": "The role attribute value given to this element is not allowed.  The element's role attribute should be set to one of the following text values: button | checkbox | menuitem | menuitemcheckbox | menuitemradio | radio | tab | switch | treeitem; or the role attribute can be removed",
+          "attributeDetail": "The role attribute value of 'heading' given to this A is not allowed.  The element's role attribute should be set to one of the following text values: button | checkbox | menuitem | menuitemcheckbox | menuitemradio | radio | tab | switch | treeitem; or the role attribute can be removed",
+          "element": "<a tabindex=\"0\" aria-selected=\"false\" aria-controls=\"tab-2\" aria-level=\"3\" role=\"heading\" href=\"#tab ... rc=\"https://www.state.gov/wp-content/uploads/2018/07/ja-lgflag.gif\" height=\"48\" width=\"72\">Japan</a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "a[id=\"tabcontrol-2\"][href=\"#tab-2\"][role=\"heading\"][aria-level=\"3\"][aria-controls=\"tab-2\"][aria-selected=\"false\"][tabindex=\"0\"]",
+            "attNo": 7
+          }
+        },
+        {
+          "engineTestId": 37,
+          "bestPracticeId": 1626,
+          "attribute": "The role attribute value given to this element is not allowed.  The element's role attribute should be set to one of the following text values: button | checkbox | menuitem | menuitemcheckbox | menuitemradio | radio | tab | switch | treeitem; or the role attribute can be removed",
+          "attributeDetail": "The role attribute value of 'heading' given to this A is not allowed.  The element's role attribute should be set to one of the following text values: button | checkbox | menuitem | menuitemcheckbox | menuitemradio | radio | tab | switch | treeitem; or the role attribute can be removed",
+          "element": "<a tabindex=\"0\" aria-selected=\"false\" aria-controls=\"tab-3\" aria-level=\"3\" role=\"heading\" href=\"#tab ... tps://www.state.gov/wp-content/uploads/2018/07/ks-lgflag.gif\" height=\"48\" width=\"72\">South Korea</a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "a[id=\"tabcontrol-3\"][href=\"#tab-3\"][role=\"heading\"][aria-level=\"3\"][aria-controls=\"tab-3\"][aria-selected=\"false\"][tabindex=\"0\"]",
+            "attNo": 7
+          }
+        },
+        {
+          "engineTestId": 37,
+          "bestPracticeId": 1626,
+          "attribute": "The role attribute value given to this element is not allowed.  The element's role attribute should be set to one of the following text values: button | checkbox | menuitem | menuitemcheckbox | menuitemradio | radio | tab | switch | treeitem; or the role attribute can be removed",
+          "attributeDetail": "The role attribute value of 'heading' given to this A is not allowed.  The element's role attribute should be set to one of the following text values: button | checkbox | menuitem | menuitemcheckbox | menuitemradio | radio | tab | switch | treeitem; or the role attribute can be removed",
+          "element": "<a tabindex=\"0\" aria-controls=\"tab-1\" href=\"#policy-tab-1\" aria-level=\"3\" role=\"heading\" id=\"policy-tabcontrol-1\">Human Rights and Democracy</a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "a[id=\"policy-tabcontrol-1\"][role=\"heading\"][aria-level=\"3\"][href=\"#policy-tab-1\"][aria-controls=\"tab-1\"][tabindex=\"0\"]",
+            "attNo": 6
+          }
+        },
+        {
+          "engineTestId": 37,
+          "bestPracticeId": 1626,
+          "attribute": "The role attribute value given to this element is not allowed.  The element's role attribute should be set to one of the following text values: button | checkbox | menuitem | menuitemcheckbox | menuitemradio | radio | tab | switch | treeitem; or the role attribute can be removed",
+          "attributeDetail": "The role attribute value of 'heading' given to this A is not allowed.  The element's role attribute should be set to one of the following text values: button | checkbox | menuitem | menuitemcheckbox | menuitemradio | radio | tab | switch | treeitem; or the role attribute can be removed",
+          "element": "<a tabindex=\"0\" aria-controls=\"tab-2\" href=\"#policy-tab-2\" aria-level=\"3\" role=\"heading\" id=\"policy-tabcontrol-2\">Global Health</a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "a[id=\"policy-tabcontrol-2\"][role=\"heading\"][aria-level=\"3\"][href=\"#policy-tab-2\"][aria-controls=\"tab-2\"][tabindex=\"0\"]",
+            "attNo": 6
+          }
+        },
+        {
+          "engineTestId": 37,
+          "bestPracticeId": 1626,
+          "attribute": "The role attribute value given to this element is not allowed.  The element's role attribute should be set to one of the following text values: button | checkbox | menuitem | menuitemcheckbox | menuitemradio | radio | tab | switch | treeitem; or the role attribute can be removed",
+          "attributeDetail": "The role attribute value of 'heading' given to this A is not allowed.  The element's role attribute should be set to one of the following text values: button | checkbox | menuitem | menuitemcheckbox | menuitemradio | radio | tab | switch | treeitem; or the role attribute can be removed",
+          "element": "<a tabindex=\"0\" aria-controls=\"tab-3\" href=\"#policy-tab-3\" aria-level=\"3\" role=\"heading\" id=\"policy-tabcontrol-3\">Human Trafficking</a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "a[id=\"policy-tabcontrol-3\"][role=\"heading\"][aria-level=\"3\"][href=\"#policy-tab-3\"][aria-controls=\"tab-3\"][tabindex=\"0\"]",
+            "attNo": 6
+          }
+        },
+        {
+          "engineTestId": 99,
+          "bestPracticeId": 464,
+          "attribute": "This element does not have a ul element (without an ARIA-assigned role); ol element (without an ARIA-assigned role); or element with a role set to the value: list as a parent",
+          "attributeDetail": "This LI does not have a ul element (without an ARIA-assigned role); ol element (without an ARIA-assigned role); or element with a role set to the value: list as a parent",
+          "element": "<li class=\"js-tab-view__link fp-countries-link\n\t\t\t\t\t\t\t\tactive\t\t\t\t\t\t\t\"><a tabindex=\"0\" aria-selected= ... s://www.state.gov/wp-content/uploads/2018/07/guyana-flag.gif\" height=\"48\" width=\"72\">Guyana</a></li>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "li",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 99,
+          "bestPracticeId": 464,
+          "attribute": "This element does not have a ul element (without an ARIA-assigned role); ol element (without an ARIA-assigned role); or element with a role set to the value: list as a parent",
+          "attributeDetail": "This LI does not have a ul element (without an ARIA-assigned role); ol element (without an ARIA-assigned role); or element with a role set to the value: list as a parent",
+          "element": "<li class=\"js-tab-view__link fp-countries-link\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"><a tabindex=\"0\" aria-selected=\"false ... ttps://www.state.gov/wp-content/uploads/2018/07/ja-lgflag.gif\" height=\"48\" width=\"72\">Japan</a></li>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "li",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 99,
+          "bestPracticeId": 464,
+          "attribute": "This element does not have a ul element (without an ARIA-assigned role); ol element (without an ARIA-assigned role); or element with a role set to the value: list as a parent",
+          "attributeDetail": "This LI does not have a ul element (without an ARIA-assigned role); ol element (without an ARIA-assigned role); or element with a role set to the value: list as a parent",
+          "element": "<li class=\"js-tab-view__link fp-countries-link\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"><a tabindex=\"0\" aria-selected=\"false ... /www.state.gov/wp-content/uploads/2018/07/ks-lgflag.gif\" height=\"48\" width=\"72\">South Korea</a></li>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(3)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "li",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 99,
+          "bestPracticeId": 464,
+          "attribute": "This element does not have a ul element (without an ARIA-assigned role); ol element (without an ARIA-assigned role); or element with a role set to the value: list as a parent",
+          "attributeDetail": "This LI does not have a ul element (without an ARIA-assigned role); ol element (without an ARIA-assigned role); or element with a role set to the value: list as a parent",
+          "element": "<li class=\"js-tab-view__link policy-issues__link\n\t\t\t\t\t\t\t\tactive\t\t\t\t\t\t\t\t\"><a tabindex=\"0\" aria-contro ... cy-tab-1\" aria-level=\"3\" role=\"heading\" id=\"policy-tabcontrol-1\">Human Rights and Democracy</a></li>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "li",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 99,
+          "bestPracticeId": 464,
+          "attribute": "This element does not have a ul element (without an ARIA-assigned role); ol element (without an ARIA-assigned role); or element with a role set to the value: list as a parent",
+          "attributeDetail": "This LI does not have a ul element (without an ARIA-assigned role); ol element (without an ARIA-assigned role); or element with a role set to the value: list as a parent",
+          "element": "<li class=\"js-tab-view__link policy-issues__link\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"><a tabindex=\"0\" aria-controls=\"ta ... \" href=\"#policy-tab-2\" aria-level=\"3\" role=\"heading\" id=\"policy-tabcontrol-2\">Global Health</a></li>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "li",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 99,
+          "bestPracticeId": 464,
+          "attribute": "This element does not have a ul element (without an ARIA-assigned role); ol element (without an ARIA-assigned role); or element with a role set to the value: list as a parent",
+          "attributeDetail": "This LI does not have a ul element (without an ARIA-assigned role); ol element (without an ARIA-assigned role); or element with a role set to the value: list as a parent",
+          "element": "<li class=\"js-tab-view__link policy-issues__link\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"><a tabindex=\"0\" aria-controls=\"ta ... ef=\"#policy-tab-3\" aria-level=\"3\" role=\"heading\" id=\"policy-tabcontrol-3\">Human Trafficking</a></li>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "li",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg viewbox=\"0 0 44 44\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M22 0C13.99 0 6.99 4.32 3.14 10 ... -1.88-9.66h3.53a20.79 20.79 0 0 1 2.64 9.66h-4.29z\" fill-rule=\"nonzero\" fill=\"#C1A783\"></path></svg>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[viewbox=\"0 0 44 44\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 246,
+          "bestPracticeId": 393,
+          "attribute": "This element should only contain li elements (without an ARIA-assigned role), script elements (without an ARIA-assigned role) or template elements (without an ARIA-assigned role); or elements with a role=listitem attribute; as direct child elements",
+          "attributeDetail": "This UL should only contain li elements (without an ARIA-assigned role), script elements (without an ARIA-assigned role) or template elements (without an ARIA-assigned role); or elements with a role=listitem attribute; as direct child elements",
+          "element": "<ul class=\"nav__primary-nav is-fixed\" id=\"nav__primary-nav\"><li class=\"nav__large-logo-wrapper menu- ... _policies-list-item\"><a class=\"\" href=\"https://www.state.gov/disarming-disinformation/\" aria-label=\"",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(3)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "ul[id=\"nav__primary-nav\"][class=\"nav__primary-nav is-fixed\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 264,
+          "bestPracticeId": 1626,
+          "attribute": "The aria-selected attribute is not allowed on this element",
+          "attributeDetail": "The aria-selected attribute is not allowed on this A with a role of heading",
+          "element": "<a tabindex=\"0\" aria-selected=\"false\" aria-controls=\"tab-1\" aria-level=\"3\" role=\"heading\" href=\"#tab ... \"https://www.state.gov/wp-content/uploads/2018/07/guyana-flag.gif\" height=\"48\" width=\"72\">Guyana</a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "a[id=\"tabcontrol-1\"][href=\"#tab-1\"][role=\"heading\"][aria-level=\"3\"][aria-controls=\"tab-1\"][aria-selected=\"false\"][tabindex=\"0\"]",
+            "attNo": 7
+          }
+        },
+        {
+          "engineTestId": 264,
+          "bestPracticeId": 1626,
+          "attribute": "The aria-selected attribute is not allowed on this element",
+          "attributeDetail": "The aria-selected attribute is not allowed on this A with a role of heading",
+          "element": "<a tabindex=\"0\" aria-selected=\"false\" aria-controls=\"tab-2\" aria-level=\"3\" role=\"heading\" href=\"#tab ... rc=\"https://www.state.gov/wp-content/uploads/2018/07/ja-lgflag.gif\" height=\"48\" width=\"72\">Japan</a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "a[id=\"tabcontrol-2\"][href=\"#tab-2\"][role=\"heading\"][aria-level=\"3\"][aria-controls=\"tab-2\"][aria-selected=\"false\"][tabindex=\"0\"]",
+            "attNo": 7
+          }
+        },
+        {
+          "engineTestId": 264,
+          "bestPracticeId": 1626,
+          "attribute": "The aria-selected attribute is not allowed on this element",
+          "attributeDetail": "The aria-selected attribute is not allowed on this A with a role of heading",
+          "element": "<a tabindex=\"0\" aria-selected=\"false\" aria-controls=\"tab-3\" aria-level=\"3\" role=\"heading\" href=\"#tab ... tps://www.state.gov/wp-content/uploads/2018/07/ks-lgflag.gif\" height=\"48\" width=\"72\">South Korea</a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "a[id=\"tabcontrol-3\"][href=\"#tab-3\"][role=\"heading\"][aria-level=\"3\"][aria-controls=\"tab-3\"][aria-selected=\"false\"][tabindex=\"0\"]",
+            "attNo": 7
+          }
+        },
+        {
+          "engineTestId": 531,
+          "bestPracticeId": 2519,
+          "attribute": "This nav does not have a unique accessible name as required when two or more nav elements are present",
+          "attributeDetail": "This nav does not have a unique accessible name as required when two or more nav elements are present",
+          "element": "<nav style=\"display: block;\" class=\"site-nav site-nav--utility nav__wrapper nav__utility\"><ul class= ... -item-219296\" id=\"menu-item-219296\"><a href=\"https://www.state.gov/visas/\">Visas</a></li></ul></nav>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[class=\"site-nav site-nav--utility nav__wrapper nav__utility\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 531,
+          "bestPracticeId": 2519,
+          "attribute": "This nav does not have a unique accessible name as required when two or more nav elements are present",
+          "attributeDetail": "This nav does not have a unique accessible name as required when two or more nav elements are present",
+          "element": "<nav class=\"site-nav site-nav--primary nav__nav\"><ul class=\"nav__primary-nav is-fixed\" id=\"nav__prim ... s=\"nav__policies-list-container\"><div class=\"nav__policies-list-item\"><a class=\"\" href=\"https://www.",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(3)>*:nth-child(3)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[class=\"site-nav site-nav--primary nav__nav\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 533,
+          "bestPracticeId": 2519,
+          "attribute": "This nav does not have an accessible name as required when two or more nav elements are present",
+          "attributeDetail": "This nav does not have an accessible name as required when two or more nav elements are present",
+          "element": "<nav style=\"display: block;\" class=\"site-nav site-nav--utility nav__wrapper nav__utility\"><ul class= ... -item-219296\" id=\"menu-item-219296\"><a href=\"https://www.state.gov/visas/\">Visas</a></li></ul></nav>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[class=\"site-nav site-nav--utility nav__wrapper nav__utility\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 533,
+          "bestPracticeId": 2519,
+          "attribute": "This nav does not have an accessible name as required when two or more nav elements are present",
+          "attributeDetail": "This nav does not have an accessible name as required when two or more nav elements are present",
+          "element": "<nav class=\"site-nav site-nav--primary nav__nav\"><ul class=\"nav__primary-nav is-fixed\" id=\"nav__prim ... s=\"nav__policies-list-container\"><div class=\"nav__policies-list-item\"><a class=\"\" href=\"https://www.",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(3)>*:nth-child(3)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[class=\"site-nav site-nav--primary nav__nav\"]",
+            "attNo": 1
+          }
+        }
+      ]
+    }
+  ],
+  "timeStamp": "4jil2",
+  "startTime": "2022-07-27T14:24:56",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "continuum",
+      1
+    ]
+  ],
+  "logCount": 1,
+  "logSize": 179,
+  "errorLogCount": 1,
+  "errorLogSize": 179,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-27T14:25:05",
+  "elapsedSeconds": 9
+}

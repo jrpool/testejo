@@ -1,0 +1,443 @@
+{
+  "id": "4jil2-ntsb",
+  "host": {
+    "id": "ntsb",
+    "which": "https://www.ntsb.gov/Pages/home.aspx",
+    "what": "National Transportation Safety Board (NTSB)"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-27T14:33:39"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-27T14:33:45"
+    }
+  ],
+  "script": {
+    "id": "continuum",
+    "what": "Continuum",
+    "strict": true,
+    "timeLimit": 30,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.ntsb.gov/Pages/home.aspx",
+        "what": "National Transportation Safety Board (NTSB)"
+      },
+      {
+        "type": "test",
+        "which": "continuum",
+        "what": "Continuum"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.ntsb.gov/Pages/home.aspx",
+      "what": "National Transportation Safety Board (NTSB)",
+      "result": "https://www.ntsb.gov/Pages/home.aspx"
+    },
+    {
+      "type": "test",
+      "which": "continuum",
+      "what": "Level Access Continuum, community edition",
+      "url": "https://www.ntsb.gov/Pages/home.aspx",
+      "result": [
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This A has an id attribute of 'investigationsDropdownMenuLink', which is not unique in the same DOM",
+          "element": "<a target=\"_blank\" aria-expanded=\"false\" role=\"button\" id=\"investigationsDropdownMenuLink\" href=\"/investigations\" class=\"nav-link dropdown-toggle\">Investigations</a>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(11)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "a[class=\"nav-link dropdown-toggle\"][href=\"/investigations\"][id=\"investigationsDropdownMenuLink\"][role=\"button\"][aria-expanded=\"false\"][target=\"_blank\"]",
+            "attNo": 6
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This A has an id attribute of 'investigationsDropdownMenuLink', which is not unique in the same DOM",
+          "element": "<a aria-expanded=\"false\" role=\"button\" id=\"investigationsDropdownMenuLink\" href=\"/investigations\" class=\"nav-link dropdown-toggle\">Investigations</a>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(11)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "a[class=\"nav-link dropdown-toggle\"][href=\"/investigations\"][id=\"investigationsDropdownMenuLink\"][role=\"button\"][aria-expanded=\"false\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This A has an id attribute of 'safetyResearchDropdownMenuLink', which is not unique in the same DOM",
+          "element": "<a target=\"_blank\" aria-expanded=\"false\" role=\"button\" id=\"safetyResearchDropdownMenuLink\" href=\"/safety\" class=\"nav-link dropdown-toggle\">Safety Research</a>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(11)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "a[class=\"nav-link dropdown-toggle\"][href=\"/safety\"][id=\"safetyResearchDropdownMenuLink\"][role=\"button\"][aria-expanded=\"false\"][target=\"_blank\"]",
+            "attNo": 6
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This A has an id attribute of 'safetyResearchDropdownMenuLink', which is not unique in the same DOM",
+          "element": "<a aria-expanded=\"false\" role=\"button\" id=\"safetyResearchDropdownMenuLink\" href=\"/safety\" class=\"nav-link dropdown-toggle\">Safety Research</a>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(11)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "a[class=\"nav-link dropdown-toggle\"][href=\"/safety\"][id=\"safetyResearchDropdownMenuLink\"][role=\"button\"][aria-expanded=\"false\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This A has an id attribute of 'newsDropdownMenuLink', which is not unique in the same DOM",
+          "element": "<a target=\"_blank\" aria-expanded=\"false\" role=\"button\" id=\"newsDropdownMenuLink\" href=\"/news\" class=\"nav-link dropdown-toggle\">News &amp; Events</a>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(11)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "a[class=\"nav-link dropdown-toggle\"][href=\"/news\"][id=\"newsDropdownMenuLink\"][role=\"button\"][aria-expanded=\"false\"][target=\"_blank\"]",
+            "attNo": 6
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This A has an id attribute of 'newsDropdownMenuLink', which is not unique in the same DOM",
+          "element": "<a aria-expanded=\"false\" role=\"button\" id=\"newsDropdownMenuLink\" href=\"/news\" class=\"nav-link dropdown-toggle\">News &amp; Events</a>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(11)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(3)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "a[class=\"nav-link dropdown-toggle\"][href=\"/news\"][id=\"newsDropdownMenuLink\"][role=\"button\"][aria-expanded=\"false\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This A has an id attribute of 'advocacyDropdownMenuLink', which is not unique in the same DOM",
+          "element": "<a target=\"_blank\" aria-expanded=\"false\" role=\"button\" id=\"advocacyDropdownMenuLink\" href=\"/advocacy\" class=\"nav-link dropdown-toggle\">Advocacy</a>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(11)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "a[class=\"nav-link dropdown-toggle\"][href=\"/advocacy\"][id=\"advocacyDropdownMenuLink\"][role=\"button\"][aria-expanded=\"false\"][target=\"_blank\"]",
+            "attNo": 6
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This A has an id attribute of 'advocacyDropdownMenuLink', which is not unique in the same DOM",
+          "element": "<a aria-expanded=\"false\" role=\"button\" id=\"advocacyDropdownMenuLink\" href=\"/advocacy\" class=\"nav-link dropdown-toggle\">Advocacy</a>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(11)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(4)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "a[class=\"nav-link dropdown-toggle\"][href=\"/advocacy\"][id=\"advocacyDropdownMenuLink\"][role=\"button\"][aria-expanded=\"false\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This A has an id attribute of 'assistanceDropdownMenuLink', which is not unique in the same DOM",
+          "element": "<a target=\"_blank\" aria-expanded=\"false\" role=\"button\" id=\"assistanceDropdownMenuLink\" href=\"/tda\" class=\"nav-link dropdown-toggle\">Family Assistance</a>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(11)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(5)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "a[class=\"nav-link dropdown-toggle\"][href=\"/tda\"][id=\"assistanceDropdownMenuLink\"][role=\"button\"][aria-expanded=\"false\"][target=\"_blank\"]",
+            "attNo": 6
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This A has an id attribute of 'assistanceDropdownMenuLink', which is not unique in the same DOM",
+          "element": "<a aria-expanded=\"false\" role=\"button\" id=\"assistanceDropdownMenuLink\" href=\"/tda\" class=\"nav-link dropdown-toggle\">Family Assistance</a>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(11)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(5)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "a[class=\"nav-link dropdown-toggle\"][href=\"/tda\"][id=\"assistanceDropdownMenuLink\"][role=\"button\"][aria-expanded=\"false\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This A has an id attribute of 'aboutDropdownMenuLink', which is not unique in the same DOM",
+          "element": "<a target=\"_blank\" aria-expanded=\"false\" role=\"button\" id=\"aboutDropdownMenuLink\" href=\"/about\" class=\"nav-link dropdown-toggle\">About Us</a>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(11)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(6)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "a[class=\"nav-link dropdown-toggle\"][href=\"/about\"][id=\"aboutDropdownMenuLink\"][role=\"button\"][aria-expanded=\"false\"][target=\"_blank\"]",
+            "attNo": 6
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This A has an id attribute of 'aboutDropdownMenuLink', which is not unique in the same DOM",
+          "element": "<a aria-expanded=\"false\" role=\"button\" id=\"aboutDropdownMenuLink\" href=\"/about\" class=\"nav-link dropdown-toggle\">About Us</a>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(11)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(6)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "a[class=\"nav-link dropdown-toggle\"][href=\"/about\"][id=\"aboutDropdownMenuLink\"][role=\"button\"][aria-expanded=\"false\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 234,
+          "bestPracticeId": 370,
+          "attribute": "This element has a suspicious calculated accessible name value",
+          "attributeDetail": "This IMG has a suspicious calculated accessible name value of: image",
+          "element": "<img alt=\"image\" src=\"/news/press-releases/PublishingImages/HWY22MH006%20Fig%202.JPG\">",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(11)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(6)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[src=\"/news/press-releases/PublishingImages/HWY22MH006%20Fig%202.JPG\"][alt=\"image\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 234,
+          "bestPracticeId": 370,
+          "attribute": "This element has a suspicious calculated accessible name value",
+          "attributeDetail": "This IMG has a suspicious calculated accessible name value of: image",
+          "element": "<img alt=\"image\" src=\"/news/press-releases/PublishingImages/News-Relesase.png\">",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(11)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(6)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[src=\"/news/press-releases/PublishingImages/News-Relesase.png\"][alt=\"image\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 234,
+          "bestPracticeId": 370,
+          "attribute": "This element has a suspicious calculated accessible name value",
+          "attributeDetail": "This IMG has a suspicious calculated accessible name value of: image",
+          "element": "<img alt=\"image\" src=\"/news/press-releases/PublishingImages/News-Relesase.png\">",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(11)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(6)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[src=\"/news/press-releases/PublishingImages/News-Relesase.png\"][alt=\"image\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a target=\"_blank\" href=\"https://www.facebook.com/NTSBgov\"><i aria-hidden=\"true\" class=\"fab fa-facebook\"></i></a>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(11)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"https://www.facebook.com/NTSBgov\"][target=\"_blank\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a target=\"_blank\" href=\"https://www.instagram.com/ntsbgov\"><i aria-hidden=\"true\" class=\"fab fa-instagram\"></i></a>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(11)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"https://www.instagram.com/ntsbgov\"][target=\"_blank\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a target=\"_blank\" href=\"https://www.youtube.com/user/NTSBgov\"><i aria-hidden=\"true\" class=\"fab fa-youtube\"></i></a>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(11)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(2)>*:nth-child(3)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"https://www.youtube.com/user/NTSBgov\"][target=\"_blank\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a target=\"_blank\" href=\"https://www.flickr.com/photos/ntsb/\"><i aria-hidden=\"true\" class=\"fab fa-flickr\"></i></a>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(11)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(2)>*:nth-child(4)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"https://www.flickr.com/photos/ntsb/\"][target=\"_blank\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a target=\"_blank\" href=\"https://www.linkedin.com/company/ntsb/\"><i aria-hidden=\"true\" class=\"fab fa-linkedin\"></i></a>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(11)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(2)>*:nth-child(5)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"https://www.linkedin.com/company/ntsb/\"][target=\"_blank\"]",
+            "attNo": 2
+          }
+        }
+      ]
+    }
+  ],
+  "timeStamp": "4jil2",
+  "startTime": "2022-07-27T14:33:39",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "continuum",
+      0
+    ]
+  ],
+  "logCount": 1,
+  "logSize": 14,
+  "errorLogCount": 0,
+  "errorLogSize": 0,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-27T14:33:45",
+  "elapsedSeconds": 5
+}

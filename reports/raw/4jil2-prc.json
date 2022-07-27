@@ -1,0 +1,105 @@
+{
+  "id": "4jil2-prc",
+  "host": {
+    "id": "prc",
+    "which": "https://www.prc.gov/",
+    "what": "Postal Regulatory Commission (PRC)"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-27T14:36:02"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-27T14:36:12"
+    }
+  ],
+  "script": {
+    "id": "continuum",
+    "what": "Continuum",
+    "strict": true,
+    "timeLimit": 30,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.prc.gov/",
+        "what": "Postal Regulatory Commission (PRC)"
+      },
+      {
+        "type": "test",
+        "which": "continuum",
+        "what": "Continuum"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.prc.gov/",
+      "what": "Postal Regulatory Commission (PRC)",
+      "result": "https://www.prc.gov/"
+    },
+    {
+      "type": "test",
+      "which": "continuum",
+      "what": "Level Access Continuum, community edition",
+      "url": "https://www.prc.gov/",
+      "result": [
+        {
+          "engineTestId": 89,
+          "bestPracticeId": 362,
+          "attribute": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<img src=\"/sites/all/themes/postal_regulatory_commission/images/prc-badge.png\" align=\"right\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[align=\"right\"][src=\"/sites/all/themes/postal_regulatory_commission/images/prc-badge.png\"]",
+            "attNo": 2
+          }
+        }
+      ]
+    }
+  ],
+  "timeStamp": "4jil2",
+  "startTime": "2022-07-27T14:36:02",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "continuum",
+      0
+    ]
+  ],
+  "logCount": 2,
+  "logSize": 281,
+  "errorLogCount": 2,
+  "errorLogSize": 281,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-27T14:36:12",
+  "elapsedSeconds": 10
+}

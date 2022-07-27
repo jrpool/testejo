@@ -1,0 +1,378 @@
+{
+  "id": "4jil2-americorps",
+  "host": {
+    "id": "americorps",
+    "which": "https://www.americorps.gov/",
+    "what": "AmeriCorps"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-27T14:21:09"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-27T14:21:17"
+    }
+  ],
+  "script": {
+    "id": "continuum",
+    "what": "Continuum",
+    "strict": true,
+    "timeLimit": 30,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.americorps.gov/",
+        "what": "AmeriCorps"
+      },
+      {
+        "type": "test",
+        "which": "continuum",
+        "what": "Continuum"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.americorps.gov/",
+      "what": "AmeriCorps",
+      "result": "https://www.americorps.gov/"
+    },
+    {
+      "type": "test",
+      "which": "continuum",
+      "what": "Level Access Continuum, community edition",
+      "url": "https://www.americorps.gov/",
+      "result": [
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewbox=\"0 0 32 32\" height=\"32\" width=\"32\"><path ... 0993 15.9828 12.8375 16.0528 12.5009 16.0528Z\" clip-rule=\"evenodd\" fill-rule=\"evenodd\"></path></svg>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(8)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[width=\"32\"][height=\"32\"][viewbox=\"0 0 32 32\"][fill=\"none\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewbox=\"0 0 32 32\" height=\"32\" width=\"32\"><path ... 8235 20.7675H13.2157V18.8796H19.8235V20.7675Z\" clip-rule=\"evenodd\" fill-rule=\"evenodd\"></path></svg>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(10)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[width=\"32\"][height=\"32\"][viewbox=\"0 0 32 32\"][fill=\"none\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewbox=\"0 0 32 32\" height=\"32\" width=\"32\"><path ... 8235 20.7675H13.2157V18.8796H19.8235V20.7675Z\" clip-rule=\"evenodd\" fill-rule=\"evenodd\"></path></svg>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(12)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[width=\"32\"][height=\"32\"][viewbox=\"0 0 32 32\"][fill=\"none\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"social-icon\" fill=\"none\" viewbox=\"0 0 48 48\" height=\" ...  37.2548 10.7452 48 24 48Z\" class=\"svg-border\" clip-rule=\"evenodd\" fill-rule=\"evenodd\"></path></svg>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(1)>*:nth-child(6)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[width=\"48\"][height=\"48\"][viewbox=\"0 0 48 48\"][fill=\"none\"][class=\"social-icon\"]",
+            "attNo": 6
+          }
+        },
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"social-icon\" fill=\"none\" viewbox=\"0 0 48 48\" height=\" ...  37.2548 10.7452 48 24 48Z\" class=\"svg-border\" clip-rule=\"evenodd\" fill-rule=\"evenodd\"></path></svg>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(1)>*:nth-child(6)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[width=\"48\"][height=\"48\"][viewbox=\"0 0 48 48\"][fill=\"none\"][class=\"social-icon\"]",
+            "attNo": 6
+          }
+        },
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"social-icon\" fill=\"none\" viewbox=\"0 0 48 48\" height=\" ... .2562 32.4698 18.5912 32.4702 17.7708C32.4702 16.9505 31.8051 16.2854 30.9848 16.2854C30.1645 16.285",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(1)>*:nth-child(6)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(3)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[width=\"48\"][height=\"48\"][viewbox=\"0 0 48 48\"][fill=\"none\"][class=\"social-icon\"]",
+            "attNo": 6
+          }
+        },
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"social-icon\" fill=\"none\" viewbox=\"0 0 48 48\" height=\" ...  37.2548 10.7452 48 24 48Z\" class=\"svg-border\" clip-rule=\"evenodd\" fill-rule=\"evenodd\"></path></svg>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(1)>*:nth-child(6)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(4)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[width=\"48\"][height=\"48\"][viewbox=\"0 0 48 48\"][fill=\"none\"][class=\"social-icon\"]",
+            "attNo": 6
+          }
+        },
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg viewbox=\"0 0 66 66\" height=\"96px\" width=\"96px\" class=\"goog-te-spinner\" xmlns=\"http://www.w3.org ... 33\" stroke-linecap=\"round\" stroke-width=\"6\" fill=\"none\" class=\"goog-te-spinner-path\"></circle></svg>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(5)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[class=\"goog-te-spinner\"][width=\"96px\"][height=\"96px\"][viewbox=\"0 0 66 66\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 246,
+          "bestPracticeId": 393,
+          "attribute": "This element should only contain li elements (without an ARIA-assigned role), script elements (without an ARIA-assigned role) or template elements (without an ARIA-assigned role); or elements with a role=listitem attribute; as direct child elements",
+          "attributeDetail": "This UL should only contain li elements (without an ARIA-assigned role), script elements (without an ARIA-assigned role) or template elements (without an ARIA-assigned role); or elements with a role=listitem attribute; as direct child elements",
+          "element": "<ul class=\"navbar-nav\"><div class=\"menu-region\"><div class=\"region region-primary-menu\"><div class=\" ... collapse=\"\" data-blocktitle=\"0\" data-block=\"aboutmenublockthree\" data-width=\"4\" data-element-type=\"w",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "ul[class=\"navbar-nav\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 531,
+          "bestPracticeId": 2519,
+          "attribute": "This nav does not have a unique accessible name as required when two or more nav elements are present",
+          "attributeDetail": "This nav does not have a unique accessible name as required when two or more nav elements are present",
+          "element": "<nav class=\"navbar navbar-expand-xl navbar-default\"><div class=\"logo\"><div class=\"navbar-brand d-fle ... stem-path=\"node/42016\" class=\"nav-link\" href=\"/about/our-impact\">Our impact</a></li><li class=\"nav-i",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[class=\"navbar navbar-expand-xl navbar-default\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 531,
+          "bestPracticeId": 2519,
+          "attribute": "This nav does not have a unique accessible name as required when two or more nav elements are present",
+          "attributeDetail": "This nav does not have a unique accessible name as required when two or more nav elements are present",
+          "element": "<nav data-mobile-collapse=\"0\" data-action=\"hover\" data-alwayshowsubmenu=\"\" data-autoarrow=\"\" data-du ... --about-menu-block-three\" id=\"block-aboutmenublockthree\" aria-labelledby=\"block-aboutmenublockthree-",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[class=\"main navbar navbar-default navbar-we-mega-menu mobile-collapse hover-action\"][data-menu-name=\"main\"][data-block-theme=\"americorps\"][data-style=\"Default\"][data-animation=\"None\"][data-delay=\"\"][data-duration=\"\"][data-autoarrow=\"\"][data-alwayshowsubmenu=\"\"][data-action=\"hover\"][data-mobile-collapse=\"0\"]",
+            "attNo": 11
+          }
+        },
+        {
+          "engineTestId": 531,
+          "bestPracticeId": 2519,
+          "attribute": "This nav does not have a unique accessible name as required when two or more nav elements are present",
+          "attributeDetail": "This nav does not have a unique accessible name as required when two or more nav elements are present",
+          "element": "<nav data-mobile-collapse=\"0\" data-action=\"hover\" data-alwayshowsubmenu=\"\" data-autoarrow=\"\" data-du ... th=\"Search\"></form><script></script></div></div></div></div></div></div></div></div></li></ul></nav>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[class=\"search navbar navbar-default navbar-we-mega-menu mobile-collapse hover-action\"][data-menu-name=\"search\"][data-block-theme=\"americorps\"][data-style=\"Default\"][data-animation=\"None\"][data-delay=\"\"][data-duration=\"\"][data-autoarrow=\"\"][data-alwayshowsubmenu=\"\"][data-action=\"hover\"][data-mobile-collapse=\"0\"]",
+            "attNo": 11
+          }
+        },
+        {
+          "engineTestId": 533,
+          "bestPracticeId": 2519,
+          "attribute": "This nav does not have an accessible name as required when two or more nav elements are present",
+          "attributeDetail": "This nav does not have an accessible name as required when two or more nav elements are present",
+          "element": "<nav class=\"navbar navbar-expand-xl navbar-default\"><div class=\"logo\"><div class=\"navbar-brand d-fle ... stem-path=\"node/42016\" class=\"nav-link\" href=\"/about/our-impact\">Our impact</a></li><li class=\"nav-i",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[class=\"navbar navbar-expand-xl navbar-default\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 533,
+          "bestPracticeId": 2519,
+          "attribute": "This nav does not have an accessible name as required when two or more nav elements are present",
+          "attributeDetail": "This nav does not have an accessible name as required when two or more nav elements are present",
+          "element": "<nav data-mobile-collapse=\"0\" data-action=\"hover\" data-alwayshowsubmenu=\"\" data-autoarrow=\"\" data-du ... --about-menu-block-three\" id=\"block-aboutmenublockthree\" aria-labelledby=\"block-aboutmenublockthree-",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[class=\"main navbar navbar-default navbar-we-mega-menu mobile-collapse hover-action\"][data-menu-name=\"main\"][data-block-theme=\"americorps\"][data-style=\"Default\"][data-animation=\"None\"][data-delay=\"\"][data-duration=\"\"][data-autoarrow=\"\"][data-alwayshowsubmenu=\"\"][data-action=\"hover\"][data-mobile-collapse=\"0\"]",
+            "attNo": 11
+          }
+        },
+        {
+          "engineTestId": 533,
+          "bestPracticeId": 2519,
+          "attribute": "This nav does not have an accessible name as required when two or more nav elements are present",
+          "attributeDetail": "This nav does not have an accessible name as required when two or more nav elements are present",
+          "element": "<nav data-mobile-collapse=\"0\" data-action=\"hover\" data-alwayshowsubmenu=\"\" data-autoarrow=\"\" data-du ... th=\"Search\"></form><script></script></div></div></div></div></div></div></div></div></li></ul></nav>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[class=\"search navbar navbar-default navbar-we-mega-menu mobile-collapse hover-action\"][data-menu-name=\"search\"][data-block-theme=\"americorps\"][data-style=\"Default\"][data-animation=\"None\"][data-delay=\"\"][data-duration=\"\"][data-autoarrow=\"\"][data-alwayshowsubmenu=\"\"][data-action=\"hover\"][data-mobile-collapse=\"0\"]",
+            "attNo": 11
+          }
+        }
+      ]
+    }
+  ],
+  "timeStamp": "4jil2",
+  "startTime": "2022-07-27T14:21:09",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "continuum",
+      0
+    ]
+  ],
+  "logCount": 9,
+  "logSize": 960,
+  "errorLogCount": 2,
+  "errorLogSize": 202,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-27T14:21:17",
+  "elapsedSeconds": 8
+}

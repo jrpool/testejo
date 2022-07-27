@@ -1,0 +1,135 @@
+{
+  "id": "4jil2-gnmagm",
+  "host": {
+    "id": "gnmagm",
+    "which": "https://www.ginniemae.gov/pages/default.aspx",
+    "what": "Government National Mortgage Association (Ginnie Mae)"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-27T14:29:08"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-27T14:29:18"
+    }
+  ],
+  "script": {
+    "id": "continuum",
+    "what": "Continuum",
+    "strict": true,
+    "timeLimit": 30,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.ginniemae.gov/pages/default.aspx",
+        "what": "Government National Mortgage Association (Ginnie Mae)"
+      },
+      {
+        "type": "test",
+        "which": "continuum",
+        "what": "Continuum"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.ginniemae.gov/pages/default.aspx",
+      "what": "Government National Mortgage Association (Ginnie Mae)",
+      "result": "https://www.ginniemae.gov/pages/default.aspx"
+    },
+    {
+      "type": "test",
+      "which": "continuum",
+      "what": "Level Access Continuum, community edition",
+      "url": "https://www.ginniemae.gov/pages/default.aspx",
+      "result": [
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg class=\"flockler-carousel_v2-item__text__hover-hint\"><use xlink:href=\"#flockler-embed-icon--angle-up\"></use></svg>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(23)>*:nth-child(1)>*:nth-child(5)>*:nth-child(2)>*:nth-child(4)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(6)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[class=\"flockler-carousel_v2-item__text__hover-hint\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 387,
+          "bestPracticeId": 375,
+          "attribute": "This element does not contain one or more: th elements (without an ARIA-assigned role); th elements with a role set to: rowheader | columnheader; or td elements with a role set to: rowheader | columnheader",
+          "attributeDetail": "This TABLE does not contain one or more: th elements (without an ARIA-assigned role); th elements with a role set to: rowheader | columnheader; or td elements with a role set to: rowheader | columnheader",
+          "element": "<table class=\"footer-middle-row\" cellpadding=\"0\"><tbody><tr><td><a href=\"/Pages/contact_information. ... ></td><td><a href=\"/site_policies/Pages/disclaimer.aspx\">Site Policies</a></td></tr></tbody></table>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(23)>*:nth-child(1)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "table[cellpadding=\"0\"][class=\"footer-middle-row\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 387,
+          "bestPracticeId": 375,
+          "attribute": "This element does not contain one or more: th elements (without an ARIA-assigned role); th elements with a role set to: rowheader | columnheader; or td elements with a role set to: rowheader | columnheader",
+          "attributeDetail": "This TABLE does not contain one or more: th elements (without an ARIA-assigned role); th elements with a role set to: rowheader | columnheader; or td elements with a role set to: rowheader | columnheader",
+          "element": "<table class=\"footer-copyright-row\" cellpadding=\"0\"><tbody><tr><td class=\"topCell\">This site is best ... \">Copyright @<span id=\"crYear\">2022</span>Ginnie Mae. All Rights Reserved.</td></tr></tbody></table>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(23)>*:nth-child(1)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "table[cellpadding=\"0\"][class=\"footer-copyright-row\"]",
+            "attNo": 2
+          }
+        }
+      ]
+    }
+  ],
+  "timeStamp": "4jil2",
+  "startTime": "2022-07-27T14:29:08",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "continuum",
+      0
+    ]
+  ],
+  "logCount": 1,
+  "logSize": 65,
+  "errorLogCount": 0,
+  "errorLogSize": 0,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-27T14:29:18",
+  "elapsedSeconds": 10
+}

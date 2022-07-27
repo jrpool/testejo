@@ -1,0 +1,253 @@
+{
+  "id": "4jil2-eeoc",
+  "host": {
+    "id": "eeoc",
+    "which": "https://www.eeoc.gov/",
+    "what": "Equal Employment Opportunity Commission (EEOC)"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-27T14:26:03"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-27T14:26:07"
+    }
+  ],
+  "script": {
+    "id": "continuum",
+    "what": "Continuum",
+    "strict": true,
+    "timeLimit": 30,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.eeoc.gov/",
+        "what": "Equal Employment Opportunity Commission (EEOC)"
+      },
+      {
+        "type": "test",
+        "which": "continuum",
+        "what": "Continuum"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.eeoc.gov/",
+      "what": "Equal Employment Opportunity Commission (EEOC)",
+      "result": "https://www.eeoc.gov/"
+    },
+    {
+      "type": "test",
+      "which": "continuum",
+      "what": "Level Access Continuum, community edition",
+      "url": "https://www.eeoc.gov/",
+      "result": [
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This DIV has an id attribute of 'prefix-overlay-form-div', which is not unique in the same DOM",
+          "element": "<div id=\"prefix-overlay-form-div\"><form novalidate=\"\"><input title=\"Email Address\" aria-labelledby=\" ... holder=\"Email Address\"><input id=\"prefix-submitButton\" value=\"Subscribe\" type=\"submit\"></form></div>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(3)>*:nth-child(3)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[id=\"prefix-overlay-form-div\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This DIV has an id attribute of 'prefix-overlay-form-div', which is not unique in the same DOM",
+          "element": "<div id=\"prefix-overlay-form-div\"><form novalidate=\"\" id=\"prefix-formStepForm\"><input tabindex=\"-1\" id=\"prefix-formStep-submitButton\" value=\"Continue\" type=\"submit\"></form></div>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(3)>*:nth-child(3)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[id=\"prefix-overlay-form-div\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This DIV has an id attribute of 'prefix-error-outer', which is not unique in the same DOM",
+          "element": "<div id=\"prefix-error-outer\"><span style=\"display:none\"></span></div>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(3)>*:nth-child(3)>*:nth-child(1)>*:nth-child(2)>*:nth-child(3)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[id=\"prefix-error-outer\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This DIV has an id attribute of 'prefix-error-outer', which is not unique in the same DOM",
+          "element": "<div id=\"prefix-error-outer\"><span style=\"display:none\"></span></div>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(3)>*:nth-child(3)>*:nth-child(1)>*:nth-child(4)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[id=\"prefix-error-outer\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg viewbox=\"0 0 216 146\" height=\"30\" width=\"35\" xmlns=\"http://www.w3.org/2000/svg\"><path fill=\"#1b ...  3.747-1.632 1.087-1.086 1.574-2.36 1.468-3.828-.704-14.232-3.964-27.852-9.776-40.86z\"></path></svg>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[width=\"35\"][height=\"30\"][viewbox=\"0 0 216 146\"]",
+            "attNo": 4
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a href=\"https://www.facebook.com/USEEOC\" class=\"usa-social-link\"><img src=\"/themes/custom/eeoc_uswds/assets/img/usa-icons/facebook.svg\" class=\"usa-social-link__icon\" alt=\"\"></a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[class=\"usa-social-link\"][href=\"https://www.facebook.com/USEEOC\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a href=\"https://www.twitter.com/useeoc\" class=\"usa-social-link\"><img src=\"/themes/custom/eeoc_uswds/assets/img/usa-icons/twitter.svg\" class=\"usa-social-link__icon\" alt=\"\"></a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[class=\"usa-social-link\"][href=\"https://www.twitter.com/useeoc\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a href=\"https://www.youtube.com/user/TheEEOC\" class=\"usa-social-link\"><img src=\"/themes/custom/eeoc_uswds/assets/img/usa-icons/youtube.svg\" class=\"usa-social-link__icon\" alt=\"\"></a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(3)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[class=\"usa-social-link\"][href=\"https://www.youtube.com/user/TheEEOC\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a href=\"/rss/newsroom\" class=\"usa-social-link\"><img src=\"/themes/custom/eeoc_uswds/assets/img/usa-icons/rss_feed.svg\" class=\"usa-social-link__icon\" alt=\"\"></a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(4)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[class=\"usa-social-link\"][href=\"/rss/newsroom\"]",
+            "attNo": 2
+          }
+        }
+      ]
+    }
+  ],
+  "timeStamp": "4jil2",
+  "startTime": "2022-07-27T14:26:03",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "continuum",
+      0
+    ]
+  ],
+  "logCount": 1,
+  "logSize": 101,
+  "errorLogCount": 1,
+  "errorLogSize": 101,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-27T14:26:07",
+  "elapsedSeconds": 4
+}

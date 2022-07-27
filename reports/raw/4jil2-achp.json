@@ -1,0 +1,1783 @@
+{
+  "id": "4jil2-achp",
+  "host": {
+    "id": "achp",
+    "which": "https://www.achp.gov/",
+    "what": "Advisory Council on Historic Preservation (ACHP)"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-27T14:20:28"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-27T14:20:38"
+    }
+  ],
+  "script": {
+    "id": "continuum",
+    "what": "Continuum",
+    "strict": true,
+    "timeLimit": 30,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.achp.gov/",
+        "what": "Advisory Council on Historic Preservation (ACHP)"
+      },
+      {
+        "type": "test",
+        "which": "continuum",
+        "what": "Continuum"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.achp.gov/",
+      "what": "Advisory Council on Historic Preservation (ACHP)",
+      "result": "https://www.achp.gov/"
+    },
+    {
+      "type": "test",
+      "which": "continuum",
+      "what": "Level Access Continuum, community edition",
+      "url": "https://www.achp.gov/",
+      "result": [
+        {
+          "engineTestId": 22,
+          "bestPracticeId": 967,
+          "attribute": "This element should not contain input elements (without an assigned ARIA role and not type=hidden), keygen elements (without an assigned ARIA role), select elements (without an assigned ARIA role), textarea elements (without an assigned ARIA role) or button elements (without an assigned ARIA role)",
+          "attributeDetail": "This A should not contain input elements (without an assigned ARIA role and not type=hidden), keygen elements (without an assigned ARIA role), select elements (without an assigned ARIA role), textarea elements (without an assigned ARIA role) or button elements (without an assigned ARIA role)",
+          "element": "<a href=\"/coronavirus\"><button>COVID-19 AND ACHP OPERATIONS</button></a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"/coronavirus\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 22,
+          "bestPracticeId": 967,
+          "attribute": "This element should not contain input elements (without an assigned ARIA role and not type=hidden), keygen elements (without an assigned ARIA role), select elements (without an assigned ARIA role), textarea elements (without an assigned ARIA role) or button elements (without an assigned ARIA role)",
+          "attributeDetail": "This A should not contain input elements (without an assigned ARIA role and not type=hidden), keygen elements (without an assigned ARIA role), select elements (without an assigned ARIA role), textarea elements (without an assigned ARIA role) or button elements (without an assigned ARIA role)",
+          "element": "<a href=\"/news\"><button>READ MORE NEWS STORIES</button></a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(4)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"/news\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 22,
+          "bestPracticeId": 967,
+          "attribute": "This element should not contain input elements (without an assigned ARIA role and not type=hidden), keygen elements (without an assigned ARIA role), select elements (without an assigned ARIA role), textarea elements (without an assigned ARIA role) or button elements (without an assigned ARIA role)",
+          "attributeDetail": "This A should not contain input elements (without an assigned ARIA role and not type=hidden), keygen elements (without an assigned ARIA role), select elements (without an assigned ARIA role), textarea elements (without an assigned ARIA role) or button elements (without an assigned ARIA role)",
+          "element": "<a href=\"/protecting-historic-properties/section-106-process/introduction-section-106\"><button>Read More About The Federal Preservation Process</button></a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(6)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"/protecting-historic-properties/section-106-process/introduction-section-106\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 22,
+          "bestPracticeId": 967,
+          "attribute": "This element should not contain input elements (without an assigned ARIA role and not type=hidden), keygen elements (without an assigned ARIA role), select elements (without an assigned ARIA role), textarea elements (without an assigned ARIA role) or button elements (without an assigned ARIA role)",
+          "attributeDetail": "This A should not contain input elements (without an assigned ARIA role and not type=hidden), keygen elements (without an assigned ARIA role), select elements (without an assigned ARIA role), textarea elements (without an assigned ARIA role) or button elements (without an assigned ARIA role)",
+          "element": "<a href=\"/success-stories\"><button>READ MORE SECTION 106 SUCCESS STORIES</button></a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(8)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"/success-stories\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 22,
+          "bestPracticeId": 967,
+          "attribute": "This element should not contain input elements (without an assigned ARIA role and not type=hidden), keygen elements (without an assigned ARIA role), select elements (without an assigned ARIA role), textarea elements (without an assigned ARIA role) or button elements (without an assigned ARIA role)",
+          "attributeDetail": "This A should not contain input elements (without an assigned ARIA role and not type=hidden), keygen elements (without an assigned ARIA role), select elements (without an assigned ARIA role), textarea elements (without an assigned ARIA role) or button elements (without an assigned ARIA role)",
+          "element": "<a href=\"/initiatives\"><button>Read More About Preservation Issues</button></a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(9)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"/initiatives\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 22,
+          "bestPracticeId": 967,
+          "attribute": "This element should not contain input elements (without an assigned ARIA role and not type=hidden), keygen elements (without an assigned ARIA role), select elements (without an assigned ARIA role), textarea elements (without an assigned ARIA role) or button elements (without an assigned ARIA role)",
+          "attributeDetail": "This A should not contain input elements (without an assigned ARIA role and not type=hidden), keygen elements (without an assigned ARIA role), select elements (without an assigned ARIA role), textarea elements (without an assigned ARIA role) or button elements (without an assigned ARIA role)",
+          "element": "<a href=\"/preserve-america\"><button>Learn About Preserve America</button></a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(11)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"/preserve-america\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This DIV has an id attribute of 'block-views-block-section-106', which is not unique in the same DOM",
+          "element": "<div id=\"block-views-block-section-106\" class=\"views-element-container\"><div class=\"quicklinks-colum ... span></div></div><footer><a href=\"/section-106-quicklinks\">More Section 106</a></footer></div></div>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(3)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[class=\"views-element-container\"][id=\"block-views-block-section-106\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This DIV has an id attribute of 'block-views-block-section-106', which is not unique in the same DOM",
+          "element": "<div id=\"block-views-block-section-106\" class=\"views-element-container\"><div class=\"quicklinks-colum ... s-and-native-hawaiian-quicklinks\">More Indian Tribes &amp; Native Hawaiians</a></footer></div></div>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(3)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[class=\"views-element-container\"][id=\"block-views-block-section-106\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This DIV has an id attribute of 'block-views-block-section-106', which is not unique in the same DOM",
+          "element": "<div id=\"block-views-block-section-106\" class=\"views-element-container\"><div class=\"quicklinks-colum ... iv></div><footer><a href=\"/trending-topics-quicklinks\">More Trending Topics</a></footer></div></div>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(3)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[class=\"views-element-container\"][id=\"block-views-block-section-106\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This g has an id attribute of 'Symbols', which is not unique in the same DOM",
+          "element": "<g fill-rule=\"evenodd\" fill=\"none\" stroke-width=\"1\" stroke=\"none\" id=\"Symbols\"><g id=\"map-marker-mul ... .6666667 L26.4083333,38.4166667 L27.5833333,39.5916667 L27.5833333,39.5916667 Z\"></path></g></g></g>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "g[id=\"Symbols\"][stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"][fill-rule=\"evenodd\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This g has an id attribute of 'Symbols', which is not unique in the same DOM",
+          "element": "<g fill-rule=\"evenodd\" fill=\"none\" stroke-width=\"1\" stroke=\"none\" id=\"Symbols\"><g id=\"map-marker-mul ... .6666667 L26.4083333,38.4166667 L27.5833333,39.5916667 L27.5833333,39.5916667 Z\"></path></g></g></g>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "g[id=\"Symbols\"][stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"][fill-rule=\"evenodd\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This g has an id attribute of 'Symbols', which is not unique in the same DOM",
+          "element": "<g fill-rule=\"evenodd\" fill=\"none\" stroke-width=\"1\" stroke=\"none\" id=\"Symbols\"><g id=\"map-marker-mul ... .6666667 L26.4083333,38.4166667 L27.5833333,39.5916667 L27.5833333,39.5916667 Z\"></path></g></g></g>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(3)>*:nth-child(1)>*:nth-child(4)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "g[id=\"Symbols\"][stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"][fill-rule=\"evenodd\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This g has an id attribute of 'Symbols', which is not unique in the same DOM",
+          "element": "<g fill-rule=\"evenodd\" fill=\"none\" stroke-width=\"1\" stroke=\"none\" id=\"Symbols\"><g id=\"map-group-mark ... 8,38.8 L30.35,38.8 L30.35,37.1 L27.8,37.1 L27.8,34.55 L26.1,34.55 L26.1,34.55 Z\"></path></g></g></g>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(4)>*:nth-child(1)>*:nth-child(4)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "g[id=\"Symbols\"][stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"][fill-rule=\"evenodd\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This g has an id attribute of 'Symbols', which is not unique in the same DOM",
+          "element": "<g fill-rule=\"evenodd\" fill=\"none\" stroke-width=\"1\" stroke=\"none\" id=\"Symbols\"><g id=\"map-marker-ind ... 1,19.2222222 L26.2111111,24.2222222 L27.7777778,25.7888889 L27.7777778,25.7888889 Z\"></path></g></g>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(5)>*:nth-child(1)>*:nth-child(4)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "g[id=\"Symbols\"][stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"][fill-rule=\"evenodd\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This g has an id attribute of 'Symbols', which is not unique in the same DOM",
+          "element": "<g fill-rule=\"evenodd\" fill=\"none\" stroke-width=\"1\" stroke=\"none\" id=\"Symbols\"><g id=\"map-group-mark ... 8,38.8 L30.35,38.8 L30.35,37.1 L27.8,37.1 L27.8,34.55 L26.1,34.55 L26.1,34.55 Z\"></path></g></g></g>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(6)>*:nth-child(1)>*:nth-child(4)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "g[id=\"Symbols\"][stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"][fill-rule=\"evenodd\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This g has an id attribute of 'Symbols', which is not unique in the same DOM",
+          "element": "<g fill-rule=\"evenodd\" fill=\"none\" stroke-width=\"1\" stroke=\"none\" id=\"Symbols\"><g id=\"map-group-mark ... 8,38.8 L30.35,38.8 L30.35,37.1 L27.8,37.1 L27.8,34.55 L26.1,34.55 L26.1,34.55 Z\"></path></g></g></g>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(7)>*:nth-child(1)>*:nth-child(4)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "g[id=\"Symbols\"][stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"][fill-rule=\"evenodd\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This g has an id attribute of 'Symbols', which is not unique in the same DOM",
+          "element": "<g fill-rule=\"evenodd\" fill=\"none\" stroke-width=\"1\" stroke=\"none\" id=\"Symbols\"><g id=\"map-marker-mul ... .6666667 L26.4083333,38.4166667 L27.5833333,39.5916667 L27.5833333,39.5916667 Z\"></path></g></g></g>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(8)>*:nth-child(1)>*:nth-child(4)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "g[id=\"Symbols\"][stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"][fill-rule=\"evenodd\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This g has an id attribute of 'Symbols', which is not unique in the same DOM",
+          "element": "<g fill-rule=\"evenodd\" fill=\"none\" stroke-width=\"1\" stroke=\"none\" id=\"Symbols\"><g id=\"map-group-mark ... 8,38.8 L30.35,38.8 L30.35,37.1 L27.8,37.1 L27.8,34.55 L26.1,34.55 L26.1,34.55 Z\"></path></g></g></g>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(9)>*:nth-child(1)>*:nth-child(4)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "g[id=\"Symbols\"][stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"][fill-rule=\"evenodd\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This g has an id attribute of 'Symbols', which is not unique in the same DOM",
+          "element": "<g fill-rule=\"evenodd\" fill=\"none\" stroke-width=\"1\" stroke=\"none\" id=\"Symbols\"><g id=\"map-group-mark ... 8,38.8 L30.35,38.8 L30.35,37.1 L27.8,37.1 L27.8,34.55 L26.1,34.55 L26.1,34.55 Z\"></path></g></g></g>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(10)>*:nth-child(1)>*:nth-child(4)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "g[id=\"Symbols\"][stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"][fill-rule=\"evenodd\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This g has an id attribute of 'Symbols', which is not unique in the same DOM",
+          "element": "<g fill-rule=\"evenodd\" fill=\"none\" stroke-width=\"1\" stroke=\"none\" id=\"Symbols\"><g id=\"map-group-mark ... 8,38.8 L30.35,38.8 L30.35,37.1 L27.8,37.1 L27.8,34.55 L26.1,34.55 L26.1,34.55 Z\"></path></g></g></g>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(11)>*:nth-child(1)>*:nth-child(4)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "g[id=\"Symbols\"][stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"][fill-rule=\"evenodd\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This g has an id attribute of 'Symbols', which is not unique in the same DOM",
+          "element": "<g fill-rule=\"evenodd\" fill=\"none\" stroke-width=\"1\" stroke=\"none\" id=\"Symbols\"><g id=\"map-group-mark ... 8,38.8 L30.35,38.8 L30.35,37.1 L27.8,37.1 L27.8,34.55 L26.1,34.55 L26.1,34.55 Z\"></path></g></g></g>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(12)>*:nth-child(1)>*:nth-child(4)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "g[id=\"Symbols\"][stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"][fill-rule=\"evenodd\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This g has an id attribute of 'Symbols', which is not unique in the same DOM",
+          "element": "<g fill-rule=\"evenodd\" fill=\"none\" stroke-width=\"1\" stroke=\"none\" id=\"Symbols\"><g id=\"map-group-mark ... 8,38.8 L30.35,38.8 L30.35,37.1 L27.8,37.1 L27.8,34.55 L26.1,34.55 L26.1,34.55 Z\"></path></g></g></g>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(13)>*:nth-child(1)>*:nth-child(4)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "g[id=\"Symbols\"][stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"][fill-rule=\"evenodd\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This g has an id attribute of 'Symbols', which is not unique in the same DOM",
+          "element": "<g fill-rule=\"evenodd\" fill=\"none\" stroke-width=\"1\" stroke=\"none\" id=\"Symbols\"><g id=\"map-group-mark ... 8,38.8 L30.35,38.8 L30.35,37.1 L27.8,37.1 L27.8,34.55 L26.1,34.55 L26.1,34.55 Z\"></path></g></g></g>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(14)>*:nth-child(1)>*:nth-child(4)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "g[id=\"Symbols\"][stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"][fill-rule=\"evenodd\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This g has an id attribute of 'Symbols', which is not unique in the same DOM",
+          "element": "<g fill-rule=\"evenodd\" fill=\"none\" stroke-width=\"1\" stroke=\"none\" id=\"Symbols\"><g id=\"map-group-mark ... 8,38.8 L30.35,38.8 L30.35,37.1 L27.8,37.1 L27.8,34.55 L26.1,34.55 L26.1,34.55 Z\"></path></g></g></g>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(15)>*:nth-child(1)>*:nth-child(4)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "g[id=\"Symbols\"][stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"][fill-rule=\"evenodd\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This g has an id attribute of 'map-marker-multiple', which is not unique in the same DOM",
+          "element": "<g id=\"map-marker-multiple\"><g id=\"map-marker-multiple-expand\"><g fill=\"#E62A10\" id=\"Mutlple-Marker- ... 3,34.6666667 L26.4083333,38.4166667 L27.5833333,39.5916667 L27.5833333,39.5916667 Z\"></path></g></g>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "g[id=\"map-marker-multiple\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This g has an id attribute of 'map-marker-multiple', which is not unique in the same DOM",
+          "element": "<g id=\"map-marker-multiple\"><g id=\"map-marker-multiple-expand\"><g fill=\"#E62A10\" id=\"Mutlple-Marker- ... 3,34.6666667 L26.4083333,38.4166667 L27.5833333,39.5916667 L27.5833333,39.5916667 Z\"></path></g></g>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "g[id=\"map-marker-multiple\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This g has an id attribute of 'map-marker-multiple', which is not unique in the same DOM",
+          "element": "<g id=\"map-marker-multiple\"><g id=\"map-marker-multiple-expand\"><g fill=\"#E62A10\" id=\"Mutlple-Marker- ... 3,34.6666667 L26.4083333,38.4166667 L27.5833333,39.5916667 L27.5833333,39.5916667 Z\"></path></g></g>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(3)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "g[id=\"map-marker-multiple\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This g has an id attribute of 'map-marker-multiple', which is not unique in the same DOM",
+          "element": "<g id=\"map-marker-multiple\"><g id=\"map-marker-multiple-expand\"><g fill=\"#E62A10\" id=\"Mutlple-Marker- ... 3,34.6666667 L26.4083333,38.4166667 L27.5833333,39.5916667 L27.5833333,39.5916667 Z\"></path></g></g>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(8)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "g[id=\"map-marker-multiple\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This g has an id attribute of 'map-marker-multiple-expand', which is not unique in the same DOM",
+          "element": "<g id=\"map-marker-multiple-expand\"><g fill=\"#E62A10\" id=\"Mutlple-Marker-Shapes\"><g transform=\"transl ... 83333,34.6666667 L26.4083333,38.4166667 L27.5833333,39.5916667 L27.5833333,39.5916667 Z\"></path></g>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "g[id=\"map-marker-multiple-expand\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This g has an id attribute of 'map-marker-multiple-expand', which is not unique in the same DOM",
+          "element": "<g id=\"map-marker-multiple-expand\"><g fill=\"#E62A10\" id=\"Mutlple-Marker-Shapes\"><g transform=\"transl ... 83333,34.6666667 L26.4083333,38.4166667 L27.5833333,39.5916667 L27.5833333,39.5916667 Z\"></path></g>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "g[id=\"map-marker-multiple-expand\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This g has an id attribute of 'map-marker-multiple-expand', which is not unique in the same DOM",
+          "element": "<g id=\"map-marker-multiple-expand\"><g fill=\"#E62A10\" id=\"Mutlple-Marker-Shapes\"><g transform=\"transl ... 83333,34.6666667 L26.4083333,38.4166667 L27.5833333,39.5916667 L27.5833333,39.5916667 Z\"></path></g>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(3)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "g[id=\"map-marker-multiple-expand\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This g has an id attribute of 'map-marker-multiple-expand', which is not unique in the same DOM",
+          "element": "<g id=\"map-marker-multiple-expand\"><g fill=\"#E62A10\" id=\"Mutlple-Marker-Shapes\"><g transform=\"transl ... 83333,34.6666667 L26.4083333,38.4166667 L27.5833333,39.5916667 L27.5833333,39.5916667 Z\"></path></g>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(8)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "g[id=\"map-marker-multiple-expand\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This g has an id attribute of 'Mutlple-Marker-Shapes', which is not unique in the same DOM",
+          "element": "<g fill=\"#E62A10\" id=\"Mutlple-Marker-Shapes\"><g transform=\"translate(0.963157, 0.000000)\" id=\"Indivi ... 11.3083701 0,25.2579516 C0,39.2075331 25.1471939,66.4038086 25.1471939,66.4038086 Z\"></path></g></g>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "g[id=\"Mutlple-Marker-Shapes\"][fill=\"#E62A10\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This g has an id attribute of 'Mutlple-Marker-Shapes', which is not unique in the same DOM",
+          "element": "<g fill=\"#E62A10\" id=\"Mutlple-Marker-Shapes\"><g transform=\"translate(0.963157, 0.000000)\" id=\"Indivi ... 11.3083701 0,25.2579516 C0,39.2075331 25.1471939,66.4038086 25.1471939,66.4038086 Z\"></path></g></g>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "g[id=\"Mutlple-Marker-Shapes\"][fill=\"#E62A10\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This g has an id attribute of 'Mutlple-Marker-Shapes', which is not unique in the same DOM",
+          "element": "<g fill=\"#E62A10\" id=\"Mutlple-Marker-Shapes\"><g transform=\"translate(0.963157, 0.000000)\" id=\"Indivi ... 11.3083701 0,25.2579516 C0,39.2075331 25.1471939,66.4038086 25.1471939,66.4038086 Z\"></path></g></g>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(3)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "g[id=\"Mutlple-Marker-Shapes\"][fill=\"#E62A10\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This g has an id attribute of 'Mutlple-Marker-Shapes', which is not unique in the same DOM",
+          "element": "<g fill=\"#E62A10\" id=\"Mutlple-Marker-Shapes\"><g transform=\"translate(0.963157, 0.000000)\" id=\"Indivi ... 11.3083701 0,25.2579516 C0,39.2075331 25.1471939,66.4038086 25.1471939,66.4038086 Z\"></path></g></g>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(8)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "g[id=\"Mutlple-Marker-Shapes\"][fill=\"#E62A10\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This g has an id attribute of 'Individual-Marker-Copy', which is not unique in the same DOM",
+          "element": "<g transform=\"translate(0.963157, 0.000000)\" id=\"Individual-Marker-Copy\"><path id=\"Back-Marker\" d=\"M ... 0 0,11.3083701 0,25.2579516 C0,39.2075331 25.1471939,66.4038086 25.1471939,66.4038086 Z\"></path></g>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "g[id=\"Individual-Marker-Copy\"][transform=\"translate(0.963157, 0.000000)\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This g has an id attribute of 'Individual-Marker-Copy', which is not unique in the same DOM",
+          "element": "<g transform=\"translate(0.963157, 0.000000)\" id=\"Individual-Marker-Copy\"><path id=\"Back-Marker\" d=\"M ... 0 0,11.3083701 0,25.2579516 C0,39.2075331 25.1471939,66.4038086 25.1471939,66.4038086 Z\"></path></g>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "g[id=\"Individual-Marker-Copy\"][transform=\"translate(0.963157, 0.000000)\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This g has an id attribute of 'Individual-Marker-Copy', which is not unique in the same DOM",
+          "element": "<g transform=\"translate(0.963157, 0.000000)\" id=\"Individual-Marker-Copy\"><path id=\"Back-Marker\" d=\"M ... 0 0,11.3083701 0,25.2579516 C0,39.2075331 25.1471939,66.4038086 25.1471939,66.4038086 Z\"></path></g>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(3)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "g[id=\"Individual-Marker-Copy\"][transform=\"translate(0.963157, 0.000000)\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This g has an id attribute of 'Individual-Marker-Copy', which is not unique in the same DOM",
+          "element": "<g transform=\"translate(0.963157, 0.000000)\" id=\"Individual-Marker-Copy\"><path id=\"Back-Marker\" d=\"M ... 0 0,11.3083701 0,25.2579516 C0,39.2075331 25.1471939,66.4038086 25.1471939,66.4038086 Z\"></path></g>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(8)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "g[id=\"Individual-Marker-Copy\"][transform=\"translate(0.963157, 0.000000)\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This path has an id attribute of 'Back-Marker', which is not unique in the same DOM",
+          "element": "<path id=\"Back-Marker\" d=\"M29.8041548,0.131996331 C30.6260558,0.0447171781 31.4600804,0 32.3041548,0 ... 51.6083097,25.2579516 C51.6083097,12.1855696 42.0524554,1.43266562 29.8041548,0.131996331 Z\"></path>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "path[d=\"M29.8041548,0.131996331 C30.6260558,0.0447171781 31.4600804,0 32.3041548,0 C45.7269689,0 56.6083097,11.3083701 56.6083097,25.2579516 C56.6083097,39.2075331 33.1471939,66.4038086 33.1471939,66.4038086 C33.1471939,66.4038086 32.1532101,65.3288315 30.5604763,63.4966946 C36.5486072,56.1134566 51.6083097,36.4341742 51.6083097,25.2579516 C51.6083097,12.1855696 42.0524554,1.43266562 29.8041548,0.131996331 Z\"][id=\"Back-Marker\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This path has an id attribute of 'Back-Marker', which is not unique in the same DOM",
+          "element": "<path id=\"Back-Marker\" d=\"M29.8041548,0.131996331 C30.6260558,0.0447171781 31.4600804,0 32.3041548,0 ... 51.6083097,25.2579516 C51.6083097,12.1855696 42.0524554,1.43266562 29.8041548,0.131996331 Z\"></path>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "path[d=\"M29.8041548,0.131996331 C30.6260558,0.0447171781 31.4600804,0 32.3041548,0 C45.7269689,0 56.6083097,11.3083701 56.6083097,25.2579516 C56.6083097,39.2075331 33.1471939,66.4038086 33.1471939,66.4038086 C33.1471939,66.4038086 32.1532101,65.3288315 30.5604763,63.4966946 C36.5486072,56.1134566 51.6083097,36.4341742 51.6083097,25.2579516 C51.6083097,12.1855696 42.0524554,1.43266562 29.8041548,0.131996331 Z\"][id=\"Back-Marker\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This path has an id attribute of 'Back-Marker', which is not unique in the same DOM",
+          "element": "<path id=\"Back-Marker\" d=\"M29.8041548,0.131996331 C30.6260558,0.0447171781 31.4600804,0 32.3041548,0 ... 51.6083097,25.2579516 C51.6083097,12.1855696 42.0524554,1.43266562 29.8041548,0.131996331 Z\"></path>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(3)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "path[d=\"M29.8041548,0.131996331 C30.6260558,0.0447171781 31.4600804,0 32.3041548,0 C45.7269689,0 56.6083097,11.3083701 56.6083097,25.2579516 C56.6083097,39.2075331 33.1471939,66.4038086 33.1471939,66.4038086 C33.1471939,66.4038086 32.1532101,65.3288315 30.5604763,63.4966946 C36.5486072,56.1134566 51.6083097,36.4341742 51.6083097,25.2579516 C51.6083097,12.1855696 42.0524554,1.43266562 29.8041548,0.131996331 Z\"][id=\"Back-Marker\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This path has an id attribute of 'Back-Marker', which is not unique in the same DOM",
+          "element": "<path id=\"Back-Marker\" d=\"M29.8041548,0.131996331 C30.6260558,0.0447171781 31.4600804,0 32.3041548,0 ... 51.6083097,25.2579516 C51.6083097,12.1855696 42.0524554,1.43266562 29.8041548,0.131996331 Z\"></path>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(8)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "path[d=\"M29.8041548,0.131996331 C30.6260558,0.0447171781 31.4600804,0 32.3041548,0 C45.7269689,0 56.6083097,11.3083701 56.6083097,25.2579516 C56.6083097,39.2075331 33.1471939,66.4038086 33.1471939,66.4038086 C33.1471939,66.4038086 32.1532101,65.3288315 30.5604763,63.4966946 C36.5486072,56.1134566 51.6083097,36.4341742 51.6083097,25.2579516 C51.6083097,12.1855696 42.0524554,1.43266562 29.8041548,0.131996331 Z\"][id=\"Back-Marker\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This path has an id attribute of 'Front-Marker', which is not unique in the same DOM",
+          "element": "<path id=\"Front-Marker\" d=\"M25.1471939,66.4038086 C25.1471939,66.4038086 48.6083097,39.2075331 48.60 ... 408,0 0,11.3083701 0,25.2579516 C0,39.2075331 25.1471939,66.4038086 25.1471939,66.4038086 Z\"></path>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "path[d=\"M25.1471939,66.4038086 C25.1471939,66.4038086 48.6083097,39.2075331 48.6083097,25.2579516 C48.6083097,11.3083701 37.7269689,0 24.3041548,0 C10.8813408,0 0,11.3083701 0,25.2579516 C0,39.2075331 25.1471939,66.4038086 25.1471939,66.4038086 Z\"][id=\"Front-Marker\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This path has an id attribute of 'Front-Marker', which is not unique in the same DOM",
+          "element": "<path id=\"Front-Marker\" d=\"M25.1471939,66.4038086 C25.1471939,66.4038086 48.6083097,39.2075331 48.60 ... 408,0 0,11.3083701 0,25.2579516 C0,39.2075331 25.1471939,66.4038086 25.1471939,66.4038086 Z\"></path>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "path[d=\"M25.1471939,66.4038086 C25.1471939,66.4038086 48.6083097,39.2075331 48.6083097,25.2579516 C48.6083097,11.3083701 37.7269689,0 24.3041548,0 C10.8813408,0 0,11.3083701 0,25.2579516 C0,39.2075331 25.1471939,66.4038086 25.1471939,66.4038086 Z\"][id=\"Front-Marker\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This path has an id attribute of 'Front-Marker', which is not unique in the same DOM",
+          "element": "<path id=\"Front-Marker\" d=\"M25.1471939,66.4038086 C25.1471939,66.4038086 48.6083097,39.2075331 48.60 ... 408,0 0,11.3083701 0,25.2579516 C0,39.2075331 25.1471939,66.4038086 25.1471939,66.4038086 Z\"></path>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(3)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "path[d=\"M25.1471939,66.4038086 C25.1471939,66.4038086 48.6083097,39.2075331 48.6083097,25.2579516 C48.6083097,11.3083701 37.7269689,0 24.3041548,0 C10.8813408,0 0,11.3083701 0,25.2579516 C0,39.2075331 25.1471939,66.4038086 25.1471939,66.4038086 Z\"][id=\"Front-Marker\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This path has an id attribute of 'Front-Marker', which is not unique in the same DOM",
+          "element": "<path fill=\"#E62A10\" id=\"Front-Marker\" d=\"M25.1471939,66.4038086 C25.1471939,66.4038086 48.6083097,3 ... 408,0 0,11.3083701 0,25.2579516 C0,39.2075331 25.1471939,66.4038086 25.1471939,66.4038086 Z\"></path>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(5)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "path[d=\"M25.1471939,66.4038086 C25.1471939,66.4038086 48.6083097,39.2075331 48.6083097,25.2579516 C48.6083097,11.3083701 37.7269689,0 24.3041548,0 C10.8813408,0 0,11.3083701 0,25.2579516 C0,39.2075331 25.1471939,66.4038086 25.1471939,66.4038086 Z\"][id=\"Front-Marker\"][fill=\"#E62A10\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This path has an id attribute of 'Front-Marker', which is not unique in the same DOM",
+          "element": "<path id=\"Front-Marker\" d=\"M25.1471939,66.4038086 C25.1471939,66.4038086 48.6083097,39.2075331 48.60 ... 408,0 0,11.3083701 0,25.2579516 C0,39.2075331 25.1471939,66.4038086 25.1471939,66.4038086 Z\"></path>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(8)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "path[d=\"M25.1471939,66.4038086 C25.1471939,66.4038086 48.6083097,39.2075331 48.6083097,25.2579516 C48.6083097,11.3083701 37.7269689,0 24.3041548,0 C10.8813408,0 0,11.3083701 0,25.2579516 C0,39.2075331 25.1471939,66.4038086 25.1471939,66.4038086 Z\"][id=\"Front-Marker\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This path has an id attribute of 'expand', which is not unique in the same DOM",
+          "element": "<path fill=\"#FFFFFF\" id=\"expand\" d=\"M23.8333333,48 L23.8333333,46.3333333 L20.8416667,46.3333333 L24 ... 0.1583333,34.6666667 L26.4083333,38.4166667 L27.5833333,39.5916667 L27.5833333,39.5916667 Z\"></path>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "path[d=\"M23.8333333,48 L23.8333333,46.3333333 L20.8416667,46.3333333 L24.5916667,42.5833333 L23.4166667,41.4083333 L19.6666667,45.1583333 L19.6666667,42.1666667 L18,42.1666667 L18,48 L23.8333333,48 L23.8333333,48 Z M27.5833333,39.5916667 L31.3333333,35.8416667 L31.3333333,38.8333333 L33,38.8333333 L33,33 L27.1666667,33 L27.1666667,34.6666667 L30.1583333,34.6666667 L26.4083333,38.4166667 L27.5833333,39.5916667 L27.5833333,39.5916667 Z\"][id=\"expand\"][fill=\"#FFFFFF\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This path has an id attribute of 'expand', which is not unique in the same DOM",
+          "element": "<path fill=\"#FFFFFF\" id=\"expand\" d=\"M23.8333333,48 L23.8333333,46.3333333 L20.8416667,46.3333333 L24 ... 0.1583333,34.6666667 L26.4083333,38.4166667 L27.5833333,39.5916667 L27.5833333,39.5916667 Z\"></path>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "path[d=\"M23.8333333,48 L23.8333333,46.3333333 L20.8416667,46.3333333 L24.5916667,42.5833333 L23.4166667,41.4083333 L19.6666667,45.1583333 L19.6666667,42.1666667 L18,42.1666667 L18,48 L23.8333333,48 L23.8333333,48 Z M27.5833333,39.5916667 L31.3333333,35.8416667 L31.3333333,38.8333333 L33,38.8333333 L33,33 L27.1666667,33 L27.1666667,34.6666667 L30.1583333,34.6666667 L26.4083333,38.4166667 L27.5833333,39.5916667 L27.5833333,39.5916667 Z\"][id=\"expand\"][fill=\"#FFFFFF\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This path has an id attribute of 'expand', which is not unique in the same DOM",
+          "element": "<path fill=\"#FFFFFF\" id=\"expand\" d=\"M23.8333333,48 L23.8333333,46.3333333 L20.8416667,46.3333333 L24 ... 0.1583333,34.6666667 L26.4083333,38.4166667 L27.5833333,39.5916667 L27.5833333,39.5916667 Z\"></path>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(3)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "path[d=\"M23.8333333,48 L23.8333333,46.3333333 L20.8416667,46.3333333 L24.5916667,42.5833333 L23.4166667,41.4083333 L19.6666667,45.1583333 L19.6666667,42.1666667 L18,42.1666667 L18,48 L23.8333333,48 L23.8333333,48 Z M27.5833333,39.5916667 L31.3333333,35.8416667 L31.3333333,38.8333333 L33,38.8333333 L33,33 L27.1666667,33 L27.1666667,34.6666667 L30.1583333,34.6666667 L26.4083333,38.4166667 L27.5833333,39.5916667 L27.5833333,39.5916667 Z\"][id=\"expand\"][fill=\"#FFFFFF\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This path has an id attribute of 'expand', which is not unique in the same DOM",
+          "element": "<path fill=\"#FFFFFF\" id=\"expand\" d=\"M22.7777778,37 L22.7777778,34.7777778 L18.7888889,34.7777778 L23 ... 1.2111111,19.2222222 L26.2111111,24.2222222 L27.7777778,25.7888889 L27.7777778,25.7888889 Z\"></path>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(5)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "path[d=\"M22.7777778,37 L22.7777778,34.7777778 L18.7888889,34.7777778 L23.7888889,29.7777778 L22.2222222,28.2111111 L17.2222222,33.2111111 L17.2222222,29.2222222 L15,29.2222222 L15,37 L22.7777778,37 L22.7777778,37 Z M27.7777778,25.7888889 L32.7777778,20.7888889 L32.7777778,24.7777778 L35,24.7777778 L35,17 L27.2222222,17 L27.2222222,19.2222222 L31.2111111,19.2222222 L26.2111111,24.2222222 L27.7777778,25.7888889 L27.7777778,25.7888889 Z\"][id=\"expand\"][fill=\"#FFFFFF\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This path has an id attribute of 'expand', which is not unique in the same DOM",
+          "element": "<path fill=\"#FFFFFF\" id=\"expand\" d=\"M23.8333333,48 L23.8333333,46.3333333 L20.8416667,46.3333333 L24 ... 0.1583333,34.6666667 L26.4083333,38.4166667 L27.5833333,39.5916667 L27.5833333,39.5916667 Z\"></path>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(8)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "path[d=\"M23.8333333,48 L23.8333333,46.3333333 L20.8416667,46.3333333 L24.5916667,42.5833333 L23.4166667,41.4083333 L19.6666667,45.1583333 L19.6666667,42.1666667 L18,42.1666667 L18,48 L23.8333333,48 L23.8333333,48 Z M27.5833333,39.5916667 L31.3333333,35.8416667 L31.3333333,38.8333333 L33,38.8333333 L33,33 L27.1666667,33 L27.1666667,34.6666667 L30.1583333,34.6666667 L26.4083333,38.4166667 L27.5833333,39.5916667 L27.5833333,39.5916667 Z\"][id=\"expand\"][fill=\"#FFFFFF\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This g has an id attribute of 'map-group-marker-multiple-zoom', which is not unique in the same DOM",
+          "element": "<g id=\"map-group-marker-multiple-zoom\"><g transform=\"translate(2.000000, 4.000000)\" id=\"map-marker-m ... L27.8,38.8 L30.35,38.8 L30.35,37.1 L27.8,37.1 L27.8,34.55 L26.1,34.55 L26.1,34.55 Z\"></path></g></g>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(4)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "g[id=\"map-group-marker-multiple-zoom\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This g has an id attribute of 'map-group-marker-multiple-zoom', which is not unique in the same DOM",
+          "element": "<g id=\"map-group-marker-multiple-zoom\"><g transform=\"translate(2.000000, 4.000000)\" id=\"map-marker-m ... L27.8,38.8 L30.35,38.8 L30.35,37.1 L27.8,37.1 L27.8,34.55 L26.1,34.55 L26.1,34.55 Z\"></path></g></g>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(6)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "g[id=\"map-group-marker-multiple-zoom\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This g has an id attribute of 'map-group-marker-multiple-zoom', which is not unique in the same DOM",
+          "element": "<g id=\"map-group-marker-multiple-zoom\"><g transform=\"translate(2.000000, 4.000000)\" id=\"map-marker-m ... L27.8,38.8 L30.35,38.8 L30.35,37.1 L27.8,37.1 L27.8,34.55 L26.1,34.55 L26.1,34.55 Z\"></path></g></g>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(7)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "g[id=\"map-group-marker-multiple-zoom\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This g has an id attribute of 'map-group-marker-multiple-zoom', which is not unique in the same DOM",
+          "element": "<g id=\"map-group-marker-multiple-zoom\"><g transform=\"translate(2.000000, 4.000000)\" id=\"map-marker-m ... L27.8,38.8 L30.35,38.8 L30.35,37.1 L27.8,37.1 L27.8,34.55 L26.1,34.55 L26.1,34.55 Z\"></path></g></g>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(9)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "g[id=\"map-group-marker-multiple-zoom\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This g has an id attribute of 'map-group-marker-multiple-zoom', which is not unique in the same DOM",
+          "element": "<g id=\"map-group-marker-multiple-zoom\"><g transform=\"translate(2.000000, 4.000000)\" id=\"map-marker-m ... L27.8,38.8 L30.35,38.8 L30.35,37.1 L27.8,37.1 L27.8,34.55 L26.1,34.55 L26.1,34.55 Z\"></path></g></g>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(10)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "g[id=\"map-group-marker-multiple-zoom\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This g has an id attribute of 'map-group-marker-multiple-zoom', which is not unique in the same DOM",
+          "element": "<g id=\"map-group-marker-multiple-zoom\"><g transform=\"translate(2.000000, 4.000000)\" id=\"map-marker-m ... L27.8,38.8 L30.35,38.8 L30.35,37.1 L27.8,37.1 L27.8,34.55 L26.1,34.55 L26.1,34.55 Z\"></path></g></g>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(11)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "g[id=\"map-group-marker-multiple-zoom\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This g has an id attribute of 'map-group-marker-multiple-zoom', which is not unique in the same DOM",
+          "element": "<g id=\"map-group-marker-multiple-zoom\"><g transform=\"translate(2.000000, 4.000000)\" id=\"map-marker-m ... L27.8,38.8 L30.35,38.8 L30.35,37.1 L27.8,37.1 L27.8,34.55 L26.1,34.55 L26.1,34.55 Z\"></path></g></g>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(12)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "g[id=\"map-group-marker-multiple-zoom\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This g has an id attribute of 'map-group-marker-multiple-zoom', which is not unique in the same DOM",
+          "element": "<g id=\"map-group-marker-multiple-zoom\"><g transform=\"translate(2.000000, 4.000000)\" id=\"map-marker-m ... L27.8,38.8 L30.35,38.8 L30.35,37.1 L27.8,37.1 L27.8,34.55 L26.1,34.55 L26.1,34.55 Z\"></path></g></g>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(13)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "g[id=\"map-group-marker-multiple-zoom\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This g has an id attribute of 'map-group-marker-multiple-zoom', which is not unique in the same DOM",
+          "element": "<g id=\"map-group-marker-multiple-zoom\"><g transform=\"translate(2.000000, 4.000000)\" id=\"map-marker-m ... L27.8,38.8 L30.35,38.8 L30.35,37.1 L27.8,37.1 L27.8,34.55 L26.1,34.55 L26.1,34.55 Z\"></path></g></g>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(14)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "g[id=\"map-group-marker-multiple-zoom\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This g has an id attribute of 'map-group-marker-multiple-zoom', which is not unique in the same DOM",
+          "element": "<g id=\"map-group-marker-multiple-zoom\"><g transform=\"translate(2.000000, 4.000000)\" id=\"map-marker-m ... L27.8,38.8 L30.35,38.8 L30.35,37.1 L27.8,37.1 L27.8,34.55 L26.1,34.55 L26.1,34.55 Z\"></path></g></g>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(15)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "g[id=\"map-group-marker-multiple-zoom\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This g has an id attribute of 'map-marker-multiple-zoom', which is not unique in the same DOM",
+          "element": "<g transform=\"translate(2.000000, 4.000000)\" id=\"map-marker-multiple-zoom\"><circle r=\"29\" cy=\"29\" cx ... .35 L27.8,38.8 L30.35,38.8 L30.35,37.1 L27.8,37.1 L27.8,34.55 L26.1,34.55 L26.1,34.55 Z\"></path></g>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(4)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "g[id=\"map-marker-multiple-zoom\"][transform=\"translate(2.000000, 4.000000)\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This g has an id attribute of 'map-marker-multiple-zoom', which is not unique in the same DOM",
+          "element": "<g transform=\"translate(2.000000, 4.000000)\" id=\"map-marker-multiple-zoom\"><circle r=\"29\" cy=\"29\" cx ... .35 L27.8,38.8 L30.35,38.8 L30.35,37.1 L27.8,37.1 L27.8,34.55 L26.1,34.55 L26.1,34.55 Z\"></path></g>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(6)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "g[id=\"map-marker-multiple-zoom\"][transform=\"translate(2.000000, 4.000000)\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This g has an id attribute of 'map-marker-multiple-zoom', which is not unique in the same DOM",
+          "element": "<g transform=\"translate(2.000000, 4.000000)\" id=\"map-marker-multiple-zoom\"><circle r=\"29\" cy=\"29\" cx ... .35 L27.8,38.8 L30.35,38.8 L30.35,37.1 L27.8,37.1 L27.8,34.55 L26.1,34.55 L26.1,34.55 Z\"></path></g>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(7)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "g[id=\"map-marker-multiple-zoom\"][transform=\"translate(2.000000, 4.000000)\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This g has an id attribute of 'map-marker-multiple-zoom', which is not unique in the same DOM",
+          "element": "<g transform=\"translate(2.000000, 4.000000)\" id=\"map-marker-multiple-zoom\"><circle r=\"29\" cy=\"29\" cx ... .35 L27.8,38.8 L30.35,38.8 L30.35,37.1 L27.8,37.1 L27.8,34.55 L26.1,34.55 L26.1,34.55 Z\"></path></g>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(9)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "g[id=\"map-marker-multiple-zoom\"][transform=\"translate(2.000000, 4.000000)\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This g has an id attribute of 'map-marker-multiple-zoom', which is not unique in the same DOM",
+          "element": "<g transform=\"translate(2.000000, 4.000000)\" id=\"map-marker-multiple-zoom\"><circle r=\"29\" cy=\"29\" cx ... .35 L27.8,38.8 L30.35,38.8 L30.35,37.1 L27.8,37.1 L27.8,34.55 L26.1,34.55 L26.1,34.55 Z\"></path></g>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(10)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "g[id=\"map-marker-multiple-zoom\"][transform=\"translate(2.000000, 4.000000)\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This g has an id attribute of 'map-marker-multiple-zoom', which is not unique in the same DOM",
+          "element": "<g transform=\"translate(2.000000, 4.000000)\" id=\"map-marker-multiple-zoom\"><circle r=\"29\" cy=\"29\" cx ... .35 L27.8,38.8 L30.35,38.8 L30.35,37.1 L27.8,37.1 L27.8,34.55 L26.1,34.55 L26.1,34.55 Z\"></path></g>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(11)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "g[id=\"map-marker-multiple-zoom\"][transform=\"translate(2.000000, 4.000000)\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This g has an id attribute of 'map-marker-multiple-zoom', which is not unique in the same DOM",
+          "element": "<g transform=\"translate(2.000000, 4.000000)\" id=\"map-marker-multiple-zoom\"><circle r=\"29\" cy=\"29\" cx ... .35 L27.8,38.8 L30.35,38.8 L30.35,37.1 L27.8,37.1 L27.8,34.55 L26.1,34.55 L26.1,34.55 Z\"></path></g>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(12)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "g[id=\"map-marker-multiple-zoom\"][transform=\"translate(2.000000, 4.000000)\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This g has an id attribute of 'map-marker-multiple-zoom', which is not unique in the same DOM",
+          "element": "<g transform=\"translate(2.000000, 4.000000)\" id=\"map-marker-multiple-zoom\"><circle r=\"29\" cy=\"29\" cx ... .35 L27.8,38.8 L30.35,38.8 L30.35,37.1 L27.8,37.1 L27.8,34.55 L26.1,34.55 L26.1,34.55 Z\"></path></g>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(13)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "g[id=\"map-marker-multiple-zoom\"][transform=\"translate(2.000000, 4.000000)\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This g has an id attribute of 'map-marker-multiple-zoom', which is not unique in the same DOM",
+          "element": "<g transform=\"translate(2.000000, 4.000000)\" id=\"map-marker-multiple-zoom\"><circle r=\"29\" cy=\"29\" cx ... .35 L27.8,38.8 L30.35,38.8 L30.35,37.1 L27.8,37.1 L27.8,34.55 L26.1,34.55 L26.1,34.55 Z\"></path></g>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(14)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "g[id=\"map-marker-multiple-zoom\"][transform=\"translate(2.000000, 4.000000)\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This g has an id attribute of 'map-marker-multiple-zoom', which is not unique in the same DOM",
+          "element": "<g transform=\"translate(2.000000, 4.000000)\" id=\"map-marker-multiple-zoom\"><circle r=\"29\" cy=\"29\" cx ... .35 L27.8,38.8 L30.35,38.8 L30.35,37.1 L27.8,37.1 L27.8,34.55 L26.1,34.55 L26.1,34.55 Z\"></path></g>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(15)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "g[id=\"map-marker-multiple-zoom\"][transform=\"translate(2.000000, 4.000000)\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This circle has an id attribute of 'Oval-35', which is not unique in the same DOM",
+          "element": "<circle r=\"29\" cy=\"29\" cx=\"29\" fill=\"#B11D00\" id=\"Oval-35\"></circle>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(4)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "circle[id=\"Oval-35\"][fill=\"#B11D00\"][cx=\"29\"][cy=\"29\"][r=\"29\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This circle has an id attribute of 'Oval-35', which is not unique in the same DOM",
+          "element": "<circle r=\"29\" cy=\"29\" cx=\"29\" fill=\"#B11D00\" id=\"Oval-35\"></circle>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(6)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "circle[id=\"Oval-35\"][fill=\"#B11D00\"][cx=\"29\"][cy=\"29\"][r=\"29\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This circle has an id attribute of 'Oval-35', which is not unique in the same DOM",
+          "element": "<circle r=\"29\" cy=\"29\" cx=\"29\" fill=\"#B11D00\" id=\"Oval-35\"></circle>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(7)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "circle[id=\"Oval-35\"][fill=\"#B11D00\"][cx=\"29\"][cy=\"29\"][r=\"29\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This circle has an id attribute of 'Oval-35', which is not unique in the same DOM",
+          "element": "<circle r=\"29\" cy=\"29\" cx=\"29\" fill=\"#B11D00\" id=\"Oval-35\"></circle>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(9)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "circle[id=\"Oval-35\"][fill=\"#B11D00\"][cx=\"29\"][cy=\"29\"][r=\"29\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This circle has an id attribute of 'Oval-35', which is not unique in the same DOM",
+          "element": "<circle r=\"29\" cy=\"29\" cx=\"29\" fill=\"#B11D00\" id=\"Oval-35\"></circle>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(10)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "circle[id=\"Oval-35\"][fill=\"#B11D00\"][cx=\"29\"][cy=\"29\"][r=\"29\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This circle has an id attribute of 'Oval-35', which is not unique in the same DOM",
+          "element": "<circle r=\"29\" cy=\"29\" cx=\"29\" fill=\"#B11D00\" id=\"Oval-35\"></circle>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(11)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "circle[id=\"Oval-35\"][fill=\"#B11D00\"][cx=\"29\"][cy=\"29\"][r=\"29\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This circle has an id attribute of 'Oval-35', which is not unique in the same DOM",
+          "element": "<circle r=\"29\" cy=\"29\" cx=\"29\" fill=\"#B11D00\" id=\"Oval-35\"></circle>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(12)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "circle[id=\"Oval-35\"][fill=\"#B11D00\"][cx=\"29\"][cy=\"29\"][r=\"29\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This circle has an id attribute of 'Oval-35', which is not unique in the same DOM",
+          "element": "<circle r=\"29\" cy=\"29\" cx=\"29\" fill=\"#B11D00\" id=\"Oval-35\"></circle>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(13)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "circle[id=\"Oval-35\"][fill=\"#B11D00\"][cx=\"29\"][cy=\"29\"][r=\"29\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This circle has an id attribute of 'Oval-35', which is not unique in the same DOM",
+          "element": "<circle r=\"29\" cy=\"29\" cx=\"29\" fill=\"#B11D00\" id=\"Oval-35\"></circle>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(14)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "circle[id=\"Oval-35\"][fill=\"#B11D00\"][cx=\"29\"][cy=\"29\"][r=\"29\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This circle has an id attribute of 'Oval-35', which is not unique in the same DOM",
+          "element": "<circle r=\"29\" cy=\"29\" cx=\"29\" fill=\"#B11D00\" id=\"Oval-35\"></circle>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(15)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "circle[id=\"Oval-35\"][fill=\"#B11D00\"][cx=\"29\"][cy=\"29\"][r=\"29\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This path has an id attribute of 'magnify-plus', which is not unique in the same DOM",
+          "element": "<path fill=\"#FFFFFF\" id=\"magnify-plus\" d=\"M26.95,32 C30.2360943,32 32.9,34.6639057 32.9,37.95 C32.9, ... 8,41.35 L27.8,38.8 L30.35,38.8 L30.35,37.1 L27.8,37.1 L27.8,34.55 L26.1,34.55 L26.1,34.55 Z\"></path>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(4)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "path[d=\"M26.95,32 C30.2360943,32 32.9,34.6639057 32.9,37.95 C32.9,39.2845 32.475,40.5 31.7185,41.5115 L32.3985,42.2 L32.9,42.2 L38,47.3 L36.3,49 L31.2,43.9 L31.2,43.3985 L30.5115,42.7185 C29.5,43.475 28.2845,43.9 26.95,43.9 C23.6639057,43.9 21,41.2360943 21,37.95 C21,34.6639057 23.6639057,32 26.95,32 L26.95,32 Z M26.1,34.55 L26.1,37.1 L23.55,37.1 L23.55,38.8 L26.1,38.8 L26.1,41.35 L27.8,41.35 L27.8,38.8 L30.35,38.8 L30.35,37.1 L27.8,37.1 L27.8,34.55 L26.1,34.55 L26.1,34.55 Z\"][id=\"magnify-plus\"][fill=\"#FFFFFF\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This path has an id attribute of 'magnify-plus', which is not unique in the same DOM",
+          "element": "<path fill=\"#FFFFFF\" id=\"magnify-plus\" d=\"M26.95,32 C30.2360943,32 32.9,34.6639057 32.9,37.95 C32.9, ... 8,41.35 L27.8,38.8 L30.35,38.8 L30.35,37.1 L27.8,37.1 L27.8,34.55 L26.1,34.55 L26.1,34.55 Z\"></path>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(6)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "path[d=\"M26.95,32 C30.2360943,32 32.9,34.6639057 32.9,37.95 C32.9,39.2845 32.475,40.5 31.7185,41.5115 L32.3985,42.2 L32.9,42.2 L38,47.3 L36.3,49 L31.2,43.9 L31.2,43.3985 L30.5115,42.7185 C29.5,43.475 28.2845,43.9 26.95,43.9 C23.6639057,43.9 21,41.2360943 21,37.95 C21,34.6639057 23.6639057,32 26.95,32 L26.95,32 Z M26.1,34.55 L26.1,37.1 L23.55,37.1 L23.55,38.8 L26.1,38.8 L26.1,41.35 L27.8,41.35 L27.8,38.8 L30.35,38.8 L30.35,37.1 L27.8,37.1 L27.8,34.55 L26.1,34.55 L26.1,34.55 Z\"][id=\"magnify-plus\"][fill=\"#FFFFFF\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This path has an id attribute of 'magnify-plus', which is not unique in the same DOM",
+          "element": "<path fill=\"#FFFFFF\" id=\"magnify-plus\" d=\"M26.95,32 C30.2360943,32 32.9,34.6639057 32.9,37.95 C32.9, ... 8,41.35 L27.8,38.8 L30.35,38.8 L30.35,37.1 L27.8,37.1 L27.8,34.55 L26.1,34.55 L26.1,34.55 Z\"></path>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(7)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "path[d=\"M26.95,32 C30.2360943,32 32.9,34.6639057 32.9,37.95 C32.9,39.2845 32.475,40.5 31.7185,41.5115 L32.3985,42.2 L32.9,42.2 L38,47.3 L36.3,49 L31.2,43.9 L31.2,43.3985 L30.5115,42.7185 C29.5,43.475 28.2845,43.9 26.95,43.9 C23.6639057,43.9 21,41.2360943 21,37.95 C21,34.6639057 23.6639057,32 26.95,32 L26.95,32 Z M26.1,34.55 L26.1,37.1 L23.55,37.1 L23.55,38.8 L26.1,38.8 L26.1,41.35 L27.8,41.35 L27.8,38.8 L30.35,38.8 L30.35,37.1 L27.8,37.1 L27.8,34.55 L26.1,34.55 L26.1,34.55 Z\"][id=\"magnify-plus\"][fill=\"#FFFFFF\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This path has an id attribute of 'magnify-plus', which is not unique in the same DOM",
+          "element": "<path fill=\"#FFFFFF\" id=\"magnify-plus\" d=\"M26.95,32 C30.2360943,32 32.9,34.6639057 32.9,37.95 C32.9, ... 8,41.35 L27.8,38.8 L30.35,38.8 L30.35,37.1 L27.8,37.1 L27.8,34.55 L26.1,34.55 L26.1,34.55 Z\"></path>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(9)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "path[d=\"M26.95,32 C30.2360943,32 32.9,34.6639057 32.9,37.95 C32.9,39.2845 32.475,40.5 31.7185,41.5115 L32.3985,42.2 L32.9,42.2 L38,47.3 L36.3,49 L31.2,43.9 L31.2,43.3985 L30.5115,42.7185 C29.5,43.475 28.2845,43.9 26.95,43.9 C23.6639057,43.9 21,41.2360943 21,37.95 C21,34.6639057 23.6639057,32 26.95,32 L26.95,32 Z M26.1,34.55 L26.1,37.1 L23.55,37.1 L23.55,38.8 L26.1,38.8 L26.1,41.35 L27.8,41.35 L27.8,38.8 L30.35,38.8 L30.35,37.1 L27.8,37.1 L27.8,34.55 L26.1,34.55 L26.1,34.55 Z\"][id=\"magnify-plus\"][fill=\"#FFFFFF\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This path has an id attribute of 'magnify-plus', which is not unique in the same DOM",
+          "element": "<path fill=\"#FFFFFF\" id=\"magnify-plus\" d=\"M26.95,32 C30.2360943,32 32.9,34.6639057 32.9,37.95 C32.9, ... 8,41.35 L27.8,38.8 L30.35,38.8 L30.35,37.1 L27.8,37.1 L27.8,34.55 L26.1,34.55 L26.1,34.55 Z\"></path>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(10)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "path[d=\"M26.95,32 C30.2360943,32 32.9,34.6639057 32.9,37.95 C32.9,39.2845 32.475,40.5 31.7185,41.5115 L32.3985,42.2 L32.9,42.2 L38,47.3 L36.3,49 L31.2,43.9 L31.2,43.3985 L30.5115,42.7185 C29.5,43.475 28.2845,43.9 26.95,43.9 C23.6639057,43.9 21,41.2360943 21,37.95 C21,34.6639057 23.6639057,32 26.95,32 L26.95,32 Z M26.1,34.55 L26.1,37.1 L23.55,37.1 L23.55,38.8 L26.1,38.8 L26.1,41.35 L27.8,41.35 L27.8,38.8 L30.35,38.8 L30.35,37.1 L27.8,37.1 L27.8,34.55 L26.1,34.55 L26.1,34.55 Z\"][id=\"magnify-plus\"][fill=\"#FFFFFF\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This path has an id attribute of 'magnify-plus', which is not unique in the same DOM",
+          "element": "<path fill=\"#FFFFFF\" id=\"magnify-plus\" d=\"M26.95,32 C30.2360943,32 32.9,34.6639057 32.9,37.95 C32.9, ... 8,41.35 L27.8,38.8 L30.35,38.8 L30.35,37.1 L27.8,37.1 L27.8,34.55 L26.1,34.55 L26.1,34.55 Z\"></path>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(11)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "path[d=\"M26.95,32 C30.2360943,32 32.9,34.6639057 32.9,37.95 C32.9,39.2845 32.475,40.5 31.7185,41.5115 L32.3985,42.2 L32.9,42.2 L38,47.3 L36.3,49 L31.2,43.9 L31.2,43.3985 L30.5115,42.7185 C29.5,43.475 28.2845,43.9 26.95,43.9 C23.6639057,43.9 21,41.2360943 21,37.95 C21,34.6639057 23.6639057,32 26.95,32 L26.95,32 Z M26.1,34.55 L26.1,37.1 L23.55,37.1 L23.55,38.8 L26.1,38.8 L26.1,41.35 L27.8,41.35 L27.8,38.8 L30.35,38.8 L30.35,37.1 L27.8,37.1 L27.8,34.55 L26.1,34.55 L26.1,34.55 Z\"][id=\"magnify-plus\"][fill=\"#FFFFFF\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This path has an id attribute of 'magnify-plus', which is not unique in the same DOM",
+          "element": "<path fill=\"#FFFFFF\" id=\"magnify-plus\" d=\"M26.95,32 C30.2360943,32 32.9,34.6639057 32.9,37.95 C32.9, ... 8,41.35 L27.8,38.8 L30.35,38.8 L30.35,37.1 L27.8,37.1 L27.8,34.55 L26.1,34.55 L26.1,34.55 Z\"></path>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(12)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "path[d=\"M26.95,32 C30.2360943,32 32.9,34.6639057 32.9,37.95 C32.9,39.2845 32.475,40.5 31.7185,41.5115 L32.3985,42.2 L32.9,42.2 L38,47.3 L36.3,49 L31.2,43.9 L31.2,43.3985 L30.5115,42.7185 C29.5,43.475 28.2845,43.9 26.95,43.9 C23.6639057,43.9 21,41.2360943 21,37.95 C21,34.6639057 23.6639057,32 26.95,32 L26.95,32 Z M26.1,34.55 L26.1,37.1 L23.55,37.1 L23.55,38.8 L26.1,38.8 L26.1,41.35 L27.8,41.35 L27.8,38.8 L30.35,38.8 L30.35,37.1 L27.8,37.1 L27.8,34.55 L26.1,34.55 L26.1,34.55 Z\"][id=\"magnify-plus\"][fill=\"#FFFFFF\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This path has an id attribute of 'magnify-plus', which is not unique in the same DOM",
+          "element": "<path fill=\"#FFFFFF\" id=\"magnify-plus\" d=\"M26.95,32 C30.2360943,32 32.9,34.6639057 32.9,37.95 C32.9, ... 8,41.35 L27.8,38.8 L30.35,38.8 L30.35,37.1 L27.8,37.1 L27.8,34.55 L26.1,34.55 L26.1,34.55 Z\"></path>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(13)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "path[d=\"M26.95,32 C30.2360943,32 32.9,34.6639057 32.9,37.95 C32.9,39.2845 32.475,40.5 31.7185,41.5115 L32.3985,42.2 L32.9,42.2 L38,47.3 L36.3,49 L31.2,43.9 L31.2,43.3985 L30.5115,42.7185 C29.5,43.475 28.2845,43.9 26.95,43.9 C23.6639057,43.9 21,41.2360943 21,37.95 C21,34.6639057 23.6639057,32 26.95,32 L26.95,32 Z M26.1,34.55 L26.1,37.1 L23.55,37.1 L23.55,38.8 L26.1,38.8 L26.1,41.35 L27.8,41.35 L27.8,38.8 L30.35,38.8 L30.35,37.1 L27.8,37.1 L27.8,34.55 L26.1,34.55 L26.1,34.55 Z\"][id=\"magnify-plus\"][fill=\"#FFFFFF\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This path has an id attribute of 'magnify-plus', which is not unique in the same DOM",
+          "element": "<path fill=\"#FFFFFF\" id=\"magnify-plus\" d=\"M26.95,32 C30.2360943,32 32.9,34.6639057 32.9,37.95 C32.9, ... 8,41.35 L27.8,38.8 L30.35,38.8 L30.35,37.1 L27.8,37.1 L27.8,34.55 L26.1,34.55 L26.1,34.55 Z\"></path>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(14)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "path[d=\"M26.95,32 C30.2360943,32 32.9,34.6639057 32.9,37.95 C32.9,39.2845 32.475,40.5 31.7185,41.5115 L32.3985,42.2 L32.9,42.2 L38,47.3 L36.3,49 L31.2,43.9 L31.2,43.3985 L30.5115,42.7185 C29.5,43.475 28.2845,43.9 26.95,43.9 C23.6639057,43.9 21,41.2360943 21,37.95 C21,34.6639057 23.6639057,32 26.95,32 L26.95,32 Z M26.1,34.55 L26.1,37.1 L23.55,37.1 L23.55,38.8 L26.1,38.8 L26.1,41.35 L27.8,41.35 L27.8,38.8 L30.35,38.8 L30.35,37.1 L27.8,37.1 L27.8,34.55 L26.1,34.55 L26.1,34.55 Z\"][id=\"magnify-plus\"][fill=\"#FFFFFF\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This path has an id attribute of 'magnify-plus', which is not unique in the same DOM",
+          "element": "<path fill=\"#FFFFFF\" id=\"magnify-plus\" d=\"M26.95,32 C30.2360943,32 32.9,34.6639057 32.9,37.95 C32.9, ... 8,41.35 L27.8,38.8 L30.35,38.8 L30.35,37.1 L27.8,37.1 L27.8,34.55 L26.1,34.55 L26.1,34.55 Z\"></path>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(15)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "path[d=\"M26.95,32 C30.2360943,32 32.9,34.6639057 32.9,37.95 C32.9,39.2845 32.475,40.5 31.7185,41.5115 L32.3985,42.2 L32.9,42.2 L38,47.3 L36.3,49 L31.2,43.9 L31.2,43.3985 L30.5115,42.7185 C29.5,43.475 28.2845,43.9 26.95,43.9 C23.6639057,43.9 21,41.2360943 21,37.95 C21,34.6639057 23.6639057,32 26.95,32 L26.95,32 Z M26.1,34.55 L26.1,37.1 L23.55,37.1 L23.55,38.8 L26.1,38.8 L26.1,41.35 L27.8,41.35 L27.8,38.8 L30.35,38.8 L30.35,37.1 L27.8,37.1 L27.8,34.55 L26.1,34.55 L26.1,34.55 Z\"][id=\"magnify-plus\"][fill=\"#FFFFFF\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg class=\" section_106_map_cluster_marker\" version=\"1.1\" viewbox=\"0 0 63 67\" height=\"67px\" width=\" ... /g><text class=\" section_106_map_cluster_marker_label\" transform=\"translate(30, 25)\">12</text></svg>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(4)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[width=\"63px\"][height=\"67px\"][viewbox=\"0 0 63 67\"][version=\"1.1\"][class=\" section_106_map_cluster_marker\"]",
+            "attNo": 7
+          }
+        },
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg class=\" section_106_map_cluster_marker\" version=\"1.1\" viewbox=\"0 0 63 67\" height=\"67px\" width=\" ... /g><text class=\" section_106_map_cluster_marker_label\" transform=\"translate(30, 25)\">27</text></svg>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(6)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[width=\"63px\"][height=\"67px\"][viewbox=\"0 0 63 67\"][version=\"1.1\"][class=\" section_106_map_cluster_marker\"]",
+            "attNo": 7
+          }
+        },
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg class=\" section_106_map_cluster_marker\" version=\"1.1\" viewbox=\"0 0 63 67\" height=\"67px\" width=\" ... /g><text class=\" section_106_map_cluster_marker_label\" transform=\"translate(30, 25)\">12</text></svg>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(7)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[width=\"63px\"][height=\"67px\"][viewbox=\"0 0 63 67\"][version=\"1.1\"][class=\" section_106_map_cluster_marker\"]",
+            "attNo": 7
+          }
+        },
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg class=\" section_106_map_cluster_marker\" version=\"1.1\" viewbox=\"0 0 63 67\" height=\"67px\" width=\" ... /g><text class=\" section_106_map_cluster_marker_label\" transform=\"translate(30, 25)\">10</text></svg>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(9)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[width=\"63px\"][height=\"67px\"][viewbox=\"0 0 63 67\"][version=\"1.1\"][class=\" section_106_map_cluster_marker\"]",
+            "attNo": 7
+          }
+        },
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg class=\" section_106_map_cluster_marker\" version=\"1.1\" viewbox=\"0 0 63 67\" height=\"67px\" width=\" ... /g><text class=\" section_106_map_cluster_marker_label\" transform=\"translate(30, 25)\">14</text></svg>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(10)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[width=\"63px\"][height=\"67px\"][viewbox=\"0 0 63 67\"][version=\"1.1\"][class=\" section_106_map_cluster_marker\"]",
+            "attNo": 7
+          }
+        },
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg class=\" section_106_map_cluster_marker\" version=\"1.1\" viewbox=\"0 0 63 67\" height=\"67px\" width=\" ... /g><text class=\" section_106_map_cluster_marker_label\" transform=\"translate(30, 25)\">48</text></svg>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(11)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[width=\"63px\"][height=\"67px\"][viewbox=\"0 0 63 67\"][version=\"1.1\"][class=\" section_106_map_cluster_marker\"]",
+            "attNo": 7
+          }
+        },
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg class=\" section_106_map_cluster_marker\" version=\"1.1\" viewbox=\"0 0 63 67\" height=\"67px\" width=\" ... /g><text class=\" section_106_map_cluster_marker_label\" transform=\"translate(30, 25)\">23</text></svg>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(12)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[width=\"63px\"][height=\"67px\"][viewbox=\"0 0 63 67\"][version=\"1.1\"][class=\" section_106_map_cluster_marker\"]",
+            "attNo": 7
+          }
+        },
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg class=\" section_106_map_cluster_marker\" version=\"1.1\" viewbox=\"0 0 63 67\" height=\"67px\" width=\" ... /g><text class=\" section_106_map_cluster_marker_label\" transform=\"translate(30, 25)\">36</text></svg>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(13)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[width=\"63px\"][height=\"67px\"][viewbox=\"0 0 63 67\"][version=\"1.1\"][class=\" section_106_map_cluster_marker\"]",
+            "attNo": 7
+          }
+        },
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg class=\" section_106_map_cluster_marker\" version=\"1.1\" viewbox=\"0 0 63 67\" height=\"67px\" width=\" ... /g><text class=\" section_106_map_cluster_marker_label\" transform=\"translate(30, 25)\">10</text></svg>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(14)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[width=\"63px\"][height=\"67px\"][viewbox=\"0 0 63 67\"][version=\"1.1\"][class=\" section_106_map_cluster_marker\"]",
+            "attNo": 7
+          }
+        },
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg class=\" section_106_map_cluster_marker\" version=\"1.1\" viewbox=\"0 0 63 67\" height=\"67px\" width=\" ... /g><text class=\" section_106_map_cluster_marker_label\" transform=\"translate(30, 25)\">15</text></svg>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(15)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[width=\"63px\"][height=\"67px\"][viewbox=\"0 0 63 67\"][version=\"1.1\"][class=\" section_106_map_cluster_marker\"]",
+            "attNo": 7
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a href=\"https://www.achp.gov/initiatives/youth-outreach\" class=\"issues_in_preservation_feature_tab_content_image_link\"></a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(9)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[class=\"issues_in_preservation_feature_tab_content_image_link\"][href=\"https://www.achp.gov/initiatives/youth-outreach\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 863,
+          "bestPracticeId": 2440,
+          "attribute": "This input should not rely on text in the placeholder attribute for an accessible name",
+          "attributeDetail": "This input should not rely on text in the placeholder attribute for an accessible name",
+          "element": "<input class=\"form-text\" maxlength=\"128\" size=\"15\" value=\"\" name=\"query\" id=\"edit-query\" type=\"text\" data-drupal-selector=\"edit-query\" autocomplete=\"on\" placeholder=\"SEARCH ACHP.GOV\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "input[placeholder=\"SEARCH ACHP.GOV\"][autocomplete=\"on\"][data-drupal-selector=\"edit-query\"][type=\"text\"][id=\"edit-query\"][name=\"query\"][value=\"\"][size=\"15\"][maxlength=\"128\"][class=\"form-text\"]",
+            "attNo": 10
+          }
+        },
+        {
+          "engineTestId": 863,
+          "bestPracticeId": 2440,
+          "attribute": "This input should not rely on text in the placeholder attribute for an accessible name",
+          "attributeDetail": "This input should not rely on text in the placeholder attribute for an accessible name",
+          "element": "<input class=\"section_106_map_filter_input\" placeholder=\"Filter Cases\" type=\"text\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "input[type=\"text\"][placeholder=\"Filter Cases\"][class=\"section_106_map_filter_input\"]",
+            "attNo": 3
+          }
+        }
+      ]
+    }
+  ],
+  "timeStamp": "4jil2",
+  "startTime": "2022-07-27T14:20:28",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "continuum",
+      0
+    ]
+  ],
+  "logCount": 3,
+  "logSize": 950,
+  "errorLogCount": 3,
+  "errorLogSize": 950,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-27T14:20:38",
+  "elapsedSeconds": 9
+}

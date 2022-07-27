@@ -1,0 +1,573 @@
+{
+  "id": "4jil2-usms",
+  "host": {
+    "id": "usms",
+    "which": "https://www.usmarshals.gov/",
+    "what": "US Marshals Service (USMS)"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-27T14:38:51"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-27T14:38:57"
+    }
+  ],
+  "script": {
+    "id": "continuum",
+    "what": "Continuum",
+    "strict": true,
+    "timeLimit": 30,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.usmarshals.gov/",
+        "what": "US Marshals Service (USMS)"
+      },
+      {
+        "type": "test",
+        "which": "continuum",
+        "what": "Continuum"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.usmarshals.gov/",
+      "what": "US Marshals Service (USMS)",
+      "result": "https://www.usmarshals.gov/"
+    },
+    {
+      "type": "test",
+      "which": "continuum",
+      "what": "Level Access Continuum, community edition",
+      "url": "https://www.usmarshals.gov/",
+      "result": [
+        {
+          "engineTestId": 89,
+          "bestPracticeId": 362,
+          "attribute": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<img typeof=\"foaf:Image\" src=\"/sites/default/files/styles/hero/public/acquiadam/48789868306-2200%E2% ... k=SAuAIkQ-\" loading=\"lazy\" decoding=\"async\" class=\"media__image media__element b-lazy b-responsive\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(4)>*:nth-child(4)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(8)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[class=\"media__image media__element b-lazy b-responsive\"][decoding=\"async\"][loading=\"lazy\"][src=\"/sites/default/files/styles/hero/public/acquiadam/48789868306-2200%E2%80%8A%C3%97%E2%80%8A1400.jpg?itok=SAuAIkQ-\"][typeof=\"foaf:Image\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This DIV has an id attribute of 'js-modal-page-show-modal', which is not unique in the same DOM",
+          "element": "<div style=\"display: block;\" tabindex=\"-1\" role=\"dialog\" aria-describedby=\"submit_tip_desc\" aria-mod ... /div><input value=\"0\" name=\"delay_display\" id=\"delay_display\" type=\"hidden\"></div></div></div></div>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[id=\"js-modal-page-show-modal\"][class=\"modal fade js-modal-page-show in\"][data-modal-options=\"{\\\"id\\\":\\\"submit_tip\\\",\\\"auto_open\\\":true,\\\"open_modal_on_element_click\\\":\\\"\\\"}\"][data-keyboard=\"true\"][data-backdrop=\"static\"][aria-modal=\"true\"][aria-describedby=\"submit_tip_desc\"][role=\"dialog\"][tabindex=\"-1\"]",
+            "attNo": 10
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This DIV has an id attribute of 'js-modal-page-show-modal', which is not unique in the same DOM",
+          "element": "<div style=\"display: block;\" tabindex=\"-1\" role=\"dialog\" aria-describedby=\"usms_tips_desc\" aria-labe ... /div><input value=\"0\" name=\"delay_display\" id=\"delay_display\" type=\"hidden\"></div></div></div></div>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(3)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[id=\"js-modal-page-show-modal\"][class=\"modal fade js-modal-page-show\"][data-modal-options=\"{\\\"id\\\":\\\"usms_tips\\\",\\\"auto_open\\\":true,\\\"open_modal_on_element_click\\\":\\\"\\\"}\"][data-keyboard=\"true\"][data-backdrop=\"static\"][aria-modal=\"true\"][aria-labelledby=\"usms_tips_label\"][aria-describedby=\"usms_tips_desc\"][role=\"dialog\"][tabindex=\"-1\"]",
+            "attNo": 11
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This INPUT has an id attribute of 'delay_display', which is not unique in the same DOM",
+          "element": "<input value=\"0\" name=\"delay_display\" id=\"delay_display\" type=\"hidden\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(3)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "input[type=\"hidden\"][id=\"delay_display\"][name=\"delay_display\"][value=\"0\"]",
+            "attNo": 4
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This INPUT has an id attribute of 'delay_display', which is not unique in the same DOM",
+          "element": "<input value=\"0\" name=\"delay_display\" id=\"delay_display\" type=\"hidden\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(3)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "input[type=\"hidden\"][id=\"delay_display\"][name=\"delay_display\"][value=\"0\"]",
+            "attNo": 4
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This UL has an id attribute of 'basic-nav-section-1', which is not unique in the same DOM",
+          "element": "<ul class=\"usa-nav__submenu-list featured-submenu-items\" id=\"basic-nav-section-1\"><li class=\"usa-nav ... tem featured-submenu-item\"><a href=\"/who-we-are/about-us/history\"><span>History</span></a></li></ul>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(4)>*:nth-child(3)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "ul[id=\"basic-nav-section-1\"][class=\"usa-nav__submenu-list featured-submenu-items\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This UL has an id attribute of 'basic-nav-section-1', which is not unique in the same DOM",
+          "element": "<ul class=\"usa-nav__submenu-list featured-submenu-items\" id=\"basic-nav-section-1\"><li class=\"usa-nav ... /national-center-judicial-security\"><span>National Center for Judicial Security</span></a></li></ul>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(4)>*:nth-child(3)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "ul[id=\"basic-nav-section-1\"][class=\"usa-nav__submenu-list featured-submenu-items\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This UL has an id attribute of 'basic-nav-section-2', which is not unique in the same DOM",
+          "element": "<ul class=\"usa-nav__submenu-list featured-submenu-items\" id=\"basic-nav-section-2\"><li class=\"usa-nav ... ice-of-professional-responsibility\"><span>Office of Professional Responsibility</span></a></li></ul>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(4)>*:nth-child(3)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "ul[id=\"basic-nav-section-2\"][class=\"usa-nav__submenu-list featured-submenu-items\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This UL has an id attribute of 'basic-nav-section-2', which is not unique in the same DOM",
+          "element": "<ul class=\"usa-nav__submenu-list featured-submenu-items\" id=\"basic-nav-section-2\"><li class=\"usa-nav ... e-do/prisoners/covid-19-prisoner-statistics\"><span>COVID-19 Prisoner Statistics</span></a></li></ul>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(4)>*:nth-child(3)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "ul[id=\"basic-nav-section-2\"][class=\"usa-nav__submenu-list featured-submenu-items\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This UL has an id attribute of 'basic-nav-section-3', which is not unique in the same DOM",
+          "element": "<ul class=\"usa-nav__submenu-list featured-submenu-items\" id=\"basic-nav-section-3\"><li class=\"usa-nav ... g-business-us-marshals-service\"><span>Ten Steps to Doing Business with the USMS</span></a></li></ul>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(4)>*:nth-child(3)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(3)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "ul[id=\"basic-nav-section-3\"][class=\"usa-nav__submenu-list featured-submenu-items\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This UL has an id attribute of 'basic-nav-section-3', which is not unique in the same DOM",
+          "element": "<ul class=\"usa-nav__submenu-list featured-submenu-items\" id=\"basic-nav-section-3\"><li class=\"usa-nav ... \"/what-we-do/fugitive-apprehension/profiled-fugitives\"><span>Profiled Fugitives</span></a></li></ul>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(4)>*:nth-child(3)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(3)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "ul[id=\"basic-nav-section-3\"][class=\"usa-nav__submenu-list featured-submenu-items\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This MAIN has an id attribute of 'main-content', which is not unique in the same DOM",
+          "element": "<main id=\"main-content\" role=\"main\" class=\"main-content \"><a tabindex=\"-1\" id=\"main-content\"></a><di ... t-lang-sm margin-top-1\">Learn more</a></div></div><div class=\"full-hero__bottom\"><h2>Mission</h2><di",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(4)>*:nth-child(4)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "main[class=\"main-content \"][role=\"main\"][id=\"main-content\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This A has an id attribute of 'main-content', which is not unique in the same DOM",
+          "element": "<a tabindex=\"-1\" id=\"main-content\"></a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(4)>*:nth-child(4)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "a[id=\"main-content\"][tabindex=\"-1\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 99,
+          "bestPracticeId": 464,
+          "attribute": "This element does not have a ul element (without an ARIA-assigned role); ol element (without an ARIA-assigned role); or element with a role set to the value: list as a parent",
+          "attributeDetail": "This LI does not have a ul element (without an ARIA-assigned role); ol element (without an ARIA-assigned role); or element with a role set to the value: list as a parent",
+          "element": "<li class=\"usa-nav__primary-item\"><button aria-controls=\"extended-mega-nav-section-1\" aria-expanded= ... m featured-submenu-item\"><a href=\"/who-we-are/procurement/products-services-purchased-us-marshals-se",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(4)>*:nth-child(3)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "li[class=\"usa-nav__primary-item\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 99,
+          "bestPracticeId": 464,
+          "attribute": "This element does not have a ul element (without an ARIA-assigned role); ol element (without an ARIA-assigned role); or element with a role set to the value: list as a parent",
+          "attributeDetail": "This LI does not have a ul element (without an ARIA-assigned role); ol element (without an ARIA-assigned role); or element with a role set to the value: list as a parent",
+          "element": "<li class=\"usa-nav__primary-item\"><button aria-controls=\"extended-mega-nav-section-2\" aria-expanded= ... s</span></a></li><li class=\"usa-nav__submenu-item featured-submenu-item\"><a href=\"/what-we-do/fugiti",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(4)>*:nth-child(3)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "li[class=\"usa-nav__primary-item\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 99,
+          "bestPracticeId": 464,
+          "attribute": "This element does not have a ul element (without an ARIA-assigned role); ol element (without an ARIA-assigned role); or element with a role set to the value: list as a parent",
+          "attributeDetail": "This LI does not have a ul element (without an ARIA-assigned role); ol element (without an ARIA-assigned role); or element with a role set to the value: list as a parent",
+          "element": "<li class=\"usa-nav__primary-item\"><button aria-controls=\"extended-mega-nav-section-3\" aria-expanded= ... y\"><span><strong>Equal Employment Opportunity</strong></span></a></div></div></div></div></div></li>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(4)>*:nth-child(3)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(3)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "li[class=\"usa-nav__primary-item\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 99,
+          "bestPracticeId": 464,
+          "attribute": "This element does not have a ul element (without an ARIA-assigned role); ol element (without an ARIA-assigned role); or element with a role set to the value: list as a parent",
+          "attributeDetail": "This LI does not have a ul element (without an ARIA-assigned role); ol element (without an ARIA-assigned role); or element with a role set to the value: list as a parent",
+          "element": "<li class=\"usa-nav__primary-item\"><a class=\"usa-nav__link\" href=\"/local-districts\"><span>DISTRICTS</span></a></li>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(4)>*:nth-child(3)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(4)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "li[class=\"usa-nav__primary-item\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 99,
+          "bestPracticeId": 464,
+          "attribute": "This element does not have a ul element (without an ARIA-assigned role); ol element (without an ARIA-assigned role); or element with a role set to the value: list as a parent",
+          "attributeDetail": "This LI does not have a ul element (without an ARIA-assigned role); ol element (without an ARIA-assigned role); or element with a role set to the value: list as a parent",
+          "element": "<li class=\"usa-nav__primary-item\"><button aria-controls=\"extended-mega-nav-section-5\" aria-expanded= ... ref=\"/news-release/2176\"><span><strong>Speech</strong></span></a></div></div></div></div></div></li>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(4)>*:nth-child(3)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(5)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "li[class=\"usa-nav__primary-item\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 99,
+          "bestPracticeId": 464,
+          "attribute": "This element does not have a ul element (without an ARIA-assigned role); ol element (without an ARIA-assigned role); or element with a role set to the value: list as a parent",
+          "attributeDetail": "This LI does not have a ul element (without an ARIA-assigned role); ol element (without an ARIA-assigned role); or element with a role set to the value: list as a parent",
+          "element": "<li class=\"usa-nav__primary-item\"><button aria-controls=\"extended-mega-nav-section-6\" aria-expanded= ... rces/infographics\"><span><strong>Infographics</strong></span></a></div></div></div></div></div></li>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(4)>*:nth-child(3)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(6)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "li[class=\"usa-nav__primary-item\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg xmlns:xlink=\"http://www.w3.org/1999/xlink\" xmlns=\"http://www.w3.org/2000/svg\"><symbol xmlns=\"ht ... ol xmlns=\"http://www.w3.org/2000/svg\" id=\"alternate_email\" viewbox=\"0 0 24 24\"><path fill=\"none\" d=\"",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg viewbox=\"0 0 216 146\" height=\"146\" width=\"216\" xmlns=\"http://www.w3.org/2000/svg\" class=\"usa-ic ... 12.56-7.006 22.446v13.93H76.714V73h13.85v67.134h27.784V73h18.494l2.444-23.14h-20.938z\"></path></svg>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(4)>*:nth-child(5)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[class=\"usa-icon\"][width=\"216\"][height=\"146\"][viewbox=\"0 0 216 146\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg viewbox=\"0 0 216 146\" height=\"146\" width=\"216\" xmlns=\"http://www.w3.org/2000/svg\" class=\"usa-ic ... 6-14.08 3.096-21.143 0-1.52-.027-2.66-.082-3.422 5.163-3.746 9.563-8.282 13.2-13.604z\"></path></svg>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(4)>*:nth-child(5)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(4)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[class=\"usa-icon\"][width=\"216\"][height=\"146\"][viewbox=\"0 0 216 146\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg viewbox=\"0 0 216 146\" height=\"146\" width=\"216\" xmlns=\"http://www.w3.org/2000/svg\" class=\"usa-ic ... 08-2.852v-29.9h-7.414v32.1c0 2.77.218 4.807.652 6.11.707 2.01 2.31 3.016 4.807 3.016z\"></path></svg>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(4)>*:nth-child(5)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(4)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[class=\"usa-icon\"][width=\"216\"][height=\"146\"][viewbox=\"0 0 216 146\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg viewbox=\"0 0 54 60\" height=\"60\" width=\"54\" xmlns=\"http://www.w3.org/2000/svg\"><defs><style></st ... ,41.254,12.92Z\" class=\"cls-1\" data-name=\"Rounded Rectangle 1\" id=\"Rounded_Rectangle_1\"></path></svg>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(4)>*:nth-child(5)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(4)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[width=\"54\"][height=\"60\"][viewbox=\"0 0 54 60\"]",
+            "attNo": 4
+          }
+        },
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg viewbox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\" class=\"usa-icon\"><path d=\"M12,2A10,10,0, ... 1,8.15,15.08Zm7.7,0A3.08,3.08,0,1,1,18.92,12,3.07,3.07,0,0,1,15.85,15.08Z\" id=\"Flickr\"></path></svg>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(4)>*:nth-child(5)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(4)>*:nth-child(5)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[class=\"usa-icon\"][viewbox=\"0 0 24 24\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg viewbox=\"0 0 216 146\" height=\"146\" width=\"216\" xmlns=\"http://www.w3.org/2000/svg\" class=\"usa-ic ...  3.747-1.632 1.087-1.086 1.574-2.36 1.468-3.828-.704-14.232-3.964-27.852-9.776-40.86z\"></path></svg>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(4)>*:nth-child(5)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(4)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[class=\"usa-icon\"][width=\"216\"][height=\"146\"][viewbox=\"0 0 216 146\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 325,
+          "bestPracticeId": 1626,
+          "attribute": "The role attribute value given to this element is not allowed.  This element's role attribute can be set to one of the following text values: directory | group | listbox | menu | menubar | radiogroup | tablist | toolbar | tree; or the role attribute can be removed",
+          "attributeDetail": "The role attribute value given to this UL is not allowed.  This element's role attribute can be set to one of the following text values: directory | group | listbox | menu | menubar | radiogroup | tablist | toolbar | tree; or the role attribute can be removed",
+          "element": "<ul role=\"navigation\" class=\"usa-nav__primary usa-accordion\"><li class=\"usa-nav__primary-item\"><butt ... curement Sites</span></a></li><li class=\"usa-nav__submenu-item featured-submenu-item\"><a href=\"/who-",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(4)>*:nth-child(3)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "ul[class=\"usa-nav__primary usa-accordion\"][role=\"navigation\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 736,
+          "bestPracticeId": 1893,
+          "attribute": "This element (role=dialog) does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This DIV (role=dialog) does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<div style=\"display: block;\" tabindex=\"-1\" role=\"dialog\" aria-describedby=\"submit_tip_desc\" aria-mod ... /div><input value=\"0\" name=\"delay_display\" id=\"delay_display\" type=\"hidden\"></div></div></div></div>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[id=\"js-modal-page-show-modal\"][class=\"modal fade js-modal-page-show in\"][data-modal-options=\"{\\\"id\\\":\\\"submit_tip\\\",\\\"auto_open\\\":true,\\\"open_modal_on_element_click\\\":\\\"\\\"}\"][data-keyboard=\"true\"][data-backdrop=\"static\"][aria-modal=\"true\"][aria-describedby=\"submit_tip_desc\"][role=\"dialog\"][tabindex=\"-1\"]",
+            "attNo": 10
+          }
+        }
+      ]
+    }
+  ],
+  "timeStamp": "4jil2",
+  "startTime": "2022-07-27T14:38:51",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "continuum",
+      0
+    ]
+  ],
+  "logCount": 2,
+  "logSize": 316,
+  "errorLogCount": 2,
+  "errorLogSize": 316,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-27T14:38:57",
+  "elapsedSeconds": 5
+}

@@ -1,0 +1,291 @@
+{
+  "id": "4jil2-nos",
+  "host": {
+    "id": "nos",
+    "which": "https://oceanservice.noaa.gov/",
+    "what": "National Ocean Service"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-27T14:32:51"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-27T14:32:57"
+    }
+  ],
+  "script": {
+    "id": "continuum",
+    "what": "Continuum",
+    "strict": true,
+    "timeLimit": 30,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://oceanservice.noaa.gov/",
+        "what": "National Ocean Service"
+      },
+      {
+        "type": "test",
+        "which": "continuum",
+        "what": "Continuum"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://oceanservice.noaa.gov/",
+      "what": "National Ocean Service",
+      "result": "https://oceanservice.noaa.gov/"
+    },
+    {
+      "type": "test",
+      "which": "continuum",
+      "what": "Level Access Continuum, community edition",
+      "url": "https://oceanservice.noaa.gov/",
+      "result": [
+        {
+          "engineTestId": 37,
+          "bestPracticeId": 1626,
+          "attribute": "The role attribute value given to this element is not allowed.  The element's role attribute should be set to one of the following text values: button | checkbox | menuitem | menuitemcheckbox | menuitemradio | radio | tab | switch | treeitem; or the role attribute can be removed",
+          "attributeDetail": "The role attribute value of 'navigation' given to this A is not allowed.  The element's role attribute should be set to one of the following text values: button | checkbox | menuitem | menuitemcheckbox | menuitemradio | radio | tab | switch | treeitem; or the role attribute can be removed",
+          "element": "<a role=\"navigation\" href=\"/\" class=\"nav-link home\">Home</a>",
+          "testResult": 0,
+          "path": "body>header:nth-of-type(1)>*:nth-child(3)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "a[class=\"nav-link home\"][href=\"/\"][role=\"navigation\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 37,
+          "bestPracticeId": 1626,
+          "attribute": "The role attribute value given to this element is not allowed.  The element's role attribute should be set to one of the following text values: button | checkbox | menuitem | menuitemcheckbox | menuitemradio | radio | tab | switch | treeitem; or the role attribute can be removed",
+          "attributeDetail": "The role attribute value of 'navigation' given to this A is not allowed.  The element's role attribute should be set to one of the following text values: button | checkbox | menuitem | menuitemcheckbox | menuitemradio | radio | tab | switch | treeitem; or the role attribute can be removed",
+          "element": "<a role=\"navigation\" href=\"/facts/\" class=\"nav-link facts\">Ocean Facts</a>",
+          "testResult": 0,
+          "path": "body>header:nth-of-type(1)>*:nth-child(3)>*:nth-child(3)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "a[class=\"nav-link facts\"][href=\"/facts/\"][role=\"navigation\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 37,
+          "bestPracticeId": 1626,
+          "attribute": "The role attribute value given to this element is not allowed.  The element's role attribute should be set to one of the following text values: button | checkbox | menuitem | menuitemcheckbox | menuitemradio | radio | tab | switch | treeitem; or the role attribute can be removed",
+          "attributeDetail": "The role attribute value of 'navigation' given to this A is not allowed.  The element's role attribute should be set to one of the following text values: button | checkbox | menuitem | menuitemcheckbox | menuitemradio | radio | tab | switch | treeitem; or the role attribute can be removed",
+          "element": "<a aria-expanded=\"false\" aria-haspopup=\"true\" role=\"navigation\" data-toggle=\"dropdown\" id=\"navbarnos\" href=\"#\" class=\"nav-link explore dropdown-toggle\">Topics</a>",
+          "testResult": 0,
+          "path": "body>header:nth-of-type(1)>*:nth-child(3)>*:nth-child(3)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "a[class=\"nav-link explore dropdown-toggle\"][href=\"#\"][id=\"navbarnos\"][data-toggle=\"dropdown\"][role=\"navigation\"][aria-haspopup=\"true\"][aria-expanded=\"false\"]",
+            "attNo": 7
+          }
+        },
+        {
+          "engineTestId": 37,
+          "bestPracticeId": 1626,
+          "attribute": "The role attribute value given to this element is not allowed.  The element's role attribute should be set to one of the following text values: button | checkbox | menuitem | menuitemcheckbox | menuitemradio | radio | tab | switch | treeitem; or the role attribute can be removed",
+          "attributeDetail": "The role attribute value of 'navigation' given to this A is not allowed.  The element's role attribute should be set to one of the following text values: button | checkbox | menuitem | menuitemcheckbox | menuitemradio | radio | tab | switch | treeitem; or the role attribute can be removed",
+          "element": "<a role=\"navigation\" href=\"/education/\" class=\"nav-link education\">Education</a>",
+          "testResult": 0,
+          "path": "body>header:nth-of-type(1)>*:nth-child(3)>*:nth-child(3)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "a[class=\"nav-link education\"][href=\"/education/\"][role=\"navigation\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 37,
+          "bestPracticeId": 1626,
+          "attribute": "The role attribute value given to this element is not allowed.  The element's role attribute should be set to one of the following text values: button | checkbox | menuitem | menuitemcheckbox | menuitemradio | radio | tab | switch | treeitem; or the role attribute can be removed",
+          "attributeDetail": "The role attribute value of 'navigation' given to this A is not allowed.  The element's role attribute should be set to one of the following text values: button | checkbox | menuitem | menuitemcheckbox | menuitemradio | radio | tab | switch | treeitem; or the role attribute can be removed",
+          "element": "<a role=\"navigation\" href=\"/news/\" class=\"nav-link posts\">News</a>",
+          "testResult": 0,
+          "path": "body>header:nth-of-type(1)>*:nth-child(3)>*:nth-child(3)>*:nth-child(1)>*:nth-child(5)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "a[class=\"nav-link posts\"][href=\"/news/\"][role=\"navigation\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 37,
+          "bestPracticeId": 1626,
+          "attribute": "The role attribute value given to this element is not allowed.  The element's role attribute should be set to one of the following text values: button | checkbox | menuitem | menuitemcheckbox | menuitemradio | radio | tab | switch | treeitem; or the role attribute can be removed",
+          "attributeDetail": "The role attribute value of 'navigation' given to this A is not allowed.  The element's role attribute should be set to one of the following text values: button | checkbox | menuitem | menuitemcheckbox | menuitemradio | radio | tab | switch | treeitem; or the role attribute can be removed",
+          "element": "<a role=\"navigation\" href=\"/podcast/\" class=\"nav-link media-podcast\">Podcasts</a>",
+          "testResult": 0,
+          "path": "body>header:nth-of-type(1)>*:nth-child(3)>*:nth-child(3)>*:nth-child(1)>*:nth-child(6)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "a[class=\"nav-link media-podcast\"][href=\"/podcast/\"][role=\"navigation\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 37,
+          "bestPracticeId": 1626,
+          "attribute": "The role attribute value given to this element is not allowed.  The element's role attribute should be set to one of the following text values: button | checkbox | menuitem | menuitemcheckbox | menuitemradio | radio | tab | switch | treeitem; or the role attribute can be removed",
+          "attributeDetail": "The role attribute value of 'navigation' given to this A is not allowed.  The element's role attribute should be set to one of the following text values: button | checkbox | menuitem | menuitemcheckbox | menuitemradio | radio | tab | switch | treeitem; or the role attribute can be removed",
+          "element": "<a role=\"navigation\" href=\"/video/\" class=\"nav-link media-video\">Video</a>",
+          "testResult": 0,
+          "path": "body>header:nth-of-type(1)>*:nth-child(3)>*:nth-child(3)>*:nth-child(1)>*:nth-child(7)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "a[class=\"nav-link media-video\"][href=\"/video/\"][role=\"navigation\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 37,
+          "bestPracticeId": 1626,
+          "attribute": "The role attribute value given to this element is not allowed.  The element's role attribute should be set to one of the following text values: button | checkbox | menuitem | menuitemcheckbox | menuitemradio | radio | tab | switch | treeitem; or the role attribute can be removed",
+          "attributeDetail": "The role attribute value of 'navigation' given to this A is not allowed.  The element's role attribute should be set to one of the following text values: button | checkbox | menuitem | menuitemcheckbox | menuitemradio | radio | tab | switch | treeitem; or the role attribute can be removed",
+          "element": "<a role=\"navigation\" href=\"/gallery/\" class=\"nav-link media-images\">Images</a>",
+          "testResult": 0,
+          "path": "body>header:nth-of-type(1)>*:nth-child(3)>*:nth-child(3)>*:nth-child(1)>*:nth-child(8)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "a[class=\"nav-link media-images\"][href=\"/gallery/\"][role=\"navigation\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 37,
+          "bestPracticeId": 1626,
+          "attribute": "The role attribute value given to this element is not allowed.  The element's role attribute should be set to one of the following text values: button | checkbox | menuitem | menuitemcheckbox | menuitemradio | radio | tab | switch | treeitem; or the role attribute can be removed",
+          "attributeDetail": "The role attribute value of 'navigation' given to this A is not allowed.  The element's role attribute should be set to one of the following text values: button | checkbox | menuitem | menuitemcheckbox | menuitemradio | radio | tab | switch | treeitem; or the role attribute can be removed",
+          "element": "<a role=\"navigation\" href=\"/about/\" class=\"nav-link about\">About Us</a>",
+          "testResult": 0,
+          "path": "body>header:nth-of-type(1)>*:nth-child(3)>*:nth-child(3)>*:nth-child(1)>*:nth-child(9)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "a[class=\"nav-link about\"][href=\"/about/\"][role=\"navigation\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 85,
+          "bestPracticeId": 1626,
+          "attribute": "This element has an aria-controls attribute value that includes one or more invalid or duplicate ids",
+          "attributeDetail": "This A has an aria-controls attribute value of 'collapseExample', which includes one or more invalid or duplicate ids",
+          "element": "<a aria-controls=\"collapseExample\" aria-expanded=\"false\" role=\"button\" href=\"#collapse-usa\" data-toggle=\"collapse\">Here's how you know we're official.</a>",
+          "testResult": 0,
+          "path": "body>header:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "a[data-toggle=\"collapse\"][href=\"#collapse-usa\"][role=\"button\"][aria-expanded=\"false\"][aria-controls=\"collapseExample\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 257,
+          "bestPracticeId": 1626,
+          "attribute": "The aria-checked attribute is not allowed on this element",
+          "attributeDetail": "The aria-checked attribute is not allowed on this NAV with a role of navigation",
+          "element": "<nav aria-checked=\"false\" role=\"navigation\" class=\"navbar navbar-expand-lg  navbar-dark navbar-nos\"> ... -item\"><a role=\"navigation\" href=\"/about/\" class=\"nav-link about\">About Us</a></li></ul></div></nav>",
+          "testResult": 0,
+          "path": "body>header:nth-of-type(1)>*:nth-child(3)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[class=\"navbar navbar-expand-lg  navbar-dark navbar-nos\"][role=\"navigation\"][aria-checked=\"false\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 264,
+          "bestPracticeId": 1626,
+          "attribute": "The aria-selected attribute is not allowed on this element",
+          "attributeDetail": "The aria-selected attribute is not allowed on this DIV with a role of navigation",
+          "element": "<div aria-selected=\"false\" role=\"navigation\" class=\"navbar navbar-expand-md\"><button data-target=\"#n ... type=\"submit\"><span class=\"sr-only\">Search National Ocean Service</span></button></form></div></div>",
+          "testResult": 0,
+          "path": "body>header:nth-of-type(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[class=\"navbar navbar-expand-md\"][role=\"navigation\"][aria-selected=\"false\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 264,
+          "bestPracticeId": 1626,
+          "attribute": "The aria-selected attribute is not allowed on this element",
+          "attributeDetail": "The aria-selected attribute is not allowed on this DIV with a role of banner",
+          "element": "<div aria-selected=\"false\" role=\"banner\" class=\"navbar-brand\"><div id=\"boxes-box-header_logo\"><a hre ... a><a href=\"https://www.commerce.gov\" class=\"site-slogan\">U.S. Department of Commerce</a></div></div>",
+          "testResult": 0,
+          "path": "body>header:nth-of-type(1)>*:nth-child(2)>*:nth-child(3)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[class=\"navbar-brand\"][role=\"banner\"][aria-selected=\"false\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 281,
+          "bestPracticeId": 1626,
+          "attribute": "The aria-expanded attribute is not allowed on this element",
+          "attributeDetail": "The aria-expanded attribute is not allowed on this A",
+          "element": "<a aria-expanded=\"false\" aria-haspopup=\"true\" role=\"navigation\" data-toggle=\"dropdown\" id=\"navbarnos\" href=\"#\" class=\"nav-link explore dropdown-toggle\">Topics</a>",
+          "testResult": 0,
+          "path": "body>header:nth-of-type(1)>*:nth-child(3)>*:nth-child(3)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "a[class=\"nav-link explore dropdown-toggle\"][href=\"#\"][id=\"navbarnos\"][data-toggle=\"dropdown\"][role=\"navigation\"][aria-haspopup=\"true\"][aria-expanded=\"false\"]",
+            "attNo": 7
+          }
+        }
+      ]
+    }
+  ],
+  "timeStamp": "4jil2",
+  "startTime": "2022-07-27T14:32:51",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "continuum",
+      0
+    ]
+  ],
+  "logCount": 5,
+  "logSize": 358,
+  "errorLogCount": 5,
+  "errorLogSize": 358,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-27T14:32:57",
+  "elapsedSeconds": 6
+}

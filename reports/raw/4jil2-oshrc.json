@@ -1,0 +1,150 @@
+{
+  "id": "4jil2-oshrc",
+  "host": {
+    "id": "oshrc",
+    "which": "https://www.oshrc.gov/",
+    "what": "Occupational Safety & Health Review Commission (OSHRC)"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-27T14:34:19"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-27T14:34:26"
+    }
+  ],
+  "script": {
+    "id": "continuum",
+    "what": "Continuum",
+    "strict": true,
+    "timeLimit": 30,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.oshrc.gov/",
+        "what": "Occupational Safety & Health Review Commission (OSHRC)"
+      },
+      {
+        "type": "test",
+        "which": "continuum",
+        "what": "Continuum"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.oshrc.gov/",
+      "what": "Occupational Safety & Health Review Commission (OSHRC)",
+      "result": "https://www.oshrc.gov/"
+    },
+    {
+      "type": "test",
+      "which": "continuum",
+      "what": "Level Access Continuum, community edition",
+      "url": "https://www.oshrc.gov/",
+      "result": [
+        {
+          "engineTestId": 89,
+          "bestPracticeId": 362,
+          "attribute": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<img src=\"/cms/images/layout/twitter.png\">",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(10)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[src=\"/cms/images/layout/twitter.png\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a style=\"\" href=\"https://twitter.com/@OSHRC_Chairman\"><img src=\"/cms/images/layout/twitter.png\"></a>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(10)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"https://twitter.com/@OSHRC_Chairman\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 370,
+          "bestPracticeId": 338,
+          "attribute": "This input (type=search) element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This input (type=search) element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<input autocomplete=\"off\" name=\"q1\" class=\"inputstyle\" width=\"25\" value=\"\" type=\"search\" id=\"txtSearch\">",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(8)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(3)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive label for the search field.",
+            "fix": {
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "input[id=\"txtSearch\"][type=\"search\"][value=\"\"][width=\"25\"][class=\"inputstyle\"][name=\"q1\"][autocomplete=\"off\"]",
+            "attNo": 7
+          }
+        }
+      ]
+    }
+  ],
+  "timeStamp": "4jil2",
+  "startTime": "2022-07-27T14:34:19",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "continuum",
+      0
+    ]
+  ],
+  "logCount": 3,
+  "logSize": 977,
+  "errorLogCount": 1,
+  "errorLogSize": 51,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-27T14:34:26",
+  "elapsedSeconds": 7
+}

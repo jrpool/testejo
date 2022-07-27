@@ -1,0 +1,147 @@
+{
+  "id": "4jil2-usaid",
+  "host": {
+    "id": "usaid",
+    "which": "https://www.usaid.gov/",
+    "what": "United States Agency for International Development (USAID)"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-27T14:39:06"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-27T14:39:13"
+    }
+  ],
+  "script": {
+    "id": "continuum",
+    "what": "Continuum",
+    "strict": true,
+    "timeLimit": 30,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.usaid.gov/",
+        "what": "United States Agency for International Development (USAID)"
+      },
+      {
+        "type": "test",
+        "which": "continuum",
+        "what": "Continuum"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.usaid.gov/",
+      "what": "United States Agency for International Development (USAID)",
+      "result": "https://www.usaid.gov/"
+    },
+    {
+      "type": "test",
+      "which": "continuum",
+      "what": "Level Access Continuum, community edition",
+      "url": "https://www.usaid.gov/",
+      "result": [
+        {
+          "engineTestId": 55,
+          "bestPracticeId": 410,
+          "attribute": "This element has a content attribute set to a value that includes an instruction that stops a user scaling the viewport size",
+          "attributeDetail": "This META has a content attribute set to a value that includes an instruction that stops a user scaling the viewport size",
+          "element": "<meta content=\"width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no\" name=\"viewport\">",
+          "testResult": 0,
+          "path": "head>meta:nth-of-type(2)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Select \"Save\" to change the viewport content attribute to \"width=device-width, initial-scale=1.0\", or \"Cancel\" if the fix should not be applied.",
+            "fix": {
+              "content": "width=device-width, initial-scale=1.0"
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "meta[name=\"viewport\"][content=\"width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 59,
+          "bestPracticeId": 410,
+          "attribute": "This element has a content attribute set to a value that includes an instruction that sets the viewport's maximum-scale to less than 2",
+          "attributeDetail": "This META has a content attribute set to a value that includes an instruction that sets the viewport's maximum-scale to less than 2",
+          "element": "<meta content=\"width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no\" name=\"viewport\">",
+          "testResult": 0,
+          "path": "head>meta:nth-of-type(2)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Select \"Save\" to change the viewport content attribute to \"width=device-width, initial-scale=1.0\", or \"Cancel\" if the fix should not be applied.",
+            "fix": {
+              "content": "width=device-width, initial-scale=1.0"
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "meta[name=\"viewport\"][content=\"width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 101,
+          "bestPracticeId": 429,
+          "attribute": "This element does not have a lang attribute",
+          "attributeDetail": "This HTML does not have a lang attribute",
+          "element": "<html class=\"js\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema#\" xmlns:skos=\"http://www.w3.org/2004/02 ... stylesheet\" type=\"text/css\">\n<link media=\"all\" href=\"https://www.usaid.gov/sites/default/files/css/c",
+          "testResult": 0,
+          "path": "html",
+          "fixType": {
+            "fixType": 4,
+            "domSpec": false,
+            "helperText": "Enter the appropriate language value for the page.",
+            "fix": {
+              "lang": null
+            }
+          },
+          "fingerprint": {
+            "attNo": 0,
+            "css": "html",
+            "version": 2
+          }
+        }
+      ]
+    }
+  ],
+  "timeStamp": "4jil2",
+  "startTime": "2022-07-27T14:39:06",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "continuum",
+      0
+    ]
+  ],
+  "logCount": 5,
+  "logSize": 334,
+  "errorLogCount": 3,
+  "errorLogSize": 230,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-27T14:39:13",
+  "elapsedSeconds": 6
+}

@@ -1,0 +1,1912 @@
+{
+  "id": "4jil2-flc",
+  "host": {
+    "id": "flc",
+    "which": "https://federallabs.org/",
+    "what": "Federal Laboratory Consortium for Technology Transfer (FLC)"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-27T14:27:59"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-27T14:28:06"
+    }
+  ],
+  "script": {
+    "id": "continuum",
+    "what": "Continuum",
+    "strict": true,
+    "timeLimit": 30,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://federallabs.org/",
+        "what": "Federal Laboratory Consortium for Technology Transfer (FLC)"
+      },
+      {
+        "type": "test",
+        "which": "continuum",
+        "what": "Continuum"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://federallabs.org/",
+      "what": "Federal Laboratory Consortium for Technology Transfer (FLC)",
+      "result": "https://federallabs.org/"
+    },
+    {
+      "type": "test",
+      "which": "continuum",
+      "what": "Level Access Continuum, community edition",
+      "url": "https://federallabs.org/",
+      "result": [
+        {
+          "engineTestId": 83,
+          "bestPracticeId": 1626,
+          "attribute": "This element has an aria-describedby attribute value that includes one or more invalid or duplicate ids",
+          "attributeDetail": "This INPUT has an aria-describedby attribute value of 'search-addon', which includes one or more invalid or duplicate ids",
+          "element": "<input aria-describedby=\"search-addon\" aria-label=\"Search\" placeholder=\"Search\" class=\"form-control rounded\" type=\"search\">",
+          "testResult": 0,
+          "path": "body>header:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "input[type=\"search\"][class=\"form-control rounded\"][placeholder=\"Search\"][aria-label=\"Search\"][aria-describedby=\"search-addon\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 89,
+          "bestPracticeId": 362,
+          "attribute": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<img src=\"/FLC_KenticoXperience_Core/media/Design-Images/icon-who.svg?ext=.svg\">",
+          "testResult": 0,
+          "path": "body>section:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[src=\"/FLC_KenticoXperience_Core/media/Design-Images/icon-who.svg?ext=.svg\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 89,
+          "bestPracticeId": 362,
+          "attribute": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<img src=\"/FLC_KenticoXperience_Core/media/Design-Images/icon-what.svg?ext=.svg\">",
+          "testResult": 0,
+          "path": "body>section:nth-of-type(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[src=\"/FLC_KenticoXperience_Core/media/Design-Images/icon-what.svg?ext=.svg\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 89,
+          "bestPracticeId": 362,
+          "attribute": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<img src=\"/FLC_KenticoXperience_Core/media/Design-Images/icon-successes.svg?ext=.svg\">",
+          "testResult": 0,
+          "path": "body>section:nth-of-type(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[src=\"/FLC_KenticoXperience_Core/media/Design-Images/icon-successes.svg?ext=.svg\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 89,
+          "bestPracticeId": 362,
+          "attribute": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<img src=\"/FLC_KenticoXperience_Core/media/Design-Images/icon-help.svg?ext=.svg\">",
+          "testResult": 0,
+          "path": "body>section:nth-of-type(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[src=\"/FLC_KenticoXperience_Core/media/Design-Images/icon-help.svg?ext=.svg\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 89,
+          "bestPracticeId": 362,
+          "attribute": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<img src=\"/getmedia/e24dbc64-75d4-4042-b384-70884fce58e7/press-release_0.gif?width=250&amp;height=170&amp;ext=.gif\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[src=\"/getmedia/e24dbc64-75d4-4042-b384-70884fce58e7/press-release_0.gif?width=250&height=170&ext=.gif\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 89,
+          "bestPracticeId": 362,
+          "attribute": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<img src=\"/getmedia/7811abeb-b282-452b-9883-74e29f64119a/netl-logo_0.png?width=560&amp;height=222&amp;ext=.png\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[src=\"/getmedia/7811abeb-b282-452b-9883-74e29f64119a/netl-logo_0.png?width=560&height=222&ext=.png\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 89,
+          "bestPracticeId": 362,
+          "attribute": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<img src=\"/getmedia/ade546f9-91a8-4758-a3eb-5b7c9448a0cd/Epa.jpeg?width=825&amp;height=550&amp;ext=.jpeg\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(2)>*:nth-child(3)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[src=\"/getmedia/ade546f9-91a8-4758-a3eb-5b7c9448a0cd/Epa.jpeg?width=825&height=550&ext=.jpeg\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 89,
+          "bestPracticeId": 362,
+          "attribute": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<img src=\"/getmedia/2cad345e-b2be-498f-9db8-c32aac9f5cbe/DeptDefense250x250.jpeg?width=250&amp;height=250&amp;ext=.jpeg\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(2)>*:nth-child(4)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[src=\"/getmedia/2cad345e-b2be-498f-9db8-c32aac9f5cbe/DeptDefense250x250.jpeg?width=250&height=250&ext=.jpeg\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 89,
+          "bestPracticeId": 362,
+          "attribute": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<img src=\"/getmedia/f3f2a9ca-fca9-4fa7-b115-d50b89f6ae80/NIST.jpeg?width=300&amp;height=79&amp;ext=.jpeg\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(2)>*:nth-child(5)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[src=\"/getmedia/f3f2a9ca-fca9-4fa7-b115-d50b89f6ae80/NIST.jpeg?width=300&height=79&ext=.jpeg\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 89,
+          "bestPracticeId": 362,
+          "attribute": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<img src=\"/getmedia/8aa6394b-edc0-4093-ae2b-6bcef6b68089/water-council-logo.png?width=307&amp;height=164&amp;ext=.png\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(2)>*:nth-child(6)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[src=\"/getmedia/8aa6394b-edc0-4093-ae2b-6bcef6b68089/water-council-logo.png?width=307&height=164&ext=.png\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 89,
+          "bestPracticeId": 362,
+          "attribute": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<img src=\"/getmedia/69fd5fcf-bfa6-4442-834a-2d98e69fe7b4/TEDCO.png?width=825&amp;height=304&amp;ext=.png\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(2)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[src=\"/getmedia/69fd5fcf-bfa6-4442-834a-2d98e69fe7b4/TEDCO.png?width=825&height=304&ext=.png\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 89,
+          "bestPracticeId": 362,
+          "attribute": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<img src=\"/getmedia/33dd5039-1025-4e5d-b0de-6429ccda0f77/doe_fossil_energy_logo_3_0.png?width=825&amp;height=183&amp;ext=.png\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(2)>*:nth-child(8)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[src=\"/getmedia/33dd5039-1025-4e5d-b0de-6429ccda0f77/doe_fossil_energy_logo_3_0.png?width=825&height=183&ext=.png\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 89,
+          "bestPracticeId": 362,
+          "attribute": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<img src=\"/getmedia/e5903575-6648-40a4-8aea-954c5ab4e249/usamrdc_logo.png?width=102&amp;height=175&amp;ext=.png\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(2)>*:nth-child(9)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[src=\"/getmedia/e5903575-6648-40a4-8aea-954c5ab4e249/usamrdc_logo.png?width=102&height=175&ext=.png\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 89,
+          "bestPracticeId": 362,
+          "attribute": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<img src=\"/getmedia/f2fd5d07-542d-4ff4-90a5-0225fe3ba133/nsa-logo_0.jpeg?width=825&amp;height=464&amp;ext=.jpeg\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(2)>*:nth-child(10)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[src=\"/getmedia/f2fd5d07-542d-4ff4-90a5-0225fe3ba133/nsa-logo_0.jpeg?width=825&height=464&ext=.jpeg\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 89,
+          "bestPracticeId": 362,
+          "attribute": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<img src=\"/getmedia/f1ffa40f-c0c8-4d19-a03c-3cdcfeb653d0/noaa-logo_1.jpeg?width=360&amp;height=203&amp;ext=.jpeg\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(2)>*:nth-child(11)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[src=\"/getmedia/f1ffa40f-c0c8-4d19-a03c-3cdcfeb653d0/noaa-logo_1.jpeg?width=360&height=203&ext=.jpeg\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 89,
+          "bestPracticeId": 362,
+          "attribute": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<img src=\"/getmedia/aeb93c7e-cc03-470a-8e6d-60d290d47600/AFRL-550x306.jpg?width=550&amp;height=306&amp;ext=.jpg\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(2)>*:nth-child(12)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[src=\"/getmedia/aeb93c7e-cc03-470a-8e6d-60d290d47600/AFRL-550x306.jpg?width=550&height=306&ext=.jpg\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 89,
+          "bestPracticeId": 362,
+          "attribute": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<img src=\"/getmedia/b5607b59-8733-4d03-95f0-4d90bb623d03/uspto-600x350.jpg?width=600&amp;height=350&amp;ext=.jpg\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(2)>*:nth-child(13)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[src=\"/getmedia/b5607b59-8733-4d03-95f0-4d90bb623d03/uspto-600x350.jpg?width=600&height=350&ext=.jpg\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 89,
+          "bestPracticeId": 362,
+          "attribute": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<img src=\"/getmedia/d04c3ce6-03e6-466e-a525-2bacc7d37d53/inl-logo_for_bd_1.jpeg?width=750&amp;height=509&amp;ext=.jpeg\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(2)>*:nth-child(14)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[src=\"/getmedia/d04c3ce6-03e6-466e-a525-2bacc7d37d53/inl-logo_for_bd_1.jpeg?width=750&height=509&ext=.jpeg\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 89,
+          "bestPracticeId": 362,
+          "attribute": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<img src=\"/getmedia/f2fd5d07-542d-4ff4-90a5-0225fe3ba133/nsa-logo_0.jpeg?width=825&amp;height=464&amp;ext=.jpeg\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(2)>*:nth-child(15)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[src=\"/getmedia/f2fd5d07-542d-4ff4-90a5-0225fe3ba133/nsa-logo_0.jpeg?width=825&height=464&ext=.jpeg\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 89,
+          "bestPracticeId": 362,
+          "attribute": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<img src=\"/getmedia/6924fc6d-aae4-4421-8697-df73eacca8b0/LTIYL-540x380-Reverse.gif?width=540&amp;height=380&amp;ext=.gif\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[src=\"/getmedia/6924fc6d-aae4-4421-8697-df73eacca8b0/LTIYL-540x380-Reverse.gif?width=540&height=380&ext=.gif\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This DIV has an id attribute of '0', which is not unique in the same DOM",
+          "element": "<div id=\"0\" class=\"award-image-dot active\"></div>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(3)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[class=\"award-image-dot active\"][id=\"0\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This DIV has an id attribute of '0', which is not unique in the same DOM",
+          "element": "<div id=\"0\" class=\"award-image-dot active\"></div>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(3)>*:nth-child(3)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[class=\"award-image-dot active\"][id=\"0\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This DIV has an id attribute of '1', which is not unique in the same DOM",
+          "element": "<div id=\"1\" class=\"award-image-dot\"></div>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(3)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[class=\"award-image-dot\"][id=\"1\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This DIV has an id attribute of '1', which is not unique in the same DOM",
+          "element": "<div id=\"1\" class=\"award-image-dot\"></div>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(3)>*:nth-child(3)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[class=\"award-image-dot\"][id=\"1\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This DIV has an id attribute of '2', which is not unique in the same DOM",
+          "element": "<div id=\"2\" class=\"award-image-dot\"></div>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(3)>*:nth-child(3)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[class=\"award-image-dot\"][id=\"2\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This DIV has an id attribute of '2', which is not unique in the same DOM",
+          "element": "<div id=\"2\" class=\"award-image-dot\"></div>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(3)>*:nth-child(3)>*:nth-child(3)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[class=\"award-image-dot\"][id=\"2\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This svg has an id attribute of 'flc-logo', which is not unique in the same DOM",
+          "element": "<svg viewbox=\"0 0 134 47.857\" height=\"47.857\" width=\"134\" xmlns=\"http://www.w3.org/2000/svg\" id=\"flc ... .776h13.888v-8.455H419.682v-6.43h15.873V96.286h-25.08Z\" data-name=\"Path 1\" id=\"Path_1\"></path></svg>",
+          "testResult": 0,
+          "path": "body>header:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[id=\"flc-logo\"][width=\"134\"][height=\"47.857\"][viewbox=\"0 0 134 47.857\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This svg has an id attribute of 'flc-logo', which is not unique in the same DOM",
+          "element": "<svg viewbox=\"0 0 134 47.857\" height=\"47.857\" width=\"134\" xmlns=\"http://www.w3.org/2000/svg\" id=\"flc ... .776h13.888v-8.455H419.682v-6.43h15.873V96.286h-25.08Z\" data-name=\"Path 1\" id=\"Path_1\"></path></svg>",
+          "testResult": 0,
+          "path": "body>footer:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[id=\"flc-logo\"][width=\"134\"][height=\"47.857\"][viewbox=\"0 0 134 47.857\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This path has an id attribute of 'Path_1', which is not unique in the same DOM",
+          "element": "<path fill=\"#002855\" transform=\"translate(-359.145 -84.778)\" d=\"M399.661,93.643l-13.177-7.571a1.359, ... 08V119.776h13.888v-8.455H419.682v-6.43h15.873V96.286h-25.08Z\" data-name=\"Path 1\" id=\"Path_1\"></path>",
+          "testResult": 0,
+          "path": "body>header:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "path[id=\"Path_1\"][data-name=\"Path 1\"][d=\"M399.661,93.643l-13.177-7.571a1.359,1.359,0,1,0-1.364,2.351L398.3,95.994a3.514,3.514,0,0,1,.385.257L359.828,118.56a1.355,1.355,0,0,0,0,2.351l18,10.352a6.3,6.3,0,0,0,6.276,0l14.58-8.377a3.625,3.625,0,0,0,0-6.3l-7.829-4.488a1.367,1.367,0,0,0-1.863.5,1.353,1.353,0,0,0,.5,1.854l7.828,4.487a.9.9,0,0,1,.347.346.925.925,0,0,1,.116.451.94.94,0,0,1-.116.455.9.9,0,0,1-.348.347l-14.58,8.377a3.516,3.516,0,0,1-.405.2V111.9l-2.728,1.566v15.651a3.623,3.623,0,0,1-.414-.2l-15.959-9.176,36.8-21.132a3.486,3.486,0,0,1,.03.447v15.089a1.364,1.364,0,0,0,2.728,0V99.051A6.239,6.239,0,0,0,399.661,93.643Zm-37.786,8.348a1.364,1.364,0,0,0-2.728,0v13.83l2.728-1.566Zm-2.047-4.582,11.254,6.465a1.359,1.359,0,1,0,1.364-2.351l-9.209-5.289,14.978-8.612a.909.909,0,0,1,.46-.127.956.956,0,0,1,.652.265.882.882,0,0,1,.279.661v15.653l2.728-1.566V88.419a3.6,3.6,0,0,0-1.119-2.621,3.656,3.656,0,0,0-4.366-.529l-17.023,9.788a1.354,1.354,0,0,0,0,2.351Zm125.381,23.532c-1.984,4.961-10.123,3.746-10.123-.557V108.031c0-4.456,8.039-5.468,10.479-1.013l7.428-2.987a13.368,13.368,0,0,0-12.667-8.252c-7.224,0-14.346,4.152-14.346,12.251v12.353c0,8.151,7.122,12.252,14.193,12.252a14.5,14.5,0,0,0,12.973-8.05ZM448.935,96.286h-9.157v35.843h23.808v-8.961H448.935Zm-38.461,35.843h9.208V119.776h13.888v-8.455H419.682v-6.43h15.873V96.286h-25.08Z\"][transform=\"translate(-359.145 -84.778)\"][fill=\"#002855\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This path has an id attribute of 'Path_1', which is not unique in the same DOM",
+          "element": "<path fill=\"#fff\" transform=\"translate(-359.145 -84.778)\" d=\"M399.661,93.643l-13.177-7.571a1.359,1.3 ... 08V119.776h13.888v-8.455H419.682v-6.43h15.873V96.286h-25.08Z\" data-name=\"Path 1\" id=\"Path_1\"></path>",
+          "testResult": 0,
+          "path": "body>footer:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "path[id=\"Path_1\"][data-name=\"Path 1\"][d=\"M399.661,93.643l-13.177-7.571a1.359,1.359,0,1,0-1.364,2.351L398.3,95.994a3.514,3.514,0,0,1,.385.257L359.828,118.56a1.355,1.355,0,0,0,0,2.351l18,10.352a6.3,6.3,0,0,0,6.276,0l14.58-8.377a3.625,3.625,0,0,0,0-6.3l-7.829-4.488a1.367,1.367,0,0,0-1.863.5,1.353,1.353,0,0,0,.5,1.854l7.828,4.487a.9.9,0,0,1,.347.346.925.925,0,0,1,.116.451.94.94,0,0,1-.116.455.9.9,0,0,1-.348.347l-14.58,8.377a3.516,3.516,0,0,1-.405.2V111.9l-2.728,1.566v15.651a3.623,3.623,0,0,1-.414-.2l-15.959-9.176,36.8-21.132a3.486,3.486,0,0,1,.03.447v15.089a1.364,1.364,0,0,0,2.728,0V99.051A6.239,6.239,0,0,0,399.661,93.643Zm-37.786,8.348a1.364,1.364,0,0,0-2.728,0v13.83l2.728-1.566Zm-2.047-4.582,11.254,6.465a1.359,1.359,0,1,0,1.364-2.351l-9.209-5.289,14.978-8.612a.909.909,0,0,1,.46-.127.956.956,0,0,1,.652.265.882.882,0,0,1,.279.661v15.653l2.728-1.566V88.419a3.6,3.6,0,0,0-1.119-2.621,3.656,3.656,0,0,0-4.366-.529l-17.023,9.788a1.354,1.354,0,0,0,0,2.351Zm125.381,23.532c-1.984,4.961-10.123,3.746-10.123-.557V108.031c0-4.456,8.039-5.468,10.479-1.013l7.428-2.987a13.368,13.368,0,0,0-12.667-8.252c-7.224,0-14.346,4.152-14.346,12.251v12.353c0,8.151,7.122,12.252,14.193,12.252a14.5,14.5,0,0,0,12.973-8.05ZM448.935,96.286h-9.157v35.843h23.808v-8.961H448.935Zm-38.461,35.843h9.208V119.776h13.888v-8.455H419.682v-6.43h15.873V96.286h-25.08Z\"][transform=\"translate(-359.145 -84.778)\"][fill=\"#fff\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This SPAN has an id attribute of 'search-addon', which is not unique in the same DOM",
+          "element": "<span id=\"search-addon\" class=\"input-group-text border-0\"><i class=\"fas fa-search\"></i></span>",
+          "testResult": 0,
+          "path": "body>header:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(3)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "span[class=\"input-group-text border-0\"][id=\"search-addon\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This SPAN has an id attribute of 'search-addon', which is not unique in the same DOM",
+          "element": "<span id=\"search-addon\" class=\"input-group-text border-0\"><i class=\"fas fa-search\"></i></span>",
+          "testResult": 0,
+          "path": "body>header:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(4)>*:nth-child(2)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "span[class=\"input-group-text border-0\"][id=\"search-addon\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This g has an id attribute of 'icon-pin', which is not unique in the same DOM",
+          "element": "<g transform=\"translate(-2)\" id=\"icon-pin\"><g transform=\"translate(2)\" id=\"geo-alt\"><path fill=\"#002 ... A2,2,0,0,1,8,8ZM8,9A3,3,0,1,0,5,6,3,3,0,0,0,8,9Z\" data-name=\"Path 586\" id=\"Path_586\"></path></g></g>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(3)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "g[id=\"icon-pin\"][transform=\"translate(-2)\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This g has an id attribute of 'icon-pin', which is not unique in the same DOM",
+          "element": "<g transform=\"translate(-2)\" id=\"icon-pin\"><g transform=\"translate(2)\" id=\"geo-alt\"><path fill=\"#002 ... A2,2,0,0,1,8,8ZM8,9A3,3,0,1,0,5,6,3,3,0,0,0,8,9Z\" data-name=\"Path 586\" id=\"Path_586\"></path></g></g>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(3)>*:nth-child(2)>*:nth-child(4)>*:nth-child(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "g[id=\"icon-pin\"][transform=\"translate(-2)\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This g has an id attribute of 'icon-pin', which is not unique in the same DOM",
+          "element": "<g transform=\"translate(-2)\" id=\"icon-pin\"><g transform=\"translate(2)\" id=\"geo-alt\"><path fill=\"#002 ... A2,2,0,0,1,8,8ZM8,9A3,3,0,1,0,5,6,3,3,0,0,0,8,9Z\" data-name=\"Path 586\" id=\"Path_586\"></path></g></g>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(3)>*:nth-child(2)>*:nth-child(5)>*:nth-child(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "g[id=\"icon-pin\"][transform=\"translate(-2)\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This g has an id attribute of 'geo-alt', which is not unique in the same DOM",
+          "element": "<g transform=\"translate(2)\" id=\"geo-alt\"><path fill=\"#002855\" transform=\"translate(-2)\" d=\"M12.166,8 ... ,2-2A2,2,0,0,1,8,8ZM8,9A3,3,0,1,0,5,6,3,3,0,0,0,8,9Z\" data-name=\"Path 586\" id=\"Path_586\"></path></g>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(3)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "g[id=\"geo-alt\"][transform=\"translate(2)\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This g has an id attribute of 'geo-alt', which is not unique in the same DOM",
+          "element": "<g transform=\"translate(2)\" id=\"geo-alt\"><path fill=\"#002855\" transform=\"translate(-2)\" d=\"M12.166,8 ... ,2-2A2,2,0,0,1,8,8ZM8,9A3,3,0,1,0,5,6,3,3,0,0,0,8,9Z\" data-name=\"Path 586\" id=\"Path_586\"></path></g>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(3)>*:nth-child(2)>*:nth-child(4)>*:nth-child(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "g[id=\"geo-alt\"][transform=\"translate(2)\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This g has an id attribute of 'geo-alt', which is not unique in the same DOM",
+          "element": "<g transform=\"translate(2)\" id=\"geo-alt\"><path fill=\"#002855\" transform=\"translate(-2)\" d=\"M12.166,8 ... ,2-2A2,2,0,0,1,8,8ZM8,9A3,3,0,1,0,5,6,3,3,0,0,0,8,9Z\" data-name=\"Path 586\" id=\"Path_586\"></path></g>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(3)>*:nth-child(2)>*:nth-child(5)>*:nth-child(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "g[id=\"geo-alt\"][transform=\"translate(2)\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This path has an id attribute of 'Path_585', which is not unique in the same DOM",
+          "element": "<path fill=\"#002855\" transform=\"translate(-2)\" d=\"M12.166,8.94a19.226,19.226,0,0,1-1.96,3.07A31.493, ... .94ZM8,16s6-5.686,6-10A6,6,0,1,0,2,6C2,10.314,8,16,8,16Z\" data-name=\"Path 585\" id=\"Path_585\"></path>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(3)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "path[id=\"Path_585\"][data-name=\"Path 585\"][d=\"M12.166,8.94a19.226,19.226,0,0,1-1.96,3.07A31.493,31.493,0,0,1,8,14.58a31.482,31.482,0,0,1-2.206-2.57,19.225,19.225,0,0,1-1.96-3.07A6.919,6.919,0,0,1,3,6,5,5,0,0,1,13,6a6.933,6.933,0,0,1-.834,2.94ZM8,16s6-5.686,6-10A6,6,0,1,0,2,6C2,10.314,8,16,8,16Z\"][transform=\"translate(-2)\"][fill=\"#002855\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This path has an id attribute of 'Path_585', which is not unique in the same DOM",
+          "element": "<path fill=\"#002855\" transform=\"translate(-2)\" d=\"M12.166,8.94a19.226,19.226,0,0,1-1.96,3.07A31.493, ... .94ZM8,16s6-5.686,6-10A6,6,0,1,0,2,6C2,10.314,8,16,8,16Z\" data-name=\"Path 585\" id=\"Path_585\"></path>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(3)>*:nth-child(2)>*:nth-child(4)>*:nth-child(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "path[id=\"Path_585\"][data-name=\"Path 585\"][d=\"M12.166,8.94a19.226,19.226,0,0,1-1.96,3.07A31.493,31.493,0,0,1,8,14.58a31.482,31.482,0,0,1-2.206-2.57,19.225,19.225,0,0,1-1.96-3.07A6.919,6.919,0,0,1,3,6,5,5,0,0,1,13,6a6.933,6.933,0,0,1-.834,2.94ZM8,16s6-5.686,6-10A6,6,0,1,0,2,6C2,10.314,8,16,8,16Z\"][transform=\"translate(-2)\"][fill=\"#002855\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This path has an id attribute of 'Path_585', which is not unique in the same DOM",
+          "element": "<path fill=\"#002855\" transform=\"translate(-2)\" d=\"M12.166,8.94a19.226,19.226,0,0,1-1.96,3.07A31.493, ... .94ZM8,16s6-5.686,6-10A6,6,0,1,0,2,6C2,10.314,8,16,8,16Z\" data-name=\"Path 585\" id=\"Path_585\"></path>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(3)>*:nth-child(2)>*:nth-child(5)>*:nth-child(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "path[id=\"Path_585\"][data-name=\"Path 585\"][d=\"M12.166,8.94a19.226,19.226,0,0,1-1.96,3.07A31.493,31.493,0,0,1,8,14.58a31.482,31.482,0,0,1-2.206-2.57,19.225,19.225,0,0,1-1.96-3.07A6.919,6.919,0,0,1,3,6,5,5,0,0,1,13,6a6.933,6.933,0,0,1-.834,2.94ZM8,16s6-5.686,6-10A6,6,0,1,0,2,6C2,10.314,8,16,8,16Z\"][transform=\"translate(-2)\"][fill=\"#002855\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This path has an id attribute of 'Path_586', which is not unique in the same DOM",
+          "element": "<path fill=\"#002855\" transform=\"translate(-2)\" d=\"M8,8a2,2,0,1,1,2-2A2,2,0,0,1,8,8ZM8,9A3,3,0,1,0,5,6,3,3,0,0,0,8,9Z\" data-name=\"Path 586\" id=\"Path_586\"></path>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(3)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "path[id=\"Path_586\"][data-name=\"Path 586\"][d=\"M8,8a2,2,0,1,1,2-2A2,2,0,0,1,8,8ZM8,9A3,3,0,1,0,5,6,3,3,0,0,0,8,9Z\"][transform=\"translate(-2)\"][fill=\"#002855\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This path has an id attribute of 'Path_586', which is not unique in the same DOM",
+          "element": "<path fill=\"#002855\" transform=\"translate(-2)\" d=\"M8,8a2,2,0,1,1,2-2A2,2,0,0,1,8,8ZM8,9A3,3,0,1,0,5,6,3,3,0,0,0,8,9Z\" data-name=\"Path 586\" id=\"Path_586\"></path>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(3)>*:nth-child(2)>*:nth-child(4)>*:nth-child(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "path[id=\"Path_586\"][data-name=\"Path 586\"][d=\"M8,8a2,2,0,1,1,2-2A2,2,0,0,1,8,8ZM8,9A3,3,0,1,0,5,6,3,3,0,0,0,8,9Z\"][transform=\"translate(-2)\"][fill=\"#002855\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This path has an id attribute of 'Path_586', which is not unique in the same DOM",
+          "element": "<path fill=\"#002855\" transform=\"translate(-2)\" d=\"M8,8a2,2,0,1,1,2-2A2,2,0,0,1,8,8ZM8,9A3,3,0,1,0,5,6,3,3,0,0,0,8,9Z\" data-name=\"Path 586\" id=\"Path_586\"></path>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(3)>*:nth-child(2)>*:nth-child(5)>*:nth-child(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "path[id=\"Path_586\"][data-name=\"Path 586\"][d=\"M8,8a2,2,0,1,1,2-2A2,2,0,0,1,8,8ZM8,9A3,3,0,1,0,5,6,3,3,0,0,0,8,9Z\"][transform=\"translate(-2)\"][fill=\"#002855\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This g has an id attribute of 'flc-arrow-icon', which is not unique in the same DOM",
+          "element": "<g transform=\"translate(1.414 1.414)\" id=\"flc-arrow-icon\"><g data-name=\"Group 406\" id=\"Group_406\"><p ... te(301.2 -27.242)\" d=\"M-284.2,27.242l13,13-13,13\" data-name=\"Path 655\" id=\"Path_655\"></path></g></g>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(5)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "g[id=\"flc-arrow-icon\"][transform=\"translate(1.414 1.414)\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This g has an id attribute of 'flc-arrow-icon', which is not unique in the same DOM",
+          "element": "<g transform=\"translate(1.414 1.414)\" id=\"flc-arrow-icon\"><g data-name=\"Group 406\" id=\"Group_406\"><p ... te(301.2 -27.242)\" d=\"M-284.2,27.242l13,13-13,13\" data-name=\"Path 655\" id=\"Path_655\"></path></g></g>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(5)>*:nth-child(3)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "g[id=\"flc-arrow-icon\"][transform=\"translate(1.414 1.414)\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This g has an id attribute of 'Group_406', which is not unique in the same DOM",
+          "element": "<g data-name=\"Group 406\" id=\"Group_406\"><path stroke-width=\"2\" stroke-linejoin=\"round\" stroke-lineca ... nslate(301.2 -27.242)\" d=\"M-284.2,27.242l13,13-13,13\" data-name=\"Path 655\" id=\"Path_655\"></path></g>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(5)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "g[id=\"Group_406\"][data-name=\"Group 406\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This g has an id attribute of 'Group_406', which is not unique in the same DOM",
+          "element": "<g data-name=\"Group 406\" id=\"Group_406\"><path stroke-width=\"2\" stroke-linejoin=\"round\" stroke-lineca ... nslate(301.2 -27.242)\" d=\"M-284.2,27.242l13,13-13,13\" data-name=\"Path 655\" id=\"Path_655\"></path></g>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(5)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "g[id=\"Group_406\"][data-name=\"Group 406\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This path has an id attribute of 'Path_653', which is not unique in the same DOM",
+          "element": "<path stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\" stroke=\"#fff\" fill=\"none\" tran ... \"translate(284.2 -27.242)\" d=\"M-284.2,27.242l13,13-13,13\" data-name=\"Path 653\" id=\"Path_653\"></path>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(5)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "path[id=\"Path_653\"][data-name=\"Path 653\"][d=\"M-284.2,27.242l13,13-13,13\"][transform=\"translate(284.2 -27.242)\"][fill=\"none\"][stroke=\"#fff\"][stroke-linecap=\"round\"][stroke-linejoin=\"round\"][stroke-width=\"2\"]",
+            "attNo": 9
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This path has an id attribute of 'Path_653', which is not unique in the same DOM",
+          "element": "<path stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\" stroke=\"#fff\" fill=\"none\" tran ... \"translate(284.2 -27.242)\" d=\"M-284.2,27.242l13,13-13,13\" data-name=\"Path 653\" id=\"Path_653\"></path>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(5)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "path[id=\"Path_653\"][data-name=\"Path 653\"][d=\"M-284.2,27.242l13,13-13,13\"][transform=\"translate(284.2 -27.242)\"][fill=\"none\"][stroke=\"#fff\"][stroke-linecap=\"round\"][stroke-linejoin=\"round\"][stroke-width=\"2\"]",
+            "attNo": 9
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This path has an id attribute of 'Path_654', which is not unique in the same DOM",
+          "element": "<path stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\" stroke=\"#fff\" fill=\"none\" tran ... ranslate(293.226 -27.242)\" d=\"M-284.2,27.242l13,13-13,13\" data-name=\"Path 654\" id=\"Path_654\"></path>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(5)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "path[id=\"Path_654\"][data-name=\"Path 654\"][d=\"M-284.2,27.242l13,13-13,13\"][transform=\"translate(293.226 -27.242)\"][fill=\"none\"][stroke=\"#fff\"][stroke-linecap=\"round\"][stroke-linejoin=\"round\"][stroke-width=\"2\"]",
+            "attNo": 9
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This path has an id attribute of 'Path_654', which is not unique in the same DOM",
+          "element": "<path stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\" stroke=\"#fff\" fill=\"none\" tran ... ranslate(293.226 -27.242)\" d=\"M-284.2,27.242l13,13-13,13\" data-name=\"Path 654\" id=\"Path_654\"></path>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(5)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "path[id=\"Path_654\"][data-name=\"Path 654\"][d=\"M-284.2,27.242l13,13-13,13\"][transform=\"translate(293.226 -27.242)\"][fill=\"none\"][stroke=\"#fff\"][stroke-linecap=\"round\"][stroke-linejoin=\"round\"][stroke-width=\"2\"]",
+            "attNo": 9
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This path has an id attribute of 'Path_655', which is not unique in the same DOM",
+          "element": "<path stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\" stroke=\"#fff\" fill=\"none\" tran ... \"translate(301.2 -27.242)\" d=\"M-284.2,27.242l13,13-13,13\" data-name=\"Path 655\" id=\"Path_655\"></path>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(5)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "path[id=\"Path_655\"][data-name=\"Path 655\"][d=\"M-284.2,27.242l13,13-13,13\"][transform=\"translate(301.2 -27.242)\"][fill=\"none\"][stroke=\"#fff\"][stroke-linecap=\"round\"][stroke-linejoin=\"round\"][stroke-width=\"2\"]",
+            "attNo": 9
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This path has an id attribute of 'Path_655', which is not unique in the same DOM",
+          "element": "<path stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\" stroke=\"#fff\" fill=\"none\" tran ... \"translate(301.2 -27.242)\" d=\"M-284.2,27.242l13,13-13,13\" data-name=\"Path 655\" id=\"Path_655\"></path>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(5)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "path[id=\"Path_655\"][data-name=\"Path 655\"][d=\"M-284.2,27.242l13,13-13,13\"][transform=\"translate(301.2 -27.242)\"][fill=\"none\"][stroke=\"#fff\"][stroke-linecap=\"round\"][stroke-linejoin=\"round\"][stroke-width=\"2\"]",
+            "attNo": 9
+          }
+        },
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg viewbox=\"0 0 134 47.857\" height=\"47.857\" width=\"134\" xmlns=\"http://www.w3.org/2000/svg\" id=\"flc ... .776h13.888v-8.455H419.682v-6.43h15.873V96.286h-25.08Z\" data-name=\"Path 1\" id=\"Path_1\"></path></svg>",
+          "testResult": 0,
+          "path": "body>header:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[id=\"flc-logo\"][width=\"134\"][height=\"47.857\"][viewbox=\"0 0 134 47.857\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg viewbox=\"0 0 16 16\" class=\"bi bi-arrow-right\" fill=\"currentColor\" height=\"25\" width=\"25\" xmlns= ... 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z\" fill-rule=\"evenodd\"></path></svg>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[width=\"25\"][height=\"25\"][fill=\"currentColor\"][class=\"bi bi-arrow-right\"][viewbox=\"0 0 16 16\"]",
+            "attNo": 6
+          }
+        },
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg viewbox=\"0 0 16 16\" class=\"bi bi-arrow-right\" fill=\"currentColor\" height=\"35\" width=\"35\" xmlns= ... 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z\" fill-rule=\"evenodd\"></path></svg>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[width=\"35\"][height=\"35\"][fill=\"currentColor\"][class=\"bi bi-arrow-right\"][viewbox=\"0 0 16 16\"]",
+            "attNo": 6
+          }
+        },
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg viewbox=\"0 0 16 16\" class=\"bi bi-arrow-right\" fill=\"currentColor\" height=\"35\" width=\"35\" xmlns= ... 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z\" fill-rule=\"evenodd\"></path></svg>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[width=\"35\"][height=\"35\"][fill=\"currentColor\"][class=\"bi bi-arrow-right\"][viewbox=\"0 0 16 16\"]",
+            "attNo": 6
+          }
+        },
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg viewbox=\"0 0 16 16\" class=\"bi bi-arrow-right\" fill=\"currentColor\" height=\"18\" width=\"18\" xmlns= ... 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z\" fill-rule=\"evenodd\"></path></svg>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(5)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[width=\"18\"][height=\"18\"][fill=\"currentColor\"][class=\"bi bi-arrow-right\"][viewbox=\"0 0 16 16\"]",
+            "attNo": 6
+          }
+        },
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg viewbox=\"0 0 16 16\" class=\"bi bi-arrow-right\" fill=\"currentColor\" height=\"18\" width=\"18\" xmlns= ... 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z\" fill-rule=\"evenodd\"></path></svg>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(5)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[width=\"18\"][height=\"18\"][fill=\"currentColor\"][class=\"bi bi-arrow-right\"][viewbox=\"0 0 16 16\"]",
+            "attNo": 6
+          }
+        },
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg viewbox=\"0 0 16 16\" class=\"bi bi-arrow-right\" fill=\"currentColor\" height=\"18\" width=\"18\" xmlns= ... 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z\" fill-rule=\"evenodd\"></path></svg>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(2)>*:nth-child(3)>*:nth-child(1)>*:nth-child(5)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[width=\"18\"][height=\"18\"][fill=\"currentColor\"][class=\"bi bi-arrow-right\"][viewbox=\"0 0 16 16\"]",
+            "attNo": 6
+          }
+        },
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg viewbox=\"0 0 16 16\" class=\"bi bi-arrow-right\" fill=\"currentColor\" height=\"18\" width=\"18\" xmlns= ... 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z\" fill-rule=\"evenodd\"></path></svg>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(2)>*:nth-child(4)>*:nth-child(1)>*:nth-child(5)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[width=\"18\"][height=\"18\"][fill=\"currentColor\"][class=\"bi bi-arrow-right\"][viewbox=\"0 0 16 16\"]",
+            "attNo": 6
+          }
+        },
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg viewbox=\"0 0 16 16\" class=\"bi bi-arrow-right\" fill=\"currentColor\" height=\"18\" width=\"18\" xmlns= ... 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z\" fill-rule=\"evenodd\"></path></svg>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(2)>*:nth-child(5)>*:nth-child(1)>*:nth-child(5)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[width=\"18\"][height=\"18\"][fill=\"currentColor\"][class=\"bi bi-arrow-right\"][viewbox=\"0 0 16 16\"]",
+            "attNo": 6
+          }
+        },
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg viewbox=\"0 0 16 16\" class=\"bi bi-arrow-right\" fill=\"currentColor\" height=\"18\" width=\"18\" xmlns= ... 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z\" fill-rule=\"evenodd\"></path></svg>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(2)>*:nth-child(6)>*:nth-child(1)>*:nth-child(5)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[width=\"18\"][height=\"18\"][fill=\"currentColor\"][class=\"bi bi-arrow-right\"][viewbox=\"0 0 16 16\"]",
+            "attNo": 6
+          }
+        },
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg viewbox=\"0 0 16 16\" class=\"bi bi-arrow-right\" fill=\"currentColor\" height=\"18\" width=\"18\" xmlns= ... 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z\" fill-rule=\"evenodd\"></path></svg>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(2)>*:nth-child(7)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[width=\"18\"][height=\"18\"][fill=\"currentColor\"][class=\"bi bi-arrow-right\"][viewbox=\"0 0 16 16\"]",
+            "attNo": 6
+          }
+        },
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg viewbox=\"0 0 16 16\" class=\"bi bi-arrow-right\" fill=\"currentColor\" height=\"18\" width=\"18\" xmlns= ... 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z\" fill-rule=\"evenodd\"></path></svg>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(2)>*:nth-child(8)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[width=\"18\"][height=\"18\"][fill=\"currentColor\"][class=\"bi bi-arrow-right\"][viewbox=\"0 0 16 16\"]",
+            "attNo": 6
+          }
+        },
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg viewbox=\"0 0 16 16\" class=\"bi bi-arrow-right\" fill=\"currentColor\" height=\"18\" width=\"18\" xmlns= ... 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z\" fill-rule=\"evenodd\"></path></svg>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(2)>*:nth-child(9)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[width=\"18\"][height=\"18\"][fill=\"currentColor\"][class=\"bi bi-arrow-right\"][viewbox=\"0 0 16 16\"]",
+            "attNo": 6
+          }
+        },
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg viewbox=\"0 0 16 16\" class=\"bi bi-arrow-right\" fill=\"currentColor\" height=\"18\" width=\"18\" xmlns= ... 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z\" fill-rule=\"evenodd\"></path></svg>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(2)>*:nth-child(10)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[width=\"18\"][height=\"18\"][fill=\"currentColor\"][class=\"bi bi-arrow-right\"][viewbox=\"0 0 16 16\"]",
+            "attNo": 6
+          }
+        },
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg viewbox=\"0 0 16 16\" class=\"bi bi-arrow-right\" fill=\"currentColor\" height=\"18\" width=\"18\" xmlns= ... 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z\" fill-rule=\"evenodd\"></path></svg>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(2)>*:nth-child(11)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[width=\"18\"][height=\"18\"][fill=\"currentColor\"][class=\"bi bi-arrow-right\"][viewbox=\"0 0 16 16\"]",
+            "attNo": 6
+          }
+        },
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg viewbox=\"0 0 16 16\" class=\"bi bi-arrow-right\" fill=\"currentColor\" height=\"18\" width=\"18\" xmlns= ... 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z\" fill-rule=\"evenodd\"></path></svg>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(2)>*:nth-child(12)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[width=\"18\"][height=\"18\"][fill=\"currentColor\"][class=\"bi bi-arrow-right\"][viewbox=\"0 0 16 16\"]",
+            "attNo": 6
+          }
+        },
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg viewbox=\"0 0 16 16\" class=\"bi bi-arrow-right\" fill=\"currentColor\" height=\"18\" width=\"18\" xmlns= ... 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z\" fill-rule=\"evenodd\"></path></svg>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(2)>*:nth-child(13)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[width=\"18\"][height=\"18\"][fill=\"currentColor\"][class=\"bi bi-arrow-right\"][viewbox=\"0 0 16 16\"]",
+            "attNo": 6
+          }
+        },
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg viewbox=\"0 0 16 16\" class=\"bi bi-arrow-right\" fill=\"currentColor\" height=\"18\" width=\"18\" xmlns= ... 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z\" fill-rule=\"evenodd\"></path></svg>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(2)>*:nth-child(14)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[width=\"18\"][height=\"18\"][fill=\"currentColor\"][class=\"bi bi-arrow-right\"][viewbox=\"0 0 16 16\"]",
+            "attNo": 6
+          }
+        },
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg viewbox=\"0 0 16 16\" class=\"bi bi-arrow-right\" fill=\"currentColor\" height=\"18\" width=\"18\" xmlns= ... 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z\" fill-rule=\"evenodd\"></path></svg>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(2)>*:nth-child(15)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[width=\"18\"][height=\"18\"][fill=\"currentColor\"][class=\"bi bi-arrow-right\"][viewbox=\"0 0 16 16\"]",
+            "attNo": 6
+          }
+        },
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg viewbox=\"0 0 16 16\" class=\"bi bi-arrow-right\" fill=\"currentColor\" height=\"35\" width=\"35\" xmlns= ... 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z\" fill-rule=\"evenodd\"></path></svg>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(3)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[width=\"35\"][height=\"35\"][fill=\"currentColor\"][class=\"bi bi-arrow-right\"][viewbox=\"0 0 16 16\"]",
+            "attNo": 6
+          }
+        },
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg viewbox=\"0 0 16 16\" class=\"bi bi-arrow-right\" fill=\"currentColor\" height=\"35\" width=\"35\" xmlns= ... 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z\" fill-rule=\"evenodd\"></path></svg>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(3)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[width=\"35\"][height=\"35\"][fill=\"currentColor\"][class=\"bi bi-arrow-right\"][viewbox=\"0 0 16 16\"]",
+            "attNo": 6
+          }
+        },
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg viewbox=\"0 0 12 16\" height=\"16\" width=\"12\" xmlns=\"http://www.w3.org/2000/svg\"><g transform=\"tra ... ,0,1,8,8ZM8,9A3,3,0,1,0,5,6,3,3,0,0,0,8,9Z\" data-name=\"Path 586\" id=\"Path_586\"></path></g></g></svg>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(3)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(5)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[width=\"12\"][height=\"16\"][viewbox=\"0 0 12 16\"]",
+            "attNo": 4
+          }
+        },
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg viewbox=\"0 0 12 16\" height=\"16\" width=\"12\" xmlns=\"http://www.w3.org/2000/svg\"><g transform=\"tra ... ,0,1,8,8ZM8,9A3,3,0,1,0,5,6,3,3,0,0,0,8,9Z\" data-name=\"Path 586\" id=\"Path_586\"></path></g></g></svg>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(3)>*:nth-child(2)>*:nth-child(4)>*:nth-child(1)>*:nth-child(5)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[width=\"12\"][height=\"16\"][viewbox=\"0 0 12 16\"]",
+            "attNo": 4
+          }
+        },
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg viewbox=\"0 0 12 16\" height=\"16\" width=\"12\" xmlns=\"http://www.w3.org/2000/svg\"><g transform=\"tra ... ,0,1,8,8ZM8,9A3,3,0,1,0,5,6,3,3,0,0,0,8,9Z\" data-name=\"Path 586\" id=\"Path_586\"></path></g></g></svg>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(3)>*:nth-child(2)>*:nth-child(5)>*:nth-child(1)>*:nth-child(5)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[width=\"12\"][height=\"16\"][viewbox=\"0 0 12 16\"]",
+            "attNo": 4
+          }
+        },
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg viewbox=\"0 0 16 16\" class=\"bi bi-arrow-right\" fill=\"currentColor\" height=\"25\" width=\"25\" xmlns= ... 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z\" fill-rule=\"evenodd\"></path></svg>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[width=\"25\"][height=\"25\"][fill=\"currentColor\"][class=\"bi bi-arrow-right\"][viewbox=\"0 0 16 16\"]",
+            "attNo": 6
+          }
+        },
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg viewbox=\"0 0 32.414 28.828\" height=\"28.828\" width=\"32.414\" xmlns=\"http://www.w3.org/2000/svg\">< ... .2 -27.242)\" d=\"M-284.2,27.242l13,13-13,13\" data-name=\"Path 655\" id=\"Path_655\"></path></g></g></svg>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(5)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[width=\"32.414\"][height=\"28.828\"][viewbox=\"0 0 32.414 28.828\"]",
+            "attNo": 4
+          }
+        },
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg viewbox=\"0 0 32.414 28.828\" height=\"28.828\" width=\"32.414\" xmlns=\"http://www.w3.org/2000/svg\" c ... .2 -27.242)\" d=\"M-284.2,27.242l13,13-13,13\" data-name=\"Path 655\" id=\"Path_655\"></path></g></g></svg>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(5)>*:nth-child(3)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[class=\"cta-banner-icon-right\"][width=\"32.414\"][height=\"28.828\"][viewbox=\"0 0 32.414 28.828\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg viewbox=\"0 0 134 47.857\" height=\"47.857\" width=\"134\" xmlns=\"http://www.w3.org/2000/svg\" id=\"flc ... .776h13.888v-8.455H419.682v-6.43h15.873V96.286h-25.08Z\" data-name=\"Path 1\" id=\"Path_1\"></path></svg>",
+          "testResult": 0,
+          "path": "body>footer:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[id=\"flc-logo\"][width=\"134\"][height=\"47.857\"][viewbox=\"0 0 134 47.857\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a href=\"/\"><svg viewbox=\"0 0 134 47.857\" height=\"47.857\" width=\"134\" xmlns=\"http://www.w3.org/2000/ ... h13.888v-8.455H419.682v-6.43h15.873V96.286h-25.08Z\" data-name=\"Path 1\" id=\"Path_1\"></path></svg></a>",
+          "testResult": 0,
+          "path": "body>header:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"/\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a target=\"_blank\" href=\"https://www.facebook.com/federallabs\"><i class=\"fab fa-facebook-f\"></i></a>",
+          "testResult": 0,
+          "path": "body>footer:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"https://www.facebook.com/federallabs\"][target=\"_blank\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a target=\"_blank\" href=\"https://twitter.com/federallabs\"><i class=\"fab fa-twitter\"></i></a>",
+          "testResult": 0,
+          "path": "body>footer:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"https://twitter.com/federallabs\"][target=\"_blank\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a target=\"_blank\" href=\"https://www.linkedin.com/company/federallabs\"><i class=\"fab fa-linkedin-in\"></i></a>",
+          "testResult": 0,
+          "path": "body>footer:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(3)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"https://www.linkedin.com/company/federallabs\"][target=\"_blank\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a target=\"_blank\" href=\"https://www.youtube.com/user/Federallabs\"><i class=\"fab fa-youtube\"></i></a>",
+          "testResult": 0,
+          "path": "body>footer:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(4)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"https://www.youtube.com/user/Federallabs\"][target=\"_blank\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a target=\"_blank\" href=\"https://www.flickr.com/photos/federallabs\"><i class=\"fab fa-flickr\"></i></a>",
+          "testResult": 0,
+          "path": "body>footer:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(5)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"https://www.flickr.com/photos/federallabs\"][target=\"_blank\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a target=\"_blank\" href=\"https://www.instagram.com/federallabs/\"><i class=\"fab fa-instagram\"></i></a>",
+          "testResult": 0,
+          "path": "body>footer:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(6)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"https://www.instagram.com/federallabs/\"][target=\"_blank\"]",
+            "attNo": 2
+          }
+        }
+      ]
+    }
+  ],
+  "timeStamp": "4jil2",
+  "startTime": "2022-07-27T14:27:59",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "continuum",
+      0
+    ]
+  ],
+  "logCount": 1,
+  "logSize": 51,
+  "errorLogCount": 1,
+  "errorLogSize": 51,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-27T14:28:06",
+  "elapsedSeconds": 6
+}

@@ -1,0 +1,77 @@
+{
+  "id": "4jil2-pantex",
+  "host": {
+    "id": "pantex",
+    "which": "http://www.pantex.com/",
+    "what": "Pantex Plant"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-27T14:35:34"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-27T14:35:41"
+    }
+  ],
+  "script": {
+    "id": "continuum",
+    "what": "Continuum",
+    "strict": true,
+    "timeLimit": 30,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "http://www.pantex.com/",
+        "what": "Pantex Plant"
+      },
+      {
+        "type": "test",
+        "which": "continuum",
+        "what": "Continuum"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "http://www.pantex.com/",
+      "what": "Pantex Plant",
+      "result": "ERROR: Attempts to visit http://www.pantex.com/ failed"
+    },
+    {
+      "type": "test",
+      "which": "continuum",
+      "what": "Continuum",
+      "result": {
+        "error": "ERROR: No page identified",
+        "prevented": true
+      }
+    }
+  ],
+  "timeStamp": "4jil2",
+  "startTime": "2022-07-27T14:35:34",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [],
+  "logCount": 3,
+  "logSize": 273,
+  "errorLogCount": 3,
+  "errorLogSize": 273,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 5,
+  "endTime": "2022-07-27T14:35:41",
+  "elapsedSeconds": 6
+}

@@ -1,0 +1,165 @@
+{
+  "id": "4jil2-blm",
+  "host": {
+    "id": "blm",
+    "which": "https://www.blm.gov/",
+    "what": "Bureau of Land Management"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-27T14:22:17"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-27T14:22:22"
+    }
+  ],
+  "script": {
+    "id": "continuum",
+    "what": "Continuum",
+    "strict": true,
+    "timeLimit": 30,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.blm.gov/",
+        "what": "Bureau of Land Management"
+      },
+      {
+        "type": "test",
+        "which": "continuum",
+        "what": "Continuum"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.blm.gov/",
+      "what": "Bureau of Land Management",
+      "result": "https://www.blm.gov/"
+    },
+    {
+      "type": "test",
+      "which": "continuum",
+      "what": "Level Access Continuum, community edition",
+      "url": "https://www.blm.gov/",
+      "result": [
+        {
+          "engineTestId": 89,
+          "bestPracticeId": 362,
+          "attribute": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<img typeof=\"foaf:Image\" loading=\"lazy\" height=\"45\" width=\"43\" src=\"/sites/default/files/styles/featured_topic/public/FeaturedTopic_MagnifyingGlass.png?itok=cROmepO-\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[src=\"/sites/default/files/styles/featured_topic/public/FeaturedTopic_MagnifyingGlass.png?itok=cROmepO-\"][width=\"43\"][height=\"45\"][loading=\"lazy\"][typeof=\"foaf:Image\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 99,
+          "bestPracticeId": 464,
+          "attribute": "This element does not have a ul element (without an ARIA-assigned role); ol element (without an ARIA-assigned role); or element with a role set to the value: list as a parent",
+          "attributeDetail": "This LI does not have a ul element (without an ARIA-assigned role); ol element (without an ARIA-assigned role); or element with a role set to the value: list as a parent",
+          "element": "<li class=\"nav-item\"><a role=\"tab\" href=\"#tab-content-29\" data-toggle=\"tab\" id=\"tab-29\" class=\"nav-link text-center active open\">Spotlight</a></li>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "li[class=\"nav-item\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 99,
+          "bestPracticeId": 464,
+          "attribute": "This element does not have a ul element (without an ARIA-assigned role); ol element (without an ARIA-assigned role); or element with a role set to the value: list as a parent",
+          "attributeDetail": "This LI does not have a ul element (without an ARIA-assigned role); ol element (without an ARIA-assigned role); or element with a role set to the value: list as a parent",
+          "element": "<li class=\"nav-item\"><a role=\"tab\" href=\"#tab-content-82047\" data-toggle=\"tab\" id=\"tab-82047\" class=\"nav-link text-center\">Quick Facts</a></li>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "li[class=\"nav-item\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 99,
+          "bestPracticeId": 464,
+          "attribute": "This element does not have a ul element (without an ARIA-assigned role); ol element (without an ARIA-assigned role); or element with a role set to the value: list as a parent",
+          "attributeDetail": "This LI does not have a ul element (without an ARIA-assigned role); ol element (without an ARIA-assigned role); or element with a role set to the value: list as a parent",
+          "element": "<li class=\"nav-item\"><a role=\"tab\" href=\"#tab-content-82050\" data-toggle=\"tab\" id=\"tab-82050\" class=\"nav-link text-center\">Popular Links</a></li>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "li[class=\"nav-item\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 863,
+          "bestPracticeId": 2440,
+          "attribute": "This input should not rely on text in the placeholder attribute for an accessible name",
+          "attributeDetail": "This input should not rely on text in the placeholder attribute for an accessible name",
+          "element": "<input value=\"\" type=\"text\" size=\"60\" required=\"required\" placeholder=\"Site Search\" name=\"query\" maxlength=\"255\" id=\"query\" class=\"form-text required\" aria-required=\"true\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "input[aria-required=\"true\"][class=\"form-text required\"][id=\"query\"][maxlength=\"255\"][name=\"query\"][placeholder=\"Site Search\"][required=\"required\"][size=\"60\"][type=\"text\"][value=\"\"]",
+            "attNo": 10
+          }
+        }
+      ]
+    }
+  ],
+  "timeStamp": "4jil2",
+  "startTime": "2022-07-27T14:22:17",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "continuum",
+      0
+    ]
+  ],
+  "logCount": 1,
+  "logSize": 101,
+  "errorLogCount": 1,
+  "errorLogSize": 101,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-27T14:22:22",
+  "elapsedSeconds": 4
+}

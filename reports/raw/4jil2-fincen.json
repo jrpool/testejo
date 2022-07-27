@@ -1,0 +1,96 @@
+{
+  "id": "4jil2-fincen",
+  "host": {
+    "id": "fincen",
+    "which": "https://www.fincen.gov/",
+    "what": "Financial Crimes Enforcement Network (FinCEN)"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-27T14:28:35"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-27T14:28:42"
+    }
+  ],
+  "script": {
+    "id": "continuum",
+    "what": "Continuum",
+    "strict": true,
+    "timeLimit": 30,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.fincen.gov/",
+        "what": "Financial Crimes Enforcement Network (FinCEN)"
+      },
+      {
+        "type": "test",
+        "which": "continuum",
+        "what": "Continuum"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.fincen.gov/",
+      "what": "Financial Crimes Enforcement Network (FinCEN)",
+      "result": "https://www.fincen.gov/"
+    },
+    {
+      "type": "test",
+      "which": "continuum",
+      "what": "Level Access Continuum, community edition",
+      "url": "https://www.fincen.gov/",
+      "result": [
+        {
+          "engineTestId": 71,
+          "bestPracticeId": 1626,
+          "attribute": "This element (role=heading) does not have an aria-level attribute",
+          "attributeDetail": "This DIV (role=heading) does not have an aria-level attribute",
+          "element": "<div role=\"heading\" class=\"col-sm-12\"><div class=\"region region-header\"><section class=\"block block- ... ef=\"coronavirus\">COVID-19 Information</a></h4></td></tr></tbody></table></div></section></div></div>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[class=\"col-sm-12\"][role=\"heading\"]",
+            "attNo": 2
+          }
+        }
+      ]
+    }
+  ],
+  "timeStamp": "4jil2",
+  "startTime": "2022-07-27T14:28:35",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "continuum",
+      0
+    ]
+  ],
+  "logCount": 1,
+  "logSize": 101,
+  "errorLogCount": 1,
+  "errorLogSize": 101,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-27T14:28:42",
+  "elapsedSeconds": 7
+}

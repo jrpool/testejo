@@ -1,0 +1,163 @@
+{
+  "id": "4jil2-tsp",
+  "host": {
+    "id": "tsp",
+    "which": "https://www.tsp.gov/",
+    "what": "Thrift Savings Plan (TSP)"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-27T14:38:37"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-27T14:38:45"
+    }
+  ],
+  "script": {
+    "id": "continuum",
+    "what": "Continuum",
+    "strict": true,
+    "timeLimit": 30,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.tsp.gov/",
+        "what": "Thrift Savings Plan (TSP)"
+      },
+      {
+        "type": "test",
+        "which": "continuum",
+        "what": "Continuum"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.tsp.gov/",
+      "what": "Thrift Savings Plan (TSP)",
+      "result": "https://www.tsp.gov/"
+    },
+    {
+      "type": "test",
+      "which": "continuum",
+      "what": "Level Access Continuum, community edition",
+      "url": "https://www.tsp.gov/",
+      "result": [
+        {
+          "engineTestId": 55,
+          "bestPracticeId": 410,
+          "attribute": "This element has a content attribute set to a value that includes an instruction that stops a user scaling the viewport size",
+          "attributeDetail": "This META has a content attribute set to a value that includes an instruction that stops a user scaling the viewport size",
+          "element": "<meta content=\"width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no\" name=\"viewport\">",
+          "testResult": 0,
+          "path": "head>meta:nth-of-type(23)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Select \"Save\" to change the viewport content attribute to \"width=device-width, initial-scale=1.0\", or \"Cancel\" if the fix should not be applied.",
+            "fix": {
+              "content": "width=device-width, initial-scale=1.0"
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "meta[name=\"viewport\"][content=\"width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 59,
+          "bestPracticeId": 410,
+          "attribute": "This element has a content attribute set to a value that includes an instruction that sets the viewport's maximum-scale to less than 2",
+          "attributeDetail": "This META has a content attribute set to a value that includes an instruction that sets the viewport's maximum-scale to less than 2",
+          "element": "<meta content=\"width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no\" name=\"viewport\">",
+          "testResult": 0,
+          "path": "head>meta:nth-of-type(23)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Select \"Save\" to change the viewport content attribute to \"width=device-width, initial-scale=1.0\", or \"Cancel\" if the fix should not be applied.",
+            "fix": {
+              "content": "width=device-width, initial-scale=1.0"
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "meta[name=\"viewport\"][content=\"width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 281,
+          "bestPracticeId": 1626,
+          "attribute": "The aria-expanded attribute is not allowed on this element",
+          "attributeDetail": "The aria-expanded attribute is not allowed on this IMG",
+          "element": "<img aria-controls=\"chat-intro\" aria-expanded=\"true\" aria-label=\"Close opening pop up.\" alt=\"Close o ... src=\"https://www.tsp.gov/assets/converge/img/ava_chat_bot/CloseMsg.png\" class=\"chat-closeChatPopup\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(3)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "img[class=\"chat-closeChatPopup\"][src=\"https://www.tsp.gov/assets/converge/img/ava_chat_bot/CloseMsg.png\"][alt=\"Close opening pop up.\"][aria-label=\"Close opening pop up.\"][aria-expanded=\"true\"][aria-controls=\"chat-intro\"]",
+            "attNo": 6
+          }
+        },
+        {
+          "engineTestId": 370,
+          "bestPracticeId": 338,
+          "attribute": "This input (type=search) element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This input (type=search) element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<input class=\"usagov-search-autocomplete ui-autocomplete-input\" autocomplete=\"off\" id=\"qs\" name=\"qs\" type=\"search\">",
+          "testResult": 0,
+          "path": "body>header:nth-of-type(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive label for the search field.",
+            "fix": {
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "input[type=\"search\"][name=\"qs\"][id=\"qs\"][autocomplete=\"off\"][class=\"usagov-search-autocomplete ui-autocomplete-input\"]",
+            "attNo": 5
+          }
+        }
+      ]
+    }
+  ],
+  "timeStamp": "4jil2",
+  "startTime": "2022-07-27T14:38:37",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "continuum",
+      0
+    ]
+  ],
+  "logCount": 53,
+  "logSize": 4264,
+  "errorLogCount": 53,
+  "errorLogSize": 4264,
+  "prohibitedCount": 48,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 2,
+  "endTime": "2022-07-27T14:38:45",
+  "elapsedSeconds": 8
+}

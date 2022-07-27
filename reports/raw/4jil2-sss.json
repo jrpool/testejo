@@ -1,0 +1,126 @@
+{
+  "id": "4jil2-sss",
+  "host": {
+    "id": "sss",
+    "which": "https://www.sss.gov/",
+    "what": "Selective Service System (SSS)"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-27T14:37:45"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-27T14:37:51"
+    }
+  ],
+  "script": {
+    "id": "continuum",
+    "what": "Continuum",
+    "strict": true,
+    "timeLimit": 30,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.sss.gov/",
+        "what": "Selective Service System (SSS)"
+      },
+      {
+        "type": "test",
+        "which": "continuum",
+        "what": "Continuum"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.sss.gov/",
+      "what": "Selective Service System (SSS)",
+      "result": "https://www.sss.gov/"
+    },
+    {
+      "type": "test",
+      "which": "continuum",
+      "what": "Level Access Continuum, community edition",
+      "url": "https://www.sss.gov/",
+      "result": [
+        {
+          "engineTestId": 22,
+          "bestPracticeId": 967,
+          "attribute": "This element should not contain input elements (without an assigned ARIA role and not type=hidden), keygen elements (without an assigned ARIA role), select elements (without an assigned ARIA role), textarea elements (without an assigned ARIA role) or button elements (without an assigned ARIA role)",
+          "attributeDetail": "This A should not contain input elements (without an assigned ARIA role and not type=hidden), keygen elements (without an assigned ARIA role), select elements (without an assigned ARIA role), textarea elements (without an assigned ARIA role) or button elements (without an assigned ARIA role)",
+          "element": "<a href=\"https://www.sss.gov/register/\"><button class=\"usa-button usa-button--secondary\">Register</button></a>",
+          "testResult": 0,
+          "path": "body>header:nth-of-type(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"https://www.sss.gov/register/\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 22,
+          "bestPracticeId": 967,
+          "attribute": "This element should not contain input elements (without an assigned ARIA role and not type=hidden), keygen elements (without an assigned ARIA role), select elements (without an assigned ARIA role), textarea elements (without an assigned ARIA role) or button elements (without an assigned ARIA role)",
+          "attributeDetail": "This A should not contain input elements (without an assigned ARIA role and not type=hidden), keygen elements (without an assigned ARIA role), select elements (without an assigned ARIA role), textarea elements (without an assigned ARIA role) or button elements (without an assigned ARIA role)",
+          "element": "<a href=\"https://www.sss.gov/verify/\"><button class=\"usa-button usa-button--outline usa-button--inverse\">Verify Registration</button></a>",
+          "testResult": 0,
+          "path": "body>header:nth-of-type(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"https://www.sss.gov/verify/\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 533,
+          "bestPracticeId": 2519,
+          "attribute": "This nav does not have an accessible name as required when two or more nav elements are present",
+          "attributeDetail": "This nav does not have an accessible name as required when two or more nav elements are present",
+          "element": "<nav class=\"usa-footer__nav grid-container\"><div class=\"grid-row grid-gap-4\"><div class=\"desktop:gri ... type menu-item-object-page usa-footer__secondary-link menu-item-884\" id=\"menu-item-884\"><a href=\"htt",
+          "testResult": 0,
+          "path": "body>footer:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[class=\"usa-footer__nav grid-container\"]",
+            "attNo": 1
+          }
+        }
+      ]
+    }
+  ],
+  "timeStamp": "4jil2",
+  "startTime": "2022-07-27T14:37:45",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "continuum",
+      0
+    ]
+  ],
+  "logCount": 1,
+  "logSize": 69,
+  "errorLogCount": 1,
+  "errorLogSize": 69,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-27T14:37:51",
+  "elapsedSeconds": 5
+}

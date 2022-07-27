@@ -1,0 +1,501 @@
+{
+  "id": "4jil2-tva",
+  "host": {
+    "id": "tva",
+    "which": "https://www.tva.com/",
+    "what": "Tennessee Valley Authority (TVA)"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-27T14:38:17"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-27T14:38:33"
+    }
+  ],
+  "script": {
+    "id": "continuum",
+    "what": "Continuum",
+    "strict": true,
+    "timeLimit": 30,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.tva.com/",
+        "what": "Tennessee Valley Authority (TVA)"
+      },
+      {
+        "type": "test",
+        "which": "continuum",
+        "what": "Continuum"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.tva.com/",
+      "what": "Tennessee Valley Authority (TVA)",
+      "result": "https://www.tva.com/"
+    },
+    {
+      "type": "test",
+      "which": "continuum",
+      "what": "Level Access Continuum, community edition",
+      "url": "https://www.tva.com/",
+      "result": [
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This g has an id attribute of 'Page-1', which is not unique in the same DOM",
+          "element": "<g fill-rule=\"evenodd\" fill=\"none\" stroke-width=\"1\" stroke=\"none\" id=\"Page-1\"><g fill-rule=\"nonzero\" ... scale(-1, 1) rotate(90.000000) translate(-303.500000, -31.000000) \" id=\"Path\"></polygon></g></g></g>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(15)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "g[id=\"Page-1\"][stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"][fill-rule=\"evenodd\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This g has an id attribute of 'Page-1', which is not unique in the same DOM",
+          "element": "<g fill-rule=\"evenodd\" fill=\"none\" stroke-width=\"1\" stroke=\"none\" id=\"Page-1\"><g fill-rule=\"nonzero\" ... scale(-1, 1) rotate(90.000000) translate(-303.500000, -31.000000) \" id=\"Path\"></polygon></g></g></g>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(15)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "g[id=\"Page-1\"][stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"][fill-rule=\"evenodd\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This g has an id attribute of 'Page-1', which is not unique in the same DOM",
+          "element": "<g fill-rule=\"evenodd\" fill=\"none\" stroke-width=\"1\" stroke=\"none\" id=\"Page-1\"><g fill-rule=\"nonzero\" ... scale(-1, 1) rotate(90.000000) translate(-303.500000, -31.000000) \" id=\"Path\"></polygon></g></g></g>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(15)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "g[id=\"Page-1\"][stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"][fill-rule=\"evenodd\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This g has an id attribute of 'Page-1', which is not unique in the same DOM",
+          "element": "<g fill-rule=\"evenodd\" fill=\"none\" stroke-width=\"1\" stroke=\"none\" id=\"Page-1\"><g fill-rule=\"nonzero\" ... scale(-1, 1) rotate(90.000000) translate(-303.500000, -31.000000) \" id=\"Path\"></polygon></g></g></g>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(15)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "g[id=\"Page-1\"][stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"][fill-rule=\"evenodd\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This g has an id attribute of 'Page-1', which is not unique in the same DOM",
+          "element": "<g fill-rule=\"evenodd\" fill=\"none\" stroke-width=\"1\" stroke=\"none\" id=\"Page-1\"><g fill-rule=\"nonzero\" ... scale(-1, 1) rotate(90.000000) translate(-303.500000, -31.000000) \" id=\"Path\"></polygon></g></g></g>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(15)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(5)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "g[id=\"Page-1\"][stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"][fill-rule=\"evenodd\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This g has an id attribute of 'Page-1', which is not unique in the same DOM",
+          "element": "<g fill-rule=\"evenodd\" fill=\"none\" stroke-width=\"1\" stroke=\"none\" id=\"Page-1\"><g fill-rule=\"nonzero\" ... scale(-1, 1) rotate(90.000000) translate(-303.500000, -31.000000) \" id=\"Path\"></polygon></g></g></g>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(15)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(6)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "g[id=\"Page-1\"][stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"][fill-rule=\"evenodd\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This g has an id attribute of 'Page-1', which is not unique in the same DOM",
+          "element": "<g fill-rule=\"evenodd\" fill=\"none\" stroke-width=\"1\" stroke=\"none\" id=\"Page-1\"><g fill-rule=\"nonzero\" ... scale(-1, 1) rotate(90.000000) translate(-303.500000, -31.000000) \" id=\"Path\"></polygon></g></g></g>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(15)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "g[id=\"Page-1\"][stroke=\"none\"][stroke-width=\"1\"][fill=\"none\"][fill-rule=\"evenodd\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This g has an id attribute of 'Mobile-Copy-2', which is not unique in the same DOM",
+          "element": "<g fill-rule=\"nonzero\" fill=\"#76A240\" transform=\"translate(-300.000000, -84.000000)\" id=\"Mobile-Copy ... 00) scale(-1, 1) rotate(90.000000) translate(-303.500000, -31.000000) \" id=\"Path\"></polygon></g></g>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(15)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "g[id=\"Mobile-Copy-2\"][transform=\"translate(-300.000000, -84.000000)\"][fill=\"#76A240\"][fill-rule=\"nonzero\"]",
+            "attNo": 4
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This g has an id attribute of 'Mobile-Copy-2', which is not unique in the same DOM",
+          "element": "<g fill-rule=\"nonzero\" fill=\"#76A240\" transform=\"translate(-300.000000, -84.000000)\" id=\"Mobile-Copy ... 00) scale(-1, 1) rotate(90.000000) translate(-303.500000, -31.000000) \" id=\"Path\"></polygon></g></g>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(15)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "g[id=\"Mobile-Copy-2\"][transform=\"translate(-300.000000, -84.000000)\"][fill=\"#76A240\"][fill-rule=\"nonzero\"]",
+            "attNo": 4
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This g has an id attribute of 'Mobile-Copy-2', which is not unique in the same DOM",
+          "element": "<g fill-rule=\"nonzero\" fill=\"#76A240\" transform=\"translate(-300.000000, -84.000000)\" id=\"Mobile-Copy ... 00) scale(-1, 1) rotate(90.000000) translate(-303.500000, -31.000000) \" id=\"Path\"></polygon></g></g>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(15)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "g[id=\"Mobile-Copy-2\"][transform=\"translate(-300.000000, -84.000000)\"][fill=\"#76A240\"][fill-rule=\"nonzero\"]",
+            "attNo": 4
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This g has an id attribute of 'Mobile-Copy-2', which is not unique in the same DOM",
+          "element": "<g fill-rule=\"nonzero\" fill=\"#76A240\" transform=\"translate(-300.000000, -84.000000)\" id=\"Mobile-Copy ... 00) scale(-1, 1) rotate(90.000000) translate(-303.500000, -31.000000) \" id=\"Path\"></polygon></g></g>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(15)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "g[id=\"Mobile-Copy-2\"][transform=\"translate(-300.000000, -84.000000)\"][fill=\"#76A240\"][fill-rule=\"nonzero\"]",
+            "attNo": 4
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This g has an id attribute of 'Mobile-Copy-2', which is not unique in the same DOM",
+          "element": "<g fill-rule=\"nonzero\" fill=\"#76A240\" transform=\"translate(-300.000000, -84.000000)\" id=\"Mobile-Copy ... 00) scale(-1, 1) rotate(90.000000) translate(-303.500000, -31.000000) \" id=\"Path\"></polygon></g></g>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(15)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(5)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "g[id=\"Mobile-Copy-2\"][transform=\"translate(-300.000000, -84.000000)\"][fill=\"#76A240\"][fill-rule=\"nonzero\"]",
+            "attNo": 4
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This g has an id attribute of 'Mobile-Copy-2', which is not unique in the same DOM",
+          "element": "<g fill-rule=\"nonzero\" fill=\"#76A240\" transform=\"translate(-300.000000, -84.000000)\" id=\"Mobile-Copy ... 00) scale(-1, 1) rotate(90.000000) translate(-303.500000, -31.000000) \" id=\"Path\"></polygon></g></g>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(15)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(6)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "g[id=\"Mobile-Copy-2\"][transform=\"translate(-300.000000, -84.000000)\"][fill=\"#76A240\"][fill-rule=\"nonzero\"]",
+            "attNo": 4
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This g has an id attribute of 'Mobile-Copy-2', which is not unique in the same DOM",
+          "element": "<g fill-rule=\"nonzero\" fill=\"#76A240\" transform=\"translate(-300.000000, -84.000000)\" id=\"Mobile-Copy ... 00) scale(-1, 1) rotate(90.000000) translate(-303.500000, -31.000000) \" id=\"Path\"></polygon></g></g>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(15)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "g[id=\"Mobile-Copy-2\"][transform=\"translate(-300.000000, -84.000000)\"][fill=\"#76A240\"][fill-rule=\"nonzero\"]",
+            "attNo": 4
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This g has an id attribute of 'Nav2_2', which is not unique in the same DOM",
+          "element": "<g transform=\"translate(0.000000, 56.000000)\" id=\"Nav2_2\"><polygon points=\"301 28 306 31 301 34 301  ... 000000) scale(-1, 1) rotate(90.000000) translate(-303.500000, -31.000000) \" id=\"Path\"></polygon></g>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(15)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "g[id=\"Nav2_2\"][transform=\"translate(0.000000, 56.000000)\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This g has an id attribute of 'Nav2_2', which is not unique in the same DOM",
+          "element": "<g transform=\"translate(0.000000, 56.000000)\" id=\"Nav2_2\"><polygon points=\"301 28 306 31 301 34 301  ... 000000) scale(-1, 1) rotate(90.000000) translate(-303.500000, -31.000000) \" id=\"Path\"></polygon></g>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(15)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "g[id=\"Nav2_2\"][transform=\"translate(0.000000, 56.000000)\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This g has an id attribute of 'Nav2_2', which is not unique in the same DOM",
+          "element": "<g transform=\"translate(0.000000, 56.000000)\" id=\"Nav2_2\"><polygon points=\"301 28 306 31 301 34 301  ... 000000) scale(-1, 1) rotate(90.000000) translate(-303.500000, -31.000000) \" id=\"Path\"></polygon></g>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(15)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "g[id=\"Nav2_2\"][transform=\"translate(0.000000, 56.000000)\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This g has an id attribute of 'Nav2_2', which is not unique in the same DOM",
+          "element": "<g transform=\"translate(0.000000, 56.000000)\" id=\"Nav2_2\"><polygon points=\"301 28 306 31 301 34 301  ... 000000) scale(-1, 1) rotate(90.000000) translate(-303.500000, -31.000000) \" id=\"Path\"></polygon></g>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(15)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "g[id=\"Nav2_2\"][transform=\"translate(0.000000, 56.000000)\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This g has an id attribute of 'Nav2_2', which is not unique in the same DOM",
+          "element": "<g transform=\"translate(0.000000, 56.000000)\" id=\"Nav2_2\"><polygon points=\"301 28 306 31 301 34 301  ... 000000) scale(-1, 1) rotate(90.000000) translate(-303.500000, -31.000000) \" id=\"Path\"></polygon></g>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(15)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(5)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "g[id=\"Nav2_2\"][transform=\"translate(0.000000, 56.000000)\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This g has an id attribute of 'Nav2_2', which is not unique in the same DOM",
+          "element": "<g transform=\"translate(0.000000, 56.000000)\" id=\"Nav2_2\"><polygon points=\"301 28 306 31 301 34 301  ... 000000) scale(-1, 1) rotate(90.000000) translate(-303.500000, -31.000000) \" id=\"Path\"></polygon></g>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(15)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(6)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "g[id=\"Nav2_2\"][transform=\"translate(0.000000, 56.000000)\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This g has an id attribute of 'Nav2_2', which is not unique in the same DOM",
+          "element": "<g transform=\"translate(0.000000, 56.000000)\" id=\"Nav2_2\"><polygon points=\"301 28 306 31 301 34 301  ... 000000) scale(-1, 1) rotate(90.000000) translate(-303.500000, -31.000000) \" id=\"Path\"></polygon></g>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(15)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "g[id=\"Nav2_2\"][transform=\"translate(0.000000, 56.000000)\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This polygon has an id attribute of 'Path', which is not unique in the same DOM",
+          "element": "<polygon points=\"301 28 306 31 301 34 301 32.5295583 303.549642 31 301 29.4697622\" transform=\"transl ...  31.000000) scale(-1, 1) rotate(90.000000) translate(-303.500000, -31.000000) \" id=\"Path\"></polygon>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(15)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "polygon[id=\"Path\"][transform=\"translate(303.500000, 31.000000) scale(-1, 1) rotate(90.000000) translate(-303.500000, -31.000000) \"][points=\"301 28 306 31 301 34 301 32.5295583 303.549642 31 301 29.4697622\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This polygon has an id attribute of 'Path', which is not unique in the same DOM",
+          "element": "<polygon points=\"301 28 306 31 301 34 301 32.5295583 303.549642 31 301 29.4697622\" transform=\"transl ...  31.000000) scale(-1, 1) rotate(90.000000) translate(-303.500000, -31.000000) \" id=\"Path\"></polygon>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(15)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "polygon[id=\"Path\"][transform=\"translate(303.500000, 31.000000) scale(-1, 1) rotate(90.000000) translate(-303.500000, -31.000000) \"][points=\"301 28 306 31 301 34 301 32.5295583 303.549642 31 301 29.4697622\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This polygon has an id attribute of 'Path', which is not unique in the same DOM",
+          "element": "<polygon points=\"301 28 306 31 301 34 301 32.5295583 303.549642 31 301 29.4697622\" transform=\"transl ...  31.000000) scale(-1, 1) rotate(90.000000) translate(-303.500000, -31.000000) \" id=\"Path\"></polygon>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(15)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "polygon[id=\"Path\"][transform=\"translate(303.500000, 31.000000) scale(-1, 1) rotate(90.000000) translate(-303.500000, -31.000000) \"][points=\"301 28 306 31 301 34 301 32.5295583 303.549642 31 301 29.4697622\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This polygon has an id attribute of 'Path', which is not unique in the same DOM",
+          "element": "<polygon points=\"301 28 306 31 301 34 301 32.5295583 303.549642 31 301 29.4697622\" transform=\"transl ...  31.000000) scale(-1, 1) rotate(90.000000) translate(-303.500000, -31.000000) \" id=\"Path\"></polygon>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(15)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "polygon[id=\"Path\"][transform=\"translate(303.500000, 31.000000) scale(-1, 1) rotate(90.000000) translate(-303.500000, -31.000000) \"][points=\"301 28 306 31 301 34 301 32.5295583 303.549642 31 301 29.4697622\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This polygon has an id attribute of 'Path', which is not unique in the same DOM",
+          "element": "<polygon points=\"301 28 306 31 301 34 301 32.5295583 303.549642 31 301 29.4697622\" transform=\"transl ...  31.000000) scale(-1, 1) rotate(90.000000) translate(-303.500000, -31.000000) \" id=\"Path\"></polygon>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(15)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(5)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "polygon[id=\"Path\"][transform=\"translate(303.500000, 31.000000) scale(-1, 1) rotate(90.000000) translate(-303.500000, -31.000000) \"][points=\"301 28 306 31 301 34 301 32.5295583 303.549642 31 301 29.4697622\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This polygon has an id attribute of 'Path', which is not unique in the same DOM",
+          "element": "<polygon points=\"301 28 306 31 301 34 301 32.5295583 303.549642 31 301 29.4697622\" transform=\"transl ...  31.000000) scale(-1, 1) rotate(90.000000) translate(-303.500000, -31.000000) \" id=\"Path\"></polygon>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(15)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(6)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "polygon[id=\"Path\"][transform=\"translate(303.500000, 31.000000) scale(-1, 1) rotate(90.000000) translate(-303.500000, -31.000000) \"][points=\"301 28 306 31 301 34 301 32.5295583 303.549642 31 301 29.4697622\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This polygon has an id attribute of 'Path', which is not unique in the same DOM",
+          "element": "<polygon points=\"301 28 306 31 301 34 301 32.5295583 303.549642 31 301 29.4697622\" transform=\"transl ...  31.000000) scale(-1, 1) rotate(90.000000) translate(-303.500000, -31.000000) \" id=\"Path\"></polygon>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(15)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "polygon[id=\"Path\"][transform=\"translate(303.500000, 31.000000) scale(-1, 1) rotate(90.000000) translate(-303.500000, -31.000000) \"][points=\"301 28 306 31 301 34 301 32.5295583 303.549642 31 301 29.4697622\"]",
+            "attNo": 3
+          }
+        }
+      ]
+    }
+  ],
+  "timeStamp": "4jil2",
+  "startTime": "2022-07-27T14:38:17",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "continuum",
+      0
+    ]
+  ],
+  "logCount": 11,
+  "logSize": 914,
+  "errorLogCount": 7,
+  "errorLogSize": 638,
+  "prohibitedCount": 2,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 2,
+  "endTime": "2022-07-27T14:38:33",
+  "elapsedSeconds": 15
+}

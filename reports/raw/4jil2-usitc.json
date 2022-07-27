@@ -1,0 +1,133 @@
+{
+  "id": "4jil2-usitc",
+  "host": {
+    "id": "usitc",
+    "which": "https://www.usitc.gov/",
+    "what": "United States International Trade Commission (USITC)"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-27T14:39:13"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-27T14:39:22"
+    }
+  ],
+  "script": {
+    "id": "continuum",
+    "what": "Continuum",
+    "strict": true,
+    "timeLimit": 30,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.usitc.gov/",
+        "what": "United States International Trade Commission (USITC)"
+      },
+      {
+        "type": "test",
+        "which": "continuum",
+        "what": "Continuum"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.usitc.gov/",
+      "what": "United States International Trade Commission (USITC)",
+      "result": "https://www.usitc.gov/"
+    },
+    {
+      "type": "test",
+      "which": "continuum",
+      "what": "Level Access Continuum, community edition",
+      "url": "https://www.usitc.gov/",
+      "result": [
+        {
+          "engineTestId": 15,
+          "bestPracticeId": 338,
+          "attribute": "The alt attribute is not allowed on this element",
+          "attributeDetail": "The alt attribute is not allowed on this INPUT",
+          "element": "<input value=\"go\" type=\"submit\" class=\"btn btn-default\" alt=\"execute search\" id=\"search_go_button\" name=\"go\">",
+          "testResult": 0,
+          "path": "body>header:nth-of-type(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "input[name=\"go\"][id=\"search_go_button\"][alt=\"execute search\"][class=\"btn btn-default\"][type=\"submit\"][value=\"go\"]",
+            "attNo": 6
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a href=\"javascript:void(0)\" id=\"back-to-top\"><i class=\"fa fa-5x fa-arrow-circle-up pull-right\"></i></a>",
+          "testResult": 0,
+          "path": "body>footer:nth-of-type(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[id=\"back-to-top\"][href=\"javascript:void(0)\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 281,
+          "bestPracticeId": 1626,
+          "attribute": "The aria-expanded attribute is not allowed on this element",
+          "attributeDetail": "The aria-expanded attribute is not allowed on this DIV",
+          "element": "<div aria-hidden=\"false\" aria-expanded=\"true\" role=\"tabpanel\" class=\"ui-tabs-panel ui-widget-content ... 18ll1962.htm\">Rotating 3-D LiDAR Devices</a></span></div></div></span></div></div></div></div></div>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(3)>*:nth-child(3)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[id=\"qt-latest_information-ui-tabs1\"][aria-labelledby=\"ui-id-1\"][class=\"ui-tabs-panel ui-widget-content ui-corner-bottom\"][role=\"tabpanel\"][aria-expanded=\"true\"][aria-hidden=\"false\"]",
+            "attNo": 6
+          }
+        }
+      ]
+    }
+  ],
+  "timeStamp": "4jil2",
+  "startTime": "2022-07-27T14:39:13",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "continuum",
+      0
+    ]
+  ],
+  "logCount": 1,
+  "logSize": 101,
+  "errorLogCount": 1,
+  "errorLogSize": 101,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-27T14:39:22",
+  "elapsedSeconds": 9
+}

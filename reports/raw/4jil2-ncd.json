@@ -1,0 +1,171 @@
+{
+  "id": "4jil2-ncd",
+  "host": {
+    "id": "ncd",
+    "which": "https://ncd.gov/",
+    "what": "National Council on Disability"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-27T14:31:38"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-27T14:31:46"
+    }
+  ],
+  "script": {
+    "id": "continuum",
+    "what": "Continuum",
+    "strict": true,
+    "timeLimit": 30,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://ncd.gov/",
+        "what": "National Council on Disability"
+      },
+      {
+        "type": "test",
+        "which": "continuum",
+        "what": "Continuum"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://ncd.gov/",
+      "what": "National Council on Disability",
+      "result": "https://ncd.gov/"
+    },
+    {
+      "type": "test",
+      "which": "continuum",
+      "what": "Level Access Continuum, community edition",
+      "url": "https://ncd.gov/",
+      "result": [
+        {
+          "engineTestId": 531,
+          "bestPracticeId": 2519,
+          "attribute": "This nav does not have a unique accessible name as required when two or more nav elements are present",
+          "attributeDetail": "This nav does not have a unique accessible name as required when two or more nav elements are present",
+          "element": "<nav style=\"display: block;\" class=\"block block-nice-menus mainmenu no-title menu-wrapper menu-bar-w ... den;\"><li class=\"menu-2322 menu-path-node-578 first odd  menu-depth-2 menu-item-2322\"><a title=\"Buy ",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[id=\"block-nice-menus-1\"][class=\"block block-nice-menus mainmenu no-title menu-wrapper menu-bar-wrapper clearfix odd first last block-count-4 block-region-menu-bar block-1 responsive-menus-mean-menu-processed\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 531,
+          "bestPracticeId": 2519,
+          "attribute": "This nav does not have a unique accessible name as required when two or more nav elements are present",
+          "attributeDetail": "This nav does not have a unique accessible name as required when two or more nav elements are present",
+          "element": "<nav class=\"block block-nice-menus Sidemenu odd first last block-count-8 block-region-sidebar-first  ... h Perspectives\" href=\"/policy/youth-perspectives\">Youth Perspectives</a></li></ul></div></div></nav>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[id=\"block-nice-menus-2\"][class=\"block block-nice-menus Sidemenu odd first last block-count-8 block-region-sidebar-first block-2\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 531,
+          "bestPracticeId": 2519,
+          "attribute": "This nav does not have a unique accessible name as required when two or more nav elements are present",
+          "attributeDetail": "This nav does not have a unique accessible name as required when two or more nav elements are present",
+          "element": "<nav class=\"block block-nice-menus odd first block-count-9 block-region-sidebar-second block-3\" id=\" ... ve%20Communities%20Toolkit%20Guide.pdf\">Disability in Indian Country</a></li></ul></div></div></nav>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[id=\"block-nice-menus-3\"][class=\"block block-nice-menus odd first block-count-9 block-region-sidebar-second block-3\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 533,
+          "bestPracticeId": 2519,
+          "attribute": "This nav does not have an accessible name as required when two or more nav elements are present",
+          "attributeDetail": "This nav does not have an accessible name as required when two or more nav elements are present",
+          "element": "<nav style=\"display: block;\" class=\"block block-nice-menus mainmenu no-title menu-wrapper menu-bar-w ... den;\"><li class=\"menu-2322 menu-path-node-578 first odd  menu-depth-2 menu-item-2322\"><a title=\"Buy ",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[id=\"block-nice-menus-1\"][class=\"block block-nice-menus mainmenu no-title menu-wrapper menu-bar-wrapper clearfix odd first last block-count-4 block-region-menu-bar block-1 responsive-menus-mean-menu-processed\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 533,
+          "bestPracticeId": 2519,
+          "attribute": "This nav does not have an accessible name as required when two or more nav elements are present",
+          "attributeDetail": "This nav does not have an accessible name as required when two or more nav elements are present",
+          "element": "<nav class=\"block block-nice-menus Sidemenu odd first last block-count-8 block-region-sidebar-first  ... h Perspectives\" href=\"/policy/youth-perspectives\">Youth Perspectives</a></li></ul></div></div></nav>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[id=\"block-nice-menus-2\"][class=\"block block-nice-menus Sidemenu odd first last block-count-8 block-region-sidebar-first block-2\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 533,
+          "bestPracticeId": 2519,
+          "attribute": "This nav does not have an accessible name as required when two or more nav elements are present",
+          "attributeDetail": "This nav does not have an accessible name as required when two or more nav elements are present",
+          "element": "<nav class=\"block block-nice-menus odd first block-count-9 block-region-sidebar-second block-3\" id=\" ... ve%20Communities%20Toolkit%20Guide.pdf\">Disability in Indian Country</a></li></ul></div></div></nav>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[id=\"block-nice-menus-3\"][class=\"block block-nice-menus odd first block-count-9 block-region-sidebar-second block-3\"]",
+            "attNo": 2
+          }
+        }
+      ]
+    }
+  ],
+  "timeStamp": "4jil2",
+  "startTime": "2022-07-27T14:31:38",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "continuum",
+      0
+    ]
+  ],
+  "logCount": 1,
+  "logSize": 101,
+  "errorLogCount": 1,
+  "errorLogSize": 101,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-27T14:31:46",
+  "elapsedSeconds": 7
+}

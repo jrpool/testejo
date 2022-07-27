@@ -1,0 +1,83 @@
+{
+  "id": "4jil2-snl",
+  "host": {
+    "id": "snl",
+    "which": "https://www.sandia.gov/",
+    "what": "Sandia National Laboratories"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-27T14:37:22"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-27T14:37:29"
+    }
+  ],
+  "script": {
+    "id": "continuum",
+    "what": "Continuum",
+    "strict": true,
+    "timeLimit": 30,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.sandia.gov/",
+        "what": "Sandia National Laboratories"
+      },
+      {
+        "type": "test",
+        "which": "continuum",
+        "what": "Continuum"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.sandia.gov/",
+      "what": "Sandia National Laboratories",
+      "result": "https://www.sandia.gov/"
+    },
+    {
+      "type": "test",
+      "which": "continuum",
+      "what": "Level Access Continuum, community edition",
+      "url": "https://www.sandia.gov/",
+      "result": {
+        "prevented": true,
+        "error": "ERROR adding the continuum.conf script to the page"
+      }
+    }
+  ],
+  "timeStamp": "4jil2",
+  "startTime": "2022-07-27T14:37:22",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "continuum",
+      0
+    ]
+  ],
+  "logCount": 32,
+  "logSize": 7930,
+  "errorLogCount": 32,
+  "errorLogSize": 7930,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-27T14:37:29",
+  "elapsedSeconds": 7
+}

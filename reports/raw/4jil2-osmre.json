@@ -1,0 +1,314 @@
+{
+  "id": "4jil2-osmre",
+  "host": {
+    "id": "osmre",
+    "which": "https://www.osmre.gov/",
+    "what": "Office of Surface Mining Reclamation and Enforcement (OSMRE)"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-27T14:35:04"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-27T14:35:10"
+    }
+  ],
+  "script": {
+    "id": "continuum",
+    "what": "Continuum",
+    "strict": true,
+    "timeLimit": 30,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.osmre.gov/",
+        "what": "Office of Surface Mining Reclamation and Enforcement (OSMRE)"
+      },
+      {
+        "type": "test",
+        "which": "continuum",
+        "what": "Continuum"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.osmre.gov/",
+      "what": "Office of Surface Mining Reclamation and Enforcement (OSMRE)",
+      "result": "https://www.osmre.gov/"
+    },
+    {
+      "type": "test",
+      "which": "continuum",
+      "what": "Level Access Continuum, community edition",
+      "url": "https://www.osmre.gov/",
+      "result": [
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This UL has an id attribute of 'basic-nav-section-1', which is not unique in the same DOM",
+          "element": "<ul class=\"usa-nav__submenu-list\" id=\"basic-nav-section-1\"><li class=\"usa-nav__submenu-item\"><a titl ... tacts\" href=\"/contact-us/state-tribal-contacts\"><span>State and Tribal Contacts</span></a></li></ul>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(4)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "ul[id=\"basic-nav-section-1\"][class=\"usa-nav__submenu-list\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This UL has an id attribute of 'basic-nav-section-1', which is not unique in the same DOM",
+          "element": "<ul class=\"usa-nav__submenu-list\" id=\"basic-nav-section-1\"><li class=\"usa-nav__submenu-item\"><a titl ... sa-nav__submenu-item\"><a title=\"e-AMLIS\" href=\"/programs/e-amlis\"><span>e-AMLIS</span></a></li></ul>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(4)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "ul[id=\"basic-nav-section-1\"][class=\"usa-nav__submenu-list\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This UL has an id attribute of 'basic-nav-section-2', which is not unique in the same DOM",
+          "element": "<ul class=\"usa-nav__submenu-list\" id=\"basic-nav-section-2\"><li class=\"usa-nav__submenu-item\"><a title=\"OSMRE History\" href=\"/about/history\"><span>History</span></a></li></ul>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(4)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "ul[id=\"basic-nav-section-2\"][class=\"usa-nav__submenu-list\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This UL has an id attribute of 'basic-nav-section-2', which is not unique in the same DOM",
+          "element": "<ul class=\"usa-nav__submenu-list\" id=\"basic-nav-section-2\"><li class=\"usa-nav__submenu-item\"><a titl ... ograms/regulating-active-coal-mines/oversight\"><span>State and Tribal Oversight</span></a></li></ul>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(4)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "ul[id=\"basic-nav-section-2\"][class=\"usa-nav__submenu-list\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This UL has an id attribute of 'basic-nav-section-3', which is not unique in the same DOM",
+          "element": "<ul class=\"usa-nav__submenu-list\" id=\"basic-nav-section-3\"><li class=\"usa-nav__submenu-item\"><a titl ... and Volunteers\" href=\"/about/youth-volunteers\"><span>Volunteers and Internships</span></a></li></ul>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(4)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(3)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "ul[id=\"basic-nav-section-3\"][class=\"usa-nav__submenu-list\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This UL has an id attribute of 'basic-nav-section-3', which is not unique in the same DOM",
+          "element": "<ul class=\"usa-nav__submenu-list\" id=\"basic-nav-section-3\"><li class=\"usa-nav__submenu-item\"><a titl ... ubmenu-item\"><a title=\"OSMRE Training\" href=\"/programs/training\"><span>Training</span></a></li></ul>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(4)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(3)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "ul[id=\"basic-nav-section-3\"][class=\"usa-nav__submenu-list\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This MAIN has an id attribute of 'main-content', which is not unique in the same DOM",
+          "element": "<main id=\"main-content\" role=\"main\" class=\"main-content usa-layout-docs  osmre-front\"><a tabindex=\"- ... \"usa-collection__calendar-date\"><span class=\"usa-collection__calendar-date-month\"><time datetime=\"00",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(6)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "main[class=\"main-content usa-layout-docs  osmre-front\"][role=\"main\"][id=\"main-content\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This A has an id attribute of 'main-content', which is not unique in the same DOM",
+          "element": "<a tabindex=\"-1\" id=\"main-content\"></a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(6)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "a[id=\"main-content\"][tabindex=\"-1\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 99,
+          "bestPracticeId": 464,
+          "attribute": "This element does not have a ul element (without an ARIA-assigned role); ol element (without an ARIA-assigned role); or element with a role set to the value: list as a parent",
+          "attributeDetail": "This LI does not have a ul element (without an ARIA-assigned role); ol element (without an ARIA-assigned role); or element with a role set to the value: list as a parent",
+          "element": "<li class=\"usa-nav__primary-item\"><button aria-controls=\"extended-mega-nav-section-1\" aria-expanded= ... about/youth-volunteers\"><span>Volunteers and Internships</span></a></li></ul></div></div></div></li>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(4)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "li[class=\"usa-nav__primary-item\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 99,
+          "bestPracticeId": 464,
+          "attribute": "This element does not have a ul element (without an ARIA-assigned role); ol element (without an ARIA-assigned role); or element with a role set to the value: list as a parent",
+          "attributeDetail": "This LI does not have a ul element (without an ARIA-assigned role); ol element (without an ARIA-assigned role); or element with a role set to the value: list as a parent",
+          "element": "<li class=\"usa-nav__primary-item\"><button aria-controls=\"extended-mega-nav-section-2\" aria-expanded= ... tive-coal-mines/indian-lands\"><span>Indian Lands</span></a></li><li class=\"usa-nav__submenu-item\"><a",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(4)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "li[class=\"usa-nav__primary-item\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 99,
+          "bestPracticeId": 464,
+          "attribute": "This element does not have a ul element (without an ARIA-assigned role); ol element (without an ARIA-assigned role); or element with a role set to the value: list as a parent",
+          "attributeDetail": "This LI does not have a ul element (without an ARIA-assigned role); ol element (without an ARIA-assigned role); or element with a role set to the value: list as a parent",
+          "element": "<li class=\"usa-nav__primary-item\"><button aria-controls=\"extended-mega-nav-section-3\" aria-expanded= ... regulations/scientific-integrity\"><span>Scientific Integrity</span></a></div></div></div></div></li>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(4)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(3)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "li[class=\"usa-nav__primary-item\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 99,
+          "bestPracticeId": 464,
+          "attribute": "This element does not have a ul element (without an ARIA-assigned role); ol element (without an ARIA-assigned role); or element with a role set to the value: list as a parent",
+          "attributeDetail": "This LI does not have a ul element (without an ARIA-assigned role); ol element (without an ARIA-assigned role); or element with a role set to the value: list as a parent",
+          "element": "<li class=\"usa-nav__primary-item\"><button aria-controls=\"extended-mega-nav-section-4\" aria-expanded= ... f=\"/resources/tribal-consultation\"><span>Tribal Consultation</span></a></div></div></div></div></li>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(4)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(4)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "li[class=\"usa-nav__primary-item\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 99,
+          "bestPracticeId": 464,
+          "attribute": "This element does not have a ul element (without an ARIA-assigned role); ol element (without an ARIA-assigned role); or element with a role set to the value: list as a parent",
+          "attributeDetail": "This LI does not have a ul element (without an ARIA-assigned role); ol element (without an ARIA-assigned role); or element with a role set to the value: list as a parent",
+          "element": "<li class=\"usa-nav__primary-item\"><button aria-controls=\"extended-mega-nav-section-5\" aria-expanded= ... -item\"><a title=\"Stories\" href=\"/news/stories\"><span>Stories</span></a></div></div></div></div></li>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(4)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(5)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "li[class=\"usa-nav__primary-item\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 325,
+          "bestPracticeId": 1626,
+          "attribute": "The role attribute value given to this element is not allowed.  This element's role attribute can be set to one of the following text values: directory | group | listbox | menu | menubar | radiogroup | tablist | toolbar | tree; or the role attribute can be removed",
+          "attributeDetail": "The role attribute value given to this UL is not allowed.  This element's role attribute can be set to one of the following text values: directory | group | listbox | menu | menubar | radiogroup | tablist | toolbar | tree; or the role attribute can be removed",
+          "element": "<ul role=\"navigation\" class=\"usa-nav__primary usa-accordion osmre-nav__primary\"><li class=\"usa-nav__ ... n>Abandoned Mine Land (AML) Awards</span></a></li><li class=\"usa-nav__submenu-item\"><a href=\"/progra",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(4)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "ul[class=\"usa-nav__primary usa-accordion osmre-nav__primary\"][role=\"navigation\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 370,
+          "bestPracticeId": 338,
+          "attribute": "This input (type=search) element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This input (type=search) element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<input name=\"keys\" type=\"search\" id=\"extended-search-field-small\" class=\"usa-input\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(4)>*:nth-child(2)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive label for the search field.",
+            "fix": {
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "input[class=\"usa-input\"][id=\"extended-search-field-small\"][type=\"search\"][name=\"keys\"]",
+            "attNo": 4
+          }
+        }
+      ]
+    }
+  ],
+  "timeStamp": "4jil2",
+  "startTime": "2022-07-27T14:35:04",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "continuum",
+      0
+    ]
+  ],
+  "logCount": 1,
+  "logSize": 101,
+  "errorLogCount": 1,
+  "errorLogSize": 101,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-27T14:35:10",
+  "elapsedSeconds": 6
+}

@@ -1,0 +1,148 @@
+{
+  "id": "4jil2-neh",
+  "host": {
+    "id": "neh",
+    "which": "https://www.neh.gov/",
+    "what": "National Endowment for the Humanities (NEH)"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-27T14:31:55"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-27T14:32:01"
+    }
+  ],
+  "script": {
+    "id": "continuum",
+    "what": "Continuum",
+    "strict": true,
+    "timeLimit": 30,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.neh.gov/",
+        "what": "National Endowment for the Humanities (NEH)"
+      },
+      {
+        "type": "test",
+        "which": "continuum",
+        "what": "Continuum"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.neh.gov/",
+      "what": "National Endowment for the Humanities (NEH)",
+      "result": "https://www.neh.gov/"
+    },
+    {
+      "type": "test",
+      "which": "continuum",
+      "what": "Level Access Continuum, community edition",
+      "url": "https://www.neh.gov/",
+      "result": [
+        {
+          "engineTestId": 37,
+          "bestPracticeId": 1626,
+          "attribute": "The role attribute value given to this element is not allowed.  The element's role attribute should be set to one of the following text values: button | checkbox | menuitem | menuitemcheckbox | menuitemradio | radio | tab | switch | treeitem; or the role attribute can be removed",
+          "attributeDetail": "The role attribute value of 'article' given to this A is not allowed.  The element's role attribute should be set to one of the following text values: button | checkbox | menuitem | menuitemcheckbox | menuitemradio | radio | tab | switch | treeitem; or the role attribute can be removed",
+          "element": "<a role=\"article\" class=\"image-teaser-featured\" href=\"/explore/photogrammar-project\"><div class=\"ima ... s\" loading=\"lazy\"></div></div><h3 class=\"image-teaser-featured__title\">Photogrammar Project</h3></a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(2)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"/explore/photogrammar-project\"][class=\"image-teaser-featured\"][role=\"article\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 37,
+          "bestPracticeId": 1626,
+          "attribute": "The role attribute value given to this element is not allowed.  The element's role attribute should be set to one of the following text values: button | checkbox | menuitem | menuitemcheckbox | menuitemradio | radio | tab | switch | treeitem; or the role attribute can be removed",
+          "attributeDetail": "The role attribute value of 'article' given to this A is not allowed.  The element's role attribute should be set to one of the following text values: button | checkbox | menuitem | menuitemcheckbox | menuitemradio | radio | tab | switch | treeitem; or the role attribute can be removed",
+          "element": "<a role=\"article\" class=\"image-teaser-featured\" href=\"/explore/archibald-motley-jazz-age-modernist\"> ... \"></div></div><h3 class=\"image-teaser-featured__title\">Archibald Motley: Jazz Age Modernist</h3></a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(2)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"/explore/archibald-motley-jazz-age-modernist\"][class=\"image-teaser-featured\"][role=\"article\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 37,
+          "bestPracticeId": 1626,
+          "attribute": "The role attribute value given to this element is not allowed.  The element's role attribute should be set to one of the following text values: button | checkbox | menuitem | menuitemcheckbox | menuitemradio | radio | tab | switch | treeitem; or the role attribute can be removed",
+          "attributeDetail": "The role attribute value of 'article' given to this A is not allowed.  The element's role attribute should be set to one of the following text values: button | checkbox | menuitem | menuitemcheckbox | menuitemradio | radio | tab | switch | treeitem; or the role attribute can be removed",
+          "element": "<a role=\"article\" class=\"image-teaser-featured\" href=\"/explore/tatanka-iyotake-reimagining-sitting-b ... iv></div><h3 class=\"image-teaser-featured__title\">Tatanka Iyotake: Reimagining Sitting Bull</h3></a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(2)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(3)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"/explore/tatanka-iyotake-reimagining-sitting-bull\"][class=\"image-teaser-featured\"][role=\"article\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a class=\"featured-content__primary-image-link\" href=\"/news/andrew-delbanco-named-2022-jefferson-lec ... omepage.jpg?h=545d6d87&amp;itok=RaWXk0-C\"></picture></div></div></article></div></section></div></a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"/news/andrew-delbanco-named-2022-jefferson-lecturer-humanities\"][class=\"featured-content__primary-image-link\"]",
+            "attNo": 2
+          }
+        }
+      ]
+    }
+  ],
+  "timeStamp": "4jil2",
+  "startTime": "2022-07-27T14:31:55",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "continuum",
+      0
+    ]
+  ],
+  "logCount": 2,
+  "logSize": 712,
+  "errorLogCount": 2,
+  "errorLogSize": 712,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-27T14:32:01",
+  "elapsedSeconds": 5
+}

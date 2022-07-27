@@ -1,0 +1,80 @@
+{
+  "id": "4jil2-mspb",
+  "host": {
+    "id": "mspb",
+    "which": "https://www.mspb.gov/",
+    "what": "Merit Systems Protection Board (MSPB)"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-27T14:30:27"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-27T14:30:30"
+    }
+  ],
+  "script": {
+    "id": "continuum",
+    "what": "Continuum",
+    "strict": true,
+    "timeLimit": 30,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.mspb.gov/",
+        "what": "Merit Systems Protection Board (MSPB)"
+      },
+      {
+        "type": "test",
+        "which": "continuum",
+        "what": "Continuum"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.mspb.gov/",
+      "what": "Merit Systems Protection Board (MSPB)",
+      "result": "https://www.mspb.gov/"
+    },
+    {
+      "type": "test",
+      "which": "continuum",
+      "what": "Level Access Continuum, community edition",
+      "url": "https://www.mspb.gov/",
+      "result": "NONE"
+    }
+  ],
+  "timeStamp": "4jil2",
+  "startTime": "2022-07-27T14:30:27",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "continuum",
+      0
+    ]
+  ],
+  "logCount": 0,
+  "logSize": 0,
+  "errorLogCount": 0,
+  "errorLogSize": 0,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-27T14:30:30",
+  "elapsedSeconds": 3
+}

@@ -1,0 +1,96 @@
+{
+  "id": "4jil2-dea",
+  "host": {
+    "id": "dea",
+    "which": "https://www.dea.gov/",
+    "what": "Drug Enforcement Administration (DEA)"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-27T14:25:42"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-27T14:25:49"
+    }
+  ],
+  "script": {
+    "id": "continuum",
+    "what": "Continuum",
+    "strict": true,
+    "timeLimit": 30,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.dea.gov/",
+        "what": "Drug Enforcement Administration (DEA)"
+      },
+      {
+        "type": "test",
+        "which": "continuum",
+        "what": "Continuum"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.dea.gov/",
+      "what": "Drug Enforcement Administration (DEA)",
+      "result": "https://www.dea.gov/"
+    },
+    {
+      "type": "test",
+      "which": "continuum",
+      "what": "Level Access Continuum, community edition",
+      "url": "https://www.dea.gov/",
+      "result": [
+        {
+          "engineTestId": 863,
+          "bestPracticeId": 2440,
+          "attribute": "This input should not rely on text in the placeholder attribute for an accessible name",
+          "attributeDetail": "This input should not rely on text in the placeholder attribute for an accessible name",
+          "element": "<input class=\"form-item__text\" maxlength=\"128\" value=\"\" name=\"sAddr\" id=\"edit-saddr\" type=\"text\" data-drupal-selector=\"edit-saddr\" size=\"40\" placeholder=\"Address, city, state or zip code\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "input[placeholder=\"Address, city, state or zip code\"][size=\"40\"][data-drupal-selector=\"edit-saddr\"][type=\"text\"][id=\"edit-saddr\"][name=\"sAddr\"][value=\"\"][maxlength=\"128\"][class=\"form-item__text\"]",
+            "attNo": 9
+          }
+        }
+      ]
+    }
+  ],
+  "timeStamp": "4jil2",
+  "startTime": "2022-07-27T14:25:42",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "continuum",
+      0
+    ]
+  ],
+  "logCount": 2,
+  "logSize": 316,
+  "errorLogCount": 2,
+  "errorLogSize": 316,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-27T14:25:49",
+  "elapsedSeconds": 7
+}

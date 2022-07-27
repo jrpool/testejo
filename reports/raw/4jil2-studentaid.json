@@ -1,0 +1,876 @@
+{
+  "id": "4jil2-studentaid",
+  "host": {
+    "id": "studentaid",
+    "which": "https://studentaid.gov/",
+    "what": "Federal Student Aid"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-27T14:42:37"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-27T14:42:49"
+    }
+  ],
+  "script": {
+    "id": "continuum",
+    "what": "Continuum",
+    "strict": true,
+    "timeLimit": 30,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://studentaid.gov/",
+        "what": "Federal Student Aid"
+      },
+      {
+        "type": "test",
+        "which": "continuum",
+        "what": "Continuum"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://studentaid.gov/",
+      "what": "Federal Student Aid",
+      "result": "https://studentaid.gov/"
+    },
+    {
+      "type": "test",
+      "which": "continuum",
+      "what": "Level Access Continuum, community edition",
+      "url": "https://studentaid.gov/",
+      "result": [
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This A has an id attribute of 'fsa_Link_HeaderLevel2TeachGrantAgreement', which is not unique in the same DOM",
+          "element": "<a aria-roledescription=\"level 2 link\" id=\"fsa_Link_HeaderLevel2TeachGrantAgreement\" class=\"panel-ca ... ory-link panel-entity\" href=\"/teach-grant-program\">Complete TEACH Grant Counseling and Agreement</a>",
+          "testResult": 0,
+          "path": "body>fsa-root:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)|:host>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(3)>*:nth-child(3)>*:nth-child(1)>*:nth-child(3)>*:nth-child(3)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"/teach-grant-program\"][class=\"panel-category-link panel-entity\"][id=\"fsa_Link_HeaderLevel2TeachGrantAgreement\"][aria-roledescription=\"level 2 link\"]",
+            "attNo": 4
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This A has an id attribute of 'fsa_Link_HeaderLevel2TeachGrantAgreement', which is not unique in the same DOM",
+          "element": "<a aria-roledescription=\"level 2 link\" id=\"fsa_Link_HeaderLevel2TeachGrantAgreement\" class=\"panel-ca ... ink panel-entity\" href=\"/teach-conversion-counseling\">Complete TEACH Grant Conversion Counseling</a>",
+          "testResult": 0,
+          "path": "body>fsa-root:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)|:host>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(4)>*:nth-child(3)>*:nth-child(1)>*:nth-child(2)>*:nth-child(3)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"/teach-conversion-counseling\"][class=\"panel-category-link panel-entity\"][id=\"fsa_Link_HeaderLevel2TeachGrantAgreement\"][aria-roledescription=\"level 2 link\"]",
+            "attNo": 4
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This BUTTON has an id attribute of 'fsa_Button_FsaHomeSignIn', which is not unique in the same DOM",
+          "element": "<button type=\"button\" id=\"fsa_Button_FsaHomeSignIn\" aria-label=\"\" class=\"fsa-button-tall fsa-font-si ... tn linkText\" fsa-analytics=\"\" _ngcontent-kjx-c5=\"\"><span _ngcontent-kjx-c5=\"\">Log In</span></button>",
+          "testResult": 0,
+          "path": "body>fsa-root:nth-of-type(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(6)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "button[_ngcontent-kjx-c5=\"\"][fsa-analytics=\"\"][class=\"fsa-button-tall fsa-font-size-large fsa-btn-white col-md-12 col-xs-12 col-lg-12 btn linkText\"][aria-label=\"\"][id=\"fsa_Button_FsaHomeSignIn\"][type=\"button\"]",
+            "attNo": 6
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This BUTTON has an id attribute of 'fsa_Button_FsaHomeSignIn', which is not unique in the same DOM",
+          "element": "<button type=\"button\" id=\"fsa_Button_FsaHomeSignIn\" fsa-analytics=\"\" class=\"btn fsa-btn-white col-md ... -kjx-c7=\"\"><span class=\"linkTextClasses link-text\" _ngcontent-kjx-c7=\"\">Log In</span></div></button>",
+          "testResult": 0,
+          "path": "body>fsa-root:nth-of-type(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "button[_ngcontent-kjx-c7=\"\"][class=\"btn fsa-btn-white col-md-5 col-xs-12 col-lg-3 linkText\"][fsa-analytics=\"\"][id=\"fsa_Button_FsaHomeSignIn\"][type=\"button\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This BUTTON has an id attribute of 'fsa_Button_FsaHomeCreateAccount', which is not unique in the same DOM",
+          "element": "<button type=\"button\" id=\"fsa_Button_FsaHomeCreateAccount\" aria-label=\"\" class=\"fsa-button-tall fsa- ... ext\" fsa-analytics=\"\" _ngcontent-kjx-c5=\"\"><span _ngcontent-kjx-c5=\"\">Create Account</span></button>",
+          "testResult": 0,
+          "path": "body>fsa-root:nth-of-type(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(6)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "button[_ngcontent-kjx-c5=\"\"][fsa-analytics=\"\"][class=\"fsa-button-tall fsa-font-size-medium fsa-btn-link-white btn-link btn-block col-md-12 col-xs-12 col-lg-12 btn linkText\"][aria-label=\"\"][id=\"fsa_Button_FsaHomeCreateAccount\"][type=\"button\"]",
+            "attNo": 6
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This BUTTON has an id attribute of 'fsa_Button_FsaHomeCreateAccount', which is not unique in the same DOM",
+          "element": "<button type=\"button\" id=\"fsa_Button_FsaHomeCreateAccount\" fsa-analytics=\"\" class=\"btn fsa-btn-white ... \"\"><span class=\"linkTextClasses link-text\" _ngcontent-kjx-c7=\"\">Create Account</span></div></button>",
+          "testResult": 0,
+          "path": "body>fsa-root:nth-of-type(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(7)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "button[_ngcontent-kjx-c7=\"\"][class=\"btn fsa-btn-white-outline col-md-5 col-xs-12 fsa-mb-px-0 linkText\"][fsa-analytics=\"\"][id=\"fsa_Button_FsaHomeCreateAccount\"][type=\"button\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This g has an id attribute of 'min', which is not unique in the same DOM",
+          "element": "<g id=\"min\"><path d=\"M5,8,.42,3.45a1.42,1.42,0,0,1,0-2l1-1a1.42,1.42,0,0,1,2,0L8,5,12.55.42a1.42,1.4 ... l-1,1a1.42,1.42,0,0,1-2,0L8,11,3.45,15.58a1.42,1.42,0,0,1-2,0l-1-1a1.42,1.42,0,0,1,0-2Z\"></path></g>",
+          "testResult": 0,
+          "path": "body>fsa-root:nth-of-type(1)>*:nth-child(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "g[id=\"min\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This g has an id attribute of 'min', which is not unique in the same DOM",
+          "element": "<g id=\"min\"><path d=\"M1.38,2.75A1.38,1.38,0,1,1,1.38,0H20.62a1.38,1.38,0,1,1,0,2.75Z\" class=\"cls-1\"></path></g>",
+          "testResult": 0,
+          "path": "body>fsa-root:nth-of-type(1)>*:nth-child(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "g[id=\"min\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This BUTTON has an id attribute of 'fsa_Link_Minimize_Mobile', which is not unique in the same DOM",
+          "element": "<button id=\"fsa_Link_Minimize_Mobile\" title=\"Close chat window\" class=\"mobile-close\"><svg viewbox=\"0 ... .25.58A2,2,0,0,1,20,.58L21.42,2a2,2,0,0,1,0,2.78L15.17,11Z\" class=\"cls-1\"></path></g></svg></button>",
+          "testResult": 0,
+          "path": "body>fsa-root:nth-of-type(1)>*:nth-child(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(3)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "button[class=\"mobile-close\"][title=\"Close chat window\"][id=\"fsa_Link_Minimize_Mobile\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This BUTTON has an id attribute of 'fsa_Link_Minimize_Mobile', which is not unique in the same DOM",
+          "element": "<button id=\"fsa_Link_Minimize_Mobile\" aria-label=\"Close alert button\" title=\"Close Alert\" class=\"clo ... .25.58A2,2,0,0,1,20,.58L21.42,2a2,2,0,0,1,0,2.78L15.17,11Z\" class=\"cls-1\"></path></g></svg></button>",
+          "testResult": 0,
+          "path": "body>fsa-root:nth-of-type(1)>*:nth-child(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "button[class=\"close-button\"][title=\"Close Alert\"][aria-label=\"Close alert button\"][id=\"fsa_Link_Minimize_Mobile\"]",
+            "attNo": 4
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This g has an id attribute of 'minimize-chat', which is not unique in the same DOM",
+          "element": "<g id=\"minimize-chat\"><path d=\"M21.42,17.25a2,2,0,0,1,0,2.78L20,21.42a2,2,0,0,1-2.78,0L11,15.17,4.75 ... 78,0L11,6.83,17.25.58A2,2,0,0,1,20,.58L21.42,2a2,2,0,0,1,0,2.78L15.17,11Z\" class=\"cls-1\"></path></g>",
+          "testResult": 0,
+          "path": "body>fsa-root:nth-of-type(1)>*:nth-child(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "g[id=\"minimize-chat\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This g has an id attribute of 'minimize-chat', which is not unique in the same DOM",
+          "element": "<g id=\"minimize-chat\"><path d=\"M21.42,17.25a2,2,0,0,1,0,2.78L20,21.42a2,2,0,0,1-2.78,0L11,15.17,4.75 ... 78,0L11,6.83,17.25.58A2,2,0,0,1,20,.58L21.42,2a2,2,0,0,1,0,2.78L15.17,11Z\" class=\"cls-1\"></path></g>",
+          "testResult": 0,
+          "path": "body>fsa-root:nth-of-type(1)>*:nth-child(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "g[id=\"minimize-chat\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This path has an id attribute of 'Line-3', which is not unique in the same DOM",
+          "element": "<path stroke-width=\"3\" stroke=\"#355065\" id=\"Line-3\" d=\"M0.5,15 L0.5,0\"></path>",
+          "testResult": 0,
+          "path": "body>fsa-root:nth-of-type(1)>*:nth-child(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(2)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "path[d=\"M0.5,15 L0.5,0\"][id=\"Line-3\"][stroke=\"#355065\"][stroke-width=\"3\"]",
+            "attNo": 4
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This path has an id attribute of 'Line-3', which is not unique in the same DOM",
+          "element": "<path stroke-width=\"2\" stroke=\"#227AA7\" id=\"Line-3\" d=\"M7.5,12 L7.5,4\"></path>",
+          "testResult": 0,
+          "path": "body>fsa-root:nth-of-type(1)>*:nth-child(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(2)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "path[d=\"M7.5,12 L7.5,4\"][id=\"Line-3\"][stroke=\"#227AA7\"][stroke-width=\"2\"]",
+            "attNo": 4
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This path has an id attribute of 'Line-3', which is not unique in the same DOM",
+          "element": "<path stroke-width=\"2\" stroke=\"#227AA7\" id=\"Line-3\" d=\"M20.5,12 L20.5,4\"></path>",
+          "testResult": 0,
+          "path": "body>fsa-root:nth-of-type(1)>*:nth-child(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(2)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "path[d=\"M20.5,12 L20.5,4\"][id=\"Line-3\"][stroke=\"#227AA7\"][stroke-width=\"2\"]",
+            "attNo": 4
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This path has an id attribute of 'Line-3', which is not unique in the same DOM",
+          "element": "<path stroke-width=\"2\" stroke=\"#355065\" id=\"Line-3\" d=\"M14.5,15 L14.5,0\"></path>",
+          "testResult": 0,
+          "path": "body>fsa-root:nth-of-type(1)>*:nth-child(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(2)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "path[d=\"M14.5,15 L14.5,0\"][id=\"Line-3\"][stroke=\"#355065\"][stroke-width=\"2\"]",
+            "attNo": 4
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This path has an id attribute of 'Line-3', which is not unique in the same DOM",
+          "element": "<path stroke-width=\"2\" stroke=\"#355065\" id=\"Line-3\" d=\"M27.5,15 L27.5,0\"></path>",
+          "testResult": 0,
+          "path": "body>fsa-root:nth-of-type(1)>*:nth-child(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(2)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(5)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "path[d=\"M27.5,15 L27.5,0\"][id=\"Line-3\"][stroke=\"#355065\"][stroke-width=\"2\"]",
+            "attNo": 4
+          }
+        },
+        {
+          "engineTestId": 95,
+          "bestPracticeId": 1626,
+          "attribute": "This element has an aria-labelledby attribute value that includes one or more invalid or duplicate ids",
+          "attributeDetail": "This DIV has an aria-labelledby attribute value of 'home-tab2', which includes one or more invalid or duplicate ids",
+          "element": "<div aria-labelledby=\"home-tab2\" id=\"tab2-content-panel\" role=\"tabpanel\" class=\"row fsa-pb-px-100 fs ... py-0\" _ngcontent-kjx-c15=\"\"><h4 _ngcontent-kjx-c15=\"\"><div _nghost-kjx-c4=\"\" _ngcontent-kjx-c15=\"\"><",
+          "testResult": 0,
+          "path": "body>fsa-root:nth-of-type(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide the ID of an element which contains the label content for this element.",
+            "fix": {
+              "aria-labelledby": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "div[_ngcontent-kjx-c8=\"\"][class=\"row fsa-pb-px-100 fsa-pt-px-100 mx-auto\"][role=\"tabpanel\"][id=\"tab2-content-panel\"][aria-labelledby=\"home-tab2\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg class=\"fa-icon\" xmlns=\"http://www.w3.org/2000/svg\" viewbox=\"0 0 512 512\"><path d=\"M256 8C119.04 ... 24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z\"></path></svg>",
+          "testResult": 0,
+          "path": "body>fsa-root:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)|:host>*:nth-child(2)>*:nth-child(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[viewbox=\"0 0 512 512\"][class=\"fa-icon\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg id=\"fsa_Link_HeaderLevel1UnderstandAidAngleDown\" class=\"fa-icon angle-down\" xmlns=\"http://www.w ... .7-4.7 12.3-4.7 17 0l7.1 7.1c4.7 4.7 4.7 12.3 0 17L136.5 327c-4.7 4.6-12.3 4.6-17-.1z\"></path></svg>",
+          "testResult": 0,
+          "path": "body>fsa-root:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)|:host>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[viewbox=\"0 0 256 512\"][class=\"fa-icon angle-down\"][id=\"fsa_Link_HeaderLevel1UnderstandAidAngleDown\"]",
+            "attNo": 4
+          }
+        },
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg id=\"fsa_Link_HeaderLevel1ApplyForFinancialAidAngleDown\" class=\"fa-icon angle-down\" xmlns=\"http: ... .7-4.7 12.3-4.7 17 0l7.1 7.1c4.7 4.7 4.7 12.3 0 17L136.5 327c-4.7 4.6-12.3 4.6-17-.1z\"></path></svg>",
+          "testResult": 0,
+          "path": "body>fsa-root:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)|:host>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[viewbox=\"0 0 256 512\"][class=\"fa-icon angle-down\"][id=\"fsa_Link_HeaderLevel1ApplyForFinancialAidAngleDown\"]",
+            "attNo": 4
+          }
+        },
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg id=\"fsa_Link_HeaderLevel1CompleteFinancialAidProcessAngleDown\" class=\"fa-icon angle-down\" xmlns ... .7-4.7 12.3-4.7 17 0l7.1 7.1c4.7 4.7 4.7 12.3 0 17L136.5 327c-4.7 4.6-12.3 4.6-17-.1z\"></path></svg>",
+          "testResult": 0,
+          "path": "body>fsa-root:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)|:host>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(3)>*:nth-child(2)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[viewbox=\"0 0 256 512\"][class=\"fa-icon angle-down\"][id=\"fsa_Link_HeaderLevel1CompleteFinancialAidProcessAngleDown\"]",
+            "attNo": 4
+          }
+        },
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg id=\"fsa_Link_HeaderLevel1ManageLoansAngleDown\" class=\"fa-icon angle-down\" xmlns=\"http://www.w3. ... .7-4.7 12.3-4.7 17 0l7.1 7.1c4.7 4.7 4.7 12.3 0 17L136.5 327c-4.7 4.6-12.3 4.6-17-.1z\"></path></svg>",
+          "testResult": 0,
+          "path": "body>fsa-root:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)|:host>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(4)>*:nth-child(2)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[viewbox=\"0 0 256 512\"][class=\"fa-icon angle-down\"][id=\"fsa_Link_HeaderLevel1ManageLoansAngleDown\"]",
+            "attNo": 4
+          }
+        },
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg class=\"fa-icon\" xmlns=\"http://www.w3.org/2000/svg\" viewbox=\"0 0 512 512\"><path d=\"M459.37 151.7 ... 27 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z\"></path></svg>",
+          "testResult": 0,
+          "path": "body>fsa-root:nth-of-type(1)>*:nth-child(1)>*:nth-child(4)|:host>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[viewbox=\"0 0 512 512\"][class=\"fa-icon\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg class=\"fa-icon\" xmlns=\"http://www.w3.org/2000/svg\" viewbox=\"0 0 448 512\"><path d=\"M400 32H48A48 ... 0.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z\"></path></svg>",
+          "testResult": 0,
+          "path": "body>fsa-root:nth-of-type(1)>*:nth-child(1)>*:nth-child(4)|:host>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[viewbox=\"0 0 448 512\"][class=\"fa-icon\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg class=\"fa-icon\" xmlns=\"http://www.w3.org/2000/svg\" viewbox=\"0 0 448 512\"><path d=\"M224.1 141c-6 ... -2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z\"></path></svg>",
+          "testResult": 0,
+          "path": "body>fsa-root:nth-of-type(1)>*:nth-child(1)>*:nth-child(4)|:host>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[viewbox=\"0 0 448 512\"][class=\"fa-icon\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg class=\"fa-icon\" xmlns=\"http://www.w3.org/2000/svg\" viewbox=\"0 0 448 512\"><path d=\"M416 32H31.9C ... 66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z\"></path></svg>",
+          "testResult": 0,
+          "path": "body>fsa-root:nth-of-type(1)>*:nth-child(1)>*:nth-child(4)|:host>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[viewbox=\"0 0 448 512\"][class=\"fa-icon\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg class=\"fa-icon\" xmlns=\"http://www.w3.org/2000/svg\" viewbox=\"0 0 576 512\"><path d=\"M549.655 124. ... 2.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z\"></path></svg>",
+          "testResult": 0,
+          "path": "body>fsa-root:nth-of-type(1)>*:nth-child(1)>*:nth-child(4)|:host>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(5)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[viewbox=\"0 0 576 512\"][class=\"fa-icon\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 228,
+          "bestPracticeId": 523,
+          "attribute": "This iframe element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This iframe element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<iframe style=\"width: 0px; height: 0px; border: 0px; display: none;\" role=\"presentation\" title=\"\" src=\"javascript:void(0)\"></iframe>",
+          "testResult": 0,
+          "path": "body>iframe:nth-of-type(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Specify a descriptive label for the iframe.",
+            "fix": {
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "iframe[src=\"javascript:void(0)\"][title=\"\"][role=\"presentation\"]",
+            "attNo": 4
+          }
+        },
+        {
+          "engineTestId": 282,
+          "bestPracticeId": 1626,
+          "attribute": "The aria-autocomplete attribute is not allowed on this element",
+          "attributeDetail": "The aria-autocomplete attribute is not allowed on this INPUT",
+          "element": "<input tabindex=\"-1\" aria-autocomplete=\"list\" aria-activedescendant=\"\" class=\"search-field\" id=\"Fsa_Button_HeaderSearchField\" placeholder=\"Search\">",
+          "testResult": 0,
+          "path": "body>fsa-root:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)|:host>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "input[placeholder=\"Search\"][id=\"Fsa_Button_HeaderSearchField\"][class=\"search-field\"][aria-activedescendant=\"\"][aria-autocomplete=\"list\"][tabindex=\"-1\"]",
+            "attNo": 6
+          }
+        },
+        {
+          "engineTestId": 283,
+          "bestPracticeId": 1626,
+          "attribute": "The aria-activedescendant attribute is not allowed on this element",
+          "attributeDetail": "The aria-activedescendant attribute is not allowed on this INPUT",
+          "element": "<input tabindex=\"-1\" aria-autocomplete=\"list\" aria-activedescendant=\"\" class=\"search-field\" id=\"Fsa_Button_HeaderSearchField\" placeholder=\"Search\">",
+          "testResult": 0,
+          "path": "body>fsa-root:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)|:host>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "input[placeholder=\"Search\"][id=\"Fsa_Button_HeaderSearchField\"][class=\"search-field\"][aria-activedescendant=\"\"][aria-autocomplete=\"list\"][tabindex=\"-1\"]",
+            "attNo": 6
+          }
+        },
+        {
+          "engineTestId": 531,
+          "bestPracticeId": 2519,
+          "attribute": "This nav does not have a unique accessible name as required when two or more nav elements are present",
+          "attributeDetail": "This nav does not have a unique accessible name as required when two or more nav elements are present",
+          "element": "<nav class=\"column\"><h3 class=\"column-head\"><a href=\"/h/understand-aid\" id=\"fsa_Link_FooterLevel1Und ... ity\" id=\"fsa_Link_FooterLevel2FinancialAidEligibility\">Financial Aid Eligibility</a></li></ul></nav>",
+          "testResult": 0,
+          "path": "body>fsa-root:nth-of-type(1)>*:nth-child(1)>*:nth-child(4)|:host>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[class=\"column\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 531,
+          "bestPracticeId": 2519,
+          "attribute": "This nav does not have a unique accessible name as required when two or more nav elements are present",
+          "attributeDetail": "This nav does not have a unique accessible name as required when two or more nav elements are present",
+          "element": "<nav class=\"column\"><h3 class=\"column-head\"><a href=\"/h/apply-for-aid\" id=\"fsa_Link_FooterLevel1Appl ... \" id=\"fsa_Link_FooterLevel2ApplyForAParentPlusLoan\">Apply for a Parent PLUS Loan</a></li></ul></nav>",
+          "testResult": 0,
+          "path": "body>fsa-root:nth-of-type(1)>*:nth-child(1)>*:nth-child(4)|:host>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[class=\"column\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 531,
+          "bestPracticeId": 2519,
+          "attribute": "This nav does not have a unique accessible name as required when two or more nav elements are present",
+          "attributeDetail": "This nav does not have a unique accessible name as required when two or more nav elements are present",
+          "element": "<nav class=\"column\"><h3 class=\"column-head\"><a href=\"/h/complete-aid-process\" id=\"fsa_Link_FooterLev ... rantCounselingAndAgreementToServe\">Complete TEACH Grant Counseling and Agreement</a></li></ul></nav>",
+          "testResult": 0,
+          "path": "body>fsa-root:nth-of-type(1)>*:nth-child(1)>*:nth-child(4)|:host>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(3)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[class=\"column\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 531,
+          "bestPracticeId": 2519,
+          "attribute": "This nav does not have a unique accessible name as required when two or more nav elements are present",
+          "attributeDetail": "This nav does not have a unique accessible name as required when two or more nav elements are present",
+          "element": "<nav class=\"column\"><h3 class=\"column-head\"><a href=\"/h/manage-loans\" id=\"fsa_Link_FooterLevel1Manag ... default\" id=\"fsa_Link_FooterLevel2DelinquencyAndDefault\">Delinquency and Default</a></li></ul></nav>",
+          "testResult": 0,
+          "path": "body>fsa-root:nth-of-type(1)>*:nth-child(1)>*:nth-child(4)|:host>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(4)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[class=\"column\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 531,
+          "bestPracticeId": 2519,
+          "attribute": "This nav does not have a unique accessible name as required when two or more nav elements are present",
+          "attributeDetail": "This nav does not have a unique accessible name as required when two or more nav elements are present",
+          "element": "<nav class=\"column\"><h3 class=\"column-head\"><a href=\"/about\" id=\"fsa_Link_FooterLevel1MoreInfo\" clas ... ooterLevel2TeacherCancellation\">Teacher Cancellation Low Income (TCLI) Directory</a></li></ul></nav>",
+          "testResult": 0,
+          "path": "body>fsa-root:nth-of-type(1)>*:nth-child(1)>*:nth-child(4)|:host>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(5)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[class=\"column\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 533,
+          "bestPracticeId": 2519,
+          "attribute": "This nav does not have an accessible name as required when two or more nav elements are present",
+          "attributeDetail": "This nav does not have an accessible name as required when two or more nav elements are present",
+          "element": "<nav class=\"column\"><h3 class=\"column-head\"><a href=\"/h/understand-aid\" id=\"fsa_Link_FooterLevel1Und ... ity\" id=\"fsa_Link_FooterLevel2FinancialAidEligibility\">Financial Aid Eligibility</a></li></ul></nav>",
+          "testResult": 0,
+          "path": "body>fsa-root:nth-of-type(1)>*:nth-child(1)>*:nth-child(4)|:host>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[class=\"column\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 533,
+          "bestPracticeId": 2519,
+          "attribute": "This nav does not have an accessible name as required when two or more nav elements are present",
+          "attributeDetail": "This nav does not have an accessible name as required when two or more nav elements are present",
+          "element": "<nav class=\"column\"><h3 class=\"column-head\"><a href=\"/h/apply-for-aid\" id=\"fsa_Link_FooterLevel1Appl ... \" id=\"fsa_Link_FooterLevel2ApplyForAParentPlusLoan\">Apply for a Parent PLUS Loan</a></li></ul></nav>",
+          "testResult": 0,
+          "path": "body>fsa-root:nth-of-type(1)>*:nth-child(1)>*:nth-child(4)|:host>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[class=\"column\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 533,
+          "bestPracticeId": 2519,
+          "attribute": "This nav does not have an accessible name as required when two or more nav elements are present",
+          "attributeDetail": "This nav does not have an accessible name as required when two or more nav elements are present",
+          "element": "<nav class=\"column\"><h3 class=\"column-head\"><a href=\"/h/complete-aid-process\" id=\"fsa_Link_FooterLev ... rantCounselingAndAgreementToServe\">Complete TEACH Grant Counseling and Agreement</a></li></ul></nav>",
+          "testResult": 0,
+          "path": "body>fsa-root:nth-of-type(1)>*:nth-child(1)>*:nth-child(4)|:host>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(3)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[class=\"column\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 533,
+          "bestPracticeId": 2519,
+          "attribute": "This nav does not have an accessible name as required when two or more nav elements are present",
+          "attributeDetail": "This nav does not have an accessible name as required when two or more nav elements are present",
+          "element": "<nav class=\"column\"><h3 class=\"column-head\"><a href=\"/h/manage-loans\" id=\"fsa_Link_FooterLevel1Manag ... default\" id=\"fsa_Link_FooterLevel2DelinquencyAndDefault\">Delinquency and Default</a></li></ul></nav>",
+          "testResult": 0,
+          "path": "body>fsa-root:nth-of-type(1)>*:nth-child(1)>*:nth-child(4)|:host>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(4)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[class=\"column\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 533,
+          "bestPracticeId": 2519,
+          "attribute": "This nav does not have an accessible name as required when two or more nav elements are present",
+          "attributeDetail": "This nav does not have an accessible name as required when two or more nav elements are present",
+          "element": "<nav class=\"column\"><h3 class=\"column-head\"><a href=\"/about\" id=\"fsa_Link_FooterLevel1MoreInfo\" clas ... ooterLevel2TeacherCancellation\">Teacher Cancellation Low Income (TCLI) Directory</a></li></ul></nav>",
+          "testResult": 0,
+          "path": "body>fsa-root:nth-of-type(1)>*:nth-child(1)>*:nth-child(4)|:host>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(5)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[class=\"column\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 863,
+          "bestPracticeId": 2440,
+          "attribute": "This input should not rely on text in the placeholder attribute for an accessible name",
+          "attributeDetail": "This input should not rely on text in the placeholder attribute for an accessible name",
+          "element": "<input tabindex=\"-1\" aria-autocomplete=\"list\" aria-activedescendant=\"\" class=\"search-field\" id=\"Fsa_Button_HeaderSearchField\" placeholder=\"Search\">",
+          "testResult": 0,
+          "path": "body>fsa-root:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)|:host>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "input[placeholder=\"Search\"][id=\"Fsa_Button_HeaderSearchField\"][class=\"search-field\"][aria-activedescendant=\"\"][aria-autocomplete=\"list\"][tabindex=\"-1\"]",
+            "attNo": 6
+          }
+        },
+        {
+          "engineTestId": 1066,
+          "bestPracticeId": 1626,
+          "attribute": "This element has one or more aria attributes which are not valid.",
+          "attributeDetail": "This A has one or more aria attributes which are not valid.",
+          "element": "<a class=\"menu-link panel-entity\" id=\"fsa_Link_HeaderLevel1UnderstandAid\" href=\"/h/understand-aid\" aria-roledescription=\"top level link\">UNDERSTAND AID</a>",
+          "testResult": 0,
+          "path": "body>fsa-root:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)|:host>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "a[aria-roledescription=\"top level link\"][href=\"/h/understand-aid\"][id=\"fsa_Link_HeaderLevel1UnderstandAid\"][class=\"menu-link panel-entity\"]",
+            "attNo": 4
+          }
+        },
+        {
+          "engineTestId": 1066,
+          "bestPracticeId": 1626,
+          "attribute": "This element has one or more aria attributes which are not valid.",
+          "attributeDetail": "This A has one or more aria attributes which are not valid.",
+          "element": "<a class=\"menu-link panel-entity\" id=\"fsa_Link_HeaderLevel1ApplyForFinancialAid\" href=\"/h/apply-for-aid\" aria-roledescription=\"top level link\">APPLY FOR AID</a>",
+          "testResult": 0,
+          "path": "body>fsa-root:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)|:host>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "a[aria-roledescription=\"top level link\"][href=\"/h/apply-for-aid\"][id=\"fsa_Link_HeaderLevel1ApplyForFinancialAid\"][class=\"menu-link panel-entity\"]",
+            "attNo": 4
+          }
+        },
+        {
+          "engineTestId": 1066,
+          "bestPracticeId": 1626,
+          "attribute": "This element has one or more aria attributes which are not valid.",
+          "attributeDetail": "This A has one or more aria attributes which are not valid.",
+          "element": "<a class=\"menu-link panel-entity\" id=\"fsa_Link_HeaderLevel1CompleteFinancialAidProcess\" href=\"/h/complete-aid-process\" aria-roledescription=\"top level link\">COMPLETE AID PROCESS</a>",
+          "testResult": 0,
+          "path": "body>fsa-root:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)|:host>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(3)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "a[aria-roledescription=\"top level link\"][href=\"/h/complete-aid-process\"][id=\"fsa_Link_HeaderLevel1CompleteFinancialAidProcess\"][class=\"menu-link panel-entity\"]",
+            "attNo": 4
+          }
+        },
+        {
+          "engineTestId": 1066,
+          "bestPracticeId": 1626,
+          "attribute": "This element has one or more aria attributes which are not valid.",
+          "attributeDetail": "This A has one or more aria attributes which are not valid.",
+          "element": "<a class=\"menu-link panel-entity\" id=\"fsa_Link_HeaderLevel1ManageLoans\" href=\"/h/manage-loans\" aria-roledescription=\"top level link\">MANAGE LOANS</a>",
+          "testResult": 0,
+          "path": "body>fsa-root:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)|:host>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(4)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "a[aria-roledescription=\"top level link\"][href=\"/h/manage-loans\"][id=\"fsa_Link_HeaderLevel1ManageLoans\"][class=\"menu-link panel-entity\"]",
+            "attNo": 4
+          }
+        }
+      ]
+    }
+  ],
+  "timeStamp": "4jil2",
+  "startTime": "2022-07-27T14:42:37",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "continuum",
+      0
+    ]
+  ],
+  "logCount": 29,
+  "logSize": 2904,
+  "errorLogCount": 10,
+  "errorLogSize": 1350,
+  "prohibitedCount": 2,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 2,
+  "endTime": "2022-07-27T14:42:49",
+  "elapsedSeconds": 12
+}

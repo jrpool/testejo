@@ -1,0 +1,147 @@
+{
+  "id": "4jil2-ibwc",
+  "host": {
+    "id": "ibwc",
+    "which": "https://www.ibwc.gov/home.html",
+    "what": "International Boundary & Water Commission"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-27T14:29:54"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-27T14:29:58"
+    }
+  ],
+  "script": {
+    "id": "continuum",
+    "what": "Continuum",
+    "strict": true,
+    "timeLimit": 30,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.ibwc.gov/home.html",
+        "what": "International Boundary & Water Commission"
+      },
+      {
+        "type": "test",
+        "which": "continuum",
+        "what": "Continuum"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.ibwc.gov/home.html",
+      "what": "International Boundary & Water Commission",
+      "result": "https://www.ibwc.gov/home.html"
+    },
+    {
+      "type": "test",
+      "which": "continuum",
+      "what": "Level Access Continuum, community edition",
+      "url": "https://www.ibwc.gov/home.html",
+      "result": [
+        {
+          "engineTestId": 101,
+          "bestPracticeId": 429,
+          "attribute": "This element does not have a lang attribute",
+          "attributeDetail": "This HTML does not have a lang attribute",
+          "element": "<html xmlns=\"http://www.w3.org/1999/xhtml\"><head>\n<meta content=\"text/html; charset=iso-8859-1\" http ... ersion Dams &amp; Related Structures</a></div><div><a href=\"Mission_Operations/Hydro_Plants.html\">St",
+          "testResult": 0,
+          "path": "html",
+          "fixType": {
+            "fixType": 4,
+            "domSpec": false,
+            "helperText": "Enter the appropriate language value for the page.",
+            "fix": {
+              "lang": null
+            }
+          },
+          "fingerprint": {
+            "attNo": 0,
+            "css": "html",
+            "version": 2
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a href=\"https://twitter.com/usibwc?t=6ARJp9mZk0UQnKJpONKPQQ&amp;s=09\"><img alt=\"\" height=\"25\" width=\"25\" src=\"images/icon_twitter-508.png\"></a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(16)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"https://twitter.com/usibwc?t=6ARJp9mZk0UQnKJpONKPQQ&s=09\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a href=\"Organization/FOIA_RR.html\"><br></a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(5)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"Organization/FOIA_RR.html\"]",
+            "attNo": 1
+          }
+        }
+      ]
+    }
+  ],
+  "timeStamp": "4jil2",
+  "startTime": "2022-07-27T14:29:54",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "continuum",
+      0
+    ]
+  ],
+  "logCount": 0,
+  "logSize": 0,
+  "errorLogCount": 0,
+  "errorLogSize": 0,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-27T14:29:58",
+  "elapsedSeconds": 3
+}

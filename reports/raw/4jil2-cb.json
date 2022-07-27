@@ -1,0 +1,782 @@
+{
+  "id": "4jil2-cb",
+  "host": {
+    "id": "cb",
+    "which": "https://www.census.gov/",
+    "what": "Census Bureau"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-27T14:22:46"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-27T14:22:52"
+    }
+  ],
+  "script": {
+    "id": "continuum",
+    "what": "Continuum",
+    "strict": true,
+    "timeLimit": 30,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.census.gov/",
+        "what": "Census Bureau"
+      },
+      {
+        "type": "test",
+        "which": "continuum",
+        "what": "Continuum"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.census.gov/",
+      "what": "Census Bureau",
+      "result": "https://www.census.gov/"
+    },
+    {
+      "type": "test",
+      "which": "continuum",
+      "what": "Level Access Continuum, community edition",
+      "url": "https://www.census.gov/",
+      "result": [
+        {
+          "engineTestId": 44,
+          "bestPracticeId": 1626,
+          "attribute": "The role attribute is not allowed on this element",
+          "attributeDetail": "The role attribute is not allowed on this HR",
+          "element": "<hr class=\"cmp-separator__horizontal-rule\" role=\"separator\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(3)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "hr[role=\"separator\"][class=\"cmp-separator__horizontal-rule\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This A has an id attribute of '2044064413', which is not unique in the same DOM",
+          "element": "<a id=\"2044064413\" tabindex=\"0\" role=\"button\" href=\"javascript:void(0)\" data-event=\"click\" data-hand ...  ui-corner-all\"><span class=\"ui-icon ui-icon-circle-triangle-w\">Previous Month, June 2022</span></a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(9)>*:nth-child(2)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "a[class=\"ui-datepicker-prev ui-corner-all\"][data-handler=\"prev\"][data-event=\"click\"][href=\"javascript:void(0)\"][role=\"button\"][tabindex=\"0\"][id=\"2044064413\"]",
+            "attNo": 7
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This A has an id attribute of '2044064413', which is not unique in the same DOM",
+          "element": "<a id=\"2044064413\" tabindex=\"0\" role=\"button\" href=\"javascript:void(0)\" data-event=\"click\" data-hand ... xt ui-corner-all\"><span class=\"ui-icon ui-icon-circle-triangle-e\">Next Month, August 2022</span></a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(9)>*:nth-child(2)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "a[class=\"ui-datepicker-next ui-corner-all\"][data-handler=\"next\"][data-event=\"click\"][href=\"javascript:void(0)\"][role=\"button\"][tabindex=\"0\"][id=\"2044064413\"]",
+            "attNo": 7
+          }
+        },
+        {
+          "engineTestId": 99,
+          "bestPracticeId": 464,
+          "attribute": "This element does not have a ul element (without an ARIA-assigned role); ol element (without an ARIA-assigned role); or element with a role set to the value: list as a parent",
+          "attributeDetail": "This LI does not have a ul element (without an ARIA-assigned role); ol element (without an ARIA-assigned role); or element with a role set to the value: list as a parent",
+          "element": "<li selected-date=\"07/27/2022\" event-detail-template=\"/content/census/en/about/event-detail-template ... -height-20-18 uscb-margin-TB-02\">7/27/2022 8:30 AM</p><hr class=\"uscb-light-teal-hr\"></div></a></li>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(9)>*:nth-child(2)>*:nth-child(4)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "li[class=\"uscb-list-item\"][item-id=\"Row74\"][event-detail-template=\"/content/census/en/about/event-detail-template-page.html\"][selected-date=\"07/27/2022\"]",
+            "attNo": 4
+          }
+        },
+        {
+          "engineTestId": 99,
+          "bestPracticeId": 464,
+          "attribute": "This element does not have a ul element (without an ARIA-assigned role); ol element (without an ARIA-assigned role); or element with a role set to the value: list as a parent",
+          "attributeDetail": "This LI does not have a ul element (without an ARIA-assigned role); ol element (without an ARIA-assigned role); or element with a role set to the value: list as a parent",
+          "element": "<li selected-date=\"07/27/2022\" event-detail-template=\"/content/census/en/about/event-detail-template ... -height-20-18 uscb-margin-TB-02\">7/27/2022 8:30 AM</p><hr class=\"uscb-light-teal-hr\"></div></a></li>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(9)>*:nth-child(2)>*:nth-child(4)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "li[class=\"uscb-list-item\"][item-id=\"Row73\"][event-detail-template=\"/content/census/en/about/event-detail-template-page.html\"][selected-date=\"07/27/2022\"]",
+            "attNo": 4
+          }
+        },
+        {
+          "engineTestId": 99,
+          "bestPracticeId": 464,
+          "attribute": "This element does not have a ul element (without an ARIA-assigned role); ol element (without an ARIA-assigned role); or element with a role set to the value: list as a parent",
+          "attributeDetail": "This LI does not have a ul element (without an ARIA-assigned role); ol element (without an ARIA-assigned role); or element with a role set to the value: list as a parent",
+          "element": "<li selected-date=\"07/27/2022\" event-detail-template=\"/content/census/en/about/event-detail-template ... height-20-18 uscb-margin-TB-02\">7/27/2022 14:00 AM</p><hr class=\"uscb-light-teal-hr\"></div></a></li>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(9)>*:nth-child(2)>*:nth-child(4)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "li[class=\"uscb-list-item\"][item-id=\"Row76\"][event-detail-template=\"/content/census/en/about/event-detail-template-page.html\"][selected-date=\"07/27/2022\"]",
+            "attNo": 4
+          }
+        },
+        {
+          "engineTestId": 99,
+          "bestPracticeId": 464,
+          "attribute": "This element does not have a ul element (without an ARIA-assigned role); ol element (without an ARIA-assigned role); or element with a role set to the value: list as a parent",
+          "attributeDetail": "This LI does not have a ul element (without an ARIA-assigned role); ol element (without an ARIA-assigned role); or element with a role set to the value: list as a parent",
+          "element": "<li selected-date=\"07/27/2022\" event-detail-template=\"/content/census/en/about/event-detail-template ... height-20-18 uscb-margin-TB-02\">7/27/2022 11:00 AM</p><hr class=\"uscb-light-teal-hr\"></div></a></li>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(9)>*:nth-child(2)>*:nth-child(4)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(5)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "li[class=\"uscb-list-item\"][item-id=\"Row75\"][event-detail-template=\"/content/census/en/about/event-detail-template-page.html\"][selected-date=\"07/27/2022\"]",
+            "attNo": 4
+          }
+        },
+        {
+          "engineTestId": 101,
+          "bestPracticeId": 429,
+          "attribute": "This element does not have a lang attribute",
+          "attributeDetail": "This HTML does not have a lang attribute",
+          "element": "<html class=\" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage webs ... link type=\"text/css\" href=\"/etc.clientlibs/census/clientlibs/digital-services.min.css\" rel=\"styleshe",
+          "testResult": 0,
+          "path": "html",
+          "fixType": {
+            "fixType": 4,
+            "domSpec": false,
+            "helperText": "Enter the appropriate language value for the page.",
+            "fix": {
+              "lang": null
+            }
+          },
+          "fingerprint": {
+            "attNo": 0,
+            "css": "html",
+            "version": 2
+          }
+        },
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg viewbox=\"0 0 64 64\" class=\"ovaltealcircle uscb-margin-L-10\"><path stroke-linecap=\"butt\" stroke- ... ke-width=\"2\" stroke-miterlimit=\"10\" stroke=\"#fff\" fill=\"none\" r=\"30\" cy=\"32\" cx=\"32\"></circle></svg>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[class=\"ovaltealcircle uscb-margin-L-10\"][viewbox=\"0 0 64 64\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg viewbox=\"0 0 64 64\" class=\"ovaltealcircle \"><path stroke-linecap=\"butt\" stroke-linejoin=\"miter\" ... ke-width=\"2\" stroke-miterlimit=\"10\" stroke=\"#fff\" fill=\"none\" r=\"30\" cy=\"32\" cx=\"32\"></circle></svg>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[class=\"ovaltealcircle \"][viewbox=\"0 0 64 64\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg viewbox=\"0 0 64 64\" class=\"ovaltealcircle \"><path stroke-linecap=\"butt\" stroke-linejoin=\"miter\" ... ke-width=\"2\" stroke-miterlimit=\"10\" stroke=\"#fff\" fill=\"none\" r=\"30\" cy=\"32\" cx=\"32\"></circle></svg>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(3)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[class=\"ovaltealcircle \"][viewbox=\"0 0 64 64\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg viewbox=\"0 0 64 64\" class=\"ovaltealcircle uscb-margin-L-10\"><path stroke-linecap=\"butt\" stroke- ... ke-width=\"2\" stroke-miterlimit=\"10\" stroke=\"#fff\" fill=\"none\" r=\"30\" cy=\"32\" cx=\"32\"></circle></svg>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[class=\"ovaltealcircle uscb-margin-L-10\"][viewbox=\"0 0 64 64\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg viewbox=\"0 0 64 64\" class=\"ovaltealcircle \"><path stroke-linecap=\"butt\" stroke-linejoin=\"miter\" ... width=\"2\" stroke-miterlimit=\"10\" stroke=\"#008392\" fill=\"none\" r=\"30\" cy=\"32\" cx=\"32\"></circle></svg>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[class=\"ovaltealcircle \"][viewbox=\"0 0 64 64\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg viewbox=\"0 0 64 64\" class=\"ovaltealcircle \"><path stroke-linecap=\"butt\" stroke-linejoin=\"miter\" ... width=\"2\" stroke-miterlimit=\"10\" stroke=\"#008392\" fill=\"none\" r=\"30\" cy=\"32\" cx=\"32\"></circle></svg>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[class=\"ovaltealcircle \"][viewbox=\"0 0 64 64\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg viewbox=\"0 0 64 64\" class=\"ovaltealcircle \"><path stroke-linecap=\"butt\" stroke-linejoin=\"miter\" ... width=\"2\" stroke-miterlimit=\"10\" stroke=\"#008392\" fill=\"none\" r=\"30\" cy=\"32\" cx=\"32\"></circle></svg>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[class=\"ovaltealcircle \"][viewbox=\"0 0 64 64\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg viewbox=\"0 0 64 64\" class=\"ovaltealcircle uscb-margin-L-10\"><path stroke-linecap=\"butt\" stroke- ... ke-width=\"2\" stroke-miterlimit=\"10\" stroke=\"#fff\" fill=\"none\" r=\"30\" cy=\"32\" cx=\"32\"></circle></svg>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[class=\"ovaltealcircle uscb-margin-L-10\"][viewbox=\"0 0 64 64\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg viewbox=\"0 0 64 64\" class=\"ovaltealcircle \"><path stroke-linecap=\"butt\" stroke-linejoin=\"miter\" ... width=\"2\" stroke-miterlimit=\"10\" stroke=\"#008392\" fill=\"none\" r=\"30\" cy=\"32\" cx=\"32\"></circle></svg>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[class=\"ovaltealcircle \"][viewbox=\"0 0 64 64\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg viewbox=\"0 0 64 64\" class=\"ovaltealcircle \"><path stroke-linecap=\"butt\" stroke-linejoin=\"miter\" ... width=\"2\" stroke-miterlimit=\"10\" stroke=\"#008392\" fill=\"none\" r=\"30\" cy=\"32\" cx=\"32\"></circle></svg>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[class=\"ovaltealcircle \"][viewbox=\"0 0 64 64\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg viewbox=\"0 0 64 64\" class=\"ovaltealcircle \"><path stroke-linecap=\"butt\" stroke-linejoin=\"miter\" ... width=\"2\" stroke-miterlimit=\"10\" stroke=\"#008392\" fill=\"none\" r=\"30\" cy=\"32\" cx=\"32\"></circle></svg>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[class=\"ovaltealcircle \"][viewbox=\"0 0 64 64\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg viewbox=\"0 0 64 64\" class=\"ovaltealcircle \"><path stroke-linecap=\"butt\" stroke-linejoin=\"miter\" ... width=\"2\" stroke-miterlimit=\"10\" stroke=\"#008392\" fill=\"none\" r=\"30\" cy=\"32\" cx=\"32\"></circle></svg>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(6)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[class=\"ovaltealcircle \"][viewbox=\"0 0 64 64\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg viewbox=\"0 0 64 64\" class=\"ovaltealcircle \"><path stroke-linecap=\"butt\" stroke-linejoin=\"miter\" ... width=\"2\" stroke-miterlimit=\"10\" stroke=\"#008392\" fill=\"none\" r=\"30\" cy=\"32\" cx=\"32\"></circle></svg>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(6)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[class=\"ovaltealcircle \"][viewbox=\"0 0 64 64\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg viewbox=\"0 0 64 64\" class=\"ovaltealcircle \"><path stroke-linecap=\"butt\" stroke-linejoin=\"miter\" ... width=\"2\" stroke-miterlimit=\"10\" stroke=\"#008392\" fill=\"none\" r=\"30\" cy=\"32\" cx=\"32\"></circle></svg>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(6)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(3)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[class=\"ovaltealcircle \"][viewbox=\"0 0 64 64\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg viewbox=\"0 0 64 64\" class=\"ovaltealcircle \"><path stroke-linecap=\"butt\" stroke-linejoin=\"miter\" ... width=\"2\" stroke-miterlimit=\"10\" stroke=\"#008392\" fill=\"none\" r=\"30\" cy=\"32\" cx=\"32\"></circle></svg>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(6)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(4)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[class=\"ovaltealcircle \"][viewbox=\"0 0 64 64\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg viewbox=\"0 0 64 64\" class=\"ovaltealcircle \"><path stroke-linecap=\"butt\" stroke-linejoin=\"miter\" ... width=\"2\" stroke-miterlimit=\"10\" stroke=\"#008392\" fill=\"none\" r=\"30\" cy=\"32\" cx=\"32\"></circle></svg>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(6)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(5)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[class=\"ovaltealcircle \"][viewbox=\"0 0 64 64\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg viewbox=\"0 0 64 64\" class=\"ovaltealcircle \"><path stroke-linecap=\"butt\" stroke-linejoin=\"miter\" ... width=\"2\" stroke-miterlimit=\"10\" stroke=\"#008392\" fill=\"none\" r=\"30\" cy=\"32\" cx=\"32\"></circle></svg>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(7)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[class=\"ovaltealcircle \"][viewbox=\"0 0 64 64\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg viewbox=\"0 0 64 64\" class=\"ovaltealcircle \"><path stroke-linecap=\"butt\" stroke-linejoin=\"miter\" ... width=\"2\" stroke-miterlimit=\"10\" stroke=\"#008392\" fill=\"none\" r=\"30\" cy=\"32\" cx=\"32\"></circle></svg>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(7)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[class=\"ovaltealcircle \"][viewbox=\"0 0 64 64\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg viewbox=\"0 0 64 64\" class=\"ovaltealcircle \"><path stroke-linecap=\"butt\" stroke-linejoin=\"miter\" ... width=\"2\" stroke-miterlimit=\"10\" stroke=\"#008392\" fill=\"none\" r=\"30\" cy=\"32\" cx=\"32\"></circle></svg>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(7)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(3)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[class=\"ovaltealcircle \"][viewbox=\"0 0 64 64\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg viewbox=\"0 0 64 64\" class=\"ovaltealcircle \"><path stroke-linecap=\"butt\" stroke-linejoin=\"miter\" ... width=\"2\" stroke-miterlimit=\"10\" stroke=\"#008392\" fill=\"none\" r=\"30\" cy=\"32\" cx=\"32\"></circle></svg>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(7)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(4)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[class=\"ovaltealcircle \"][viewbox=\"0 0 64 64\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg viewbox=\"0 0 64 64\" class=\"ovaltealcircle \"><path stroke-linecap=\"butt\" stroke-linejoin=\"miter\" ... width=\"2\" stroke-miterlimit=\"10\" stroke=\"#008392\" fill=\"none\" r=\"30\" cy=\"32\" cx=\"32\"></circle></svg>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(7)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(5)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[class=\"ovaltealcircle \"][viewbox=\"0 0 64 64\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg viewbox=\"0 0 64 64\" class=\"ovaltealcircle uscb-margin-L-10\"><path stroke-linecap=\"butt\" stroke- ... width=\"2\" stroke-miterlimit=\"10\" stroke=\"#008392\" fill=\"none\" r=\"30\" cy=\"32\" cx=\"32\"></circle></svg>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(8)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(3)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[class=\"ovaltealcircle uscb-margin-L-10\"][viewbox=\"0 0 64 64\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 228,
+          "bestPracticeId": 523,
+          "attribute": "This iframe element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This iframe element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<iframe scrolling=\"no\" frameborder=\"0\" allowfullscreen=\"\" onload=\"hideIndicator(this)\" class=\"uscb-m ... widget.php\" style=\"height: 176px; border: 0px none; width: 408px;\" id=\"B197A1TN4T6WQMVHU6\"></iframe>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Specify a descriptive label for the iframe.",
+            "fix": {
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "iframe[id=\"B197A1TN4T6WQMVHU6\"][src=\"https://www.census.gov/populationwidget/populationwidget.php\"][class=\"uscb-margin-0 uscb-padding-0\"][onload=\"hideIndicator(this)\"][allowfullscreen=\"\"][frameborder=\"0\"][scrolling=\"no\"]",
+            "attNo": 8
+          }
+        },
+        {
+          "engineTestId": 228,
+          "bestPracticeId": 523,
+          "attribute": "This iframe element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This iframe element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<iframe scrolling=\"no\" frameborder=\"0\" allowfullscreen=\"\" onload=\"hideIndicator(this)\" class=\"uscb-m ... conwidget/\" style=\"height: 448px; border: 0px none; width: 408px;\" id=\"LDME2F2KU20LS2YRBJ\"></iframe>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(3)>*:nth-child(3)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Specify a descriptive label for the iframe.",
+            "fix": {
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "iframe[id=\"LDME2F2KU20LS2YRBJ\"][src=\"https://www.census.gov/econwidget/\"][class=\"uscb-margin-0 uscb-padding-0\"][onload=\"hideIndicator(this)\"][allowfullscreen=\"\"][frameborder=\"0\"][scrolling=\"no\"]",
+            "attNo": 8
+          }
+        }
+      ]
+    }
+  ],
+  "timeStamp": "4jil2",
+  "startTime": "2022-07-27T14:22:46",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "continuum",
+      0
+    ]
+  ],
+  "logCount": 9,
+  "logSize": 1842,
+  "errorLogCount": 5,
+  "errorLogSize": 1673,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-27T14:22:52",
+  "elapsedSeconds": 6
+}

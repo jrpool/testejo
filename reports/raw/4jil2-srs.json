@@ -1,0 +1,707 @@
+{
+  "id": "4jil2-srs",
+  "host": {
+    "id": "srs",
+    "which": "https://www.srs.gov/general/srs-home.html",
+    "what": "Savannah River Site"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-27T14:37:30"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-27T14:37:33"
+    }
+  ],
+  "script": {
+    "id": "continuum",
+    "what": "Continuum",
+    "strict": true,
+    "timeLimit": 30,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.srs.gov/general/srs-home.html",
+        "what": "Savannah River Site"
+      },
+      {
+        "type": "test",
+        "which": "continuum",
+        "what": "Continuum"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.srs.gov/general/srs-home.html",
+      "what": "Savannah River Site",
+      "result": "https://www.srs.gov/general/srs-home.html"
+    },
+    {
+      "type": "test",
+      "which": "continuum",
+      "what": "Level Access Continuum, community edition",
+      "url": "https://www.srs.gov/general/srs-home.html",
+      "result": [
+        {
+          "engineTestId": 89,
+          "bestPracticeId": 362,
+          "attribute": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<img src=\"https://www.srs.gov/general/jscript/awmdata/dot.gif\" style=\"margin:0;width:1px;height:1px;border-style:none\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[src=\"https://www.srs.gov/general/jscript/awmdata/dot.gif\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 89,
+          "bestPracticeId": 362,
+          "attribute": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<img src=\"https://www.srs.gov/general/jscript/awmdata/dot.gif\" style=\"margin:0;width:1px;height:1px;border-style:none\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(11)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[src=\"https://www.srs.gov/general/jscript/awmdata/dot.gif\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 89,
+          "bestPracticeId": 362,
+          "attribute": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<img src=\"https://www.srs.gov/general/jscript/awmdata/dot.gif\" style=\"margin:0;width:1px;height:1px;border-style:none\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(18)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[src=\"https://www.srs.gov/general/jscript/awmdata/dot.gif\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 89,
+          "bestPracticeId": 362,
+          "attribute": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<img src=\"https://www.srs.gov/general/jscript/awmdata/dot.gif\" style=\"margin:0;width:1px;height:1px;border-style:none\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(25)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[src=\"https://www.srs.gov/general/jscript/awmdata/dot.gif\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 89,
+          "bestPracticeId": 362,
+          "attribute": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<img src=\"https://www.srs.gov/general/jscript/awmdata/dot.gif\" style=\"margin:0;width:1px;height:1px;border-style:none\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(32)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[src=\"https://www.srs.gov/general/jscript/awmdata/dot.gif\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 89,
+          "bestPracticeId": 362,
+          "attribute": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<img src=\"https://www.srs.gov/general/jscript/awmdata/dot.gif\" style=\"margin:0;width:1px;height:1px;border-style:none\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(39)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[src=\"https://www.srs.gov/general/jscript/awmdata/dot.gif\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 89,
+          "bestPracticeId": 362,
+          "attribute": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<img src=\"https://www.srs.gov/general/jscript/awmdata/dot.gif\" style=\"margin:0;width:1px;height:1px;border-style:none\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(46)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[src=\"https://www.srs.gov/general/jscript/awmdata/dot.gif\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 89,
+          "bestPracticeId": 362,
+          "attribute": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<img src=\"https://www.srs.gov/general/jscript/awmdata/dot.gif\" style=\"margin:0;width:1px;height:1px;border-style:none\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(53)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[src=\"https://www.srs.gov/general/jscript/awmdata/dot.gif\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This IMG has an id attribute of 'wows1_0', which is not unique in the same DOM",
+          "element": "<img style=\"width: 100%; visibility: hidden;\" id=\"wows1_0\" title=\"news_slider_01\" alt=\"news_slider_01\" src=\"data0/images/news_slider_01.jpg\">",
+          "testResult": 0,
+          "path": "body>table:nth-of-type(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "img[src=\"data0/images/news_slider_01.jpg\"][alt=\"news_slider_01\"][title=\"news_slider_01\"][id=\"wows1_0\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This IMG has an id attribute of 'wows1_0', which is not unique in the same DOM",
+          "element": "<img style=\"visibility: visible;\" id=\"wows1_0\" title=\"news_slider_01\" alt=\"news_slider_01\" src=\"data0/images/news_slider_01.jpg\">",
+          "testResult": 0,
+          "path": "body>table:nth-of-type(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "img[src=\"data0/images/news_slider_01.jpg\"][alt=\"news_slider_01\"][title=\"news_slider_01\"][id=\"wows1_0\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This IMG has an id attribute of 'wows1_0', which is not unique in the same DOM",
+          "element": "<img style=\"visibility: visible;\" id=\"wows1_0\" title=\"news_slider_01\" alt=\"news_slider_01\" src=\"data0/images/news_slider_01.jpg\">",
+          "testResult": 0,
+          "path": "body>table:nth-of-type(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "img[src=\"data0/images/news_slider_01.jpg\"][alt=\"news_slider_01\"][title=\"news_slider_01\"][id=\"wows1_0\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This IMG has an id attribute of 'wows1_0', which is not unique in the same DOM",
+          "element": "<img style=\"visibility: visible; outline: transparent solid 1px; width: 900px; height: 206px; margin ... px;\" id=\"wows1_0\" title=\"news_slider_01\" alt=\"news_slider_01\" src=\"data0/images/news_slider_01.jpg\">",
+          "testResult": 0,
+          "path": "body>table:nth-of-type(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(3)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "img[src=\"data0/images/news_slider_01.jpg\"][alt=\"news_slider_01\"][title=\"news_slider_01\"][id=\"wows1_0\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This IMG has an id attribute of 'wows1_0', which is not unique in the same DOM",
+          "element": "<img style=\"visibility: visible; outline: transparent solid 1px; width: 900px; height: 206px; margin ... px;\" id=\"wows1_0\" title=\"news_slider_01\" alt=\"news_slider_01\" src=\"data0/images/news_slider_01.jpg\">",
+          "testResult": 0,
+          "path": "body>table:nth-of-type(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(8)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "img[src=\"data0/images/news_slider_01.jpg\"][alt=\"news_slider_01\"][title=\"news_slider_01\"][id=\"wows1_0\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This IMG has an id attribute of 'wows1_4', which is not unique in the same DOM",
+          "element": "<img style=\"visibility: visible;\" id=\"wows1_4\" title=\"news_slider_05\" alt=\"news_slider_05\" src=\"data0/images/news_slider_05.jpg\">",
+          "testResult": 0,
+          "path": "body>table:nth-of-type(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "img[src=\"data0/images/news_slider_05.jpg\"][alt=\"news_slider_05\"][title=\"news_slider_05\"][id=\"wows1_4\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This IMG has an id attribute of 'wows1_4', which is not unique in the same DOM",
+          "element": "<img style=\"visibility: visible;\" id=\"wows1_4\" title=\"news_slider_05\" alt=\"news_slider_05\" src=\"data0/images/news_slider_05.jpg\">",
+          "testResult": 0,
+          "path": "body>table:nth-of-type(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(5)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "img[src=\"data0/images/news_slider_05.jpg\"][alt=\"news_slider_05\"][title=\"news_slider_05\"][id=\"wows1_4\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This IMG has an id attribute of 'wows1_4', which is not unique in the same DOM",
+          "element": "<img style=\"visibility: visible; outline: transparent solid 1px; width: 900px; height: 206px; margin ... px;\" id=\"wows1_4\" title=\"news_slider_05\" alt=\"news_slider_05\" src=\"data0/images/news_slider_05.jpg\">",
+          "testResult": 0,
+          "path": "body>table:nth-of-type(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "img[src=\"data0/images/news_slider_05.jpg\"][alt=\"news_slider_05\"][title=\"news_slider_05\"][id=\"wows1_4\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This IMG has an id attribute of 'wows1_4', which is not unique in the same DOM",
+          "element": "<img style=\"visibility: visible; outline: transparent solid 1px; width: 900px; height: 206px; margin ... px;\" id=\"wows1_4\" title=\"news_slider_05\" alt=\"news_slider_05\" src=\"data0/images/news_slider_05.jpg\">",
+          "testResult": 0,
+          "path": "body>table:nth-of-type(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(7)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "img[src=\"data0/images/news_slider_05.jpg\"][alt=\"news_slider_05\"][title=\"news_slider_05\"][id=\"wows1_4\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This IMG has an id attribute of 'wows1_1', which is not unique in the same DOM",
+          "element": "<img style=\"visibility: visible;\" id=\"wows1_1\" title=\"news_slider_02\" alt=\"news_slider_02\" src=\"data0/images/news_slider_02.jpg\">",
+          "testResult": 0,
+          "path": "body>table:nth-of-type(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "img[src=\"data0/images/news_slider_02.jpg\"][alt=\"news_slider_02\"][title=\"news_slider_02\"][id=\"wows1_1\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This IMG has an id attribute of 'wows1_1', which is not unique in the same DOM",
+          "element": "<img style=\"visibility: visible; outline: transparent solid 1px; width: 900px; height: 206px; margin ... px;\" id=\"wows1_1\" title=\"news_slider_02\" alt=\"news_slider_02\" src=\"data0/images/news_slider_02.jpg\">",
+          "testResult": 0,
+          "path": "body>table:nth-of-type(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(4)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "img[src=\"data0/images/news_slider_02.jpg\"][alt=\"news_slider_02\"][title=\"news_slider_02\"][id=\"wows1_1\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This IMG has an id attribute of 'wows1_1', which is not unique in the same DOM",
+          "element": "<img style=\"visibility: visible; outline: transparent solid 1px; width: 900px; height: 206px; margin ... px;\" id=\"wows1_1\" title=\"news_slider_02\" alt=\"news_slider_02\" src=\"data0/images/news_slider_02.jpg\">",
+          "testResult": 0,
+          "path": "body>table:nth-of-type(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(9)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "img[src=\"data0/images/news_slider_02.jpg\"][alt=\"news_slider_02\"][title=\"news_slider_02\"][id=\"wows1_1\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This IMG has an id attribute of 'wows1_2', which is not unique in the same DOM",
+          "element": "<img style=\"visibility: visible;\" id=\"wows1_2\" title=\"news_slider_03\" alt=\"news_slider_03\" src=\"data0/images/news_slider_03.jpg\">",
+          "testResult": 0,
+          "path": "body>table:nth-of-type(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "img[src=\"data0/images/news_slider_03.jpg\"][alt=\"news_slider_03\"][title=\"news_slider_03\"][id=\"wows1_2\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This IMG has an id attribute of 'wows1_2', which is not unique in the same DOM",
+          "element": "<img style=\"visibility: visible; outline: transparent solid 1px; width: 900px; height: 206px; margin ... px;\" id=\"wows1_2\" title=\"news_slider_03\" alt=\"news_slider_03\" src=\"data0/images/news_slider_03.jpg\">",
+          "testResult": 0,
+          "path": "body>table:nth-of-type(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(5)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "img[src=\"data0/images/news_slider_03.jpg\"][alt=\"news_slider_03\"][title=\"news_slider_03\"][id=\"wows1_2\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This IMG has an id attribute of 'wows1_3', which is not unique in the same DOM",
+          "element": "<img style=\"visibility: visible;\" id=\"wows1_3\" title=\"news_slider_04\" alt=\"news_slider_04\" src=\"data0/images/news_slider_04.jpg\">",
+          "testResult": 0,
+          "path": "body>table:nth-of-type(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "img[src=\"data0/images/news_slider_04.jpg\"][alt=\"news_slider_04\"][title=\"news_slider_04\"][id=\"wows1_3\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This IMG has an id attribute of 'wows1_3', which is not unique in the same DOM",
+          "element": "<img style=\"visibility: visible; outline: transparent solid 1px; width: 900px; height: 206px; margin ... px;\" id=\"wows1_3\" title=\"news_slider_04\" alt=\"news_slider_04\" src=\"data0/images/news_slider_04.jpg\">",
+          "testResult": 0,
+          "path": "body>table:nth-of-type(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "img[src=\"data0/images/news_slider_04.jpg\"][alt=\"news_slider_04\"][title=\"news_slider_04\"][id=\"wows1_3\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This IMG has an id attribute of 'wows1_3', which is not unique in the same DOM",
+          "element": "<img style=\"visibility: visible; outline: transparent solid 1px; width: 900px; height: 206px; margin ... px;\" id=\"wows1_3\" title=\"news_slider_04\" alt=\"news_slider_04\" src=\"data0/images/news_slider_04.jpg\">",
+          "testResult": 0,
+          "path": "body>table:nth-of-type(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(6)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "img[src=\"data0/images/news_slider_04.jpg\"][alt=\"news_slider_04\"][title=\"news_slider_04\"][id=\"wows1_3\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 101,
+          "bestPracticeId": 429,
+          "attribute": "This element does not have a lang attribute",
+          "attributeDetail": "This HTML does not have a lang attribute",
+          "element": "<html xmlns=\"http://www.w3.org/1999/xhtml\"><head>\n<meta content=\"text/html; charset=utf-8\" http-equi ... style:none;height:30px;width:186px;\" alt=\"\" src=\"https://www.srs.gov/general/jscript/awmdata/images/",
+          "testResult": 0,
+          "path": "html",
+          "fixType": {
+            "fixType": 4,
+            "domSpec": false,
+            "helperText": "Enter the appropriate language value for the page.",
+            "fix": {
+              "lang": null
+            }
+          },
+          "fingerprint": {
+            "attNo": 0,
+            "css": "html",
+            "version": 2
+          }
+        },
+        {
+          "engineTestId": 118,
+          "bestPracticeId": 338,
+          "attribute": "This input (type=text) element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This input (type=text) element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<input maxlength=\"32\" size=\"24\" value=\"SEARCH\" name=\"query\" type=\"text\">",
+          "testResult": 0,
+          "path": "body>table:nth-of-type(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperTex": "Specify a descriptive label for the text input.",
+            "fix": {
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "input[type=\"text\"][name=\"query\"][value=\"SEARCH\"][size=\"24\"][maxlength=\"32\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 234,
+          "bestPracticeId": 370,
+          "attribute": "This element has a suspicious calculated accessible name value",
+          "attributeDetail": "This IMG has a suspicious calculated accessible name value of: spacer",
+          "element": "<img height=\"1\" width=\"1\" alt=\"spacer\" src=\"images/bottom_bar_spacer.png\">",
+          "testResult": 0,
+          "path": "body>table:nth-of-type(1)>*:nth-child(1)>*:nth-child(6)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[src=\"images/bottom_bar_spacer.png\"][alt=\"spacer\"][width=\"1\"][height=\"1\"]",
+            "attNo": 4
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a target=\"_blank\" style=\"display: block; position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;\" href=\"https://youtu.be/hvNDDhBht2o\"></a>",
+          "testResult": 0,
+          "path": "body>table:nth-of-type(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"https://youtu.be/hvNDDhBht2o\"][target=\"_blank\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a class=\"body_text_small\" target=\"_blank\" href=\"https://www.youtube.com/channel/UC57RHVGfTvgxM_JRMAj-p9g\"><br></a>",
+          "testResult": 0,
+          "path": "body>table:nth-of-type(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(3)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"https://www.youtube.com/channel/UC57RHVGfTvgxM_JRMAj-p9g\"][target=\"_blank\"][class=\"body_text_small\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a href=\"tour/public.htm\"><img alt=\"\" height=\"177\" width=\"266\" src=\"images/srsTours2022ImageLink.png\"></a>",
+          "testResult": 0,
+          "path": "body>table:nth-of-type(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"tour/public.htm\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a class=\"head_03_inline\" href=\"tour/point_of_entry.pdf\"><br></a>",
+          "testResult": 0,
+          "path": "body>table:nth-of-type(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(7)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"tour/point_of_entry.pdf\"][class=\"head_03_inline\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a onmouseout=\"delayhidetip()\" onmouseover=\"tooltip('Savannah River Remediation LLC', this, event, '90px')\" class=\"bottom_menu1\" target=\"_blank\" href=\"http://srremediation.com\"></a>",
+          "testResult": 0,
+          "path": "body>table:nth-of-type(1)>*:nth-child(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(19)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"http://srremediation.com\"][target=\"_blank\"][class=\"bottom_menu1\"][onmouseover=\"tooltip('Savannah River Remediation LLC', this, event, '90px')\"][onmouseout=\"delayhidetip()\"]",
+            "attNo": 5
+          }
+        }
+      ]
+    }
+  ],
+  "timeStamp": "4jil2",
+  "startTime": "2022-07-27T14:37:30",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "continuum",
+      0
+    ]
+  ],
+  "logCount": 5,
+  "logSize": 1290,
+  "errorLogCount": 0,
+  "errorLogSize": 0,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-27T14:37:33",
+  "elapsedSeconds": 3
+}

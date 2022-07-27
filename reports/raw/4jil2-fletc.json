@@ -1,0 +1,365 @@
+{
+  "id": "4jil2-fletc",
+  "host": {
+    "id": "fletc",
+    "which": "https://www.fletc.gov/",
+    "what": "Federal Law Enforcement Training Centers"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-27T14:28:06"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-27T14:28:12"
+    }
+  ],
+  "script": {
+    "id": "continuum",
+    "what": "Continuum",
+    "strict": true,
+    "timeLimit": 30,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.fletc.gov/",
+        "what": "Federal Law Enforcement Training Centers"
+      },
+      {
+        "type": "test",
+        "which": "continuum",
+        "what": "Continuum"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.fletc.gov/",
+      "what": "Federal Law Enforcement Training Centers",
+      "result": "https://www.fletc.gov/"
+    },
+    {
+      "type": "test",
+      "which": "continuum",
+      "what": "Level Access Continuum, community edition",
+      "url": "https://www.fletc.gov/",
+      "result": [
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This UL has an id attribute of 'basic-nav-section-1', which is not unique in the same DOM",
+          "element": "<ul class=\"usa-nav__submenu-list\" id=\"basic-nav-section-1\"><li class=\"usa-nav__submenu-item\"><a clas ... -processed\" href=\"/site-page/program-modifications\"><span>Program Modifications</span></a></li></ul>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "ul[id=\"basic-nav-section-1\"][class=\"usa-nav__submenu-list\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This UL has an id attribute of 'basic-nav-section-1', which is not unique in the same DOM",
+          "element": "<ul class=\"usa-nav__submenu-list\" id=\"basic-nav-section-1\"><li class=\"usa-nav__submenu-item\"><a clas ... age/history-glynco-naval-air-station\"><span>History of Glynco Naval Air Station</span></a></li></ul>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "ul[id=\"basic-nav-section-1\"][class=\"usa-nav__submenu-list\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This UL has an id attribute of 'basic-nav-section-1', which is not unique in the same DOM",
+          "element": "<ul class=\"usa-nav__submenu-list\" id=\"basic-nav-section-1\"><li class=\"usa-nav__submenu-item\"><a clas ... warning-system-pre-recorded-announcements\"><span>EWS Pre-Recorded Announcements</span></a></li></ul>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "ul[id=\"basic-nav-section-1\"][class=\"usa-nav__submenu-list\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This UL has an id attribute of 'basic-nav-section-1', which is not unique in the same DOM",
+          "element": "<ul class=\"usa-nav__submenu-list\" id=\"basic-nav-section-1\"><li class=\"usa-nav__submenu-item\"><a clas ... u-item\"><a class=\"survey-processed\" href=\"/webform/contact-us\"><span>Contact Us</span></a></li></ul>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(6)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "ul[id=\"basic-nav-section-1\"][class=\"usa-nav__submenu-list\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This UL has an id attribute of 'basic-nav-section-2', which is not unique in the same DOM",
+          "element": "<ul class=\"usa-nav__submenu-list\" id=\"basic-nav-section-2\"><li class=\"usa-nav__submenu-item\"><a clas ... s=\"survey-processed\" href=\"/medical-request-form\"><span>Medical Records Request</span></a></li></ul>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "ul[id=\"basic-nav-section-2\"][class=\"usa-nav__submenu-list\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This UL has an id attribute of 'basic-nav-section-2', which is not unique in the same DOM",
+          "element": "<ul class=\"usa-nav__submenu-list\" id=\"basic-nav-section-2\"><li class=\"usa-nav__submenu-item\"><a clas ... ement-officers-memorial\"><span>Indian Country Law Enforcement Officers Memorial</span></a></li></ul>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "ul[id=\"basic-nav-section-2\"][class=\"usa-nav__submenu-list\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This UL has an id attribute of 'basic-nav-section-2', which is not unique in the same DOM",
+          "element": "<ul class=\"usa-nav__submenu-list\" id=\"basic-nav-section-2\"><li class=\"usa-nav__submenu-item\"><a clas ...  href=\"/employeefamily-support-services\"><span>Employee/Family Support Services</span></a></li></ul>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "ul[id=\"basic-nav-section-2\"][class=\"usa-nav__submenu-list\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This UL has an id attribute of 'basic-nav-section-5', which is not unique in the same DOM",
+          "element": "<ul class=\"usa-nav__submenu-list\" id=\"basic-nav-section-5\"><li class=\"usa-nav__submenu-item\"><a clas ... em\"><a class=\"survey-processed\" href=\"/submit-request-0\"><span>Submit a Request</span></a></li></ul>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(5)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "ul[id=\"basic-nav-section-5\"][class=\"usa-nav__submenu-list\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This UL has an id attribute of 'basic-nav-section-5', which is not unique in the same DOM",
+          "element": "<ul class=\"usa-nav__submenu-list\" id=\"basic-nav-section-5\"><li class=\"usa-nav__submenu-item\"><a clas ... lass=\"survey-processed\" href=\"/post-certification\"><span>P.O.S.T. Certification</span></a></li></ul>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(1)>*:nth-child(5)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "ul[id=\"basic-nav-section-5\"][class=\"usa-nav__submenu-list\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This UL has an id attribute of 'basic-nav-section-5', which is not unique in the same DOM",
+          "element": "<ul class=\"usa-nav__submenu-list\" id=\"basic-nav-section-5\"><li class=\"usa-nav__submenu-item\"><a clas ... -and-publication-schedule\"><span>Web Content Inventory and Publication Schedule</span></a></li></ul>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(2)>*:nth-child(1)>*:nth-child(5)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "ul[id=\"basic-nav-section-5\"][class=\"usa-nav__submenu-list\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This UL has an id attribute of 'basic-nav-section-6', which is not unique in the same DOM",
+          "element": "<ul class=\"usa-nav__submenu-list\" id=\"basic-nav-section-6\"><li class=\"usa-nav__submenu-item\"><a clas ... __submenu-item\"><a class=\"survey-processed\" href=\"/informer\"><span>The Informer</span></a></li></ul>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(6)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "ul[id=\"basic-nav-section-6\"][class=\"usa-nav__submenu-list\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This UL has an id attribute of 'basic-nav-section-6', which is not unique in the same DOM",
+          "element": "<ul class=\"usa-nav__submenu-list\" id=\"basic-nav-section-6\"><li class=\"usa-nav__submenu-item\"><a clas ... survey-processed\" href=\"/site-page/bilateral-programs\"><span>Bilateral Programs</span></a></li></ul>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(1)>*:nth-child(6)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "ul[id=\"basic-nav-section-6\"][class=\"usa-nav__submenu-list\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This UL has an id attribute of 'basic-nav-section-6', which is not unique in the same DOM",
+          "element": "<ul class=\"usa-nav__submenu-list\" id=\"basic-nav-section-6\"><li class=\"usa-nav__submenu-item\"><a clas ... ral-employee-antidiscrimination-retaliation-act-2002\"><span>No FEAR Act of 2002</span></a></li></ul>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(2)>*:nth-child(1)>*:nth-child(6)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "ul[id=\"basic-nav-section-6\"][class=\"usa-nav__submenu-list\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This UL has an id attribute of 'basic-nav-section-4', which is not unique in the same DOM",
+          "element": "<ul class=\"usa-nav__submenu-list\" id=\"basic-nav-section-4\"><li class=\"usa-nav__submenu-item\"><a clas ... vey-processed\" href=\"/site-page/history-cheltenham\"><span>History of Cheltenham</span></a></li></ul>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "ul[id=\"basic-nav-section-4\"][class=\"usa-nav__submenu-list\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This UL has an id attribute of 'basic-nav-section-4', which is not unique in the same DOM",
+          "element": "<ul class=\"usa-nav__submenu-list\" id=\"basic-nav-section-4\"><li class=\"usa-nav__submenu-item\"><a clas ... rvey-processed\" href=\"/site-page/privacy-act-release\"><span>Privacy Act Release</span></a></li></ul>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "ul[id=\"basic-nav-section-4\"][class=\"usa-nav__submenu-list\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This UL has an id attribute of 'basic-nav-section-4', which is not unique in the same DOM",
+          "element": "<ul class=\"usa-nav__submenu-list\" id=\"basic-nav-section-4\"><li class=\"usa-nav__submenu-item\"><a clas ... lass=\"survey-processed\" href=\"/pans-assessment-faqs\"><span>PANS Assessment FAQs</span></a></li></ul>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(6)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "ul[id=\"basic-nav-section-4\"][class=\"usa-nav__submenu-list\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 95,
+          "bestPracticeId": 1626,
+          "attribute": "This element has an aria-labelledby attribute value that includes one or more invalid or duplicate ids",
+          "attributeDetail": "This NAV has an aria-labelledby attribute value of 'block-quicklinksmenu-menu', which includes one or more invalid or duplicate ids",
+          "element": "<nav role=\"navigation\" id=\"block-quicklinksmenu\" class=\"header-quicklinks block navigation\" aria-lab ... lass=\"survey-processed\" title=\"Contact Us\" href=\"/webform/contact-us\">Contact Us</a></li></ul></nav>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide the ID of an element which contains the label content for this element.",
+            "fix": {
+              "aria-labelledby": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[aria-labelledby=\"block-quicklinksmenu-menu\"][class=\"header-quicklinks block navigation\"][id=\"block-quicklinksmenu\"][role=\"navigation\"]",
+            "attNo": 4
+          }
+        },
+        {
+          "engineTestId": 95,
+          "bestPracticeId": 1626,
+          "attribute": "This element has an aria-labelledby attribute value that includes one or more invalid or duplicate ids",
+          "attributeDetail": "This NAV has an aria-labelledby attribute value of 'block-mainmenu-2-menu', which includes one or more invalid or duplicate ids",
+          "element": "<nav class=\"top-main-menu-footer block block-menu navigation menu--main\" id=\"block-mainmenu-2\" aria- ... Learn about the FLETC organization\" href=\"/landing-page/learn-about-fletc\">About</a></li></ul></nav>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(6)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide the ID of an element which contains the label content for this element.",
+            "fix": {
+              "aria-labelledby": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[role=\"navigation\"][aria-labelledby=\"block-mainmenu-2-menu\"][id=\"block-mainmenu-2\"][class=\"top-main-menu-footer block block-menu navigation menu--main\"]",
+            "attNo": 4
+          }
+        }
+      ]
+    }
+  ],
+  "timeStamp": "4jil2",
+  "startTime": "2022-07-27T14:28:06",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "continuum",
+      0
+    ]
+  ],
+  "logCount": 3,
+  "logSize": 177,
+  "errorLogCount": 1,
+  "errorLogSize": 101,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-27T14:28:12",
+  "elapsedSeconds": 5
+}

@@ -1,0 +1,118 @@
+{
+  "id": "4jil2-nrc",
+  "host": {
+    "id": "nrc",
+    "which": "https://www.nrc.gov/",
+    "what": "Nuclear Regulatory Commission (NRC)"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-27T14:34:01"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-27T14:34:07"
+    }
+  ],
+  "script": {
+    "id": "continuum",
+    "what": "Continuum",
+    "strict": true,
+    "timeLimit": 30,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.nrc.gov/",
+        "what": "Nuclear Regulatory Commission (NRC)"
+      },
+      {
+        "type": "test",
+        "which": "continuum",
+        "what": "Continuum"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.nrc.gov/",
+      "what": "Nuclear Regulatory Commission (NRC)",
+      "result": "https://www.nrc.gov/"
+    },
+    {
+      "type": "test",
+      "which": "continuum",
+      "what": "Level Access Continuum, community edition",
+      "url": "https://www.nrc.gov/",
+      "result": [
+        {
+          "engineTestId": 101,
+          "bestPracticeId": 429,
+          "attribute": "This element does not have a lang attribute",
+          "attributeDetail": "This HTML does not have a lang attribute",
+          "element": "<html><head id=\"head\"><title>Nuclear Regulatory Commission</title><meta content=\"Nuclear Regulatory  ... \" src=\"/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZNyrqkTFBLVH56uyeCoMaUYaY9bSM0aV9VynHtxJo91FwpABBsU-rk",
+          "testResult": 0,
+          "path": "html",
+          "fixType": {
+            "fixType": 4,
+            "domSpec": false,
+            "helperText": "Enter the appropriate language value for the page.",
+            "fix": {
+              "lang": null
+            }
+          },
+          "fingerprint": {
+            "attNo": 0,
+            "css": "html",
+            "version": 2
+          }
+        },
+        {
+          "engineTestId": 281,
+          "bestPracticeId": 1626,
+          "attribute": "The aria-expanded attribute is not allowed on this element",
+          "attributeDetail": "The aria-expanded attribute is not allowed on this DIV",
+          "element": "<div aria-expanded=\"false\" class=\"navbar-collapse collapse animate\"><div class=\"container\"><ul class ... span id=\"mm13c1_CORE_V1_InPageLink6_btnElem_lblText\">Byproduct Material</span></a></div><div class=\"",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(9)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[class=\"navbar-collapse collapse animate\"][aria-expanded=\"false\"]",
+            "attNo": 2
+          }
+        }
+      ]
+    }
+  ],
+  "timeStamp": "4jil2",
+  "startTime": "2022-07-27T14:34:01",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "continuum",
+      0
+    ]
+  ],
+  "logCount": 0,
+  "logSize": 0,
+  "errorLogCount": 0,
+  "errorLogSize": 0,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-27T14:34:07",
+  "elapsedSeconds": 5
+}

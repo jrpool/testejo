@@ -1,0 +1,291 @@
+{
+  "id": "4jil2-ustda",
+  "host": {
+    "id": "ustda",
+    "which": "https://www.ustda.gov/",
+    "what": "United States Trade and Development Agency"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-27T14:39:41"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-27T14:39:48"
+    }
+  ],
+  "script": {
+    "id": "continuum",
+    "what": "Continuum",
+    "strict": true,
+    "timeLimit": 30,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.ustda.gov/",
+        "what": "United States Trade and Development Agency"
+      },
+      {
+        "type": "test",
+        "which": "continuum",
+        "what": "Continuum"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.ustda.gov/",
+      "what": "United States Trade and Development Agency",
+      "result": "https://www.ustda.gov/"
+    },
+    {
+      "type": "test",
+      "which": "continuum",
+      "what": "Level Access Continuum, community edition",
+      "url": "https://www.ustda.gov/",
+      "result": [
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg preserveaspectratio=\"xMidYMid meet\" viewbox=\"0 0 512 512\"><path d=\"M211.9 197.4h-36.7v59.9h36.7 ... .9c0 0-40.2 0-48.8 0 -52.5 0-76.1 23.1-76.1 67.3C211.9 188.8 211.9 197.4 211.9 197.4z\"></path></svg>",
+          "testResult": 0,
+          "path": "body>footer:nth-of-type(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(10)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[viewbox=\"0 0 512 512\"][preserveaspectratio=\"xMidYMid meet\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg preserveaspectratio=\"xMidYMid meet\" viewbox=\"0 0 512 512\"><path d=\"M186.4 142.4c0 19-15.3 34.5- ... .5c0 0 0-68.2 0-118.3 0-50-28.3-74.2-68-74.2 -39.6 0-56.3 30.9-56.3 30.9v-25.2H273.8z\"></path></svg>",
+          "testResult": 0,
+          "path": "body>footer:nth-of-type(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(10)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[viewbox=\"0 0 512 512\"][preserveaspectratio=\"xMidYMid meet\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg preserveaspectratio=\"xMidYMid meet\" viewbox=\"0 0 512 512\"><path d=\"M419.6 168.6c-11.7 5.2-24.2  ...  63 29.2 99.8 29.2 120.8 0 189.1-102.1 185-193.6C399.9 193.1 410.9 181.7 419.6 168.6z\"></path></svg>",
+          "testResult": 0,
+          "path": "body>footer:nth-of-type(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(10)>*:nth-child(3)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[viewbox=\"0 0 512 512\"][preserveaspectratio=\"xMidYMid meet\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg preserveaspectratio=\"xMidYMid meet\" viewbox=\"0 0 512 512\"><path d=\"M422.6 193.6c-5.3-45.3-23.3- ... 7 59-54C426.6 284.8 426.6 227.3 422.6 193.6zM222.2 303.4v-94.6l90.7 47.3L222.2 303.4z\"></path></svg>",
+          "testResult": 0,
+          "path": "body>footer:nth-of-type(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(10)>*:nth-child(4)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[viewbox=\"0 0 512 512\"][preserveaspectratio=\"xMidYMid meet\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg preserveaspectratio=\"xMidYMid meet\" viewbox=\"0 0 512 512\"><path d=\"M256 109.3c47.8 0 53.4 0.2 7 ... 26.7 59.6 59.6S288.9 315.6 256 315.6z\"></path><circle r=\"21.5\" cy=\"160.5\" cx=\"351.5\"></circle></svg>",
+          "testResult": 0,
+          "path": "body>footer:nth-of-type(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(10)>*:nth-child(5)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[viewbox=\"0 0 512 512\"][preserveaspectratio=\"xMidYMid meet\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 252,
+          "bestPracticeId": 444,
+          "attribute": "This video element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This video element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<video src=\"https://www.ustda.gov/wp-content/uploads/Video-Loop-3-FINAL_2.mp4\" playsinline=\"\" loop=\"\" autoplay=\"\" id=\"wp-custom-header-video\"></video>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "video[id=\"wp-custom-header-video\"][autoplay=\"\"][loop=\"\"][playsinline=\"\"][src=\"https://www.ustda.gov/wp-content/uploads/Video-Loop-3-FINAL_2.mp4\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 252,
+          "bestPracticeId": 444,
+          "attribute": "This video element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This video element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<video style=\"width: 960px; height: 540px;\" src=\"https://www.ustda.gov/wp-content/uploads/USTDA_New- ... Video_V5.mp4\">https://www.ustda.gov/wp-content/uploads/USTDA_New-Multiplier-Video_V5.mp4</a></video>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(4)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "video[class=\"wp-video-shortcode\"][id=\"video-5-1_html5\"][preload=\"metadata\"][src=\"https://www.ustda.gov/wp-content/uploads/USTDA_New-Multiplier-Video_V5.mp4?_=1\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 527,
+          "bestPracticeId": 2519,
+          "attribute": "This aside does not have a unique accessible name as required when two or more aside elements are present",
+          "attributeDetail": "This aside does not have a unique accessible name as required when two or more aside elements are present",
+          "element": "<aside class=\"widget widget_text primer-widgets primer-hero-text-widget\" id=\"primer-hero-text-2\"><di ... \"https://ustda.gov/connect_page/subscribe-to-ustda-news-and-alerts/\">Subscribe</a></p></div></aside>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "aside[id=\"primer-hero-text-2\"][class=\"widget widget_text primer-widgets primer-hero-text-widget\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 527,
+          "bestPracticeId": 2519,
+          "attribute": "This aside does not have a unique accessible name as required when two or more aside elements are present",
+          "attributeDetail": "This aside does not have a unique accessible name as required when two or more aside elements are present",
+          "element": "<aside class=\"widget_text widget widget_custom_html\" id=\"custom_html-3\"><div class=\"textwidget custom-html-widget\"><script type=\"text/javascript\"></script></div></aside>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(4)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "aside[id=\"custom_html-3\"][class=\"widget_text widget widget_custom_html\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 532,
+          "bestPracticeId": 2519,
+          "attribute": "This aside does not have an accessible name as required when two or more aside elements are present",
+          "attributeDetail": "This aside does not have an accessible name as required when two or more aside elements are present",
+          "element": "<aside class=\"widget widget_text primer-widgets primer-hero-text-widget\" id=\"primer-hero-text-2\"><di ... \"https://ustda.gov/connect_page/subscribe-to-ustda-news-and-alerts/\">Subscribe</a></p></div></aside>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "aside[id=\"primer-hero-text-2\"][class=\"widget widget_text primer-widgets primer-hero-text-widget\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 532,
+          "bestPracticeId": 2519,
+          "attribute": "This aside does not have an accessible name as required when two or more aside elements are present",
+          "attributeDetail": "This aside does not have an accessible name as required when two or more aside elements are present",
+          "element": "<aside class=\"widget_text widget widget_custom_html\" id=\"custom_html-3\"><div class=\"textwidget custom-html-widget\"><script type=\"text/javascript\"></script></div></aside>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(4)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "aside[id=\"custom_html-3\"][class=\"widget_text widget widget_custom_html\"]",
+            "attNo": 2
+          }
+        }
+      ]
+    }
+  ],
+  "timeStamp": "4jil2",
+  "startTime": "2022-07-27T14:39:41",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "continuum",
+      0
+    ]
+  ],
+  "logCount": 1,
+  "logSize": 46,
+  "errorLogCount": 0,
+  "errorLogSize": 0,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-27T14:39:48",
+  "elapsedSeconds": 6
+}

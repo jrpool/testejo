@@ -1,0 +1,465 @@
+{
+  "id": "4jil2-noaaf",
+  "host": {
+    "id": "noaaf",
+    "which": "https://www.fisheries.noaa.gov/",
+    "what": "NOAA Fisheries"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-27T14:30:36"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-27T14:30:44"
+    }
+  ],
+  "script": {
+    "id": "continuum",
+    "what": "Continuum",
+    "strict": true,
+    "timeLimit": 30,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.fisheries.noaa.gov/",
+        "what": "NOAA Fisheries"
+      },
+      {
+        "type": "test",
+        "which": "continuum",
+        "what": "Continuum"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.fisheries.noaa.gov/",
+      "what": "NOAA Fisheries",
+      "result": "https://www.fisheries.noaa.gov/"
+    },
+    {
+      "type": "test",
+      "which": "continuum",
+      "what": "Level Access Continuum, community edition",
+      "url": "https://www.fisheries.noaa.gov/",
+      "result": [
+        {
+          "engineTestId": 234,
+          "bestPracticeId": 370,
+          "attribute": "This element has a suspicious calculated accessible name value",
+          "attributeDetail": "This IMG has a suspicious calculated accessible name value of: icon_findaspecies.jpg",
+          "element": "<img alt=\"Icon_FindaSpecies.jpg\" src=\"https://media.fisheries.noaa.gov/dam-migration/icon_findaspecies.jpg\" class=\"webdam-field-asset\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[class=\"webdam-field-asset\"][src=\"https://media.fisheries.noaa.gov/dam-migration/icon_findaspecies.jpg\"][alt=\"Icon_FindaSpecies.jpg\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 234,
+          "bestPracticeId": 370,
+          "attribute": "This element has a suspicious calculated accessible name value",
+          "attributeDetail": "This IMG has a suspicious calculated accessible name value of: icon-gavel.png",
+          "element": "<img alt=\"icon-gavel.png\" src=\"https://media.fisheries.noaa.gov/dam-migration/icon-gavel.png\" class=\"webdam-field-asset\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[class=\"webdam-field-asset\"][src=\"https://media.fisheries.noaa.gov/dam-migration/icon-gavel.png\"][alt=\"icon-gavel.png\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 234,
+          "bestPracticeId": 370,
+          "attribute": "This element has a suspicious calculated accessible name value",
+          "attributeDetail": "This IMG has a suspicious calculated accessible name value of: icon_endangeredspecies.jpg",
+          "element": "<img alt=\"Icon_EndangeredSpecies.jpg\" src=\"https://media.fisheries.noaa.gov/dam-migration/icon_endangeredspecies.jpg\" class=\"webdam-field-asset\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[class=\"webdam-field-asset\"][src=\"https://media.fisheries.noaa.gov/dam-migration/icon_endangeredspecies.jpg\"][alt=\"Icon_EndangeredSpecies.jpg\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 234,
+          "bestPracticeId": 370,
+          "attribute": "This element has a suspicious calculated accessible name value",
+          "attributeDetail": "This IMG has a suspicious calculated accessible name value of: icon_dataandtools.jpg",
+          "element": "<img alt=\"Icon_DataAndTools.jpg\" src=\"https://media.fisheries.noaa.gov/dam-migration/icon_dataandtools.jpg\" class=\"webdam-field-asset\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[class=\"webdam-field-asset\"][src=\"https://media.fisheries.noaa.gov/dam-migration/icon_dataandtools.jpg\"][alt=\"Icon_DataAndTools.jpg\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 234,
+          "bestPracticeId": 370,
+          "attribute": "This element has a suspicious calculated accessible name value",
+          "attributeDetail": "This IMG has a suspicious calculated accessible name value of: 1280x800-coho-salmon.jpg",
+          "element": "<img typeof=\"foaf:Image\" loading=\"lazy\" alt=\"1280x800-Coho-salmon.jpg\" height=\"250\" width=\"250\" src= ... 250_x_250/s3/dam-migration/1280x800-coho-salmon.jpg?itok=ajIUKlIU\" class=\"dam-image img-responsive\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[class=\"dam-image img-responsive\"][src=\"https://media.fisheries.noaa.gov/styles/media_250_x_250/s3/dam-migration/1280x800-coho-salmon.jpg?itok=ajIUKlIU\"][width=\"250\"][height=\"250\"][alt=\"1280x800-Coho-salmon.jpg\"][loading=\"lazy\"][typeof=\"foaf:Image\"]",
+            "attNo": 7
+          }
+        },
+        {
+          "engineTestId": 234,
+          "bestPracticeId": 370,
+          "attribute": "This element has a suspicious calculated accessible name value",
+          "attributeDetail": "This IMG has a suspicious calculated accessible name value of: 1280x800-sea-turtle-on-reef-shutterstock.jpg",
+          "element": "<img typeof=\"foaf:Image\" loading=\"lazy\" alt=\"1280x800-sea-turtle-on-reef-shutterstock.jpg\" height=\"2 ... ration/1280x800-sea-turtle-on-reef-shutterstock.jpg?itok=crPzAsvw\" class=\"dam-image img-responsive\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[class=\"dam-image img-responsive\"][src=\"https://media.fisheries.noaa.gov/styles/media_250_x_250/s3/dam-migration/1280x800-sea-turtle-on-reef-shutterstock.jpg?itok=crPzAsvw\"][width=\"250\"][height=\"250\"][alt=\"1280x800-sea-turtle-on-reef-shutterstock.jpg\"][loading=\"lazy\"][typeof=\"foaf:Image\"]",
+            "attNo": 7
+          }
+        },
+        {
+          "engineTestId": 234,
+          "bestPracticeId": 370,
+          "attribute": "This element has a suspicious calculated accessible name value",
+          "attributeDetail": "This IMG has a suspicious calculated accessible name value of: 1280x800-humpback-whale-noaa.jpg",
+          "element": "<img typeof=\"foaf:Image\" loading=\"lazy\" alt=\"1280x800-humpback-whale-noaa.jpg\" height=\"250\" width=\"2 ... 0/s3/dam-migration/1280x800-humpback-whale-noaa.jpg?itok=7bjfPXtK\" class=\"dam-image img-responsive\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[class=\"dam-image img-responsive\"][src=\"https://media.fisheries.noaa.gov/styles/media_250_x_250/s3/dam-migration/1280x800-humpback-whale-noaa.jpg?itok=7bjfPXtK\"][width=\"250\"][height=\"250\"][alt=\"1280x800-humpback-whale-noaa.jpg\"][loading=\"lazy\"][typeof=\"foaf:Image\"]",
+            "attNo": 7
+          }
+        },
+        {
+          "engineTestId": 234,
+          "bestPracticeId": 370,
+          "attribute": "This element has a suspicious calculated accessible name value",
+          "attributeDetail": "This IMG has a suspicious calculated accessible name value of: 1280x800-spiny-lobster.jpg",
+          "element": "<img typeof=\"foaf:Image\" loading=\"lazy\" alt=\"1280x800-spiny-lobster.jpg\" height=\"250\" width=\"250\" sr ... 0_x_250/s3/dam-migration/1280x800-spiny-lobster.jpg?itok=9ukXtMN4\" class=\"dam-image img-responsive\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[class=\"dam-image img-responsive\"][src=\"https://media.fisheries.noaa.gov/styles/media_250_x_250/s3/dam-migration/1280x800-spiny-lobster.jpg?itok=9ukXtMN4\"][width=\"250\"][height=\"250\"][alt=\"1280x800-spiny-lobster.jpg\"][loading=\"lazy\"][typeof=\"foaf:Image\"]",
+            "attNo": 7
+          }
+        },
+        {
+          "engineTestId": 234,
+          "bestPracticeId": 370,
+          "attribute": "This element has a suspicious calculated accessible name value",
+          "attributeDetail": "This IMG has a suspicious calculated accessible name value of: 1280x800-oceanic-whitetip-shark-jeffkneebone.jpg",
+          "element": "<img typeof=\"foaf:Image\" loading=\"lazy\" alt=\"1280x800-oceanic-whitetip-shark-JeffKneebone.jpg\" heigh ... on/1280x800-oceanic-whitetip-shark-jeffkneebone.jpg?itok=3UsIIJ7G\" class=\"dam-image img-responsive\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[class=\"dam-image img-responsive\"][src=\"https://media.fisheries.noaa.gov/styles/media_250_x_250/s3/dam-migration/1280x800-oceanic-whitetip-shark-jeffkneebone.jpg?itok=3UsIIJ7G\"][width=\"250\"][height=\"250\"][alt=\"1280x800-oceanic-whitetip-shark-JeffKneebone.jpg\"][loading=\"lazy\"][typeof=\"foaf:Image\"]",
+            "attNo": 7
+          }
+        },
+        {
+          "engineTestId": 234,
+          "bestPracticeId": 370,
+          "attribute": "This element has a suspicious calculated accessible name value",
+          "attributeDetail": "This IMG has a suspicious calculated accessible name value of: 1280x800-ca-sealionrookery_sanmiguel2014-157_noaa-nmfs_phillman.jpg",
+          "element": "<img typeof=\"foaf:Image\" loading=\"lazy\" alt=\"1280x800-CA-SeaLionRookery_SanMiguel2014-157_NOAA-NMFS_ ... ionrookery_sanmiguel2014-157_noaa-nmfs_phillman.jpg?itok=_mGvNcWH\" class=\"dam-image img-responsive\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(6)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[class=\"dam-image img-responsive\"][src=\"https://media.fisheries.noaa.gov/styles/media_250_x_250/s3/dam-migration/1280x800-ca-sealionrookery_sanmiguel2014-157_noaa-nmfs_phillman.jpg?itok=_mGvNcWH\"][width=\"250\"][height=\"250\"][alt=\"1280x800-CA-SeaLionRookery_SanMiguel2014-157_NOAA-NMFS_PHillman.jpg\"][loading=\"lazy\"][typeof=\"foaf:Image\"]",
+            "attNo": 7
+          }
+        },
+        {
+          "engineTestId": 234,
+          "bestPracticeId": 370,
+          "attribute": "This element has a suspicious calculated accessible name value",
+          "attributeDetail": "This IMG has a suspicious calculated accessible name value of: galv_loggerhead_turtle_t._moore_noaa_via_wikimedia_750_500.png",
+          "element": "<img typeof=\"foaf:Image\" loading=\"lazy\" alt=\"Galv_loggerhead_turtle_t._moore_noaa_via_wikimedia_750_ ... moore_noaa_via_wikimedia_750_500.png?h=9e499333&amp;itok=Soyw3abD\" class=\"dam-image img-responsive\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(4)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[class=\"dam-image img-responsive\"][src=\"https://media.fisheries.noaa.gov/styles/inline_field_thumbnail/s3/dam-migration/galv_loggerhead_turtle_t_moore_noaa_via_wikimedia_750_500.png?h=9e499333&itok=Soyw3abD\"][width=\"540\"][height=\"360\"][alt=\"Galv_loggerhead_turtle_t._moore_noaa_via_wikimedia_750_500.png\"][loading=\"lazy\"][typeof=\"foaf:Image\"]",
+            "attNo": 7
+          }
+        },
+        {
+          "engineTestId": 531,
+          "bestPracticeId": 2519,
+          "attribute": "This nav does not have a unique accessible name as required when two or more nav elements are present",
+          "attributeDetail": "This nav does not have a unique accessible name as required when two or more nav elements are present",
+          "element": "<nav class=\"site-header__social\"><a data-extlink=\"\" href=\"https://www.facebook.com/NOAAFisheries\" cl ... parency=\"true\"></png24format></targetsettings></optimizationsettings></sfw></metadata><title>(link i",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[class=\"site-header__social\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 531,
+          "bestPracticeId": 2519,
+          "attribute": "This nav does not have a unique accessible name as required when two or more nav elements are present",
+          "attributeDetail": "This nav does not have a unique accessible name as required when two or more nav elements are present",
+          "element": "<nav class=\"main-menu\"><ul class=\"main-menu__items\"><li class=\"main-menu__item main-menu__item--expa ... -menu__link\">Sea Turtles</a></li><li class=\"main-menu__item\"><a href=\"/species-directory/threatened-",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[class=\"main-menu\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 531,
+          "bestPracticeId": 2519,
+          "attribute": "This nav does not have a unique accessible name as required when two or more nav elements are present",
+          "attributeDetail": "This nav does not have a unique accessible name as required when two or more nav elements are present",
+          "element": "<nav class=\"hero__more-link\"><a class=\"link link--cta\" href=\"/feature-story/95-million-noaa-pacific-coastal-salmon-recovery-funding-recommended-reverse-declines\">Read More</a></nav>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[class=\"hero__more-link\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 531,
+          "bestPracticeId": 2519,
+          "attribute": "This nav does not have a unique accessible name as required when two or more nav elements are present",
+          "attributeDetail": "This nav does not have a unique accessible name as required when two or more nav elements are present",
+          "element": "<nav class=\"footer-menu\"><ul class=\"footer-menu__items row\"><li class=\"footer-menu__item col-lg-3 co ... \"footer-menu__link\">Media Inquiries</a></li><li class=\"footer-menu__item\"><a title=\"Report a Violati",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[class=\"footer-menu\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 533,
+          "bestPracticeId": 2519,
+          "attribute": "This nav does not have an accessible name as required when two or more nav elements are present",
+          "attributeDetail": "This nav does not have an accessible name as required when two or more nav elements are present",
+          "element": "<nav class=\"site-header__social\"><a data-extlink=\"\" href=\"https://www.facebook.com/NOAAFisheries\" cl ... parency=\"true\"></png24format></targetsettings></optimizationsettings></sfw></metadata><title>(link i",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[class=\"site-header__social\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 533,
+          "bestPracticeId": 2519,
+          "attribute": "This nav does not have an accessible name as required when two or more nav elements are present",
+          "attributeDetail": "This nav does not have an accessible name as required when two or more nav elements are present",
+          "element": "<nav class=\"main-menu\"><ul class=\"main-menu__items\"><li class=\"main-menu__item main-menu__item--expa ... -menu__link\">Sea Turtles</a></li><li class=\"main-menu__item\"><a href=\"/species-directory/threatened-",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[class=\"main-menu\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 533,
+          "bestPracticeId": 2519,
+          "attribute": "This nav does not have an accessible name as required when two or more nav elements are present",
+          "attributeDetail": "This nav does not have an accessible name as required when two or more nav elements are present",
+          "element": "<nav class=\"hero__more-link\"><a class=\"link link--cta\" href=\"/feature-story/95-million-noaa-pacific-coastal-salmon-recovery-funding-recommended-reverse-declines\">Read More</a></nav>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[class=\"hero__more-link\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 533,
+          "bestPracticeId": 2519,
+          "attribute": "This nav does not have an accessible name as required when two or more nav elements are present",
+          "attributeDetail": "This nav does not have an accessible name as required when two or more nav elements are present",
+          "element": "<nav class=\"footer-menu\"><ul class=\"footer-menu__items row\"><li class=\"footer-menu__item col-lg-3 co ... \"footer-menu__link\">Media Inquiries</a></li><li class=\"footer-menu__item\"><a title=\"Report a Violati",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[class=\"footer-menu\"]",
+            "attNo": 1
+          }
+        }
+      ]
+    }
+  ],
+  "timeStamp": "4jil2",
+  "startTime": "2022-07-27T14:30:36",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "continuum",
+      0
+    ]
+  ],
+  "logCount": 1,
+  "logSize": 101,
+  "errorLogCount": 1,
+  "errorLogSize": 101,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-27T14:30:44",
+  "elapsedSeconds": 7
+}

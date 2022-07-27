@@ -1,0 +1,188 @@
+{
+  "id": "4jil2-bfs",
+  "host": {
+    "id": "bfs",
+    "which": "https://www.fiscal.treasury.gov/",
+    "what": "Bureau of the Fiscal Service"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-27T14:22:37"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-27T14:22:46"
+    }
+  ],
+  "script": {
+    "id": "continuum",
+    "what": "Continuum",
+    "strict": true,
+    "timeLimit": 30,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.fiscal.treasury.gov/",
+        "what": "Bureau of the Fiscal Service"
+      },
+      {
+        "type": "test",
+        "which": "continuum",
+        "what": "Continuum"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.fiscal.treasury.gov/",
+      "what": "Bureau of the Fiscal Service",
+      "result": "https://www.fiscal.treasury.gov/"
+    },
+    {
+      "type": "test",
+      "which": "continuum",
+      "what": "Level Access Continuum, community edition",
+      "url": "https://www.fiscal.treasury.gov/",
+      "result": [
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This INPUT has an id attribute of 'query', which is not unique in the same DOM",
+          "element": "<input aria-atomic=\"true\" aria-label=\"Header Search Fiscal Service\" placeholder=\"Search Fiscal Servi ... length=\"256\" id=\"query\" class=\"usagov-search-autocomplete ui-autocomplete-input\" autocomplete=\"off\">",
+          "testResult": 0,
+          "path": "body>header:nth-of-type(1)>*:nth-child(5)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(3)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "input[autocomplete=\"off\"][class=\"usagov-search-autocomplete ui-autocomplete-input\"][id=\"query\"][maxlength=\"256\"][name=\"query\"][type=\"search\"][placeholder=\"Search Fiscal Service\"][aria-label=\"Header Search Fiscal Service\"][aria-atomic=\"true\"]",
+            "attNo": 9
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This INPUT has an id attribute of 'query', which is not unique in the same DOM",
+          "element": "<input aria-label=\"Footer Search Fiscal Service\" placeholder=\"Search Fiscal Service\" type=\"search\" n ... length=\"256\" id=\"query\" class=\"usagov-search-autocomplete ui-autocomplete-input\" autocomplete=\"off\">",
+          "testResult": 0,
+          "path": "body>footer:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "input[autocomplete=\"off\"][class=\"usagov-search-autocomplete ui-autocomplete-input\"][id=\"query\"][maxlength=\"256\"][name=\"query\"][type=\"search\"][placeholder=\"Search Fiscal Service\"][aria-label=\"Footer Search Fiscal Service\"]",
+            "attNo": 8
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This SCRIPT has an id attribute of '_fed_an_ua_tag', which is not unique in the same DOM",
+          "element": "<script src=\"https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=TRE&amp;subagency=FS\" id=\"_fed_an_ua_tag\" language=\"javascript\"></script>",
+          "testResult": 0,
+          "path": "body>script:nth-of-type(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "script[language=\"javascript\"][id=\"_fed_an_ua_tag\"][src=\"https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=TRE&subagency=FS\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This SCRIPT has an id attribute of '_fed_an_ua_tag', which is not unique in the same DOM",
+          "element": "<script src=\"https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=TRE&amp;subagency=FS\" id=\"_fed_an_ua_tag\" language=\"javascript\"></script>",
+          "testResult": 0,
+          "path": "body>script:nth-of-type(4)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "script[language=\"javascript\"][id=\"_fed_an_ua_tag\"][src=\"https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=TRE&subagency=FS\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg viewbox=\"0 0 66 66\" height=\"96px\" width=\"96px\" class=\"goog-te-spinner\" xmlns=\"http://www.w3.org ... 33\" stroke-linecap=\"round\" stroke-width=\"6\" fill=\"none\" class=\"goog-te-spinner-path\"></circle></svg>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[class=\"goog-te-spinner\"][width=\"96px\"][height=\"96px\"][viewbox=\"0 0 66 66\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 228,
+          "bestPracticeId": 523,
+          "attribute": "This iframe element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This iframe element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<iframe style=\"visibility: visible; box-sizing: content-box; width: 92px; height: 24px;\" class=\"goog-te-ftab-frame skiptranslate\" src=\"javascript:''\" frameborder=\"0\" id=\":0.container\"></iframe>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(3)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Specify a descriptive label for the iframe.",
+            "fix": {
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "iframe[id=\":0.container\"][frameborder=\"0\"][src=\"javascript:''\"][class=\"goog-te-ftab-frame skiptranslate\"]",
+            "attNo": 5
+          }
+        }
+      ]
+    }
+  ],
+  "timeStamp": "4jil2",
+  "startTime": "2022-07-27T14:22:37",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "continuum",
+      0
+    ]
+  ],
+  "logCount": 0,
+  "logSize": 0,
+  "errorLogCount": 0,
+  "errorLogSize": 0,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-27T14:22:46",
+  "elapsedSeconds": 9
+}

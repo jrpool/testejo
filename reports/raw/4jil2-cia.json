@@ -1,0 +1,275 @@
+{
+  "id": "4jil2-cia",
+  "host": {
+    "id": "cia",
+    "which": "https://www.cia.gov/",
+    "what": "Central Intelligence Agency (CIA)"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-27T14:22:52"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-27T14:22:56"
+    }
+  ],
+  "script": {
+    "id": "continuum",
+    "what": "Continuum",
+    "strict": true,
+    "timeLimit": 30,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.cia.gov/",
+        "what": "Central Intelligence Agency (CIA)"
+      },
+      {
+        "type": "test",
+        "which": "continuum",
+        "what": "Continuum"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.cia.gov/",
+      "what": "Central Intelligence Agency (CIA)",
+      "result": "https://www.cia.gov/"
+    },
+    {
+      "type": "test",
+      "which": "continuum",
+      "what": "Level Access Continuum, community edition",
+      "url": "https://www.cia.gov/",
+      "result": [
+        {
+          "engineTestId": 87,
+          "bestPracticeId": 362,
+          "attribute": "This element (role=img, role=graphics-symbol or role=graphics-document) does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg (role=img) does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg viewbox=\"0 0 30 30\" role=\"img\" aria-labelledby=\"arrow-right-icon\" class=\"icon\"><polygon points= ... 55 8 14.855 20.793 14.855 14.646 8.707 15.353 8\" fill-rule=\"nonzero\" fill=\"#ffffff\"></polygon></svg>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Specify label text that describes the content conveyed by the image.",
+            "fix": {
+              "aria-label": null,
+              "alt": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[class=\"icon\"][aria-labelledby=\"arrow-right-icon\"][role=\"img\"][viewbox=\"0 0 30 30\"]",
+            "attNo": 4
+          }
+        },
+        {
+          "engineTestId": 87,
+          "bestPracticeId": 362,
+          "attribute": "This element (role=img, role=graphics-symbol or role=graphics-document) does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This DIV (role=img) does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<div aria-label=\"\" role=\"img\" style=\"background-position:center;background-repeat:no-repeat;backgrou ... 99\" class=\"card-display__img-background gbi-1430961857-vVm8zcN3DAhf7qrJZPCAEW\"><style></style></div>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(3)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Specify label text that describes the content conveyed by the image.",
+            "fix": {
+              "aria-label": null,
+              "alt": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "div[class=\"card-display__img-background gbi-1430961857-vVm8zcN3DAhf7qrJZPCAEW\"][role=\"img\"][aria-label=\"\"]",
+            "attNo": 4
+          }
+        },
+        {
+          "engineTestId": 87,
+          "bestPracticeId": 362,
+          "attribute": "This element (role=img, role=graphics-symbol or role=graphics-document) does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg (role=img) does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg viewbox=\"0 0 30 30\" role=\"img\" class=\"icon\"><polygon points=\"22.707 15.354 15.353 22.708 14.646 ... 55 8 14.855 20.793 14.855 14.646 8.707 15.353 8\" fill-rule=\"nonzero\" fill=\"#161618\"></polygon></svg>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(3)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Specify label text that describes the content conveyed by the image.",
+            "fix": {
+              "aria-label": null,
+              "alt": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[class=\"icon\"][role=\"img\"][viewbox=\"0 0 30 30\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 87,
+          "bestPracticeId": 362,
+          "attribute": "This element (role=img, role=graphics-symbol or role=graphics-document) does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg (role=img) does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg viewbox=\"0 0 30 30\" role=\"img\" class=\"icon\"><polygon points=\"22.707 15.354 15.353 22.708 14.646 ... 55 8 14.855 20.793 14.855 14.646 8.707 15.353 8\" fill-rule=\"nonzero\" fill=\"#161618\"></polygon></svg>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(3)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Specify label text that describes the content conveyed by the image.",
+            "fix": {
+              "aria-label": null,
+              "alt": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[class=\"icon\"][role=\"img\"][viewbox=\"0 0 30 30\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 87,
+          "bestPracticeId": 362,
+          "attribute": "This element (role=img, role=graphics-symbol or role=graphics-document) does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg (role=img) does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg viewbox=\"0 0 30 30\" role=\"img\" class=\"icon\"><polygon points=\"22.707 15.354 15.353 22.708 14.646 ... 55 8 14.855 20.793 14.855 14.646 8.707 15.353 8\" fill-rule=\"nonzero\" fill=\"#161618\"></polygon></svg>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(3)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Specify label text that describes the content conveyed by the image.",
+            "fix": {
+              "aria-label": null,
+              "alt": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[class=\"icon\"][role=\"img\"][viewbox=\"0 0 30 30\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This title has an id attribute of 'central-intelligence-agency', which is not unique in the same DOM",
+          "element": "<title id=\"central-intelligence-agency\">Central Intelligence Agency</title>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "title[id=\"central-intelligence-agency\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This title has an id attribute of 'central-intelligence-agency', which is not unique in the same DOM",
+          "element": "<title id=\"central-intelligence-agency\">Central Intelligence Agency</title>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "title[id=\"central-intelligence-agency\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 95,
+          "bestPracticeId": 1626,
+          "attribute": "This element has an aria-labelledby attribute value that includes one or more invalid or duplicate ids",
+          "attributeDetail": "This svg has an aria-labelledby attribute value of 'central-intelligence-agency', which includes one or more invalid or duplicate ids",
+          "element": "<svg viewbox=\"0 0 121 45\" role=\"img\" aria-labelledby=\"central-intelligence-agency\" class=\"global-ful ... 91.17,45.35 L91.17,56 L95.01,56 Z M100.905,56 L100.905,53.045 C100.905,51.545 101.625,50.765 103.05,",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide the ID of an element which contains the label content for this element.",
+            "fix": {
+              "aria-labelledby": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[class=\"global-full-marque\"][aria-labelledby=\"central-intelligence-agency\"][role=\"img\"][viewbox=\"0 0 121 45\"]",
+            "attNo": 4
+          }
+        },
+        {
+          "engineTestId": 95,
+          "bestPracticeId": 1626,
+          "attribute": "This element has an aria-labelledby attribute value that includes one or more invalid or duplicate ids",
+          "attributeDetail": "This svg has an aria-labelledby attribute value of 'arrow-right-icon', which includes one or more invalid or duplicate ids",
+          "element": "<svg viewbox=\"0 0 30 30\" role=\"img\" aria-labelledby=\"arrow-right-icon\" class=\"icon\"><polygon points= ... 55 8 14.855 20.793 14.855 14.646 8.707 15.353 8\" fill-rule=\"nonzero\" fill=\"#ffffff\"></polygon></svg>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide the ID of an element which contains the label content for this element.",
+            "fix": {
+              "aria-labelledby": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[class=\"icon\"][aria-labelledby=\"arrow-right-icon\"][role=\"img\"][viewbox=\"0 0 30 30\"]",
+            "attNo": 4
+          }
+        }
+      ]
+    }
+  ],
+  "timeStamp": "4jil2",
+  "startTime": "2022-07-27T14:22:52",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "continuum",
+      0
+    ]
+  ],
+  "logCount": 0,
+  "logSize": 0,
+  "errorLogCount": 0,
+  "errorLogSize": 0,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-27T14:22:56",
+  "elapsedSeconds": 4
+}

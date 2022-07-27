@@ -1,0 +1,164 @@
+{
+  "id": "4jil2-fmc",
+  "host": {
+    "id": "fmc",
+    "which": "https://www.fmc.gov/",
+    "what": "Federal Maritime Commission"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-27T14:28:12"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-27T14:28:20"
+    }
+  ],
+  "script": {
+    "id": "continuum",
+    "what": "Continuum",
+    "strict": true,
+    "timeLimit": 30,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.fmc.gov/",
+        "what": "Federal Maritime Commission"
+      },
+      {
+        "type": "test",
+        "which": "continuum",
+        "what": "Continuum"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.fmc.gov/",
+      "what": "Federal Maritime Commission",
+      "result": "https://www.fmc.gov/"
+    },
+    {
+      "type": "test",
+      "which": "continuum",
+      "what": "Level Access Continuum, community edition",
+      "url": "https://www.fmc.gov/",
+      "result": [
+        {
+          "engineTestId": 370,
+          "bestPracticeId": 338,
+          "attribute": "This input (type=search) element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This input (type=search) element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<input value=\"\" id=\"query\" name=\"query\" class=\"search-input\" type=\"search\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(3)>*:nth-child(3)>*:nth-child(2)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive label for the search field.",
+            "fix": {
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "input[type=\"search\"][class=\"search-input\"][name=\"query\"][id=\"query\"][value=\"\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 531,
+          "bestPracticeId": 2519,
+          "attribute": "This nav does not have a unique accessible name as required when two or more nav elements are present",
+          "attributeDetail": "This nav does not have a unique accessible name as required when two or more nav elements are present",
+          "element": "<nav class=\"menu-navigation-container\" id=\"navTopContainer\"><ul class=\"menu\" id=\"menu-navigation\"><l ... ies/\">Employment Opportunities</a></li><li class=\"menu-item menu-item-type-post_type menu-item-objec",
+          "testResult": 0,
+          "path": "body>header:nth-of-type(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[id=\"navTopContainer\"][class=\"menu-navigation-container\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 531,
+          "bestPracticeId": 2519,
+          "attribute": "This nav does not have a unique accessible name as required when two or more nav elements are present",
+          "attributeDetail": "This nav does not have a unique accessible name as required when two or more nav elements are present",
+          "element": "<nav class=\"menu-footer-menu-container\" id=\"navFooterContainer\"><ul class=\"menu\" id=\"menu-footer-men ... m-object-page menu-item-3647\" id=\"menu-item-3647\"><a href=\"/contact/\">Contact Us</a></li></ul></nav>",
+          "testResult": 0,
+          "path": "body>footer:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[id=\"navFooterContainer\"][class=\"menu-footer-menu-container\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 533,
+          "bestPracticeId": 2519,
+          "attribute": "This nav does not have an accessible name as required when two or more nav elements are present",
+          "attributeDetail": "This nav does not have an accessible name as required when two or more nav elements are present",
+          "element": "<nav class=\"menu-navigation-container\" id=\"navTopContainer\"><ul class=\"menu\" id=\"menu-navigation\"><l ... ies/\">Employment Opportunities</a></li><li class=\"menu-item menu-item-type-post_type menu-item-objec",
+          "testResult": 0,
+          "path": "body>header:nth-of-type(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[id=\"navTopContainer\"][class=\"menu-navigation-container\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 533,
+          "bestPracticeId": 2519,
+          "attribute": "This nav does not have an accessible name as required when two or more nav elements are present",
+          "attributeDetail": "This nav does not have an accessible name as required when two or more nav elements are present",
+          "element": "<nav class=\"menu-footer-menu-container\" id=\"navFooterContainer\"><ul class=\"menu\" id=\"menu-footer-men ... m-object-page menu-item-3647\" id=\"menu-item-3647\"><a href=\"/contact/\">Contact Us</a></li></ul></nav>",
+          "testResult": 0,
+          "path": "body>footer:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[id=\"navFooterContainer\"][class=\"menu-footer-menu-container\"]",
+            "attNo": 2
+          }
+        }
+      ]
+    }
+  ],
+  "timeStamp": "4jil2",
+  "startTime": "2022-07-27T14:28:12",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "continuum",
+      0
+    ]
+  ],
+  "logCount": 2,
+  "logSize": 115,
+  "errorLogCount": 1,
+  "errorLogSize": 69,
+  "prohibitedCount": 1,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-27T14:28:20",
+  "elapsedSeconds": 7
+}

@@ -1,0 +1,185 @@
+{
+  "id": "4jil2-ruraldev",
+  "host": {
+    "id": "ruraldev",
+    "which": "https://www.rd.usda.gov/",
+    "what": "Rural Development"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-27T14:37:15"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-27T14:37:22"
+    }
+  ],
+  "script": {
+    "id": "continuum",
+    "what": "Continuum",
+    "strict": true,
+    "timeLimit": 30,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.rd.usda.gov/",
+        "what": "Rural Development"
+      },
+      {
+        "type": "test",
+        "which": "continuum",
+        "what": "Continuum"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.rd.usda.gov/",
+      "what": "Rural Development",
+      "result": "https://www.rd.usda.gov/"
+    },
+    {
+      "type": "test",
+      "which": "continuum",
+      "what": "Level Access Continuum, community edition",
+      "url": "https://www.rd.usda.gov/",
+      "result": [
+        {
+          "engineTestId": 95,
+          "bestPracticeId": 1626,
+          "attribute": "This element has an aria-labelledby attribute value that includes one or more invalid or duplicate ids",
+          "attributeDetail": "This NAV has an aria-labelledby attribute value of 'im-looking-for', which includes one or more invalid or duplicate ids",
+          "element": "<nav class=\"paragraph paragraph--type-dropdown-menu-slider paragraph--view-mode-default\" aria-labell ... ograms/water-environmental-programs\">Water &amp; Wastewater Assistance</option></select></div></nav>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide the ID of an element which contains the label content for this element.",
+            "fix": {
+              "aria-labelledby": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[aria-labelledby=\"im-looking-for\"][class=\"paragraph paragraph--type-dropdown-menu-slider paragraph--view-mode-default\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 95,
+          "bestPracticeId": 1626,
+          "attribute": "This element has an aria-labelledby attribute value that includes one or more invalid or duplicate ids",
+          "attributeDetail": "This NAV has an aria-labelledby attribute value of 'block-usda-footernavigation-menu', which includes one or more invalid or duplicate ids",
+          "element": "<nav id=\"block-usda-footernavigation\" data-block-plugin-id=\"system_menu_block:footer-navigation\" cla ... \"mailto:rdwebmaster@usda.gov\">Feedback</a></li></ul></div></div></div><div class=\"usa-sign-up tablet",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(8)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide the ID of an element which contains the label content for this element.",
+            "fix": {
+              "aria-labelledby": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[aria-labelledby=\"block-usda-footernavigation-menu\"][class=\"usa-footer-nav grid-row\"][data-block-plugin-id=\"system_menu_block:footer-navigation\"][id=\"block-usda-footernavigation\"]",
+            "attNo": 4
+          }
+        },
+        {
+          "engineTestId": 531,
+          "bestPracticeId": 2519,
+          "attribute": "This nav does not have a unique accessible name as required when two or more nav elements are present",
+          "attributeDetail": "This nav does not have a unique accessible name as required when two or more nav elements are present",
+          "element": "<nav class=\"paragraph paragraph--type-dropdown-menu-slider paragraph--view-mode-default\" aria-labell ... ograms/water-environmental-programs\">Water &amp; Wastewater Assistance</option></select></div></nav>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[aria-labelledby=\"im-looking-for\"][class=\"paragraph paragraph--type-dropdown-menu-slider paragraph--view-mode-default\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 531,
+          "bestPracticeId": 2519,
+          "attribute": "This nav does not have a unique accessible name as required when two or more nav elements are present",
+          "attributeDetail": "This nav does not have a unique accessible name as required when two or more nav elements are present",
+          "element": "<nav id=\"block-usda-footernavigation\" data-block-plugin-id=\"system_menu_block:footer-navigation\" cla ... \"mailto:rdwebmaster@usda.gov\">Feedback</a></li></ul></div></div></div><div class=\"usa-sign-up tablet",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(8)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[aria-labelledby=\"block-usda-footernavigation-menu\"][class=\"usa-footer-nav grid-row\"][data-block-plugin-id=\"system_menu_block:footer-navigation\"][id=\"block-usda-footernavigation\"]",
+            "attNo": 4
+          }
+        },
+        {
+          "engineTestId": 533,
+          "bestPracticeId": 2519,
+          "attribute": "This nav does not have an accessible name as required when two or more nav elements are present",
+          "attributeDetail": "This nav does not have an accessible name as required when two or more nav elements are present",
+          "element": "<nav class=\"paragraph paragraph--type-dropdown-menu-slider paragraph--view-mode-default\" aria-labell ... ograms/water-environmental-programs\">Water &amp; Wastewater Assistance</option></select></div></nav>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[aria-labelledby=\"im-looking-for\"][class=\"paragraph paragraph--type-dropdown-menu-slider paragraph--view-mode-default\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 533,
+          "bestPracticeId": 2519,
+          "attribute": "This nav does not have an accessible name as required when two or more nav elements are present",
+          "attributeDetail": "This nav does not have an accessible name as required when two or more nav elements are present",
+          "element": "<nav id=\"block-usda-footernavigation\" data-block-plugin-id=\"system_menu_block:footer-navigation\" cla ... \"mailto:rdwebmaster@usda.gov\">Feedback</a></li></ul></div></div></div><div class=\"usa-sign-up tablet",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(8)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[aria-labelledby=\"block-usda-footernavigation-menu\"][class=\"usa-footer-nav grid-row\"][data-block-plugin-id=\"system_menu_block:footer-navigation\"][id=\"block-usda-footernavigation\"]",
+            "attNo": 4
+          }
+        }
+      ]
+    }
+  ],
+  "timeStamp": "4jil2",
+  "startTime": "2022-07-27T14:37:15",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "continuum",
+      0
+    ]
+  ],
+  "logCount": 1,
+  "logSize": 101,
+  "errorLogCount": 1,
+  "errorLogSize": 101,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-27T14:37:22",
+  "elapsedSeconds": 6
+}

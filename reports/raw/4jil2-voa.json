@@ -1,0 +1,163 @@
+{
+  "id": "4jil2-voa",
+  "host": {
+    "id": "voa",
+    "which": "https://www.voanews.com/",
+    "what": "Voice of America (VOA)"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-27T14:39:48"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-27T14:39:54"
+    }
+  ],
+  "script": {
+    "id": "continuum",
+    "what": "Continuum",
+    "strict": true,
+    "timeLimit": 30,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.voanews.com/",
+        "what": "Voice of America (VOA)"
+      },
+      {
+        "type": "test",
+        "which": "continuum",
+        "what": "Continuum"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.voanews.com/",
+      "what": "Voice of America (VOA)",
+      "result": "https://www.voanews.com/"
+    },
+    {
+      "type": "test",
+      "which": "continuum",
+      "what": "Level Access Continuum, community edition",
+      "url": "https://www.voanews.com/",
+      "result": [
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This FORM has an id attribute of 'form-headerSearch', which is not unique in the same DOM",
+          "element": "<form role=\"search\" method=\"get\" id=\"form-headerSearch\" class=\"srch-top__form\" action=\"/s\"><label cl ... nalyticstag-event\" type=\"submit\" title=\"Search\"><span class=\"ico ico-search\"></span></button></form>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(6)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "form[action=\"/s\"][class=\"srch-top__form\"][id=\"form-headerSearch\"][method=\"get\"][role=\"search\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This FORM has an id attribute of 'form-headerSearch', which is not unique in the same DOM",
+          "element": "<form role=\"search\" method=\"get\" id=\"form-headerSearch\" class=\"srch-bottom__form d-flex\" action=\"/s\" ... nalyticstag-event\" type=\"submit\" title=\"Search\"><span class=\"ico ico-search\"></span></button></form>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(5)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "form[action=\"/s\"][class=\"srch-bottom__form d-flex\"][id=\"form-headerSearch\"][method=\"get\"][role=\"search\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This INPUT has an id attribute of 'txtHeaderSearch', which is not unique in the same DOM",
+          "element": "<input onkeydown=\"if (event.keyCode === 13) { FireAnalyticsTagEventOnSearch('search', $dom.get('txtH ... ent\" value=\"\" accesskey=\"s\" placeholder=\"search text ...\" name=\"k\" id=\"txtHeaderSearch\" type=\"text\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(6)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "input[type=\"text\"][id=\"txtHeaderSearch\"][name=\"k\"][placeholder=\"search text ...\"][accesskey=\"s\"][value=\"\"][class=\"srch-top__input analyticstag-event\"][onkeydown=\"if (event.keyCode === 13) { FireAnalyticsTagEventOnSearch('search', $dom.get('txtHeaderSearch')[0].value) }\"]",
+            "attNo": 8
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This INPUT has an id attribute of 'txtHeaderSearch', which is not unique in the same DOM",
+          "element": "<input onkeydown=\"if (event.keyCode === 13) { FireAnalyticsTagEventOnSearch('search', $dom.get('txtH ... ent\" value=\"\" accesskey=\"s\" placeholder=\"search text ...\" name=\"k\" id=\"txtHeaderSearch\" type=\"text\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(5)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "input[type=\"text\"][id=\"txtHeaderSearch\"][name=\"k\"][placeholder=\"search text ...\"][accesskey=\"s\"][value=\"\"][class=\"srch-bottom__input analyticstag-event\"][onkeydown=\"if (event.keyCode === 13) { FireAnalyticsTagEventOnSearch('search', $dom.get('txtHeaderSearch')[0].value) }\"]",
+            "attNo": 8
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a href=\"https://www.voanews.com/z/6932\" class=\"link-more link-more--overlay\"></a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(1)>*:nth-child(5)>*:nth-child(2)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(2)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[class=\"link-more link-more--overlay\"][href=\"https://www.voanews.com/z/6932\"]",
+            "attNo": 2
+          }
+        }
+      ]
+    }
+  ],
+  "timeStamp": "4jil2",
+  "startTime": "2022-07-27T14:39:48",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "continuum",
+      0
+    ]
+  ],
+  "logCount": 4,
+  "logSize": 179,
+  "errorLogCount": 1,
+  "errorLogSize": 69,
+  "prohibitedCount": 1,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-27T14:39:54",
+  "elapsedSeconds": 6
+}

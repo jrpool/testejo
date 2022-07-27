@@ -1,0 +1,385 @@
+{
+  "id": "4jil2-fsa",
+  "host": {
+    "id": "fsa",
+    "which": "https://www.fsa.usda.gov/",
+    "what": "Farm Service Agency"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-27T14:26:13"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-27T14:26:20"
+    }
+  ],
+  "script": {
+    "id": "continuum",
+    "what": "Continuum",
+    "strict": true,
+    "timeLimit": 30,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.fsa.usda.gov/",
+        "what": "Farm Service Agency"
+      },
+      {
+        "type": "test",
+        "which": "continuum",
+        "what": "Continuum"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.fsa.usda.gov/",
+      "what": "Farm Service Agency",
+      "result": "https://www.fsa.usda.gov/"
+    },
+    {
+      "type": "test",
+      "which": "continuum",
+      "what": "Level Access Continuum, community edition",
+      "url": "https://www.fsa.usda.gov/",
+      "result": [
+        {
+          "engineTestId": 22,
+          "bestPracticeId": 967,
+          "attribute": "This element should not contain input elements (without an assigned ARIA role and not type=hidden), keygen elements (without an assigned ARIA role), select elements (without an assigned ARIA role), textarea elements (without an assigned ARIA role) or button elements (without an assigned ARIA role)",
+          "attributeDetail": "This A should not contain input elements (without an assigned ARIA role and not type=hidden), keygen elements (without an assigned ARIA role), select elements (without an assigned ARIA role), textarea elements (without an assigned ARIA role) or button elements (without an assigned ARIA role)",
+          "element": "<a class=\"usa-nav__link\" style=\"padding:0 !important;\"><button aria-controls=\"basic-mega-nav-section ... false\" class=\"usa-accordion__button usa-nav__link\"><span>Programs &amp; Services</span></button></a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "a[class=\"usa-nav__link\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 22,
+          "bestPracticeId": 967,
+          "attribute": "This element should not contain input elements (without an assigned ARIA role and not type=hidden), keygen elements (without an assigned ARIA role), select elements (without an assigned ARIA role), textarea elements (without an assigned ARIA role) or button elements (without an assigned ARIA role)",
+          "attributeDetail": "This A should not contain input elements (without an assigned ARIA role and not type=hidden), keygen elements (without an assigned ARIA role), select elements (without an assigned ARIA role), textarea elements (without an assigned ARIA role) or button elements (without an assigned ARIA role)",
+          "element": "<a class=\"usa-nav__link\" style=\"padding:0 !important;\"><button aria-controls=\"basic-mega-nav-section ... panded=\"false\" class=\"usa-accordion__button usa-nav__link\"><span>Online Services</span></button></a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(4)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "a[class=\"usa-nav__link\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 22,
+          "bestPracticeId": 967,
+          "attribute": "This element should not contain input elements (without an assigned ARIA role and not type=hidden), keygen elements (without an assigned ARIA role), select elements (without an assigned ARIA role), textarea elements (without an assigned ARIA role) or button elements (without an assigned ARIA role)",
+          "attributeDetail": "This A should not contain input elements (without an assigned ARIA role and not type=hidden), keygen elements (without an assigned ARIA role), select elements (without an assigned ARIA role), textarea elements (without an assigned ARIA role) or button elements (without an assigned ARIA role)",
+          "element": "<a class=\"usa-nav__link\" style=\"padding:0 !important;\"><button aria-controls=\"basic-mega-nav-section ... aria-expanded=\"false\" class=\"usa-accordion__button usa-nav__link\"><span>Newsroom</span></button></a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(5)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "a[class=\"usa-nav__link\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 89,
+          "bestPracticeId": 362,
+          "attribute": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<img src=\"/Assets/USDA-FSA/images/icons/fun-and-flowers-icon.svg\" class=\"usa-card__img\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[class=\"usa-card__img\"][src=\"/Assets/USDA-FSA/images/icons/fun-and-flowers-icon.svg\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 89,
+          "bestPracticeId": 362,
+          "attribute": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<img src=\"/Assets/USDA-FSA/images/icons/sunny-hills-icon.svg\" class=\"usa-card__img\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[class=\"usa-card__img\"][src=\"/Assets/USDA-FSA/images/icons/sunny-hills-icon.svg\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 89,
+          "bestPracticeId": 362,
+          "attribute": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<img src=\"/Assets/USDA-FSA/images/icons/farmers-logo-black.svg\" class=\"usa-card__img\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[class=\"usa-card__img\"][src=\"/Assets/USDA-FSA/images/icons/farmers-logo-black.svg\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 89,
+          "bestPracticeId": 362,
+          "attribute": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<img src=\"/Assets/USDA-FSA/images/icons/hand.svg\" class=\"usa-card__img\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[class=\"usa-card__img\"][src=\"/Assets/USDA-FSA/images/icons/hand.svg\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 99,
+          "bestPracticeId": 464,
+          "attribute": "This element does not have a ul element (without an ARIA-assigned role); ol element (without an ARIA-assigned role); or element with a role set to the value: list as a parent",
+          "attributeDetail": "This LI does not have a ul element (without an ARIA-assigned role); ol element (without an ARIA-assigned role); or element with a role set to the value: list as a parent",
+          "element": "<li class=\"usa-nav__secondary-item\"><a href=\"/about-fsa/index\" class=\"text-semibold\">About FSA</a></li>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "li[class=\"usa-nav__secondary-item\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 99,
+          "bestPracticeId": 464,
+          "attribute": "This element does not have a ul element (without an ARIA-assigned role); ol element (without an ARIA-assigned role); or element with a role set to the value: list as a parent",
+          "attributeDetail": "This LI does not have a ul element (without an ARIA-assigned role); ol element (without an ARIA-assigned role); or element with a role set to the value: list as a parent",
+          "element": "<li class=\"usa-nav__secondary-item\"><a href=\"https://ask.usda.gov/s/\" class=\"text-semibold\">Ask USDA</a></li>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "li[class=\"usa-nav__secondary-item\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 99,
+          "bestPracticeId": 464,
+          "attribute": "This element does not have a ul element (without an ARIA-assigned role); ol element (without an ARIA-assigned role); or element with a role set to the value: list as a parent",
+          "attributeDetail": "This LI does not have a ul element (without an ARIA-assigned role); ol element (without an ARIA-assigned role); or element with a role set to the value: list as a parent",
+          "element": "<li class=\"usa-nav__secondary-item\"><a title=\"Contact Us\" href=\"/contact-us\" class=\"text-semibold\">Contact Us</a></li>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "li[class=\"usa-nav__secondary-item\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 99,
+          "bestPracticeId": 464,
+          "attribute": "This element does not have a ul element (without an ARIA-assigned role); ol element (without an ARIA-assigned role); or element with a role set to the value: list as a parent",
+          "attributeDetail": "This LI does not have a ul element (without an ARIA-assigned role); ol element (without an ARIA-assigned role); or element with a role set to the value: list as a parent",
+          "element": "<li class=\"usa-nav__secondary-item\"><a href=\"https://forms.sc.egov.usda.gov/eForms/welcomeAction.do?Home\" class=\"text-semibold\">Forms</a></li>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "li[class=\"usa-nav__secondary-item\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a href=\"/programs-and-services/farm-bill/index\"><div class=\"usa-card__media text-center\"><img src=\" ... /div><header class=\"usa-card__header\"><h3 class=\"usa-card__heading\">2018 Farm Bill</h3></header></a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"/programs-and-services/farm-bill/index\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a href=\"https://www.farmers.gov/program-deadlines\"><div class=\"usa-card__media text-center\"><img sr ...  class=\"usa-card__header\"><h3 class=\"usa-card__heading\">National Program Deadlines</h3></header></a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"https://www.farmers.gov/program-deadlines\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a href=\"https://www.farmers.gov/\"><div class=\"usa-card__media text-center\"><img src=\"/Assets/USDA-F ... \"></div><header class=\"usa-card__header\"><h3 class=\"usa-card__heading\">Farmers.gov</h3></header></a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"https://www.farmers.gov/\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a href=\"https://www.usda.gov/topics/disaster\"><div class=\"usa-card__media text-center\"><img src=\"/A ... er class=\"usa-card__header\"><h3 class=\"usa-card__heading\">Disaster Resource Center</h3></header></a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"https://www.usda.gov/topics/disaster\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 325,
+          "bestPracticeId": 1626,
+          "attribute": "The role attribute value given to this element is not allowed.  This element's role attribute can be set to one of the following text values: directory | group | listbox | menu | menubar | radiogroup | tablist | toolbar | tree; or the role attribute can be removed",
+          "attributeDetail": "The role attribute value given to this UL is not allowed.  This element's role attribute can be set to one of the following text values: directory | group | listbox | menu | menubar | radiogroup | tablist | toolbar | tree; or the role attribute can be removed",
+          "element": "<ul role=\"navigation\" class=\"usa-nav__secondary-links\"><li class=\"usa-nav__secondary-item\"><a href=\" ... tps://forms.sc.egov.usda.gov/eForms/welcomeAction.do?Home\" class=\"text-semibold\">Forms</a></li></ul>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "ul[class=\"usa-nav__secondary-links\"][role=\"navigation\"]",
+            "attNo": 2
+          }
+        }
+      ]
+    }
+  ],
+  "timeStamp": "4jil2",
+  "startTime": "2022-07-27T14:26:13",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "continuum",
+      0
+    ]
+  ],
+  "logCount": 1,
+  "logSize": 179,
+  "errorLogCount": 1,
+  "errorLogSize": 179,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-27T14:26:20",
+  "elapsedSeconds": 7
+}

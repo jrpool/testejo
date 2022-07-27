@@ -1,0 +1,285 @@
+{
+  "id": "4jil2-uspis",
+  "host": {
+    "id": "uspis",
+    "which": "https://www.uspis.gov/",
+    "what": "US Postal Inspection Service"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-27T14:38:57"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-27T14:39:06"
+    }
+  ],
+  "script": {
+    "id": "continuum",
+    "what": "Continuum",
+    "strict": true,
+    "timeLimit": 30,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.uspis.gov/",
+        "what": "US Postal Inspection Service"
+      },
+      {
+        "type": "test",
+        "which": "continuum",
+        "what": "Continuum"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.uspis.gov/",
+      "what": "US Postal Inspection Service",
+      "result": "https://www.uspis.gov/"
+    },
+    {
+      "type": "test",
+      "which": "continuum",
+      "what": "Level Access Continuum, community edition",
+      "url": "https://www.uspis.gov/",
+      "result": [
+        {
+          "engineTestId": 40,
+          "bestPracticeId": 2049,
+          "attribute": "This element does not have a label attribute set to a text value",
+          "attributeDetail": "This TRACK does not have a label attribute set to a text value",
+          "element": "<track srclang=\"en-us\" kind=\"captions\" src=\"https://www.uspis.gov/wp-content/uploads/2019/05/homepage-audio-description.vtt\">",
+          "testResult": 0,
+          "path": "body>main:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "track[src=\"https://www.uspis.gov/wp-content/uploads/2019/05/homepage-audio-description.vtt\"][kind=\"captions\"][srclang=\"en-us\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 89,
+          "bestPracticeId": 362,
+          "attribute": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<img width=\"20\" src=\"https://www.uspis.gov/wp-content/uploads/2020/12/icn-us-flag-21px.png\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[src=\"https://www.uspis.gov/wp-content/uploads/2020/12/icn-us-flag-21px.png\"][width=\"20\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 252,
+          "bestPracticeId": 444,
+          "attribute": "This video element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This video element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<video poster=\"https://www.uspis.gov/wp-content/uploads/2019/04/01_2560x1440-Hero-Homepage-Desktop.p ... ions\" src=\"https://www.uspis.gov/wp-content/uploads/2019/05/homepage-audio-description.vtt\"></video>",
+          "testResult": 0,
+          "path": "body>main:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "video[playsinline=\"\"][autoplay=\"\"][muted=\"\"][loop=\"\"][tabindex=\"-1\"][poster=\"https://www.uspis.gov/wp-content/uploads/2019/04/01_2560x1440-Hero-Homepage-Desktop.png\"]",
+            "attNo": 6
+          }
+        },
+        {
+          "engineTestId": 531,
+          "bestPracticeId": 2519,
+          "attribute": "This nav does not have a unique accessible name as required when two or more nav elements are present",
+          "attributeDetail": "This nav does not have a unique accessible name as required when two or more nav elements are present",
+          "element": "<nav class=\"menu\" id=\"menu-menu\"><div><a itemprop=\"url\" rel=\"home\" href=\"https://www.uspis.gov/\" cla ... aria-label=\"Close Menu\" href=\"#/close\" class=\"close\"></a><div aria-label=\"Tips &amp; Prevention\" rol",
+          "testResult": 0,
+          "path": "body>header:nth-of-type(1)>*:nth-child(3)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[id=\"menu-menu\"][class=\"menu\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 531,
+          "bestPracticeId": 2519,
+          "attribute": "This nav does not have a unique accessible name as required when two or more nav elements are present",
+          "attributeDetail": "This nav does not have a unique accessible name as required when two or more nav elements are present",
+          "element": "<nav class=\"menu  widget_nav_menu\" id=\"nav_menu-2\"><span class=\"hidden\">Footer Level 1</span><div cl ... 9\"><a href=\"https://www.usps.com/\" rel=\"noopener\" target=\"_blank\">USPS.com</a></li></ul></div></nav>",
+          "testResult": 0,
+          "path": "body>footer:nth-of-type(1)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[id=\"nav_menu-2\"][class=\"menu  widget_nav_menu\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 531,
+          "bestPracticeId": 2519,
+          "attribute": "This nav does not have a unique accessible name as required when two or more nav elements are present",
+          "attributeDetail": "This nav does not have a unique accessible name as required when two or more nav elements are present",
+          "element": "<nav class=\"menu  widget_nav_menu\" id=\"nav_menu-3\"><span class=\"hidden\">Footer Level 2</span><div cl ... \" id=\"menu-item-11095\"><a href=\"https://www.uspis.gov/subscribe\">Subscribe</a></li></ul></div></nav>",
+          "testResult": 0,
+          "path": "body>footer:nth-of-type(1)>*:nth-child(2)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[id=\"nav_menu-3\"][class=\"menu  widget_nav_menu\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 531,
+          "bestPracticeId": 2519,
+          "attribute": "This nav does not have a unique accessible name as required when two or more nav elements are present",
+          "attributeDetail": "This nav does not have a unique accessible name as required when two or more nav elements are present",
+          "element": "<nav class=\"widget_text menu  widget_custom_html\" id=\"custom_html-2\"><span class=\"hidden\">Contact Us ... Attn: Mail Fraud<br>433 W.Harrison Street, Room 3255<br>Chicago, Il 60699-3255</address></div></nav>",
+          "testResult": 0,
+          "path": "body>footer:nth-of-type(1)>*:nth-child(2)>*:nth-child(3)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[id=\"custom_html-2\"][class=\"widget_text menu  widget_custom_html\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 531,
+          "bestPracticeId": 2519,
+          "attribute": "This nav does not have a unique accessible name as required when two or more nav elements are present",
+          "attributeDetail": "This nav does not have a unique accessible name as required when two or more nav elements are present",
+          "element": "<nav class=\"widget_text menu social widget_custom_html\" id=\"custom_html-3\"><span class=\"hidden\">Soci ... PeYyj8pBF4BiAPlb8KMQ\"><i aria-label=\"YouTube\" class=\"uspis-icon-social-youtube\"></i></a></div></nav>",
+          "testResult": 0,
+          "path": "body>footer:nth-of-type(1)>*:nth-child(2)>*:nth-child(4)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[id=\"custom_html-3\"][class=\"widget_text menu social widget_custom_html\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 533,
+          "bestPracticeId": 2519,
+          "attribute": "This nav does not have an accessible name as required when two or more nav elements are present",
+          "attributeDetail": "This nav does not have an accessible name as required when two or more nav elements are present",
+          "element": "<nav class=\"menu\" id=\"menu-menu\"><div><a itemprop=\"url\" rel=\"home\" href=\"https://www.uspis.gov/\" cla ... aria-label=\"Close Menu\" href=\"#/close\" class=\"close\"></a><div aria-label=\"Tips &amp; Prevention\" rol",
+          "testResult": 0,
+          "path": "body>header:nth-of-type(1)>*:nth-child(3)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[id=\"menu-menu\"][class=\"menu\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 533,
+          "bestPracticeId": 2519,
+          "attribute": "This nav does not have an accessible name as required when two or more nav elements are present",
+          "attributeDetail": "This nav does not have an accessible name as required when two or more nav elements are present",
+          "element": "<nav class=\"menu  widget_nav_menu\" id=\"nav_menu-2\"><span class=\"hidden\">Footer Level 1</span><div cl ... 9\"><a href=\"https://www.usps.com/\" rel=\"noopener\" target=\"_blank\">USPS.com</a></li></ul></div></nav>",
+          "testResult": 0,
+          "path": "body>footer:nth-of-type(1)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[id=\"nav_menu-2\"][class=\"menu  widget_nav_menu\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 533,
+          "bestPracticeId": 2519,
+          "attribute": "This nav does not have an accessible name as required when two or more nav elements are present",
+          "attributeDetail": "This nav does not have an accessible name as required when two or more nav elements are present",
+          "element": "<nav class=\"menu  widget_nav_menu\" id=\"nav_menu-3\"><span class=\"hidden\">Footer Level 2</span><div cl ... \" id=\"menu-item-11095\"><a href=\"https://www.uspis.gov/subscribe\">Subscribe</a></li></ul></div></nav>",
+          "testResult": 0,
+          "path": "body>footer:nth-of-type(1)>*:nth-child(2)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[id=\"nav_menu-3\"][class=\"menu  widget_nav_menu\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 533,
+          "bestPracticeId": 2519,
+          "attribute": "This nav does not have an accessible name as required when two or more nav elements are present",
+          "attributeDetail": "This nav does not have an accessible name as required when two or more nav elements are present",
+          "element": "<nav class=\"widget_text menu  widget_custom_html\" id=\"custom_html-2\"><span class=\"hidden\">Contact Us ... Attn: Mail Fraud<br>433 W.Harrison Street, Room 3255<br>Chicago, Il 60699-3255</address></div></nav>",
+          "testResult": 0,
+          "path": "body>footer:nth-of-type(1)>*:nth-child(2)>*:nth-child(3)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[id=\"custom_html-2\"][class=\"widget_text menu  widget_custom_html\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 533,
+          "bestPracticeId": 2519,
+          "attribute": "This nav does not have an accessible name as required when two or more nav elements are present",
+          "attributeDetail": "This nav does not have an accessible name as required when two or more nav elements are present",
+          "element": "<nav class=\"widget_text menu social widget_custom_html\" id=\"custom_html-3\"><span class=\"hidden\">Soci ... PeYyj8pBF4BiAPlb8KMQ\"><i aria-label=\"YouTube\" class=\"uspis-icon-social-youtube\"></i></a></div></nav>",
+          "testResult": 0,
+          "path": "body>footer:nth-of-type(1)>*:nth-child(2)>*:nth-child(4)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[id=\"custom_html-3\"][class=\"widget_text menu social widget_custom_html\"]",
+            "attNo": 2
+          }
+        }
+      ]
+    }
+  ],
+  "timeStamp": "4jil2",
+  "startTime": "2022-07-27T14:38:57",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "continuum",
+      0
+    ]
+  ],
+  "logCount": 8,
+  "logSize": 1170,
+  "errorLogCount": 6,
+  "errorLogSize": 981,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-27T14:39:06",
+  "elapsedSeconds": 9
+}

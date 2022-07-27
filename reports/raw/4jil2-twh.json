@@ -1,0 +1,439 @@
+{
+  "id": "4jil2-twh",
+  "host": {
+    "id": "twh",
+    "which": "https://www.whitehouse.gov/",
+    "what": "The White House"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-27T14:38:33"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-27T14:38:37"
+    }
+  ],
+  "script": {
+    "id": "continuum",
+    "what": "Continuum",
+    "strict": true,
+    "timeLimit": 30,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.whitehouse.gov/",
+        "what": "The White House"
+      },
+      {
+        "type": "test",
+        "which": "continuum",
+        "what": "Continuum"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.whitehouse.gov/",
+      "what": "The White House",
+      "result": "https://www.whitehouse.gov/"
+    },
+    {
+      "type": "test",
+      "which": "continuum",
+      "what": "Level Access Continuum, community edition",
+      "url": "https://www.whitehouse.gov/",
+      "result": [
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This LI has an id attribute of 'menu-item-87', which is not unique in the same DOM",
+          "element": "<li class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-87 col-auto top-level-m ... 901 17.0111 2.57422 16.123 2.23047C15.8939 2.14453 15.5931 2.07292 15.2207 2.01562C14.877 1.95833 14",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "li[id=\"menu-item-87\"][class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-87 col-auto top-level-menu-item\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This LI has an id attribute of 'menu-item-87', which is not unique in the same DOM",
+          "element": "<li class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-87 col-auto top-level-m ... 901 17.0111 2.57422 16.123 2.23047C15.8939 2.14453 15.5931 2.07292 15.2207 2.01562C14.877 1.95833 14",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(3)>*:nth-child(1)>*:nth-child(2)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "li[id=\"menu-item-87\"][class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-87 col-auto top-level-menu-item\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This LI has an id attribute of 'menu-item-88', which is not unique in the same DOM",
+          "element": "<li class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-88 col-auto top-level-m ... n-reader-text\">Facebook<span class=\"screen-reader-text\">Opens in a new window</span></span></a></li>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "li[id=\"menu-item-88\"][class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-88 col-auto top-level-menu-item\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This LI has an id attribute of 'menu-item-88', which is not unique in the same DOM",
+          "element": "<li class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-88 col-auto top-level-m ... n-reader-text\">Facebook<span class=\"screen-reader-text\">Opens in a new window</span></span></a></li>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(3)>*:nth-child(1)>*:nth-child(2)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "li[id=\"menu-item-88\"][class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-88 col-auto top-level-menu-item\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This LI has an id attribute of 'menu-item-89', which is not unique in the same DOM",
+          "element": "<li class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-89 col-auto top-level-m ... en-reader-text\">Twitter<span class=\"screen-reader-text\">Opens in a new window</span></span></a></li>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "li[id=\"menu-item-89\"][class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-89 col-auto top-level-menu-item\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This LI has an id attribute of 'menu-item-89', which is not unique in the same DOM",
+          "element": "<li class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-89 col-auto top-level-m ... en-reader-text\">Twitter<span class=\"screen-reader-text\">Opens in a new window</span></span></a></li>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(3)>*:nth-child(1)>*:nth-child(2)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "li[id=\"menu-item-89\"][class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-89 col-auto top-level-menu-item\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This LI has an id attribute of 'menu-item-90', which is not unique in the same DOM",
+          "element": "<li class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-90 col-auto top-level-m ... en-reader-text\">YouTube<span class=\"screen-reader-text\">Opens in a new window</span></span></a></li>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "li[id=\"menu-item-90\"][class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-90 col-auto top-level-menu-item\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This LI has an id attribute of 'menu-item-90', which is not unique in the same DOM",
+          "element": "<li class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-90 col-auto top-level-m ... en-reader-text\">YouTube<span class=\"screen-reader-text\">Opens in a new window</span></span></a></li>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(3)>*:nth-child(1)>*:nth-child(2)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "li[id=\"menu-item-90\"][class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-90 col-auto top-level-menu-item\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This LI has an id attribute of 'menu-item-109', which is not unique in the same DOM",
+          "element": "<li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-109 small-text top-level-menu-item\" id=\"menu-item-109\"><a href=\"https://www.whitehouse.gov/contact/\">Contact Us</a></li>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "li[id=\"menu-item-109\"][class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-109 small-text top-level-menu-item\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This LI has an id attribute of 'menu-item-109', which is not unique in the same DOM",
+          "element": "<li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-109 top-level-menu-item\" id=\"menu-item-109\"><a href=\"https://www.whitehouse.gov/contact/\">Contact Us</a></li>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(3)>*:nth-child(1)>*:nth-child(2)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "li[id=\"menu-item-109\"][class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-109 top-level-menu-item\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This LI has an id attribute of 'menu-item-1791', which is not unique in the same DOM",
+          "element": "<li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-1791 small-text top-le ... menu-item\" id=\"menu-item-1791\"><a href=\"https://www.whitehouse.gov/privacy/\">Privacy Policy</a></li>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "li[id=\"menu-item-1791\"][class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-1791 small-text top-level-menu-item\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This LI has an id attribute of 'menu-item-1791', which is not unique in the same DOM",
+          "element": "<li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-1791 top-level-menu-item\" id=\"menu-item-1791\"><a href=\"https://www.whitehouse.gov/privacy/\">Privacy Policy</a></li>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(3)>*:nth-child(1)>*:nth-child(2)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "li[id=\"menu-item-1791\"][class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-1791 top-level-menu-item\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This LI has an id attribute of 'menu-item-699', which is not unique in the same DOM",
+          "element": "<li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-699 small-text top-lev ... u-item\" id=\"menu-item-699\"><a href=\"https://www.whitehouse.gov/copyright/\">Copyright Policy</a></li>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(3)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "li[id=\"menu-item-699\"][class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-699 small-text top-level-menu-item\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This LI has an id attribute of 'menu-item-699', which is not unique in the same DOM",
+          "element": "<li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-699 top-level-menu-item\" id=\"menu-item-699\"><a href=\"https://www.whitehouse.gov/copyright/\">Copyright Policy</a></li>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(3)>*:nth-child(1)>*:nth-child(2)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "li[id=\"menu-item-699\"][class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-699 top-level-menu-item\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This LI has an id attribute of 'menu-item-107', which is not unique in the same DOM",
+          "element": "<li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-107 small-text top-lev ... \"menu-item-107\"><a href=\"https://www.whitehouse.gov/accessibility/\">Accessibility Statement</a></li>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "li[id=\"menu-item-107\"][class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-107 small-text top-level-menu-item\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This LI has an id attribute of 'menu-item-107', which is not unique in the same DOM",
+          "element": "<li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-107 top-level-menu-ite ... \"menu-item-107\"><a href=\"https://www.whitehouse.gov/accessibility/\">Accessibility Statement</a></li>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(3)>*:nth-child(1)>*:nth-child(2)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "li[id=\"menu-item-107\"][class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-107 top-level-menu-item\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg xml:space=\"preserve\" style=\"enable-background:new 0 0 343 243;\" viewbox=\"0 0 343 243\" y=\"0px\" x ... \tc0,0.2-0.2,0.3-0.3,0.3h-9.1c-0.2,0-0.3-0.2-0.3-0.3v-3.2c0-0.2,0.1-0.2,0.2-0.3c0.2-0.2,0.4-0.7,0.4-1",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[id=\"wh-oval-90\"][version=\"1.1\"][x=\"0px\"][y=\"0px\"][viewbox=\"0 0 343 243\"]",
+            "attNo": 9
+          }
+        },
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewbox=\"0 0 50 50\" height=\"50\" width=\"50\"><path ... 27V5.75816H40.2111L0 45.9693L4.03071 50L44.2418 9.78887V39.8273H50V5.75816V0H44.2418Z\"></path></svg>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(3)>*:nth-child(2)>*:nth-child(1)>*:nth-child(6)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[width=\"50\"][height=\"50\"][viewbox=\"0 0 50 50\"][fill=\"none\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg xml:space=\"preserve\" style=\"enable-background:new 0 0 593.1 471.2\" viewbox=\"0 0 593.1 471.2\" y= ... 24.8v-50L342.8,377.9z\" class=\"st0\"></path><path d=\"M435.4,468.1c-9.1,0-17.2-2.3-22.9-5.1l-3.8,5h-5.7",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(3)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[version=\"1.1\"][id=\"the-wh-logo-btca\"][x=\"0px\"][y=\"0px\"][viewbox=\"0 0 593.1 471.2\"]",
+            "attNo": 9
+          }
+        },
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg xml:space=\"preserve\" style=\"enable-background:new 0 0 1231 180;\" viewbox=\"0 0 1231 180\" y=\"0px\" ... .7l-26.2,6l45,121.5l45-119.3l-20.2-7.5V4.5h59.2v9.7l-22.5,7.5\n\t\t\tL1146.3,177z\"></path></g></g></svg>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(3)>*:nth-child(3)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(3)>*:nth-child(2)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[version=\"1.1\"][id=\"wh-gov-94\"][x=\"0px\"][y=\"0px\"][viewbox=\"0 0 1231 180\"]",
+            "attNo": 9
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a href=\"https://www.whitehouse.gov/briefing-room/speeches-remarks/2022/07/11/remarks-by-president-b ... /uploads/2021/01/P20220711KR-0678.jpeg?w=1200&amp;h=1200&amp;crop=1\" height=\"1200\" width=\"1200\"></a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(3)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"https://www.whitehouse.gov/briefing-room/speeches-remarks/2022/07/11/remarks-by-president-biden-at-an-event-commemorating-the-passage-of-the-safer-communities-act/\"]",
+            "attNo": 1
+          }
+        }
+      ]
+    }
+  ],
+  "timeStamp": "4jil2",
+  "startTime": "2022-07-27T14:38:33",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "continuum",
+      0
+    ]
+  ],
+  "logCount": 1,
+  "logSize": 46,
+  "errorLogCount": 0,
+  "errorLogSize": 0,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-27T14:38:37",
+  "elapsedSeconds": 3
+}

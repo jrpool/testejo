@@ -1,0 +1,141 @@
+{
+  "id": "4jil2-acl",
+  "host": {
+    "id": "acl",
+    "which": "https://acl.gov/",
+    "what": "Administration for Community Living"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-27T14:40:01"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-27T14:40:07"
+    }
+  ],
+  "script": {
+    "id": "continuum",
+    "what": "Continuum",
+    "strict": true,
+    "timeLimit": 30,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://acl.gov/",
+        "what": "Administration for Community Living"
+      },
+      {
+        "type": "test",
+        "which": "continuum",
+        "what": "Continuum"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://acl.gov/",
+      "what": "Administration for Community Living",
+      "result": "https://acl.gov/"
+    },
+    {
+      "type": "test",
+      "which": "continuum",
+      "what": "Level Access Continuum, community edition",
+      "url": "https://acl.gov/",
+      "result": [
+        {
+          "engineTestId": 1010,
+          "bestPracticeId": 2519,
+          "attribute": "This element (role=region) does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This DIV (role=region) does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<div role=\"region\" class=\"header-top header\"><div class=\"container\"><p><a class=\"visually-hidden foc ... ntent block-block-content2136fea3-c7b2-473a-81c4-9a05d013b1c6 clearfix\" id=\"block-emergencypreparedn",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[class=\"header-top header\"][role=\"region\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 1010,
+          "bestPracticeId": 2519,
+          "attribute": "This element (role=region) does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This DIV (role=region) does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<div role=\"region\" class=\"header-left header\"><div class=\"region region-header-left\"><a rel=\"home\" h ... r Community Living\" src=\"/sites/default/files/logo.png\"></a><div class=\"clearfix\"></div></div></div>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[class=\"header-left header\"][role=\"region\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 1010,
+          "bestPracticeId": 2519,
+          "attribute": "This element (role=region) does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This DIV (role=region) does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<div role=\"region\" class=\"header-right header\"><div class=\"region region-header-right\"><section clas ... x=\"0\" role=\"link\" target=\"\" style=\"\" class=\"sf-depth-3 menuparent\" rel=\"\" name=\"\" id=\"\" href=\"/grant",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[class=\"header-right header\"][role=\"region\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 1010,
+          "bestPracticeId": 2519,
+          "attribute": "This element (role=region) does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This DIV (role=region) does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<div role=\"region\" class=\"col-sm-12\"><div class=\"region region-tabregion\"><div class=\"hidden\" data-drupal-messages-fallback=\"\"></div><div class=\"clearfix\"></div></div></div>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[class=\"col-sm-12\"][role=\"region\"]",
+            "attNo": 2
+          }
+        }
+      ]
+    }
+  ],
+  "timeStamp": "4jil2",
+  "startTime": "2022-07-27T14:40:01",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "continuum",
+      0
+    ]
+  ],
+  "logCount": 2,
+  "logSize": 421,
+  "errorLogCount": 2,
+  "errorLogSize": 421,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-27T14:40:07",
+  "elapsedSeconds": 6
+}

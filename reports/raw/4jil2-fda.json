@@ -1,0 +1,118 @@
+{
+  "id": "4jil2-fda",
+  "host": {
+    "id": "fda",
+    "which": "https://fda.gov/",
+    "what": "Food and Drug Administration"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-27T14:41:31"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-27T14:41:36"
+    }
+  ],
+  "script": {
+    "id": "continuum",
+    "what": "Continuum",
+    "strict": true,
+    "timeLimit": 30,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://fda.gov/",
+        "what": "Food and Drug Administration"
+      },
+      {
+        "type": "test",
+        "which": "continuum",
+        "what": "Continuum"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://fda.gov/",
+      "what": "Food and Drug Administration",
+      "result": "https://www.fda.gov/"
+    },
+    {
+      "type": "test",
+      "which": "continuum",
+      "what": "Level Access Continuum, community edition",
+      "url": "https://www.fda.gov/",
+      "result": [
+        {
+          "engineTestId": 281,
+          "bestPracticeId": 1626,
+          "attribute": "The aria-expanded attribute is not allowed on this element",
+          "attributeDetail": "The aria-expanded attribute is not allowed on this A",
+          "element": "<a aria-controls=\"USABannerMenu\" aria-expanded=\"false\" data-target=\"#USABannerMenu\" data-toggle=\"col ... e\" class=\"collapsed\" id=\"USMenuButton\">Here’s how you know<span class=\"toggle-indicator\"></span></a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "a[id=\"USMenuButton\"][class=\"collapsed\"][data-toggle=\"collapse\"][data-target=\"#USABannerMenu\"][aria-expanded=\"false\"][aria-controls=\"USABannerMenu\"]",
+            "attNo": 6
+          }
+        },
+        {
+          "engineTestId": 412,
+          "bestPracticeId": 1626,
+          "attribute": "The role attribute value given to this element is not allowed, as it is not a valid aria role.",
+          "attributeDetail": "The role attribute of header given to this HEADER is not allowed, as it is not a valid aria role.",
+          "element": "<header role=\"header\" class=\"lcds-header container-fluid\"><div class=\"row us-masthead\"><div class=\"u ... Search\" id=\"search-btn\" class=\"btn btn-danger search-btn\" type=\"submit\"><span aria-hidden=\"true\" cla",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Specify a valid aria role for this element.",
+            "fix": {
+              "role": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "header[class=\"lcds-header container-fluid\"][role=\"header\"]",
+            "attNo": 2
+          }
+        }
+      ]
+    }
+  ],
+  "timeStamp": "4jil2",
+  "startTime": "2022-07-27T14:41:31",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "continuum",
+      0
+    ]
+  ],
+  "logCount": 2,
+  "logSize": 170,
+  "errorLogCount": 2,
+  "errorLogSize": 170,
+  "prohibitedCount": 1,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-27T14:41:36",
+  "elapsedSeconds": 5
+}

@@ -1,0 +1,201 @@
+{
+  "id": "4jil2-nea",
+  "host": {
+    "id": "nea",
+    "which": "https://www.arts.gov/",
+    "what": "National Endowment for the Arts (NEA)"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-27T14:31:50"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-27T14:31:55"
+    }
+  ],
+  "script": {
+    "id": "continuum",
+    "what": "Continuum",
+    "strict": true,
+    "timeLimit": 30,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.arts.gov/",
+        "what": "National Endowment for the Arts (NEA)"
+      },
+      {
+        "type": "test",
+        "which": "continuum",
+        "what": "Continuum"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.arts.gov/",
+      "what": "National Endowment for the Arts (NEA)",
+      "result": "https://www.arts.gov/"
+    },
+    {
+      "type": "test",
+      "which": "continuum",
+      "what": "Level Access Continuum, community edition",
+      "url": "https://www.arts.gov/",
+      "result": [
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This INPUT has an id attribute of 'edit-keywords', which is not unique in the same DOM",
+          "element": "<input class=\"form-item__text\" maxlength=\"128\" size=\"30\" value=\"\" name=\"search\" type=\"text\" data-drupal-selector=\"edit-search\" id=\"edit-keywords\" placeholder=\"Search\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "input[placeholder=\"Search\"][id=\"edit-keywords\"][data-drupal-selector=\"edit-search\"][type=\"text\"][name=\"search\"][value=\"\"][size=\"30\"][maxlength=\"128\"][class=\"form-item__text\"]",
+            "attNo": 9
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This INPUT has an id attribute of 'edit-keywords', which is not unique in the same DOM",
+          "element": "<input class=\"form-item__text\" maxlength=\"128\" size=\"30\" value=\"\" name=\"search\" type=\"text\" data-drupal-selector=\"edit-search\" id=\"edit-keywords\" placeholder=\"Search\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(8)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "input[placeholder=\"Search\"][id=\"edit-keywords\"][data-drupal-selector=\"edit-search\"][type=\"text\"][name=\"search\"][value=\"\"][size=\"30\"][maxlength=\"128\"][class=\"form-item__text\"]",
+            "attNo": 9
+          }
+        },
+        {
+          "engineTestId": 246,
+          "bestPracticeId": 393,
+          "attribute": "This element should only contain li elements (without an ARIA-assigned role), script elements (without an ARIA-assigned role) or template elements (without an ARIA-assigned role); or elements with a role=listitem attribute; as direct child elements",
+          "attributeDetail": "This UL should only contain li elements (without an ARIA-assigned role), script elements (without an ARIA-assigned role) or template elements (without an ARIA-assigned role); or elements with a role=listitem attribute; as direct child elements",
+          "element": "<ul class=\"menu menu--footer\"><li class=\"menu__item\" role=\"menuitem\"><a data-drupal-link-system-path ... -0.2 1.4-0.6L54 12.8V20c0 1.1 0.9 2 2 2s2-0.9 2-2V8C58 6.9 57.1 6 56 6z\"></path></svg></a></li></ul>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "ul[class=\"menu menu--footer\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 531,
+          "bestPracticeId": 2519,
+          "attribute": "This nav does not have a unique accessible name as required when two or more nav elements are present",
+          "attributeDetail": "This nav does not have a unique accessible name as required when two or more nav elements are present",
+          "element": "<nav class=\"social-menu\"><a rel=\"noreferrer\" data-extlink=\"\" href=\"https://twitter.com/NEAarts\" clas ... ormat></targetsettings></optimizationsettings></sfw></metadata><title>(link is external)</title><pat",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[class=\"social-menu\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 531,
+          "bestPracticeId": 2519,
+          "attribute": "This nav does not have a unique accessible name as required when two or more nav elements are present",
+          "attributeDetail": "This nav does not have a unique accessible name as required when two or more nav elements are present",
+          "element": "<nav class=\"social-menu\"><a rel=\"noreferrer\" data-extlink=\"\" href=\"https://twitter.com/NEAarts\" clas ... ormat></targetsettings></optimizationsettings></sfw></metadata><title>(link is external)</title><pat",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[class=\"social-menu\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 533,
+          "bestPracticeId": 2519,
+          "attribute": "This nav does not have an accessible name as required when two or more nav elements are present",
+          "attributeDetail": "This nav does not have an accessible name as required when two or more nav elements are present",
+          "element": "<nav class=\"social-menu\"><a rel=\"noreferrer\" data-extlink=\"\" href=\"https://twitter.com/NEAarts\" clas ... ormat></targetsettings></optimizationsettings></sfw></metadata><title>(link is external)</title><pat",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[class=\"social-menu\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 533,
+          "bestPracticeId": 2519,
+          "attribute": "This nav does not have an accessible name as required when two or more nav elements are present",
+          "attributeDetail": "This nav does not have an accessible name as required when two or more nav elements are present",
+          "element": "<nav class=\"social-menu\"><a rel=\"noreferrer\" data-extlink=\"\" href=\"https://twitter.com/NEAarts\" clas ... ormat></targetsettings></optimizationsettings></sfw></metadata><title>(link is external)</title><pat",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[class=\"social-menu\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 863,
+          "bestPracticeId": 2440,
+          "attribute": "This input should not rely on text in the placeholder attribute for an accessible name",
+          "attributeDetail": "This input should not rely on text in the placeholder attribute for an accessible name",
+          "element": "<input class=\"form-item__text\" maxlength=\"128\" size=\"30\" value=\"\" name=\"search\" type=\"text\" data-drupal-selector=\"edit-search\" id=\"edit-keywords\" placeholder=\"Search\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "input[placeholder=\"Search\"][id=\"edit-keywords\"][data-drupal-selector=\"edit-search\"][type=\"text\"][name=\"search\"][value=\"\"][size=\"30\"][maxlength=\"128\"][class=\"form-item__text\"]",
+            "attNo": 9
+          }
+        }
+      ]
+    }
+  ],
+  "timeStamp": "4jil2",
+  "startTime": "2022-07-27T14:31:50",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "continuum",
+      0
+    ]
+  ],
+  "logCount": 6,
+  "logSize": 428,
+  "errorLogCount": 6,
+  "errorLogSize": 428,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-27T14:31:55",
+  "elapsedSeconds": 5
+}

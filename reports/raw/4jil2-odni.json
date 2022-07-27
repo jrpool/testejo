@@ -1,0 +1,80 @@
+{
+  "id": "4jil2-odni",
+  "host": {
+    "id": "odni",
+    "which": "https://www.dni.gov/",
+    "what": "Office of the Director of National Intelligence"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-27T14:35:17"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-27T14:35:22"
+    }
+  ],
+  "script": {
+    "id": "continuum",
+    "what": "Continuum",
+    "strict": true,
+    "timeLimit": 30,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.dni.gov/",
+        "what": "Office of the Director of National Intelligence"
+      },
+      {
+        "type": "test",
+        "which": "continuum",
+        "what": "Continuum"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.dni.gov/",
+      "what": "Office of the Director of National Intelligence",
+      "result": "https://www.dni.gov/"
+    },
+    {
+      "type": "test",
+      "which": "continuum",
+      "what": "Level Access Continuum, community edition",
+      "url": "https://www.dni.gov/",
+      "result": "NONE"
+    }
+  ],
+  "timeStamp": "4jil2",
+  "startTime": "2022-07-27T14:35:17",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "continuum",
+      0
+    ]
+  ],
+  "logCount": 2,
+  "logSize": 124,
+  "errorLogCount": 1,
+  "errorLogSize": 78,
+  "prohibitedCount": 1,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-27T14:35:22",
+  "elapsedSeconds": 4
+}

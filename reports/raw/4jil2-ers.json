@@ -1,0 +1,171 @@
+{
+  "id": "4jil2-ers",
+  "host": {
+    "id": "ers",
+    "which": "https://www.ers.usda.gov/",
+    "what": "Economic Research Service"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-27T14:25:49"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-27T14:25:53"
+    }
+  ],
+  "script": {
+    "id": "continuum",
+    "what": "Continuum",
+    "strict": true,
+    "timeLimit": 30,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.ers.usda.gov/",
+        "what": "Economic Research Service"
+      },
+      {
+        "type": "test",
+        "which": "continuum",
+        "what": "Continuum"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.ers.usda.gov/",
+      "what": "Economic Research Service",
+      "result": "https://www.ers.usda.gov/"
+    },
+    {
+      "type": "test",
+      "which": "continuum",
+      "what": "Level Access Continuum, community edition",
+      "url": "https://www.ers.usda.gov/",
+      "result": [
+        {
+          "engineTestId": 246,
+          "bestPracticeId": 393,
+          "attribute": "This element should only contain li elements (without an ARIA-assigned role), script elements (without an ARIA-assigned role) or template elements (without an ARIA-assigned role); or elements with a role=listitem attribute; as direct child elements",
+          "attributeDetail": "This UL should only contain li elements (without an ARIA-assigned role), script elements (without an ARIA-assigned role) or template elements (without an ARIA-assigned role); or elements with a role=listitem attribute; as direct child elements",
+          "element": "<ul class=\"amber-waves-list\"><li><a href=\"/amber-waves/2022/july/u-s-agricultural-trade-showed-resil ... lth Insurance Than Those Employed by Private Firms, Governments</a></li><hr aria-hidden=\"true\"></ul>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(3)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "ul[class=\"amber-waves-list\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 246,
+          "bestPracticeId": 393,
+          "attribute": "This element should only contain li elements (without an ARIA-assigned role), script elements (without an ARIA-assigned role) or template elements (without an ARIA-assigned role); or elements with a role=listitem attribute; as direct child elements",
+          "attributeDetail": "This UL should only contain li elements (without an ARIA-assigned role), script elements (without an ARIA-assigned role) or template elements (without an ARIA-assigned role); or elements with a role=listitem attribute; as direct child elements",
+          "element": "<ul class=\"media-list\"><li class=\"media\"><div class=\"pull-left\"><a href=\"/data-products/food-environ ... izations.</span></div><div class=\"clearfix\"></div></li><hr class=\"hr-media\" aria-hidden=\"true\"></ul>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(3)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "ul[class=\"media-list\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 246,
+          "bestPracticeId": 393,
+          "attribute": "This element should only contain li elements (without an ARIA-assigned role), script elements (without an ARIA-assigned role) or template elements (without an ARIA-assigned role); or elements with a role=listitem attribute; as direct child elements",
+          "attributeDetail": "This UL should only contain li elements (without an ARIA-assigned role), script elements (without an ARIA-assigned role) or template elements (without an ARIA-assigned role); or elements with a role=listitem attribute; as direct child elements",
+          "element": "<ul><li><a href=\"/publications/pub-details/?pubid=104318\">Livestock, Dairy, and Poultry Outlook: Jul ... ublications/pub-details/?pubid=104281\">Wheat Outlook: July 2022</a></li><hr aria-hidden=\"true\"></ul>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(3)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "ul",
+            "attNo": 0
+          }
+        },
+        {
+          "engineTestId": 246,
+          "bestPracticeId": 393,
+          "attribute": "This element should only contain li elements (without an ARIA-assigned role), script elements (without an ARIA-assigned role) or template elements (without an ARIA-assigned role); or elements with a role=listitem attribute; as direct child elements",
+          "attributeDetail": "This UL should only contain li elements (without an ARIA-assigned role), script elements (without an ARIA-assigned role) or template elements (without an ARIA-assigned role); or elements with a role=listitem attribute; as direct child elements",
+          "element": "<ul class=\"researchspotlight-list\"><li><a href=\"/publications/pub-details/?pubid=104145\">The Food an ... farm-sector-income-finances/\">Farm Sector Income &amp; Finances</a></li><hr aria-hidden=\"true\"></ul>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(3)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "ul[class=\"researchspotlight-list\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 1066,
+          "bestPracticeId": 1626,
+          "attribute": "This element has one or more aria attributes which are not valid.",
+          "attributeDetail": "This DIV has one or more aria attributes which are not valid.",
+          "element": "<div data-ride=\"carousel\" class=\"carousel slide\" aria-label=\"Highlighted ERS releases\" aria-roledesc ... h Fruit and Vegetable Industries</h1><p>An analysis of how producers are using different tools to ad",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(3)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[id=\"myCarousel\"][aria-roledescription=\"carousel\"][aria-label=\"Highlighted ERS releases\"][class=\"carousel slide\"][data-ride=\"carousel\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 1066,
+          "bestPracticeId": 1626,
+          "attribute": "This element has one or more aria attributes which are not valid.",
+          "attributeDetail": "This DIV has one or more aria attributes which are not valid.",
+          "element": "<div aria-roledescription=\"slide\" role=\"group\" class=\"carousel-inner\"><div class=\"item active\"><a hr ... pg?format=jpg&amp;quality=85\"></picture></a><div class=\"container\"><div class=\"carousel-caption\"><a ",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(3)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[class=\"carousel-inner\"][role=\"group\"][aria-roledescription=\"slide\"]",
+            "attNo": 3
+          }
+        }
+      ]
+    }
+  ],
+  "timeStamp": "4jil2",
+  "startTime": "2022-07-27T14:25:49",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "continuum",
+      0
+    ]
+  ],
+  "logCount": 1,
+  "logSize": 4,
+  "errorLogCount": 0,
+  "errorLogSize": 0,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-27T14:25:53",
+  "elapsedSeconds": 3
+}

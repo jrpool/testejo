@@ -1,0 +1,213 @@
+{
+  "id": "4jil2-rferl",
+  "host": {
+    "id": "rferl",
+    "which": "https://www.rferl.org/",
+    "what": "Radio Free Europe/Radio Liberty"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-27T14:37:05"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-27T14:37:11"
+    }
+  ],
+  "script": {
+    "id": "continuum",
+    "what": "Continuum",
+    "strict": true,
+    "timeLimit": 30,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.rferl.org/",
+        "what": "Radio Free Europe/Radio Liberty"
+      },
+      {
+        "type": "test",
+        "which": "continuum",
+        "what": "Continuum"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.rferl.org/",
+      "what": "Radio Free Europe/Radio Liberty",
+      "result": "https://www.rferl.org/"
+    },
+    {
+      "type": "test",
+      "which": "continuum",
+      "what": "Level Access Continuum, community edition",
+      "url": "https://www.rferl.org/",
+      "result": [
+        {
+          "engineTestId": 89,
+          "bestPracticeId": 362,
+          "attribute": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<img alt=\" \" src=\"\" data-src=\"https://gdb.rferl.org/072c0000-0aff-0242-ad92-08da3713aa20_cx0_cy5_cw0_w66_r1.jpg\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(1)>*:nth-child(6)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[data-src=\"https://gdb.rferl.org/072c0000-0aff-0242-ad92-08da3713aa20_cx0_cy5_cw0_w66_r1.jpg\"][src=\"\"][alt=\" \"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 89,
+          "bestPracticeId": 362,
+          "attribute": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<img alt=\" \" src=\"\" data-src=\"https://gdb.rferl.org/81238add-845a-4325-b67b-5f04cf8e0fa9_w66_r1.jpg\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(1)>*:nth-child(6)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[data-src=\"https://gdb.rferl.org/81238add-845a-4325-b67b-5f04cf8e0fa9_w66_r1.jpg\"][src=\"\"][alt=\" \"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 89,
+          "bestPracticeId": 362,
+          "attribute": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<img alt=\" \" src=\"\" data-src=\"https://gdb.rferl.org/00fa0000-0a00-0242-2c77-08d9b8a1dcff_w100_r1.png\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(1)>*:nth-child(6)>*:nth-child(6)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[data-src=\"https://gdb.rferl.org/00fa0000-0a00-0242-2c77-08d9b8a1dcff_w100_r1.png\"][src=\"\"][alt=\" \"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This FORM has an id attribute of 'form-headerSearch', which is not unique in the same DOM",
+          "element": "<form role=\"search\" method=\"get\" id=\"form-headerSearch\" class=\"srch-top__form\" action=\"/s\"><label cl ... nalyticstag-event\" type=\"submit\" title=\"Search\"><span class=\"ico ico-search\"></span></button></form>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(6)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "form[action=\"/s\"][class=\"srch-top__form\"][id=\"form-headerSearch\"][method=\"get\"][role=\"search\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This FORM has an id attribute of 'form-headerSearch', which is not unique in the same DOM",
+          "element": "<form role=\"search\" method=\"get\" id=\"form-headerSearch\" class=\"srch-bottom__form d-flex\" action=\"/s\" ... nalyticstag-event\" type=\"submit\" title=\"Search\"><span class=\"ico ico-search\"></span></button></form>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(4)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "form[action=\"/s\"][class=\"srch-bottom__form d-flex\"][id=\"form-headerSearch\"][method=\"get\"][role=\"search\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This INPUT has an id attribute of 'txtHeaderSearch', which is not unique in the same DOM",
+          "element": "<input onkeydown=\"if (event.keyCode === 13) { FireAnalyticsTagEventOnSearch('search', $dom.get('txtH ... icstag-event\" value=\"\" accesskey=\"s\" placeholder=\"Search\" name=\"k\" id=\"txtHeaderSearch\" type=\"text\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(6)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "input[type=\"text\"][id=\"txtHeaderSearch\"][name=\"k\"][placeholder=\"Search\"][accesskey=\"s\"][value=\"\"][class=\"srch-top__input analyticstag-event\"][onkeydown=\"if (event.keyCode === 13) { FireAnalyticsTagEventOnSearch('search', $dom.get('txtHeaderSearch')[0].value) }\"]",
+            "attNo": 8
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This INPUT has an id attribute of 'txtHeaderSearch', which is not unique in the same DOM",
+          "element": "<input onkeydown=\"if (event.keyCode === 13) { FireAnalyticsTagEventOnSearch('search', $dom.get('txtH ... icstag-event\" value=\"\" accesskey=\"s\" placeholder=\"Search\" name=\"k\" id=\"txtHeaderSearch\" type=\"text\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(4)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "input[type=\"text\"][id=\"txtHeaderSearch\"][name=\"k\"][placeholder=\"Search\"][accesskey=\"s\"][value=\"\"][class=\"srch-bottom__input analyticstag-event\"][onkeydown=\"if (event.keyCode === 13) { FireAnalyticsTagEventOnSearch('search', $dom.get('txtHeaderSearch')[0].value) }\"]",
+            "attNo": 8
+          }
+        }
+      ]
+    }
+  ],
+  "timeStamp": "4jil2",
+  "startTime": "2022-07-27T14:37:05",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "continuum",
+      0
+    ]
+  ],
+  "logCount": 2,
+  "logSize": 142,
+  "errorLogCount": 1,
+  "errorLogSize": 69,
+  "prohibitedCount": 1,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-27T14:37:11",
+  "elapsedSeconds": 6
+}

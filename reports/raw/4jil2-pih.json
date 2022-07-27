@@ -1,0 +1,120 @@
+{
+  "id": "4jil2-pih",
+  "host": {
+    "id": "pih",
+    "which": "https://www.hud.gov/program_offices/public_indian_housing",
+    "what": "Public and Indian Housing (PIH)"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-27T14:36:12"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-27T14:36:24"
+    }
+  ],
+  "script": {
+    "id": "continuum",
+    "what": "Continuum",
+    "strict": true,
+    "timeLimit": 30,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.hud.gov/program_offices/public_indian_housing",
+        "what": "Public and Indian Housing (PIH)"
+      },
+      {
+        "type": "test",
+        "which": "continuum",
+        "what": "Continuum"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.hud.gov/program_offices/public_indian_housing",
+      "what": "Public and Indian Housing (PIH)",
+      "result": "https://www.hud.gov/program_offices/public_indian_housing"
+    },
+    {
+      "type": "test",
+      "which": "continuum",
+      "what": "Level Access Continuum, community edition",
+      "url": "https://www.hud.gov/program_offices/public_indian_housing",
+      "result": [
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg viewbox=\"0 0 66 66\" height=\"96px\" width=\"96px\" class=\"goog-te-spinner\" xmlns=\"http://www.w3.org ... 33\" stroke-linecap=\"round\" stroke-width=\"6\" fill=\"none\" class=\"goog-te-spinner-path\"></circle></svg>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(5)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[class=\"goog-te-spinner\"][width=\"96px\"][height=\"96px\"][viewbox=\"0 0 66 66\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 281,
+          "bestPracticeId": 1626,
+          "attribute": "The aria-expanded attribute is not allowed on this element",
+          "attributeDetail": "The aria-expanded attribute is not allowed on this FORM",
+          "element": "<form target=\"_blank\" style=\"\" method=\"get\" id=\"search-form\" class=\"form-search form-horizontal coll ... label=\"Submit\" type=\"submit\" class=\"btn btn-default searchimgbtn\"></button></div></div></div></form>",
+          "testResult": 0,
+          "path": "body>header:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "form[action=\"https://search.usa.gov/search\"][aria-expanded=\"true\"][class=\"form-search form-horizontal collapse in\"][id=\"search-form\"][method=\"get\"][target=\"_blank\"]",
+            "attNo": 7
+          }
+        }
+      ]
+    }
+  ],
+  "timeStamp": "4jil2",
+  "startTime": "2022-07-27T14:36:12",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "continuum",
+      0
+    ]
+  ],
+  "logCount": 1,
+  "logSize": 101,
+  "errorLogCount": 1,
+  "errorLogSize": 101,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-27T14:36:24",
+  "elapsedSeconds": 11
+}

@@ -1,0 +1,83 @@
+{
+  "id": "4jil2-osha",
+  "host": {
+    "id": "osha",
+    "which": "https://www.osha.gov/",
+    "what": "Occupational Safety & Health Administration (OSHA)"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-27T14:34:13"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-27T14:34:19"
+    }
+  ],
+  "script": {
+    "id": "continuum",
+    "what": "Continuum",
+    "strict": true,
+    "timeLimit": 30,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.osha.gov/",
+        "what": "Occupational Safety & Health Administration (OSHA)"
+      },
+      {
+        "type": "test",
+        "which": "continuum",
+        "what": "Continuum"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.osha.gov/",
+      "what": "Occupational Safety & Health Administration (OSHA)",
+      "result": "https://www.osha.gov/"
+    },
+    {
+      "type": "test",
+      "which": "continuum",
+      "what": "Level Access Continuum, community edition",
+      "url": "https://www.osha.gov/",
+      "result": {
+        "prevented": true,
+        "error": "ERROR adding the continuum.conf script to the page"
+      }
+    }
+  ],
+  "timeStamp": "4jil2",
+  "startTime": "2022-07-27T14:34:13",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "continuum",
+      0
+    ]
+  ],
+  "logCount": 95,
+  "logSize": 46473,
+  "errorLogCount": 94,
+  "errorLogSize": 46469,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-27T14:34:19",
+  "elapsedSeconds": 6
+}

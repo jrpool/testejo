@@ -1,0 +1,283 @@
+{
+  "id": "4jil2-darpa",
+  "host": {
+    "id": "darpa",
+    "which": "https://www.darpa.mil/",
+    "what": "Defense Advanced Research Projects Agency"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-27T14:41:09"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-27T14:41:14"
+    }
+  ],
+  "script": {
+    "id": "continuum",
+    "what": "Continuum",
+    "strict": true,
+    "timeLimit": 30,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.darpa.mil/",
+        "what": "Defense Advanced Research Projects Agency"
+      },
+      {
+        "type": "test",
+        "which": "continuum",
+        "what": "Continuum"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.darpa.mil/",
+      "what": "Defense Advanced Research Projects Agency",
+      "result": "https://www.darpa.mil/"
+    },
+    {
+      "type": "test",
+      "which": "continuum",
+      "what": "Level Access Continuum, community edition",
+      "url": "https://www.darpa.mil/",
+      "result": [
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This DIV has an id attribute of 'ContentPane', which is not unique in the same DOM",
+          "element": "<div id=\"ContentPane\"><section role=\"main\" id=\"content\"><div class=\"region--homepage-top hero-eight\" ... ass=\"flexslider__slide__image\"><a href=\"/news-events/2022-07-13.html\"><img draggable=\"false\" alt=\"Sm",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(4)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[id=\"ContentPane\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This DIV has an id attribute of 'ContentPane', which is not unique in the same DOM",
+          "element": "<div id=\"ContentPane\"></div>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(6)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[id=\"ContentPane\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This H3 has an id attribute of '_HomePage_darpaEvents_eventTitle_#:ContentID_rin#', which is not unique in the same DOM",
+          "element": "<h3 class=\"darpa-events__title\" id=\"_HomePage_darpaEvents_eventTitle_#:ContentID_rin#\">Ouija TA-2  Proposers day</h3>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(4)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "h3[id=\"_HomePage_darpaEvents_eventTitle_#:ContentID_rin#\"][class=\"darpa-events__title\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This H3 has an id attribute of '_HomePage_darpaEvents_eventTitle_#:ContentID_rin#', which is not unique in the same DOM",
+          "element": "<h3 class=\"darpa-events__title\" id=\"_HomePage_darpaEvents_eventTitle_#:ContentID_rin#\">Muons for Science and Security (MuS2) Proposers Day</h3>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(4)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(3)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "h3[id=\"_HomePage_darpaEvents_eventTitle_#:ContentID_rin#\"][class=\"darpa-events__title\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This DIV has an id attribute of 'HomePage_darpaEvents_eventDate1', which is not unique in the same DOM",
+          "element": "<div class=\"darpa-events__date\" id=\"HomePage_darpaEvents_eventDate1\">August 3, 2022</div>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(4)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[id=\"HomePage_darpaEvents_eventDate1\"][class=\"darpa-events__date\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This DIV has an id attribute of 'HomePage_darpaEvents_eventDate1', which is not unique in the same DOM",
+          "element": "<div class=\"darpa-events__date\" id=\"HomePage_darpaEvents_eventDate1\">August 5, 2022</div>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(4)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(3)>*:nth-child(2)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[id=\"HomePage_darpaEvents_eventDate1\"][class=\"darpa-events__date\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This DIV has an id attribute of 'HomePage_darpaEvents_eventDesc1', which is not unique in the same DOM",
+          "element": "<div class=\"darpa-events__summary\" id=\"HomePage_darpaEvents_eventDesc1\">DARPA will host a Proposers  ... , promote additional discussion on this topic, and address questions from potential proposers.</div>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(4)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(3)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[id=\"HomePage_darpaEvents_eventDesc1\"][class=\"darpa-events__summary\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This DIV has an id attribute of 'HomePage_darpaEvents_eventDesc1', which is not unique in the same DOM",
+          "element": "<div class=\"darpa-events__summary\" id=\"HomePage_darpaEvents_eventDesc1\">The Defense Advanced Researc ... ust 5, 2022 from 1:00 PM to 2:00 PM. Advance registration is required for viewing the webcast.</div>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(4)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(3)>*:nth-child(2)>*:nth-child(3)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[id=\"HomePage_darpaEvents_eventDesc1\"][class=\"darpa-events__summary\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This DIV has an id attribute of 'FooterPane', which is not unique in the same DOM",
+          "element": "<div id=\"FooterPane\"><div style=\"clear:both;\"></div><div id=\"FooterPane\"><div style=\"clear: both;\">< ...  class=\"first\">Web Policy</li><li><a href=\"/policy/privacy-policy.html\">Privacy Policy</a></li><li><",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(8)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[id=\"FooterPane\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This DIV has an id attribute of 'FooterPane', which is not unique in the same DOM",
+          "element": "<div id=\"FooterPane\"><div style=\"clear: both;\"></div><footer id=\"footer\"><div class=\"footer__inner\"> ... rivacy-policy.html\">Privacy Policy</a></li><li><a target=\"_blank\" href=\"http://dodcio.defense.gov/Do",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(8)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[id=\"FooterPane\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a href=\"mail:abl@snap.org\"></a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(8)>*:nth-child(2)>*:nth-child(2)>*:nth-child(3)>*:nth-child(5)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"mail:abl@snap.org\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 246,
+          "bestPracticeId": 393,
+          "attribute": "This element should only contain li elements (without an ARIA-assigned role), script elements (without an ARIA-assigned role) or template elements (without an ARIA-assigned role); or elements with a role=listitem attribute; as direct child elements",
+          "attributeDetail": "This UL should only contain li elements (without an ARIA-assigned role), script elements (without an ARIA-assigned role) or template elements (without an ARIA-assigned role); or elements with a role=listitem attribute; as direct child elements",
+          "element": "<ul><li class=\"first\"><a tabindex=\"1\" href=\"#\">About Us</a><ul><li class=\"first\"><a tabindex=\"1\" hre ... seperator\">/</li><li class=\"last menu--main-menu__search\"><a id=\"search-toggle\">Search</a></li></ul>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(4)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "ul",
+            "attNo": 0
+          }
+        },
+        {
+          "engineTestId": 337,
+          "bestPracticeId": 1626,
+          "attribute": "This element (role=button) does not have a tabindex attribute set to 0 or a negative value",
+          "attributeDetail": "This DIV (role=button) does not have a tabindex attribute set to 0 or a negative value",
+          "element": "<div tabindex=\"399\" role=\"button\" id=\"sidr__trigger\"><span class=\"sidr__trigger__burger\"></span>Explore by Tag</div>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[id=\"sidr__trigger\"][role=\"button\"][tabindex=\"399\"]",
+            "attNo": 3
+          }
+        }
+      ]
+    }
+  ],
+  "timeStamp": "4jil2",
+  "startTime": "2022-07-27T14:41:09",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "continuum",
+      0
+    ]
+  ],
+  "logCount": 32,
+  "logSize": 2174,
+  "errorLogCount": 3,
+  "errorLogSize": 911,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-27T14:41:14",
+  "elapsedSeconds": 4
+}

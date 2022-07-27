@@ -1,0 +1,80 @@
+{
+  "id": "4jil2-usa",
+  "host": {
+    "id": "usa",
+    "which": "https://usa.gov/",
+    "what": "U.S. Government Services and Information"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-27T14:43:02"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-27T14:43:09"
+    }
+  ],
+  "script": {
+    "id": "continuum",
+    "what": "Continuum",
+    "strict": true,
+    "timeLimit": 30,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://usa.gov/",
+        "what": "U.S. Government Services and Information"
+      },
+      {
+        "type": "test",
+        "which": "continuum",
+        "what": "Continuum"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://usa.gov/",
+      "what": "U.S. Government Services and Information",
+      "result": "https://www.usa.gov/"
+    },
+    {
+      "type": "test",
+      "which": "continuum",
+      "what": "Level Access Continuum, community edition",
+      "url": "https://www.usa.gov/",
+      "result": "NONE"
+    }
+  ],
+  "timeStamp": "4jil2",
+  "startTime": "2022-07-27T14:43:02",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "continuum",
+      0
+    ]
+  ],
+  "logCount": 625,
+  "logSize": 26277,
+  "errorLogCount": 1,
+  "errorLogSize": 69,
+  "prohibitedCount": 1,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-27T14:43:09",
+  "elapsedSeconds": 7
+}

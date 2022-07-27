@@ -2,7 +2,7 @@
   "id": "continuum",
   "what": "Continuum",
   "strict": true,
-  "timeLimit": 60,
+  "timeLimit": 30,
   "commands": [
     {
       "type": "launch",

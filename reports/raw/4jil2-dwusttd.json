@@ -1,0 +1,140 @@
+{
+  "id": "4jil2-dwusttd",
+  "host": {
+    "id": "dwusttd",
+    "which": "https://dataweb.usitc.gov/",
+    "what": "DataWeb, US Trade and Tariff Data"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-27T14:23:27"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-27T14:23:32"
+    }
+  ],
+  "script": {
+    "id": "continuum",
+    "what": "Continuum",
+    "strict": true,
+    "timeLimit": 30,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://dataweb.usitc.gov/",
+        "what": "DataWeb, US Trade and Tariff Data"
+      },
+      {
+        "type": "test",
+        "which": "continuum",
+        "what": "Continuum"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://dataweb.usitc.gov/",
+      "what": "DataWeb, US Trade and Tariff Data",
+      "result": "https://dataweb.usitc.gov/"
+    },
+    {
+      "type": "test",
+      "which": "continuum",
+      "what": "Level Access Continuum, community edition",
+      "url": "https://dataweb.usitc.gov/",
+      "result": [
+        {
+          "engineTestId": 246,
+          "bestPracticeId": 393,
+          "attribute": "This element should only contain li elements (without an ARIA-assigned role), script elements (without an ARIA-assigned role) or template elements (without an ARIA-assigned role); or elements with a role=listitem attribute; as direct child elements",
+          "attributeDetail": "This UL should only contain li elements (without an ARIA-assigned role), script elements (without an ARIA-assigned role) or template elements (without an ARIA-assigned role); or elements with a role=listitem attribute; as direct child elements",
+          "element": "<ul _ngcontent-c2=\"\"><p class=\"bold\" _ngcontent-c2=\"\">Announcements</p><p _ngcontent-c2=\"\">May 2021  ... to show import and export data as originally issued by the Census Bureau with no revisions.</p></ul>",
+          "testResult": 0,
+          "path": "body>dw-root:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "ul[_ngcontent-c2=\"\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 412,
+          "bestPracticeId": 1626,
+          "attribute": "The role attribute value given to this element is not allowed, as it is not a valid aria role.",
+          "attributeDetail": "The role attribute of header given to this HEADER is not allowed, as it is not a valid aria role.",
+          "element": "<header role=\"header\" id=\"site-header\" class=\"site-header\"><ul class=\"header-nav constrained\"><li cl ... v></div></button><ul><li><a href=\"/login\" routerlink=\"/login\">Login</a></li></ul></li></ul></header>",
+          "testResult": 0,
+          "path": "body>dw-root:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Specify a valid aria role for this element.",
+            "fix": {
+              "role": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "header[class=\"site-header\"][id=\"site-header\"][role=\"header\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 412,
+          "bestPracticeId": 1626,
+          "attribute": "The role attribute value given to this element is not allowed, as it is not a valid aria role.",
+          "attributeDetail": "The role attribute of footer given to this FOOTER is not allowed, as it is not a valid aria role.",
+          "element": "<footer role=\"footer\" class=\"site-footer\"><section class=\"constrained\"><p class=\"size-s\"><em><strong ...  States International Trade Commission</div><div class=\"app-version\">v4.6.9</div></section></footer>",
+          "testResult": 0,
+          "path": "body>dw-root:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Specify a valid aria role for this element.",
+            "fix": {
+              "role": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "footer[class=\"site-footer\"][role=\"footer\"]",
+            "attNo": 2
+          }
+        }
+      ]
+    }
+  ],
+  "timeStamp": "4jil2",
+  "startTime": "2022-07-27T14:23:27",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "continuum",
+      0
+    ]
+  ],
+  "logCount": 0,
+  "logSize": 0,
+  "errorLogCount": 0,
+  "errorLogSize": 0,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-27T14:23:32",
+  "elapsedSeconds": 5
+}

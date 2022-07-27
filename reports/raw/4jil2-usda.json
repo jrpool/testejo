@@ -1,0 +1,141 @@
+{
+  "id": "4jil2-usda",
+  "host": {
+    "id": "usda",
+    "which": "https://www.usda.gov/",
+    "what": "Department of Agriculture (USDA)"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-27T14:23:40"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-27T14:23:44"
+    }
+  ],
+  "script": {
+    "id": "continuum",
+    "what": "Continuum",
+    "strict": true,
+    "timeLimit": 30,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.usda.gov/",
+        "what": "Department of Agriculture (USDA)"
+      },
+      {
+        "type": "test",
+        "which": "continuum",
+        "what": "Continuum"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.usda.gov/",
+      "what": "Department of Agriculture (USDA)",
+      "result": "https://www.usda.gov/"
+    },
+    {
+      "type": "test",
+      "which": "continuum",
+      "what": "Level Access Continuum, community edition",
+      "url": "https://www.usda.gov/",
+      "result": [
+        {
+          "engineTestId": 22,
+          "bestPracticeId": 967,
+          "attribute": "This element should not contain input elements (without an assigned ARIA role and not type=hidden), keygen elements (without an assigned ARIA role), select elements (without an assigned ARIA role), textarea elements (without an assigned ARIA role) or button elements (without an assigned ARIA role)",
+          "attributeDetail": "This A should not contain input elements (without an assigned ARIA role and not type=hidden), keygen elements (without an assigned ARIA role), select elements (without an assigned ARIA role), textarea elements (without an assigned ARIA role) or button elements (without an assigned ARIA role)",
+          "element": "<a id=\"anch_59\" href=\"https://ask.usda.gov/s/?utm_campaign=homepage+referrals&amp;utm_medium=homepag ... :0px\">Help is available via phone or live chat Monday to Friday from 8am – 5pm EST.</p></button></a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(6)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"https://ask.usda.gov/s/?utm_campaign=homepage+referrals&utm_medium=homepage&utm_source=USDA\"][id=\"anch_59\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 22,
+          "bestPracticeId": 967,
+          "attribute": "This element should not contain input elements (without an assigned ARIA role and not type=hidden), keygen elements (without an assigned ARIA role), select elements (without an assigned ARIA role), textarea elements (without an assigned ARIA role) or button elements (without an assigned ARIA role)",
+          "attributeDetail": "This A should not contain input elements (without an assigned ARIA role and not type=hidden), keygen elements (without an assigned ARIA role), select elements (without an assigned ARIA role), textarea elements (without an assigned ARIA role) or button elements (without an assigned ARIA role)",
+          "element": "<a id=\"anch_60\" href=\"https://www.farmers.gov/pandemic-assistance\"><button class=\"home-resources-btn ... \">Help for farmers, ranchers and producers impacted by COVID-19 market disruptions.</p></button></a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(6)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(4)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"https://www.farmers.gov/pandemic-assistance\"][id=\"anch_60\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 22,
+          "bestPracticeId": 967,
+          "attribute": "This element should not contain input elements (without an assigned ARIA role and not type=hidden), keygen elements (without an assigned ARIA role), select elements (without an assigned ARIA role), textarea elements (without an assigned ARIA role) or button elements (without an assigned ARIA role)",
+          "attributeDetail": "This A should not contain input elements (without an assigned ARIA role and not type=hidden), keygen elements (without an assigned ARIA role), select elements (without an assigned ARIA role), textarea elements (without an assigned ARIA role) or button elements (without an assigned ARIA role)",
+          "element": "<a id=\"anch_61\" href=\"/topics/farming/grants-and-loans\"><button class=\"home-resources-btn\"><h3 style ... rgin-top:0px\">USDA provides financial opportunities to individuals and communities.</p></button></a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(6)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(4)>*:nth-child(3)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"/topics/farming/grants-and-loans\"][id=\"anch_61\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 22,
+          "bestPracticeId": 967,
+          "attribute": "This element should not contain input elements (without an assigned ARIA role and not type=hidden), keygen elements (without an assigned ARIA role), select elements (without an assigned ARIA role), textarea elements (without an assigned ARIA role) or button elements (without an assigned ARIA role)",
+          "attributeDetail": "This A should not contain input elements (without an assigned ARIA role and not type=hidden), keygen elements (without an assigned ARIA role), select elements (without an assigned ARIA role), textarea elements (without an assigned ARIA role) or button elements (without an assigned ARIA role)",
+          "element": "<a id=\"anch_62\" href=\"/topics/disaster-resource-center\"><button class=\"home-resources-btn\"><h3 style ... margin-top:0px\">Learn how to prepare, recover, and help build long-term resilience.</p></button></a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(6)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(4)>*:nth-child(4)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"/topics/disaster-resource-center\"][id=\"anch_62\"]",
+            "attNo": 2
+          }
+        }
+      ]
+    }
+  ],
+  "timeStamp": "4jil2",
+  "startTime": "2022-07-27T14:23:40",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "continuum",
+      0
+    ]
+  ],
+  "logCount": 1,
+  "logSize": 101,
+  "errorLogCount": 1,
+  "errorLogSize": 101,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-27T14:23:44",
+  "elapsedSeconds": 3
+}

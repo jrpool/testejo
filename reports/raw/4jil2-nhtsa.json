@@ -1,0 +1,126 @@
+{
+  "id": "4jil2-nhtsa",
+  "host": {
+    "id": "nhtsa",
+    "which": "https://nhtsa.gov/",
+    "what": "National Highway Traffic Safety Administration"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-27T14:42:14"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-27T14:42:23"
+    }
+  ],
+  "script": {
+    "id": "continuum",
+    "what": "Continuum",
+    "strict": true,
+    "timeLimit": 30,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://nhtsa.gov/",
+        "what": "National Highway Traffic Safety Administration"
+      },
+      {
+        "type": "test",
+        "which": "continuum",
+        "what": "Continuum"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://nhtsa.gov/",
+      "what": "National Highway Traffic Safety Administration",
+      "result": "https://www.nhtsa.gov/"
+    },
+    {
+      "type": "test",
+      "which": "continuum",
+      "what": "Level Access Continuum, community edition",
+      "url": "https://www.nhtsa.gov/",
+      "result": [
+        {
+          "engineTestId": 281,
+          "bestPracticeId": 1626,
+          "attribute": "The aria-expanded attribute is not allowed on this element",
+          "attributeDetail": "The aria-expanded attribute is not allowed on this SPAN",
+          "element": "<span aria-expanded=\"false\" aria-haspopup=\"true\" data-toggle=\"dropdown\" type=\"button\">English<span class=\"caret\"></span></span>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(3)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "span[type=\"button\"][data-toggle=\"dropdown\"][aria-haspopup=\"true\"][aria-expanded=\"false\"]",
+            "attNo": 4
+          }
+        },
+        {
+          "engineTestId": 281,
+          "bestPracticeId": 1626,
+          "attribute": "The aria-expanded attribute is not allowed on this element",
+          "attributeDetail": "The aria-expanded attribute is not allowed on this INPUT",
+          "element": "<input aria-expanded=\"false\" aria-haspopup=\"true\" type=\"text\" placeholder=\"Year Make Model or VIN\" data-car-search=\"data-car-search\" name=\"car-search\" id=\"car-search\" autocomplete=\"nope\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(3)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "input[autocomplete=\"nope\"][id=\"car-search\"][name=\"car-search\"][data-car-search=\"data-car-search\"][placeholder=\"Year Make Model or VIN\"][type=\"text\"][aria-haspopup=\"true\"][aria-expanded=\"false\"]",
+            "attNo": 8
+          }
+        },
+        {
+          "engineTestId": 863,
+          "bestPracticeId": 2440,
+          "attribute": "This input should not rely on text in the placeholder attribute for an accessible name",
+          "attributeDetail": "This input should not rely on text in the placeholder attribute for an accessible name",
+          "element": "<input class=\"form-control\" name=\"keywords\" placeholder=\"Search\" type=\"search\" autocomplete=\"nope\" id=\"site-search-input\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "input[id=\"site-search-input\"][autocomplete=\"nope\"][type=\"search\"][placeholder=\"Search\"][name=\"keywords\"][class=\"form-control\"]",
+            "attNo": 6
+          }
+        }
+      ]
+    }
+  ],
+  "timeStamp": "4jil2",
+  "startTime": "2022-07-27T14:42:14",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "continuum",
+      0
+    ]
+  ],
+  "logCount": 2,
+  "logSize": 170,
+  "errorLogCount": 2,
+  "errorLogSize": 170,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-27T14:42:23",
+  "elapsedSeconds": 8
+}

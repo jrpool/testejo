@@ -1,0 +1,80 @@
+{
+  "id": "4jil2-ncbi",
+  "host": {
+    "id": "ncbi",
+    "which": "https://ncbi.nlm.nih.gov/",
+    "what": "National Center for Biotechnology Information"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-27T14:42:10"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-27T14:42:14"
+    }
+  ],
+  "script": {
+    "id": "continuum",
+    "what": "Continuum",
+    "strict": true,
+    "timeLimit": 30,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://ncbi.nlm.nih.gov/",
+        "what": "National Center for Biotechnology Information"
+      },
+      {
+        "type": "test",
+        "which": "continuum",
+        "what": "Continuum"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://ncbi.nlm.nih.gov/",
+      "what": "National Center for Biotechnology Information",
+      "result": "https://ncbi.nlm.nih.gov/"
+    },
+    {
+      "type": "test",
+      "which": "continuum",
+      "what": "Level Access Continuum, community edition",
+      "url": "https://ncbi.nlm.nih.gov/",
+      "result": "NONE"
+    }
+  ],
+  "timeStamp": "4jil2",
+  "startTime": "2022-07-27T14:42:10",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "continuum",
+      0
+    ]
+  ],
+  "logCount": 9,
+  "logSize": 821,
+  "errorLogCount": 7,
+  "errorLogSize": 742,
+  "prohibitedCount": 1,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-27T14:42:14",
+  "elapsedSeconds": 4
+}

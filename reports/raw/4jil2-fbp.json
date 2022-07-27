@@ -1,0 +1,288 @@
+{
+  "id": "4jil2-fbp",
+  "host": {
+    "id": "fbp",
+    "which": "https://www.bop.gov/",
+    "what": "Federal Bureau of Prisons "
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-27T14:27:13"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-27T14:27:19"
+    }
+  ],
+  "script": {
+    "id": "continuum",
+    "what": "Continuum",
+    "strict": true,
+    "timeLimit": 30,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.bop.gov/",
+        "what": "Federal Bureau of Prisons "
+      },
+      {
+        "type": "test",
+        "which": "continuum",
+        "what": "Continuum"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.bop.gov/",
+      "what": "Federal Bureau of Prisons ",
+      "result": "https://www.bop.gov/"
+    },
+    {
+      "type": "test",
+      "which": "continuum",
+      "what": "Level Access Continuum, community edition",
+      "url": "https://www.bop.gov/",
+      "result": [
+        {
+          "engineTestId": 89,
+          "bestPracticeId": 362,
+          "attribute": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<img src=\"/images2/icon_arrow_darkblue.png\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[src=\"/images2/icon_arrow_darkblue.png\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 89,
+          "bestPracticeId": 362,
+          "attribute": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<img src=\"/images2/icon_white_arrow.png\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[src=\"/images2/icon_white_arrow.png\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 89,
+          "bestPracticeId": 362,
+          "attribute": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<img src=\"/images2/icon_white_arrow.png\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[src=\"/images2/icon_white_arrow.png\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 89,
+          "bestPracticeId": 362,
+          "attribute": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<img style=\"margin-bottom:50px; z-index:3; width:110px; height:75px;  left:35px;  opacity:0.2; filte ... \" src=\"/resources/news/images/doj_headline_news.jpg\" class=\"news-img\" data-recnum=\"714\" id=\"ns_714\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[id=\"ns_714\"][data-recnum=\"714\"][class=\"news-img\"][src=\"/resources/news/images/doj_headline_news.jpg\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 89,
+          "bestPracticeId": 362,
+          "attribute": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<img style=\"margin-bottom:40px; z-index:4; width:170px; height:115px; left:93px;  opacity:0.90; filt ... opacity=90)\" src=\"/resources/news/images/hn_708.jpg\" class=\"news-img\" data-recnum=\"708\" id=\"ns_708\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[id=\"ns_708\"][data-recnum=\"708\"][class=\"news-img\"][src=\"/resources/news/images/hn_708.jpg\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 89,
+          "bestPracticeId": 362,
+          "attribute": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<img style=\"margin-bottom: 0px; z-index: 5; width: 425px; height: 302px; left: 266px; opacity: 1; cu ... r: pointer;\" src=\"/resources/news/images/hn_427.jpg\" class=\"news-img\" data-recnum=\"717\" id=\"ns_717\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(3)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[id=\"ns_717\"][data-recnum=\"717\"][class=\"news-img\"][src=\"/resources/news/images/hn_427.jpg\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 89,
+          "bestPracticeId": 362,
+          "attribute": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<img style=\"margin-bottom:40px; z-index:6; width:170px; height:115px; left:694px; opacity:0.90; filt ... opacity=90)\" src=\"/resources/news/images/hn_707.jpg\" class=\"news-img\" data-recnum=\"707\" id=\"ns_707\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(4)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[id=\"ns_707\"][data-recnum=\"707\"][class=\"news-img\"][src=\"/resources/news/images/hn_707.jpg\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 89,
+          "bestPracticeId": 362,
+          "attribute": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<img style=\"margin-bottom:50px; z-index:5; width:110px; height:75px;  left:812px; opacity:0.20; filt ... pacity=20)\" src=\"/resources/news/images/hn_3cos.jpg\" class=\"news-img\" data-recnum=\"715\" id=\"ns_715\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(5)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[id=\"ns_715\"][data-recnum=\"715\"][class=\"news-img\"][src=\"/resources/news/images/hn_3cos.jpg\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 533,
+          "bestPracticeId": 2519,
+          "attribute": "This nav does not have an accessible name as required when two or more nav elements are present",
+          "attributeDetail": "This nav does not have an accessible name as required when two or more nav elements are present",
+          "element": "<nav id=\"main_nav_cont\"><ul class=\"clearfix\" id=\"main_nav\"><li class=\"base-level\" id=\"menu_home\"><a  ... div><div class=\"inner-menu-right\" id=\"resources_for\"><ul><li class=\"inner-menu-heading\">Resources Fo",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[id=\"main_nav_cont\"]",
+            "attNo": 1
+          }
+        }
+      ]
+    }
+  ],
+  "timeStamp": "4jil2",
+  "startTime": "2022-07-27T14:27:13",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "continuum",
+      0
+    ]
+  ],
+  "logCount": 0,
+  "logSize": 0,
+  "errorLogCount": 0,
+  "errorLogSize": 0,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-27T14:27:19",
+  "elapsedSeconds": 6
+}

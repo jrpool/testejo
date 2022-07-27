@@ -1,0 +1,1303 @@
+{
+  "id": "4jil2-marines",
+  "host": {
+    "id": "marines",
+    "which": "https://www.marines.mil/",
+    "what": "Marines"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-27T14:30:19"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-27T14:30:27"
+    }
+  ],
+  "script": {
+    "id": "continuum",
+    "what": "Continuum",
+    "strict": true,
+    "timeLimit": 30,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.marines.mil/",
+        "what": "Marines"
+      },
+      {
+        "type": "test",
+        "which": "continuum",
+        "what": "Continuum"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.marines.mil/",
+      "what": "Marines",
+      "result": "https://www.marines.mil/"
+    },
+    {
+      "type": "test",
+      "which": "continuum",
+      "what": "Level Access Continuum, community edition",
+      "url": "https://www.marines.mil/",
+      "result": [
+        {
+          "engineTestId": 22,
+          "bestPracticeId": 967,
+          "attribute": "This element should not contain input elements (without an assigned ARIA role and not type=hidden), keygen elements (without an assigned ARIA role), select elements (without an assigned ARIA role), textarea elements (without an assigned ARIA role) or button elements (without an assigned ARIA role)",
+          "attributeDetail": "This A should not contain input elements (without an assigned ARIA role and not type=hidden), keygen elements (without an assigned ARIA role), select elements (without an assigned ARIA role), textarea elements (without an assigned ARIA role) or button elements (without an assigned ARIA role)",
+          "element": "<a data-load=\"videomodal1660\" href=\"#\" class=\"video-overlay light video-trigger\"><button></button><span aria-label=\"Play video\">Play</span></a>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(45)>*:nth-child(2)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "a[class=\"video-overlay light video-trigger\"][href=\"#\"][data-load=\"videomodal1660\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 89,
+          "bestPracticeId": 362,
+          "attribute": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<img style=\"position: relative; overflow: hidden; height: 853px; width: 1280px; top: -66.5px; left:  ... lder-img\" src=\"https://media.defense.gov/2022/Jul/22/2003040457/1366/740/0/220717-M-IO954-1234.JPG\">",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(45)>*:nth-child(2)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[src=\"https://media.defense.gov/2022/Jul/22/2003040457/1366/740/0/220717-M-IO954-1234.JPG\"][class=\"img-holder-img\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 89,
+          "bestPracticeId": 362,
+          "attribute": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<img width=\"37\" src=\"/portals/1/Images/home/HomeConnectwithUs-Social.png\" height=\"37\">",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(45)>*:nth-child(2)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[height=\"37\"][src=\"/portals/1/Images/home/HomeConnectwithUs-Social.png\"][width=\"37\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 89,
+          "bestPracticeId": 362,
+          "attribute": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<img width=\"44\" src=\"/portals/1/Images/home/HomeConnectwithUs-MarinesTV.png\" height=\"34\">",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(45)>*:nth-child(2)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[height=\"34\"][src=\"/portals/1/Images/home/HomeConnectwithUs-MarinesTV.png\"][width=\"44\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 89,
+          "bestPracticeId": 362,
+          "attribute": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<img width=\"28\" src=\"/portals/1/Images/home/HomeConnectwithUs-Podcast.png\" height=\"43\">",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(45)>*:nth-child(2)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[height=\"43\"][src=\"/portals/1/Images/home/HomeConnectwithUs-Podcast.png\"][width=\"28\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 89,
+          "bestPracticeId": 362,
+          "attribute": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<img style=\"\" src=\"https://media.defense.gov/2022/Jul/21/2003041487/780/780/0/220721-M-YI614-1030.JPG\" class=\"underlay-image\">",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(45)>*:nth-child(2)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[class=\"underlay-image\"][src=\"https://media.defense.gov/2022/Jul/21/2003041487/780/780/0/220721-M-YI614-1030.JPG\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 89,
+          "bestPracticeId": 362,
+          "attribute": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<img width=\"135\" src=\"/portals/1/apple-store2x.png?ver=2018-12-18-154545-693&amp;timestamp=1564501177990\" height=\"36\">",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(45)>*:nth-child(2)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(5)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[height=\"36\"][src=\"/portals/1/apple-store2x.png?ver=2018-12-18-154545-693&timestamp=1564501177990\"][width=\"135\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 89,
+          "bestPracticeId": 362,
+          "attribute": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<img width=\"135\" src=\"/portals/1/google-store2x.png?ver=2018-12-18-154545-677&amp;timestamp=1564501991896\" height=\"36\">",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(45)>*:nth-child(2)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(5)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(3)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[height=\"36\"][src=\"/portals/1/google-store2x.png?ver=2018-12-18-154545-677&timestamp=1564501991896\"][width=\"135\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 89,
+          "bestPracticeId": 362,
+          "attribute": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<img src=\"/portals/1/Images/home/mobileapp-phone.png\" data-aos-once=\"true\" data-aos-easing=\"cubic-be ... -aos-duration=\"600\" data-aos-delay=\"1000\" data-aos=\"scale-phone-marines\" class=\"img-fluid aos-init\">",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(45)>*:nth-child(2)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(5)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[class=\"img-fluid aos-init\"][data-aos=\"scale-phone-marines\"][data-aos-delay=\"1000\"][data-aos-duration=\"600\"][data-aos-easing=\"cubic-bezier(0.4, 0.0, 0.2, 1)\"][data-aos-once=\"true\"][src=\"/portals/1/Images/home/mobileapp-phone.png\"]",
+            "attNo": 7
+          }
+        },
+        {
+          "engineTestId": 89,
+          "bestPracticeId": 362,
+          "attribute": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<img src=\"/Portals/1/apple-store2x.png?ver=2KExgeIB6iZjBucxTVwAIA%3d%3d\">",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(45)>*:nth-child(2)>*:nth-child(6)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[src=\"/Portals/1/apple-store2x.png?ver=2KExgeIB6iZjBucxTVwAIA%3d%3d\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 89,
+          "bestPracticeId": 362,
+          "attribute": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<img src=\"/Portals/1/google-store2x.png?ver=rsSqQlp-ufGt738paGQCpg%3d%3d\">",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(45)>*:nth-child(2)>*:nth-child(6)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[src=\"/Portals/1/google-store2x.png?ver=rsSqQlp-ufGt738paGQCpg%3d%3d\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This DIV has an id attribute of 'slide-image', which is not unique in the same DOM",
+          "element": "<div style=\"overflow: hidden; height: 720px; width: 100%; display: block;\" alt=\"Marine Corps Base Ha ... mg\" src=\"https://media.defense.gov/2022/Jul/22/2003040457/1366/740/0/220717-M-IO954-1234.JPG\"></div>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(45)>*:nth-child(2)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[id=\"slide-image\"][class=\"slideshow-img-holder\"][alt=\"Marine Corps Base Hawaii hosts the John D. Kaupiko Canoe Regatta to give an opportunity to foster relations between the base and the local community.\"]",
+            "attNo": 4
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This DIV has an id attribute of 'slide-image', which is not unique in the same DOM",
+          "element": "<div style=\"overflow: hidden; height: 720px; width: 100%; display: block;\" alt=\"1st Air Naval Gunfir ... mg\" src=\"https://media.defense.gov/2022/Jul/22/2003040457/1366/740/0/220717-M-IO954-1234.JPG\"></div>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(45)>*:nth-child(2)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[id=\"slide-image\"][class=\"slideshow-img-holder\"][alt=\"1st Air Naval Gunfire Liaison Company is a highly versatile force, ready to meet the challenges of tomorrow's fight.\"]",
+            "attNo": 4
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This DIV has an id attribute of 'slide-image', which is not unique in the same DOM",
+          "element": "<div style=\"overflow: hidden; height: 720px; width: 100%; display: block;\" alt=\"Musicians from the U ... mg\" src=\"https://media.defense.gov/2022/Jul/22/2003040457/1366/740/0/220717-M-IO954-1234.JPG\"></div>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(45)>*:nth-child(2)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[id=\"slide-image\"][class=\"slideshow-img-holder\"][alt=\"Musicians from the U.S. Marine Corps and Japanese Air Self Defense Forces perform together to show unity in defense of shared values and peace.\"]",
+            "attNo": 4
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This DIV has an id attribute of 'slide-image', which is not unique in the same DOM",
+          "element": "<div style=\"overflow: hidden; height: 720px; width: 100%; display: block;\" alt=\"U.S. Marine Corps Mo ... mg\" src=\"https://media.defense.gov/2022/Jul/22/2003040457/1366/740/0/220717-M-IO954-1234.JPG\"></div>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(45)>*:nth-child(2)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(5)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[id=\"slide-image\"][class=\"slideshow-img-holder\"][alt=\"U.S. Marine Corps Mountain Warfare Instructors experience unique training opportunities that help shape the future of warfighters on the ground.\"]",
+            "attNo": 4
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This DIV has an id attribute of 'slide-image', which is not unique in the same DOM",
+          "element": "<div style=\"overflow: hidden; height: 720px; width: 100%; display: block;\" alt=\"U.S. Marines partici ... mg\" src=\"https://media.defense.gov/2022/Jul/22/2003040457/1366/740/0/220717-M-IO954-1234.JPG\"></div>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(45)>*:nth-child(2)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(6)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[id=\"slide-image\"][class=\"slideshow-img-holder\"][alt=\"U.S. Marines participate in a French led large scale joint exercise in the Caribbean focused on responding to simulated natural disasters.\"]",
+            "attNo": 4
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This A has an id attribute of 'fs-cat-16912', which is not unique in the same DOM",
+          "element": "<a data-placement=\"top\" data-tooltip=\"Force Design\" href=\"http://www.marines.mil/News/Category/16912/force-design/\" class=\"acat acat-16912-img\" id=\"fs-cat-16912\"></a>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(45)>*:nth-child(2)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(3)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "a[id=\"fs-cat-16912\"][class=\"acat acat-16912-img\"][href=\"http://www.marines.mil/News/Category/16912/force-design/\"][data-tooltip=\"Force Design\"][data-placement=\"top\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This A has an id attribute of 'fs-cat-16912', which is not unique in the same DOM",
+          "element": "<a data-placement=\"top\" data-tooltip=\"Force Design\" href=\"http://www.marines.mil/News/Category/16912/force-design/\" class=\"acat acat-16912-img\" id=\"fs-cat-16912\"></a>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(45)>*:nth-child(2)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(5)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "a[id=\"fs-cat-16912\"][class=\"acat acat-16912-img\"][href=\"http://www.marines.mil/News/Category/16912/force-design/\"][data-tooltip=\"Force Design\"][data-placement=\"top\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This A has an id attribute of 'fs-cat-16725', which is not unique in the same DOM",
+          "element": "<a data-placement=\"top\" data-tooltip=\"Education and Training\" href=\"http://www.marines.mil/News/Category/16725/education-and-training/\" class=\"acat acat-16725-img\" id=\"fs-cat-16725\"></a>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(45)>*:nth-child(2)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(3)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "a[id=\"fs-cat-16725\"][class=\"acat acat-16725-img\"][href=\"http://www.marines.mil/News/Category/16725/education-and-training/\"][data-tooltip=\"Education and Training\"][data-placement=\"top\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This A has an id attribute of 'fs-cat-16725', which is not unique in the same DOM",
+          "element": "<a data-placement=\"top\" data-tooltip=\"Education and Training\" href=\"http://www.marines.mil/News/Category/16725/education-and-training/\" class=\"acat acat-16725-img\" id=\"fs-cat-16725\"></a>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(45)>*:nth-child(2)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(5)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "a[id=\"fs-cat-16725\"][class=\"acat acat-16725-img\"][href=\"http://www.marines.mil/News/Category/16725/education-and-training/\"][data-tooltip=\"Education and Training\"][data-placement=\"top\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This A has an id attribute of 'fs-cat-16913', which is not unique in the same DOM",
+          "element": "<a data-placement=\"top\" data-tooltip=\"Core Values\" href=\"http://www.marines.mil/News/Category/16913/core-values/\" class=\"acat acat-16913-img\" id=\"fs-cat-16913\"></a>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(45)>*:nth-child(2)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(3)>*:nth-child(1)>*:nth-child(2)>*:nth-child(3)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "a[id=\"fs-cat-16913\"][class=\"acat acat-16913-img\"][href=\"http://www.marines.mil/News/Category/16913/core-values/\"][data-tooltip=\"Core Values\"][data-placement=\"top\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This A has an id attribute of 'fs-cat-16913', which is not unique in the same DOM",
+          "element": "<a data-placement=\"top\" data-tooltip=\"Core Values\" href=\"http://www.marines.mil/News/Category/16913/core-values/\" class=\"acat acat-16913-img\" id=\"fs-cat-16913\"></a>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(45)>*:nth-child(2)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(5)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "a[id=\"fs-cat-16913\"][class=\"acat acat-16913-img\"][href=\"http://www.marines.mil/News/Category/16913/core-values/\"][data-tooltip=\"Core Values\"][data-placement=\"top\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This A has an id attribute of 'fs-cat-16914', which is not unique in the same DOM",
+          "element": "<a data-placement=\"top\" data-tooltip=\"Command and Leadership\" href=\"http://www.marines.mil/News/Category/16914/command-and-leadership/\" class=\"acat acat-16914-img\" id=\"fs-cat-16914\"></a>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(45)>*:nth-child(2)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(3)>*:nth-child(1)>*:nth-child(2)>*:nth-child(4)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "a[id=\"fs-cat-16914\"][class=\"acat acat-16914-img\"][href=\"http://www.marines.mil/News/Category/16914/command-and-leadership/\"][data-tooltip=\"Command and Leadership\"][data-placement=\"top\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This A has an id attribute of 'fs-cat-16914', which is not unique in the same DOM",
+          "element": "<a data-placement=\"top\" data-tooltip=\"Command and Leadership\" href=\"http://www.marines.mil/News/Category/16914/command-and-leadership/\" class=\"acat acat-16914-img\" id=\"fs-cat-16914\"></a>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(45)>*:nth-child(2)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(5)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "a[id=\"fs-cat-16914\"][class=\"acat acat-16914-img\"][href=\"http://www.marines.mil/News/Category/16914/command-and-leadership/\"][data-tooltip=\"Command and Leadership\"][data-placement=\"top\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This A has an id attribute of 'fs-cat-16915', which is not unique in the same DOM",
+          "element": "<a data-placement=\"top\" data-tooltip=\"Warfighting\" href=\"http://www.marines.mil/News/Category/16915/warfighting/\" class=\"acat acat-16915-img\" id=\"fs-cat-16915\"></a>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(45)>*:nth-child(2)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(3)>*:nth-child(1)>*:nth-child(2)>*:nth-child(5)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "a[id=\"fs-cat-16915\"][class=\"acat acat-16915-img\"][href=\"http://www.marines.mil/News/Category/16915/warfighting/\"][data-tooltip=\"Warfighting\"][data-placement=\"top\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This A has an id attribute of 'fs-cat-16915', which is not unique in the same DOM",
+          "element": "<a data-placement=\"top\" data-tooltip=\"Warfighting\" href=\"http://www.marines.mil/News/Category/16915/warfighting/\" class=\"acat acat-16915-img\" id=\"fs-cat-16915\"></a>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(45)>*:nth-child(2)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(5)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(5)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "a[id=\"fs-cat-16915\"][class=\"acat acat-16915-img\"][href=\"http://www.marines.mil/News/Category/16915/warfighting/\"][data-tooltip=\"Warfighting\"][data-placement=\"top\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This BUTTON has an id attribute of 'watchVideoBtn', which is not unique in the same DOM",
+          "element": "<button type=\"button\" id=\"watchVideoBtn\" data-toggle=\"modal\" data-target=\"#mobileapp-modal-video\" da ... d=\"mobileapp-modal-video\" class=\"launch-modal btn btn-default button-secondary\">WATCH VIDEO</button>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(45)>*:nth-child(2)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(5)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "button[class=\"launch-modal btn btn-default button-secondary\"][data-modal-id=\"mobileapp-modal-video\"][data-target=\"#mobileapp-modal-video\"][data-toggle=\"modal\"][id=\"watchVideoBtn\"][type=\"button\"]",
+            "attNo": 6
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This BUTTON has an id attribute of 'watchVideoBtn', which is not unique in the same DOM",
+          "element": "<button type=\"button\" id=\"watchVideoBtn\" data-toggle=\"modal\" data-target=\"#mobileapp-modal-video\" da ... d=\"mobileapp-modal-video\" class=\"launch-modal btn btn-default button-secondary\">WATCH VIDEO</button>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(45)>*:nth-child(2)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(5)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "button[class=\"launch-modal btn btn-default button-secondary\"][data-modal-id=\"mobileapp-modal-video\"][data-target=\"#mobileapp-modal-video\"][data-toggle=\"modal\"][id=\"watchVideoBtn\"][type=\"button\"]",
+            "attNo": 6
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This TRACK has an id attribute of 'DVIDSCaptions', which is not unique in the same DOM",
+          "element": "<track srclang=\"en\" src=\"/desktopmodules/sharedlibrary/handlers/dvidscaption.ashx?PortalId=1&amp;AssetId=video:840306&amp;Format=srt\" kind=\"subtitles\" id=\"DVIDSCaptions\">",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(45)>*:nth-child(2)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(8)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "track[id=\"DVIDSCaptions\"][kind=\"subtitles\"][src=\"/desktopmodules/sharedlibrary/handlers/dvidscaption.ashx?PortalId=1&AssetId=video:840306&Format=srt\"][srclang=\"en\"]",
+            "attNo": 4
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This TRACK has an id attribute of 'DVIDSCaptions', which is not unique in the same DOM",
+          "element": "<track srclang=\"en\" src=\"/desktopmodules/sharedlibrary/handlers/dvidscaption.ashx?PortalId=1&amp;AssetId=video:840306&amp;Format=srt\" kind=\"subtitles\" id=\"DVIDSCaptions\">",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(45)>*:nth-child(2)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(8)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "track[id=\"DVIDSCaptions\"][kind=\"subtitles\"][src=\"/desktopmodules/sharedlibrary/handlers/dvidscaption.ashx?PortalId=1&AssetId=video:840306&Format=srt\"][srclang=\"en\"]",
+            "attNo": 4
+          }
+        },
+        {
+          "engineTestId": 141,
+          "bestPracticeId": 401,
+          "attribute": "This A element has an href attribute set to an image file reference",
+          "attributeDetail": "This A element has an href attribute set to an image file reference",
+          "element": "<a download=\"https://media.defense.gov/2022/Jul/26/2003042548/1366/740/0/220721-M-NA519-1728.JPG\" cl ... 2/Jul/26/2003042548/1366/740/0/220721-M-NA519-1728.JPG\"><span class=\"text light\">Download</span></a>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(45)>*:nth-child(2)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(6)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"https://media.defense.gov/2022/Jul/26/2003042548/1366/740/0/220721-M-NA519-1728.JPG\"][class=\"download-link\"][download=\"https://media.defense.gov/2022/Jul/26/2003042548/1366/740/0/220721-M-NA519-1728.JPG\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 224,
+          "bestPracticeId": 338,
+          "attribute": "This button element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This button element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<button></button>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(45)>*:nth-child(2)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "button",
+            "attNo": 0
+          }
+        },
+        {
+          "engineTestId": 234,
+          "bestPracticeId": 370,
+          "attribute": "This element has a suspicious calculated accessible name value",
+          "attributeDetail": "This IMG has a suspicious calculated accessible name value of: hp_banner_milonesource.jpg.png",
+          "element": "<img alt=\"HP_Banner_MilOneSource.jpg.png\" src=\"/Portals/1/Images/home/HP_Banner_MilOneSource.jpg.png\">",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(45)>*:nth-child(2)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(7)>*:nth-child(5)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[src=\"/Portals/1/Images/home/HP_Banner_MilOneSource.jpg.png\"][alt=\"HP_Banner_MilOneSource.jpg.png\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 234,
+          "bestPracticeId": 370,
+          "attribute": "This element has a suspicious calculated accessible name value",
+          "attributeDetail": "This IMG has a suspicious calculated accessible name value of: hp_banner_militaryvetcrisisnew.png",
+          "element": "<img alt=\"HP_Banner_MilitaryVetCrisisNew.png\" src=\"/Portals/1/Images/home/HP_Banner_MilitaryVetCrisisNew.png\">",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(45)>*:nth-child(2)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(7)>*:nth-child(5)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[src=\"/Portals/1/Images/home/HP_Banner_MilitaryVetCrisisNew.png\"][alt=\"HP_Banner_MilitaryVetCrisisNew.png\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 234,
+          "bestPracticeId": 370,
+          "attribute": "This element has a suspicious calculated accessible name value",
+          "attributeDetail": "This IMG has a suspicious calculated accessible name value of: 200602-m-uj804-1001 coronavirus information button.jpg",
+          "element": "<img alt=\"200602-M-UJ804-1001 Coronavirus Information Button.jpg\" src=\"/Portals/1/Images/200602-M-UJ804-1001 Coronavirus Information Button.jpg\">",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(45)>*:nth-child(2)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(7)>*:nth-child(5)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[src=\"/Portals/1/Images/200602-M-UJ804-1001 Coronavirus Information Button.jpg\"][alt=\"200602-M-UJ804-1001 Coronavirus Information Button.jpg\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 234,
+          "bestPracticeId": 370,
+          "attribute": "This element has a suspicious calculated accessible name value",
+          "attributeDetail": "This IMG has a suspicious calculated accessible name value of: hp_banner_pwye.jpg",
+          "element": "<img alt=\"HP_Banner_PWYE.jpg\" src=\"/Portals/1/Images/home/HP_Banner_PWYE.jpg\">",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(45)>*:nth-child(2)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(7)>*:nth-child(5)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[src=\"/Portals/1/Images/home/HP_Banner_PWYE.jpg\"][alt=\"HP_Banner_PWYE.jpg\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 234,
+          "bestPracticeId": 370,
+          "attribute": "This element has a suspicious calculated accessible name value",
+          "attributeDetail": "This IMG has a suspicious calculated accessible name value of: hp_banner_sapr.jpg",
+          "element": "<img alt=\"HP_Banner_SAPR.jpg\" src=\"/Portals/1/Images/home/HP_Banner_SAPR.jpg\">",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(45)>*:nth-child(2)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(7)>*:nth-child(5)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[src=\"/Portals/1/Images/home/HP_Banner_SAPR.jpg\"][alt=\"HP_Banner_SAPR.jpg\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 234,
+          "bestPracticeId": 370,
+          "attribute": "This element has a suspicious calculated accessible name value",
+          "attributeDetail": "This IMG has a suspicious calculated accessible name value of: 210115-m-br903-0009 eagle eyes.jpg",
+          "element": "<img alt=\"210115-M-BR903-0009 Eagle Eyes.jpg\" src=\"/Portals/1/Site Images/210115-M-BR903-0009 Eagle Eyes.jpg\">",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(45)>*:nth-child(2)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(7)>*:nth-child(5)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(3)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[src=\"/Portals/1/Site Images/210115-M-BR903-0009 Eagle Eyes.jpg\"][alt=\"210115-M-BR903-0009 Eagle Eyes.jpg\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a class=\"activeSlide\" href=\"#\"></a>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(45)>*:nth-child(2)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"#\"][class=\"activeSlide\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a href=\"#\"></a>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(45)>*:nth-child(2)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"#\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a href=\"#\"></a>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(45)>*:nth-child(2)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(3)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"#\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a href=\"#\"></a>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(45)>*:nth-child(2)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"#\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a href=\"#\"></a>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(45)>*:nth-child(2)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(5)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"#\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a href=\"/News/Social-Media\"><img width=\"37\" src=\"/portals/1/Images/home/HomeConnectwithUs-Social.png\" height=\"37\"></a>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(45)>*:nth-child(2)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"/News/Social-Media\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a href=\"/News/Marines-TV\"><img width=\"44\" src=\"/portals/1/Images/home/HomeConnectwithUs-MarinesTV.png\" height=\"34\"></a>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(45)>*:nth-child(2)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"/News/Marines-TV\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a href=\"/News/Audio-Marine-Minute/\"><img width=\"28\" src=\"/portals/1/Images/home/HomeConnectwithUs-Podcast.png\" height=\"43\"></a>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(45)>*:nth-child(2)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"/News/Audio-Marine-Minute/\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a target=\"_new\" href=\"https://itunes.apple.com/us/app/marinesmobile/id947183374?mt=8\"><img width=\"1 ... /portals/1/apple-store2x.png?ver=2018-12-18-154545-693&amp;timestamp=1564501177990\" height=\"36\"></a>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(45)>*:nth-child(2)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(5)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"https://itunes.apple.com/us/app/marinesmobile/id947183374?mt=8\"][target=\"_new\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a target=\"_new\" href=\"https://play.google.com/store/apps/details?id=com.marines.mil&amp;hl=en\"><img ... portals/1/google-store2x.png?ver=2018-12-18-154545-677&amp;timestamp=1564501991896\" height=\"36\"></a>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(45)>*:nth-child(2)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(5)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(3)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"https://play.google.com/store/apps/details?id=com.marines.mil&hl=en\"][target=\"_new\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a href=\"/News/Marines-Mobile\"><img src=\"/portals/1/Images/home/mobileapp-phone.png\" data-aos-once=\" ... -duration=\"600\" data-aos-delay=\"1000\" data-aos=\"scale-phone-marines\" class=\"img-fluid aos-init\"></a>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(45)>*:nth-child(2)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(5)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"/News/Marines-Mobile\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a class=\"overlay dark\" href=\"/photos/igphoto/2003042548/\"></a>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(45)>*:nth-child(2)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(6)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"/photos/igphoto/2003042548/\"][class=\"overlay dark\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a class=\"selected\" href=\"#\"><span>1</span></a>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(45)>*:nth-child(2)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(7)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"#\"][class=\"selected\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a href=\"#\"><span>2</span></a>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(45)>*:nth-child(2)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(7)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(2)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"#\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a href=\"#\"><span>3</span></a>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(45)>*:nth-child(2)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(7)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(3)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"#\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a href=\"#\"><span>4</span></a>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(45)>*:nth-child(2)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(7)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(4)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"#\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a href=\"#\"><span>5</span></a>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(45)>*:nth-child(2)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(7)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(5)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"#\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a title=\"\" href=\"https://itunes.apple.com/us/app/marinesmobile/id947183374?mt=8\"><img src=\"/Portals ... store2x.png?ver=2KExgeIB6iZjBucxTVwAIA%3d%3d\"><span class=\"text text-link-16\">Apple Store</span></a>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(45)>*:nth-child(2)>*:nth-child(6)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"https://itunes.apple.com/us/app/marinesmobile/id947183374?mt=8\"][title=\"\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a title=\"\" href=\"https://play.google.com/store/apps/details?id=com.marines.mil&amp;hl=en\"><img src= ... store2x.png?ver=rsSqQlp-ufGt738paGQCpg%3d%3d\"><span class=\"text text-link-17\">Google Play</span></a>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(45)>*:nth-child(2)>*:nth-child(6)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"https://play.google.com/store/apps/details?id=com.marines.mil&hl=en\"][title=\"\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 252,
+          "bestPracticeId": 444,
+          "attribute": "This video element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This video element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<video style=\"width: 915.555px; height: 515px;\" src=\"blob:https://www.marines.mil/9338a7a7-113d-4826 ... shx?PortalId=1&amp;AssetId=video:840306&amp;Format=srt\" kind=\"subtitles\" id=\"DVIDSCaptions\"></video>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(45)>*:nth-child(2)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(8)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "video[id=\"videoPlayer531_native_hls\"][preload=\"none\"][poster=\"https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2204/840306/DOD_108926016.0000001/2000w_q95.jpg\"][crossorigin=\"anonymous\"][playsinline=\"\"][src=\"blob:https://www.marines.mil/9338a7a7-113d-4826-89b4-681787e15651\"]",
+            "attNo": 7
+          }
+        },
+        {
+          "engineTestId": 368,
+          "bestPracticeId": 2049,
+          "attribute": "This element does not have a label attribute set to a text value",
+          "attributeDetail": "This TRACK does not have a label attribute set to a text value",
+          "element": "<track srclang=\"en\" src=\"/desktopmodules/sharedlibrary/handlers/dvidscaption.ashx?PortalId=1&amp;AssetId=video:840306&amp;Format=srt\" kind=\"subtitles\" id=\"DVIDSCaptions\">",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(45)>*:nth-child(2)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(8)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "track[id=\"DVIDSCaptions\"][kind=\"subtitles\"][src=\"/desktopmodules/sharedlibrary/handlers/dvidscaption.ashx?PortalId=1&AssetId=video:840306&Format=srt\"][srclang=\"en\"]",
+            "attNo": 4
+          }
+        },
+        {
+          "engineTestId": 527,
+          "bestPracticeId": 2519,
+          "attribute": "This aside does not have a unique accessible name as required when two or more aside elements are present",
+          "attributeDetail": "This aside does not have a unique accessible name as required when two or more aside elements are present",
+          "element": "<aside style=\"transform: translate(0px, 0px); opacity: 1;\" id=\"toprotatorfull-aside-links-410\" class ... o</span></a></span><script type=\"text/javascript\"></script><span class=\"extra-links\"></span></aside>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(45)>*:nth-child(2)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "aside[class=\"text dark decorated toprotatorfull-aside-links\"][id=\"toprotatorfull-aside-links-410\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 527,
+          "bestPracticeId": 2519,
+          "attribute": "This aside does not have a unique accessible name as required when two or more aside elements are present",
+          "attributeDetail": "This aside does not have a unique accessible name as required when two or more aside elements are present",
+          "element": "<aside><a download=\"https://media.defense.gov/2022/Jul/26/2003042548/1366/740/0/220721-M-NA519-1728. ... details-link\" href=\"/photos/igphoto/2003042548/\"><span class=\"text light\">Details</span></a></aside>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(45)>*:nth-child(2)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(6)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "aside",
+            "attNo": 0
+          }
+        },
+        {
+          "engineTestId": 532,
+          "bestPracticeId": 2519,
+          "attribute": "This aside does not have an accessible name as required when two or more aside elements are present",
+          "attributeDetail": "This aside does not have an accessible name as required when two or more aside elements are present",
+          "element": "<aside style=\"transform: translate(0px, 0px); opacity: 1;\" id=\"toprotatorfull-aside-links-410\" class ... o</span></a></span><script type=\"text/javascript\"></script><span class=\"extra-links\"></span></aside>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(45)>*:nth-child(2)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "aside[class=\"text dark decorated toprotatorfull-aside-links\"][id=\"toprotatorfull-aside-links-410\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 532,
+          "bestPracticeId": 2519,
+          "attribute": "This aside does not have an accessible name as required when two or more aside elements are present",
+          "attributeDetail": "This aside does not have an accessible name as required when two or more aside elements are present",
+          "element": "<aside><a download=\"https://media.defense.gov/2022/Jul/26/2003042548/1366/740/0/220721-M-NA519-1728. ... details-link\" href=\"/photos/igphoto/2003042548/\"><span class=\"text light\">Details</span></a></aside>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(45)>*:nth-child(2)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(6)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "aside",
+            "attNo": 0
+          }
+        }
+      ]
+    }
+  ],
+  "timeStamp": "4jil2",
+  "startTime": "2022-07-27T14:30:19",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "continuum",
+      0
+    ]
+  ],
+  "logCount": 7,
+  "logSize": 376,
+  "errorLogCount": 0,
+  "errorLogSize": 0,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-27T14:30:27",
+  "elapsedSeconds": 7
+}

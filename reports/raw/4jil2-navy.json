@@ -1,0 +1,850 @@
+{
+  "id": "4jil2-navy",
+  "host": {
+    "id": "navy",
+    "which": "https://www.navy.mil/",
+    "what": "Navy"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-27T14:33:56"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-27T14:34:01"
+    }
+  ],
+  "script": {
+    "id": "continuum",
+    "what": "Continuum",
+    "strict": true,
+    "timeLimit": 30,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.navy.mil/",
+        "what": "Navy"
+      },
+      {
+        "type": "test",
+        "which": "continuum",
+        "what": "Continuum"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.navy.mil/",
+      "what": "Navy",
+      "result": "https://www.navy.mil/"
+    },
+    {
+      "type": "test",
+      "which": "continuum",
+      "what": "Level Access Continuum, community edition",
+      "url": "https://www.navy.mil/",
+      "result": [
+        {
+          "engineTestId": 89,
+          "bestPracticeId": 362,
+          "attribute": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<img src=\"/Portals/_default/Skins/NavyTheme2/Resources/img/SVGs/AH-Small-Icon.svg\">",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(23)>*:nth-child(4)>*:nth-child(5)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[src=\"/Portals/_default/Skins/NavyTheme2/Resources/img/SVGs/AH-Small-Icon.svg\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 89,
+          "bestPracticeId": 362,
+          "attribute": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<img src=\"/Portals/_default/Skins/NavyTheme2/Resources/img/SVGs/Press-Office-Small-Icon-01.svg\">",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(23)>*:nth-child(4)>*:nth-child(5)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[src=\"/Portals/_default/Skins/NavyTheme2/Resources/img/SVGs/Press-Office-Small-Icon-01.svg\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 89,
+          "bestPracticeId": 362,
+          "attribute": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<img src=\"/Portals/_default/Skins/NavyTheme2/Resources/img/SVGs/Leadership-Small-Icon-01.svg\">",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(23)>*:nth-child(4)>*:nth-child(5)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[src=\"/Portals/_default/Skins/NavyTheme2/Resources/img/SVGs/Leadership-Small-Icon-01.svg\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 89,
+          "bestPracticeId": 362,
+          "attribute": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<img src=\"/Portals/_default/Skins/NavyTheme2/Resources/img/SVGs/Fact-Files-Icon-01.svg\">",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(23)>*:nth-child(4)>*:nth-child(5)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[src=\"/Portals/_default/Skins/NavyTheme2/Resources/img/SVGs/Fact-Files-Icon-01.svg\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This UL has an id attribute of 'main-nav', which is not unique in the same DOM",
+          "element": "<ul data-smartmenus-id=\"1658932439527114\" data-sm-options=\"{collapsibleBehavior: 'link'}\" class=\"nav ... E<span class=\"shortline\"></span></span></div><ul aria-expanded=\"false\" aria-hidden=\"true\" role=\"grou",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(23)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "ul[id=\"main-nav\"][class=\"navbar-nav mr-auto sm\"][data-sm-options=\"{collapsibleBehavior: 'link'}\"][data-smartmenus-id=\"1658932439527114\"]",
+            "attNo": 4
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This UL has an id attribute of 'main-nav', which is not unique in the same DOM",
+          "element": "<ul data-smartmenus-id=\"16589324395323064\" data-sm-options=\"{collapsibleBehavior: 'link'}\" class=\"na ... ttp://www.navy.mil/Press-Office/Testimony/\" class=\"dropdown-item\">Testimony</a></li><li><a href=\"htt",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(23)>*:nth-child(2)>*:nth-child(7)>*:nth-child(2)>*:nth-child(3)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "ul[id=\"main-nav\"][class=\"navbar-nav mr-auto sm sm-collapsible\"][data-sm-options=\"{collapsibleBehavior: 'link'}\"][data-smartmenus-id=\"16589324395323064\"]",
+            "attNo": 4
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This DIV has an id attribute of 'navbarDropdownMenuLink', which is not unique in the same DOM",
+          "element": "<div aria-expanded=\"false\" aria-haspopup=\"true\" id=\"navbarDropdownMenuLink\" tabindex=\"0\" class=\"nav-link toplevel\"><span class=\"animateMenuUnderLine\">ABOUT<span class=\"shortline\"></span></span></div>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(23)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[class=\"nav-link toplevel\"][tabindex=\"0\"][id=\"navbarDropdownMenuLink\"][aria-haspopup=\"true\"][aria-expanded=\"false\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This DIV has an id attribute of 'navbarDropdownMenuLink', which is not unique in the same DOM",
+          "element": "<div aria-expanded=\"false\" aria-haspopup=\"true\" id=\"navbarDropdownMenuLink\" tabindex=\"0\" class=\"nav- ...  toplevel\"><span class=\"animateMenuUnderLine\">LEADERSHIP<span class=\"shortline\"></span></span></div>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(23)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[class=\"nav-link toplevel\"][tabindex=\"0\"][id=\"navbarDropdownMenuLink\"][aria-haspopup=\"true\"][aria-expanded=\"false\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This DIV has an id attribute of 'navbarDropdownMenuLink', which is not unique in the same DOM",
+          "element": "<div aria-expanded=\"false\" aria-haspopup=\"true\" id=\"navbarDropdownMenuLink\" tabindex=\"0\" class=\"nav- ... oplevel\"><span class=\"animateMenuUnderLine\">PRESS OFFICE<span class=\"shortline\"></span></span></div>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(23)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[class=\"nav-link toplevel\"][tabindex=\"0\"][id=\"navbarDropdownMenuLink\"][aria-haspopup=\"true\"][aria-expanded=\"false\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This DIV has an id attribute of 'navbarDropdownMenuLink', which is not unique in the same DOM",
+          "element": "<div aria-expanded=\"false\" aria-haspopup=\"true\" id=\"navbarDropdownMenuLink\" tabindex=\"0\" class=\"nav- ... k toplevel\"><span class=\"animateMenuUnderLine\">RESOURCES<span class=\"shortline\"></span></span></div>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(23)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(6)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[class=\"nav-link toplevel\"][tabindex=\"0\"][id=\"navbarDropdownMenuLink\"][aria-haspopup=\"true\"][aria-expanded=\"false\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This A has an id attribute of 'navbarDropdownMenuLink', which is not unique in the same DOM",
+          "element": "<a aria-controls=\"sm-16589324395323064-1\" aria-expanded=\"false\" aria-haspopup=\"true\" id=\"navbarDropd ... f=\"http://www.navy.mil/About/\" class=\"nav-link has-submenu\">ABOUT<span class=\"sub-arrow\"></span></a>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(23)>*:nth-child(2)>*:nth-child(7)>*:nth-child(2)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "a[class=\"nav-link has-submenu\"][href=\"http://www.navy.mil/About/\"][id=\"navbarDropdownMenuLink\"][aria-haspopup=\"true\"][aria-expanded=\"false\"][aria-controls=\"sm-16589324395323064-1\"]",
+            "attNo": 6
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This A has an id attribute of 'navbarDropdownMenuLink', which is not unique in the same DOM",
+          "element": "<a aria-controls=\"sm-16589324395323064-2\" aria-expanded=\"false\" aria-haspopup=\"true\" id=\"navbarDropd ... www.navy.mil/Leadership/\" class=\"nav-link has-submenu\">LEADERSHIP<span class=\"sub-arrow\"></span></a>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(23)>*:nth-child(2)>*:nth-child(7)>*:nth-child(2)>*:nth-child(3)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "a[class=\"nav-link has-submenu\"][href=\"http://www.navy.mil/Leadership/\"][id=\"navbarDropdownMenuLink\"][aria-haspopup=\"true\"][aria-expanded=\"false\"][aria-controls=\"sm-16589324395323064-2\"]",
+            "attNo": 6
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This A has an id attribute of 'navbarDropdownMenuLink', which is not unique in the same DOM",
+          "element": "<a aria-controls=\"sm-16589324395323064-3\" aria-expanded=\"false\" aria-haspopup=\"true\" id=\"navbarDropd ... navy.mil/Press-Office/\" class=\"nav-link has-submenu\">PRESS OFFICE<span class=\"sub-arrow\"></span></a>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(23)>*:nth-child(2)>*:nth-child(7)>*:nth-child(2)>*:nth-child(3)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "a[class=\"nav-link has-submenu\"][href=\"http://www.navy.mil/Press-Office/\"][id=\"navbarDropdownMenuLink\"][aria-haspopup=\"true\"][aria-expanded=\"false\"][aria-controls=\"sm-16589324395323064-3\"]",
+            "attNo": 6
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This A has an id attribute of 'navbarDropdownMenuLink', which is not unique in the same DOM",
+          "element": "<a aria-controls=\"sm-16589324395323064-4\" aria-expanded=\"false\" aria-haspopup=\"true\" id=\"navbarDropd ... //www.navy.mil/Resources/\" class=\"nav-link has-submenu\">RESOURCES<span class=\"sub-arrow\"></span></a>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(23)>*:nth-child(2)>*:nth-child(7)>*:nth-child(2)>*:nth-child(3)>*:nth-child(1)>*:nth-child(6)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "a[class=\"nav-link has-submenu\"][href=\"http://www.navy.mil/Resources/\"][id=\"navbarDropdownMenuLink\"][aria-haspopup=\"true\"][aria-expanded=\"false\"][aria-controls=\"sm-16589324395323064-4\"]",
+            "attNo": 6
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This DIV has an id attribute of 'hero-callout-link-container', which is not unique in the same DOM",
+          "element": "<div id=\"hero-callout-link-container\"><div class=\"callout-button\"><a href=\"https://www.navy.mil/jointbasewater\">Information Updates Here:</a><span></span></div></div>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(23)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(5)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[id=\"hero-callout-link-container\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This DIV has an id attribute of 'hero-callout-link-container', which is not unique in the same DOM",
+          "element": "<div id=\"hero-callout-link-container\"><div class=\"callout-button\"><a href=\"https://www.navy.mil/jointbasewater\">Information Updates Here:</a><span></span></div></div>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(23)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(4)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[id=\"hero-callout-link-container\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg viewbox=\"0 0 66 66\" height=\"96px\" width=\"96px\" class=\"goog-te-spinner\" xmlns=\"http://www.w3.org ... 33\" stroke-linecap=\"round\" stroke-width=\"6\" fill=\"none\" class=\"goog-te-spinner-path\"></circle></svg>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(4)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[class=\"goog-te-spinner\"][width=\"96px\"][height=\"96px\"][viewbox=\"0 0 66 66\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 141,
+          "bestPracticeId": 401,
+          "attribute": "This A element has an href attribute set to an image file reference",
+          "attributeDetail": "This A element has an href attribute set to an image file reference",
+          "element": "<a data-caption=\"<a class=&quot;galleryLoc&quot; href=&quot;https://www.navy.mil/Resources/Photo-Gal ... <span class=\"hero-media-type image\"><i aria-hidden=\"true\" class=\"fas fa-image\"></i></span></div></a>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(23)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(5)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "a[class=\"a-media-link\"][href=\"https://media.defense.gov/2022/Jul/15/2003036339/2640/1485/0/220714-N-MR124-1024.JPG\"][data-fancybox=\"\"][data-toggle=\"lightbox\"][data-caption=\"<a class=\\\"galleryLoc\\\" href=\\\"https://www.navy.mil/Resources/Photo-Gallery/igphoto/2003036339/\\\">More Details</a>\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a class=\"site-logo\" href=\"http://www.navy.mil/\"><div class=\"logo-element\"></div></a>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(23)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"http://www.navy.mil/\"][class=\"site-logo\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a innertext=\"Start of main content\" href=\"#skip-target\" tabindex=\"-1\" class=\"skip\" name=\"skip-target\" id=\"skip-target\"></a>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(23)>*:nth-child(3)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[id=\"skip-target\"][name=\"skip-target\"][class=\"skip\"][tabindex=\"-1\"][href=\"#skip-target\"][innertext=\"Start of main content\"]",
+            "attNo": 6
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a data-caption=\"<a class=&quot;galleryLoc&quot; href=&quot;https://www.navy.mil/Resources/Photo-Gal ... <span class=\"hero-media-type image\"><i aria-hidden=\"true\" class=\"fas fa-image\"></i></span></div></a>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(23)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(5)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[class=\"a-media-link\"][href=\"https://media.defense.gov/2022/Jul/15/2003036339/2640/1485/0/220714-N-MR124-1024.JPG\"][data-fancybox=\"\"][data-toggle=\"lightbox\"][data-caption=\"<a class=\\\"galleryLoc\\\" href=\\\"https://www.navy.mil/Resources/Photo-Gallery/igphoto/2003036339/\\\">More Details</a>\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a href=\"https://allhands.navy.mil/\"><img src=\"/Portals/_default/Skins/NavyTheme2/Resources/img/SVGs/AH-Small-Icon.svg\"></a>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(23)>*:nth-child(4)>*:nth-child(5)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"https://allhands.navy.mil/\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a href=\"/Press-Office\"><img src=\"/Portals/_default/Skins/NavyTheme2/Resources/img/SVGs/Press-Office-Small-Icon-01.svg\"></a>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(23)>*:nth-child(4)>*:nth-child(5)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"/Press-Office\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a href=\"/Leadership\"><img src=\"/Portals/_default/Skins/NavyTheme2/Resources/img/SVGs/Leadership-Small-Icon-01.svg\"></a>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(23)>*:nth-child(4)>*:nth-child(5)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"/Leadership\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a href=\"/Resources/Fact-Files\"><img src=\"/Portals/_default/Skins/NavyTheme2/Resources/img/SVGs/Fact-Files-Icon-01.svg\"></a>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(23)>*:nth-child(4)>*:nth-child(5)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"/Resources/Fact-Files\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 281,
+          "bestPracticeId": 1626,
+          "attribute": "The aria-expanded attribute is not allowed on this element",
+          "attributeDetail": "The aria-expanded attribute is not allowed on this DIV",
+          "element": "<div aria-expanded=\"false\" aria-haspopup=\"true\" id=\"navbarDropdownMenuLink\" tabindex=\"0\" class=\"nav-link toplevel\"><span class=\"animateMenuUnderLine\">ABOUT<span class=\"shortline\"></span></span></div>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(23)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[class=\"nav-link toplevel\"][tabindex=\"0\"][id=\"navbarDropdownMenuLink\"][aria-haspopup=\"true\"][aria-expanded=\"false\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 281,
+          "bestPracticeId": 1626,
+          "attribute": "The aria-expanded attribute is not allowed on this element",
+          "attributeDetail": "The aria-expanded attribute is not allowed on this DIV",
+          "element": "<div aria-expanded=\"false\" aria-haspopup=\"true\" id=\"navbarDropdownMenuLink\" tabindex=\"0\" class=\"nav- ...  toplevel\"><span class=\"animateMenuUnderLine\">LEADERSHIP<span class=\"shortline\"></span></span></div>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(23)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[class=\"nav-link toplevel\"][tabindex=\"0\"][id=\"navbarDropdownMenuLink\"][aria-haspopup=\"true\"][aria-expanded=\"false\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 281,
+          "bestPracticeId": 1626,
+          "attribute": "The aria-expanded attribute is not allowed on this element",
+          "attributeDetail": "The aria-expanded attribute is not allowed on this DIV",
+          "element": "<div aria-expanded=\"false\" aria-haspopup=\"true\" id=\"navbarDropdownMenuLink\" tabindex=\"0\" class=\"nav- ... oplevel\"><span class=\"animateMenuUnderLine\">PRESS OFFICE<span class=\"shortline\"></span></span></div>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(23)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[class=\"nav-link toplevel\"][tabindex=\"0\"][id=\"navbarDropdownMenuLink\"][aria-haspopup=\"true\"][aria-expanded=\"false\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 281,
+          "bestPracticeId": 1626,
+          "attribute": "The aria-expanded attribute is not allowed on this element",
+          "attributeDetail": "The aria-expanded attribute is not allowed on this DIV",
+          "element": "<div aria-expanded=\"false\" aria-haspopup=\"true\" id=\"navbarDropdownMenuLink\" tabindex=\"0\" class=\"nav- ... k toplevel\"><span class=\"animateMenuUnderLine\">RESOURCES<span class=\"shortline\"></span></span></div>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(23)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(6)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[class=\"nav-link toplevel\"][tabindex=\"0\"][id=\"navbarDropdownMenuLink\"][aria-haspopup=\"true\"][aria-expanded=\"false\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 527,
+          "bestPracticeId": 2519,
+          "attribute": "This aside does not have a unique accessible name as required when two or more aside elements are present",
+          "attributeDetail": "This aside does not have a unique accessible name as required when two or more aside elements are present",
+          "element": "<aside><a href=\"https://www.navy.mil/Press-Office/News-Stories/Article/3096321/us-air-force-navy-ope ... ast-china-sea/\"><h1>U.S. Air Force, Navy Operate aboard Destroyer in East China Sea</h1></a></aside>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(23)>*:nth-child(4)>*:nth-child(2)>*:nth-child(3)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "aside",
+            "attNo": 0
+          }
+        },
+        {
+          "engineTestId": 527,
+          "bestPracticeId": 2519,
+          "attribute": "This aside does not have a unique accessible name as required when two or more aside elements are present",
+          "attributeDetail": "This aside does not have a unique accessible name as required when two or more aside elements are present",
+          "element": "<aside><a href=\"https://www.navy.mil/Press-Office/News-Stories/Article/3096332/uss-bainbridge-ddg-96-arrives-in-aksaz-turkey/\"><h1>USS Bainbridge (DDG 96) arrives in Aksaz, Turkey</h1></a></aside>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(23)>*:nth-child(4)>*:nth-child(2)>*:nth-child(3)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "aside",
+            "attNo": 0
+          }
+        },
+        {
+          "engineTestId": 527,
+          "bestPracticeId": 2519,
+          "attribute": "This aside does not have a unique accessible name as required when two or more aside elements are present",
+          "attributeDetail": "This aside does not have a unique accessible name as required when two or more aside elements are present",
+          "element": "<aside><a href=\"https://www.navy.mil/Press-Office/News-Stories/Article/3096342/french-italian-ships- ... -strike-group/\"><h1>French, Italian ships join Harry S. Truman Carrier Strike Group</h1></a></aside>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(23)>*:nth-child(4)>*:nth-child(2)>*:nth-child(3)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "aside",
+            "attNo": 0
+          }
+        },
+        {
+          "engineTestId": 527,
+          "bestPracticeId": 2519,
+          "attribute": "This aside does not have a unique accessible name as required when two or more aside elements are present",
+          "attributeDetail": "This aside does not have a unique accessible name as required when two or more aside elements are present",
+          "element": "<aside><a href=\"https://www.navy.mil/Press-Office/News-Stories/Article/3095459/us-and-partner-nation ... of-rimpac-2022/\"><h1>U.S. and Partner Nations Conduct SINKEX as Part of RIMPAC 2022</h1></a></aside>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(23)>*:nth-child(4)>*:nth-child(2)>*:nth-child(3)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "aside",
+            "attNo": 0
+          }
+        },
+        {
+          "engineTestId": 527,
+          "bestPracticeId": 2519,
+          "attribute": "This aside does not have a unique accessible name as required when two or more aside elements are present",
+          "attributeDetail": "This aside does not have a unique accessible name as required when two or more aside elements are present",
+          "element": "<aside><h1><a target=\"_blank\" href=\"/US-Navy-COVID-19-Updates\">U.S. Navy COVID-19 Resources</a></h1>&gt;</aside>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(23)>*:nth-child(4)>*:nth-child(2)>*:nth-child(3)>*:nth-child(4)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "aside",
+            "attNo": 0
+          }
+        },
+        {
+          "engineTestId": 527,
+          "bestPracticeId": 2519,
+          "attribute": "This aside does not have a unique accessible name as required when two or more aside elements are present",
+          "attributeDetail": "This aside does not have a unique accessible name as required when two or more aside elements are present",
+          "element": "<aside><h1><a target=\"_blank\" href=\"/Resources/Blogs/Detail/Article/2894808/get-real-get-better/\">Get Real, Get Better</a></h1></aside>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(23)>*:nth-child(4)>*:nth-child(2)>*:nth-child(3)>*:nth-child(4)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "aside",
+            "attNo": 0
+          }
+        },
+        {
+          "engineTestId": 531,
+          "bestPracticeId": 2519,
+          "attribute": "This nav does not have a unique accessible name as required when two or more nav elements are present",
+          "attributeDetail": "This nav does not have a unique accessible name as required when two or more nav elements are present",
+          "element": "<nav class=\"navbar navbar-expand-xl navbar-dark text-light\"><div class=\"logo-link\"><a class=\"site-lo ... \" role=\"group\" id=\"sm-1658932439527114-2\" aria-labelledby=\"sm-1658932439527114-1\" class=\"dropdown-me",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(23)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[class=\"navbar navbar-expand-xl navbar-dark text-light\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 531,
+          "bestPracticeId": 2519,
+          "attribute": "This nav does not have a unique accessible name as required when two or more nav elements are present",
+          "attributeDetail": "This nav does not have a unique accessible name as required when two or more nav elements are present",
+          "element": "<nav class=\"icon-nav\"><ul><li><a href=\"https://allhands.navy.mil/\"><img src=\"/Portals/_default/Skins ... A collection of \"Fact Sheets\" of U.S. Navy vessels, platforms and equipment.</a></p></li></ul></nav>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(23)>*:nth-child(4)>*:nth-child(5)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[class=\"icon-nav\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 532,
+          "bestPracticeId": 2519,
+          "attribute": "This aside does not have an accessible name as required when two or more aside elements are present",
+          "attributeDetail": "This aside does not have an accessible name as required when two or more aside elements are present",
+          "element": "<aside><a href=\"https://www.navy.mil/Press-Office/News-Stories/Article/3096321/us-air-force-navy-ope ... ast-china-sea/\"><h1>U.S. Air Force, Navy Operate aboard Destroyer in East China Sea</h1></a></aside>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(23)>*:nth-child(4)>*:nth-child(2)>*:nth-child(3)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "aside",
+            "attNo": 0
+          }
+        },
+        {
+          "engineTestId": 532,
+          "bestPracticeId": 2519,
+          "attribute": "This aside does not have an accessible name as required when two or more aside elements are present",
+          "attributeDetail": "This aside does not have an accessible name as required when two or more aside elements are present",
+          "element": "<aside><a href=\"https://www.navy.mil/Press-Office/News-Stories/Article/3096332/uss-bainbridge-ddg-96-arrives-in-aksaz-turkey/\"><h1>USS Bainbridge (DDG 96) arrives in Aksaz, Turkey</h1></a></aside>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(23)>*:nth-child(4)>*:nth-child(2)>*:nth-child(3)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "aside",
+            "attNo": 0
+          }
+        },
+        {
+          "engineTestId": 532,
+          "bestPracticeId": 2519,
+          "attribute": "This aside does not have an accessible name as required when two or more aside elements are present",
+          "attributeDetail": "This aside does not have an accessible name as required when two or more aside elements are present",
+          "element": "<aside><a href=\"https://www.navy.mil/Press-Office/News-Stories/Article/3096342/french-italian-ships- ... -strike-group/\"><h1>French, Italian ships join Harry S. Truman Carrier Strike Group</h1></a></aside>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(23)>*:nth-child(4)>*:nth-child(2)>*:nth-child(3)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "aside",
+            "attNo": 0
+          }
+        },
+        {
+          "engineTestId": 532,
+          "bestPracticeId": 2519,
+          "attribute": "This aside does not have an accessible name as required when two or more aside elements are present",
+          "attributeDetail": "This aside does not have an accessible name as required when two or more aside elements are present",
+          "element": "<aside><a href=\"https://www.navy.mil/Press-Office/News-Stories/Article/3095459/us-and-partner-nation ... of-rimpac-2022/\"><h1>U.S. and Partner Nations Conduct SINKEX as Part of RIMPAC 2022</h1></a></aside>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(23)>*:nth-child(4)>*:nth-child(2)>*:nth-child(3)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "aside",
+            "attNo": 0
+          }
+        },
+        {
+          "engineTestId": 532,
+          "bestPracticeId": 2519,
+          "attribute": "This aside does not have an accessible name as required when two or more aside elements are present",
+          "attributeDetail": "This aside does not have an accessible name as required when two or more aside elements are present",
+          "element": "<aside><h1><a target=\"_blank\" href=\"/US-Navy-COVID-19-Updates\">U.S. Navy COVID-19 Resources</a></h1>&gt;</aside>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(23)>*:nth-child(4)>*:nth-child(2)>*:nth-child(3)>*:nth-child(4)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "aside",
+            "attNo": 0
+          }
+        },
+        {
+          "engineTestId": 532,
+          "bestPracticeId": 2519,
+          "attribute": "This aside does not have an accessible name as required when two or more aside elements are present",
+          "attributeDetail": "This aside does not have an accessible name as required when two or more aside elements are present",
+          "element": "<aside><h1><a target=\"_blank\" href=\"/Resources/Blogs/Detail/Article/2894808/get-real-get-better/\">Get Real, Get Better</a></h1></aside>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(23)>*:nth-child(4)>*:nth-child(2)>*:nth-child(3)>*:nth-child(4)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "aside",
+            "attNo": 0
+          }
+        },
+        {
+          "engineTestId": 533,
+          "bestPracticeId": 2519,
+          "attribute": "This nav does not have an accessible name as required when two or more nav elements are present",
+          "attributeDetail": "This nav does not have an accessible name as required when two or more nav elements are present",
+          "element": "<nav class=\"navbar navbar-expand-xl navbar-dark text-light\"><div class=\"logo-link\"><a class=\"site-lo ... \" role=\"group\" id=\"sm-1658932439527114-2\" aria-labelledby=\"sm-1658932439527114-1\" class=\"dropdown-me",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(23)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[class=\"navbar navbar-expand-xl navbar-dark text-light\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 533,
+          "bestPracticeId": 2519,
+          "attribute": "This nav does not have an accessible name as required when two or more nav elements are present",
+          "attributeDetail": "This nav does not have an accessible name as required when two or more nav elements are present",
+          "element": "<nav class=\"icon-nav\"><ul><li><a href=\"https://allhands.navy.mil/\"><img src=\"/Portals/_default/Skins ... A collection of \"Fact Sheets\" of U.S. Navy vessels, platforms and equipment.</a></p></li></ul></nav>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(23)>*:nth-child(4)>*:nth-child(5)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[class=\"icon-nav\"]",
+            "attNo": 1
+          }
+        }
+      ]
+    }
+  ],
+  "timeStamp": "4jil2",
+  "startTime": "2022-07-27T14:33:56",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "continuum",
+      0
+    ]
+  ],
+  "logCount": 1,
+  "logSize": 46,
+  "errorLogCount": 0,
+  "errorLogSize": 0,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-27T14:34:01",
+  "elapsedSeconds": 5
+}

@@ -1,0 +1,21 @@
+{
+  "id": "usfedexec",
+  "what": "U.S. federal executive agencies",
+  "hosts": [
+    {
+      "id": "fbi",
+      "which": "https://www.fbi.gov/",
+      "what": "Federal Bureau of Investigation (FBI)"
+    },
+    {
+      "id": "nasa",
+      "which": "https://www.nasa.gov/",
+      "what": "National Aeronautics and Space Administration (NASA)"
+    },
+    {
+      "id": "rfa",
+      "which": "https://www.rfa.org/english/",
+      "what": "Radio Free Asia"
+    }
+  ]
+}

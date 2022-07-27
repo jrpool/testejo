@@ -1,0 +1,1135 @@
+{
+  "id": "4jil2-amtrak",
+  "host": {
+    "id": "amtrak",
+    "which": "https://www.amtrak.com/home.html",
+    "what": "National Railroad Passenger Corporation (AMTRAK)"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-27T14:33:07"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-27T14:33:19"
+    }
+  ],
+  "script": {
+    "id": "continuum",
+    "what": "Continuum",
+    "strict": true,
+    "timeLimit": 30,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.amtrak.com/home.html",
+        "what": "National Railroad Passenger Corporation (AMTRAK)"
+      },
+      {
+        "type": "test",
+        "which": "continuum",
+        "what": "Continuum"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.amtrak.com/home.html",
+      "what": "National Railroad Passenger Corporation (AMTRAK)",
+      "result": "https://www.amtrak.com/home.html"
+    },
+    {
+      "type": "test",
+      "which": "continuum",
+      "what": "Level Access Continuum, community edition",
+      "url": "https://www.amtrak.com/home.html",
+      "result": [
+        {
+          "engineTestId": 83,
+          "bestPracticeId": 1626,
+          "attribute": "This element has an aria-describedby attribute value that includes one or more invalid or duplicate ids",
+          "attributeDetail": "This A has an aria-describedby attribute value of 'promoOverviewContinueLink', which includes one or more invalid or duplicate ids",
+          "element": "<a alt=\"promoOverviewContinueLink\" data-height=\"600\" data-width=\"600\" data-popup=\"popup\" data-popupu ... arget=\"_self\" class=\"promo-overview-card__text_more-container_link am-fm__popup-link\">Learn More</a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(5)>*:nth-child(2)>*:nth-child(6)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(3)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "a[class=\"promo-overview-card__text_more-container_link am-fm__popup-link\"][target=\"_self\"][data-automation-id=\"promoOverviewContinueLink\"][aria-label=\"Discover America\"][aria-describedby=\"promoOverviewContinueLink\"][href=\"https://www.amtrak.com/exploreamerica?intcmp=wsp_promo-card_link_auto-train-experience_hpcard1\"][data-popupurl=\"https://www.amtrak.com/exploreamerica?intcmp=wsp_promo-card_link_auto-train-experience_hpcard1\"][data-popup=\"popup\"][data-width=\"600\"][data-height=\"600\"][alt=\"promoOverviewContinueLink\"]",
+            "attNo": 11
+          }
+        },
+        {
+          "engineTestId": 83,
+          "bestPracticeId": 1626,
+          "attribute": "This element has an aria-describedby attribute value that includes one or more invalid or duplicate ids",
+          "attributeDetail": "This A has an aria-describedby attribute value of 'promoOverviewContinueLink', which includes one or more invalid or duplicate ids",
+          "element": "<a aria-describedby=\"promoOverviewContinueLink\" aria-label=\"Book early to save up to 30% off Acela\"  ... on-id=\"promoOverviewContinueLink\" class=\"promo-overview-card__text_more-container_link\">Book Now</a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(5)>*:nth-child(2)>*:nth-child(6)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(3)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "a[class=\"promo-overview-card__text_more-container_link\"][data-automation-id=\"promoOverviewContinueLink\"][href=\"https://www.amtrak.com/book-early-save-on-acela?intcmp=wsp_promo-card_link_acela-discount_hpcard\"][target=\"_self\"][aria-label=\"Book early to save up to 30% off Acela\"][aria-describedby=\"promoOverviewContinueLink\"]",
+            "attNo": 6
+          }
+        },
+        {
+          "engineTestId": 83,
+          "bestPracticeId": 1626,
+          "attribute": "This element has an aria-describedby attribute value that includes one or more invalid or duplicate ids",
+          "attributeDetail": "This A has an aria-describedby attribute value of 'promoOverviewContinueLink', which includes one or more invalid or duplicate ids",
+          "element": "<a aria-describedby=\"promoOverviewContinueLink\" aria-label=\"Travel with Pets on Amtrak\" target=\"_sel ... -id=\"promoOverviewContinueLink\" class=\"promo-overview-card__text_more-container_link\">Learn More</a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(5)>*:nth-child(2)>*:nth-child(6)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(3)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "a[class=\"promo-overview-card__text_more-container_link\"][data-automation-id=\"promoOverviewContinueLink\"][href=\"https://www.amtrak.com/pets?intcmp=wsp_promo-card_link_pets-discount_hpcard\"][target=\"_self\"][aria-label=\"Travel with Pets on Amtrak\"][aria-describedby=\"promoOverviewContinueLink\"]",
+            "attNo": 6
+          }
+        },
+        {
+          "engineTestId": 83,
+          "bestPracticeId": 1626,
+          "attribute": "This element has an aria-describedby attribute value that includes one or more invalid or duplicate ids",
+          "attributeDetail": "This A has an aria-describedby attribute value of 'promoOverviewContinueLink', which includes one or more invalid or duplicate ids",
+          "element": "<a alt=\"promoOverviewContinueLink\" data-height=\"600\" data-width=\"600\" data-popup=\"popup\" data-popupu ... arget=\"_self\" class=\"promo-overview-card__text_more-container_link am-fm__popup-link\">Learn More</a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(5)>*:nth-child(2)>*:nth-child(8)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(3)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "a[class=\"promo-overview-card__text_more-container_link am-fm__popup-link\"][target=\"_self\"][data-automation-id=\"promoOverviewContinueLink\"][aria-label=\"All Aboard with Just Your Phone\"][aria-describedby=\"promoOverviewContinueLink\"][href=\"https://www.amtrak.com/mobile?intcmp=wsp_promo-card_link_mobile-app_hpcard4\"][data-popupurl=\"https://www.amtrak.com/mobile?intcmp=wsp_promo-card_link_mobile-app_hpcard4\"][data-popup=\"popup\"][data-width=\"600\"][data-height=\"600\"][alt=\"promoOverviewContinueLink\"]",
+            "attNo": 11
+          }
+        },
+        {
+          "engineTestId": 83,
+          "bestPracticeId": 1626,
+          "attribute": "This element has an aria-describedby attribute value that includes one or more invalid or duplicate ids",
+          "attributeDetail": "This A has an aria-describedby attribute value of 'promoOverviewContinueLink', which includes one or more invalid or duplicate ids",
+          "element": "<a aria-describedby=\"promoOverviewContinueLink\" aria-label=\"Our Recent Customer Service Enhancements ... -id=\"promoOverviewContinueLink\" class=\"promo-overview-card__text_more-container_link\">Learn More</a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(5)>*:nth-child(2)>*:nth-child(8)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(3)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "a[class=\"promo-overview-card__text_more-container_link\"][data-automation-id=\"promoOverviewContinueLink\"][href=\"https://www.amtrak.com/about-amtrak/service-enhancements-highlights?intcmp=wsp_promo-card_link_customer-enhancements_hpcard\"][aria-label=\"Our Recent Customer Service Enhancements\"][aria-describedby=\"promoOverviewContinueLink\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 83,
+          "bestPracticeId": 1626,
+          "attribute": "This element has an aria-describedby attribute value that includes one or more invalid or duplicate ids",
+          "attributeDetail": "This A has an aria-describedby attribute value of 'promoOverviewContinueLink', which includes one or more invalid or duplicate ids",
+          "element": "<a alt=\"promoOverviewContinueLink\" data-height=\"600\" data-width=\"600\" data-popup=\"popup\" data-popupu ... arget=\"_self\" class=\"promo-overview-card__text_more-container_link am-fm__popup-link\">Learn More</a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(5)>*:nth-child(2)>*:nth-child(8)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(3)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "a[class=\"promo-overview-card__text_more-container_link am-fm__popup-link\"][target=\"_self\"][data-automation-id=\"promoOverviewContinueLink\"][aria-label=\"Join Amtrak Guest Rewards\"][aria-describedby=\"promoOverviewContinueLink\"][href=\"https://www.amtrak.com/guestrewards/home.html?intcmp=wsp_promo-card_link_join-agr_hpcard6\"][data-popupurl=\"https://www.amtrak.com/guestrewards/home.html?intcmp=wsp_promo-card_link_join-agr_hpcard6\"][data-popup=\"popup\"][data-width=\"600\"][data-height=\"600\"][alt=\"promoOverviewContinueLink\"]",
+            "attNo": 11
+          }
+        },
+        {
+          "engineTestId": 83,
+          "bestPracticeId": 1626,
+          "attribute": "This element has an aria-describedby attribute value that includes one or more invalid or duplicate ids",
+          "attributeDetail": "This A has an aria-describedby attribute value of 'feature-area__content_cta-btn', which includes one or more invalid or duplicate ids",
+          "element": "<a tabindex=\"-1\" data-automation-id=\"featureCTABtn\" class=\"feature-area__content_cta-btn am-fm__popu ... mtrak.com/deals-discounts/multi-ride-rail-passes/ride-reserve.html\">Learn About Confirming Trips</a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(5)>*:nth-child(2)>*:nth-child(10)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(3)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"https://www.amtrak.com/deals-discounts/multi-ride-rail-passes/ride-reserve.html\"][target=\"_self\"][data-popupurl=\"https://www.amtrak.com/deals-discounts/multi-ride-rail-passes/ride-reserve.html\"][aria-label=\"Learn more about Amtrak RideReserve for Multi-Ride Passes\"][aria-describedby=\"feature-area__content_cta-btn\"][class=\"feature-area__content_cta-btn am-fm__popup-link\"][data-automation-id=\"featureCTABtn\"][tabindex=\"-1\"]",
+            "attNo": 8
+          }
+        },
+        {
+          "engineTestId": 83,
+          "bestPracticeId": 1626,
+          "attribute": "This element has an aria-describedby attribute value that includes one or more invalid or duplicate ids",
+          "attributeDetail": "This A has an aria-describedby attribute value of 'feature-area__content_cta-btn', which includes one or more invalid or duplicate ids",
+          "element": "<a tabindex=\"-1\" data-automation-id=\"featureCTABtn\" class=\"feature-area__content_cta-btn am-fm__popu ... elf\" href=\"https://www.amtrak.com/planning-booking/tickets-reservations/mobile.html\">GET THE APP</a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(5)>*:nth-child(2)>*:nth-child(10)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(4)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"https://www.amtrak.com/planning-booking/tickets-reservations/mobile.html\"][target=\"_self\"][data-popupurl=\"https://www.amtrak.com/planning-booking/tickets-reservations/mobile.html\"][aria-label=\"Learn more about Make Travel a Little Easier\"][aria-describedby=\"feature-area__content_cta-btn\"][class=\"feature-area__content_cta-btn am-fm__popup-link\"][data-automation-id=\"featureCTABtn\"][tabindex=\"-1\"]",
+            "attNo": 8
+          }
+        },
+        {
+          "engineTestId": 83,
+          "bestPracticeId": 1626,
+          "attribute": "This element has an aria-describedby attribute value that includes one or more invalid or duplicate ids",
+          "attributeDetail": "This A has an aria-describedby attribute value of 'feature-area__content_cta-btn', which includes one or more invalid or duplicate ids",
+          "element": "<a tabindex=\"-1\" data-automation-id=\"featureCTABtn\" class=\"feature-area__content_cta-btn am-fm__popu ... ck-your-train.html\" target=\"_self\" href=\"https://www.amtrak.com/track-your-train.html\">TRACK NOW</a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(5)>*:nth-child(2)>*:nth-child(10)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(4)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"https://www.amtrak.com/track-your-train.html\"][target=\"_self\"][data-popupurl=\"https://www.amtrak.com/track-your-train.html\"][aria-label=\"Learn more about Track Your Train\"][aria-describedby=\"feature-area__content_cta-btn\"][class=\"feature-area__content_cta-btn am-fm__popup-link\"][data-automation-id=\"featureCTABtn\"][tabindex=\"-1\"]",
+            "attNo": 8
+          }
+        },
+        {
+          "engineTestId": 83,
+          "bestPracticeId": 1626,
+          "attribute": "This element has an aria-describedby attribute value that includes one or more invalid or duplicate ids",
+          "attributeDetail": "This A has an aria-describedby attribute value of 'feature-area__content_cta-btn', which includes one or more invalid or duplicate ids",
+          "element": "<a tabindex=\"-1\" data-automation-id=\"featureCTABtn\" class=\"feature-area__content_cta-btn am-fm__popu ... -your-trip.html\" target=\"_self\" href=\"https://www.amtrak.com/plan-your-trip.html\">START PLANNING</a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(5)>*:nth-child(2)>*:nth-child(10)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(4)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"https://www.amtrak.com/plan-your-trip.html\"][target=\"_self\"][data-popupurl=\"https://www.amtrak.com/plan-your-trip.html\"][aria-label=\"Learn more about Interactive Planning Map\"][aria-describedby=\"feature-area__content_cta-btn\"][class=\"feature-area__content_cta-btn am-fm__popup-link\"][data-automation-id=\"featureCTABtn\"][tabindex=\"-1\"]",
+            "attNo": 8
+          }
+        },
+        {
+          "engineTestId": 89,
+          "bestPracticeId": 362,
+          "attribute": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<img src=\"https://www.amtrak.com/content/dam/agr/spinners/preloader-blue.gif\" class=\"image\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[class=\"image\"][src=\"https://www.amtrak.com/content/dam/agr/spinners/preloader-blue.gif\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 89,
+          "bestPracticeId": 362,
+          "attribute": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<img src=\"https://www.amtrak.com/content/dam/agr/spinners/preloader-blue.gif\" class=\"image\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(2)>*:nth-child(3)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[class=\"image\"][src=\"https://www.amtrak.com/content/dam/agr/spinners/preloader-blue.gif\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 89,
+          "bestPracticeId": 362,
+          "attribute": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<img src=\"https://www.amtrak.com/content/dam/projects/dotcom/english/public/images/logos/guest-rewards-logo.svg\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(2)>*:nth-child(3)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(5)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[src=\"https://www.amtrak.com/content/dam/projects/dotcom/english/public/images/logos/guest-rewards-logo.svg\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 89,
+          "bestPracticeId": 362,
+          "attribute": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<img src=\"https://www.amtrak.com/content/dam/projects/dotcom/english/public/images/PromoCard/man-usi ... bile-phone.jpg/_jcr_content/renditions/cq5dam.web.960.600.jpeg\" class=\"promo-overview-card__lg-img\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(5)>*:nth-child(2)>*:nth-child(8)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[class=\"promo-overview-card__lg-img\"][src=\"https://www.amtrak.com/content/dam/projects/dotcom/english/public/images/PromoCard/man-using-mobile-phone.jpg/_jcr_content/renditions/cq5dam.web.960.600.jpeg\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 89,
+          "bestPracticeId": 362,
+          "attribute": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<img src=\"https://www.amtrak.com/content/dam/projects/dotcom/english/public/images/PromoCard/agr-promo-background.jpg/_jcr_content/renditions/original\" class=\"promo-overview-card__lg-img\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(5)>*:nth-child(2)>*:nth-child(8)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[class=\"promo-overview-card__lg-img\"][src=\"https://www.amtrak.com/content/dam/projects/dotcom/english/public/images/PromoCard/agr-promo-background.jpg/_jcr_content/renditions/original\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 89,
+          "bestPracticeId": 362,
+          "attribute": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<img src=\"https://www.amtrak.com/content/dam/projects/dotcom/english/public/images/Carousel/Landing-feature_02.gif\" class=\"feature-area__content_media-img_img\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(5)>*:nth-child(2)>*:nth-child(10)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[class=\"feature-area__content_media-img_img\"][src=\"https://www.amtrak.com/content/dam/projects/dotcom/english/public/images/Carousel/Landing-feature_02.gif\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 89,
+          "bestPracticeId": 362,
+          "attribute": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<img src=\"https://www.amtrak.com/content/dam/projects/dotcom/english/public/images/Carousel/Landing-feature_01.gif\" class=\"feature-area__content_media-img_img\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(5)>*:nth-child(2)>*:nth-child(10)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[class=\"feature-area__content_media-img_img\"][src=\"https://www.amtrak.com/content/dam/projects/dotcom/english/public/images/Carousel/Landing-feature_01.gif\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 89,
+          "bestPracticeId": 362,
+          "attribute": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<img src=\"https://www.amtrak.com/content/dam/projects/dotcom/english/public/images/Carousel/Landing_Feature_03.gif\" class=\"feature-area__content_media-img_img\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(5)>*:nth-child(2)>*:nth-child(10)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[class=\"feature-area__content_media-img_img\"][src=\"https://www.amtrak.com/content/dam/projects/dotcom/english/public/images/Carousel/Landing_Feature_03.gif\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 89,
+          "bestPracticeId": 362,
+          "attribute": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<img src=\"https://www.amtrak.com/content/dam/projects/dotcom/english/public/images/icons/AppStore.gif\" class=\"store-icon\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(12)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[class=\"store-icon\"][src=\"https://www.amtrak.com/content/dam/projects/dotcom/english/public/images/icons/AppStore.gif\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 89,
+          "bestPracticeId": 362,
+          "attribute": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<img src=\"https://www.amtrak.com/content/dam/projects/dotcom/english/public/images/icons/GooglePlay.gif\" class=\"store-icon\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(12)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[class=\"store-icon\"][src=\"https://www.amtrak.com/content/dam/projects/dotcom/english/public/images/icons/GooglePlay.gif\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This SCRIPT has an id attribute of 'TTD_universal_0061526049', which is not unique in the same DOM",
+          "element": "<script src=\"//js.adsrvr.org/up_loader.1.1.0.js\" id=\"TTD_universal_0061526049\" type=\"text/javascript\"></script>",
+          "testResult": 0,
+          "path": "head>script:nth-of-type(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "script[type=\"text/javascript\"][id=\"TTD_universal_0061526049\"][src=\"//js.adsrvr.org/up_loader.1.1.0.js\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This SCRIPT has an id attribute of 'TTD_universal_0061526049', which is not unique in the same DOM",
+          "element": "<script src=\"//js.adsrvr.org/up_loader.1.1.0.js\" id=\"TTD_universal_0061526049\" type=\"text/javascript\"></script>",
+          "testResult": 0,
+          "path": "head>script:nth-of-type(4)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "script[type=\"text/javascript\"][id=\"TTD_universal_0061526049\"][src=\"//js.adsrvr.org/up_loader.1.1.0.js\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This SCRIPT has an id attribute of 'lb_gtag_0061526049', which is not unique in the same DOM",
+          "element": "<script src=\"//www.googletagmanager.com/gtag/js?id=DC-9005325\" id=\"lb_gtag_0061526049\" type=\"text/javascript\"></script>",
+          "testResult": 0,
+          "path": "head>script:nth-of-type(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "script[type=\"text/javascript\"][id=\"lb_gtag_0061526049\"][src=\"//www.googletagmanager.com/gtag/js?id=DC-9005325\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This SCRIPT has an id attribute of 'lb_gtag_0061526049', which is not unique in the same DOM",
+          "element": "<script src=\"//www.googletagmanager.com/gtag/js?id=DC-9005325\" id=\"lb_gtag_0061526049\" type=\"text/javascript\"></script>",
+          "testResult": 0,
+          "path": "head>script:nth-of-type(5)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "script[type=\"text/javascript\"][id=\"lb_gtag_0061526049\"][src=\"//www.googletagmanager.com/gtag/js?id=DC-9005325\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This SCRIPT has an id attribute of 'gtm_universal_0061526049', which is not unique in the same DOM",
+          "element": "<script src=\"//www.googletagmanager.com/gtag/js?id=DC-8939204\" id=\"gtm_universal_0061526049\" type=\"text/javascript\"></script>",
+          "testResult": 0,
+          "path": "head>script:nth-of-type(3)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "script[type=\"text/javascript\"][id=\"gtm_universal_0061526049\"][src=\"//www.googletagmanager.com/gtag/js?id=DC-8939204\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This SCRIPT has an id attribute of 'gtm_universal_0061526049', which is not unique in the same DOM",
+          "element": "<script src=\"//www.googletagmanager.com/gtag/js?id=DC-8939204\" id=\"gtm_universal_0061526049\" type=\"text/javascript\"></script>",
+          "testResult": 0,
+          "path": "head>script:nth-of-type(6)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "script[type=\"text/javascript\"][id=\"gtm_universal_0061526049\"][src=\"//www.googletagmanager.com/gtag/js?id=DC-8939204\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This SCRIPT has an id attribute of 'lb_adv_0061526049', which is not unique in the same DOM",
+          "element": "<script src=\"//cdn-akamai.mookie1.com/adv/amtrak.js\" id=\"lb_adv_0061526049\" type=\"text/javascript\"></script>",
+          "testResult": 0,
+          "path": "head>script:nth-of-type(8)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "script[type=\"text/javascript\"][id=\"lb_adv_0061526049\"][src=\"//cdn-akamai.mookie1.com/adv/amtrak.js\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This SCRIPT has an id attribute of 'lb_adv_0061526049', which is not unique in the same DOM",
+          "element": "<script src=\"//cdn-akamai.mookie1.com/adv/amtrak.js\" id=\"lb_adv_0061526049\" type=\"text/javascript\"></script>",
+          "testResult": 0,
+          "path": "head>script:nth-of-type(9)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "script[type=\"text/javascript\"][id=\"lb_adv_0061526049\"][src=\"//cdn-akamai.mookie1.com/adv/amtrak.js\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This LABEL has an id attribute of 'progressBtn0', which is not unique in the same DOM",
+          "element": "<label data-position=\"0\" id=\"progressBtn0\" class=\"switch-button__label\"><input type=\"radio\" checked= ... n__radio\"><span tabindex=\"0\" role=\"button\" class=\"switch-button__text\">Face Coverings</span></label>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(5)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "label[class=\"switch-button__label\"][id=\"progressBtn0\"][data-position=\"0\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This LABEL has an id attribute of 'progressBtn0', which is not unique in the same DOM",
+          "element": "<label data-position=\"0\" id=\"progressBtn0\" class=\"switch-button__label\"><input type=\"radio\" checked= ... tton__radio\"><span tabindex=\"0\" role=\"button\" class=\"switch-button__text\">RideReserve</span></label>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(5)>*:nth-child(2)>*:nth-child(10)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "label[class=\"switch-button__label\"][id=\"progressBtn0\"][data-position=\"0\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This LABEL has an id attribute of 'progressBtn1', which is not unique in the same DOM",
+          "element": "<label data-position=\"1\" id=\"progressBtn1\" class=\"switch-button__label\"><input type=\"radio\" data-aut ... io\"><span tabindex=\"0\" role=\"button\" class=\"switch-button__text\">Pre-Trip COVID Check</span></label>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(5)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "label[class=\"switch-button__label\"][id=\"progressBtn1\"][data-position=\"1\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This LABEL has an id attribute of 'progressBtn1', which is not unique in the same DOM",
+          "element": "<label data-position=\"1\" id=\"progressBtn1\" class=\"switch-button__label\"><input type=\"radio\" data-aut ... utton__radio\"><span tabindex=\"0\" role=\"button\" class=\"switch-button__text\">Mobile App</span></label>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(5)>*:nth-child(2)>*:nth-child(10)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "label[class=\"switch-button__label\"][id=\"progressBtn1\"][data-position=\"1\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This LABEL has an id attribute of 'progressBtn2', which is not unique in the same DOM",
+          "element": "<label data-position=\"2\" id=\"progressBtn2\" class=\"switch-button__label\"><input type=\"radio\" data-aut ... pan tabindex=\"0\" role=\"button\" class=\"switch-button__text\">Air Quality &amp; Cleaning</span></label>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(5)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(1)>*:nth-child(3)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "label[class=\"switch-button__label\"][id=\"progressBtn2\"][data-position=\"2\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This LABEL has an id attribute of 'progressBtn2', which is not unique in the same DOM",
+          "element": "<label data-position=\"2\" id=\"progressBtn2\" class=\"switch-button__label\"><input type=\"radio\" data-aut ... _radio\"><span tabindex=\"0\" role=\"button\" class=\"switch-button__text\">Track Your Train</span></label>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(5)>*:nth-child(2)>*:nth-child(10)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(1)>*:nth-child(3)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "label[class=\"switch-button__label\"][id=\"progressBtn2\"][data-position=\"2\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This LABEL has an id attribute of 'progressBtn3', which is not unique in the same DOM",
+          "element": "<label data-position=\"3\" id=\"progressBtn3\" class=\"switch-button__label\"><input type=\"radio\" data-aut ... _radio\"><span tabindex=\"0\" role=\"button\" class=\"switch-button__text\">Trip Flexibility</span></label>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(5)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "label[class=\"switch-button__label\"][id=\"progressBtn3\"][data-position=\"3\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This LABEL has an id attribute of 'progressBtn3', which is not unique in the same DOM",
+          "element": "<label data-position=\"3\" id=\"progressBtn3\" class=\"switch-button__label\"><input type=\"radio\" data-aut ... <span tabindex=\"0\" role=\"button\" class=\"switch-button__text\">Interactive Planning Map</span></label>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(5)>*:nth-child(2)>*:nth-child(10)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "label[class=\"switch-button__label\"][id=\"progressBtn3\"][data-position=\"3\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This INPUT has an id attribute of 'email-OptIn_siginInRegister', which is not unique in the same DOM",
+          "element": "<input value=\"\" name=\"email-OptIn_siginInRegister'\" id=\"email-OptIn_siginInRegister\" type=\"hidden\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(6)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "input[type=\"hidden\"][id=\"email-OptIn_siginInRegister\"][name=\"email-OptIn_siginInRegister'\"][value=\"\"]",
+            "attNo": 4
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This INPUT has an id attribute of 'email-OptIn_siginInRegister', which is not unique in the same DOM",
+          "element": "<input value=\"\" name=\"email-OptIn_siginInRegister'\" id=\"email-OptIn_siginInRegister\" type=\"hidden\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(6)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "input[type=\"hidden\"][id=\"email-OptIn_siginInRegister\"][name=\"email-OptIn_siginInRegister'\"][value=\"\"]",
+            "attNo": 4
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This IFRAME has an id attribute of 'mediaIQ_0061526049', which is not unique in the same DOM",
+          "element": "<iframe src=\"//9688066.fls.doubleclick.net/activityi;src=9688066;type=invmedia;cat=amtra000;ord=0061526049\" style=\"display: none;\" id=\"mediaIQ_0061526049\"></iframe>",
+          "testResult": 0,
+          "path": "body>iframe:nth-of-type(12)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "iframe[id=\"mediaIQ_0061526049\"][src=\"//9688066.fls.doubleclick.net/activityi;src=9688066;type=invmedia;cat=amtra000;ord=0061526049\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This IFRAME has an id attribute of 'mediaIQ_0061526049', which is not unique in the same DOM",
+          "element": "<iframe src=\"//9688066.fls.doubleclick.net/activityi;src=9688066;type=invmedia;cat=amtra000;ord=0061526049\" style=\"display: none;\" id=\"mediaIQ_0061526049\"></iframe>",
+          "testResult": 0,
+          "path": "body>iframe:nth-of-type(13)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "iframe[id=\"mediaIQ_0061526049\"][src=\"//9688066.fls.doubleclick.net/activityi;src=9688066;type=invmedia;cat=amtra000;ord=0061526049\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a href=\"https://www.amtrak.com/alerts#?intcmp=wsp_banner_link_heatadvisory\" class=\"bam-covid-icon-l ... glish/public/images/icons/informationicon_outline.svg\" class=\"info-tooltip-icon bam-covid-icon\"></a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[class=\"bam-covid-icon-link\"][href=\"https://www.amtrak.com/alerts#?intcmp=wsp_banner_link_heatadvisory\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a href=\"https://amtrak.upreus.com/h5/assistive/index\"></a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(5)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"https://amtrak.upreus.com/h5/assistive/index\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a data-height=\"600\" data-width=\"600\" data-popup=\"popup\" data-popupurl=\"https://www.amtrak.com/mobil ... content/renditions/cq5dam.web.960.600.jpeg\" class=\"promo-overview-card__lg-img\"></div></picture></a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(5)>*:nth-child(2)>*:nth-child(8)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[class=\"promo-overview-card__link-img am-fm__popup-link\"][target=\"_self\"][data-automation-id=\"promoOverviewContinueLink\"][href=\"https://www.amtrak.com/mobile?intcmp=wsp_promo-card_link_mobile-app_hpcard4\"][data-popupurl=\"https://www.amtrak.com/mobile?intcmp=wsp_promo-card_link_mobile-app_hpcard4\"][data-popup=\"popup\"][data-width=\"600\"][data-height=\"600\"]",
+            "attNo": 8
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a data-height=\"600\" data-width=\"600\" data-popup=\"popup\" data-popupurl=\"https://www.amtrak.com/guest ... round.jpg/_jcr_content/renditions/original\" class=\"promo-overview-card__lg-img\"></div></picture></a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(5)>*:nth-child(2)>*:nth-child(8)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[class=\"promo-overview-card__link-img am-fm__popup-link\"][target=\"_self\"][data-automation-id=\"promoOverviewContinueLink\"][href=\"https://www.amtrak.com/guestrewards/home.html?intcmp=wsp_promo-card_link_join-agr_hpcard6\"][data-popupurl=\"https://www.amtrak.com/guestrewards/home.html?intcmp=wsp_promo-card_link_join-agr_hpcard6\"][data-popup=\"popup\"][data-width=\"600\"][data-height=\"600\"]",
+            "attNo": 8
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a data-automation-id=\"pageFooterMobileAppStoreLink\" target=\"_blank\" href=\"https://apps.apple.com/us ... ak.com/content/dam/projects/dotcom/english/public/images/icons/AppStore.gif\" class=\"store-icon\"></a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(12)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[class=\"page-main-footer__mobile-app-store-items_link\"][href=\"https://apps.apple.com/us/app/amtrak/id405074003\"][target=\"_blank\"][data-automation-id=\"pageFooterMobileAppStoreLink\"]",
+            "attNo": 4
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a data-automation-id=\"pageFooterMobileAppStoreLink\" target=\"_blank\" href=\"https://play.google.com/s ... .com/content/dam/projects/dotcom/english/public/images/icons/GooglePlay.gif\" class=\"store-icon\"></a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(12)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[class=\"page-main-footer__mobile-app-store-items_link\"][href=\"https://play.google.com/store/apps/details?id=com.amtrak.rider&hl=en_US&gl=US\"][target=\"_blank\"][data-automation-id=\"pageFooterMobileAppStoreLink\"]",
+            "attNo": 4
+          }
+        },
+        {
+          "engineTestId": 246,
+          "bestPracticeId": 393,
+          "attribute": "This element should only contain li elements (without an ARIA-assigned role), script elements (without an ARIA-assigned role) or template elements (without an ARIA-assigned role); or elements with a role=listitem attribute; as direct child elements",
+          "attributeDetail": "This UL should only contain li elements (without an ARIA-assigned role), script elements (without an ARIA-assigned role) or template elements (without an ARIA-assigned role); or elements with a role=listitem attribute; as direct child elements",
+          "element": "<ul class=\"site-secondary-nav__ul\"><li data-modalopen=\"secondary-nav-train-status\" class=\"site-secon ... ot;MODIFY TRIP&quot;}}]\"></div></li><a data-julie=\"booknow_button\" type=\"button\" hidden=\"\"></a></ul>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(5)>*:nth-child(3)>*:nth-child(2)>*:nth-child(3)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "ul[class=\"site-secondary-nav__ul\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 246,
+          "bestPracticeId": 393,
+          "attribute": "This element should only contain li elements (without an ARIA-assigned role), script elements (without an ARIA-assigned role) or template elements (without an ARIA-assigned role); or elements with a role=listitem attribute; as direct child elements",
+          "attributeDetail": "This UL should only contain li elements (without an ARIA-assigned role), script elements (without an ARIA-assigned role) or template elements (without an ARIA-assigned role); or elements with a role=listitem attribute; as direct child elements",
+          "element": "<ul class=\"site-secondary-nav__ul\"><li data-modalopen=\"secondary-nav-train-status\" class=\"site-secon ... ot;MODIFY TRIP&quot;}}]\"></div></li><a data-julie=\"booknow_button\" type=\"button\" hidden=\"\"></a></ul>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "ul[class=\"site-secondary-nav__ul\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 281,
+          "bestPracticeId": 1626,
+          "attribute": "The aria-expanded attribute is not allowed on this element",
+          "attributeDetail": "The aria-expanded attribute is not allowed on this DIV",
+          "element": "<div aria-expanded=\"false\" aria-haspopup=\"listbox\" class=\"site-language-selector__list is-hidden\"><u ... data-lang=\"zs\" href=\"https://zh.amtrak.com\" data-href=\"https://zh.amtrak.com\">中文</a></li></ul></div>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(6)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[class=\"site-language-selector__list is-hidden\"][aria-haspopup=\"listbox\"][aria-expanded=\"false\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 281,
+          "bestPracticeId": 1626,
+          "attribute": "The aria-expanded attribute is not allowed on this element",
+          "attributeDetail": "The aria-expanded attribute is not allowed on this DIV",
+          "element": "<div aria-expanded=\"false\" aria-haspopup=\"listbox\" class=\"site-language-selector__list is-hidden\"><u ... data-lang=\"zs\" href=\"https://zh.amtrak.com\" data-href=\"https://zh.amtrak.com\">中文</a></li></ul></div>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(5)>*:nth-child(3)>*:nth-child(2)>*:nth-child(4)>*:nth-child(7)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[class=\"site-language-selector__list is-hidden\"][aria-haspopup=\"listbox\"][aria-expanded=\"false\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 360,
+          "bestPracticeId": 1626,
+          "attribute": "This element should not have an aria-owns attribute that references the same id value as appears in the aria-owns attribute of another element",
+          "attributeDetail": "This INPUT should not have an aria-owns attribute of search-station-dropdown__stations_list that references the same id value as appears in the aria-owns attribute of another element",
+          "element": "<input aria-activedescendant=\"\" role=\"combobox\" aria-expanded=\"false\" aria-owns=\"search-station-drop ... r=\"Enter a city or route name\" type=\"text\" autocomplete=\"off\" class=\"search-destination-field__inp\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(5)>*:nth-child(3)>*:nth-child(2)>*:nth-child(4)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(3)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "input[class=\"search-destination-field__inp\"][autocomplete=\"off\"][type=\"text\"][placeholder=\"Enter a city or route name\"][name=\"inputStationRouteSearch\"][value=\"\"][aria-label=\"Please enter station name or code\"][data-automation-id=\"stationRouteSearch\"][data-julie=\"destinations_search\"][aria-autocomplete=\"list\"][aria-owns=\"search-station-dropdown__stations_list\"][aria-expanded=\"false\"][role=\"combobox\"][aria-activedescendant=\"\"]",
+            "attNo": 14
+          }
+        },
+        {
+          "engineTestId": 360,
+          "bestPracticeId": 1626,
+          "attribute": "This element should not have an aria-owns attribute that references the same id value as appears in the aria-owns attribute of another element",
+          "attributeDetail": "This INPUT should not have an aria-owns attribute of search-station-dropdown__stations_list that references the same id value as appears in the aria-owns attribute of another element",
+          "element": "<input aria-activedescendant=\"\" role=\"combobox\" aria-expanded=\"false\" aria-owns=\"search-station-drop ... r=\"Enter a city or route name\" type=\"text\" autocomplete=\"off\" class=\"search-destination-field__inp\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(3)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "input[class=\"search-destination-field__inp\"][autocomplete=\"off\"][type=\"text\"][placeholder=\"Enter a city or route name\"][name=\"inputStationRouteSearch\"][value=\"\"][aria-label=\"Please enter station name or code\"][data-automation-id=\"stationRouteSearch\"][data-julie=\"destinations_search\"][aria-autocomplete=\"list\"][aria-owns=\"search-station-dropdown__stations_list\"][aria-expanded=\"false\"][role=\"combobox\"][aria-activedescendant=\"\"]",
+            "attNo": 14
+          }
+        },
+        {
+          "engineTestId": 412,
+          "bestPracticeId": 1626,
+          "attribute": "The role attribute value given to this element is not allowed, as it is not a valid aria role.",
+          "attributeDetail": "The role attribute of main-section given to this SECTION is not allowed, as it is not a valid aria role.",
+          "element": "<section tabindex=\"-1\" id=\"page-content-section\" role=\"main-section\"></section>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(5)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Specify a valid aria role for this element.",
+            "fix": {
+              "role": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "section[role=\"main-section\"][id=\"page-content-section\"][tabindex=\"-1\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 1040,
+          "bestPracticeId": 1626,
+          "attribute": "This element (role=combobox) must have all of the following attributes: aria-controls | aria-expanded",
+          "attributeDetail": "This INPUT (role=combobox) must have all of the following attributes: aria-controls | aria-expanded",
+          "element": "<input aria-activedescendant=\"\" role=\"combobox\" aria-expanded=\"false\" aria-owns=\"search-station-drop ... r=\"Enter a city or route name\" type=\"text\" autocomplete=\"off\" class=\"search-destination-field__inp\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(5)>*:nth-child(3)>*:nth-child(2)>*:nth-child(4)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(3)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "input[class=\"search-destination-field__inp\"][autocomplete=\"off\"][type=\"text\"][placeholder=\"Enter a city or route name\"][name=\"inputStationRouteSearch\"][value=\"\"][aria-label=\"Please enter station name or code\"][data-automation-id=\"stationRouteSearch\"][data-julie=\"destinations_search\"][aria-autocomplete=\"list\"][aria-owns=\"search-station-dropdown__stations_list\"][aria-expanded=\"false\"][role=\"combobox\"][aria-activedescendant=\"\"]",
+            "attNo": 14
+          }
+        },
+        {
+          "engineTestId": 1040,
+          "bestPracticeId": 1626,
+          "attribute": "This element (role=combobox) must have all of the following attributes: aria-controls | aria-expanded",
+          "attributeDetail": "This INPUT (role=combobox) must have all of the following attributes: aria-controls | aria-expanded",
+          "element": "<input aria-activedescendant=\"\" role=\"combobox\" aria-expanded=\"false\" aria-owns=\"search-station-drop ... r=\"Enter a city or route name\" type=\"text\" autocomplete=\"off\" class=\"search-destination-field__inp\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(3)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "input[class=\"search-destination-field__inp\"][autocomplete=\"off\"][type=\"text\"][placeholder=\"Enter a city or route name\"][name=\"inputStationRouteSearch\"][value=\"\"][aria-label=\"Please enter station name or code\"][data-automation-id=\"stationRouteSearch\"][data-julie=\"destinations_search\"][aria-autocomplete=\"list\"][aria-owns=\"search-station-dropdown__stations_list\"][aria-expanded=\"false\"][role=\"combobox\"][aria-activedescendant=\"\"]",
+            "attNo": 14
+          }
+        },
+        {
+          "engineTestId": 1042,
+          "bestPracticeId": 1626,
+          "attribute": "This element (role=option) does not have an aria-selected attribute",
+          "attributeDetail": "This LI (role=option) does not have an aria-selected attribute",
+          "element": "<li role=\"option\" class=\"site-language-selector__list_items_item\"><a aria-label=\"Espanol\" class=\"sit ... -lang=\"es\" href=\"https://espanol.amtrak.com\" data-href=\"https://espanol.amtrak.com\">Español</a></li>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(6)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "li[class=\"site-language-selector__list_items_item\"][role=\"option\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 1042,
+          "bestPracticeId": 1626,
+          "attribute": "This element (role=option) does not have an aria-selected attribute",
+          "attributeDetail": "This LI (role=option) does not have an aria-selected attribute",
+          "element": "<li role=\"option\" class=\"site-language-selector__list_items_item\"><a aria-label=\"Français\" class=\"si ... ng=\"fr\" href=\"https://francais.amtrak.com\" data-href=\"https://francais.amtrak.com\">Français</a></li>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(6)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "li[class=\"site-language-selector__list_items_item\"][role=\"option\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 1042,
+          "bestPracticeId": 1626,
+          "attribute": "This element (role=option) does not have an aria-selected attribute",
+          "attributeDetail": "This LI (role=option) does not have an aria-selected attribute",
+          "element": "<li role=\"option\" class=\"site-language-selector__list_items_item\"><a aria-label=\"Chinese\" class=\"sit ... nav=\"href\" data-lang=\"zs\" href=\"https://zh.amtrak.com\" data-href=\"https://zh.amtrak.com\">中文</a></li>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(6)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(3)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "li[class=\"site-language-selector__list_items_item\"][role=\"option\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 1042,
+          "bestPracticeId": 1626,
+          "attribute": "This element (role=option) does not have an aria-selected attribute",
+          "attributeDetail": "This LI (role=option) does not have an aria-selected attribute",
+          "element": "<li role=\"option\" class=\"site-language-selector__list_items_item\"><a aria-label=\"Espanol\" class=\"sit ... -lang=\"es\" href=\"https://espanol.amtrak.com\" data-href=\"https://espanol.amtrak.com\">Español</a></li>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(5)>*:nth-child(3)>*:nth-child(2)>*:nth-child(4)>*:nth-child(7)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "li[class=\"site-language-selector__list_items_item\"][role=\"option\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 1042,
+          "bestPracticeId": 1626,
+          "attribute": "This element (role=option) does not have an aria-selected attribute",
+          "attributeDetail": "This LI (role=option) does not have an aria-selected attribute",
+          "element": "<li role=\"option\" class=\"site-language-selector__list_items_item\"><a aria-label=\"Français\" class=\"si ... ng=\"fr\" href=\"https://francais.amtrak.com\" data-href=\"https://francais.amtrak.com\">Français</a></li>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(5)>*:nth-child(3)>*:nth-child(2)>*:nth-child(4)>*:nth-child(7)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "li[class=\"site-language-selector__list_items_item\"][role=\"option\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 1042,
+          "bestPracticeId": 1626,
+          "attribute": "This element (role=option) does not have an aria-selected attribute",
+          "attributeDetail": "This LI (role=option) does not have an aria-selected attribute",
+          "element": "<li role=\"option\" class=\"site-language-selector__list_items_item\"><a aria-label=\"Chinese\" class=\"sit ... nav=\"href\" data-lang=\"zs\" href=\"https://zh.amtrak.com\" data-href=\"https://zh.amtrak.com\">中文</a></li>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(5)>*:nth-child(3)>*:nth-child(2)>*:nth-child(4)>*:nth-child(7)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(3)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "li[class=\"site-language-selector__list_items_item\"][role=\"option\"]",
+            "attNo": 2
+          }
+        }
+      ]
+    }
+  ],
+  "timeStamp": "4jil2",
+  "startTime": "2022-07-27T14:33:07",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "continuum",
+      0
+    ]
+  ],
+  "logCount": 52,
+  "logSize": 4630,
+  "errorLogCount": 49,
+  "errorLogSize": 4582,
+  "prohibitedCount": 1,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-27T14:33:19",
+  "elapsedSeconds": 12
+}

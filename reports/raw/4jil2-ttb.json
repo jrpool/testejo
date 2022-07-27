@@ -1,0 +1,163 @@
+{
+  "id": "4jil2-ttb",
+  "host": {
+    "id": "ttb",
+    "which": "https://www.ttb.gov/",
+    "what": "Alcohol and Tobacco Tax and Trade Bureau (TTB)"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-27T14:21:01"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-27T14:21:09"
+    }
+  ],
+  "script": {
+    "id": "continuum",
+    "what": "Continuum",
+    "strict": true,
+    "timeLimit": 30,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.ttb.gov/",
+        "what": "Alcohol and Tobacco Tax and Trade Bureau (TTB)"
+      },
+      {
+        "type": "test",
+        "which": "continuum",
+        "what": "Continuum"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.ttb.gov/",
+      "what": "Alcohol and Tobacco Tax and Trade Bureau (TTB)",
+      "result": "https://www.ttb.gov/"
+    },
+    {
+      "type": "test",
+      "which": "continuum",
+      "what": "Level Access Continuum, community edition",
+      "url": "https://www.ttb.gov/",
+      "result": [
+        {
+          "engineTestId": 59,
+          "bestPracticeId": 410,
+          "attribute": "This element has a content attribute set to a value that includes an instruction that sets the viewport's maximum-scale to less than 2",
+          "attributeDetail": "This META has a content attribute set to a value that includes an instruction that sets the viewport's maximum-scale to less than 2",
+          "element": "<meta content=\"width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0\" name=\"viewport\">",
+          "testResult": 0,
+          "path": "head>meta:nth-of-type(4)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Select \"Save\" to change the viewport content attribute to \"width=device-width, initial-scale=1.0\", or \"Cancel\" if the fix should not be applied.",
+            "fix": {
+              "content": "width=device-width, initial-scale=1.0"
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "meta[name=\"viewport\"][content=\"width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 114,
+          "bestPracticeId": 338,
+          "attribute": "This select element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This select element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<select name=\"helpme\" style=\"width: 250px;\" id=\"helpme\"><option value=\"0\">I Want to ...</option><opt ... TTB</option><option value=\"https://www.ttb.gov/labeling\">Learn More About Labeling</option></select>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Specify a descriptive label for the select.",
+            "fix": {
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "select[id=\"helpme\"][name=\"helpme\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a href=\"https://www.ttb.gov/trade-investigations/tid-map\"></a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(6)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(5)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"https://www.ttb.gov/trade-investigations/tid-map\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 387,
+          "bestPracticeId": 375,
+          "attribute": "This element does not contain one or more: th elements (without an ARIA-assigned role); th elements with a role set to: rowheader | columnheader; or td elements with a role set to: rowheader | columnheader",
+          "attributeDetail": "This TABLE does not contain one or more: th elements (without an ARIA-assigned role); th elements with a role set to: rowheader | columnheader; or td elements with a role set to: rowheader | columnheader",
+          "element": "<table bgcolor=\"#00305e\" cellpadding=\"2\" cellspacing=\"6\" border=\"0\" style=\"width: 100%;\" id=\"find-ne ... dth: 12%;\"><a href=\"/about-ttb/contact-us\"><strong>Contact Us</strong></a></td></tr></tbody></table>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "table[id=\"find-need\"][border=\"0\"][cellspacing=\"6\"][cellpadding=\"2\"][bgcolor=\"#00305e\"]",
+            "attNo": 6
+          }
+        }
+      ]
+    }
+  ],
+  "timeStamp": "4jil2",
+  "startTime": "2022-07-27T14:21:01",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "continuum",
+      0
+    ]
+  ],
+  "logCount": 9,
+  "logSize": 630,
+  "errorLogCount": 8,
+  "errorLogSize": 584,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-27T14:21:09",
+  "elapsedSeconds": 8
+}

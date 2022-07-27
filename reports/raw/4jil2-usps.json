@@ -1,0 +1,547 @@
+{
+  "id": "4jil2-usps",
+  "host": {
+    "id": "usps",
+    "which": "https://www.usps.com/",
+    "what": "United States Postal Service (USPS)"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-27T14:39:31"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-27T14:39:41"
+    }
+  ],
+  "script": {
+    "id": "continuum",
+    "what": "Continuum",
+    "strict": true,
+    "timeLimit": 30,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.usps.com/",
+        "what": "United States Postal Service (USPS)"
+      },
+      {
+        "type": "test",
+        "which": "continuum",
+        "what": "Continuum"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.usps.com/",
+      "what": "United States Postal Service (USPS)",
+      "result": "https://www.usps.com/"
+    },
+    {
+      "type": "test",
+      "which": "continuum",
+      "what": "Level Access Continuum, community edition",
+      "url": "https://www.usps.com/",
+      "result": [
+        {
+          "engineTestId": 55,
+          "bestPracticeId": 410,
+          "attribute": "This element has a content attribute set to a value that includes an instruction that stops a user scaling the viewport size",
+          "attributeDetail": "This META has a content attribute set to a value that includes an instruction that stops a user scaling the viewport size",
+          "element": "<meta content=\"width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no\" name=\"viewport\">",
+          "testResult": 0,
+          "path": "head>meta:nth-of-type(3)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Select \"Save\" to change the viewport content attribute to \"width=device-width, initial-scale=1.0\", or \"Cancel\" if the fix should not be applied.",
+            "fix": {
+              "content": "width=device-width, initial-scale=1.0"
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "meta[name=\"viewport\"][content=\"width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 59,
+          "bestPracticeId": 410,
+          "attribute": "This element has a content attribute set to a value that includes an instruction that sets the viewport's maximum-scale to less than 2",
+          "attributeDetail": "This META has a content attribute set to a value that includes an instruction that sets the viewport's maximum-scale to less than 2",
+          "element": "<meta content=\"width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no\" name=\"viewport\">",
+          "testResult": 0,
+          "path": "head>meta:nth-of-type(3)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Select \"Save\" to change the viewport content attribute to \"width=device-width, initial-scale=1.0\", or \"Cancel\" if the fix should not be applied.",
+            "fix": {
+              "content": "width=device-width, initial-scale=1.0"
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "meta[name=\"viewport\"][content=\"width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 89,
+          "bestPracticeId": 362,
+          "attribute": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<img border=\"0\" width=\"0\" height=\"0\" src=\"https://trkn.us/pixel/c?ppt=557&amp;g=dm_homepage&amp;gid=2679&amp;ord=1658932774556\">",
+          "testResult": 0,
+          "path": "body>img:nth-of-type(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[src=\"https://trkn.us/pixel/c?ppt=557&g=dm_homepage&gid=2679&ord=1658932774556\"][height=\"0\"][width=\"0\"][border=\"0\"]",
+            "attNo": 4
+          }
+        },
+        {
+          "engineTestId": 89,
+          "bestPracticeId": 362,
+          "attribute": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<img src=\"https://r.turn.com/r/beacon?b2=A1_Y6RHJqNGwt_MNVfivC8DUOyMo4-N6ZOHl8pTihKKfgWyBHra5nbXx39S0t2NAZr6LahsR1xuFLVsB7V1P2A&amp;cid=\" border=\"0\">",
+          "testResult": 0,
+          "path": "body>img:nth-of-type(2)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[border=\"0\"][src=\"https://r.turn.com/r/beacon?b2=A1_Y6RHJqNGwt_MNVfivC8DUOyMo4-N6ZOHl8pTihKKfgWyBHra5nbXx39S0t2NAZr6LahsR1xuFLVsB7V1P2A&cid=\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This SCRIPT has an id attribute of 'gtm-cookie-setter', which is not unique in the same DOM",
+          "element": "<script id=\"gtm-cookie-setter\" type=\"text/javascript\"></script>",
+          "testResult": 0,
+          "path": "body>script:nth-of-type(27)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "script[type=\"text/javascript\"][id=\"gtm-cookie-setter\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This SCRIPT has an id attribute of 'gtm-cookie-setter', which is not unique in the same DOM",
+          "element": "<script id=\"gtm-cookie-setter\" type=\"text/javascript\"></script>",
+          "testResult": 0,
+          "path": "body>script:nth-of-type(28)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "script[type=\"text/javascript\"][id=\"gtm-cookie-setter\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 99,
+          "bestPracticeId": 464,
+          "attribute": "This element does not have a ul element (without an ARIA-assigned role); ol element (without an ARIA-assigned role); or element with a role set to the value: list as a parent",
+          "attributeDetail": "This LI does not have a ul element (without an ARIA-assigned role); ol element (without an ARIA-assigned role); or element with a role set to the value: list as a parent",
+          "element": "<li class=\"qt-nav menuheader\"><a class=\"hidden-skip\" href=\"#navmailship\" id=\"navquicktools\" name=\"na ... ww.usps.com/assets/images/home/featured_clicknship.svg\"><p>Click-N-Ship</p></a></li></ul></div></li>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(2)>*:nth-child(3)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "li[class=\"qt-nav menuheader\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 99,
+          "bestPracticeId": 464,
+          "attribute": "This element does not have a ul element (without an ARIA-assigned role); ol element (without an ARIA-assigned role); or element with a role set to the value: list as a parent",
+          "attributeDetail": "This LI does not have a ul element (without an ARIA-assigned role); ol element (without an ARIA-assigned role); or element with a role set to the value: list as a parent",
+          "element": "<li class=\"menuheader\"><a class=\"hidden-skip\" href=\"#navtrackmanage\" id=\"navmailship\" name=\"navmails ... ass Mail</a></li><li><a href=\"https://www.usps.com/ship/apo-fpo-dpo.htm\" tabindex=\"-1\" role=\"menuite",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(2)>*:nth-child(3)>*:nth-child(2)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "li[class=\"menuheader\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 99,
+          "bestPracticeId": 464,
+          "attribute": "This element does not have a ul element (without an ARIA-assigned role); ol element (without an ARIA-assigned role); or element with a role set to the value: list as a parent",
+          "attributeDetail": "This LI does not have a ul element (without an ARIA-assigned role); ol element (without an ARIA-assigned role); or element with a role set to the value: list as a parent",
+          "element": "<li class=\"menuheader\"><a class=\"hidden-skip\" href=\"#navpostalstore\" id=\"navtrackmanage\" name=\"navtr ... <input type=\"submit\" class=\"input--search search--submit\" value=\"Search\" tabindex=\"-1\"></span></form",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(2)>*:nth-child(3)>*:nth-child(2)>*:nth-child(3)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "li[class=\"menuheader\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 99,
+          "bestPracticeId": 464,
+          "attribute": "This element does not have a ul element (without an ARIA-assigned role); ol element (without an ARIA-assigned role); or element with a role set to the value: list as a parent",
+          "attributeDetail": "This LI does not have a ul element (without an ARIA-assigned role); ol element (without an ARIA-assigned role); or element with a role set to the value: list as a parent",
+          "element": "<li class=\"menuheader\"><a class=\"hidden-skip\" href=\"#navbusiness\" id=\"navpostalstore\" name=\"navposta ... \"submit\" class=\"input--search search--submit\" value=\"Search\" tabindex=\"-1\"></span></form></div></li>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(2)>*:nth-child(3)>*:nth-child(2)>*:nth-child(4)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "li[class=\"menuheader\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 99,
+          "bestPracticeId": 464,
+          "attribute": "This element does not have a ul element (without an ARIA-assigned role); ol element (without an ARIA-assigned role); or element with a role set to the value: list as a parent",
+          "attributeDetail": "This LI does not have a ul element (without an ARIA-assigned role); ol element (without an ARIA-assigned role); or element with a role set to the value: list as a parent",
+          "element": "<li class=\"menuheader\"><a class=\"hidden-skip\" href=\"#navinternational\" id=\"navbusiness\" name=\"navbus ... dex=\"-1\" role=\"menuitem\">Verifying Postage</a></li></ul><li><a href=\"https://www.usps.com/business/r",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(2)>*:nth-child(3)>*:nth-child(2)>*:nth-child(5)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "li[class=\"menuheader\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 99,
+          "bestPracticeId": 464,
+          "attribute": "This element does not have a ul element (without an ARIA-assigned role); ol element (without an ARIA-assigned role); or element with a role set to the value: list as a parent",
+          "attributeDetail": "This LI does not have a ul element (without an ARIA-assigned role); ol element (without an ARIA-assigned role); or element with a role set to the value: list as a parent",
+          "element": "<li class=\"menuheader\"><a class=\"hidden-skip\" href=\"#navhelp\" id=\"navinternational\" name=\"navinterna ... obal Express Guaranteed</a></li><li><a href=\"https://www.usps.com/international/priority-mail-expres",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(2)>*:nth-child(3)>*:nth-child(2)>*:nth-child(6)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "li[class=\"menuheader\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 99,
+          "bestPracticeId": 464,
+          "attribute": "This element does not have a ul element (without an ARIA-assigned role); ol element (without an ARIA-assigned role); or element with a role set to the value: list as a parent",
+          "attributeDetail": "This LI does not have a ul element (without an ARIA-assigned role); ol element (without an ARIA-assigned role); or element with a role set to the value: list as a parent",
+          "element": "<li class=\"menuheader\"><a class=\"hidden-skip\" href=\"#navsearch\" id=\"navhelp\" name=\"navhelp\" tabindex ... sps.com/help/refunds.htm\" tabindex=\"-1\" role=\"menuitem\">Requesting a Refund</a></li></ul></div></li>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(2)>*:nth-child(3)>*:nth-child(2)>*:nth-child(7)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "li[class=\"menuheader\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 99,
+          "bestPracticeId": 464,
+          "attribute": "This element does not have a ul element (without an ARIA-assigned role); ol element (without an ARIA-assigned role); or element with a role set to the value: list as a parent",
+          "attributeDetail": "This LI does not have a ul element (without an ARIA-assigned role); ol element (without an ARIA-assigned role); or element with a role set to the value: list as a parent",
+          "element": "<li class=\"nav-search menuheader\"><a class=\"hidden-skip\" href=\"#endnav\" id=\"navsearch\" name=\"navsear ... =1&amp;keyword=Free%20Boxes\" tabindex=\"-1\" role=\"menuitem\">FREE BOXES</a></li></ul></div></div></li>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(2)>*:nth-child(3)>*:nth-child(2)>*:nth-child(8)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "li[class=\"nav-search menuheader\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 99,
+          "bestPracticeId": 464,
+          "attribute": "This element does not have a ul element (without an ARIA-assigned role); ol element (without an ARIA-assigned role); or element with a role set to the value: list as a parent",
+          "attributeDetail": "This LI does not have a ul element (without an ARIA-assigned role); ol element (without an ARIA-assigned role); or element with a role set to the value: list as a parent",
+          "element": "<li class=\"active\" aria-checked=\"true\" data-slide-to=\"0\" data-target=\"#usps-carousel\"><span class=\"sr-only\" role=\"presentation\">Slide 1</span></li>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(10)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(7)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "li[data-target=\"#usps-carousel\"][data-slide-to=\"0\"][aria-checked=\"true\"][class=\"active\"]",
+            "attNo": 4
+          }
+        },
+        {
+          "engineTestId": 99,
+          "bestPracticeId": 464,
+          "attribute": "This element does not have a ul element (without an ARIA-assigned role); ol element (without an ARIA-assigned role); or element with a role set to the value: list as a parent",
+          "attributeDetail": "This LI does not have a ul element (without an ARIA-assigned role); ol element (without an ARIA-assigned role); or element with a role set to the value: list as a parent",
+          "element": "<li aria-checked=\"false\" data-slide-to=\"1\" data-target=\"#usps-carousel\"><span class=\"sr-only\" role=\"presentation\">Slide 2</span></li>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(10)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(7)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "li[data-target=\"#usps-carousel\"][data-slide-to=\"1\"][aria-checked=\"false\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 99,
+          "bestPracticeId": 464,
+          "attribute": "This element does not have a ul element (without an ARIA-assigned role); ol element (without an ARIA-assigned role); or element with a role set to the value: list as a parent",
+          "attributeDetail": "This LI does not have a ul element (without an ARIA-assigned role); ol element (without an ARIA-assigned role); or element with a role set to the value: list as a parent",
+          "element": "<li aria-checked=\"false\" data-slide-to=\"2\" data-target=\"#usps-carousel\"><span class=\"sr-only\" role=\"presentation\">Slide 3</span></li>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(10)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(7)>*:nth-child(3)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "li[data-target=\"#usps-carousel\"][data-slide-to=\"2\"][aria-checked=\"false\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 99,
+          "bestPracticeId": 464,
+          "attribute": "This element does not have a ul element (without an ARIA-assigned role); ol element (without an ARIA-assigned role); or element with a role set to the value: list as a parent",
+          "attributeDetail": "This LI does not have a ul element (without an ARIA-assigned role); ol element (without an ARIA-assigned role); or element with a role set to the value: list as a parent",
+          "element": "<li aria-checked=\"false\" data-slide-to=\"3\" data-target=\"#usps-carousel\"><span class=\"sr-only\" role=\"presentation\">Slide 4</span></li>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(10)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(7)>*:nth-child(4)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "li[data-target=\"#usps-carousel\"][data-slide-to=\"3\"][aria-checked=\"false\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a class=\"hidden-skip\" href=\"#\" id=\"endnav\" name=\"endnav\"></a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(2)>*:nth-child(5)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[name=\"endnav\"][id=\"endnav\"][href=\"#\"][class=\"hidden-skip\"]",
+            "attNo": 4
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a class=\"global-footer--logo-link\" href=\"https://www.usps.com/\"></a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(14)>*:nth-child(4)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"https://www.usps.com/\"][class=\"global-footer--logo-link\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 257,
+          "bestPracticeId": 1626,
+          "attribute": "The aria-checked attribute is not allowed on this element",
+          "attributeDetail": "The aria-checked attribute is not allowed on this LI",
+          "element": "<li class=\"active\" aria-checked=\"true\" data-slide-to=\"0\" data-target=\"#usps-carousel\"><span class=\"sr-only\" role=\"presentation\">Slide 1</span></li>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(10)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(7)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "li[data-target=\"#usps-carousel\"][data-slide-to=\"0\"][aria-checked=\"true\"][class=\"active\"]",
+            "attNo": 4
+          }
+        },
+        {
+          "engineTestId": 257,
+          "bestPracticeId": 1626,
+          "attribute": "The aria-checked attribute is not allowed on this element",
+          "attributeDetail": "The aria-checked attribute is not allowed on this LI",
+          "element": "<li aria-checked=\"false\" data-slide-to=\"1\" data-target=\"#usps-carousel\"><span class=\"sr-only\" role=\"presentation\">Slide 2</span></li>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(10)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(7)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "li[data-target=\"#usps-carousel\"][data-slide-to=\"1\"][aria-checked=\"false\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 257,
+          "bestPracticeId": 1626,
+          "attribute": "The aria-checked attribute is not allowed on this element",
+          "attributeDetail": "The aria-checked attribute is not allowed on this LI",
+          "element": "<li aria-checked=\"false\" data-slide-to=\"2\" data-target=\"#usps-carousel\"><span class=\"sr-only\" role=\"presentation\">Slide 3</span></li>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(10)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(7)>*:nth-child(3)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "li[data-target=\"#usps-carousel\"][data-slide-to=\"2\"][aria-checked=\"false\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 257,
+          "bestPracticeId": 1626,
+          "attribute": "The aria-checked attribute is not allowed on this element",
+          "attributeDetail": "The aria-checked attribute is not allowed on this LI",
+          "element": "<li aria-checked=\"false\" data-slide-to=\"3\" data-target=\"#usps-carousel\"><span class=\"sr-only\" role=\"presentation\">Slide 4</span></li>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(10)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(7)>*:nth-child(4)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "li[data-target=\"#usps-carousel\"][data-slide-to=\"3\"][aria-checked=\"false\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 531,
+          "bestPracticeId": 2519,
+          "attribute": "This nav does not have a unique accessible name as required when two or more nav elements are present",
+          "attributeDetail": "This nav does not have a unique accessible name as required when two or more nav elements are present",
+          "element": "<nav><div class=\"mobile-log-state\"><div class=\"mobile-utility\" id=\"msign\"><div class=\"mobile-sign\">< ... <img alt=\"Shipping Supplies Icon\" src=\"https://www.usps.com/assets/images/home/free_boxes.svg\"><p>Fr",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(2)>*:nth-child(3)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav",
+            "attNo": 0
+          }
+        },
+        {
+          "engineTestId": 531,
+          "bestPracticeId": 2519,
+          "attribute": "This nav does not have a unique accessible name as required when two or more nav elements are present",
+          "attributeDetail": "This nav does not have a unique accessible name as required when two or more nav elements are present",
+          "element": "<nav class=\"global-footer--navigation\"><ol style=\"display: inline;\"><li class=\"global-footer--naviga ... ttps://about.usps.com/who/legal/no-fear-act/\">No FEAR Act/EEO Contacts</a></li></ol></li></ol></nav>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(14)>*:nth-child(4)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[class=\"global-footer--navigation\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 533,
+          "bestPracticeId": 2519,
+          "attribute": "This nav does not have an accessible name as required when two or more nav elements are present",
+          "attributeDetail": "This nav does not have an accessible name as required when two or more nav elements are present",
+          "element": "<nav><div class=\"mobile-log-state\"><div class=\"mobile-utility\" id=\"msign\"><div class=\"mobile-sign\">< ... <img alt=\"Shipping Supplies Icon\" src=\"https://www.usps.com/assets/images/home/free_boxes.svg\"><p>Fr",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(2)>*:nth-child(3)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav",
+            "attNo": 0
+          }
+        },
+        {
+          "engineTestId": 533,
+          "bestPracticeId": 2519,
+          "attribute": "This nav does not have an accessible name as required when two or more nav elements are present",
+          "attributeDetail": "This nav does not have an accessible name as required when two or more nav elements are present",
+          "element": "<nav class=\"global-footer--navigation\"><ol style=\"display: inline;\"><li class=\"global-footer--naviga ... ttps://about.usps.com/who/legal/no-fear-act/\">No FEAR Act/EEO Contacts</a></li></ol></li></ol></nav>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(14)>*:nth-child(4)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[class=\"global-footer--navigation\"]",
+            "attNo": 1
+          }
+        }
+      ]
+    }
+  ],
+  "timeStamp": "4jil2",
+  "startTime": "2022-07-27T14:39:31",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "continuum",
+      0
+    ]
+  ],
+  "logCount": 7,
+  "logSize": 401,
+  "errorLogCount": 6,
+  "errorLogSize": 324,
+  "prohibitedCount": 1,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-27T14:39:41",
+  "elapsedSeconds": 10
+}

@@ -1,0 +1,440 @@
+{
+  "id": "4jil2-oge",
+  "host": {
+    "id": "oge",
+    "which": "https://www.oge.gov/",
+    "what": "Office of Government Ethics (OGE)"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-27T14:34:26"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-27T14:34:31"
+    }
+  ],
+  "script": {
+    "id": "continuum",
+    "what": "Continuum",
+    "strict": true,
+    "timeLimit": 30,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.oge.gov/",
+        "what": "Office of Government Ethics (OGE)"
+      },
+      {
+        "type": "test",
+        "which": "continuum",
+        "what": "Continuum"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.oge.gov/",
+      "what": "Office of Government Ethics (OGE)",
+      "result": "https://www.oge.gov/"
+    },
+    {
+      "type": "test",
+      "which": "continuum",
+      "what": "Level Access Continuum, community edition",
+      "url": "https://www.oge.gov/",
+      "result": [
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This A has an id attribute of 'rescaling-button-text', which is not unique in the same DOM",
+          "element": "<a style=\"color:white;\" id=\"rescaling-button-text\" href=\"/web/oge.nsf/Officials%20Individual%20Discl ... m\">View Officials' Individual Disclosures<i class=\"i-arrow-header-white right-arrow-header\"></i></a>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": [
+              {
+                "name": "href",
+                "value": "/web/oge.nsf/Officials%20Individual%20Disclosures%20Search%20Collection?OpenForm"
+              },
+              {
+                "name": "id",
+                "value": "rescaling-button-text"
+              }
+            ],
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This A has an id attribute of 'rescaling-button-text', which is not unique in the same DOM",
+          "element": "<a style=\"color:white;\" id=\"rescaling-button-text\" href=\"/web/oge.nsf/Agency%20Ethics%20Documents%20 ... on?OpenForm\">View Agency Ethics Documents<i class=\"i-arrow-header-white right-arrow-header\"></i></a>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": [
+              {
+                "name": "href",
+                "value": "/web/oge.nsf/Agency%20Ethics%20Documents%20Search%20Collection?OpenForm"
+              },
+              {
+                "name": "id",
+                "value": "rescaling-button-text"
+              }
+            ],
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This DIV has an id attribute of 'subnav-wrapper', which is not unique in the same DOM",
+          "element": "<div id=\"subnav-wrapper\" class=\"grid-container\"><div class=\"grid-row margin-top-1\"><div class=\"deskt ... er-nav\"><div class=\"star-border\"></div><div class=\"star-img-nav-full\"></div></div></div></div></div>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(4)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": [
+              {
+                "name": "class",
+                "value": "grid-container"
+              },
+              {
+                "name": "id",
+                "value": "subnav-wrapper"
+              }
+            ],
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This DIV has an id attribute of 'subnav-wrapper', which is not unique in the same DOM",
+          "element": "<div id=\"subnav-wrapper\" class=\"grid-container\"><div class=\"grid-row grid-gap-4\"><div class=\"desktop ... er-nav\"><div class=\"star-border\"></div><div class=\"star-img-nav-full\"></div></div></div></div></div>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(5)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": [
+              {
+                "name": "class",
+                "value": "grid-container"
+              },
+              {
+                "name": "id",
+                "value": "subnav-wrapper"
+              }
+            ],
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This DIV has an id attribute of 'news-feed', which is not unique in the same DOM",
+          "element": "<div id=\"news-feed\" class=\"portlet-container-home  margin-right-2\"><div class=\"content-wrapper margi ... 58FEA6/$FILE/PA-22-03.pdf\">PA-22-03: Annual Update of Post-Employment Component Designations (18 U.S",
+          "testResult": 0,
+          "path": "body>main:nth-of-type(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": [
+              {
+                "name": "class",
+                "value": "portlet-container-home  margin-right-2"
+              },
+              {
+                "name": "id",
+                "value": "news-feed"
+              }
+            ],
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This DIV has an id attribute of 'news-feed', which is not unique in the same DOM",
+          "element": "<div id=\"news-feed\" class=\"portlet-container-home margin-right-2\"><div class=\"content-wrapper margin ... acts</span></a></div><div class=\"quick-link\"><div class=\"quick-link-left\"></div><a class=\"quick-link",
+          "testResult": 0,
+          "path": "body>main:nth-of-type(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": [
+              {
+                "name": "class",
+                "value": "portlet-container-home margin-right-2"
+              },
+              {
+                "name": "id",
+                "value": "news-feed"
+              }
+            ],
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This DIV has an id attribute of 'footer-callout', which is not unique in the same DOM",
+          "element": "<div id=\"footer-callout\" class=\"grid-col-8\"><div style=\"display:flex;\" class=\"footer-callout-text ma ... ss=\"\" href=\"https://www.regulations.gov/\">Regulations.gov</a></div></div><div><br></div></div></div>",
+          "testResult": 0,
+          "path": "body>footer:nth-of-type(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": [
+              {
+                "name": "class",
+                "value": "grid-col-8"
+              },
+              {
+                "name": "id",
+                "value": "footer-callout"
+              }
+            ],
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This DIV has an id attribute of 'footer-callout', which is not unique in the same DOM",
+          "element": "<div id=\"footer-callout\"><span id=\"footer-span\">Have a question about government services?</span><a class=\"\" href=\"https://www.usa.gov/\">Contact USA.gov</a></div>",
+          "testResult": 0,
+          "path": "body>footer:nth-of-type(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": {
+              "name": "id",
+              "value": "footer-callout"
+            },
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This DIV has an id attribute of 'footer-callout', which is not unique in the same DOM",
+          "element": "<div id=\"footer-callout\"><span id=\"footer-span\"></span><a class=\"\" href=\"https://www.vote.gov/\">Vote.gov</a></div>",
+          "testResult": 0,
+          "path": "body>footer:nth-of-type(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": {
+              "name": "id",
+              "value": "footer-callout"
+            },
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This DIV has an id attribute of 'footer-callout', which is not unique in the same DOM",
+          "element": "<div id=\"footer-callout\"><span id=\"footer-span\"></span><a class=\"\" href=\"https://www.regulations.gov/\">Regulations.gov</a></div>",
+          "testResult": 0,
+          "path": "body>footer:nth-of-type(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": {
+              "name": "id",
+              "value": "footer-callout"
+            },
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This SPAN has an id attribute of 'footer-span', which is not unique in the same DOM",
+          "element": "<span id=\"footer-span\">Have a question about government services?</span>",
+          "testResult": 0,
+          "path": "body>footer:nth-of-type(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": {
+              "name": "id",
+              "value": "footer-span"
+            },
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This SPAN has an id attribute of 'footer-span', which is not unique in the same DOM",
+          "element": "<span id=\"footer-span\"></span>",
+          "testResult": 0,
+          "path": "body>footer:nth-of-type(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": {
+              "name": "id",
+              "value": "footer-span"
+            },
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This SPAN has an id attribute of 'footer-span', which is not unique in the same DOM",
+          "element": "<span id=\"footer-span\"></span>",
+          "testResult": 0,
+          "path": "body>footer:nth-of-type(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": {
+              "name": "id",
+              "value": "footer-span"
+            },
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 95,
+          "bestPracticeId": 1626,
+          "attribute": "This element has an aria-labelledby attribute value that includes one or more invalid or duplicate ids",
+          "attributeDetail": "This NAV has an aria-labelledby attribute value of 'main navigation', which includes one or more invalid or duplicate ids",
+          "element": "<nav aria-labelledby=\"main navigation\" class=\"usa-nav\" role=\"navigation\"><div class=\"usa-nav__inner\" ... a id=\"\" href=\"#\">Reports to Congress</a></li></ul></div></div><div class=\"grid-row margin-top-1\"><di",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(2)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide the ID of an element which contains the label content for this element.",
+            "fix": {
+              "aria-labelledby": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": [
+              {
+                "name": "role",
+                "value": "navigation"
+              },
+              {
+                "name": "class",
+                "value": "usa-nav"
+              },
+              {
+                "name": "aria-labelledby",
+                "value": "main navigation"
+              }
+            ],
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 118,
+          "bestPracticeId": 338,
+          "attribute": "This input (type=text) element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This input (type=text) element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<input label=\"autocomplete\" class=\"usagov-search-autocomplete\" autocomplete=\"on\" id=\"query\" name=\"query\" type=\"text\">",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(3)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperTex": "Specify a descriptive label for the text input.",
+            "fix": {
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": [
+              {
+                "name": "type",
+                "value": "text"
+              },
+              {
+                "name": "name",
+                "value": "query"
+              },
+              {
+                "name": "id",
+                "value": "query"
+              },
+              {
+                "name": "autocomplete",
+                "value": "on"
+              },
+              {
+                "name": "class",
+                "value": "usagov-search-autocomplete"
+              },
+              {
+                "name": "label",
+                "value": "autocomplete"
+              }
+            ],
+            "attNo": 6
+          }
+        }
+      ]
+    }
+  ],
+  "timeStamp": "4jil2",
+  "startTime": "2022-07-27T14:34:26",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "continuum",
+      0
+    ]
+  ],
+  "logCount": 0,
+  "logSize": 0,
+  "errorLogCount": 0,
+  "errorLogSize": 0,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-27T14:34:31",
+  "elapsedSeconds": 4
+}

@@ -1,0 +1,80 @@
+{
+  "id": "4jil2-cis",
+  "host": {
+    "id": "cis",
+    "which": "https://www.uscis.gov/",
+    "what": "Citizenship and Immigration Services"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-27T14:22:56"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-27T14:23:04"
+    }
+  ],
+  "script": {
+    "id": "continuum",
+    "what": "Continuum",
+    "strict": true,
+    "timeLimit": 30,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.uscis.gov/",
+        "what": "Citizenship and Immigration Services"
+      },
+      {
+        "type": "test",
+        "which": "continuum",
+        "what": "Continuum"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.uscis.gov/",
+      "what": "Citizenship and Immigration Services",
+      "result": "https://www.uscis.gov/"
+    },
+    {
+      "type": "test",
+      "which": "continuum",
+      "what": "Level Access Continuum, community edition",
+      "url": "https://www.uscis.gov/",
+      "result": "NONE"
+    }
+  ],
+  "timeStamp": "4jil2",
+  "startTime": "2022-07-27T14:22:56",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "continuum",
+      0
+    ]
+  ],
+  "logCount": 2,
+  "logSize": 202,
+  "errorLogCount": 2,
+  "errorLogSize": 202,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-27T14:23:04",
+  "elapsedSeconds": 7
+}

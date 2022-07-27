@@ -1,0 +1,126 @@
+{
+  "id": "4jil2-fdic",
+  "host": {
+    "id": "fdic",
+    "which": "https://www.fdic.gov/",
+    "what": "Federal Deposit Insurance Corporation (FDIC)"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-27T14:27:27"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-27T14:27:31"
+    }
+  ],
+  "script": {
+    "id": "continuum",
+    "what": "Continuum",
+    "strict": true,
+    "timeLimit": 30,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.fdic.gov/",
+        "what": "Federal Deposit Insurance Corporation (FDIC)"
+      },
+      {
+        "type": "test",
+        "which": "continuum",
+        "what": "Continuum"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.fdic.gov/",
+      "what": "Federal Deposit Insurance Corporation (FDIC)",
+      "result": "https://www.fdic.gov/"
+    },
+    {
+      "type": "test",
+      "which": "continuum",
+      "what": "Level Access Continuum, community edition",
+      "url": "https://www.fdic.gov/",
+      "result": [
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This LINK has an id attribute of 'font-awesome-5-kit-css', which is not unique in the same DOM",
+          "element": "<link id=\"font-awesome-5-kit-css\" rel=\"stylesheet\" media=\"all\" href=\"https://kit-free.fontawesome.com/releases/latest/css/free-v4-shims.min.css\">",
+          "testResult": 0,
+          "path": "head>link:nth-of-type(15)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "link[href=\"https://kit-free.fontawesome.com/releases/latest/css/free-v4-shims.min.css\"][media=\"all\"][rel=\"stylesheet\"][id=\"font-awesome-5-kit-css\"]",
+            "attNo": 4
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This LINK has an id attribute of 'font-awesome-5-kit-css', which is not unique in the same DOM",
+          "element": "<link id=\"font-awesome-5-kit-css\" rel=\"stylesheet\" media=\"all\" href=\"https://kit-free.fontawesome.com/releases/latest/css/free-v4-font-face.min.css\">",
+          "testResult": 0,
+          "path": "head>link:nth-of-type(16)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "link[href=\"https://kit-free.fontawesome.com/releases/latest/css/free-v4-font-face.min.css\"][media=\"all\"][rel=\"stylesheet\"][id=\"font-awesome-5-kit-css\"]",
+            "attNo": 4
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This LINK has an id attribute of 'font-awesome-5-kit-css', which is not unique in the same DOM",
+          "element": "<link id=\"font-awesome-5-kit-css\" rel=\"stylesheet\" media=\"all\" href=\"https://kit-free.fontawesome.com/releases/latest/css/free.min.css\">",
+          "testResult": 0,
+          "path": "head>link:nth-of-type(17)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "link[href=\"https://kit-free.fontawesome.com/releases/latest/css/free.min.css\"][media=\"all\"][rel=\"stylesheet\"][id=\"font-awesome-5-kit-css\"]",
+            "attNo": 4
+          }
+        }
+      ]
+    }
+  ],
+  "timeStamp": "4jil2",
+  "startTime": "2022-07-27T14:27:27",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "continuum",
+      0
+    ]
+  ],
+  "logCount": 0,
+  "logSize": 0,
+  "errorLogCount": 0,
+  "errorLogSize": 0,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-27T14:27:31",
+  "elapsedSeconds": 3
+}

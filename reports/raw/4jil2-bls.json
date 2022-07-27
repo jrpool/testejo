@@ -1,0 +1,80 @@
+{
+  "id": "4jil2-bls",
+  "host": {
+    "id": "bls",
+    "which": "https://stats.bls.gov/",
+    "what": "Bureau of Labor Statistics (BLS)"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-27T14:22:13"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-27T14:22:17"
+    }
+  ],
+  "script": {
+    "id": "continuum",
+    "what": "Continuum",
+    "strict": true,
+    "timeLimit": 30,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://stats.bls.gov/",
+        "what": "Bureau of Labor Statistics (BLS)"
+      },
+      {
+        "type": "test",
+        "which": "continuum",
+        "what": "Continuum"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://stats.bls.gov/",
+      "what": "Bureau of Labor Statistics (BLS)",
+      "result": "https://stats.bls.gov/"
+    },
+    {
+      "type": "test",
+      "which": "continuum",
+      "what": "Level Access Continuum, community edition",
+      "url": "https://stats.bls.gov/",
+      "result": "NONE"
+    }
+  ],
+  "timeStamp": "4jil2",
+  "startTime": "2022-07-27T14:22:13",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "continuum",
+      0
+    ]
+  ],
+  "logCount": 2,
+  "logSize": 154,
+  "errorLogCount": 1,
+  "errorLogSize": 108,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-27T14:22:17",
+  "elapsedSeconds": 4
+}

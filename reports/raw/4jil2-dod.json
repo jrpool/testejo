@@ -1,0 +1,165 @@
+{
+  "id": "4jil2-dod",
+  "host": {
+    "id": "dod",
+    "which": "https://www.defense.gov/",
+    "what": "Department of Defense (DOD)"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-27T14:23:52"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-27T14:24:02"
+    }
+  ],
+  "script": {
+    "id": "continuum",
+    "what": "Continuum",
+    "strict": true,
+    "timeLimit": 30,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.defense.gov/",
+        "what": "Department of Defense (DOD)"
+      },
+      {
+        "type": "test",
+        "which": "continuum",
+        "what": "Continuum"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.defense.gov/",
+      "what": "Department of Defense (DOD)",
+      "result": "https://www.defense.gov/"
+    },
+    {
+      "type": "test",
+      "which": "continuum",
+      "what": "Level Access Continuum, community edition",
+      "url": "https://www.defense.gov/",
+      "result": [
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This DIV has an id attribute of 'nav-burger', which is not unique in the same DOM",
+          "element": "<div aria-label=\"toggle navigation\" aria-role=\"button\" class=\"hide-on-mobile-nav-open\" id=\"nav-burger\"><span></span><span></span><span></span><span></span></div>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(43)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[id=\"nav-burger\"][class=\"hide-on-mobile-nav-open\"][aria-role=\"button\"][aria-label=\"toggle navigation\"]",
+            "attNo": 4
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This DIV has an id attribute of 'nav-burger', which is not unique in the same DOM",
+          "element": "<div aria-label=\"toggle navigation\" aria-role=\"button\" class=\"internal\" id=\"nav-burger\"><span></span><span></span><span></span><span></span></div>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(43)>*:nth-child(5)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[id=\"nav-burger\"][class=\"internal\"][aria-role=\"button\"][aria-label=\"toggle navigation\"]",
+            "attNo": 4
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This DIV has an id attribute of 'featArticles', which is not unique in the same DOM",
+          "element": "<div class=\"featArticles alist\" id=\"featArticles\"><div class=\"DNNModuleContent ModArticleCSDashboard ... https://media.defense.gov/2022/Jul/26/2003042540/1280/1280/0/220508-A-EL257-096.JPG\" alt=\"\"></div></",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(44)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[id=\"featArticles\"][class=\"featArticles alist\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This DIV has an id attribute of 'featArticles', which is not unique in the same DOM",
+          "element": "<div class=\"featArticles alist\" id=\"featArticles\"><div class=\"story-slider-wrap\"><div class=\"banner- ...  id=\"explore-bar-wrap\"><div class=\"content-wrap\"><div class=\"explore-list listView\" id=\"explore-bar\"",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(44)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[id=\"featArticles\"][class=\"featArticles alist\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg width=\"24\" viewbox=\"0 0 24 24\" height=\"24\" xmlns=\"http://www.w3.org/2000/svg\"><path fill=\"none\" ... H0z\"></path><path d=\"M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z\" class=\"expand-more\"></path></svg>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(43)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[height=\"24\"][viewbox=\"0 0 24 24\"][width=\"24\"]",
+            "attNo": 4
+          }
+        }
+      ]
+    }
+  ],
+  "timeStamp": "4jil2",
+  "startTime": "2022-07-27T14:23:52",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "continuum",
+      0
+    ]
+  ],
+  "logCount": 8,
+  "logSize": 691,
+  "errorLogCount": 4,
+  "errorLogSize": 476,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-27T14:24:02",
+  "elapsedSeconds": 9
+}

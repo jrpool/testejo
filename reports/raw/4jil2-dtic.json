@@ -1,0 +1,128 @@
+{
+  "id": "4jil2-dtic",
+  "host": {
+    "id": "dtic",
+    "which": "https://discover.dtic.mil/",
+    "what": "Defense Technical Information Center (DTIC)"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-27T14:41:14"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-27T14:41:17"
+    }
+  ],
+  "script": {
+    "id": "continuum",
+    "what": "Continuum",
+    "strict": true,
+    "timeLimit": 30,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://discover.dtic.mil/",
+        "what": "Defense Technical Information Center (DTIC)"
+      },
+      {
+        "type": "test",
+        "which": "continuum",
+        "what": "Continuum"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://discover.dtic.mil/",
+      "what": "Defense Technical Information Center (DTIC)",
+      "result": "https://discover.dtic.mil/"
+    },
+    {
+      "type": "test",
+      "which": "continuum",
+      "what": "Level Access Continuum, community edition",
+      "url": "https://discover.dtic.mil/",
+      "result": [
+        {
+          "engineTestId": 101,
+          "bestPracticeId": 429,
+          "attribute": "This element does not have a lang attribute",
+          "attributeDetail": "This HTML does not have a lang attribute",
+          "element": "<html><head>\n<meta content=\"no-cache\" http-equiv=\"Pragma\">\n<meta content=\"-1\" http-equiv=\"Expires\">\n ... ascript\"></script><script type=\"text/javascript\"></script></head><body><style></style></body></html>",
+          "testResult": 0,
+          "path": "html",
+          "fixType": {
+            "fixType": 4,
+            "domSpec": false,
+            "helperText": "Enter the appropriate language value for the page.",
+            "fix": {
+              "lang": null
+            }
+          },
+          "fingerprint": {
+            "attNo": 0,
+            "css": "html",
+            "version": 2
+          }
+        },
+        {
+          "engineTestId": 884,
+          "bestPracticeId": 364,
+          "attribute": "This DOM does not contain a document title element",
+          "attributeDetail": "This DOM does not contain a document title element",
+          "element": "<html><head>\n<meta content=\"no-cache\" http-equiv=\"Pragma\">\n<meta content=\"-1\" http-equiv=\"Expires\">\n ... ascript\"></script><script type=\"text/javascript\"></script></head><body><style></style></body></html>",
+          "testResult": 0,
+          "path": "html",
+          "fixType": {
+            "fixType": 2,
+            "domSpec": true,
+            "helperText": "Specify a unique and descriptive title for the page.",
+            "fix": {
+              "targetCssSelector": "head",
+              "create": "title",
+              "innerHTML": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "url": "https://discover.dtic.mil/",
+            "css": "html",
+            "attNo": 0
+          }
+        }
+      ]
+    }
+  ],
+  "timeStamp": "4jil2",
+  "startTime": "2022-07-27T14:41:14",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "continuum",
+      0
+    ]
+  ],
+  "logCount": 5,
+  "logSize": 537,
+  "errorLogCount": 2,
+  "errorLogSize": 147,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-27T14:41:17",
+  "elapsedSeconds": 2
+}

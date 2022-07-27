@@ -1,0 +1,371 @@
+{
+  "id": "4jil2-dol",
+  "host": {
+    "id": "dol",
+    "which": "https://www.dol.gov/",
+    "what": "Department of Labor (DOL)"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-27T14:24:48"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-27T14:24:56"
+    }
+  ],
+  "script": {
+    "id": "continuum",
+    "what": "Continuum",
+    "strict": true,
+    "timeLimit": 30,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.dol.gov/",
+        "what": "Department of Labor (DOL)"
+      },
+      {
+        "type": "test",
+        "which": "continuum",
+        "what": "Continuum"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.dol.gov/",
+      "what": "Department of Labor (DOL)",
+      "result": "https://www.dol.gov/"
+    },
+    {
+      "type": "test",
+      "which": "continuum",
+      "what": "Level Access Continuum, community edition",
+      "url": "https://www.dol.gov/",
+      "result": [
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This DIV has an id attribute of 'modulartext-bg', which is not unique in the same DOM",
+          "element": "<div id=\"modulartext-bg\" class=\"paragraph agency_blurb paragraph--type--modular-blurb paragraph--vie ... the Warning Signs of Heat-Related Illness on Mining Sites</a></strong></div></div></div></div></div>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[class=\"paragraph agency_blurb paragraph--type--modular-blurb paragraph--view-mode--default background--light\"][id=\"modulartext-bg\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This DIV has an id attribute of 'modulartext-bg', which is not unique in the same DOM",
+          "element": "<div id=\"modulartext-bg\" class=\"paragraph agency_blurb paragraph--type--modular-blurb paragraph--view-mode--default background--light\"></div>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[class=\"paragraph agency_blurb paragraph--type--modular-blurb paragraph--view-mode--default background--light\"][id=\"modulartext-bg\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This DIV has an id attribute of 'block-dolfootermenu-3', which is not unique in the same DOM",
+          "element": "<div class=\"footer_menu-block\" id=\"block-dolfootermenu-3\"><section class=\"usa-footer__primary-conten ... pener\" target=\"_blank\" class=\"usa-footer__secondary-link dol-footer__secondary-link\" href=\"https://o",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[id=\"block-dolfootermenu-3\"][class=\"footer_menu-block\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This SECTION has an id attribute of 'block-dolfootermenu-3', which is not unique in the same DOM",
+          "element": "<section class=\"usa-footer__primary-content usa-footer__primary-content--collapsible dol-footer__pri ... ol-footer__secondary-link\" href=\"https://osc.gov/\">U.S. Office of Special Counsel</a></li></ul></sec",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "section[id=\"block-dolfootermenu-3\"][class=\"usa-footer__primary-content usa-footer__primary-content--collapsible dol-footer__primary-content dol-footer__primary-content--collapsible\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This DIV has an id attribute of 'block-dolfootermenu-4', which is not unique in the same DOM",
+          "element": "<div class=\"footer_menu-block\" id=\"block-dolfootermenu-4\"><section class=\"usa-footer__primary-conten ... ondary-link\" href=\"https://www.dol.gov/general/siteindex\">A to Z Index</a></li></ul></section></div>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[id=\"block-dolfootermenu-4\"][class=\"footer_menu-block\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This SECTION has an id attribute of 'block-dolfootermenu-4', which is not unique in the same DOM",
+          "element": "<section class=\"usa-footer__primary-content usa-footer__primary-content--collapsible dol-footer__pri ... r__secondary-link\" href=\"https://www.dol.gov/general/siteindex\">A to Z Index</a></li></ul></section>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "section[id=\"block-dolfootermenu-4\"][class=\"usa-footer__primary-content usa-footer__primary-content--collapsible dol-footer__primary-content dol-footer__primary-content--collapsible\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This DIV has an id attribute of 'block-dolfootermenu', which is not unique in the same DOM",
+          "element": "<div class=\"footer_menu-block\" id=\"block-dolfootermenu\"><section class=\"usa-footer__primary-content  ... ://www.dol.gov/general/aboutdol/accessibility\">Accessibility Statement</a></li></ul></section></div>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[id=\"block-dolfootermenu\"][class=\"footer_menu-block\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This SECTION has an id attribute of 'block-dolfootermenu', which is not unique in the same DOM",
+          "element": "<section class=\"usa-footer__primary-content usa-footer__primary-content--collapsible dol-footer__pri ... \"https://www.dol.gov/general/aboutdol/accessibility\">Accessibility Statement</a></li></ul></section>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "section[id=\"block-dolfootermenu\"][class=\"usa-footer__primary-content usa-footer__primary-content--collapsible dol-footer__primary-content dol-footer__primary-content--collapsible\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a tabindex=\"0\" href=\"/newsroom/releases/ebsa/ebsa20220726\"><div class=\"row dol-feed-block d-flex fl ... Manager Exemption to protect benefits plans, participants, beneficiaries</span></h3></div></div></a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"/newsroom/releases/ebsa/ebsa20220726\"][tabindex=\"0\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a tabindex=\"0\" href=\"/newsroom/releases/eta/eta20220725\"><div class=\"row dol-feed-block d-flex flex ...  incremental funds for pandemic workforce recovery, humanitarian support</span></h3></div></div></a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"/newsroom/releases/eta/eta20220725\"][tabindex=\"0\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a tabindex=\"0\" href=\"/newsroom/releases/osec/osec20220721-0\"><div class=\"row dol-feed-block d-flex  ... associate, collectively bargain were denied at Coahuila auto parts plant</span></h3></div></div></a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"/newsroom/releases/osec/osec20220721-0\"][tabindex=\"0\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a tabindex=\"0\" href=\"/newsroom/releases/osec/osec20220721\"><div class=\"row dol-feed-block d-flex fl ... ommitment to strengthening worker voice, social equity, wage protections</span></h3></div></div></a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"/newsroom/releases/osec/osec20220721\"][tabindex=\"0\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a tabindex=\"0\" href=\"/newsroom/releases/eta/eta20220721\"><div class=\"row dol-feed-block d-flex flex ... \">July 21, 2022</p><h3><span>Unemployment Insurance Weekly Claims Report</span></h3></div></div></a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"/newsroom/releases/eta/eta20220721\"][tabindex=\"0\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 281,
+          "bestPracticeId": 1626,
+          "attribute": "The aria-expanded attribute is not allowed on this element",
+          "attributeDetail": "The aria-expanded attribute is not allowed on this LI",
+          "element": "<li aria-expanded=\"false\" class=\"has-children\"><a href=\"/general/topics\"><span class=\"menu-border-wr ... gnized Apprenticeship Programs (IRAP)</span></a></li><li class=\"batch-column-1\"><a href=\"/agencies/i",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "li[class=\"has-children\"][aria-expanded=\"false\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 281,
+          "bestPracticeId": 1626,
+          "attribute": "The aria-expanded attribute is not allowed on this element",
+          "attributeDetail": "The aria-expanded attribute is not allowed on this LI",
+          "element": "<li aria-expanded=\"false\" class=\"has-children\"><a href=\"/general/dol-agencies\"><span class=\"menu-bor ... ffice of Disability Employment Policy (ODEP)</span></a></li><li class=\"batch-column-1\"><a href=\"/age",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "li[class=\"has-children\"][aria-expanded=\"false\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 281,
+          "bestPracticeId": 1626,
+          "attribute": "The aria-expanded attribute is not allowed on this element",
+          "attributeDetail": "The aria-expanded attribute is not allowed on this LI",
+          "element": "<li aria-expanded=\"false\" class=\"has-children\"><a href=\"/general/aboutdol\"><span class=\"menu-border- ...  class=\"menu-border-wrapper\">Recursos en Español</span></a></li></ul></div></li></ul></li></ul></li>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(5)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "li[class=\"has-children\"][aria-expanded=\"false\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 281,
+          "bestPracticeId": 1626,
+          "attribute": "The aria-expanded attribute is not allowed on this element",
+          "attributeDetail": "The aria-expanded attribute is not allowed on this LI",
+          "element": "<li aria-expanded=\"false\" class=\"has-children\"><a href=\"/newsroom\"><span class=\"menu-border-wrapper\" ... pan class=\"menu-border-wrapper\">Email Newsletter</span></a></li></ul></div></li></ul></li></ul></li>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(6)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "li[class=\"has-children\"][aria-expanded=\"false\"]",
+            "attNo": 2
+          }
+        }
+      ]
+    }
+  ],
+  "timeStamp": "4jil2",
+  "startTime": "2022-07-27T14:24:48",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "continuum",
+      0
+    ]
+  ],
+  "logCount": 3,
+  "logSize": 655,
+  "errorLogCount": 3,
+  "errorLogSize": 655,
+  "prohibitedCount": 1,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-27T14:24:56",
+  "elapsedSeconds": 7
+}

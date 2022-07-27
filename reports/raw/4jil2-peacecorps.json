@@ -1,0 +1,421 @@
+{
+  "id": "4jil2-peacecorps",
+  "host": {
+    "id": "peacecorps",
+    "which": "https://www.peacecorps.gov/",
+    "what": "Peace Corps"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-27T14:35:48"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-27T14:35:55"
+    }
+  ],
+  "script": {
+    "id": "continuum",
+    "what": "Continuum",
+    "strict": true,
+    "timeLimit": 30,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.peacecorps.gov/",
+        "what": "Peace Corps"
+      },
+      {
+        "type": "test",
+        "which": "continuum",
+        "what": "Continuum"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.peacecorps.gov/",
+      "what": "Peace Corps",
+      "result": "https://www.peacecorps.gov/"
+    },
+    {
+      "type": "test",
+      "which": "continuum",
+      "what": "Level Access Continuum, community edition",
+      "url": "https://www.peacecorps.gov/",
+      "result": [
+        {
+          "engineTestId": 83,
+          "bestPracticeId": 1626,
+          "attribute": "This element has an aria-describedby attribute value that includes one or more invalid or duplicate ids",
+          "attributeDetail": "This DIV has an aria-describedby attribute value of 'slick-slide01', which includes one or more invalid or duplicate ids",
+          "element": "<div style=\"width: 256px;\" aria-describedby=\"slick-slide01\" role=\"option\" tabindex=\"-1\" aria-hidden= ... Support the work of Volunteers all around the world with a tax-deductible donation.</span></a></div>",
+          "testResult": 0,
+          "path": "body>main:nth-of-type(1)>*:nth-child(1)>*:nth-child(6)>*:nth-child(2)>*:nth-child(1)>*:nth-child(7)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[class=\"card-slider__slide slick-slide slick-current slick-active\"][data-slick-index=\"1\"][aria-hidden=\"false\"][tabindex=\"-1\"][role=\"option\"][aria-describedby=\"slick-slide01\"]",
+            "attNo": 7
+          }
+        },
+        {
+          "engineTestId": 83,
+          "bestPracticeId": 1626,
+          "attribute": "This element has an aria-describedby attribute value that includes one or more invalid or duplicate ids",
+          "attributeDetail": "This DIV has an aria-describedby attribute value of 'slick-slide02', which includes one or more invalid or duplicate ids",
+          "element": "<div style=\"width: 256px;\" aria-describedby=\"slick-slide02\" role=\"option\" tabindex=\"-1\" aria-hidden= ... out your application?<br><span class=\"card__button\">Connect with a recruiter</span></span></a></div>",
+          "testResult": 0,
+          "path": "body>main:nth-of-type(1)>*:nth-child(1)>*:nth-child(6)>*:nth-child(2)>*:nth-child(1)>*:nth-child(8)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[class=\"card-slider__slide slick-slide slick-active\"][data-slick-index=\"2\"][aria-hidden=\"false\"][tabindex=\"-1\"][role=\"option\"][aria-describedby=\"slick-slide02\"]",
+            "attNo": 7
+          }
+        },
+        {
+          "engineTestId": 83,
+          "bestPracticeId": 1626,
+          "attribute": "This element has an aria-describedby attribute value that includes one or more invalid or duplicate ids",
+          "attributeDetail": "This DIV has an aria-describedby attribute value of 'slick-slide03', which includes one or more invalid or duplicate ids",
+          "element": "<div style=\"width: 256px;\" aria-describedby=\"slick-slide03\" role=\"option\" tabindex=\"-1\" aria-hidden= ... \"><span class=\"card__title\">Check out our Media Library to get a view of the world.</span></a></div>",
+          "testResult": 0,
+          "path": "body>main:nth-of-type(1)>*:nth-child(1)>*:nth-child(6)>*:nth-child(2)>*:nth-child(1)>*:nth-child(9)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[class=\"card-slider__slide slick-slide slick-active\"][data-slick-index=\"3\"][aria-hidden=\"false\"][tabindex=\"-1\"][role=\"option\"][aria-describedby=\"slick-slide03\"]",
+            "attNo": 7
+          }
+        },
+        {
+          "engineTestId": 83,
+          "bestPracticeId": 1626,
+          "attribute": "This element has an aria-describedby attribute value that includes one or more invalid or duplicate ids",
+          "attributeDetail": "This DIV has an aria-describedby attribute value of 'slick-slide04', which includes one or more invalid or duplicate ids",
+          "element": "<div style=\"width: 256px;\" aria-describedby=\"slick-slide04\" role=\"option\" tabindex=\"-1\" aria-hidden= ... informed with agency news and updates.<br><span class=\"card__button\">Sign up</span></span></a></div>",
+          "testResult": 0,
+          "path": "body>main:nth-of-type(1)>*:nth-child(1)>*:nth-child(6)>*:nth-child(2)>*:nth-child(1)>*:nth-child(10)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[class=\"card-slider__slide slick-slide slick-active\"][data-slick-index=\"4\"][aria-hidden=\"false\"][tabindex=\"-1\"][role=\"option\"][aria-describedby=\"slick-slide04\"]",
+            "attNo": 7
+          }
+        },
+        {
+          "engineTestId": 83,
+          "bestPracticeId": 1626,
+          "attribute": "This element has an aria-describedby attribute value that includes one or more invalid or duplicate ids",
+          "attributeDetail": "This DIV has an aria-describedby attribute value of 'slick-slide05', which includes one or more invalid or duplicate ids",
+          "element": "<div style=\"width: 256px;\" aria-describedby=\"slick-slide05\" role=\"option\" tabindex=\"-1\" aria-hidden= ...  class=\"card__title\">Know someone who would make a great Volunteer? Refer a friend.</span></a></div>",
+          "testResult": 0,
+          "path": "body>main:nth-of-type(1)>*:nth-child(1)>*:nth-child(6)>*:nth-child(2)>*:nth-child(1)>*:nth-child(11)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[class=\"card-slider__slide slick-slide slick-active\"][data-slick-index=\"5\"][aria-hidden=\"false\"][tabindex=\"-1\"][role=\"option\"][aria-describedby=\"slick-slide05\"]",
+            "attNo": 7
+          }
+        },
+        {
+          "engineTestId": 89,
+          "bestPracticeId": 362,
+          "attribute": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<img src=\"https://files.peacecorps.gov/images/Writing_essay.20c3788e.fill-700x400-c100.jpg\">",
+          "testResult": 0,
+          "path": "body>main:nth-of-type(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[src=\"https://files.peacecorps.gov/images/Writing_essay.20c3788e.fill-700x400-c100.jpg\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This INPUT has an id attribute of 'affiliate', which is not unique in the same DOM",
+          "element": "<input value=\"peacecorps\" type=\"hidden\" name=\"affiliate\" id=\"affiliate\">",
+          "testResult": 0,
+          "path": "body>header:nth-of-type(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "input[id=\"affiliate\"][name=\"affiliate\"][type=\"hidden\"][value=\"peacecorps\"]",
+            "attNo": 4
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This INPUT has an id attribute of 'affiliate', which is not unique in the same DOM",
+          "element": "<input value=\"peacecorps\" type=\"hidden\" name=\"affiliate\" id=\"affiliate\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(3)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "input[id=\"affiliate\"][name=\"affiliate\"][type=\"hidden\"][value=\"peacecorps\"]",
+            "attNo": 4
+          }
+        },
+        {
+          "engineTestId": 114,
+          "bestPracticeId": 338,
+          "attribute": "This select element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This select element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<select class=\"selectability-offscreen\" tabindex=\"-1\" name=\"jump-to-country\" id=\"jump-to-country\"><o ... tu</option><option value=\"viet-nam\">Viet Nam</option><option value=\"zambia\">Zambia</option></select>",
+          "testResult": 0,
+          "path": "body>main:nth-of-type(1)>*:nth-child(1)>*:nth-child(7)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(3)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Specify a descriptive label for the select.",
+            "fix": {
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "select[id=\"jump-to-country\"][name=\"jump-to-country\"][tabindex=\"-1\"][class=\"selectability-offscreen\"]",
+            "attNo": 4
+          }
+        },
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg style=\"pointer-events: auto;\" height=\"636\" width=\"1280\" viewbox=\"0 0 960 477\" preserveaspectrat ... 6,141.7338787973771L652.5214821780974,142.30203556781024L652.6615357324749,142.55801828855485L652.86",
+          "testResult": 0,
+          "path": "body>main:nth-of-type(1)>*:nth-child(1)>*:nth-child(7)>*:nth-child(2)>*:nth-child(2)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[preserveaspectratio=\"xMidYMid\"][viewbox=\"0 0 960 477\"][width=\"1280\"][height=\"636\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a style=\"width: 256px;\" onclick=\"sliderArrowTrack(this)\" class=\"slick-arrow slick-prev\" href=\"#\"><s ... rue\" class=\"icon icon--white\"><use xlink:href=\"/static/images/icons.svg#arrow-left\"></use></svg></a>",
+          "testResult": 0,
+          "path": "body>main:nth-of-type(1)>*:nth-child(1)>*:nth-child(6)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"#\"][class=\"slick-arrow slick-prev\"][onclick=\"sliderArrowTrack(this)\"]",
+            "attNo": 4
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a style=\"width: 256px;\" onclick=\"sliderArrowTrack(this)\" class=\"slick-arrow slick-next\" href=\"#\"><s ... ue\" class=\"icon icon--white\"><use xlink:href=\"/static/images/icons.svg#arrow-right\"></use></svg></a>",
+          "testResult": 0,
+          "path": "body>main:nth-of-type(1)>*:nth-child(1)>*:nth-child(6)>*:nth-child(3)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"#\"][class=\"slick-arrow slick-next\"][onclick=\"sliderArrowTrack(this)\"]",
+            "attNo": 4
+          }
+        },
+        {
+          "engineTestId": 252,
+          "bestPracticeId": 444,
+          "attribute": "This video element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This video element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<video muted=\"\" autoplay=\"\" class=\"hero__video\"><source type=\"video/mp4\" src=\"https://files.peacecorps.gov/media/ambient_2022_jan.mp4\"></video>",
+          "testResult": 0,
+          "path": "body>main:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "video[class=\"hero__video\"][autoplay=\"\"][muted=\"\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 509,
+          "bestPracticeId": 338,
+          "attribute": "This element (role=textbox) does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This DIV (role=textbox) does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<div aria-readonly=\"true\" tabindex=\"-1\" role=\"textbox\">Choose a Country</div>",
+          "testResult": 0,
+          "path": "body>main:nth-of-type(1)>*:nth-child(1)>*:nth-child(7)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[role=\"textbox\"][tabindex=\"-1\"][aria-readonly=\"true\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 1040,
+          "bestPracticeId": 1626,
+          "attribute": "This element (role=combobox) must have all of the following attributes: aria-controls | aria-expanded",
+          "attributeDetail": "This DIV (role=combobox) must have all of the following attributes: aria-controls | aria-expanded",
+          "element": "<div aria-required=\"false\" aria-disabled=\"false\" aria-labelledby=\"selectability#id0\" aria-expanded=\" ... x\">Choose a Country</div><div aria-multiselectable=\"false\" tabindex=\"-1\" role=\"listbox\"></div></div>",
+          "testResult": 0,
+          "path": "body>main:nth-of-type(1)>*:nth-child(1)>*:nth-child(7)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[class=\"selectability\"][role=\"combobox application\"][tabindex=\"0\"][aria-expanded=\"false\"][aria-labelledby=\"selectability#id0\"][aria-disabled=\"false\"][aria-required=\"false\"]",
+            "attNo": 7
+          }
+        },
+        {
+          "engineTestId": 1042,
+          "bestPracticeId": 1626,
+          "attribute": "This element (role=option) does not have an aria-selected attribute",
+          "attributeDetail": "This DIV (role=option) does not have an aria-selected attribute",
+          "element": "<div style=\"width: 256px;\" aria-describedby=\"slick-slide01\" role=\"option\" tabindex=\"-1\" aria-hidden= ... Support the work of Volunteers all around the world with a tax-deductible donation.</span></a></div>",
+          "testResult": 0,
+          "path": "body>main:nth-of-type(1)>*:nth-child(1)>*:nth-child(6)>*:nth-child(2)>*:nth-child(1)>*:nth-child(7)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[class=\"card-slider__slide slick-slide slick-current slick-active\"][data-slick-index=\"1\"][aria-hidden=\"false\"][tabindex=\"-1\"][role=\"option\"][aria-describedby=\"slick-slide01\"]",
+            "attNo": 7
+          }
+        },
+        {
+          "engineTestId": 1042,
+          "bestPracticeId": 1626,
+          "attribute": "This element (role=option) does not have an aria-selected attribute",
+          "attributeDetail": "This DIV (role=option) does not have an aria-selected attribute",
+          "element": "<div style=\"width: 256px;\" aria-describedby=\"slick-slide02\" role=\"option\" tabindex=\"-1\" aria-hidden= ... out your application?<br><span class=\"card__button\">Connect with a recruiter</span></span></a></div>",
+          "testResult": 0,
+          "path": "body>main:nth-of-type(1)>*:nth-child(1)>*:nth-child(6)>*:nth-child(2)>*:nth-child(1)>*:nth-child(8)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[class=\"card-slider__slide slick-slide slick-active\"][data-slick-index=\"2\"][aria-hidden=\"false\"][tabindex=\"-1\"][role=\"option\"][aria-describedby=\"slick-slide02\"]",
+            "attNo": 7
+          }
+        },
+        {
+          "engineTestId": 1042,
+          "bestPracticeId": 1626,
+          "attribute": "This element (role=option) does not have an aria-selected attribute",
+          "attributeDetail": "This DIV (role=option) does not have an aria-selected attribute",
+          "element": "<div style=\"width: 256px;\" aria-describedby=\"slick-slide03\" role=\"option\" tabindex=\"-1\" aria-hidden= ... \"><span class=\"card__title\">Check out our Media Library to get a view of the world.</span></a></div>",
+          "testResult": 0,
+          "path": "body>main:nth-of-type(1)>*:nth-child(1)>*:nth-child(6)>*:nth-child(2)>*:nth-child(1)>*:nth-child(9)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[class=\"card-slider__slide slick-slide slick-active\"][data-slick-index=\"3\"][aria-hidden=\"false\"][tabindex=\"-1\"][role=\"option\"][aria-describedby=\"slick-slide03\"]",
+            "attNo": 7
+          }
+        },
+        {
+          "engineTestId": 1042,
+          "bestPracticeId": 1626,
+          "attribute": "This element (role=option) does not have an aria-selected attribute",
+          "attributeDetail": "This DIV (role=option) does not have an aria-selected attribute",
+          "element": "<div style=\"width: 256px;\" aria-describedby=\"slick-slide04\" role=\"option\" tabindex=\"-1\" aria-hidden= ... informed with agency news and updates.<br><span class=\"card__button\">Sign up</span></span></a></div>",
+          "testResult": 0,
+          "path": "body>main:nth-of-type(1)>*:nth-child(1)>*:nth-child(6)>*:nth-child(2)>*:nth-child(1)>*:nth-child(10)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[class=\"card-slider__slide slick-slide slick-active\"][data-slick-index=\"4\"][aria-hidden=\"false\"][tabindex=\"-1\"][role=\"option\"][aria-describedby=\"slick-slide04\"]",
+            "attNo": 7
+          }
+        },
+        {
+          "engineTestId": 1042,
+          "bestPracticeId": 1626,
+          "attribute": "This element (role=option) does not have an aria-selected attribute",
+          "attributeDetail": "This DIV (role=option) does not have an aria-selected attribute",
+          "element": "<div style=\"width: 256px;\" aria-describedby=\"slick-slide05\" role=\"option\" tabindex=\"-1\" aria-hidden= ...  class=\"card__title\">Know someone who would make a great Volunteer? Refer a friend.</span></a></div>",
+          "testResult": 0,
+          "path": "body>main:nth-of-type(1)>*:nth-child(1)>*:nth-child(6)>*:nth-child(2)>*:nth-child(1)>*:nth-child(11)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[class=\"card-slider__slide slick-slide slick-active\"][data-slick-index=\"5\"][aria-hidden=\"false\"][tabindex=\"-1\"][role=\"option\"][aria-describedby=\"slick-slide05\"]",
+            "attNo": 7
+          }
+        }
+      ]
+    }
+  ],
+  "timeStamp": "4jil2",
+  "startTime": "2022-07-27T14:35:48",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "continuum",
+      0
+    ]
+  ],
+  "logCount": 37,
+  "logSize": 20540,
+  "errorLogCount": 37,
+  "errorLogSize": 20540,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-27T14:35:55",
+  "elapsedSeconds": 7
+}

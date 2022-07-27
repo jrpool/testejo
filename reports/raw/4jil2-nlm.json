@@ -1,0 +1,80 @@
+{
+  "id": "4jil2-nlm",
+  "host": {
+    "id": "nlm",
+    "which": "https://www.nlm.nih.gov/",
+    "what": "National Library of Medicine (NLM)"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-27T14:32:34"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-27T14:32:41"
+    }
+  ],
+  "script": {
+    "id": "continuum",
+    "what": "Continuum",
+    "strict": true,
+    "timeLimit": 30,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.nlm.nih.gov/",
+        "what": "National Library of Medicine (NLM)"
+      },
+      {
+        "type": "test",
+        "which": "continuum",
+        "what": "Continuum"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.nlm.nih.gov/",
+      "what": "National Library of Medicine (NLM)",
+      "result": "https://www.nlm.nih.gov/"
+    },
+    {
+      "type": "test",
+      "which": "continuum",
+      "what": "Level Access Continuum, community edition",
+      "url": "https://www.nlm.nih.gov/",
+      "result": "NONE"
+    }
+  ],
+  "timeStamp": "4jil2",
+  "startTime": "2022-07-27T14:32:34",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "continuum",
+      0
+    ]
+  ],
+  "logCount": 50,
+  "logSize": 15236,
+  "errorLogCount": 49,
+  "errorLogSize": 15190,
+  "prohibitedCount": 1,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-27T14:32:41",
+  "elapsedSeconds": 6
+}

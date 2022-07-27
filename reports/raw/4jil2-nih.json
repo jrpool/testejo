@@ -1,0 +1,201 @@
+{
+  "id": "4jil2-nih",
+  "host": {
+    "id": "nih",
+    "which": "https://www.nih.gov/",
+    "what": "National Institutes of Health (NIH)"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-27T14:32:16"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-27T14:32:20"
+    }
+  ],
+  "script": {
+    "id": "continuum",
+    "what": "Continuum",
+    "strict": true,
+    "timeLimit": 30,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.nih.gov/",
+        "what": "National Institutes of Health (NIH)"
+      },
+      {
+        "type": "test",
+        "which": "continuum",
+        "what": "Continuum"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.nih.gov/",
+      "what": "National Institutes of Health (NIH)",
+      "result": "https://www.nih.gov/"
+    },
+    {
+      "type": "test",
+      "which": "continuum",
+      "what": "Level Access Continuum, community edition",
+      "url": "https://www.nih.gov/",
+      "result": [
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This INPUT has an id attribute of 'affiliate', which is not unique in the same DOM",
+          "element": "<input value=\"nih\" type=\"hidden\" name=\"affiliate\" id=\"affiliate\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "input[id=\"affiliate\"][name=\"affiliate\"][type=\"hidden\"][value=\"nih\"]",
+            "attNo": 4
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This INPUT has an id attribute of 'affiliate', which is not unique in the same DOM",
+          "element": "<input value=\"hip\" type=\"hidden\" name=\"affiliate\" id=\"affiliate\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "input[id=\"affiliate\"][name=\"affiliate\"][type=\"hidden\"][value=\"hip\"]",
+            "attNo": 4
+          }
+        },
+        {
+          "engineTestId": 141,
+          "bestPracticeId": 401,
+          "attribute": "This A element has an href attribute set to an image file reference",
+          "attributeDetail": "This A element has an href attribute set to an image file reference",
+          "element": "<a rel=\"shadowbox[gallery]\" onmousedown=\"_sendEvent('Downloads','jpg','https://www.nih.gov/glance/nih-glance-whoweare.jpg',0);\" href=\"/glance/nih-glance-whoweare.jpg\">nih-at-a-glance-whoweare.jpg</a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"/glance/nih-glance-whoweare.jpg\"][onmousedown=\"_sendEvent('Downloads','jpg','https://www.nih.gov/glance/nih-glance-whoweare.jpg',0);\"][rel=\"shadowbox[gallery]\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 141,
+          "bestPracticeId": 401,
+          "attribute": "This A element has an href attribute set to an image file reference",
+          "attributeDetail": "This A element has an href attribute set to an image file reference",
+          "element": "<a rel=\"shadowbox[gallery]\" onmousedown=\"_sendEvent('Downloads','jpg','https://www.nih.gov/nih-direc ... href=\"/nih-director/lawrence-tabak-portrait-thumbnail.jpg\">lawrence-tabak-portrait-thumbnail.jpg</a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"/nih-director/lawrence-tabak-portrait-thumbnail.jpg\"][onmousedown=\"_sendEvent('Downloads','jpg','https://www.nih.gov/nih-director/lawrence-tabak-portrait-thumbnail.jpg',0);\"][rel=\"shadowbox[gallery]\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 141,
+          "bestPracticeId": 401,
+          "attribute": "This A element has an href attribute set to an image file reference",
+          "attributeDetail": "This A element has an href attribute set to an image file reference",
+          "element": "<a rel=\"shadowbox[gallery]\" onmousedown=\"_sendEvent('Downloads','jpg','https://www.nih.gov/glance/nih-glance-funding.jpg',0);\" href=\"/glance/nih-glance-funding.jpg\">nih-at-a-glance-funding.jpg</a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"/glance/nih-glance-funding.jpg\"][onmousedown=\"_sendEvent('Downloads','jpg','https://www.nih.gov/glance/nih-glance-funding.jpg',0);\"][rel=\"shadowbox[gallery]\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 141,
+          "bestPracticeId": 401,
+          "attribute": "This A element has an href attribute set to an image file reference",
+          "attributeDetail": "This A element has an href attribute set to an image file reference",
+          "element": "<a rel=\"shadowbox[gallery]\" onmousedown=\"_sendEvent('Downloads','jpg','https://www.nih.gov/glance/nih-glance-labs.jpg',0);\" href=\"/glance/nih-glance-labs.jpg\">nih-at-a-glance-labs.jpg</a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"/glance/nih-glance-labs.jpg\"][onmousedown=\"_sendEvent('Downloads','jpg','https://www.nih.gov/glance/nih-glance-labs.jpg',0);\"][rel=\"shadowbox[gallery]\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 141,
+          "bestPracticeId": 401,
+          "attribute": "This A element has an href attribute set to an image file reference",
+          "attributeDetail": "This A element has an href attribute set to an image file reference",
+          "element": "<a rel=\"shadowbox[gallery]\" onmousedown=\"_sendEvent('Downloads','jpg','https://www.nih.gov/glance/nih-glance-training.jpg',0);\" href=\"/glance/nih-glance-training.jpg\">nih-at-a-glance-training.jpg</a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"/glance/nih-glance-training.jpg\"][onmousedown=\"_sendEvent('Downloads','jpg','https://www.nih.gov/glance/nih-glance-training.jpg',0);\"][rel=\"shadowbox[gallery]\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 141,
+          "bestPracticeId": 401,
+          "attribute": "This A element has an href attribute set to an image file reference",
+          "attributeDetail": "This A element has an href attribute set to an image file reference",
+          "element": "<a rel=\"shadowbox[gallery]\" onmousedown=\"_sendEvent('Downloads','jpg','https://www.nih.gov/about-nih ... .jpg',0);\" href=\"/about-nih/researcher-holding-petri-dish.jpg\">researcher-holding-petri-dish.jpg</a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(6)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"/about-nih/researcher-holding-petri-dish.jpg\"][onmousedown=\"_sendEvent('Downloads','jpg','https://www.nih.gov/about-nih/researcher-holding-petri-dish.jpg',0);\"][rel=\"shadowbox[gallery]\"]",
+            "attNo": 3
+          }
+        }
+      ]
+    }
+  ],
+  "timeStamp": "4jil2",
+  "startTime": "2022-07-27T14:32:16",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "continuum",
+      0
+    ]
+  ],
+  "logCount": 4,
+  "logSize": 556,
+  "errorLogCount": 3,
+  "errorLogSize": 510,
+  "prohibitedCount": 1,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-27T14:32:20",
+  "elapsedSeconds": 4
+}

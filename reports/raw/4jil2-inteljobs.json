@@ -1,0 +1,397 @@
+{
+  "id": "4jil2-inteljobs",
+  "host": {
+    "id": "inteljobs",
+    "which": "https://www.intelligence.gov/",
+    "what": "Intelligence Careers"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-27T14:29:42"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-27T14:29:46"
+    }
+  ],
+  "script": {
+    "id": "continuum",
+    "what": "Continuum",
+    "strict": true,
+    "timeLimit": 30,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.intelligence.gov/",
+        "what": "Intelligence Careers"
+      },
+      {
+        "type": "test",
+        "which": "continuum",
+        "what": "Continuum"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.intelligence.gov/",
+      "what": "Intelligence Careers",
+      "result": "https://www.intelligence.gov/"
+    },
+    {
+      "type": "test",
+      "which": "continuum",
+      "what": "Level Access Continuum, community edition",
+      "url": "https://www.intelligence.gov/",
+      "result": [
+        {
+          "engineTestId": 89,
+          "bestPracticeId": 362,
+          "attribute": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<img class=\"img-responsive\" src=\"/assets/images/spotlight/CHML_Ukraine_Confirmed_Impacts_7-9-2022.png\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(5)>*:nth-child(2)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[src=\"/assets/images/spotlight/CHML_Ukraine_Confirmed_Impacts_7-9-2022.png\"][class=\"img-responsive\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This BUTTON has an id attribute of 'pause', which is not unique in the same DOM",
+          "element": "<button style=\"display: inline-block;\" class=\"controls hidePause\" id=\"pause\">❚❚</button>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(9)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(5)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "button[id=\"pause\"][class=\"controls hidePause\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This BUTTON has an id attribute of 'pause', which is not unique in the same DOM",
+          "element": "<button style=\"display: inline-block;\" class=\"controls hidePause\" id=\"pause\">❚❚</button>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(9)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(5)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "button[id=\"pause\"][class=\"controls hidePause\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This BUTTON has an id attribute of 'pause', which is not unique in the same DOM",
+          "element": "<button style=\"display: inline-block;\" class=\"controls hidePause\" id=\"pause\">❚❚</button>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(9)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(5)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "button[id=\"pause\"][class=\"controls hidePause\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This BUTTON has an id attribute of 'pause', which is not unique in the same DOM",
+          "element": "<button style=\"display: inline-block;\" class=\"controls hidePause\" id=\"pause\">❚❚</button>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(9)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(5)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "button[id=\"pause\"][class=\"controls hidePause\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This BUTTON has an id attribute of 'pause', which is not unique in the same DOM",
+          "element": "<button style=\"display: inline-block;\" class=\"controls hidePause\" id=\"pause\">❚❚</button>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(9)>*:nth-child(1)>*:nth-child(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(5)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "button[id=\"pause\"][class=\"controls hidePause\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This BUTTON has an id attribute of 'pause', which is not unique in the same DOM",
+          "element": "<button style=\"display: inline-block;\" class=\"controls hidePause\" id=\"pause\">❚❚</button>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(9)>*:nth-child(1)>*:nth-child(1)>*:nth-child(6)>*:nth-child(1)>*:nth-child(5)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "button[id=\"pause\"][class=\"controls hidePause\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This BUTTON has an id attribute of 'pause', which is not unique in the same DOM",
+          "element": "<button style=\"display: inline-block;\" class=\"controls hidePause\" id=\"pause\">❚❚</button>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(9)>*:nth-child(1)>*:nth-child(1)>*:nth-child(7)>*:nth-child(1)>*:nth-child(5)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "button[id=\"pause\"][class=\"controls hidePause\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This BUTTON has an id attribute of 'pause', which is not unique in the same DOM",
+          "element": "<button style=\"display: inline-block;\" class=\"controls hidePause\" id=\"pause\">❚❚</button>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(9)>*:nth-child(1)>*:nth-child(1)>*:nth-child(8)>*:nth-child(1)>*:nth-child(5)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "button[id=\"pause\"][class=\"controls hidePause\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This BUTTON has an id attribute of 'pause', which is not unique in the same DOM",
+          "element": "<button style=\"display: inline-block;\" class=\"controls hidePause\" id=\"pause\">❚❚</button>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(9)>*:nth-child(1)>*:nth-child(1)>*:nth-child(9)>*:nth-child(1)>*:nth-child(5)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "button[id=\"pause\"][class=\"controls hidePause\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This BUTTON has an id attribute of 'pause', which is not unique in the same DOM",
+          "element": "<button style=\"display: inline-block;\" class=\"controls hidePause\" id=\"pause\">❚❚</button>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(9)>*:nth-child(1)>*:nth-child(1)>*:nth-child(10)>*:nth-child(1)>*:nth-child(5)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "button[id=\"pause\"][class=\"controls hidePause\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This BUTTON has an id attribute of 'pause', which is not unique in the same DOM",
+          "element": "<button style=\"display: inline-block;\" class=\"controls hidePause\" id=\"pause\">❚❚</button>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(9)>*:nth-child(1)>*:nth-child(1)>*:nth-child(11)>*:nth-child(1)>*:nth-child(5)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "button[id=\"pause\"][class=\"controls hidePause\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This BUTTON has an id attribute of 'pause', which is not unique in the same DOM",
+          "element": "<button style=\"display: inline-block;\" class=\"controls hidePause\" id=\"pause\">❚❚</button>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(9)>*:nth-child(1)>*:nth-child(1)>*:nth-child(12)>*:nth-child(1)>*:nth-child(5)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "button[id=\"pause\"][class=\"controls hidePause\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This BUTTON has an id attribute of 'pause', which is not unique in the same DOM",
+          "element": "<button style=\"display: inline-block;\" class=\"controls hidePause\" id=\"pause\">❚❚</button>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(9)>*:nth-child(1)>*:nth-child(1)>*:nth-child(13)>*:nth-child(1)>*:nth-child(5)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "button[id=\"pause\"][class=\"controls hidePause\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This BUTTON has an id attribute of 'pause', which is not unique in the same DOM",
+          "element": "<button style=\"display: inline-block;\" class=\"controls hidePause\" id=\"pause\">❚❚</button>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(9)>*:nth-child(1)>*:nth-child(1)>*:nth-child(14)>*:nth-child(1)>*:nth-child(5)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "button[id=\"pause\"][class=\"controls hidePause\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This BUTTON has an id attribute of 'pause', which is not unique in the same DOM",
+          "element": "<button style=\"display: inline-block;\" class=\"controls hidePause\" id=\"pause\">❚❚</button>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(9)>*:nth-child(1)>*:nth-child(1)>*:nth-child(15)>*:nth-child(1)>*:nth-child(5)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "button[id=\"pause\"][class=\"controls hidePause\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This BUTTON has an id attribute of 'pause', which is not unique in the same DOM",
+          "element": "<button style=\"display: inline-block;\" class=\"controls hidePause\" id=\"pause\">❚❚</button>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(9)>*:nth-child(1)>*:nth-child(1)>*:nth-child(16)>*:nth-child(1)>*:nth-child(5)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "button[id=\"pause\"][class=\"controls hidePause\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This BUTTON has an id attribute of 'pause', which is not unique in the same DOM",
+          "element": "<button style=\"display: inline-block;\" class=\"controls hidePause\" id=\"pause\">❚❚</button>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(9)>*:nth-child(1)>*:nth-child(1)>*:nth-child(17)>*:nth-child(1)>*:nth-child(5)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "button[id=\"pause\"][class=\"controls hidePause\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This BUTTON has an id attribute of 'pause', which is not unique in the same DOM",
+          "element": "<button style=\"display: inline-block;\" class=\"controls hidePause\" id=\"pause\">❚❚</button>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(9)>*:nth-child(1)>*:nth-child(1)>*:nth-child(18)>*:nth-child(1)>*:nth-child(5)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "button[id=\"pause\"][class=\"controls hidePause\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a href=\"#start\"><span class=\"ig-icon ig-icon-arrow-down-white\"></span></a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(3)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"#start\"]",
+            "attNo": 1
+          }
+        }
+      ]
+    }
+  ],
+  "timeStamp": "4jil2",
+  "startTime": "2022-07-27T14:29:42",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "continuum",
+      0
+    ]
+  ],
+  "logCount": 3,
+  "logSize": 358,
+  "errorLogCount": 2,
+  "errorLogSize": 118,
+  "prohibitedCount": 1,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-27T14:29:46",
+  "elapsedSeconds": 3
+}

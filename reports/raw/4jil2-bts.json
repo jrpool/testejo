@@ -1,0 +1,207 @@
+{
+  "id": "4jil2-bts",
+  "host": {
+    "id": "bts",
+    "which": "https://www.bts.gov/",
+    "what": "Bureau of Transportation Statistics"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-27T14:22:31"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-27T14:22:37"
+    }
+  ],
+  "script": {
+    "id": "continuum",
+    "what": "Continuum",
+    "strict": true,
+    "timeLimit": 30,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.bts.gov/",
+        "what": "Bureau of Transportation Statistics"
+      },
+      {
+        "type": "test",
+        "which": "continuum",
+        "what": "Continuum"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.bts.gov/",
+      "what": "Bureau of Transportation Statistics",
+      "result": "https://www.bts.gov/"
+    },
+    {
+      "type": "test",
+      "which": "continuum",
+      "what": "Level Access Continuum, community edition",
+      "url": "https://www.bts.gov/",
+      "result": [
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This NAV has an id attribute of 'block-header-utility', which is not unique in the same DOM",
+          "element": "<nav class=\"block block-menu navigation menu--utility\" id=\"block-header-utility\" aria-labelledby=\"bl ...  my-2\"><a data-drupal-link-system-path=\"node/224996\" href=\"/A-Z-Index\">A-Z Index</a></li></ul></nav>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[aria-labelledby=\"block-header-utility-menu\"][id=\"block-header-utility\"][class=\"block block-menu navigation menu--utility\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This UL has an id attribute of 'block-header-utility', which is not unique in the same DOM",
+          "element": "<ul class=\"clearfix nav justify-content-end\" block=\"block-header-utility\" id=\"block-header-utility\"> ... m ml-3 my-2\"><a data-drupal-link-system-path=\"node/224996\" href=\"/A-Z-Index\">A-Z Index</a></li></ul>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "ul[id=\"block-header-utility\"][block=\"block-header-utility\"][class=\"clearfix nav justify-content-end\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 95,
+          "bestPracticeId": 1626,
+          "attribute": "This element has an aria-labelledby attribute value that includes one or more invalid or duplicate ids",
+          "attributeDetail": "This FIELDSET has an aria-labelledby attribute value of 'headerquery', which includes one or more invalid or duplicate ids",
+          "element": "<fieldset aria-labelledby=\"headerquery\" class=\"js-form-item js-form-type-search form-type-search js- ... e-input\" placeholder=\"Search\" title=\"Enter the terms you wish to search for.\" id=\"query\"></fieldset>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide the ID of an element which contains the label content for this element.",
+            "fix": {
+              "aria-labelledby": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "fieldset[class=\"js-form-item js-form-type-search form-type-search js-form-item-query form-item-query form-no-label form-group\"][aria-labelledby=\"headerquery\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a href=\"https://www.linkedin.com/company/bureau-of-transportation-statistics-bts\"><span class=\"fontawesome-icon-inline\"><i class=\"fab fa-linkedin\"></i></span></a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(6)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"https://www.linkedin.com/company/bureau-of-transportation-statistics-bts\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a href=\"https://public.govdelivery.com/accounts/USDOT/subscriber/new?category_id=USDOT_C17\"><span class=\"fontawesome-icon-inline\"><i class=\"fas fa-envelope\"></i></span></a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(6)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(4)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"https://public.govdelivery.com/accounts/USDOT/subscriber/new?category_id=USDOT_C17\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 281,
+          "bestPracticeId": 1626,
+          "attribute": "The aria-expanded attribute is not allowed on this element",
+          "attributeDetail": "The aria-expanded attribute is not allowed on this DIV",
+          "element": "<div role=\"complementary\" data-toggle=\"collapse\" data-target=\"#collapseOne\" class=\"collapsed small r ... tton\"><span class=\"usa-banner-button-text\">Here's how you know</span></button></p></div></div></div>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[aria-controls=\"collapseOne\"][aria-expanded=\"false\"][class=\"collapsed small row\"][data-target=\"#collapseOne\"][data-toggle=\"collapse\"][role=\"complementary\"]",
+            "attNo": 6
+          }
+        },
+        {
+          "engineTestId": 533,
+          "bestPracticeId": 2519,
+          "attribute": "This nav does not have an accessible name as required when two or more nav elements are present",
+          "attributeDetail": "This nav does not have an accessible name as required when two or more nav elements are present",
+          "element": "<nav id=\"navbar-main\" class=\"navbar navbar-dark navbar-expand-lg\"><a class=\"navbar-brand bts-brand m ... rch DOT</legend><legend class=\"d-none\">Search DOT</legend><label class=\"sr-only\" for=\"query\">Search<",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[class=\"navbar navbar-dark navbar-expand-lg\"][id=\"navbar-main\"]",
+            "attNo": 2
+          }
+        }
+      ]
+    }
+  ],
+  "timeStamp": "4jil2",
+  "startTime": "2022-07-27T14:22:31",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "continuum",
+      0
+    ]
+  ],
+  "logCount": 2,
+  "logSize": 106,
+  "errorLogCount": 1,
+  "errorLogSize": 101,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-27T14:22:37",
+  "elapsedSeconds": 6
+}

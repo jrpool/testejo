@@ -1,0 +1,80 @@
+{
+  "id": "4jil2-archives",
+  "host": {
+    "id": "archives",
+    "which": "https://www.archives.gov/",
+    "what": "National Archives"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-27T14:31:28"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-27T14:31:33"
+    }
+  ],
+  "script": {
+    "id": "continuum",
+    "what": "Continuum",
+    "strict": true,
+    "timeLimit": 30,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.archives.gov/",
+        "what": "National Archives"
+      },
+      {
+        "type": "test",
+        "which": "continuum",
+        "what": "Continuum"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.archives.gov/",
+      "what": "National Archives",
+      "result": "https://www.archives.gov/"
+    },
+    {
+      "type": "test",
+      "which": "continuum",
+      "what": "Level Access Continuum, community edition",
+      "url": "https://www.archives.gov/",
+      "result": "NONE"
+    }
+  ],
+  "timeStamp": "4jil2",
+  "startTime": "2022-07-27T14:31:28",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "continuum",
+      0
+    ]
+  ],
+  "logCount": 3,
+  "logSize": 221,
+  "errorLogCount": 3,
+  "errorLogSize": 221,
+  "prohibitedCount": 1,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-27T14:31:33",
+  "elapsedSeconds": 4
+}

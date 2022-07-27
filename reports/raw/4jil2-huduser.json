@@ -1,0 +1,105 @@
+{
+  "id": "4jil2-huduser",
+  "host": {
+    "id": "huduser",
+    "which": "https://huduser.gov/",
+    "what": "Office of Policy Development and Research (PD&R)"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-27T14:41:46"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-27T14:41:53"
+    }
+  ],
+  "script": {
+    "id": "continuum",
+    "what": "Continuum",
+    "strict": true,
+    "timeLimit": 30,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://huduser.gov/",
+        "what": "Office of Policy Development and Research (PD&R)"
+      },
+      {
+        "type": "test",
+        "which": "continuum",
+        "what": "Continuum"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://huduser.gov/",
+      "what": "Office of Policy Development and Research (PD&R)",
+      "result": "https://www.huduser.gov/portal/home.html"
+    },
+    {
+      "type": "test",
+      "which": "continuum",
+      "what": "Level Access Continuum, community edition",
+      "url": "https://www.huduser.gov/portal/home.html",
+      "result": [
+        {
+          "engineTestId": 234,
+          "bestPracticeId": 370,
+          "attribute": "This element has a suspicious calculated accessible name value",
+          "attributeDetail": "This IMG has a suspicious calculated accessible name value of: image",
+          "element": "<img width=\"100%\" alt=\"Image\" src=\"/portal/sites/default/files/images/HU-COMP-IMAGES-3806X808-V4.png\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[src=\"/portal/sites/default/files/images/HU-COMP-IMAGES-3806X808-V4.png\"][alt=\"Image\"][width=\"100%\"]",
+            "attNo": 3
+          }
+        }
+      ]
+    }
+  ],
+  "timeStamp": "4jil2",
+  "startTime": "2022-07-27T14:41:46",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "continuum",
+      0
+    ]
+  ],
+  "logCount": 2,
+  "logSize": 152,
+  "errorLogCount": 2,
+  "errorLogSize": 152,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-27T14:41:53",
+  "elapsedSeconds": 7
+}

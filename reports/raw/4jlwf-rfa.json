@@ -1,0 +1,83 @@
+{
+  "id": "4jlwf-rfa",
+  "host": {
+    "id": "rfa",
+    "which": "https://www.rfa.org/english/",
+    "what": "Radio Free Asia"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-27T16:44:37"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-27T16:45:03"
+    }
+  ],
+  "script": {
+    "id": "continuum",
+    "what": "Continuum",
+    "strict": true,
+    "timeLimit": 30,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.rfa.org/english/",
+        "what": "Radio Free Asia"
+      },
+      {
+        "type": "test",
+        "which": "continuum",
+        "what": "Continuum"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.rfa.org/english/",
+      "what": "Radio Free Asia",
+      "result": "https://www.rfa.org/english/"
+    },
+    {
+      "type": "test",
+      "which": "continuum",
+      "what": "Level Access Continuum, community edition",
+      "url": "https://www.rfa.org/english/",
+      "result": {
+        "prevented": true,
+        "error": "ERROR: Running all tests timed out"
+      }
+    }
+  ],
+  "timeStamp": "4jlwf",
+  "startTime": "2022-07-27T16:44:37",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "continuum",
+      20
+    ]
+  ],
+  "logCount": 4,
+  "logSize": 216,
+  "errorLogCount": 2,
+  "errorLogSize": 120,
+  "prohibitedCount": 1,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-27T16:45:03",
+  "elapsedSeconds": 26
+}

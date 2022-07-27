@@ -1,0 +1,193 @@
+{
+  "id": "4jil2-pto",
+  "host": {
+    "id": "pto",
+    "which": "https://www.uspto.gov/",
+    "what": "Patent and Trademark Office"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-27T14:35:41"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-27T14:35:48"
+    }
+  ],
+  "script": {
+    "id": "continuum",
+    "what": "Continuum",
+    "strict": true,
+    "timeLimit": 30,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.uspto.gov/",
+        "what": "Patent and Trademark Office"
+      },
+      {
+        "type": "test",
+        "which": "continuum",
+        "what": "Continuum"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.uspto.gov/",
+      "what": "Patent and Trademark Office",
+      "result": "https://www.uspto.gov/"
+    },
+    {
+      "type": "test",
+      "which": "continuum",
+      "what": "Level Access Continuum, community edition",
+      "url": "https://www.uspto.gov/",
+      "result": [
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This SCRIPT has an id attribute of '_fed_an_ua_tag', which is not unique in the same DOM",
+          "element": "<script defer=\"\" type=\"text/javascript\" id=\"_fed_an_ua_tag\" src=\"https://components.uspto.gov/js/Uni-Fed-Min.js?agency=DOC&amp;subagency=USPTO\"></script>",
+          "testResult": 0,
+          "path": "head>script:nth-of-type(12)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "script[src=\"https://components.uspto.gov/js/Uni-Fed-Min.js?agency=DOC&subagency=USPTO\"][id=\"_fed_an_ua_tag\"][type=\"text/javascript\"][defer=\"\"]",
+            "attNo": 4
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This SCRIPT has an id attribute of '_fed_an_ua_tag', which is not unique in the same DOM",
+          "element": "<script src=\"https://components.uspto.gov/js/Uni-Fed-Min.js\" id=\"_fed_an_ua_tag\" type=\"text/javascript\"></script>",
+          "testResult": 0,
+          "path": "body>script:nth-of-type(13)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "script[type=\"text/javascript\"][id=\"_fed_an_ua_tag\"][src=\"https://components.uspto.gov/js/Uni-Fed-Min.js\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a href=\"\" id=\"pullQuoteLink\"></a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(3)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[id=\"pullQuoteLink\"][href=\"\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 531,
+          "bestPracticeId": 2519,
+          "attribute": "This nav does not have a unique accessible name as required when two or more nav elements are present",
+          "attributeDetail": "This nav does not have a unique accessible name as required when two or more nav elements are present",
+          "element": "<nav id=\"uspto-top-nav\" class=\"navbar yamm\"><div class=\"container\"><div class=\"region region-primary ... application-process_primary_menu\"><span class=\"header-text\">Application process</span></li><li role=",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[class=\"navbar yamm\"][id=\"uspto-top-nav\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 531,
+          "bestPracticeId": 2519,
+          "attribute": "This nav does not have a unique accessible name as required when two or more nav elements are present",
+          "attributeDetail": "This nav does not have a unique accessible name as required when two or more nav elements are present",
+          "element": "<nav id=\"block-bean-quick-links-menu\" class=\"navbar yamm\"><ul id=\"qlTabContent\" class=\"nav navbar-na ... iv class=\"field__item\"><a href=\"/initiatives/equity/ci2\">Council for Inclusive Innovation (CI2)</a><",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[class=\"navbar yamm\"][id=\"block-bean-quick-links-menu\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 533,
+          "bestPracticeId": 2519,
+          "attribute": "This nav does not have an accessible name as required when two or more nav elements are present",
+          "attributeDetail": "This nav does not have an accessible name as required when two or more nav elements are present",
+          "element": "<nav id=\"uspto-top-nav\" class=\"navbar yamm\"><div class=\"container\"><div class=\"region region-primary ... application-process_primary_menu\"><span class=\"header-text\">Application process</span></li><li role=",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[class=\"navbar yamm\"][id=\"uspto-top-nav\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 533,
+          "bestPracticeId": 2519,
+          "attribute": "This nav does not have an accessible name as required when two or more nav elements are present",
+          "attributeDetail": "This nav does not have an accessible name as required when two or more nav elements are present",
+          "element": "<nav id=\"block-bean-quick-links-menu\" class=\"navbar yamm\"><ul id=\"qlTabContent\" class=\"nav navbar-na ... iv class=\"field__item\"><a href=\"/initiatives/equity/ci2\">Council for Inclusive Innovation (CI2)</a><",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[class=\"navbar yamm\"][id=\"block-bean-quick-links-menu\"]",
+            "attNo": 2
+          }
+        }
+      ]
+    }
+  ],
+  "timeStamp": "4jil2",
+  "startTime": "2022-07-27T14:35:41",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "continuum",
+      0
+    ]
+  ],
+  "logCount": 0,
+  "logSize": 0,
+  "errorLogCount": 0,
+  "errorLogSize": 0,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-27T14:35:48",
+  "elapsedSeconds": 6
+}

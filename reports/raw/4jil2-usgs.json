@@ -1,0 +1,531 @@
+{
+  "id": "4jil2-usgs",
+  "host": {
+    "id": "usgs",
+    "which": "https://www.usgs.gov/",
+    "what": "US Geological Survey (USGS)"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-27T14:38:45"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-27T14:38:51"
+    }
+  ],
+  "script": {
+    "id": "continuum",
+    "what": "Continuum",
+    "strict": true,
+    "timeLimit": 30,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.usgs.gov/",
+        "what": "US Geological Survey (USGS)"
+      },
+      {
+        "type": "test",
+        "which": "continuum",
+        "what": "Continuum"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.usgs.gov/",
+      "what": "US Geological Survey (USGS)",
+      "result": "https://www.usgs.gov/"
+    },
+    {
+      "type": "test",
+      "which": "continuum",
+      "what": "Level Access Continuum, community edition",
+      "url": "https://www.usgs.gov/",
+      "result": [
+        {
+          "engineTestId": 85,
+          "bestPracticeId": 1626,
+          "attribute": "This element has an aria-controls attribute value that includes one or more invalid or duplicate ids",
+          "attributeDetail": "This BUTTON has an aria-controls attribute value of 'extended-mega-nav-section-science', which includes one or more invalid or duplicate ids",
+          "element": "<button aria-controls=\"extended-mega-nav-section-science\" aria-expanded=\"false\" class=\"usa-nav__link\">Science</button>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "button[class=\"usa-nav__link\"][aria-expanded=\"false\"][aria-controls=\"extended-mega-nav-section-science\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 85,
+          "bestPracticeId": 1626,
+          "attribute": "This element has an aria-controls attribute value that includes one or more invalid or duplicate ids",
+          "attributeDetail": "This BUTTON has an aria-controls attribute value of 'extended-mega-nav-section-products', which includes one or more invalid or duplicate ids",
+          "element": "<button aria-controls=\"extended-mega-nav-section-products\" aria-expanded=\"false\" class=\"usa-nav__link\">Products</button>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "button[class=\"usa-nav__link\"][aria-expanded=\"false\"][aria-controls=\"extended-mega-nav-section-products\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 85,
+          "bestPracticeId": 1626,
+          "attribute": "This element has an aria-controls attribute value that includes one or more invalid or duplicate ids",
+          "attributeDetail": "This BUTTON has an aria-controls attribute value of 'extended-mega-nav-section-news', which includes one or more invalid or duplicate ids",
+          "element": "<button aria-controls=\"extended-mega-nav-section-news\" aria-expanded=\"false\" class=\"usa-nav__link\">News</button>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(3)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "button[class=\"usa-nav__link\"][aria-expanded=\"false\"][aria-controls=\"extended-mega-nav-section-news\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 85,
+          "bestPracticeId": 1626,
+          "attribute": "This element has an aria-controls attribute value that includes one or more invalid or duplicate ids",
+          "attributeDetail": "This BUTTON has an aria-controls attribute value of 'extended-mega-nav-section-connect', which includes one or more invalid or duplicate ids",
+          "element": "<button aria-controls=\"extended-mega-nav-section-connect\" aria-expanded=\"false\" class=\"usa-nav__link\">Connect</button>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(4)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "button[class=\"usa-nav__link\"][aria-expanded=\"false\"][aria-controls=\"extended-mega-nav-section-connect\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 85,
+          "bestPracticeId": 1626,
+          "attribute": "This element has an aria-controls attribute value that includes one or more invalid or duplicate ids",
+          "attributeDetail": "This BUTTON has an aria-controls attribute value of 'extended-mega-nav-section-about', which includes one or more invalid or duplicate ids",
+          "element": "<button aria-controls=\"extended-mega-nav-section-about\" aria-expanded=\"false\" class=\"usa-nav__link\">About</button>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(5)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "button[class=\"usa-nav__link\"][aria-expanded=\"false\"][aria-controls=\"extended-mega-nav-section-about\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This DIV has an id attribute of 'extended-mega-nav-section-science', which is not unique in the same DOM",
+          "element": "<div hidden=\"\" class=\"usa-nav__submenu usa-megamenu\" id=\"extended-mega-nav-section-science\"><div cla ... i><a data-drupal-link-system-path=\"search\" data-drupal-link-query=\"{&quot;keywords&quot;:&quot;water",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(3)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[id=\"extended-mega-nav-section-science\"][class=\"usa-nav__submenu usa-megamenu\"][hidden=\"\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This DIV has an id attribute of 'extended-mega-nav-section-science', which is not unique in the same DOM",
+          "element": "<div hidden=\"\" class=\"usa-nav__submenu usa-megamenu\" id=\"extended-mega-nav-section-science\"><div cla ... ><a class=\"section-title\" href=\"/special-topic-sites\">Special Topics</a></li></ul></div></div></div>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(3)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(3)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[id=\"extended-mega-nav-section-science\"][class=\"usa-nav__submenu usa-megamenu\"][hidden=\"\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This DIV has an id attribute of 'extended-mega-nav-section-products', which is not unique in the same DOM",
+          "element": "<div hidden=\"\" class=\"usa-nav__submenu usa-megamenu\" id=\"extended-mega-nav-section-products\"><div cl ... a><ul class=\"dropdown-menu\"><li><a data-drupal-link-system-path=\"node/265948\" href=\"/products/web-to",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(3)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[id=\"extended-mega-nav-section-products\"][class=\"usa-nav__submenu usa-megamenu\"][hidden=\"\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This DIV has an id attribute of 'extended-mega-nav-section-products', which is not unique in the same DOM",
+          "element": "<div hidden=\"\" class=\"usa-nav__submenu usa-megamenu\" id=\"extended-mega-nav-section-products\"><div cl ... title\" href=\"https://store.usgs.gov/recreational-passes\">Park Passes</a></li></ul></div></div></div>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(3)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(3)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[id=\"extended-mega-nav-section-products\"][class=\"usa-nav__submenu usa-megamenu\"][hidden=\"\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This DIV has an id attribute of 'extended-mega-nav-section-news', which is not unique in the same DOM",
+          "element": "<div hidden=\"\" class=\"usa-nav__submenu usa-megamenu\" id=\"extended-mega-nav-section-news\"><div class= ... th=\"node/229177\" href=\"/about/congressional\">Congressional</a></li></ul></li></ul></div></div></div>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(3)>*:nth-child(3)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[id=\"extended-mega-nav-section-news\"][class=\"usa-nav__submenu usa-megamenu\"][hidden=\"\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This DIV has an id attribute of 'extended-mega-nav-section-news', which is not unique in the same DOM",
+          "element": "<div hidden=\"\" class=\"usa-nav__submenu usa-megamenu\" id=\"extended-mega-nav-section-news\"><div class= ... sub-section section-title\" href=\"/news/im-a-reporter\">I'm a Reporter</a></li></ul></div></div></div>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(3)>*:nth-child(2)>*:nth-child(2)>*:nth-child(3)>*:nth-child(3)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[id=\"extended-mega-nav-section-news\"][class=\"usa-nav__submenu usa-megamenu\"][hidden=\"\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This DIV has an id attribute of 'extended-mega-nav-section-connect', which is not unique in the same DOM",
+          "element": "<div hidden=\"\" class=\"usa-nav__submenu usa-megamenu\" id=\"extended-mega-nav-section-connect\"><div cla ... i><li><a href=\"tel:+18882758747\">USGS Store 1-888-275-8747</a></li></ul></li></ul></div></div></div>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(4)>*:nth-child(3)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[id=\"extended-mega-nav-section-connect\"][class=\"usa-nav__submenu usa-megamenu\"][hidden=\"\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This DIV has an id attribute of 'extended-mega-nav-section-connect', which is not unique in the same DOM",
+          "element": "<div hidden=\"\" class=\"usa-nav__submenu usa-megamenu\" id=\"extended-mega-nav-section-connect\"><div cla ... ub-section section-title\" href=\"https://answers.usgs.gov\">Contact Us</a></li></ul></div></div></div>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(3)>*:nth-child(2)>*:nth-child(2)>*:nth-child(4)>*:nth-child(3)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[id=\"extended-mega-nav-section-connect\"][class=\"usa-nav__submenu usa-megamenu\"][hidden=\"\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This DIV has an id attribute of 'extended-mega-nav-section-about', which is not unique in the same DOM",
+          "element": "<div hidden=\"\" class=\"usa-nav__submenu usa-megamenu\" id=\"extended-mega-nav-section-about\"><div class ... l\"><ul class=\"menu menu--mega-menu-about-col-4 nav\"><li><a data-drupal-link-system-path=\"node/280954",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(5)>*:nth-child(3)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[id=\"extended-mega-nav-section-about\"][class=\"usa-nav__submenu usa-megamenu\"][hidden=\"\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This DIV has an id attribute of 'extended-mega-nav-section-about', which is not unique in the same DOM",
+          "element": "<div hidden=\"\" class=\"usa-nav__submenu usa-megamenu\" id=\"extended-mega-nav-section-about\"><div class ... on-title\" href=\"/programs/emergency-management\">Emergency Management</a></li></ul></div></div></div>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(3)>*:nth-child(2)>*:nth-child(2)>*:nth-child(5)>*:nth-child(3)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[id=\"extended-mega-nav-section-about\"][class=\"usa-nav__submenu usa-megamenu\"][hidden=\"\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This DIV has an id attribute of 'block-sharebuttons', which is not unique in the same DOM",
+          "element": "<div class=\"block block-simple-block block-simple-blockshare-buttons\" id=\"block-sharebuttons\"><div c ... lope-open\"></span><span>Email</span></a></li></ul><div style=\"clear: both;\"></div></div></div></div>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[id=\"block-sharebuttons\"][class=\"block block-simple-block block-simple-blockshare-buttons\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This DIV has an id attribute of 'block-sharebuttons', which is not unique in the same DOM",
+          "element": "<div class=\"block block-simple-block block-simple-blockshare-buttons\" id=\"block-sharebuttons\"><div c ... lope-open\"></span><span>Email</span></a></li></ul><div style=\"clear: both;\"></div></div></div></div>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(3)>*:nth-child(3)>*:nth-child(3)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[id=\"block-sharebuttons\"][class=\"block block-simple-block block-simple-blockshare-buttons\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This DIV has an id attribute of 'block-exposedformsearchpage-results', which is not unique in the same DOM",
+          "element": "<div id=\"block-exposedformsearchpage-results\" data-drupal-selector=\"views-exposed-form-search-page-r ... ubmit-search\" class=\"fas fa-search button js-form-submit form-submit usa-button\"></div></form></div>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[class=\"views-exposed-form views-exposed-form-search-page-results block block-views block-views-exposed-filter-blocksearch-page-results\"][data-drupal-selector=\"views-exposed-form-search-page-results\"][id=\"block-exposedformsearchpage-results\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This DIV has an id attribute of 'block-exposedformsearchpage-results', which is not unique in the same DOM",
+          "element": "<div id=\"block-exposedformsearchpage-results\" data-drupal-selector=\"views-exposed-form-search-page-r ... ubmit-search\" class=\"fas fa-search button js-form-submit form-submit usa-button\"></div></form></div>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[class=\"views-exposed-form views-exposed-form-search-page-results block block-views block-views-exposed-filter-blocksearch-page-results\"][data-drupal-selector=\"views-exposed-form-search-page-results\"][id=\"block-exposedformsearchpage-results\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This FORM has an id attribute of 'views-exposed-form-search-page-results', which is not unique in the same DOM",
+          "element": "<form class=\"usa-form\" novalidate=\"\" accept-charset=\"UTF-8\" id=\"views-exposed-form-search-page-resul ... edit-submit-search\" class=\"fas fa-search button js-form-submit form-submit usa-button\"></div></form>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "form[action=\"/search\"][method=\"get\"][id=\"views-exposed-form-search-page-results\"][accept-charset=\"UTF-8\"][novalidate=\"\"][class=\"usa-form\"]",
+            "attNo": 6
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This FORM has an id attribute of 'views-exposed-form-search-page-results', which is not unique in the same DOM",
+          "element": "<form class=\"usa-form\" novalidate=\"\" accept-charset=\"UTF-8\" id=\"views-exposed-form-search-page-resul ... edit-submit-search\" class=\"fas fa-search button js-form-submit form-submit usa-button\"></div></form>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "form[action=\"/search\"][method=\"get\"][id=\"views-exposed-form-search-page-results\"][accept-charset=\"UTF-8\"][novalidate=\"\"][class=\"usa-form\"]",
+            "attNo": 6
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This INPUT has an id attribute of 'edit-keywords', which is not unique in the same DOM",
+          "element": "<input aria-label=\"Input\" class=\"form-text usa-input\" maxlength=\"128\" size=\"30\" value=\"\" name=\"keywords\" id=\"edit-keywords\" type=\"text\" data-drupal-selector=\"edit-keywords\" placeholder=\"Search\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "input[placeholder=\"Search\"][data-drupal-selector=\"edit-keywords\"][type=\"text\"][id=\"edit-keywords\"][name=\"keywords\"][value=\"\"][size=\"30\"][maxlength=\"128\"][class=\"form-text usa-input\"][aria-label=\"Input\"]",
+            "attNo": 10
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This INPUT has an id attribute of 'edit-keywords', which is not unique in the same DOM",
+          "element": "<input aria-label=\"Input\" class=\"form-text usa-input\" maxlength=\"128\" size=\"30\" value=\"\" name=\"keywords\" id=\"edit-keywords\" type=\"text\" data-drupal-selector=\"edit-keywords\" placeholder=\"Search\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "input[placeholder=\"Search\"][data-drupal-selector=\"edit-keywords\"][type=\"text\"][id=\"edit-keywords\"][name=\"keywords\"][value=\"\"][size=\"30\"][maxlength=\"128\"][class=\"form-text usa-input\"][aria-label=\"Input\"]",
+            "attNo": 10
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This DIV has an id attribute of 'edit-actions', which is not unique in the same DOM",
+          "element": "<div id=\"edit-actions\" class=\"form-actions js-form-wrapper form-wrapper\" data-drupal-selector=\"edit- ... ector=\"edit-submit-search\" class=\"fas fa-search button js-form-submit form-submit usa-button\"></div>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[data-drupal-selector=\"edit-actions\"][class=\"form-actions js-form-wrapper form-wrapper\"][id=\"edit-actions\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This DIV has an id attribute of 'edit-actions', which is not unique in the same DOM",
+          "element": "<div id=\"edit-actions\" class=\"form-actions js-form-wrapper form-wrapper\" data-drupal-selector=\"edit- ... ector=\"edit-submit-search\" class=\"fas fa-search button js-form-submit form-submit usa-button\"></div>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[data-drupal-selector=\"edit-actions\"][class=\"form-actions js-form-wrapper form-wrapper\"][id=\"edit-actions\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This INPUT has an id attribute of 'edit-submit-search', which is not unique in the same DOM",
+          "element": "<input aria-label=\"Input\" value=\"\" id=\"edit-submit-search\" type=\"submit\" data-drupal-selector=\"edit-submit-search\" class=\"fas fa-search button js-form-submit form-submit usa-button\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "input[class=\"fas fa-search button js-form-submit form-submit usa-button\"][data-drupal-selector=\"edit-submit-search\"][type=\"submit\"][id=\"edit-submit-search\"][value=\"\"][aria-label=\"Input\"]",
+            "attNo": 6
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This INPUT has an id attribute of 'edit-submit-search', which is not unique in the same DOM",
+          "element": "<input aria-label=\"Input\" value=\"\" id=\"edit-submit-search\" type=\"submit\" data-drupal-selector=\"edit-submit-search\" class=\"fas fa-search button js-form-submit form-submit usa-button\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "input[class=\"fas fa-search button js-form-submit form-submit usa-button\"][data-drupal-selector=\"edit-submit-search\"][type=\"submit\"][id=\"edit-submit-search\"][value=\"\"][aria-label=\"Input\"]",
+            "attNo": 6
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This MAIN has an id attribute of 'main-content', which is not unique in the same DOM",
+          "element": "<main id=\"main-content\" role=\"main\" class=\"main-content usa-layout-docs usa-section \"><a tabindex=\"- ... 1280px;\" class=\"paragraph--type--carousel-item slick-slide slick-current slick-active\"><div class=\"g",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(4)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "main[class=\"main-content usa-layout-docs usa-section \"][role=\"main\"][id=\"main-content\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This A has an id attribute of 'main-content', which is not unique in the same DOM",
+          "element": "<a tabindex=\"-1\" id=\"main-content\"></a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(4)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "a[id=\"main-content\"][tabindex=\"-1\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 790,
+          "bestPracticeId": 524,
+          "attribute": "This element is focusable and has an aria-hidden attribute set to true",
+          "attributeDetail": "This DIV is focusable and has an aria-hidden attribute set to true",
+          "element": "<div tabindex=\"0\" aria-hidden=\"true\" data-slick-index=\"3\" style=\"width: 357px;\" class=\"grid-col-4 sl ... rt-msg\">YELLOW - ADVISORY</div><div></div><div>2022-07-26 23:01:16 (UTC)</div></a></div></div></div>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(4)>*:nth-child(3)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[class=\"grid-col-4 slick-slide\"][data-slick-index=\"3\"][aria-hidden=\"true\"][tabindex=\"0\"]",
+            "attNo": 5
+          }
+        }
+      ]
+    }
+  ],
+  "timeStamp": "4jil2",
+  "startTime": "2022-07-27T14:38:45",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "continuum",
+      0
+    ]
+  ],
+  "logCount": 2,
+  "logSize": 280,
+  "errorLogCount": 2,
+  "errorLogSize": 280,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-27T14:38:51",
+  "elapsedSeconds": 6
+}

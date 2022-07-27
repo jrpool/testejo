@@ -1,0 +1,96 @@
+{
+  "id": "4jil2-gsa",
+  "host": {
+    "id": "gsa",
+    "which": "https://www.gsa.gov/",
+    "what": "General Services Administration (GSA)"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-27T14:29:00"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-27T14:29:08"
+    }
+  ],
+  "script": {
+    "id": "continuum",
+    "what": "Continuum",
+    "strict": true,
+    "timeLimit": 30,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.gsa.gov/",
+        "what": "General Services Administration (GSA)"
+      },
+      {
+        "type": "test",
+        "which": "continuum",
+        "what": "Continuum"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.gsa.gov/",
+      "what": "General Services Administration (GSA)",
+      "result": "https://www.gsa.gov/"
+    },
+    {
+      "type": "test",
+      "which": "continuum",
+      "what": "Level Access Continuum, community edition",
+      "url": "https://www.gsa.gov/",
+      "result": [
+        {
+          "engineTestId": 252,
+          "bestPracticeId": 444,
+          "attribute": "This video element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This video element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<video preload=\"auto\" poster=\"/cdnstatic/WebHeroFirstFrame-08262021_v2.jpg\" muted=\"\" loop=\"\" class=\" ...  src=\"/cdnstatic/gsagov_homepage_hero_h264_08252021.mp4\" media=\"all and (min-width: 413px)\"></video>",
+          "testResult": 0,
+          "path": "body>main:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "video[autoplay=\"\"][class=\"full-screen video mobile:display-none tablet:display-block\"][loop=\"\"][muted=\"\"][poster=\"/cdnstatic/WebHeroFirstFrame-08262021_v2.jpg\"][preload=\"auto\"]",
+            "attNo": 6
+          }
+        }
+      ]
+    }
+  ],
+  "timeStamp": "4jil2",
+  "startTime": "2022-07-27T14:29:00",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "continuum",
+      0
+    ]
+  ],
+  "logCount": 7,
+  "logSize": 2029,
+  "errorLogCount": 2,
+  "errorLogSize": 1723,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-27T14:29:08",
+  "elapsedSeconds": 7
+}

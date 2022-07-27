@@ -1,0 +1,628 @@
+{
+  "id": "4jil2-spa",
+  "host": {
+    "id": "spa",
+    "which": "https://www.swpa.gov/",
+    "what": "Southwestern Power Administration"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-27T14:38:11"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-27T14:38:17"
+    }
+  ],
+  "script": {
+    "id": "continuum",
+    "what": "Continuum",
+    "strict": true,
+    "timeLimit": 30,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.swpa.gov/",
+        "what": "Southwestern Power Administration"
+      },
+      {
+        "type": "test",
+        "which": "continuum",
+        "what": "Continuum"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.swpa.gov/",
+      "what": "Southwestern Power Administration",
+      "result": "https://www.swpa.gov/"
+    },
+    {
+      "type": "test",
+      "which": "continuum",
+      "what": "Level Access Continuum, community edition",
+      "url": "https://www.swpa.gov/",
+      "result": [
+        {
+          "engineTestId": 101,
+          "bestPracticeId": 429,
+          "attribute": "This element does not have a lang attribute",
+          "attributeDetail": "This HTML does not have a lang attribute",
+          "element": "<html xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\"><head id=\"ctl00_Head1\"><meta content=\"text/ ... span=\"1\" class=\"navigation_menu_heading\"></td><td title=\"Scheduling and Operations\" background=\"imag",
+          "testResult": 0,
+          "path": "html",
+          "fixType": {
+            "fixType": 4,
+            "domSpec": false,
+            "helperText": "Enter the appropriate language value for the page.",
+            "fix": {
+              "lang": null
+            }
+          },
+          "fingerprint": {
+            "attNo": 0,
+            "css": "html",
+            "version": 2
+          }
+        },
+        {
+          "engineTestId": 387,
+          "bestPracticeId": 375,
+          "attribute": "This element does not contain one or more: th elements (without an ARIA-assigned role); th elements with a role set to: rowheader | columnheader; or td elements with a role set to: rowheader | columnheader",
+          "attributeDetail": "This TABLE does not contain one or more: th elements (without an ARIA-assigned role); th elements with a role set to: rowheader | columnheader; or td elements with a role set to: rowheader | columnheader",
+          "element": "<table width=\"100%\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\" class=\"ctl00_Menu1_4\"><tbody><tr><td  ... :100%;\"><a href=\"agency.aspx\" class=\"ctl00_Menu1_1 ctl00_Menu1_3\">Home</a></td></tr></tbody></table>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(6)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "table[class=\"ctl00_Menu1_4\"][cellpadding=\"0\"][cellspacing=\"0\"][border=\"0\"][width=\"100%\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 387,
+          "bestPracticeId": 375,
+          "attribute": "This element does not contain one or more: th elements (without an ARIA-assigned role); th elements with a role set to: rowheader | columnheader; or td elements with a role set to: rowheader | columnheader",
+          "attributeDetail": "This TABLE does not contain one or more: th elements (without an ARIA-assigned role); th elements with a role set to: rowheader | columnheader; or td elements with a role set to: rowheader | columnheader",
+          "element": "<table width=\"100%\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\" class=\"ctl00_Menu1_4\"><tbody><tr><td  ... a href=\"contactus.aspx\" class=\"ctl00_Menu1_1 ctl00_Menu1_3\">Contact Us</a></td></tr></tbody></table>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(6)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "table[class=\"ctl00_Menu1_4\"][cellpadding=\"0\"][cellspacing=\"0\"][border=\"0\"][width=\"100%\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 387,
+          "bestPracticeId": 375,
+          "attribute": "This element does not contain one or more: th elements (without an ARIA-assigned role); th elements with a role set to: rowheader | columnheader; or td elements with a role set to: rowheader | columnheader",
+          "attributeDetail": "This TABLE does not contain one or more: th elements (without an ARIA-assigned role); th elements with a role set to: rowheader | columnheader; or td elements with a role set to: rowheader | columnheader",
+          "element": "<table width=\"100%\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\" class=\"ctl00_Menu1_4\"><tbody><tr><td  ... <a href=\"diversity.aspx\" class=\"ctl00_Menu1_1 ctl00_Menu1_3\">Diversity</a></td></tr></tbody></table>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(6)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "table[class=\"ctl00_Menu1_4\"][cellpadding=\"0\"][cellspacing=\"0\"][border=\"0\"][width=\"100%\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 387,
+          "bestPracticeId": 375,
+          "attribute": "This element does not contain one or more: th elements (without an ARIA-assigned role); th elements with a role set to: rowheader | columnheader; or td elements with a role set to: rowheader | columnheader",
+          "attributeDetail": "This TABLE does not contain one or more: th elements (without an ARIA-assigned role); th elements with a role set to: rowheader | columnheader; or td elements with a role set to: rowheader | columnheader",
+          "element": "<table width=\"100%\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\" class=\"ctl00_Menu1_4\"><tbody><tr><td  ...  href=\"employment.aspx\" class=\"ctl00_Menu1_1 ctl00_Menu1_3\">Employment</a></td></tr></tbody></table>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(6)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(10)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "table[class=\"ctl00_Menu1_4\"][cellpadding=\"0\"][cellspacing=\"0\"][border=\"0\"][width=\"100%\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 387,
+          "bestPracticeId": 375,
+          "attribute": "This element does not contain one or more: th elements (without an ARIA-assigned role); th elements with a role set to: rowheader | columnheader; or td elements with a role set to: rowheader | columnheader",
+          "attributeDetail": "This TABLE does not contain one or more: th elements (without an ARIA-assigned role); th elements with a role set to: rowheader | columnheader; or td elements with a role set to: rowheader | columnheader",
+          "element": "<table width=\"100%\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\" class=\"ctl00_Menu1_4\"><tbody><tr><td  ... th:100%;\"><a href=\"foia.aspx\" class=\"ctl00_Menu1_1 ctl00_Menu1_3\">FOIA</a></td></tr></tbody></table>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(6)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(13)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "table[class=\"ctl00_Menu1_4\"][cellpadding=\"0\"][cellspacing=\"0\"][border=\"0\"][width=\"100%\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 387,
+          "bestPracticeId": 375,
+          "attribute": "This element does not contain one or more: th elements (without an ARIA-assigned role); th elements with a role set to: rowheader | columnheader; or td elements with a role set to: rowheader | columnheader",
+          "attributeDetail": "This TABLE does not contain one or more: th elements (without an ARIA-assigned role); th elements with a role set to: rowheader | columnheader; or td elements with a role set to: rowheader | columnheader",
+          "element": "<table width=\"100%\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\" class=\"ctl00_Menu1_4\"><tbody><tr><td  ... /web-policies/privacy\" class=\"ctl00_Menu1_1 ctl00_Menu1_3\">Privacy Act</a></td></tr></tbody></table>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(6)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(16)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "table[class=\"ctl00_Menu1_4\"][cellpadding=\"0\"][cellspacing=\"0\"][border=\"0\"][width=\"100%\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 387,
+          "bestPracticeId": 375,
+          "attribute": "This element does not contain one or more: th elements (without an ARIA-assigned role); th elements with a role set to: rowheader | columnheader; or td elements with a role set to: rowheader | columnheader",
+          "attributeDetail": "This TABLE does not contain one or more: th elements (without an ARIA-assigned role); th elements with a role set to: rowheader | columnheader; or td elements with a role set to: rowheader | columnheader",
+          "element": "<table width=\"100%\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\" class=\"ctl00_Menu1_4\"><tbody><tr><td  ... ions.aspx\" class=\"ctl00_Menu1_1 ctl00_Menu1_3\">News &amp; Publications</a></td></tr></tbody></table>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(6)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(19)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "table[class=\"ctl00_Menu1_4\"][cellpadding=\"0\"][cellspacing=\"0\"][border=\"0\"][width=\"100%\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 387,
+          "bestPracticeId": 375,
+          "attribute": "This element does not contain one or more: th elements (without an ARIA-assigned role); th elements with a role set to: rowheader | columnheader; or td elements with a role set to: rowheader | columnheader",
+          "attributeDetail": "This TABLE does not contain one or more: th elements (without an ARIA-assigned role); th elements with a role set to: rowheader | columnheader; or td elements with a role set to: rowheader | columnheader",
+          "element": "<table width=\"100%\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\" class=\"ctl00_Menu2_4\"><tbody><tr><td  ... ingavendor.aspx\" class=\"ctl00_Menu2_1 ctl00_Menu2_3\">Becoming a Vendor</a></td></tr></tbody></table>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(6)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "table[class=\"ctl00_Menu2_4\"][cellpadding=\"0\"][cellspacing=\"0\"][border=\"0\"][width=\"100%\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 387,
+          "bestPracticeId": 375,
+          "attribute": "This element does not contain one or more: th elements (without an ARIA-assigned role); th elements with a role set to: rowheader | columnheader; or td elements with a role set to: rowheader | columnheader",
+          "attributeDetail": "This TABLE does not contain one or more: th elements (without an ARIA-assigned role); th elements with a role set to: rowheader | columnheader; or td elements with a role set to: rowheader | columnheader",
+          "element": "<table width=\"100%\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\" class=\"ctl00_Menu2_4\"><tbody><tr><td  ... temsswpabuys.aspx\" class=\"ctl00_Menu2_1 ctl00_Menu2_3\">Items SWPA Buys</a></td></tr></tbody></table>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(6)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "table[class=\"ctl00_Menu2_4\"][cellpadding=\"0\"][cellspacing=\"0\"][border=\"0\"][width=\"100%\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 387,
+          "bestPracticeId": 375,
+          "attribute": "This element does not contain one or more: th elements (without an ARIA-assigned role); th elements with a role set to: rowheader | columnheader; or td elements with a role set to: rowheader | columnheader",
+          "attributeDetail": "This TABLE does not contain one or more: th elements (without an ARIA-assigned role); th elements with a role set to: rowheader | columnheader; or td elements with a role set to: rowheader | columnheader",
+          "element": "<table width=\"100%\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\" class=\"ctl00_Menu2_4\"><tbody><tr><td  ... tovendors.aspx\" class=\"ctl00_Menu2_1 ctl00_Menu2_3\">Payment To Vendors</a></td></tr></tbody></table>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(6)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "table[class=\"ctl00_Menu2_4\"][cellpadding=\"0\"][cellspacing=\"0\"][border=\"0\"][width=\"100%\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 387,
+          "bestPracticeId": 375,
+          "attribute": "This element does not contain one or more: th elements (without an ARIA-assigned role); th elements with a role set to: rowheader | columnheader; or td elements with a role set to: rowheader | columnheader",
+          "attributeDetail": "This TABLE does not contain one or more: th elements (without an ARIA-assigned role); th elements with a role set to: rowheader | columnheader; or td elements with a role set to: rowheader | columnheader",
+          "element": "<table width=\"100%\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\" class=\"ctl00_Menu2_4\"><tbody><tr><td  ... smallbusiness.aspx\" class=\"ctl00_Menu2_1 ctl00_Menu2_3\">Small Business</a></td></tr></tbody></table>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(6)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(10)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "table[class=\"ctl00_Menu2_4\"][cellpadding=\"0\"][cellspacing=\"0\"][border=\"0\"][width=\"100%\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 387,
+          "bestPracticeId": 375,
+          "attribute": "This element does not contain one or more: th elements (without an ARIA-assigned role); th elements with a role set to: rowheader | columnheader; or td elements with a role set to: rowheader | columnheader",
+          "attributeDetail": "This TABLE does not contain one or more: th elements (without an ARIA-assigned role); th elements with a role set to: rowheader | columnheader; or td elements with a role set to: rowheader | columnheader",
+          "element": "<table width=\"100%\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\" class=\"ctl00_Menu2_4\"><tbody><tr><td  ... posal.aspx\" class=\"ctl00_Menu2_1 ctl00_Menu2_3\">SWPA Property Disposal</a></td></tr></tbody></table>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(6)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(13)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "table[class=\"ctl00_Menu2_4\"][cellpadding=\"0\"][cellspacing=\"0\"][border=\"0\"][width=\"100%\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 387,
+          "bestPracticeId": 375,
+          "attribute": "This element does not contain one or more: th elements (without an ARIA-assigned role); th elements with a role set to: rowheader | columnheader; or td elements with a role set to: rowheader | columnheader",
+          "attributeDetail": "This TABLE does not contain one or more: th elements (without an ARIA-assigned role); th elements with a role set to: rowheader | columnheader; or td elements with a role set to: rowheader | columnheader",
+          "element": "<table width=\"100%\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\" class=\"ctl00_Menu3_4\"><tbody><tr><td  ... hedules.aspx\" class=\"ctl00_Menu3_1 ctl00_Menu3_3\">Generation Schedules</a></td></tr></tbody></table>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(6)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(3)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "table[class=\"ctl00_Menu3_4\"][cellpadding=\"0\"][cellspacing=\"0\"][border=\"0\"][width=\"100%\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 387,
+          "bestPracticeId": 375,
+          "attribute": "This element does not contain one or more: th elements (without an ARIA-assigned role); th elements with a role set to: rowheader | columnheader; or td elements with a role set to: rowheader | columnheader",
+          "attributeDetail": "This TABLE does not contain one or more: th elements (without an ARIA-assigned role); th elements with a role set to: rowheader | columnheader; or td elements with a role set to: rowheader | columnheader",
+          "element": "<table width=\"100%\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\" class=\"ctl00_Menu3_4\"><tbody><tr><td  ... connections.aspx\" class=\"ctl00_Menu3_1 ctl00_Menu3_3\">Interconnections</a></td></tr></tbody></table>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(6)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(3)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "table[class=\"ctl00_Menu3_4\"][cellpadding=\"0\"][cellspacing=\"0\"][border=\"0\"][width=\"100%\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 387,
+          "bestPracticeId": 375,
+          "attribute": "This element does not contain one or more: th elements (without an ARIA-assigned role); th elements with a role set to: rowheader | columnheader; or td elements with a role set to: rowheader | columnheader",
+          "attributeDetail": "This TABLE does not contain one or more: th elements (without an ARIA-assigned role); th elements with a role set to: rowheader | columnheader; or td elements with a role set to: rowheader | columnheader",
+          "element": "<table width=\"100%\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\" class=\"ctl00_Menu4_4\"><tbody><tr><td  ... tes_schedules.aspx\" class=\"ctl00_Menu4_1 ctl00_Menu4_3\">Rate Schedules</a></td></tr></tbody></table>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(6)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(4)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "table[class=\"ctl00_Menu4_4\"][cellpadding=\"0\"][cellspacing=\"0\"][border=\"0\"][width=\"100%\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 387,
+          "bestPracticeId": 375,
+          "attribute": "This element does not contain one or more: th elements (without an ARIA-assigned role); th elements with a role set to: rowheader | columnheader; or td elements with a role set to: rowheader | columnheader",
+          "attributeDetail": "This TABLE does not contain one or more: th elements (without an ARIA-assigned role); th elements with a role set to: rowheader | columnheader; or td elements with a role set to: rowheader | columnheader",
+          "element": "<table width=\"100%\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\" class=\"ctl00_Menu4_4\"><tbody><tr><td  ... =\"rates_notices.aspx\" class=\"ctl00_Menu4_1 ctl00_Menu4_3\">Rate Notices</a></td></tr></tbody></table>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(6)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(4)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "table[class=\"ctl00_Menu4_4\"][cellpadding=\"0\"][cellspacing=\"0\"][border=\"0\"][width=\"100%\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 387,
+          "bestPracticeId": 375,
+          "attribute": "This element does not contain one or more: th elements (without an ARIA-assigned role); th elements with a role set to: rowheader | columnheader; or td elements with a role set to: rowheader | columnheader",
+          "attributeDetail": "This TABLE does not contain one or more: th elements (without an ARIA-assigned role); th elements with a role set to: rowheader | columnheader; or td elements with a role set to: rowheader | columnheader",
+          "element": "<table width=\"100%\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\" class=\"ctl00_Menu4_4\"><tbody><tr><td  ... nt_process.aspx\" class=\"ctl00_Menu4_1 ctl00_Menu4_3\">Repayment Process</a></td></tr></tbody></table>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(6)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(4)>*:nth-child(2)>*:nth-child(1)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "table[class=\"ctl00_Menu4_4\"][cellpadding=\"0\"][cellspacing=\"0\"][border=\"0\"][width=\"100%\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 387,
+          "bestPracticeId": 375,
+          "attribute": "This element does not contain one or more: th elements (without an ARIA-assigned role); th elements with a role set to: rowheader | columnheader; or td elements with a role set to: rowheader | columnheader",
+          "attributeDetail": "This TABLE does not contain one or more: th elements (without an ARIA-assigned role); th elements with a role set to: rowheader | columnheader; or td elements with a role set to: rowheader | columnheader",
+          "element": "<table width=\"100%\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\" class=\"ctl00_Menu4_4\"><tbody><tr><td  ... ss_tariff.aspx\" class=\"ctl00_Menu4_1 ctl00_Menu4_3\">Open Access Tariff</a></td></tr></tbody></table>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(6)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(4)>*:nth-child(2)>*:nth-child(1)>*:nth-child(10)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "table[class=\"ctl00_Menu4_4\"][cellpadding=\"0\"][cellspacing=\"0\"][border=\"0\"][width=\"100%\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 387,
+          "bestPracticeId": 375,
+          "attribute": "This element does not contain one or more: th elements (without an ARIA-assigned role); th elements with a role set to: rowheader | columnheader; or td elements with a role set to: rowheader | columnheader",
+          "attributeDetail": "This TABLE does not contain one or more: th elements (without an ARIA-assigned role); th elements with a role set to: rowheader | columnheader; or td elements with a role set to: rowheader | columnheader",
+          "element": "<table width=\"100%\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\" class=\"ctl00_Menu5_4\"><tbody><tr><td  ... \"><a href=\"Covid-19.aspx\" class=\"ctl00_Menu5_1 ctl00_Menu5_3\">COVID-19</a></td></tr></tbody></table>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(6)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(5)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "table[class=\"ctl00_Menu5_4\"][cellpadding=\"0\"][cellspacing=\"0\"][border=\"0\"][width=\"100%\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 387,
+          "bestPracticeId": 375,
+          "attribute": "This element does not contain one or more: th elements (without an ARIA-assigned role); th elements with a role set to: rowheader | columnheader; or td elements with a role set to: rowheader | columnheader",
+          "attributeDetail": "This TABLE does not contain one or more: th elements (without an ARIA-assigned role); th elements with a role set to: rowheader | columnheader; or td elements with a role set to: rowheader | columnheader",
+          "element": "<table width=\"100%\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\" class=\"ctl00_Menu5_4\"><tbody><tr><td  ... rogram.aspx\" class=\"ctl00_Menu5_1 ctl00_Menu5_3\">Crime Witness Program</a></td></tr></tbody></table>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(6)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(5)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "table[class=\"ctl00_Menu5_4\"][cellpadding=\"0\"][cellspacing=\"0\"][border=\"0\"][width=\"100%\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 387,
+          "bestPracticeId": 375,
+          "attribute": "This element does not contain one or more: th elements (without an ARIA-assigned role); th elements with a role set to: rowheader | columnheader; or td elements with a role set to: rowheader | columnheader",
+          "attributeDetail": "This TABLE does not contain one or more: th elements (without an ARIA-assigned role); th elements with a role set to: rowheader | columnheader; or td elements with a role set to: rowheader | columnheader",
+          "element": "<table width=\"100%\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\" class=\"ctl00_Menu5_4\"><tbody><tr><td  ... ref=\"environment.aspx\" class=\"ctl00_Menu5_1 ctl00_Menu5_3\">Environment</a></td></tr></tbody></table>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(6)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(5)>*:nth-child(2)>*:nth-child(1)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "table[class=\"ctl00_Menu5_4\"][cellpadding=\"0\"][cellspacing=\"0\"][border=\"0\"][width=\"100%\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 387,
+          "bestPracticeId": 375,
+          "attribute": "This element does not contain one or more: th elements (without an ARIA-assigned role); th elements with a role set to: rowheader | columnheader; or td elements with a role set to: rowheader | columnheader",
+          "attributeDetail": "This TABLE does not contain one or more: th elements (without an ARIA-assigned role); th elements with a role set to: rowheader | columnheader; or td elements with a role set to: rowheader | columnheader",
+          "element": "<table width=\"100%\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\" class=\"ctl00_Menu5_4\"><tbody><tr><td  ... ref=\"rightofway.aspx\" class=\"ctl00_Menu5_1 ctl00_Menu5_3\">Right-of-Way</a></td></tr></tbody></table>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(6)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(5)>*:nth-child(2)>*:nth-child(1)>*:nth-child(10)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "table[class=\"ctl00_Menu5_4\"][cellpadding=\"0\"][cellspacing=\"0\"][border=\"0\"][width=\"100%\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 387,
+          "bestPracticeId": 375,
+          "attribute": "This element does not contain one or more: th elements (without an ARIA-assigned role); th elements with a role set to: rowheader | columnheader; or td elements with a role set to: rowheader | columnheader",
+          "attributeDetail": "This TABLE does not contain one or more: th elements (without an ARIA-assigned role); th elements with a role set to: rowheader | columnheader; or td elements with a role set to: rowheader | columnheader",
+          "element": "<table width=\"100%\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\" class=\"ctl00_Menu5_4\"><tbody><tr><td  ... 00%;\"><a href=\"safety.aspx\" class=\"ctl00_Menu5_1 ctl00_Menu5_3\">Safety</a></td></tr></tbody></table>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(6)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(5)>*:nth-child(2)>*:nth-child(1)>*:nth-child(13)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "table[class=\"ctl00_Menu5_4\"][cellpadding=\"0\"][cellspacing=\"0\"][border=\"0\"][width=\"100%\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 387,
+          "bestPracticeId": 375,
+          "attribute": "This element does not contain one or more: th elements (without an ARIA-assigned role); th elements with a role set to: rowheader | columnheader; or td elements with a role set to: rowheader | columnheader",
+          "attributeDetail": "This TABLE does not contain one or more: th elements (without an ARIA-assigned role); th elements with a role set to: rowheader | columnheader; or td elements with a role set to: rowheader | columnheader",
+          "element": "<table width=\"100%\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\" class=\"ctl00_Menu5_4\"><tbody><tr><td  ... \"><a href=\"security.aspx\" class=\"ctl00_Menu5_1 ctl00_Menu5_3\">Security</a></td></tr></tbody></table>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(6)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(5)>*:nth-child(2)>*:nth-child(1)>*:nth-child(16)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "table[class=\"ctl00_Menu5_4\"][cellpadding=\"0\"][cellspacing=\"0\"][border=\"0\"][width=\"100%\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 387,
+          "bestPracticeId": 375,
+          "attribute": "This element does not contain one or more: th elements (without an ARIA-assigned role); th elements with a role set to: rowheader | columnheader; or td elements with a role set to: rowheader | columnheader",
+          "attributeDetail": "This TABLE does not contain one or more: th elements (without an ARIA-assigned role); th elements with a role set to: rowheader | columnheader; or td elements with a role set to: rowheader | columnheader",
+          "element": "<table width=\"100%\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\" class=\"ctl00_Menu5_4\"><tbody><tr><td  ... bility-disclosure-policy.html\" class=\"ctl00_Menu5_1 ctl00_Menu5_3\">VDP</a></td></tr></tbody></table>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(6)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(5)>*:nth-child(2)>*:nth-child(1)>*:nth-child(19)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "table[class=\"ctl00_Menu5_4\"][cellpadding=\"0\"][cellspacing=\"0\"][border=\"0\"][width=\"100%\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 387,
+          "bestPracticeId": 375,
+          "attribute": "This element does not contain one or more: th elements (without an ARIA-assigned role); th elements with a role set to: rowheader | columnheader; or td elements with a role set to: rowheader | columnheader",
+          "attributeDetail": "This TABLE does not contain one or more: th elements (without an ARIA-assigned role); th elements with a role set to: rowheader | columnheader; or td elements with a role set to: rowheader | columnheader",
+          "element": "<table width=\"100%\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\" class=\"ctl00_ContentPlaceHolder2_Menu ... ion:none;\">New<br>SWPA Joins National<br>Hydropower Association</span></a></td></tr></tbody></table>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(6)>*:nth-child(1)>*:nth-child(1)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "table[class=\"ctl00_ContentPlaceHolder2_Menu5_4\"][cellpadding=\"0\"][cellspacing=\"0\"][border=\"0\"][width=\"100%\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 387,
+          "bestPracticeId": 375,
+          "attribute": "This element does not contain one or more: th elements (without an ARIA-assigned role); th elements with a role set to: rowheader | columnheader; or td elements with a role set to: rowheader | columnheader",
+          "attributeDetail": "This TABLE does not contain one or more: th elements (without an ARIA-assigned role); th elements with a role set to: rowheader | columnheader; or td elements with a role set to: rowheader | columnheader",
+          "element": "<table width=\"100%\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\" class=\"ctl00_ContentPlaceHolder2_Menu ... Holder2_Menu5_1 ctl00_ContentPlaceHolder2_Menu5_3\">Archived News Items</a></td></tr></tbody></table>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(6)>*:nth-child(1)>*:nth-child(1)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "table[class=\"ctl00_ContentPlaceHolder2_Menu5_4\"][cellpadding=\"0\"][cellspacing=\"0\"][border=\"0\"][width=\"100%\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 387,
+          "bestPracticeId": 375,
+          "attribute": "This element does not contain one or more: th elements (without an ARIA-assigned role); th elements with a role set to: rowheader | columnheader; or td elements with a role set to: rowheader | columnheader",
+          "attributeDetail": "This TABLE does not contain one or more: th elements (without an ARIA-assigned role); th elements with a role set to: rowheader | columnheader; or td elements with a role set to: rowheader | columnheader",
+          "element": "<table width=\"100%\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\" class=\"ctl00_ContentPlaceHolder2_Menu ... _Menu1_1 ctl00_ContentPlaceHolder2_Menu1_3\">Annual Performance<br>Plan</a></td></tr></tbody></table>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(6)>*:nth-child(1)>*:nth-child(1)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(8)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "table[class=\"ctl00_ContentPlaceHolder2_Menu1_4\"][cellpadding=\"0\"][cellspacing=\"0\"][border=\"0\"][width=\"100%\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 387,
+          "bestPracticeId": 375,
+          "attribute": "This element does not contain one or more: th elements (without an ARIA-assigned role); th elements with a role set to: rowheader | columnheader; or td elements with a role set to: rowheader | columnheader",
+          "attributeDetail": "This TABLE does not contain one or more: th elements (without an ARIA-assigned role); th elements with a role set to: rowheader | columnheader; or td elements with a role set to: rowheader | columnheader",
+          "element": "<table width=\"100%\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\" class=\"ctl00_ContentPlaceHolder2_Menu ... PlaceHolder2_Menu1_1 ctl00_ContentPlaceHolder2_Menu1_3\">Annual Reports</a></td></tr></tbody></table>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(6)>*:nth-child(1)>*:nth-child(1)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(8)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "table[class=\"ctl00_ContentPlaceHolder2_Menu1_4\"][cellpadding=\"0\"][cellspacing=\"0\"][border=\"0\"][width=\"100%\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 387,
+          "bestPracticeId": 375,
+          "attribute": "This element does not contain one or more: th elements (without an ARIA-assigned role); th elements with a role set to: rowheader | columnheader; or td elements with a role set to: rowheader | columnheader",
+          "attributeDetail": "This TABLE does not contain one or more: th elements (without an ARIA-assigned role); th elements with a role set to: rowheader | columnheader; or td elements with a role set to: rowheader | columnheader",
+          "element": "<table width=\"100%\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\" class=\"ctl00_ContentPlaceHolder2_Menu ... ContentPlaceHolder2_Menu1_1 ctl00_ContentPlaceHolder2_Menu1_3\">Mission</a></td></tr></tbody></table>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(6)>*:nth-child(1)>*:nth-child(1)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(8)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "table[class=\"ctl00_ContentPlaceHolder2_Menu1_4\"][cellpadding=\"0\"][cellspacing=\"0\"][border=\"0\"][width=\"100%\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 387,
+          "bestPracticeId": 375,
+          "attribute": "This element does not contain one or more: th elements (without an ARIA-assigned role); th elements with a role set to: rowheader | columnheader; or td elements with a role set to: rowheader | columnheader",
+          "attributeDetail": "This TABLE does not contain one or more: th elements (without an ARIA-assigned role); th elements with a role set to: rowheader | columnheader; or td elements with a role set to: rowheader | columnheader",
+          "element": "<table width=\"100%\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\" class=\"ctl00_ContentPlaceHolder2_Menu ... ntPlaceHolder2_Menu1_1 ctl00_ContentPlaceHolder2_Menu1_3\">Organization</a></td></tr></tbody></table>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(6)>*:nth-child(1)>*:nth-child(1)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(8)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "table[class=\"ctl00_ContentPlaceHolder2_Menu1_4\"][cellpadding=\"0\"][cellspacing=\"0\"][border=\"0\"][width=\"100%\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 387,
+          "bestPracticeId": 375,
+          "attribute": "This element does not contain one or more: th elements (without an ARIA-assigned role); th elements with a role set to: rowheader | columnheader; or td elements with a role set to: rowheader | columnheader",
+          "attributeDetail": "This TABLE does not contain one or more: th elements (without an ARIA-assigned role); th elements with a role set to: rowheader | columnheader; or td elements with a role set to: rowheader | columnheader",
+          "element": "<table width=\"100%\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\" class=\"ctl00_ContentPlaceHolder2_Menu ... PlaceHolder2_Menu1_1 ctl00_ContentPlaceHolder2_Menu1_3\">Strategic Plan</a></td></tr></tbody></table>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(6)>*:nth-child(1)>*:nth-child(1)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(8)>*:nth-child(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "table[class=\"ctl00_ContentPlaceHolder2_Menu1_4\"][cellpadding=\"0\"][cellspacing=\"0\"][border=\"0\"][width=\"100%\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 387,
+          "bestPracticeId": 375,
+          "attribute": "This element does not contain one or more: th elements (without an ARIA-assigned role); th elements with a role set to: rowheader | columnheader; or td elements with a role set to: rowheader | columnheader",
+          "attributeDetail": "This TABLE does not contain one or more: th elements (without an ARIA-assigned role); th elements with a role set to: rowheader | columnheader; or td elements with a role set to: rowheader | columnheader",
+          "element": "<table width=\"100%\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\" class=\"ctl00_ContentPlaceHolder2_Menu ... lder2_Menu1_1 ctl00_ContentPlaceHolder2_Menu1_3\">SWPA - Overview Video</a></td></tr></tbody></table>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(6)>*:nth-child(1)>*:nth-child(1)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(8)>*:nth-child(1)>*:nth-child(6)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "table[class=\"ctl00_ContentPlaceHolder2_Menu1_4\"][cellpadding=\"0\"][cellspacing=\"0\"][border=\"0\"][width=\"100%\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 387,
+          "bestPracticeId": 375,
+          "attribute": "This element does not contain one or more: th elements (without an ARIA-assigned role); th elements with a role set to: rowheader | columnheader; or td elements with a role set to: rowheader | columnheader",
+          "attributeDetail": "This TABLE does not contain one or more: th elements (without an ARIA-assigned role); th elements with a role set to: rowheader | columnheader; or td elements with a role set to: rowheader | columnheader",
+          "element": "<table width=\"100%\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\" class=\"ctl00_ContentPlaceHolder2_Menu ... older2_Menu1_1 ctl00_ContentPlaceHolder2_Menu1_3\">SWPA 75th PP - Video</a></td></tr></tbody></table>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(6)>*:nth-child(1)>*:nth-child(1)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(8)>*:nth-child(1)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "table[class=\"ctl00_ContentPlaceHolder2_Menu1_4\"][cellpadding=\"0\"][cellspacing=\"0\"][border=\"0\"][width=\"100%\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 387,
+          "bestPracticeId": 375,
+          "attribute": "This element does not contain one or more: th elements (without an ARIA-assigned role); th elements with a role set to: rowheader | columnheader; or td elements with a role set to: rowheader | columnheader",
+          "attributeDetail": "This TABLE does not contain one or more: th elements (without an ARIA-assigned role); th elements with a role set to: rowheader | columnheader; or td elements with a role set to: rowheader | columnheader",
+          "element": "<table width=\"100%\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\" class=\"ctl00_ContentPlaceHolder2_Menu ... tentPlaceHolder2_Menu1_1 ctl00_ContentPlaceHolder2_Menu1_3\">System Map</a></td></tr></tbody></table>",
+          "testResult": 0,
+          "path": "body>form:nth-of-type(1)>*:nth-child(6)>*:nth-child(1)>*:nth-child(1)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(8)>*:nth-child(1)>*:nth-child(8)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "table[class=\"ctl00_ContentPlaceHolder2_Menu1_4\"][cellpadding=\"0\"][cellspacing=\"0\"][border=\"0\"][width=\"100%\"]",
+            "attNo": 5
+          }
+        }
+      ]
+    }
+  ],
+  "timeStamp": "4jil2",
+  "startTime": "2022-07-27T14:38:11",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "continuum",
+      0
+    ]
+  ],
+  "logCount": 0,
+  "logSize": 0,
+  "errorLogCount": 0,
+  "errorLogSize": 0,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-27T14:38:17",
+  "elapsedSeconds": 5
+}

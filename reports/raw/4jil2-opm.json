@@ -1,0 +1,201 @@
+{
+  "id": "4jil2-opm",
+  "host": {
+    "id": "opm",
+    "which": "https://www.opm.gov/",
+    "what": "Office of Personnel Management (OPM)"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-27T14:34:52"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-27T14:34:58"
+    }
+  ],
+  "script": {
+    "id": "continuum",
+    "what": "Continuum",
+    "strict": true,
+    "timeLimit": 30,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.opm.gov/",
+        "what": "Office of Personnel Management (OPM)"
+      },
+      {
+        "type": "test",
+        "which": "continuum",
+        "what": "Continuum"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.opm.gov/",
+      "what": "Office of Personnel Management (OPM)",
+      "result": "https://www.opm.gov/"
+    },
+    {
+      "type": "test",
+      "which": "continuum",
+      "what": "Level Access Continuum, community edition",
+      "url": "https://www.opm.gov/",
+      "result": [
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This UL has an id attribute of 'MainNavigationList', which is not unique in the same DOM",
+          "element": "<ul id=\"MainNavigationList\"><li class=\"about-us\"><a href=\"/about-us/\"><span>About</span></a><a tabin ... lass=\"toggleNavShow\">Open \"Policy\" Submenu</a><div style=\"display: none;\" class=\"ddNavWrapper\"><tabl",
+          "testResult": 0,
+          "path": "body>header:nth-of-type(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "ul[id=\"MainNavigationList\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This UL has an id attribute of 'MainNavigationList', which is not unique in the same DOM",
+          "element": "<ul id=\"MainNavigationList\"><li class=\"about-us\"><a href=\"/about-us/\"><span>About</span></a><a tabin ... Corner ddNavCornerTL\"></td><td class=\"ddNavEdge ddNavEdgeTop\"></td><td class=\"ddNavCorner ddNavCorne",
+          "testResult": 0,
+          "path": "body>header:nth-of-type(1)>*:nth-child(2)>*:nth-child(4)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "ul[id=\"MainNavigationList\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This UL has an id attribute of 'MainNavigationList', which is not unique in the same DOM",
+          "element": "<ul id=\"MainNavigationList\"><li class=\"about-us\"><a href=\"/about-us/\"><span>About</span></a><a tabin ... Corner ddNavCornerTL\"></td><td class=\"ddNavEdge ddNavEdgeTop\"></td><td class=\"ddNavCorner ddNavCorne",
+          "testResult": 0,
+          "path": "body>header:nth-of-type(1)>*:nth-child(4)>*:nth-child(4)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "ul[id=\"MainNavigationList\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This A has an id attribute of 'W2MoreInfo', which is not unique in the same DOM",
+          "element": "<a class=\"\" href=\"https://www.whitehouse.gov/briefing-room/presidential-actions/2022/05/31/a-proclam ... 22/\" id=\"W2MoreInfo\"><img class=\"bg\" src=\"banner/images/spotlights/n/54316.png\" alt=\"OPM Pride\"></a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "a[id=\"W2MoreInfo\"][href=\"https://www.whitehouse.gov/briefing-room/presidential-actions/2022/05/31/a-proclamation-on-lesbian-gay-bisexual-transgender-queer-and-intersex-pride-month-2022/\"][class=\"\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This A has an id attribute of 'W2MoreInfo', which is not unique in the same DOM",
+          "element": "<a class=\"suppress\" href=\"https://www.opm.gov/news/releases/2022/04/release-office-of-personnel-mana ... paign (CFC) Special Solicitation - Help charities support those affected by the war in Ukraine\"></a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "a[id=\"W2MoreInfo\"][href=\"https://www.opm.gov/news/releases/2022/04/release-office-of-personnel-management-announces-cfc-nationwide-special-solicitation-for-2022-war-in-ukraine-and-humanitarian-crisis/\"][class=\"suppress\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This A has an id attribute of 'W2MoreInfo', which is not unique in the same DOM",
+          "element": "<a class=\"suppress\" href=\"https://bil.usajobs.gov/\" id=\"W2MoreInfo\"><img class=\"bg\" src=\"banner/images/spotlights/n/57491.png\" alt=\"Help Us Build A Better America! Visit: BIL.USAJOBS.GOV\"></a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(3)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "a[id=\"W2MoreInfo\"][href=\"https://bil.usajobs.gov/\"][class=\"suppress\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This A has an id attribute of 'W2MoreInfo', which is not unique in the same DOM",
+          "element": "<a class=\"suppress\" href=\"/about-us/strategic-plan/\" id=\"W2MoreInfo\"><img class=\"bg\" src=\"banner/ima ... n/56108.jpg\" alt=\"Photo of the exterior of OPM with text Strategic Plan Fiscal Years 2022-2026\"></a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(4)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "a[id=\"W2MoreInfo\"][href=\"/about-us/strategic-plan/\"][class=\"suppress\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This A has an id attribute of 'W2MoreInfo', which is not unique in the same DOM",
+          "element": "<a class=\"suppress\" href=\"/policy-data-oversight/snow-dismissal-procedures/current-status/\" id=\"W2Mo ... rrent telework eligible employees, pursuant to direction from agency heads. View Entire Status\"></a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(5)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "a[id=\"W2MoreInfo\"][href=\"/policy-data-oversight/snow-dismissal-procedures/current-status/\"][class=\"suppress\"]",
+            "attNo": 3
+          }
+        }
+      ]
+    }
+  ],
+  "timeStamp": "4jil2",
+  "startTime": "2022-07-27T14:34:52",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "continuum",
+      0
+    ]
+  ],
+  "logCount": 0,
+  "logSize": 0,
+  "errorLogCount": 0,
+  "errorLogSize": 0,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-27T14:34:58",
+  "elapsedSeconds": 6
+}

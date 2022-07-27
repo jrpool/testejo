@@ -1,0 +1,80 @@
+{
+  "id": "4jil2-cancer",
+  "host": {
+    "id": "cancer",
+    "which": "https://cancer.gov/",
+    "what": "National Cancer Institute"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-27T14:40:35"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-27T14:40:42"
+    }
+  ],
+  "script": {
+    "id": "continuum",
+    "what": "Continuum",
+    "strict": true,
+    "timeLimit": 30,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://cancer.gov/",
+        "what": "National Cancer Institute"
+      },
+      {
+        "type": "test",
+        "which": "continuum",
+        "what": "Continuum"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://cancer.gov/",
+      "what": "National Cancer Institute",
+      "result": "https://www.cancer.gov/"
+    },
+    {
+      "type": "test",
+      "which": "continuum",
+      "what": "Level Access Continuum, community edition",
+      "url": "https://www.cancer.gov/",
+      "result": "NONE"
+    }
+  ],
+  "timeStamp": "4jil2",
+  "startTime": "2022-07-27T14:40:35",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "continuum",
+      0
+    ]
+  ],
+  "logCount": 6,
+  "logSize": 558,
+  "errorLogCount": 6,
+  "errorLogSize": 558,
+  "prohibitedCount": 1,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-27T14:40:42",
+  "elapsedSeconds": 6
+}

@@ -1,0 +1,223 @@
+{
+  "id": "4jil2-hrsa",
+  "host": {
+    "id": "hrsa",
+    "which": "https://hrsa.gov/",
+    "what": "Health Resources and Services Administration"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-27T14:41:36"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-27T14:41:46"
+    }
+  ],
+  "script": {
+    "id": "continuum",
+    "what": "Continuum",
+    "strict": true,
+    "timeLimit": 30,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://hrsa.gov/",
+        "what": "Health Resources and Services Administration"
+      },
+      {
+        "type": "test",
+        "which": "continuum",
+        "what": "Continuum"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://hrsa.gov/",
+      "what": "Health Resources and Services Administration",
+      "result": "https://www.hrsa.gov/"
+    },
+    {
+      "type": "test",
+      "which": "continuum",
+      "what": "Level Access Continuum, community edition",
+      "url": "https://www.hrsa.gov/",
+      "result": [
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This SPAN has an id attribute of 'logo', which is not unique in the same DOM",
+          "element": "<span class=\"logo\" id=\"logo\"><a href=\"https://www.hrsa.gov/\">Health Resources &amp; Services Administration</a></span>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "span[id=\"logo\"][class=\"logo\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This DIV has an id attribute of 'logo', which is not unique in the same DOM",
+          "element": "<div id=\"logo\"><a id=\"logo-link\" href=\"/\"><img alt=\"Health Resources &amp; Services Administration\" src=\"/sites/all/themes/hrsa/images/system/HRSA-Logo.png\"></a></div>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[id=\"logo\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This A has an id attribute of 'menu-link', which is not unique in the same DOM",
+          "element": "<a class=\"menu-link\" id=\"menu-link\" href=\"#top-nav\"><img alt=\"Menu\" src=\"/sites/all/themes/hrsa/images/system/menu.jpg\"></a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"#top-nav\"][id=\"menu-link\"][class=\"menu-link\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This A has an id attribute of 'menu-link', which is not unique in the same DOM",
+          "element": "<a class=\"menu-link\" id=\"menu-link\" href=\"#top-nav\"><img alt=\"Menu\" src=\"/sites/all/themes/hrsa/images/system/tablet-menu.png\"></a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"#top-nav\"][id=\"menu-link\"][class=\"menu-link\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This DIV has an id attribute of 'main-content', which is not unique in the same DOM",
+          "element": "<div id=\"main-content\"><div class=\"wrapper\"><div id=\"inner-wrapper\"><div id=\"main-body\"><a id=\"main- ... -you-can-do/prevention-tips\" class=\"carousel-teaser-header\">Poison-Proof Your Home</a><br><a href=\"h",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(4)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[id=\"main-content\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This A has an id attribute of 'main-content', which is not unique in the same DOM",
+          "element": "<a id=\"main-content\"></a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(4)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "a[id=\"main-content\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This UL has an id attribute of 'footer-links', which is not unique in the same DOM",
+          "element": "<ul id=\"footer-links\"><li><a href=\"http://www.hrsa.gov/about/contact/\">Contact Us</a></li><li><a hre ... Act</a></li><li><a href=\"https://www.hrsa.gov/hr/no-fear-act/eeo.html\">EEO/No FEAR Act</a></li></ul>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(4)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "ul[id=\"footer-links\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This UL has an id attribute of 'footer-links', which is not unique in the same DOM",
+          "element": "<ul id=\"footer-links\"><li><a href=\"https://www.hhs.gov/vulnerability-disclosure-policy/index.html\">V ... ://www.usa.gov\">USA.gov</a></li><li><a href=\"http://www.whitehouse.gov\">Whitehouse.gov</a></li></ul>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(4)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "ul[id=\"footer-links\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 101,
+          "bestPracticeId": 429,
+          "attribute": "This element does not have a lang attribute",
+          "attributeDetail": "This HTML does not have a lang attribute",
+          "element": "<html style=\"\" class=\"js localstorage sessionstorage no-applicationcache geolocation history postmes ... es/css/css_TTNeTcxJ5McUOxfasgoA7dIyPyTWK18R-4Vpdrt9f_Y.css\" rel=\"stylesheet\" type=\"text/css\">\n<link ",
+          "testResult": 0,
+          "path": "html",
+          "fixType": {
+            "fixType": 4,
+            "domSpec": false,
+            "helperText": "Enter the appropriate language value for the page.",
+            "fix": {
+              "lang": null
+            }
+          },
+          "fingerprint": {
+            "attNo": 0,
+            "css": "html",
+            "version": 2
+          }
+        }
+      ]
+    }
+  ],
+  "timeStamp": "4jil2",
+  "startTime": "2022-07-27T14:41:36",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "continuum",
+      0
+    ]
+  ],
+  "logCount": 2,
+  "logSize": 147,
+  "errorLogCount": 1,
+  "errorLogSize": 101,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-27T14:41:46",
+  "elapsedSeconds": 9
+}

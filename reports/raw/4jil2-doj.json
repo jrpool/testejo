@@ -1,0 +1,80 @@
+{
+  "id": "4jil2-doj",
+  "host": {
+    "id": "doj",
+    "which": "https://www.justice.gov/",
+    "what": "Department of Justice (DOJ)"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-27T14:24:44"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-27T14:24:48"
+    }
+  ],
+  "script": {
+    "id": "continuum",
+    "what": "Continuum",
+    "strict": true,
+    "timeLimit": 30,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.justice.gov/",
+        "what": "Department of Justice (DOJ)"
+      },
+      {
+        "type": "test",
+        "which": "continuum",
+        "what": "Continuum"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.justice.gov/",
+      "what": "Department of Justice (DOJ)",
+      "result": "https://www.justice.gov/"
+    },
+    {
+      "type": "test",
+      "which": "continuum",
+      "what": "Level Access Continuum, community edition",
+      "url": "https://www.justice.gov/",
+      "result": "NONE"
+    }
+  ],
+  "timeStamp": "4jil2",
+  "startTime": "2022-07-27T14:24:44",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "continuum",
+      0
+    ]
+  ],
+  "logCount": 1,
+  "logSize": 101,
+  "errorLogCount": 1,
+  "errorLogSize": 101,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-27T14:24:48",
+  "elapsedSeconds": 4
+}

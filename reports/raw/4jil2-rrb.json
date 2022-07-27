@@ -1,0 +1,951 @@
+{
+  "id": "4jil2-rrb",
+  "host": {
+    "id": "rrb",
+    "which": "https://rrb.gov/",
+    "what": "Railroad Retirement Board (RRB)"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-27T14:37:11"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-27T14:37:15"
+    }
+  ],
+  "script": {
+    "id": "continuum",
+    "what": "Continuum",
+    "strict": true,
+    "timeLimit": 30,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://rrb.gov/",
+        "what": "Railroad Retirement Board (RRB)"
+      },
+      {
+        "type": "test",
+        "which": "continuum",
+        "what": "Continuum"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://rrb.gov/",
+      "what": "Railroad Retirement Board (RRB)",
+      "result": "https://rrb.gov/"
+    },
+    {
+      "type": "test",
+      "which": "continuum",
+      "what": "Level Access Continuum, community edition",
+      "url": "https://rrb.gov/",
+      "result": [
+        {
+          "engineTestId": 527,
+          "bestPracticeId": 2519,
+          "attribute": "This aside does not have a unique accessible name as required when two or more aside elements are present",
+          "attributeDetail": "This aside does not have a unique accessible name as required when two or more aside elements are present",
+          "element": "<aside class=\"col-xs-12 col-sm-1 col-md-1 col-lg-1\"><div class=\"EmptyUtilityCell\"></div></aside>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "aside[class=\"col-xs-12 col-sm-1 col-md-1 col-lg-1\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 527,
+          "bestPracticeId": 2519,
+          "attribute": "This aside does not have a unique accessible name as required when two or more aside elements are present",
+          "attributeDetail": "This aside does not have a unique accessible name as required when two or more aside elements are present",
+          "element": "<aside class=\"col-xs-12 col-sm-6 col-md-6 col-lg-6 utility\"><div class=\"utilityfirst\"><div class=\"re ... ges\">- Read More...</a></b></div></span></div></div></div></div></div></section></div></div></aside>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "aside[class=\"col-xs-12 col-sm-6 col-md-6 col-lg-6 utility\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 527,
+          "bestPracticeId": 2519,
+          "attribute": "This aside does not have a unique accessible name as required when two or more aside elements are present",
+          "attributeDetail": "This aside does not have a unique accessible name as required when two or more aside elements are present",
+          "element": "<aside class=\"col-xs-12 col-sm-2 col-md-2 col-lg-2 utility\"><div class=\"utility_second\"><div class=\" ... class=\"form-actions form-group js-form-wrapper form-wrapper\"></div></form></div></div></div></aside>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "aside[class=\"col-xs-12 col-sm-2 col-md-2 col-lg-2 utility\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 527,
+          "bestPracticeId": 2519,
+          "attribute": "This aside does not have a unique accessible name as required when two or more aside elements are present",
+          "attributeDetail": "This aside does not have a unique accessible name as required when two or more aside elements are present",
+          "element": "<aside class=\"col-xs-12 col-sm-2 col-md-2 col-lg-2 utility\"><div class=\"utility_third\"><div class=\"r ... enefits/myrrb\"><font color=\"white\"><b>myRRB</b></font></a></div></div></section></div></div></aside>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "aside[class=\"col-xs-12 col-sm-2 col-md-2 col-lg-2 utility\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 527,
+          "bestPracticeId": 2519,
+          "attribute": "This aside does not have a unique accessible name as required when two or more aside elements are present",
+          "attributeDetail": "This aside does not have a unique accessible name as required when two or more aside elements are present",
+          "element": "<aside class=\"col-xs-12 col-sm-1 col-md-1 col-lg-1\"><div class=\"EmptyUtilityCell\"></div></aside>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(5)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "aside[class=\"col-xs-12 col-sm-1 col-md-1 col-lg-1\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 527,
+          "bestPracticeId": 2519,
+          "attribute": "This aside does not have a unique accessible name as required when two or more aside elements are present",
+          "attributeDetail": "This aside does not have a unique accessible name as required when two or more aside elements are present",
+          "element": "<aside class=\"col-xs-12 col-sm-1 col-md-1 col-lg-1\"><div class=\"EmptyLogoCell\"></div></aside>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "aside[class=\"col-xs-12 col-sm-1 col-md-1 col-lg-1\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 527,
+          "bestPracticeId": 2519,
+          "attribute": "This aside does not have a unique accessible name as required when two or more aside elements are present",
+          "attributeDetail": "This aside does not have a unique accessible name as required when two or more aside elements are present",
+          "element": "<aside class=\"col-xs-12 col-sm-10 col-md-10 col-lg-10\"><div class=\"logo\"><div class=\"region region-l ... f\"><b>U.S. Railroad Retirement Board</b></font></span></a></div></div></section></div></div></aside>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "aside[class=\"col-xs-12 col-sm-10 col-md-10 col-lg-10\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 527,
+          "bestPracticeId": 2519,
+          "attribute": "This aside does not have a unique accessible name as required when two or more aside elements are present",
+          "attributeDetail": "This aside does not have a unique accessible name as required when two or more aside elements are present",
+          "element": "<aside class=\"col-xs-12 col-sm-1 col-md-1 col-lg-1\"><div class=\"EmptyLogoCell\"></div></aside>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "aside[class=\"col-xs-12 col-sm-1 col-md-1 col-lg-1\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 527,
+          "bestPracticeId": 2519,
+          "attribute": "This aside does not have a unique accessible name as required when two or more aside elements are present",
+          "attributeDetail": "This aside does not have a unique accessible name as required when two or more aside elements are present",
+          "element": "<aside class=\"col-xs-12 col-sm-1 col-md-1 col-lg-1\"><div class=\"EmptyNavCell\"></div></aside>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "aside[class=\"col-xs-12 col-sm-1 col-md-1 col-lg-1\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 527,
+          "bestPracticeId": 2519,
+          "attribute": "This aside does not have a unique accessible name as required when two or more aside elements are present",
+          "attributeDetail": "This aside does not have a unique accessible name as required when two or more aside elements are present",
+          "element": "<aside class=\"col-xs-12 col-sm-10 col-md-10 col-lg-10\"><div class=\"navigation\"><div class=\"region re ... telements sf-no-children\" id=\"main-menu-link-content4b4ffcf7-9210-460d-bfaf-e72866bdd5a1\"><a style=\"",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "aside[class=\"col-xs-12 col-sm-10 col-md-10 col-lg-10\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 527,
+          "bestPracticeId": 2519,
+          "attribute": "This aside does not have a unique accessible name as required when two or more aside elements are present",
+          "attributeDetail": "This aside does not have a unique accessible name as required when two or more aside elements are present",
+          "element": "<aside class=\"col-xs-12 col-sm-1 col-md-1 col-lg-1\"><div class=\"EmptyNavCell\"></div></aside>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(3)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "aside[class=\"col-xs-12 col-sm-1 col-md-1 col-lg-1\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 527,
+          "bestPracticeId": 2519,
+          "attribute": "This aside does not have a unique accessible name as required when two or more aside elements are present",
+          "attributeDetail": "This aside does not have a unique accessible name as required when two or more aside elements are present",
+          "element": "<aside class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\"><div class=\"featured\"><div class=\"region regi ... s=\"hidden-xs col-sm-8 col-md-8 col-lg-8 showcaseImg\"><img class=\"img-responsive articleimage\" typeof",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "aside[class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 527,
+          "bestPracticeId": 2519,
+          "attribute": "This aside does not have a unique accessible name as required when two or more aside elements are present",
+          "attributeDetail": "This aside does not have a unique accessible name as required when two or more aside elements are present",
+          "element": "<aside class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\"><div region=\"\" class=\"content”>   <div class= ... sm-3 col-md-2 col-lg-2 hidden-xs  benefitsdivtextheader\"><a href=\"/Benefits/Disability\" class=\"alink",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(6)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "aside[class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 527,
+          "bestPracticeId": 2519,
+          "attribute": "This aside does not have a unique accessible name as required when two or more aside elements are present",
+          "attributeDetail": "This aside does not have a unique accessible name as required when two or more aside elements are present",
+          "element": "<aside class=\"col-xs-12 col-sm-2 col-md-2 col-lg-2\"><div class=\"EmptyUpdatesCellL\"></div></aside>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "aside[class=\"col-xs-12 col-sm-2 col-md-2 col-lg-2\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 527,
+          "bestPracticeId": 2519,
+          "attribute": "This aside does not have a unique accessible name as required when two or more aside elements are present",
+          "attributeDetail": "This aside does not have a unique accessible name as required when two or more aside elements are present",
+          "element": "<aside class=\"col-xs-12 col-sm-4 col-md-4 col-lg-4\"><div class=\"updates_recent\"><h1>Recent Updates</ ... iewall\" alt=\"More\" src=\"/themes/custom/rrbtheme/images/More.svg\">View All Articles</a></div></aside>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(2)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "aside[class=\"col-xs-12 col-sm-4 col-md-4 col-lg-4\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 527,
+          "bestPracticeId": 2519,
+          "attribute": "This aside does not have a unique accessible name as required when two or more aside elements are present",
+          "attributeDetail": "This aside does not have a unique accessible name as required when two or more aside elements are present",
+          "element": "<aside class=\"col-xs-12 col-sm-4 col-md-4 col-lg-4\"><div class=\"updates_newsreleases\"><h1>News Relea ... iewall\" alt=\"More\" src=\"/themes/custom/rrbtheme/images/More.svg\">View All Articles</a></div></aside>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(2)>*:nth-child(3)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "aside[class=\"col-xs-12 col-sm-4 col-md-4 col-lg-4\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 527,
+          "bestPracticeId": 2519,
+          "attribute": "This aside does not have a unique accessible name as required when two or more aside elements are present",
+          "attributeDetail": "This aside does not have a unique accessible name as required when two or more aside elements are present",
+          "element": "<aside class=\"col-xs-12 col-sm-2 col-md-2 col-lg-2\"><div class=\"EmptyUpdatesCellR\"></div></aside>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(2)>*:nth-child(4)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "aside[class=\"col-xs-12 col-sm-2 col-md-2 col-lg-2\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 527,
+          "bestPracticeId": 2519,
+          "attribute": "This aside does not have a unique accessible name as required when two or more aside elements are present",
+          "attributeDetail": "This aside does not have a unique accessible name as required when two or more aside elements are present",
+          "element": "<aside class=\"col-xs-12 col-sm-1 col-md-1 col-lg-1\"><div class=\"EmptySpotlightCellL\"></div></aside>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(3)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "aside[class=\"col-xs-12 col-sm-1 col-md-1 col-lg-1\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 527,
+          "bestPracticeId": 2519,
+          "attribute": "This aside does not have a unique accessible name as required when two or more aside elements are present",
+          "attributeDetail": "This aside does not have a unique accessible name as required when two or more aside elements are present",
+          "element": "<aside class=\"col-xs-12 col-sm-10 col-sm-10 col-md-10 col-lg-10\"><div class=\"spotlightarea\"><h1>Spot ... >28th Sep 2021<p></p></span></div></div></div></div></div></div></div></section></div></div></aside>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(3)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "aside[class=\"col-xs-12 col-sm-10 col-sm-10 col-md-10 col-lg-10\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 527,
+          "bestPracticeId": 2519,
+          "attribute": "This aside does not have a unique accessible name as required when two or more aside elements are present",
+          "attributeDetail": "This aside does not have a unique accessible name as required when two or more aside elements are present",
+          "element": "<aside class=\"col-xs-12 col-sm-1 col-md-1 col-lg-1\"><div class=\"EmptySpotlightCellR\"></div></aside>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(3)>*:nth-child(1)>*:nth-child(3)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "aside[class=\"col-xs-12 col-sm-1 col-md-1 col-lg-1\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 527,
+          "bestPracticeId": 2519,
+          "attribute": "This aside does not have a unique accessible name as required when two or more aside elements are present",
+          "attributeDetail": "This aside does not have a unique accessible name as required when two or more aside elements are present",
+          "element": "<aside class=\"col-xs-12 col-sm-1 col-md-1 col-lg-1\"><div class=\"EmptyFooterLinksCellL\"></div></aside>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(4)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "aside[class=\"col-xs-12 col-sm-1 col-md-1 col-lg-1\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 527,
+          "bestPracticeId": 2519,
+          "attribute": "This aside does not have a unique accessible name as required when two or more aside elements are present",
+          "attributeDetail": "This aside does not have a unique accessible name as required when two or more aside elements are present",
+          "element": "<aside class=\"col-xs-12 col-sm-10 col-md-10 col-lg-10\"><p></p><div class=\"footerlinks\"><div class=\"r ... middle;\" class=\"col-sm-6 col-xs-12 col-md-1\"></div></div><p></p></div></section></div></div></aside>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(4)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "aside[class=\"col-xs-12 col-sm-10 col-md-10 col-lg-10\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 527,
+          "bestPracticeId": 2519,
+          "attribute": "This aside does not have a unique accessible name as required when two or more aside elements are present",
+          "attributeDetail": "This aside does not have a unique accessible name as required when two or more aside elements are present",
+          "element": "<aside class=\"col-xs-12 col-sm-1 col-md-1 col-lg-1\"><div class=\"EmptyFooterLinksCellR\"></div></aside>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(4)>*:nth-child(1)>*:nth-child(3)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "aside[class=\"col-xs-12 col-sm-1 col-md-1 col-lg-1\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 527,
+          "bestPracticeId": 2519,
+          "attribute": "This aside does not have a unique accessible name as required when two or more aside elements are present",
+          "attributeDetail": "This aside does not have a unique accessible name as required when two or more aside elements are present",
+          "element": "<aside class=\"col-xs-12 col-sm-1 col-md-1 col-lg-1\"><div class=\"EmptyFooterUsefulCellL\"></div></aside>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(5)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "aside[class=\"col-xs-12 col-sm-1 col-md-1 col-lg-1\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 527,
+          "bestPracticeId": 2519,
+          "attribute": "This aside does not have a unique accessible name as required when two or more aside elements are present",
+          "attributeDetail": "This aside does not have a unique accessible name as required when two or more aside elements are present",
+          "element": "<aside class=\"col-xs-12 col-sm-10 col-sm-10 col-md-10 col-lg-10\"><div class=\"footerusefullinks\"><div ... l=\"noopener\" target=\"_blank\" href=\"https://osc.gov/\" class=\"ausefullink\">Office of Special Counsel</",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(5)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "aside[class=\"col-xs-12 col-sm-10 col-sm-10 col-md-10 col-lg-10\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 527,
+          "bestPracticeId": 2519,
+          "attribute": "This aside does not have a unique accessible name as required when two or more aside elements are present",
+          "attributeDetail": "This aside does not have a unique accessible name as required when two or more aside elements are present",
+          "element": "<aside class=\"col-xs-12 col-sm-1 col-md-1 col-lg-1\"><div class=\"EmptyFooterUsefulCellR\"></div></aside>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(5)>*:nth-child(1)>*:nth-child(3)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "aside[class=\"col-xs-12 col-sm-1 col-md-1 col-lg-1\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 527,
+          "bestPracticeId": 2519,
+          "attribute": "This aside does not have a unique accessible name as required when two or more aside elements are present",
+          "attributeDetail": "This aside does not have a unique accessible name as required when two or more aside elements are present",
+          "element": "<aside class=\"col-xs-1 col-sm-1 col-md-1  col-lg-1\"><div class=\"EmptyLastUpdatedCellL\"></div></aside>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(6)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "aside[class=\"col-xs-1 col-sm-1 col-md-1  col-lg-1\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 527,
+          "bestPracticeId": 2519,
+          "attribute": "This aside does not have a unique accessible name as required when two or more aside elements are present",
+          "attributeDetail": "This aside does not have a unique accessible name as required when two or more aside elements are present",
+          "element": "<aside class=\"col-xs-10 col-sm-10 col-md-10  col-lg-10\"><div class=\"footerlastupdated\">Last Updated: 07/27/2022</div></aside>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(6)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "aside[class=\"col-xs-10 col-sm-10 col-md-10  col-lg-10\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 527,
+          "bestPracticeId": 2519,
+          "attribute": "This aside does not have a unique accessible name as required when two or more aside elements are present",
+          "attributeDetail": "This aside does not have a unique accessible name as required when two or more aside elements are present",
+          "element": "<aside class=\"col-xs-1 col-sm-1 col-md-1  col-lg-1\"><div class=\"EmptyLastUpdatedCellR\"></div></aside>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(6)>*:nth-child(1)>*:nth-child(3)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "aside[class=\"col-xs-1 col-sm-1 col-md-1  col-lg-1\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 532,
+          "bestPracticeId": 2519,
+          "attribute": "This aside does not have an accessible name as required when two or more aside elements are present",
+          "attributeDetail": "This aside does not have an accessible name as required when two or more aside elements are present",
+          "element": "<aside class=\"col-xs-12 col-sm-1 col-md-1 col-lg-1\"><div class=\"EmptyUtilityCell\"></div></aside>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "aside[class=\"col-xs-12 col-sm-1 col-md-1 col-lg-1\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 532,
+          "bestPracticeId": 2519,
+          "attribute": "This aside does not have an accessible name as required when two or more aside elements are present",
+          "attributeDetail": "This aside does not have an accessible name as required when two or more aside elements are present",
+          "element": "<aside class=\"col-xs-12 col-sm-6 col-md-6 col-lg-6 utility\"><div class=\"utilityfirst\"><div class=\"re ... ges\">- Read More...</a></b></div></span></div></div></div></div></div></section></div></div></aside>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "aside[class=\"col-xs-12 col-sm-6 col-md-6 col-lg-6 utility\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 532,
+          "bestPracticeId": 2519,
+          "attribute": "This aside does not have an accessible name as required when two or more aside elements are present",
+          "attributeDetail": "This aside does not have an accessible name as required when two or more aside elements are present",
+          "element": "<aside class=\"col-xs-12 col-sm-2 col-md-2 col-lg-2 utility\"><div class=\"utility_second\"><div class=\" ... class=\"form-actions form-group js-form-wrapper form-wrapper\"></div></form></div></div></div></aside>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "aside[class=\"col-xs-12 col-sm-2 col-md-2 col-lg-2 utility\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 532,
+          "bestPracticeId": 2519,
+          "attribute": "This aside does not have an accessible name as required when two or more aside elements are present",
+          "attributeDetail": "This aside does not have an accessible name as required when two or more aside elements are present",
+          "element": "<aside class=\"col-xs-12 col-sm-2 col-md-2 col-lg-2 utility\"><div class=\"utility_third\"><div class=\"r ... enefits/myrrb\"><font color=\"white\"><b>myRRB</b></font></a></div></div></section></div></div></aside>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "aside[class=\"col-xs-12 col-sm-2 col-md-2 col-lg-2 utility\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 532,
+          "bestPracticeId": 2519,
+          "attribute": "This aside does not have an accessible name as required when two or more aside elements are present",
+          "attributeDetail": "This aside does not have an accessible name as required when two or more aside elements are present",
+          "element": "<aside class=\"col-xs-12 col-sm-1 col-md-1 col-lg-1\"><div class=\"EmptyUtilityCell\"></div></aside>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(5)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "aside[class=\"col-xs-12 col-sm-1 col-md-1 col-lg-1\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 532,
+          "bestPracticeId": 2519,
+          "attribute": "This aside does not have an accessible name as required when two or more aside elements are present",
+          "attributeDetail": "This aside does not have an accessible name as required when two or more aside elements are present",
+          "element": "<aside class=\"col-xs-12 col-sm-1 col-md-1 col-lg-1\"><div class=\"EmptyLogoCell\"></div></aside>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "aside[class=\"col-xs-12 col-sm-1 col-md-1 col-lg-1\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 532,
+          "bestPracticeId": 2519,
+          "attribute": "This aside does not have an accessible name as required when two or more aside elements are present",
+          "attributeDetail": "This aside does not have an accessible name as required when two or more aside elements are present",
+          "element": "<aside class=\"col-xs-12 col-sm-10 col-md-10 col-lg-10\"><div class=\"logo\"><div class=\"region region-l ... f\"><b>U.S. Railroad Retirement Board</b></font></span></a></div></div></section></div></div></aside>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "aside[class=\"col-xs-12 col-sm-10 col-md-10 col-lg-10\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 532,
+          "bestPracticeId": 2519,
+          "attribute": "This aside does not have an accessible name as required when two or more aside elements are present",
+          "attributeDetail": "This aside does not have an accessible name as required when two or more aside elements are present",
+          "element": "<aside class=\"col-xs-12 col-sm-1 col-md-1 col-lg-1\"><div class=\"EmptyLogoCell\"></div></aside>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "aside[class=\"col-xs-12 col-sm-1 col-md-1 col-lg-1\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 532,
+          "bestPracticeId": 2519,
+          "attribute": "This aside does not have an accessible name as required when two or more aside elements are present",
+          "attributeDetail": "This aside does not have an accessible name as required when two or more aside elements are present",
+          "element": "<aside class=\"col-xs-12 col-sm-1 col-md-1 col-lg-1\"><div class=\"EmptyNavCell\"></div></aside>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "aside[class=\"col-xs-12 col-sm-1 col-md-1 col-lg-1\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 532,
+          "bestPracticeId": 2519,
+          "attribute": "This aside does not have an accessible name as required when two or more aside elements are present",
+          "attributeDetail": "This aside does not have an accessible name as required when two or more aside elements are present",
+          "element": "<aside class=\"col-xs-12 col-sm-10 col-md-10 col-lg-10\"><div class=\"navigation\"><div class=\"region re ... telements sf-no-children\" id=\"main-menu-link-content4b4ffcf7-9210-460d-bfaf-e72866bdd5a1\"><a style=\"",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "aside[class=\"col-xs-12 col-sm-10 col-md-10 col-lg-10\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 532,
+          "bestPracticeId": 2519,
+          "attribute": "This aside does not have an accessible name as required when two or more aside elements are present",
+          "attributeDetail": "This aside does not have an accessible name as required when two or more aside elements are present",
+          "element": "<aside class=\"col-xs-12 col-sm-1 col-md-1 col-lg-1\"><div class=\"EmptyNavCell\"></div></aside>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(3)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "aside[class=\"col-xs-12 col-sm-1 col-md-1 col-lg-1\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 532,
+          "bestPracticeId": 2519,
+          "attribute": "This aside does not have an accessible name as required when two or more aside elements are present",
+          "attributeDetail": "This aside does not have an accessible name as required when two or more aside elements are present",
+          "element": "<aside class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\"><div class=\"featured\"><div class=\"region regi ... s=\"hidden-xs col-sm-8 col-md-8 col-lg-8 showcaseImg\"><img class=\"img-responsive articleimage\" typeof",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "aside[class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 532,
+          "bestPracticeId": 2519,
+          "attribute": "This aside does not have an accessible name as required when two or more aside elements are present",
+          "attributeDetail": "This aside does not have an accessible name as required when two or more aside elements are present",
+          "element": "<aside class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\"><div region=\"\" class=\"content”>   <div class= ... sm-3 col-md-2 col-lg-2 hidden-xs  benefitsdivtextheader\"><a href=\"/Benefits/Disability\" class=\"alink",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(6)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "aside[class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 532,
+          "bestPracticeId": 2519,
+          "attribute": "This aside does not have an accessible name as required when two or more aside elements are present",
+          "attributeDetail": "This aside does not have an accessible name as required when two or more aside elements are present",
+          "element": "<aside class=\"col-xs-12 col-sm-2 col-md-2 col-lg-2\"><div class=\"EmptyUpdatesCellL\"></div></aside>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "aside[class=\"col-xs-12 col-sm-2 col-md-2 col-lg-2\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 532,
+          "bestPracticeId": 2519,
+          "attribute": "This aside does not have an accessible name as required when two or more aside elements are present",
+          "attributeDetail": "This aside does not have an accessible name as required when two or more aside elements are present",
+          "element": "<aside class=\"col-xs-12 col-sm-4 col-md-4 col-lg-4\"><div class=\"updates_recent\"><h1>Recent Updates</ ... iewall\" alt=\"More\" src=\"/themes/custom/rrbtheme/images/More.svg\">View All Articles</a></div></aside>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(2)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "aside[class=\"col-xs-12 col-sm-4 col-md-4 col-lg-4\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 532,
+          "bestPracticeId": 2519,
+          "attribute": "This aside does not have an accessible name as required when two or more aside elements are present",
+          "attributeDetail": "This aside does not have an accessible name as required when two or more aside elements are present",
+          "element": "<aside class=\"col-xs-12 col-sm-4 col-md-4 col-lg-4\"><div class=\"updates_newsreleases\"><h1>News Relea ... iewall\" alt=\"More\" src=\"/themes/custom/rrbtheme/images/More.svg\">View All Articles</a></div></aside>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(2)>*:nth-child(3)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "aside[class=\"col-xs-12 col-sm-4 col-md-4 col-lg-4\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 532,
+          "bestPracticeId": 2519,
+          "attribute": "This aside does not have an accessible name as required when two or more aside elements are present",
+          "attributeDetail": "This aside does not have an accessible name as required when two or more aside elements are present",
+          "element": "<aside class=\"col-xs-12 col-sm-2 col-md-2 col-lg-2\"><div class=\"EmptyUpdatesCellR\"></div></aside>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(2)>*:nth-child(4)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "aside[class=\"col-xs-12 col-sm-2 col-md-2 col-lg-2\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 532,
+          "bestPracticeId": 2519,
+          "attribute": "This aside does not have an accessible name as required when two or more aside elements are present",
+          "attributeDetail": "This aside does not have an accessible name as required when two or more aside elements are present",
+          "element": "<aside class=\"col-xs-12 col-sm-1 col-md-1 col-lg-1\"><div class=\"EmptySpotlightCellL\"></div></aside>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(3)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "aside[class=\"col-xs-12 col-sm-1 col-md-1 col-lg-1\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 532,
+          "bestPracticeId": 2519,
+          "attribute": "This aside does not have an accessible name as required when two or more aside elements are present",
+          "attributeDetail": "This aside does not have an accessible name as required when two or more aside elements are present",
+          "element": "<aside class=\"col-xs-12 col-sm-10 col-sm-10 col-md-10 col-lg-10\"><div class=\"spotlightarea\"><h1>Spot ... >28th Sep 2021<p></p></span></div></div></div></div></div></div></div></section></div></div></aside>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(3)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "aside[class=\"col-xs-12 col-sm-10 col-sm-10 col-md-10 col-lg-10\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 532,
+          "bestPracticeId": 2519,
+          "attribute": "This aside does not have an accessible name as required when two or more aside elements are present",
+          "attributeDetail": "This aside does not have an accessible name as required when two or more aside elements are present",
+          "element": "<aside class=\"col-xs-12 col-sm-1 col-md-1 col-lg-1\"><div class=\"EmptySpotlightCellR\"></div></aside>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(3)>*:nth-child(1)>*:nth-child(3)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "aside[class=\"col-xs-12 col-sm-1 col-md-1 col-lg-1\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 532,
+          "bestPracticeId": 2519,
+          "attribute": "This aside does not have an accessible name as required when two or more aside elements are present",
+          "attributeDetail": "This aside does not have an accessible name as required when two or more aside elements are present",
+          "element": "<aside class=\"col-xs-12 col-sm-1 col-md-1 col-lg-1\"><div class=\"EmptyFooterLinksCellL\"></div></aside>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(4)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "aside[class=\"col-xs-12 col-sm-1 col-md-1 col-lg-1\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 532,
+          "bestPracticeId": 2519,
+          "attribute": "This aside does not have an accessible name as required when two or more aside elements are present",
+          "attributeDetail": "This aside does not have an accessible name as required when two or more aside elements are present",
+          "element": "<aside class=\"col-xs-12 col-sm-10 col-md-10 col-lg-10\"><p></p><div class=\"footerlinks\"><div class=\"r ... middle;\" class=\"col-sm-6 col-xs-12 col-md-1\"></div></div><p></p></div></section></div></div></aside>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(4)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "aside[class=\"col-xs-12 col-sm-10 col-md-10 col-lg-10\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 532,
+          "bestPracticeId": 2519,
+          "attribute": "This aside does not have an accessible name as required when two or more aside elements are present",
+          "attributeDetail": "This aside does not have an accessible name as required when two or more aside elements are present",
+          "element": "<aside class=\"col-xs-12 col-sm-1 col-md-1 col-lg-1\"><div class=\"EmptyFooterLinksCellR\"></div></aside>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(4)>*:nth-child(1)>*:nth-child(3)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "aside[class=\"col-xs-12 col-sm-1 col-md-1 col-lg-1\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 532,
+          "bestPracticeId": 2519,
+          "attribute": "This aside does not have an accessible name as required when two or more aside elements are present",
+          "attributeDetail": "This aside does not have an accessible name as required when two or more aside elements are present",
+          "element": "<aside class=\"col-xs-12 col-sm-1 col-md-1 col-lg-1\"><div class=\"EmptyFooterUsefulCellL\"></div></aside>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(5)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "aside[class=\"col-xs-12 col-sm-1 col-md-1 col-lg-1\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 532,
+          "bestPracticeId": 2519,
+          "attribute": "This aside does not have an accessible name as required when two or more aside elements are present",
+          "attributeDetail": "This aside does not have an accessible name as required when two or more aside elements are present",
+          "element": "<aside class=\"col-xs-12 col-sm-10 col-sm-10 col-md-10 col-lg-10\"><div class=\"footerusefullinks\"><div ... l=\"noopener\" target=\"_blank\" href=\"https://osc.gov/\" class=\"ausefullink\">Office of Special Counsel</",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(5)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "aside[class=\"col-xs-12 col-sm-10 col-sm-10 col-md-10 col-lg-10\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 532,
+          "bestPracticeId": 2519,
+          "attribute": "This aside does not have an accessible name as required when two or more aside elements are present",
+          "attributeDetail": "This aside does not have an accessible name as required when two or more aside elements are present",
+          "element": "<aside class=\"col-xs-12 col-sm-1 col-md-1 col-lg-1\"><div class=\"EmptyFooterUsefulCellR\"></div></aside>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(5)>*:nth-child(1)>*:nth-child(3)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "aside[class=\"col-xs-12 col-sm-1 col-md-1 col-lg-1\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 532,
+          "bestPracticeId": 2519,
+          "attribute": "This aside does not have an accessible name as required when two or more aside elements are present",
+          "attributeDetail": "This aside does not have an accessible name as required when two or more aside elements are present",
+          "element": "<aside class=\"col-xs-1 col-sm-1 col-md-1  col-lg-1\"><div class=\"EmptyLastUpdatedCellL\"></div></aside>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(6)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "aside[class=\"col-xs-1 col-sm-1 col-md-1  col-lg-1\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 532,
+          "bestPracticeId": 2519,
+          "attribute": "This aside does not have an accessible name as required when two or more aside elements are present",
+          "attributeDetail": "This aside does not have an accessible name as required when two or more aside elements are present",
+          "element": "<aside class=\"col-xs-10 col-sm-10 col-md-10  col-lg-10\"><div class=\"footerlastupdated\">Last Updated: 07/27/2022</div></aside>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(6)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "aside[class=\"col-xs-10 col-sm-10 col-md-10  col-lg-10\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 532,
+          "bestPracticeId": 2519,
+          "attribute": "This aside does not have an accessible name as required when two or more aside elements are present",
+          "attributeDetail": "This aside does not have an accessible name as required when two or more aside elements are present",
+          "element": "<aside class=\"col-xs-1 col-sm-1 col-md-1  col-lg-1\"><div class=\"EmptyLastUpdatedCellR\"></div></aside>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(6)>*:nth-child(1)>*:nth-child(3)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "aside[class=\"col-xs-1 col-sm-1 col-md-1  col-lg-1\"]",
+            "attNo": 1
+          }
+        }
+      ]
+    }
+  ],
+  "timeStamp": "4jil2",
+  "startTime": "2022-07-27T14:37:11",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "continuum",
+      0
+    ]
+  ],
+  "logCount": 1,
+  "logSize": 101,
+  "errorLogCount": 1,
+  "errorLogSize": 101,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-27T14:37:15",
+  "elapsedSeconds": 4
+}

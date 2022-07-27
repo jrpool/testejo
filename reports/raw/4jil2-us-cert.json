@@ -1,0 +1,171 @@
+{
+  "id": "4jil2-us-cert",
+  "host": {
+    "id": "us-cert",
+    "which": "https://us-cert.gov/",
+    "what": "U.S. Computer Emergency Readiness Team"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-27T14:42:55"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-27T14:43:02"
+    }
+  ],
+  "script": {
+    "id": "continuum",
+    "what": "Continuum",
+    "strict": true,
+    "timeLimit": 30,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://us-cert.gov/",
+        "what": "U.S. Computer Emergency Readiness Team"
+      },
+      {
+        "type": "test",
+        "which": "continuum",
+        "what": "Continuum"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://us-cert.gov/",
+      "what": "U.S. Computer Emergency Readiness Team",
+      "result": "https://www.cisa.gov/uscert/"
+    },
+    {
+      "type": "test",
+      "which": "continuum",
+      "what": "Level Access Continuum, community edition",
+      "url": "https://www.cisa.gov/uscert/",
+      "result": [
+        {
+          "engineTestId": 22,
+          "bestPracticeId": 967,
+          "attribute": "This element should not contain input elements (without an assigned ARIA role and not type=hidden), keygen elements (without an assigned ARIA role), select elements (without an assigned ARIA role), textarea elements (without an assigned ARIA role) or button elements (without an assigned ARIA role)",
+          "attributeDetail": "This A should not contain input elements (without an assigned ARIA role and not type=hidden), keygen elements (without an assigned ARIA role), select elements (without an assigned ARIA role), textarea elements (without an assigned ARIA role) or button elements (without an assigned ARIA role)",
+          "element": "<a title=\"View Updates\" href=\"/uscert/ncas/current-activity\"><button type=\"button\" class=\"btn-cert-default btn\">View Current Activities</button></a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(7)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"/uscert/ncas/current-activity\"][title=\"View Updates\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 22,
+          "bestPracticeId": 967,
+          "attribute": "This element should not contain input elements (without an assigned ARIA role and not type=hidden), keygen elements (without an assigned ARIA role), select elements (without an assigned ARIA role), textarea elements (without an assigned ARIA role) or button elements (without an assigned ARIA role)",
+          "attributeDetail": "This A should not contain input elements (without an assigned ARIA role and not type=hidden), keygen elements (without an assigned ARIA role), select elements (without an assigned ARIA role), textarea elements (without an assigned ARIA role) or button elements (without an assigned ARIA role)",
+          "element": "<a title=\"View Vulnerability Notes\" href=\"https://www.kb.cert.org/vuls/\"><button type=\"button\" class=\"btn-cert-default btn\">View Vulnerability Notes</button></a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(7)>*:nth-child(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"https://www.kb.cert.org/vuls/\"][title=\"View Vulnerability Notes\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 22,
+          "bestPracticeId": 967,
+          "attribute": "This element should not contain input elements (without an assigned ARIA role and not type=hidden), keygen elements (without an assigned ARIA role), select elements (without an assigned ARIA role), textarea elements (without an assigned ARIA role) or button elements (without an assigned ARIA role)",
+          "attributeDetail": "This A should not contain input elements (without an assigned ARIA role and not type=hidden), keygen elements (without an assigned ARIA role), select elements (without an assigned ARIA role), textarea elements (without an assigned ARIA role) or button elements (without an assigned ARIA role)",
+          "element": "<a title=\"View Announcements\" href=\"/uscert/announcements/\"><button type=\"button\" class=\"btn-cert-default btn\">View Announcements</button></a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(7)>*:nth-child(1)>*:nth-child(7)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"/uscert/announcements/\"][title=\"View Announcements\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This A has an id attribute of 'button', which is not unique in the same DOM",
+          "element": "<a id=\"button\" type=\"button\" name=\"button\" class=\"btn btn-cert-report\" href=\"/uscert/hsin\">HSIN</a>",
+          "testResult": 0,
+          "path": "body>footer:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(6)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"/uscert/hsin\"][class=\"btn btn-cert-report\"][name=\"button\"][type=\"button\"][id=\"button\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This A has an id attribute of 'button', which is not unique in the same DOM",
+          "element": "<a id=\"button\" type=\"button\" name=\"button\" href=\"/uscert/report\" class=\"btn btn-cert-report btn-lg\">Report</a>",
+          "testResult": 0,
+          "path": "body>footer:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "a[class=\"btn btn-cert-report btn-lg\"][href=\"/uscert/report\"][name=\"button\"][type=\"button\"][id=\"button\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 260,
+          "bestPracticeId": 1626,
+          "attribute": "The aria-level attribute is not allowed on this element",
+          "attributeDetail": "The aria-level attribute is not allowed on this DIV",
+          "element": "<div aria-level=\"1\" class=\"col-sm-12\"></div>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[class=\"col-sm-12\"][aria-level=\"1\"]",
+            "attNo": 2
+          }
+        }
+      ]
+    }
+  ],
+  "timeStamp": "4jil2",
+  "startTime": "2022-07-27T14:42:55",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "continuum",
+      0
+    ]
+  ],
+  "logCount": 1,
+  "logSize": 101,
+  "errorLogCount": 1,
+  "errorLogSize": 101,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-27T14:43:02",
+  "elapsedSeconds": 6
+}

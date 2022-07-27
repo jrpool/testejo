@@ -1,0 +1,443 @@
+{
+  "id": "4jil2-ftc",
+  "host": {
+    "id": "ftc",
+    "which": "https://www.ftc.gov/",
+    "what": "Federal Trade Commission (FTC)"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-27T14:28:29"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-27T14:28:35"
+    }
+  ],
+  "script": {
+    "id": "continuum",
+    "what": "Continuum",
+    "strict": true,
+    "timeLimit": 30,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.ftc.gov/",
+        "what": "Federal Trade Commission (FTC)"
+      },
+      {
+        "type": "test",
+        "which": "continuum",
+        "what": "Continuum"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.ftc.gov/",
+      "what": "Federal Trade Commission (FTC)",
+      "result": "https://www.ftc.gov/"
+    },
+    {
+      "type": "test",
+      "which": "continuum",
+      "what": "Level Access Continuum, community edition",
+      "url": "https://www.ftc.gov/",
+      "result": [
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This NAV has an id attribute of 'block-menu-block-translation-menu', which is not unique in the same DOM",
+          "element": "<nav id=\"block-menu-block-translation-menu\" aria-labelledby=\"block-menu-block-translation-menu-menu\" ... lation-menu nav\"><li class=\"first last\"><a class=\"first last\" href=\"/es\">Español</a></li></ul></nav>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[role=\"navigation\"][aria-labelledby=\"block-menu-block-translation-menu-menu\"][id=\"block-menu-block-translation-menu\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This NAV has an id attribute of 'block-menu-block-translation-menu', which is not unique in the same DOM",
+          "element": "<nav id=\"block-menu-block-translation-menu\" aria-labelledby=\"block-menu-block-translation-menu-menu\" ... lation-menu nav\"><li class=\"first last\"><a class=\"first last\" href=\"/es\">Español</a></li></ul></nav>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(3)>*:nth-child(3)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[role=\"navigation\"][aria-labelledby=\"block-menu-block-translation-menu-menu\"][id=\"block-menu-block-translation-menu\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This H2 has an id attribute of 'block-menu-block-translation-menu-menu', which is not unique in the same DOM",
+          "element": "<h2 id=\"block-menu-block-translation-menu-menu\" class=\"usa-sr-only\">Translation Menu</h2>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "h2[class=\"usa-sr-only\"][id=\"block-menu-block-translation-menu-menu\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This H2 has an id attribute of 'block-menu-block-translation-menu-menu', which is not unique in the same DOM",
+          "element": "<h2 id=\"block-menu-block-translation-menu-menu\" class=\"usa-sr-only\">Translation Menu</h2>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(3)>*:nth-child(3)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "h2[class=\"usa-sr-only\"][id=\"block-menu-block-translation-menu-menu\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This NAV has an id attribute of 'block-menu-block-secondary-menu', which is not unique in the same DOM",
+          "element": "<nav id=\"block-menu-block-secondary-menu\" aria-labelledby=\"block-menu-block-secondary-menu-menu\" rol ... lass=\"usa-nav__secondary-item\"><a href=\"/legal-library\">Search the Legal Library</a></li></ul></nav>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[role=\"navigation\"][aria-labelledby=\"block-menu-block-secondary-menu-menu\"][id=\"block-menu-block-secondary-menu\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This NAV has an id attribute of 'block-menu-block-secondary-menu', which is not unique in the same DOM",
+          "element": "<nav id=\"block-menu-block-secondary-menu\" aria-labelledby=\"block-menu-block-secondary-menu-menu\" rol ... lass=\"usa-nav__secondary-item\"><a href=\"/legal-library\">Search the Legal Library</a></li></ul></nav>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(3)>*:nth-child(3)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[role=\"navigation\"][aria-labelledby=\"block-menu-block-secondary-menu-menu\"][id=\"block-menu-block-secondary-menu\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This H2 has an id attribute of 'block-menu-block-secondary-menu-menu', which is not unique in the same DOM",
+          "element": "<h2 id=\"block-menu-block-secondary-menu-menu\" class=\"usa-sr-only\">Secondary Menu</h2>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "h2[class=\"usa-sr-only\"][id=\"block-menu-block-secondary-menu-menu\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This H2 has an id attribute of 'block-menu-block-secondary-menu-menu', which is not unique in the same DOM",
+          "element": "<h2 id=\"block-menu-block-secondary-menu-menu\" class=\"usa-sr-only\">Secondary Menu</h2>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(3)>*:nth-child(3)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "h2[class=\"usa-sr-only\"][id=\"block-menu-block-secondary-menu-menu\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This clipPath has an id attribute of 'clip0', which is not unique in the same DOM",
+          "element": "<clippath id=\"clip0\"><rect fill=\"white\" height=\"66\" width=\"66\"></rect></clippath>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "clippath[id=\"clip0\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This clipPath has an id attribute of 'clip0', which is not unique in the same DOM",
+          "element": "<clippath id=\"clip0\"><rect fill=\"white\" height=\"66\" width=\"66\"></rect></clippath>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(6)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "clippath[id=\"clip0\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This INPUT has an id attribute of 'search-field-megamenu-1', which is not unique in the same DOM",
+          "element": "<input type=\"search\" placeholder=\"Search Legal Library\" name=\"search\" id=\"search-field-megamenu-1\" class=\"usa-input\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(3)>*:nth-child(3)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "input[class=\"usa-input\"][id=\"search-field-megamenu-1\"][name=\"search\"][placeholder=\"Search Legal Library\"][type=\"search\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This INPUT has an id attribute of 'search-field-megamenu-1', which is not unique in the same DOM",
+          "element": "<input type=\"search\" placeholder=\"Search Legal Library\" name=\"search\" id=\"search-field-megamenu-1\" class=\"usa-input\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(3)>*:nth-child(3)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "input[class=\"usa-input\"][id=\"search-field-megamenu-1\"][name=\"search\"][placeholder=\"Search Legal Library\"][type=\"search\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This H2 has an id attribute of '-menu', which is not unique in the same DOM",
+          "element": "<h2 id=\"-menu\">Sections</h2>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(3)>*:nth-child(3)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "h2[id=\"-menu\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This H2 has an id attribute of '-menu', which is not unique in the same DOM",
+          "element": "<h2 id=\"-menu\">Sections</h2>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(3)>*:nth-child(3)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "h2[id=\"-menu\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This H2 has an id attribute of '-menu', which is not unique in the same DOM",
+          "element": "<h2 id=\"-menu\">Sections</h2>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(3)>*:nth-child(3)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(4)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "h2[id=\"-menu\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This H2 has an id attribute of '-menu', which is not unique in the same DOM",
+          "element": "<h2 id=\"-menu\">Sections</h2>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(3)>*:nth-child(3)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(5)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "h2[id=\"-menu\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This MAIN has an id attribute of 'main-content', which is not unique in the same DOM",
+          "element": "<main class=\"main-content usa-layout-docs content--sidebar-second content--with-secondary-content\" i ... 7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm160-14.1v6.1",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(5)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "main[role=\"main\"][id=\"main-content\"][class=\"main-content usa-layout-docs content--sidebar-second content--with-secondary-content\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This A has an id attribute of 'main-content', which is not unique in the same DOM",
+          "element": "<a tabindex=\"-1\" id=\"main-content\"></a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(5)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "a[id=\"main-content\"][tabindex=\"-1\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 95,
+          "bestPracticeId": 1626,
+          "attribute": "This element has an aria-labelledby attribute value that includes one or more invalid or duplicate ids",
+          "attributeDetail": "This NAV has an aria-labelledby attribute value of 'block-menu-block-translation-menu-menu', which includes one or more invalid or duplicate ids",
+          "element": "<nav id=\"block-menu-block-translation-menu\" aria-labelledby=\"block-menu-block-translation-menu-menu\" ... lation-menu nav\"><li class=\"first last\"><a class=\"first last\" href=\"/es\">Español</a></li></ul></nav>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide the ID of an element which contains the label content for this element.",
+            "fix": {
+              "aria-labelledby": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[role=\"navigation\"][aria-labelledby=\"block-menu-block-translation-menu-menu\"][id=\"block-menu-block-translation-menu\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 95,
+          "bestPracticeId": 1626,
+          "attribute": "This element has an aria-labelledby attribute value that includes one or more invalid or duplicate ids",
+          "attributeDetail": "This NAV has an aria-labelledby attribute value of 'block-menu-block-secondary-menu-menu', which includes one or more invalid or duplicate ids",
+          "element": "<nav id=\"block-menu-block-secondary-menu\" aria-labelledby=\"block-menu-block-secondary-menu-menu\" rol ... lass=\"usa-nav__secondary-item\"><a href=\"/legal-library\">Search the Legal Library</a></li></ul></nav>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide the ID of an element which contains the label content for this element.",
+            "fix": {
+              "aria-labelledby": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[role=\"navigation\"][aria-labelledby=\"block-menu-block-secondary-menu-menu\"][id=\"block-menu-block-secondary-menu\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewbox=\"0 0 345 66\" height=\"66\" width=\"345\"><g  ... 46 60.2305 49.3486C60.0173 48.9541 60.1648 48.4618 60.5594 48.2506C60.671 48.1908 60.7965 48.157 60.",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[width=\"345\"][height=\"66\"][viewbox=\"0 0 345 66\"][fill=\"none\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewbox=\"0 0 345 66\" height=\"66\" width=\"345\"><g  ... 46 60.2305 49.3486C60.0173 48.9541 60.1648 48.4618 60.5594 48.2506C60.671 48.1908 60.7965 48.157 60.",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(6)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[width=\"345\"][height=\"66\"][viewbox=\"0 0 345 66\"][fill=\"none\"]",
+            "attNo": 5
+          }
+        }
+      ]
+    }
+  ],
+  "timeStamp": "4jil2",
+  "startTime": "2022-07-27T14:28:29",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "continuum",
+      1
+    ]
+  ],
+  "logCount": 2,
+  "logSize": 170,
+  "errorLogCount": 2,
+  "errorLogSize": 170,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-27T14:28:35",
+  "elapsedSeconds": 5
+}

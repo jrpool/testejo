@@ -1,0 +1,171 @@
+{
+  "id": "4jil2-usembassy",
+  "host": {
+    "id": "usembassy",
+    "which": "https://usembassy.gov/",
+    "what": "U.S. Embassy"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-27T14:43:09"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-27T14:43:16"
+    }
+  ],
+  "script": {
+    "id": "continuum",
+    "what": "Continuum",
+    "strict": true,
+    "timeLimit": 30,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://usembassy.gov/",
+        "what": "U.S. Embassy"
+      },
+      {
+        "type": "test",
+        "which": "continuum",
+        "what": "Continuum"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://usembassy.gov/",
+      "what": "U.S. Embassy",
+      "result": "https://www.usembassy.gov/"
+    },
+    {
+      "type": "test",
+      "which": "continuum",
+      "what": "Level Access Continuum, community edition",
+      "url": "https://www.usembassy.gov/",
+      "result": [
+        {
+          "engineTestId": 531,
+          "bestPracticeId": 2519,
+          "attribute": "This nav does not have a unique accessible name as required when two or more nav elements are present",
+          "attributeDetail": "This nav does not have a unique accessible name as required when two or more nav elements are present",
+          "element": "<nav><div data-ubermenu-target=\"ubermenu-main-Main-Navigation\" tabindex=\"0\" class=\"ubermenu-responsi ... -item-2231\"><div class=\"ubermenu-content-block ubermenu-custom-content\"></div></li></ul></nav></nav>",
+          "testResult": 0,
+          "path": "body>header:nth-of-type(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav",
+            "attNo": 0
+          }
+        },
+        {
+          "engineTestId": 531,
+          "bestPracticeId": 2519,
+          "attribute": "This nav does not have a unique accessible name as required when two or more nav elements are present",
+          "attributeDetail": "This nav does not have a unique accessible name as required when two or more nav elements are present",
+          "element": "<nav class=\"ubermenu ubermenu-main ubermenu-menu-Main-Navigation ubermenu-responsive ubermenu-respon ... =\"menu-item-2231\"><div class=\"ubermenu-content-block ubermenu-custom-content\"></div></li></ul></nav>",
+          "testResult": 0,
+          "path": "body>header:nth-of-type(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[id=\"ubermenu-main-Main-Navigation\"][class=\"ubermenu ubermenu-main ubermenu-menu-Main-Navigation ubermenu-responsive ubermenu-responsive-default ubermenu-responsive-collapse ubermenu-horizontal ubermenu-transition-fade ubermenu-trigger-hover_intent ubermenu-skin-white ubermenu-bar-align-full ubermenu-items-align-left ubermenu-bound ubermenu-disable-submenu-scroll ubermenu-sub-indicators ubermenu-icons-inline ubermenu-submenu-indicator-closes ubermenu-notouch ubermenu-desktop-view\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 533,
+          "bestPracticeId": 2519,
+          "attribute": "This nav does not have an accessible name as required when two or more nav elements are present",
+          "attributeDetail": "This nav does not have an accessible name as required when two or more nav elements are present",
+          "element": "<nav><div data-ubermenu-target=\"ubermenu-main-Main-Navigation\" tabindex=\"0\" class=\"ubermenu-responsi ... -item-2231\"><div class=\"ubermenu-content-block ubermenu-custom-content\"></div></li></ul></nav></nav>",
+          "testResult": 0,
+          "path": "body>header:nth-of-type(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav",
+            "attNo": 0
+          }
+        },
+        {
+          "engineTestId": 533,
+          "bestPracticeId": 2519,
+          "attribute": "This nav does not have an accessible name as required when two or more nav elements are present",
+          "attributeDetail": "This nav does not have an accessible name as required when two or more nav elements are present",
+          "element": "<nav class=\"ubermenu ubermenu-main ubermenu-menu-Main-Navigation ubermenu-responsive ubermenu-respon ... =\"menu-item-2231\"><div class=\"ubermenu-content-block ubermenu-custom-content\"></div></li></ul></nav>",
+          "testResult": 0,
+          "path": "body>header:nth-of-type(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[id=\"ubermenu-main-Main-Navigation\"][class=\"ubermenu ubermenu-main ubermenu-menu-Main-Navigation ubermenu-responsive ubermenu-responsive-default ubermenu-responsive-collapse ubermenu-horizontal ubermenu-transition-fade ubermenu-trigger-hover_intent ubermenu-skin-white ubermenu-bar-align-full ubermenu-items-align-left ubermenu-bound ubermenu-disable-submenu-scroll ubermenu-sub-indicators ubermenu-icons-inline ubermenu-submenu-indicator-closes ubermenu-notouch ubermenu-desktop-view\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 809,
+          "bestPracticeId": 1352,
+          "attribute": "This MAIN is one of multiple main elements that appear in the body element.",
+          "attributeDetail": "This MAIN is one of multiple main elements that appear in the body element.",
+          "element": "<main class=\"main\"><div class=\"mo-page-content homepage-tp\"><form action=\"https://www.usembassy.gov/ ... v><button style=\"display:none;\" id=\"wpas-load-btn\">Load More</button></div></div></div></div></main>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(3)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "main[class=\"main\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 809,
+          "bestPracticeId": 1352,
+          "attribute": "This MAIN is one of multiple main elements that appear in the body element.",
+          "attributeDetail": "This MAIN is one of multiple main elements that appear in the body element.",
+          "element": "<main class=\"main\"><div class=\"mo-page-content\"><div data-url=\"https://www.usembassy.gov/\" class=\"at ... ss=\"pcs-post-title\">U.S. Mission to ASEAN</a></li><li class=\"listed-post\"><a title=\"U.S. Mission to ",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(4)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "main[class=\"main\"]",
+            "attNo": 1
+          }
+        }
+      ]
+    }
+  ],
+  "timeStamp": "4jil2",
+  "startTime": "2022-07-27T14:43:09",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "continuum",
+      0
+    ]
+  ],
+  "logCount": 3,
+  "logSize": 276,
+  "errorLogCount": 2,
+  "errorLogSize": 230,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-27T14:43:16",
+  "elapsedSeconds": 6
+}

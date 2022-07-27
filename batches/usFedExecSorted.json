@@ -1,0 +1,936 @@
+{
+  "id": "usfedexec",
+  "what": "U.S. federal executive agencies",
+  "hosts": [
+    {
+      "id": "acl",
+      "which": "https://acl.gov/",
+      "what": "Administration for Community Living"
+    },
+    {
+      "id": "achp",
+      "which": "https://www.achp.gov/",
+      "what": "Advisory Council on Historic Preservation (ACHP)"
+    },
+    {
+      "id": "agm",
+      "which": "https://www.usagm.gov/",
+      "what": "Agency for Global Media"
+    },
+    {
+      "id": "ahrq",
+      "which": "https://ahrq.gov/",
+      "what": "Agency for Healthcare Research and Quality"
+    },
+    {
+      "id": "ars",
+      "which": "https://www.ars.usda.gov/",
+      "what": "Agricultural Research Service"
+    },
+    {
+      "id": "airforce",
+      "which": "https://www.af.mil/",
+      "what": "Air Force"
+    },
+    {
+      "id": "ttb",
+      "which": "https://www.ttb.gov/",
+      "what": "Alcohol and Tobacco Tax and Trade Bureau (TTB)"
+    },
+    {
+      "id": "americorps",
+      "which": "https://www.americorps.gov/",
+      "what": "AmeriCorps"
+    },
+    {
+      "id": "abmc",
+      "which": "https://www.abmc.gov/",
+      "what": "American Battle Monuments Commission"
+    },
+    {
+      "id": "aphis",
+      "which": "https://www.aphis.usda.gov/aphis/home/",
+      "what": "Animal and Plant Health Inspection Service"
+    },
+    {
+      "id": "army",
+      "which": "https://www.army.mil/",
+      "what": "Army"
+    },
+    {
+      "id": "bgfrs",
+      "which": "https://www.federalreserve.gov/",
+      "what": "Board of Governors of the Federal Reserve System"
+    },
+    {
+      "id": "atf",
+      "which": "https://www.atf.gov/",
+      "what": "Bureau of Alcohol, Tobacco, Firearms and Explosives (ATF)"
+    },
+    {
+      "id": "bea",
+      "which": "https://www.bea.gov/",
+      "what": "Bureau of Economic Analysis (BEA)"
+    },
+    {
+      "id": "bep",
+      "which": "https://www.bep.gov/",
+      "what": "Bureau of Engraving and Printing"
+    },
+    {
+      "id": "isn",
+      "which": "https://www.state.gov/bureaus-offices/under-secretary-for-arms-control-and-international-security-affairs/bureau-of-international-security-and-nonproliferation/",
+      "what": "Bureau of International Security and Nonproliferation (ISN)"
+    },
+    {
+      "id": "bjs",
+      "which": "https://bjs.gov/",
+      "what": "Bureau of Justice Statistics"
+    },
+    {
+      "id": "bls",
+      "which": "https://stats.bls.gov/",
+      "what": "Bureau of Labor Statistics (BLS)"
+    },
+    {
+      "id": "blm",
+      "which": "https://www.blm.gov/",
+      "what": "Bureau of Land Management"
+    },
+    {
+      "id": "reclamation",
+      "which": "https://www.usbr.gov/",
+      "what": "Bureau of Reclamation"
+    },
+    {
+      "id": "bts",
+      "which": "https://www.bts.gov/",
+      "what": "Bureau of Transportation Statistics"
+    },
+    {
+      "id": "bfs",
+      "which": "https://www.fiscal.treasury.gov/",
+      "what": "Bureau of the Fiscal Service"
+    },
+    {
+      "id": "cb",
+      "which": "https://www.census.gov/",
+      "what": "Census Bureau"
+    },
+    {
+      "id": "cdc",
+      "which": "https://cdc.gov/",
+      "what": "Centers for Disease Control and Prevention"
+    },
+    {
+      "id": "cms",
+      "which": "https://cms.gov/",
+      "what": "Centers for Medicare and Medicaid Services"
+    },
+    {
+      "id": "cia",
+      "which": "https://www.cia.gov/",
+      "what": "Central Intelligence Agency (CIA)"
+    },
+    {
+      "id": "cis",
+      "which": "https://www.uscis.gov/",
+      "what": "Citizenship and Immigration Services"
+    },
+    {
+      "id": "coastguard",
+      "which": "https://www.uscg.mil/",
+      "what": "Coast Guard"
+    },
+    {
+      "id": "cftc",
+      "which": "https://www.cftc.gov/",
+      "what": "Commodity Futures Trading Commission (CFTC)"
+    },
+    {
+      "id": "cfpb",
+      "which": "https://www.consumerfinance.gov/",
+      "what": "Consumer Financial Protection Bureau"
+    },
+    {
+      "id": "cpsc",
+      "which": "https://www.cpsc.gov/",
+      "what": "Consumer Product Safety Commission (CPSC)"
+    },
+    {
+      "id": "cbp",
+      "which": "https://cbp.gov/",
+      "what": "Customs and Border Protection"
+    },
+    {
+      "id": "cisa",
+      "which": "https://cisa.gov/",
+      "what": "Cybersecurity and Infrastructure Security Agency"
+    },
+    {
+      "id": "dwusttd",
+      "which": "https://dataweb.usitc.gov/",
+      "what": "DataWeb, US Trade and Tariff Data"
+    },
+    {
+      "id": "darpa",
+      "which": "https://www.darpa.mil/",
+      "what": "Defense Advanced Research Projects Agency"
+    },
+    {
+      "id": "dla",
+      "which": "https://www.dla.mil/",
+      "what": "Defense Logistics Agency (DLA)"
+    },
+    {
+      "id": "dtic",
+      "which": "https://discover.dtic.mil/",
+      "what": "Defense Technical Information Center (DTIC)"
+    },
+    {
+      "id": "usda",
+      "which": "https://www.usda.gov/",
+      "what": "Department of Agriculture (USDA)"
+    },
+    {
+      "id": "doc",
+      "which": "https://www.commerce.gov/",
+      "what": "Department of Commerce (DOC)"
+    },
+    {
+      "id": "dod",
+      "which": "https://www.defense.gov/",
+      "what": "Department of Defense (DOD)"
+    },
+    {
+      "id": "education",
+      "which": "https://www.ed.gov/",
+      "what": "Department of Education"
+    },
+    {
+      "id": "doe",
+      "which": "https://www.energy.gov/",
+      "what": "Department of Energy (DOE)"
+    },
+    {
+      "id": "osti",
+      "which": "https://osti.gov/",
+      "what": "Department of Energy Office of Scientific and Technical Information"
+    },
+    {
+      "id": "hhs",
+      "which": "https://www.hhs.gov/",
+      "what": "Department of Health and Human Services (HHS)"
+    },
+    {
+      "id": "dhs",
+      "which": "https://www.dhs.gov/",
+      "what": "Department of Homeland Security (DHS)"
+    },
+    {
+      "id": "hud",
+      "which": "https://www.hud.gov/",
+      "what": "Department of Housing and Urban Development (HUD)"
+    },
+    {
+      "id": "doj",
+      "which": "https://www.justice.gov/",
+      "what": "Department of Justice (DOJ)"
+    },
+    {
+      "id": "dol",
+      "which": "https://www.dol.gov/",
+      "what": "Department of Labor (DOL)"
+    },
+    {
+      "id": "dos",
+      "which": "https://www.state.gov/",
+      "what": "Department of State (DOS)"
+    },
+    {
+      "id": "dsl",
+      "which": "https://www.state.gov/bureaus-offices/under-secretary-for-management/bureau-of-administration/library-services/",
+      "what": "Department of State Library"
+    },
+    {
+      "id": "dot",
+      "which": "https://www.transportation.gov/",
+      "what": "Department of Transportation (DOT)"
+    },
+    {
+      "id": "dva",
+      "which": "https://www.va.gov/",
+      "what": "Department of Veterans Affairs"
+    },
+    {
+      "id": "doi",
+      "which": "https://www.doi.gov/",
+      "what": "Department of the Interior (DOI)"
+    },
+    {
+      "id": "treasury",
+      "which": "https://home.treasury.gov/",
+      "what": "Department of the Treasury "
+    },
+    {
+      "id": "dea",
+      "which": "https://www.dea.gov/",
+      "what": "Drug Enforcement Administration (DEA)"
+    },
+    {
+      "id": "energystar",
+      "which": "https://energystar.gov/",
+      "what": "ENERGY STAR"
+    },
+    {
+      "id": "ers",
+      "which": "https://www.ers.usda.gov/",
+      "what": "Economic Research Service"
+    },
+    {
+      "id": "eric",
+      "which": "https://ies.ed.gov/ncee/projects/eric.asp",
+      "what": "Educational Resources Information Center (ERIC)"
+    },
+    {
+      "id": "eia",
+      "which": "https://eia.gov/",
+      "what": "Energy Information Administration"
+    },
+    {
+      "id": "epa",
+      "which": "https://www.epa.gov/",
+      "what": "Environmental Protection Agency (EPA)"
+    },
+    {
+      "id": "eeoc",
+      "which": "https://www.eeoc.gov/",
+      "what": "Equal Employment Opportunity Commission (EEOC)"
+    },
+    {
+      "id": "fca",
+      "which": "https://www.fca.gov/",
+      "what": "Farm Credit Administration (FCA)"
+    },
+    {
+      "id": "fsa",
+      "which": "https://www.fsa.usda.gov/",
+      "what": "Farm Service Agency"
+    },
+    {
+      "id": "faa",
+      "which": "https://www.faa.gov/",
+      "what": "Federal Aviation Administration (FAA)"
+    },
+    {
+      "id": "fbi",
+      "which": "https://www.fbi.gov/",
+      "what": "Federal Bureau of Investigation (FBI)"
+    },
+    {
+      "id": "fbp",
+      "which": "https://www.bop.gov/",
+      "what": "Federal Bureau of Prisons "
+    },
+    {
+      "id": "fcc",
+      "which": "https://www.fcc.gov/",
+      "what": "Federal Communications Commission (FCC)"
+    },
+    {
+      "id": "fdic",
+      "which": "https://www.fdic.gov/",
+      "what": "Federal Deposit Insurance Corporation (FDIC)"
+    },
+    {
+      "id": "fec",
+      "which": "https://www.fec.gov/",
+      "what": "Federal Election Commission (FEC)"
+    },
+    {
+      "id": "fema",
+      "which": "https://www.fema.gov/",
+      "what": "Federal Emergency Management Agency (FEMA)"
+    },
+    {
+      "id": "ferc",
+      "which": "https://www.ferc.gov/",
+      "what": "Federal Energy Regulatory Commission (FERC)"
+    },
+    {
+      "id": "fhfa",
+      "which": "https://www.fhfa.gov/",
+      "what": "Federal Housing Finance Agency (FHFA)"
+    },
+    {
+      "id": "flra",
+      "which": "https://www.flra.gov/",
+      "what": "Federal Labor Relations Authority (FLRA)"
+    },
+    {
+      "id": "flc",
+      "which": "https://federallabs.org/",
+      "what": "Federal Laboratory Consortium for Technology Transfer (FLC)"
+    },
+    {
+      "id": "fletc",
+      "which": "https://www.fletc.gov/",
+      "what": "Federal Law Enforcement Training Centers"
+    },
+    {
+      "id": "fmc",
+      "which": "https://www.fmc.gov/",
+      "what": "Federal Maritime Commission"
+    },
+    {
+      "id": "fmshrc",
+      "which": "https://www.fmshrc.gov/",
+      "what": "Federal Mine Safety and Health Review Commission (FMSHRC)"
+    },
+    {
+      "id": "frtib",
+      "which": "https://www.frtib.gov/",
+      "what": "Federal Retirement Thrift Investment Board (FRTIB)"
+    },
+    {
+      "id": "studentaid",
+      "which": "https://studentaid.gov/",
+      "what": "Federal Student Aid"
+    },
+    {
+      "id": "ftc",
+      "which": "https://www.ftc.gov/",
+      "what": "Federal Trade Commission (FTC)"
+    },
+    {
+      "id": "fincen",
+      "which": "https://www.fincen.gov/",
+      "what": "Financial Crimes Enforcement Network (FinCEN)"
+    },
+    {
+      "id": "fws",
+      "which": "https://www.fws.gov/",
+      "what": "Fish and Wildlife Service"
+    },
+    {
+      "id": "fda",
+      "which": "https://fda.gov/",
+      "what": "Food and Drug Administration"
+    },
+    {
+      "id": "forestsvc",
+      "which": "https://www.fs.usda.gov/",
+      "what": "Forest Service"
+    },
+    {
+      "id": "gsa",
+      "which": "https://www.gsa.gov/",
+      "what": "General Services Administration (GSA)"
+    },
+    {
+      "id": "gnmagm",
+      "which": "https://www.ginniemae.gov/pages/default.aspx",
+      "what": "Government National Mortgage Association (Ginnie Mae)"
+    },
+    {
+      "id": "hrsa",
+      "which": "https://hrsa.gov/",
+      "what": "Health Resources and Services Administration"
+    },
+    {
+      "id": "ice",
+      "which": "https://ice.gov/",
+      "what": "Immigration and Customs Enforcement"
+    },
+    {
+      "id": "indian",
+      "which": "https://www.bia.gov/",
+      "what": "Indian Affairs"
+    },
+    {
+      "id": "ies",
+      "which": "https://ies.ed.gov/",
+      "what": "Institute of Education Sciences (IES)"
+    },
+    {
+      "id": "imls",
+      "which": "https://www.imls.gov/",
+      "what": "Institute of Museum and Library Services (IMLS)"
+    },
+    {
+      "id": "inteljobs",
+      "which": "https://www.intelligence.gov/",
+      "what": "Intelligence Careers"
+    },
+    {
+      "id": "irs",
+      "which": "https://www.irs.gov/",
+      "what": "Internal Revenue Service (IRS)"
+    },
+    {
+      "id": "ibwc",
+      "which": "https://www.ibwc.gov/home.html",
+      "what": "International Boundary & Water Commission"
+    },
+    {
+      "id": "ita",
+      "which": "https://www.trade.gov/",
+      "what": "International Trade Administration (ITA)"
+    },
+    {
+      "id": "llnl",
+      "which": "https://www.llnl.gov/",
+      "what": "Lawrence Livermore National Laboratory"
+    },
+    {
+      "id": "lanl",
+      "which": "https://www.lanl.gov/",
+      "what": "Los Alamos National Laboratory"
+    },
+    {
+      "id": "marines",
+      "which": "https://www.marines.mil/",
+      "what": "Marines"
+    },
+    {
+      "id": "mspb",
+      "which": "https://www.mspb.gov/",
+      "what": "Merit Systems Protection Board (MSPB)"
+    },
+    {
+      "id": "msha",
+      "which": "https://www.msha.gov/",
+      "what": "Mine Safety and Health Administration (MSHA)"
+    },
+    {
+      "id": "noaaf",
+      "which": "https://www.fisheries.noaa.gov/",
+      "what": "NOAA Fisheries"
+    },
+    {
+      "id": "nasa",
+      "which": "https://www.nasa.gov/",
+      "what": "National Aeronautics and Space Administration (NASA)"
+    },
+    {
+      "id": "nal",
+      "which": "https://www.nal.usda.gov/",
+      "what": "National Agricultural Library"
+    },
+    {
+      "id": "archives",
+      "which": "https://www.archives.gov/",
+      "what": "National Archives"
+    },
+    {
+      "id": "cancer",
+      "which": "https://cancer.gov/",
+      "what": "National Cancer Institute"
+    },
+    {
+      "id": "ncpc",
+      "which": "https://www.ncpc.gov/",
+      "what": "National Capital Planning Commission (NCPC)"
+    },
+    {
+      "id": "ncbi",
+      "which": "https://ncbi.nlm.nih.gov/",
+      "what": "National Center for Biotechnology Information"
+    },
+    {
+      "id": "ncd",
+      "which": "https://ncd.gov/",
+      "what": "National Council on Disability"
+    },
+    {
+      "id": "ncua",
+      "which": "https://www.ncua.gov/",
+      "what": "National Credit Union Administration (NCUA)"
+    },
+    {
+      "id": "nea",
+      "which": "https://www.arts.gov/",
+      "what": "National Endowment for the Arts (NEA)"
+    },
+    {
+      "id": "neh",
+      "which": "https://www.neh.gov/",
+      "what": "National Endowment for the Humanities (NEH)"
+    },
+    {
+      "id": "nhtsa",
+      "which": "https://nhtsa.gov/",
+      "what": "National Highway Traffic Safety Administration"
+    },
+    {
+      "id": "nigc",
+      "which": "https://www.nigc.gov/",
+      "what": "National Indian Gaming Commission (NIGC)"
+    },
+    {
+      "id": "nist",
+      "which": "https://www.nist.gov/",
+      "what": "National Institute of Standards & Technology (NIST)"
+    },
+    {
+      "id": "nih",
+      "which": "https://www.nih.gov/",
+      "what": "National Institutes of Health (NIH)"
+    },
+    {
+      "id": "nlrb",
+      "which": "https://www.nlrb.gov/",
+      "what": "National Labor Relations Board (NLRB)"
+    },
+    {
+      "id": "nle",
+      "which": "https://ies.ed.gov/ncee/projects/nle/",
+      "what": "National Library of Education (NLE)"
+    },
+    {
+      "id": "nlm",
+      "which": "https://www.nlm.nih.gov/",
+      "what": "National Library of Medicine (NLM)"
+    },
+    {
+      "id": "nmb",
+      "which": "https://nmb.gov/NMB_Application/",
+      "what": "National Mediation Board (NMB)"
+    },
+    {
+      "id": "nnsa",
+      "which": "https://www.energy.gov/nnsa/national-nuclear-security-administration",
+      "what": "National Nuclear Security Administration (NNSA)"
+    },
+    {
+      "id": "nos",
+      "which": "https://oceanservice.noaa.gov/",
+      "what": "National Ocean Service"
+    },
+    {
+      "id": "noaa",
+      "which": "https://www.noaa.gov/",
+      "what": "National Oceanic & Atmospheric Administration (NOAA)"
+    },
+    {
+      "id": "nps",
+      "which": "https://www.nps.gov/index.htm",
+      "what": "National Park Service (NPS)"
+    },
+    {
+      "id": "amtrak",
+      "which": "https://www.amtrak.com/home.html",
+      "what": "National Railroad Passenger Corporation (AMTRAK)"
+    },
+    {
+      "id": "nsf",
+      "which": "https://www.nsf.gov/",
+      "what": "National Science Foundation (NSF)"
+    },
+    {
+      "id": "nsa",
+      "which": "https://www.nsa.gov/",
+      "what": "National Security Agency (NSA)"
+    },
+    {
+      "id": "ntis",
+      "which": "https://www.ntis.gov/",
+      "what": "National Technical Information Service (NTIS)"
+    },
+    {
+      "id": "ntia",
+      "which": "https://www.ntia.doc.gov/",
+      "what": "National Telecommunications and Information Administration"
+    },
+    {
+      "id": "ntsb",
+      "which": "https://www.ntsb.gov/Pages/home.aspx",
+      "what": "National Transportation Safety Board (NTSB)"
+    },
+    {
+      "id": "nws",
+      "which": "https://www.weather.gov/",
+      "what": "National Weather Service"
+    },
+    {
+      "id": "nrcs",
+      "which": "https://www.nrcs.usda.gov/wps/portal/nrcs/site/national/home/",
+      "what": "Natural Resources Conservation Service"
+    },
+    {
+      "id": "navy",
+      "which": "https://www.navy.mil/",
+      "what": "Navy"
+    },
+    {
+      "id": "nrc",
+      "which": "https://www.nrc.gov/",
+      "what": "Nuclear Regulatory Commission (NRC)"
+    },
+    {
+      "id": "nwtrb",
+      "which": "https://www.nwtrb.gov/",
+      "what": "Nuclear Waste Technical Review Board (NWTRB)"
+    },
+    {
+      "id": "osha",
+      "which": "https://www.osha.gov/",
+      "what": "Occupational Safety & Health Administration (OSHA)"
+    },
+    {
+      "id": "oshrc",
+      "which": "https://www.oshrc.gov/",
+      "what": "Occupational Safety & Health Review Commission (OSHRC)"
+    },
+    {
+      "id": "oge",
+      "which": "https://www.oge.gov/",
+      "what": "Office of Government Ethics (OGE)"
+    },
+    {
+      "id": "investor",
+      "which": "https://investor.gov/",
+      "what": "Office of Investor Education and Advocacy"
+    },
+    {
+      "id": "ojp",
+      "which": "https://www.ojp.gov/",
+      "what": "Office of Justice Programs (OJP)"
+    },
+    {
+      "id": "olhchh",
+      "which": "https://www.hud.gov/program_offices/healthy_homes/",
+      "what": "Office of Lead Hazard Control and Healthy Homes (OLHCHH)"
+    },
+    {
+      "id": "omb",
+      "which": "https://www.whitehouse.gov/omb/",
+      "what": "Office of Management and Budget (OMB)"
+    },
+    {
+      "id": "opm",
+      "which": "https://www.opm.gov/",
+      "what": "Office of Personnel Management (OPM)"
+    },
+    {
+      "id": "huduser",
+      "which": "https://huduser.gov/",
+      "what": "Office of Policy Development and Research (PD&R)"
+    },
+    {
+      "id": "science",
+      "which": "https://www.energy.gov/science/office-science",
+      "what": "Office of Science"
+    },
+    {
+      "id": "osmre",
+      "which": "https://www.osmre.gov/",
+      "what": "Office of Surface Mining Reclamation and Enforcement (OSMRE)"
+    },
+    {
+      "id": "occ",
+      "which": "https://www.occ.treas.gov/",
+      "what": "Office of the Comptroller of the Currency (OCC)"
+    },
+    {
+      "id": "odni",
+      "which": "https://www.dni.gov/",
+      "what": "Office of the Director of National Intelligence"
+    },
+    {
+      "id": "ustr",
+      "which": "https://ustr.gov/",
+      "what": "Office of the United States Trade Representative (USTR)"
+    },
+    {
+      "id": "pantex",
+      "which": "http://www.pantex.com/",
+      "what": "Pantex Plant"
+    },
+    {
+      "id": "pto",
+      "which": "https://www.uspto.gov/",
+      "what": "Patent and Trademark Office"
+    },
+    {
+      "id": "peacecorps",
+      "which": "https://www.peacecorps.gov/",
+      "what": "Peace Corps"
+    },
+    {
+      "id": "pbgc",
+      "which": "https://www.pbgc.gov/",
+      "what": "Pension Benefit Guaranty Corporation"
+    },
+    {
+      "id": "prc",
+      "which": "https://www.prc.gov/",
+      "what": "Postal Regulatory Commission (PRC)"
+    },
+    {
+      "id": "pih",
+      "which": "https://www.hud.gov/program_offices/public_indian_housing",
+      "what": "Public and Indian Housing (PIH)"
+    },
+    {
+      "id": "rfa",
+      "which": "https://www.rfa.org/english/",
+      "what": "Radio Free Asia"
+    },
+    {
+      "id": "rferl",
+      "which": "https://www.rferl.org/",
+      "what": "Radio Free Europe/Radio Liberty"
+    },
+    {
+      "id": "rrb",
+      "which": "https://rrb.gov/",
+      "what": "Railroad Retirement Board (RRB)"
+    },
+    {
+      "id": "ruraldev",
+      "which": "https://www.rd.usda.gov/",
+      "what": "Rural Development"
+    },
+    {
+      "id": "snl",
+      "which": "https://www.sandia.gov/",
+      "what": "Sandia National Laboratories"
+    },
+    {
+      "id": "srs",
+      "which": "https://www.srs.gov/general/srs-home.html",
+      "what": "Savannah River Site"
+    },
+    {
+      "id": "secretsvc",
+      "which": "https://www.secretservice.gov/",
+      "what": "Secret Service"
+    },
+    {
+      "id": "sec",
+      "which": "https://www.sec.gov/",
+      "what": "Securities and Exchange Commission (SEC)"
+    },
+    {
+      "id": "sss",
+      "which": "https://www.sss.gov/",
+      "what": "Selective Service System (SSS)"
+    },
+    {
+      "id": "sba",
+      "which": "https://www.sba.gov/",
+      "what": "Small Business Administration (SBA)"
+    },
+    {
+      "id": "smithsonian",
+      "which": "https://www.si.edu/",
+      "what": "Smithsonian"
+    },
+    {
+      "id": "ssa",
+      "which": "https://www.ssa.gov/",
+      "what": "Social Security Administration (SSA)"
+    },
+    {
+      "id": "spa",
+      "which": "https://www.swpa.gov/",
+      "what": "Southwestern Power Administration"
+    },
+    {
+      "id": "samhsa",
+      "which": "https://samhsa.gov/",
+      "what": "Substance Abuse and Mental Health Services Admin. (SAMHSA)"
+    },
+    {
+      "id": "tva",
+      "which": "https://www.tva.com/",
+      "what": "Tennessee Valley Authority (TVA)"
+    },
+    {
+      "id": "twh",
+      "which": "https://www.whitehouse.gov/",
+      "what": "The White House"
+    },
+    {
+      "id": "tsp",
+      "which": "https://www.tsp.gov/",
+      "what": "Thrift Savings Plan (TSP)"
+    },
+    {
+      "id": "tsa",
+      "which": "https://tsa.gov/",
+      "what": "Transportation Security Administration"
+    },
+    {
+      "id": "us-cert",
+      "which": "https://us-cert.gov/",
+      "what": "U.S. Computer Emergency Readiness Team"
+    },
+    {
+      "id": "usembassy",
+      "which": "https://usembassy.gov/",
+      "what": "U.S. Embassy"
+    },
+    {
+      "id": "usa",
+      "which": "https://usa.gov/",
+      "what": "U.S. Government Services and Information"
+    },
+    {
+      "id": "dfc",
+      "which": "https://www.dfc.gov/",
+      "what": "U.S. International Development Finance Corporation (DFC)"
+    },
+    {
+      "id": "usgs",
+      "which": "https://www.usgs.gov/",
+      "what": "US Geological Survey (USGS)"
+    },
+    {
+      "id": "usms",
+      "which": "https://www.usmarshals.gov/",
+      "what": "US Marshals Service (USMS)"
+    },
+    {
+      "id": "uspis",
+      "which": "https://www.uspis.gov/",
+      "what": "US Postal Inspection Service"
+    },
+    {
+      "id": "usaid",
+      "which": "https://www.usaid.gov/",
+      "what": "United States Agency for International Development (USAID)"
+    },
+    {
+      "id": "usitc",
+      "which": "https://www.usitc.gov/",
+      "what": "United States International Trade Commission (USITC)"
+    },
+    {
+      "id": "usm",
+      "which": "https://www.usmint.gov/",
+      "what": "United States Mint"
+    },
+    {
+      "id": "usps",
+      "which": "https://www.usps.com/",
+      "what": "United States Postal Service (USPS)"
+    },
+    {
+      "id": "ustda",
+      "which": "https://www.ustda.gov/",
+      "what": "United States Trade and Development Agency"
+    },
+    {
+      "id": "voa",
+      "which": "https://www.voanews.com/",
+      "what": "Voice of America (VOA)"
+    },
+    {
+      "id": "ynsc",
+      "which": "http://www.y12.doe.gov/",
+      "what": "Y-12 National Security Complex"
+    }
+  ]
+}

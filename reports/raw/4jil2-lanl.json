@@ -1,0 +1,611 @@
+{
+  "id": "4jil2-lanl",
+  "host": {
+    "id": "lanl",
+    "which": "https://www.lanl.gov/",
+    "what": "Los Alamos National Laboratory"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-27T14:30:10"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-27T14:30:19"
+    }
+  ],
+  "script": {
+    "id": "continuum",
+    "what": "Continuum",
+    "strict": true,
+    "timeLimit": 30,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.lanl.gov/",
+        "what": "Los Alamos National Laboratory"
+      },
+      {
+        "type": "test",
+        "which": "continuum",
+        "what": "Continuum"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.lanl.gov/",
+      "what": "Los Alamos National Laboratory",
+      "result": "https://www.lanl.gov/"
+    },
+    {
+      "type": "test",
+      "which": "continuum",
+      "what": "Level Access Continuum, community edition",
+      "url": "https://www.lanl.gov/",
+      "result": [
+        {
+          "engineTestId": 85,
+          "bestPracticeId": 1626,
+          "attribute": "This element has an aria-controls attribute value that includes one or more invalid or duplicate ids",
+          "attributeDetail": "This A has an aria-controls attribute value of 'Slide 1 of 2', which includes one or more invalid or duplicate ids",
+          "element": "<a aria-controls=\"Slide 1 of 2\" type=\"button\" data-glide-dir=\"=0\" class=\"glide__bullet btn font-weig ... l dark-slide glide__bullet--active text-white\"><span class=\"carousel-bullet-text\">Climate</span></a>",
+          "testResult": 0,
+          "path": "body>main:nth-of-type(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "a[class=\"glide__bullet btn font-weight-normal dark-slide glide__bullet--active text-white\"][data-glide-dir=\"=0\"][type=\"button\"][aria-controls=\"Slide 1 of 2\"]",
+            "attNo": 4
+          }
+        },
+        {
+          "engineTestId": 85,
+          "bestPracticeId": 1626,
+          "attribute": "This element has an aria-controls attribute value that includes one or more invalid or duplicate ids",
+          "attributeDetail": "This A has an aria-controls attribute value of 'Slide 2 of 2', which includes one or more invalid or duplicate ids",
+          "element": "<a aria-controls=\"Slide 2 of 2\" type=\"button\" data-glide-dir=\"=1\" class=\"glide__bullet btn font-weight-normal dark-slide text-white\"><span class=\"carousel-bullet-text\">Careers</span></a>",
+          "testResult": 0,
+          "path": "body>main:nth-of-type(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "a[class=\"glide__bullet btn font-weight-normal dark-slide text-white\"][data-glide-dir=\"=1\"][type=\"button\"][aria-controls=\"Slide 2 of 2\"]",
+            "attNo": 4
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a href=\"https://www.facebook.com/LosAlamosNationalLab\" class=\"d-inline-block mr-3 text-white\"><svg  ... .08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z\" fill=\"currentColor\"></path></svg></a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[class=\"d-inline-block mr-3 text-white\"][href=\"https://www.facebook.com/LosAlamosNationalLab\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a href=\"https://twitter.com/LosAlamosNatLab\" class=\"d-inline-block mr-3 text-white\"><svg data-fa-i2 ... .122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z\" fill=\"currentColor\"></path></svg></a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[class=\"d-inline-block mr-3 text-white\"][href=\"https://twitter.com/LosAlamosNatLab\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a href=\"https://www.linkedin.com/company/5327?trk=NUS_CMPY_FOL-co\" class=\"d-inline-block mr-3 text- ... 23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z\" fill=\"currentColor\"></path></svg></a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[class=\"d-inline-block mr-3 text-white\"][href=\"https://www.linkedin.com/company/5327?trk=NUS_CMPY_FOL-co\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a href=\"https://www.youtube.com/user/LosAlamosNationalLab\" class=\"d-inline-block mr-3 text-white\">< ... 2.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z\" fill=\"currentColor\"></path></svg></a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(5)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[class=\"d-inline-block mr-3 text-white\"][href=\"https://www.youtube.com/user/LosAlamosNationalLab\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a href=\"https://www.instagram.com/losalamosnatlab/\" class=\"d-inline-block mr-3 text-white\"><svg dat ... .7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z\" fill=\"currentColor\"></path></svg></a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(6)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[class=\"d-inline-block mr-3 text-white\"][href=\"https://www.instagram.com/losalamosnatlab/\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 246,
+          "bestPracticeId": 393,
+          "attribute": "This element should only contain li elements (without an ARIA-assigned role), script elements (without an ARIA-assigned role) or template elements (without an ARIA-assigned role); or elements with a role=listitem attribute; as direct child elements",
+          "attributeDetail": "This UL should only contain li elements (without an ARIA-assigned role), script elements (without an ARIA-assigned role) or template elements (without an ARIA-assigned role); or elements with a role=listitem attribute; as direct child elements",
+          "element": "<ul style=\"transition: transform 0ms cubic-bezier(0.165, 0.84, 0.44, 1) 0s; width: 1914px; transform ... discover.lanl.gov/news/science?source=topnews\" class=\"slider-topic\">Science</a><div class=\"w-100 sha",
+          "testResult": 0,
+          "path": "body>main:nth-of-type(1)>*:nth-child(6)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "ul[class=\"glide__slides overflow-visible\"][id=\"slider-1-slides\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 246,
+          "bestPracticeId": 393,
+          "attribute": "This element should only contain li elements (without an ARIA-assigned role), script elements (without an ARIA-assigned role) or template elements (without an ARIA-assigned role); or elements with a role=listitem attribute; as direct child elements",
+          "attributeDetail": "This UL should only contain li elements (without an ARIA-assigned role), script elements (without an ARIA-assigned role) or template elements (without an ARIA-assigned role); or elements with a role=listitem attribute; as direct child elements",
+          "element": "<ul style=\"transition: transform 0ms cubic-bezier(0.165, 0.84, 0.44, 1) 0s; width: 1914px; transform ...  class=\"card-body p-4\"><h4 class=\"card-title truncate-overflow mb-3\">Toby Lunn</h4><p class=\"card-de",
+          "testResult": 0,
+          "path": "body>main:nth-of-type(1)>*:nth-child(8)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "ul[class=\"glide__slides overflow-visible\"][id=\"slider-2-slides\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 246,
+          "bestPracticeId": 393,
+          "attribute": "This element should only contain li elements (without an ARIA-assigned role), script elements (without an ARIA-assigned role) or template elements (without an ARIA-assigned role); or elements with a role=listitem attribute; as direct child elements",
+          "attributeDetail": "This UL should only contain li elements (without an ARIA-assigned role), script elements (without an ARIA-assigned role) or template elements (without an ARIA-assigned role); or elements with a role=listitem attribute; as direct child elements",
+          "element": "<ul class=\"list-unstyled\"><div><img style=\"width: 200px\" src=\"/_assets/2020/green-home/images/grlp-l ... t: 200%;\">(505) 667-5061</li><li></li><li style=\"font-size: 16px\"><div class=\"mb-4\"></div></li></ul>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "ul[class=\"list-unstyled\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 246,
+          "bestPracticeId": 393,
+          "attribute": "This element should only contain li elements (without an ARIA-assigned role), script elements (without an ARIA-assigned role) or template elements (without an ARIA-assigned role); or elements with a role=listitem attribute; as direct child elements",
+          "attributeDetail": "This UL should only contain li elements (without an ARIA-assigned role), script elements (without an ARIA-assigned role) or template elements (without an ARIA-assigned role); or elements with a role=listitem attribute; as direct child elements",
+          "element": "<ul class=\"list-unstyled\"><div><img src=\"/_assets/2020/green-home/images/grlp-doe-logo.svg\" class=\"i ... tion\"></div><li></li><li style=\"font-size: 1rem\"><strong><div class=\"mb-4\"></div></strong></li></ul>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(7)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "ul[class=\"list-unstyled\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 527,
+          "bestPracticeId": 2519,
+          "attribute": "This aside does not have a unique accessible name as required when two or more aside elements are present",
+          "attributeDetail": "This aside does not have a unique accessible name as required when two or more aside elements are present",
+          "element": "<aside class=\"lanl-slider overflow-hidden bg-primary-gradient\"><div class=\"section-header container  ... div><div class=\"card-body p-4\"><h4 class=\"card-title truncate-overflow mb-3\">Arctic heating 4 times ",
+          "testResult": 0,
+          "path": "body>main:nth-of-type(1)>*:nth-child(6)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "aside[class=\"lanl-slider overflow-hidden bg-primary-gradient\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 527,
+          "bestPracticeId": 2519,
+          "attribute": "This aside does not have a unique accessible name as required when two or more aside elements are present",
+          "attributeDetail": "This aside does not have a unique accessible name as required when two or more aside elements are present",
+          "element": "<aside class=\"more-in-this-issue lanl-slider overflow-hidden bg-background-accent\"><div class=\"secti ... .6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z\" fill=\"currentColor\"></path></svg></span></a></div></di",
+          "testResult": 0,
+          "path": "body>main:nth-of-type(1)>*:nth-child(8)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "aside[class=\"more-in-this-issue lanl-slider overflow-hidden bg-background-accent\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 531,
+          "bestPracticeId": 2519,
+          "attribute": "This nav does not have a unique accessible name as required when two or more nav elements are present",
+          "attributeDetail": "This nav does not have a unique accessible name as required when two or more nav elements are present",
+          "element": "<nav class=\"d-none d-lg-flex pb-0 text-white navbar navbar-main navbar-expand-lg\"><div id=\"navbar-to ... brary//index.php\">Research Library</a></li></ul></div></div></li></ul></div></div></div></div></nav>",
+          "testResult": 0,
+          "path": "body>header:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[class=\"d-none d-lg-flex pb-0 text-white navbar navbar-main navbar-expand-lg\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 531,
+          "bestPracticeId": 2519,
+          "attribute": "This nav does not have a unique accessible name as required when two or more nav elements are present",
+          "attributeDetail": "This nav does not have a unique accessible name as required when two or more nav elements are present",
+          "element": "<nav class=\"d-none d-lg-flex text-white navbar navbar-expand-lg navbar-main\"><div id=\"navbar-main\" c ... wn\" data-prefix=\"far\" focusable=\"false\" aria-hidden=\"true\" class=\"svg-inline--fa fa-chevron-down fa-",
+          "testResult": 0,
+          "path": "body>header:nth-of-type(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[class=\"d-none d-lg-flex text-white navbar navbar-expand-lg navbar-main\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 532,
+          "bestPracticeId": 2519,
+          "attribute": "This aside does not have an accessible name as required when two or more aside elements are present",
+          "attributeDetail": "This aside does not have an accessible name as required when two or more aside elements are present",
+          "element": "<aside class=\"lanl-slider overflow-hidden bg-primary-gradient\"><div class=\"section-header container  ... div><div class=\"card-body p-4\"><h4 class=\"card-title truncate-overflow mb-3\">Arctic heating 4 times ",
+          "testResult": 0,
+          "path": "body>main:nth-of-type(1)>*:nth-child(6)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "aside[class=\"lanl-slider overflow-hidden bg-primary-gradient\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 532,
+          "bestPracticeId": 2519,
+          "attribute": "This aside does not have an accessible name as required when two or more aside elements are present",
+          "attributeDetail": "This aside does not have an accessible name as required when two or more aside elements are present",
+          "element": "<aside class=\"more-in-this-issue lanl-slider overflow-hidden bg-background-accent\"><div class=\"secti ... .6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z\" fill=\"currentColor\"></path></svg></span></a></div></di",
+          "testResult": 0,
+          "path": "body>main:nth-of-type(1)>*:nth-child(8)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "aside[class=\"more-in-this-issue lanl-slider overflow-hidden bg-background-accent\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 533,
+          "bestPracticeId": 2519,
+          "attribute": "This nav does not have an accessible name as required when two or more nav elements are present",
+          "attributeDetail": "This nav does not have an accessible name as required when two or more nav elements are present",
+          "element": "<nav class=\"d-none d-lg-flex pb-0 text-white navbar navbar-main navbar-expand-lg\"><div id=\"navbar-to ... brary//index.php\">Research Library</a></li></ul></div></div></li></ul></div></div></div></div></nav>",
+          "testResult": 0,
+          "path": "body>header:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[class=\"d-none d-lg-flex pb-0 text-white navbar navbar-main navbar-expand-lg\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 533,
+          "bestPracticeId": 2519,
+          "attribute": "This nav does not have an accessible name as required when two or more nav elements are present",
+          "attributeDetail": "This nav does not have an accessible name as required when two or more nav elements are present",
+          "element": "<nav class=\"d-none d-lg-flex text-white navbar navbar-expand-lg navbar-main\"><div id=\"navbar-main\" c ... wn\" data-prefix=\"far\" focusable=\"false\" aria-hidden=\"true\" class=\"svg-inline--fa fa-chevron-down fa-",
+          "testResult": 0,
+          "path": "body>header:nth-of-type(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[class=\"d-none d-lg-flex text-white navbar navbar-expand-lg navbar-main\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 1066,
+          "bestPracticeId": 1626,
+          "attribute": "This element has one or more aria attributes which are not valid.",
+          "attributeDetail": "This LI has one or more aria attributes which are not valid.",
+          "element": "<li style=\"width: 246px; margin-right: 16px;\" role=\"group\" class=\"glide__slide mb-4 card glide__slid ... 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z\" fill=\"currentColor\"></path></svg></span></a></div></div></li>",
+          "testResult": 0,
+          "path": "body>main:nth-of-type(1)>*:nth-child(6)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "li[aria-label=\"1 of 7\"][aria-roledescription=\"slide\"][class=\"glide__slide mb-4 card glide__slide--active\"][role=\"group\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 1066,
+          "bestPracticeId": 1626,
+          "attribute": "This element has one or more aria attributes which are not valid.",
+          "attributeDetail": "This LI has one or more aria attributes which are not valid.",
+          "element": "<li style=\"width: 246px; margin-left: 16px; margin-right: 16px;\" role=\"group\" class=\"glide__slide mb ... 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z\" fill=\"currentColor\"></path></svg></span></a></div></div></li>",
+          "testResult": 0,
+          "path": "body>main:nth-of-type(1)>*:nth-child(6)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "li[aria-label=\"2 of 7\"][aria-roledescription=\"slide\"][class=\"glide__slide mb-4 card\"][role=\"group\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 1066,
+          "bestPracticeId": 1626,
+          "attribute": "This element has one or more aria attributes which are not valid.",
+          "attributeDetail": "This LI has one or more aria attributes which are not valid.",
+          "element": "<li style=\"width: 246px; margin-left: 16px; margin-right: 16px;\" role=\"group\" class=\"glide__slide mb ... 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z\" fill=\"currentColor\"></path></svg></span></a></div></div></li>",
+          "testResult": 0,
+          "path": "body>main:nth-of-type(1)>*:nth-child(6)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "li[aria-label=\"3 of 7\"][aria-roledescription=\"slide\"][class=\"glide__slide mb-4 card\"][role=\"group\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 1066,
+          "bestPracticeId": 1626,
+          "attribute": "This element has one or more aria attributes which are not valid.",
+          "attributeDetail": "This LI has one or more aria attributes which are not valid.",
+          "element": "<li style=\"width: 246px; margin-left: 16px; margin-right: 16px;\" role=\"group\" class=\"glide__slide mb ... 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z\" fill=\"currentColor\"></path></svg></span></a></div></div></li>",
+          "testResult": 0,
+          "path": "body>main:nth-of-type(1)>*:nth-child(6)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "li[aria-label=\"4 of 7\"][aria-roledescription=\"slide\"][class=\"glide__slide mb-4 card\"][role=\"group\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 1066,
+          "bestPracticeId": 1626,
+          "attribute": "This element has one or more aria attributes which are not valid.",
+          "attributeDetail": "This LI has one or more aria attributes which are not valid.",
+          "element": "<li style=\"width: 246px; margin-left: 16px; margin-right: 16px;\" role=\"group\" class=\"glide__slide mb ... 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z\" fill=\"currentColor\"></path></svg></span></a></div></div></li>",
+          "testResult": 0,
+          "path": "body>main:nth-of-type(1)>*:nth-child(6)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(5)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "li[aria-label=\"5 of 7\"][aria-roledescription=\"slide\"][class=\"glide__slide mb-4 card\"][role=\"group\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 1066,
+          "bestPracticeId": 1626,
+          "attribute": "This element has one or more aria attributes which are not valid.",
+          "attributeDetail": "This LI has one or more aria attributes which are not valid.",
+          "element": "<li style=\"width: 246px; margin-left: 16px; margin-right: 16px;\" role=\"group\" class=\"glide__slide mb ... 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z\" fill=\"currentColor\"></path></svg></span></a></div></div></li>",
+          "testResult": 0,
+          "path": "body>main:nth-of-type(1)>*:nth-child(6)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(6)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "li[aria-label=\"6 of 7\"][aria-roledescription=\"slide\"][class=\"glide__slide mb-4 card\"][role=\"group\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 1066,
+          "bestPracticeId": 1626,
+          "attribute": "This element has one or more aria attributes which are not valid.",
+          "attributeDetail": "This LI has one or more aria attributes which are not valid.",
+          "element": "<li style=\"width: 246px; margin-left: 16px;\" role=\"group\" class=\"glide__slide mb-4 card\" aria-rolede ... 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z\" fill=\"currentColor\"></path></svg></span></a></div></div></li>",
+          "testResult": 0,
+          "path": "body>main:nth-of-type(1)>*:nth-child(6)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(7)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "li[aria-label=\"7 of 7\"][aria-roledescription=\"slide\"][class=\"glide__slide mb-4 card\"][role=\"group\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 1066,
+          "bestPracticeId": 1626,
+          "attribute": "This element has one or more aria attributes which are not valid.",
+          "attributeDetail": "This LI has one or more aria attributes which are not valid.",
+          "element": "<li style=\"width: 246px; margin-right: 16px;\" role=\"group\" class=\"glide__slide mb-4 card shadow empl ... 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z\" fill=\"currentColor\"></path></svg></span></a></div></div></li>",
+          "testResult": 0,
+          "path": "body>main:nth-of-type(1)>*:nth-child(8)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "li[aria-label=\"1 of 7\"][aria-roledescription=\"slide\"][class=\"glide__slide mb-4 card shadow employee-card glide__slide--active\"][role=\"group\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 1066,
+          "bestPracticeId": 1626,
+          "attribute": "This element has one or more aria attributes which are not valid.",
+          "attributeDetail": "This LI has one or more aria attributes which are not valid.",
+          "element": "<li style=\"width: 246px; margin-left: 16px; margin-right: 16px;\" role=\"group\" class=\"glide__slide mb ... 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z\" fill=\"currentColor\"></path></svg></span></a></div></div></li>",
+          "testResult": 0,
+          "path": "body>main:nth-of-type(1)>*:nth-child(8)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "li[aria-label=\"2 of 7\"][aria-roledescription=\"slide\"][class=\"glide__slide mb-4 card shadow employee-card\"][role=\"group\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 1066,
+          "bestPracticeId": 1626,
+          "attribute": "This element has one or more aria attributes which are not valid.",
+          "attributeDetail": "This LI has one or more aria attributes which are not valid.",
+          "element": "<li style=\"width: 246px; margin-left: 16px; margin-right: 16px;\" role=\"group\" class=\"glide__slide mb ... 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z\" fill=\"currentColor\"></path></svg></span></a></div></div></li>",
+          "testResult": 0,
+          "path": "body>main:nth-of-type(1)>*:nth-child(8)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "li[aria-label=\"3 of 7\"][aria-roledescription=\"slide\"][class=\"glide__slide mb-4 card shadow employee-card\"][role=\"group\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 1066,
+          "bestPracticeId": 1626,
+          "attribute": "This element has one or more aria attributes which are not valid.",
+          "attributeDetail": "This LI has one or more aria attributes which are not valid.",
+          "element": "<li style=\"width: 246px; margin-left: 16px; margin-right: 16px;\" role=\"group\" class=\"glide__slide mb ... 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z\" fill=\"currentColor\"></path></svg></span></a></div></div></li>",
+          "testResult": 0,
+          "path": "body>main:nth-of-type(1)>*:nth-child(8)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "li[aria-label=\"4 of 7\"][aria-roledescription=\"slide\"][class=\"glide__slide mb-4 card shadow employee-card\"][role=\"group\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 1066,
+          "bestPracticeId": 1626,
+          "attribute": "This element has one or more aria attributes which are not valid.",
+          "attributeDetail": "This LI has one or more aria attributes which are not valid.",
+          "element": "<li style=\"width: 246px; margin-left: 16px; margin-right: 16px;\" role=\"group\" class=\"glide__slide mb ... 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z\" fill=\"currentColor\"></path></svg></span></a></div></div></li>",
+          "testResult": 0,
+          "path": "body>main:nth-of-type(1)>*:nth-child(8)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(5)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "li[aria-label=\"5 of 7\"][aria-roledescription=\"slide\"][class=\"glide__slide mb-4 card shadow employee-card\"][role=\"group\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 1066,
+          "bestPracticeId": 1626,
+          "attribute": "This element has one or more aria attributes which are not valid.",
+          "attributeDetail": "This LI has one or more aria attributes which are not valid.",
+          "element": "<li style=\"width: 246px; margin-left: 16px; margin-right: 16px;\" role=\"group\" class=\"glide__slide mb ... 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z\" fill=\"currentColor\"></path></svg></span></a></div></div></li>",
+          "testResult": 0,
+          "path": "body>main:nth-of-type(1)>*:nth-child(8)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(6)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "li[aria-label=\"6 of 7\"][aria-roledescription=\"slide\"][class=\"glide__slide mb-4 card shadow employee-card\"][role=\"group\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 1066,
+          "bestPracticeId": 1626,
+          "attribute": "This element has one or more aria attributes which are not valid.",
+          "attributeDetail": "This LI has one or more aria attributes which are not valid.",
+          "element": "<li style=\"width: 246px; margin-left: 16px;\" role=\"group\" class=\"glide__slide mb-4 card shadow emplo ... 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z\" fill=\"currentColor\"></path></svg></span></a></div></div></li>",
+          "testResult": 0,
+          "path": "body>main:nth-of-type(1)>*:nth-child(8)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(7)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "li[aria-label=\"7 of 7\"][aria-roledescription=\"slide\"][class=\"glide__slide mb-4 card shadow employee-card\"][role=\"group\"]",
+            "attNo": 5
+          }
+        }
+      ]
+    }
+  ],
+  "timeStamp": "4jil2",
+  "startTime": "2022-07-27T14:30:10",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "continuum",
+      0
+    ]
+  ],
+  "logCount": 1,
+  "logSize": 7,
+  "errorLogCount": 0,
+  "errorLogSize": 0,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-27T14:30:19",
+  "elapsedSeconds": 9
+}

@@ -1,0 +1,510 @@
+{
+  "id": "4jil2-ice",
+  "host": {
+    "id": "ice",
+    "which": "https://ice.gov/",
+    "what": "Immigration and Customs Enforcement"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-27T14:41:53"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-27T14:42:02"
+    }
+  ],
+  "script": {
+    "id": "continuum",
+    "what": "Continuum",
+    "strict": true,
+    "timeLimit": 30,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://ice.gov/",
+        "what": "Immigration and Customs Enforcement"
+      },
+      {
+        "type": "test",
+        "which": "continuum",
+        "what": "Continuum"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://ice.gov/",
+      "what": "Immigration and Customs Enforcement",
+      "result": "https://www.ice.gov/"
+    },
+    {
+      "type": "test",
+      "which": "continuum",
+      "what": "Level Access Continuum, community edition",
+      "url": "https://www.ice.gov/",
+      "result": [
+        {
+          "engineTestId": 38,
+          "bestPracticeId": 1626,
+          "attribute": "This element should not have an aria-pressed attribute",
+          "attributeDetail": "This SPAN with a role of 'null' should not have an aria-pressed attribute",
+          "element": "<span tabindex=\"0\" class=\"share-link\" aria-pressed=\"false\"><button type=\"button\">‌<i class=\"fas fa-share-alt\"></i><span class=\"visually-hidden\">Share</span></button></span>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "span[aria-pressed=\"false\"][class=\"share-link\"][tabindex=\"0\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 89,
+          "bestPracticeId": 362,
+          "attribute": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<img tabindex=\"-1\" src=\"https://www.ice.gov/doclib/images/icons/fieldLegalOps.svg\" data-entity-uuid=\"\" data-entity-type=\"\" class=\"boxes-image\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(5)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(8)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[class=\"boxes-image\"][data-entity-type=\"\"][data-entity-uuid=\"\"][src=\"https://www.ice.gov/doclib/images/icons/fieldLegalOps.svg\"][tabindex=\"-1\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This DIV has an id attribute of 'logo', which is not unique in the same DOM",
+          "element": "<div id=\"logo\" class=\"usa-logo site-logo\"><em class=\"usa-logo__text\"><a aria-label=\"Home\" title=\"Hom ... g alt=\"Home\" src=\"/profiles/iced8_gov/themes/uswds_iced8_gov_theme/img/ice_logo.png\"></a></em></div>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[class=\"usa-logo site-logo\"][id=\"logo\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This IMG has an id attribute of 'logo', which is not unique in the same DOM",
+          "element": "<img src=\"/profiles/iced8_gov/themes/uswds_iced8_gov_theme/img/ice_logo.png\" alt=\" Logo\" id=\"logo\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(6)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "img[id=\"logo\"][alt=\" Logo\"][src=\"/profiles/iced8_gov/themes/uswds_iced8_gov_theme/img/ice_logo.png\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This INPUT has an id attribute of 'extended-search-field-small', which is not unique in the same DOM",
+          "element": "<input autocomplete=\"off\" placeholder=\"Search\" title=\"Enter the terms you wish to search for.\" data- ... \"query\" type=\"search\" id=\"extended-search-field-small\" class=\"usa-input usagov-search-autocomplete\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(3)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "input[class=\"usa-input usagov-search-autocomplete\"][id=\"extended-search-field-small\"][type=\"search\"][name=\"query\"][data-lang=\"en\"][title=\"Enter the terms you wish to search for.\"][placeholder=\"Search\"][autocomplete=\"off\"]",
+            "attNo": 8
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This INPUT has an id attribute of 'extended-search-field-small', which is not unique in the same DOM",
+          "element": "<input autocomplete=\"off\" data-lang=\"en\" title=\"Enter the terms you wish to search for.\" name=\"query\" type=\"search\" id=\"extended-search-field-small\" class=\"usa-input usagov-search-autocomplete\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(6)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(8)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(3)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "input[class=\"usa-input usagov-search-autocomplete\"][id=\"extended-search-field-small\"][type=\"search\"][name=\"query\"][title=\"Enter the terms you wish to search for.\"][data-lang=\"en\"][autocomplete=\"off\"]",
+            "attNo": 7
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This MAIN has an id attribute of 'main-content', which is not unique in the same DOM",
+          "element": "<main id=\"main-content\" role=\"main\" class=\"main-content usa-layout-docs usa-section \"><a class=\"surv ... slick-index=\"0\" class=\"slick__slide slide slide--0 slick-slide slick-current slick-active\"><div clas",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(5)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "main[class=\"main-content usa-layout-docs usa-section \"][role=\"main\"][id=\"main-content\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This A has an id attribute of 'main-content', which is not unique in the same DOM",
+          "element": "<a class=\"survey-processed\" tabindex=\"-1\" id=\"main-content\"></a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(5)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "a[id=\"main-content\"][tabindex=\"-1\"][class=\"survey-processed\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This A has an id attribute of 'Facility Inspections', which is not unique in the same DOM",
+          "element": "<a class=\"survey-processed\" data-drupal-link-system-path=\"node/54854\" id=\"Facility Inspections\" href=\"/detain/facility-inspections\">Facility Inspections</a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(6)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"/detain/facility-inspections\"][id=\"Facility Inspections\"][data-drupal-link-system-path=\"node/54854\"][class=\"survey-processed\"]",
+            "attNo": 4
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This A has an id attribute of 'Facility Inspections', which is not unique in the same DOM",
+          "element": "<a class=\"survey-processed\" data-drupal-link-system-path=\"node/54854\" id=\"Facility Inspections\" href=\"/detain/facility-inspections\">Facility Inspections</a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(6)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(7)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(4)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"/detain/facility-inspections\"][id=\"Facility Inspections\"][data-drupal-link-system-path=\"node/54854\"][class=\"survey-processed\"]",
+            "attNo": 4
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This A has an id attribute of 'Statements', which is not unique in the same DOM",
+          "element": "<a class=\"survey-processed\" data-drupal-link-system-path=\"node/57434\" id=\"Statements\" href=\"/statements\">Statements</a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(6)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(10)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"/statements\"][id=\"Statements\"][data-drupal-link-system-path=\"node/57434\"][class=\"survey-processed\"]",
+            "attNo": 4
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This LI has an id attribute of 'Statements', which is not unique in the same DOM",
+          "element": "<li id=\"Statements\" class=\"menu-item\"><a class=\"survey-processed\" data-drupal-link-system-path=\"node/57434\" id=\"Statements\" href=\"/statements\">Statements</a></li>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(6)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(7)>*:nth-child(2)>*:nth-child(4)>*:nth-child(2)>*:nth-child(6)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "li[class=\"menu-item\"][id=\"Statements\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This A has an id attribute of 'Statements', which is not unique in the same DOM",
+          "element": "<a class=\"survey-processed\" data-drupal-link-system-path=\"node/57434\" id=\"Statements\" href=\"/statements\">Statements</a>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(6)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(7)>*:nth-child(2)>*:nth-child(4)>*:nth-child(2)>*:nth-child(6)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"/statements\"][id=\"Statements\"][data-drupal-link-system-path=\"node/57434\"][class=\"survey-processed\"]",
+            "attNo": 4
+          }
+        },
+        {
+          "engineTestId": 249,
+          "bestPracticeId": 363,
+          "attribute": "This object element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This object element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<object type=\"image/svg+xml\" tabindex=\"-1\" data=\"/profiles/iced8_gov/themes/uswds_iced8_gov_theme/img/contact/hsiTipline.svg\" class=\"boxes-image\">iceTipline</object>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(5)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(8)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "object[class=\"boxes-image\"][data=\"/profiles/iced8_gov/themes/uswds_iced8_gov_theme/img/contact/hsiTipline.svg\"][tabindex=\"-1\"][type=\"image/svg+xml\"]",
+            "attNo": 4
+          }
+        },
+        {
+          "engineTestId": 249,
+          "bestPracticeId": 363,
+          "attribute": "This object element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This object element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<object type=\"image/svg+xml\" tabindex=\"-1\" data=\"/profiles/iced8_gov/themes/uswds_iced8_gov_theme/img/contact/eroCustodyMgmt.svg\" class=\"boxes-image\">eroCustodyMgmt</object>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(5)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(8)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "object[class=\"boxes-image\"][data=\"/profiles/iced8_gov/themes/uswds_iced8_gov_theme/img/contact/eroCustodyMgmt.svg\"][tabindex=\"-1\"][type=\"image/svg+xml\"]",
+            "attNo": 4
+          }
+        },
+        {
+          "engineTestId": 249,
+          "bestPracticeId": 363,
+          "attribute": "This object element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This object element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<object type=\"image/svg+xml\" tabindex=\"-1\" data=\"/profiles/iced8_gov/themes/uswds_iced8_gov_theme/img/contact/hsiSEVP.svg\" class=\"boxes-image\">hsiSEVP</object>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(5)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(8)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "object[class=\"boxes-image\"][data=\"/profiles/iced8_gov/themes/uswds_iced8_gov_theme/img/contact/hsiSEVP.svg\"][tabindex=\"-1\"][type=\"image/svg+xml\"]",
+            "attNo": 4
+          }
+        },
+        {
+          "engineTestId": 249,
+          "bestPracticeId": 363,
+          "attribute": "This object element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This object element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<object type=\"image/svg+xml\" tabindex=\"-1\" data=\"/profiles/iced8_gov/themes/uswds_iced8_gov_theme/img/contact/iceImmigration.svg\" class=\"boxes-image\">foas</object>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(5)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(8)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "object[class=\"boxes-image\"][data=\"/profiles/iced8_gov/themes/uswds_iced8_gov_theme/img/contact/iceImmigration.svg\"][tabindex=\"-1\"][type=\"image/svg+xml\"]",
+            "attNo": 4
+          }
+        },
+        {
+          "engineTestId": 249,
+          "bestPracticeId": 363,
+          "attribute": "This object element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This object element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<object type=\"image/svg+xml\" tabindex=\"-1\" data=\"/profiles/iced8_gov/themes/uswds_iced8_gov_theme/img/contact/iceCareers.svg\" class=\"boxes-image\">iceCareers</object>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(5)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(8)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "object[class=\"boxes-image\"][data=\"/profiles/iced8_gov/themes/uswds_iced8_gov_theme/img/contact/iceCareers.svg\"][tabindex=\"-1\"][type=\"image/svg+xml\"]",
+            "attNo": 4
+          }
+        },
+        {
+          "engineTestId": 249,
+          "bestPracticeId": 363,
+          "attribute": "This object element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This object element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<object type=\"image/svg+xml\" tabindex=\"-1\" data=\"/profiles/iced8_gov/themes/uswds_iced8_gov_theme/img/contact/iceLESC.svg\" class=\"boxes-image\">ICEcasereview</object>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(5)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(8)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "object[class=\"boxes-image\"][data=\"/profiles/iced8_gov/themes/uswds_iced8_gov_theme/img/contact/iceLESC.svg\"][tabindex=\"-1\"][type=\"image/svg+xml\"]",
+            "attNo": 4
+          }
+        },
+        {
+          "engineTestId": 531,
+          "bestPracticeId": 2519,
+          "attribute": "This nav does not have a unique accessible name as required when two or more nav elements are present",
+          "attributeDetail": "This nav does not have a unique accessible name as required when two or more nav elements are present",
+          "element": "<nav data-mobile-collapse=\"0\" data-action=\"clicked\" data-alwayshowsubmenu=\"\" data-autoarrow=\"\" data- ... cessed\"><h4>History</h4></a></li><li data-target=\"\" data-alignsub=\"\" data-caption=\"\" data-icon=\"\" da",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(3)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[class=\"main navbar navbar-default navbar-we-mega-menu mobile-collapse click-action\"][data-menu-name=\"main\"][data-block-theme=\"uswds_iced8_gov_theme\"][data-style=\"Default\"][data-animation=\"None\"][data-delay=\"\"][data-duration=\"\"][data-autoarrow=\"\"][data-alwayshowsubmenu=\"\"][data-action=\"clicked\"][data-mobile-collapse=\"0\"]",
+            "attNo": 11
+          }
+        },
+        {
+          "engineTestId": 531,
+          "bestPracticeId": 2519,
+          "attribute": "This nav does not have a unique accessible name as required when two or more nav elements are present",
+          "attributeDetail": "This nav does not have a unique accessible name as required when two or more nav elements are present",
+          "element": "<nav class=\"localfooter-col collapsible collapsed grid-col-12 tablet:grid-col-4\"><h3>Address</h3><ul ...  class=\"survey-processed\" href=\"tel:1-866-347-2423\">1-866-DHS-2-ICE</a></span></div></li></ul></nav>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(6)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[class=\"localfooter-col collapsible collapsed grid-col-12 tablet:grid-col-4\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 531,
+          "bestPracticeId": 2519,
+          "attribute": "This nav does not have a unique accessible name as required when two or more nav elements are present",
+          "attributeDetail": "This nav does not have a unique accessible name as required when two or more nav elements are present",
+          "element": "<nav class=\"localfooter-col collapsible collapsed grid-col-12 tablet:grid-col-4\"><h3>Related Informa ... rtunities</a></li><li><a class=\"survey-processed\" href=\"/newsroom\">News Releases</a></li></ul></nav>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(6)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[class=\"localfooter-col collapsible collapsed grid-col-12 tablet:grid-col-4\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 531,
+          "bestPracticeId": 2519,
+          "attribute": "This nav does not have a unique accessible name as required when two or more nav elements are present",
+          "attributeDetail": "This nav does not have a unique accessible name as required when two or more nav elements are present",
+          "element": "<nav class=\"localfooter-col collapsible collapsed grid-col-12 tablet:grid-col-4\"><h3>Contact Us</h3> ... ></li><li><a class=\"survey-processed\" href=\"/leadership/orap/SBI\">Small Business</a></li></ul></nav>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(6)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[class=\"localfooter-col collapsible collapsed grid-col-12 tablet:grid-col-4\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 533,
+          "bestPracticeId": 2519,
+          "attribute": "This nav does not have an accessible name as required when two or more nav elements are present",
+          "attributeDetail": "This nav does not have an accessible name as required when two or more nav elements are present",
+          "element": "<nav data-mobile-collapse=\"0\" data-action=\"clicked\" data-alwayshowsubmenu=\"\" data-autoarrow=\"\" data- ... cessed\"><h4>History</h4></a></li><li data-target=\"\" data-alignsub=\"\" data-caption=\"\" data-icon=\"\" da",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(3)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[class=\"main navbar navbar-default navbar-we-mega-menu mobile-collapse click-action\"][data-menu-name=\"main\"][data-block-theme=\"uswds_iced8_gov_theme\"][data-style=\"Default\"][data-animation=\"None\"][data-delay=\"\"][data-duration=\"\"][data-autoarrow=\"\"][data-alwayshowsubmenu=\"\"][data-action=\"clicked\"][data-mobile-collapse=\"0\"]",
+            "attNo": 11
+          }
+        },
+        {
+          "engineTestId": 533,
+          "bestPracticeId": 2519,
+          "attribute": "This nav does not have an accessible name as required when two or more nav elements are present",
+          "attributeDetail": "This nav does not have an accessible name as required when two or more nav elements are present",
+          "element": "<nav class=\"localfooter-col collapsible collapsed grid-col-12 tablet:grid-col-4\"><h3>Address</h3><ul ...  class=\"survey-processed\" href=\"tel:1-866-347-2423\">1-866-DHS-2-ICE</a></span></div></li></ul></nav>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(6)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[class=\"localfooter-col collapsible collapsed grid-col-12 tablet:grid-col-4\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 533,
+          "bestPracticeId": 2519,
+          "attribute": "This nav does not have an accessible name as required when two or more nav elements are present",
+          "attributeDetail": "This nav does not have an accessible name as required when two or more nav elements are present",
+          "element": "<nav class=\"localfooter-col collapsible collapsed grid-col-12 tablet:grid-col-4\"><h3>Related Informa ... rtunities</a></li><li><a class=\"survey-processed\" href=\"/newsroom\">News Releases</a></li></ul></nav>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(6)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[class=\"localfooter-col collapsible collapsed grid-col-12 tablet:grid-col-4\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 533,
+          "bestPracticeId": 2519,
+          "attribute": "This nav does not have an accessible name as required when two or more nav elements are present",
+          "attributeDetail": "This nav does not have an accessible name as required when two or more nav elements are present",
+          "element": "<nav class=\"localfooter-col collapsible collapsed grid-col-12 tablet:grid-col-4\"><h3>Contact Us</h3> ... ></li><li><a class=\"survey-processed\" href=\"/leadership/orap/SBI\">Small Business</a></li></ul></nav>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(6)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[class=\"localfooter-col collapsible collapsed grid-col-12 tablet:grid-col-4\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 1010,
+          "bestPracticeId": 2519,
+          "attribute": "This element (role=region) does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This DIV (role=region) does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<div aria-live=\"polite\" role=\"region\" class=\"paragraph paragraph--type--slideshow paragraph--view-mo ... pe-text field--label-hidden field--item\"><h1>ICE Annual Report FY 2021</h1></div><div class=\"field f",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(5)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[class=\"paragraph paragraph--type--slideshow paragraph--view-mode--default\"][role=\"region\"][aria-live=\"polite\"]",
+            "attNo": 3
+          }
+        }
+      ]
+    }
+  ],
+  "timeStamp": "4jil2",
+  "startTime": "2022-07-27T14:41:53",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "continuum",
+      1
+    ]
+  ],
+  "logCount": 25,
+  "logSize": 687,
+  "errorLogCount": 5,
+  "errorLogSize": 493,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-27T14:42:02",
+  "elapsedSeconds": 8
+}

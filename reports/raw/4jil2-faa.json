@@ -1,0 +1,996 @@
+{
+  "id": "4jil2-faa",
+  "host": {
+    "id": "faa",
+    "which": "https://www.faa.gov/",
+    "what": "Federal Aviation Administration (FAA)"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-27T14:26:20"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-27T14:26:33"
+    }
+  ],
+  "script": {
+    "id": "continuum",
+    "what": "Continuum",
+    "strict": true,
+    "timeLimit": 30,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.faa.gov/",
+        "what": "Federal Aviation Administration (FAA)"
+      },
+      {
+        "type": "test",
+        "which": "continuum",
+        "what": "Continuum"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.faa.gov/",
+      "what": "Federal Aviation Administration (FAA)",
+      "result": "https://www.faa.gov/"
+    },
+    {
+      "type": "test",
+      "which": "continuum",
+      "what": "Level Access Continuum, community edition",
+      "url": "https://www.faa.gov/",
+      "result": [
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This NAV has an id attribute of 'block-secondarynavigation', which is not unique in the same DOM",
+          "element": "<nav class=\"block block-menu navigation menu--secondary-navigation\" id=\"block-secondarynavigation\" a ... a data-drupal-link-system-path=\"node/136\" class=\"nav-link\" href=\"/newsroom\">News</a></li></ul></nav>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[aria-labelledby=\"block-secondarynavigation-menu\"][id=\"block-secondarynavigation\"][class=\"block block-menu navigation menu--secondary-navigation\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This UL has an id attribute of 'block-secondarynavigation', which is not unique in the same DOM",
+          "element": "<ul class=\"clearfix nav d-flex flex-column flex-xl-row mx-4 mx-xl-0 pt-3 pt-xl-0\" block=\"block-secon ... tem\"><a data-drupal-link-system-path=\"node/136\" class=\"nav-link\" href=\"/newsroom\">News</a></li></ul>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "ul[id=\"block-secondarynavigation\"][block=\"block-secondarynavigation\"][class=\"clearfix nav d-flex flex-column flex-xl-row mx-4 mx-xl-0 pt-3 pt-xl-0\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This NAV has an id attribute of 'block-subnav-aircraft-1', which is not unique in the same DOM",
+          "element": "<nav class=\"block block-menu navigation menu--subnav--aircraft--1\" id=\"block-subnav-aircraft-1\" aria ... _certificates/vintage_experimental/\">Vintage &amp; Experimental Aircraft Program</a></li></ul></nav>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[aria-labelledby=\"block-subnav-aircraft-1-menu\"][id=\"block-subnav-aircraft-1\"][class=\"block block-menu navigation menu--subnav--aircraft--1\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This UL has an id attribute of 'block-subnav-aircraft-1', which is not unique in the same DOM",
+          "element": "<ul class=\"clearfix nav d-flex flex-column flex-xl-row\" block=\"block-subnav-aircraft-1\" id=\"block-su ... censes_certificates/vintage_experimental/\">Vintage &amp; Experimental Aircraft Program</a></li></ul>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "ul[id=\"block-subnav-aircraft-1\"][block=\"block-subnav-aircraft-1\"][class=\"clearfix nav d-flex flex-column flex-xl-row\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This NAV has an id attribute of 'block-subnav-aircraft-2', which is not unique in the same DOM",
+          "element": "<nav class=\"block block-menu navigation menu--subnav--aircraft--2\" id=\"block-subnav-aircraft-2\" aria ... _certificates/airline_certification/\">Air Carrier &amp; Air Agency Certification</a></li></ul></nav>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[aria-labelledby=\"block-subnav-aircraft-2-menu\"][id=\"block-subnav-aircraft-2\"][class=\"block block-menu navigation menu--subnav--aircraft--2\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This UL has an id attribute of 'block-subnav-aircraft-2', which is not unique in the same DOM",
+          "element": "<ul class=\"clearfix nav d-flex flex-column flex-xl-row\" block=\"block-subnav-aircraft-2\" id=\"block-su ... censes_certificates/airline_certification/\">Air Carrier &amp; Air Agency Certification</a></li></ul>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "ul[id=\"block-subnav-aircraft-2\"][block=\"block-subnav-aircraft-2\"][class=\"clearfix nav d-flex flex-column flex-xl-row\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This NAV has an id attribute of 'block-subnavairtraffic1', which is not unique in the same DOM",
+          "element": "<nav class=\"block block-menu navigation menu--subnav--air-traffic--1\" id=\"block-subnavairtraffic1\" a ... =\"nav-link\" href=\"https://www.faa.gov/air_traffic/nas/\">National Airspace System</a></li></ul></nav>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[aria-labelledby=\"block-subnavairtraffic1-menu\"][id=\"block-subnavairtraffic1\"][class=\"block block-menu navigation menu--subnav--air-traffic--1\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This UL has an id attribute of 'block-subnavairtraffic1', which is not unique in the same DOM",
+          "element": "<ul class=\"clearfix nav d-flex flex-column flex-xl-row\" block=\"block-subnavairtraffic1\" id=\"block-su ...  class=\"nav-link\" href=\"https://www.faa.gov/air_traffic/nas/\">National Airspace System</a></li></ul>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "ul[id=\"block-subnavairtraffic1\"][block=\"block-subnavairtraffic1\"][class=\"clearfix nav d-flex flex-column flex-xl-row\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This NAV has an id attribute of 'block-subnavairtraffic2', which is not unique in the same DOM",
+          "element": "<nav class=\"block block-menu navigation menu--subnav--air-traffic--2\" id=\"block-subnavairtraffic2\" a ... 100\"><a class=\"nav-link\" href=\"https://www.faa.gov/air_traffic/weather/\">Weather</a></li></ul></nav>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[aria-labelledby=\"block-subnavairtraffic2-menu\"][id=\"block-subnavairtraffic2\"][class=\"block block-menu navigation menu--subnav--air-traffic--2\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This UL has an id attribute of 'block-subnavairtraffic2', which is not unique in the same DOM",
+          "element": "<ul class=\"clearfix nav d-flex flex-column flex-xl-row\" block=\"block-subnavairtraffic2\" id=\"block-su ... mal w-100\"><a class=\"nav-link\" href=\"https://www.faa.gov/air_traffic/weather/\">Weather</a></li></ul>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "ul[id=\"block-subnavairtraffic2\"][block=\"block-subnavairtraffic2\"][class=\"clearfix nav d-flex flex-column flex-xl-row\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This NAV has an id attribute of 'block-subnav-airports-1', which is not unique in the same DOM",
+          "element": "<nav class=\"block block-menu navigation menu--subnav--airports--1\" id=\"block-subnav-airports-1\" aria ... https://www.faa.gov/airports/crrsaa/\">Airport Coronavirus Response Grant Program</a></li></ul></nav>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(3)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[aria-labelledby=\"block-subnav-airports-1-menu\"][id=\"block-subnav-airports-1\"][class=\"block block-menu navigation menu--subnav--airports--1\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This UL has an id attribute of 'block-subnav-airports-1', which is not unique in the same DOM",
+          "element": "<ul class=\"clearfix nav d-flex flex-column flex-xl-row\" block=\"block-subnav-airports-1\" id=\"block-su ... href=\"https://www.faa.gov/airports/crrsaa/\">Airport Coronavirus Response Grant Program</a></li></ul>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(3)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "ul[id=\"block-subnav-airports-1\"][block=\"block-subnav-airports-1\"][class=\"clearfix nav d-flex flex-column flex-xl-row\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This NAV has an id attribute of 'block-subnav-airports-2', which is not unique in the same DOM",
+          "element": "<nav class=\"block block-menu navigation menu--subnav--airports--2\" id=\"block-subnav-airports-2\" aria ... .faa.gov/airports/runway_safety/videos/\">Airport Safety Information Video Series</a></li></ul></nav>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(3)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[aria-labelledby=\"block-subnav-airports-2-menu\"][id=\"block-subnav-airports-2\"][class=\"block block-menu navigation menu--subnav--airports--2\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This UL has an id attribute of 'block-subnav-airports-2', which is not unique in the same DOM",
+          "element": "<ul class=\"clearfix nav d-flex flex-column flex-xl-row\" block=\"block-subnav-airports-2\" id=\"block-su ... ://www.faa.gov/airports/runway_safety/videos/\">Airport Safety Information Video Series</a></li></ul>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(3)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "ul[id=\"block-subnav-airports-2\"][block=\"block-subnav-airports-2\"][class=\"clearfix nav d-flex flex-column flex-xl-row\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This NAV has an id attribute of 'block-subnav-airmen-1', which is not unique in the same DOM",
+          "element": "<nav class=\"block block-menu navigation menu--subnav--airmen--1\" id=\"block-subnav-airmen-1\" aria-lab ... lass=\"nav-link\" href=\"https://www.faa.gov/pilots/medical/\">Medical Certification</a></li></ul></nav>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(4)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[aria-labelledby=\"block-subnav-airmen-1-menu\"][id=\"block-subnav-airmen-1\"][class=\"block block-menu navigation menu--subnav--airmen--1\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This UL has an id attribute of 'block-subnav-airmen-1', which is not unique in the same DOM",
+          "element": "<ul class=\"clearfix nav d-flex flex-column flex-xl-row\" block=\"block-subnav-airmen-1\" id=\"block-subn ... \"><a class=\"nav-link\" href=\"https://www.faa.gov/pilots/medical/\">Medical Certification</a></li></ul>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(4)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "ul[id=\"block-subnav-airmen-1\"][block=\"block-subnav-airmen-1\"][class=\"clearfix nav d-flex flex-column flex-xl-row\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This NAV has an id attribute of 'block-subnav-airmen-2', which is not unique in the same DOM",
+          "element": "<nav class=\"block block-menu navigation menu--subnav--airmen--2\" id=\"block-subnav-airmen-2\" aria-lab ... lass=\"nav-link\" href=\"https://www.faa.gov/pilots/rights/\">Pilot's Bill of Rights</a></li></ul></nav>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(4)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[aria-labelledby=\"block-subnav-airmen-2-menu\"][id=\"block-subnav-airmen-2\"][class=\"block block-menu navigation menu--subnav--airmen--2\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This UL has an id attribute of 'block-subnav-airmen-2', which is not unique in the same DOM",
+          "element": "<ul class=\"clearfix nav d-flex flex-column flex-xl-row\" block=\"block-subnav-airmen-2\" id=\"block-subn ... \"><a class=\"nav-link\" href=\"https://www.faa.gov/pilots/rights/\">Pilot's Bill of Rights</a></li></ul>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(4)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "ul[id=\"block-subnav-airmen-2\"][block=\"block-subnav-airmen-2\"][class=\"clearfix nav d-flex flex-column flex-xl-row\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This NAV has an id attribute of 'block-subnav-data-research-1', which is not unique in the same DOM",
+          "element": "<nav class=\"block block-menu navigation menu--subnav--data-research--1\" id=\"block-subnav-data-resear ... \"https://www.faa.gov/data_research/commercial_space_data/\">Commercial Space Data</a></li></ul></nav>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(5)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[aria-labelledby=\"block-subnav-data-research-1-menu\"][id=\"block-subnav-data-research-1\"][class=\"block block-menu navigation menu--subnav--data-research--1\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This UL has an id attribute of 'block-subnav-data-research-1', which is not unique in the same DOM",
+          "element": "<ul class=\"clearfix nav d-flex flex-column flex-xl-row\" block=\"block-subnav-data-research-1\" id=\"blo ...  href=\"https://www.faa.gov/data_research/commercial_space_data/\">Commercial Space Data</a></li></ul>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(5)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "ul[id=\"block-subnav-data-research-1\"][block=\"block-subnav-data-research-1\"][class=\"clearfix nav d-flex flex-column flex-xl-row\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This NAV has an id attribute of 'block-subnav-data-research-2', which is not unique in the same DOM",
+          "element": "<nav class=\"block block-menu navigation menu--subnav--data-research--2\" id=\"block-subnav-data-resear ... 100\"><a class=\"nav-link\" href=\"https://www.faa.gov/data_research/safety/\">Safety</a></li></ul></nav>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(5)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[aria-labelledby=\"block-subnav-data-research-2-menu\"][id=\"block-subnav-data-research-2\"][class=\"block block-menu navigation menu--subnav--data-research--2\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This UL has an id attribute of 'block-subnav-data-research-2', which is not unique in the same DOM",
+          "element": "<ul class=\"clearfix nav d-flex flex-column flex-xl-row\" block=\"block-subnav-data-research-2\" id=\"blo ... mal w-100\"><a class=\"nav-link\" href=\"https://www.faa.gov/data_research/safety/\">Safety</a></li></ul>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(5)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "ul[id=\"block-subnav-data-research-2\"][block=\"block-subnav-data-research-2\"][class=\"clearfix nav d-flex flex-column flex-xl-row\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This NAV has an id attribute of 'block-subnav-regulations-1', which is not unique in the same DOM",
+          "element": "<nav class=\"block block-menu navigation menu--subnav--regulations--1\" id=\"block-subnav-regulations-1 ... =\"https://www.faa.gov/regulations_policies/orders_notices/\">Orders &amp; Notices</a></li></ul></nav>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(6)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[aria-labelledby=\"block-subnav-regulations-1-menu\"][id=\"block-subnav-regulations-1\"][class=\"block block-menu navigation menu--subnav--regulations--1\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This UL has an id attribute of 'block-subnav-regulations-1', which is not unique in the same DOM",
+          "element": "<ul class=\"clearfix nav d-flex flex-column flex-xl-row\" block=\"block-subnav-regulations-1\" id=\"block ... \" href=\"https://www.faa.gov/regulations_policies/orders_notices/\">Orders &amp; Notices</a></li></ul>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(6)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "ul[id=\"block-subnav-regulations-1\"][block=\"block-subnav-regulations-1\"][class=\"clearfix nav d-flex flex-column flex-xl-row\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This NAV has an id attribute of 'block-subnav-regulations-2', which is not unique in the same DOM",
+          "element": "<nav class=\"block block-menu navigation menu--subnav--regulations--2\" id=\"block-subnav-regulations-2 ... k\" href=\"https://pilotweb.nas.faa.gov/PilotWeb/\">Notices to Air Missions (NOTAM)</a></li></ul></nav>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(6)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[aria-labelledby=\"block-subnav-regulations-2-menu\"][id=\"block-subnav-regulations-2\"][class=\"block block-menu navigation menu--subnav--regulations--2\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This UL has an id attribute of 'block-subnav-regulations-2', which is not unique in the same DOM",
+          "element": "<ul class=\"clearfix nav d-flex flex-column flex-xl-row\" block=\"block-subnav-regulations-2\" id=\"block ... av-link\" href=\"https://pilotweb.nas.faa.gov/PilotWeb/\">Notices to Air Missions (NOTAM)</a></li></ul>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(6)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "ul[id=\"block-subnav-regulations-2\"][block=\"block-subnav-regulations-2\"][class=\"clearfix nav d-flex flex-column flex-xl-row\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This NAV has an id attribute of 'block-subnav-space-1', which is not unique in the same DOM",
+          "element": "<nav class=\"block block-menu navigation menu--subnav--space--1\" id=\"block-subnav-space-1\" aria-label ... 1\" class=\"nav-link\" href=\"/space/human_spaceflight\">Commercial Human Spaceflight</a></li></ul></nav>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(7)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[aria-labelledby=\"block-subnav-space-1-menu\"][id=\"block-subnav-space-1\"][class=\"block block-menu navigation menu--subnav--space--1\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This UL has an id attribute of 'block-subnav-space-1', which is not unique in the same DOM",
+          "element": "<ul class=\"clearfix nav d-flex flex-column flex-xl-row\" block=\"block-subnav-space-1\" id=\"block-subna ... e/43911\" class=\"nav-link\" href=\"/space/human_spaceflight\">Commercial Human Spaceflight</a></li></ul>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(7)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "ul[id=\"block-subnav-space-1\"][block=\"block-subnav-space-1\"][class=\"clearfix nav d-flex flex-column flex-xl-row\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This NAV has an id attribute of 'block-subnav-space-2', which is not unique in the same DOM",
+          "element": "<nav class=\"block block-menu navigation menu--subnav--space--2\" id=\"block-subnav-space-2\" aria-label ... /www.faa.gov/space/streamlined_licensing_process/\">Streamlined Licensing Process</a></li></ul></nav>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(7)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[aria-labelledby=\"block-subnav-space-2-menu\"][id=\"block-subnav-space-2\"][class=\"block block-menu navigation menu--subnav--space--2\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This UL has an id attribute of 'block-subnav-space-2', which is not unique in the same DOM",
+          "element": "<ul class=\"clearfix nav d-flex flex-column flex-xl-row\" block=\"block-subnav-space-2\" id=\"block-subna ... ttps://www.faa.gov/space/streamlined_licensing_process/\">Streamlined Licensing Process</a></li></ul>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(7)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "ul[id=\"block-subnav-space-2\"][block=\"block-subnav-space-2\"][class=\"clearfix nav d-flex flex-column flex-xl-row\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This NAV has an id attribute of 'block-subnav-drones-1', which is not unique in the same DOM",
+          "element": "<nav class=\"block block-menu navigation menu--subnav--drones--1\" id=\"block-subnav-drones-1\" aria-lab ... s=\"nav-link\" href=\"https://www.faa.gov/uas/espanol/para_empezar/\">UAS en Espanol</a></li></ul></nav>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(8)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[aria-labelledby=\"block-subnav-drones-1-menu\"][id=\"block-subnav-drones-1\"][class=\"block block-menu navigation menu--subnav--drones--1\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This UL has an id attribute of 'block-subnav-drones-1', which is not unique in the same DOM",
+          "element": "<ul class=\"clearfix nav d-flex flex-column flex-xl-row\" block=\"block-subnav-drones-1\" id=\"block-subn ... a class=\"nav-link\" href=\"https://www.faa.gov/uas/espanol/para_empezar/\">UAS en Espanol</a></li></ul>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(8)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "ul[id=\"block-subnav-drones-1\"][block=\"block-subnav-drones-1\"][class=\"clearfix nav d-flex flex-column flex-xl-row\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This NAV has an id attribute of 'block-subnav-drones-2', which is not unique in the same DOM",
+          "element": "<nav class=\"block block-menu navigation menu--subnav--drones--2\" id=\"block-subnav-drones-2\" aria-lab ...  href=\"https://www.faa.gov/uas/research_development/\">Research &amp; Development</a></li></ul></nav>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(8)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[aria-labelledby=\"block-subnav-drones-2-menu\"][id=\"block-subnav-drones-2\"][class=\"block block-menu navigation menu--subnav--drones--2\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This UL has an id attribute of 'block-subnav-drones-2', which is not unique in the same DOM",
+          "element": "<ul class=\"clearfix nav d-flex flex-column flex-xl-row\" block=\"block-subnav-drones-2\" id=\"block-subn ... -link\" href=\"https://www.faa.gov/uas/research_development/\">Research &amp; Development</a></li></ul>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(8)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "ul[id=\"block-subnav-drones-2\"][block=\"block-subnav-drones-2\"][class=\"clearfix nav d-flex flex-column flex-xl-row\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This NAV has an id attribute of 'block-getimportantinfodata', which is not unique in the same DOM",
+          "element": "<nav class=\"block block-menu navigation menu--footer-get-important\" id=\"block-getimportantinfodata\"  ... rary/rgMakeModel.nsf/MainFrame?OpenFrameset\">Type Certificate Data Sheets (TCDS)</a></li></ul></nav>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(6)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[aria-labelledby=\"block-getimportantinfodata-menu\"][id=\"block-getimportantinfodata\"][class=\"block block-menu navigation menu--footer-get-important\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This UL has an id attribute of 'block-getimportantinfodata', which is not unique in the same DOM",
+          "element": "<ul class=\"clearfix nav d-flex flex-column flex-lg-row\" block=\"block-getimportantinfodata\" id=\"block ... ce_Library/rgMakeModel.nsf/MainFrame?OpenFrameset\">Type Certificate Data Sheets (TCDS)</a></li></ul>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(6)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "ul[id=\"block-getimportantinfodata\"][block=\"block-getimportantinfodata\"][class=\"clearfix nav d-flex flex-column flex-lg-row\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This NAV has an id attribute of 'block-reviewdocuments', which is not unique in the same DOM",
+          "element": "<nav class=\"block block-menu navigation menu--footer-review-documents\" id=\"block-reviewdocuments\" ar ... ://www.faa.gov/about/plans_reports/#performance\">Performance Reports &amp; Plans</a></li></ul></nav>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(6)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[aria-labelledby=\"block-reviewdocuments-menu\"][id=\"block-reviewdocuments\"][class=\"block block-menu navigation menu--footer-review-documents\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This UL has an id attribute of 'block-reviewdocuments', which is not unique in the same DOM",
+          "element": "<ul class=\"clearfix nav d-flex flex-column flex-lg-row\" block=\"block-reviewdocuments\" id=\"block-revi ... \"https://www.faa.gov/about/plans_reports/#performance\">Performance Reports &amp; Plans</a></li></ul>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(6)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "ul[id=\"block-reviewdocuments\"][block=\"block-reviewdocuments\"][class=\"clearfix nav d-flex flex-column flex-lg-row\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This NAV has an id attribute of 'block-learnaboutnextgen', which is not unique in the same DOM",
+          "element": "<nav class=\"block block-menu navigation menu--footer-nextgen\" id=\"block-learnaboutnextgen\" aria-labe ... link px-0\" href=\"/nextgen/reporting-benefits\">Performance Reporting and Benefits</a></li></ul></nav>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(6)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[aria-labelledby=\"block-learnaboutnextgen-menu\"][id=\"block-learnaboutnextgen\"][class=\"block block-menu navigation menu--footer-nextgen\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This UL has an id attribute of 'block-learnaboutnextgen', which is not unique in the same DOM",
+          "element": "<ul class=\"clearfix nav d-flex flex-column flex-lg-row\" block=\"block-learnaboutnextgen\" id=\"block-le ... =\"nav-link px-0\" href=\"/nextgen/reporting-benefits\">Performance Reporting and Benefits</a></li></ul>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(6)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "ul[id=\"block-learnaboutnextgen\"][block=\"block-learnaboutnextgen\"][class=\"clearfix nav d-flex flex-column flex-lg-row\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This NAV has an id attribute of 'block-visitotherfaasites', which is not unique in the same DOM",
+          "element": "<nav class=\"block block-menu navigation menu--footer-visit-other\" id=\"block-visitotherfaasites\" aria ... k-system-path=\"faq\" class=\"nav-link px-0\" href=\"/faq\">Frequently Asked Questions</a></li></ul></nav>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(6)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[aria-labelledby=\"block-visitotherfaasites-menu\"][id=\"block-visitotherfaasites\"][class=\"block block-menu navigation menu--footer-visit-other\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This UL has an id attribute of 'block-visitotherfaasites', which is not unique in the same DOM",
+          "element": "<ul class=\"clearfix nav d-flex flex-column flex-lg-row\" block=\"block-visitotherfaasites\" id=\"block-v ... al-link-system-path=\"faq\" class=\"nav-link px-0\" href=\"/faq\">Frequently Asked Questions</a></li></ul>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(6)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "ul[id=\"block-visitotherfaasites\"][block=\"block-visitotherfaasites\"][class=\"clearfix nav d-flex flex-column flex-lg-row\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This NAV has an id attribute of 'block-policiesrightslegal', which is not unique in the same DOM",
+          "element": "<nav class=\"block block-menu navigation menu--footer-policies\" id=\"block-policiesrightslegal\" aria-l ... ass=\"nav-link\" href=\"https://www.transportation.gov/web-standards\">Web Standards</a></li></ul></nav>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(6)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[aria-labelledby=\"block-policiesrightslegal-menu\"][id=\"block-policiesrightslegal\"][class=\"block block-menu navigation menu--footer-policies\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This UL has an id attribute of 'block-policiesrightslegal', which is not unique in the same DOM",
+          "element": "<ul class=\"clearfix nav d-flex flex-column flex-xl-row\" block=\"block-policiesrightslegal\" id=\"block- ... ><a class=\"nav-link\" href=\"https://www.transportation.gov/web-standards\">Web Standards</a></li></ul>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(6)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "ul[id=\"block-policiesrightslegal\"][block=\"block-policiesrightslegal\"][class=\"clearfix nav d-flex flex-column flex-xl-row\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 281,
+          "bestPracticeId": 1626,
+          "attribute": "The aria-expanded attribute is not allowed on this element",
+          "attributeDetail": "The aria-expanded attribute is not allowed on this DIV",
+          "element": "<div role=\"complementary\" data-toggle=\"collapse\" data-target=\"#collapseOne\" class=\"collapsed small r ... tton\"><span class=\"usa-banner-button-text\">Here's how you know</span></button></p></div></div></div>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[aria-controls=\"collapseOne\"][aria-expanded=\"false\"][class=\"collapsed small row\"][data-target=\"#collapseOne\"][data-toggle=\"collapse\"][role=\"complementary\"]",
+            "attNo": 6
+          }
+        },
+        {
+          "engineTestId": 531,
+          "bestPracticeId": 2519,
+          "attribute": "This nav does not have a unique accessible name as required when two or more nav elements are present",
+          "attributeDetail": "This nav does not have a unique accessible name as required when two or more nav elements are present",
+          "element": "<nav id=\"navbar-main\" class=\"navbar navbar-expand-xl\"><div class=\"row no-gutters mx-xl-n3\"><div clas ... \"></fieldset><input class=\"form-control\" value=\"form-8SWUVjelWtcKgugYieqIn7TKproxx9HdoNXzcQ-3dPI\" na",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[class=\"navbar navbar-expand-xl\"][id=\"navbar-main\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 531,
+          "bestPracticeId": 2519,
+          "attribute": "This nav does not have a unique accessible name as required when two or more nav elements are present",
+          "attributeDetail": "This nav does not have a unique accessible name as required when two or more nav elements are present",
+          "element": "<nav class=\"col-12 col-sm-6 col-xl pb-5 pb-lg-0 order-2\"><div class=\"region region-footer-top-second ... odel.nsf/MainFrame?OpenFrameset\">Type Certificate Data Sheets (TCDS)</a></li></ul></nav></div></nav>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(6)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[class=\"col-12 col-sm-6 col-xl pb-5 pb-lg-0 order-2\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 531,
+          "bestPracticeId": 2519,
+          "attribute": "This nav does not have a unique accessible name as required when two or more nav elements are present",
+          "attributeDetail": "This nav does not have a unique accessible name as required when two or more nav elements are present",
+          "element": "<nav class=\"col-12 col-sm-6 col-xl pb-5 pb-xl-0 order-3\"><div class=\"region region-footer-top-third\" ... ov/about/plans_reports/#performance\">Performance Reports &amp; Plans</a></li></ul></nav></div></nav>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(6)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[class=\"col-12 col-sm-6 col-xl pb-5 pb-xl-0 order-3\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 531,
+          "bestPracticeId": 2519,
+          "attribute": "This nav does not have a unique accessible name as required when two or more nav elements are present",
+          "attributeDetail": "This nav does not have a unique accessible name as required when two or more nav elements are present",
+          "element": "<nav class=\"col-12 col-sm-6 col-xl pb-5 pb-xl-0 order-4\"><div class=\"region region-footer-top-fourth ... ref=\"/nextgen/reporting-benefits\">Performance Reporting and Benefits</a></li></ul></nav></div></nav>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(6)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[class=\"col-12 col-sm-6 col-xl pb-5 pb-xl-0 order-4\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 531,
+          "bestPracticeId": 2519,
+          "attribute": "This nav does not have a unique accessible name as required when two or more nav elements are present",
+          "attributeDetail": "This nav does not have a unique accessible name as required when two or more nav elements are present",
+          "element": "<nav class=\"col-12 col-sm-6 col-xl pb-5 pb-xl-0 order-last\"><div class=\"region region-footer-top-fif ... h=\"faq\" class=\"nav-link px-0\" href=\"/faq\">Frequently Asked Questions</a></li></ul></nav></div></nav>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(6)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(5)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[class=\"col-12 col-sm-6 col-xl pb-5 pb-xl-0 order-last\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 531,
+          "bestPracticeId": 2519,
+          "attribute": "This nav does not have a unique accessible name as required when two or more nav elements are present",
+          "attributeDetail": "This nav does not have a unique accessible name as required when two or more nav elements are present",
+          "element": "<nav class=\"col-12 col-md-6 col-xl-8 site-footer__policies order-last order-md-first\"><div class=\"re ... k\" href=\"https://www.transportation.gov/web-standards\">Web Standards</a></li></ul></nav></div></nav>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(6)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[class=\"col-12 col-md-6 col-xl-8 site-footer__policies order-last order-md-first\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 531,
+          "bestPracticeId": 2519,
+          "attribute": "This nav does not have a unique accessible name as required when two or more nav elements are present",
+          "attributeDetail": "This nav does not have a unique accessible name as required when two or more nav elements are present",
+          "element": "<nav class=\"col-12 col-md-6 col-xl-4 d-flex py-4 py-md-0 order-first order-xl-last d-flex justify-co ... Medium</span><span class=\"fab fa-medium-m\"></span></a></li></ul></nav></div></div></div></div></nav>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(6)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[class=\"col-12 col-md-6 col-xl-4 d-flex py-4 py-md-0 order-first order-xl-last d-flex justify-content-xl-end\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 531,
+          "bestPracticeId": 2519,
+          "attribute": "This nav does not have a unique accessible name as required when two or more nav elements are present",
+          "attributeDetail": "This nav does not have a unique accessible name as required when two or more nav elements are present",
+          "element": "<nav class=\"footer-social menu--footer-nav\"><ul class=\"nav social-nav clearfix\"><li class=\"nav-item  ... aa\"><span class=\"sr-only\">DOT Medium</span><span class=\"fab fa-medium-m\"></span></a></li></ul></nav>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(6)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[class=\"footer-social menu--footer-nav\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 533,
+          "bestPracticeId": 2519,
+          "attribute": "This nav does not have an accessible name as required when two or more nav elements are present",
+          "attributeDetail": "This nav does not have an accessible name as required when two or more nav elements are present",
+          "element": "<nav id=\"navbar-main\" class=\"navbar navbar-expand-xl\"><div class=\"row no-gutters mx-xl-n3\"><div clas ... \"></fieldset><input class=\"form-control\" value=\"form-8SWUVjelWtcKgugYieqIn7TKproxx9HdoNXzcQ-3dPI\" na",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[class=\"navbar navbar-expand-xl\"][id=\"navbar-main\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 533,
+          "bestPracticeId": 2519,
+          "attribute": "This nav does not have an accessible name as required when two or more nav elements are present",
+          "attributeDetail": "This nav does not have an accessible name as required when two or more nav elements are present",
+          "element": "<nav class=\"col-12 col-sm-6 col-xl pb-5 pb-lg-0 order-2\"><div class=\"region region-footer-top-second ... odel.nsf/MainFrame?OpenFrameset\">Type Certificate Data Sheets (TCDS)</a></li></ul></nav></div></nav>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(6)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[class=\"col-12 col-sm-6 col-xl pb-5 pb-lg-0 order-2\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 533,
+          "bestPracticeId": 2519,
+          "attribute": "This nav does not have an accessible name as required when two or more nav elements are present",
+          "attributeDetail": "This nav does not have an accessible name as required when two or more nav elements are present",
+          "element": "<nav class=\"col-12 col-sm-6 col-xl pb-5 pb-xl-0 order-3\"><div class=\"region region-footer-top-third\" ... ov/about/plans_reports/#performance\">Performance Reports &amp; Plans</a></li></ul></nav></div></nav>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(6)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[class=\"col-12 col-sm-6 col-xl pb-5 pb-xl-0 order-3\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 533,
+          "bestPracticeId": 2519,
+          "attribute": "This nav does not have an accessible name as required when two or more nav elements are present",
+          "attributeDetail": "This nav does not have an accessible name as required when two or more nav elements are present",
+          "element": "<nav class=\"col-12 col-sm-6 col-xl pb-5 pb-xl-0 order-4\"><div class=\"region region-footer-top-fourth ... ref=\"/nextgen/reporting-benefits\">Performance Reporting and Benefits</a></li></ul></nav></div></nav>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(6)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[class=\"col-12 col-sm-6 col-xl pb-5 pb-xl-0 order-4\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 533,
+          "bestPracticeId": 2519,
+          "attribute": "This nav does not have an accessible name as required when two or more nav elements are present",
+          "attributeDetail": "This nav does not have an accessible name as required when two or more nav elements are present",
+          "element": "<nav class=\"col-12 col-sm-6 col-xl pb-5 pb-xl-0 order-last\"><div class=\"region region-footer-top-fif ... h=\"faq\" class=\"nav-link px-0\" href=\"/faq\">Frequently Asked Questions</a></li></ul></nav></div></nav>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(6)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(5)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[class=\"col-12 col-sm-6 col-xl pb-5 pb-xl-0 order-last\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 533,
+          "bestPracticeId": 2519,
+          "attribute": "This nav does not have an accessible name as required when two or more nav elements are present",
+          "attributeDetail": "This nav does not have an accessible name as required when two or more nav elements are present",
+          "element": "<nav class=\"col-12 col-md-6 col-xl-8 site-footer__policies order-last order-md-first\"><div class=\"re ... k\" href=\"https://www.transportation.gov/web-standards\">Web Standards</a></li></ul></nav></div></nav>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(6)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[class=\"col-12 col-md-6 col-xl-8 site-footer__policies order-last order-md-first\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 533,
+          "bestPracticeId": 2519,
+          "attribute": "This nav does not have an accessible name as required when two or more nav elements are present",
+          "attributeDetail": "This nav does not have an accessible name as required when two or more nav elements are present",
+          "element": "<nav class=\"col-12 col-md-6 col-xl-4 d-flex py-4 py-md-0 order-first order-xl-last d-flex justify-co ... Medium</span><span class=\"fab fa-medium-m\"></span></a></li></ul></nav></div></div></div></div></nav>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(6)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[class=\"col-12 col-md-6 col-xl-4 d-flex py-4 py-md-0 order-first order-xl-last d-flex justify-content-xl-end\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 533,
+          "bestPracticeId": 2519,
+          "attribute": "This nav does not have an accessible name as required when two or more nav elements are present",
+          "attributeDetail": "This nav does not have an accessible name as required when two or more nav elements are present",
+          "element": "<nav class=\"footer-social menu--footer-nav\"><ul class=\"nav social-nav clearfix\"><li class=\"nav-item  ... aa\"><span class=\"sr-only\">DOT Medium</span><span class=\"fab fa-medium-m\"></span></a></li></ul></nav>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(6)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[class=\"footer-social menu--footer-nav\"]",
+            "attNo": 1
+          }
+        }
+      ]
+    }
+  ],
+  "timeStamp": "4jil2",
+  "startTime": "2022-07-27T14:26:20",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "continuum",
+      0
+    ]
+  ],
+  "logCount": 7,
+  "logSize": 970,
+  "errorLogCount": 2,
+  "errorLogSize": 138,
+  "prohibitedCount": 2,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 2,
+  "endTime": "2022-07-27T14:26:33",
+  "elapsedSeconds": 13
+}

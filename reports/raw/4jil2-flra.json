@@ -1,0 +1,223 @@
+{
+  "id": "4jil2-flra",
+  "host": {
+    "id": "flra",
+    "which": "https://www.flra.gov/",
+    "what": "Federal Labor Relations Authority (FLRA)"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-27T14:27:54"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-27T14:27:59"
+    }
+  ],
+  "script": {
+    "id": "continuum",
+    "what": "Continuum",
+    "strict": true,
+    "timeLimit": 30,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.flra.gov/",
+        "what": "Federal Labor Relations Authority (FLRA)"
+      },
+      {
+        "type": "test",
+        "which": "continuum",
+        "what": "Continuum"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.flra.gov/",
+      "what": "Federal Labor Relations Authority (FLRA)",
+      "result": "https://www.flra.gov/"
+    },
+    {
+      "type": "test",
+      "which": "continuum",
+      "what": "Level Access Continuum, community edition",
+      "url": "https://www.flra.gov/",
+      "result": [
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This FORM has an id attribute of 'search-block-form', which is not unique in the same DOM",
+          "element": "<form method=\"get\" id=\"search-block-form\" action=\"/search\" accept-charset=\"UTF-8\"><div><div class=\"c ...  value=\"Search\" type=\"submit\" name=\"\" id=\"edit-submit\" class=\"form-submit\"></div></div></div></form>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "form[accept-charset=\"UTF-8\"][action=\"/search\"][id=\"search-block-form\"][method=\"get\"]",
+            "attNo": 4
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This FORM has an id attribute of 'search-block-form', which is not unique in the same DOM",
+          "element": "<form style=\"display: none;\" method=\"get\" id=\"search-block-form\" action=\"/search\" accept-charset=\"UT ...  value=\"Search\" type=\"submit\" name=\"\" id=\"edit-submit\" class=\"form-submit\"></div></div></div></form>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(4)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "form[accept-charset=\"UTF-8\"][action=\"/search\"][id=\"search-block-form\"][method=\"get\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This INPUT has an id attribute of 'edit-search-block-form--2', which is not unique in the same DOM",
+          "element": "<input value=\"\" type=\"search\" title=\"Enter the terms you wish to search for.\" size=\"15\" placeholder=\"Search\" name=\"keys\" maxlength=\"128\" id=\"edit-search-block-form--2\" class=\"form-text form-search\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "input[class=\"form-text form-search\"][id=\"edit-search-block-form--2\"][maxlength=\"128\"][name=\"keys\"][placeholder=\"Search\"][size=\"15\"][title=\"Enter the terms you wish to search for.\"][type=\"search\"][value=\"\"]",
+            "attNo": 9
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This INPUT has an id attribute of 'edit-search-block-form--2', which is not unique in the same DOM",
+          "element": "<input value=\"\" type=\"search\" title=\"Enter the terms you wish to search for.\" size=\"15\" placeholder=\"Search\" name=\"keys\" maxlength=\"128\" id=\"edit-search-block-form--2\" class=\"form-text form-search\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(4)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "input[class=\"form-text form-search\"][id=\"edit-search-block-form--2\"][maxlength=\"128\"][name=\"keys\"][placeholder=\"Search\"][size=\"15\"][title=\"Enter the terms you wish to search for.\"][type=\"search\"][value=\"\"]",
+            "attNo": 9
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This DIV has an id attribute of 'edit-actions', which is not unique in the same DOM",
+          "element": "<div id=\"edit-actions\" class=\"form-actions form-wrapper\"><input value=\"Search\" type=\"submit\" name=\"\" id=\"edit-submit\" class=\"form-submit\"></div>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[class=\"form-actions form-wrapper\"][id=\"edit-actions\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This DIV has an id attribute of 'edit-actions', which is not unique in the same DOM",
+          "element": "<div id=\"edit-actions\" class=\"form-actions form-wrapper\"><input value=\"Search\" type=\"submit\" name=\"\" id=\"edit-submit\" class=\"form-submit\"></div>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(4)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[class=\"form-actions form-wrapper\"][id=\"edit-actions\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This INPUT has an id attribute of 'edit-submit', which is not unique in the same DOM",
+          "element": "<input value=\"Search\" type=\"submit\" name=\"\" id=\"edit-submit\" class=\"form-submit\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "input[class=\"form-submit\"][id=\"edit-submit\"][name=\"\"][type=\"submit\"][value=\"Search\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This INPUT has an id attribute of 'edit-submit', which is not unique in the same DOM",
+          "element": "<input value=\"Search\" type=\"submit\" name=\"\" id=\"edit-submit\" class=\"form-submit\">",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(4)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "input[class=\"form-submit\"][id=\"edit-submit\"][name=\"\"][type=\"submit\"][value=\"Search\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 101,
+          "bestPracticeId": 429,
+          "attribute": "This element does not have a lang attribute",
+          "attributeDetail": "This HTML does not have a lang attribute",
+          "element": "<html class=\"js\"><head>\n  <meta charset=\"utf-8\">\n<meta content=\"Drupal 7 (http://drupal.org)\" name=\" ... cript type=\"text/javascript\"></script><script type=\"text/javascript\"></script><script type=\"text/jav",
+          "testResult": 0,
+          "path": "html",
+          "fixType": {
+            "fixType": 4,
+            "domSpec": false,
+            "helperText": "Enter the appropriate language value for the page.",
+            "fix": {
+              "lang": null
+            }
+          },
+          "fingerprint": {
+            "attNo": 0,
+            "css": "html",
+            "version": 2
+          }
+        }
+      ]
+    }
+  ],
+  "timeStamp": "4jil2",
+  "startTime": "2022-07-27T14:27:54",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "continuum",
+      0
+    ]
+  ],
+  "logCount": 1,
+  "logSize": 101,
+  "errorLogCount": 1,
+  "errorLogSize": 101,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-27T14:27:59",
+  "elapsedSeconds": 4
+}

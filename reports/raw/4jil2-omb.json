@@ -1,0 +1,153 @@
+{
+  "id": "4jil2-omb",
+  "host": {
+    "id": "omb",
+    "which": "https://www.whitehouse.gov/omb/",
+    "what": "Office of Management and Budget (OMB)"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-27T14:34:47"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-27T14:34:52"
+    }
+  ],
+  "script": {
+    "id": "continuum",
+    "what": "Continuum",
+    "strict": true,
+    "timeLimit": 30,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.whitehouse.gov/omb/",
+        "what": "Office of Management and Budget (OMB)"
+      },
+      {
+        "type": "test",
+        "which": "continuum",
+        "what": "Continuum"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.whitehouse.gov/omb/",
+      "what": "Office of Management and Budget (OMB)",
+      "result": "https://www.whitehouse.gov/omb/"
+    },
+    {
+      "type": "test",
+      "which": "continuum",
+      "what": "Level Access Continuum, community edition",
+      "url": "https://www.whitehouse.gov/omb/",
+      "result": [
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg xml:space=\"preserve\" style=\"enable-background:new 0 0 343 243;\" viewbox=\"0 0 343 243\" y=\"0px\" x ... \tc0,0.2-0.2,0.3-0.3,0.3h-9.1c-0.2,0-0.3-0.2-0.3-0.3v-3.2c0-0.2,0.1-0.2,0.2-0.3c0.2-0.2,0.4-0.7,0.4-1",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[id=\"wh-oval-90\"][version=\"1.1\"][x=\"0px\"][y=\"0px\"][viewbox=\"0 0 343 243\"]",
+            "attNo": 9
+          }
+        },
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg xml:space=\"preserve\" style=\"enable-background:new 0 0 593.1 471.2\" viewbox=\"0 0 593.1 471.2\" y= ... 24.8v-50L342.8,377.9z\" class=\"st0\"></path><path d=\"M435.4,468.1c-9.1,0-17.2-2.3-22.9-5.1l-3.8,5h-5.7",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(3)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[version=\"1.1\"][id=\"the-wh-logo-btca\"][x=\"0px\"][y=\"0px\"][viewbox=\"0 0 593.1 471.2\"]",
+            "attNo": 9
+          }
+        },
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg xml:space=\"preserve\" style=\"enable-background:new 0 0 1231 180;\" viewbox=\"0 0 1231 180\" y=\"0px\" ... .7l-26.2,6l45,121.5l45-119.3l-20.2-7.5V4.5h59.2v9.7l-22.5,7.5\n\t\t\tL1146.3,177z\"></path></g></g></svg>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(3)>*:nth-child(3)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(3)>*:nth-child(2)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[version=\"1.1\"][id=\"wh-gov-94\"][x=\"0px\"][y=\"0px\"][viewbox=\"0 0 1231 180\"]",
+            "attNo": 9
+          }
+        }
+      ]
+    }
+  ],
+  "timeStamp": "4jil2",
+  "startTime": "2022-07-27T14:34:47",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "continuum",
+      0
+    ]
+  ],
+  "logCount": 1,
+  "logSize": 46,
+  "errorLogCount": 0,
+  "errorLogSize": 0,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-27T14:34:52",
+  "elapsedSeconds": 4
+}

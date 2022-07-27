@@ -1,0 +1,721 @@
+{
+  "id": "4jil2-ars",
+  "host": {
+    "id": "ars",
+    "which": "https://www.ars.usda.gov/",
+    "what": "Agricultural Research Service"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-27T14:20:46"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-27T14:20:53"
+    }
+  ],
+  "script": {
+    "id": "continuum",
+    "what": "Continuum",
+    "strict": true,
+    "timeLimit": 30,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.ars.usda.gov/",
+        "what": "Agricultural Research Service"
+      },
+      {
+        "type": "test",
+        "which": "continuum",
+        "what": "Continuum"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.ars.usda.gov/",
+      "what": "Agricultural Research Service",
+      "result": "https://www.ars.usda.gov/"
+    },
+    {
+      "type": "test",
+      "which": "continuum",
+      "what": "Level Access Continuum, community edition",
+      "url": "https://www.ars.usda.gov/",
+      "result": [
+        {
+          "engineTestId": 89,
+          "bestPracticeId": 362,
+          "attribute": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This img element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<img id=\"ars-carousel-image\" src=\"/ARSUserFiles/00000000/images/PhotoCarousel/HeatStress.jpg\" class=\"img-responsive\">",
+          "testResult": 0,
+          "path": "body>main:nth-of-type(1)>*:nth-child(4)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide alternative text that describes the content conveyed by the image.",
+            "fix": {
+              "alt": null,
+              "aria-label": false,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "img[class=\"img-responsive\"][src=\"/ARSUserFiles/00000000/images/PhotoCarousel/HeatStress.jpg\"][id=\"ars-carousel-image\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This A has an id attribute of 'anch_1', which is not unique in the same DOM",
+          "element": "<a id=\"anch_1\" rel=\"home\" aria-label=\"The Agricultural Research Service Home Page\" title=\"Agricultural Research Service Home\" href=\"https://www.ars.usda.gov/\">Agricultural Research Service</a>",
+          "testResult": 0,
+          "path": "body>header:nth-of-type(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"https://www.ars.usda.gov/\"][title=\"Agricultural Research Service Home\"][aria-label=\"The Agricultural Research Service Home Page\"][rel=\"home\"][id=\"anch_1\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This A has an id attribute of 'anch_1', which is not unique in the same DOM",
+          "element": "<a id=\"anch_1\" rel=\"home\" aria-label=\"The U.S. Department of Agriculture Home Page\" title=\"U.S. DEPARTMENT OF AGRICULTURE Home\" href=\"https://www.usda.gov/\">U.S. DEPARTMENT OF AGRICULTURE</a>",
+          "testResult": 0,
+          "path": "body>header:nth-of-type(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"https://www.usda.gov/\"][title=\"U.S. DEPARTMENT OF AGRICULTURE Home\"][aria-label=\"The U.S. Department of Agriculture Home Page\"][rel=\"home\"][id=\"anch_1\"]",
+            "attNo": 5
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This SPAN has an id attribute of 'menuName', which is not unique in the same DOM",
+          "element": "<span id=\"menuName\">Research</span>",
+          "testResult": 0,
+          "path": "body>header:nth-of-type(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "span[id=\"menuName\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This SPAN has an id attribute of 'menuName', which is not unique in the same DOM",
+          "element": "<span id=\"menuName\">Media</span>",
+          "testResult": 0,
+          "path": "body>header:nth-of-type(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "span[id=\"menuName\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This SPAN has an id attribute of 'menuName', which is not unique in the same DOM",
+          "element": "<span id=\"menuName\">About ARS</span>",
+          "testResult": 0,
+          "path": "body>header:nth-of-type(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "span[id=\"menuName\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This SPAN has an id attribute of 'menuName', which is not unique in the same DOM",
+          "element": "<span id=\"menuName\">Work With Us</span>",
+          "testResult": 0,
+          "path": "body>header:nth-of-type(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "span[id=\"menuName\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This MAIN has an id attribute of 'main-content', which is not unique in the same DOM",
+          "element": "<main id=\"main-content\" class=\"usa-grid usa-section usa-content usa-layout-docs\"><link href=\"/css/ph ... runchin/#rootstock\">Listen now</a></strong></p><p></p></div></div></div><div class=\"item \"><div clas",
+          "testResult": 0,
+          "path": "body>main:nth-of-type(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "main[class=\"usa-grid usa-section usa-content usa-layout-docs\"][id=\"main-content\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This MAIN has an id attribute of 'main-content', which is not unique in the same DOM",
+          "element": "<main id=\"main-content\"><a class=\"section508\" name=\"photos\">Photo Carousel Links</a><div data-interv ... href=\"https://www.ars.usda.gov/oc/dof/getting-to-the-root-of-the-matter/\"><img id=\"ars-carousel-imag",
+          "testResult": 0,
+          "path": "body>main:nth-of-type(1)>*:nth-child(4)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "main[id=\"main-content\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This IMG has an id attribute of 'ars-carousel-image', which is not unique in the same DOM",
+          "element": "<img id=\"ars-carousel-image\" src=\"/ARSUserFiles/00000000/images/PhotoCarousel/HeatStress.jpg\" class=\"img-responsive\">",
+          "testResult": 0,
+          "path": "body>main:nth-of-type(1)>*:nth-child(4)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "img[class=\"img-responsive\"][src=\"/ARSUserFiles/00000000/images/PhotoCarousel/HeatStress.jpg\"][id=\"ars-carousel-image\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This IMG has an id attribute of 'ars-carousel-image', which is not unique in the same DOM",
+          "element": "<img id=\"ars-carousel-image\" src=\"/ARSUserFiles/00000000/images/PhotoCarousel/ARS Web Carousel 650 x 350.jpg\" class=\"img-responsive\">",
+          "testResult": 0,
+          "path": "body>main:nth-of-type(1)>*:nth-child(4)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "img[class=\"img-responsive\"][src=\"/ARSUserFiles/00000000/images/PhotoCarousel/ARS Web Carousel 650 x 350.jpg\"][id=\"ars-carousel-image\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This IMG has an id attribute of 'ars-carousel-image', which is not unique in the same DOM",
+          "element": "<img id=\"ars-carousel-image\" alt=\"apples\" src=\"/ARSUserFiles/00000000/images/PhotoCarousel/AppleRootstockC.jpg\" class=\"img-responsive\">",
+          "testResult": 0,
+          "path": "body>main:nth-of-type(1)>*:nth-child(4)>*:nth-child(2)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "img[class=\"img-responsive\"][src=\"/ARSUserFiles/00000000/images/PhotoCarousel/AppleRootstockC.jpg\"][alt=\"apples\"][id=\"ars-carousel-image\"]",
+            "attNo": 4
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This IMG has an id attribute of 'ars-carousel-image', which is not unique in the same DOM",
+          "element": "<img id=\"ars-carousel-image\" alt=\"Down on the Farm artwork: tractor in a field.\" src=\"/ARSUserFiles/00000000/images/PhotoCarousel/DOF.jpg\" class=\"img-responsive\">",
+          "testResult": 0,
+          "path": "body>main:nth-of-type(1)>*:nth-child(4)>*:nth-child(2)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "img[class=\"img-responsive\"][src=\"/ARSUserFiles/00000000/images/PhotoCarousel/DOF.jpg\"][alt=\"Down on the Farm artwork: tractor in a field.\"][id=\"ars-carousel-image\"]",
+            "attNo": 4
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This IMG has an id attribute of 'ars-carousel-image', which is not unique in the same DOM",
+          "element": "<img id=\"ars-carousel-image\" alt=\"Logo for Under the Microscope.\" src=\"/ARSUserFiles/00000000/images/PhotoCarousel/UnderTheMicroscope.jpg\" class=\"img-responsive\">",
+          "testResult": 0,
+          "path": "body>main:nth-of-type(1)>*:nth-child(4)>*:nth-child(2)>*:nth-child(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "img[class=\"img-responsive\"][src=\"/ARSUserFiles/00000000/images/PhotoCarousel/UnderTheMicroscope.jpg\"][alt=\"Logo for Under the Microscope.\"][id=\"ars-carousel-image\"]",
+            "attNo": 4
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This IMG has an id attribute of 'ars-carousel-image', which is not unique in the same DOM",
+          "element": "<img id=\"ars-carousel-image\" src=\"/ARSUserFiles/00000000/images/PhotoCarousel/TechTransfer.jpg\" class=\"img-responsive\">",
+          "testResult": 0,
+          "path": "body>main:nth-of-type(1)>*:nth-child(4)>*:nth-child(2)>*:nth-child(1)>*:nth-child(6)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "img[class=\"img-responsive\"][src=\"/ARSUserFiles/00000000/images/PhotoCarousel/TechTransfer.jpg\"][id=\"ars-carousel-image\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This DIV has an id attribute of 'prefix-overlay-form-div', which is not unique in the same DOM",
+          "element": "<div id=\"prefix-overlay-form-div\"><form novalidate=\"\"><input title=\"Email Address\" aria-labelledby=\" ... holder=\"Email Address\"><input id=\"prefix-submitButton\" value=\"Subscribe\" type=\"submit\"></form></div>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(3)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[id=\"prefix-overlay-form-div\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This DIV has an id attribute of 'prefix-overlay-form-div', which is not unique in the same DOM",
+          "element": "<div id=\"prefix-overlay-form-div\"><form novalidate=\"\" id=\"prefix-formStepForm\"><input tabindex=\"-1\" id=\"prefix-formStep-submitButton\" value=\"Continue\" type=\"submit\"></form></div>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(3)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[id=\"prefix-overlay-form-div\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This DIV has an id attribute of 'prefix-error-outer', which is not unique in the same DOM",
+          "element": "<div id=\"prefix-error-outer\"><span style=\"display:none\"></span></div>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(3)>*:nth-child(1)>*:nth-child(2)>*:nth-child(3)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[id=\"prefix-error-outer\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This DIV has an id attribute of 'prefix-error-outer', which is not unique in the same DOM",
+          "element": "<div id=\"prefix-error-outer\"><span style=\"display:none\"></span></div>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(2)>*:nth-child(3)>*:nth-child(1)>*:nth-child(4)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "div[id=\"prefix-error-outer\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 101,
+          "bestPracticeId": 429,
+          "attribute": "This element does not have a lang attribute",
+          "attributeDetail": "This HTML does not have a lang attribute",
+          "element": "<html><head><script src=\"https://statse.webtrendslive.com/dcs2229fyq5yxf5j5aw1zdupi_2f9o/wtid.js?cal ... //s7.addthis.com/js/300/addthis_widget.js#pubid=arsociowb\" type=\"text/javascript\"></script></head><b",
+          "testResult": 0,
+          "path": "html",
+          "fixType": {
+            "fixType": 4,
+            "domSpec": false,
+            "helperText": "Enter the appropriate language value for the page.",
+            "fix": {
+              "lang": null
+            }
+          },
+          "fingerprint": {
+            "attNo": 0,
+            "css": "html",
+            "version": 2
+          }
+        },
+        {
+          "engineTestId": 114,
+          "bestPracticeId": 338,
+          "attribute": "This select element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This select element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<select id=\"iWantToDropdownlist\"><option value=\"#\" selected=\"selected\">- choose -</option><option va ... >Find a scientific manuscript</option><option value=\"/work-with-us/\">Work with ARS</option></select>",
+          "testResult": 0,
+          "path": "body>main:nth-of-type(1)>*:nth-child(4)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Specify a descriptive label for the select.",
+            "fix": {
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "select[id=\"iWantToDropdownlist\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 114,
+          "bestPracticeId": 338,
+          "attribute": "This select element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This select element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<select id=\"trendingTopicsDropdownlist\"><option value=\"#\" selected=\"selected\">- choose -</option><op ... cs/?topic=Apple\">Apple</option><option value=\"/trending-topics/?topic=Fiber\">Fiber</option></select>",
+          "testResult": 0,
+          "path": "body>main:nth-of-type(1)>*:nth-child(4)>*:nth-child(3)>*:nth-child(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Specify a descriptive label for the select.",
+            "fix": {
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "select[id=\"trendingTopicsDropdownlist\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 114,
+          "bestPracticeId": 338,
+          "attribute": "This select element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This select element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<select id=\"stateReportDropdownlist\" name=\"stateReportDropdownlist\"><option value=\"\" selected=\"selec ... \"/state/?id=WI\">Wisconsin</option><option value=\"/docs/worksites/Wyoming/\">Wyoming</option></select>",
+          "testResult": 0,
+          "path": "body>main:nth-of-type(1)>*:nth-child(4)>*:nth-child(3)>*:nth-child(5)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Specify a descriptive label for the select.",
+            "fix": {
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "select[name=\"stateReportDropdownlist\"][id=\"stateReportDropdownlist\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 114,
+          "bestPracticeId": 338,
+          "attribute": "This select element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This select element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<select id=\"hqOfficesDropdownlist\"><option value=\"#\" selected=\"selected\">- choose -</option><option  ... ons/people-list-offices/?modeCode=04-02-00-00\">Office of Technology Transfer Staff</option></select>",
+          "testResult": 0,
+          "path": "body>main:nth-of-type(1)>*:nth-child(4)>*:nth-child(3)>*:nth-child(5)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Specify a descriptive label for the select.",
+            "fix": {
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "select[id=\"hqOfficesDropdownlist\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 237,
+          "bestPracticeId": 1301,
+          "attribute": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This A element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<a href=\"https://www.ars.usda.gov/oc/webinars/livestock-heat-stress-series/\"><img id=\"ars-carousel-image\" src=\"/ARSUserFiles/00000000/images/PhotoCarousel/HeatStress.jpg\" class=\"img-responsive\"></a>",
+          "testResult": 0,
+          "path": "body>main:nth-of-type(1)>*:nth-child(4)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide a descriptive accessible name for the anchor element.",
+            "fix": {
+              "aria-label": null
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "a[href=\"https://www.ars.usda.gov/oc/webinars/livestock-heat-stress-series/\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 531,
+          "bestPracticeId": 2519,
+          "attribute": "This nav does not have a unique accessible name as required when two or more nav elements are present",
+          "attributeDetail": "This nav does not have a unique accessible name as required when two or more nav elements are present",
+          "element": "<nav id=\"footer-top\" class=\"usa-footer-nav usa-width-two-thirds\"><ul class=\"usa-unstyled-list\"><li c ... y-content\"><a href=\"/work-with-us/\" class=\"usa-footer-primary-link\">Work With Us</a></li></ul></nav>",
+          "testResult": 0,
+          "path": "body>footer:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[class=\"usa-footer-nav usa-width-two-thirds\"][id=\"footer-top\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 531,
+          "bestPracticeId": 2519,
+          "attribute": "This nav does not have a unique accessible name as required when two or more nav elements are present",
+          "attributeDetail": "This nav does not have a unique accessible name as required when two or more nav elements are present",
+          "element": "<nav class=\"usa-footer-nav usa-width-one-half\"><nav id=\"Connect-ARS\" class=\"usa-width-one-third\"><h3 ... </svg></span></a></li><li><a href=\"#\" title=\"Facebook\" class=\"addthis_button_facebook at300b\"><span ",
+          "testResult": 0,
+          "path": "body>footer:nth-of-type(1)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[class=\"usa-footer-nav usa-width-one-half\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 531,
+          "bestPracticeId": 2519,
+          "attribute": "This nav does not have a unique accessible name as required when two or more nav elements are present",
+          "attributeDetail": "This nav does not have a unique accessible name as required when two or more nav elements are present",
+          "element": "<nav id=\"Connect-ARS\" class=\"usa-width-one-third\"><h3 class=\"usa-sign_up-header\">Connect with ARS</h ... cebook\" class=\"addthis_button_facebook at300b\"><span style=\"background-color: rgb(59, 89, 152); line",
+          "testResult": 0,
+          "path": "body>footer:nth-of-type(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[class=\"usa-width-one-third\"][id=\"Connect-ARS\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 531,
+          "bestPracticeId": 2519,
+          "attribute": "This nav does not have a unique accessible name as required when two or more nav elements are present",
+          "attributeDetail": "This nav does not have a unique accessible name as required when two or more nav elements are present",
+          "element": "<nav id=\"TellUs\" class=\"usa-width-one-fourth\"><a rel=\"home\" aria-label=\"The Tellus Home Page\" title= ... =\"Tellus\" title=\"Tellus\" src=\"/ARSUserFiles/00000000/images/social_media/tellus-logo.png\"></a></nav>",
+          "testResult": 0,
+          "path": "body>footer:nth-of-type(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[class=\"usa-width-one-fourth\"][id=\"TellUs\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 531,
+          "bestPracticeId": 2519,
+          "attribute": "This nav does not have a unique accessible name as required when two or more nav elements are present",
+          "attributeDetail": "This nav does not have a unique accessible name as required when two or more nav elements are present",
+          "element": "<nav class=\"usa-footer-nav usa-width-one-half\"><form target=\"_blank\" method=\"post\" accept-charset=\"U ... ><script type=\"text/javascript\" src=\"/ARSUserFiles/Utility/WebMoniter/WebMoniter.js\"></script></nav>",
+          "testResult": 0,
+          "path": "body>footer:nth-of-type(1)>*:nth-child(2)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[class=\"usa-footer-nav usa-width-one-half\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 531,
+          "bestPracticeId": 2519,
+          "attribute": "This nav does not have a unique accessible name as required when two or more nav elements are present",
+          "attributeDetail": "This nav does not have a unique accessible name as required when two or more nav elements are present",
+          "element": "<nav id=\"footer-bottom\" class=\"usa-footer-nav\"><ul class=\"usa-unstyled-list\"><li class=\"usa-width-on ...  usa-footer-primary-content\"><a href=\"https://www.whitehouse.gov\">WhiteHouse.gov</a></li></ul></nav>",
+          "testResult": 0,
+          "path": "body>footer:nth-of-type(1)>*:nth-child(3)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[class=\"usa-footer-nav\"][id=\"footer-bottom\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 533,
+          "bestPracticeId": 2519,
+          "attribute": "This nav does not have an accessible name as required when two or more nav elements are present",
+          "attributeDetail": "This nav does not have an accessible name as required when two or more nav elements are present",
+          "element": "<nav id=\"footer-top\" class=\"usa-footer-nav usa-width-two-thirds\"><ul class=\"usa-unstyled-list\"><li c ... y-content\"><a href=\"/work-with-us/\" class=\"usa-footer-primary-link\">Work With Us</a></li></ul></nav>",
+          "testResult": 0,
+          "path": "body>footer:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[class=\"usa-footer-nav usa-width-two-thirds\"][id=\"footer-top\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 533,
+          "bestPracticeId": 2519,
+          "attribute": "This nav does not have an accessible name as required when two or more nav elements are present",
+          "attributeDetail": "This nav does not have an accessible name as required when two or more nav elements are present",
+          "element": "<nav class=\"usa-footer-nav usa-width-one-half\"><nav id=\"Connect-ARS\" class=\"usa-width-one-third\"><h3 ... </svg></span></a></li><li><a href=\"#\" title=\"Facebook\" class=\"addthis_button_facebook at300b\"><span ",
+          "testResult": 0,
+          "path": "body>footer:nth-of-type(1)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[class=\"usa-footer-nav usa-width-one-half\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 533,
+          "bestPracticeId": 2519,
+          "attribute": "This nav does not have an accessible name as required when two or more nav elements are present",
+          "attributeDetail": "This nav does not have an accessible name as required when two or more nav elements are present",
+          "element": "<nav id=\"Connect-ARS\" class=\"usa-width-one-third\"><h3 class=\"usa-sign_up-header\">Connect with ARS</h ... cebook\" class=\"addthis_button_facebook at300b\"><span style=\"background-color: rgb(59, 89, 152); line",
+          "testResult": 0,
+          "path": "body>footer:nth-of-type(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[class=\"usa-width-one-third\"][id=\"Connect-ARS\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 533,
+          "bestPracticeId": 2519,
+          "attribute": "This nav does not have an accessible name as required when two or more nav elements are present",
+          "attributeDetail": "This nav does not have an accessible name as required when two or more nav elements are present",
+          "element": "<nav id=\"TellUs\" class=\"usa-width-one-fourth\"><a rel=\"home\" aria-label=\"The Tellus Home Page\" title= ... =\"Tellus\" title=\"Tellus\" src=\"/ARSUserFiles/00000000/images/social_media/tellus-logo.png\"></a></nav>",
+          "testResult": 0,
+          "path": "body>footer:nth-of-type(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[class=\"usa-width-one-fourth\"][id=\"TellUs\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 533,
+          "bestPracticeId": 2519,
+          "attribute": "This nav does not have an accessible name as required when two or more nav elements are present",
+          "attributeDetail": "This nav does not have an accessible name as required when two or more nav elements are present",
+          "element": "<nav class=\"usa-footer-nav usa-width-one-half\"><form target=\"_blank\" method=\"post\" accept-charset=\"U ... ><script type=\"text/javascript\" src=\"/ARSUserFiles/Utility/WebMoniter/WebMoniter.js\"></script></nav>",
+          "testResult": 0,
+          "path": "body>footer:nth-of-type(1)>*:nth-child(2)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[class=\"usa-footer-nav usa-width-one-half\"]",
+            "attNo": 1
+          }
+        },
+        {
+          "engineTestId": 533,
+          "bestPracticeId": 2519,
+          "attribute": "This nav does not have an accessible name as required when two or more nav elements are present",
+          "attributeDetail": "This nav does not have an accessible name as required when two or more nav elements are present",
+          "element": "<nav id=\"footer-bottom\" class=\"usa-footer-nav\"><ul class=\"usa-unstyled-list\"><li class=\"usa-width-on ...  usa-footer-primary-content\"><a href=\"https://www.whitehouse.gov\">WhiteHouse.gov</a></li></ul></nav>",
+          "testResult": 0,
+          "path": "body>footer:nth-of-type(1)>*:nth-child(3)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[class=\"usa-footer-nav\"][id=\"footer-bottom\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 809,
+          "bestPracticeId": 1352,
+          "attribute": "This MAIN is one of multiple main elements that appear in the body element.",
+          "attributeDetail": "This MAIN is one of multiple main elements that appear in the body element.",
+          "element": "<main id=\"main-content\" class=\"usa-grid usa-section usa-content usa-layout-docs\"><link href=\"/css/ph ... runchin/#rootstock\">Listen now</a></strong></p><p></p></div></div></div><div class=\"item \"><div clas",
+          "testResult": 0,
+          "path": "body>main:nth-of-type(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "main[class=\"usa-grid usa-section usa-content usa-layout-docs\"][id=\"main-content\"]",
+            "attNo": 2
+          }
+        },
+        {
+          "engineTestId": 809,
+          "bestPracticeId": 1352,
+          "attribute": "This MAIN is one of multiple main elements that appear in the body element.",
+          "attributeDetail": "This MAIN is one of multiple main elements that appear in the body element.",
+          "element": "<main id=\"main-content\"><a class=\"section508\" name=\"photos\">Photo Carousel Links</a><div data-interv ... href=\"https://www.ars.usda.gov/oc/dof/getting-to-the-root-of-the-matter/\"><img id=\"ars-carousel-imag",
+          "testResult": 0,
+          "path": "body>main:nth-of-type(1)>*:nth-child(4)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "main[id=\"main-content\"]",
+            "attNo": 1
+          }
+        }
+      ]
+    }
+  ],
+  "timeStamp": "4jil2",
+  "startTime": "2022-07-27T14:20:46",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "continuum",
+      0
+    ]
+  ],
+  "logCount": 1,
+  "logSize": 51,
+  "errorLogCount": 1,
+  "errorLogSize": 51,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-27T14:20:53",
+  "elapsedSeconds": 6
+}

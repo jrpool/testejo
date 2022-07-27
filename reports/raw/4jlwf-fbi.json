@@ -1,0 +1,83 @@
+{
+  "id": "4jlwf-fbi",
+  "host": {
+    "id": "fbi",
+    "which": "https://www.fbi.gov/",
+    "what": "Federal Bureau of Investigation (FBI)"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-27T16:43:43"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-27T16:44:08"
+    }
+  ],
+  "script": {
+    "id": "continuum",
+    "what": "Continuum",
+    "strict": true,
+    "timeLimit": 30,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.fbi.gov/",
+        "what": "Federal Bureau of Investigation (FBI)"
+      },
+      {
+        "type": "test",
+        "which": "continuum",
+        "what": "Continuum"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.fbi.gov/",
+      "what": "Federal Bureau of Investigation (FBI)",
+      "result": "https://www.fbi.gov/"
+    },
+    {
+      "type": "test",
+      "which": "continuum",
+      "what": "Level Access Continuum, community edition",
+      "url": "https://www.fbi.gov/",
+      "result": {
+        "prevented": true,
+        "error": "ERROR: Running all tests timed out"
+      }
+    }
+  ],
+  "timeStamp": "4jlwf",
+  "startTime": "2022-07-27T16:43:43",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "continuum",
+      20
+    ]
+  ],
+  "logCount": 5,
+  "logSize": 850,
+  "errorLogCount": 5,
+  "errorLogSize": 850,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-27T16:44:08",
+  "elapsedSeconds": 25
+}

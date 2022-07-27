@@ -1,0 +1,80 @@
+{
+  "id": "4jil2-nmb",
+  "host": {
+    "id": "nmb",
+    "which": "https://nmb.gov/NMB_Application/",
+    "what": "National Mediation Board (NMB)"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-27T14:32:41"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-27T14:32:45"
+    }
+  ],
+  "script": {
+    "id": "continuum",
+    "what": "Continuum",
+    "strict": true,
+    "timeLimit": 30,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://nmb.gov/NMB_Application/",
+        "what": "National Mediation Board (NMB)"
+      },
+      {
+        "type": "test",
+        "which": "continuum",
+        "what": "Continuum"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://nmb.gov/NMB_Application/",
+      "what": "National Mediation Board (NMB)",
+      "result": "https://nmb.gov/NMB_Application/"
+    },
+    {
+      "type": "test",
+      "which": "continuum",
+      "what": "Level Access Continuum, community edition",
+      "url": "https://nmb.gov/NMB_Application/",
+      "result": "NONE"
+    }
+  ],
+  "timeStamp": "4jil2",
+  "startTime": "2022-07-27T14:32:41",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "continuum",
+      0
+    ]
+  ],
+  "logCount": 2,
+  "logSize": 112,
+  "errorLogCount": 1,
+  "errorLogSize": 66,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-27T14:32:45",
+  "elapsedSeconds": 4
+}

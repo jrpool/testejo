@@ -1,0 +1,243 @@
+{
+  "id": "4jil2-fws",
+  "host": {
+    "id": "fws",
+    "which": "https://www.fws.gov/",
+    "what": "Fish and Wildlife Service"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-27T14:28:42"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-27T14:28:50"
+    }
+  ],
+  "script": {
+    "id": "continuum",
+    "what": "Continuum",
+    "strict": true,
+    "timeLimit": 30,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://www.fws.gov/",
+        "what": "Fish and Wildlife Service"
+      },
+      {
+        "type": "test",
+        "which": "continuum",
+        "what": "Continuum"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://www.fws.gov/",
+      "what": "Fish and Wildlife Service",
+      "result": "https://www.fws.gov/"
+    },
+    {
+      "type": "test",
+      "which": "continuum",
+      "what": "Level Access Continuum, community edition",
+      "url": "https://www.fws.gov/",
+      "result": [
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This svg has an id attribute of 'Layer_1', which is not unique in the same DOM",
+          "element": "<svg viewbox=\"0 0 500 500\" data-name=\"Layer 1\" id=\"Layer_1\" xmlns=\"http://www.w3.org/2000/svg\"><path ... 77.25,130.18Zm-71,41.7a15.63,15.63,0,1,1,15.63-15.63A15.68,15.68,0,0,1,406.25,171.88Z\"></path></svg>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(2)>*:nth-child(3)>*:nth-child(2)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[id=\"Layer_1\"][data-name=\"Layer 1\"][viewbox=\"0 0 500 500\"]",
+            "attNo": 4
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This svg has an id attribute of 'Layer_1', which is not unique in the same DOM",
+          "element": "<svg xml:space=\"preserve\" style=\"enable-background:new 0 0 500 500;\" viewbox=\"0 0 500 500\" y=\"0px\" x ... .7,0.8  s4.3,13-0.8,17.7l-20.4,18.7l113.8,92.3c9.5,7.7,15.2,18.4,17.3,29.6H500V149.9z\"></path></svg>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(2)>*:nth-child(3)>*:nth-child(2)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[version=\"1.1\"][id=\"Layer_1\"][x=\"0px\"][y=\"0px\"][viewbox=\"0 0 500 500\"]",
+            "attNo": 9
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This svg has an id attribute of 'Layer_1', which is not unique in the same DOM",
+          "element": "<svg xml:space=\"preserve\" style=\"enable-background:new 0 0 500 500;\" viewbox=\"0 0 500 500\" y=\"0px\" x ... 74.5l76.8,146.6h0.9    c-1.3-21.3-2-38.3-2-51.2v-95.4h50.8V355.5z\" class=\"st0\"></path></g></g></svg>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(2)>*:nth-child(3)>*:nth-child(2)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(4)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[version=\"1.1\"][id=\"Layer_1\"][x=\"0px\"][y=\"0px\"][viewbox=\"0 0 500 500\"]",
+            "attNo": 9
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This svg has an id attribute of 'Layer_1', which is not unique in the same DOM",
+          "element": "<svg xml:space=\"preserve\" style=\"enable-background:new 0 0 500 500;\" viewbox=\"0 0 500 500\" y=\"0px\" x ... 2-187.9-328.9c81.4,121.4,94.2,196.6,99.1,327.1   C98.8,496.4,98.9,498.3,99.1,500z\"></path></g></svg>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(2)>*:nth-child(3)>*:nth-child(2)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(5)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[version=\"1.1\"][id=\"Layer_1\"][x=\"0px\"][y=\"0px\"][viewbox=\"0 0 500 500\"]",
+            "attNo": 9
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This svg has an id attribute of 'Capa_1', which is not unique in the same DOM",
+          "element": "<svg xml:space=\"preserve\" style=\"enable-background:new 0 0 512 512;\" viewbox=\"0 0 512 512\" y=\"0px\" x ... ><g><g><polygon points=\"433.6,109.2 357.6,158.4 429.9,203.1 511.9,150.3   \"></polygon></g></g></svg>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(2)>*:nth-child(3)>*:nth-child(2)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[version=\"1.1\"][id=\"Capa_1\"][x=\"0px\"][y=\"0px\"][viewbox=\"0 0 512 512\"]",
+            "attNo": 9
+          }
+        },
+        {
+          "engineTestId": 94,
+          "bestPracticeId": 1352,
+          "attribute": "This element has an id attribute set to a value that is not unique in the same DOM",
+          "attributeDetail": "This svg has an id attribute of 'Capa_1', which is not unique in the same DOM",
+          "element": "<svg xml:space=\"preserve\" style=\"enable-background:new 0 0 512 512;\" viewbox=\"0 0 512 512\" y=\"0px\" x ... ><g><g><polygon points=\"433.6,109.2 357.6,158.4 429.9,203.1 511.9,150.3   \"></polygon></g></g></svg>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(2)>*:nth-child(3)>*:nth-child(2)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(6)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[version=\"1.1\"][id=\"Capa_1\"][x=\"0px\"][y=\"0px\"][viewbox=\"0 0 512 512\"]",
+            "attNo": 9
+          }
+        },
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg viewbox=\"0 0 500 500\" data-name=\"Layer 1\" id=\"Layer_1\" xmlns=\"http://www.w3.org/2000/svg\"><path ... 77.25,130.18Zm-71,41.7a15.63,15.63,0,1,1,15.63-15.63A15.68,15.68,0,0,1,406.25,171.88Z\"></path></svg>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(2)>*:nth-child(3)>*:nth-child(2)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[id=\"Layer_1\"][data-name=\"Layer 1\"][viewbox=\"0 0 500 500\"]",
+            "attNo": 4
+          }
+        },
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg xml:space=\"preserve\" style=\"enable-background:new 0 0 512 512;\" viewbox=\"0 0 512 512\" y=\"0px\" x ... ><g><g><polygon points=\"433.6,109.2 357.6,158.4 429.9,203.1 511.9,150.3   \"></polygon></g></g></svg>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(2)>*:nth-child(3)>*:nth-child(2)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[version=\"1.1\"][id=\"Capa_1\"][x=\"0px\"][y=\"0px\"][viewbox=\"0 0 512 512\"]",
+            "attNo": 9
+          }
+        },
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg xml:space=\"preserve\" style=\"enable-background:new 0 0 500 500;\" viewbox=\"0 0 500 500\" y=\"0px\" x ... .7,0.8  s4.3,13-0.8,17.7l-20.4,18.7l113.8,92.3c9.5,7.7,15.2,18.4,17.3,29.6H500V149.9z\"></path></svg>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(2)>*:nth-child(3)>*:nth-child(2)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[version=\"1.1\"][id=\"Layer_1\"][x=\"0px\"][y=\"0px\"][viewbox=\"0 0 500 500\"]",
+            "attNo": 9
+          }
+        }
+      ]
+    }
+  ],
+  "timeStamp": "4jil2",
+  "startTime": "2022-07-27T14:28:42",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "continuum",
+      0
+    ]
+  ],
+  "logCount": 1,
+  "logSize": 101,
+  "errorLogCount": 1,
+  "errorLogSize": 101,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-27T14:28:50",
+  "elapsedSeconds": 8
+}

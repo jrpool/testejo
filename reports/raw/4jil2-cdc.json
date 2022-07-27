@@ -1,0 +1,129 @@
+{
+  "id": "4jil2-cdc",
+  "host": {
+    "id": "cdc",
+    "which": "https://cdc.gov/",
+    "what": "Centers for Disease Control and Prevention"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-27T14:40:49"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-27T14:40:55"
+    }
+  ],
+  "script": {
+    "id": "continuum",
+    "what": "Continuum",
+    "strict": true,
+    "timeLimit": 30,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://cdc.gov/",
+        "what": "Centers for Disease Control and Prevention"
+      },
+      {
+        "type": "test",
+        "which": "continuum",
+        "what": "Continuum"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://cdc.gov/",
+      "what": "Centers for Disease Control and Prevention",
+      "result": "https://www.cdc.gov/"
+    },
+    {
+      "type": "test",
+      "which": "continuum",
+      "what": "Level Access Continuum, community edition",
+      "url": "https://www.cdc.gov/",
+      "result": [
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg xmlns:xlink=\"http://www.w3.org/1999/xlink\" xmlns=\"http://www.w3.org/2000/svg\" focusable=\"false\" ... 2z\" fill=\"#0033A0\"></path><path d=\"M214.518,345.779v-1.258c0-0.045,0-0.317,0-0.518l0,0l-0.598,1.775h",
+          "testResult": 0,
+          "path": "body>header:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[width=\"670\"][height=\"90\"][class=\"d-none d-lg-block logo-large masthead-homepage\"][focusable=\"false\"]",
+            "attNo": 6
+          }
+        },
+        {
+          "engineTestId": 123,
+          "bestPracticeId": 362,
+          "attribute": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This svg element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "<svg height=\"100%\" width=\"100%\" viewbox=\"64.205 258.667 670.865 89.614\"><g><g><path d=\"M64.205,258.6 ... .4l0.613,1.776h0.008l0.59-1.776h0.41v2.098H214.518z\" fill=\"#0033A0\"></path></g><g><path d=\"M220.843,",
+          "testResult": 0,
+          "path": "body>header:nth-of-type(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(1)>*:nth-child(2)>*:nth-child(1)",
+          "fixType": {
+            "fixType": 1,
+            "domSpec": false,
+            "helperText": "Provide text that describes the content conveyed by the SVG.",
+            "fix": {
+              "alt": false,
+              "aria-label": null,
+              "aria-labelledby": false
+            }
+          },
+          "fingerprint": {
+            "version": 2,
+            "css": "svg[viewbox=\"64.205 258.667 670.865 89.614\"][width=\"100%\"][height=\"100%\"]",
+            "attNo": 3
+          }
+        }
+      ]
+    }
+  ],
+  "timeStamp": "4jil2",
+  "startTime": "2022-07-27T14:40:49",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "continuum",
+      0
+    ]
+  ],
+  "logCount": 8,
+  "logSize": 503,
+  "errorLogCount": 0,
+  "errorLogSize": 0,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-27T14:40:55",
+  "elapsedSeconds": 6
+}
