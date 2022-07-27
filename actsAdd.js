@@ -50,7 +50,7 @@ else {
     const origReport = JSON.parse(origJSON);
     origReport.acts.push(... newReport.acts);
     origReport.testTimes.push(... newReport.testTimes);
-    origReport.testTimes.sort((a, b) => a[1] - b[1]);
+    origReport.testTimes.sort((a, b) => b[1] - a[1]);
     [
       'logCount',
       'logSize',
@@ -64,7 +64,7 @@ else {
       origReport[varName] += newReport[varName];
     });
     fs.writeFileSync(
-      `reports/raw/${process.argv[4]}/${origFileName}`, JSON.stringify(orig, null, 2)
+      `reports/raw/${process.argv[4]}/${origFileName}`, JSON.stringify(origReport, null, 2)
     );
   });
 }
