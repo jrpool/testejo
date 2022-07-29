@@ -1,0 +1,3259 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Testilo">
+    <meta name="creator" content="Testilo">
+    <meta name="publisher" name="Testilo">
+    <meta name="description" content="report of accessibility testing of a web page">
+    <meta name="keywords" content="accessibility a11y web testing">
+    <title>Accessibility test digest</title>
+    <link rel="icon" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Accessibility test digest</h1>
+        <h2>Synopsis</h2>
+        <div id="synopsis">
+          <p><strong>Page</strong>: CVS Health careers</p>
+          <p><strong>URL</strong>: https://jobs.cvshealth.com/</p>
+          <p><strong>Score</strong>: 6498</p>
+          <p><strong>Tested by</strong>: Testaro, procedure <code>tp14</code></p>
+          <p><strong>Scored by</strong>: Testilo, procedure <code>sp14a</code></p>
+          <p><strong>Digested by</strong>: Testilo, procedure <code>dp14a</code></p>
+        </div>
+      </header>
+      <h2>Introduction</h2>
+      <p>The <a href="https://www.npmjs.com/package/testaro">Testaro</a> application used its <code>tp14</code> testing procedure to test the <a href="https://www.w3.org/WAI/fundamentals/accessibility-intro/"><dfn>accessibility</dfn></a> (barrier-free design and coding) of the CVS Health careers web page at <a href="https://jobs.cvshealth.com/">https://jobs.cvshealth.com/</a> on 2022/07/28. The procedure performed 1075 tests. Of these, 16 are custom tests defined by Testaro, and the others belong to these seven other packages (programs that perform collections of tests):</p>
+      <ul>
+        <li><a href="https://github.com/Siteimprove/alfa">Alfa</a> by Siteimprove</li>
+        <li><a href="https://www.npmjs.com/package/axe-core">Axe-core</a> by Deque</li>
+        <li><a href="https://www.webaccessibility.com/tools/">Continuum</a> by Level Access</li>
+        <li>
+          <a href="https://www.npmjs.com/package/html_codesniffer">HTML CodeSniffer</a> by Squiz Labs
+        </li>
+        <li><a href="https://github.com/IBMa/equal-access">Equal Access</a> by IBM</li>
+        <li><a href="https://tenon.io/documentation/apiv2.php">Tenon</a> by Level Access</li>
+        <li><a href="https://wave.webaim.org/api/">WAVE</a> by WebAIM</li>
+      </ul>
+      <p>Testaro produced a report enumerating the test results.</p>
+      <p><a href="https://www.npmjs.com/package/testilo">Testilo</a> processed the report and used the <code>sp14a</code> scoring procedure to compute partial and total scores for the page. The total score is 6498 (where 0 is the best possible score). The scored report is appended below.</p>
+      <p>Finally, Testilo used procedure <code>dp14a</code> to produce this digest, briefly explaining how <code>sp14a</code> computed the scores.</p>
+      <h2>Score summary</h2>
+      <table class="allBorder secondCellRight">
+        <caption>Score components</caption>
+        <tbody class="headersLeft">
+        <tr><th>total</th><td>6498</td></tr>
+        <tr><th>log</th><td>5547</td></tr>
+        <tr><th>preventions</th><td>750</td></tr>
+        <tr><th>linkIndication</th><td>65</td></tr>
+        <tr><th>focusableOperable</th><td>36</td></tr>
+        <tr><th>hoverSurprise</th><td>17</td></tr>
+        <tr><th>focusIndication</th><td>15</td></tr>
+        <tr><th>ariaBadAttribute</th><td>10</td></tr>
+        <tr><th>navConfusion</th><td>8</td></tr>
+        <tr><th>tabFocusability</th><td>7</td></tr>
+        <tr><th>buttonNoText</th><td>6</td></tr>
+        <tr><th>linkNoText</th><td>6</td></tr>
+        <tr><th>pdfLink</th><td>4</td></tr>
+        <tr><th>visibleBulk</th><td>3</td></tr>
+        <tr><th>decorativeTitle</th><td>3</td></tr>
+        <tr><th>h1Missing</th><td>3</td></tr>
+        <tr><th>headingStructure</th><td>3</td></tr>
+        <tr><th>linkComprehensionRisk</th><td>3</td></tr>
+        <tr><th>linkPair</th><td>3</td></tr>
+        <tr><th>noScriptRisk</th><td>3</td></tr>
+        <tr><th>layoutTable</th><td>3</td></tr>
+        <tr><th>videoCaptionRisk</th><td>3</td></tr>
+        </tbody>
+      </table>
+      <h2>Issue summary</h2>
+      <h3>Special issues</h3>
+      <p><span class="componentID">log</span>: Score 5547. This is based on the amount of browser error logging and miscellaneous logging during the tests.
+      <p><span class="componentID">preventions</span>: Score 750. This is based on tests that the page did not allow to be run. That impedes accessibility progress and risks interfering with tools that users with disabilities need.
+      <h3>Classified issues</h3>
+      <p><span class="componentID">linkIndication</span>: Score 65. Issues reported by tests in this category:</p>
+      <ul>
+      <li>Package <code>testaro</code>, test <code>linkUl</code>, score 63 (Non-underlined adjacent links)</li>
+      </ul>
+      <p><span class="componentID">focusableOperable</span>: Score 36. Issues reported by tests in this category:</p>
+      <ul>
+      <li>Package <code>testaro</code>, test <code>focOp</code>, score 34 (Operable elements that cannot be Tab-focused and vice versa)</li>
+      </ul>
+      <p><span class="componentID">hoverSurprise</span>: Score 17. Issues reported by tests in this category:</p>
+      <ul>
+      <li>Package <code>testaro</code>, test <code>hover</code>, score 15 (Content changes caused by hovering)</li>
+      </ul>
+      <p><span class="componentID">focusIndication</span>: Score 15. Issues reported by tests in this category:</p>
+      <ul>
+      <li>Package <code>testaro</code>, test <code>focInd</code>, score 13 (Focused element displaying no or nostandard focus indicator)</li>
+      </ul>
+      <p><span class="componentID">ariaBadAttribute</span>: Score 10. Issues reported by tests in this category:</p>
+      <ul>
+      <li>Package <code>continuum</code>, test <code>281</code>, score 8 (element has an aria-expanded attribute, which is not allowed)</li>
+      </ul>
+      <p><span class="componentID">navConfusion</span>: Score 8. Issues reported by tests in this category:</p>
+      <ul>
+      <li>Package <code>continuum</code>, test <code>531</code>, score 6 (nav element has an accessible name that is non-unique among the nav elements)</li>
+      </ul>
+      <p><span class="componentID">tabFocusability</span>: Score 7. Issues reported by tests in this category:</p>
+      <ul>
+      <li>Package <code>testaro</code>, test <code>focAll</code>, score 5 (Discrepancy between elements that should be and that are Tab-focusable)</li>
+      </ul>
+      <p><span class="componentID">buttonNoText</span>: Score 6. Issues reported by tests in this category:</p>
+      <ul>
+      <li>Package <code>continuum</code>, test <code>224</code>, score 4 (button element has no mechanism that allows an accessible name to be calculated)</li>
+      </ul>
+      <p><span class="componentID">linkNoText</span>: Score 6. Issues reported by tests in this category:</p>
+      <ul>
+      <li>Package <code>wave</code>, test <code>e:link_empty</code>, score 4 (Link contains no text)</li>
+      </ul>
+      <p><span class="componentID">pdfLink</span>: Score 4. Issues reported by tests in this category:</p>
+      <ul>
+      <li>Package <code>wave</code>, test <code>a:link_pdf</code>, score 2 (Link to PDF document)</li>
+      </ul>
+      <p><span class="componentID">visibleBulk</span>: Score 3. Issues reported by tests in this category:</p>
+      <ul>
+      <li>Package <code>testaro</code>, test <code>bulk</code>, score 1 (Page contains many visible elements)</li>
+      </ul>
+      <p><span class="componentID">decorativeTitle</span>: Score 3. Issues reported by tests in this category:</p>
+      <ul>
+      <li>Package <code>wave</code>, test <code>a:image_title</code>, score 1 (Image has a title attribute value but no alt value)</li>
+      </ul>
+      <p><span class="componentID">h1Missing</span>: Score 3. Issues reported by tests in this category:</p>
+      <ul>
+      <li>Package <code>wave</code>, test <code>a:h1_missing</code>, score 1 (Missing first level heading)</li>
+      </ul>
+      <p><span class="componentID">headingStructure</span>: Score 3. Issues reported by tests in this category:</p>
+      <ul>
+      <li>Package <code>wave</code>, test <code>a:heading_skipped</code>, score 1 (Skipped heading level)</li>
+      </ul>
+      <p><span class="componentID">linkComprehensionRisk</span>: Score 3. Issues reported by tests in this category:</p>
+      <ul>
+      <li>Package <code>wave</code>, test <code>a:link_suspicious</code>, score 1 (Suspicious link text)</li>
+      </ul>
+      <p><span class="componentID">linkPair</span>: Score 3. Issues reported by tests in this category:</p>
+      <ul>
+      <li>Package <code>wave</code>, test <code>a:link_redundant</code>, score 1 (Adjacent links go to the same URL)</li>
+      </ul>
+      <p><span class="componentID">noScriptRisk</span>: Score 3. Issues reported by tests in this category:</p>
+      <ul>
+      <li>Package <code>wave</code>, test <code>a:noscript</code>, score 1 (noscript element may fail to contain an accessible equivalent or alternative)</li>
+      </ul>
+      <p><span class="componentID">layoutTable</span>: Score 3. Issues reported by tests in this category:</p>
+      <ul>
+      <li>Package <code>wave</code>, test <code>a:table_layout</code>, score 1 (Table element is misused to arrange content)</li>
+      </ul>
+      <p><span class="componentID">videoCaptionRisk</span>: Score 3. Issues reported by tests in this category:</p>
+      <ul>
+      <li>Package <code>wave</code>, test <code>a:youtube_video</code>, score 1 (YouTube video may have no or incorrect captions)</li>
+      </ul>
+      <h2>Discussion</h2>
+      <p>Although there are widely accepted <a href="https://www.w3.org/WAI/standards-guidelines/">accessibility standards</a>, there is no unanimity about how to define, test, and quantify accessibility. The failures reported in this digest merit investigation as potential opportunities for improved accessibility. Investigation may lead you to conclude that some of the reported failures do not actually harm accessibility. Conversely, some substantial accessibility faults can escape detection by any of these tests. You may question the attempt to assign an accessibility score to a web page, or you may prefer weightings and formulas different from those used by <code>sp14a</code>. You can modify and extend Testaro and Testilo to fit other theories and priorities.</p>
+      <p>Here, in brief, is how <code>sp14a</code> computes a score for a page.</p>
+      <ul>
+        <li>It finds all the defects and warnings (let&rsquo;s call them <q>issues</q>) recorded in the report.</li>
+        <li>It classifies them according to type. For example, a link that looks like the text around it is one issue category, while a video that has no captions is another issue category.</li>
+        <li>It also classifies the issues according to severity. For example, an issue that prevents a transaction is more severe than an issue that only complicates the transaction, and a warning about a possible issue is less severe than a definite finding of an issue. (Some packages rate the severity of each issue; for the other packages, <code>sp12b</code> assigns a severity weight to the issue type and uses that weight.)</li>
+        <li>It assigns quality ratings to particular tests that are judged abnormally reliable or unreliable.</li>
+        <li>It assigns a score to each issue reported by each test of each package.</li>
+        <li>It aggregates the issue scores, weighting them by severity, test quality, and redundancy. Redundancy occurs, and causes downweighting, when two or more packages contain tests that are designed to discover the same or mostly the same issues. So the score for a category is not simply the sum of the scores of the tests in that category.</li>
+        <li>It assigns a score for issues in the page logged by the browser.</li>
+        <li>It assigns an estimated score each time the page prevents one of the packages or one of the Testaro tests from being run on the page.</li>
+        <li>It adds the scores together to obtain a total score.</li>
+      </ul>
+      <p>The precise rules of <code>sp14a</code> are found in the <a href="https://github.com/jrpool/testilo/blob/main/procs/score/sp12b.js">code itself</a>.</p>
+      <h2>Report</h2>
+      <pre>{
+  "id": "4knb3-cvsjobs",
+  "host": {
+    "id": "cvsjobs",
+    "which": "https://jobs.cvshealth.com/",
+    "what": "CVS Health careers"
+  },
+  "log": [
+    {
+      "event": "startTime",
+      "value": "2022-07-28T19:39:42"
+    },
+    {
+      "event": "endTime",
+      "value": "2022-07-28T19:45:55"
+    }
+  ],
+  "script": {
+    "id": "tp12",
+    "what": "Alfa, Axe, Continuum, HTML CodeSniffer, IBM, Tenon, WAVE, and 16 custom tests",
+    "strict": true,
+    "timeLimit": 400,
+    "commands": [
+      {
+        "type": "launch",
+        "which": "webkit",
+        "what": "Webkit browser"
+      },
+      {
+        "type": "url",
+        "which": "https://jobs.cvshealth.com/",
+        "what": "CVS Health careers"
+      },
+      {
+        "type": "tenonRequest",
+        "id": "a",
+        "withNewContent": true,
+        "what": "Tenon API version 2 test request"
+      },
+      {
+        "type": "test",
+        "which": "motion",
+        "what": "spontaneous change of content; requires webkit",
+        "delay": 2500,
+        "interval": 2500,
+        "count": 5
+      },
+      {
+        "type": "launch",
+        "which": "chromium",
+        "what": "Chromium browser"
+      },
+      {
+        "type": "url",
+        "which": "https://jobs.cvshealth.com/",
+        "what": "CVS Health careers"
+      },
+      {
+        "type": "test",
+        "which": "bulk",
+        "what": "count of visible elements"
+      },
+      {
+        "type": "test",
+        "which": "embAc",
+        "withItems": true,
+        "what": "active elements incorrectly embedded in each other"
+      },
+      {
+        "type": "test",
+        "which": "focAll",
+        "what": "Tab-focusability"
+      },
+      {
+        "type": "test",
+        "which": "focInd",
+        "revealAll": false,
+        "allowedDelay": 250,
+        "withItems": true,
+        "what": "focus indicators"
+      },
+      {
+        "type": "test",
+        "which": "focOp",
+        "withItems": true,
+        "what": "focusability and operability of elements"
+      },
+      {
+        "type": "test",
+        "which": "hover",
+        "headSize": 40,
+        "headSampleSize": 20,
+        "tailSampleSize": 15,
+        "withItems": true,
+        "what": "hover impacts"
+      },
+      {
+        "type": "test",
+        "which": "labClash",
+        "withItems": true,
+        "what": "unlabeled and mislabeled form controls"
+      },
+      {
+        "type": "test",
+        "which": "linkUl",
+        "withItems": true,
+        "what": "underlining of inline links"
+      },
+      {
+        "type": "test",
+        "which": "menuNav",
+        "withItems": true,
+        "what": "keyboard navigation within true-focus menus"
+      },
+      {
+        "type": "test",
+        "which": "radioSet",
+        "withItems": true,
+        "what": "grouping of radio buttons in fieldsets"
+      },
+      {
+        "type": "test",
+        "which": "role",
+        "what": "validity and necessity of role assignments"
+      },
+      {
+        "type": "test",
+        "which": "styleDiff",
+        "withItems": true,
+        "what": "style consistency of headings, buttons, and links"
+      },
+      {
+        "type": "test",
+        "which": "tabNav",
+        "withItems": true,
+        "what": "keyboard navigation within tab lists"
+      },
+      {
+        "type": "test",
+        "which": "zIndex",
+        "withItems": true,
+        "what": "elements with non-auto z indexes"
+      },
+      {
+        "type": "test",
+        "which": "alfa",
+        "what": "Siteimprove alfa"
+      },
+      {
+        "type": "test",
+        "which": "axe",
+        "detailLevel": 2,
+        "rules": [],
+        "what": "Axe core, all rules"
+      },
+      {
+        "type": "test",
+        "which": "continuum",
+        "what": "Continuum"
+      },
+      {
+        "type": "test",
+        "which": "htmlcs",
+        "what": "HTML CodeSniffer"
+      },
+      {
+        "type": "test",
+        "which": "ibm",
+        "withItems": true,
+        "what": "IBM Accessibility Checker, with page content and again with URL"
+      },
+      {
+        "type": "test",
+        "which": "wave",
+        "reportType": 4,
+        "what": "WAVE, report-type 4"
+      },
+      {
+        "type": "test",
+        "which": "tenon",
+        "id": "a",
+        "what": "Tenon API version 2 result retrieval"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "launch",
+      "which": "webkit",
+      "what": "Webkit browser"
+    },
+    {
+      "type": "url",
+      "which": "https://jobs.cvshealth.com/",
+      "what": "CVS Health careers",
+      "result": "https://jobs.cvshealth.com/"
+    },
+    {
+      "type": "tenonRequest",
+      "id": "a",
+      "withNewContent": true,
+      "what": "Tenon API version 2 test request",
+      "url": "https://jobs.cvshealth.com/"
+    },
+    {
+      "type": "test",
+      "which": "motion",
+      "what": "motion",
+      "delay": 2500,
+      "interval": 2500,
+      "count": 5,
+      "url": "https://jobs.cvshealth.com/",
+      "result": {
+        "bytes": [
+          1624358,
+          1624358,
+          1624358,
+          1624358,
+          1624358
+        ],
+        "localRatios": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "meanLocalRatio": 1,
+        "maxLocalRatio": 1,
+        "globalRatio": 1,
+        "pixelChanges": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "meanPixelChange": 0,
+        "maxPixelChange": 0,
+        "changeFrequency": 0
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "Chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://jobs.cvshealth.com/",
+      "what": "CVS Health careers",
+      "result": "https://jobs.cvshealth.com/"
+    },
+    {
+      "type": "test",
+      "which": "bulk",
+      "what": "count of visible elements",
+      "url": "https://jobs.cvshealth.com/",
+      "result": {
+        "visibleElements": 491
+      }
+    },
+    {
+      "type": "test",
+      "which": "embAc",
+      "withItems": true,
+      "what": "active elements embedded in links or buttons",
+      "url": "https://jobs.cvshealth.com/",
+      "result": {
+        "totals": {
+          "links": 0,
+          "buttons": 0,
+          "inputs": 0,
+          "selects": 0
+        },
+        "items": []
+      }
+    },
+    {
+      "type": "test",
+      "which": "focAll",
+      "what": "focusable and Tab-focused elements",
+      "url": "https://jobs.cvshealth.com/",
+      "result": {
+        "tabFocusables": 86,
+        "tabFocused": 89,
+        "discrepancy": 3
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://jobs.cvshealth.com/",
+      "what": "URL",
+      "result": "https://jobs.cvshealth.com/"
+    },
+    {
+      "type": "test",
+      "which": "focInd",
+      "revealAll": false,
+      "allowedDelay": 250,
+      "withItems": true,
+      "what": "focus indicators",
+      "url": "https://jobs.cvshealth.com/",
+      "result": {
+        "totals": {
+          "total": 86,
+          "types": {
+            "indicatorMissing": {
+              "total": 3,
+              "tagNames": {
+                "IFRAME": 3
+              }
+            },
+            "nonOutlinePresent": {
+              "total": 4,
+              "tagNames": {
+                "A": 4
+              }
+            },
+            "outlinePresent": {
+              "total": 79,
+              "meanDelay": 39,
+              "tagNames": {
+                "A": 75,
+                "INPUT": 3,
+                "SELECT": 1
+              }
+            }
+          }
+        },
+        "items": {
+          "indicatorMissing": [
+            {
+              "tagName": "IFRAME",
+              "text": ""
+            },
+            {
+              "tagName": "IFRAME",
+              "text": ""
+            },
+            {
+              "tagName": "IFRAME",
+              "text": ""
+            }
+          ],
+          "nonOutlinePresent": [
+            {
+              "tagName": "A",
+              "text": "CVS Health Employee Login"
+            },
+            {
+              "tagName": "A",
+              "text": "Returning Visitor Login"
+            },
+            {
+              "tagName": "A",
+              "text": "Application Status"
+            },
+            {
+              "tagName": "A",
+              "text": "Ok"
+            }
+          ],
+          "outlinePresent": [
+            {
+              "tagName": "A",
+              "text": "Skip to content",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "CVS Health Corporate site",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Investors",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Contact",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Why CVS Health",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Individuals with Disabilities",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Diversity",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Students",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Military",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Events",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Login",
+              "delay": 0
+            },
+            {
+              "tagName": "INPUT",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "INPUT",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "SELECT",
+              "text": "1 Mile5 Miles10 Miles15 Miles20 Miles25 Miles50 Miles100 Miles200 Miles",
+              "delay": 0
+            },
+            {
+              "tagName": "INPUT",
+              "text": "",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Search Map",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "FAQ page",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Retail Store",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "Aetna Careers",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Analytics",
+              "delay": 164
+            },
+            {
+              "tagName": "A",
+              "text": "Beauty",
+              "delay": 117
+            },
+            {
+              "tagName": "A",
+              "text": "Brand Innovation/Design",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Corporate",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Customer Care",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Digital",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Distribution",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "HealthHUB",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Information Technology",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "International",
+              "delay": 151
+            },
+            {
+              "tagName": "A",
+              "text": "Military",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "MinuteClinic",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Nursing",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Part Time",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Pharmacist",
+              "delay": 648
+            },
+            {
+              "tagName": "A",
+              "text": "Pharmacy Tech",
+              "delay": 131
+            },
+            {
+              "tagName": "A",
+              "text": "Remote",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Students",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Application Process",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Virtual Job Tryout Process",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Frequently Asked Questions",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Hot Jobs",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Contract Jobs",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Join Our Talent Network",
+              "delay": 100
+            },
+            {
+              "tagName": "A",
+              "text": "Sign up for Job Alerts",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Learn More",
+              "delay": 101
+            },
+            {
+              "tagName": "A",
+              "text": "Learn More",
+              "delay": 102
+            },
+            {
+              "tagName": "A",
+              "text": "EEO IS THE LAW (PDF) Opens in a new window",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "EEO IS THE LAW SUPPLEMENT Opens in a new window",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "here",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Pay Transparency Nondiscrimination Provision",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "AdviceandCounsel@cvshealth.com",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "877-805-9511",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "1-833-458-0870",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "cvshealthsupport@infinite.com",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "1-877-451-1695",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "cvs_support@modernhire.com",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Code of conduct",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Corporate integrity agreement policy",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Diversity",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Our opioid response",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Our opioid response: Our board’s role",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Political activities &amp; contributions",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "About",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Careers",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Investors",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "News &amp; insights",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Accessibility",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Patient privacy",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Privacy policy",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Sitemap",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Terms of use",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Applicant Privacy",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "",
+              "delay": 0
+            },
+            {
+              "tagName": "A",
+              "text": "Go to Top",
+              "delay": 0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://jobs.cvshealth.com/",
+      "what": "URL",
+      "result": "https://jobs.cvshealth.com/"
+    },
+    {
+      "type": "test",
+      "which": "focOp",
+      "withItems": true,
+      "what": "focusability and operability",
+      "url": "https://jobs.cvshealth.com/",
+      "result": {
+        "totals": {
+          "total": 128,
+          "types": {
+            "onlyFocusable": {
+              "total": 1,
+              "tagNames": {
+                "UL": 1
+              }
+            },
+            "onlyOperable": {
+              "total": 22,
+              "tagNames": {
+                "DIV": 21,
+                "A": 1
+              }
+            },
+            "focusableAndOperable": {
+              "total": 105,
+              "tagNames": {
+                "A": 85,
+                "BUTTON": 5,
+                "INPUT": 8,
+                "SELECT": 1,
+                "IFRAME": 6
+              }
+            }
+          }
+        },
+        "items": {
+          "onlyFocusable": [
+            {
+              "tagName": "UL",
+              "id": "ui-id-1",
+              "text": "&lt;ul id=\"ui-id-1\" tabindex=\"0\" class=\"ui-menu ui-widget ui-widget-content ui-auto"
+            }
+          ],
+          "onlyOperable": [
+            {
+              "tagName": "DIV",
+              "id": "",
+              "text": "Retail Store",
+              "byTag": false,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "DIV",
+              "id": "",
+              "text": "Aetna Careers",
+              "byTag": false,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "DIV",
+              "id": "",
+              "text": "Analytics",
+              "byTag": false,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "DIV",
+              "id": "",
+              "text": "Beauty",
+              "byTag": false,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "DIV",
+              "id": "",
+              "text": "Brand Innovation/Design",
+              "byTag": false,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "DIV",
+              "id": "",
+              "text": "Corporate",
+              "byTag": false,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "DIV",
+              "id": "",
+              "text": "Customer Care",
+              "byTag": false,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "DIV",
+              "id": "",
+              "text": "Digital",
+              "byTag": false,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "DIV",
+              "id": "",
+              "text": "Distribution",
+              "byTag": false,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "DIV",
+              "id": "",
+              "text": "HealthHUB",
+              "byTag": false,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "DIV",
+              "id": "",
+              "text": "Information Technology",
+              "byTag": false,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "DIV",
+              "id": "",
+              "text": "International",
+              "byTag": false,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "DIV",
+              "id": "",
+              "text": "Military",
+              "byTag": false,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "DIV",
+              "id": "",
+              "text": "MinuteClinic",
+              "byTag": false,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "DIV",
+              "id": "",
+              "text": "Nursing",
+              "byTag": false,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "DIV",
+              "id": "",
+              "text": "Part Time",
+              "byTag": false,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "DIV",
+              "id": "",
+              "text": "Pharmacist",
+              "byTag": false,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "DIV",
+              "id": "",
+              "text": "Pharmacy Tech",
+              "byTag": false,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "DIV",
+              "id": "",
+              "text": "Remote",
+              "byTag": false,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "DIV",
+              "id": "",
+              "text": "Students",
+              "byTag": false,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "Page load link",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "DIV",
+              "id": "survaleSideImageAnchorImgWrap",
+              "text": "&lt;div id=\"survaleSideImageAnchorImgWrap\" class=\"survale-may-animate\" style=\"posit",
+              "byTag": false,
+              "byOnClick": false,
+              "byPointer": true
+            }
+          ],
+          "focusableAndOperable": [
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "Skip to content",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "&lt;a class=\"fusion-no-lightbox\" href=\"/\" target=\"_self\" aria-label=\"CVS Careers\" s",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "BUTTON",
+              "id": "",
+              "text": "Toggle Navigation",
+              "byTag": true,
+              "byOnClick": true,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "CVS Health Corporate site",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "Investors",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "Contact",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "BUTTON",
+              "id": "",
+              "text": "Toggle Navigation",
+              "byTag": true,
+              "byOnClick": true,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "Why CVS Health",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "Individuals with Disabilities",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "Diversity",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "Students",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "Military",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "Events",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "Login",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "CVS Health Corporate Site",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "Investors",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "Contact",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "Search",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "nbowman",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "INPUT",
+              "id": "cws_quickjobsearch_keywords",
+              "text": "&lt;input type=\"text\" class=\"text_input keyword_suggest ui-autocomplete-input\" name",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": false
+            },
+            {
+              "tagName": "INPUT",
+              "id": "cws_quickjobsearch_fuzzy",
+              "text": "&lt;input type=\"hidden\" name=\"fuzzy\" id=\"cws_quickjobsearch_fuzzy\" data-param=\"fuzz",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": false
+            },
+            {
+              "tagName": "INPUT",
+              "id": "cws_quickjobsearch_location",
+              "text": "&lt;input type=\"text\" class=\"text_input loc_auto\" name=\"location\" id=\"cws_quickjobs",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": false
+            },
+            {
+              "tagName": "INPUT",
+              "id": "cws_quickjobsearch_latitude",
+              "text": "&lt;input type=\"hidden\" name=\"latitude\" id=\"cws_quickjobsearch_latitude\" data-param",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": false
+            },
+            {
+              "tagName": "INPUT",
+              "id": "cws_quickjobsearch_longitude",
+              "text": "&lt;input type=\"hidden\" name=\"longitude\" id=\"cws_quickjobsearch_longitude\" data-par",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": false
+            },
+            {
+              "tagName": "INPUT",
+              "id": "cws_quickjobsearch_state",
+              "text": "&lt;input type=\"hidden\" name=\"state\" id=\"cws_quickjobsearch_state\" data-param=\"face",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": false
+            },
+            {
+              "tagName": "INPUT",
+              "id": "cws_quickjobsearch_country",
+              "text": "&lt;input type=\"hidden\" name=\"country\" id=\"cws_quickjobsearch_country\" data-param=\"",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": false
+            },
+            {
+              "tagName": "SELECT",
+              "id": "cws_quickjobsearch__proximity",
+              "text": "1 Mile5 Miles10 Miles15 Miles20 Miles25 Miles50 Miles100 Miles200 Miles",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": false
+            },
+            {
+              "tagName": "INPUT",
+              "id": "",
+              "text": "&lt;input class=\"fusion-button button-default button-small quicksearch-submit\" type",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "Search Map",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "FAQ page",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "Retail Store",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "Aetna Careers",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "Analytics",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "Beauty",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "Brand Innovation/Design",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "Corporate",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "Customer Care",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "Digital",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "Distribution",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "HealthHUB",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "Information Technology",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "International",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "Military",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "MinuteClinic",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "Nursing",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "Part Time",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "Pharmacist",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "Pharmacy Tech",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "Remote",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "Students",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "CVS Health Employee Login",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "Returning Visitor Login",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "Application Status",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "Application Process",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "Virtual Job Tryout Process",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "Frequently Asked Questions",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "Hot Jobs",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "Contract Jobs",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "Join Our Talent Network",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "Sign up for Job Alerts",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "Learn More",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "Learn More",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "EEO IS THE LAW (PDF) Opens in a new window",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "EEO IS THE LAW SUPPLEMENT Opens in a new window",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "here",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "Pay Transparency Nondiscrimination Provision",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "AdviceandCounsel@cvshealth.com",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "877-805-9511",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "1-833-458-0870",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "cvshealthsupport@infinite.com",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "1-877-451-1695",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "cvs_support@modernhire.com",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "IFRAME",
+              "id": "player_2",
+              "text": "&lt;iframe title=\"YouTube video player 1\" src=\"https://www.youtube.com/embed/VMNby_",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": false
+            },
+            {
+              "tagName": "IFRAME",
+              "id": "player_3",
+              "text": "&lt;iframe title=\"YouTube video player 2\" src=\"https://www.youtube.com/embed/ACOM-Y",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": false
+            },
+            {
+              "tagName": "IFRAME",
+              "id": "player_4",
+              "text": "&lt;iframe title=\"YouTube video player 3\" src=\"https://www.youtube.com/embed/XVyHML",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": false
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "Code of conduct",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "Corporate integrity agreement policy",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "Diversity",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "Our opioid response",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "Our opioid response: Our board’s role",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "Political activities &amp; contributions",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "About",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "Careers",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "Investors",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "News &amp; insights",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "Accessibility",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "Patient privacy",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "Privacy policy",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "Sitemap",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "Terms of use",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "Applicant Privacy",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "&lt;a class=\"fusion-social-network-icon fusion-tooltip fusion-facebook awb-icon-fac",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "&lt;a class=\"fusion-social-network-icon fusion-tooltip fusion-twitter awb-icon-twit",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "&lt;a class=\"fusion-social-network-icon fusion-tooltip fusion-youtube awb-icon-yout",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "&lt;a class=\"fusion-social-network-icon fusion-tooltip fusion-linkedin awb-icon-lin",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "A",
+              "id": "",
+              "text": "&lt;a class=\"fusion-social-network-icon fusion-tooltip fusion-instagram awb-icon-in",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "IFRAME",
+              "id": "mm_sync_back_ground",
+              "text": "&lt;iframe src=\"https://pixel.mathtag.com/sync/iframe?mt_uuid=563862e2-e653-4800-ba",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": false
+            },
+            {
+              "tagName": "A",
+              "id": "cn-accept-cookie",
+              "text": "Ok",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "BUTTON",
+              "id": "",
+              "text": "Take Survey",
+              "byTag": true,
+              "byOnClick": true,
+              "byPointer": false
+            },
+            {
+              "tagName": "BUTTON",
+              "id": "survaleCloseButtonDialog",
+              "text": "Close",
+              "byTag": true,
+              "byOnClick": true,
+              "byPointer": false
+            },
+            {
+              "tagName": "A",
+              "id": "survale_SurveyAnchor",
+              "text": "&lt;a id=\"survale_SurveyAnchor\" href=\"https://app.survale.com/#/survey/27\" style=\"c",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "BUTTON",
+              "id": "survaleSideImageAnchor",
+              "text": "&lt;button id=\"survaleSideImageAnchor\" style=\"border-radius: 0; border-color: trans",
+              "byTag": true,
+              "byOnClick": true,
+              "byPointer": false
+            },
+            {
+              "tagName": "A",
+              "id": "toTop",
+              "text": "Go to Top",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": true
+            },
+            {
+              "tagName": "IFRAME",
+              "id": "_hjRemoteVarsFrame",
+              "text": "&lt;iframe name=\"_hjRemoteVarsFrame\" title=\"_hjRemoteVarsFrame\" id=\"_hjRemoteVarsFr",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": false
+            },
+            {
+              "tagName": "IFRAME",
+              "id": "_hjSafeContext_26821139",
+              "text": "&lt;iframe id=\"_hjSafeContext_26821139\" src=\"about:blank\" style=\"display: none !imp",
+              "byTag": true,
+              "byOnClick": false,
+              "byPointer": false
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://jobs.cvshealth.com/",
+      "what": "URL",
+      "result": "https://jobs.cvshealth.com/"
+    },
+    {
+      "type": "test",
+      "which": "hover",
+      "headSize": 40,
+      "headSampleSize": 20,
+      "tailSampleSize": 15,
+      "withItems": true,
+      "what": "hover-caused content changes",
+      "url": "https://jobs.cvshealth.com/",
+      "result": {
+        "totals": {
+          "triggers": 110,
+          "headTriggers": 40,
+          "tailTriggers": 70,
+          "impactTriggers": 24,
+          "additions": 16,
+          "removals": 0,
+          "opacityChanges": 16,
+          "opacityImpact": 0,
+          "unhoverables": 2
+        },
+        "items": {
+          "head": {
+            "impactTriggers": [
+              {
+                "tagName": "LI",
+                "text": "Events",
+                "additions": 1,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "LI",
+                "text": "CVSHealthCorporatesite",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 2,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "LI",
+                "text": "Diversity",
+                "additions": 1,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "LI",
+                "text": "Contact",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 2,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "A",
+                "text": "Investors",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 2,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "LI",
+                "text": "WhyCVSHealth",
+                "additions": 1,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "A",
+                "text": "Login",
+                "additions": 1,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "LI",
+                "text": "Login",
+                "additions": 1,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "A",
+                "text": "Military",
+                "additions": 1,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "A",
+                "text": "Contact",
+                "additions": 0,
+                "removals": 0,
+                "opacityChanges": 2,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "LI",
+                "text": "IndividualswithDisabilities",
+                "additions": 1,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              },
+              {
+                "tagName": "A",
+                "text": "Events",
+                "additions": 1,
+                "removals": 0,
+                "opacityChanges": 0,
+                "opacityImpact": 0
+              }
+            ],
+            "unhoverables": []
+          },
+          "tail": {
+            "impactTriggers": [],
+            "unhoverables": [
+              {
+                "tagName": "A",
+                "id": "",
+                "text": "ApplicantPrivacy"
+              },
+              {
+                "tagName": "LI",
+                "id": "",
+                "text": "Sitemap"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://jobs.cvshealth.com/",
+      "what": "URL",
+      "result": "https://jobs.cvshealth.com/"
+    },
+    {
+      "type": "test",
+      "which": "labClash",
+      "withItems": true,
+      "what": "labeling inconsistencies",
+      "url": "https://jobs.cvshealth.com/",
+      "result": {
+        "totals": {
+          "mislabeled": 0,
+          "unlabeled": 1,
+          "wellLabeled": 8
+        },
+        "items": {
+          "mislabeled": [],
+          "unlabeled": [
+            {
+              "index": 8,
+              "tagName": "BUTTON",
+              "type": "submit",
+              "content": "{&lt;button id=\"survaleSideImageAnchor\" style=\"border-radius: 0; border-color: transparent; background: none; background-color:transparent; min-height:207px; border: none\" onclick=\"com_survale.showSurvey(this); return false;\">&lt;img id=\"survaleSideImageAnchorImg\" style=\"max-width:60px;display:none\" src=\"https://static.survale.com/ext/assets/feedback-buttons/feedback-button-red.png\" alt=\"Candidate Feedback\">&lt;/button>}"
+            }
+          ],
+          "wellLabeled": [
+            {
+              "index": 0,
+              "tagName": "BUTTON",
+              "type": "button",
+              "texts": {
+                "content": "Toggle Navigation"
+              }
+            },
+            {
+              "index": 1,
+              "tagName": "BUTTON",
+              "type": "button",
+              "texts": {
+                "content": "Toggle Navigation"
+              }
+            },
+            {
+              "index": 2,
+              "tagName": "INPUT",
+              "type": "text",
+              "labelType": "label",
+              "texts": {
+                "label": [
+                  "Search by job title, category, or Military MOS code"
+                ]
+              }
+            },
+            {
+              "index": 3,
+              "tagName": "INPUT",
+              "type": "text",
+              "labelType": "label",
+              "texts": {
+                "label": [
+                  "Search by location"
+                ]
+              }
+            },
+            {
+              "index": 4,
+              "tagName": "SELECT",
+              "type": "select-one",
+              "labelType": "label",
+              "texts": {
+                "label": [
+                  "within"
+                ]
+              }
+            },
+            {
+              "index": 5,
+              "tagName": "INPUT",
+              "type": "submit",
+              "texts": {
+                "content": "Search"
+              }
+            },
+            {
+              "index": 6,
+              "tagName": "BUTTON",
+              "type": "submit",
+              "texts": {
+                "content": "Take Survey"
+              }
+            },
+            {
+              "index": 7,
+              "tagName": "BUTTON",
+              "type": "submit",
+              "texts": {
+                "content": "Close"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "test",
+      "which": "linkUl",
+      "withItems": true,
+      "what": "adjacent-link underlining",
+      "url": "https://jobs.cvshealth.com/",
+      "result": {
+        "totals": {
+          "links": 86,
+          "adjacent": {
+            "total": 65,
+            "underlined": 2,
+            "underlinedPercent": 3
+          }
+        },
+        "items": {
+          "underlined": [
+            "FAQ page",
+            ""
+          ],
+          "notUnderlined": [
+            "Skip to content",
+            "",
+            "CVS Health Corporate site",
+            "Investors",
+            "Contact",
+            "Why CVS Health",
+            "Individuals with Disabilities",
+            "Diversity",
+            "Students",
+            "Military",
+            "Events",
+            "Login",
+            "CVS Health Corporate Site",
+            "Investors",
+            "Contact",
+            "Search",
+            "nbowman",
+            "Search Map",
+            "Retail Store",
+            "Aetna Careers",
+            "Analytics",
+            "Beauty",
+            "Brand Innovation/Design",
+            "Corporate",
+            "Customer Care",
+            "Digital",
+            "Distribution",
+            "HealthHUB",
+            "Information Technology",
+            "International",
+            "Military",
+            "MinuteClinic",
+            "Nursing",
+            "Part Time",
+            "Pharmacist",
+            "Pharmacy Tech",
+            "Remote",
+            "Students",
+            "CVS Health Employee Login",
+            "Returning Visitor Login",
+            "Application Status",
+            "Join Our Talent Network",
+            "Sign up for Job Alerts",
+            "Learn More",
+            "Learn More",
+            "EEO IS THE LAW (PDF) Opens in a new window",
+            "EEO IS THE LAW SUPPLEMENT Opens in a new window",
+            "here",
+            "Pay Transparency Nondiscrimination Provision",
+            "AdviceandCounsel@cvshealth.com",
+            "877-805-9511",
+            "1-833-458-0870",
+            "cvshealthsupport@infinite.com",
+            "1-877-451-1695",
+            "cvs_support@modernhire.com",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "Page load link",
+            "Ok",
+            "Go to Top"
+          ]
+        }
+      }
+    },
+    {
+      "type": "test",
+      "which": "menuNav",
+      "withItems": true,
+      "what": "keyboard navigation between focusable menu items",
+      "url": "https://jobs.cvshealth.com/",
+      "result": {
+        "totals": {
+          "navigations": {
+            "all": {
+              "total": 0,
+              "correct": 0,
+              "incorrect": 0
+            },
+            "specific": {
+              "tab": {
+                "total": 0,
+                "correct": 0,
+                "incorrect": 0
+              },
+              "left": {
+                "total": 0,
+                "correct": 0,
+                "incorrect": 0
+              },
+              "right": {
+                "total": 0,
+                "correct": 0,
+                "incorrect": 0
+              },
+              "up": {
+                "total": 0,
+                "correct": 0,
+                "incorrect": 0
+              },
+              "down": {
+                "total": 0,
+                "correct": 0,
+                "incorrect": 0
+              },
+              "home": {
+                "total": 0,
+                "correct": 0,
+                "incorrect": 0
+              },
+              "end": {
+                "total": 0,
+                "correct": 0,
+                "incorrect": 0
+              }
+            }
+          },
+          "menuItems": {
+            "total": 0,
+            "correct": 0,
+            "incorrect": 0
+          },
+          "menus": {
+            "total": 0,
+            "correct": 0,
+            "incorrect": 0
+          }
+        },
+        "menuItems": {
+          "incorrect": [],
+          "correct": []
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://jobs.cvshealth.com/",
+      "what": "URL",
+      "result": "ERROR: Attempts to visit https://jobs.cvshealth.com/ failed"
+    },
+    {
+      "type": "test",
+      "which": "radioSet",
+      "withItems": true,
+      "what": "grouping of radio buttons in fieldsets",
+      "result": {
+        "error": "ERROR: No page identified",
+        "prevented": true
+      }
+    },
+    {
+      "type": "test",
+      "which": "role",
+      "what": "validity and necessity of role assignments",
+      "result": {
+        "error": "ERROR: No page identified",
+        "prevented": true
+      }
+    },
+    {
+      "type": "test",
+      "which": "styleDiff",
+      "withItems": true,
+      "what": "style consistency of headings, buttons, and links",
+      "result": {
+        "error": "ERROR: No page identified",
+        "prevented": true
+      }
+    },
+    {
+      "type": "test",
+      "which": "tabNav",
+      "withItems": true,
+      "what": "keyboard navigation within tab lists",
+      "result": {
+        "error": "ERROR: No page identified",
+        "prevented": true
+      }
+    },
+    {
+      "type": "test",
+      "which": "zIndex",
+      "withItems": true,
+      "what": "elements with non-auto z indexes",
+      "result": {
+        "error": "ERROR: No page identified",
+        "prevented": true
+      }
+    },
+    {
+      "type": "test",
+      "which": "alfa",
+      "what": "Siteimprove alfa",
+      "result": {
+        "error": "ERROR: No page identified",
+        "prevented": true
+      }
+    },
+    {
+      "type": "test",
+      "which": "axe",
+      "detailLevel": 2,
+      "rules": [],
+      "what": "Axe core, all rules",
+      "result": {
+        "error": "ERROR: No page identified",
+        "prevented": true
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://jobs.cvshealth.com/",
+      "what": "URL",
+      "result": "https://jobs.cvshealth.com/"
+    },
+    {
+      "type": "test",
+      "which": "continuum",
+      "what": "Level Access Continuum, community edition",
+      "url": "https://jobs.cvshealth.com/",
+      "result": [
+        {
+          "engineTestId": 224,
+          "bestPracticeId": 338,
+          "attribute": "This button element does not have a mechanism that allows an accessible name value to be calculated",
+          "attributeDetail": "This button element does not have a mechanism that allows an accessible name value to be calculated",
+          "element": "&lt;button onclick=\"com_survale.showSurvey(this); return false;\" style=\"border-radius: 0; border-color: ... eedback-button-red.png\" style=\"max-width:60px;display:none\" id=\"survaleSideImageAnchorImg\">&lt;/button>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(7)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "button[id=\"survaleSideImageAnchor\"][onclick=\"com_survale.showSurvey(this); return false;\"]",
+            "attNo": 3
+          }
+        },
+        {
+          "engineTestId": 281,
+          "bestPracticeId": 1626,
+          "attribute": "The aria-expanded attribute is not allowed on this element",
+          "attributeDetail": "The aria-expanded attribute is not allowed on this NAV",
+          "element": "&lt;nav aria-expanded=\"true\" data-transition-time=\"0\" data-transition-type=\"fade\" data-count=\"0\" data-b ...  href=\"https://www.cvshealth.com/contact\">&lt;span class=\"menu-text\">Contact&lt;/span>&lt;/a>&lt;/li>&lt;/ul>&lt;/nav>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[class=\"fusion-menu-element-wrapper direction-row mode-dropdown expand-method-hover submenu-mode-dropdown mobile-mode-collapse-to-button mobile-size-full-absolute icons-position-left dropdown-carets-yes has-active-border-bottom-no has-active-border-left-no has-active-border-right-no mobile-trigger-fullwidth-off mobile-indent-on mobile-justify-left main-justify-left mega-menu-loading expand-right submenu-transition-fade fusion-no-small-visibility fusion-no-medium-visibility top-menu\"][aria-label=\"Menu\"][data-breakpoint=\"0\"][data-count=\"0\"][data-transition-type=\"fade\"][data-transition-time=\"0\"][aria-expanded=\"true\"]",
+            "attNo": 7
+          }
+        },
+        {
+          "engineTestId": 281,
+          "bestPracticeId": 1626,
+          "attribute": "The aria-expanded attribute is not allowed on this element",
+          "attributeDetail": "The aria-expanded attribute is not allowed on this NAV",
+          "element": "&lt;nav aria-expanded=\"true\" data-transition-time=\"0\" data-transition-type=\"bottom-vertical\" data-count ... sition-bottom-vertical\">&lt;/span>&lt;a class=\"fusion-background-highlight\" href=\"/military\">&lt;span class=\"",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[class=\"fusion-menu-element-wrapper direction-row mode-dropdown expand-method-click submenu-mode-dropdown mobile-mode-collapse-to-button mobile-size-full-absolute icons-position-left dropdown-carets-no has-active-border-bottom-no has-active-border-left-no has-active-border-right-no mobile-trigger-fullwidth-off mobile-indent-on mobile-justify-left main-justify-left mega-menu-loading expand-right submenu-transition-fade menu-primary\"][aria-label=\"Menu\"][data-breakpoint=\"769\"][data-count=\"1\"][data-transition-type=\"bottom-vertical\"][data-transition-time=\"0\"][aria-expanded=\"true\"]",
+            "attNo": 7
+          }
+        },
+        {
+          "engineTestId": 531,
+          "bestPracticeId": 2519,
+          "attribute": "This nav does not have a unique accessible name as required when two or more nav elements are present",
+          "attributeDetail": "This nav does not have a unique accessible name as required when two or more nav elements are present",
+          "element": "&lt;nav aria-expanded=\"true\" data-transition-time=\"0\" data-transition-type=\"fade\" data-count=\"0\" data-b ...  href=\"https://www.cvshealth.com/contact\">&lt;span class=\"menu-text\">Contact&lt;/span>&lt;/a>&lt;/li>&lt;/ul>&lt;/nav>",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(1)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[class=\"fusion-menu-element-wrapper direction-row mode-dropdown expand-method-hover submenu-mode-dropdown mobile-mode-collapse-to-button mobile-size-full-absolute icons-position-left dropdown-carets-yes has-active-border-bottom-no has-active-border-left-no has-active-border-right-no mobile-trigger-fullwidth-off mobile-indent-on mobile-justify-left main-justify-left mega-menu-loading expand-right submenu-transition-fade fusion-no-small-visibility fusion-no-medium-visibility top-menu\"][aria-label=\"Menu\"][data-breakpoint=\"0\"][data-count=\"0\"][data-transition-type=\"fade\"][data-transition-time=\"0\"][aria-expanded=\"true\"]",
+            "attNo": 7
+          }
+        },
+        {
+          "engineTestId": 531,
+          "bestPracticeId": 2519,
+          "attribute": "This nav does not have a unique accessible name as required when two or more nav elements are present",
+          "attributeDetail": "This nav does not have a unique accessible name as required when two or more nav elements are present",
+          "element": "&lt;nav aria-expanded=\"true\" data-transition-time=\"0\" data-transition-type=\"bottom-vertical\" data-count ... sition-bottom-vertical\">&lt;/span>&lt;a class=\"fusion-background-highlight\" href=\"/military\">&lt;span class=\"",
+          "testResult": 0,
+          "path": "body>div:nth-of-type(1)>*:nth-child(2)>*:nth-child(2)>*:nth-child(2)>*:nth-child(1)>*:nth-child(3)>*:nth-child(1)>*:nth-child(2)",
+          "fixType": "",
+          "fingerprint": {
+            "version": 2,
+            "css": "nav[class=\"fusion-menu-element-wrapper direction-row mode-dropdown expand-method-click submenu-mode-dropdown mobile-mode-collapse-to-button mobile-size-full-absolute icons-position-left dropdown-carets-no has-active-border-bottom-no has-active-border-left-no has-active-border-right-no mobile-trigger-fullwidth-off mobile-indent-on mobile-justify-left main-justify-left mega-menu-loading expand-right submenu-transition-fade menu-primary\"][aria-label=\"Menu\"][data-breakpoint=\"769\"][data-count=\"1\"][data-transition-type=\"bottom-vertical\"][data-transition-time=\"0\"][aria-expanded=\"true\"]",
+            "attNo": 7
+          }
+        }
+      ]
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://jobs.cvshealth.com/",
+      "what": "URL",
+      "result": "ERROR: Attempts to visit https://jobs.cvshealth.com/ failed"
+    },
+    {
+      "type": "test",
+      "which": "htmlcs",
+      "what": "HTML CodeSniffer",
+      "result": {
+        "error": "ERROR: No page identified",
+        "prevented": true
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://jobs.cvshealth.com/",
+      "what": "URL",
+      "result": "ERROR: Attempts to visit https://jobs.cvshealth.com/ failed"
+    },
+    {
+      "type": "test",
+      "which": "ibm",
+      "withItems": true,
+      "what": "IBM Accessibility Checker, with page content and again with URL",
+      "result": {
+        "error": "ERROR: No page identified",
+        "prevented": true
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://jobs.cvshealth.com/",
+      "what": "URL",
+      "result": "https://jobs.cvshealth.com/"
+    },
+    {
+      "type": "test",
+      "which": "wave",
+      "reportType": 4,
+      "what": "WAVE",
+      "url": "https://jobs.cvshealth.com/",
+      "result": {
+        "status": {
+          "success": true,
+          "httpstatuscode": 200
+        },
+        "statistics": {
+          "pagetitle": "CVS Health Jobs- Career Opportunities Home Page",
+          "pageurl": "https://jobs.cvshealth.com/",
+          "time": 8.25,
+          "creditsremaining": 583,
+          "allitemcount": 178,
+          "totalelements": 1041,
+          "waveurl": "http://wave.webaim.org/report?url=https://jobs.cvshealth.com/"
+        },
+        "categories": {
+          "error": {
+            "description": "Errors",
+            "count": 1,
+            "items": {
+              "link_empty": {
+                "id": "link_empty",
+                "description": "Empty link",
+                "count": 1,
+                "selectors": [
+                  "HTML > HEAD:first-child + BODY > svg:first-child + svg + svg + svg + svg + svg + svg + svg + A + DIV + DIV + DIV + DIV + A + DIV + DIV > DIV#survale_SurveyDiv > BR:first-child + H3 + P + BR + P > A#survale_SurveyAnchor"
+                ],
+                "wcag": [
+                  {
+                    "name": "2.4.4 Link Purpose (In Context) (Level A)",
+                    "link": "https://webaim.org/standards/wcag/checklist#sc2.4.4"
+                  }
+                ]
+              }
+            }
+          },
+          "contrast": {
+            "description": "Contrast Errors",
+            "count": 0,
+            "items": []
+          },
+          "alert": {
+            "description": "Alerts",
+            "count": 21,
+            "items": {
+              "image_title": {
+                "id": "image_title",
+                "description": "Image with title",
+                "count": 1,
+                "selectors": [
+                  "HTML > HEAD:first-child + BODY > DIV#boxed-wrapper > DIV#wrapper > MAIN#main > DIV:first-child > SECTION#content > DIV#post-2 > SPAN:first-child + SPAN + SPAN + DIV > DIV:first-child + DIV + DIV + DIV + DIV + DIV + DIV + DIV > DIV:first-child > DIV:first-child + DIV > DIV:first-child > DIV:first-child > SPAN:first-child > IMG:first-child"
+                ],
+                "wcag": [
+                  {
+                    "name": "1.1.1 Non-text Content (Level A)",
+                    "link": "https://webaim.org/standards/wcag/checklist#sc1.1.1"
+                  }
+                ]
+              },
+              "h1_missing": {
+                "id": "h1_missing",
+                "description": "Missing first level heading",
+                "count": 1,
+                "selectors": [
+                  false
+                ],
+                "wcag": [
+                  {
+                    "name": "1.3.1 Info and Relationships (Level A)",
+                    "link": "https://webaim.org/standards/wcag/checklist#sc1.3.1"
+                  },
+                  {
+                    "name": "2.4.6 Headings and Labels (Level AA)",
+                    "link": "https://webaim.org/standards/wcag/checklist#sc2.4.6"
+                  }
+                ]
+              },
+              "heading_skipped": {
+                "id": "heading_skipped",
+                "description": "Skipped heading level",
+                "count": 1,
+                "selectors": [
+                  "HTML > HEAD:first-child + BODY > DIV#boxed-wrapper > DIV#wrapper > MAIN#main > DIV:first-child > SECTION#content > DIV#post-2 > SPAN:first-child + SPAN + SPAN + DIV > DIV:first-child + DIV + DIV + DIV + DIV + DIV + DIV + DIV + DIV + DIV + DIV + DIV > DIV:first-child > DIV:first-child > DIV:first-child > STYLE:first-child + DIV + DIV > H6:first-child"
+                ],
+                "wcag": [
+                  {
+                    "name": "1.3.1 Info and Relationships (Level A)",
+                    "link": "https://webaim.org/standards/wcag/checklist#sc1.3.1"
+                  },
+                  {
+                    "name": "2.4.1 Bypass Blocks (Level A)",
+                    "link": "https://webaim.org/standards/wcag/checklist#sc2.4.1"
+                  },
+                  {
+                    "name": "2.4.6 Headings and Labels (Level AA)",
+                    "link": "https://webaim.org/standards/wcag/checklist#sc2.4.6"
+                  }
+                ]
+              },
+              "link_suspicious": {
+                "id": "link_suspicious",
+                "description": "Suspicious link text",
+                "count": 1,
+                "selectors": [
+                  "HTML > HEAD:first-child + BODY > DIV#boxed-wrapper > DIV#wrapper > MAIN#main > DIV:first-child > SECTION#content > DIV#post-2 > SPAN:first-child + SPAN + SPAN + DIV > DIV:first-child + DIV + DIV + DIV + DIV + DIV + DIV + DIV + DIV + DIV + DIV + DIV > DIV:first-child > DIV:first-child > DIV:first-child > STYLE:first-child + DIV + DIV > H6:first-child > A:first-child + A + A"
+                ],
+                "wcag": [
+                  {
+                    "name": "2.4.4 Link Purpose (In Context) (Level A)",
+                    "link": "https://webaim.org/standards/wcag/checklist#sc2.4.4"
+                  }
+                ]
+              },
+              "link_redundant": {
+                "id": "link_redundant",
+                "description": "Redundant link",
+                "count": 1,
+                "selectors": [
+                  "HTML > HEAD:first-child + BODY > DIV#boxed-wrapper > DIV#wrapper > MAIN#main > DIV:first-child > SECTION#content > DIV#post-2 > SPAN:first-child + SPAN + SPAN + DIV > DIV:first-child + DIV + DIV + DIV + DIV + DIV + DIV + DIV + DIV > DIV:first-child > DIV:first-child > DIV:first-child > STYLE:first-child + DIV + DIV + DIV > DIV:first-child + DIV > DIV:first-child > DIV:first-child > STYLE:first-child + A"
+                ],
+                "wcag": [
+                  {
+                    "name": "2.4.4 Link Purpose (In Context) (Level A)",
+                    "link": "https://webaim.org/standards/wcag/checklist#sc2.4.4"
+                  }
+                ]
+              },
+              "link_pdf": {
+                "id": "link_pdf",
+                "description": "Link to PDF document",
+                "count": 7,
+                "selectors": [
+                  "HTML > HEAD:first-child + BODY > DIV#boxed-wrapper > DIV#wrapper > MAIN#main > DIV:first-child > SECTION#content > DIV#post-2 > SPAN:first-child + SPAN + SPAN + DIV > DIV:first-child + DIV + DIV + DIV + DIV + DIV + DIV + DIV + DIV + DIV + DIV + DIV > DIV:first-child > DIV:first-child > DIV:first-child > STYLE:first-child + DIV + DIV > H6:first-child > A:first-child",
+                  "HTML > HEAD:first-child + BODY > DIV#boxed-wrapper > DIV#wrapper > MAIN#main > DIV:first-child > SECTION#content > DIV#post-2 > SPAN:first-child + SPAN + SPAN + DIV > DIV:first-child + DIV + DIV + DIV + DIV + DIV + DIV + DIV + DIV + DIV + DIV + DIV > DIV:first-child > DIV:first-child > DIV:first-child > STYLE:first-child + DIV + DIV > H6:first-child > A:first-child + A + A",
+                  "HTML > HEAD:first-child + BODY > DIV#boxed-wrapper > DIV#wrapper > MAIN#main > DIV:first-child > SECTION#content > DIV#post-2 > SPAN:first-child + SPAN + SPAN + DIV > DIV:first-child + DIV + DIV + DIV + DIV + DIV + DIV + DIV + DIV + DIV + DIV + DIV > DIV:first-child > DIV:first-child > DIV:first-child > STYLE:first-child + DIV + DIV > H6:first-child + H6 > A:first-child",
+                  "HTML > HEAD:first-child + BODY > DIV#boxed-wrapper > DIV#wrapper > DIV:first-child + SECTION + DIV + MAIN + SECTION > DIV:first-child > DIV:first-child + DIV + DIV > DIV:first-child > DIV:first-child > DIV:first-child > DIV:first-child > DIV:first-child + DIV > DIV:first-child > DIV:first-child > H2:first-child + NAV > UL:first-child > LI:first-child > A:first-child",
+                  "HTML > HEAD:first-child + BODY > DIV#boxed-wrapper > DIV#wrapper > DIV:first-child + SECTION + DIV + MAIN + SECTION > DIV:first-child > DIV:first-child + DIV + DIV > DIV:first-child > DIV:first-child > DIV:first-child > DIV:first-child > DIV:first-child + DIV > DIV:first-child > DIV:first-child > H2:first-child + NAV > UL:first-child > LI:first-child + LI > A:first-child",
+                  "HTML > HEAD:first-child + BODY > DIV#boxed-wrapper > DIV#wrapper > DIV:first-child + SECTION + DIV + MAIN + SECTION > DIV:first-child > DIV:first-child + DIV + DIV > DIV:first-child > DIV:first-child > DIV:first-child > DIV:first-child > DIV:first-child + DIV > DIV:first-child > DIV:first-child > H2:first-child + NAV > UL:first-child > LI:first-child + LI + LI + LI + LI > A:first-child",
+                  "HTML > HEAD:first-child + BODY > DIV#boxed-wrapper > DIV#wrapper > DIV:first-child + SECTION + DIV + MAIN + SECTION > DIV:first-child > DIV:first-child + DIV + DIV > DIV:first-child > DIV:first-child > DIV:first-child > DIV:first-child > DIV:first-child + DIV + DIV + DIV > DIV:first-child > DIV:first-child > H2:first-child + NAV > UL:first-child > LI:first-child + LI + LI + LI + LI + LI > A:first-child"
+                ],
+                "wcag": []
+              },
+              "noscript": {
+                "id": "noscript",
+                "description": "Noscript element",
+                "count": 5,
+                "selectors": [
+                  "HTML > HEAD:first-child > IFRAME:first-child + SCRIPT + SCRIPT + SCRIPT + SCRIPT + SCRIPT + SCRIPT + SCRIPT + SCRIPT + SCRIPT + SCRIPT + SCRIPT + SCRIPT + SCRIPT + SCRIPT + SCRIPT + SCRIPT + SCRIPT + SCRIPT + SCRIPT + SCRIPT + SCRIPT + SCRIPT + SCRIPT + META + META + SCRIPT + META + TITLE + STYLE + META + SCRIPT + META + LINK + META + META + META + META + META + META + META + META + META + SCRIPT + LINK + LINK + LINK + LINK + LINK + LINK + LINK + LINK + LINK + STYLE + LINK + LINK + LINK + LINK + LINK + LINK + LINK + LINK + LINK + LINK + SCRIPT + SCRIPT + SCRIPT + SCRIPT + SCRIPT + SCRIPT + DIV + STYLE + STYLE + STYLE + SCRIPT + SCRIPT + SCRIPT + SCRIPT + SCRIPT + SCRIPT + SCRIPT + SCRIPT + SCRIPT + SCRIPT + SCRIPT + SCRIPT + SCRIPT + SCRIPT + LINK + LINK + LINK + LINK + LINK + META + META + LINK + SCRIPT + SCRIPT + LINK + LINK + LINK + LINK + LINK + STYLE + STYLE + STYLE + SCRIPT + META + META + SCRIPT + SCRIPT + SCRIPT + LINK + SCRIPT + SCRIPT + SCRIPT + SCRIPT + NOSCRIPT",
+                  "HTML > HEAD:first-child + BODY > svg:first-child + svg + svg + svg + svg + svg + svg + svg + A + DIV + DIV + DIV + DIV + A + DIV > SCRIPT:first-child + SCRIPT + SCRIPT + SCRIPT + SCRIPT + SCRIPT + NOSCRIPT",
+                  "HTML > HEAD:first-child + BODY > svg:first-child + svg + svg + svg + svg + svg + svg + svg + A + DIV + DIV + DIV + DIV + A + DIV + DIV + DIV + IFRAME + SCRIPT + NOSCRIPT",
+                  "HTML > HEAD:first-child + BODY > svg:first-child + svg + svg + svg + svg + svg + svg + svg + A + DIV + DIV + DIV + DIV + A + DIV + DIV + DIV + IFRAME + SCRIPT + NOSCRIPT + DIV + SCRIPT + SCRIPT + SCRIPT + SCRIPT + UL + DIV + IFRAME + IFRAME + UL + DIV + APPLY-WIDGET + DIV + DIV + IFRAME + SCRIPT + NOSCRIPT",
+                  "HTML > HEAD:first-child + BODY > svg:first-child + svg + svg + svg + svg + svg + svg + svg + A + DIV + DIV + DIV + DIV + A + DIV + DIV + DIV + IFRAME + SCRIPT + NOSCRIPT + DIV + SCRIPT + SCRIPT + SCRIPT + SCRIPT + UL + DIV + IFRAME + IFRAME + UL + DIV + APPLY-WIDGET + DIV + DIV + IFRAME + SCRIPT + NOSCRIPT + SCRIPT + SCRIPT + SCRIPT + NOSCRIPT"
+                ],
+                "wcag": []
+              },
+              "table_layout": {
+                "id": "table_layout",
+                "description": "Layout table",
+                "count": 1,
+                "selectors": [
+                  "HTML > HEAD:first-child + BODY > svg:first-child + svg + svg + svg + svg + svg + svg + svg + A + DIV + DIV + DIV + DIV + A + DIV + DIV + DIV + IFRAME + SCRIPT + NOSCRIPT + DIV + SCRIPT + SCRIPT + SCRIPT + SCRIPT + UL + DIV + IFRAME + IFRAME + UL + DIV + APPLY-WIDGET + DIV + DIV > A:first-child + DIV + DIV + TABLE > TBODY:first-child > TR:first-child > TD:first-child"
+                ],
+                "wcag": [
+                  {
+                    "name": "1.3.1 Info and Relationships (Level A)",
+                    "link": "https://webaim.org/standards/wcag/checklist#sc1.3.1"
+                  },
+                  {
+                    "name": "1.3.2 Meaningful Sequence (Level A)",
+                    "link": "https://webaim.org/standards/wcag/checklist#sc1.3.2"
+                  }
+                ]
+              },
+              "youtube_video": {
+                "id": "youtube_video",
+                "description": "YouTube video",
+                "count": 3,
+                "selectors": [
+                  "HTML > HEAD:first-child + BODY > DIV#boxed-wrapper > DIV#wrapper > DIV:first-child + SECTION + DIV + MAIN + SECTION > DIV:first-child > DIV:first-child + DIV > DIV:first-child > DIV:first-child > DIV:first-child > DIV:first-child > DIV:first-child > DIV:first-child > IFRAME#player_2",
+                  "HTML > HEAD:first-child + BODY > DIV#boxed-wrapper > DIV#wrapper > DIV:first-child + SECTION + DIV + MAIN + SECTION > DIV:first-child > DIV:first-child + DIV > DIV:first-child > DIV:first-child + DIV > DIV:first-child > DIV:first-child > DIV:first-child > DIV:first-child > IFRAME#player_3",
+                  "HTML > HEAD:first-child + BODY > DIV#boxed-wrapper > DIV#wrapper > DIV:first-child + SECTION + DIV + MAIN + SECTION > DIV:first-child > DIV:first-child + DIV > DIV:first-child > DIV:first-child + DIV + DIV > DIV:first-child > DIV:first-child > DIV:first-child > DIV:first-child > IFRAME#player_4"
+                ],
+                "wcag": [
+                  {
+                    "name": "1.2.1 Prerecorded Audio-only and Video-only (Level A)",
+                    "link": "https://webaim.org/standards/wcag/checklist#sc1.2.1"
+                  },
+                  {
+                    "name": "1.2.2 Captions (Prerecorded) (Level A)",
+                    "link": "https://webaim.org/standards/wcag/checklist#sc1.2.2"
+                  },
+                  {
+                    "name": "1.2.3 Audio Description or Media Alternative (Prerecorded) (Level A)",
+                    "link": "https://webaim.org/standards/wcag/checklist#sc1.2.3"
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "chromium browser"
+    },
+    {
+      "type": "url",
+      "which": "https://jobs.cvshealth.com/",
+      "what": "URL",
+      "result": "ERROR: Attempts to visit https://jobs.cvshealth.com/ failed"
+    },
+    {
+      "type": "test",
+      "which": "tenon",
+      "id": "a",
+      "what": "Tenon API version 2 result retrieval",
+      "result": {
+        "error": "ERROR: No page identified",
+        "prevented": true
+      }
+    }
+  ],
+  "timeStamp": "4knb3",
+  "startTime": "2022-07-28T19:39:42",
+  "presses": 0,
+  "amountRead": 0,
+  "testTimes": [
+    [
+      "hover",
+      36
+    ],
+    [
+      "motion",
+      14
+    ],
+    [
+      "wave",
+      10
+    ],
+    [
+      "focInd",
+      6
+    ],
+    [
+      "focAll",
+      4
+    ],
+    [
+      "bulk",
+      0
+    ],
+    [
+      "embAc",
+      0
+    ],
+    [
+      "focOp",
+      0
+    ],
+    [
+      "labClash",
+      0
+    ],
+    [
+      "linkUl",
+      0
+    ],
+    [
+      "menuNav",
+      0
+    ],
+    [
+      "continuum",
+      0
+    ]
+  ],
+  "logCount": 599,
+  "logSize": 159184,
+  "errorLogCount": 488,
+  "errorLogSize": 144399,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 28,
+  "visitRejectionCount": 0,
+  "endTime": "2022-07-28T19:45:55",
+  "elapsedSeconds": 372,
+  "score": {
+    "scoreProcID": "sp14a",
+    "logWeights": {
+      "logCount": 0.5,
+      "logSize": 0.01,
+      "errorLogCount": 1,
+      "errorLogSize": 0.02,
+      "prohibitedCount": 15,
+      "visitTimeoutCount": 10,
+      "visitRejectionCount": 10
+    },
+    "soloWeight": 2,
+    "groupWeights": {
+      "absolute": 2,
+      "largest": 1,
+      "smaller": 0.4
+    },
+    "preventionWeights": {
+      "testaro": 50,
+      "other": 100
+    },
+    "packageDetails": {
+      "testaro": {
+        "bulk": 1,
+        "focAll": 6,
+        "focInd": 13,
+        "focOp": 45,
+        "hover": 58,
+        "linkUl": 126
+      },
+      "continuum": {
+        "224": 4,
+        "281": 8,
+        "531": 8
+      },
+      "wave": {
+        "e:link_empty": 4,
+        "a:image_title": 1,
+        "a:h1_missing": 1,
+        "a:heading_skipped": 1,
+        "a:link_suspicious": 1,
+        "a:link_redundant": 1,
+        "a:link_pdf": 7,
+        "a:noscript": 5,
+        "a:table_layout": 1,
+        "a:youtube_video": 3
+      }
+    },
+    "groupDetails": {
+      "groups": {
+        "visibleBulk": {
+          "testaro": {
+            "bulk": {
+              "score": 1,
+              "what": "Page contains many visible elements"
+            }
+          }
+        },
+        "tabFocusability": {
+          "testaro": {
+            "focAll": {
+              "score": 5,
+              "what": "Discrepancy between elements that should be and that are Tab-focusable"
+            }
+          }
+        },
+        "focusIndication": {
+          "testaro": {
+            "focInd": {
+              "score": 13,
+              "what": "Focused element displaying no or nostandard focus indicator"
+            }
+          }
+        },
+        "focusableOperable": {
+          "testaro": {
+            "focOp": {
+              "score": 34,
+              "what": "Operable elements that cannot be Tab-focused and vice versa"
+            }
+          }
+        },
+        "hoverSurprise": {
+          "testaro": {
+            "hover": {
+              "score": 15,
+              "what": "Content changes caused by hovering"
+            }
+          }
+        },
+        "linkIndication": {
+          "testaro": {
+            "linkUl": {
+              "score": 63,
+              "what": "Non-underlined adjacent links"
+            }
+          }
+        },
+        "buttonNoText": {
+          "continuum": {
+            "224": {
+              "score": 4,
+              "what": "button element has no mechanism that allows an accessible name to be calculated"
+            }
+          }
+        },
+        "ariaBadAttribute": {
+          "continuum": {
+            "281": {
+              "score": 8,
+              "what": "element has an aria-expanded attribute, which is not allowed"
+            }
+          }
+        },
+        "navConfusion": {
+          "continuum": {
+            "531": {
+              "score": 6,
+              "what": "nav element has an accessible name that is non-unique among the nav elements"
+            }
+          }
+        },
+        "linkNoText": {
+          "wave": {
+            "e:link_empty": {
+              "score": 4,
+              "what": "Link contains no text"
+            }
+          }
+        },
+        "decorativeTitle": {
+          "wave": {
+            "a:image_title": {
+              "score": 1,
+              "what": "Image has a title attribute value but no alt value"
+            }
+          }
+        },
+        "h1Missing": {
+          "wave": {
+            "a:h1_missing": {
+              "score": 1,
+              "what": "Missing first level heading"
+            }
+          }
+        },
+        "headingStructure": {
+          "wave": {
+            "a:heading_skipped": {
+              "score": 1,
+              "what": "Skipped heading level"
+            }
+          }
+        },
+        "linkComprehensionRisk": {
+          "wave": {
+            "a:link_suspicious": {
+              "score": 1,
+              "what": "Suspicious link text"
+            }
+          }
+        },
+        "linkPair": {
+          "wave": {
+            "a:link_redundant": {
+              "score": 1,
+              "what": "Adjacent links go to the same URL"
+            }
+          }
+        },
+        "pdfLink": {
+          "wave": {
+            "a:link_pdf": {
+              "score": 2,
+              "what": "Link to PDF document"
+            }
+          }
+        },
+        "noScriptRisk": {
+          "wave": {
+            "a:noscript": {
+              "score": 1,
+              "what": "noscript element may fail to contain an accessible equivalent or alternative"
+            }
+          }
+        },
+        "layoutTable": {
+          "wave": {
+            "a:table_layout": {
+              "score": 1,
+              "what": "Table element is misused to arrange content"
+            }
+          }
+        },
+        "videoCaptionRisk": {
+          "wave": {
+            "a:youtube_video": {
+              "score": 1,
+              "what": "YouTube video may have no or incorrect captions"
+            }
+          }
+        }
+      },
+      "solos": {}
+    },
+    "preventionScores": {
+      "testaro-radioSet": 50,
+      "testaro-role": 50,
+      "testaro-styleDiff": 50,
+      "testaro-tabNav": 50,
+      "testaro-zIndex": 50,
+      "alfa": 100,
+      "axe": 100,
+      "htmlcs": 100,
+      "ibm": 100,
+      "tenon": 100
+    },
+    "summary": {
+      "total": 6498,
+      "log": 5547,
+      "preventions": 750,
+      "solos": 0,
+      "groups": [
+        {
+          "groupName": "linkIndication",
+          "score": 65
+        },
+        {
+          "groupName": "focusableOperable",
+          "score": 36
+        },
+        {
+          "groupName": "hoverSurprise",
+          "score": 17
+        },
+        {
+          "groupName": "focusIndication",
+          "score": 15
+        },
+        {
+          "groupName": "ariaBadAttribute",
+          "score": 10
+        },
+        {
+          "groupName": "navConfusion",
+          "score": 8
+        },
+        {
+          "groupName": "tabFocusability",
+          "score": 7
+        },
+        {
+          "groupName": "buttonNoText",
+          "score": 6
+        },
+        {
+          "groupName": "linkNoText",
+          "score": 6
+        },
+        {
+          "groupName": "pdfLink",
+          "score": 4
+        },
+        {
+          "groupName": "visibleBulk",
+          "score": 3
+        },
+        {
+          "groupName": "decorativeTitle",
+          "score": 3
+        },
+        {
+          "groupName": "h1Missing",
+          "score": 3
+        },
+        {
+          "groupName": "headingStructure",
+          "score": 3
+        },
+        {
+          "groupName": "linkComprehensionRisk",
+          "score": 3
+        },
+        {
+          "groupName": "linkPair",
+          "score": 3
+        },
+        {
+          "groupName": "noScriptRisk",
+          "score": 3
+        },
+        {
+          "groupName": "layoutTable",
+          "score": 3
+        },
+        {
+          "groupName": "videoCaptionRisk",
+          "score": 3
+        }
+      ]
+    }
+  }
+}</pre>
+      <footer>
+        <p class="date">Produced <time itemprop="datePublished" datetime="2022-07-28">2022/07/28</time></p>
+      </footer>
+    </main>
+  </body>
+</html>

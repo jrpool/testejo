@@ -1,0 +1,11 @@
+{
+  "id": "cvsjobs",
+  "what": "CVS Health careers",
+  "hosts": [
+    {
+      "id": "cvsjobs",
+      "which": "https://jobs.cvshealth.com/",
+      "what": "CVS Health careers"
+    }
+  ]
+}

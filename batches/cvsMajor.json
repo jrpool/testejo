@@ -1,0 +1,256 @@
+{
+  "id": "cvsmajor",
+  "what": "Major CVS Health pages",
+  "hosts": [
+    {
+      "id": "home",
+      "which": "https://www.cvs.com/",
+      "what": "CVS home page"
+    },
+    {
+      "id": "pharmacy",
+      "which": "https://www.cvs.com/pharmacy/v2/?icid=cvsheader:pharmacy#/pharmacy",
+      "what": "CVS Pharmacy"
+    },
+    {
+      "id": "covid19",
+      "which": "https://www.cvs.com/content/coronavirus",
+      "what": "CVS Pharmacy COVID-19 resource center"
+    },
+    {
+      "id": "covidvax",
+      "which": "https://www.cvs.com/immunizations/covid-19-vaccine",
+      "what": "CVS Pharmacy COVID-19 vaccine"
+    },
+    {
+      "id": "druginfo",
+      "which": "https://www.cvs.com/drug",
+      "what": "CVS Drug Information Center"
+    },
+    {
+      "id": "aspirin",
+      "which": "https://www.cvs.com/search/drug?searchTerm=aspirin&pt=drug",
+      "what": "CVS aspirin information"
+    },
+    {
+      "id": "rxtransfer",
+      "which": "https://www.cvs.com/content/transfer",
+      "what": "CVS Pharmacy prescription transfer"
+    },
+    {
+      "id": "rxrefill",
+      "which": "https://www.cvs.com/content/refill",
+      "what": "CVS Pharmacy prescription refill"
+    },
+    {
+      "id": "minuteclinic",
+      "which": "https://www.cvs.com/minuteclinic/?icid=cvsheader:minuteclinic",
+      "what": "MinuteClinic"
+    },
+    {
+      "id": "splinters",
+      "which": "https://www.cvs.com/minuteclinic/services/splinter-removal",
+      "what": "MinuteClinic service (splinter removal)"
+    },
+    {
+      "id": "mcprices",
+      "which": "https://www.cvs.com/minuteclinic/services/price-lists",
+      "what": "MinuteClinic price list"
+    },
+    {
+      "id": "healthhub",
+      "which": "https://www.cvs.com/content/health-hub?icid=cvsheader:healthhub",
+      "what": "CVS HealthHub"
+    },
+    {
+      "id": "carenav1",
+      "which": "https://care.cvs.com/care-navigation/#/home",
+      "what": "CVS Care Navigator 1"
+    },
+    {
+      "id": "caresurvey",
+      "which": "https://survey.foresee.com/f/4Urp1H1mdY",
+      "what": "CVS care options survey"
+    },
+    {
+      "id": "carenav2",
+      "which": "https://cvs.clearstep.health/?utm_source=cvsfdth&utm_medium=cvsfdth_homepage_link&utm_campaign=oc_symptom_checker_beta&symptoms=dyspnea",
+      "what": "CVS Care Navigator 2"
+    },
+    {
+      "id": "shop",
+      "which": "https://www.cvs.com/shop?icid=cvsheader:shop",
+      "what": "CVS Shop"
+    },
+    {
+      "id": "ordertrack",
+      "which": "https://www.cvs.com/account/track-order/",
+      "what": "CVS order tracking"
+    },
+    {
+      "id": "extracare",
+      "which": "https://www.cvs.com/extracare/home?icid=cvsheader:extracare",
+      "what": "CVS ExtraCare"
+    },
+    {
+      "id": "optical",
+      "which": "https://www.cvs.com/optical/",
+      "what": "CVS Optical"
+    },
+    {
+      "id": "eyeglasses",
+      "which": "https://www.cvs.com/optical/eyeglasses",
+      "what": "CVS Optical Eyeglasses"
+    },
+    {
+      "id": "photo",
+      "which": "https://www.cvs.com/photo/photo-landing",
+      "what": "CVS Photo"
+    },
+    {
+      "id": "caremark",
+      "which": "https://www.caremark.com/wps/portal",
+      "what": "CVS Caremark"
+    },
+    {
+      "id": "specpharm",
+      "which": "https://www.cvsspecialty.com/",
+      "what": "CVS Specialty Pharmacy"
+    },
+    {
+      "id": "coram",
+      "which": "https://www.coramhc.com/",
+      "what": "Coram CVS Specialty Infusion Services"
+    },
+    {
+      "id": "cvshealth",
+      "which": "https://www.cvshealth.com/",
+      "what": "CVS Health"
+    },
+    {
+      "id": "privacy",
+      "which": "https://www.cvs.com/content/patient-privacy",
+      "what": "CVS Health privacy"
+    },
+    {
+      "id": "careers",
+      "which": "https://jobs.cvshealth.com/",
+      "what": "CVS Health Careers"
+    },
+    {
+      "id": "investors",
+      "which": "https://investors.cvshealth.com/investors/default.aspx",
+      "what": "CVS Health Investors"
+    },
+    {
+      "id": "pressreleases",
+      "which": "https://www.cvshealth.com/news-and-insights/press-releases#press-releases",
+      "what": "CVS Health press releases"
+    },
+    {
+      "id": "socialresp",
+      "which": "https://www.cvshealth.com/social-responsibility",
+      "what": "CVS Health Social Responsibility"
+    },
+    {
+      "id": "a11y",
+      "which": "https://cvshealth.com/accessibility",
+      "what": "CVS Health accessibility"
+    },
+    {
+      "id": "realestate",
+      "which": "https://cvspharmacyrealty.com/",
+      "what": "CVS Health Real Estate"
+    },
+    {
+      "id": "pharmacq",
+      "which": "https://cvsbuysellpharmacy.com/",
+      "what": "CVS Pharmacy Acquisitions"
+    },
+    {
+      "id": "suppliers",
+      "which": "https://cvssuppliers.com/",
+      "what": "CVS Pharmacy Suppliers"
+    },
+    {
+      "id": "potentialsuppliers",
+      "which": "https://www.rangeme.com/cvs",
+      "what": "Potential CVS Pharmacy Suppliers"
+    },
+    {
+      "id": "omnicare",
+      "which": "https://www.omnicare.com/",
+      "what": "Omnicare"
+    },
+    {
+      "id": "apis",
+      "which": "https://developer.cvshealth.com/",
+      "what": "CVS Health APIs"
+    },
+    {
+      "id": "aetnaindividuals",
+      "which": "https://www.aetna.com/individuals-families.html",
+      "what": "Aetna individuals"
+    },
+    {
+      "id": "aetnaemployers",
+      "which": "https://www.aetna.com/employers-organizations.html",
+      "what": "Aetna employers"
+    },
+    {
+      "id": "aetnaproviders",
+      "which": "https://www.aetna.com/health-care-professionals.html",
+      "what": "Aetna providers"
+    },
+    {
+      "id": "aetnabrokers",
+      "which": "https://www.aetna.com/insurance-producer.html",
+      "what": "Aetna brokers"
+    },
+    {
+      "id": "aetnapartners",
+      "which": "https://www.aetna.com/partners.html",
+      "what": "Aetna partners"
+    },
+    {
+      "id": "aetnamedicare",
+      "which": "https://www.aetnamedicare.com/",
+      "what": "Aetna Medicare"
+    },
+    {
+      "id": "silverscript",
+      "which": "https://www.silverscript.com/",
+      "what": "SilverScript"
+    },
+    {
+      "id": "aetnaabout",
+      "which": "https://www.aetna.com/about-us.html",
+      "what": "Aetna about us"
+    },
+    {
+      "id": "aetnalogin",
+      "which": "https://www.aetna.com/AccountManagerV3/v/login",
+      "what": "Aetna member login"
+    },
+    {
+      "id": "pharmlogin",
+      "which": "https://www.cvs.com/account/login/?icid=cvsheader:signin&screenname=%2F",
+      "what": "CVS Pharmacy login"
+    },
+    {
+      "id": "planissueform",
+      "which": "https://member.aetna.com/MemberPublic/featureRouter/forms?page=commGrievnForm",
+      "what": "Aetna plan issue form"
+    },
+    {
+      "id": "aetnaedds",
+      "which": "https://design.aetna.com/",
+      "what": "Aetna EDDS"
+    },
+    {
+      "id": "recognition",
+      "which": "https://cvs.achievers.com/login",
+      "what": "HeartAtWork Recognition"
+    }
+  ]
+}
